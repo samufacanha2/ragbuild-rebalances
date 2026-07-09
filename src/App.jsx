@@ -1,33 +1,66 @@
-import { useEffect, useMemo, useState } from 'react'
+import { Outlet, useNavigate, useParams, useSearch } from '@tanstack/react-router'
+import { createContext, useContext, useEffect, useMemo, useState } from 'react'
 import { ClassSkillPlanner } from './components/ClassSkillPlanner.jsx'
 import { ClassSelectPage } from './components/ClassSelectPage.jsx'
 import { LanguageMenu } from './components/LanguageMenu.jsx'
 import { classDataSets, defaultClassDataSetId } from './data/classData.js'
 import { detectInitialLanguage, persistLanguage } from './lib/locale.js'
-import { classRouteHref, currentRoute } from './lib/routes.js'
 import { translateUi } from './lib/translations.js'
 
-function App() {
-  const [route, setRoute] = useState(currentRoute)
+const LanguageContext = createContext(null)
+
+export function RootRouteLayout() {
   const [language, setLanguage] = useState(detectInitialLanguage)
-  const activeClassId = route.classId || defaultClassDataSetId
+
+  useEffect(() => {
+    document.documentElement.lang = language
+    persistLanguage(language)
+  }, [language])
+
+  const contextValue = useMemo(() => ({ language, setLanguage }), [language])
+
+  return (
+    <LanguageContext.Provider value={contextValue}>
+      <Outlet />
+      <LanguageMenu language={language} onLanguageChange={setLanguage} />
+    </LanguageContext.Provider>
+  )
+}
+
+export function HomeRoutePage() {
+  const navigate = useNavigate()
+  const { language } = useLanguage()
+
+  const selectClass = (classId) => {
+    navigate({
+      to: '/$classId',
+      params: { classId },
+      search: {},
+    })
+  }
+
+  if (defaultClassDataSetId) return <ClassRouteContent classId={defaultClassDataSetId} tabId="" />
+
+  return <ClassSelectPage dataSets={classDataSets} language={language} onSelectClass={selectClass} />
+}
+
+export function ClassRoutePage() {
+  const params = useParams({ strict: false })
+  const search = useSearch({ strict: false })
+
+  return <ClassRouteContent classId={params.classId} tabId={search.tab ?? ''} />
+}
+
+function ClassRouteContent({ classId, tabId }) {
+  const navigate = useNavigate()
+  const { language } = useLanguage()
+  const activeClassId = classId || defaultClassDataSetId
   const activeClassMeta = useMemo(
     () => (activeClassId ? classDataSets.find((dataSet) => dataSet.id === activeClassId) : null),
     [activeClassId],
   )
   const [activeDataSet, setActiveDataSet] = useState(null)
   const [loadError, setLoadError] = useState('')
-
-  useEffect(() => {
-    const handlePopState = () => setRoute(currentRoute())
-    window.addEventListener('popstate', handlePopState)
-    return () => window.removeEventListener('popstate', handlePopState)
-  }, [])
-
-  useEffect(() => {
-    document.documentElement.lang = language
-    persistLanguage(language)
-  }, [language])
 
   useEffect(() => {
     if (!activeClassId || !activeClassMeta) {
@@ -53,28 +86,31 @@ function App() {
     }
   }, [activeClassId, activeClassMeta])
 
-  const navigateToClass = (classId, tabId = '', options = {}) => {
-    const href = classRouteHref(classId, tabId)
-    const currentHref = `${window.location.pathname}${window.location.search}`
-    const method = options.replace ? 'replaceState' : 'pushState'
-
-    if (href !== currentHref) window.history[method](null, '', href)
-    setRoute({ classId, tabId })
+  const selectClass = (nextClassId) => {
+    navigate({
+      to: '/$classId',
+      params: { classId: nextClassId },
+      search: {},
+    })
   }
 
-  const selectClass = (classId) => navigateToClass(classId)
-  const selectHome = () => navigateToClass('', '', { replace: false })
-  const selectTab = (tabId, options) => {
-    if (activeClassId) navigateToClass(activeClassId, tabId, options)
+  const selectHome = () => {
+    navigate({ to: '/', search: {} })
+  }
+
+  const selectTab = (nextTabId, options = {}) => {
+    if (!activeClassId) return
+
+    navigate({
+      to: '/$classId',
+      params: { classId: activeClassId },
+      search: nextTabId ? { tab: nextTabId } : {},
+      replace: Boolean(options.replace),
+    })
   }
 
   if (!activeClassId || !activeClassMeta) {
-    return (
-      <>
-        <ClassSelectPage dataSets={classDataSets} language={language} onSelectClass={selectClass} />
-        <LanguageMenu language={language} onLanguageChange={setLanguage} />
-      </>
-    )
+    return <ClassSelectPage dataSets={classDataSets} language={language} onSelectClass={selectClass} />
   }
 
   return (
@@ -89,7 +125,7 @@ function App() {
           key={activeDataSet.id}
           dataSet={activeDataSet}
           language={language}
-          routeTabId={route.tabId}
+          routeTabId={tabId}
           onActiveTabChange={selectTab}
         />
       ) : (
@@ -101,9 +137,12 @@ function App() {
           </section>
         </main>
       )}
-      <LanguageMenu language={language} onLanguageChange={setLanguage} />
     </>
   )
 }
 
-export default App
+function useLanguage() {
+  const context = useContext(LanguageContext)
+  if (!context) throw new Error('useLanguage must be used inside RootRouteLayout.')
+  return context
+}

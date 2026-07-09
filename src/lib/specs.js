@@ -43,6 +43,7 @@ export function effectiveSpecRows(model, skill, versionId, levelTable) {
       const firstDelta = labelDeltas[0]
       const nextDelta = labelDeltas.find((delta) => delta.versionIndex > selectedIndex)
       const baseValue = baseByLabel.get(label)
+      if (label === 'Damage') return effectiveDamageSpecRow(labelDeltas, selectedIndex, baseValue)
       const value = appliedDelta?.after || (!appliedDelta && firstDelta?.before) || baseValue || ''
 
       return {
@@ -52,7 +53,7 @@ export function effectiveSpecRows(model, skill, versionId, levelTable) {
         changeNote: appliedDelta ? appliedChangeNote(appliedDelta) : futureChangeNote(nextDelta),
       }
     })
-    .filter((row) => row.value)
+    .filter((row) => row?.value)
 }
 
 export function effectiveLevelTable(model, skill, versionId) {
@@ -226,11 +227,20 @@ function specRowsForEntry(entry) {
 }
 
 function addSpecRow(rows, seen, row) {
+  if (rows.some((existing) => isDuplicateSpecRow(existing, row))) return
+
   const key = specRowKey(row)
   if (seen.has(key)) return
 
   rows.push(row)
   seen.add(key)
+}
+
+function isDuplicateSpecRow(left, right) {
+  if (normalizeSpecLabel(left.label) !== normalizeSpecLabel(right.label)) return false
+  if ((left.scope ?? '') !== (right.scope ?? '')) return false
+  if (!left.source || !right.source) return false
+  return left.source.includes(right.source) || right.source.includes(left.source)
 }
 
 function normalizeSpecRow(row) {
@@ -283,6 +293,130 @@ function joinSources(left, right) {
   if (!left) return right
   if (!right || left.includes(right)) return left
   return `${left} / ${right}`
+}
+
+function effectiveDamageSpecRow(deltas, selectedIndex, baseValue) {
+  const result = effectiveDamageState(deltas, selectedIndex, baseValue)
+  if (!result.value) return null
+
+  return {
+    label: 'Damage',
+    value: result.value,
+    changed: Boolean(result.appliedDelta),
+    changeNote: result.appliedDelta
+      ? appliedChangeNote({ ...result.appliedDelta, before: result.before })
+      : futureChangeNote(result.nextDelta),
+  }
+}
+
+function effectiveDamageState(deltas, selectedIndex, baseValue) {
+  const state = new Map()
+  const order = []
+  const sorted = [...deltas].sort((a, b) => a.versionIndex - b.versionIndex)
+
+  for (const delta of sorted) {
+    mergeDamageComponents(state, order, parseDamageComponents(delta.before), { onlyMissing: true })
+  }
+  if (!state.size) mergeDamageComponents(state, order, parseDamageComponents(baseValue), { onlyMissing: true })
+
+  let appliedDelta = null
+  let before = ''
+  let nextDelta = null
+
+  for (const delta of sorted) {
+    if (delta.versionIndex > selectedIndex) {
+      if (!nextDelta) nextDelta = delta
+      continue
+    }
+
+    mergeDamageComponents(state, order, parseDamageComponents(delta.before), { preferHigher: true })
+    before = formatDamageState(state, order)
+    mergeDamageComponents(state, order, parseDamageComponents(delta.after))
+    appliedDelta = delta
+  }
+
+  return {
+    value: formatDamageState(state, order),
+    before,
+    appliedDelta,
+    nextDelta,
+  }
+}
+
+function mergeDamageComponents(state, order, components, options = {}) {
+  for (const component of components) {
+    const existing = state.get(component.key)
+
+    if (!existing) {
+      state.set(component.key, component)
+      if (!order.includes(component.key)) order.push(component.key)
+      continue
+    }
+
+    if (options.onlyMissing) continue
+    state.set(component.key, options.preferHigher ? higherDamageComponent(existing, component) : component)
+  }
+}
+
+function higherDamageComponent(left, right) {
+  if (!Number.isFinite(left.amount)) return right
+  if (!Number.isFinite(right.amount)) return left
+  return right.amount > left.amount ? right : left
+}
+
+function parseDamageComponents(value) {
+  const normalized = normalizeSkillValue(value)
+  if (!normalized) return []
+
+  const parts = splitDamageParts(normalized)
+  const globalStat = normalized.match(/\b(?:ATK|MATK|Atk|Matk)\b/g)?.at(-1) ?? ''
+
+  return parts.map((part, index) => damageComponent(part, index, parts.length, globalStat)).filter(Boolean)
+}
+
+function splitDamageParts(value) {
+  return String(value ?? '')
+    .split('/')
+    .map((part) => part.trim())
+    .filter(Boolean)
+}
+
+function damageComponent(part, index, partCount, globalStat) {
+  const text = /\b(?:ATK|MATK|Atk|Matk)\b/.test(part) || !globalStat ? part : `${part}${globalStat}`
+  const amount = Number(text.match(/([0-9][0-9,]*)(?=\s*(?:%|\+|$))/)?.[1]?.replace(/,/g, '') ?? Number.NaN)
+
+  return {
+    key: damageComponentKey(text, index, partCount),
+    value: text,
+    amount,
+  }
+}
+
+function damageComponentKey(value, index, partCount) {
+  const text = String(value ?? '').toLowerCase()
+  const qualifiers = [...text.matchAll(/\(([^)]*)\)/g)].map((match) => match[1]).join(' ')
+
+  if (/\b(primary|first|1st)\b/.test(qualifiers)) return 'slot-0'
+  if (/\b(secondary|second|2nd)\b/.test(qualifiers) || /\barea damage\b/.test(qualifiers)) return 'slot-1'
+  if (partCount > 1) return `slot-${index}`
+  if (/\b(primary|first|1st)\b/.test(text)) return 'slot-0'
+  if (/\b(secondary|second|2nd)\b/.test(text) || /\barea damage\b/.test(text)) return 'slot-1'
+  return 'main'
+}
+
+function formatDamageState(state, order) {
+  return [...state.entries()]
+    .sort((a, b) => damageComponentOrder(a[0], order) - damageComponentOrder(b[0], order))
+    .map((entry) => entry[1].value)
+    .join('/')
+}
+
+function damageComponentOrder(key, order) {
+  if (key === 'main' || key === 'slot-0') return 0
+  if (key === 'slot-1') return 1
+  const slot = key.match(/^slot-(\d+)$/)?.[1]
+  if (slot) return Number(slot)
+  return 100 + order.indexOf(key)
 }
 
 function parseSpecRowsFromNote(note) {
