@@ -1,5 +1,5 @@
 export const inquisitorData = {
-  "generatedAt": "2026-07-09T12:11:04.720Z",
+  "generatedAt": "2026-07-09T13:21:22.648Z",
   "classId": 4262,
   "classSlug": "inquisitor",
   "className": "Inquisitor",
@@ -1149,10 +1149,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1161,35 +1157,30 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "2400%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "3600%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "4800%",
                       "sp-cost": "58"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "6000%",
                       "sp-cost": "62"
                     }
                   }
@@ -1387,10 +1378,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1404,7 +1391,6 @@ export const inquisitorData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "2500%",
                       "sp-cost": "45"
                     }
                   },
@@ -1412,7 +1398,6 @@ export const inquisitorData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "4500%",
                       "sp-cost": "55"
                     }
                   },
@@ -1420,7 +1405,6 @@ export const inquisitorData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "6500%",
                       "sp-cost": "65"
                     }
                   },
@@ -1428,7 +1412,6 @@ export const inquisitorData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "8500%",
                       "sp-cost": "75"
                     }
                   },
@@ -1436,7 +1419,6 @@ export const inquisitorData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "10500%",
                       "sp-cost": "85"
                     }
                   }
@@ -2264,10 +2246,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -2281,7 +2259,6 @@ export const inquisitorData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "2400%",
                       "sp-cost": "105"
                     }
                   },
@@ -2289,7 +2266,6 @@ export const inquisitorData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "4800%",
                       "sp-cost": "110"
                     }
                   },
@@ -2297,7 +2273,6 @@ export const inquisitorData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "7200%",
                       "sp-cost": "115"
                     }
                   },
@@ -2305,7 +2280,6 @@ export const inquisitorData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "9600%",
                       "sp-cost": "120"
                     }
                   },
@@ -2313,7 +2287,6 @@ export const inquisitorData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "12000%",
                       "sp-cost": "125"
                     }
                   }
@@ -2362,17 +2335,10 @@ export const inquisitorData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "2250%Atk",
-                  "after": "3250%Atk",
+                  "before": "2250%Atk/3000%Atk (to the target who is inflicted by Oleum Sanctum)",
+                  "after": "3250%Atk/4250%Atk (to the target who is inflicted by Oleum Sanctum)",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 2250%Atk to 3250%Atk based on level 5."
-                },
-                {
-                  "label": "Damage To The Target Who Is Inflicted By Oleum Sanctum",
-                  "before": "3000%Atk",
-                  "after": "4250%Atk",
-                  "scope": "Lv 5",
-                  "source": "Increases damage to the target who is inflicted by Oleum Sanctum from 3000%Atk to 4250%Atk based on level 5."
+                  "source": "Increases damage from 2250%Atk to 3250%Atk based on level 5. / Increases damage to the target who is inflicted by Oleum Sanctum from 3000%Atk to 4250%Atk based on level 5."
                 }
               ]
             },
@@ -2458,17 +2424,10 @@ export const inquisitorData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "14000%Atk",
-                  "after": "12000%Atk",
+                  "before": "14000%Atk (of)/16000%Atk (against Oleum Sanctum debuff)",
+                  "after": "12000%Atk (of)/17600%Atk (against Oleum Sanctum debuff)",
                   "scope": "Lv 5",
-                  "source": "Reduces base damage of from 14000%Atk to 12000%Atk based on level 5."
-                },
-                {
-                  "label": "Damage",
-                  "before": "16000%Atk",
-                  "after": "17600%Atk",
-                  "scope": "Lv 5",
-                  "source": "Increases base damage against Oleum Sanctum debuff from 16000%Atk to 17600%Atk based on level 5."
+                  "source": "Reduces base damage of from 14000%Atk to 12000%Atk based on level 5. / Increases base damage against Oleum Sanctum debuff from 16000%Atk to 17600%Atk based on level 5."
                 },
                 {
                   "label": "Factor Weight Of Pow In Skill Formula (without Oleum Sanctum Debuff)",
@@ -2628,10 +2587,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2640,35 +2595,30 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "2400%",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "4700%",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "7000%",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "9300%",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "11600%",
                       "sp-cost": "65"
                     }
                   }
@@ -2861,10 +2811,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2873,35 +2819,30 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "2750%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "5350%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "7950%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "10550%",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "13150%",
                       "sp-cost": "70"
                     }
                   }
@@ -3041,10 +2982,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3053,35 +2990,30 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "3100%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "6000%",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "8900%",
                       "sp-cost": "63"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "11800%",
                       "sp-cost": "69"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "14700%",
                       "sp-cost": "75"
                     }
                   }
@@ -3322,10 +3254,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3334,70 +3262,60 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "2300%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "4600%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "6900%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "9200%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "11500%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "13800%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "16100%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "18400%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "20700%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "23000%",
                       "sp-cost": "100"
                     }
                   }
@@ -3640,10 +3558,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3652,35 +3566,30 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "1850%",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "3350%",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "4850%",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "6350%",
                       "sp-cost": "74"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "7850%",
                       "sp-cost": "80"
                     }
                   }
@@ -3816,10 +3725,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3828,35 +3733,30 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "700%",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "1400%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "2100%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "2800%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "3500%",
                       "sp-cost": "85"
                     }
                   }
@@ -3878,9 +3778,9 @@ export const inquisitorData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage Logic",
-                  "before": "3 split hits",
-                  "after": "5 cumulative hits",
+                  "label": "Damage",
+                  "before": "3 split hits (logic)",
+                  "after": "5 cumulative hits (logic)",
                   "scope": "",
                   "source": "Changes damage logic from 3 split hits to 5 cumulative hits."
                 }
@@ -4050,45 +3950,36 @@ export const inquisitorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Per hit ATK (650+MHP 20%)%",
                       "sp-cost": "74"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Per hit ATK (1300+MHP 20%)%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Per hit ATK (1950+MHP 20%)%",
                       "sp-cost": "82"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Per hit ATK (2600+MHP 20%)%",
                       "sp-cost": "86"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Per hit ATK (3250+MHP 20%)%",
                       "sp-cost": "90"
                     }
                   }
@@ -4248,50 +4139,7 @@ export const inquisitorData = {
                 "value": "2"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "5800%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "9600%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "13400%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "17200%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "21000%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [
@@ -4656,10 +4504,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -4684,7 +4528,6 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "40%",
                       "sp-cost": "25",
                       "range": "11 cells",
                       "data-1": "1",
@@ -4695,7 +4538,6 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "80%",
                       "sp-cost": "30",
                       "range": "11 cells",
                       "data-1": "1",
@@ -4706,7 +4548,6 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "35",
                       "range": "11 cells",
                       "data-1": "2",
@@ -4717,7 +4558,6 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "40",
                       "range": "11 cells",
                       "data-1": "2",
@@ -4728,7 +4568,6 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "45",
                       "range": "11 cells",
                       "data-1": "3",
@@ -4949,10 +4788,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -4965,7 +4800,6 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "3",
                       "data-1": "20"
                     }
@@ -4973,7 +4807,6 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "4",
                       "data-1": "30"
                     }
@@ -4981,7 +4814,6 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "5",
                       "data-1": "40"
                     }
@@ -4989,7 +4821,6 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "420%",
                       "sp-cost": "6",
                       "data-1": "50"
                     }
@@ -4997,7 +4828,6 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "7",
                       "data-1": "60"
                     }
@@ -5005,7 +4835,6 @@ export const inquisitorData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "580%",
                       "sp-cost": "8",
                       "data-1": "70"
                     }
@@ -5013,7 +4842,6 @@ export const inquisitorData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "660%",
                       "sp-cost": "9",
                       "data-1": "80"
                     }
@@ -5021,7 +4849,6 @@ export const inquisitorData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "740%",
                       "sp-cost": "10",
                       "data-1": "90"
                     }
@@ -5029,7 +4856,6 @@ export const inquisitorData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "820%",
                       "sp-cost": "11",
                       "data-1": "100"
                     }
@@ -5037,7 +4863,6 @@ export const inquisitorData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "12",
                       "data-1": "110"
                     }
@@ -5220,10 +5045,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -5240,7 +5061,6 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "12",
                       "data-1": "2",
                       "data-2": "5"
@@ -5249,7 +5069,6 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "14",
                       "data-1": "2",
                       "data-2": "5"
@@ -5258,7 +5077,6 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "16",
                       "data-1": "2",
                       "data-2": "5"
@@ -5267,7 +5085,6 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "18",
                       "data-1": "2",
                       "data-2": "5"
@@ -5276,7 +5093,6 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "20",
                       "data-1": "2",
                       "data-2": "5"
@@ -5514,7 +5330,7 @@ export const inquisitorData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "3x3",
-                      "effect": "/ Duration 3 sec",
+                      "effect": "Duration 3 sec",
                       "sp-cost": "40",
                       "data-1": "1",
                       "data-2": "1",
@@ -5525,7 +5341,7 @@ export const inquisitorData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "3x3",
-                      "effect": "/ Duration 4 sec",
+                      "effect": "Duration 4 sec",
                       "sp-cost": "60",
                       "data-1": "2",
                       "data-2": "1",
@@ -5536,7 +5352,7 @@ export const inquisitorData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "/ Duration 5 sec",
+                      "effect": "Duration 5 sec",
                       "sp-cost": "80",
                       "data-1": "3",
                       "data-2": "2",
@@ -5547,7 +5363,7 @@ export const inquisitorData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "/ Duration 6 sec",
+                      "effect": "Duration 6 sec",
                       "sp-cost": "100",
                       "data-1": "4",
                       "data-2": "2",
@@ -5558,7 +5374,7 @@ export const inquisitorData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "/ Duration 7 sec",
+                      "effect": "Duration 7 sec",
                       "sp-cost": "120",
                       "data-1": "5",
                       "data-2": "3",
@@ -5731,10 +5547,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -5751,7 +5563,6 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "20",
                       "range": "2 cells",
                       "data-1": "5000"
@@ -5760,7 +5571,6 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "25",
                       "range": "2 cells",
                       "data-1": "7000"
@@ -5769,7 +5579,6 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "30",
                       "range": "2 cells",
                       "data-1": "9000"
@@ -5778,7 +5587,6 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "35",
                       "range": "2 cells",
                       "data-1": "11000"
@@ -5787,7 +5595,6 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "40",
                       "range": "2 cells",
                       "data-1": "13000"
@@ -6617,10 +6424,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -6637,7 +6440,6 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "18",
                       "data-1": "500",
                       "data-2": "2"
@@ -6646,7 +6448,6 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "21",
                       "data-1": "500",
                       "data-2": "2"
@@ -6655,7 +6456,6 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "24",
                       "data-1": "1000",
                       "data-2": "2"
@@ -6664,7 +6464,6 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1300%",
                       "sp-cost": "27",
                       "data-1": "1000",
                       "data-2": "2"
@@ -6673,7 +6472,6 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1600%",
                       "sp-cost": "30",
                       "data-1": "1500",
                       "data-2": "2"
@@ -6682,7 +6480,6 @@ export const inquisitorData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "1900%",
                       "sp-cost": "33",
                       "data-1": "1500",
                       "data-2": "1"
@@ -6691,7 +6488,6 @@ export const inquisitorData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "2200%",
                       "sp-cost": "36",
                       "data-1": "2000",
                       "data-2": "1"
@@ -6700,7 +6496,6 @@ export const inquisitorData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "2500%",
                       "sp-cost": "39",
                       "data-1": "2000",
                       "data-2": "1"
@@ -6709,7 +6504,6 @@ export const inquisitorData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "2800%",
                       "sp-cost": "42",
                       "data-1": "2500",
                       "data-2": "1"
@@ -6718,7 +6512,6 @@ export const inquisitorData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "3100%",
                       "sp-cost": "45",
                       "data-1": "2500",
                       "data-2": "1"
@@ -6927,10 +6720,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -6956,7 +6745,6 @@ export const inquisitorData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "300%",
                       "sp-cost": "36",
                       "data-1": "1",
                       "data-2": "1000",
@@ -6967,7 +6755,6 @@ export const inquisitorData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "600%",
                       "sp-cost": "40",
                       "data-1": "2",
                       "data-2": "2000",
@@ -6978,7 +6765,6 @@ export const inquisitorData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "900%",
                       "sp-cost": "44",
                       "data-1": "3",
                       "data-2": "2000",
@@ -6989,7 +6775,6 @@ export const inquisitorData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "1200%",
                       "sp-cost": "48",
                       "data-1": "4",
                       "data-2": "3000",
@@ -7000,7 +6785,6 @@ export const inquisitorData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-atk": "1500%",
                       "sp-cost": "52",
                       "data-1": "5",
                       "data-2": "3000",
@@ -7478,10 +7262,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7498,7 +7278,6 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "70",
                       "data-1": "3",
                       "data-2": "10"
@@ -7507,7 +7286,6 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "70",
                       "data-1": "4",
                       "data-2": "15"
@@ -7516,7 +7294,6 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1500%",
                       "sp-cost": "70",
                       "data-1": "5",
                       "data-2": "20"
@@ -7525,7 +7302,6 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "2000%",
                       "sp-cost": "70",
                       "data-1": "6",
                       "data-2": "25"
@@ -7534,7 +7310,6 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "2500%",
                       "sp-cost": "70",
                       "data-1": "7",
                       "data-2": "30"
@@ -7916,7 +7691,7 @@ export const inquisitorData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "/ Ma x HP 12%/ Ma x SP 6%",
+                      "effect": "Ma x HP 12% / Ma x SP 6%",
                       "sp-cost": "30",
                       "range": "1 cells",
                       "data-1": "12",
@@ -7928,7 +7703,7 @@ export const inquisitorData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "/ Ma x HP 14%/ Ma x SP 7%",
+                      "effect": "Ma x HP 14% / Ma x SP 7%",
                       "sp-cost": "35",
                       "range": "1 cells",
                       "data-1": "14",
@@ -7940,7 +7715,7 @@ export const inquisitorData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "/ Ma x HP 16%/ Ma x SP 8%",
+                      "effect": "Ma x HP 16% / Ma x SP 8%",
                       "sp-cost": "40",
                       "range": "1 cells",
                       "data-1": "16",
@@ -7952,7 +7727,7 @@ export const inquisitorData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "/ Ma x HP 18%/ Ma x SP 9%",
+                      "effect": "Ma x HP 18% / Ma x SP 9%",
                       "sp-cost": "45",
                       "range": "1 cells",
                       "data-1": "18",
@@ -7964,7 +7739,7 @@ export const inquisitorData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "/ Ma x HP 20%/ Ma x SP 10%",
+                      "effect": "Ma x HP 20% / Ma x SP 10%",
                       "sp-cost": "50",
                       "range": "1 cells",
                       "data-1": "20",
@@ -7976,7 +7751,7 @@ export const inquisitorData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "/ Ma x HP 22%/ Ma x SP 11%",
+                      "effect": "Ma x HP 22% / Ma x SP 11%",
                       "sp-cost": "55",
                       "range": "1 cells",
                       "data-1": "22",
@@ -7988,7 +7763,7 @@ export const inquisitorData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "/ Ma x HP 24%/ Ma x SP 12%",
+                      "effect": "Ma x HP 24% / Ma x SP 12%",
                       "sp-cost": "60",
                       "range": "1 cells",
                       "data-1": "24",
@@ -8000,7 +7775,7 @@ export const inquisitorData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "/ Ma x HP 26%/ Ma x SP 13%",
+                      "effect": "Ma x HP 26% / Ma x SP 13%",
                       "sp-cost": "65",
                       "range": "1 cells",
                       "data-1": "26",
@@ -8012,7 +7787,7 @@ export const inquisitorData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "/ Ma x HP 28%/ Ma x SP 14%",
+                      "effect": "Ma x HP 28% / Ma x SP 14%",
                       "sp-cost": "70",
                       "range": "1 cells",
                       "data-1": "28",
@@ -8024,7 +7799,7 @@ export const inquisitorData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "/ Ma x HP 30%/ Ma x SP 15%",
+                      "effect": "Ma x HP 30% / Ma x SP 15%",
                       "sp-cost": "75",
                       "range": "1 cells",
                       "data-1": "30",
@@ -8185,10 +7960,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -8205,7 +7976,6 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "350%",
                       "sp-cost": "100",
                       "data-1": "3"
                     }
@@ -8213,7 +7983,6 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "100",
                       "data-1": "3"
                     }
@@ -8221,7 +7990,7 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK1050%(Normal)/1650%(Earth Shaker)",
+                      "effect": "ATK1050%(Normal) / 1650%(Earth Shaker)",
                       "sp-cost": "100",
                       "data-1": "3"
                     }
@@ -8229,7 +7998,7 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK1400%(Normal)/2200%(Earth Shaker)",
+                      "effect": "ATK1400%(Normal) / 2200%(Earth Shaker)",
                       "sp-cost": "100",
                       "data-1": "3"
                     }
@@ -8237,7 +8006,7 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK1750%(Normal)/2750%(Earth Shaker)",
+                      "effect": "ATK1750%(Normal) / 2750%(Earth Shaker)",
                       "sp-cost": "100",
                       "data-1": "3"
                     }
@@ -9211,10 +8980,6 @@ export const inquisitorData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -9231,7 +8996,6 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Consumes 5 Spheres, For 4 sec, ATK 40 increased",
                       "sp-cost": "65",
                       "data-1": "4000",
                       "data-2": "5",
@@ -9241,7 +9005,6 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Consumes 5 Spheres, For 4 sec, ATK 60 increased",
                       "sp-cost": "65",
                       "data-1": "4000",
                       "data-2": "5",
@@ -9251,7 +9014,6 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Consumes 4 Spheres, For 4 sec, ATK 80 increased",
                       "sp-cost": "65",
                       "data-1": "4000",
                       "data-2": "4",
@@ -9261,7 +9023,6 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Consumes 4 Spheres, For 4 sec, ATK 100 increased",
                       "sp-cost": "65",
                       "data-1": "4000",
                       "data-2": "4",
@@ -9271,7 +9032,6 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Consumes 3 Spheres, For 4 sec, ATK 120 increased",
                       "sp-cost": "65",
                       "data-1": "4000",
                       "data-2": "3",
@@ -9581,10 +9341,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -9605,7 +9361,6 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "12",
                       "range": "7 cells",
                       "data-1": "2",
@@ -9615,7 +9370,6 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "14",
                       "range": "7 cells",
                       "data-1": "2",
@@ -9625,7 +9379,6 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "16",
                       "range": "8 cells",
                       "data-1": "3",
@@ -9635,7 +9388,6 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "18",
                       "range": "8 cells",
                       "data-1": "3",
@@ -9645,7 +9397,6 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "20",
                       "range": "9 cells",
                       "data-1": "4",
@@ -9655,7 +9406,6 @@ export const inquisitorData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "1100%",
                       "sp-cost": "22",
                       "range": "9 cells",
                       "data-1": "4",
@@ -9665,7 +9415,6 @@ export const inquisitorData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "24",
                       "range": "10 cells",
                       "data-1": "5",
@@ -9675,7 +9424,6 @@ export const inquisitorData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "1300%",
                       "sp-cost": "26",
                       "range": "10 cells",
                       "data-1": "5",
@@ -9685,7 +9433,6 @@ export const inquisitorData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "1400%",
                       "sp-cost": "28",
                       "range": "11 cells",
                       "data-1": "6",
@@ -9695,7 +9442,6 @@ export const inquisitorData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "1500%",
                       "sp-cost": "30",
                       "range": "11 cells",
                       "data-1": "6",
@@ -10967,80 +10713,66 @@ export const inquisitorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+30",
                       "sp-cost": "0"
                     }
                   }
@@ -11581,10 +11313,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -11593,70 +11321,60 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "0"
                     }
                   }
@@ -11967,10 +11685,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -11979,35 +11693,30 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "17"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "19"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "20"
                     }
                   }
@@ -12401,10 +12110,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12413,35 +12118,30 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "350%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "450%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "9"
                     }
                   }
@@ -12563,10 +12263,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12575,35 +12271,30 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "2"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "10"
                     }
                   }
@@ -13064,10 +12755,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -13092,7 +12779,6 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "10",
                       "range": "9 cells",
                       "atk": "800",
@@ -13103,7 +12789,6 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "10",
                       "range": "9 cells",
                       "atk": "1000",
@@ -13114,7 +12799,6 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "10",
                       "range": "9 cells",
                       "atk": "1200",
@@ -13125,7 +12809,6 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1400%",
                       "sp-cost": "10",
                       "range": "9 cells",
                       "atk": "1400",
@@ -13136,7 +12819,6 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1600%",
                       "sp-cost": "10",
                       "range": "9 cells",
                       "atk": "1600",
@@ -13412,10 +13094,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -13428,21 +13106,18 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "750%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "5"
                     }
                   },
@@ -13981,10 +13656,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -13993,35 +13664,30 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "650%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "950%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1100%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1250%",
                       "sp-cost": "12"
                     }
                   }
@@ -14283,10 +13949,6 @@ export const inquisitorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14295,70 +13957,60 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "1400%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "1600%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "1800%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "2000%",
                       "sp-cost": "22"
                     }
                   }
@@ -14528,7 +14180,7 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -14556,7 +14208,7 @@ export const inquisitorData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -15070,80 +14722,66 @@ export const inquisitorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage-reduction",
-                    "label": "Damage Reduction"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage-reduction": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage-reduction": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage-reduction": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage-reduction": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage-reduction": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage-reduction": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage-reduction": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage-reduction": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage-reduction": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage-reduction": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -15686,80 +15324,66 @@ export const inquisitorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "AGI+3, ATK Speed: +1%, Duration: 60sec",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "AGI+4, ATK Speed: +2%, Duration: 80sec",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "AGI+5, ATK Speed: +3%, Duration:100sec",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "AGI+6, ATK Speed: +4%, Duration:120sec",
                       "sp-cost": "27"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "AGI+7, ATK Speed: +5%, Duration:140sec",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "AGI+8, ATK Speed: +6%, Duration:160sec",
                       "sp-cost": "33"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "AGI+9, ATK Speed: +7%, Duration:180sec",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "AGI+10, ATK Speed: +8%, Duration:200sec",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "AGI+11, ATK Speed: +9%, Duration:220sec",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "AGI+12, ATK Speed: +10%, Duration:240sec",
                       "sp-cost": "45"
                     }
                   }
@@ -16144,80 +15768,66 @@ export const inquisitorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -16687,7 +16297,7 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "3 custom position available\n[Custom Position] : Stand in the area and type in [/memo] to store a Memo Point of the current spot",
+                      "effect": "3 custom position available\n[Custom Position] : Stand in the area and type in [ / memo] to store a Memo Point of the current spot",
                       "sp-cost": "26"
                     }
                   }
@@ -18021,10 +17631,6 @@ export const inquisitorData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -18033,35 +17639,30 @@ export const inquisitorData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "1200%",
                   "sp-cost": "46"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "2400%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "3600%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "4800%",
                   "sp-cost": "58"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "6000%",
                   "sp-cost": "62"
                 }
               }
@@ -18259,10 +17860,6 @@ export const inquisitorData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -18276,7 +17873,6 @@ export const inquisitorData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "2500%",
                   "sp-cost": "45"
                 }
               },
@@ -18284,7 +17880,6 @@ export const inquisitorData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "4500%",
                   "sp-cost": "55"
                 }
               },
@@ -18292,7 +17887,6 @@ export const inquisitorData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "6500%",
                   "sp-cost": "65"
                 }
               },
@@ -18300,7 +17894,6 @@ export const inquisitorData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "8500%",
                   "sp-cost": "75"
                 }
               },
@@ -18308,7 +17901,6 @@ export const inquisitorData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "10500%",
                   "sp-cost": "85"
                 }
               }
@@ -19136,10 +18728,6 @@ export const inquisitorData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -19153,7 +18741,6 @@ export const inquisitorData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "2400%",
                   "sp-cost": "105"
                 }
               },
@@ -19161,7 +18748,6 @@ export const inquisitorData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "4800%",
                   "sp-cost": "110"
                 }
               },
@@ -19169,7 +18755,6 @@ export const inquisitorData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "7200%",
                   "sp-cost": "115"
                 }
               },
@@ -19177,7 +18762,6 @@ export const inquisitorData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "9600%",
                   "sp-cost": "120"
                 }
               },
@@ -19185,7 +18769,6 @@ export const inquisitorData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "12000%",
                   "sp-cost": "125"
                 }
               }
@@ -19234,17 +18817,10 @@ export const inquisitorData = {
             },
             {
               "label": "Damage",
-              "before": "2250%Atk",
-              "after": "3250%Atk",
+              "before": "2250%Atk/3000%Atk (to the target who is inflicted by Oleum Sanctum)",
+              "after": "3250%Atk/4250%Atk (to the target who is inflicted by Oleum Sanctum)",
               "scope": "Lv 5",
-              "source": "Increases damage from 2250%Atk to 3250%Atk based on level 5."
-            },
-            {
-              "label": "Damage To The Target Who Is Inflicted By Oleum Sanctum",
-              "before": "3000%Atk",
-              "after": "4250%Atk",
-              "scope": "Lv 5",
-              "source": "Increases damage to the target who is inflicted by Oleum Sanctum from 3000%Atk to 4250%Atk based on level 5."
+              "source": "Increases damage from 2250%Atk to 3250%Atk based on level 5. / Increases damage to the target who is inflicted by Oleum Sanctum from 3000%Atk to 4250%Atk based on level 5."
             }
           ]
         },
@@ -19330,17 +18906,10 @@ export const inquisitorData = {
             },
             {
               "label": "Damage",
-              "before": "14000%Atk",
-              "after": "12000%Atk",
+              "before": "14000%Atk (of)/16000%Atk (against Oleum Sanctum debuff)",
+              "after": "12000%Atk (of)/17600%Atk (against Oleum Sanctum debuff)",
               "scope": "Lv 5",
-              "source": "Reduces base damage of from 14000%Atk to 12000%Atk based on level 5."
-            },
-            {
-              "label": "Damage",
-              "before": "16000%Atk",
-              "after": "17600%Atk",
-              "scope": "Lv 5",
-              "source": "Increases base damage against Oleum Sanctum debuff from 16000%Atk to 17600%Atk based on level 5."
+              "source": "Reduces base damage of from 14000%Atk to 12000%Atk based on level 5. / Increases base damage against Oleum Sanctum debuff from 16000%Atk to 17600%Atk based on level 5."
             },
             {
               "label": "Factor Weight Of Pow In Skill Formula (without Oleum Sanctum Debuff)",
@@ -19500,10 +19069,6 @@ export const inquisitorData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19512,35 +19077,30 @@ export const inquisitorData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "2400%",
                   "sp-cost": "41"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "4700%",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "7000%",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "9300%",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "11600%",
                   "sp-cost": "65"
                 }
               }
@@ -19733,10 +19293,6 @@ export const inquisitorData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19745,35 +19301,30 @@ export const inquisitorData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "2750%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "5350%",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "7950%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "10550%",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "13150%",
                   "sp-cost": "70"
                 }
               }
@@ -19913,10 +19464,6 @@ export const inquisitorData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19925,35 +19472,30 @@ export const inquisitorData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "3100%",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "6000%",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "8900%",
                   "sp-cost": "63"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "11800%",
                   "sp-cost": "69"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "14700%",
                   "sp-cost": "75"
                 }
               }
@@ -20194,10 +19736,6 @@ export const inquisitorData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -20206,70 +19744,60 @@ export const inquisitorData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "2300%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "4600%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "6900%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "9200%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "11500%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk": "13800%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk": "16100%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk": "18400%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk": "20700%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk": "23000%",
                   "sp-cost": "100"
                 }
               }
@@ -20512,10 +20040,6 @@ export const inquisitorData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -20524,35 +20048,30 @@ export const inquisitorData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "1850%",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "3350%",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "4850%",
                   "sp-cost": "68"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "6350%",
                   "sp-cost": "74"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "7850%",
                   "sp-cost": "80"
                 }
               }
@@ -20688,10 +20207,6 @@ export const inquisitorData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -20700,35 +20215,30 @@ export const inquisitorData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "700%",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "1400%",
                   "sp-cost": "70"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "2100%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "2800%",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "3500%",
                   "sp-cost": "85"
                 }
               }
@@ -20750,9 +20260,9 @@ export const inquisitorData = {
           ],
           "specRows": [
             {
-              "label": "Damage Logic",
-              "before": "3 split hits",
-              "after": "5 cumulative hits",
+              "label": "Damage",
+              "before": "3 split hits (logic)",
+              "after": "5 cumulative hits (logic)",
               "scope": "",
               "source": "Changes damage logic from 3 split hits to 5 cumulative hits."
             }
@@ -20922,45 +20432,36 @@ export const inquisitorData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Per hit ATK (650+MHP 20%)%",
                   "sp-cost": "74"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Per hit ATK (1300+MHP 20%)%",
                   "sp-cost": "78"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Per hit ATK (1950+MHP 20%)%",
                   "sp-cost": "82"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Per hit ATK (2600+MHP 20%)%",
                   "sp-cost": "86"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Per hit ATK (3250+MHP 20%)%",
                   "sp-cost": "90"
                 }
               }
@@ -21120,50 +20621,7 @@ export const inquisitorData = {
             "value": "2"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk": "5800%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk": "9600%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk": "13400%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk": "17200%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk": "21000%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [

@@ -1,5 +1,5 @@
 export const meisterData = {
-  "generatedAt": "2026-07-09T12:09:34.652Z",
+  "generatedAt": "2026-07-09T13:19:43.169Z",
   "classId": 4253,
   "classSlug": "meister",
   "className": "Meister",
@@ -746,10 +746,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -758,35 +754,30 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "1350%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "2300%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "3250%",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "4200%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "5150%",
                       "sp-cost": "85"
                     }
                   }
@@ -1388,80 +1379,66 @@ export const meisterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Improved ABR Stats (ATK 800, MHP : 40000, DEF : 20, MDEF : 4, FLEE : 10)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Improved ABR Stats (ATK 1400, MHP : 80000, DEF : 40, MDEF : 8, FLEE : 20)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Improved ABR Stats (ATK 2000, MHP : 120000, DEF : 60, MDEF : 12, FLEE : 30)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Improved ABR Stats (ATK 2600, MHP : 160000, DEF : 80, MDEF : 16, FLEE : 40)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Improved ABR Stats (ATK 3200, MHP : 200000, DEF : 100, MDEF : 20, FLEE : 50)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Improved ABR Stats (ATK 3800, MHP : 240000, DEF : 120, MDEF : 24, FLEE : 60)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Improved ABR Stats (ATK 4400, MHP : 280000, DEF : 140, MDEF : 28, FLEE : 70)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Improved ABR Stats (ATK 5000, MHP : 320000, DEF : 160, MDEF : 32, FLEE : 80)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Improved ABR Stats (ATK 5600, MHP : 360000, DEF : 180, MDEF : 36, FLEE : 90)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Improved ABR Stats (ATK 6200, MHP : 400000, DEF : 200, MDEF : 40, FLEE : 100)",
                       "sp-cost": "0"
                     }
                   }
@@ -1669,10 +1646,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1686,7 +1659,6 @@ export const meisterData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1150%",
                       "sp-cost": "48"
                     }
                   },
@@ -1694,7 +1666,6 @@ export const meisterData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "2050%",
                       "sp-cost": "52"
                     }
                   },
@@ -1702,7 +1673,6 @@ export const meisterData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "2950%",
                       "sp-cost": "56"
                     }
                   },
@@ -1710,7 +1680,6 @@ export const meisterData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "3850%",
                       "sp-cost": "60"
                     }
                   },
@@ -1718,7 +1687,6 @@ export const meisterData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "4750%",
                       "sp-cost": "64"
                     }
                   },
@@ -1726,7 +1694,6 @@ export const meisterData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk-per-hit": "5650%",
                       "sp-cost": "68"
                     }
                   },
@@ -1734,7 +1701,6 @@ export const meisterData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk-per-hit": "6550%",
                       "sp-cost": "72"
                     }
                   },
@@ -1742,7 +1708,6 @@ export const meisterData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk-per-hit": "7450%",
                       "sp-cost": "76"
                     }
                   },
@@ -1750,7 +1715,6 @@ export const meisterData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk-per-hit": "8350%",
                       "sp-cost": "80"
                     }
                   },
@@ -1758,7 +1722,6 @@ export const meisterData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk-per-hit": "9250%",
                       "sp-cost": "84"
                     }
                   }
@@ -1961,10 +1924,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1977,7 +1936,6 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "205%",
                       "area-of-effect": "3x3",
                       "sp-cost": "68"
                     }
@@ -1985,7 +1943,6 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "385%",
                       "area-of-effect": "3x3",
                       "sp-cost": "71"
                     }
@@ -1993,7 +1950,6 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "565%",
                       "area-of-effect": "3x3",
                       "sp-cost": "74"
                     }
@@ -2001,7 +1957,6 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "745%",
                       "area-of-effect": "3x3",
                       "sp-cost": "77"
                     }
@@ -2009,7 +1964,6 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "925%",
                       "area-of-effect": "5x5",
                       "sp-cost": "80"
                     }
@@ -2017,7 +1971,6 @@ export const meisterData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk-per-hit": "1105%",
                       "area-of-effect": "5x5",
                       "sp-cost": "83"
                     }
@@ -2025,7 +1978,6 @@ export const meisterData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk-per-hit": "1285%",
                       "area-of-effect": "5x5",
                       "sp-cost": "86"
                     }
@@ -2033,7 +1985,6 @@ export const meisterData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk-per-hit": "1465%",
                       "area-of-effect": "5x5",
                       "sp-cost": "89"
                     }
@@ -2041,7 +1992,6 @@ export const meisterData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk-per-hit": "1645%",
                       "area-of-effect": "7x7",
                       "sp-cost": "92"
                     }
@@ -2049,7 +1999,6 @@ export const meisterData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk-per-hit": "1825%",
                       "area-of-effect": "7x7",
                       "sp-cost": "95"
                     }
@@ -2299,10 +2248,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -2315,7 +2260,6 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "3600%",
                       "effect": "Effective range: : 3 x 3 cells",
                       "sp-cost": "150"
                     }
@@ -2323,7 +2267,6 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "7200%",
                       "effect": "Effective range: : 3 x 3 cells",
                       "sp-cost": "150"
                     }
@@ -2331,7 +2274,6 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "10800%",
                       "effect": "Effective range: : 3 x 3 cells",
                       "sp-cost": "150"
                     }
@@ -2339,7 +2281,6 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "14400%",
                       "effect": "Effective range: : 3 x 3 cells",
                       "sp-cost": "150"
                     }
@@ -2347,7 +2288,6 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "18000%",
                       "effect": "Effective range: : 5 x 5 cells",
                       "sp-cost": "150"
                     }
@@ -2355,7 +2295,6 @@ export const meisterData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "21600%",
                       "effect": "Effective range: : 5 x 5 cells",
                       "sp-cost": "150"
                     }
@@ -2363,7 +2302,6 @@ export const meisterData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "25200%",
                       "effect": "Effective range: : 5 x 5 cells",
                       "sp-cost": "150"
                     }
@@ -2371,7 +2309,6 @@ export const meisterData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "28800%",
                       "effect": "Effective range: : 5 x 5 cells",
                       "sp-cost": "150"
                     }
@@ -2379,7 +2316,6 @@ export const meisterData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "32400%",
                       "effect": "Effective range: : 7 x 7 cells",
                       "sp-cost": "150"
                     }
@@ -2387,7 +2323,6 @@ export const meisterData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "36000%",
                       "effect": "Effective range: : 7 x 7 cells",
                       "sp-cost": "150"
                     }
@@ -2855,10 +2790,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2867,35 +2798,30 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "1450%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "2350%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "3250%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "4150%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "5050%",
                       "sp-cost": "60"
                     }
                   }
@@ -3045,10 +2971,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -3057,36 +2979,31 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk": "3500%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "7000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "10500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "14000%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "17500%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -3179,10 +3096,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -3191,36 +3104,31 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "1150%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "2000%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "2850%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "3700%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "4550%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -3481,10 +3389,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -3493,36 +3397,31 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1750%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "2500%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "3250%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-atk-per-hit": "4000%"
+                      "area-of-effect": "9x9"
                     }
                   }
                 ],
@@ -3913,7 +3812,7 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Atk +75 / No Movement Speed penalty",
+                      "effect": "No Movement Speed penalty",
                       "sp-cost": "0",
                       "data-1": "75",
                       "data-2": "0"
@@ -5087,10 +4986,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -5107,7 +5002,6 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "5",
                       "range": "11 cells",
                       "atk": "200"
@@ -5116,7 +5010,6 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "580%",
                       "sp-cost": "10",
                       "range": "11 cells",
                       "atk": "250"
@@ -5125,7 +5018,6 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "820%",
                       "sp-cost": "15",
                       "range": "11 cells",
                       "atk": "300"
@@ -5134,7 +5026,6 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1060%",
                       "sp-cost": "20",
                       "range": "11 cells",
                       "atk": "350"
@@ -5143,7 +5034,6 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1300%",
                       "sp-cost": "25",
                       "range": "11 cells",
                       "atk": "400"
@@ -5765,10 +5655,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -5789,7 +5675,6 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "380%",
                       "sp-cost": "45",
                       "atk": "250",
                       "data-1": "20",
@@ -5799,7 +5684,6 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "560%",
                       "sp-cost": "45",
                       "atk": "300",
                       "data-1": "40",
@@ -5809,7 +5693,6 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "740%",
                       "sp-cost": "45",
                       "atk": "350",
                       "data-1": "60",
@@ -5819,7 +5702,6 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "920%",
                       "sp-cost": "45",
                       "atk": "400",
                       "data-1": "80",
@@ -5829,7 +5711,6 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1100%",
                       "sp-cost": "45",
                       "atk": "450",
                       "data-1": "100",
@@ -5854,9 +5735,9 @@ export const meisterData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage While Under Axe Stomp Buff (on Vit 130)",
-                  "before": "1360%Atk",
-                  "after": "1740%Atk",
+                  "label": "Damage",
+                  "before": "1360%Atk (while under A x e Stomp buff (on Vit 130))",
+                  "after": "1740%Atk (while under A x e Stomp buff (on Vit 130))",
                   "scope": "Lv 5",
                   "source": "Increases damage while under Axe Stomp buff (on Vit 130) from 1360%Atk to 1740%Atk based on level 5."
                 }
@@ -6347,7 +6228,7 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK +0 / Duration 20sec",
+                      "effect": "Duration 20sec",
                       "sp-cost": "25",
                       "range": "2 cells",
                       "data-1": "0",
@@ -6357,7 +6238,7 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK +200 / Duration 30sec",
+                      "effect": "Duration 30sec",
                       "sp-cost": "30",
                       "range": "2 cells",
                       "data-1": "200",
@@ -6367,7 +6248,7 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK +400 / Duration 40sec",
+                      "effect": "Duration 40sec",
                       "sp-cost": "35",
                       "range": "2 cells",
                       "data-1": "400",
@@ -6377,7 +6258,7 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK +800 / Duration 50sec",
+                      "effect": "Duration 50sec",
                       "sp-cost": "40",
                       "range": "2 cells",
                       "data-1": "800",
@@ -6387,7 +6268,7 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK +1000 / Duration 60sec",
+                      "effect": "Duration 60sec",
                       "sp-cost": "45",
                       "range": "2 cells",
                       "data-1": "1000",
@@ -6754,10 +6635,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -6774,7 +6651,6 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "230%",
                       "sp-cost": "9",
                       "range": "13 cells",
                       "atk": "100"
@@ -6783,7 +6659,6 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "460%",
                       "sp-cost": "12",
                       "range": "13 cells",
                       "atk": "125"
@@ -6792,7 +6667,6 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "690%",
                       "sp-cost": "15",
                       "range": "13 cells",
                       "atk": "150"
@@ -7537,10 +7411,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7553,7 +7423,6 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "20",
                       "atk": "400"
                     }
@@ -7561,7 +7430,6 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "22",
                       "atk": "500"
                     }
@@ -7569,7 +7437,6 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "24",
                       "atk": "600"
                     }
@@ -7577,7 +7444,6 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "26",
                       "atk": "700"
                     }
@@ -7585,7 +7451,6 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "28",
                       "atk": "800"
                     }
@@ -7593,7 +7458,6 @@ export const meisterData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "30",
                       "atk": "900"
                     }
@@ -7601,7 +7465,6 @@ export const meisterData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "32",
                       "atk": "1000"
                     }
@@ -7609,7 +7472,6 @@ export const meisterData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "1100%",
                       "sp-cost": "34",
                       "atk": "1100"
                     }
@@ -7617,7 +7479,6 @@ export const meisterData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "36",
                       "atk": "1200"
                     }
@@ -7625,7 +7486,6 @@ export const meisterData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "1300%",
                       "sp-cost": "38",
                       "atk": "1300"
                     }
@@ -7852,7 +7712,7 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 300 / Duration 20sec",
+                      "effect": "Duration 20sec",
                       "sp-cost": "40",
                       "range": "2 cells",
                       "data-1": "20000",
@@ -7862,7 +7722,7 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 350 / Duration 30sec",
+                      "effect": "Duration 30sec",
                       "sp-cost": "45",
                       "range": "2 cells",
                       "data-1": "30000",
@@ -7872,7 +7732,7 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 400 / Duration 40sec",
+                      "effect": "Duration 40sec",
                       "sp-cost": "50",
                       "range": "2 cells",
                       "data-1": "40000",
@@ -7882,7 +7742,7 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 450 / Duration 50sec",
+                      "effect": "Duration 50sec",
                       "sp-cost": "55",
                       "range": "2 cells",
                       "data-1": "50000",
@@ -7892,7 +7752,7 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 500 / Duration 60sec",
+                      "effect": "Duration 60sec",
                       "sp-cost": "60",
                       "range": "2 cells",
                       "data-1": "60000",
@@ -8375,7 +8235,7 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Water property Atk 600% / 5 x 5 AoE",
+                      "effect": "5 x 5 AoE",
                       "sp-cost": "20",
                       "range": "7 cells",
                       "atk": "100",
@@ -8387,7 +8247,7 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Water property Atk 900% / 7 x 7 AoE",
+                      "effect": "7 x 7 AoE",
                       "sp-cost": "20",
                       "range": "7 cells",
                       "atk": "150",
@@ -8399,7 +8259,7 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Water property Atk 1200% / 9 x 9 AoE",
+                      "effect": "9 x 9 AoE",
                       "sp-cost": "20",
                       "range": "7 cells",
                       "atk": "200",
@@ -9091,7 +8951,7 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "1000 fi x ed damage per 1/2 second / 10% Stun and Burning status chance",
+                      "effect": "1000 fi x ed damage per 1 / 2 second / 10% Stun and Burning status chance",
                       "sp-cost": "60",
                       "range": "1 cells",
                       "data-1": "500",
@@ -9102,7 +8962,7 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "1200 fi x ed damage per 1/2 second / 20% Stun and Burning status chance",
+                      "effect": "1200 fi x ed damage per 1 / 2 second / 20% Stun and Burning status chance",
                       "sp-cost": "70",
                       "range": "1 cells",
                       "data-1": "550",
@@ -9113,7 +8973,7 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "1400 fi x ed damage per 1/2 second / 30% Stun and Burning status chance",
+                      "effect": "1400 fi x ed damage per 1 / 2 second / 30% Stun and Burning status chance",
                       "sp-cost": "80",
                       "range": "1 cells",
                       "data-1": "600",
@@ -9124,7 +8984,7 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "1600 fi x ed damage per 1/2 second / 40% Stun and Burning status chance",
+                      "effect": "1600 fi x ed damage per 1 / 2 second / 40% Stun and Burning status chance",
                       "sp-cost": "90",
                       "range": "1 cells",
                       "data-1": "650",
@@ -9135,7 +8995,7 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "1800 fi x ed damage per 1/2 second / 50% Stun and Burning status chance",
+                      "effect": "1800 fi x ed damage per 1 / 2 second / 50% Stun and Burning status chance",
                       "sp-cost": "100",
                       "range": "1 cells",
                       "data-1": "700",
@@ -9387,10 +9247,6 @@ export const meisterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -9419,7 +9275,6 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "750%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "data-1": "1",
@@ -9431,7 +9286,6 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "1100%",
                       "sp-cost": "45",
                       "range": "9 cells",
                       "data-1": "1",
@@ -9443,7 +9297,6 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1450%",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "2",
@@ -9455,7 +9308,6 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1800%",
                       "sp-cost": "55",
                       "range": "11 cells",
                       "data-1": "2",
@@ -9467,7 +9319,6 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "2150%",
                       "sp-cost": "60",
                       "range": "13 cells",
                       "data-1": "3",
@@ -10421,7 +10272,7 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "80 SP / Duration 15 sec. / 1% SP/3 sec",
+                      "effect": "80 SP / Duration 15 sec. / 1% SP / 3 sec",
                       "sp-cost": "80",
                       "data-1": "15000",
                       "data-2": "3000"
@@ -10430,7 +10281,7 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "100 SP / Duration 20 sec. / 1% SP/4 sec",
+                      "effect": "100 SP / Duration 20 sec. / 1% SP / 4 sec",
                       "sp-cost": "100",
                       "data-1": "20000",
                       "data-2": "4000"
@@ -10439,7 +10290,7 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "120 SP / Duration 25 sec. / 1% SP/5 sec",
+                      "effect": "120 SP / Duration 25 sec. / 1% SP / 5 sec",
                       "sp-cost": "120",
                       "data-1": "25000",
                       "data-2": "5000"
@@ -11789,116 +11640,66 @@ export const meisterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "acurracy-bonus-2-damage",
-                    "label": "Acurracy Bonus: 2, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-4-damage",
-                    "label": "Acurracy Bonus: 4, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-5-damage",
-                    "label": "Acurracy Bonus: 5, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-6-damage",
-                    "label": "Acurracy Bonus: 6, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-10-damage",
-                    "label": "Acurracy Bonus:10, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-12-damage",
-                    "label": "Acurracy Bonus:12, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-14-damage",
-                    "label": "Acurracy Bonus:14, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-16-damage",
-                    "label": "Acurracy Bonus:16, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-18-damage",
-                    "label": "Acurracy Bonus:18, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-20-damage",
-                    "label": "Acurracy Bonus:20, Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "acurracy-bonus-2-damage": "+ 2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "acurracy-bonus-4-damage": "+ 4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "acurracy-bonus-5-damage": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "acurracy-bonus-6-damage": "+ 8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "acurracy-bonus-10-damage": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "acurracy-bonus-12-damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "acurracy-bonus-14-damage": "+14",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "acurracy-bonus-16-damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "acurracy-bonus-18-damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "acurracy-bonus-20-damage": "+20",
                       "sp-cost": "0"
                     }
                   }
@@ -14983,7 +14784,7 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -15011,7 +14812,7 @@ export const meisterData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -15395,80 +15196,66 @@ export const meisterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage (ATK) 150%, Zeny Cost : 100Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage (ATK) 200%, Zeny Cost : 200Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage (ATK) 250%, Zeny Cost : 300Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage (ATK) 300%, Zeny Cost : 400Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage (ATK) 350%, Zeny Cost : 500Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Damage (ATK) 400%, Zeny Cost : 600Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Damage (ATK) 450%, Zeny Cost : 700Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Damage (ATK) 500%, Zeny Cost : 800Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Damage (ATK) 550%, Zeny Cost : 900Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Damage (ATK) 600%, Zeny Cost :1000Z",
                       "sp-cost": "5"
                     }
                   }
@@ -17383,10 +17170,6 @@ export const meisterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -17395,35 +17178,30 @@ export const meisterData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "1350%",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "2300%",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "3250%",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "4200%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "5150%",
                   "sp-cost": "85"
                 }
               }
@@ -18025,80 +17803,66 @@ export const meisterData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Improved ABR Stats (ATK 800, MHP : 40000, DEF : 20, MDEF : 4, FLEE : 10)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Improved ABR Stats (ATK 1400, MHP : 80000, DEF : 40, MDEF : 8, FLEE : 20)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Improved ABR Stats (ATK 2000, MHP : 120000, DEF : 60, MDEF : 12, FLEE : 30)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Improved ABR Stats (ATK 2600, MHP : 160000, DEF : 80, MDEF : 16, FLEE : 40)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Improved ABR Stats (ATK 3200, MHP : 200000, DEF : 100, MDEF : 20, FLEE : 50)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "Improved ABR Stats (ATK 3800, MHP : 240000, DEF : 120, MDEF : 24, FLEE : 60)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "Improved ABR Stats (ATK 4400, MHP : 280000, DEF : 140, MDEF : 28, FLEE : 70)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "Improved ABR Stats (ATK 5000, MHP : 320000, DEF : 160, MDEF : 32, FLEE : 80)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "Improved ABR Stats (ATK 5600, MHP : 360000, DEF : 180, MDEF : 36, FLEE : 90)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "Improved ABR Stats (ATK 6200, MHP : 400000, DEF : 200, MDEF : 40, FLEE : 100)",
                   "sp-cost": "0"
                 }
               }
@@ -18306,10 +18070,6 @@ export const meisterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -18323,7 +18083,6 @@ export const meisterData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "1150%",
                   "sp-cost": "48"
                 }
               },
@@ -18331,7 +18090,6 @@ export const meisterData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "2050%",
                   "sp-cost": "52"
                 }
               },
@@ -18339,7 +18097,6 @@ export const meisterData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "2950%",
                   "sp-cost": "56"
                 }
               },
@@ -18347,7 +18104,6 @@ export const meisterData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "3850%",
                   "sp-cost": "60"
                 }
               },
@@ -18355,7 +18111,6 @@ export const meisterData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "4750%",
                   "sp-cost": "64"
                 }
               },
@@ -18363,7 +18118,6 @@ export const meisterData = {
                 "level": 6,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk-per-hit": "5650%",
                   "sp-cost": "68"
                 }
               },
@@ -18371,7 +18125,6 @@ export const meisterData = {
                 "level": 7,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk-per-hit": "6550%",
                   "sp-cost": "72"
                 }
               },
@@ -18379,7 +18132,6 @@ export const meisterData = {
                 "level": 8,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk-per-hit": "7450%",
                   "sp-cost": "76"
                 }
               },
@@ -18387,7 +18139,6 @@ export const meisterData = {
                 "level": 9,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk-per-hit": "8350%",
                   "sp-cost": "80"
                 }
               },
@@ -18395,7 +18146,6 @@ export const meisterData = {
                 "level": 10,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk-per-hit": "9250%",
                   "sp-cost": "84"
                 }
               }
@@ -18598,10 +18348,6 @@ export const meisterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -18614,7 +18360,6 @@ export const meisterData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "205%",
                   "area-of-effect": "3x3",
                   "sp-cost": "68"
                 }
@@ -18622,7 +18367,6 @@ export const meisterData = {
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "385%",
                   "area-of-effect": "3x3",
                   "sp-cost": "71"
                 }
@@ -18630,7 +18374,6 @@ export const meisterData = {
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "565%",
                   "area-of-effect": "3x3",
                   "sp-cost": "74"
                 }
@@ -18638,7 +18381,6 @@ export const meisterData = {
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "745%",
                   "area-of-effect": "3x3",
                   "sp-cost": "77"
                 }
@@ -18646,7 +18388,6 @@ export const meisterData = {
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "925%",
                   "area-of-effect": "5x5",
                   "sp-cost": "80"
                 }
@@ -18654,7 +18395,6 @@ export const meisterData = {
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk-per-hit": "1105%",
                   "area-of-effect": "5x5",
                   "sp-cost": "83"
                 }
@@ -18662,7 +18402,6 @@ export const meisterData = {
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk-per-hit": "1285%",
                   "area-of-effect": "5x5",
                   "sp-cost": "86"
                 }
@@ -18670,7 +18409,6 @@ export const meisterData = {
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk-per-hit": "1465%",
                   "area-of-effect": "5x5",
                   "sp-cost": "89"
                 }
@@ -18678,7 +18416,6 @@ export const meisterData = {
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk-per-hit": "1645%",
                   "area-of-effect": "7x7",
                   "sp-cost": "92"
                 }
@@ -18686,7 +18423,6 @@ export const meisterData = {
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk-per-hit": "1825%",
                   "area-of-effect": "7x7",
                   "sp-cost": "95"
                 }
@@ -18936,10 +18672,6 @@ export const meisterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -18952,7 +18684,6 @@ export const meisterData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "3600%",
                   "effect": "Effective range: : 3 x 3 cells",
                   "sp-cost": "150"
                 }
@@ -18960,7 +18691,6 @@ export const meisterData = {
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "7200%",
                   "effect": "Effective range: : 3 x 3 cells",
                   "sp-cost": "150"
                 }
@@ -18968,7 +18698,6 @@ export const meisterData = {
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "10800%",
                   "effect": "Effective range: : 3 x 3 cells",
                   "sp-cost": "150"
                 }
@@ -18976,7 +18705,6 @@ export const meisterData = {
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "14400%",
                   "effect": "Effective range: : 3 x 3 cells",
                   "sp-cost": "150"
                 }
@@ -18984,7 +18712,6 @@ export const meisterData = {
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "18000%",
                   "effect": "Effective range: : 5 x 5 cells",
                   "sp-cost": "150"
                 }
@@ -18992,7 +18719,6 @@ export const meisterData = {
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk": "21600%",
                   "effect": "Effective range: : 5 x 5 cells",
                   "sp-cost": "150"
                 }
@@ -19000,7 +18726,6 @@ export const meisterData = {
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk": "25200%",
                   "effect": "Effective range: : 5 x 5 cells",
                   "sp-cost": "150"
                 }
@@ -19008,7 +18733,6 @@ export const meisterData = {
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk": "28800%",
                   "effect": "Effective range: : 5 x 5 cells",
                   "sp-cost": "150"
                 }
@@ -19016,7 +18740,6 @@ export const meisterData = {
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk": "32400%",
                   "effect": "Effective range: : 7 x 7 cells",
                   "sp-cost": "150"
                 }
@@ -19024,7 +18747,6 @@ export const meisterData = {
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk": "36000%",
                   "effect": "Effective range: : 7 x 7 cells",
                   "sp-cost": "150"
                 }
@@ -19492,10 +19214,6 @@ export const meisterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19504,35 +19222,30 @@ export const meisterData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "1450%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "2350%",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "3250%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "4150%",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "5050%",
                   "sp-cost": "60"
                 }
               }
@@ -19682,10 +19395,6 @@ export const meisterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -19694,36 +19403,31 @@ export const meisterData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "3x3",
-                  "base-damage-atk": "3500%"
+                  "area-of-effect": "3x3"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "7000%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "10500%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk": "14000%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk": "17500%"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
@@ -19816,10 +19520,6 @@ export const meisterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -19828,36 +19528,31 @@ export const meisterData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "3x3",
-                  "base-damage-atk-per-hit": "1150%"
+                  "area-of-effect": "3x3"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "3x3",
-                  "base-damage-atk-per-hit": "2000%"
+                  "area-of-effect": "3x3"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "2850%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "3700%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "4550%"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
@@ -20118,10 +19813,6 @@ export const meisterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -20130,36 +19821,31 @@ export const meisterData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "1000%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "1750%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "2500%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "3250%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-atk-per-hit": "4000%"
+                  "area-of-effect": "9x9"
                 }
               }
             ],

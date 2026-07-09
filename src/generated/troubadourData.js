@@ -1,5 +1,5 @@
 export const troubadourData = {
-  "generatedAt": "2026-07-09T12:11:32.571Z",
+  "generatedAt": "2026-07-09T13:21:49.896Z",
   "classId": 4263,
   "classSlug": "troubadour",
   "className": "Troubadour",
@@ -385,10 +385,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -397,35 +393,30 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "1100%",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "1750%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "2400%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "3050%",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "3700%",
                       "sp-cost": "52"
                     }
                   }
@@ -798,10 +789,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -815,7 +802,6 @@ export const troubadourData = {
                     "level": 1,
                     "values": {
                       "duration": "10 seconds",
-                      "base-damage-matk": "120%",
                       "sp-cost": "40"
                     }
                   },
@@ -823,7 +809,6 @@ export const troubadourData = {
                     "level": 2,
                     "values": {
                       "duration": "10 seconds",
-                      "base-damage-matk": "240%",
                       "sp-cost": "50"
                     }
                   },
@@ -831,7 +816,6 @@ export const troubadourData = {
                     "level": 3,
                     "values": {
                       "duration": "15 seconds",
-                      "base-damage-matk": "360%",
                       "sp-cost": "60"
                     }
                   },
@@ -839,7 +823,6 @@ export const troubadourData = {
                     "level": 4,
                     "values": {
                       "duration": "15 seconds",
-                      "base-damage-matk": "480%",
                       "sp-cost": "70"
                     }
                   },
@@ -847,7 +830,6 @@ export const troubadourData = {
                     "level": 5,
                     "values": {
                       "duration": "20 seconds",
-                      "base-damage-matk": "600%",
                       "sp-cost": "80"
                     }
                   }
@@ -1440,10 +1422,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1452,35 +1430,30 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "2600%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "5200%",
                       "sp-cost": "76"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "7800%",
                       "sp-cost": "82"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "10400%",
                       "sp-cost": "88"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "13000%",
                       "sp-cost": "94"
                     }
                   }
@@ -1764,10 +1737,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1776,35 +1745,30 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "2200%\n2400%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "4200%\n4600%",
                       "sp-cost": "76"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "6200%\n6800%",
                       "sp-cost": "82"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "8200%\n9000%",
                       "sp-cost": "88"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "10200%\n11200%",
                       "sp-cost": "94"
                     }
                   }
@@ -1853,32 +1817,11 @@ export const troubadourData = {
                   "source": "Reduces AP recovery rate from 5 to 3 based on level 5."
                 },
                 {
-                  "label": "Damage Of The Primary Attack",
-                  "before": "2500%Atk",
-                  "after": "3750%Atk",
+                  "label": "Damage",
+                  "before": "2500%Atk (primary attack)/750%Atk (secondary attack)/3250%Atk (primary attack to the target marked with brand)/975%Atk (secondary attack to the target marked with brand)",
+                  "after": "3750%Atk (primary attack)/1750%Atk (secondary attack)/5000%Atk (primary attack to the target marked with brand)/3750%Atk (secondary attack to the target marked with brand)",
                   "scope": "Lv 5",
-                  "source": "Increases damage of the primary attack from 2500%Atk to 3750%Atk based on level 5."
-                },
-                {
-                  "label": "Damage Of The Secondary Attack",
-                  "before": "750%Atk",
-                  "after": "1750%Atk",
-                  "scope": "Lv 5",
-                  "source": "Increases damage of the secondary attack from 750%Atk to 1750%Atk based on level 5."
-                },
-                {
-                  "label": "Damage Of The Primary Attack To The Target Marked With Brand",
-                  "before": "3250%Atk",
-                  "after": "5000%Atk",
-                  "scope": "Lv 5",
-                  "source": "Increases damage of the primary attack to the target marked with brand from 3250%Atk to 5000%Atk based on level 5."
-                },
-                {
-                  "label": "Damage Of The Secondary Attack To The Target Marked With Brand",
-                  "before": "975%Atk",
-                  "after": "3750%Atk",
-                  "scope": "Lv 5",
-                  "source": "Increases damage of the secondary attack to the target marked with brand from 975%Atk to 3750%Atk based on level 5."
+                  "source": "Increases damage of the primary attack from 2500%Atk to 3750%Atk based on level 5. / Increases damage of the secondary attack from 750%Atk to 1750%Atk based on level 5. / Increases damage of the primary attack to the target marked with brand from 3250%Atk to 5000%Atk based on level 5. / Increases damage of the secondary attack to the target marked with brand from 975%Atk to 3750%Atk based on level 5."
                 }
               ]
             },
@@ -2475,10 +2418,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -2487,36 +2426,31 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "3900%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "7550%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk": "11200%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk": "14850%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-matk": "18500%"
+                      "area-of-effect": "9x9"
                     }
                   }
                 ],
@@ -2637,7 +2571,7 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Increase Sound Blend/Rhythm Shooting/Rose Blossom damage",
+                      "effect": "Increase Sound Blend / Rhythm Shooting / Rose Blossom damage",
                       "sp-cost": "250"
                     }
                   }
@@ -2662,9 +2596,9 @@ export const troubadourData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage Bonus Of Sound Blend, Rhythm Shooting And Rose Blossom",
-                  "before": "40%",
-                  "after": "100%",
+                  "label": "Damage",
+                  "before": "40% (bonus of Sound Blend, Rhythm Shooting and Rose blossom)",
+                  "after": "100% (bonus of Sound Blend, Rhythm Shooting and Rose blossom)",
                   "scope": "",
                   "source": "Increases damage bonus of Sound Blend, Rhythm Shooting and Rose blossom from 40% to 100%."
                 },
@@ -3299,10 +3233,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -3323,7 +3253,6 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "80",
                       "range": "9 cells",
                       "atk": "100",
@@ -3333,7 +3262,6 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "90",
                       "range": "9 cells",
                       "atk": "150",
@@ -3343,7 +3271,6 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "atk": "200",
@@ -3353,7 +3280,6 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "110",
                       "range": "9 cells",
                       "atk": "250",
@@ -3363,7 +3289,6 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "120",
                       "range": "9 cells",
                       "atk": "300",
@@ -3598,10 +3523,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -3626,7 +3547,6 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1000%",
                       "sp-cost": "56",
                       "range": "9 cells",
                       "data-1": "9000",
@@ -3637,7 +3557,6 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1300%",
                       "sp-cost": "62",
                       "range": "9 cells",
                       "data-1": "10000",
@@ -3648,7 +3567,6 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "1600%",
                       "sp-cost": "68",
                       "range": "9 cells",
                       "data-1": "11000",
@@ -3659,7 +3577,6 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "1900%",
                       "sp-cost": "74",
                       "range": "9 cells",
                       "data-1": "12000",
@@ -3670,7 +3587,6 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "2200%",
                       "sp-cost": "80",
                       "range": "9 cells",
                       "data-1": "13000",
@@ -4210,10 +4126,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -4234,7 +4146,6 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "62",
                       "range": "9 cells",
                       "data-3": "2"
@@ -4243,7 +4154,6 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "240%",
                       "sp-cost": "64",
                       "range": "9 cells",
                       "data-3": "2"
@@ -4252,7 +4162,6 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "360%",
                       "sp-cost": "66",
                       "range": "9 cells",
                       "data-3": "2"
@@ -4261,7 +4170,6 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "480%",
                       "sp-cost": "68",
                       "range": "9 cells",
                       "data-3": "2"
@@ -4270,7 +4178,6 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "600%",
                       "sp-cost": "70",
                       "range": "9 cells",
                       "data-3": "2"
@@ -4279,7 +4186,6 @@ export const troubadourData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "720%",
                       "sp-cost": "72",
                       "range": "9 cells",
                       "data-3": "2"
@@ -4288,7 +4194,6 @@ export const troubadourData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "840%",
                       "sp-cost": "74",
                       "range": "9 cells",
                       "data-3": "2"
@@ -4297,7 +4202,6 @@ export const troubadourData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "960%",
                       "sp-cost": "76",
                       "range": "9 cells",
                       "data-3": "2"
@@ -5665,10 +5569,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -5689,7 +5589,6 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "750%",
                       "sp-cost": "80",
                       "range": "9 cells",
                       "atk": "1000",
@@ -5699,7 +5598,6 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "1250%",
                       "sp-cost": "90",
                       "range": "9 cells",
                       "atk": "1100",
@@ -5709,7 +5607,6 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1750%",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "atk": "1200",
@@ -5719,7 +5616,6 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "2250%",
                       "sp-cost": "110",
                       "range": "9 cells",
                       "atk": "1300",
@@ -5729,7 +5625,6 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "2750%",
                       "sp-cost": "120",
                       "range": "9 cells",
                       "atk": "1400",
@@ -7019,10 +6914,6 @@ export const troubadourData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -7039,7 +6930,6 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK + 7, increases based on caster's Lesson level",
                       "sp-cost": "82",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7049,7 +6939,6 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK + 10, increases based on caster's Lesson level",
                       "sp-cost": "88",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7059,7 +6948,6 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK + 13, increases based on caster's Lesson level",
                       "sp-cost": "94",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7069,7 +6957,6 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK + 15, increases based on caster's Lesson level",
                       "sp-cost": "100",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7079,7 +6966,6 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK + 20, increases based on caster's Lesson level",
                       "sp-cost": "106",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7921,33 +7807,12 @@ export const troubadourData = {
                   {
                     "id": "range",
                     "label": "Range"
-                  },
-                  {
-                    "id": "skill-range-11-x-11-fixed-casting-time-30-aspd-5-ranged-damage",
-                    "label": "Skill Range 11 X 11 / Fixed Casting Time -30%, Aspd +5%, Ranged Damage"
-                  },
-                  {
-                    "id": "skill-range-13-x-13-fixed-casting-time-40-aspd-10-ranged-damage",
-                    "label": "Skill Range 13 X 13 / Fixed Casting Time -40%, Aspd +10%, Ranged Damage"
-                  },
-                  {
-                    "id": "skill-range-15-x-15-fixed-casting-time-50-aspd-15-ranged-damage",
-                    "label": "Skill Range 15 X 15 / Fixed Casting Time -50%, Aspd +15%, Ranged Damage"
-                  },
-                  {
-                    "id": "skill-range-17-x-17-fixed-casting-time-60-aspd-20-ranged-damage",
-                    "label": "Skill Range 17 X 17 / Fixed Casting Time -60%, Aspd +20%, Ranged Damage"
-                  },
-                  {
-                    "id": "skill-range-19-x-19-fixed-casting-time-70-aspd-25-ranged-damage",
-                    "label": "Skill Range 19 X 19 / Fixed Casting Time -70%, Aspd +25%, Ranged Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "skill-range-11-x-11-fixed-casting-time-30-aspd-5-ranged-damage": "+1%",
                       "sp-cost": "120",
                       "range": "1 cells",
                       "data-1": "30000",
@@ -7957,7 +7822,6 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "skill-range-13-x-13-fixed-casting-time-40-aspd-10-ranged-damage": "+2%",
                       "sp-cost": "140",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7967,7 +7831,6 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "skill-range-15-x-15-fixed-casting-time-50-aspd-15-ranged-damage": "+3%",
                       "sp-cost": "160",
                       "range": "1 cells",
                       "data-1": "90000",
@@ -7977,7 +7840,6 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "skill-range-17-x-17-fixed-casting-time-60-aspd-20-ranged-damage": "+4%",
                       "sp-cost": "180",
                       "range": "1 cells",
                       "data-1": "120000",
@@ -7987,7 +7849,6 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "skill-range-19-x-19-fixed-casting-time-70-aspd-25-ranged-damage": "+5%",
                       "sp-cost": "200",
                       "range": "1 cells",
                       "data-1": "150000",
@@ -10758,10 +10619,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -10822,7 +10679,6 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "1%",
                       "atk-bonus-3-reduction-of-delay-after-atk-1-maxsp": "+ 1%",
                       "sp-cost": "0",
                       "data-1": "3",
@@ -10833,7 +10689,6 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "2%",
                       "atk-bonus-6-reduction-of-delay-after-atk-2-maxsp": "+ 2%",
                       "sp-cost": "0",
                       "data-1": "6",
@@ -10844,7 +10699,6 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "3%",
                       "atk-bonus-9-reduction-of-delay-after-atk-3-maxsp": "+ 3%",
                       "sp-cost": "0",
                       "data-1": "9",
@@ -10855,7 +10709,6 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "4%",
                       "atk-bonus-12-reduction-of-delay-after-atk-4-maxsp": "+ 4%",
                       "sp-cost": "0",
                       "data-1": "12",
@@ -10866,7 +10719,6 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "5%",
                       "atk-bonus-15-reduction-of-delay-after-atk-5-maxsp": "+ 5%",
                       "sp-cost": "0",
                       "data-1": "15",
@@ -10877,7 +10729,6 @@ export const troubadourData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "6%",
                       "atk-bonus-18-reduction-of-delay-after-atk-6-maxsp": "+ 6%",
                       "sp-cost": "0",
                       "data-1": "18",
@@ -10888,7 +10739,6 @@ export const troubadourData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "7%",
                       "atk-bonus-21-reduction-of-delay-after-atk-7-maxsp": "+ 7%",
                       "sp-cost": "0",
                       "data-1": "21",
@@ -10899,7 +10749,6 @@ export const troubadourData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "8%",
                       "atk-bonus-24-reduction-of-delay-after-atk-8-maxsp": "+ 8%",
                       "sp-cost": "0",
                       "data-1": "24",
@@ -10910,7 +10759,6 @@ export const troubadourData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "9%",
                       "atk-bonus-27-reduction-of-delay-after-atk-9-maxsp": "+ 9%",
                       "sp-cost": "0",
                       "data-1": "27",
@@ -10921,7 +10769,6 @@ export const troubadourData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "10%",
                       "atk-bonus-30-reduction-of-delay-after-atk-10-maxsp": "+ 10%",
                       "sp-cost": "0",
                       "data-1": "30",
@@ -11117,10 +10964,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -11137,7 +10980,6 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "110%",
                       "sp-cost": "35",
                       "atk": "150",
                       "data-1": "4"
@@ -11146,7 +10988,6 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "38",
                       "atk": "190",
                       "data-1": "4"
@@ -11155,7 +10996,6 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "130%",
                       "sp-cost": "41",
                       "atk": "230",
                       "data-1": "4"
@@ -11164,7 +11004,6 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "140%",
                       "sp-cost": "44",
                       "atk": "270",
                       "data-1": "4"
@@ -11173,7 +11012,6 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "150%",
                       "sp-cost": "47",
                       "atk": "310",
                       "data-1": "4"
@@ -11633,10 +11471,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -11657,7 +11491,6 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "12",
                       "range": "9 cells",
                       "atk": "150",
@@ -11667,7 +11500,6 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "12",
                       "range": "9 cells",
                       "atk": "190",
@@ -11677,7 +11509,6 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "230%",
                       "sp-cost": "12",
                       "range": "9 cells",
                       "atk": "230",
@@ -11687,7 +11518,6 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "270%",
                       "sp-cost": "12",
                       "range": "9 cells",
                       "atk": "270",
@@ -11697,7 +11527,6 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "12",
                       "range": "9 cells",
                       "atk": "310",
@@ -15759,10 +15588,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -15775,28 +15600,24 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "18"
                     }
                   },
@@ -16724,7 +16545,7 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -16752,7 +16573,7 @@ export const troubadourData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -16914,10 +16735,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -16926,70 +16743,60 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "110%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "170%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "12"
                     }
                   }
@@ -17342,10 +17149,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -17354,63 +17157,44 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "80%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
-                    "values": {
-                      "base-damage-atk": "85%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 3,
-                    "values": {
-                      "base-damage-atk": "90%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 4,
-                    "values": {
-                      "base-damage-atk": "95%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 5,
-                    "values": {
-                      "base-damage-atk": "100%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 6,
-                    "values": {
-                      "base-damage-atk": "105%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 7,
-                    "values": {
-                      "base-damage-atk": "110%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 8,
-                    "values": {
-                      "base-damage-atk": "115%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 9,
-                    "values": {
-                      "base-damage-atk": "120%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 10,
-                    "values": {
-                      "base-damage-atk": "125%"
-                    }
+                    "values": {}
                   }
                 ],
                 "formulaRows": []
@@ -17639,10 +17423,6 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -17651,70 +17431,60 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "170%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "210%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "230%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "15"
                     }
                   }
@@ -18463,10 +18233,6 @@ export const troubadourData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -18475,35 +18241,30 @@ export const troubadourData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "1100%",
                   "sp-cost": "36"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "1750%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "2400%",
                   "sp-cost": "44"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "3050%",
                   "sp-cost": "48"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "3700%",
                   "sp-cost": "52"
                 }
               }
@@ -18876,10 +18637,6 @@ export const troubadourData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -18893,7 +18650,6 @@ export const troubadourData = {
                 "level": 1,
                 "values": {
                   "duration": "10 seconds",
-                  "base-damage-matk": "120%",
                   "sp-cost": "40"
                 }
               },
@@ -18901,7 +18657,6 @@ export const troubadourData = {
                 "level": 2,
                 "values": {
                   "duration": "10 seconds",
-                  "base-damage-matk": "240%",
                   "sp-cost": "50"
                 }
               },
@@ -18909,7 +18664,6 @@ export const troubadourData = {
                 "level": 3,
                 "values": {
                   "duration": "15 seconds",
-                  "base-damage-matk": "360%",
                   "sp-cost": "60"
                 }
               },
@@ -18917,7 +18671,6 @@ export const troubadourData = {
                 "level": 4,
                 "values": {
                   "duration": "15 seconds",
-                  "base-damage-matk": "480%",
                   "sp-cost": "70"
                 }
               },
@@ -18925,7 +18678,6 @@ export const troubadourData = {
                 "level": 5,
                 "values": {
                   "duration": "20 seconds",
-                  "base-damage-matk": "600%",
                   "sp-cost": "80"
                 }
               }
@@ -19518,10 +19270,6 @@ export const troubadourData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19530,35 +19278,30 @@ export const troubadourData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "2600%",
                   "sp-cost": "70"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "5200%",
                   "sp-cost": "76"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "7800%",
                   "sp-cost": "82"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "10400%",
                   "sp-cost": "88"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "13000%",
                   "sp-cost": "94"
                 }
               }
@@ -19842,10 +19585,6 @@ export const troubadourData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19854,35 +19593,30 @@ export const troubadourData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "2200%\n2400%",
                   "sp-cost": "70"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "4200%\n4600%",
                   "sp-cost": "76"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "6200%\n6800%",
                   "sp-cost": "82"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "8200%\n9000%",
                   "sp-cost": "88"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "10200%\n11200%",
                   "sp-cost": "94"
                 }
               }
@@ -19931,32 +19665,11 @@ export const troubadourData = {
               "source": "Reduces AP recovery rate from 5 to 3 based on level 5."
             },
             {
-              "label": "Damage Of The Primary Attack",
-              "before": "2500%Atk",
-              "after": "3750%Atk",
+              "label": "Damage",
+              "before": "2500%Atk (primary attack)/750%Atk (secondary attack)/3250%Atk (primary attack to the target marked with brand)/975%Atk (secondary attack to the target marked with brand)",
+              "after": "3750%Atk (primary attack)/1750%Atk (secondary attack)/5000%Atk (primary attack to the target marked with brand)/3750%Atk (secondary attack to the target marked with brand)",
               "scope": "Lv 5",
-              "source": "Increases damage of the primary attack from 2500%Atk to 3750%Atk based on level 5."
-            },
-            {
-              "label": "Damage Of The Secondary Attack",
-              "before": "750%Atk",
-              "after": "1750%Atk",
-              "scope": "Lv 5",
-              "source": "Increases damage of the secondary attack from 750%Atk to 1750%Atk based on level 5."
-            },
-            {
-              "label": "Damage Of The Primary Attack To The Target Marked With Brand",
-              "before": "3250%Atk",
-              "after": "5000%Atk",
-              "scope": "Lv 5",
-              "source": "Increases damage of the primary attack to the target marked with brand from 3250%Atk to 5000%Atk based on level 5."
-            },
-            {
-              "label": "Damage Of The Secondary Attack To The Target Marked With Brand",
-              "before": "975%Atk",
-              "after": "3750%Atk",
-              "scope": "Lv 5",
-              "source": "Increases damage of the secondary attack to the target marked with brand from 975%Atk to 3750%Atk based on level 5."
+              "source": "Increases damage of the primary attack from 2500%Atk to 3750%Atk based on level 5. / Increases damage of the secondary attack from 750%Atk to 1750%Atk based on level 5. / Increases damage of the primary attack to the target marked with brand from 3250%Atk to 5000%Atk based on level 5. / Increases damage of the secondary attack to the target marked with brand from 975%Atk to 3750%Atk based on level 5."
             }
           ]
         },
@@ -20553,10 +20266,6 @@ export const troubadourData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -20565,36 +20274,31 @@ export const troubadourData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "3900%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "7550%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk": "11200%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk": "14850%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-matk": "18500%"
+                  "area-of-effect": "9x9"
                 }
               }
             ],
@@ -20715,7 +20419,7 @@ export const troubadourData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "Increase Sound Blend/Rhythm Shooting/Rose Blossom damage",
+                  "effect": "Increase Sound Blend / Rhythm Shooting / Rose Blossom damage",
                   "sp-cost": "250"
                 }
               }
@@ -20740,9 +20444,9 @@ export const troubadourData = {
           ],
           "specRows": [
             {
-              "label": "Damage Bonus Of Sound Blend, Rhythm Shooting And Rose Blossom",
-              "before": "40%",
-              "after": "100%",
+              "label": "Damage",
+              "before": "40% (bonus of Sound Blend, Rhythm Shooting and Rose blossom)",
+              "after": "100% (bonus of Sound Blend, Rhythm Shooting and Rose blossom)",
               "scope": "",
               "source": "Increases damage bonus of Sound Blend, Rhythm Shooting and Rose blossom from 40% to 100%."
             },

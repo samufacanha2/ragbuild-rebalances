@@ -723,12 +723,13 @@ function buildLevelTable(skill) {
     if (detail && !Object.keys(row.values).length) setLevelValue(row, table, "Effect", normalizeSkillValue(detail.text));
   }
 
+  stripDamageFromLevelTable(table);
   table.columns = orderLevelColumns(
     table.columns.filter((column) => table.rows.some((row) => row.values[column.id]))
   );
-  table.formulaRows = [...formulaRows.values()];
+  table.formulaRows = [...formulaRows.values()].filter((row) => !isDamageSpecLabel(row.label));
 
-  return table;
+  return table.columns.length ? table : null;
 }
 
 function parseLevelLine(rawLine, row, table, formulaRows) {
@@ -860,6 +861,56 @@ function formulaTemplate(value, baseLabel, multiplierLabel, formulaSource) {
   if (/Soul Energy/i.test(value)) return `((${inner}) x Soul Energy)% MATK`;
   if (/Matk/i.test(value)) return `(${inner})% MATK${/per hit/i.test(value) ? " per hit" : ""}`;
   return `(${inner})% ATK${/per hit/i.test(value) ? " per hit" : ""}`;
+}
+
+function stripDamageFromLevelTable(table) {
+  const damageColumnIds = new Set(table.columns.filter((column) => isDamageLevelColumn(column.label)).map((column) => column.id));
+  const effectColumn = table.columns.find((column) => column.label === "Effect");
+
+  for (const row of table.rows) {
+    for (const id of damageColumnIds) delete row.values[id];
+
+    if (effectColumn && row.values[effectColumn.id]) {
+      const effect = removeDamageEffect(row.values[effectColumn.id]);
+      if (effect) {
+        row.values[effectColumn.id] = effect;
+      } else {
+        delete row.values[effectColumn.id];
+      }
+    }
+  }
+
+  table.columns = table.columns.filter((column) => !damageColumnIds.has(column.id));
+}
+
+function isDamageLevelColumn(label) {
+  if (/damage/i.test(label)) return true;
+  return ["Under Blessing of Four Directions", "Cursed Target Factor", "Skill Level Factor"].includes(label);
+}
+
+function isDamageSpecLabel(label) {
+  return /damage|cursed target/i.test(label);
+}
+
+function removeDamageEffect(value) {
+  return String(value ?? "")
+    .split(/\n+/)
+    .map((line) =>
+      line
+        .split(/\s*\/\s*/)
+        .map((segment) => segment.trim())
+        .filter((segment) => segment && !effectSegmentLooksLikeDamage(segment))
+        .join(" / ")
+    )
+    .filter(Boolean)
+    .join("\n");
+}
+
+function effectSegmentLooksLikeDamage(value) {
+  const text = String(value ?? "").trim();
+  if (!text) return false;
+  if (/\b(?:ATK|MATK)\b/i.test(text) && /[0-9]/.test(text)) return true;
+  return /[0-9][0-9,]*\s*\+\s*\([^)]*(?:level|lv|mastery|count)[^)]*\)\s*%/i.test(text);
 }
 
 function setLevelValue(row, table, label, value) {
@@ -1197,7 +1248,7 @@ function groupRebalancesBySkill(versions) {
         file: version.file,
         section: skill.section,
         notes: skill.notes,
-        specRows: skill.notes.flatMap(parseSpecRows)
+        specRows: mergeSpecRows(skill.notes.flatMap(parseSpecRows))
       });
     }
   }
@@ -1206,13 +1257,15 @@ function groupRebalancesBySkill(versions) {
 
 function parseSpecRows(note) {
   const rows = [];
-  const changeMatch = note.match(/^(Increases|Reduces|Decreases|Changes)\s+(.+?)\s+from\s+(.+?)\s+to\s+(.+?)(?:\s+based on level\s+(\d+))?\.?$/i);
+  const changeMatch = note.match(/^(Increases|Reduces|Decreases|Changes)\s+(.+?)\s+from\s+(.+?)\s+to\s+(.+?)(?:\s+based on level\s+(\d+)(?:\s+(\([^)]+\)))?)?\.?$/i);
   if (changeMatch) {
+    const label = specLabel(changeMatch[2]);
+    const qualifier = label === "Damage" ? damageMetricQualifier(changeMatch[2]) : "";
     rows.push({
-      label: specLabel(changeMatch[2]),
-      before: normalizeSkillValue(changeMatch[3]),
-      after: normalizeSkillValue(changeMatch[4]),
-      scope: changeMatch[5] ? `Lv ${changeMatch[5]}` : "",
+      label,
+      before: appendDamageQualifier(normalizeSkillValue(changeMatch[3]), qualifier),
+      after: appendDamageQualifier(normalizeSkillValue(changeMatch[4]), qualifier),
+      scope: changeMatch[5] ? `Lv ${changeMatch[5]}${changeMatch[6] ? ` ${normalizeSkillValue(changeMatch[6])}` : ""}` : "",
       source: note
     });
     return rows;
@@ -1261,7 +1314,7 @@ function specLabel(rawMetric) {
   if (metric.includes("sp consumption")) return "SP Cost";
   if (metric.includes("ap consumption")) return "AP Consumed";
   if (metric.includes("ap recovery")) return "AP Generated";
-  if (metric.includes("base damage") || metric === "damage") return "Damage";
+  if (/^(?:base\s+)?damage\b/.test(metric)) return "Damage";
   if (metric.includes("cooldown")) return "Cooldown";
   if (metric.includes("delay")) return "Cast Delay";
   if (metric.includes("cast range")) return "Cast Range";
@@ -1271,6 +1324,67 @@ function specLabel(rawMetric) {
     .split(/\s+/)
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(" ");
+}
+
+function mergeSpecRows(rows) {
+  const merged = [];
+  const damageByScope = new Map();
+
+  for (const row of rows) {
+    if (row.label !== "Damage") {
+      merged.push(row);
+      continue;
+    }
+
+    const key = "Damage";
+    const existing = damageByScope.get(key);
+    if (!existing) {
+      const copy = { ...row };
+      damageByScope.set(key, copy);
+      merged.push(copy);
+      continue;
+    }
+
+    existing.before = joinSpecValues(existing.before, row.before);
+    existing.after = joinSpecValues(existing.after, row.after);
+    existing.scope = joinSpecValues(existing.scope, row.scope);
+    existing.source = joinSources(existing.source, row.source);
+  }
+
+  return merged;
+}
+
+function joinSpecValues(left, right) {
+  if (!left) return right;
+  if (!right || left === right) return left;
+  return `${left}/${right}`;
+}
+
+function joinSources(left, right) {
+  if (!left) return right;
+  if (!right || left.includes(right)) return left;
+  return `${left} / ${right}`;
+}
+
+function damageMetricQualifier(rawMetric) {
+  const metric = normalizeSkillValue(rawMetric).replace(/^base\s+/i, "");
+  const parenMatch = metric.match(/^damage\s*\((.+)\)$/i);
+  if (parenMatch) return parenMatch[1];
+
+  const suffixMatch = metric.match(/^damage\s+(?:of\s+(?:the\s+)?|)(.+)$/i);
+  if (!suffixMatch) return "";
+
+  const qualifier = suffixMatch[1].trim();
+  return qualifier && !/^from\b/i.test(qualifier) ? qualifier : "";
+}
+
+function appendDamageQualifier(value, qualifier) {
+  const normalizedValue = normalizeSkillValue(value);
+  const normalizedQualifier = normalizeSkillValue(qualifier);
+  if (!normalizedValue || !normalizedQualifier || normalizedValue.toLowerCase().includes(normalizedQualifier.toLowerCase())) {
+    return normalizedValue;
+  }
+  return `${normalizedValue} (${normalizedQualifier})`;
 }
 
 function parseFrontmatter(markdown) {

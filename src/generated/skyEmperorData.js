@@ -1,5 +1,5 @@
 export const skyEmperorData = {
-  "generatedAt": "2026-07-09T12:12:19.754Z",
+  "generatedAt": "2026-07-09T13:22:42.156Z",
   "classId": 4302,
   "classSlug": "sky-emperor",
   "className": "Sky Emperor",
@@ -821,45 +821,36 @@ export const skyEmperorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1100+(Sky Mastery Lv x 5)%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1700+(Sky Mastery Lv x 10)%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 2300+(Sky Mastery Lv x 15)%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2900+(Sky Mastery Lv x 20)%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 3500+(Sky Mastery Lv x 25)%",
                       "sp-cost": "60"
                     }
                   }
@@ -1015,35 +1006,35 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1150+(Sky Mastery Lv x 5)%/5 x 5 cells",
+                      "effect": "5 x 5 cells",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1600+(Sky Mastery Lv x 10)%/5 x 5 cells",
+                      "effect": "5 x 5 cells",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 2050+(Sky Mastery Lv x 15)%/7 x 7 cells",
+                      "effect": "7 x 7 cells",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2500+(Sky Mastery Lv x 20)%/7 x 7 cells",
+                      "effect": "7 x 7 cells",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 2950+(Sky Mastery Lv x 25)%/9 x 9 cells",
+                      "effect": "9 x 9 cells",
                       "sp-cost": "64"
                     }
                   }
@@ -1203,35 +1194,35 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 800+(Sky Mastery Lv x 3)%/Twinkling Gala x y AOE: 13 x 13 cells",
+                      "effect": "Twinkling Gala x y AOE: 13 x 13 cells",
                       "sp-cost": "124"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1300+(Sky Mastery Lv x 6)%/Twinkling Gala x y AOE: 13 x 13 cells",
+                      "effect": "Twinkling Gala x y AOE: 13 x 13 cells",
                       "sp-cost": "124"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 1800+(Sky Mastery Lv x 9)%/Twinkling Gala x y AOE: 11 x 11 cells",
+                      "effect": "Twinkling Gala x y AOE: 11 x 11 cells",
                       "sp-cost": "124"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2300+(Sky Mastery Lv x 12)%/Twinkling Gala x y AOE: 11 x 11 cells",
+                      "effect": "Twinkling Gala x y AOE: 11 x 11 cells",
                       "sp-cost": "124"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 2800+(Sky Mastery Lv x 15)%/Twinkling Gala x y AOE: 9 x 9 cells",
+                      "effect": "Twinkling Gala x y AOE: 9 x 9 cells",
                       "sp-cost": "124"
                     }
                   }
@@ -1432,35 +1423,35 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 2850+(Sky Mastery Lv x 5)%/3 x 3 cells",
+                      "effect": "3 x 3 cells",
                       "sp-cost": "49"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 4100+(Sky Mastery Lv x 10)%/3 x 3 cells",
+                      "effect": "3 x 3 cells",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 5350+(Sky Mastery Lv x 15)%/5 x 5 cells",
+                      "effect": "5 x 5 cells",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 6600+(Sky Mastery Lv x 20)%/5 x 5 cells",
+                      "effect": "5 x 5 cells",
                       "sp-cost": "61"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 7850+(Sky Mastery Lv x 25)%/7 x 7 cells",
+                      "effect": "7 x 7 cells",
                       "sp-cost": "65"
                     }
                   }
@@ -1634,35 +1625,35 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1800+(Sky Mastery Lv x 5)%\nATK(Midnight) 3000+(Sky Mastery Lv x 5)%/5 x 5 cells",
+                      "effect": "5 x 5 cells",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 3000+(Sky Mastery Lv x 10)%\nATK(Midnight) 4450+(Sky Mastery Lv x 10)%/5 x 5 cells",
+                      "effect": "5 x 5 cells",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 4200+(Sky Mastery Lv x 15)%\nATK(Midnight) 5900+(Sky Mastery Lv x 15)%/7 x 7 cells",
+                      "effect": "7 x 7 cells",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 5400+(Sky Mastery Lv x 20)%\nATK(Midnight) 7350+(Sky Mastery Lv x 20)%/7 x 7 cells",
+                      "effect": "7 x 7 cells",
                       "sp-cost": "66"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 6600+(Sky Mastery Lv x 25)%\nATK(Midnight) 8800+(Sky Mastery Lv x 25)%/9 x 9 cells",
+                      "effect": "9 x 9 cells",
                       "sp-cost": "68"
                     }
                   }
@@ -1849,45 +1840,36 @@ export const skyEmperorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 900+(Sky Mastery Lv x 5)%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1300+(Sky Mastery Lv x 10)%",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 1700+(Sky Mastery Lv x 15)%",
                       "sp-cost": "58"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2100+(Sky Mastery Lv x 20)%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 2500+(Sky Mastery Lv x 25)%",
                       "sp-cost": "62"
                     }
                   }
@@ -2045,35 +2027,35 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1350+(Sky Mastery Lv x 5)%/3 x 3 cells",
+                      "effect": "3 x 3 cells",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1750+(Sky Mastery Lv x 10)%/3 x 3 cells",
+                      "effect": "3 x 3 cells",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 2150+(Sky Mastery Lv x 15)%/5 x 5 cells",
+                      "effect": "5 x 5 cells",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2550+(Sky Mastery Lv x 20)%/5 x 5 cells",
+                      "effect": "5 x 5 cells",
                       "sp-cost": "58"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 2950+(Sky Mastery Lv x 25)%/7 x 7 cells",
+                      "effect": "7 x 7 cells",
                       "sp-cost": "62"
                     }
                   }
@@ -2247,35 +2229,35 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 800+(Sky Mastery Lv x 5)%\nATK(Moonset) 1000+(Sky Mastery Lv x 5)%/5 x 5 cells",
+                      "effect": "5 x 5 cells",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1200+(Sky Mastery Lv x 10)%\nATK(Moonset) 1600+(Sky Mastery Lv x 10)%/5 x 5 cells",
+                      "effect": "5 x 5 cells",
                       "sp-cost": "58"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 1600+(Sky Mastery Lv x 15)%\nATK(Moonset) 2200+(Sky Mastery Lv x 15)%/7 x 7 cells",
+                      "effect": "7 x 7 cells",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2000+(Sky Mastery Lv x 20)%\nATK(Moonset) 2800+(Sky Mastery Lv x 20)%/7 x 7 cells",
+                      "effect": "7 x 7 cells",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 2400+(Sky Mastery Lv x 25)%\nATK(Moonset) 3400+(Sky Mastery Lv x 25)%/9 x 9 cells",
+                      "effect": "9 x 9 cells",
                       "sp-cost": "64"
                     }
                   }
@@ -2476,35 +2458,35 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 800+(Sky Mastery Lv x 5)%\nStar Cannon Range: 13 x 13 cells/ ma x shooting star per drop : 1",
+                      "effect": "Star Cannon Range: 13 x 13 cells / ma x shooting star per drop : 1",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1350+(Sky Mastery Lv x 10)%\nStar Cannon Range: 13 x 13 cells/ ma x shooting star per drop : 1",
+                      "effect": "Star Cannon Range: 13 x 13 cells / ma x shooting star per drop : 1",
                       "sp-cost": "95"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 1900+(Sky Mastery Lv x 15)%\nStar Cannon Range: 11 x 11 cells/ ma x shooting star per drop : 1",
+                      "effect": "Star Cannon Range: 11 x 11 cells / ma x shooting star per drop : 1",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2450+(Sky Mastery Lv x 20)%\nStar Cannon Range: 11 x 11 cells/ ma x shooting star per drop : 2",
+                      "effect": "Star Cannon Range: 11 x 11 cells / ma x shooting star per drop : 2",
                       "sp-cost": "105"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 3000+(Sky Mastery Lv x 25)%\nStar Cannon Range: 9 x 9 cells/ ma x shooting star per drop : 2",
+                      "effect": "Star Cannon Range: 9 x 9 cells / ma x shooting star per drop : 2",
                       "sp-cost": "110"
                     }
                   }
@@ -2763,10 +2745,6 @@ export const skyEmperorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2775,70 +2753,60 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "1450%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "2650%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "3850%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "5050%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "6250%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk-per-hit": "7450%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk-per-hit": "8650%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk-per-hit": "9850%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk-per-hit": "11050%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk-per-hit": "12250%",
                       "sp-cost": "85"
                     }
                   }
@@ -3224,70 +3192,9 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "2"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK) + (Sky Mastery level x Skill Level Factor))% ATK"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
-                    "id": "skill-level-factor",
-                    "label": "Skill Level Factor"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "1,500",
-                      "skill-level-factor": "7"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "3,000",
-                      "skill-level-factor": "14"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "4,500",
-                      "skill-level-factor": "21"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "6,000",
-                      "skill-level-factor": "28"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "7,500",
-                      "skill-level-factor": "35"
-                    }
-                  }
-                ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "(Base Damage (ATK) + (Sky Mastery level x Skill Level Factor))% ATK"
-                  }
-                ]
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [
@@ -3412,70 +3319,9 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "2"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK per Hit) + (Sky Mastery level x Skill Level Factor))% ATK per hit"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
-                    "id": "skill-level-factor",
-                    "label": "Skill Level Factor"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "1,650",
-                      "skill-level-factor": "9"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "2,100",
-                      "skill-level-factor": "18"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "2,550",
-                      "skill-level-factor": "27"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "3,000",
-                      "skill-level-factor": "36"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "3,450",
-                      "skill-level-factor": "45"
-                    }
-                  }
-                ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "(Base Damage (ATK per Hit) + (Sky Mastery level x Skill Level Factor))% ATK per hit"
-                  }
-                ]
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [
@@ -3580,70 +3426,9 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "2"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK per Hit) + (Sky Mastery level x Skill Level Factor))% ATK per hit"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
-                    "id": "skill-level-factor",
-                    "label": "Skill Level Factor"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "600",
-                      "skill-level-factor": "5"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "800",
-                      "skill-level-factor": "10"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "1,000",
-                      "skill-level-factor": "15"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "1,200",
-                      "skill-level-factor": "20"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "1,400",
-                      "skill-level-factor": "25"
-                    }
-                  }
-                ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "(Base Damage (ATK per Hit) + (Sky Mastery level x Skill Level Factor))% ATK per hit"
-                  }
-                ]
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [
@@ -3796,14 +3581,14 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Resets the selected monsters /Skill cooldown: 60 sec",
+                      "effect": "Resets the selected monsters / Skill cooldown: 60 sec",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Resets everything /Skill cooldown: 60 sec",
+                      "effect": "Resets everything / Skill cooldown: 60 sec",
                       "sp-cost": "60"
                     }
                   }
@@ -4745,10 +4530,6 @@ export const skyEmperorData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "atk",
                     "label": "Atk %"
                   },
@@ -4769,7 +4550,6 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "200% of ATK",
                       "sp-cost": "20",
                       "range": "1 cells",
                       "atk": "200",
@@ -4780,7 +4560,6 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "250% of ATK",
                       "sp-cost": "20",
                       "range": "1 cells",
                       "atk": "250",
@@ -4791,7 +4570,6 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "300% of ATK",
                       "sp-cost": "20",
                       "range": "1 cells",
                       "atk": "300",
@@ -4802,7 +4580,6 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "350% of ATK",
                       "sp-cost": "20",
                       "range": "1 cells",
                       "atk": "350",
@@ -4813,7 +4590,6 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "400% of ATK",
                       "sp-cost": "20",
                       "range": "1 cells",
                       "atk": "400",
@@ -4824,7 +4600,6 @@ export const skyEmperorData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "450% of ATK",
                       "sp-cost": "20",
                       "range": "1 cells",
                       "atk": "450",
@@ -4835,7 +4610,6 @@ export const skyEmperorData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "500% of ATK",
                       "sp-cost": "20",
                       "range": "1 cells",
                       "atk": "500",
@@ -5061,10 +4835,6 @@ export const skyEmperorData = {
                     "label": "Area of Effect"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "atk",
                     "label": "Atk %"
                   },
@@ -5078,7 +4848,6 @@ export const skyEmperorData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "700% of ATK",
                       "sp-cost": "20",
                       "atk": "700",
                       "data-1": "3"
@@ -5088,7 +4857,6 @@ export const skyEmperorData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "800% of ATK",
                       "sp-cost": "25",
                       "atk": "800",
                       "data-1": "3"
@@ -5098,7 +4866,6 @@ export const skyEmperorData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "900% of ATK",
                       "sp-cost": "30",
                       "atk": "900",
                       "data-1": "3"
@@ -5108,7 +4875,6 @@ export const skyEmperorData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,100% of ATK",
                       "sp-cost": "35",
                       "atk": "1100",
                       "data-1": "3"
@@ -5118,7 +4884,6 @@ export const skyEmperorData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,200% of ATK",
                       "sp-cost": "40",
                       "atk": "1200",
                       "data-1": "3"
@@ -5128,7 +4893,6 @@ export const skyEmperorData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,300% of ATK",
                       "sp-cost": "45",
                       "atk": "1300",
                       "data-1": "3"
@@ -5138,7 +4902,6 @@ export const skyEmperorData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,400% of ATK",
                       "sp-cost": "50",
                       "atk": "1400",
                       "data-1": "3"
@@ -5354,7 +5117,7 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "100% of ATK/Star Mark Duration: 4 sec",
+                      "effect": "Star Mark Duration: 4 sec",
                       "sp-cost": "45",
                       "range": "2 cells",
                       "data-1": "4000"
@@ -5363,7 +5126,7 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "100% of ATK/Star Mark Duration: 5 sec",
+                      "effect": "Star Mark Duration: 5 sec",
                       "sp-cost": "40",
                       "range": "2 cells",
                       "data-1": "5000"
@@ -5372,7 +5135,7 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "100% of ATK/Star Mark Duration: 6 sec",
+                      "effect": "Star Mark Duration: 6 sec",
                       "sp-cost": "35",
                       "range": "2 cells",
                       "data-1": "6000"
@@ -5381,7 +5144,7 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "100% of ATK/Star Mark Duration: 7 sec",
+                      "effect": "Star Mark Duration: 7 sec",
                       "sp-cost": "30",
                       "range": "2 cells",
                       "data-1": "7000"
@@ -5390,7 +5153,7 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "100% of ATK/Star Mark Duration: 8 sec",
+                      "effect": "Star Mark Duration: 8 sec",
                       "sp-cost": "25",
                       "range": "2 cells",
                       "data-1": "8000"
@@ -5399,7 +5162,7 @@ export const skyEmperorData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "100% of ATK/Star Mark Duration: 9 sec",
+                      "effect": "Star Mark Duration: 9 sec",
                       "sp-cost": "20",
                       "range": "2 cells",
                       "data-1": "9000"
@@ -5408,7 +5171,7 @@ export const skyEmperorData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "100% of ATK/Star Mark Duration: 10 sec",
+                      "effect": "Star Mark Duration: 10 sec",
                       "sp-cost": "15",
                       "range": "2 cells",
                       "data-1": "10000"
@@ -5670,7 +5433,7 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "300% of ATK/Skill cooldown: 20 sec",
+                      "effect": "Skill cooldown: 20 sec",
                       "sp-cost": "60",
                       "range": "3 cells",
                       "atk": "300",
@@ -5681,7 +5444,7 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "400% of ATK/Skill cooldown: 20 sec",
+                      "effect": "Skill cooldown: 20 sec",
                       "sp-cost": "65",
                       "range": "3 cells",
                       "atk": "400",
@@ -5692,7 +5455,7 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "500% of ATK/Skill cooldown: 20 sec",
+                      "effect": "Skill cooldown: 20 sec",
                       "sp-cost": "70",
                       "range": "3 cells",
                       "atk": "500",
@@ -5703,7 +5466,7 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "600% of ATK/Skill cooldown: 20 sec",
+                      "effect": "Skill cooldown: 20 sec",
                       "sp-cost": "75",
                       "range": "3 cells",
                       "atk": "600",
@@ -5714,7 +5477,7 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "700% of ATK/Skill cooldown: 20 sec",
+                      "effect": "Skill cooldown: 20 sec",
                       "sp-cost": "80",
                       "range": "3 cells",
                       "atk": "700",
@@ -6061,10 +5824,6 @@ export const skyEmperorData = {
                     "label": "Area of Effect"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "data-1",
                     "label": "Data 1"
                   }
@@ -6074,7 +5833,6 @@ export const skyEmperorData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,220% of ATK",
                       "sp-cost": "34",
                       "data-1": "2"
                     }
@@ -6083,7 +5841,6 @@ export const skyEmperorData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,440% of ATK",
                       "sp-cost": "37",
                       "data-1": "2"
                     }
@@ -6092,7 +5849,6 @@ export const skyEmperorData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,660% of ATK",
                       "sp-cost": "40",
                       "data-1": "2"
                     }
@@ -6101,7 +5857,6 @@ export const skyEmperorData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,880% of ATK",
                       "sp-cost": "43",
                       "data-1": "2"
                     }
@@ -6110,7 +5865,6 @@ export const skyEmperorData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "2,100% of ATK",
                       "sp-cost": "46",
                       "data-1": "2"
                     }
@@ -6119,7 +5873,6 @@ export const skyEmperorData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "2,320% of ATK",
                       "sp-cost": "49",
                       "data-1": "2"
                     }
@@ -6128,7 +5881,6 @@ export const skyEmperorData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "2,540% of ATK",
                       "sp-cost": "52",
                       "data-1": "2"
                     }
@@ -6137,7 +5889,6 @@ export const skyEmperorData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "2,760% of ATK",
                       "sp-cost": "55"
                     }
                   },
@@ -6145,7 +5896,6 @@ export const skyEmperorData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "2,980% of ATK",
                       "sp-cost": "58"
                     }
                   },
@@ -6153,7 +5903,6 @@ export const skyEmperorData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "3,200% of ATK",
                       "sp-cost": "61"
                     }
                   }
@@ -6432,10 +6181,6 @@ export const skyEmperorData = {
                     "label": "Area of Effect"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "atk",
                     "label": "Atk %"
                   },
@@ -6453,7 +6198,6 @@ export const skyEmperorData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,200% of ATK",
                       "sp-cost": "30",
                       "atk": "1100",
                       "data-1": "3",
@@ -6464,7 +6208,6 @@ export const skyEmperorData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,300% of ATK",
                       "sp-cost": "35",
                       "atk": "1100",
                       "data-1": "3",
@@ -6475,7 +6218,6 @@ export const skyEmperorData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,400% of ATK",
                       "sp-cost": "40",
                       "atk": "1100",
                       "data-1": "3",
@@ -6486,7 +6228,6 @@ export const skyEmperorData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,500% of ATK",
                       "sp-cost": "45",
                       "atk": "1100",
                       "data-1": "3",
@@ -6497,7 +6238,6 @@ export const skyEmperorData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,600% of ATK",
                       "sp-cost": "50",
                       "atk": "1100",
                       "data-1": "3",
@@ -6508,7 +6248,6 @@ export const skyEmperorData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,700% of ATK",
                       "sp-cost": "55",
                       "atk": "1100",
                       "data-1": "3",
@@ -6519,7 +6258,6 @@ export const skyEmperorData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,800% of ATK",
                       "sp-cost": "60",
                       "atk": "1100",
                       "data-1": "3",
@@ -6530,7 +6268,6 @@ export const skyEmperorData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,900% of ATK",
                       "sp-cost": "65"
                     }
                   },
@@ -6538,7 +6275,6 @@ export const skyEmperorData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "2,000% of ATK",
                       "sp-cost": "70"
                     }
                   },
@@ -6546,7 +6282,6 @@ export const skyEmperorData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "2,100% of ATK",
                       "sp-cost": "75"
                     }
                   }
@@ -6784,10 +6519,6 @@ export const skyEmperorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -6804,7 +6535,6 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "40",
                       "data-1": "120000",
                       "data-2": "10"
@@ -6813,7 +6543,6 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "45",
                       "data-1": "140000",
                       "data-2": "10"
@@ -6822,7 +6551,6 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "50",
                       "data-1": "160000",
                       "data-2": "12"
@@ -6831,7 +6559,6 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "55",
                       "data-1": "180000",
                       "data-2": "12"
@@ -6840,7 +6567,6 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "60",
                       "data-1": "200000",
                       "data-2": "14"
@@ -6849,7 +6575,6 @@ export const skyEmperorData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "65",
                       "data-1": "220000",
                       "data-2": "14"
@@ -6858,7 +6583,6 @@ export const skyEmperorData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "70",
                       "data-1": "240000",
                       "data-2": "15"
@@ -6867,21 +6591,18 @@ export const skyEmperorData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "1100%",
                       "sp-cost": "85"
                     }
                   }
@@ -7152,10 +6873,6 @@ export const skyEmperorData = {
                     "label": "Area of Effect"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "atk",
                     "label": "Atk %"
                   },
@@ -7181,7 +6898,6 @@ export const skyEmperorData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,000% of ATK",
                       "sp-cost": "70",
                       "atk": "1000",
                       "data-1": "3",
@@ -7194,7 +6910,6 @@ export const skyEmperorData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,200% of ATK",
                       "sp-cost": "75",
                       "atk": "1200",
                       "data-1": "3",
@@ -7207,7 +6922,6 @@ export const skyEmperorData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,400% of ATK",
                       "sp-cost": "80",
                       "atk": "1400",
                       "data-1": "3",
@@ -7220,7 +6934,6 @@ export const skyEmperorData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,600% of ATK",
                       "sp-cost": "85",
                       "atk": "1600",
                       "data-1": "3",
@@ -7233,7 +6946,6 @@ export const skyEmperorData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,800% of ATK",
                       "sp-cost": "90",
                       "atk": "1800",
                       "data-1": "3",
@@ -7420,7 +7132,7 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Power bonus +5%/Duration: 20 sec",
+                      "effect": "Power bonus +5% / Duration: 20 sec",
                       "sp-cost": "40",
                       "data-1": "20000",
                       "data-2": "5"
@@ -7429,7 +7141,7 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Power bonus +10%/Duration: 30 sec",
+                      "effect": "Power bonus +10% / Duration: 30 sec",
                       "sp-cost": "40",
                       "data-1": "30000",
                       "data-2": "10"
@@ -7438,7 +7150,7 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Power bonus +15%/Duration: 40 sec",
+                      "effect": "Power bonus +15% / Duration: 40 sec",
                       "sp-cost": "40",
                       "data-1": "40000",
                       "data-2": "15"
@@ -7447,7 +7159,7 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Power bonus +20%/Duration: 50 sec",
+                      "effect": "Power bonus +20% / Duration: 50 sec",
                       "sp-cost": "40",
                       "data-1": "50000",
                       "data-2": "20"
@@ -7456,7 +7168,7 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Power bonus +25%/Duration: 60 sec",
+                      "effect": "Power bonus +25% / Duration: 60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "25"
@@ -7640,7 +7352,7 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Power bonus +5%/Duration: 20 sec",
+                      "effect": "Power bonus +5% / Duration: 20 sec",
                       "sp-cost": "40",
                       "data-1": "20000",
                       "data-2": "5"
@@ -7649,7 +7361,7 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Power bonus +10%/Duration: 30 sec",
+                      "effect": "Power bonus +10% / Duration: 30 sec",
                       "sp-cost": "40",
                       "data-1": "30000",
                       "data-2": "10"
@@ -7658,7 +7370,7 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Power bonus +15%/Duration: 40 sec",
+                      "effect": "Power bonus +15% / Duration: 40 sec",
                       "sp-cost": "40",
                       "data-1": "40000",
                       "data-2": "15"
@@ -7667,7 +7379,7 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Power bonus +20%/Duration: 50 sec",
+                      "effect": "Power bonus +20% / Duration: 50 sec",
                       "sp-cost": "40",
                       "data-1": "50000",
                       "data-2": "20"
@@ -7676,7 +7388,7 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Power bonus +25%/Duration: 60 sec",
+                      "effect": "Power bonus +25% / Duration: 60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "25"
@@ -7860,7 +7572,7 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Power bonus +5%/Duration: 20 sec",
+                      "effect": "Power bonus +5% / Duration: 20 sec",
                       "sp-cost": "40",
                       "data-1": "20000",
                       "data-2": "5"
@@ -7869,7 +7581,7 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Power bonus +10%/Duration: 30 sec",
+                      "effect": "Power bonus +10% / Duration: 30 sec",
                       "sp-cost": "40",
                       "data-1": "30000",
                       "data-2": "10"
@@ -7878,7 +7590,7 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Power bonus +15%/Duration: 40 sec",
+                      "effect": "Power bonus +15% / Duration: 40 sec",
                       "sp-cost": "40",
                       "data-1": "40000",
                       "data-2": "15"
@@ -7887,7 +7599,7 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Power bonus +20%/Duration: 50 sec",
+                      "effect": "Power bonus +20% / Duration: 50 sec",
                       "sp-cost": "40",
                       "data-1": "50000",
                       "data-2": "20"
@@ -7896,7 +7608,7 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Power bonus +25%/Duration: 60 sec",
+                      "effect": "Power bonus +25% / Duration: 60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "25"
@@ -8164,7 +7876,7 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 6 sec./Range: 5 x 5/Hits: 12",
+                      "effect": "Duration: 6 sec. / Range: 5 x 5 / Hits: 12",
                       "sp-cost": "50",
                       "range": "7 cells",
                       "atk": "100",
@@ -8175,7 +7887,7 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 7 sec./Range: 5 x 5/Hits: 14",
+                      "effect": "Duration: 7 sec. / Range: 5 x 5 / Hits: 14",
                       "sp-cost": "55",
                       "range": "7 cells",
                       "atk": "100",
@@ -8186,7 +7898,7 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 8 sec./Range: 5 x 5/Hits: 16",
+                      "effect": "Duration: 8 sec. / Range: 5 x 5 / Hits: 16",
                       "sp-cost": "60",
                       "range": "7 cells",
                       "atk": "100",
@@ -8197,7 +7909,7 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 9 sec./Range: 5 x 5/Hits: 18",
+                      "effect": "Duration: 9 sec. / Range: 5 x 5 / Hits: 18",
                       "sp-cost": "65",
                       "range": "7 cells",
                       "atk": "100",
@@ -8208,7 +7920,7 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 10 sec./Range: 5 x 5/Hits: 20",
+                      "effect": "Duration: 10 sec. / Range: 5 x 5 / Hits: 20",
                       "sp-cost": "70",
                       "range": "7 cells",
                       "atk": "100",
@@ -8386,7 +8098,7 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 60 sec./Skill cooldown: 150 sec",
+                      "effect": "Duration: 60 sec. / Skill cooldown: 150 sec",
                       "sp-cost": "40",
                       "data-1": "60000"
                     }
@@ -8394,7 +8106,7 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 60 sec./Skill cooldown: 120 sec",
+                      "effect": "Duration: 60 sec. / Skill cooldown: 120 sec",
                       "sp-cost": "40",
                       "data-1": "60000"
                     }
@@ -8402,7 +8114,7 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 60 sec./Skill cooldown: 90 sec",
+                      "effect": "Duration: 60 sec. / Skill cooldown: 90 sec",
                       "sp-cost": "40",
                       "data-1": "60000"
                     }
@@ -8410,7 +8122,7 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 60 sec./Skill cooldown: 60 sec",
+                      "effect": "Duration: 60 sec. / Skill cooldown: 60 sec",
                       "sp-cost": "40",
                       "data-1": "60000"
                     }
@@ -8418,7 +8130,7 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 60 sec./Skill cooldown: 30 sec",
+                      "effect": "Duration: 60 sec. / Skill cooldown: 30 sec",
                       "sp-cost": "40",
                       "data-1": "60000"
                     }
@@ -11088,7 +10800,7 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -11116,7 +10828,7 @@ export const skyEmperorData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -11470,10 +11182,6 @@ export const skyEmperorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -11482,49 +11190,42 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "2"
                     }
                   }
@@ -11645,10 +11346,6 @@ export const skyEmperorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -11657,49 +11354,42 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "2"
                     }
                   }
@@ -11820,10 +11510,6 @@ export const skyEmperorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -11832,49 +11518,42 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "370%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "2"
                     }
                   }
@@ -11995,10 +11674,6 @@ export const skyEmperorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12007,49 +11682,42 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "370%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "2"
                     }
                   }
@@ -12170,10 +11838,6 @@ export const skyEmperorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12182,49 +11846,42 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "40%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "50%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "60%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "70%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "80%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "90%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "10"
                     }
                   }
@@ -14394,45 +14051,36 @@ export const skyEmperorData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 1100+(Sky Mastery Lv x 5)%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 1700+(Sky Mastery Lv x 10)%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 2300+(Sky Mastery Lv x 15)%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 2900+(Sky Mastery Lv x 20)%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 3500+(Sky Mastery Lv x 25)%",
                   "sp-cost": "60"
                 }
               }
@@ -14588,35 +14236,35 @@ export const skyEmperorData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 1150+(Sky Mastery Lv x 5)%/5 x 5 cells",
+                  "effect": "5 x 5 cells",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 1600+(Sky Mastery Lv x 10)%/5 x 5 cells",
+                  "effect": "5 x 5 cells",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 2050+(Sky Mastery Lv x 15)%/7 x 7 cells",
+                  "effect": "7 x 7 cells",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 2500+(Sky Mastery Lv x 20)%/7 x 7 cells",
+                  "effect": "7 x 7 cells",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 2950+(Sky Mastery Lv x 25)%/9 x 9 cells",
+                  "effect": "9 x 9 cells",
                   "sp-cost": "64"
                 }
               }
@@ -14776,35 +14424,35 @@ export const skyEmperorData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 800+(Sky Mastery Lv x 3)%/Twinkling Gala x y AOE: 13 x 13 cells",
+                  "effect": "Twinkling Gala x y AOE: 13 x 13 cells",
                   "sp-cost": "124"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 1300+(Sky Mastery Lv x 6)%/Twinkling Gala x y AOE: 13 x 13 cells",
+                  "effect": "Twinkling Gala x y AOE: 13 x 13 cells",
                   "sp-cost": "124"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 1800+(Sky Mastery Lv x 9)%/Twinkling Gala x y AOE: 11 x 11 cells",
+                  "effect": "Twinkling Gala x y AOE: 11 x 11 cells",
                   "sp-cost": "124"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 2300+(Sky Mastery Lv x 12)%/Twinkling Gala x y AOE: 11 x 11 cells",
+                  "effect": "Twinkling Gala x y AOE: 11 x 11 cells",
                   "sp-cost": "124"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 2800+(Sky Mastery Lv x 15)%/Twinkling Gala x y AOE: 9 x 9 cells",
+                  "effect": "Twinkling Gala x y AOE: 9 x 9 cells",
                   "sp-cost": "124"
                 }
               }
@@ -15005,35 +14653,35 @@ export const skyEmperorData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 2850+(Sky Mastery Lv x 5)%/3 x 3 cells",
+                  "effect": "3 x 3 cells",
                   "sp-cost": "49"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 4100+(Sky Mastery Lv x 10)%/3 x 3 cells",
+                  "effect": "3 x 3 cells",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 5350+(Sky Mastery Lv x 15)%/5 x 5 cells",
+                  "effect": "5 x 5 cells",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 6600+(Sky Mastery Lv x 20)%/5 x 5 cells",
+                  "effect": "5 x 5 cells",
                   "sp-cost": "61"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 7850+(Sky Mastery Lv x 25)%/7 x 7 cells",
+                  "effect": "7 x 7 cells",
                   "sp-cost": "65"
                 }
               }
@@ -15207,35 +14855,35 @@ export const skyEmperorData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 1800+(Sky Mastery Lv x 5)%\nATK(Midnight) 3000+(Sky Mastery Lv x 5)%/5 x 5 cells",
+                  "effect": "5 x 5 cells",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 3000+(Sky Mastery Lv x 10)%\nATK(Midnight) 4450+(Sky Mastery Lv x 10)%/5 x 5 cells",
+                  "effect": "5 x 5 cells",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 4200+(Sky Mastery Lv x 15)%\nATK(Midnight) 5900+(Sky Mastery Lv x 15)%/7 x 7 cells",
+                  "effect": "7 x 7 cells",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 5400+(Sky Mastery Lv x 20)%\nATK(Midnight) 7350+(Sky Mastery Lv x 20)%/7 x 7 cells",
+                  "effect": "7 x 7 cells",
                   "sp-cost": "66"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 6600+(Sky Mastery Lv x 25)%\nATK(Midnight) 8800+(Sky Mastery Lv x 25)%/9 x 9 cells",
+                  "effect": "9 x 9 cells",
                   "sp-cost": "68"
                 }
               }
@@ -15422,45 +15070,36 @@ export const skyEmperorData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 900+(Sky Mastery Lv x 5)%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 1300+(Sky Mastery Lv x 10)%",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 1700+(Sky Mastery Lv x 15)%",
                   "sp-cost": "58"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 2100+(Sky Mastery Lv x 20)%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 2500+(Sky Mastery Lv x 25)%",
                   "sp-cost": "62"
                 }
               }
@@ -15618,35 +15257,35 @@ export const skyEmperorData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 1350+(Sky Mastery Lv x 5)%/3 x 3 cells",
+                  "effect": "3 x 3 cells",
                   "sp-cost": "46"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 1750+(Sky Mastery Lv x 10)%/3 x 3 cells",
+                  "effect": "3 x 3 cells",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 2150+(Sky Mastery Lv x 15)%/5 x 5 cells",
+                  "effect": "5 x 5 cells",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 2550+(Sky Mastery Lv x 20)%/5 x 5 cells",
+                  "effect": "5 x 5 cells",
                   "sp-cost": "58"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 2950+(Sky Mastery Lv x 25)%/7 x 7 cells",
+                  "effect": "7 x 7 cells",
                   "sp-cost": "62"
                 }
               }
@@ -15820,35 +15459,35 @@ export const skyEmperorData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 800+(Sky Mastery Lv x 5)%\nATK(Moonset) 1000+(Sky Mastery Lv x 5)%/5 x 5 cells",
+                  "effect": "5 x 5 cells",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 1200+(Sky Mastery Lv x 10)%\nATK(Moonset) 1600+(Sky Mastery Lv x 10)%/5 x 5 cells",
+                  "effect": "5 x 5 cells",
                   "sp-cost": "58"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 1600+(Sky Mastery Lv x 15)%\nATK(Moonset) 2200+(Sky Mastery Lv x 15)%/7 x 7 cells",
+                  "effect": "7 x 7 cells",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 2000+(Sky Mastery Lv x 20)%\nATK(Moonset) 2800+(Sky Mastery Lv x 20)%/7 x 7 cells",
+                  "effect": "7 x 7 cells",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 2400+(Sky Mastery Lv x 25)%\nATK(Moonset) 3400+(Sky Mastery Lv x 25)%/9 x 9 cells",
+                  "effect": "9 x 9 cells",
                   "sp-cost": "64"
                 }
               }
@@ -16049,35 +15688,35 @@ export const skyEmperorData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 800+(Sky Mastery Lv x 5)%\nStar Cannon Range: 13 x 13 cells/ ma x shooting star per drop : 1",
+                  "effect": "Star Cannon Range: 13 x 13 cells / ma x shooting star per drop : 1",
                   "sp-cost": "90"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 1350+(Sky Mastery Lv x 10)%\nStar Cannon Range: 13 x 13 cells/ ma x shooting star per drop : 1",
+                  "effect": "Star Cannon Range: 13 x 13 cells / ma x shooting star per drop : 1",
                   "sp-cost": "95"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 1900+(Sky Mastery Lv x 15)%\nStar Cannon Range: 11 x 11 cells/ ma x shooting star per drop : 1",
+                  "effect": "Star Cannon Range: 11 x 11 cells / ma x shooting star per drop : 1",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 2450+(Sky Mastery Lv x 20)%\nStar Cannon Range: 11 x 11 cells/ ma x shooting star per drop : 2",
+                  "effect": "Star Cannon Range: 11 x 11 cells / ma x shooting star per drop : 2",
                   "sp-cost": "105"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 3000+(Sky Mastery Lv x 25)%\nStar Cannon Range: 9 x 9 cells/ ma x shooting star per drop : 2",
+                  "effect": "Star Cannon Range: 9 x 9 cells / ma x shooting star per drop : 2",
                   "sp-cost": "110"
                 }
               }
@@ -16336,10 +15975,6 @@ export const skyEmperorData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -16348,70 +15983,60 @@ export const skyEmperorData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "1450%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "2650%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "3850%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "5050%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "6250%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk-per-hit": "7450%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk-per-hit": "8650%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk-per-hit": "9850%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk-per-hit": "11050%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk-per-hit": "12250%",
                   "sp-cost": "85"
                 }
               }
@@ -16797,70 +16422,9 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "2"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "(Base Damage (ATK) + (Sky Mastery level x Skill Level Factor))% ATK"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
-                "id": "skill-level-factor",
-                "label": "Skill Level Factor"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk": "1,500",
-                  "skill-level-factor": "7"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk": "3,000",
-                  "skill-level-factor": "14"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk": "4,500",
-                  "skill-level-factor": "21"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk": "6,000",
-                  "skill-level-factor": "28"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk": "7,500",
-                  "skill-level-factor": "35"
-                }
-              }
-            ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK) + (Sky Mastery level x Skill Level Factor))% ATK"
-              }
-            ]
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [
@@ -16985,70 +16549,9 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "2"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "(Base Damage (ATK per Hit) + (Sky Mastery level x Skill Level Factor))% ATK per hit"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
-                "id": "skill-level-factor",
-                "label": "Skill Level Factor"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk-per-hit": "1,650",
-                  "skill-level-factor": "9"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk-per-hit": "2,100",
-                  "skill-level-factor": "18"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk-per-hit": "2,550",
-                  "skill-level-factor": "27"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk-per-hit": "3,000",
-                  "skill-level-factor": "36"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk-per-hit": "3,450",
-                  "skill-level-factor": "45"
-                }
-              }
-            ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK per Hit) + (Sky Mastery level x Skill Level Factor))% ATK per hit"
-              }
-            ]
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [
@@ -17153,70 +16656,9 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "2"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "(Base Damage (ATK per Hit) + (Sky Mastery level x Skill Level Factor))% ATK per hit"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
-                "id": "skill-level-factor",
-                "label": "Skill Level Factor"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk-per-hit": "600",
-                  "skill-level-factor": "5"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk-per-hit": "800",
-                  "skill-level-factor": "10"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk-per-hit": "1,000",
-                  "skill-level-factor": "15"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk-per-hit": "1,200",
-                  "skill-level-factor": "20"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk-per-hit": "1,400",
-                  "skill-level-factor": "25"
-                }
-              }
-            ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK per Hit) + (Sky Mastery level x Skill Level Factor))% ATK per hit"
-              }
-            ]
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [

@@ -1,5 +1,5 @@
 export const dragonKnightData = {
-  "generatedAt": "2026-07-09T12:09:04.765Z",
+  "generatedAt": "2026-07-09T13:19:13.998Z",
   "classId": 4252,
   "classSlug": "dragon-knight",
   "className": "Dragon Knight",
@@ -492,10 +492,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -509,7 +505,6 @@ export const dragonKnightData = {
                     "level": 1,
                     "values": {
                       "duration": "30 seconds",
-                      "base-damage-atk-per-hit": "900%",
                       "sp-cost": "30"
                     }
                   },
@@ -517,7 +512,6 @@ export const dragonKnightData = {
                     "level": 2,
                     "values": {
                       "duration": "60 seconds",
-                      "base-damage-atk-per-hit": "1300%",
                       "sp-cost": "40"
                     }
                   },
@@ -525,7 +519,6 @@ export const dragonKnightData = {
                     "level": 3,
                     "values": {
                       "duration": "90 seconds",
-                      "base-damage-atk-per-hit": "1700%",
                       "sp-cost": "50"
                     }
                   },
@@ -533,7 +526,6 @@ export const dragonKnightData = {
                     "level": 4,
                     "values": {
                       "duration": "120 seconds",
-                      "base-damage-atk-per-hit": "2100%",
                       "sp-cost": "60"
                     }
                   },
@@ -541,7 +533,6 @@ export const dragonKnightData = {
                     "level": 5,
                     "values": {
                       "duration": "150 seconds",
-                      "base-damage-atk-per-hit": "2500%",
                       "sp-cost": "70"
                     }
                   }
@@ -1331,10 +1322,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1348,7 +1335,6 @@ export const dragonKnightData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "950%",
                       "sp-cost": "36"
                     }
                   },
@@ -1356,7 +1342,6 @@ export const dragonKnightData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "1700%",
                       "sp-cost": "40"
                     }
                   },
@@ -1364,7 +1349,6 @@ export const dragonKnightData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "2450%",
                       "sp-cost": "44"
                     }
                   },
@@ -1372,7 +1356,6 @@ export const dragonKnightData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "3200%",
                       "sp-cost": "48"
                     }
                   },
@@ -1380,7 +1363,6 @@ export const dragonKnightData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "3950%",
                       "sp-cost": "52"
                     }
                   },
@@ -1388,7 +1370,6 @@ export const dragonKnightData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "4700%",
                       "sp-cost": "56"
                     }
                   },
@@ -1396,7 +1377,6 @@ export const dragonKnightData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "5450%",
                       "sp-cost": "60"
                     }
                   },
@@ -1404,7 +1384,6 @@ export const dragonKnightData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "6200%",
                       "sp-cost": "64"
                     }
                   },
@@ -1412,7 +1391,6 @@ export const dragonKnightData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "6950%",
                       "sp-cost": "68"
                     }
                   },
@@ -1420,7 +1398,6 @@ export const dragonKnightData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "7700%",
                       "sp-cost": "72"
                     }
                   }
@@ -1484,18 +1461,11 @@ export const dragonKnightData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage Logic",
-                  "before": "2 split hits",
-                  "after": "2 cumulative hits",
-                  "scope": "",
-                  "source": "Changes damage logic from 2 split hits to 2 cumulative hits."
-                },
-                {
                   "label": "Damage",
-                  "before": "3000%Atk",
-                  "after": "7300%Atk per hit",
+                  "before": "2 split hits (logic)/3000%Atk",
+                  "after": "2 cumulative hits (logic)/7300%Atk per hit",
                   "scope": "Lv 10",
-                  "source": "Increases damage from 3000%Atk to 7300%Atk per hit based on level 10."
+                  "source": "Changes damage logic from 2 split hits to 2 cumulative hits. / Increases damage from 3000%Atk to 7300%Atk per hit based on level 10."
                 },
                 {
                   "label": "Cooldown",
@@ -1750,10 +1720,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1767,7 +1733,6 @@ export const dragonKnightData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "400%",
                       "sp-cost": "61"
                     }
                   },
@@ -1775,7 +1740,6 @@ export const dragonKnightData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "750%",
                       "sp-cost": "64"
                     }
                   },
@@ -1783,7 +1747,6 @@ export const dragonKnightData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "1100%",
                       "sp-cost": "67"
                     }
                   },
@@ -1791,7 +1754,6 @@ export const dragonKnightData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "1450%",
                       "sp-cost": "70"
                     }
                   },
@@ -1799,7 +1761,6 @@ export const dragonKnightData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "1800%",
                       "sp-cost": "73"
                     }
                   },
@@ -1807,7 +1768,6 @@ export const dragonKnightData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "2150%",
                       "sp-cost": "76"
                     }
                   },
@@ -1815,7 +1775,6 @@ export const dragonKnightData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "2500%",
                       "sp-cost": "79"
                     }
                   },
@@ -1823,7 +1782,6 @@ export const dragonKnightData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "2850%",
                       "sp-cost": "82"
                     }
                   },
@@ -1831,7 +1789,6 @@ export const dragonKnightData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "3200%",
                       "sp-cost": "85"
                     }
                   },
@@ -1839,7 +1796,6 @@ export const dragonKnightData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "3550%",
                       "sp-cost": "88"
                     }
                   }
@@ -2009,10 +1965,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2021,35 +1973,30 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "500%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "800%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "1100%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "1400%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "1700%",
                       "sp-cost": "40"
                     }
                   }
@@ -2239,10 +2186,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2251,35 +2194,30 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "600%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "1000%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "1400%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "1800%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "2200%",
                       "sp-cost": "55"
                     }
                   }
@@ -2529,50 +2467,7 @@ export const dragonKnightData = {
                 "value": "2"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "1450%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "2050%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "2650%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "3250%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "3850%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [
@@ -2724,10 +2619,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -2741,7 +2632,6 @@ export const dragonKnightData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "1950%",
                       "sp-cost": "27"
                     }
                   },
@@ -2749,7 +2639,6 @@ export const dragonKnightData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "3550%",
                       "sp-cost": "34"
                     }
                   },
@@ -2757,7 +2646,6 @@ export const dragonKnightData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "5150%",
                       "sp-cost": "41"
                     }
                   },
@@ -2765,7 +2653,6 @@ export const dragonKnightData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "6750%",
                       "sp-cost": "48"
                     }
                   },
@@ -2773,7 +2660,6 @@ export const dragonKnightData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "8350%",
                       "sp-cost": "55"
                     }
                   }
@@ -2844,8 +2730,8 @@ export const dragonKnightData = {
                 {
                   "label": "Damage",
                   "before": "1350%Atk",
-                  "after": "5150%Atk based on level 5 (using level 5 weapon and weapon weight is 150)",
-                  "scope": "",
+                  "after": "5150%Atk",
+                  "scope": "Lv 5 (using level 5 weapon and weapon weight is 150)",
                   "source": "Increases damage from 1350%Atk to 5150%Atk based on level 5 (using level 5 weapon and weapon weight is 150)."
                 },
                 {
@@ -3055,10 +2941,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3067,35 +2949,30 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "500%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "1000%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "1500%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "2000%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "2500%",
                       "sp-cost": "50"
                     }
                   }
@@ -3336,7 +3213,7 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "+115% Increase/ +10% Additional damage to Human/Angel enemies\n/HP consumed: 100",
+                      "effect": "+115% Increase / +10% Additional damage to Human / Angel enemies\nHP consumed: 100",
                       "duration": "30 seconds",
                       "sp-cost": "100"
                     }
@@ -3344,7 +3221,7 @@ export const dragonKnightData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "+130% Increase/ +20% Additional damage to Human/Angel enemies\n/HP consumed: 90",
+                      "effect": "+130% Increase / +20% Additional damage to Human / Angel enemies\nHP consumed: 90",
                       "duration": "60 seconds",
                       "sp-cost": "100"
                     }
@@ -3352,7 +3229,7 @@ export const dragonKnightData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "+145% Increase/ +30% Additional damage to Human/Angel enemies\n/HP consumed: 80",
+                      "effect": "+145% Increase / +30% Additional damage to Human / Angel enemies\nHP consumed: 80",
                       "duration": "90 seconds",
                       "sp-cost": "100"
                     }
@@ -3360,7 +3237,7 @@ export const dragonKnightData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "+160% Increase/ +40% Additional damage to Human/Angel enemies\n/HP consumed: 70",
+                      "effect": "+160% Increase / +40% Additional damage to Human / Angel enemies\nHP consumed: 70",
                       "duration": "120 seconds",
                       "sp-cost": "100"
                     }
@@ -3368,7 +3245,7 @@ export const dragonKnightData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "+175% Increase/ +50% Additional damage to Human/Angel enemies\n/HP consumed: 60",
+                      "effect": "+175% Increase / +50% Additional damage to Human / Angel enemies\nHP consumed: 60",
                       "duration": "150 seconds",
                       "sp-cost": "100"
                     }
@@ -3376,7 +3253,7 @@ export const dragonKnightData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "+190% Increase/ +60% Additional damage to Human/Angel enemies\n/HP consumed: 50",
+                      "effect": "+190% Increase / +60% Additional damage to Human / Angel enemies\nHP consumed: 50",
                       "duration": "180 seconds",
                       "sp-cost": "100"
                     }
@@ -3384,7 +3261,7 @@ export const dragonKnightData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "+205% Increase/ +70% Additional damage to Human/Angel enemies\n/HP consumed: 40",
+                      "effect": "+205% Increase / +70% Additional damage to Human / Angel enemies\nHP consumed: 40",
                       "duration": "210 seconds",
                       "sp-cost": "100"
                     }
@@ -3392,7 +3269,7 @@ export const dragonKnightData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "+220% Increase/ +80% Additional damage to Human/Angel enemies\n/HP consumed: 30",
+                      "effect": "+220% Increase / +80% Additional damage to Human / Angel enemies\nHP consumed: 30",
                       "duration": "240 seconds",
                       "sp-cost": "100"
                     }
@@ -3400,7 +3277,7 @@ export const dragonKnightData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "+235% Increase/ +90% Additional damage to Human/Angel enemies\n/HP consumed: 20",
+                      "effect": "+235% Increase / +90% Additional damage to Human / Angel enemies\nHP consumed: 20",
                       "duration": "270 seconds",
                       "sp-cost": "100"
                     }
@@ -3408,7 +3285,7 @@ export const dragonKnightData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "+250% Increase/ +100% Additional to Human/Angel enemies\n/HP consumed: 10",
+                      "effect": "+250% Increase / +100% Additional to Human / Angel enemies\nHP consumed: 10",
                       "duration": "300 seconds",
                       "sp-cost": "100"
                     }
@@ -3652,10 +3529,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3664,70 +3537,60 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "3650%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "7300%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "10950%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "14600%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "18250%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "21900%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "25550%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "29200%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "32850%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "36500%",
                       "sp-cost": "100"
                     }
                   }
@@ -4159,10 +4022,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -4179,7 +4038,6 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "50%",
                       "sp-cost": "15",
                       "range": "5 cells",
                       "atk": "100"
@@ -4188,7 +4046,6 @@ export const dragonKnightData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "18",
                       "range": "6 cells",
                       "atk": "120"
@@ -4197,7 +4054,6 @@ export const dragonKnightData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "21",
                       "range": "7 cells",
                       "atk": "140"
@@ -4206,7 +4062,6 @@ export const dragonKnightData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "24",
                       "range": "8 cells",
                       "atk": "160"
@@ -4215,7 +4070,6 @@ export const dragonKnightData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "27",
                       "range": "9 cells",
                       "atk": "180"
@@ -5128,10 +4982,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -5152,7 +5002,6 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "60",
                       "range": "5 cells",
                       "atk": "640",
@@ -5162,7 +5011,6 @@ export const dragonKnightData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "60",
                       "range": "5 cells",
                       "atk": "680",
@@ -5172,7 +5020,6 @@ export const dragonKnightData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "60",
                       "range": "5 cells",
                       "atk": "720",
@@ -5182,7 +5029,6 @@ export const dragonKnightData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1400%",
                       "sp-cost": "60",
                       "range": "5 cells",
                       "atk": "760",
@@ -5192,7 +5038,6 @@ export const dragonKnightData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1600%",
                       "sp-cost": "60",
                       "range": "5 cells",
                       "atk": "800",
@@ -5202,7 +5047,6 @@ export const dragonKnightData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "1800%",
                       "sp-cost": "60",
                       "range": "5 cells",
                       "atk": "840",
@@ -5212,7 +5056,6 @@ export const dragonKnightData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "2000%",
                       "sp-cost": "60",
                       "range": "5 cells",
                       "atk": "880",
@@ -5222,7 +5065,6 @@ export const dragonKnightData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "2200%",
                       "sp-cost": "60",
                       "range": "5 cells",
                       "atk": "920",
@@ -5232,7 +5074,6 @@ export const dragonKnightData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "2400%",
                       "sp-cost": "60",
                       "range": "5 cells",
                       "atk": "960",
@@ -5242,7 +5083,6 @@ export const dragonKnightData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "2600%",
                       "sp-cost": "60",
                       "range": "5 cells",
                       "atk": "1000",
@@ -5267,9 +5107,9 @@ export const dragonKnightData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage While Under Dragonic Aura Buff",
-                  "before": "3200%Atk",
-                  "after": "4200%Atk",
+                  "label": "Damage",
+                  "before": "3200%Atk (while under Dragonic Aura buff)",
+                  "after": "4200%Atk (while under Dragonic Aura buff)",
                   "scope": "Lv 10",
                   "source": "Increases damage while under Dragonic Aura buff from 3200%Atk to 4200%Atk based on level 10."
                 }
@@ -6339,10 +6179,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -6355,7 +6191,6 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "33",
                       "range": "7 cells"
                     }
@@ -6363,7 +6198,6 @@ export const dragonKnightData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "1350%",
                       "sp-cost": "36",
                       "range": "7 cells"
                     }
@@ -6371,7 +6205,6 @@ export const dragonKnightData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1500%",
                       "sp-cost": "39",
                       "range": "8 cells"
                     }
@@ -6379,7 +6212,6 @@ export const dragonKnightData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1650%",
                       "sp-cost": "42",
                       "range": "8 cells"
                     }
@@ -6387,7 +6219,6 @@ export const dragonKnightData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1800%",
                       "sp-cost": "45",
                       "range": "9 cells"
                     }
@@ -6395,7 +6226,6 @@ export const dragonKnightData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "1950%",
                       "sp-cost": "48",
                       "range": "9 cells"
                     }
@@ -6403,7 +6233,6 @@ export const dragonKnightData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "2100%",
                       "sp-cost": "51",
                       "range": "10 cells"
                     }
@@ -6411,7 +6240,6 @@ export const dragonKnightData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "2250%",
                       "sp-cost": "54",
                       "range": "10 cells"
                     }
@@ -6419,7 +6247,6 @@ export const dragonKnightData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "2400%",
                       "sp-cost": "57",
                       "range": "11 cells"
                     }
@@ -6427,7 +6254,6 @@ export const dragonKnightData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "2550%",
                       "sp-cost": "60",
                       "range": "11 cells"
                     }
@@ -6580,10 +6406,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -6600,7 +6422,6 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "23",
                       "atk": "150"
                     }
@@ -6608,7 +6429,6 @@ export const dragonKnightData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "26",
                       "atk": "200"
                     }
@@ -6616,7 +6436,6 @@ export const dragonKnightData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "29",
                       "atk": "250"
                     }
@@ -6624,7 +6443,7 @@ export const dragonKnightData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Normal Weapon: ATK1200%/Two-handed Sword: ATK1000%/Spear:1600%",
+                      "effect": "Normal Weapon: ATK1200% / Two-handed Sword: ATK1000% / Spear:1600%",
                       "sp-cost": "32",
                       "atk": "300"
                     }
@@ -6632,7 +6451,7 @@ export const dragonKnightData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Normal Weapon: ATK1500%/Two-handed Sword: ATK1250%/Spear:2000%",
+                      "effect": "Normal Weapon: ATK1500% / Two-handed Sword: ATK1250% / Spear:2000%",
                       "sp-cost": "35",
                       "atk": "350"
                     }
@@ -7157,10 +6976,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7173,7 +6988,6 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "450%",
                       "sp-cost": "35",
                       "attack": "400\n200\n200"
                     }
@@ -7181,7 +6995,6 @@ export const dragonKnightData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "40",
                       "attack": "600\n400\n300"
                     }
@@ -7189,7 +7002,6 @@ export const dragonKnightData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1350%",
                       "sp-cost": "45",
                       "attack": "800\n600\n400"
                     }
@@ -7197,7 +7009,6 @@ export const dragonKnightData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1800%",
                       "sp-cost": "50",
                       "attack": "1000\n800\n500"
                     }
@@ -7205,7 +7016,6 @@ export const dragonKnightData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "2250%",
                       "sp-cost": "55",
                       "attack": "1200\n1000\n600"
                     }
@@ -8107,116 +7917,66 @@ export const dragonKnightData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "not-mounted-damage-4-mounted",
-                    "label": "Not Mounted, Damage + 4, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-8-mounted",
-                    "label": "Not Mounted, Damage + 8, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-12-mounted",
-                    "label": "Not Mounted, Damage +12, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-16-mounted",
-                    "label": "Not Mounted, Damage +16, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-20-mounted",
-                    "label": "Not Mounted, Damage +20, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-24-mounted",
-                    "label": "Not Mounted, Damage +24, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-28-mounted",
-                    "label": "Not Mounted, Damage +28, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-32-mounted",
-                    "label": "Not Mounted, Damage +32, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-36-mounted",
-                    "label": "Not Mounted, Damage +36, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-40-mounted",
-                    "label": "Not Mounted, Damage +40, Mounted,"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "not-mounted-damage-4-mounted": "+ 5",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "not-mounted-damage-8-mounted": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "not-mounted-damage-12-mounted": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "not-mounted-damage-16-mounted": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "not-mounted-damage-20-mounted": "+25",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "not-mounted-damage-24-mounted": "+30",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "not-mounted-damage-28-mounted": "+35",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "not-mounted-damage-32-mounted": "+40",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "not-mounted-damage-36-mounted": "+45",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "not-mounted-damage-40-mounted": "+50",
                       "sp-cost": "0"
                     }
                   }
@@ -9115,10 +8875,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -9143,7 +8899,6 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "13",
                       "range": "2 cells",
                       "atk": "140",
@@ -9154,7 +8909,6 @@ export const dragonKnightData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "14",
                       "range": "2 cells",
                       "atk": "180",
@@ -9165,7 +8919,6 @@ export const dragonKnightData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "15",
                       "range": "2 cells",
                       "atk": "220",
@@ -9176,7 +8929,6 @@ export const dragonKnightData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "16",
                       "range": "2 cells",
                       "atk": "260",
@@ -9187,7 +8939,6 @@ export const dragonKnightData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "17",
                       "range": "2 cells",
                       "atk": "300",
@@ -9198,7 +8949,6 @@ export const dragonKnightData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "18",
                       "range": "2 cells",
                       "atk": "340",
@@ -9209,7 +8959,6 @@ export const dragonKnightData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "380%",
                       "sp-cost": "19",
                       "range": "2 cells",
                       "atk": "380",
@@ -9220,7 +8969,6 @@ export const dragonKnightData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "420%",
                       "sp-cost": "20",
                       "range": "2 cells",
                       "atk": "420",
@@ -9231,7 +8979,6 @@ export const dragonKnightData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "460%",
                       "sp-cost": "21",
                       "range": "2 cells",
                       "atk": "460",
@@ -9242,7 +8989,6 @@ export const dragonKnightData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "22",
                       "range": "2 cells",
                       "atk": "500",
@@ -9360,45 +9106,36 @@ export const dragonKnightData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK Speed : 60%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK Speed : 70%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK Speed : 80%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK Speed : 90%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK Speed :100%",
                       "sp-cost": "0"
                     }
                   }
@@ -9554,10 +9291,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -9566,70 +9299,60 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "110%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "170%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "7"
                     }
                   }
@@ -10263,10 +9986,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -10275,35 +9994,30 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "350%",
                       "sp-cost": "10"
                     }
                   }
@@ -10459,10 +10173,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -10471,70 +10181,60 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "9"
                     }
                   }
@@ -10652,10 +10352,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -10664,35 +10360,30 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "23"
                     }
                   }
@@ -10878,10 +10569,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -10890,70 +10577,60 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "1100%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "1300%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "1400%",
                       "sp-cost": "24"
                     }
                   }
@@ -11266,10 +10943,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -11278,70 +10951,60 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "60%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "70%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "80%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "90%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "110%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "20"
                     }
                   }
@@ -11511,7 +11174,7 @@ export const dragonKnightData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -11539,7 +11202,7 @@ export const dragonKnightData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -11699,80 +11362,66 @@ export const dragonKnightData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -11933,70 +11582,70 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(HP 5+0.2% of Ma x HP)/10 sec",
+                      "effect": "(HP 5+0.2% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(HP 10+0.4% of Ma x HP)/10 sec",
+                      "effect": "(HP 10+0.4% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(HP 15+0.6% of Ma x HP)/10 sec",
+                      "effect": "(HP 15+0.6% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(HP 20+0.8% of Ma x HP)/10 sec",
+                      "effect": "(HP 20+0.8% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(HP 25+1.0% of Ma x HP)/10 sec",
+                      "effect": "(HP 25+1.0% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(HP 30+1.2% of Ma x HP)/10 sec",
+                      "effect": "(HP 30+1.2% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(HP 35+1.4% of Ma x HP)/10 sec",
+                      "effect": "(HP 35+1.4% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(HP 40+1.6% of Ma x HP)/10 sec",
+                      "effect": "(HP 40+1.6% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(HP 45+1.8% of Ma x HP)/10 sec",
+                      "effect": "(HP 45+1.8% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(HP 50+2.0% of Ma x HP)/10 sec",
+                      "effect": "(HP 50+2.0% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   }
@@ -12145,10 +11794,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12157,70 +11802,60 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "370%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "15"
                     }
                   }
@@ -12863,80 +12498,66 @@ export const dragonKnightData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -13108,10 +12729,6 @@ export const dragonKnightData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -13120,70 +12737,60 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "30"
                     }
                   }
@@ -13737,10 +13344,6 @@ export const dragonKnightData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -13754,7 +13357,6 @@ export const dragonKnightData = {
                 "level": 1,
                 "values": {
                   "duration": "30 seconds",
-                  "base-damage-atk-per-hit": "900%",
                   "sp-cost": "30"
                 }
               },
@@ -13762,7 +13364,6 @@ export const dragonKnightData = {
                 "level": 2,
                 "values": {
                   "duration": "60 seconds",
-                  "base-damage-atk-per-hit": "1300%",
                   "sp-cost": "40"
                 }
               },
@@ -13770,7 +13371,6 @@ export const dragonKnightData = {
                 "level": 3,
                 "values": {
                   "duration": "90 seconds",
-                  "base-damage-atk-per-hit": "1700%",
                   "sp-cost": "50"
                 }
               },
@@ -13778,7 +13378,6 @@ export const dragonKnightData = {
                 "level": 4,
                 "values": {
                   "duration": "120 seconds",
-                  "base-damage-atk-per-hit": "2100%",
                   "sp-cost": "60"
                 }
               },
@@ -13786,7 +13385,6 @@ export const dragonKnightData = {
                 "level": 5,
                 "values": {
                   "duration": "150 seconds",
-                  "base-damage-atk-per-hit": "2500%",
                   "sp-cost": "70"
                 }
               }
@@ -14576,10 +14174,6 @@ export const dragonKnightData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -14593,7 +14187,6 @@ export const dragonKnightData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk-per-hit": "950%",
                   "sp-cost": "36"
                 }
               },
@@ -14601,7 +14194,6 @@ export const dragonKnightData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk-per-hit": "1700%",
                   "sp-cost": "40"
                 }
               },
@@ -14609,7 +14201,6 @@ export const dragonKnightData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk-per-hit": "2450%",
                   "sp-cost": "44"
                 }
               },
@@ -14617,7 +14208,6 @@ export const dragonKnightData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk-per-hit": "3200%",
                   "sp-cost": "48"
                 }
               },
@@ -14625,7 +14215,6 @@ export const dragonKnightData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "3950%",
                   "sp-cost": "52"
                 }
               },
@@ -14633,7 +14222,6 @@ export const dragonKnightData = {
                 "level": 6,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "4700%",
                   "sp-cost": "56"
                 }
               },
@@ -14641,7 +14229,6 @@ export const dragonKnightData = {
                 "level": 7,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "5450%",
                   "sp-cost": "60"
                 }
               },
@@ -14649,7 +14236,6 @@ export const dragonKnightData = {
                 "level": 8,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "6200%",
                   "sp-cost": "64"
                 }
               },
@@ -14657,7 +14243,6 @@ export const dragonKnightData = {
                 "level": 9,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "6950%",
                   "sp-cost": "68"
                 }
               },
@@ -14665,7 +14250,6 @@ export const dragonKnightData = {
                 "level": 10,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "7700%",
                   "sp-cost": "72"
                 }
               }
@@ -14729,18 +14313,11 @@ export const dragonKnightData = {
           ],
           "specRows": [
             {
-              "label": "Damage Logic",
-              "before": "2 split hits",
-              "after": "2 cumulative hits",
-              "scope": "",
-              "source": "Changes damage logic from 2 split hits to 2 cumulative hits."
-            },
-            {
               "label": "Damage",
-              "before": "3000%Atk",
-              "after": "7300%Atk per hit",
+              "before": "2 split hits (logic)/3000%Atk",
+              "after": "2 cumulative hits (logic)/7300%Atk per hit",
               "scope": "Lv 10",
-              "source": "Increases damage from 3000%Atk to 7300%Atk per hit based on level 10."
+              "source": "Changes damage logic from 2 split hits to 2 cumulative hits. / Increases damage from 3000%Atk to 7300%Atk per hit based on level 10."
             },
             {
               "label": "Cooldown",
@@ -14995,10 +14572,6 @@ export const dragonKnightData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -15012,7 +14585,6 @@ export const dragonKnightData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "400%",
                   "sp-cost": "61"
                 }
               },
@@ -15020,7 +14592,6 @@ export const dragonKnightData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "750%",
                   "sp-cost": "64"
                 }
               },
@@ -15028,7 +14599,6 @@ export const dragonKnightData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "1100%",
                   "sp-cost": "67"
                 }
               },
@@ -15036,7 +14606,6 @@ export const dragonKnightData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "1450%",
                   "sp-cost": "70"
                 }
               },
@@ -15044,7 +14613,6 @@ export const dragonKnightData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "1800%",
                   "sp-cost": "73"
                 }
               },
@@ -15052,7 +14620,6 @@ export const dragonKnightData = {
                 "level": 6,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "2150%",
                   "sp-cost": "76"
                 }
               },
@@ -15060,7 +14627,6 @@ export const dragonKnightData = {
                 "level": 7,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "2500%",
                   "sp-cost": "79"
                 }
               },
@@ -15068,7 +14634,6 @@ export const dragonKnightData = {
                 "level": 8,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "2850%",
                   "sp-cost": "82"
                 }
               },
@@ -15076,7 +14641,6 @@ export const dragonKnightData = {
                 "level": 9,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "3200%",
                   "sp-cost": "85"
                 }
               },
@@ -15084,7 +14648,6 @@ export const dragonKnightData = {
                 "level": 10,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "3550%",
                   "sp-cost": "88"
                 }
               }
@@ -15254,10 +14817,6 @@ export const dragonKnightData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -15266,35 +14825,30 @@ export const dragonKnightData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "500%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "800%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "1100%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "1400%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "1700%",
                   "sp-cost": "40"
                 }
               }
@@ -15484,10 +15038,6 @@ export const dragonKnightData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -15496,35 +15046,30 @@ export const dragonKnightData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "600%",
                   "sp-cost": "35"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "1000%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "1400%",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "1800%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "2200%",
                   "sp-cost": "55"
                 }
               }
@@ -15774,50 +15319,7 @@ export const dragonKnightData = {
             "value": "2"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk-per-hit": "1450%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk-per-hit": "2050%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk-per-hit": "2650%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk-per-hit": "3250%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk-per-hit": "3850%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [
@@ -15969,10 +15471,6 @@ export const dragonKnightData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -15986,7 +15484,6 @@ export const dragonKnightData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk": "1950%",
                   "sp-cost": "27"
                 }
               },
@@ -15994,7 +15491,6 @@ export const dragonKnightData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "3550%",
                   "sp-cost": "34"
                 }
               },
@@ -16002,7 +15498,6 @@ export const dragonKnightData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "5150%",
                   "sp-cost": "41"
                 }
               },
@@ -16010,7 +15505,6 @@ export const dragonKnightData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "6750%",
                   "sp-cost": "48"
                 }
               },
@@ -16018,7 +15512,6 @@ export const dragonKnightData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "8350%",
                   "sp-cost": "55"
                 }
               }
@@ -16089,8 +15582,8 @@ export const dragonKnightData = {
             {
               "label": "Damage",
               "before": "1350%Atk",
-              "after": "5150%Atk based on level 5 (using level 5 weapon and weapon weight is 150)",
-              "scope": "",
+              "after": "5150%Atk",
+              "scope": "Lv 5 (using level 5 weapon and weapon weight is 150)",
               "source": "Increases damage from 1350%Atk to 5150%Atk based on level 5 (using level 5 weapon and weapon weight is 150)."
             },
             {
@@ -16300,10 +15793,6 @@ export const dragonKnightData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -16312,35 +15801,30 @@ export const dragonKnightData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "500%",
                   "sp-cost": "30"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "1000%",
                   "sp-cost": "35"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "1500%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "2000%",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "2500%",
                   "sp-cost": "50"
                 }
               }
@@ -16581,7 +16065,7 @@ export const dragonKnightData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "+115% Increase/ +10% Additional damage to Human/Angel enemies\n/HP consumed: 100",
+                  "effect": "+115% Increase / +10% Additional damage to Human / Angel enemies\nHP consumed: 100",
                   "duration": "30 seconds",
                   "sp-cost": "100"
                 }
@@ -16589,7 +16073,7 @@ export const dragonKnightData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "+130% Increase/ +20% Additional damage to Human/Angel enemies\n/HP consumed: 90",
+                  "effect": "+130% Increase / +20% Additional damage to Human / Angel enemies\nHP consumed: 90",
                   "duration": "60 seconds",
                   "sp-cost": "100"
                 }
@@ -16597,7 +16081,7 @@ export const dragonKnightData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "+145% Increase/ +30% Additional damage to Human/Angel enemies\n/HP consumed: 80",
+                  "effect": "+145% Increase / +30% Additional damage to Human / Angel enemies\nHP consumed: 80",
                   "duration": "90 seconds",
                   "sp-cost": "100"
                 }
@@ -16605,7 +16089,7 @@ export const dragonKnightData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "+160% Increase/ +40% Additional damage to Human/Angel enemies\n/HP consumed: 70",
+                  "effect": "+160% Increase / +40% Additional damage to Human / Angel enemies\nHP consumed: 70",
                   "duration": "120 seconds",
                   "sp-cost": "100"
                 }
@@ -16613,7 +16097,7 @@ export const dragonKnightData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "+175% Increase/ +50% Additional damage to Human/Angel enemies\n/HP consumed: 60",
+                  "effect": "+175% Increase / +50% Additional damage to Human / Angel enemies\nHP consumed: 60",
                   "duration": "150 seconds",
                   "sp-cost": "100"
                 }
@@ -16621,7 +16105,7 @@ export const dragonKnightData = {
               {
                 "level": 6,
                 "values": {
-                  "effect": "+190% Increase/ +60% Additional damage to Human/Angel enemies\n/HP consumed: 50",
+                  "effect": "+190% Increase / +60% Additional damage to Human / Angel enemies\nHP consumed: 50",
                   "duration": "180 seconds",
                   "sp-cost": "100"
                 }
@@ -16629,7 +16113,7 @@ export const dragonKnightData = {
               {
                 "level": 7,
                 "values": {
-                  "effect": "+205% Increase/ +70% Additional damage to Human/Angel enemies\n/HP consumed: 40",
+                  "effect": "+205% Increase / +70% Additional damage to Human / Angel enemies\nHP consumed: 40",
                   "duration": "210 seconds",
                   "sp-cost": "100"
                 }
@@ -16637,7 +16121,7 @@ export const dragonKnightData = {
               {
                 "level": 8,
                 "values": {
-                  "effect": "+220% Increase/ +80% Additional damage to Human/Angel enemies\n/HP consumed: 30",
+                  "effect": "+220% Increase / +80% Additional damage to Human / Angel enemies\nHP consumed: 30",
                   "duration": "240 seconds",
                   "sp-cost": "100"
                 }
@@ -16645,7 +16129,7 @@ export const dragonKnightData = {
               {
                 "level": 9,
                 "values": {
-                  "effect": "+235% Increase/ +90% Additional damage to Human/Angel enemies\n/HP consumed: 20",
+                  "effect": "+235% Increase / +90% Additional damage to Human / Angel enemies\nHP consumed: 20",
                   "duration": "270 seconds",
                   "sp-cost": "100"
                 }
@@ -16653,7 +16137,7 @@ export const dragonKnightData = {
               {
                 "level": 10,
                 "values": {
-                  "effect": "+250% Increase/ +100% Additional to Human/Angel enemies\n/HP consumed: 10",
+                  "effect": "+250% Increase / +100% Additional to Human / Angel enemies\nHP consumed: 10",
                   "duration": "300 seconds",
                   "sp-cost": "100"
                 }
@@ -16897,10 +16381,6 @@ export const dragonKnightData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -16909,70 +16389,60 @@ export const dragonKnightData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "3650%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "7300%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "10950%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "14600%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "18250%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk": "21900%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk": "25550%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk": "29200%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk": "32850%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk": "36500%",
                   "sp-cost": "100"
                 }
               }

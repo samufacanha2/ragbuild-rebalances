@@ -1,5 +1,5 @@
 export const abyssChaserData = {
-  "generatedAt": "2026-07-09T12:10:10.383Z",
+  "generatedAt": "2026-07-09T13:20:22.692Z",
   "classId": 4260,
   "classSlug": "abyss-chaser",
   "className": "Abyss Chaser",
@@ -655,50 +655,7 @@ export const abyssChaserData = {
                 "value": "2"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "3500%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "7000%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "10500%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "14000%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "17500%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -1006,10 +963,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1018,35 +971,30 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "1000%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "1900%",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "2800%",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "3700%",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "4600%",
                       "sp-cost": "76"
                     }
                   }
@@ -1266,10 +1214,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -1278,36 +1222,31 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "2000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "2450%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "2900%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "3350%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "3800%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -1448,10 +1387,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1465,7 +1400,6 @@ export const abyssChaserData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "850%",
                       "sp-cost": "35"
                     }
                   },
@@ -1473,7 +1407,6 @@ export const abyssChaserData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "1700%",
                       "sp-cost": "45"
                     }
                   },
@@ -1481,7 +1414,6 @@ export const abyssChaserData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "2550%",
                       "sp-cost": "55"
                     }
                   },
@@ -1489,7 +1421,6 @@ export const abyssChaserData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "3400%",
                       "sp-cost": "65"
                     }
                   },
@@ -1497,7 +1428,6 @@ export const abyssChaserData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "4250%",
                       "sp-cost": "75"
                     }
                   }
@@ -1543,9 +1473,9 @@ export const abyssChaserData = {
                   "source": "Reduces delay after skill from 1 second to 0.5 seconds."
                 },
                 {
-                  "label": "Damage Of The Secondary Attack",
-                  "before": "4250%Atk",
-                  "after": "4750%Atk",
+                  "label": "Damage",
+                  "before": "4250%Atk (secondary attack)",
+                  "after": "4750%Atk (secondary attack)",
                   "scope": "Lv 5",
                   "source": "Increases damage of the secondary attack from 4250%Atk to 4750%Atk based on level 5."
                 }
@@ -1630,8 +1560,8 @@ export const abyssChaserData = {
               "specRows": [
                 {
                   "label": "Damage",
-                  "before": "12350%Atk",
-                  "after": "13550%Atk",
+                  "before": "12350%Atk (secondary attack)",
+                  "after": "13550%Atk (secondary attack)",
                   "scope": "Lv 5",
                   "source": "Increases base damage of secondary attack from 12350%Atk to 13550%Atk based on level 5."
                 }
@@ -1741,10 +1671,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -1753,36 +1679,31 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "2200%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "2900%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "3600%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "4300%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "5000%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -1925,10 +1846,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1937,35 +1854,30 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "600%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1100%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "1600%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "2100%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "2600%",
                       "sp-cost": "80"
                     }
                   }
@@ -2362,10 +2274,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2374,35 +2282,30 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1300%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1600%",
                       "sp-cost": "50"
                     }
                   }
@@ -2588,10 +2491,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -2605,7 +2504,6 @@ export const abyssChaserData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "600%",
                       "sp-cost": "45"
                     }
                   },
@@ -2613,7 +2511,6 @@ export const abyssChaserData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "950%",
                       "sp-cost": "48"
                     }
                   },
@@ -2621,7 +2518,6 @@ export const abyssChaserData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1300%",
                       "sp-cost": "51"
                     }
                   },
@@ -2629,7 +2525,6 @@ export const abyssChaserData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1650%",
                       "sp-cost": "54"
                     }
                   },
@@ -2637,7 +2532,6 @@ export const abyssChaserData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "2000%",
                       "sp-cost": "57"
                     }
                   },
@@ -2645,7 +2539,6 @@ export const abyssChaserData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "2350%",
                       "sp-cost": "60"
                     }
                   },
@@ -2653,7 +2546,6 @@ export const abyssChaserData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "2700%",
                       "sp-cost": "63"
                     }
                   },
@@ -2661,7 +2553,6 @@ export const abyssChaserData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "3050%",
                       "sp-cost": "66"
                     }
                   },
@@ -2669,7 +2560,6 @@ export const abyssChaserData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "3400%",
                       "sp-cost": "69"
                     }
                   },
@@ -2677,7 +2567,6 @@ export const abyssChaserData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "3750%",
                       "sp-cost": "72"
                     }
                   }
@@ -2787,17 +2676,10 @@ export const abyssChaserData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "5850%Atk",
-                  "after": "3750%Atk",
+                  "before": "5850%Atk/5 split hits (logic)",
+                  "after": "3750%Atk/5 cumulative hits (logic)",
                   "scope": "Lv 10",
-                  "source": "Reduces base damage from 5850%Atk to 3750%Atk based on level 10."
-                },
-                {
-                  "label": "Damage Logic",
-                  "before": "5 split hits",
-                  "after": "5 cumulative hits",
-                  "scope": "",
-                  "source": "Changes damage logic from 5 split hits to 5 cumulative hits."
+                  "source": "Reduces base damage from 5850%Atk to 3750%Atk based on level 10. / Changes damage logic from 5 split hits to 5 cumulative hits."
                 }
               ]
             },
@@ -3004,10 +2886,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3016,70 +2894,60 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "750%",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "1350%",
                       "sp-cost": "49"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "1950%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "2550%",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "3150%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk-per-hit": "3750%",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk-per-hit": "4350%",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk-per-hit": "4950%",
                       "sp-cost": "61"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk-per-hit": "5550%",
                       "sp-cost": "63"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk-per-hit": "6150%",
                       "sp-cost": "65"
                     }
                   }
@@ -3389,45 +3257,36 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 570 +(Magic Sword Mastery Lv x 20)%",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 1140 +(Magic Sword Mastery Lv x 40)%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 1710 +(Magic Sword Mastery Lv x 60)%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 2280 +(Magic Sword Mastery Lv x 80)%",
                       "sp-cost": "95"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 2850 +(Magic Sword Mastery Lv x 100)%",
                       "sp-cost": "105"
                     }
                   }
@@ -3495,8 +3354,8 @@ export const abyssChaserData = {
                 {
                   "label": "Damage",
                   "before": "2000%Matk",
-                  "after": "3850%Matk per hit based on level 5 (Magic Sword Mastery level 10)",
-                  "scope": "",
+                  "after": "3850%Matk per hit",
+                  "scope": "Lv 5 (Magic Sword Mastery level 10)",
                   "source": "Increases damage from 2000%Matk to 3850%Matk per hit based on level 5 (Magic Sword Mastery level 10)."
                 }
               ]
@@ -3627,24 +3486,12 @@ export const abyssChaserData = {
               {
                 "label": "Property",
                 "value": "fire property magical damage"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (MATK per Hit) + (Magic Sword Mastery level x Skill Level Factor))% MATK per hit"
               }
             ],
             "levelTables": [
               {
                 "title": "Level Scaling",
                 "columns": [
-                  {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
-                    "id": "skill-level-factor",
-                    "label": "Skill Level Factor"
-                  },
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
@@ -3654,50 +3501,35 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "500",
-                      "skill-level-factor": "15"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1,000",
-                      "skill-level-factor": "30"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1,500",
-                      "skill-level-factor": "45"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "2,000",
-                      "skill-level-factor": "60"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "2,500",
-                      "skill-level-factor": "75"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "(Base Damage (MATK per Hit) + (Magic Sword Mastery level x Skill Level Factor))% MATK per hit"
-                  }
-                ]
+                "formulaRows": []
               }
             ]
           },
@@ -4219,10 +4051,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -4231,70 +4059,60 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "2200%",
                       "sp-cost": "125"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "4400%",
                       "sp-cost": "125"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "6600%",
                       "sp-cost": "125"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "8800%",
                       "sp-cost": "125"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "11000%",
                       "sp-cost": "125"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "13200%",
                       "sp-cost": "125"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "15400%",
                       "sp-cost": "125"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "17600%",
                       "sp-cost": "125"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "19800%",
                       "sp-cost": "125"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "22000%",
                       "sp-cost": "125"
                     }
                   }
@@ -4384,18 +4202,11 @@ export const abyssChaserData = {
                   "source": "Reduces AP consumption from 15 to 10."
                 },
                 {
-                  "label": "Damage Property",
-                  "before": "neutral",
-                  "after": "fire",
-                  "scope": "",
-                  "source": "Changes damage property from neutral to fire."
-                },
-                {
                   "label": "Damage",
-                  "before": "22000%/23500%(angel and demon)Matk",
-                  "after": "26500%/28500%(angel and demon)Matk",
+                  "before": "neutral (property)/22000%/23500%(angel and demon)Matk",
+                  "after": "fire (property)/26500%/28500%(angel and demon)Matk",
                   "scope": "Lv 10",
-                  "source": "Increases base damage from 22000%/23500%(angel and demon)Matk to 26500%/28500%(angel and demon)Matk based on level 10."
+                  "source": "Changes damage property from neutral to fire. / Increases base damage from 22000%/23500%(angel and demon)Matk to 26500%/28500%(angel and demon)Matk based on level 10."
                 }
               ]
             }
@@ -5311,10 +5122,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -5339,7 +5146,6 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "10",
                       "range": "1 cells",
                       "data-1": "30",
@@ -5350,7 +5156,6 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "14",
                       "range": "1 cells",
                       "data-1": "25",
@@ -5361,7 +5166,6 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "360%",
                       "sp-cost": "18",
                       "range": "1 cells",
                       "data-1": "20",
@@ -5372,7 +5176,6 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "480%",
                       "sp-cost": "22",
                       "range": "1 cells",
                       "data-1": "15",
@@ -5383,7 +5186,6 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "26",
                       "range": "1 cells",
                       "data-1": "10",
@@ -5394,7 +5196,6 @@ export const abyssChaserData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "720%",
                       "sp-cost": "30",
                       "range": "1 cells",
                       "data-1": "0",
@@ -5405,7 +5206,6 @@ export const abyssChaserData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "840%",
                       "sp-cost": "34",
                       "range": "1 cells",
                       "data-1": "0",
@@ -5416,7 +5216,6 @@ export const abyssChaserData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "960%",
                       "sp-cost": "38",
                       "range": "1 cells",
                       "data-1": "0",
@@ -5427,7 +5226,6 @@ export const abyssChaserData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "1080%",
                       "sp-cost": "42",
                       "range": "1 cells",
                       "data-1": "0",
@@ -5438,7 +5236,6 @@ export const abyssChaserData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "46",
                       "range": "1 cells",
                       "data-1": "0",
@@ -6105,10 +5902,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -6129,7 +5922,6 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "230%",
                       "sp-cost": "22",
                       "range": "7 cells",
                       "data-1": "2",
@@ -6139,7 +5931,6 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "460%",
                       "sp-cost": "24",
                       "range": "7 cells",
                       "data-1": "3",
@@ -6149,7 +5940,6 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "690%",
                       "sp-cost": "26",
                       "range": "7 cells",
                       "data-1": "4",
@@ -6159,7 +5949,6 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "920%",
                       "sp-cost": "28",
                       "range": "9 cells",
                       "data-1": "5",
@@ -6169,7 +5958,6 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1150%",
                       "sp-cost": "30",
                       "range": "9 cells",
                       "data-1": "6",
@@ -6179,7 +5967,6 @@ export const abyssChaserData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "1380%",
                       "sp-cost": "32",
                       "range": "9 cells",
                       "data-1": "7",
@@ -6189,7 +5976,6 @@ export const abyssChaserData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "1610%",
                       "sp-cost": "34",
                       "range": "9 cells",
                       "data-1": "8",
@@ -6199,7 +5985,6 @@ export const abyssChaserData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "1840%",
                       "sp-cost": "36",
                       "range": "11 cells",
                       "data-1": "9",
@@ -6209,7 +5994,6 @@ export const abyssChaserData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "2070%",
                       "sp-cost": "38",
                       "range": "11 cells",
                       "data-1": "10",
@@ -6219,7 +6003,6 @@ export const abyssChaserData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "2300%",
                       "sp-cost": "40",
                       "range": "11 cells",
                       "data-1": "11",
@@ -7036,7 +6819,7 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Chance 28%/3LvCast/MATK+ 5/60 sec",
+                      "effect": "Chance 28% / 3LvCast / 60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "280",
@@ -7046,7 +6829,7 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Chance 26%/3LvCast/MATK+10/80 sec",
+                      "effect": "Chance 26% / 3LvCast / 80 sec",
                       "sp-cost": "45",
                       "data-1": "80000",
                       "data-2": "260",
@@ -7056,7 +6839,7 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Chance 24%/4LvCast/MATK+15/100 sec",
+                      "effect": "Chance 24% / 4LvCast / 100 sec",
                       "sp-cost": "50",
                       "data-1": "100000",
                       "data-2": "240",
@@ -7066,7 +6849,7 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Chance 22%/4LvCast/MATK+20/120 sec",
+                      "effect": "Chance 22% / 4LvCast / 120 sec",
                       "sp-cost": "55",
                       "data-1": "120000",
                       "data-2": "220",
@@ -7076,7 +6859,7 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Chance 20%/5LvCast/MATK+25/140 sec",
+                      "effect": "Chance 20% / 5LvCast / 140 sec",
                       "sp-cost": "60",
                       "data-1": "140000",
                       "data-2": "200",
@@ -7086,7 +6869,7 @@ export const abyssChaserData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Chance 18%/5LvCast/MATK+30/160 sec",
+                      "effect": "Chance 18% / 5LvCast / 160 sec",
                       "sp-cost": "65",
                       "data-1": "160000",
                       "data-2": "180",
@@ -7096,7 +6879,7 @@ export const abyssChaserData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Chance 16%/6LvCast/MATK+35/180 sec",
+                      "effect": "Chance 16% / 6LvCast / 180 sec",
                       "sp-cost": "70",
                       "data-1": "180000",
                       "data-2": "160",
@@ -7106,7 +6889,7 @@ export const abyssChaserData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Chance 14%/6LvCast/MATK+40/200 sec",
+                      "effect": "Chance 14% / 6LvCast / 200 sec",
                       "sp-cost": "75",
                       "data-1": "200000",
                       "data-2": "140",
@@ -7116,7 +6899,7 @@ export const abyssChaserData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Chance 12%/7LvCast/MATK+45/220 sec",
+                      "effect": "Chance 12% / 7LvCast / 220 sec",
                       "sp-cost": "80",
                       "data-1": "220000",
                       "data-2": "120",
@@ -7126,7 +6909,7 @@ export const abyssChaserData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Chance 15%/7LvCast/MATK+50/300 sec",
+                      "effect": "Chance 15% / 7LvCast / 300 sec",
                       "sp-cost": "85",
                       "data-1": "300000",
                       "data-2": "150",
@@ -7296,10 +7079,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7320,7 +7099,6 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "30%",
                       "sp-cost": "30",
                       "range": "3 cells",
                       "data-1": "10000",
@@ -7330,7 +7108,6 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "40%",
                       "sp-cost": "40",
                       "range": "3 cells",
                       "data-1": "15000",
@@ -7340,7 +7117,6 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "50%",
                       "sp-cost": "50",
                       "range": "3 cells",
                       "data-1": "20000",
@@ -11812,80 +11588,66 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -12120,10 +11882,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12132,70 +11890,60 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "110%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "170%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "12"
                     }
                   }
@@ -12329,35 +12077,35 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "12 SP/10 sec 70% Movement Speed\n+1 STR added after 1st 10 sec",
+                      "effect": "12 SP / 10 sec 70% Movement Speed\n+1 STR added after 1st 10 sec",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "14 SP/10 sec 75% Movement Speed\n+2 STR added after 1st 10 sec",
+                      "effect": "14 SP / 10 sec 75% Movement Speed\n+2 STR added after 1st 10 sec",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "16 SP/10 sec 80% Movement Speed\n+4 STR added after 1st 10 sec",
+                      "effect": "16 SP / 10 sec 80% Movement Speed\n+4 STR added after 1st 10 sec",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "18 SP/10 sec 85% Movement Speed\n+8 STR added after 1st 10 sec",
+                      "effect": "18 SP / 10 sec 85% Movement Speed\n+8 STR added after 1st 10 sec",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "20 SP/10 sec 90% Movement Speed\n+16 STR added after 1st 10 sec",
+                      "effect": "20 SP / 10 sec 90% Movement Speed\n+16 STR added after 1st 10 sec",
                       "sp-cost": "10"
                     }
                   }
@@ -13183,10 +12931,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -13203,7 +12947,6 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "16",
                       "atk": "340",
                       "data-1": "105"
@@ -13212,7 +12955,6 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "380%",
                       "sp-cost": "16",
                       "atk": "380",
                       "data-1": "110"
@@ -13221,7 +12963,6 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "420%",
                       "sp-cost": "16",
                       "atk": "420",
                       "data-1": "115"
@@ -13230,7 +12971,6 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "460%",
                       "sp-cost": "16",
                       "atk": "460",
                       "data-1": "120"
@@ -13239,7 +12979,6 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "16",
                       "atk": "500",
                       "data-1": "125"
@@ -13248,7 +12987,6 @@ export const abyssChaserData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "540%",
                       "sp-cost": "16",
                       "atk": "540",
                       "data-1": "130"
@@ -13257,7 +12995,6 @@ export const abyssChaserData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "580%",
                       "sp-cost": "16",
                       "atk": "580",
                       "data-1": "135"
@@ -13266,7 +13003,6 @@ export const abyssChaserData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "620%",
                       "sp-cost": "16",
                       "atk": "620",
                       "data-1": "140"
@@ -13275,7 +13011,6 @@ export const abyssChaserData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "660%",
                       "sp-cost": "16",
                       "atk": "660",
                       "data-1": "145"
@@ -13284,7 +13019,6 @@ export const abyssChaserData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "16",
                       "atk": "700",
                       "data-1": "150"
@@ -13807,10 +13541,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -13819,35 +13549,30 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "350%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "650%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "15"
                     }
                   }
@@ -14256,10 +13981,6 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14268,35 +13989,30 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "13"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "19"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "25"
                     }
                   }
@@ -14844,80 +14560,66 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Lv. 1 Able to memorize, Increase ATK Speed: 1%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Lv. 2 Able to memorize, Increase ATK Speed: 2%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Lv. 3 Able to memorize, Increase ATK Speed: 3%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Lv. 4 Able to memorize, Increase ATK Speed: 4%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Lv. 5 Able to memorize, Increase ATK Speed: 5%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Lv. 6 Able to memorize, Increase ATK Speed: 6%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Lv. 7 Able to memorize, Increase ATK Speed: 7%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Lv. 8 Able to memorize, Increase ATK Speed: 8%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Lv. 9 Able to memorize, Increase ATK Speed: 9%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Lv.10 Able to memorize, Increase ATK Speed:10%",
                       "sp-cost": "0"
                     }
                   }
@@ -15173,7 +14875,7 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -15201,7 +14903,7 @@ export const abyssChaserData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -17179,50 +16881,7 @@ export const abyssChaserData = {
             "value": "2"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk": "3500%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk": "7000%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk": "10500%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk": "14000%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk": "17500%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [],
@@ -17530,10 +17189,6 @@ export const abyssChaserData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -17542,35 +17197,30 @@ export const abyssChaserData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "1000%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "1900%",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "2800%",
                   "sp-cost": "68"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "3700%",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "4600%",
                   "sp-cost": "76"
                 }
               }
@@ -17790,10 +17440,6 @@ export const abyssChaserData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -17802,36 +17448,31 @@ export const abyssChaserData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "2000%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "2450%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "2900%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "3350%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "3800%"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
@@ -17972,10 +17613,6 @@ export const abyssChaserData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -17989,7 +17626,6 @@ export const abyssChaserData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "850%",
                   "sp-cost": "35"
                 }
               },
@@ -17997,7 +17633,6 @@ export const abyssChaserData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "1700%",
                   "sp-cost": "45"
                 }
               },
@@ -18005,7 +17640,6 @@ export const abyssChaserData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "2550%",
                   "sp-cost": "55"
                 }
               },
@@ -18013,7 +17647,6 @@ export const abyssChaserData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "3400%",
                   "sp-cost": "65"
                 }
               },
@@ -18021,7 +17654,6 @@ export const abyssChaserData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "4250%",
                   "sp-cost": "75"
                 }
               }
@@ -18067,9 +17699,9 @@ export const abyssChaserData = {
               "source": "Reduces delay after skill from 1 second to 0.5 seconds."
             },
             {
-              "label": "Damage Of The Secondary Attack",
-              "before": "4250%Atk",
-              "after": "4750%Atk",
+              "label": "Damage",
+              "before": "4250%Atk (secondary attack)",
+              "after": "4750%Atk (secondary attack)",
               "scope": "Lv 5",
               "source": "Increases damage of the secondary attack from 4250%Atk to 4750%Atk based on level 5."
             }
@@ -18154,8 +17786,8 @@ export const abyssChaserData = {
           "specRows": [
             {
               "label": "Damage",
-              "before": "12350%Atk",
-              "after": "13550%Atk",
+              "before": "12350%Atk (secondary attack)",
+              "after": "13550%Atk (secondary attack)",
               "scope": "Lv 5",
               "source": "Increases base damage of secondary attack from 12350%Atk to 13550%Atk based on level 5."
             }
@@ -18265,10 +17897,6 @@ export const abyssChaserData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -18277,36 +17905,31 @@ export const abyssChaserData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "2200%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "2900%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "3600%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "4300%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "5000%"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
@@ -18449,10 +18072,6 @@ export const abyssChaserData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -18461,35 +18080,30 @@ export const abyssChaserData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "600%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "1100%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "1600%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "2100%",
                   "sp-cost": "70"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "2600%",
                   "sp-cost": "80"
                 }
               }
@@ -18886,10 +18500,6 @@ export const abyssChaserData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -18898,35 +18508,30 @@ export const abyssChaserData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "400%",
                   "sp-cost": "30"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "700%",
                   "sp-cost": "35"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "1000%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "1300%",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "1600%",
                   "sp-cost": "50"
                 }
               }
@@ -19112,10 +18717,6 @@ export const abyssChaserData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -19129,7 +18730,6 @@ export const abyssChaserData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "600%",
                   "sp-cost": "45"
                 }
               },
@@ -19137,7 +18737,6 @@ export const abyssChaserData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "950%",
                   "sp-cost": "48"
                 }
               },
@@ -19145,7 +18744,6 @@ export const abyssChaserData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "1300%",
                   "sp-cost": "51"
                 }
               },
@@ -19153,7 +18751,6 @@ export const abyssChaserData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "1650%",
                   "sp-cost": "54"
                 }
               },
@@ -19161,7 +18758,6 @@ export const abyssChaserData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "2000%",
                   "sp-cost": "57"
                 }
               },
@@ -19169,7 +18765,6 @@ export const abyssChaserData = {
                 "level": 6,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "2350%",
                   "sp-cost": "60"
                 }
               },
@@ -19177,7 +18772,6 @@ export const abyssChaserData = {
                 "level": 7,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "2700%",
                   "sp-cost": "63"
                 }
               },
@@ -19185,7 +18779,6 @@ export const abyssChaserData = {
                 "level": 8,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "3050%",
                   "sp-cost": "66"
                 }
               },
@@ -19193,7 +18786,6 @@ export const abyssChaserData = {
                 "level": 9,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "3400%",
                   "sp-cost": "69"
                 }
               },
@@ -19201,7 +18793,6 @@ export const abyssChaserData = {
                 "level": 10,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "3750%",
                   "sp-cost": "72"
                 }
               }
@@ -19311,17 +18902,10 @@ export const abyssChaserData = {
             },
             {
               "label": "Damage",
-              "before": "5850%Atk",
-              "after": "3750%Atk",
+              "before": "5850%Atk/5 split hits (logic)",
+              "after": "3750%Atk/5 cumulative hits (logic)",
               "scope": "Lv 10",
-              "source": "Reduces base damage from 5850%Atk to 3750%Atk based on level 10."
-            },
-            {
-              "label": "Damage Logic",
-              "before": "5 split hits",
-              "after": "5 cumulative hits",
-              "scope": "",
-              "source": "Changes damage logic from 5 split hits to 5 cumulative hits."
+              "source": "Reduces base damage from 5850%Atk to 3750%Atk based on level 10. / Changes damage logic from 5 split hits to 5 cumulative hits."
             }
           ]
         },
@@ -19528,10 +19112,6 @@ export const abyssChaserData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19540,70 +19120,60 @@ export const abyssChaserData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "750%",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "1350%",
                   "sp-cost": "49"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "1950%",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "2550%",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "3150%",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk-per-hit": "3750%",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk-per-hit": "4350%",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk-per-hit": "4950%",
                   "sp-cost": "61"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk-per-hit": "5550%",
                   "sp-cost": "63"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk-per-hit": "6150%",
                   "sp-cost": "65"
                 }
               }
@@ -19913,45 +19483,36 @@ export const abyssChaserData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 570 +(Magic Sword Mastery Lv x 20)%",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 1140 +(Magic Sword Mastery Lv x 40)%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 1710 +(Magic Sword Mastery Lv x 60)%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 2280 +(Magic Sword Mastery Lv x 80)%",
                   "sp-cost": "95"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 2850 +(Magic Sword Mastery Lv x 100)%",
                   "sp-cost": "105"
                 }
               }
@@ -20019,8 +19580,8 @@ export const abyssChaserData = {
             {
               "label": "Damage",
               "before": "2000%Matk",
-              "after": "3850%Matk per hit based on level 5 (Magic Sword Mastery level 10)",
-              "scope": "",
+              "after": "3850%Matk per hit",
+              "scope": "Lv 5 (Magic Sword Mastery level 10)",
               "source": "Increases damage from 2000%Matk to 3850%Matk per hit based on level 5 (Magic Sword Mastery level 10)."
             }
           ]
@@ -20151,24 +19712,12 @@ export const abyssChaserData = {
           {
             "label": "Property",
             "value": "fire property magical damage"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "(Base Damage (MATK per Hit) + (Magic Sword Mastery level x Skill Level Factor))% MATK per hit"
           }
         ],
         "levelTables": [
           {
             "title": "Level Scaling",
             "columns": [
-              {
-                "id": "base-damage-matk-per-hit",
-                "label": "Base Damage (MATK per Hit)"
-              },
-              {
-                "id": "skill-level-factor",
-                "label": "Skill Level Factor"
-              },
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
@@ -20178,50 +19727,35 @@ export const abyssChaserData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk-per-hit": "500",
-                  "skill-level-factor": "15"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk-per-hit": "1,000",
-                  "skill-level-factor": "30"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk-per-hit": "1,500",
-                  "skill-level-factor": "45"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk-per-hit": "2,000",
-                  "skill-level-factor": "60"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk-per-hit": "2,500",
-                  "skill-level-factor": "75"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (MATK per Hit) + (Magic Sword Mastery level x Skill Level Factor))% MATK per hit"
-              }
-            ]
+            "formulaRows": []
           }
         ]
       },
@@ -20743,10 +20277,6 @@ export const abyssChaserData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -20755,70 +20285,60 @@ export const abyssChaserData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "2200%",
                   "sp-cost": "125"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "4400%",
                   "sp-cost": "125"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "6600%",
                   "sp-cost": "125"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "8800%",
                   "sp-cost": "125"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "11000%",
                   "sp-cost": "125"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-matk": "13200%",
                   "sp-cost": "125"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-matk": "15400%",
                   "sp-cost": "125"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-matk": "17600%",
                   "sp-cost": "125"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-matk": "19800%",
                   "sp-cost": "125"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-matk": "22000%",
                   "sp-cost": "125"
                 }
               }
@@ -20908,18 +20428,11 @@ export const abyssChaserData = {
               "source": "Reduces AP consumption from 15 to 10."
             },
             {
-              "label": "Damage Property",
-              "before": "neutral",
-              "after": "fire",
-              "scope": "",
-              "source": "Changes damage property from neutral to fire."
-            },
-            {
               "label": "Damage",
-              "before": "22000%/23500%(angel and demon)Matk",
-              "after": "26500%/28500%(angel and demon)Matk",
+              "before": "neutral (property)/22000%/23500%(angel and demon)Matk",
+              "after": "fire (property)/26500%/28500%(angel and demon)Matk",
               "scope": "Lv 10",
-              "source": "Increases base damage from 22000%/23500%(angel and demon)Matk to 26500%/28500%(angel and demon)Matk based on level 10."
+              "source": "Changes damage property from neutral to fire. / Increases base damage from 22000%/23500%(angel and demon)Matk to 26500%/28500%(angel and demon)Matk based on level 10."
             }
           ]
         }

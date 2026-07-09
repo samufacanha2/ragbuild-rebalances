@@ -1,5 +1,5 @@
 export const elementalMasterData = {
-  "generatedAt": "2026-07-09T03:38:07.900Z",
+  "generatedAt": "2026-07-09T13:20:55.481Z",
   "classId": 4261,
   "classSlug": "elemental-master",
   "className": "Elemental Master",
@@ -829,10 +829,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -841,35 +837,30 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1950%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "3500%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "5050%",
                       "sp-cost": "88"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "6600%",
                       "sp-cost": "92"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "8150%",
                       "sp-cost": "96"
                     }
                   }
@@ -917,17 +908,10 @@ export const elementalMasterData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "3500%Matk",
-                  "after": "6250%Matk",
+                  "before": "3500%Matk/6650%Matk (while Diluvio is summoned)",
+                  "after": "6250%Matk/12250%Matk (while Diluvio is summoned)",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5."
-                },
-                {
-                  "label": "Damage While Diluvio Is Summoned",
-                  "before": "6650%Matk",
-                  "after": "12250%Matk",
-                  "scope": "",
-                  "source": "Increases damage while Diluvio is summoned from 6650%Matk to 12250%Matk."
+                  "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5. / Increases damage while Diluvio is summoned from 6650%Matk to 12250%Matk."
                 }
               ]
             },
@@ -1135,10 +1119,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1147,35 +1127,30 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1150%",
                       "sp-cost": "97"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1800%",
                       "sp-cost": "101"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "2450%",
                       "sp-cost": "105"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "3100%",
                       "sp-cost": "109"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "3750%",
                       "sp-cost": "113"
                     }
                   }
@@ -1224,17 +1199,10 @@ export const elementalMasterData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "750%Matk",
-                  "after": "2000%Matk",
+                  "before": "750%Matk/1250%Matk (while Ardor is summoned)",
+                  "after": "2000%Matk/4000%Matk (while Ardor is summoned)",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
-                },
-                {
-                  "label": "Damage While Ardor Is Summoned",
-                  "before": "1250%Matk",
-                  "after": "4000%Matk",
-                  "scope": "",
-                  "source": "Increases damage while Ardor is summoned from 1250%Matk to 4000%Matk."
+                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Ardor is summoned from 1250%Matk to 4000%Matk."
                 }
               ]
             },
@@ -1434,10 +1402,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1446,35 +1410,30 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1150%",
                       "sp-cost": "94"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1800%",
                       "sp-cost": "98"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "2450%",
                       "sp-cost": "102"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "3100%",
                       "sp-cost": "106"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "3750%",
                       "sp-cost": "110"
                     }
                   }
@@ -1523,17 +1482,10 @@ export const elementalMasterData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "750%Matk",
-                  "after": "2000%Matk",
+                  "before": "750%Matk/1250%Matk (while Pro cellsa is summoned)",
+                  "after": "2000%Matk/4000%Matk (while Pro cellsa is summoned)",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
-                },
-                {
-                  "label": "Damage While Procella Is Summoned",
-                  "before": "1250%Matk",
-                  "after": "4000%Matk",
-                  "scope": "",
-                  "source": "Increases damage while Procella is summoned from 1250%Matk to 4000%Matk."
+                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Procella is summoned from 1250%Matk to 4000%Matk."
                 }
               ]
             },
@@ -2021,10 +1973,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2033,35 +1981,30 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1950%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "3500%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "5050%",
                       "sp-cost": "88"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "6600%",
                       "sp-cost": "92"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "8150%",
                       "sp-cost": "96"
                     }
                   }
@@ -2109,17 +2052,10 @@ export const elementalMasterData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "3500%Matk",
-                  "after": "6250%Matk",
+                  "before": "3500%Matk/6650%Matk (while Terremotus is summoned)",
+                  "after": "6250%Matk/12250%Matk (while Terremotus is summoned)",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5."
-                },
-                {
-                  "label": "Damage While Terremotus Is Summoned",
-                  "before": "6650%Matk",
-                  "after": "12250%Matk",
-                  "scope": "",
-                  "source": "Increases damage while Terremotus is summoned from 6650%Matk to 12250%Matk."
+                  "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5. / Increases damage while Terremotus is summoned from 6650%Matk to 12250%Matk."
                 }
               ]
             },
@@ -2327,10 +2263,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2339,35 +2271,30 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1150%",
                       "sp-cost": "92"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1800%",
                       "sp-cost": "97"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "2450%",
                       "sp-cost": "102"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "3100%",
                       "sp-cost": "107"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "3750%",
                       "sp-cost": "112"
                     }
                   }
@@ -2416,17 +2343,10 @@ export const elementalMasterData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "750%Matk",
-                  "after": "2000%Matk",
+                  "before": "750%Matk/1250%Matk (while Serpens is summoned)",
+                  "after": "2000%Matk/4000%Matk (while Serpens is summoned)",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
-                },
-                {
-                  "label": "Damage While Serpens Is Summoned",
-                  "before": "1250%Matk",
-                  "after": "4000%Matk",
-                  "scope": "",
-                  "source": "Increases damage while Serpens is summoned from 1250%Matk to 4000%Matk."
+                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Serpens is summoned from 1250%Matk to 4000%Matk."
                 }
               ]
             },
@@ -3108,10 +3028,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -3120,36 +3036,31 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "4500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "8000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "11500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk": "15000%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk": "18500%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -3763,10 +3674,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3775,70 +3682,60 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "2700%",
                       "sp-cost": "140"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "4900%",
                       "sp-cost": "140"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "7100%",
                       "sp-cost": "140"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "9300%",
                       "sp-cost": "140"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "11500%",
                       "sp-cost": "140"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "13700%",
                       "sp-cost": "140"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "15900%",
                       "sp-cost": "140"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "18100%",
                       "sp-cost": "140"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "20300%",
                       "sp-cost": "140"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "22500%",
                       "sp-cost": "140"
                     }
                   }
@@ -4549,7 +4446,7 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK+20/Guide Hit+30/Consumes SP5",
+                      "effect": "Guide Hit+30 / Consumes SP5",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "35",
@@ -4562,7 +4459,7 @@ export const elementalMasterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK+40/Guide Hit+40/Consumes SP4",
+                      "effect": "Guide Hit+40 / Consumes SP4",
                       "sp-cost": "55",
                       "range": "9 cells",
                       "data-1": "45",
@@ -4575,7 +4472,7 @@ export const elementalMasterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK+60/Guide Hit+50/Consumes SP3",
+                      "effect": "Guide Hit+50 / Consumes SP3",
                       "sp-cost": "60",
                       "range": "9 cells",
                       "data-1": "55",
@@ -4588,7 +4485,7 @@ export const elementalMasterData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK+80/Guide Hit+60/Consumes SP2",
+                      "effect": "Guide Hit+60 / Consumes SP2",
                       "sp-cost": "65",
                       "range": "9 cells",
                       "data-1": "65",
@@ -4601,7 +4498,7 @@ export const elementalMasterData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK+100/Guide Hit+70/Consumes SP1",
+                      "effect": "Guide Hit+70 / Consumes SP1",
                       "sp-cost": "70",
                       "range": "9 cells",
                       "data-1": "75",
@@ -5307,10 +5204,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -5359,7 +5252,6 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "40%",
                       "matk-40-poison-resistance": "- 5%",
                       "sp-cost": "48",
                       "range": "9 cells",
@@ -5372,7 +5264,6 @@ export const elementalMasterData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "80%",
                       "matk-80-poison-resistance": "-10%",
                       "sp-cost": "56",
                       "range": "9 cells",
@@ -5385,7 +5276,6 @@ export const elementalMasterData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "120%",
                       "matk-120-poison-resistance": "-15%",
                       "sp-cost": "64",
                       "range": "9 cells",
@@ -5398,7 +5288,6 @@ export const elementalMasterData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "160%",
                       "matk-160-poison-resistance": "-20%",
                       "sp-cost": "70",
                       "range": "9 cells",
@@ -5411,7 +5300,6 @@ export const elementalMasterData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "200%",
                       "matk-200-poison-resistance": "-25%",
                       "sp-cost": "78",
                       "range": "9 cells",
@@ -7408,10 +7296,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7432,7 +7316,6 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1300%",
                       "sp-cost": "70",
                       "range": "9 cells",
                       "atk": "1500",
@@ -7442,7 +7325,6 @@ export const elementalMasterData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1600%",
                       "sp-cost": "90",
                       "range": "9 cells",
                       "atk": "1800",
@@ -7452,7 +7334,6 @@ export const elementalMasterData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "1900%",
                       "sp-cost": "110",
                       "range": "9 cells",
                       "atk": "2100",
@@ -7462,7 +7343,6 @@ export const elementalMasterData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "2200%",
                       "sp-cost": "130",
                       "range": "9 cells",
                       "atk": "2400",
@@ -7472,7 +7352,6 @@ export const elementalMasterData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "2500%",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "atk": "2700",
@@ -8338,7 +8217,7 @@ export const elementalMasterData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "/ Hit Count 3",
+                      "effect": "Hit Count 3",
                       "sp-cost": "48",
                       "range": "9 cells",
                       "atk": "700",
@@ -8350,7 +8229,7 @@ export const elementalMasterData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "/ Hit Count 4",
+                      "effect": "Hit Count 4",
                       "sp-cost": "56",
                       "range": "9 cells",
                       "atk": "700",
@@ -8362,7 +8241,7 @@ export const elementalMasterData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "9x9",
-                      "effect": "/ Hit Count 5",
+                      "effect": "Hit Count 5",
                       "sp-cost": "64",
                       "range": "9 cells",
                       "atk": "700",
@@ -8374,7 +8253,7 @@ export const elementalMasterData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "9x9",
-                      "effect": "/ Hit Count 6",
+                      "effect": "Hit Count 6",
                       "sp-cost": "70",
                       "range": "9 cells",
                       "atk": "700",
@@ -8386,7 +8265,7 @@ export const elementalMasterData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "11x11",
-                      "effect": "/ Hit Count 7",
+                      "effect": "Hit Count 7",
                       "sp-cost": "78",
                       "range": "9 cells",
                       "atk": "700",
@@ -9108,7 +8987,7 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Ma x HP 5%, Ma x SP 5% Increase / ATK +25 / SP cost reduction 10%",
+                      "effect": "Ma x HP 5%, Ma x SP 5% Increase / SP cost reduction 10%",
                       "sp-cost": "0",
                       "data-1": "5",
                       "data-2": "5",
@@ -9119,7 +8998,7 @@ export const elementalMasterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Ma x HP 10%, Ma x SP 10% Increase / ATK +50 / SP cost reduction 15%",
+                      "effect": "Ma x HP 10%, Ma x SP 10% Increase / SP cost reduction 15%",
                       "sp-cost": "0",
                       "data-1": "10",
                       "data-2": "10",
@@ -9130,7 +9009,7 @@ export const elementalMasterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Ma x HP 15%, Ma x SP 15% Increase / ATK +75 / SP cost reduction 20%",
+                      "effect": "Ma x HP 15%, Ma x SP 15% Increase / SP cost reduction 20%",
                       "sp-cost": "0",
                       "data-1": "15",
                       "data-2": "15",
@@ -9141,7 +9020,7 @@ export const elementalMasterData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Ma x HP 20%, Ma x SP 20% Increase / ATK +100 / SP cost reduction 25%",
+                      "effect": "Ma x HP 20%, Ma x SP 20% Increase / SP cost reduction 25%",
                       "sp-cost": "0",
                       "data-1": "20",
                       "data-2": "20",
@@ -9152,7 +9031,7 @@ export const elementalMasterData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Ma x HP 25%, Ma x SP 25% Increase / ATK +125 / SP cost reduction 30%",
+                      "effect": "Ma x HP 25%, Ma x SP 25% Increase / SP cost reduction 30%",
                       "sp-cost": "0",
                       "data-1": "25",
                       "data-2": "25",
@@ -9887,10 +9766,6 @@ export const elementalMasterData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -9899,7 +9774,6 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Increase AQUA's ATK by 20%. Recovery amount of HP, SP per 3 seconds doubled",
                       "sp-cost": "22",
                       "range": "9 cells"
                     }
@@ -9907,7 +9781,6 @@ export const elementalMasterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Increase Recovery effect by 10%. Weapon property changes to water property. Increase physical ATK by 10%",
                       "sp-cost": "30",
                       "range": "9 cells"
                     }
@@ -9915,7 +9788,6 @@ export const elementalMasterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Decrease casting delay by 30% and increase ATK by 25% in specific water property magic spell",
                       "sp-cost": "38",
                       "range": "9 cells"
                     }
@@ -10053,10 +9925,6 @@ export const elementalMasterData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -10065,7 +9933,6 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Increase VENTUS's ATK by 20%. Recovery amount of HP, SP per 3 seconds doubled",
                       "sp-cost": "22",
                       "range": "9 cells"
                     }
@@ -10073,7 +9940,6 @@ export const elementalMasterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Increase attack speed a bit. Weapon property changes to wind property. Increase physical ATK by 10%",
                       "sp-cost": "30",
                       "range": "9 cells"
                     }
@@ -10081,7 +9947,6 @@ export const elementalMasterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Decrease casting delay by 50% and increase ATK by 25% in specific wind property magic spell",
                       "sp-cost": "38",
                       "range": "9 cells"
                     }
@@ -10321,10 +10186,6 @@ export const elementalMasterData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -10333,7 +10194,6 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Increase AGNI's ATK by 20%. Recovery amount of HP, SP per 3 seconds doubled",
                       "sp-cost": "22",
                       "range": "9 cells"
                     }
@@ -10341,7 +10201,6 @@ export const elementalMasterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK + 50. Weapon property changes to fire property. Increase physical ATK by 10%",
                       "sp-cost": "30",
                       "range": "9 cells"
                     }
@@ -10349,7 +10208,6 @@ export const elementalMasterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK + 50. Increase ATK by 25% in specific fire property magic spell",
                       "sp-cost": "38",
                       "range": "9 cells"
                     }
@@ -10487,10 +10345,6 @@ export const elementalMasterData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -10499,7 +10353,6 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Increase TERA's ATK by 20%. Recovery amount of HP, SP per 3 seconds doubled",
                       "sp-cost": "22",
                       "range": "9 cells"
                     }
@@ -10507,7 +10360,6 @@ export const elementalMasterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Increase Ma x HP 500, DEF 50. Weapon property changes to earth property. Increase physical ATK by 10%",
                       "sp-cost": "30",
                       "range": "9 cells"
                     }
@@ -10515,7 +10367,6 @@ export const elementalMasterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Increase Ma x SP 50 , MDEF 50. Increase ATK by 25% in specific earth property magic spell",
                       "sp-cost": "38",
                       "range": "9 cells"
                     }
@@ -11160,80 +11011,66 @@ export const elementalMasterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "increase damage+ 3, ATK Speed:0.5% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "increase damage+ 6, ATK Speed:1.0% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "increase damage+ 9, ATK Speed:1.5% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "increase damage+12, ATK Speed:2.0% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "increase damage+15, ATK Speed:2.5% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "increase damage+18, ATK Speed:3.0% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "increase damage+21, ATK Speed:3.5% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "increase damage+24, ATK Speed:4.0% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "increase damage+27, ATK Speed:4.5% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "increase damage+30, ATK Speed:5.0% increase",
                       "sp-cost": "0"
                     }
                   }
@@ -11861,61 +11698,36 @@ export const elementalMasterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "tolerance-4-physical-magic-damage-4-2-int",
-                    "label": "Tolerance 4%,physical/magic Damage:4/2%,int"
-                  },
-                  {
-                    "id": "tolerance-8-physical-magic-damage-8-4-int",
-                    "label": "Tolerance 8%,physical/magic Damage:8/4%,int"
-                  },
-                  {
-                    "id": "tolerance12-physical-magic-damage-12-6-int",
-                    "label": "Tolerance12%,physical/magic Damage:12/6%,int"
-                  },
-                  {
-                    "id": "tolerance16-physical-magic-damage-16-8-int",
-                    "label": "Tolerance16%,physical/magic Damage:16/8%,int"
-                  },
-                  {
-                    "id": "tolerance20-physical-magic-damage-20-10-int",
-                    "label": "Tolerance20%,physical/magic Damage:20/10+%,int"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "tolerance-4-physical-magic-damage-4-2-int": "+1",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "tolerance-8-physical-magic-damage-8-4-int": "+1",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "tolerance12-physical-magic-damage-12-6-int": "+2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "tolerance16-physical-magic-damage-16-8-int": "+2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "tolerance20-physical-magic-damage-20-10-int": "+3",
                       "sp-cost": "0"
                     }
                   }
@@ -13165,45 +12977,36 @@ export const elementalMasterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1time",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 2time",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 3time",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 4time",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 5time",
                       "sp-cost": "30"
                     }
                   }
@@ -13700,61 +13503,36 @@ export const elementalMasterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage-water-10-maxhp",
-                    "label": "Damage(water) +10%, Maxhp"
-                  },
-                  {
-                    "id": "damage-water-14-maxhp",
-                    "label": "Damage(water) +14%, Maxhp"
-                  },
-                  {
-                    "id": "damage-water-17-maxhp",
-                    "label": "Damage(water) +17%, Maxhp"
-                  },
-                  {
-                    "id": "damage-water-19-maxhp",
-                    "label": "Damage(water) +19%, Maxhp"
-                  },
-                  {
-                    "id": "damage-water-20-maxhp",
-                    "label": "Damage(water) +20%, Maxhp"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage-water-10-maxhp": "+ 5%",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage-water-14-maxhp": "+ 9%",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage-water-17-maxhp": "+12%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage-water-19-maxhp": "+14%",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage-water-20-maxhp": "+15%",
                       "sp-cost": "40"
                     }
                   }
@@ -13868,61 +13646,36 @@ export const elementalMasterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage-wind-10-flee",
-                    "label": "Damage(wind) +10%, Flee"
-                  },
-                  {
-                    "id": "damage-wind-14-flee",
-                    "label": "Damage(wind) +14%, Flee"
-                  },
-                  {
-                    "id": "damage-wind-17-flee",
-                    "label": "Damage(wind) +17%, Flee"
-                  },
-                  {
-                    "id": "damage-wind-19-flee",
-                    "label": "Damage(wind) +19%, Flee"
-                  },
-                  {
-                    "id": "damage-wind-20-flee",
-                    "label": "Damage(wind) +20%, Flee"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage-wind-10-flee": "+ 3",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage-wind-14-flee": "+ 6",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage-wind-17-flee": "+ 9",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage-wind-19-flee": "+12",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage-wind-20-flee": "+15",
                       "sp-cost": "40"
                     }
                   }
@@ -14036,61 +13789,36 @@ export const elementalMasterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage-fire-10-atk-matk",
-                    "label": "Damage(fire) +10%, Atk/matk"
-                  },
-                  {
-                    "id": "damage-fire-14-atk-matk",
-                    "label": "Damage(fire) +14%, Atk/matk"
-                  },
-                  {
-                    "id": "damage-fire-17-atk-matk",
-                    "label": "Damage(fire) +17%, Atk/matk"
-                  },
-                  {
-                    "id": "damage-fire-19-atk-matk",
-                    "label": "Damage(fire) +19%, Atk/matk"
-                  },
-                  {
-                    "id": "damage-fire-20-atk-matk",
-                    "label": "Damage(fire) +20%, Atk/matk"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage-fire-10-atk-matk": "+10",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage-fire-14-atk-matk": "+15",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage-fire-17-atk-matk": "+20",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage-fire-19-atk-matk": "+25",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage-fire-20-atk-matk": "+30",
                       "sp-cost": "40"
                     }
                   }
@@ -14309,10 +14037,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14321,35 +14045,30 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "125%",
                       "sp-cost": "28"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "250%",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "375%",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "500%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "625%",
                       "sp-cost": "44"
                     }
                   }
@@ -14517,7 +14236,7 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Chance of Autocast: 2%, Add Fire/Cold/Lightning Bolt",
+                      "effect": "Chance of Autocast: 2%, Add Fire / Cold / Lightning Bolt",
                       "sp-cost": "35"
                     }
                   },
@@ -14538,7 +14257,7 @@ export const elementalMasterData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Chance of Autocast: 8%, Add Soul Strike/Fire ball",
+                      "effect": "Chance of Autocast: 8%, Add Soul Strike / Fire ball",
                       "sp-cost": "35"
                     }
                   },
@@ -14559,7 +14278,7 @@ export const elementalMasterData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Chance of Autocast:14%, Add Frost diver/Earth Spike",
+                      "effect": "Chance of Autocast:14%, Add Frost diver / Earth Spike",
                       "sp-cost": "35"
                     }
                   },
@@ -14580,7 +14299,7 @@ export const elementalMasterData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Chance of Autocast:20%, Add Thunder storm/Heaven's Drive",
+                      "effect": "Chance of Autocast:20%, Add Thunder storm / Heaven's Drive",
                       "sp-cost": "35"
                     }
                   }
@@ -16132,7 +15851,7 @@ export const elementalMasterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -16160,7 +15879,7 @@ export const elementalMasterData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -17029,10 +16748,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -17041,70 +16756,60 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "80%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "90%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "100%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "110%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "130%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "140%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "150%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "170%",
                       "sp-cost": "18"
                     }
                   }
@@ -17657,70 +17362,70 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(3 + 0.2% of Ma x SP)/10 sec",
+                      "effect": "(3 + 0.2% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(6 + 0.4% of Ma x SP)/10 sec",
+                      "effect": "(6 + 0.4% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(9 + 0.6% of Ma x SP)/10 sec",
+                      "effect": "(9 + 0.6% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(12 + 0.8% of Ma x SP)/10 sec",
+                      "effect": "(12 + 0.8% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(15 + 1.0% of Ma x SP)/10 sec",
+                      "effect": "(15 + 1.0% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(18 + 1.2% of Ma x SP)/10 sec",
+                      "effect": "(18 + 1.2% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(21 + 1.4% of Ma x SP)/10 sec",
+                      "effect": "(21 + 1.4% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(24 + 1.6% of Ma x SP)/10 sec",
+                      "effect": "(24 + 1.6% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(27 + 1.8% of Ma x SP)/10 sec",
+                      "effect": "(27 + 1.8% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(30 + 2.0% of Ma x SP)/10 sec",
+                      "effect": "(30 + 2.0% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   }
@@ -17896,10 +17601,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -17908,70 +17609,60 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "110%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "130%",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "140%",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "150%",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "170%",
                       "sp-cost": "19"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "180%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "190%",
                       "sp-cost": "17"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "200%",
                       "sp-cost": "16"
                     }
                   }
@@ -18391,80 +18082,66 @@ export const elementalMasterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1time, + 5% dmg to Undead, SP Consumption:18",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1time, +10% dmg to Undead, SP Consumption:14",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 2times, +15% dmg to Undead, SP Consumption:24",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2times, +20% dmg to Undead, SP Consumption:20",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 3times, +25% dmg to Undead, SP Consumption:30",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 3times, +30% dmg to Undead, SP Consumption:26",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 4times, +35% dmg to Undead, SP Consumption:36",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 4times, +40% dmg to Undead, SP Consumption:32",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 5times, +45% dmg to Undead, SP Consumption:42",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 5times, +50% dmg to Undead, SP Consumption:38",
                       "sp-cost": "38"
                     }
                   }
@@ -18640,10 +18317,6 @@ export const elementalMasterData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -18652,70 +18325,60 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "180%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "200%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "220%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "240%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "260%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "280%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "300%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "320%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "340%",
                       "sp-cost": "25"
                     }
                   }
@@ -19816,10 +19479,6 @@ export const elementalMasterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19828,35 +19487,30 @@ export const elementalMasterData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "1950%",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "3500%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "5050%",
                   "sp-cost": "88"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "6600%",
                   "sp-cost": "92"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "8150%",
                   "sp-cost": "96"
                 }
               }
@@ -19904,17 +19558,10 @@ export const elementalMasterData = {
             },
             {
               "label": "Damage",
-              "before": "3500%Matk",
-              "after": "6250%Matk",
+              "before": "3500%Matk/6650%Matk (while Diluvio is summoned)",
+              "after": "6250%Matk/12250%Matk (while Diluvio is summoned)",
               "scope": "Lv 5",
-              "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5."
-            },
-            {
-              "label": "Damage While Diluvio Is Summoned",
-              "before": "6650%Matk",
-              "after": "12250%Matk",
-              "scope": "",
-              "source": "Increases damage while Diluvio is summoned from 6650%Matk to 12250%Matk."
+              "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5. / Increases damage while Diluvio is summoned from 6650%Matk to 12250%Matk."
             }
           ]
         },
@@ -20122,10 +19769,6 @@ export const elementalMasterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -20134,35 +19777,30 @@ export const elementalMasterData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "1150%",
                   "sp-cost": "97"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "1800%",
                   "sp-cost": "101"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "2450%",
                   "sp-cost": "105"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "3100%",
                   "sp-cost": "109"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "3750%",
                   "sp-cost": "113"
                 }
               }
@@ -20211,17 +19849,10 @@ export const elementalMasterData = {
             },
             {
               "label": "Damage",
-              "before": "750%Matk",
-              "after": "2000%Matk",
+              "before": "750%Matk/1250%Matk (while Ardor is summoned)",
+              "after": "2000%Matk/4000%Matk (while Ardor is summoned)",
               "scope": "Lv 5",
-              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
-            },
-            {
-              "label": "Damage While Ardor Is Summoned",
-              "before": "1250%Matk",
-              "after": "4000%Matk",
-              "scope": "",
-              "source": "Increases damage while Ardor is summoned from 1250%Matk to 4000%Matk."
+              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Ardor is summoned from 1250%Matk to 4000%Matk."
             }
           ]
         },
@@ -20421,10 +20052,6 @@ export const elementalMasterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -20433,35 +20060,30 @@ export const elementalMasterData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "1150%",
                   "sp-cost": "94"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "1800%",
                   "sp-cost": "98"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "2450%",
                   "sp-cost": "102"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "3100%",
                   "sp-cost": "106"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "3750%",
                   "sp-cost": "110"
                 }
               }
@@ -20510,17 +20132,10 @@ export const elementalMasterData = {
             },
             {
               "label": "Damage",
-              "before": "750%Matk",
-              "after": "2000%Matk",
+              "before": "750%Matk/1250%Matk (while Pro cellsa is summoned)",
+              "after": "2000%Matk/4000%Matk (while Pro cellsa is summoned)",
               "scope": "Lv 5",
-              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
-            },
-            {
-              "label": "Damage While Procella Is Summoned",
-              "before": "1250%Matk",
-              "after": "4000%Matk",
-              "scope": "",
-              "source": "Increases damage while Procella is summoned from 1250%Matk to 4000%Matk."
+              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Procella is summoned from 1250%Matk to 4000%Matk."
             }
           ]
         },
@@ -21008,10 +20623,6 @@ export const elementalMasterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -21020,35 +20631,30 @@ export const elementalMasterData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "1950%",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "3500%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "5050%",
                   "sp-cost": "88"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "6600%",
                   "sp-cost": "92"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "8150%",
                   "sp-cost": "96"
                 }
               }
@@ -21096,17 +20702,10 @@ export const elementalMasterData = {
             },
             {
               "label": "Damage",
-              "before": "3500%Matk",
-              "after": "6250%Matk",
+              "before": "3500%Matk/6650%Matk (while Terremotus is summoned)",
+              "after": "6250%Matk/12250%Matk (while Terremotus is summoned)",
               "scope": "Lv 5",
-              "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5."
-            },
-            {
-              "label": "Damage While Terremotus Is Summoned",
-              "before": "6650%Matk",
-              "after": "12250%Matk",
-              "scope": "",
-              "source": "Increases damage while Terremotus is summoned from 6650%Matk to 12250%Matk."
+              "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5. / Increases damage while Terremotus is summoned from 6650%Matk to 12250%Matk."
             }
           ]
         },
@@ -21314,10 +20913,6 @@ export const elementalMasterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -21326,35 +20921,30 @@ export const elementalMasterData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "1150%",
                   "sp-cost": "92"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "1800%",
                   "sp-cost": "97"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "2450%",
                   "sp-cost": "102"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "3100%",
                   "sp-cost": "107"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "3750%",
                   "sp-cost": "112"
                 }
               }
@@ -21403,17 +20993,10 @@ export const elementalMasterData = {
             },
             {
               "label": "Damage",
-              "before": "750%Matk",
-              "after": "2000%Matk",
+              "before": "750%Matk/1250%Matk (while Serpens is summoned)",
+              "after": "2000%Matk/4000%Matk (while Serpens is summoned)",
               "scope": "Lv 5",
-              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
-            },
-            {
-              "label": "Damage While Serpens Is Summoned",
-              "before": "1250%Matk",
-              "after": "4000%Matk",
-              "scope": "",
-              "source": "Increases damage while Serpens is summoned from 1250%Matk to 4000%Matk."
+              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Serpens is summoned from 1250%Matk to 4000%Matk."
             }
           ]
         },
@@ -22095,10 +21678,6 @@ export const elementalMasterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -22107,36 +21686,31 @@ export const elementalMasterData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "4500%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "8000%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "11500%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk": "15000%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk": "18500%"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
@@ -22750,10 +22324,6 @@ export const elementalMasterData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -22762,70 +22332,60 @@ export const elementalMasterData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "2700%",
                   "sp-cost": "140"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "4900%",
                   "sp-cost": "140"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "7100%",
                   "sp-cost": "140"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "9300%",
                   "sp-cost": "140"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "11500%",
                   "sp-cost": "140"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-matk": "13700%",
                   "sp-cost": "140"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-matk": "15900%",
                   "sp-cost": "140"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-matk": "18100%",
                   "sp-cost": "140"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-matk": "20300%",
                   "sp-cost": "140"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-matk": "22500%",
                   "sp-cost": "140"
                 }
               }

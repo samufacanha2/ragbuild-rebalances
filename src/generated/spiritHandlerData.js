@@ -1,5 +1,5 @@
 export const spiritHandlerData = {
-  "generatedAt": "2026-07-09T04:24:10.410Z",
+  "generatedAt": "2026-07-09T13:23:15.526Z",
   "classId": 4308,
   "classSlug": "spirit-handler",
   "className": "Spirit Handler",
@@ -614,59 +614,48 @@ export const spiritHandlerData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 2500+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 2900+(Mystical Creature Mastery Lv x 100)%",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 4150+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 4950+(Mystical Creature Mastery Lv x 100)%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 5800+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 7000+(Mystical Creature Mastery Lv x 100)%",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 7450+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 9050+(Mystical Creature Mastery Lv x 100)%",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 9100+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 11100+(Mystical Creature Mastery Lv x 100)%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 10750+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 13150+(Mystical Creature Mastery Lv x 100)%",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 12400+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 15200+(Mystical Creature Mastery Lv x 100)%",
                       "sp-cost": "54"
                     }
                   }
@@ -921,7 +910,7 @@ export const spiritHandlerData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "Recovery Amount 500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 750+(Mystical Creature Mastery Lv x 150)/Range: 11 x 11 cells",
+                      "effect": "Recovery Amount 500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 750+(Mystical Creature Mastery Lv x 150) / Range: 11 x 11 cells",
                       "sp-cost": "61"
                     }
                   },
@@ -929,7 +918,7 @@ export const spiritHandlerData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "Recovery Amount 1000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 1500+(Mystical Creature Mastery Lv x 150)/Range: 11 x 11 cells",
+                      "effect": "Recovery Amount 1000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 1500+(Mystical Creature Mastery Lv x 150) / Range: 11 x 11 cells",
                       "sp-cost": "65"
                     }
                   },
@@ -937,7 +926,7 @@ export const spiritHandlerData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "9x9",
-                      "effect": "Recovery Amount 1500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 2250+(Mystical Creature Mastery Lv x 150)/Range: 13 x 13 cells",
+                      "effect": "Recovery Amount 1500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 2250+(Mystical Creature Mastery Lv x 150) / Range: 13 x 13 cells",
                       "sp-cost": "69"
                     }
                   },
@@ -945,7 +934,7 @@ export const spiritHandlerData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "9x9",
-                      "effect": "Recovery Amount 2000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3000+(Mystical Creature Mastery Lv x 150)/Range: 13 x 13 cells",
+                      "effect": "Recovery Amount 2000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3000+(Mystical Creature Mastery Lv x 150) / Range: 13 x 13 cells",
                       "sp-cost": "73"
                     }
                   },
@@ -953,7 +942,7 @@ export const spiritHandlerData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "11x11",
-                      "effect": "Recovery Amount 2500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3750+(Mystical Creature Mastery Lv x 150)/Range: 15 x 15 cells",
+                      "effect": "Recovery Amount 2500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3750+(Mystical Creature Mastery Lv x 150) / Range: 15 x 15 cells",
                       "sp-cost": "77"
                     }
                   },
@@ -961,7 +950,7 @@ export const spiritHandlerData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "11x11",
-                      "effect": "Recovery Amount 3000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 4500+(Mystical Creature Mastery Lv x 150)/Range: 15 x 15 cells",
+                      "effect": "Recovery Amount 3000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 4500+(Mystical Creature Mastery Lv x 150) / Range: 15 x 15 cells",
                       "sp-cost": "81"
                     }
                   },
@@ -969,7 +958,7 @@ export const spiritHandlerData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "13x13",
-                      "effect": "Recovery Amount 3500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 5250+(Mystical Creature Mastery Lv x 150)/Range: 17 x 17 cells",
+                      "effect": "Recovery Amount 3500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 5250+(Mystical Creature Mastery Lv x 150) / Range: 17 x 17 cells",
                       "sp-cost": "85"
                     }
                   }
@@ -1256,84 +1245,9 @@ export const spiritHandlerData = {
               {
                 "label": "AP Generated",
                 "value": "1"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK per Hit) + (Mystical Creature Mastery level x Skill Level Factor))% ATK per hit"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
-                    "id": "skill-level-factor",
-                    "label": "Skill Level Factor"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "640",
-                      "skill-level-factor": "70"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "800",
-                      "skill-level-factor": "70"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "960",
-                      "skill-level-factor": "70"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "1,120",
-                      "skill-level-factor": "70"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "1,280",
-                      "skill-level-factor": "70"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-atk-per-hit": "1,440",
-                      "skill-level-factor": "70"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-atk-per-hit": "1,600",
-                      "skill-level-factor": "70"
-                    }
-                  }
-                ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "(Base Damage (ATK per Hit) + (Mystical Creature Mastery level x Skill Level Factor))% ATK per hit"
-                  }
-                ]
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [
@@ -1497,7 +1411,7 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1650+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)1850+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 7 x 7 cells",
+                      "effect": "Range(Commune): 7 x 7 cells",
                       "area-of-effect": "5x5",
                       "sp-cost": "72"
                     }
@@ -1505,14 +1419,14 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 2700+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)3000+(Mystical Creature Mastery Lv x 100)%\n,Range: 5 x 5 cells/Range(Commune): 7 x 7 cells",
+                      "effect": ",Range: 5 x 5 cells / Range(Commune): 7 x 7 cells",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 3750+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)4150+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 7 x 7 cells",
+                      "effect": "Range(Commune): 7 x 7 cells",
                       "area-of-effect": "5x5",
                       "sp-cost": "72"
                     }
@@ -1520,7 +1434,7 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 4800+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)5300+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 9 x 9 cells",
+                      "effect": "Range(Commune): 9 x 9 cells",
                       "area-of-effect": "7x7",
                       "sp-cost": "72"
                     }
@@ -1528,7 +1442,7 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 5850+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)6450+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 9 x 9 cells",
+                      "effect": "Range(Commune): 9 x 9 cells",
                       "area-of-effect": "7x7",
                       "sp-cost": "72"
                     }
@@ -1536,7 +1450,7 @@ export const spiritHandlerData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 6900+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)7600+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 9 x 9 cells",
+                      "effect": "Range(Commune): 9 x 9 cells",
                       "area-of-effect": "7x7",
                       "sp-cost": "72"
                     }
@@ -1544,7 +1458,7 @@ export const spiritHandlerData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 7950+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)8750+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 11 x 11 cells",
+                      "effect": "Range(Commune): 11 x 11 cells",
                       "area-of-effect": "9x9",
                       "sp-cost": "72"
                     }
@@ -1762,7 +1676,7 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "POW,CRT,CON +2/Duration: 60 sec\n/Range(Commune): 9 x 9 cells",
+                      "effect": "POW,CRT,CON +2 / Duration: 60 sec\nRange(Commune): 9 x 9 cells",
                       "area-of-effect": "5x5",
                       "sp-cost": "80"
                     }
@@ -1770,7 +1684,7 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "POW,CRT,CON +4/Duration: 75 sec\n/Range(Commune): 11 x 11 cells",
+                      "effect": "POW,CRT,CON +4 / Duration: 75 sec\nRange(Commune): 11 x 11 cells",
                       "area-of-effect": "7x7",
                       "sp-cost": "90"
                     }
@@ -1778,7 +1692,7 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "POW,CRT,CON +6/Duration: 90 sec\n/Range(Commune): 13 x 13 cells",
+                      "effect": "POW,CRT,CON +6 / Duration: 90 sec\nRange(Commune): 13 x 13 cells",
                       "area-of-effect": "9x9",
                       "sp-cost": "100"
                     }
@@ -1786,7 +1700,7 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "POW,CRT,CON +8/Duration: 105 sec\n/Range(Commune): 15 x 15 cells",
+                      "effect": "POW,CRT,CON +8 / Duration: 105 sec\nRange(Commune): 15 x 15 cells",
                       "area-of-effect": "11x11",
                       "sp-cost": "110"
                     }
@@ -1794,7 +1708,7 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "POW,CRT,CON +10/Duration: 120 sec\n/Range(Commune): 17 x 17 cells",
+                      "effect": "POW,CRT,CON +10 / Duration: 120 sec\nRange(Commune): 17 x 17 cells",
                       "area-of-effect": "13x13",
                       "sp-cost": "120"
                     }
@@ -1977,7 +1891,7 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "SPL,WIS,STA +2/Duration: 60 sec\n/Range(Commune): 9 x 9 cells",
+                      "effect": "SPL,WIS,STA +2 / Duration: 60 sec\nRange(Commune): 9 x 9 cells",
                       "area-of-effect": "5x5",
                       "sp-cost": "80"
                     }
@@ -1985,7 +1899,7 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "SPL,WIS,STA +4/Duration: 75 sec\n/Range(Commune): 11 x 11 cells",
+                      "effect": "SPL,WIS,STA +4 / Duration: 75 sec\nRange(Commune): 11 x 11 cells",
                       "area-of-effect": "7x7",
                       "sp-cost": "90"
                     }
@@ -1993,7 +1907,7 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "SPL,WIS,STA +6/Duration: 90 sec\n/Range(Commune): 13 x 13 cells",
+                      "effect": "SPL,WIS,STA +6 / Duration: 90 sec\nRange(Commune): 13 x 13 cells",
                       "area-of-effect": "9x9",
                       "sp-cost": "100"
                     }
@@ -2001,7 +1915,7 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "SPL,WIS,STA +8/Duration: 105 sec\n/Range(Commune): 15 x 15 cells",
+                      "effect": "SPL,WIS,STA +8 / Duration: 105 sec\nRange(Commune): 15 x 15 cells",
                       "area-of-effect": "11x11",
                       "sp-cost": "110"
                     }
@@ -2009,7 +1923,7 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "SPL,WIS,STA +10/Duration: 120 sec\n/Range(Commune): 17 x 17 cells",
+                      "effect": "SPL,WIS,STA +10 / Duration: 120 sec\nRange(Commune): 17 x 17 cells",
                       "area-of-effect": "13x13",
                       "sp-cost": "120"
                     }
@@ -2202,17 +2116,12 @@ export const spiritHandlerData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 1400+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 1700+(Mystical Creature Mastery Lv x 40)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "58"
                     }
@@ -2220,7 +2129,6 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 2150+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 2650+(Mystical Creature Mastery Lv x 40)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "64"
                     }
@@ -2228,7 +2136,6 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 2900+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 3600+(Mystical Creature Mastery Lv x 40)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "70"
                     }
@@ -2236,7 +2143,6 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 3650+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 4550+(Mystical Creature Mastery Lv x 40)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "76"
                     }
@@ -2244,7 +2150,6 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 4400+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 5500+(Mystical Creature Mastery Lv x 40)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "82"
                     }
@@ -2252,7 +2157,6 @@ export const spiritHandlerData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK 5150+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 6450+(Mystical Creature Mastery Lv x 40)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "88"
                     }
@@ -2260,7 +2164,6 @@ export const spiritHandlerData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK 5900+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 7400+(Mystical Creature Mastery Lv x 40)%",
                       "area-of-effect": "11x11",
                       "sp-cost": "94"
                     }
@@ -2464,17 +2367,12 @@ export const spiritHandlerData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "1 Per hit ATK 380+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 600+(Mystical Creature Mastery Lv x 20)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "67"
                     }
@@ -2482,7 +2380,6 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "1 Per hit ATK 580+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 950+(Mystical Creature Mastery Lv x 20)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "70"
                     }
@@ -2490,7 +2387,6 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "1 Per hit ATK 780+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 1300+(Mystical Creature Mastery Lv x 20)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "73"
                     }
@@ -2498,7 +2394,6 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "1 Per hit ATK 980+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 1650+(Mystical Creature Mastery Lv x 20)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "76"
                     }
@@ -2506,7 +2401,6 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "1 Per hit ATK 1180+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 2000+(Mystical Creature Mastery Lv x 20)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "79"
                     }
@@ -2514,7 +2408,6 @@ export const spiritHandlerData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "1 Per hit ATK 1380+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 2350+(Mystical Creature Mastery Lv x 20)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "82"
                     }
@@ -2522,7 +2415,6 @@ export const spiritHandlerData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "1 Per hit ATK 1580+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 2700+(Mystical Creature Mastery Lv x 20)%",
                       "area-of-effect": "11x11",
                       "sp-cost": "85"
                     }
@@ -2964,59 +2856,48 @@ export const spiritHandlerData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 2600+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 2900+(Mystical Creature Mastery Lv x 75)%",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 4150+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 4750+(Mystical Creature Mastery Lv x 75)%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 5700+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 6600+(Mystical Creature Mastery Lv x 75)%",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 7250+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 8450+(Mystical Creature Mastery Lv x 75)%",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 8800+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 10300+(Mystical Creature Mastery Lv x 75)%",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK 10350+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 12150+(Mystical Creature Mastery Lv x 75)%",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK 11900+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 14000+(Mystical Creature Mastery Lv x 75)%",
                       "sp-cost": "65"
                     }
                   }
@@ -3231,84 +3112,9 @@ export const spiritHandlerData = {
               {
                 "label": "Property",
                 "value": "neutral property magical damage"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (MATK per Hit) + (Mystical Creature Mastery level x Skill Level Factor))% MATK per hit"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
-                    "id": "skill-level-factor",
-                    "label": "Skill Level Factor"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-matk-per-hit": "550",
-                      "skill-level-factor": "30"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-matk-per-hit": "750",
-                      "skill-level-factor": "30"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-matk-per-hit": "950",
-                      "skill-level-factor": "30"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-matk-per-hit": "1,150",
-                      "skill-level-factor": "30"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-matk-per-hit": "1,350",
-                      "skill-level-factor": "30"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-matk-per-hit": "1,550",
-                      "skill-level-factor": "30"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-matk-per-hit": "1,750",
-                      "skill-level-factor": "30"
-                    }
-                  }
-                ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "(Base Damage (MATK per Hit) + (Mystical Creature Mastery level x Skill Level Factor))% MATK per hit"
-                  }
-                ]
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [
@@ -4094,10 +3900,6 @@ export const spiritHandlerData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "atk",
                     "label": "Atk %"
                   },
@@ -4114,7 +3916,6 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "200% of ATK",
                       "sp-cost": "10",
                       "atk": "200",
                       "data-1": "1",
@@ -4420,10 +4221,6 @@ export const spiritHandlerData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "atk",
                     "label": "Atk %"
                   },
@@ -4444,7 +4241,6 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "100% of ATK",
                       "sp-cost": "20",
                       "atk": "100",
                       "data-1": "0",
@@ -4455,7 +4251,6 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "150% of ATK",
                       "sp-cost": "25",
                       "atk": "150",
                       "data-1": "0",
@@ -4466,7 +4261,6 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "200% of ATK",
                       "sp-cost": "30",
                       "atk": "200",
                       "data-1": "1",
@@ -5471,7 +5265,7 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Earth Magic / 700% of MATK / Bleeding Rate: 10%",
+                      "effect": "Earth Magic / Bleeding Rate: 10%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "700",
@@ -5483,7 +5277,7 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Fire Magic / 700% of MATK / Bleeding Rate: 10%",
+                      "effect": "Fire Magic / Bleeding Rate: 10%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "700",
@@ -5495,7 +5289,7 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Water Magic / 700% of MATK / Bleeding Rate: 10%",
+                      "effect": "Water Magic / Bleeding Rate: 10%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "700",
@@ -5507,7 +5301,7 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Wind Magic / 700% of MATK / Bleeding Rate: 10%",
+                      "effect": "Wind Magic / Bleeding Rate: 10%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "700",
@@ -5519,7 +5313,7 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Ghost Magic / 700% of MATK / Bleeding Rate: 10%",
+                      "effect": "Ghost Magic / Bleeding Rate: 10%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "700",
@@ -5788,7 +5582,7 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Long-ranged Physical / 300% of ATK",
+                      "effect": "Long-ranged Physical",
                       "sp-cost": "10",
                       "range": "9 cells",
                       "atk": "300",
@@ -5799,7 +5593,7 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Long-ranged Physical / 400% of ATK",
+                      "effect": "Long-ranged Physical",
                       "sp-cost": "12",
                       "range": "9 cells",
                       "atk": "400",
@@ -5810,7 +5604,7 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Long-ranged Physical / 500% of ATK",
+                      "effect": "Long-ranged Physical",
                       "sp-cost": "14",
                       "range": "9 cells",
                       "atk": "500",
@@ -5821,7 +5615,7 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Long-ranged Physical / 600% of ATK",
+                      "effect": "Long-ranged Physical",
                       "sp-cost": "16",
                       "range": "9 cells",
                       "atk": "600",
@@ -5832,7 +5626,7 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Long-ranged Physical / 700% of ATK",
+                      "effect": "Long-ranged Physical",
                       "sp-cost": "18",
                       "range": "9 cells",
                       "atk": "700",
@@ -7480,10 +7274,6 @@ export const spiritHandlerData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7520,7 +7310,6 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "300%",
                       "sp-cost": "20",
                       "range": "9 cells",
                       "atk": "300",
@@ -7534,7 +7323,6 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "400%",
                       "sp-cost": "35",
                       "range": "9 cells",
                       "atk": "400",
@@ -7548,7 +7336,6 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "500%",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "atk": "500",
@@ -7562,7 +7349,6 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "600%",
                       "sp-cost": "65",
                       "range": "9 cells",
                       "atk": "600",
@@ -7576,7 +7362,6 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "700%",
                       "sp-cost": "80",
                       "range": "9 cells",
                       "atk": "700",
@@ -7905,7 +7690,7 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "100% of ATK / Bite Wound: Remove some Ma x HP every sec. for 9 sec",
+                      "effect": "Bite Wound: Remove some Ma x HP every sec. for 9 sec",
                       "sp-cost": "10",
                       "range": "9 cells",
                       "atk": "100",
@@ -7918,7 +7703,7 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "200% of ATK / Bite Wound: Remove some Ma x HP every sec. for 9 sec",
+                      "effect": "Bite Wound: Remove some Ma x HP every sec. for 9 sec",
                       "sp-cost": "12",
                       "range": "9 cells",
                       "atk": "200",
@@ -7931,7 +7716,7 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "300% of ATK / Bite Wound: Remove some Ma x HP every sec. for 9 sec",
+                      "effect": "Bite Wound: Remove some Ma x HP every sec. for 9 sec",
                       "sp-cost": "14",
                       "range": "9 cells",
                       "atk": "300",
@@ -7944,7 +7729,7 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "400% of ATK / Bite Wound: Remove some Ma x HP every sec. for 9 sec",
+                      "effect": "Bite Wound: Remove some Ma x HP every sec. for 9 sec",
                       "sp-cost": "16",
                       "range": "9 cells",
                       "atk": "400",
@@ -7957,7 +7742,7 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "500% of ATK / Bite Wound: Remove some Ma x HP every sec. for 9 sec",
+                      "effect": "Bite Wound: Remove some Ma x HP every sec. for 9 sec",
                       "sp-cost": "18",
                       "range": "9 cells",
                       "atk": "500",
@@ -8846,7 +8631,7 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "300% of ATK / Effective Range: 3 x 3",
+                      "effect": "Effective Range: 3 x 3",
                       "sp-cost": "15",
                       "range": "9 cells",
                       "atk": "300",
@@ -8857,7 +8642,7 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "400% of ATK / Effective Range: 3 x 3",
+                      "effect": "Effective Range: 3 x 3",
                       "sp-cost": "20",
                       "range": "9 cells",
                       "atk": "400",
@@ -8868,7 +8653,7 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "500% of ATK / Effective Range: 5 x 5",
+                      "effect": "Effective Range: 5 x 5",
                       "sp-cost": "25",
                       "range": "9 cells",
                       "atk": "500",
@@ -8879,7 +8664,7 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "600% of ATK / Effective Range: 5 x 5",
+                      "effect": "Effective Range: 5 x 5",
                       "sp-cost": "30",
                       "range": "9 cells",
                       "atk": "600",
@@ -8890,7 +8675,7 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "700% of ATK / Effective Range: 7 x 7",
+                      "effect": "Effective Range: 7 x 7",
                       "sp-cost": "35",
                       "range": "9 cells",
                       "atk": "700",
@@ -12409,59 +12194,48 @@ export const spiritHandlerData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 2500+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 2900+(Mystical Creature Mastery Lv x 100)%",
                   "sp-cost": "42"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 4150+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 4950+(Mystical Creature Mastery Lv x 100)%",
                   "sp-cost": "44"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 5800+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 7000+(Mystical Creature Mastery Lv x 100)%",
                   "sp-cost": "46"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 7450+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 9050+(Mystical Creature Mastery Lv x 100)%",
                   "sp-cost": "48"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 9100+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 11100+(Mystical Creature Mastery Lv x 100)%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK 10750+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 13150+(Mystical Creature Mastery Lv x 100)%",
                   "sp-cost": "52"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK 12400+(Mystical Creature Mastery Lv x 50)%\nATK(Commune With Chulho) 15200+(Mystical Creature Mastery Lv x 100)%",
                   "sp-cost": "54"
                 }
               }
@@ -12716,7 +12490,7 @@ export const spiritHandlerData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "7x7",
-                  "effect": "Recovery Amount 500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 750+(Mystical Creature Mastery Lv x 150)/Range: 11 x 11 cells",
+                  "effect": "Recovery Amount 500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 750+(Mystical Creature Mastery Lv x 150) / Range: 11 x 11 cells",
                   "sp-cost": "61"
                 }
               },
@@ -12724,7 +12498,7 @@ export const spiritHandlerData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "7x7",
-                  "effect": "Recovery Amount 1000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 1500+(Mystical Creature Mastery Lv x 150)/Range: 11 x 11 cells",
+                  "effect": "Recovery Amount 1000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 1500+(Mystical Creature Mastery Lv x 150) / Range: 11 x 11 cells",
                   "sp-cost": "65"
                 }
               },
@@ -12732,7 +12506,7 @@ export const spiritHandlerData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "9x9",
-                  "effect": "Recovery Amount 1500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 2250+(Mystical Creature Mastery Lv x 150)/Range: 13 x 13 cells",
+                  "effect": "Recovery Amount 1500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 2250+(Mystical Creature Mastery Lv x 150) / Range: 13 x 13 cells",
                   "sp-cost": "69"
                 }
               },
@@ -12740,7 +12514,7 @@ export const spiritHandlerData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "9x9",
-                  "effect": "Recovery Amount 2000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3000+(Mystical Creature Mastery Lv x 150)/Range: 13 x 13 cells",
+                  "effect": "Recovery Amount 2000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3000+(Mystical Creature Mastery Lv x 150) / Range: 13 x 13 cells",
                   "sp-cost": "73"
                 }
               },
@@ -12748,7 +12522,7 @@ export const spiritHandlerData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "11x11",
-                  "effect": "Recovery Amount 2500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3750+(Mystical Creature Mastery Lv x 150)/Range: 15 x 15 cells",
+                  "effect": "Recovery Amount 2500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3750+(Mystical Creature Mastery Lv x 150) / Range: 15 x 15 cells",
                   "sp-cost": "77"
                 }
               },
@@ -12756,7 +12530,7 @@ export const spiritHandlerData = {
                 "level": 6,
                 "values": {
                   "area-of-effect": "11x11",
-                  "effect": "Recovery Amount 3000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 4500+(Mystical Creature Mastery Lv x 150)/Range: 15 x 15 cells",
+                  "effect": "Recovery Amount 3000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 4500+(Mystical Creature Mastery Lv x 150) / Range: 15 x 15 cells",
                   "sp-cost": "81"
                 }
               },
@@ -12764,7 +12538,7 @@ export const spiritHandlerData = {
                 "level": 7,
                 "values": {
                   "area-of-effect": "13x13",
-                  "effect": "Recovery Amount 3500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 5250+(Mystical Creature Mastery Lv x 150)/Range: 17 x 17 cells",
+                  "effect": "Recovery Amount 3500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 5250+(Mystical Creature Mastery Lv x 150) / Range: 17 x 17 cells",
                   "sp-cost": "85"
                 }
               }
@@ -13051,84 +12825,9 @@ export const spiritHandlerData = {
           {
             "label": "AP Generated",
             "value": "1"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "(Base Damage (ATK per Hit) + (Mystical Creature Mastery level x Skill Level Factor))% ATK per hit"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
-                "id": "skill-level-factor",
-                "label": "Skill Level Factor"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk-per-hit": "640",
-                  "skill-level-factor": "70"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk-per-hit": "800",
-                  "skill-level-factor": "70"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk-per-hit": "960",
-                  "skill-level-factor": "70"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk-per-hit": "1,120",
-                  "skill-level-factor": "70"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk-per-hit": "1,280",
-                  "skill-level-factor": "70"
-                }
-              },
-              {
-                "level": 6,
-                "values": {
-                  "base-damage-atk-per-hit": "1,440",
-                  "skill-level-factor": "70"
-                }
-              },
-              {
-                "level": 7,
-                "values": {
-                  "base-damage-atk-per-hit": "1,600",
-                  "skill-level-factor": "70"
-                }
-              }
-            ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK per Hit) + (Mystical Creature Mastery level x Skill Level Factor))% ATK per hit"
-              }
-            ]
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [
@@ -13292,7 +12991,7 @@ export const spiritHandlerData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 1650+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)1850+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 7 x 7 cells",
+                  "effect": "Range(Commune): 7 x 7 cells",
                   "area-of-effect": "5x5",
                   "sp-cost": "72"
                 }
@@ -13300,14 +12999,14 @@ export const spiritHandlerData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 2700+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)3000+(Mystical Creature Mastery Lv x 100)%\n,Range: 5 x 5 cells/Range(Commune): 7 x 7 cells",
+                  "effect": ",Range: 5 x 5 cells / Range(Commune): 7 x 7 cells",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 3750+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)4150+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 7 x 7 cells",
+                  "effect": "Range(Commune): 7 x 7 cells",
                   "area-of-effect": "5x5",
                   "sp-cost": "72"
                 }
@@ -13315,7 +13014,7 @@ export const spiritHandlerData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 4800+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)5300+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 9 x 9 cells",
+                  "effect": "Range(Commune): 9 x 9 cells",
                   "area-of-effect": "7x7",
                   "sp-cost": "72"
                 }
@@ -13323,7 +13022,7 @@ export const spiritHandlerData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 5850+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)6450+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 9 x 9 cells",
+                  "effect": "Range(Commune): 9 x 9 cells",
                   "area-of-effect": "7x7",
                   "sp-cost": "72"
                 }
@@ -13331,7 +13030,7 @@ export const spiritHandlerData = {
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK 6900+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)7600+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 9 x 9 cells",
+                  "effect": "Range(Commune): 9 x 9 cells",
                   "area-of-effect": "7x7",
                   "sp-cost": "72"
                 }
@@ -13339,7 +13038,7 @@ export const spiritHandlerData = {
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK 7950+(Mystical Creature Mastery Lv x 50)%\nATK(Commune)8750+(Mystical Creature Mastery Lv x 100)%\n/Range(Commune): 11 x 11 cells",
+                  "effect": "Range(Commune): 11 x 11 cells",
                   "area-of-effect": "9x9",
                   "sp-cost": "72"
                 }
@@ -13557,7 +13256,7 @@ export const spiritHandlerData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "POW,CRT,CON +2/Duration: 60 sec\n/Range(Commune): 9 x 9 cells",
+                  "effect": "POW,CRT,CON +2 / Duration: 60 sec\nRange(Commune): 9 x 9 cells",
                   "area-of-effect": "5x5",
                   "sp-cost": "80"
                 }
@@ -13565,7 +13264,7 @@ export const spiritHandlerData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "POW,CRT,CON +4/Duration: 75 sec\n/Range(Commune): 11 x 11 cells",
+                  "effect": "POW,CRT,CON +4 / Duration: 75 sec\nRange(Commune): 11 x 11 cells",
                   "area-of-effect": "7x7",
                   "sp-cost": "90"
                 }
@@ -13573,7 +13272,7 @@ export const spiritHandlerData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "POW,CRT,CON +6/Duration: 90 sec\n/Range(Commune): 13 x 13 cells",
+                  "effect": "POW,CRT,CON +6 / Duration: 90 sec\nRange(Commune): 13 x 13 cells",
                   "area-of-effect": "9x9",
                   "sp-cost": "100"
                 }
@@ -13581,7 +13280,7 @@ export const spiritHandlerData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "POW,CRT,CON +8/Duration: 105 sec\n/Range(Commune): 15 x 15 cells",
+                  "effect": "POW,CRT,CON +8 / Duration: 105 sec\nRange(Commune): 15 x 15 cells",
                   "area-of-effect": "11x11",
                   "sp-cost": "110"
                 }
@@ -13589,7 +13288,7 @@ export const spiritHandlerData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "POW,CRT,CON +10/Duration: 120 sec\n/Range(Commune): 17 x 17 cells",
+                  "effect": "POW,CRT,CON +10 / Duration: 120 sec\nRange(Commune): 17 x 17 cells",
                   "area-of-effect": "13x13",
                   "sp-cost": "120"
                 }
@@ -13772,7 +13471,7 @@ export const spiritHandlerData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "SPL,WIS,STA +2/Duration: 60 sec\n/Range(Commune): 9 x 9 cells",
+                  "effect": "SPL,WIS,STA +2 / Duration: 60 sec\nRange(Commune): 9 x 9 cells",
                   "area-of-effect": "5x5",
                   "sp-cost": "80"
                 }
@@ -13780,7 +13479,7 @@ export const spiritHandlerData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "SPL,WIS,STA +4/Duration: 75 sec\n/Range(Commune): 11 x 11 cells",
+                  "effect": "SPL,WIS,STA +4 / Duration: 75 sec\nRange(Commune): 11 x 11 cells",
                   "area-of-effect": "7x7",
                   "sp-cost": "90"
                 }
@@ -13788,7 +13487,7 @@ export const spiritHandlerData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "SPL,WIS,STA +6/Duration: 90 sec\n/Range(Commune): 13 x 13 cells",
+                  "effect": "SPL,WIS,STA +6 / Duration: 90 sec\nRange(Commune): 13 x 13 cells",
                   "area-of-effect": "9x9",
                   "sp-cost": "100"
                 }
@@ -13796,7 +13495,7 @@ export const spiritHandlerData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "SPL,WIS,STA +8/Duration: 105 sec\n/Range(Commune): 15 x 15 cells",
+                  "effect": "SPL,WIS,STA +8 / Duration: 105 sec\nRange(Commune): 15 x 15 cells",
                   "area-of-effect": "11x11",
                   "sp-cost": "110"
                 }
@@ -13804,7 +13503,7 @@ export const spiritHandlerData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "SPL,WIS,STA +10/Duration: 120 sec\n/Range(Commune): 17 x 17 cells",
+                  "effect": "SPL,WIS,STA +10 / Duration: 120 sec\nRange(Commune): 17 x 17 cells",
                   "area-of-effect": "13x13",
                   "sp-cost": "120"
                 }
@@ -13997,17 +13696,12 @@ export const spiritHandlerData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 1400+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 1700+(Mystical Creature Mastery Lv x 40)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "58"
                 }
@@ -14015,7 +13709,6 @@ export const spiritHandlerData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 2150+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 2650+(Mystical Creature Mastery Lv x 40)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "64"
                 }
@@ -14023,7 +13716,6 @@ export const spiritHandlerData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 2900+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 3600+(Mystical Creature Mastery Lv x 40)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "70"
                 }
@@ -14031,7 +13723,6 @@ export const spiritHandlerData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 3650+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 4550+(Mystical Creature Mastery Lv x 40)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "76"
                 }
@@ -14039,7 +13730,6 @@ export const spiritHandlerData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 4400+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 5500+(Mystical Creature Mastery Lv x 40)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "82"
                 }
@@ -14047,7 +13737,6 @@ export const spiritHandlerData = {
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK 5150+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 6450+(Mystical Creature Mastery Lv x 40)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "88"
                 }
@@ -14055,7 +13744,6 @@ export const spiritHandlerData = {
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK 5900+(Mystical Creature Mastery Lv x 20)%\nMATK(Commune With Chulho) 7400+(Mystical Creature Mastery Lv x 40)%",
                   "area-of-effect": "11x11",
                   "sp-cost": "94"
                 }
@@ -14259,17 +13947,12 @@ export const spiritHandlerData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "1 Per hit ATK 380+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 600+(Mystical Creature Mastery Lv x 20)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "67"
                 }
@@ -14277,7 +13960,6 @@ export const spiritHandlerData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "1 Per hit ATK 580+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 950+(Mystical Creature Mastery Lv x 20)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "70"
                 }
@@ -14285,7 +13967,6 @@ export const spiritHandlerData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "1 Per hit ATK 780+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 1300+(Mystical Creature Mastery Lv x 20)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "73"
                 }
@@ -14293,7 +13974,6 @@ export const spiritHandlerData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "1 Per hit ATK 980+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 1650+(Mystical Creature Mastery Lv x 20)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "76"
                 }
@@ -14301,7 +13981,6 @@ export const spiritHandlerData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "1 Per hit ATK 1180+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 2000+(Mystical Creature Mastery Lv x 20)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "79"
                 }
@@ -14309,7 +13988,6 @@ export const spiritHandlerData = {
               {
                 "level": 6,
                 "values": {
-                  "effect": "1 Per hit ATK 1380+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 2350+(Mystical Creature Mastery Lv x 20)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "82"
                 }
@@ -14317,7 +13995,6 @@ export const spiritHandlerData = {
               {
                 "level": 7,
                 "values": {
-                  "effect": "1 Per hit ATK 1580+(Mystical Creature Mastery Lv x 10)%\n1 Per hit ATK(Commune) 2700+(Mystical Creature Mastery Lv x 20)%",
                   "area-of-effect": "11x11",
                   "sp-cost": "85"
                 }
@@ -14759,59 +14436,48 @@ export const spiritHandlerData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 2600+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 2900+(Mystical Creature Mastery Lv x 75)%",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 4150+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 4750+(Mystical Creature Mastery Lv x 75)%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 5700+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 6600+(Mystical Creature Mastery Lv x 75)%",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 7250+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 8450+(Mystical Creature Mastery Lv x 75)%",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 8800+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 10300+(Mystical Creature Mastery Lv x 75)%",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK 10350+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 12150+(Mystical Creature Mastery Lv x 75)%",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK 11900+(Mystical Creature Mastery Lv x 50)%\nMATK(Commune) 14000+(Mystical Creature Mastery Lv x 75)%",
                   "sp-cost": "65"
                 }
               }
@@ -15026,84 +14692,9 @@ export const spiritHandlerData = {
           {
             "label": "Property",
             "value": "neutral property magical damage"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "(Base Damage (MATK per Hit) + (Mystical Creature Mastery level x Skill Level Factor))% MATK per hit"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-matk-per-hit",
-                "label": "Base Damage (MATK per Hit)"
-              },
-              {
-                "id": "skill-level-factor",
-                "label": "Skill Level Factor"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-matk-per-hit": "550",
-                  "skill-level-factor": "30"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-matk-per-hit": "750",
-                  "skill-level-factor": "30"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-matk-per-hit": "950",
-                  "skill-level-factor": "30"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-matk-per-hit": "1,150",
-                  "skill-level-factor": "30"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-matk-per-hit": "1,350",
-                  "skill-level-factor": "30"
-                }
-              },
-              {
-                "level": 6,
-                "values": {
-                  "base-damage-matk-per-hit": "1,550",
-                  "skill-level-factor": "30"
-                }
-              },
-              {
-                "level": 7,
-                "values": {
-                  "base-damage-matk-per-hit": "1,750",
-                  "skill-level-factor": "30"
-                }
-              }
-            ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (MATK per Hit) + (Mystical Creature Mastery level x Skill Level Factor))% MATK per hit"
-              }
-            ]
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [

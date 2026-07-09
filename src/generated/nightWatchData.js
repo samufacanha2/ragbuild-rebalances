@@ -1,5 +1,5 @@
 export const nightWatchData = {
-  "generatedAt": "2026-07-09T12:11:49.702Z",
+  "generatedAt": "2026-07-09T13:22:07.181Z",
   "classId": 4306,
   "classSlug": "night-watch",
   "className": "Night Watch",
@@ -825,7 +825,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Atk +150/Hit +250/Cri +30 when aiming mode is active",
+                      "effect": "Hit +250 / Cri +30 when aiming mode is active",
                       "sp-cost": "10"
                     }
                   }
@@ -993,116 +993,66 @@ export const nightWatchData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "long-range-physical-damage-10-p-atk",
-                    "label": "Long Range Physical Damage +10%/p.atk"
-                  },
-                  {
-                    "id": "long-range-physical-damage-100-p-atk",
-                    "label": "Long Range Physical Damage +100%/p.atk"
-                  },
-                  {
-                    "id": "long-range-physical-damage-20-p-atk",
-                    "label": "Long Range Physical Damage +20%/p.atk"
-                  },
-                  {
-                    "id": "long-range-physical-damage-30-p-atk",
-                    "label": "Long Range Physical Damage +30%/p.atk"
-                  },
-                  {
-                    "id": "long-range-physical-damage-40-p-atk",
-                    "label": "Long Range Physical Damage +40%/p.atk"
-                  },
-                  {
-                    "id": "long-range-physical-damage-50-p-atk",
-                    "label": "Long Range Physical Damage +50%/p.atk"
-                  },
-                  {
-                    "id": "long-range-physical-damage-60-p-atk",
-                    "label": "Long Range Physical Damage +60%/p.atk"
-                  },
-                  {
-                    "id": "long-range-physical-damage-70-p-atk",
-                    "label": "Long Range Physical Damage +70%/p.atk"
-                  },
-                  {
-                    "id": "long-range-physical-damage-80-p-atk",
-                    "label": "Long Range Physical Damage +80%/p.atk"
-                  },
-                  {
-                    "id": "long-range-physical-damage-90-p-atk",
-                    "label": "Long Range Physical Damage +90%/p.atk"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "long-range-physical-damage-10-p-atk": "+3",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "long-range-physical-damage-20-p-atk": "+6",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "long-range-physical-damage-30-p-atk": "+9",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "long-range-physical-damage-40-p-atk": "+12",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "long-range-physical-damage-50-p-atk": "+15",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "long-range-physical-damage-60-p-atk": "+18",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "long-range-physical-damage-70-p-atk": "+21",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "long-range-physical-damage-80-p-atk": "+24",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "long-range-physical-damage-90-p-atk": "+27",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "long-range-physical-damage-100-p-atk": "+30",
                       "sp-cost": "150"
                     }
                   }
@@ -1240,10 +1190,6 @@ export const nightWatchData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
@@ -1251,7 +1197,6 @@ export const nightWatchData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "3x3",
-                      "effect": "ATK 3600+(Grenade Mastery Lv x 50)%",
                       "sp-cost": "36"
                     }
                   },
@@ -1259,7 +1204,6 @@ export const nightWatchData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "3x3",
-                      "effect": "ATK 5700+(Grenade Mastery Lv x 50)%",
                       "sp-cost": "42"
                     }
                   },
@@ -1267,7 +1211,6 @@ export const nightWatchData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "3x3",
-                      "effect": "ATK 7800+(Grenade Mastery Lv x 50)%",
                       "sp-cost": "48"
                     }
                   },
@@ -1275,7 +1218,6 @@ export const nightWatchData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "ATK 9900+(Grenade Mastery Lv x 50)%",
                       "sp-cost": "54"
                     }
                   },
@@ -1283,7 +1225,6 @@ export const nightWatchData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "ATK 12000+(Grenade Mastery Lv x 50)%",
                       "sp-cost": "60"
                     }
                   }
@@ -1656,10 +1597,6 @@ export const nightWatchData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
@@ -1667,7 +1604,6 @@ export const nightWatchData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "9x9\n5x5",
-                      "effect": "Per hit ATK(Gatling gun) 300+(aiming count x 100)%\nPer hit ATK(Shotgun) 1500+(aiming count x 200)%",
                       "sp-cost": "72"
                     }
                   },
@@ -1675,7 +1611,6 @@ export const nightWatchData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "9x9\n5x5",
-                      "effect": "Per hitATK(Gatling gun) 600+(aiming count x 200)%\nPer hit ATK(Shotgun) 2200+(aiming count x 400)%",
                       "sp-cost": "76"
                     }
                   },
@@ -1683,7 +1618,6 @@ export const nightWatchData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "9x9\n5x5",
-                      "effect": "Per hitATK(Gatling gun) 900+(aiming count x 300)%\nPer hit ATK(Shotgun) 2900+(aiming count x 600)%",
                       "sp-cost": "80"
                     }
                   },
@@ -1691,7 +1625,6 @@ export const nightWatchData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "11x11\n7x7",
-                      "effect": "Per hitATK(Gatling gun) 1200+(aiming count x 400)%\nPer hit ATK(Shotgun) 3600+(aiming count x 800)%",
                       "sp-cost": "84"
                     }
                   },
@@ -1699,7 +1632,6 @@ export const nightWatchData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "11x11\n7x7",
-                      "effect": "Per hitATK(Gatling gun) 1500+(aiming count x 500)%\nPer hit ATK(Shotgun) 4300+(aiming count x 1000)%",
                       "sp-cost": "88"
                     }
                   }
@@ -1893,45 +1825,36 @@ export const nightWatchData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK(Rifle) 4200+(aiming count x 350)%\nATK(Pistol) 4600+(aiming count x 350)%",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK(Rifle) 7200+(aiming count x 700)%\nATK(Pistol) 8000+(aiming count x 700)%",
                       "sp-cost": "43"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK(Rifle) 10200+(aiming count x 1050)%\nATK(Pistol) 11400+(aiming count x 1050)%",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK(Rifle) 13200+(aiming count x 1400)%\nATK(Pistol) 14800+(aiming count x 1400)%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK(Rifle) 16200+(aiming count x 1750)%\nATK(Pistol) 18200+(aiming count x 1750)%",
                       "sp-cost": "55"
                     }
                   }
@@ -2138,10 +2061,6 @@ export const nightWatchData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
@@ -2149,7 +2068,6 @@ export const nightWatchData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "9x9\n5x5",
-                      "effect": "Per hit ATK(Grenade Launcher) 2900+(Aiming count x 150)%\nATK(Rifle)4200+(Aiming count x 150)%",
                       "sp-cost": "48"
                     }
                   },
@@ -2157,7 +2075,6 @@ export const nightWatchData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "9x9\n5x5",
-                      "effect": "Per hit ATK(Grenade Launcher) 4600+(Aiming count x 300)%\nATK(Rifle)7000+(Aiming count x 300)%",
                       "sp-cost": "53"
                     }
                   },
@@ -2165,7 +2082,6 @@ export const nightWatchData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "9x9\n5x5",
-                      "effect": "Per hit ATK(Grenade Launcher) 6300+(Aiming count x 450)%\nATK(Rifle)9800+(Aiming count x 450)%",
                       "sp-cost": "58"
                     }
                   },
@@ -2173,7 +2089,6 @@ export const nightWatchData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "11x11\n7x7",
-                      "effect": "Per hit ATK(Grenade Launcher) 8000+(Aiming count x 600)%\nATK(Rifle)12600+(Aiming count x 600)%",
                       "sp-cost": "63"
                     }
                   },
@@ -2181,7 +2096,6 @@ export const nightWatchData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "11x11\n7x7",
-                      "effect": "Per hit ATK(Grenade Launcher) 9700+(Aiming count x 750)%\nATK(Rifle)15400+(Aiming count x 750)%",
                       "sp-cost": "68"
                     }
                   }
@@ -2375,45 +2289,36 @@ export const nightWatchData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Per hit ATK(Gatling) 750+(Aiming count x 100)%\nPer hit ATK(Revolver) 1100+(Aiming count x 100)%",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Per hit ATK(Gatling) 1250+(Aiming count x 200)%\nPer hit ATK(Revolver) 1900+(Aiming count x 200)%",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Per hit ATK(Gatling) 1750+(Aiming count x 300)%\nPer hit ATK(Revolver) 2700+(Aiming count x 300)%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Per hit ATK(Gatling) 2250+(Aiming count x 400)%\nPer hit ATK(Revolver) 3500+(Aiming count x 400)%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Per hit ATK(Gatling) 2750+(Aiming count x 500)%\nPer hit ATK(Revolver) 4300+(Aiming count x 500)%",
                       "sp-cost": "58"
                     }
                   }
@@ -2642,35 +2547,35 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK(Shotgun) 4700+(Aiming count x 500)%/Range: 5 x 5\nATK(Grenade Launcher) 4500+(Aiming count x 500)%/Range: 9 x 9",
+                      "effect": "Range: 5 x 5\nRange: 9 x 9",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK(Shotgun) 7900+(Aiming count x 1000)%/Range: 5 x 5\nATK(Grenade Launcher) 7500+(Aiming count x 1000)%/Range: 9 x 9",
+                      "effect": "Range: 5 x 5\nRange: 9 x 9",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK(Shotgun) 11100+(Aiming count x 1500)%/Range: 5 x 5\nATK(Grenade Launcher) 10500+(Aiming count x 1500)%/Range: 9 x 9",
+                      "effect": "Range: 5 x 5\nRange: 9 x 9",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK(Shotgun) 14300+(Aiming count x 2000)%/Range: 7 x 7\nATK(Grenade Launcher) 13500+(Aiming count x 2000)%/Range: 11 x 11",
+                      "effect": "Range: 7 x 7\nRange: 11 x 11",
                       "sp-cost": "63"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK(Shotgun) 17500+(Aiming count x 2500)%/Range: 7 x 7\nATK(Grenade Launcher) 16500+(Aiming count x 2500)%/Range: 11 x 11",
+                      "effect": "Range: 7 x 7\nRange: 11 x 11",
                       "sp-cost": "67"
                     }
                   }
@@ -2850,45 +2755,36 @@ export const nightWatchData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK per hit 3000+(Grenade Mastery Lv x 20)%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK per hit 4500+(Grenade Mastery Lv x 20)%",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK per hit 6000+(Grenade Mastery Lv x 20)%",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK per hit 7500+(Grenade Mastery Lv x 20)%",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK per hit 9000+(Grenade Mastery Lv x 20)%",
                       "sp-cost": "62"
                     }
                   }
@@ -3036,50 +2932,7 @@ export const nightWatchData = {
                 "value": "2"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "1050%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "1230%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "1410%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "1590%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "1770%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -3173,50 +3026,7 @@ export const nightWatchData = {
                 "value": "2"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "3200%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "4000%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "4800%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "5600%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "6400%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -3349,35 +3159,35 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "1 Per hit ATK 1400+(Grenade Mastery Lv x 30)%/Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                      "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "1 Per hit ATK 2250+(Grenade Mastery Lv x 30)%/Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                      "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
                       "sp-cost": "66"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "1 Per hit ATK 3100+(Grenade Mastery Lv x 30)%/Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                      "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "1 Per hit ATK 3950+(Grenade Mastery Lv x 30)%/Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
+                      "effect": "Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "1 Per hit ATK 4800+(Grenade Mastery Lv x 30)%/Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
+                      "effect": "Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
                       "sp-cost": "84"
                     }
                   }
@@ -3505,35 +3315,35 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Basic Grenade(6%) /Duration: 120 sec",
+                      "effect": "Basic Grenade(6%) / Duration: 120 sec",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Basic Grenade(7%) /Duration: 150 sec",
+                      "effect": "Basic Grenade(7%) / Duration: 150 sec",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Basic Grenade(8%), Hasty Fire in the Hole(3%) /Duration: 180 sec",
+                      "effect": "Basic Grenade(8%), Hasty Fire in the Hole(3%) / Duration: 180 sec",
                       "sp-cost": "110"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Basic Grenade(9%), Hasty Fire in the Hole(5%) /Duration : 210 sec",
+                      "effect": "Basic Grenade(9%), Hasty Fire in the Hole(5%) / Duration : 210 sec",
                       "sp-cost": "120"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Basic Grenade(10%), Hasty Fire in the Hole(7%), Grenade Dropping(3%) /Duration: 240 sec",
+                      "effect": "Basic Grenade(10%), Hasty Fire in the Hole(7%), Grenade Dropping(3%) / Duration: 240 sec",
                       "sp-cost": "130"
                     }
                   }
@@ -3705,80 +3515,66 @@ export const nightWatchData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 6800+(Grenade Mastery Lv x 100)%/1 Per hit ATK 1000+(Grenade Mastery Lv x 30)%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 8600+(Grenade Mastery Lv x 100)%/1 Per hit ATK 1200+(Grenade Mastery Lv x 30)%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 10400+(Grenade Mastery Lv x 100)%/1 Per hit ATK 1400+(Grenade Mastery Lv x 30)%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 12200+(Grenade Mastery Lv x 100)%/1 Per hit ATK 1600+(Grenade Mastery Lv x 30)%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 14000+(Grenade Mastery Lv x 100)%/1 Per hit ATK 1800+(Grenade Mastery Lv x 30)%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 15800+(Grenade Mastery Lv x 100)%/1 Per hit ATK 2000+(Grenade Mastery Lv x 30)%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 17600+(Grenade Mastery Lv x 100)%/1 Per hit ATK 2200+(Grenade Mastery Lv x 30)%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 19400+(Grenade Mastery Lv x 100)%/1 Per hit ATK 2400+(Grenade Mastery Lv x 30)%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 21200+(Grenade Mastery Lv x 100)%/1 Per hit ATK 2600+(Grenade Mastery Lv x 30)%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 23000+(Grenade Mastery Lv x 100)%/1 Per hit ATK 2800+(Grenade Mastery Lv x 30)%",
                       "sp-cost": "100"
                     }
                   }
@@ -4329,7 +4125,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Effective Range: 5 x 5 cells/1,900% of ATK",
+                      "effect": "Effective Range: 5 x 5 cells",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "atk": "1900",
@@ -4339,7 +4135,7 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Effective Range: 5 x 5 cells/2,100% of ATK",
+                      "effect": "Effective Range: 5 x 5 cells",
                       "sp-cost": "55",
                       "range": "9 cells",
                       "atk": "2100",
@@ -4349,7 +4145,7 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Effective Range: 5 x 5 cells/2,300% of ATK",
+                      "effect": "Effective Range: 5 x 5 cells",
                       "sp-cost": "60",
                       "range": "9 cells",
                       "atk": "2300",
@@ -4359,7 +4155,7 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Effective Range: 5 x 5 cells/2,500% of ATK",
+                      "effect": "Effective Range: 5 x 5 cells",
                       "sp-cost": "65",
                       "range": "9 cells",
                       "atk": "2500",
@@ -4369,7 +4165,7 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Effective Range: 7 x 7 cells/2,700% of ATK",
+                      "effect": "Effective Range: 7 x 7 cells",
                       "sp-cost": "70",
                       "range": "9 cells",
                       "atk": "2700",
@@ -4603,7 +4399,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "200% of ATK/Bleeding Chance: 40%",
+                      "effect": "Bleeding Chance: 40%",
                       "sp-cost": "40",
                       "range": "15 cells",
                       "atk": "200",
@@ -4613,7 +4409,7 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "400% of ATK/Bleeding Chance: 50%",
+                      "effect": "Bleeding Chance: 50%",
                       "sp-cost": "44",
                       "range": "15 cells",
                       "atk": "400",
@@ -4623,7 +4419,7 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "600% of ATK/Bleeding Chance: 60%",
+                      "effect": "Bleeding Chance: 60%",
                       "sp-cost": "48",
                       "range": "15 cells",
                       "atk": "600",
@@ -4633,7 +4429,7 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "800% of ATK/Bleeding Chance: 70%",
+                      "effect": "Bleeding Chance: 70%",
                       "sp-cost": "52",
                       "range": "15 cells",
                       "atk": "800",
@@ -4643,7 +4439,7 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "1,000% of ATK/Bleeding Chance: 80%",
+                      "effect": "Bleeding Chance: 80%",
                       "sp-cost": "56",
                       "range": "15 cells",
                       "atk": "1000",
@@ -5021,10 +4817,6 @@ export const nightWatchData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "atk",
                     "label": "Atk %"
                   },
@@ -5045,7 +4837,6 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "400% of ATK + 800% E x plosion Damage",
                       "sp-cost": "45",
                       "range": "7 cells",
                       "atk": "400",
@@ -5056,7 +4847,6 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "600% of ATK + 1,100% E x plosion Damage",
                       "sp-cost": "50",
                       "range": "8 cells",
                       "atk": "600",
@@ -5067,7 +4857,6 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "800% of ATK + 1,400% E x plosion Damage",
                       "sp-cost": "55",
                       "range": "9 cells",
                       "atk": "800",
@@ -5078,7 +4867,6 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "1,000% of ATK + 1,700% E x plosion Damage",
                       "sp-cost": "60",
                       "range": "10 cells",
                       "atk": "1000",
@@ -5089,7 +4877,6 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "1,200% of ATK + 2,000% E x plosion Damage",
                       "sp-cost": "65",
                       "range": "11 cells",
                       "atk": "1200",
@@ -5324,7 +5111,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "3,800% of ATK/Removal Chance: 20%",
+                      "effect": "Removal Chance: 20%",
                       "sp-cost": "70",
                       "range": "3 cells",
                       "atk": "3800",
@@ -5334,7 +5121,7 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "4,100% of ATK/Removal Chance: 25%",
+                      "effect": "Removal Chance: 25%",
                       "sp-cost": "70",
                       "range": "3 cells",
                       "atk": "4100",
@@ -5344,7 +5131,7 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "4,400% of ATK/Removal Chance: 30%",
+                      "effect": "Removal Chance: 30%",
                       "sp-cost": "70",
                       "range": "3 cells",
                       "atk": "4400",
@@ -5354,7 +5141,7 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "4,700% of ATK/Removal Chance: 35%",
+                      "effect": "Removal Chance: 35%",
                       "sp-cost": "70",
                       "range": "3 cells",
                       "atk": "4700",
@@ -5364,7 +5151,7 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "5,000% of ATK/Removal Chance: 40%",
+                      "effect": "Removal Chance: 40%",
                       "sp-cost": "70",
                       "range": "3 cells",
                       "atk": "5000",
@@ -5837,7 +5624,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Effective Range: 3 x 3 cells/Duration: 4 +6 sec",
+                      "effect": "Effective Range: 3 x 3 cells / Duration: 4 +6 sec",
                       "sp-cost": "30",
                       "data-2": "10000",
                       "data-3": "1"
@@ -5846,7 +5633,7 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Effective Range: 5 x 5 cells/Duration: 4 +7 sec",
+                      "effect": "Effective Range: 5 x 5 cells / Duration: 4 +7 sec",
                       "sp-cost": "32",
                       "data-2": "11000",
                       "data-3": "2"
@@ -5855,7 +5642,7 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Effective Range: 5 x 5 cells/Duration: 4 +8 sec",
+                      "effect": "Effective Range: 5 x 5 cells / Duration: 4 +8 sec",
                       "sp-cost": "34",
                       "data-2": "12000",
                       "data-3": "2"
@@ -5864,7 +5651,7 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Effective Range: 7 x 7 cells/Duration: 4 +9 sec",
+                      "effect": "Effective Range: 7 x 7 cells / Duration: 4 +9 sec",
                       "sp-cost": "36",
                       "data-2": "13000",
                       "data-3": "3"
@@ -5873,7 +5660,7 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Effective Range: 7 x 7 cells/Duration: 4 +10 sec",
+                      "effect": "Effective Range: 7 x 7 cells / Duration: 4 +10 sec",
                       "sp-cost": "38",
                       "data-2": "14000",
                       "data-3": "3"
@@ -6146,7 +5933,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "1,600% of ATK/Buff Removal Chance: 55%",
+                      "effect": "Buff Removal Chance: 55%",
                       "sp-cost": "55",
                       "range": "9 cells",
                       "atk": "2300",
@@ -6156,7 +5943,7 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "1,700% of ATK/Buff Removal Chance: 60%",
+                      "effect": "Buff Removal Chance: 60%",
                       "sp-cost": "57",
                       "range": "9 cells",
                       "atk": "2600",
@@ -6166,7 +5953,7 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "1,800% of ATK/Buff Removal Chance: 65%",
+                      "effect": "Buff Removal Chance: 65%",
                       "sp-cost": "59",
                       "range": "9 cells",
                       "atk": "2900",
@@ -6176,7 +5963,7 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "1,900% of ATK/Buff Removal Chance: 70%",
+                      "effect": "Buff Removal Chance: 70%",
                       "sp-cost": "61",
                       "range": "9 cells",
                       "atk": "3200",
@@ -6186,7 +5973,7 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "2,000% of ATK/Buff Removal Chance: 75%",
+                      "effect": "Buff Removal Chance: 75%",
                       "sp-cost": "63",
                       "range": "9 cells",
                       "atk": "3500",
@@ -6196,35 +5983,35 @@ export const nightWatchData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "2,100% of ATK/Buff Removal Chance: 80%",
+                      "effect": "Buff Removal Chance: 80%",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "2,200% of ATK/Buff Removal Chance: 85%",
+                      "effect": "Buff Removal Chance: 85%",
                       "sp-cost": "67"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "2,300% of ATK/Buff Removal Chance: 90%",
+                      "effect": "Buff Removal Chance: 90%",
                       "sp-cost": "69"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "2,400% of ATK/Buff Removal Chance: 95%",
+                      "effect": "Buff Removal Chance: 95%",
                       "sp-cost": "71"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "2,500% of ATK/Buff Removal Chance: 100%",
+                      "effect": "Buff Removal Chance: 100%",
                       "sp-cost": "73"
                     }
                   }
@@ -6858,10 +6645,6 @@ export const nightWatchData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "atk",
                     "label": "Atk %"
                   },
@@ -6882,7 +6665,6 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "300% of ATK",
                       "sp-cost": "13",
                       "atk": "200",
                       "data-1": "3",
@@ -6893,7 +6675,6 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "400% of ATK",
                       "sp-cost": "16",
                       "atk": "400",
                       "data-1": "3",
@@ -6904,7 +6685,6 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "500% of ATK",
                       "sp-cost": "19",
                       "atk": "600",
                       "data-1": "3",
@@ -6915,7 +6695,6 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "600% of ATK",
                       "sp-cost": "22",
                       "atk": "800",
                       "data-1": "3",
@@ -6926,7 +6705,6 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "700% of ATK",
                       "sp-cost": "25",
                       "atk": "1000",
                       "data-1": "3",
@@ -6937,35 +6715,30 @@ export const nightWatchData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "800% of ATK",
                       "sp-cost": "28"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "900% of ATK",
                       "sp-cost": "31"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "1,000% of ATK",
                       "sp-cost": "34"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "1,100% of ATK",
                       "sp-cost": "37"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "1,200% of ATK",
                       "sp-cost": "40"
                     }
                   }
@@ -7208,7 +6981,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "700% of ATK/Crimson Marker Target: 1,400%",
+                      "effect": "Crimson Marker Target: 1,400%",
                       "sp-cost": "55",
                       "atk": "5000",
                       "data-1": "15"
@@ -7217,7 +6990,7 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "900% of ATK/Crimson Marker Target: 1,800%",
+                      "effect": "Crimson Marker Target: 1,800%",
                       "sp-cost": "60",
                       "atk": "6000",
                       "data-1": "15"
@@ -7226,7 +6999,7 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "1,100% of ATK/Crimson Marker Target: 2,200%",
+                      "effect": "Crimson Marker Target: 2,200%",
                       "sp-cost": "65",
                       "atk": "7000",
                       "data-1": "15"
@@ -7235,7 +7008,7 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "1,300% of ATK/Crimson Marker Target: 2,600%",
+                      "effect": "Crimson Marker Target: 2,600%",
                       "sp-cost": "70",
                       "atk": "8000",
                       "data-1": "15"
@@ -7244,7 +7017,7 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "1,500% of ATK/Crimson Marker Target: 3,000%",
+                      "effect": "Crimson Marker Target: 3,000%",
                       "sp-cost": "75",
                       "atk": "9000",
                       "data-1": "15"
@@ -7253,35 +7026,35 @@ export const nightWatchData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "1,700% of ATK/Crimson Marker Target: 3,400%",
+                      "effect": "Crimson Marker Target: 3,400%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "1,900% of ATK/Crimson Marker Target: 3,800%",
+                      "effect": "Crimson Marker Target: 3,800%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "2,100% of ATK/Crimson Marker Target: 4,200%",
+                      "effect": "Crimson Marker Target: 4,200%",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "2,300% of ATK/Crimson Marker Target: 4,600%",
+                      "effect": "Crimson Marker Target: 4,600%",
                       "sp-cost": "95"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "2,500% of ATK/Crimson Marker Target: 5,000%",
+                      "effect": "Crimson Marker Target: 5,000%",
                       "sp-cost": "100"
                     }
                   }
@@ -7551,7 +7324,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "700% of ATK/Effective Range: 7 x 7 cells",
+                      "effect": "Effective Range: 7 x 7 cells",
                       "sp-cost": "43",
                       "atk": "1300",
                       "data-1": "3",
@@ -7561,7 +7334,7 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "900% of ATK/Effective Range: 7 x 7 cells",
+                      "effect": "Effective Range: 7 x 7 cells",
                       "sp-cost": "46",
                       "atk": "1600",
                       "data-1": "3",
@@ -7571,7 +7344,7 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "1,100% of ATK/Effective Range: 7 x 7 cells",
+                      "effect": "Effective Range: 7 x 7 cells",
                       "sp-cost": "49",
                       "atk": "1900",
                       "data-1": "4",
@@ -7581,7 +7354,7 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "1,300% of ATK/Effective Range: 9 x 9 cells",
+                      "effect": "Effective Range: 9 x 9 cells",
                       "sp-cost": "52",
                       "atk": "2200",
                       "data-1": "5",
@@ -7591,7 +7364,7 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "1,500% of ATK/Effective Range: 9 x 9 cells",
+                      "effect": "Effective Range: 9 x 9 cells",
                       "sp-cost": "55",
                       "atk": "2500",
                       "data-1": "6",
@@ -7601,35 +7374,35 @@ export const nightWatchData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "1,700% of ATK/Effective Range: 9 x 9 cells",
+                      "effect": "Effective Range: 9 x 9 cells",
                       "sp-cost": "58"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "1,900% of ATK/Effective Range: 11 x 11 cells",
+                      "effect": "Effective Range: 11 x 11 cells",
                       "sp-cost": "61"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "2,100% of ATK/Effective Range: 11 x 11 cells",
+                      "effect": "Effective Range: 11 x 11 cells",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "2,300% of ATK/Effective Range: 11 x 11 cells",
+                      "effect": "Effective Range: 11 x 11 cells",
                       "sp-cost": "67"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "2,500% of ATK/Effective Range: 13 x 13 cells",
+                      "effect": "Effective Range: 13 x 13 cells",
                       "sp-cost": "70"
                     }
                   }
@@ -7855,7 +7628,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ASPD +1/HIT -30/Duration: 60 sec",
+                      "effect": "ASPD +1 / HIT -30 / Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "30",
                       "data-2": "8",
@@ -7865,7 +7638,7 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ASPD +2/HIT -35/Duration: 60 sec",
+                      "effect": "ASPD +2 / HIT -35 / Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "35",
                       "data-2": "10",
@@ -7875,7 +7648,7 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ASPD +3/HIT -40/Duration: 60 sec",
+                      "effect": "ASPD +3 / HIT -40 / Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "40",
                       "data-2": "12",
@@ -7885,7 +7658,7 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ASPD +4/HIT -45/Duration: 60 sec",
+                      "effect": "ASPD +4 / HIT -45 / Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "45",
                       "data-2": "14",
@@ -7895,7 +7668,7 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ASPD +5/HIT -50/Duration: 60 sec",
+                      "effect": "ASPD +5 / HIT -50 / Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "50",
                       "data-2": "16",
@@ -8153,7 +7926,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "2,000% damage to players/1,200% damage to monsters/HIT -10% per cells after 2 cells",
+                      "effect": "2,000% damage to players / 1,200% damage to monsters / HIT -10% per cells after 2 cells",
                       "sp-cost": "80",
                       "range": "9 cells",
                       "atk": "2000",
@@ -8164,7 +7937,7 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "4,000% damage to players/2,400% damage to monsters/HIT -9% per cells after 2 cells",
+                      "effect": "4,000% damage to players / 2,400% damage to monsters / HIT -9% per cells after 2 cells",
                       "sp-cost": "84",
                       "range": "9 cells",
                       "atk": "4000",
@@ -8175,7 +7948,7 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "6,000% damage to players/3,600% damage to monsters/HIT -8% per cells after 2 cells",
+                      "effect": "6,000% damage to players / 3,600% damage to monsters / HIT -8% per cells after 2 cells",
                       "sp-cost": "88",
                       "range": "9 cells",
                       "atk": "6000",
@@ -8186,7 +7959,7 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "8,000% damage to players/4,800% damage to monsters/HIT -7% per cells after 2 cells",
+                      "effect": "8,000% damage to players / 4,800% damage to monsters / HIT -7% per cells after 2 cells",
                       "sp-cost": "92",
                       "range": "9 cells",
                       "atk": "8000",
@@ -8197,7 +7970,7 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "10,000% damage to players/6,000% damage to monsters/HIT -6% per cells after 2 cells",
+                      "effect": "10,000% damage to players / 6,000% damage to monsters / HIT -6% per cells after 2 cells",
                       "sp-cost": "96",
                       "range": "9 cells",
                       "atk": "10000",
@@ -8537,10 +8310,6 @@ export const nightWatchData = {
                     "label": "Area of Effect"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "atk",
                     "label": "Atk %"
                   },
@@ -8570,7 +8339,6 @@ export const nightWatchData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "100% of ATK",
                       "sp-cost": "37",
                       "range": "7 cells",
                       "atk": "4200",
@@ -8584,7 +8352,6 @@ export const nightWatchData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "200% of ATK",
                       "sp-cost": "39",
                       "range": "8 cells",
                       "atk": "5600",
@@ -8598,7 +8365,6 @@ export const nightWatchData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "300% of ATK",
                       "sp-cost": "41",
                       "range": "9 cells",
                       "atk": "7000",
@@ -8612,7 +8378,6 @@ export const nightWatchData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "400% of ATK",
                       "sp-cost": "43",
                       "range": "10 cells",
                       "atk": "8400",
@@ -8626,7 +8391,6 @@ export const nightWatchData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "500% of ATK",
                       "sp-cost": "45",
                       "range": "11 cells",
                       "atk": "9800",
@@ -8640,7 +8404,6 @@ export const nightWatchData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "600% of ATK",
                       "sp-cost": "47"
                     }
                   },
@@ -8648,7 +8411,6 @@ export const nightWatchData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "700% of ATK",
                       "sp-cost": "49"
                     }
                   },
@@ -8656,7 +8418,6 @@ export const nightWatchData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "800% of ATK",
                       "sp-cost": "51"
                     }
                   },
@@ -8664,7 +8425,6 @@ export const nightWatchData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "900% of ATK",
                       "sp-cost": "53"
                     }
                   },
@@ -8672,7 +8432,6 @@ export const nightWatchData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "1,000% of ATK",
                       "sp-cost": "55"
                     }
                   }
@@ -9497,7 +9256,7 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -9525,7 +9284,7 @@ export const nightWatchData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -12140,10 +11899,6 @@ export const nightWatchData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -12160,7 +11915,6 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "550%",
                       "sp-cost": "22",
                       "range": "9 cells",
                       "atk": "550"
@@ -12169,7 +11923,6 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "24",
                       "range": "9 cells",
                       "atk": "600"
@@ -12178,7 +11931,6 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "650%",
                       "sp-cost": "26",
                       "range": "9 cells",
                       "atk": "650"
@@ -12187,7 +11939,6 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "28",
                       "range": "9 cells",
                       "atk": "700"
@@ -12196,7 +11947,6 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "750%",
                       "sp-cost": "30",
                       "range": "9 cells",
                       "atk": "750"
@@ -12205,7 +11955,6 @@ export const nightWatchData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "32",
                       "range": "9 cells",
                       "atk": "800"
@@ -12214,7 +11963,6 @@ export const nightWatchData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "850%",
                       "sp-cost": "34",
                       "range": "9 cells",
                       "atk": "850"
@@ -12223,7 +11971,6 @@ export const nightWatchData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "36",
                       "range": "9 cells",
                       "atk": "900"
@@ -12232,7 +11979,6 @@ export const nightWatchData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "950%",
                       "sp-cost": "38",
                       "range": "9 cells",
                       "atk": "950"
@@ -12241,7 +11987,6 @@ export const nightWatchData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "1000"
@@ -13843,10 +13588,6 @@ export const nightWatchData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -13855,70 +13596,60 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "34"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "350%",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "450%",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "550%",
                       "sp-cost": "50"
                     }
                   }
@@ -15298,7 +15029,7 @@ export const nightWatchData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "Atk +150/Hit +250/Cri +30 when aiming mode is active",
+                  "effect": "Hit +250 / Cri +30 when aiming mode is active",
                   "sp-cost": "10"
                 }
               }
@@ -15466,116 +15197,66 @@ export const nightWatchData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "long-range-physical-damage-10-p-atk",
-                "label": "Long Range Physical Damage +10%/p.atk"
-              },
-              {
-                "id": "long-range-physical-damage-100-p-atk",
-                "label": "Long Range Physical Damage +100%/p.atk"
-              },
-              {
-                "id": "long-range-physical-damage-20-p-atk",
-                "label": "Long Range Physical Damage +20%/p.atk"
-              },
-              {
-                "id": "long-range-physical-damage-30-p-atk",
-                "label": "Long Range Physical Damage +30%/p.atk"
-              },
-              {
-                "id": "long-range-physical-damage-40-p-atk",
-                "label": "Long Range Physical Damage +40%/p.atk"
-              },
-              {
-                "id": "long-range-physical-damage-50-p-atk",
-                "label": "Long Range Physical Damage +50%/p.atk"
-              },
-              {
-                "id": "long-range-physical-damage-60-p-atk",
-                "label": "Long Range Physical Damage +60%/p.atk"
-              },
-              {
-                "id": "long-range-physical-damage-70-p-atk",
-                "label": "Long Range Physical Damage +70%/p.atk"
-              },
-              {
-                "id": "long-range-physical-damage-80-p-atk",
-                "label": "Long Range Physical Damage +80%/p.atk"
-              },
-              {
-                "id": "long-range-physical-damage-90-p-atk",
-                "label": "Long Range Physical Damage +90%/p.atk"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "long-range-physical-damage-10-p-atk": "+3",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "long-range-physical-damage-20-p-atk": "+6",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "long-range-physical-damage-30-p-atk": "+9",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "long-range-physical-damage-40-p-atk": "+12",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "long-range-physical-damage-50-p-atk": "+15",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "long-range-physical-damage-60-p-atk": "+18",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "long-range-physical-damage-70-p-atk": "+21",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "long-range-physical-damage-80-p-atk": "+24",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "long-range-physical-damage-90-p-atk": "+27",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "long-range-physical-damage-100-p-atk": "+30",
                   "sp-cost": "150"
                 }
               }
@@ -15713,10 +15394,6 @@ export const nightWatchData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
@@ -15724,7 +15401,6 @@ export const nightWatchData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "3x3",
-                  "effect": "ATK 3600+(Grenade Mastery Lv x 50)%",
                   "sp-cost": "36"
                 }
               },
@@ -15732,7 +15408,6 @@ export const nightWatchData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "3x3",
-                  "effect": "ATK 5700+(Grenade Mastery Lv x 50)%",
                   "sp-cost": "42"
                 }
               },
@@ -15740,7 +15415,6 @@ export const nightWatchData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "3x3",
-                  "effect": "ATK 7800+(Grenade Mastery Lv x 50)%",
                   "sp-cost": "48"
                 }
               },
@@ -15748,7 +15422,6 @@ export const nightWatchData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "5x5",
-                  "effect": "ATK 9900+(Grenade Mastery Lv x 50)%",
                   "sp-cost": "54"
                 }
               },
@@ -15756,7 +15429,6 @@ export const nightWatchData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "5x5",
-                  "effect": "ATK 12000+(Grenade Mastery Lv x 50)%",
                   "sp-cost": "60"
                 }
               }
@@ -16129,10 +15801,6 @@ export const nightWatchData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
@@ -16140,7 +15808,6 @@ export const nightWatchData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "9x9\n5x5",
-                  "effect": "Per hit ATK(Gatling gun) 300+(aiming count x 100)%\nPer hit ATK(Shotgun) 1500+(aiming count x 200)%",
                   "sp-cost": "72"
                 }
               },
@@ -16148,7 +15815,6 @@ export const nightWatchData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "9x9\n5x5",
-                  "effect": "Per hitATK(Gatling gun) 600+(aiming count x 200)%\nPer hit ATK(Shotgun) 2200+(aiming count x 400)%",
                   "sp-cost": "76"
                 }
               },
@@ -16156,7 +15822,6 @@ export const nightWatchData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "9x9\n5x5",
-                  "effect": "Per hitATK(Gatling gun) 900+(aiming count x 300)%\nPer hit ATK(Shotgun) 2900+(aiming count x 600)%",
                   "sp-cost": "80"
                 }
               },
@@ -16164,7 +15829,6 @@ export const nightWatchData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "11x11\n7x7",
-                  "effect": "Per hitATK(Gatling gun) 1200+(aiming count x 400)%\nPer hit ATK(Shotgun) 3600+(aiming count x 800)%",
                   "sp-cost": "84"
                 }
               },
@@ -16172,7 +15836,6 @@ export const nightWatchData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "11x11\n7x7",
-                  "effect": "Per hitATK(Gatling gun) 1500+(aiming count x 500)%\nPer hit ATK(Shotgun) 4300+(aiming count x 1000)%",
                   "sp-cost": "88"
                 }
               }
@@ -16366,45 +16029,36 @@ export const nightWatchData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK(Rifle) 4200+(aiming count x 350)%\nATK(Pistol) 4600+(aiming count x 350)%",
                   "sp-cost": "39"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK(Rifle) 7200+(aiming count x 700)%\nATK(Pistol) 8000+(aiming count x 700)%",
                   "sp-cost": "43"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK(Rifle) 10200+(aiming count x 1050)%\nATK(Pistol) 11400+(aiming count x 1050)%",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK(Rifle) 13200+(aiming count x 1400)%\nATK(Pistol) 14800+(aiming count x 1400)%",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK(Rifle) 16200+(aiming count x 1750)%\nATK(Pistol) 18200+(aiming count x 1750)%",
                   "sp-cost": "55"
                 }
               }
@@ -16611,10 +16265,6 @@ export const nightWatchData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
@@ -16622,7 +16272,6 @@ export const nightWatchData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "9x9\n5x5",
-                  "effect": "Per hit ATK(Grenade Launcher) 2900+(Aiming count x 150)%\nATK(Rifle)4200+(Aiming count x 150)%",
                   "sp-cost": "48"
                 }
               },
@@ -16630,7 +16279,6 @@ export const nightWatchData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "9x9\n5x5",
-                  "effect": "Per hit ATK(Grenade Launcher) 4600+(Aiming count x 300)%\nATK(Rifle)7000+(Aiming count x 300)%",
                   "sp-cost": "53"
                 }
               },
@@ -16638,7 +16286,6 @@ export const nightWatchData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "9x9\n5x5",
-                  "effect": "Per hit ATK(Grenade Launcher) 6300+(Aiming count x 450)%\nATK(Rifle)9800+(Aiming count x 450)%",
                   "sp-cost": "58"
                 }
               },
@@ -16646,7 +16293,6 @@ export const nightWatchData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "11x11\n7x7",
-                  "effect": "Per hit ATK(Grenade Launcher) 8000+(Aiming count x 600)%\nATK(Rifle)12600+(Aiming count x 600)%",
                   "sp-cost": "63"
                 }
               },
@@ -16654,7 +16300,6 @@ export const nightWatchData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "11x11\n7x7",
-                  "effect": "Per hit ATK(Grenade Launcher) 9700+(Aiming count x 750)%\nATK(Rifle)15400+(Aiming count x 750)%",
                   "sp-cost": "68"
                 }
               }
@@ -16848,45 +16493,36 @@ export const nightWatchData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Per hit ATK(Gatling) 750+(Aiming count x 100)%\nPer hit ATK(Revolver) 1100+(Aiming count x 100)%",
                   "sp-cost": "42"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Per hit ATK(Gatling) 1250+(Aiming count x 200)%\nPer hit ATK(Revolver) 1900+(Aiming count x 200)%",
                   "sp-cost": "46"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Per hit ATK(Gatling) 1750+(Aiming count x 300)%\nPer hit ATK(Revolver) 2700+(Aiming count x 300)%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Per hit ATK(Gatling) 2250+(Aiming count x 400)%\nPer hit ATK(Revolver) 3500+(Aiming count x 400)%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Per hit ATK(Gatling) 2750+(Aiming count x 500)%\nPer hit ATK(Revolver) 4300+(Aiming count x 500)%",
                   "sp-cost": "58"
                 }
               }
@@ -17115,35 +16751,35 @@ export const nightWatchData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK(Shotgun) 4700+(Aiming count x 500)%/Range: 5 x 5\nATK(Grenade Launcher) 4500+(Aiming count x 500)%/Range: 9 x 9",
+                  "effect": "Range: 5 x 5\nRange: 9 x 9",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK(Shotgun) 7900+(Aiming count x 1000)%/Range: 5 x 5\nATK(Grenade Launcher) 7500+(Aiming count x 1000)%/Range: 9 x 9",
+                  "effect": "Range: 5 x 5\nRange: 9 x 9",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK(Shotgun) 11100+(Aiming count x 1500)%/Range: 5 x 5\nATK(Grenade Launcher) 10500+(Aiming count x 1500)%/Range: 9 x 9",
+                  "effect": "Range: 5 x 5\nRange: 9 x 9",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK(Shotgun) 14300+(Aiming count x 2000)%/Range: 7 x 7\nATK(Grenade Launcher) 13500+(Aiming count x 2000)%/Range: 11 x 11",
+                  "effect": "Range: 7 x 7\nRange: 11 x 11",
                   "sp-cost": "63"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK(Shotgun) 17500+(Aiming count x 2500)%/Range: 7 x 7\nATK(Grenade Launcher) 16500+(Aiming count x 2500)%/Range: 11 x 11",
+                  "effect": "Range: 7 x 7\nRange: 11 x 11",
                   "sp-cost": "67"
                 }
               }
@@ -17323,45 +16959,36 @@ export const nightWatchData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK per hit 3000+(Grenade Mastery Lv x 20)%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK per hit 4500+(Grenade Mastery Lv x 20)%",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK per hit 6000+(Grenade Mastery Lv x 20)%",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK per hit 7500+(Grenade Mastery Lv x 20)%",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK per hit 9000+(Grenade Mastery Lv x 20)%",
                   "sp-cost": "62"
                 }
               }
@@ -17509,50 +17136,7 @@ export const nightWatchData = {
             "value": "2"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk-per-hit": "1050%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk-per-hit": "1230%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk-per-hit": "1410%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk-per-hit": "1590%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk-per-hit": "1770%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [],
@@ -17646,50 +17230,7 @@ export const nightWatchData = {
             "value": "2"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk-per-hit": "3200%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk-per-hit": "4000%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk-per-hit": "4800%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk-per-hit": "5600%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk-per-hit": "6400%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [],
@@ -17822,35 +17363,35 @@ export const nightWatchData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "1 Per hit ATK 1400+(Grenade Mastery Lv x 30)%/Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                  "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "1 Per hit ATK 2250+(Grenade Mastery Lv x 30)%/Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                  "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
                   "sp-cost": "66"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "1 Per hit ATK 3100+(Grenade Mastery Lv x 30)%/Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                  "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "1 Per hit ATK 3950+(Grenade Mastery Lv x 30)%/Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
+                  "effect": "Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
                   "sp-cost": "78"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "1 Per hit ATK 4800+(Grenade Mastery Lv x 30)%/Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
+                  "effect": "Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
                   "sp-cost": "84"
                 }
               }
@@ -17978,35 +17519,35 @@ export const nightWatchData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "Basic Grenade(6%) /Duration: 120 sec",
+                  "effect": "Basic Grenade(6%) / Duration: 120 sec",
                   "sp-cost": "90"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Basic Grenade(7%) /Duration: 150 sec",
+                  "effect": "Basic Grenade(7%) / Duration: 150 sec",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Basic Grenade(8%), Hasty Fire in the Hole(3%) /Duration: 180 sec",
+                  "effect": "Basic Grenade(8%), Hasty Fire in the Hole(3%) / Duration: 180 sec",
                   "sp-cost": "110"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Basic Grenade(9%), Hasty Fire in the Hole(5%) /Duration : 210 sec",
+                  "effect": "Basic Grenade(9%), Hasty Fire in the Hole(5%) / Duration : 210 sec",
                   "sp-cost": "120"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Basic Grenade(10%), Hasty Fire in the Hole(7%), Grenade Dropping(3%) /Duration: 240 sec",
+                  "effect": "Basic Grenade(10%), Hasty Fire in the Hole(7%), Grenade Dropping(3%) / Duration: 240 sec",
                   "sp-cost": "130"
                 }
               }
@@ -18178,80 +17719,66 @@ export const nightWatchData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 6800+(Grenade Mastery Lv x 100)%/1 Per hit ATK 1000+(Grenade Mastery Lv x 30)%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 8600+(Grenade Mastery Lv x 100)%/1 Per hit ATK 1200+(Grenade Mastery Lv x 30)%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 10400+(Grenade Mastery Lv x 100)%/1 Per hit ATK 1400+(Grenade Mastery Lv x 30)%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 12200+(Grenade Mastery Lv x 100)%/1 Per hit ATK 1600+(Grenade Mastery Lv x 30)%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 14000+(Grenade Mastery Lv x 100)%/1 Per hit ATK 1800+(Grenade Mastery Lv x 30)%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK 15800+(Grenade Mastery Lv x 100)%/1 Per hit ATK 2000+(Grenade Mastery Lv x 30)%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK 17600+(Grenade Mastery Lv x 100)%/1 Per hit ATK 2200+(Grenade Mastery Lv x 30)%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK 19400+(Grenade Mastery Lv x 100)%/1 Per hit ATK 2400+(Grenade Mastery Lv x 30)%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK 21200+(Grenade Mastery Lv x 100)%/1 Per hit ATK 2600+(Grenade Mastery Lv x 30)%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK 23000+(Grenade Mastery Lv x 100)%/1 Per hit ATK 2800+(Grenade Mastery Lv x 30)%",
                   "sp-cost": "100"
                 }
               }

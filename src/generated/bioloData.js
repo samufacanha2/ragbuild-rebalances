@@ -1,5 +1,5 @@
 export const bioloData = {
-  "generatedAt": "2026-07-09T03:36:54.971Z",
+  "generatedAt": "2026-07-09T13:19:57.435Z",
   "classId": 4259,
   "classSlug": "biolo",
   "className": "Biolo",
@@ -929,10 +929,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -945,7 +941,6 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "950%",
                       "area-of-effect": "7x7",
                       "sp-cost": "69"
                     }
@@ -953,7 +948,6 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "1500%",
                       "area-of-effect": "7x7",
                       "sp-cost": "76"
                     }
@@ -961,7 +955,6 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "2050%",
                       "area-of-effect": "7x7",
                       "sp-cost": "83"
                     }
@@ -969,7 +962,6 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "2600%",
                       "area-of-effect": "7x7",
                       "sp-cost": "90"
                     }
@@ -977,7 +969,6 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "3150%",
                       "area-of-effect": "7x7",
                       "sp-cost": "97"
                     }
@@ -1166,10 +1157,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1178,35 +1165,30 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "400%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "800%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "1200%",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "1600%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "2000%",
                       "sp-cost": "63"
                     }
                   }
@@ -1347,10 +1329,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1359,35 +1337,30 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "400%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "800%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "1200%",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "1600%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "2000%",
                       "sp-cost": "63"
                     }
                   }
@@ -1908,10 +1881,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1924,7 +1893,6 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "500%",
                       "area-of-effect": "7x7",
                       "sp-cost": "68"
                     }
@@ -1932,7 +1900,6 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "800%",
                       "area-of-effect": "7x7",
                       "sp-cost": "70"
                     }
@@ -1940,7 +1907,6 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "1100%",
                       "area-of-effect": "7x7",
                       "sp-cost": "72"
                     }
@@ -1948,7 +1914,6 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "1400%",
                       "area-of-effect": "7x7",
                       "sp-cost": "74"
                     }
@@ -1956,7 +1921,6 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "1700%",
                       "area-of-effect": "7x7",
                       "sp-cost": "76"
                     }
@@ -1964,7 +1928,6 @@ export const bioloData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk-per-hit": "2000%",
                       "area-of-effect": "9x9",
                       "sp-cost": "78"
                     }
@@ -1972,7 +1935,6 @@ export const bioloData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk-per-hit": "2300%",
                       "area-of-effect": "9x9",
                       "sp-cost": "80"
                     }
@@ -1980,7 +1942,6 @@ export const bioloData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk-per-hit": "2600%",
                       "area-of-effect": "9x9",
                       "sp-cost": "82"
                     }
@@ -1988,7 +1949,6 @@ export const bioloData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk-per-hit": "2900%",
                       "area-of-effect": "9x9",
                       "sp-cost": "84"
                     }
@@ -1996,7 +1956,6 @@ export const bioloData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk-per-hit": "3200%",
                       "area-of-effect": "9x9",
                       "sp-cost": "86"
                     }
@@ -2160,10 +2119,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2172,35 +2127,30 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "400%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "800%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "1200%",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "1600%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "2000%",
                       "sp-cost": "63"
                     }
                   }
@@ -2335,10 +2285,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2347,35 +2293,30 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "400%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "800%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "1200%",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "1600%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "2000%",
                       "sp-cost": "63"
                     }
                   }
@@ -2757,10 +2698,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -2769,36 +2706,31 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "5500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "9500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "13500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "17500%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "21500%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -2891,10 +2823,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -2903,36 +2831,31 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1050%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1650%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "2250%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "2850%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "3450%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -3053,7 +2976,7 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Increase Acidified Zone Damage\n/ Acidified Zone skills deal Additional damage to Formless and Plant enemies\n/ Reduced Acid Bottle Cost by 1 when casting Acidified Zone",
+                      "effect": "Increase Acidified Zone Damage\nAcidified Zone skills deal Additional damage to Formless and Plant enemies\nReduced Acid Bottle Cost by 1 when casting Acidified Zone",
                       "sp-cost": "60"
                     }
                   }
@@ -4852,7 +4775,7 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Chance 1%/Drain amount 1%/Duration 40 sec",
+                      "effect": "Chance 1% / Drain amount 1% / Duration 40 sec",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "20000",
@@ -4863,7 +4786,7 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Chance 3%/Drain amount 2%/Duration 100 sec",
+                      "effect": "Chance 3% / Drain amount 2% / Duration 100 sec",
                       "sp-cost": "55",
                       "range": "11 cells",
                       "data-1": "22000",
@@ -4874,7 +4797,7 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Chance 5%/Drain amount 3%/Duration 160 sec",
+                      "effect": "Chance 5% / Drain amount 3% / Duration 160 sec",
                       "sp-cost": "60",
                       "range": "11 cells",
                       "data-1": "24000",
@@ -4885,7 +4808,7 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Chance 7%/Drain amount 4%/Duration 220 sec",
+                      "effect": "Chance 7% / Drain amount 4% / Duration 220 sec",
                       "sp-cost": "65",
                       "range": "11 cells",
                       "data-1": "26000",
@@ -4896,7 +4819,7 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Chance 9%/Drain amount 5%/Duration 280 sec",
+                      "effect": "Chance 9% / Drain amount 5% / Duration 280 sec",
                       "sp-cost": "70",
                       "range": "11 cells",
                       "data-1": "28000",
@@ -5207,10 +5130,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -5236,7 +5155,6 @@ export const bioloData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "600%",
                       "sp-cost": "48",
                       "range": "11 cells",
                       "data-1": "2000",
@@ -5247,7 +5165,6 @@ export const bioloData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "800%",
                       "sp-cost": "52",
                       "range": "11 cells",
                       "data-1": "2000",
@@ -5258,7 +5175,6 @@ export const bioloData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "1000%",
                       "sp-cost": "56",
                       "range": "11 cells",
                       "data-1": "2000",
@@ -5269,7 +5185,6 @@ export const bioloData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "1200%",
                       "sp-cost": "60",
                       "range": "11 cells",
                       "data-1": "2000",
@@ -5280,7 +5195,6 @@ export const bioloData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "1400%",
                       "sp-cost": "64",
                       "range": "11 cells",
                       "data-1": "2000",
@@ -5291,7 +5205,6 @@ export const bioloData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "1600%",
                       "sp-cost": "68",
                       "range": "11 cells",
                       "data-1": "2000",
@@ -5302,7 +5215,6 @@ export const bioloData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "1800%",
                       "sp-cost": "72",
                       "range": "11 cells",
                       "data-1": "2000",
@@ -5313,7 +5225,6 @@ export const bioloData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "2000%",
                       "sp-cost": "76",
                       "range": "11 cells",
                       "data-1": "2000",
@@ -5324,7 +5235,6 @@ export const bioloData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-atk": "2200%",
                       "sp-cost": "80",
                       "range": "11 cells",
                       "data-1": "2000",
@@ -5335,7 +5245,6 @@ export const bioloData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-atk": "2400%",
                       "sp-cost": "84",
                       "range": "11 cells",
                       "data-1": "2000",
@@ -5555,10 +5464,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -5571,7 +5476,6 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "30",
                       "data-2": "2"
                     }
@@ -5579,7 +5483,6 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "30",
                       "data-2": "2"
                     }
@@ -5587,7 +5490,6 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "30",
                       "data-2": "2"
                     }
@@ -5595,7 +5497,6 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "30",
                       "data-2": "2"
                     }
@@ -5603,7 +5504,6 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "30",
                       "data-2": "2"
                     }
@@ -5611,7 +5511,6 @@ export const bioloData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "30",
                       "data-2": "2"
                     }
@@ -5619,7 +5518,6 @@ export const bioloData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "1400%",
                       "sp-cost": "30",
                       "data-2": "2"
                     }
@@ -5627,7 +5525,6 @@ export const bioloData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "1600%",
                       "sp-cost": "30",
                       "data-2": "2"
                     }
@@ -5635,7 +5532,6 @@ export const bioloData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "1800%",
                       "sp-cost": "30",
                       "data-2": "2"
                     }
@@ -5643,7 +5539,6 @@ export const bioloData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "2000%",
                       "sp-cost": "30",
                       "data-2": "2"
                     }
@@ -6145,10 +6040,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -6173,7 +6064,6 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "data-1": "2",
@@ -6184,7 +6074,6 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "45",
                       "range": "9 cells",
                       "data-1": "3",
@@ -6195,7 +6084,6 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "4",
@@ -6206,7 +6094,6 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "55",
                       "range": "9 cells",
                       "data-1": "5",
@@ -6217,7 +6104,6 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "60",
                       "range": "9 cells",
                       "data-1": "6",
@@ -6476,7 +6362,7 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "24 SP / Fire Matk 130% / Duration 10 sec. / Ignition Chance 8%",
+                      "effect": "24 SP / Duration 10 sec. / Ignition Chance 8%",
                       "sp-cost": "24",
                       "range": "9 cells",
                       "data-1": "10000",
@@ -6487,7 +6373,7 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "28 SP / Fire Matk 150% / Duration 12 sec. / Ignition Chance 12%",
+                      "effect": "28 SP / Duration 12 sec. / Ignition Chance 12%",
                       "sp-cost": "28",
                       "range": "9 cells",
                       "data-1": "12000",
@@ -6498,7 +6384,7 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "32 SP / Fire Matk 170% / Duration 14 sec. / Ignition Chance 16%",
+                      "effect": "32 SP / Duration 14 sec. / Ignition Chance 16%",
                       "sp-cost": "32",
                       "range": "9 cells",
                       "data-1": "14000",
@@ -6509,7 +6395,7 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "36 SP / Fire Matk 190% / Duration 16 sec. / Ignition Chance 20%",
+                      "effect": "36 SP / Duration 16 sec. / Ignition Chance 20%",
                       "sp-cost": "36",
                       "range": "9 cells",
                       "data-1": "16000",
@@ -6520,7 +6406,7 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "40 SP / Fire Matk 210% / Duration 18 sec. / Ignition Chance 24%",
+                      "effect": "40 SP / Duration 18 sec. / Ignition Chance 24%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "data-1": "18000",
@@ -6705,10 +6591,6 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -6721,7 +6603,6 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK (250+Cart Remodeling sLv x 20)%",
                       "sp-cost": "40",
                       "range": "7 cells",
                       "data-1": "1"
@@ -6730,7 +6611,6 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK (500+Cart Remodeling sLv x 40)%",
                       "sp-cost": "42",
                       "range": "8 cells",
                       "data-1": "1"
@@ -6739,7 +6619,6 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK (750+Cart Remodeling sLv x 60)%",
                       "sp-cost": "46",
                       "range": "9 cells",
                       "data-1": "2"
@@ -6748,7 +6627,6 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK (1000+Cart Remodeling sLv x 80)%",
                       "sp-cost": "48",
                       "range": "10 cells",
                       "data-1": "2"
@@ -6757,7 +6635,6 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK (1250+Cart Remodeling sLv x 100)%",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "3"
@@ -7061,10 +6938,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7089,7 +6962,6 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "24",
                       "range": "11 cells",
                       "data-1": "4",
@@ -7099,7 +6971,6 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "28",
                       "range": "11 cells",
                       "data-1": "4",
@@ -7179,7 +7050,7 @@ export const bioloData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK1700% /10",
+                      "effect": "ATK1700% / 10",
                       "sp-cost": "60",
                       "range": "11 cells",
                       "data-1": "4",
@@ -7671,7 +7542,7 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "35 SP / Consume E x plosive Powder/ Increase Demonic Fire Damage depending on caster's INT / Cancel Demonic Fire",
+                      "effect": "35 SP / Consume E x plosive Powder / Increase Demonic Fire Damage depending on caster's INT / Cancel Demonic Fire",
                       "sp-cost": "35",
                       "range": "9 cells"
                     }
@@ -7927,7 +7798,7 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Movement Speed 50% increase / ATK 10 increase",
+                      "effect": "Movement Speed 50% increase",
                       "sp-cost": "20",
                       "data-1": "50",
                       "data-2": "10",
@@ -7937,7 +7808,7 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Movement Speed 50% increase / ATK 20 increase",
+                      "effect": "Movement Speed 50% increase",
                       "sp-cost": "24",
                       "data-1": "50",
                       "data-2": "20",
@@ -7947,7 +7818,7 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Movement Speed 75% increase / ATK 30 increase",
+                      "effect": "Movement Speed 75% increase",
                       "sp-cost": "28",
                       "data-1": "75",
                       "data-2": "30",
@@ -7957,7 +7828,7 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Movement Speed 75% increase / ATK 40 increase",
+                      "effect": "Movement Speed 75% increase",
                       "sp-cost": "32",
                       "data-1": "75",
                       "data-2": "40",
@@ -7967,7 +7838,7 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Movement Speed 100% increase / ATK 50 increase",
+                      "effect": "Movement Speed 100% increase",
                       "sp-cost": "36",
                       "data-1": "100",
                       "data-2": "50",
@@ -8968,80 +8839,66 @@ export const bioloData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+30",
                       "sp-cost": "0"
                     }
                   }
@@ -10932,10 +10789,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -10944,35 +10797,30 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "15"
                     }
                   }
@@ -11154,10 +11002,6 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -11166,70 +11010,60 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "1400%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "1600%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "1800%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "2000%",
                       "sp-cost": "50"
                     }
                   }
@@ -12048,7 +11882,7 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -12076,7 +11910,7 @@ export const bioloData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -12460,80 +12294,66 @@ export const bioloData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage (ATK) 150%, Zeny Cost : 100Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage (ATK) 200%, Zeny Cost : 200Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage (ATK) 250%, Zeny Cost : 300Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage (ATK) 300%, Zeny Cost : 400Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage (ATK) 350%, Zeny Cost : 500Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Damage (ATK) 400%, Zeny Cost : 600Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Damage (ATK) 450%, Zeny Cost : 700Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Damage (ATK) 500%, Zeny Cost : 800Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Damage (ATK) 550%, Zeny Cost : 900Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Damage (ATK) 600%, Zeny Cost :1000Z",
                       "sp-cost": "5"
                     }
                   }
@@ -14714,10 +14534,6 @@ export const bioloData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -14730,7 +14546,6 @@ export const bioloData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "950%",
                   "area-of-effect": "7x7",
                   "sp-cost": "69"
                 }
@@ -14738,7 +14553,6 @@ export const bioloData = {
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "1500%",
                   "area-of-effect": "7x7",
                   "sp-cost": "76"
                 }
@@ -14746,7 +14560,6 @@ export const bioloData = {
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "2050%",
                   "area-of-effect": "7x7",
                   "sp-cost": "83"
                 }
@@ -14754,7 +14567,6 @@ export const bioloData = {
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "2600%",
                   "area-of-effect": "7x7",
                   "sp-cost": "90"
                 }
@@ -14762,7 +14574,6 @@ export const bioloData = {
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "3150%",
                   "area-of-effect": "7x7",
                   "sp-cost": "97"
                 }
@@ -14951,10 +14762,6 @@ export const bioloData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -14963,35 +14770,30 @@ export const bioloData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "400%",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "800%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "1200%",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "1600%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "2000%",
                   "sp-cost": "63"
                 }
               }
@@ -15132,10 +14934,6 @@ export const bioloData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -15144,35 +14942,30 @@ export const bioloData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "400%",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "800%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "1200%",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "1600%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "2000%",
                   "sp-cost": "63"
                 }
               }
@@ -15693,10 +15486,6 @@ export const bioloData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -15709,7 +15498,6 @@ export const bioloData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "500%",
                   "area-of-effect": "7x7",
                   "sp-cost": "68"
                 }
@@ -15717,7 +15505,6 @@ export const bioloData = {
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "800%",
                   "area-of-effect": "7x7",
                   "sp-cost": "70"
                 }
@@ -15725,7 +15512,6 @@ export const bioloData = {
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "1100%",
                   "area-of-effect": "7x7",
                   "sp-cost": "72"
                 }
@@ -15733,7 +15519,6 @@ export const bioloData = {
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "1400%",
                   "area-of-effect": "7x7",
                   "sp-cost": "74"
                 }
@@ -15741,7 +15526,6 @@ export const bioloData = {
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "1700%",
                   "area-of-effect": "7x7",
                   "sp-cost": "76"
                 }
@@ -15749,7 +15533,6 @@ export const bioloData = {
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk-per-hit": "2000%",
                   "area-of-effect": "9x9",
                   "sp-cost": "78"
                 }
@@ -15757,7 +15540,6 @@ export const bioloData = {
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk-per-hit": "2300%",
                   "area-of-effect": "9x9",
                   "sp-cost": "80"
                 }
@@ -15765,7 +15547,6 @@ export const bioloData = {
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk-per-hit": "2600%",
                   "area-of-effect": "9x9",
                   "sp-cost": "82"
                 }
@@ -15773,7 +15554,6 @@ export const bioloData = {
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk-per-hit": "2900%",
                   "area-of-effect": "9x9",
                   "sp-cost": "84"
                 }
@@ -15781,7 +15561,6 @@ export const bioloData = {
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk-per-hit": "3200%",
                   "area-of-effect": "9x9",
                   "sp-cost": "86"
                 }
@@ -15945,10 +15724,6 @@ export const bioloData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -15957,35 +15732,30 @@ export const bioloData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "400%",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "800%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "1200%",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "1600%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "2000%",
                   "sp-cost": "63"
                 }
               }
@@ -16120,10 +15890,6 @@ export const bioloData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -16132,35 +15898,30 @@ export const bioloData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "400%",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "800%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "1200%",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "1600%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "2000%",
                   "sp-cost": "63"
                 }
               }
@@ -16542,10 +16303,6 @@ export const bioloData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -16554,36 +16311,31 @@ export const bioloData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "5500%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "9500%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "13500%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk": "17500%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk": "21500%"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
@@ -16676,10 +16428,6 @@ export const bioloData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -16688,36 +16436,31 @@ export const bioloData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "1050%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "1650%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "2250%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "2850%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "3450%"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
@@ -16838,7 +16581,7 @@ export const bioloData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "Increase Acidified Zone Damage\n/ Acidified Zone skills deal Additional damage to Formless and Plant enemies\n/ Reduced Acid Bottle Cost by 1 when casting Acidified Zone",
+                  "effect": "Increase Acidified Zone Damage\nAcidified Zone skills deal Additional damage to Formless and Plant enemies\nReduced Acid Bottle Cost by 1 when casting Acidified Zone",
                   "sp-cost": "60"
                 }
               }

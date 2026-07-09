@@ -1,5 +1,5 @@
 export const hyperNoviceData = {
-  "generatedAt": "2026-07-09T04:24:18.010Z",
+  "generatedAt": "2026-07-09T13:23:24.118Z",
   "classId": 4307,
   "classSlug": "hyper-novice",
   "className": "Hyper Novice",
@@ -968,80 +968,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK per hit 500+(Self Study Tactics Lv x 3)%",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK per hit 800+(Self Study Tactics Lv x 6)%",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK per hit 1100+(Self Study Tactics Lv x 9)%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK per hit 1400+(Self Study Tactics Lv x 12)%",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK per hit 1700+(Self Study Tactics Lv x 15)%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK per hit 2000+(Self Study Tactics Lv x 18)%",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK per hit 2300+(Self Study Tactics Lv x 21)%",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK per hit 2600+(Self Study Tactics Lv x 24)%",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK per hit 2900+(Self Study Tactics Lv x 27)%",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK per hit 3200+(Self Study Tactics Lv x 30)%",
                       "sp-cost": "65"
                     }
                   }
@@ -1321,80 +1307,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1200+(Self Study Tactics Lv x 3)%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1700+(Self Study Tactics Lv x 6)%",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 2200+(Self Study Tactics Lv x 9)%",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2700+(Self Study Tactics Lv x 12)%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 3200+(Self Study Tactics Lv x 15)%",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 3700+(Self Study Tactics Lv x 18)%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 4200+(Self Study Tactics Lv x 21)%",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 4700+(Self Study Tactics Lv x 24)%",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 5200+(Self Study Tactics Lv x 27)%",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 5700+(Self Study Tactics Lv x 30)%",
                       "sp-cost": "62"
                     }
                   }
@@ -1672,70 +1644,70 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK(Fall)620+(Self Study Sorcery Lv x 5)%\nMATK(E x plosion)610+(Self Study Sorcery Lv x 5)%/E x plosion range: 7 x 7",
+                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "74"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK(Fall)940+(Self Study Sorcery Lv x 10)%\nMATK(E x plosion)770+(Self Study Sorcery Lv x 10)%/E x plosion range: 7 x 7",
+                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK(Fall)1260+(Self Study Sorcery Lv x 15)%\nMATK(E x plosion)930+(Self Study Sorcery Lv x 15)%/E x plosion range: 7 x 7",
+                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "82"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK(Fall)1580+(Self Study Sorcery Lv x 20)%\nMATK(E x plosion)1090+(Self Study Sorcery Lv x 20)%/E x plosion range: 7 x 7",
+                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "86"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK(Fall)1900+(Self Study Sorcery Lv x 25)%\nMATK(E x plosion)1250+(Self Study Sorcery Lv x 25)%/E x plosion range: 7 x 7",
+                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK(Fall)2220+(Self Study Sorcery Lv x 30)%\nMATK(E x plosion)1410+(Self Study Sorcery Lv x 30)%/E x plosion range: 7 x 7",
+                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "94"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK(Fall)2540+(Self Study Sorcery Lv x 35)%\nMATK(E x plosion)1570+(Self Study Sorcery Lv x 35)%/E x plosion range: 7 x 7",
+                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "98"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK(Fall)2860+(Self Study Sorcery Lv x 40)%\nMATK(E x plosion)1730+(Self Study Sorcery Lv x 40)%/E x plosion range: 9 x 9",
+                      "effect": "E x plosion range: 9 x 9",
                       "sp-cost": "102"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK(Fall)3180+(Self Study Sorcery Lv x 45)%\nMATK(E x plosion)1890+(Self Study Sorcery Lv x 45)%/E x plosion range: 9 x 9",
+                      "effect": "E x plosion range: 9 x 9",
                       "sp-cost": "106"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK(Fall)3500+(Self Study Sorcery Lv x 50)%\nMATK(E x plosion)2050+(Self Study Sorcery Lv x 50)%/E x plosion range: 9 x 9",
+                      "effect": "E x plosion range: 9 x 9",
                       "sp-cost": "110"
                     }
                   }
@@ -1944,17 +1916,12 @@ export const hyperNoviceData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 1800+(Self Study Sorcery Lv x 3)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "75"
                     }
@@ -1962,7 +1929,6 @@ export const hyperNoviceData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 3600+(Self Study Sorcery Lv x 6)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "80"
                     }
@@ -1970,7 +1936,6 @@ export const hyperNoviceData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 5400+(Self Study Sorcery Lv x 9)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "85"
                     }
@@ -1978,7 +1943,6 @@ export const hyperNoviceData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 7200+(Self Study Sorcery Lv x 12)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "90"
                     }
@@ -1986,7 +1950,6 @@ export const hyperNoviceData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 9000+(Self Study Sorcery Lv x 15)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "95"
                     }
@@ -1994,7 +1957,6 @@ export const hyperNoviceData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK 10800+(Self Study Sorcery Lv x 18)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "100"
                     }
@@ -2002,7 +1964,6 @@ export const hyperNoviceData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK 12600+(Self Study Sorcery Lv x 21)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "105"
                     }
@@ -2010,7 +1971,6 @@ export const hyperNoviceData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK 14400+(Self Study Sorcery Lv x 24)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "110"
                     }
@@ -2018,7 +1978,6 @@ export const hyperNoviceData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK 16200+(Self Study Sorcery Lv x 27)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "115"
                     }
@@ -2026,7 +1985,6 @@ export const hyperNoviceData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK 18000+(Self Study Sorcery Lv x 30)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "120"
                     }
@@ -2238,70 +2196,70 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK(Sphere)200+(Self Study Sorcery Lv x 3)%\n1Per hit MATK(E x plosion) 900+(Self Study Sorcery Lv x 3)%/ Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK(Sphere)400+(Self Study Sorcery Lv x 6)%\n1Per hit MATK(E x plosion) 1400+(Self Study Sorcery Lv x 6)%/ Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "71"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK(Sphere)600+(Self Study Sorcery Lv x 9)%\n1Per hit MATK(E x plosion) 1900+(Self Study Sorcery Lv x 9)%/ Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "74"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK(Sphere)800+(Self Study Sorcery Lv x 12)%\n1Per hit MATK(E x plosion) 2400+(Self Study Sorcery Lv x 12)%/ Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "77"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK(Sphere)1000+(Self Study Sorcery Lv x 15)%\n1Per hit MATK(E x plosion) 2900+(Self Study Sorcery Lv x 15)%/ Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK(Sphere)1200+(Self Study Sorcery Lv x 18)%\n1Per hit MATK(E x plosion) 3400+(Self Study Sorcery Lv x 18)%/ Range: 9 x 9",
+                      "effect": "Range: 9 x 9",
                       "sp-cost": "83"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK(Sphere)1400+(Self Study Sorcery Lv x 21)%\n1Per hit MATK(E x plosion) 3900+(Self Study Sorcery Lv x 21)%/ Range: 9 x 9",
+                      "effect": "Range: 9 x 9",
                       "sp-cost": "86"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK(Sphere)1600+(Self Study Sorcery Lv x 24)%\n1Per hit MATK(E x plosion) 4400+(Self Study Sorcery Lv x 24)%/ Range: 9 x 9",
+                      "effect": "Range: 9 x 9",
                       "sp-cost": "89"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK(Sphere)1800+(Self Study Sorcery Lv x 27)%\n1Per hit MATK(E x plosion) 4900+(Self Study Sorcery Lv x 27)%/ Range: 9 x 9",
+                      "effect": "Range: 9 x 9",
                       "sp-cost": "92"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK(Sphere)2000+(Self Study Sorcery Lv x 30)%\n1Per hit MATK(E x plosion) 5400+(Self Study Sorcery Lv x 30)%/ Range: 9 x 9",
+                      "effect": "Range: 9 x 9",
                       "sp-cost": "95"
                     }
                   }
@@ -2510,17 +2468,12 @@ export const hyperNoviceData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 2200+(Self Study Sorcery Lv x 4)%",
                       "area-of-effect": "3x3",
                       "sp-cost": "88"
                     }
@@ -2528,7 +2481,6 @@ export const hyperNoviceData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 2900+(Self Study Sorcery Lv x 8)%",
                       "area-of-effect": "3x3",
                       "sp-cost": "91"
                     }
@@ -2536,7 +2488,6 @@ export const hyperNoviceData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 3600+(Self Study Sorcery Lv x 12)%",
                       "area-of-effect": "3x3",
                       "sp-cost": "94"
                     }
@@ -2544,7 +2495,6 @@ export const hyperNoviceData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 4300+(Self Study Sorcery Lv x 16)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "97"
                     }
@@ -2552,7 +2502,6 @@ export const hyperNoviceData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 5000+(Self Study Sorcery Lv x 20)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "100"
                     }
@@ -2560,7 +2509,6 @@ export const hyperNoviceData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK 5700+(Self Study Sorcery Lv x 24)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "103"
                     }
@@ -2568,7 +2516,6 @@ export const hyperNoviceData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK 6400+(Self Study Sorcery Lv x 28)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "106"
                     }
@@ -2576,7 +2523,6 @@ export const hyperNoviceData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK 7100+(Self Study Sorcery Lv x 32)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "109"
                     }
@@ -2584,7 +2530,6 @@ export const hyperNoviceData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK 7800+(Self Study Sorcery Lv x 36)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "112"
                     }
@@ -2592,7 +2537,6 @@ export const hyperNoviceData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK 8500+(Self Study Sorcery Lv x 40)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "115"
                     }
@@ -2829,80 +2773,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1650+(Self Study Tactics Lv x 5)%",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 2400+(Self Study Tactics Lv x 10)%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 3150+(Self Study Tactics Lv x 15)%",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 3900+(Self Study Tactics Lv x 20)%",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 4650+(Self Study Tactics Lv x 25)%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 5400+(Self Study Tactics Lv x 30)%",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 6150+(Self Study Tactics Lv x 35)%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 6900+(Self Study Tactics Lv x 40)%",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 7650+(Self Study Tactics Lv x 45)%",
                       "sp-cost": "58"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 8400+(Self Study Tactics Lv x 50)%",
                       "sp-cost": "60"
                     }
                   }
@@ -3138,10 +3068,6 @@ export const hyperNoviceData = {
               {
                 "label": "AP Generated",
                 "value": "2"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK) + (Self Study Tactics Lv x Skill Level Factor))% ATK"
               }
             ],
             "levelTables": [
@@ -3149,106 +3075,73 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "skill-level-factor",
-                    "label": "Skill Level Factor"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "1,500",
-                      "skill-level-factor": "3",
                       "sp-cost": "37"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "2,300",
-                      "skill-level-factor": "6",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "3,100",
-                      "skill-level-factor": "9",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "3,900",
-                      "skill-level-factor": "12",
                       "sp-cost": "43"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "4,700",
-                      "skill-level-factor": "15",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "5,500",
-                      "skill-level-factor": "18",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "6,300",
-                      "skill-level-factor": "21",
                       "sp-cost": "49"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "7,100",
-                      "skill-level-factor": "24",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "7,900",
-                      "skill-level-factor": "27",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "8,700",
-                      "skill-level-factor": "30",
                       "sp-cost": "55"
                     }
                   }
                 ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "(Base Damage (ATK) + (Self Study Tactics Lv x Skill Level Factor))% ATK"
-                  }
-                ]
+                "formulaRows": []
               }
             ]
           },
@@ -3511,70 +3404,70 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK(Initial)4500+(4 x Self Study Sorcery Lv)%\nMATK(Gravitational)1500+(2 x Self Study Sorcery Lv)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "93"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK(Initial)6000+(8 x Self Study Sorcery Lv)%\nMATK(Gravitational)2200+(4 x Self Study Sorcery Lv)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "96"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK(Initial)7500+(12 x Self Study Sorcery Lv)%\nMATK(Gravitational)2900+(6 x Self Study Sorcery Lv)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "99"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK(Initial)9000+(16 x Self Study Sorcery Lv)%\nMATK(Gravitational)3600+(8 x Self Study Sorcery Lv)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "102"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK(Initial)10500+(20 x Self Study Sorcery Lv)%\nMATK(Gravitational)4300+(10 x Self Study Sorcery Lv)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "105"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK(Initial)12000+(24 x Self Study Sorcery Lv)%\nMATK(Gravitational)5000+(12 x Self Study Sorcery Lv)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "108"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK(Initial)13500+(28 x Self Study Sorcery Lv)%\nMATK(Gravitational)5700+(14 x Self Study Sorcery Lv)%/Range: 9 x 9",
+                      "effect": "Range: 9 x 9",
                       "sp-cost": "111"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK(Initial)15000+(32 x Self Study Sorcery Lv)%\nMATK(Gravitational)6400+(16 x Self Study Sorcery Lv)%/Range: 9 x 9",
+                      "effect": "Range: 9 x 9",
                       "sp-cost": "114"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK(Initial)16500+(36 x Self Study Sorcery Lv)%\nMATK(Gravitational)7100+(18 x Self Study Sorcery Lv)%/Range: 9 x 9",
+                      "effect": "Range: 9 x 9",
                       "sp-cost": "117"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK(Initial)18000+(40 x Self Study Sorcery Lv)%\nMATK(Gravitational)7800+(20 x Self Study Sorcery Lv)%/Range: 9 x 9",
+                      "effect": "Range: 9 x 9",
                       "sp-cost": "120"
                     }
                   }
@@ -3803,80 +3696,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 1000+(Self Study Sorcery Lv x 4)%",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 1650+(Self Study Sorcery Lv x 8)%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 2300+(Self Study Sorcery Lv x 12)%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 2950+(Self Study Sorcery Lv x 16)%",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 3600+(Self Study Sorcery Lv x 20)%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK 4250+(Self Study Sorcery Lv x 24)%",
                       "sp-cost": "63"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK 4900+(Self Study Sorcery Lv x 28)%",
                       "sp-cost": "66"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK 5550+(Self Study Sorcery Lv x 32)%",
                       "sp-cost": "69"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK 6200+(Self Study Sorcery Lv x 36)%",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK 6850+(Self Study Sorcery Lv x 40)%",
                       "sp-cost": "75"
                     }
                   }
@@ -4070,18 +3949,11 @@ export const hyperNoviceData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage Bonus Of Mega Sonic Blow And Spiral Pierce Max",
-                  "before": "70%",
-                  "after": "100%",
+                  "label": "Damage",
+                  "before": "70% (bonus of Mega Sonic Blow and Spiral Pierce Ma x )/50% (bonus of Double Bowling Bash and Shield Chain Rush)",
+                  "after": "100% (bonus of Mega Sonic Blow and Spiral Pierce Ma x )/70% (bonus of Double Bowling Bash and Shield Chain Rush)",
                   "scope": "",
-                  "source": "Increases damage bonus of Mega Sonic Blow and Spiral Pierce Max from 70% to 100%."
-                },
-                {
-                  "label": "Damage Bonus Of Double Bowling Bash And Shield Chain Rush",
-                  "before": "50%",
-                  "after": "70%",
-                  "scope": "",
-                  "source": "Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 50% to 70%."
+                  "source": "Increases damage bonus of Mega Sonic Blow and Spiral Pierce Max from 70% to 100%. / Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 50% to 70%."
                 }
               ]
             },
@@ -4096,9 +3968,9 @@ export const hyperNoviceData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage Bonus Of Double Bowling Bash And Shield Chain Rush",
-                  "before": "70%",
-                  "after": "120%",
+                  "label": "Damage",
+                  "before": "70% (bonus of Double Bowling Bash and Shield Chain Rush)",
+                  "after": "120% (bonus of Double Bowling Bash and Shield Chain Rush)",
                   "scope": "",
                   "source": "Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 70% to 120%."
                 }
@@ -4565,80 +4437,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+30",
                       "sp-cost": "0"
                     }
                   }
@@ -5050,10 +4908,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -5062,70 +4916,60 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "135%",
                       "sp-cost": "11"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "170%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "205%",
                       "sp-cost": "13"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "275%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "345%",
                       "sp-cost": "17"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "380%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "415%",
                       "sp-cost": "19"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "450%",
                       "sp-cost": "20"
                     }
                   }
@@ -6922,10 +6766,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -6942,7 +6782,6 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "16",
                       "atk": "340",
                       "data-1": "105"
@@ -6951,7 +6790,6 @@ export const hyperNoviceData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "380%",
                       "sp-cost": "16",
                       "atk": "380",
                       "data-1": "110"
@@ -6960,7 +6798,6 @@ export const hyperNoviceData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "420%",
                       "sp-cost": "16",
                       "atk": "420",
                       "data-1": "115"
@@ -6969,7 +6806,6 @@ export const hyperNoviceData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "460%",
                       "sp-cost": "16",
                       "atk": "460",
                       "data-1": "120"
@@ -6978,7 +6814,6 @@ export const hyperNoviceData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "16",
                       "atk": "500",
                       "data-1": "125"
@@ -6987,7 +6822,6 @@ export const hyperNoviceData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "540%",
                       "sp-cost": "16",
                       "atk": "540",
                       "data-1": "130"
@@ -6996,7 +6830,6 @@ export const hyperNoviceData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "580%",
                       "sp-cost": "16",
                       "atk": "580",
                       "data-1": "135"
@@ -7005,7 +6838,6 @@ export const hyperNoviceData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "620%",
                       "sp-cost": "16",
                       "atk": "620",
                       "data-1": "140"
@@ -7014,7 +6846,6 @@ export const hyperNoviceData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "660%",
                       "sp-cost": "16",
                       "atk": "660",
                       "data-1": "145"
@@ -7023,7 +6854,6 @@ export const hyperNoviceData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "16",
                       "atk": "700",
                       "data-1": "150"
@@ -7412,10 +7242,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -7424,70 +7250,60 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "370%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "45"
                     }
                   }
@@ -7704,10 +7520,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -7716,35 +7528,30 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "10"
                     }
                   }
@@ -8191,10 +7998,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -8203,35 +8006,30 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "350%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "650%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "15"
                     }
                   }
@@ -8816,10 +8614,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -8828,35 +8622,30 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "80%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "320%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "12"
                     }
                   }
@@ -9194,10 +8983,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -9210,35 +8995,30 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "20"
                     }
                   },
@@ -9504,10 +9284,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -9516,35 +9292,30 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "130%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "190%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "220%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "250%",
                       "sp-cost": "25"
                     }
                   }
@@ -9924,45 +9695,36 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1time",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 2time",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 3time",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 4time",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 5time",
                       "sp-cost": "30"
                     }
                   }
@@ -10144,10 +9906,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -10156,70 +9914,60 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "140%",
                       "sp-cost": "37"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "180%",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "200%",
                       "sp-cost": "43"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "220%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "240%",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "260%",
                       "sp-cost": "49"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "280%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "300%",
                       "sp-cost": "53"
                     }
                   }
@@ -10511,80 +10259,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+30",
                       "sp-cost": "0"
                     }
                   }
@@ -10990,10 +10724,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -11002,70 +10732,60 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "500%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "600%",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "700%",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "800%",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "900%",
                       "sp-cost": "76"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "1000%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "1100%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "1200%",
                       "sp-cost": "88"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "1300%",
                       "sp-cost": "92"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "1400%",
                       "sp-cost": "96"
                     }
                   }
@@ -11192,10 +10912,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -11204,35 +10920,30 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "125%",
                       "sp-cost": "28"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "250%",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "375%",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "500%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "625%",
                       "sp-cost": "44"
                     }
                   }
@@ -12117,10 +11828,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12129,70 +11836,60 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "170%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "220%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "270%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "320%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "370%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "420%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "470%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "520%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "570%",
                       "sp-cost": "78"
                     }
                   }
@@ -12316,35 +12013,35 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 5sec, AGI/DE x Reduction: 10%",
+                      "effect": "Duration: 5sec, AGI / DE x Reduction: 10%",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration:10sec, AGI/DE x Reduction: 20%",
+                      "effect": "Duration:10sec, AGI / DE x Reduction: 20%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration:15sec, AGI/DE x Reduction: 30%",
+                      "effect": "Duration:15sec, AGI / DE x Reduction: 30%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration:20sec, AGI/DE x Reduction: 40%",
+                      "effect": "Duration:20sec, AGI / DE x Reduction: 40%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration:25sec, AGI/DE x Reduction: 50%",
+                      "effect": "Duration:25sec, AGI / DE x Reduction: 50%",
                       "sp-cost": "25"
                     }
                   }
@@ -12739,80 +12436,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -12966,116 +12649,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "acurracy-bonus-2-damage",
-                    "label": "Acurracy Bonus: 2, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-4-damage",
-                    "label": "Acurracy Bonus: 4, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-5-damage",
-                    "label": "Acurracy Bonus: 5, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-6-damage",
-                    "label": "Acurracy Bonus: 6, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-10-damage",
-                    "label": "Acurracy Bonus:10, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-12-damage",
-                    "label": "Acurracy Bonus:12, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-14-damage",
-                    "label": "Acurracy Bonus:14, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-16-damage",
-                    "label": "Acurracy Bonus:16, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-18-damage",
-                    "label": "Acurracy Bonus:18, Damage"
-                  },
-                  {
-                    "id": "acurracy-bonus-20-damage",
-                    "label": "Acurracy Bonus:20, Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "acurracy-bonus-2-damage": "+ 2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "acurracy-bonus-4-damage": "+ 4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "acurracy-bonus-5-damage": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "acurracy-bonus-6-damage": "+ 8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "acurracy-bonus-10-damage": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "acurracy-bonus-12-damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "acurracy-bonus-14-damage": "+14",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "acurracy-bonus-16-damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "acurracy-bonus-18-damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "acurracy-bonus-20-damage": "+20",
                       "sp-cost": "0"
                     }
                   }
@@ -13811,7 +13444,7 @@ export const hyperNoviceData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -13839,7 +13472,7 @@ export const hyperNoviceData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -13999,80 +13632,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -14221,10 +13840,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14233,70 +13848,60 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "370%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "15"
                     }
                   }
@@ -15464,70 +15069,70 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(HP 5+0.2% of Ma x HP)/10 sec",
+                      "effect": "(HP 5+0.2% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(HP 10+0.4% of Ma x HP)/10 sec",
+                      "effect": "(HP 10+0.4% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(HP 15+0.6% of Ma x HP)/10 sec",
+                      "effect": "(HP 15+0.6% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(HP 20+0.8% of Ma x HP)/10 sec",
+                      "effect": "(HP 20+0.8% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(HP 25+1.0% of Ma x HP)/10 sec",
+                      "effect": "(HP 25+1.0% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(HP 30+1.2% of Ma x HP)/10 sec",
+                      "effect": "(HP 30+1.2% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(HP 35+1.4% of Ma x HP)/10 sec",
+                      "effect": "(HP 35+1.4% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(HP 40+1.6% of Ma x HP)/10 sec",
+                      "effect": "(HP 40+1.6% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(HP 45+1.8% of Ma x HP)/10 sec",
+                      "effect": "(HP 45+1.8% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(HP 50+2.0% of Ma x HP)/10 sec",
+                      "effect": "(HP 50+2.0% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   }
@@ -15699,10 +15304,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -15711,70 +15312,60 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "30"
                     }
                   }
@@ -16850,70 +16441,70 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(3 + 0.2% of Ma x SP)/10 sec",
+                      "effect": "(3 + 0.2% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(6 + 0.4% of Ma x SP)/10 sec",
+                      "effect": "(6 + 0.4% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(9 + 0.6% of Ma x SP)/10 sec",
+                      "effect": "(9 + 0.6% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(12 + 0.8% of Ma x SP)/10 sec",
+                      "effect": "(12 + 0.8% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(15 + 1.0% of Ma x SP)/10 sec",
+                      "effect": "(15 + 1.0% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(18 + 1.2% of Ma x SP)/10 sec",
+                      "effect": "(18 + 1.2% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(21 + 1.4% of Ma x SP)/10 sec",
+                      "effect": "(21 + 1.4% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(24 + 1.6% of Ma x SP)/10 sec",
+                      "effect": "(24 + 1.6% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(27 + 1.8% of Ma x SP)/10 sec",
+                      "effect": "(27 + 1.8% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(30 + 2.0% of Ma x SP)/10 sec",
+                      "effect": "(30 + 2.0% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   }
@@ -18090,10 +17681,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -18102,70 +17689,60 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "80%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "90%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "100%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "110%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "130%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "140%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "150%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "170%",
                       "sp-cost": "18"
                     }
                   }
@@ -18312,80 +17889,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage-reduction",
-                    "label": "Damage Reduction"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage-reduction": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage-reduction": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage-reduction": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage-reduction": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage-reduction": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage-reduction": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage-reduction": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage-reduction": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage-reduction": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage-reduction": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -19007,10 +18570,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -19019,70 +18578,60 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "110%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "130%",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "140%",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "150%",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "170%",
                       "sp-cost": "19"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "180%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "190%",
                       "sp-cost": "17"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "200%",
                       "sp-cost": "16"
                     }
                   }
@@ -19500,10 +19049,6 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -19512,70 +19057,60 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "180%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "200%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "220%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "240%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "260%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "280%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "300%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "320%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "340%",
                       "sp-cost": "25"
                     }
                   }
@@ -19753,80 +19288,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1time, + 5% dmg to Undead, SP Consumption:18",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1time, +10% dmg to Undead, SP Consumption:14",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 2times, +15% dmg to Undead, SP Consumption:24",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2times, +20% dmg to Undead, SP Consumption:20",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 3times, +25% dmg to Undead, SP Consumption:30",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 3times, +30% dmg to Undead, SP Consumption:26",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 4times, +35% dmg to Undead, SP Consumption:36",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 4times, +40% dmg to Undead, SP Consumption:32",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 5times, +45% dmg to Undead, SP Consumption:42",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 5times, +50% dmg to Undead, SP Consumption:38",
                       "sp-cost": "38"
                     }
                   }
@@ -19980,80 +19501,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -22852,7 +22359,7 @@ export const hyperNoviceData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "3 custom position available\n[Custom Position] : Stand in the area and type in [/memo] to store a Memo Point of the current spot",
+                      "effect": "3 custom position available\n[Custom Position] : Stand in the area and type in [ / memo] to store a Memo Point of the current spot",
                       "sp-cost": "26"
                     }
                   }
@@ -23030,80 +22537,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "AGI+3, ATK Speed: +1%, Duration: 60sec",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "AGI+4, ATK Speed: +2%, Duration: 80sec",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "AGI+5, ATK Speed: +3%, Duration:100sec",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "AGI+6, ATK Speed: +4%, Duration:120sec",
                       "sp-cost": "27"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "AGI+7, ATK Speed: +5%, Duration:140sec",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "AGI+8, ATK Speed: +6%, Duration:160sec",
                       "sp-cost": "33"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "AGI+9, ATK Speed: +7%, Duration:180sec",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "AGI+10, ATK Speed: +8%, Duration:200sec",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "AGI+11, ATK Speed: +9%, Duration:220sec",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "AGI+12, ATK Speed: +10%, Duration:240sec",
                       "sp-cost": "45"
                     }
                   }
@@ -23716,80 +23209,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage (ATK) 150%, Zeny Cost : 100Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage (ATK) 200%, Zeny Cost : 200Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage (ATK) 250%, Zeny Cost : 300Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage (ATK) 300%, Zeny Cost : 400Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage (ATK) 350%, Zeny Cost : 500Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Damage (ATK) 400%, Zeny Cost : 600Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Damage (ATK) 450%, Zeny Cost : 700Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Damage (ATK) 500%, Zeny Cost : 800Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Damage (ATK) 550%, Zeny Cost : 900Z",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Damage (ATK) 600%, Zeny Cost :1000Z",
                       "sp-cost": "5"
                     }
                   }
@@ -24835,80 +24314,66 @@ export const hyperNoviceData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK per hit 500+(Self Study Tactics Lv x 3)%",
                   "sp-cost": "38"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK per hit 800+(Self Study Tactics Lv x 6)%",
                   "sp-cost": "41"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK per hit 1100+(Self Study Tactics Lv x 9)%",
                   "sp-cost": "44"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK per hit 1400+(Self Study Tactics Lv x 12)%",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK per hit 1700+(Self Study Tactics Lv x 15)%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK per hit 2000+(Self Study Tactics Lv x 18)%",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK per hit 2300+(Self Study Tactics Lv x 21)%",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK per hit 2600+(Self Study Tactics Lv x 24)%",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK per hit 2900+(Self Study Tactics Lv x 27)%",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK per hit 3200+(Self Study Tactics Lv x 30)%",
                   "sp-cost": "65"
                 }
               }
@@ -25188,80 +24653,66 @@ export const hyperNoviceData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 1200+(Self Study Tactics Lv x 3)%",
                   "sp-cost": "35"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 1700+(Self Study Tactics Lv x 6)%",
                   "sp-cost": "38"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 2200+(Self Study Tactics Lv x 9)%",
                   "sp-cost": "41"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 2700+(Self Study Tactics Lv x 12)%",
                   "sp-cost": "44"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 3200+(Self Study Tactics Lv x 15)%",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK 3700+(Self Study Tactics Lv x 18)%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK 4200+(Self Study Tactics Lv x 21)%",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK 4700+(Self Study Tactics Lv x 24)%",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK 5200+(Self Study Tactics Lv x 27)%",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK 5700+(Self Study Tactics Lv x 30)%",
                   "sp-cost": "62"
                 }
               }
@@ -25539,70 +24990,70 @@ export const hyperNoviceData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK(Fall)620+(Self Study Sorcery Lv x 5)%\nMATK(E x plosion)610+(Self Study Sorcery Lv x 5)%/E x plosion range: 7 x 7",
+                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "74"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK(Fall)940+(Self Study Sorcery Lv x 10)%\nMATK(E x plosion)770+(Self Study Sorcery Lv x 10)%/E x plosion range: 7 x 7",
+                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "78"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK(Fall)1260+(Self Study Sorcery Lv x 15)%\nMATK(E x plosion)930+(Self Study Sorcery Lv x 15)%/E x plosion range: 7 x 7",
+                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "82"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK(Fall)1580+(Self Study Sorcery Lv x 20)%\nMATK(E x plosion)1090+(Self Study Sorcery Lv x 20)%/E x plosion range: 7 x 7",
+                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "86"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK(Fall)1900+(Self Study Sorcery Lv x 25)%\nMATK(E x plosion)1250+(Self Study Sorcery Lv x 25)%/E x plosion range: 7 x 7",
+                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "90"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK(Fall)2220+(Self Study Sorcery Lv x 30)%\nMATK(E x plosion)1410+(Self Study Sorcery Lv x 30)%/E x plosion range: 7 x 7",
+                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "94"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK(Fall)2540+(Self Study Sorcery Lv x 35)%\nMATK(E x plosion)1570+(Self Study Sorcery Lv x 35)%/E x plosion range: 7 x 7",
+                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "98"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK(Fall)2860+(Self Study Sorcery Lv x 40)%\nMATK(E x plosion)1730+(Self Study Sorcery Lv x 40)%/E x plosion range: 9 x 9",
+                  "effect": "E x plosion range: 9 x 9",
                   "sp-cost": "102"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK(Fall)3180+(Self Study Sorcery Lv x 45)%\nMATK(E x plosion)1890+(Self Study Sorcery Lv x 45)%/E x plosion range: 9 x 9",
+                  "effect": "E x plosion range: 9 x 9",
                   "sp-cost": "106"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK(Fall)3500+(Self Study Sorcery Lv x 50)%\nMATK(E x plosion)2050+(Self Study Sorcery Lv x 50)%/E x plosion range: 9 x 9",
+                  "effect": "E x plosion range: 9 x 9",
                   "sp-cost": "110"
                 }
               }
@@ -25811,17 +25262,12 @@ export const hyperNoviceData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 1800+(Self Study Sorcery Lv x 3)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "75"
                 }
@@ -25829,7 +25275,6 @@ export const hyperNoviceData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 3600+(Self Study Sorcery Lv x 6)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "80"
                 }
@@ -25837,7 +25282,6 @@ export const hyperNoviceData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 5400+(Self Study Sorcery Lv x 9)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "85"
                 }
@@ -25845,7 +25289,6 @@ export const hyperNoviceData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 7200+(Self Study Sorcery Lv x 12)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "90"
                 }
@@ -25853,7 +25296,6 @@ export const hyperNoviceData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 9000+(Self Study Sorcery Lv x 15)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "95"
                 }
@@ -25861,7 +25303,6 @@ export const hyperNoviceData = {
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK 10800+(Self Study Sorcery Lv x 18)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "100"
                 }
@@ -25869,7 +25310,6 @@ export const hyperNoviceData = {
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK 12600+(Self Study Sorcery Lv x 21)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "105"
                 }
@@ -25877,7 +25317,6 @@ export const hyperNoviceData = {
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK 14400+(Self Study Sorcery Lv x 24)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "110"
                 }
@@ -25885,7 +25324,6 @@ export const hyperNoviceData = {
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK 16200+(Self Study Sorcery Lv x 27)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "115"
                 }
@@ -25893,7 +25331,6 @@ export const hyperNoviceData = {
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK 18000+(Self Study Sorcery Lv x 30)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "120"
                 }
@@ -26105,70 +25542,70 @@ export const hyperNoviceData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK(Sphere)200+(Self Study Sorcery Lv x 3)%\n1Per hit MATK(E x plosion) 900+(Self Study Sorcery Lv x 3)%/ Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "68"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK(Sphere)400+(Self Study Sorcery Lv x 6)%\n1Per hit MATK(E x plosion) 1400+(Self Study Sorcery Lv x 6)%/ Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "71"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK(Sphere)600+(Self Study Sorcery Lv x 9)%\n1Per hit MATK(E x plosion) 1900+(Self Study Sorcery Lv x 9)%/ Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "74"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK(Sphere)800+(Self Study Sorcery Lv x 12)%\n1Per hit MATK(E x plosion) 2400+(Self Study Sorcery Lv x 12)%/ Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "77"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK(Sphere)1000+(Self Study Sorcery Lv x 15)%\n1Per hit MATK(E x plosion) 2900+(Self Study Sorcery Lv x 15)%/ Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK(Sphere)1200+(Self Study Sorcery Lv x 18)%\n1Per hit MATK(E x plosion) 3400+(Self Study Sorcery Lv x 18)%/ Range: 9 x 9",
+                  "effect": "Range: 9 x 9",
                   "sp-cost": "83"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK(Sphere)1400+(Self Study Sorcery Lv x 21)%\n1Per hit MATK(E x plosion) 3900+(Self Study Sorcery Lv x 21)%/ Range: 9 x 9",
+                  "effect": "Range: 9 x 9",
                   "sp-cost": "86"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK(Sphere)1600+(Self Study Sorcery Lv x 24)%\n1Per hit MATK(E x plosion) 4400+(Self Study Sorcery Lv x 24)%/ Range: 9 x 9",
+                  "effect": "Range: 9 x 9",
                   "sp-cost": "89"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK(Sphere)1800+(Self Study Sorcery Lv x 27)%\n1Per hit MATK(E x plosion) 4900+(Self Study Sorcery Lv x 27)%/ Range: 9 x 9",
+                  "effect": "Range: 9 x 9",
                   "sp-cost": "92"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK(Sphere)2000+(Self Study Sorcery Lv x 30)%\n1Per hit MATK(E x plosion) 5400+(Self Study Sorcery Lv x 30)%/ Range: 9 x 9",
+                  "effect": "Range: 9 x 9",
                   "sp-cost": "95"
                 }
               }
@@ -26377,17 +25814,12 @@ export const hyperNoviceData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 2200+(Self Study Sorcery Lv x 4)%",
                   "area-of-effect": "3x3",
                   "sp-cost": "88"
                 }
@@ -26395,7 +25827,6 @@ export const hyperNoviceData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 2900+(Self Study Sorcery Lv x 8)%",
                   "area-of-effect": "3x3",
                   "sp-cost": "91"
                 }
@@ -26403,7 +25834,6 @@ export const hyperNoviceData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 3600+(Self Study Sorcery Lv x 12)%",
                   "area-of-effect": "3x3",
                   "sp-cost": "94"
                 }
@@ -26411,7 +25841,6 @@ export const hyperNoviceData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 4300+(Self Study Sorcery Lv x 16)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "97"
                 }
@@ -26419,7 +25848,6 @@ export const hyperNoviceData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 5000+(Self Study Sorcery Lv x 20)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "100"
                 }
@@ -26427,7 +25855,6 @@ export const hyperNoviceData = {
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK 5700+(Self Study Sorcery Lv x 24)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "103"
                 }
@@ -26435,7 +25862,6 @@ export const hyperNoviceData = {
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK 6400+(Self Study Sorcery Lv x 28)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "106"
                 }
@@ -26443,7 +25869,6 @@ export const hyperNoviceData = {
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK 7100+(Self Study Sorcery Lv x 32)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "109"
                 }
@@ -26451,7 +25876,6 @@ export const hyperNoviceData = {
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK 7800+(Self Study Sorcery Lv x 36)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "112"
                 }
@@ -26459,7 +25883,6 @@ export const hyperNoviceData = {
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK 8500+(Self Study Sorcery Lv x 40)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "115"
                 }
@@ -26696,80 +26119,66 @@ export const hyperNoviceData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 1650+(Self Study Tactics Lv x 5)%",
                   "sp-cost": "42"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 2400+(Self Study Tactics Lv x 10)%",
                   "sp-cost": "44"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 3150+(Self Study Tactics Lv x 15)%",
                   "sp-cost": "46"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 3900+(Self Study Tactics Lv x 20)%",
                   "sp-cost": "48"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 4650+(Self Study Tactics Lv x 25)%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK 5400+(Self Study Tactics Lv x 30)%",
                   "sp-cost": "52"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK 6150+(Self Study Tactics Lv x 35)%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK 6900+(Self Study Tactics Lv x 40)%",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK 7650+(Self Study Tactics Lv x 45)%",
                   "sp-cost": "58"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK 8400+(Self Study Tactics Lv x 50)%",
                   "sp-cost": "60"
                 }
               }
@@ -27005,10 +26414,6 @@ export const hyperNoviceData = {
           {
             "label": "AP Generated",
             "value": "2"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "(Base Damage (ATK) + (Self Study Tactics Lv x Skill Level Factor))% ATK"
           }
         ],
         "levelTables": [
@@ -27016,106 +26421,73 @@ export const hyperNoviceData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "skill-level-factor",
-                "label": "Skill Level Factor"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "1,500",
-                  "skill-level-factor": "3",
                   "sp-cost": "37"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "2,300",
-                  "skill-level-factor": "6",
                   "sp-cost": "39"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "3,100",
-                  "skill-level-factor": "9",
                   "sp-cost": "41"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "3,900",
-                  "skill-level-factor": "12",
                   "sp-cost": "43"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "4,700",
-                  "skill-level-factor": "15",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk": "5,500",
-                  "skill-level-factor": "18",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk": "6,300",
-                  "skill-level-factor": "21",
                   "sp-cost": "49"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk": "7,100",
-                  "skill-level-factor": "24",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk": "7,900",
-                  "skill-level-factor": "27",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk": "8,700",
-                  "skill-level-factor": "30",
                   "sp-cost": "55"
                 }
               }
             ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK) + (Self Study Tactics Lv x Skill Level Factor))% ATK"
-              }
-            ]
+            "formulaRows": []
           }
         ]
       },
@@ -27378,70 +26750,70 @@ export const hyperNoviceData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK(Initial)4500+(4 x Self Study Sorcery Lv)%\nMATK(Gravitational)1500+(2 x Self Study Sorcery Lv)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "93"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK(Initial)6000+(8 x Self Study Sorcery Lv)%\nMATK(Gravitational)2200+(4 x Self Study Sorcery Lv)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "96"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK(Initial)7500+(12 x Self Study Sorcery Lv)%\nMATK(Gravitational)2900+(6 x Self Study Sorcery Lv)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "99"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK(Initial)9000+(16 x Self Study Sorcery Lv)%\nMATK(Gravitational)3600+(8 x Self Study Sorcery Lv)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "102"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK(Initial)10500+(20 x Self Study Sorcery Lv)%\nMATK(Gravitational)4300+(10 x Self Study Sorcery Lv)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "105"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK(Initial)12000+(24 x Self Study Sorcery Lv)%\nMATK(Gravitational)5000+(12 x Self Study Sorcery Lv)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "108"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK(Initial)13500+(28 x Self Study Sorcery Lv)%\nMATK(Gravitational)5700+(14 x Self Study Sorcery Lv)%/Range: 9 x 9",
+                  "effect": "Range: 9 x 9",
                   "sp-cost": "111"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK(Initial)15000+(32 x Self Study Sorcery Lv)%\nMATK(Gravitational)6400+(16 x Self Study Sorcery Lv)%/Range: 9 x 9",
+                  "effect": "Range: 9 x 9",
                   "sp-cost": "114"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK(Initial)16500+(36 x Self Study Sorcery Lv)%\nMATK(Gravitational)7100+(18 x Self Study Sorcery Lv)%/Range: 9 x 9",
+                  "effect": "Range: 9 x 9",
                   "sp-cost": "117"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK(Initial)18000+(40 x Self Study Sorcery Lv)%\nMATK(Gravitational)7800+(20 x Self Study Sorcery Lv)%/Range: 9 x 9",
+                  "effect": "Range: 9 x 9",
                   "sp-cost": "120"
                 }
               }
@@ -27670,80 +27042,66 @@ export const hyperNoviceData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 1000+(Self Study Sorcery Lv x 4)%",
                   "sp-cost": "48"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 1650+(Self Study Sorcery Lv x 8)%",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 2300+(Self Study Sorcery Lv x 12)%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 2950+(Self Study Sorcery Lv x 16)%",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 3600+(Self Study Sorcery Lv x 20)%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK 4250+(Self Study Sorcery Lv x 24)%",
                   "sp-cost": "63"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK 4900+(Self Study Sorcery Lv x 28)%",
                   "sp-cost": "66"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK 5550+(Self Study Sorcery Lv x 32)%",
                   "sp-cost": "69"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK 6200+(Self Study Sorcery Lv x 36)%",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK 6850+(Self Study Sorcery Lv x 40)%",
                   "sp-cost": "75"
                 }
               }
@@ -27937,18 +27295,11 @@ export const hyperNoviceData = {
           ],
           "specRows": [
             {
-              "label": "Damage Bonus Of Mega Sonic Blow And Spiral Pierce Max",
-              "before": "70%",
-              "after": "100%",
+              "label": "Damage",
+              "before": "70% (bonus of Mega Sonic Blow and Spiral Pierce Ma x )/50% (bonus of Double Bowling Bash and Shield Chain Rush)",
+              "after": "100% (bonus of Mega Sonic Blow and Spiral Pierce Ma x )/70% (bonus of Double Bowling Bash and Shield Chain Rush)",
               "scope": "",
-              "source": "Increases damage bonus of Mega Sonic Blow and Spiral Pierce Max from 70% to 100%."
-            },
-            {
-              "label": "Damage Bonus Of Double Bowling Bash And Shield Chain Rush",
-              "before": "50%",
-              "after": "70%",
-              "scope": "",
-              "source": "Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 50% to 70%."
+              "source": "Increases damage bonus of Mega Sonic Blow and Spiral Pierce Max from 70% to 100%. / Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 50% to 70%."
             }
           ]
         },
@@ -27963,9 +27314,9 @@ export const hyperNoviceData = {
           ],
           "specRows": [
             {
-              "label": "Damage Bonus Of Double Bowling Bash And Shield Chain Rush",
-              "before": "70%",
-              "after": "120%",
+              "label": "Damage",
+              "before": "70% (bonus of Double Bowling Bash and Shield Chain Rush)",
+              "after": "120% (bonus of Double Bowling Bash and Shield Chain Rush)",
               "scope": "",
               "source": "Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 70% to 120%."
             }

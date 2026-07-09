@@ -1,5 +1,5 @@
 export const windHawkData = {
-  "generatedAt": "2026-07-09T12:11:19.231Z",
+  "generatedAt": "2026-07-09T13:21:36.566Z",
   "classId": 4257,
   "classSlug": "wind-hawk",
   "className": "Wind Hawk",
@@ -467,10 +467,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -479,70 +475,60 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "1300%",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "2200%",
                       "sp-cost": "49"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "3100%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "4000%",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "4900%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "5800%",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "6700%",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "7600%",
                       "sp-cost": "61"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "8500%",
                       "sp-cost": "63"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "9400%",
                       "sp-cost": "65"
                     }
                   }
@@ -638,17 +624,10 @@ export const windHawkData = {
               "specRows": [
                 {
                   "label": "Damage",
-                  "before": "9400%Atk",
-                  "after": "13500%Atk",
+                  "before": "9400%Atk/10% per stack (up (bonus on standing still)",
+                  "after": "13500%Atk/30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks) (bonus on standing still)",
                   "scope": "Lv 10",
-                  "source": "Increases base damage from 9400%Atk to 13500%Atk based on level 10."
-                },
-                {
-                  "label": "Damage Bonus On Standing Still",
-                  "before": "10% per stack (up",
-                  "after": "30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)",
-                  "scope": "",
-                  "source": "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)."
+                  "source": "Increases base damage from 9400%Atk to 13500%Atk based on level 10. / Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)."
                 }
               ]
             }
@@ -895,21 +874,21 @@ export const windHawkData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Increased duration: 3 seconds/Increased damage: 60%/Increased AP gain: 1",
+                      "effect": "Increased duration: 3 seconds / Increased damage: 60% / Increased AP gain: 1",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Increased duration: 4 seconds/Increased damage: 80%/Increased AP gain: 1",
+                      "effect": "Increased duration: 4 seconds / Increased damage: 80% / Increased AP gain: 1",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Increased duration: 5 seconds/Increased damage: 100%/Increased AP gain: 1",
+                      "effect": "Increased duration: 5 seconds / Increased damage: 100% / Increased AP gain: 1",
                       "sp-cost": "0"
                     }
                   }
@@ -1191,10 +1170,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1208,7 +1183,6 @@ export const windHawkData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "1000%",
                       "sp-cost": "93"
                     }
                   },
@@ -1216,7 +1190,6 @@ export const windHawkData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "2000%",
                       "sp-cost": "96"
                     }
                   },
@@ -1224,7 +1197,6 @@ export const windHawkData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "3000%",
                       "sp-cost": "99"
                     }
                   },
@@ -1232,7 +1204,6 @@ export const windHawkData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "4000%",
                       "sp-cost": "102"
                     }
                   },
@@ -1240,7 +1211,6 @@ export const windHawkData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "5000%",
                       "sp-cost": "105"
                     }
                   },
@@ -1248,7 +1218,6 @@ export const windHawkData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "6000%",
                       "sp-cost": "108"
                     }
                   },
@@ -1256,7 +1225,6 @@ export const windHawkData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "7000%",
                       "sp-cost": "111"
                     }
                   },
@@ -1264,7 +1232,6 @@ export const windHawkData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "8000%",
                       "sp-cost": "114"
                     }
                   },
@@ -1272,7 +1239,6 @@ export const windHawkData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "9000%",
                       "sp-cost": "117"
                     }
                   },
@@ -1280,7 +1246,6 @@ export const windHawkData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-atk": "10000%",
                       "sp-cost": "120"
                     }
                   }
@@ -1691,10 +1656,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1708,7 +1669,6 @@ export const windHawkData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "850%",
                       "sp-cost": "68"
                     }
                   },
@@ -1716,7 +1676,6 @@ export const windHawkData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "1700%",
                       "sp-cost": "72"
                     }
                   },
@@ -1724,7 +1683,6 @@ export const windHawkData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "2550%",
                       "sp-cost": "76"
                     }
                   },
@@ -1732,7 +1690,6 @@ export const windHawkData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "3400%",
                       "sp-cost": "80"
                     }
                   },
@@ -1740,7 +1697,6 @@ export const windHawkData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "4250%",
                       "sp-cost": "84"
                     }
                   }
@@ -1880,10 +1836,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1897,7 +1849,6 @@ export const windHawkData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "850%",
                       "sp-cost": "68"
                     }
                   },
@@ -1905,7 +1856,6 @@ export const windHawkData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "1700%",
                       "sp-cost": "72"
                     }
                   },
@@ -1913,7 +1863,6 @@ export const windHawkData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "2550%",
                       "sp-cost": "76"
                     }
                   },
@@ -1921,7 +1870,6 @@ export const windHawkData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "3400%",
                       "sp-cost": "80"
                     }
                   },
@@ -1929,7 +1877,6 @@ export const windHawkData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "4250%",
                       "sp-cost": "84"
                     }
                   }
@@ -2065,10 +2012,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2077,35 +2020,30 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1500%",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "2000%",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "2500%",
                       "sp-cost": "56"
                     }
                   }
@@ -2284,10 +2222,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -2301,7 +2235,6 @@ export const windHawkData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "850%",
                       "sp-cost": "68"
                     }
                   },
@@ -2309,7 +2242,6 @@ export const windHawkData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "1700%",
                       "sp-cost": "72"
                     }
                   },
@@ -2317,7 +2249,6 @@ export const windHawkData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "2550%",
                       "sp-cost": "76"
                     }
                   },
@@ -2325,7 +2256,6 @@ export const windHawkData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "3400%",
                       "sp-cost": "80"
                     }
                   },
@@ -2333,7 +2263,6 @@ export const windHawkData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "4250%",
                       "sp-cost": "84"
                     }
                   }
@@ -2473,10 +2402,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -2490,7 +2415,6 @@ export const windHawkData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "850%",
                       "sp-cost": "68"
                     }
                   },
@@ -2498,7 +2422,6 @@ export const windHawkData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "3x3",
-                      "base-damage-atk": "1700%",
                       "sp-cost": "72"
                     }
                   },
@@ -2506,7 +2429,6 @@ export const windHawkData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "2550%",
                       "sp-cost": "76"
                     }
                   },
@@ -2514,7 +2436,6 @@ export const windHawkData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-atk": "3400%",
                       "sp-cost": "80"
                     }
                   },
@@ -2522,7 +2443,6 @@ export const windHawkData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-atk": "4250%",
                       "sp-cost": "84"
                     }
                   }
@@ -2637,50 +2557,7 @@ export const windHawkData = {
                 "value": "5"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "4600%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "7400%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "10200%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "13000%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "15800%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [
@@ -3004,10 +2881,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3016,35 +2889,30 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1800%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "2400%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "3000%",
                       "sp-cost": "80"
                     }
                   }
@@ -3410,10 +3278,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -3434,7 +3298,6 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "520%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "520",
@@ -3444,7 +3307,6 @@ export const windHawkData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "540%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "540",
@@ -3454,7 +3316,6 @@ export const windHawkData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "560%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "560",
@@ -3464,7 +3325,6 @@ export const windHawkData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "580%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "580",
@@ -3474,7 +3334,6 @@ export const windHawkData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "600",
@@ -3484,7 +3343,6 @@ export const windHawkData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "620%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "620",
@@ -3494,7 +3352,6 @@ export const windHawkData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "640%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "640"
@@ -3503,7 +3360,6 @@ export const windHawkData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "660%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "660"
@@ -3512,7 +3368,6 @@ export const windHawkData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "680%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "680"
@@ -3521,7 +3376,6 @@ export const windHawkData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "atk": "700"
@@ -3820,46 +3674,6 @@ export const windHawkData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "additional-damage-120-int-3-maxsp-260-skill-range",
-                    "label": "Additional Damage +120 / Int +3 / Maxsp +260 / Skill Range"
-                  },
-                  {
-                    "id": "additional-damage-160-int-4-maxsp-280-skill-range",
-                    "label": "Additional Damage +160 / Int +4 / Maxsp +280 / Skill Range"
-                  },
-                  {
-                    "id": "additional-damage-200-int-5-maxsp-300-skill-range",
-                    "label": "Additional Damage +200 / Int +5 / Maxsp +300 / Skill Range"
-                  },
-                  {
-                    "id": "additional-damage-240-int-6-maxsp-320-skill-range",
-                    "label": "Additional Damage +240 / Int +6 / Maxsp +320 / Skill Range"
-                  },
-                  {
-                    "id": "additional-damage-280-int-7-maxsp-340-skill-range",
-                    "label": "Additional Damage +280 / Int +7 / Maxsp +340 / Skill Range"
-                  },
-                  {
-                    "id": "additional-damage-320-int-8-maxsp-360-skill-range",
-                    "label": "Additional Damage +320 / Int +8 / Maxsp +360 / Skill Range"
-                  },
-                  {
-                    "id": "additional-damage-360-int-9-maxsp-380-skill-range",
-                    "label": "Additional Damage +360 / Int +9 / Maxsp +380 / Skill Range"
-                  },
-                  {
-                    "id": "additional-damage-40-int-1-maxsp-220-skill-range",
-                    "label": "Additional Damage +40 / Int +1 / Maxsp +220 / Skill Range"
-                  },
-                  {
-                    "id": "additional-damage-400-int-10-maxsp-400-skill-range",
-                    "label": "Additional Damage +400 / Int +10 / Maxsp +400 / Skill Range"
-                  },
-                  {
-                    "id": "additional-damage-80-int-2-maxsp-240-skill-range",
-                    "label": "Additional Damage +80 / Int +2 / Maxsp +240 / Skill Range"
-                  },
-                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -3876,7 +3690,6 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "additional-damage-40-int-1-maxsp-220-skill-range": "+1",
                       "sp-cost": "0",
                       "data-1": "40",
                       "data-2": "1",
@@ -3886,7 +3699,6 @@ export const windHawkData = {
                   {
                     "level": 2,
                     "values": {
-                      "additional-damage-80-int-2-maxsp-240-skill-range": "+1",
                       "sp-cost": "0",
                       "data-1": "80",
                       "data-2": "2",
@@ -3896,7 +3708,6 @@ export const windHawkData = {
                   {
                     "level": 3,
                     "values": {
-                      "additional-damage-120-int-3-maxsp-260-skill-range": "+2",
                       "sp-cost": "0",
                       "data-1": "120",
                       "data-2": "3",
@@ -3906,7 +3717,6 @@ export const windHawkData = {
                   {
                     "level": 4,
                     "values": {
-                      "additional-damage-160-int-4-maxsp-280-skill-range": "+2",
                       "sp-cost": "0",
                       "data-1": "160",
                       "data-2": "4",
@@ -3916,7 +3726,6 @@ export const windHawkData = {
                   {
                     "level": 5,
                     "values": {
-                      "additional-damage-200-int-5-maxsp-300-skill-range": "+3",
                       "sp-cost": "0",
                       "data-1": "200",
                       "data-2": "5",
@@ -3926,7 +3735,6 @@ export const windHawkData = {
                   {
                     "level": 6,
                     "values": {
-                      "additional-damage-240-int-6-maxsp-320-skill-range": "+3",
                       "sp-cost": "0",
                       "data-1": "240",
                       "data-2": "6",
@@ -3936,7 +3744,6 @@ export const windHawkData = {
                   {
                     "level": 7,
                     "values": {
-                      "additional-damage-280-int-7-maxsp-340-skill-range": "+4",
                       "sp-cost": "0",
                       "data-1": "280",
                       "data-2": "7",
@@ -3946,7 +3753,6 @@ export const windHawkData = {
                   {
                     "level": 8,
                     "values": {
-                      "additional-damage-320-int-8-maxsp-360-skill-range": "+4",
                       "sp-cost": "0",
                       "data-1": "320",
                       "data-2": "8",
@@ -3956,7 +3762,6 @@ export const windHawkData = {
                   {
                     "level": 9,
                     "values": {
-                      "additional-damage-360-int-9-maxsp-380-skill-range": "+5",
                       "sp-cost": "0",
                       "data-1": "360",
                       "data-2": "9",
@@ -3966,7 +3771,6 @@ export const windHawkData = {
                   {
                     "level": 10,
                     "values": {
-                      "additional-damage-400-int-10-maxsp-400-skill-range": "+5",
                       "sp-cost": "0",
                       "data-1": "400",
                       "data-2": "10",
@@ -4963,10 +4767,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -4991,7 +4791,6 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "380%",
                       "effect": "Area of Effect : Target and Aoe 5 x 5 cells",
                       "sp-cost": "24",
                       "range": "9 cells",
@@ -5002,7 +4801,6 @@ export const windHawkData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "560%",
                       "effect": "Area of Effect : Target and Aoe 5 x 5 cells",
                       "sp-cost": "28",
                       "range": "9 cells",
@@ -5013,7 +4811,6 @@ export const windHawkData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "740%",
                       "effect": "Area of Effect : Target and Aoe 5 x 5 cells",
                       "sp-cost": "32",
                       "range": "9 cells",
@@ -5024,7 +4821,6 @@ export const windHawkData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "920%",
                       "effect": "Area of Effect : Target and Aoe 5 x 5 cells",
                       "sp-cost": "36",
                       "range": "9 cells",
@@ -5035,7 +4831,6 @@ export const windHawkData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1100%",
                       "effect": "Area of Effect : Target and Aoe 5 x 5 cells",
                       "sp-cost": "40",
                       "range": "9 cells",
@@ -5046,7 +4841,6 @@ export const windHawkData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "1280%",
                       "effect": "Area of Effect : Target and Aoe 7 x 7 cells",
                       "sp-cost": "44",
                       "range": "9 cells",
@@ -5057,7 +4851,6 @@ export const windHawkData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "1460%",
                       "effect": "Area of Effect : Target and Aoe 7 x 7 cells",
                       "sp-cost": "48",
                       "range": "9 cells",
@@ -5068,7 +4861,6 @@ export const windHawkData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "1640%",
                       "effect": "Area of Effect : Target and Aoe 7 x 7 cells",
                       "sp-cost": "52",
                       "range": "9 cells",
@@ -5079,7 +4871,6 @@ export const windHawkData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "1820%",
                       "effect": "Area of Effect : Target and Aoe 7 x 7 cells",
                       "sp-cost": "56",
                       "range": "9 cells",
@@ -5090,7 +4881,6 @@ export const windHawkData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "2000%",
                       "effect": "Area of Effect : Target and Aoe 9 x 9 cells",
                       "sp-cost": "60",
                       "range": "9 cells",
@@ -6304,7 +6094,7 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Hit Count+1/Chance 12%/60 sec ì§€ì†",
+                      "effect": "Hit Count+1 / Chance 12% / 60 sec ì§€ì†",
                       "sp-cost": "55",
                       "data-1": "60000",
                       "data-2": "2",
@@ -6315,7 +6105,7 @@ export const windHawkData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Hit Count+1/Chance 12%/90 sec ì§€ì†",
+                      "effect": "Hit Count+1 / Chance 12% / 90 sec ì§€ì†",
                       "sp-cost": "60",
                       "data-1": "90000",
                       "data-2": "2",
@@ -6326,7 +6116,7 @@ export const windHawkData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Hit Count+1~2/Chance 21%/120 sec ì§€ì†",
+                      "effect": "Hit Count+1~2 / Chance 21% / 120 sec ì§€ì†",
                       "sp-cost": "65",
                       "data-1": "120000",
                       "data-2": "3",
@@ -6337,7 +6127,7 @@ export const windHawkData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Hit Count+1~3/Chance 27%/150 sec ì§€ì†",
+                      "effect": "Hit Count+1~3 / Chance 27% / 150 sec ì§€ì†",
                       "sp-cost": "70",
                       "data-1": "150000",
                       "data-2": "4",
@@ -6348,7 +6138,7 @@ export const windHawkData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Hit Count+1~4/Chance 30%/180 sec ì§€ì†",
+                      "effect": "Hit Count+1~4 / Chance 30% / 180 sec ì§€ì†",
                       "sp-cost": "75",
                       "data-1": "180000",
                       "data-2": "5",
@@ -8751,80 +8541,66 @@ export const windHawkData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -9276,10 +9052,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -9288,35 +9060,30 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1500%",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1800%",
                       "sp-cost": "24"
                     }
                   }
@@ -11211,80 +10978,66 @@ export const windHawkData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+30",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+42",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+48",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+54",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+60",
                       "sp-cost": "0"
                     }
                   }
@@ -11742,116 +11495,66 @@ export const windHawkData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "hit-12-damage-8-crit",
-                    "label": "Hit +12%, Damage +8%, Crit"
-                  },
-                  {
-                    "id": "hit-15-damage-10-crit",
-                    "label": "Hit +15%, Damage +10%, Crit"
-                  },
-                  {
-                    "id": "hit-18-damage-12-crit",
-                    "label": "Hit +18%, Damage +12%, Crit"
-                  },
-                  {
-                    "id": "hit-21-damage-14-crit",
-                    "label": "Hit +21%, Damage +14%, Crit"
-                  },
-                  {
-                    "id": "hit-24-damage-16-crit",
-                    "label": "Hit +24%, Damage +16%, Crit"
-                  },
-                  {
-                    "id": "hit-27-damage-18-crit",
-                    "label": "Hit +27%, Damage +18%, Crit"
-                  },
-                  {
-                    "id": "hit-3-damage-2-crit",
-                    "label": "Hit +3%, Damage +2%, Crit"
-                  },
-                  {
-                    "id": "hit-30-damage-20-crit",
-                    "label": "Hit +30%, Damage +20%, Crit"
-                  },
-                  {
-                    "id": "hit-6-damage-4-crit",
-                    "label": "Hit +6%, Damage +4%, Crit"
-                  },
-                  {
-                    "id": "hit-9-damage-6-crit",
-                    "label": "Hit +9%, Damage +6%, Crit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "hit-3-damage-2-crit": "+1",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "hit-6-damage-4-crit": "+2",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "hit-9-damage-6-crit": "+3",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "hit-12-damage-8-crit": "+4",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "hit-15-damage-10-crit": "+5",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "hit-18-damage-12-crit": "+6",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "hit-21-damage-14-crit": "+7",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "hit-24-damage-16-crit": "+8",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "hit-27-damage-18-crit": "+9",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "hit-30-damage-20-crit": "+10",
                       "sp-cost": "40"
                     }
                   }
@@ -12363,7 +12066,7 @@ export const windHawkData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -12391,7 +12094,7 @@ export const windHawkData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -12553,10 +12256,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12565,70 +12264,60 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "110%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "170%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "12"
                     }
                   }
@@ -12981,10 +12670,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12993,63 +12678,44 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "80%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
-                    "values": {
-                      "base-damage-atk": "85%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 3,
-                    "values": {
-                      "base-damage-atk": "90%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 4,
-                    "values": {
-                      "base-damage-atk": "95%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 5,
-                    "values": {
-                      "base-damage-atk": "100%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 6,
-                    "values": {
-                      "base-damage-atk": "105%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 7,
-                    "values": {
-                      "base-damage-atk": "110%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 8,
-                    "values": {
-                      "base-damage-atk": "115%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 9,
-                    "values": {
-                      "base-damage-atk": "120%"
-                    }
+                    "values": {}
                   },
                   {
                     "level": 10,
-                    "values": {
-                      "base-damage-atk": "125%"
-                    }
+                    "values": {}
                   }
                 ],
                 "formulaRows": []
@@ -13278,10 +12944,6 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -13290,70 +12952,60 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "170%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "210%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "230%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "15"
                     }
                   }
@@ -14149,10 +13801,6 @@ export const windHawkData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -14161,70 +13809,60 @@ export const windHawkData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "1300%",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "2200%",
                   "sp-cost": "49"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "3100%",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "4000%",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "4900%",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk": "5800%",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk": "6700%",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk": "7600%",
                   "sp-cost": "61"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk": "8500%",
                   "sp-cost": "63"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk": "9400%",
                   "sp-cost": "65"
                 }
               }
@@ -14320,17 +13958,10 @@ export const windHawkData = {
           "specRows": [
             {
               "label": "Damage",
-              "before": "9400%Atk",
-              "after": "13500%Atk",
+              "before": "9400%Atk/10% per stack (up (bonus on standing still)",
+              "after": "13500%Atk/30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks) (bonus on standing still)",
               "scope": "Lv 10",
-              "source": "Increases base damage from 9400%Atk to 13500%Atk based on level 10."
-            },
-            {
-              "label": "Damage Bonus On Standing Still",
-              "before": "10% per stack (up",
-              "after": "30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)",
-              "scope": "",
-              "source": "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)."
+              "source": "Increases base damage from 9400%Atk to 13500%Atk based on level 10. / Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)."
             }
           ]
         }
@@ -14577,21 +14208,21 @@ export const windHawkData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "Increased duration: 3 seconds/Increased damage: 60%/Increased AP gain: 1",
+                  "effect": "Increased duration: 3 seconds / Increased damage: 60% / Increased AP gain: 1",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Increased duration: 4 seconds/Increased damage: 80%/Increased AP gain: 1",
+                  "effect": "Increased duration: 4 seconds / Increased damage: 80% / Increased AP gain: 1",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Increased duration: 5 seconds/Increased damage: 100%/Increased AP gain: 1",
+                  "effect": "Increased duration: 5 seconds / Increased damage: 100% / Increased AP gain: 1",
                   "sp-cost": "0"
                 }
               }
@@ -14873,10 +14504,6 @@ export const windHawkData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -14890,7 +14517,6 @@ export const windHawkData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "1000%",
                   "sp-cost": "93"
                 }
               },
@@ -14898,7 +14524,6 @@ export const windHawkData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "2000%",
                   "sp-cost": "96"
                 }
               },
@@ -14906,7 +14531,6 @@ export const windHawkData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "3000%",
                   "sp-cost": "99"
                 }
               },
@@ -14914,7 +14538,6 @@ export const windHawkData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "4000%",
                   "sp-cost": "102"
                 }
               },
@@ -14922,7 +14545,6 @@ export const windHawkData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "5000%",
                   "sp-cost": "105"
                 }
               },
@@ -14930,7 +14552,6 @@ export const windHawkData = {
                 "level": 6,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "6000%",
                   "sp-cost": "108"
                 }
               },
@@ -14938,7 +14559,6 @@ export const windHawkData = {
                 "level": 7,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "7000%",
                   "sp-cost": "111"
                 }
               },
@@ -14946,7 +14566,6 @@ export const windHawkData = {
                 "level": 8,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "8000%",
                   "sp-cost": "114"
                 }
               },
@@ -14954,7 +14573,6 @@ export const windHawkData = {
                 "level": 9,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "9000%",
                   "sp-cost": "117"
                 }
               },
@@ -14962,7 +14580,6 @@ export const windHawkData = {
                 "level": 10,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-atk": "10000%",
                   "sp-cost": "120"
                 }
               }
@@ -15373,10 +14990,6 @@ export const windHawkData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -15390,7 +15003,6 @@ export const windHawkData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk": "850%",
                   "sp-cost": "68"
                 }
               },
@@ -15398,7 +15010,6 @@ export const windHawkData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk": "1700%",
                   "sp-cost": "72"
                 }
               },
@@ -15406,7 +15017,6 @@ export const windHawkData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "2550%",
                   "sp-cost": "76"
                 }
               },
@@ -15414,7 +15024,6 @@ export const windHawkData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "3400%",
                   "sp-cost": "80"
                 }
               },
@@ -15422,7 +15031,6 @@ export const windHawkData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "4250%",
                   "sp-cost": "84"
                 }
               }
@@ -15562,10 +15170,6 @@ export const windHawkData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -15579,7 +15183,6 @@ export const windHawkData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk": "850%",
                   "sp-cost": "68"
                 }
               },
@@ -15587,7 +15190,6 @@ export const windHawkData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk": "1700%",
                   "sp-cost": "72"
                 }
               },
@@ -15595,7 +15197,6 @@ export const windHawkData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "2550%",
                   "sp-cost": "76"
                 }
               },
@@ -15603,7 +15204,6 @@ export const windHawkData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "3400%",
                   "sp-cost": "80"
                 }
               },
@@ -15611,7 +15211,6 @@ export const windHawkData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "4250%",
                   "sp-cost": "84"
                 }
               }
@@ -15747,10 +15346,6 @@ export const windHawkData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -15759,35 +15354,30 @@ export const windHawkData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "500%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "1000%",
                   "sp-cost": "44"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "1500%",
                   "sp-cost": "48"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "2000%",
                   "sp-cost": "52"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "2500%",
                   "sp-cost": "56"
                 }
               }
@@ -15966,10 +15556,6 @@ export const windHawkData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -15983,7 +15569,6 @@ export const windHawkData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk": "850%",
                   "sp-cost": "68"
                 }
               },
@@ -15991,7 +15576,6 @@ export const windHawkData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk": "1700%",
                   "sp-cost": "72"
                 }
               },
@@ -15999,7 +15583,6 @@ export const windHawkData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "2550%",
                   "sp-cost": "76"
                 }
               },
@@ -16007,7 +15590,6 @@ export const windHawkData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "3400%",
                   "sp-cost": "80"
                 }
               },
@@ -16015,7 +15597,6 @@ export const windHawkData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "4250%",
                   "sp-cost": "84"
                 }
               }
@@ -16155,10 +15736,6 @@ export const windHawkData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -16172,7 +15749,6 @@ export const windHawkData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk": "850%",
                   "sp-cost": "68"
                 }
               },
@@ -16180,7 +15756,6 @@ export const windHawkData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "3x3",
-                  "base-damage-atk": "1700%",
                   "sp-cost": "72"
                 }
               },
@@ -16188,7 +15763,6 @@ export const windHawkData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "2550%",
                   "sp-cost": "76"
                 }
               },
@@ -16196,7 +15770,6 @@ export const windHawkData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-atk": "3400%",
                   "sp-cost": "80"
                 }
               },
@@ -16204,7 +15777,6 @@ export const windHawkData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-atk": "4250%",
                   "sp-cost": "84"
                 }
               }
@@ -16319,50 +15891,7 @@ export const windHawkData = {
             "value": "5"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk-per-hit": "4600%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk-per-hit": "7400%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk-per-hit": "10200%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk-per-hit": "13000%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk-per-hit": "15800%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [
@@ -16686,10 +16215,6 @@ export const windHawkData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -16698,35 +16223,30 @@ export const windHawkData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "600%",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "1200%",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "1800%",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "2400%",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "3000%",
                   "sp-cost": "80"
                 }
               }

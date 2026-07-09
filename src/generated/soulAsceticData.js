@@ -1,5 +1,5 @@
 export const soulAsceticData = {
-  "generatedAt": "2026-07-09T12:12:33.354Z",
+  "generatedAt": "2026-07-09T13:22:55.245Z",
   "classId": 4303,
   "classSlug": "soul-ascetic",
   "className": "Soul Ascetic",
@@ -1017,35 +1017,35 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Healing amount: 500+(Talisman Mastery Lv x 50)/Duration: 180 sec",
+                      "effect": "Healing amount: 500+(Talisman Mastery Lv x 50) / Duration: 180 sec",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Healing amount: 1000+(Talisman Mastery Lv x 100)/Duration: 210 sec",
+                      "effect": "Healing amount: 1000+(Talisman Mastery Lv x 100) / Duration: 210 sec",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Healing amount: 1500+(Talisman Mastery Lv x 150)/Duration: 240 sec",
+                      "effect": "Healing amount: 1500+(Talisman Mastery Lv x 150) / Duration: 240 sec",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Healing amount: 2000+(Talisman Mastery Lv x 200)/Duration: 270 sec",
+                      "effect": "Healing amount: 2000+(Talisman Mastery Lv x 200) / Duration: 270 sec",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Healing amount: 2500+(Talisman Mastery Lv x 250)/Duration: 300 sec",
+                      "effect": "Healing amount: 2500+(Talisman Mastery Lv x 250) / Duration: 300 sec",
                       "sp-cost": "70"
                     }
                   }
@@ -1181,35 +1181,35 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "P.ATK +2/Duration: 180 sec",
+                      "effect": "Duration: 180 sec",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "P.ATK +4/Duration: 210 sec",
+                      "effect": "Duration: 210 sec",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "P.ATK +6/Duration: 240 sec",
+                      "effect": "Duration: 240 sec",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "P.ATK +8/Duration: 270 sec",
+                      "effect": "Duration: 270 sec",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "P.ATK +10/Duration: 300 sec",
+                      "effect": "Duration: 300 sec",
                       "sp-cost": "70"
                     }
                   }
@@ -1345,35 +1345,35 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "S.MATK +2/Duration: 180 sec",
+                      "effect": "Duration: 180 sec",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "S.MATK +4/Duration: 210 sec",
+                      "effect": "Duration: 210 sec",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "S.MATK +6/Duration: 240 sec",
+                      "effect": "Duration: 240 sec",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "S.MATK +8/Duration: 270 sec",
+                      "effect": "Duration: 270 sec",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "S.MATK +10/Duration: 300 sec",
+                      "effect": "Duration: 300 sec",
                       "sp-cost": "70"
                     }
                   }
@@ -1492,10 +1492,6 @@ export const soulAsceticData = {
               {
                 "label": "AP Generated",
                 "value": "2"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "((Base Damage (MATK) + (Soul Mastery Lv x Bonus Damage (Soul Lv) Multiplier)) x Soul Energy)% MATK"
               }
             ],
             "levelTables": [
@@ -1503,16 +1499,8 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "bonus-damage-soul-lv-multiplier",
-                    "label": "Bonus Damage (Soul Lv) Multiplier"
                   },
                   {
                     "id": "area-of-effect",
@@ -1523,8 +1511,6 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "150\n250",
-                      "bonus-damage-soul-lv-multiplier": "2\n2",
                       "area-of-effect": "11x11",
                       "sp-cost": "70"
                     }
@@ -1532,8 +1518,6 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "300\n500",
-                      "bonus-damage-soul-lv-multiplier": "2\n2",
                       "area-of-effect": "11x11",
                       "sp-cost": "80"
                     }
@@ -1541,8 +1525,6 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "450\n750",
-                      "bonus-damage-soul-lv-multiplier": "2\n2",
                       "area-of-effect": "11x11",
                       "sp-cost": "90"
                     }
@@ -1550,8 +1532,6 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "600\n1,000",
-                      "bonus-damage-soul-lv-multiplier": "2\n2",
                       "area-of-effect": "13x13",
                       "sp-cost": "100"
                     }
@@ -1559,19 +1539,12 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "750\n1,250",
-                      "bonus-damage-soul-lv-multiplier": "2\n2",
                       "area-of-effect": "13x13",
                       "sp-cost": "110"
                     }
                   }
                 ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "((Base Damage (MATK) + (Soul Mastery Lv x Bonus Damage (Soul Lv) Multiplier)) x Soul Energy)% MATK"
-                  }
-                ]
+                "formulaRows": []
               }
             ]
           },
@@ -1714,45 +1687,36 @@ export const soulAsceticData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 1750+((Talisman Mastery Lv+Soul Mastery Lv) x 7)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 3000+((Talisman Mastery Lv+Soul Mastery Lv) x 14)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 4250+((Talisman Mastery Lv+Soul Mastery Lv) x 21)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 5500+((Talisman Mastery Lv+Soul Mastery Lv) x 28)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 6750+((Talisman Mastery Lv+Soul Mastery Lv) x 35)%",
                       "sp-cost": "84"
                     }
                   }
@@ -1926,35 +1890,35 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "HP recovery amount :1000+(Talisman Mastery Lv x 50)\nSP recovery : 50+(Talisman Mastery Lv x 5)/AOE: 5 x 5 cells",
+                      "effect": "HP recovery amount :1000+(Talisman Mastery Lv x 50)\nSP recovery : 50+(Talisman Mastery Lv x 5) / AOE: 5 x 5 cells",
                       "sp-cost": "76"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "HP recovery amount :1500+(Talisman Mastery Lv x 100)\nSP recovery : 100+(Talisman Mastery Lv x 10)/AOE: 5 x 5 cells",
+                      "effect": "HP recovery amount :1500+(Talisman Mastery Lv x 100)\nSP recovery : 100+(Talisman Mastery Lv x 10) / AOE: 5 x 5 cells",
                       "sp-cost": "92"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "HP recovery amount :2000+(Talisman Mastery Lv x 150)\nSP recovery : 150+(Talisman Mastery Lv x 15)/AOE: 7 x 7 cells",
+                      "effect": "HP recovery amount :2000+(Talisman Mastery Lv x 150)\nSP recovery : 150+(Talisman Mastery Lv x 15) / AOE: 7 x 7 cells",
                       "sp-cost": "108"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "HP recovery amount :2500+(Talisman Mastery Lv x 200)\nSP recovery : 200+(Talisman Mastery Lv x 20)/AOE: 7 x 7 cells",
+                      "effect": "HP recovery amount :2500+(Talisman Mastery Lv x 200)\nSP recovery : 200+(Talisman Mastery Lv x 20) / AOE: 7 x 7 cells",
                       "sp-cost": "124"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "HP recovery amount :3000+(Talisman Mastery Lv x 250)\nSP recovery : 250+(Talisman Mastery Lv x 25)/AOE: 9 x 9 cells",
+                      "effect": "HP recovery amount :3000+(Talisman Mastery Lv x 250)\nSP recovery : 250+(Talisman Mastery Lv x 25) / AOE: 9 x 9 cells",
                       "sp-cost": "140"
                     }
                   }
@@ -2086,35 +2050,35 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage bonus +4%/Duration: 180 sec",
+                      "effect": "Damage bonus +4% / Duration: 180 sec",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage bonus +8%/Duration: 210 sec",
+                      "effect": "Damage bonus +8% / Duration: 210 sec",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage bonus +12%/Duration: 240 sec",
+                      "effect": "Damage bonus +12% / Duration: 240 sec",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage bonus +16%/Duration: 270 sec",
+                      "effect": "Damage bonus +16% / Duration: 270 sec",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage bonus +20%/Duration: 300 sec",
+                      "effect": "Damage bonus +20% / Duration: 300 sec",
                       "sp-cost": "70"
                     }
                   }
@@ -2244,45 +2208,36 @@ export const soulAsceticData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 2300+(Talisman Mastery Lv x 15)%\nMATK 2800+(Talisman Mastery Lv x 15)%(Circle of Directions and Elementals)",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 4000+(Talisman Mastery Lv x 30)%\nMATK 5000+(Talisman Mastery Lv x 30)%(Circle of Directions and Elementals)",
                       "sp-cost": "58"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 5700+(Talisman Mastery Lv x 45)%\nMATK 7200+(Talisman Mastery Lv x 45)%(Circle of Directions and Elementals)",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 7400+(Talisman Mastery Lv x 60)%\nMATK 9400+(Talisman Mastery Lv x 60)%(Circle of Directions and Elementals)",
                       "sp-cost": "66"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 9100+(Talisman Mastery Lv x 75)%\nMATK 11600+(Talisman Mastery Lv x 75)%(Circle of Directions and Elementals)",
                       "sp-cost": "70"
                     }
                   }
@@ -2498,17 +2453,12 @@ export const soulAsceticData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 1400+(Talisman Mastery Lv x 15)%\nMATK 1800+(Talisman Mastery Lv x 15)%(Circle of Directions and Elementals)",
                       "area-of-effect": "11x11",
                       "sp-cost": "110"
                     }
@@ -2516,7 +2466,6 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 2400+(Talisman Mastery Lv x 30)%\nMATK 3200+(Talisman Mastery Lv x 30)%(Circle of Directions and Elementals)",
                       "area-of-effect": "11x11",
                       "sp-cost": "112"
                     }
@@ -2524,7 +2473,6 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 3400+(Talisman Mastery Lv x 45)%\nMATK 4600+(Talisman Mastery Lv x 45)%(Circle of Directions and Elementals)",
                       "area-of-effect": "13x13",
                       "sp-cost": "114"
                     }
@@ -2532,7 +2480,6 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 4400+(Talisman Mastery Lv x 60)%\nMATK 6000+(Talisman Mastery Lv x 60)%(Circle of Directions and Elementals)",
                       "area-of-effect": "13x13",
                       "sp-cost": "116"
                     }
@@ -2540,7 +2487,6 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 5400+(Talisman Mastery Lv x 75)%\nMATK 7400+(Talisman Mastery Lv x 75)%(Circle of Directions and Elementals)",
                       "area-of-effect": "15x15",
                       "sp-cost": "118"
                     }
@@ -2746,17 +2692,12 @@ export const soulAsceticData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 2450+(Talisman Mastery Lv x 15)%\nMATK 3050+(Talisman Mastery Lv x 15)%(Circle of Directions and Elementals)",
                       "area-of-effect": "3x3",
                       "sp-cost": "72"
                     }
@@ -2764,7 +2705,6 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 3700+(Talisman Mastery Lv x 30)%\nMATK 4700+(Talisman Mastery Lv x 30)%(Circle of Directions and Elementals)",
                       "area-of-effect": "3x3",
                       "sp-cost": "76"
                     }
@@ -2772,7 +2712,6 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 4950+(Talisman Mastery Lv x 45)%\nMATK 6350+(Talisman Mastery Lv x 45)%(Circle of Directions and Elementals)",
                       "area-of-effect": "5x5",
                       "sp-cost": "80"
                     }
@@ -2780,7 +2719,6 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 6200+(Talisman Mastery Lv x 60)%\nMATK 8000+(Talisman Mastery Lv x 60)%(Circle of Directions and Elementals)",
                       "area-of-effect": "5x5",
                       "sp-cost": "84"
                     }
@@ -2788,7 +2726,6 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 7450+(Talisman Mastery Lv x 75)%\nMATK 9650+(Talisman Mastery Lv x 75)%(Circle of Directions and Elementals)",
                       "area-of-effect": "7x7",
                       "sp-cost": "88"
                     }
@@ -2997,17 +2934,12 @@ export const soulAsceticData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 3750+(Talisman Mastery Lv x 15)%\nMATK 4400+(Talisman Mastery Lv x 15)%(Circle of Directions and Elementals)",
                       "area-of-effect": "7x7",
                       "sp-cost": "72"
                     }
@@ -3015,7 +2947,6 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 5350+(Talisman Mastery Lv x 30)%\nMATK 6500+(Talisman Mastery Lv x 30)%(Circle of Directions and Elementals)",
                       "area-of-effect": "7x7",
                       "sp-cost": "77"
                     }
@@ -3023,7 +2954,6 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 6950+(Talisman Mastery Lv x 45)%\nMATK 8600+(Talisman Mastery Lv x 45)%(Circle of Directions and Elementals)",
                       "area-of-effect": "9x9",
                       "sp-cost": "82"
                     }
@@ -3031,7 +2961,6 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 8550+(Talisman Mastery Lv x 60)%\nMATK 10700+(Talisman Mastery Lv x 60)%(Circle of Directions and Elementals)",
                       "area-of-effect": "9x9",
                       "sp-cost": "87"
                     }
@@ -3039,7 +2968,6 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 10150+(Talisman Mastery Lv x 75)%\nMATK 12800+(Talisman Mastery Lv x 75)%(Circle of Directions and Elementals)",
                       "area-of-effect": "11x11",
                       "sp-cost": "92"
                     }
@@ -3243,17 +3171,12 @@ export const soulAsceticData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "1Per hit MATK 300+(Talisman Mastery Lv x 15)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "86"
                     }
@@ -3261,7 +3184,6 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "1Per hit MATK 550+(Talisman Mastery Lv x 30)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "88"
                     }
@@ -3269,7 +3191,6 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "1Per hit MATK 800+(Talisman Mastery Lv x 45)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "90"
                     }
@@ -3277,7 +3198,6 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "1Per hit MATK 1050+(Talisman Mastery Lv x 60)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "92"
                     }
@@ -3285,7 +3205,6 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "1Per hit MATK 1300+(Talisman Mastery Lv x 75)%",
                       "area-of-effect": "11x11",
                       "sp-cost": "94"
                     }
@@ -3462,10 +3381,6 @@ export const soulAsceticData = {
                     "label": "Area of Effect"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "120-seconds-s-matk",
                     "label": "/120 Seconds S.matk"
                   },
@@ -3490,7 +3405,6 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK per hit 2500+((Talisman Mastery Lv+Soul MasteryLv) x 15)%",
                       "area-of-effect": "7x7",
                       "30-seconds-s-matk": "+5",
                       "sp-cost": "120"
@@ -3499,7 +3413,6 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK per hit 4500+((Talisman Mastery Lv+Soul MasteryLv) x 30)%",
                       "area-of-effect": "7x7",
                       "60-seconds-s-matk": "+10",
                       "sp-cost": "140"
@@ -3508,7 +3421,6 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK per hit 6500+((Talisman Mastery Lv+Soul MasteryLv) x 45)%",
                       "area-of-effect": "9x9",
                       "90-seconds-s-matk": "+15",
                       "sp-cost": "160"
@@ -3517,7 +3429,6 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK per hit 8500+((Talisman Mastery Lv+Soul MasteryLv) x 60)%",
                       "area-of-effect": "9x9",
                       "120-seconds-s-matk": "+20",
                       "sp-cost": "180"
@@ -3526,7 +3437,6 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK per hit 10500+((Talisman Mastery Lv+Soul MasteryLv) x 75)%",
                       "area-of-effect": "11x11",
                       "150-seconds-s-matk": "+25",
                       "sp-cost": "200"
@@ -3813,18 +3723,6 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "melee-damage-bonus",
-                    "label": "Melee Damage Bonus"
-                  },
-                  {
-                    "id": "long-ranged-damage-bonus",
-                    "label": "Long Ranged Damage Bonus"
-                  },
-                  {
-                    "id": "all-property-damage-bonus",
-                    "label": "All Property Damage Bonus"
-                  },
-                  {
                     "id": "ap",
                     "label": "AP"
                   },
@@ -3838,9 +3736,6 @@ export const soulAsceticData = {
                     "level": 1,
                     "values": {
                       "ap": "3",
-                      "melee-damage-bonus": "+7%",
-                      "long-ranged-damage-bonus": "+7%",
-                      "all-property-damage-bonus": "+7%",
                       "sp-cost": "90"
                     }
                   },
@@ -3848,9 +3743,6 @@ export const soulAsceticData = {
                     "level": 2,
                     "values": {
                       "ap": "6",
-                      "melee-damage-bonus": "+9%",
-                      "long-ranged-damage-bonus": "+9%",
-                      "all-property-damage-bonus": "+9%",
                       "sp-cost": "100"
                     }
                   },
@@ -3858,9 +3750,6 @@ export const soulAsceticData = {
                     "level": 3,
                     "values": {
                       "ap": "9",
-                      "melee-damage-bonus": "+11%",
-                      "long-ranged-damage-bonus": "+11%",
-                      "all-property-damage-bonus": "+11%",
                       "sp-cost": "110"
                     }
                   },
@@ -3868,9 +3757,6 @@ export const soulAsceticData = {
                     "level": 4,
                     "values": {
                       "ap": "12",
-                      "melee-damage-bonus": "+13%",
-                      "long-ranged-damage-bonus": "+13%",
-                      "all-property-damage-bonus": "+13%",
                       "sp-cost": "120"
                     }
                   },
@@ -3878,9 +3764,6 @@ export const soulAsceticData = {
                     "level": 5,
                     "values": {
                       "ap": "15",
-                      "melee-damage-bonus": "+15%",
-                      "long-ranged-damage-bonus": "+15%",
-                      "all-property-damage-bonus": "+15%",
                       "sp-cost": "130"
                     }
                   },
@@ -3888,9 +3771,6 @@ export const soulAsceticData = {
                     "level": 6,
                     "values": {
                       "ap": "18",
-                      "melee-damage-bonus": "+17%",
-                      "long-ranged-damage-bonus": "+17%",
-                      "all-property-damage-bonus": "+17%",
                       "sp-cost": "140"
                     }
                   },
@@ -3898,9 +3778,6 @@ export const soulAsceticData = {
                     "level": 7,
                     "values": {
                       "ap": "21",
-                      "melee-damage-bonus": "+19%",
-                      "long-ranged-damage-bonus": "+19%",
-                      "all-property-damage-bonus": "+19%",
                       "sp-cost": "150"
                     }
                   },
@@ -3908,9 +3785,6 @@ export const soulAsceticData = {
                     "level": 8,
                     "values": {
                       "ap": "24",
-                      "melee-damage-bonus": "+21%",
-                      "long-ranged-damage-bonus": "+21%",
-                      "all-property-damage-bonus": "+21%",
                       "sp-cost": "160"
                     }
                   },
@@ -3918,9 +3792,6 @@ export const soulAsceticData = {
                     "level": 9,
                     "values": {
                       "ap": "27",
-                      "melee-damage-bonus": "+23%",
-                      "long-ranged-damage-bonus": "+23%",
-                      "all-property-damage-bonus": "+23%",
                       "sp-cost": "170"
                     }
                   },
@@ -3928,9 +3799,6 @@ export const soulAsceticData = {
                     "level": 10,
                     "values": {
                       "ap": "30",
-                      "melee-damage-bonus": "+25%",
-                      "long-ranged-damage-bonus": "+25%",
-                      "all-property-damage-bonus": "+25%",
                       "sp-cost": "180"
                     }
                   }
@@ -4346,7 +4214,7 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Harvest Chance: 15%/Duration: 90 sec",
+                      "effect": "Harvest Chance: 15% / Duration: 90 sec",
                       "sp-cost": "42",
                       "data-1": "2",
                       "data-2": "90000",
@@ -4356,7 +4224,7 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Harvest Chance: 20%/Duration: 120 sec",
+                      "effect": "Harvest Chance: 20% / Duration: 120 sec",
                       "sp-cost": "44",
                       "data-1": "2",
                       "data-2": "120000",
@@ -4366,7 +4234,7 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Harvest Chance: 25%/Duration: 150 sec",
+                      "effect": "Harvest Chance: 25% / Duration: 150 sec",
                       "sp-cost": "46",
                       "data-1": "2",
                       "data-2": "150000",
@@ -4376,7 +4244,7 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Harvest Chance: 30%/Duration: 180 sec",
+                      "effect": "Harvest Chance: 30% / Duration: 180 sec",
                       "sp-cost": "48",
                       "data-1": "2",
                       "data-2": "180000",
@@ -4386,7 +4254,7 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Harvest Chance: 35%/Duration: 210 sec",
+                      "effect": "Harvest Chance: 35% / Duration: 210 sec",
                       "sp-cost": "50",
                       "data-1": "2",
                       "data-2": "210000",
@@ -5451,7 +5319,7 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "5% Magic Damage/MSPD Decrease Duration: 3 sec",
+                      "effect": "5% Magic Damage / MSPD Decrease Duration: 3 sec",
                       "sp-cost": "18",
                       "range": "9 cells",
                       "atk": "5",
@@ -5463,7 +5331,7 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "10% Magic Damage/MSPD Decrease Duration: 4 sec",
+                      "effect": "10% Magic Damage / MSPD Decrease Duration: 4 sec",
                       "sp-cost": "20",
                       "range": "9 cells",
                       "atk": "10",
@@ -5475,7 +5343,7 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "15% Magic Damage/MSPD Decrease Duration: 5 sec",
+                      "effect": "15% Magic Damage / MSPD Decrease Duration: 5 sec",
                       "sp-cost": "22",
                       "range": "9 cells",
                       "atk": "15",
@@ -5487,7 +5355,7 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "20% Magic Damage/MSPD Decrease Duration: 6 sec",
+                      "effect": "20% Magic Damage / MSPD Decrease Duration: 6 sec",
                       "sp-cost": "24",
                       "range": "9 cells",
                       "atk": "20",
@@ -5499,7 +5367,7 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "25% Magic Damage/MSPD Decrease Duration: 7 sec",
+                      "effect": "25% Magic Damage / MSPD Decrease Duration: 7 sec",
                       "sp-cost": "26",
                       "range": "9 cells",
                       "atk": "25",
@@ -5804,7 +5672,7 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "500% Magic Damage/1,500% on the Evil-Cursed",
+                      "effect": "500% Magic Damage / 1,500% on the Evil-Cursed",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "atk": "500",
@@ -5815,7 +5683,7 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "600% Magic Damage/1,800% on the Evil-Cursed",
+                      "effect": "600% Magic Damage / 1,800% on the Evil-Cursed",
                       "sp-cost": "55",
                       "range": "9 cells",
                       "atk": "600",
@@ -5826,7 +5694,7 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "700% Magic Damage/2,100% on the Evil-Cursed",
+                      "effect": "700% Magic Damage / 2,100% on the Evil-Cursed",
                       "sp-cost": "60",
                       "range": "9 cells",
                       "atk": "700",
@@ -5837,7 +5705,7 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "800% Magic Damage/2,400% on the Evil-Cursed",
+                      "effect": "800% Magic Damage / 2,400% on the Evil-Cursed",
                       "sp-cost": "65",
                       "range": "9 cells",
                       "atk": "800",
@@ -5848,7 +5716,7 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "900% Magic Damage/2,700% on the Evil-Cursed",
+                      "effect": "900% Magic Damage / 2,700% on the Evil-Cursed",
                       "sp-cost": "70",
                       "range": "9 cells",
                       "atk": "900",
@@ -5859,35 +5727,35 @@ export const soulAsceticData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "1,000% Magic Damage/3,000% on the Evil-Cursed",
+                      "effect": "1,000% Magic Damage / 3,000% on the Evil-Cursed",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "1,100% Magic Damage/3,300% on the Evil-Cursed",
+                      "effect": "1,100% Magic Damage / 3,300% on the Evil-Cursed",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "1,200% Magic Damage/3,600% on the Evil-Cursed",
+                      "effect": "1,200% Magic Damage / 3,600% on the Evil-Cursed",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "1,300% Magic Damage/3,900% on the Evil-Cursed",
+                      "effect": "1,300% Magic Damage / 3,900% on the Evil-Cursed",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "1,400% Magic Damage/4,200% on the Evil-Cursed",
+                      "effect": "1,400% Magic Damage / 4,200% on the Evil-Cursed",
                       "sp-cost": "95"
                     }
                   }
@@ -7038,7 +6906,7 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "CRI +12/ASPD +1/Duration: 60 sec",
+                      "effect": "CRI +12 / ASPD +1 / Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -7050,7 +6918,7 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "CRI +14/ASPD +1/Duration: 120 sec",
+                      "effect": "CRI +14 / ASPD +1 / Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -7062,7 +6930,7 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "CRI +16/ASPD +2/Duration: 180 sec",
+                      "effect": "CRI +16 / ASPD +2 / Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -7074,7 +6942,7 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "CRI +18/ASPD +2/Duration: 240 sec",
+                      "effect": "CRI +18 / ASPD +2 / Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -7086,7 +6954,7 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "CRI +20/ASPD +3/Duration: 300 sec",
+                      "effect": "CRI +20 / ASPD +3 / Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -7380,7 +7248,7 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK +10/Variable Cast Time -5%/Duration: 60 sec",
+                      "effect": "Variable Cast Time -5% / Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -7392,7 +7260,7 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK +20/Variable Cast Time -5%/Duration: 120 sec",
+                      "effect": "Variable Cast Time -5% / Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -7404,7 +7272,7 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK +30/Variable Cast Time -7%/Duration: 180 sec",
+                      "effect": "Variable Cast Time -7% / Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -7416,7 +7284,7 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK +40/Variable Cast Time -7%/Duration: 240 sec",
+                      "effect": "Variable Cast Time -7% / Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -7428,7 +7296,7 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK +50/Variable Cast Time -10%/Duration: 300 sec",
+                      "effect": "Variable Cast Time -10% / Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -7722,7 +7590,7 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK +10/ HIT +10/Duration: 60 sec",
+                      "effect": "HIT +10 / Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -7734,7 +7602,7 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK +20/HIT +10/Duration: 120 sec",
+                      "effect": "HIT +10 / Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -7746,7 +7614,7 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK +30/HIT +13/Duration: 180 sec",
+                      "effect": "HIT +13 / Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -7758,7 +7626,7 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK +40/HIT +13/Duration: 240 sec",
+                      "effect": "HIT +13 / Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -7770,7 +7638,7 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK +50/HIT +15/Duration: 300 sec",
+                      "effect": "HIT +15 / Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -8064,7 +7932,7 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "DEF +60/MDEF +20/Duration: 60 sec",
+                      "effect": "DEF +60 / MDEF +20 / Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -8076,7 +7944,7 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "DEF +120/MDEF +25/Duration: 120 sec",
+                      "effect": "DEF +120 / MDEF +25 / Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -8088,7 +7956,7 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "DEF +180/MDEF +30/Duration: 180 sec",
+                      "effect": "DEF +180 / MDEF +30 / Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -8100,7 +7968,7 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "DEF +240/MDEF +35/Duration: 240 sec",
+                      "effect": "DEF +240 / MDEF +35 / Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -8112,7 +7980,7 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "DEF +300/MDEF +40/Duration: 300 sec",
+                      "effect": "DEF +300 / MDEF +40 / Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -13703,7 +13571,7 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -13731,7 +13599,7 @@ export const soulAsceticData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -14085,10 +13953,6 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14097,49 +13961,42 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "2"
                     }
                   }
@@ -14260,10 +14117,6 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14272,49 +14125,42 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "2"
                     }
                   }
@@ -14435,10 +14281,6 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14447,49 +14289,42 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "370%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "2"
                     }
                   }
@@ -14610,10 +14445,6 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14622,49 +14453,42 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "370%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "2"
                     }
                   }
@@ -14785,10 +14609,6 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14797,49 +14617,42 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "40%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "50%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "60%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "70%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "80%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "90%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "10"
                     }
                   }
@@ -17240,35 +17053,35 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "Healing amount: 500+(Talisman Mastery Lv x 50)/Duration: 180 sec",
+                  "effect": "Healing amount: 500+(Talisman Mastery Lv x 50) / Duration: 180 sec",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Healing amount: 1000+(Talisman Mastery Lv x 100)/Duration: 210 sec",
+                  "effect": "Healing amount: 1000+(Talisman Mastery Lv x 100) / Duration: 210 sec",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Healing amount: 1500+(Talisman Mastery Lv x 150)/Duration: 240 sec",
+                  "effect": "Healing amount: 1500+(Talisman Mastery Lv x 150) / Duration: 240 sec",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Healing amount: 2000+(Talisman Mastery Lv x 200)/Duration: 270 sec",
+                  "effect": "Healing amount: 2000+(Talisman Mastery Lv x 200) / Duration: 270 sec",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Healing amount: 2500+(Talisman Mastery Lv x 250)/Duration: 300 sec",
+                  "effect": "Healing amount: 2500+(Talisman Mastery Lv x 250) / Duration: 300 sec",
                   "sp-cost": "70"
                 }
               }
@@ -17404,35 +17217,35 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "P.ATK +2/Duration: 180 sec",
+                  "effect": "Duration: 180 sec",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "P.ATK +4/Duration: 210 sec",
+                  "effect": "Duration: 210 sec",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "P.ATK +6/Duration: 240 sec",
+                  "effect": "Duration: 240 sec",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "P.ATK +8/Duration: 270 sec",
+                  "effect": "Duration: 270 sec",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "P.ATK +10/Duration: 300 sec",
+                  "effect": "Duration: 300 sec",
                   "sp-cost": "70"
                 }
               }
@@ -17568,35 +17381,35 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "S.MATK +2/Duration: 180 sec",
+                  "effect": "Duration: 180 sec",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "S.MATK +4/Duration: 210 sec",
+                  "effect": "Duration: 210 sec",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "S.MATK +6/Duration: 240 sec",
+                  "effect": "Duration: 240 sec",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "S.MATK +8/Duration: 270 sec",
+                  "effect": "Duration: 270 sec",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "S.MATK +10/Duration: 300 sec",
+                  "effect": "Duration: 300 sec",
                   "sp-cost": "70"
                 }
               }
@@ -17715,10 +17528,6 @@ export const soulAsceticData = {
           {
             "label": "AP Generated",
             "value": "2"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "((Base Damage (MATK) + (Soul Mastery Lv x Bonus Damage (Soul Lv) Multiplier)) x Soul Energy)% MATK"
           }
         ],
         "levelTables": [
@@ -17726,16 +17535,8 @@ export const soulAsceticData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "bonus-damage-soul-lv-multiplier",
-                "label": "Bonus Damage (Soul Lv) Multiplier"
               },
               {
                 "id": "area-of-effect",
@@ -17746,8 +17547,6 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "150\n250",
-                  "bonus-damage-soul-lv-multiplier": "2\n2",
                   "area-of-effect": "11x11",
                   "sp-cost": "70"
                 }
@@ -17755,8 +17554,6 @@ export const soulAsceticData = {
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "300\n500",
-                  "bonus-damage-soul-lv-multiplier": "2\n2",
                   "area-of-effect": "11x11",
                   "sp-cost": "80"
                 }
@@ -17764,8 +17561,6 @@ export const soulAsceticData = {
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "450\n750",
-                  "bonus-damage-soul-lv-multiplier": "2\n2",
                   "area-of-effect": "11x11",
                   "sp-cost": "90"
                 }
@@ -17773,8 +17568,6 @@ export const soulAsceticData = {
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "600\n1,000",
-                  "bonus-damage-soul-lv-multiplier": "2\n2",
                   "area-of-effect": "13x13",
                   "sp-cost": "100"
                 }
@@ -17782,19 +17575,12 @@ export const soulAsceticData = {
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "750\n1,250",
-                  "bonus-damage-soul-lv-multiplier": "2\n2",
                   "area-of-effect": "13x13",
                   "sp-cost": "110"
                 }
               }
             ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "((Base Damage (MATK) + (Soul Mastery Lv x Bonus Damage (Soul Lv) Multiplier)) x Soul Energy)% MATK"
-              }
-            ]
+            "formulaRows": []
           }
         ]
       },
@@ -17937,45 +17723,36 @@ export const soulAsceticData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 1750+((Talisman Mastery Lv+Soul Mastery Lv) x 7)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 3000+((Talisman Mastery Lv+Soul Mastery Lv) x 14)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 4250+((Talisman Mastery Lv+Soul Mastery Lv) x 21)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 5500+((Talisman Mastery Lv+Soul Mastery Lv) x 28)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 6750+((Talisman Mastery Lv+Soul Mastery Lv) x 35)%",
                   "sp-cost": "84"
                 }
               }
@@ -18149,35 +17926,35 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "HP recovery amount :1000+(Talisman Mastery Lv x 50)\nSP recovery : 50+(Talisman Mastery Lv x 5)/AOE: 5 x 5 cells",
+                  "effect": "HP recovery amount :1000+(Talisman Mastery Lv x 50)\nSP recovery : 50+(Talisman Mastery Lv x 5) / AOE: 5 x 5 cells",
                   "sp-cost": "76"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "HP recovery amount :1500+(Talisman Mastery Lv x 100)\nSP recovery : 100+(Talisman Mastery Lv x 10)/AOE: 5 x 5 cells",
+                  "effect": "HP recovery amount :1500+(Talisman Mastery Lv x 100)\nSP recovery : 100+(Talisman Mastery Lv x 10) / AOE: 5 x 5 cells",
                   "sp-cost": "92"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "HP recovery amount :2000+(Talisman Mastery Lv x 150)\nSP recovery : 150+(Talisman Mastery Lv x 15)/AOE: 7 x 7 cells",
+                  "effect": "HP recovery amount :2000+(Talisman Mastery Lv x 150)\nSP recovery : 150+(Talisman Mastery Lv x 15) / AOE: 7 x 7 cells",
                   "sp-cost": "108"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "HP recovery amount :2500+(Talisman Mastery Lv x 200)\nSP recovery : 200+(Talisman Mastery Lv x 20)/AOE: 7 x 7 cells",
+                  "effect": "HP recovery amount :2500+(Talisman Mastery Lv x 200)\nSP recovery : 200+(Talisman Mastery Lv x 20) / AOE: 7 x 7 cells",
                   "sp-cost": "124"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "HP recovery amount :3000+(Talisman Mastery Lv x 250)\nSP recovery : 250+(Talisman Mastery Lv x 25)/AOE: 9 x 9 cells",
+                  "effect": "HP recovery amount :3000+(Talisman Mastery Lv x 250)\nSP recovery : 250+(Talisman Mastery Lv x 25) / AOE: 9 x 9 cells",
                   "sp-cost": "140"
                 }
               }
@@ -18309,35 +18086,35 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "Damage bonus +4%/Duration: 180 sec",
+                  "effect": "Damage bonus +4% / Duration: 180 sec",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Damage bonus +8%/Duration: 210 sec",
+                  "effect": "Damage bonus +8% / Duration: 210 sec",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Damage bonus +12%/Duration: 240 sec",
+                  "effect": "Damage bonus +12% / Duration: 240 sec",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Damage bonus +16%/Duration: 270 sec",
+                  "effect": "Damage bonus +16% / Duration: 270 sec",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Damage bonus +20%/Duration: 300 sec",
+                  "effect": "Damage bonus +20% / Duration: 300 sec",
                   "sp-cost": "70"
                 }
               }
@@ -18467,45 +18244,36 @@ export const soulAsceticData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 2300+(Talisman Mastery Lv x 15)%\nMATK 2800+(Talisman Mastery Lv x 15)%(Circle of Directions and Elementals)",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 4000+(Talisman Mastery Lv x 30)%\nMATK 5000+(Talisman Mastery Lv x 30)%(Circle of Directions and Elementals)",
                   "sp-cost": "58"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 5700+(Talisman Mastery Lv x 45)%\nMATK 7200+(Talisman Mastery Lv x 45)%(Circle of Directions and Elementals)",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 7400+(Talisman Mastery Lv x 60)%\nMATK 9400+(Talisman Mastery Lv x 60)%(Circle of Directions and Elementals)",
                   "sp-cost": "66"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 9100+(Talisman Mastery Lv x 75)%\nMATK 11600+(Talisman Mastery Lv x 75)%(Circle of Directions and Elementals)",
                   "sp-cost": "70"
                 }
               }
@@ -18721,17 +18489,12 @@ export const soulAsceticData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 1400+(Talisman Mastery Lv x 15)%\nMATK 1800+(Talisman Mastery Lv x 15)%(Circle of Directions and Elementals)",
                   "area-of-effect": "11x11",
                   "sp-cost": "110"
                 }
@@ -18739,7 +18502,6 @@ export const soulAsceticData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 2400+(Talisman Mastery Lv x 30)%\nMATK 3200+(Talisman Mastery Lv x 30)%(Circle of Directions and Elementals)",
                   "area-of-effect": "11x11",
                   "sp-cost": "112"
                 }
@@ -18747,7 +18509,6 @@ export const soulAsceticData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 3400+(Talisman Mastery Lv x 45)%\nMATK 4600+(Talisman Mastery Lv x 45)%(Circle of Directions and Elementals)",
                   "area-of-effect": "13x13",
                   "sp-cost": "114"
                 }
@@ -18755,7 +18516,6 @@ export const soulAsceticData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 4400+(Talisman Mastery Lv x 60)%\nMATK 6000+(Talisman Mastery Lv x 60)%(Circle of Directions and Elementals)",
                   "area-of-effect": "13x13",
                   "sp-cost": "116"
                 }
@@ -18763,7 +18523,6 @@ export const soulAsceticData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 5400+(Talisman Mastery Lv x 75)%\nMATK 7400+(Talisman Mastery Lv x 75)%(Circle of Directions and Elementals)",
                   "area-of-effect": "15x15",
                   "sp-cost": "118"
                 }
@@ -18969,17 +18728,12 @@ export const soulAsceticData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 2450+(Talisman Mastery Lv x 15)%\nMATK 3050+(Talisman Mastery Lv x 15)%(Circle of Directions and Elementals)",
                   "area-of-effect": "3x3",
                   "sp-cost": "72"
                 }
@@ -18987,7 +18741,6 @@ export const soulAsceticData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 3700+(Talisman Mastery Lv x 30)%\nMATK 4700+(Talisman Mastery Lv x 30)%(Circle of Directions and Elementals)",
                   "area-of-effect": "3x3",
                   "sp-cost": "76"
                 }
@@ -18995,7 +18748,6 @@ export const soulAsceticData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 4950+(Talisman Mastery Lv x 45)%\nMATK 6350+(Talisman Mastery Lv x 45)%(Circle of Directions and Elementals)",
                   "area-of-effect": "5x5",
                   "sp-cost": "80"
                 }
@@ -19003,7 +18755,6 @@ export const soulAsceticData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 6200+(Talisman Mastery Lv x 60)%\nMATK 8000+(Talisman Mastery Lv x 60)%(Circle of Directions and Elementals)",
                   "area-of-effect": "5x5",
                   "sp-cost": "84"
                 }
@@ -19011,7 +18762,6 @@ export const soulAsceticData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 7450+(Talisman Mastery Lv x 75)%\nMATK 9650+(Talisman Mastery Lv x 75)%(Circle of Directions and Elementals)",
                   "area-of-effect": "7x7",
                   "sp-cost": "88"
                 }
@@ -19220,17 +18970,12 @@ export const soulAsceticData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 3750+(Talisman Mastery Lv x 15)%\nMATK 4400+(Talisman Mastery Lv x 15)%(Circle of Directions and Elementals)",
                   "area-of-effect": "7x7",
                   "sp-cost": "72"
                 }
@@ -19238,7 +18983,6 @@ export const soulAsceticData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 5350+(Talisman Mastery Lv x 30)%\nMATK 6500+(Talisman Mastery Lv x 30)%(Circle of Directions and Elementals)",
                   "area-of-effect": "7x7",
                   "sp-cost": "77"
                 }
@@ -19246,7 +18990,6 @@ export const soulAsceticData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 6950+(Talisman Mastery Lv x 45)%\nMATK 8600+(Talisman Mastery Lv x 45)%(Circle of Directions and Elementals)",
                   "area-of-effect": "9x9",
                   "sp-cost": "82"
                 }
@@ -19254,7 +18997,6 @@ export const soulAsceticData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 8550+(Talisman Mastery Lv x 60)%\nMATK 10700+(Talisman Mastery Lv x 60)%(Circle of Directions and Elementals)",
                   "area-of-effect": "9x9",
                   "sp-cost": "87"
                 }
@@ -19262,7 +19004,6 @@ export const soulAsceticData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 10150+(Talisman Mastery Lv x 75)%\nMATK 12800+(Talisman Mastery Lv x 75)%(Circle of Directions and Elementals)",
                   "area-of-effect": "11x11",
                   "sp-cost": "92"
                 }
@@ -19466,17 +19207,12 @@ export const soulAsceticData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "1Per hit MATK 300+(Talisman Mastery Lv x 15)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "86"
                 }
@@ -19484,7 +19220,6 @@ export const soulAsceticData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "1Per hit MATK 550+(Talisman Mastery Lv x 30)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "88"
                 }
@@ -19492,7 +19227,6 @@ export const soulAsceticData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "1Per hit MATK 800+(Talisman Mastery Lv x 45)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "90"
                 }
@@ -19500,7 +19234,6 @@ export const soulAsceticData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "1Per hit MATK 1050+(Talisman Mastery Lv x 60)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "92"
                 }
@@ -19508,7 +19241,6 @@ export const soulAsceticData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "1Per hit MATK 1300+(Talisman Mastery Lv x 75)%",
                   "area-of-effect": "11x11",
                   "sp-cost": "94"
                 }
@@ -19685,10 +19417,6 @@ export const soulAsceticData = {
                 "label": "Area of Effect"
               },
               {
-                "id": "effect",
-                "label": "Effect"
-              },
-              {
                 "id": "120-seconds-s-matk",
                 "label": "/120 Seconds S.matk"
               },
@@ -19713,7 +19441,6 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK per hit 2500+((Talisman Mastery Lv+Soul MasteryLv) x 15)%",
                   "area-of-effect": "7x7",
                   "30-seconds-s-matk": "+5",
                   "sp-cost": "120"
@@ -19722,7 +19449,6 @@ export const soulAsceticData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK per hit 4500+((Talisman Mastery Lv+Soul MasteryLv) x 30)%",
                   "area-of-effect": "7x7",
                   "60-seconds-s-matk": "+10",
                   "sp-cost": "140"
@@ -19731,7 +19457,6 @@ export const soulAsceticData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK per hit 6500+((Talisman Mastery Lv+Soul MasteryLv) x 45)%",
                   "area-of-effect": "9x9",
                   "90-seconds-s-matk": "+15",
                   "sp-cost": "160"
@@ -19740,7 +19465,6 @@ export const soulAsceticData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK per hit 8500+((Talisman Mastery Lv+Soul MasteryLv) x 60)%",
                   "area-of-effect": "9x9",
                   "120-seconds-s-matk": "+20",
                   "sp-cost": "180"
@@ -19749,7 +19473,6 @@ export const soulAsceticData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK per hit 10500+((Talisman Mastery Lv+Soul MasteryLv) x 75)%",
                   "area-of-effect": "11x11",
                   "150-seconds-s-matk": "+25",
                   "sp-cost": "200"
@@ -20036,18 +19759,6 @@ export const soulAsceticData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "melee-damage-bonus",
-                "label": "Melee Damage Bonus"
-              },
-              {
-                "id": "long-ranged-damage-bonus",
-                "label": "Long Ranged Damage Bonus"
-              },
-              {
-                "id": "all-property-damage-bonus",
-                "label": "All Property Damage Bonus"
-              },
-              {
                 "id": "ap",
                 "label": "AP"
               },
@@ -20061,9 +19772,6 @@ export const soulAsceticData = {
                 "level": 1,
                 "values": {
                   "ap": "3",
-                  "melee-damage-bonus": "+7%",
-                  "long-ranged-damage-bonus": "+7%",
-                  "all-property-damage-bonus": "+7%",
                   "sp-cost": "90"
                 }
               },
@@ -20071,9 +19779,6 @@ export const soulAsceticData = {
                 "level": 2,
                 "values": {
                   "ap": "6",
-                  "melee-damage-bonus": "+9%",
-                  "long-ranged-damage-bonus": "+9%",
-                  "all-property-damage-bonus": "+9%",
                   "sp-cost": "100"
                 }
               },
@@ -20081,9 +19786,6 @@ export const soulAsceticData = {
                 "level": 3,
                 "values": {
                   "ap": "9",
-                  "melee-damage-bonus": "+11%",
-                  "long-ranged-damage-bonus": "+11%",
-                  "all-property-damage-bonus": "+11%",
                   "sp-cost": "110"
                 }
               },
@@ -20091,9 +19793,6 @@ export const soulAsceticData = {
                 "level": 4,
                 "values": {
                   "ap": "12",
-                  "melee-damage-bonus": "+13%",
-                  "long-ranged-damage-bonus": "+13%",
-                  "all-property-damage-bonus": "+13%",
                   "sp-cost": "120"
                 }
               },
@@ -20101,9 +19800,6 @@ export const soulAsceticData = {
                 "level": 5,
                 "values": {
                   "ap": "15",
-                  "melee-damage-bonus": "+15%",
-                  "long-ranged-damage-bonus": "+15%",
-                  "all-property-damage-bonus": "+15%",
                   "sp-cost": "130"
                 }
               },
@@ -20111,9 +19807,6 @@ export const soulAsceticData = {
                 "level": 6,
                 "values": {
                   "ap": "18",
-                  "melee-damage-bonus": "+17%",
-                  "long-ranged-damage-bonus": "+17%",
-                  "all-property-damage-bonus": "+17%",
                   "sp-cost": "140"
                 }
               },
@@ -20121,9 +19814,6 @@ export const soulAsceticData = {
                 "level": 7,
                 "values": {
                   "ap": "21",
-                  "melee-damage-bonus": "+19%",
-                  "long-ranged-damage-bonus": "+19%",
-                  "all-property-damage-bonus": "+19%",
                   "sp-cost": "150"
                 }
               },
@@ -20131,9 +19821,6 @@ export const soulAsceticData = {
                 "level": 8,
                 "values": {
                   "ap": "24",
-                  "melee-damage-bonus": "+21%",
-                  "long-ranged-damage-bonus": "+21%",
-                  "all-property-damage-bonus": "+21%",
                   "sp-cost": "160"
                 }
               },
@@ -20141,9 +19828,6 @@ export const soulAsceticData = {
                 "level": 9,
                 "values": {
                   "ap": "27",
-                  "melee-damage-bonus": "+23%",
-                  "long-ranged-damage-bonus": "+23%",
-                  "all-property-damage-bonus": "+23%",
                   "sp-cost": "170"
                 }
               },
@@ -20151,9 +19835,6 @@ export const soulAsceticData = {
                 "level": 10,
                 "values": {
                   "ap": "30",
-                  "melee-damage-bonus": "+25%",
-                  "long-ranged-damage-bonus": "+25%",
-                  "all-property-damage-bonus": "+25%",
                   "sp-cost": "180"
                 }
               }

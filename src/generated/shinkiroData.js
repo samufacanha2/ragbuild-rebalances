@@ -1,5 +1,5 @@
 export const shinkiroData = {
-  "generatedAt": "2026-07-09T12:12:02.210Z",
+  "generatedAt": "2026-07-09T13:22:23.277Z",
   "classId": 4304,
   "classSlug": "shinkiro",
   "className": "Shinkiro",
@@ -661,70 +661,70 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 1500+(Darkening Cannon Lv x 70)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 2500+(Darkening Cannon Lv x 140)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 3500+(Darkening Cannon Lv x 210)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 4500+(Darkening Cannon Lv x 280)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 5500+(Darkening Cannon Lv x 350)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK 6500+(Darkening Cannon Lv x 420)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK 7500+(Darkening Cannon Lv x 490)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "71"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK 8500+(Darkening Cannon Lv x 560)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "74"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK 9500+(Darkening Cannon Lv x 630)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "77"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK 10500+(Darkening Cannon Lv x 700)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "80"
                     }
                   }
@@ -956,10 +956,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -968,35 +964,30 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "1400%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "2100%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "2800%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "3500%",
                       "sp-cost": "40"
                     }
                   }
@@ -1158,80 +1149,66 @@ export const shinkiroData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 900+(Kunai - RefractionLv x 10)%",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1500+(Kunai - RefractionLv x 20)%",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 2100+(Kunai - RefractionLv x 30)%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2700+(Kunai - RefractionLv x 40)%",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 3300+(Kunai - RefractionLv x 50)%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 3900+(Kunai - RefractionLv x 60)%",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 4500+(Kunai - RefractionLv x 70)%",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 5100+(Kunai - RefractionLv x 80)%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 5700+(Kunai - RefractionLv x 90)%",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 6300+(Kunai - RefractionLv x 100)%",
                       "sp-cost": "54"
                     }
                   }
@@ -1437,80 +1414,66 @@ export const shinkiroData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1500+(Shadow Flash Lv x 5)%",
                       "sp-cost": "33"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 2400+(Shadow Flash Lv x 10)%",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 3300+(Shadow Flash Lv x 15)%",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 4200+(Shadow Flash Lv x 20)%",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 5100+(Shadow Flash Lv x 25)%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 6000+(Shadow Flash Lv x 30)%",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 6900+(Shadow Flash Lv x 35)%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 7800+(Shadow Flash Lv x 40)%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 8700+(Shadow Flash Lv x 45)%",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 9600+(Shadow Flash Lv x 50)%",
                       "sp-cost": "60"
                     }
                   }
@@ -1803,17 +1766,12 @@ export const shinkiroData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 1200+(Darkening Cannon Lv x 40)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "58"
                     }
@@ -1821,7 +1779,6 @@ export const shinkiroData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 2050+(Darkening Cannon Lv x 80)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "60"
                     }
@@ -1829,7 +1786,6 @@ export const shinkiroData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 2900+(Darkening Cannon Lv x 120)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "62"
                     }
@@ -1837,7 +1793,6 @@ export const shinkiroData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 3750+(Darkening Cannon Lv x 160)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "64"
                     }
@@ -1845,7 +1800,6 @@ export const shinkiroData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 4600+(Darkening Cannon Lv x 200)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "66"
                     }
@@ -1853,7 +1807,6 @@ export const shinkiroData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK 5450+(Darkening Cannon Lv x 240)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "68"
                     }
@@ -1861,7 +1814,6 @@ export const shinkiroData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK 6300+(Darkening Cannon Lv x 280)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "70"
                     }
@@ -1869,7 +1821,6 @@ export const shinkiroData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK 7150+(Darkening Cannon Lv x 320)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "72"
                     }
@@ -1877,7 +1828,6 @@ export const shinkiroData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK 8000+(Darkening Cannon Lv x 360)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "74"
                     }
@@ -1885,7 +1835,6 @@ export const shinkiroData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK 8850+(Darkening Cannon Lv x 400)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "76"
                     }
@@ -2100,10 +2049,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2112,35 +2057,30 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "700%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1400%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "2100%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "2800%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "3500%",
                       "sp-cost": "35"
                     }
                   }
@@ -2266,17 +2206,12 @@ export const shinkiroData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Per hit ATK 1500+(Kunai DistortionLv x 70)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "44"
                     }
@@ -2284,7 +2219,6 @@ export const shinkiroData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Per hit ATK 2200+(Kunai DistortionLv x 140)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "52"
                     }
@@ -2292,7 +2226,6 @@ export const shinkiroData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Per hit ATK 2900+(Kunai DistortionLv x 210)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "60"
                     }
@@ -2300,7 +2233,6 @@ export const shinkiroData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Per hit ATK 3600+(Kunai DistortionLv x 280)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "68"
                     }
@@ -2308,7 +2240,6 @@ export const shinkiroData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Per hit ATK 4300+(Kunai DistortionLv x 350)%",
                       "area-of-effect": "9x9",
                       "sp-cost": "76"
                     }
@@ -2540,70 +2471,70 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK per hit 1200+(Huuma Shuriken - Construct Lv x 5)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK per hit 1550+(Huuma Shuriken - Construct Lv x 10)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK per hit 1900+(Huuma Shuriken - Construct Lv x 15)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK per hit 2250+(Huuma Shuriken - Construct Lv x 20)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK per hit 2600+(Huuma Shuriken - Construct Lv x 25)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK per hit 2950+(Huuma Shuriken - Construct Lv x 30)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK per hit 3300+(Huuma Shuriken - Construct Lv x 35)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK per hit 3650+(Huuma Shuriken - Construct Lv x 40)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "76"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK per hit 4000+(Huuma Shuriken - Construct Lv x 45)%\nRange: 9 x 9",
+                      "effect": "Range: 9 x 9",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK per hit 4350+(Huuma Shuriken - Construct Lv x 50)%\nRange: 9 x 9",
+                      "effect": "Range: 9 x 9",
                       "sp-cost": "84"
                     }
                   }
@@ -2830,70 +2761,70 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1300+(Shadow HuntingLv x 50)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "37"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 2050+(Shadow HuntingLv x 100)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 2800+(Shadow HuntingLv x 150)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 3550+(Shadow HuntingLv x 200)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 4300+(Shadow HuntingLv x 250)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 5050+(Shadow HuntingLv x 300)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 5800+(Shadow HuntingLv x 350)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "67"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 6550+(Shadow HuntingLv x 400)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 7300+(Shadow HuntingLv x 450)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "77"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 8050+(Shadow HuntingLv x 500)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "82"
                     }
                   }
@@ -3180,70 +3111,70 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 1450+(Darkening Cannon Lv x 70)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 2400+(Darkening Cannon Lv x 140)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 3350+(Darkening Cannon Lv x 210)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 4300+(Darkening Cannon Lv x 280)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 5250+(Darkening Cannon Lv x 350)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK 6200+(Darkening Cannon Lv x 420)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK 7150+(Darkening Cannon Lv x 490)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "71"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK 8100+(Darkening Cannon Lv x 560)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "74"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK 9050+(Darkening Cannon Lv x 630)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "77"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK 10000+(Darkening Cannon Lv x 700)%/Range: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "80"
                     }
                   }
@@ -3640,80 +3571,66 @@ export const shinkiroData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Per hit ATK 560+(Kunai RotationLv x 10)%",
                       "sp-cost": "49"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Per hit ATK 920+(Kunai RotationLv x 20)%",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Per hit ATK 1280+(Kunai RotationLv x 30)%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Per hit ATK 1640+(Kunai RotationLv x 40)%",
                       "sp-cost": "58"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Per hit ATK 2000+(Kunai RotationLv x 50)%",
                       "sp-cost": "61"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Per hit ATK 2360+(Kunai RotationLv x 60)%",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Per hit ATK 2720+(Kunai RotationLv x 70)%",
                       "sp-cost": "67"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Per hit ATK 3080+(Kunai RotationLv x 80)%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Per hit ATK 3440+(Kunai RotationLv x 90)%",
                       "sp-cost": "73"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Per hit ATK 3800+(Kunai RotationLv x 100)%",
                       "sp-cost": "76"
                     }
                   }
@@ -3918,80 +3835,66 @@ export const shinkiroData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1800+(H.S. - Grasp Lv x 30)%\nATK(E x plosion) 2100+(H.S. - Grasp Lv x 30)%",
                       "sp-cost": "29"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 3000+(H.S. - Grasp Lv x 60)%\nATK(E x plosion) 3600+(H.S. - Grasp Lv x 60)%",
                       "sp-cost": "33"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 4200+(H.S. - Grasp Lv x 90)%\nATK(E x plosion) 5100+(H.S. - Grasp Lv x 90)%",
                       "sp-cost": "37"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 5400+(H.S. - Grasp Lv x 120)%\nATK(E x plosion) 6600+(H.S. - Grasp Lv x 120)%",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 6600+(H.S. - Grasp Lv x 150)%\nATK(E x plosion) 8100+(H.S. - Grasp Lv x 150)%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 7800+(H.S. - Grasp Lv x 180)%\nATK(E x plosion) 9600+(H.S. - Grasp Lv x 180)%",
                       "sp-cost": "49"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 9000+(H.S. - Grasp Lv x 210)%\nATK(E x plosion) 11100+(H.S. - Grasp Lv x 210)%",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 10200+(H.S. - Grasp Lv x 240)%\nATK(E x plosion) 12600+(H.S. - Grasp Lv x 240)%",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 11400+(H.S. - Grasp Lv x 270)%\nATK(E x plosion) 14100+(H.S. - Grasp Lv x 270)%",
                       "sp-cost": "61"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 12600+(H.S. - Grasp Lv x 300)%\nATK(E x plosion) 15600+(H.S. - Grasp Lv x 300)%",
                       "sp-cost": "65"
                     }
                   }
@@ -4234,70 +4137,70 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 2250+(Shadow DanceLv x 50)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 3000+(Shadow DanceLv x 100)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 3750+(Shadow DanceLv x 150)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 4500+(Shadow DanceLv x 200)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 5250+(Shadow DanceLv x 250)%\nRange: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 6000+(Shadow DanceLv x 300)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 6750+(Shadow DanceLv x 350)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 7500+(Shadow DanceLv x 400)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 8250+(Shadow DanceLv x 450)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 9000+(Shadow DanceLv x 500)%\nRange: 7 x 7",
+                      "effect": "Range: 7 x 7",
                       "sp-cost": "63"
                     }
                   }
@@ -4560,70 +4463,70 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 1400+(Darkening Cannon Lv x 15)%/Range: 3 x 3",
+                      "effect": "Range: 3 x 3",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 2350+(Darkening Cannon Lv x 30)%/Range: 3 x 3",
+                      "effect": "Range: 3 x 3",
                       "sp-cost": "49"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 3300+(Darkening Cannon Lv x 45)%/Range: 3 x 3",
+                      "effect": "Range: 3 x 3",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 4250+(Darkening Cannon Lv x 60)%/Range: 3 x 3",
+                      "effect": "Range: 3 x 3",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 5200+(Darkening Cannon Lv x 75)%/Range: 3 x 3",
+                      "effect": "Range: 3 x 3",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK 6150+(Darkening Cannon Lv x 90)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK 7100+(Darkening Cannon Lv x 105)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK 8050+(Darkening Cannon Lv x 120)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "61"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK 9000+(Darkening Cannon Lv x 135)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "63"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK 9950+(Darkening Cannon Lv x 150)%/Range: 5 x 5",
+                      "effect": "Range: 5 x 5",
                       "sp-cost": "65"
                     }
                   }
@@ -4857,10 +4760,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -4869,7 +4768,6 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "18000%",
                       "sp-cost": "70"
                     }
                   }
@@ -5019,10 +4917,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -5031,7 +4925,6 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "18000%",
                       "sp-cost": "70"
                     }
                   }
@@ -5220,10 +5113,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -5237,7 +5126,6 @@ export const shinkiroData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-matk": "1400%",
                       "sp-cost": "40"
                     }
                   },
@@ -5245,7 +5133,6 @@ export const shinkiroData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-matk": "2350%",
                       "sp-cost": "46"
                     }
                   },
@@ -5253,7 +5140,6 @@ export const shinkiroData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-matk": "3300%",
                       "sp-cost": "52"
                     }
                   },
@@ -5261,7 +5147,6 @@ export const shinkiroData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-matk": "4250%",
                       "sp-cost": "58"
                     }
                   },
@@ -5269,7 +5154,6 @@ export const shinkiroData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-matk": "5200%",
                       "sp-cost": "64"
                     }
                   },
@@ -5277,7 +5161,6 @@ export const shinkiroData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "6150%",
                       "sp-cost": "70"
                     }
                   },
@@ -5285,7 +5168,6 @@ export const shinkiroData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "7100%",
                       "sp-cost": "76"
                     }
                   },
@@ -5293,7 +5175,6 @@ export const shinkiroData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "8050%",
                       "sp-cost": "82"
                     }
                   },
@@ -5301,7 +5182,6 @@ export const shinkiroData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "9000%",
                       "sp-cost": "88"
                     }
                   },
@@ -5309,7 +5189,6 @@ export const shinkiroData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "9950%",
                       "sp-cost": "94"
                     }
                   }
@@ -5491,10 +5370,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -5503,7 +5378,6 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "15500%",
                       "sp-cost": "120"
                     }
                   }
@@ -6738,7 +6612,7 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "200% of ATK/Attack Range: 4 cells",
+                      "effect": "Attack Range: 4 cells",
                       "sp-cost": "10",
                       "range": "3 cells"
                     }
@@ -6746,7 +6620,7 @@ export const shinkiroData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "400% of ATK/Attack Range: 4 cells",
+                      "effect": "Attack Range: 4 cells",
                       "sp-cost": "12",
                       "range": "4 cells"
                     }
@@ -6754,7 +6628,7 @@ export const shinkiroData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "600% of ATK/Attack Range: 4 cells",
+                      "effect": "Attack Range: 4 cells",
                       "sp-cost": "14",
                       "range": "5 cells"
                     }
@@ -6762,7 +6636,7 @@ export const shinkiroData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "800% of ATK/Attack Range: 5 cells",
+                      "effect": "Attack Range: 5 cells",
                       "sp-cost": "16",
                       "range": "6 cells"
                     }
@@ -6770,7 +6644,7 @@ export const shinkiroData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "1,000% of ATK/Attack Range: 5 cells",
+                      "effect": "Attack Range: 5 cells",
                       "sp-cost": "18",
                       "range": "7 cells"
                     }
@@ -6778,35 +6652,35 @@ export const shinkiroData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "1,200% of ATK/Attack Range: 5 cells",
+                      "effect": "Attack Range: 5 cells",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "1,400% of ATK/Attack Range: 6 cells",
+                      "effect": "Attack Range: 6 cells",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "1,600% of ATK/Attack Range: 6 cells",
+                      "effect": "Attack Range: 6 cells",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "1,800% of ATK/Attack Range: 6 cells",
+                      "effect": "Attack Range: 6 cells",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "2,000% of ATK/Attack Range: 7 cells",
+                      "effect": "Attack Range: 7 cells",
                       "sp-cost": "28"
                     }
                   }
@@ -7547,10 +7421,6 @@ export const shinkiroData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -7559,7 +7429,6 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "100% of ATK",
                       "sp-cost": "12",
                       "range": "2 cells"
                     }
@@ -7567,7 +7436,6 @@ export const shinkiroData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "200% of ATK",
                       "sp-cost": "16",
                       "range": "2 cells"
                     }
@@ -7575,7 +7443,6 @@ export const shinkiroData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "300% of ATK",
                       "sp-cost": "20",
                       "range": "2 cells"
                     }
@@ -7583,7 +7450,6 @@ export const shinkiroData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "400% of ATK",
                       "sp-cost": "24",
                       "range": "2 cells"
                     }
@@ -7591,7 +7457,6 @@ export const shinkiroData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "500% of ATK",
                       "sp-cost": "28",
                       "range": "2 cells"
                     }
@@ -8101,7 +7966,7 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Attack Range: 7 cells/Effective Range: 5 x 5 cells",
+                      "effect": "Attack Range: 7 cells / Effective Range: 5 x 5 cells",
                       "sp-cost": "5",
                       "range": "7 cells",
                       "data-1": "1"
@@ -8110,7 +7975,7 @@ export const shinkiroData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Attack Range: 8 cells/Effective Range: 5 x 5 cells",
+                      "effect": "Attack Range: 8 cells / Effective Range: 5 x 5 cells",
                       "sp-cost": "6",
                       "range": "8 cells",
                       "data-1": "1"
@@ -8119,7 +7984,7 @@ export const shinkiroData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Attack Range: 9 cells/Effective Range: 5 x 5 cells",
+                      "effect": "Attack Range: 9 cells / Effective Range: 5 x 5 cells",
                       "sp-cost": "7",
                       "range": "9 cells",
                       "data-1": "1"
@@ -8128,7 +7993,7 @@ export const shinkiroData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Attack Range: 10 cells/Effective Range: 5 x 5 cells",
+                      "effect": "Attack Range: 10 cells / Effective Range: 5 x 5 cells",
                       "sp-cost": "8",
                       "range": "10 cells",
                       "data-1": "1"
@@ -8137,7 +8002,7 @@ export const shinkiroData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Attack Range: 11 cells/Effective Range: 5 x 5 cells",
+                      "effect": "Attack Range: 11 cells / Effective Range: 5 x 5 cells",
                       "sp-cost": "9",
                       "range": "11 cells",
                       "data-1": "1"
@@ -9442,45 +9307,36 @@ export const shinkiroData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "80% of ATK",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "90% of ATK",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "100% of ATK",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "110% of ATK",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "120% of ATK",
                       "sp-cost": "0"
                     }
                   }
@@ -9583,45 +9439,36 @@ export const shinkiroData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "60% of ATK",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "70% of ATK",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "80% of ATK",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "90% of ATK",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "100% of ATK",
                       "sp-cost": "0"
                     }
                   }
@@ -9830,7 +9677,7 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "150% of ATK/Attack Range: 11 cells",
+                      "effect": "Attack Range: 11 cells",
                       "sp-cost": "22",
                       "range": "9 cells"
                     }
@@ -9838,7 +9685,7 @@ export const shinkiroData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "300% of ATK/Attack Range: 11 cells",
+                      "effect": "Attack Range: 11 cells",
                       "sp-cost": "24",
                       "range": "10 cells"
                     }
@@ -9846,7 +9693,7 @@ export const shinkiroData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "450% of ATK/Attack Range: 11 cells",
+                      "effect": "Attack Range: 11 cells",
                       "sp-cost": "26",
                       "range": "11 cells"
                     }
@@ -9854,7 +9701,7 @@ export const shinkiroData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "600% of ATK/Attack Range: 11 cells",
+                      "effect": "Attack Range: 11 cells",
                       "sp-cost": "28",
                       "range": "12 cells"
                     }
@@ -9862,7 +9709,7 @@ export const shinkiroData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "750% of ATK/Attack Range: 11 cells",
+                      "effect": "Attack Range: 11 cells",
                       "sp-cost": "30",
                       "range": "13 cells"
                     }
@@ -9870,35 +9717,35 @@ export const shinkiroData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "900% of ATK/Attack Range: 11 cells",
+                      "effect": "Attack Range: 11 cells",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "1,050% of ATK/Attack Range: 11 cells",
+                      "effect": "Attack Range: 11 cells",
                       "sp-cost": "34"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "1,200% of ATK/Attack Range: 11 cells",
+                      "effect": "Attack Range: 11 cells",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "1,350% of ATK/Attack Range: 11 cells",
+                      "effect": "Attack Range: 11 cells",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "1,500% of ATK/Attack Range: 11 cells",
+                      "effect": "Attack Range: 11 cells",
                       "sp-cost": "40"
                     }
                   }
@@ -10488,7 +10335,7 @@ export const shinkiroData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -10516,7 +10363,7 @@ export const shinkiroData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -10854,10 +10701,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -10866,35 +10709,30 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "110%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "15"
                     }
                   }
@@ -11051,70 +10889,70 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "+3 SP/10 Sec",
+                      "effect": "+3 SP / 10 Sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "+6 SP/10 Sec",
+                      "effect": "+6 SP / 10 Sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "+9 SP/10 Sec",
+                      "effect": "+9 SP / 10 Sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "+12 SP/10 Sec",
+                      "effect": "+12 SP / 10 Sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "+15 SP/10 Sec",
+                      "effect": "+15 SP / 10 Sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "+18 SP/10 Sec",
+                      "effect": "+18 SP / 10 Sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "+21 SP/10 Sec",
+                      "effect": "+21 SP / 10 Sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "+24 SP/10 Sec",
+                      "effect": "+24 SP / 10 Sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "+27 SP/10 Sec",
+                      "effect": "+27 SP / 10 Sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "+30 SP/10 Sec",
+                      "effect": "+30 SP / 10 Sec",
                       "sp-cost": "0"
                     }
                   }
@@ -11367,80 +11205,66 @@ export const shinkiroData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+4",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+8",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+16",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+20",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+28",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+32",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+36",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+40",
                       "sp-cost": "5"
                     }
                   }
@@ -12769,10 +12593,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12781,70 +12601,60 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "110%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "170%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "8"
                     }
                   }
@@ -13648,10 +13458,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -13660,35 +13466,30 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "200%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "240%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "280%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "320%",
                       "sp-cost": "28"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "360%",
                       "sp-cost": "32"
                     }
                   }
@@ -13826,10 +13627,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -13838,35 +13635,30 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "450%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "750%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "35"
                     }
                   }
@@ -13982,10 +13774,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -13994,35 +13782,30 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "350%",
                       "sp-cost": "11"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "650%",
                       "sp-cost": "13"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "14"
                     }
                   }
@@ -14160,10 +13943,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14172,35 +13951,30 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "300%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "450%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "600%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "750%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "900%",
                       "sp-cost": "40"
                     }
                   }
@@ -14333,10 +14107,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14345,35 +14115,30 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "20%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "30%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "40%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "50%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "60%",
                       "sp-cost": "60"
                     }
                   }
@@ -14511,10 +14276,6 @@ export const shinkiroData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14523,35 +14284,30 @@ export const shinkiroData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "200%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "300%",
                       "sp-cost": "28"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "400%",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "500%",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "600%",
                       "sp-cost": "40"
                     }
                   }
@@ -15461,70 +15217,70 @@ export const shinkiroData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 1500+(Darkening Cannon Lv x 70)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 2500+(Darkening Cannon Lv x 140)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 3500+(Darkening Cannon Lv x 210)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 4500+(Darkening Cannon Lv x 280)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 5500+(Darkening Cannon Lv x 350)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK 6500+(Darkening Cannon Lv x 420)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "68"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK 7500+(Darkening Cannon Lv x 490)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "71"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK 8500+(Darkening Cannon Lv x 560)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "74"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK 9500+(Darkening Cannon Lv x 630)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "77"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK 10500+(Darkening Cannon Lv x 700)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "80"
                 }
               }
@@ -15756,10 +15512,6 @@ export const shinkiroData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -15768,35 +15520,30 @@ export const shinkiroData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "700%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "1400%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "2100%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "2800%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "3500%",
                   "sp-cost": "40"
                 }
               }
@@ -15958,80 +15705,66 @@ export const shinkiroData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 900+(Kunai - RefractionLv x 10)%",
                   "sp-cost": "36"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 1500+(Kunai - RefractionLv x 20)%",
                   "sp-cost": "38"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 2100+(Kunai - RefractionLv x 30)%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 2700+(Kunai - RefractionLv x 40)%",
                   "sp-cost": "42"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 3300+(Kunai - RefractionLv x 50)%",
                   "sp-cost": "44"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK 3900+(Kunai - RefractionLv x 60)%",
                   "sp-cost": "46"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK 4500+(Kunai - RefractionLv x 70)%",
                   "sp-cost": "48"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK 5100+(Kunai - RefractionLv x 80)%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK 5700+(Kunai - RefractionLv x 90)%",
                   "sp-cost": "52"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK 6300+(Kunai - RefractionLv x 100)%",
                   "sp-cost": "54"
                 }
               }
@@ -16237,80 +15970,66 @@ export const shinkiroData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 1500+(Shadow Flash Lv x 5)%",
                   "sp-cost": "33"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 2400+(Shadow Flash Lv x 10)%",
                   "sp-cost": "36"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 3300+(Shadow Flash Lv x 15)%",
                   "sp-cost": "39"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 4200+(Shadow Flash Lv x 20)%",
                   "sp-cost": "42"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 5100+(Shadow Flash Lv x 25)%",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK 6000+(Shadow Flash Lv x 30)%",
                   "sp-cost": "48"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK 6900+(Shadow Flash Lv x 35)%",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK 7800+(Shadow Flash Lv x 40)%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK 8700+(Shadow Flash Lv x 45)%",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK 9600+(Shadow Flash Lv x 50)%",
                   "sp-cost": "60"
                 }
               }
@@ -16603,17 +16322,12 @@ export const shinkiroData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 1200+(Darkening Cannon Lv x 40)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "58"
                 }
@@ -16621,7 +16335,6 @@ export const shinkiroData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 2050+(Darkening Cannon Lv x 80)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "60"
                 }
@@ -16629,7 +16342,6 @@ export const shinkiroData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 2900+(Darkening Cannon Lv x 120)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "62"
                 }
@@ -16637,7 +16349,6 @@ export const shinkiroData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 3750+(Darkening Cannon Lv x 160)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "64"
                 }
@@ -16645,7 +16356,6 @@ export const shinkiroData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 4600+(Darkening Cannon Lv x 200)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "66"
                 }
@@ -16653,7 +16363,6 @@ export const shinkiroData = {
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK 5450+(Darkening Cannon Lv x 240)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "68"
                 }
@@ -16661,7 +16370,6 @@ export const shinkiroData = {
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK 6300+(Darkening Cannon Lv x 280)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "70"
                 }
@@ -16669,7 +16377,6 @@ export const shinkiroData = {
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK 7150+(Darkening Cannon Lv x 320)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "72"
                 }
@@ -16677,7 +16384,6 @@ export const shinkiroData = {
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK 8000+(Darkening Cannon Lv x 360)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "74"
                 }
@@ -16685,7 +16391,6 @@ export const shinkiroData = {
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK 8850+(Darkening Cannon Lv x 400)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "76"
                 }
@@ -16900,10 +16605,6 @@ export const shinkiroData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -16912,35 +16613,30 @@ export const shinkiroData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "700%",
                   "sp-cost": "35"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "1400%",
                   "sp-cost": "35"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "2100%",
                   "sp-cost": "35"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "2800%",
                   "sp-cost": "35"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "3500%",
                   "sp-cost": "35"
                 }
               }
@@ -17066,17 +16762,12 @@ export const shinkiroData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Per hit ATK 1500+(Kunai DistortionLv x 70)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "44"
                 }
@@ -17084,7 +16775,6 @@ export const shinkiroData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "Per hit ATK 2200+(Kunai DistortionLv x 140)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "52"
                 }
@@ -17092,7 +16782,6 @@ export const shinkiroData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "Per hit ATK 2900+(Kunai DistortionLv x 210)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "60"
                 }
@@ -17100,7 +16789,6 @@ export const shinkiroData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "Per hit ATK 3600+(Kunai DistortionLv x 280)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "68"
                 }
@@ -17108,7 +16796,6 @@ export const shinkiroData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "Per hit ATK 4300+(Kunai DistortionLv x 350)%",
                   "area-of-effect": "9x9",
                   "sp-cost": "76"
                 }
@@ -17340,70 +17027,70 @@ export const shinkiroData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK per hit 1200+(Huuma Shuriken - Construct Lv x 5)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "48"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK per hit 1550+(Huuma Shuriken - Construct Lv x 10)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "52"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK per hit 1900+(Huuma Shuriken - Construct Lv x 15)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK per hit 2250+(Huuma Shuriken - Construct Lv x 20)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK per hit 2600+(Huuma Shuriken - Construct Lv x 25)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK per hit 2950+(Huuma Shuriken - Construct Lv x 30)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "68"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK per hit 3300+(Huuma Shuriken - Construct Lv x 35)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK per hit 3650+(Huuma Shuriken - Construct Lv x 40)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "76"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK per hit 4000+(Huuma Shuriken - Construct Lv x 45)%\nRange: 9 x 9",
+                  "effect": "Range: 9 x 9",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK per hit 4350+(Huuma Shuriken - Construct Lv x 50)%\nRange: 9 x 9",
+                  "effect": "Range: 9 x 9",
                   "sp-cost": "84"
                 }
               }
@@ -17630,70 +17317,70 @@ export const shinkiroData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 1300+(Shadow HuntingLv x 50)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "37"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 2050+(Shadow HuntingLv x 100)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "42"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 2800+(Shadow HuntingLv x 150)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 3550+(Shadow HuntingLv x 200)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "52"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 4300+(Shadow HuntingLv x 250)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK 5050+(Shadow HuntingLv x 300)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK 5800+(Shadow HuntingLv x 350)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "67"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK 6550+(Shadow HuntingLv x 400)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK 7300+(Shadow HuntingLv x 450)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "77"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK 8050+(Shadow HuntingLv x 500)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "82"
                 }
               }
@@ -17980,70 +17667,70 @@ export const shinkiroData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 1450+(Darkening Cannon Lv x 70)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 2400+(Darkening Cannon Lv x 140)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 3350+(Darkening Cannon Lv x 210)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 4300+(Darkening Cannon Lv x 280)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 5250+(Darkening Cannon Lv x 350)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK 6200+(Darkening Cannon Lv x 420)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "68"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK 7150+(Darkening Cannon Lv x 490)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "71"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK 8100+(Darkening Cannon Lv x 560)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "74"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK 9050+(Darkening Cannon Lv x 630)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "77"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK 10000+(Darkening Cannon Lv x 700)%/Range: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "80"
                 }
               }
@@ -18440,80 +18127,66 @@ export const shinkiroData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Per hit ATK 560+(Kunai RotationLv x 10)%",
                   "sp-cost": "49"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Per hit ATK 920+(Kunai RotationLv x 20)%",
                   "sp-cost": "52"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Per hit ATK 1280+(Kunai RotationLv x 30)%",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Per hit ATK 1640+(Kunai RotationLv x 40)%",
                   "sp-cost": "58"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Per hit ATK 2000+(Kunai RotationLv x 50)%",
                   "sp-cost": "61"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "Per hit ATK 2360+(Kunai RotationLv x 60)%",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "Per hit ATK 2720+(Kunai RotationLv x 70)%",
                   "sp-cost": "67"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "Per hit ATK 3080+(Kunai RotationLv x 80)%",
                   "sp-cost": "70"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "Per hit ATK 3440+(Kunai RotationLv x 90)%",
                   "sp-cost": "73"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "Per hit ATK 3800+(Kunai RotationLv x 100)%",
                   "sp-cost": "76"
                 }
               }
@@ -18718,80 +18391,66 @@ export const shinkiroData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 1800+(H.S. - Grasp Lv x 30)%\nATK(E x plosion) 2100+(H.S. - Grasp Lv x 30)%",
                   "sp-cost": "29"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 3000+(H.S. - Grasp Lv x 60)%\nATK(E x plosion) 3600+(H.S. - Grasp Lv x 60)%",
                   "sp-cost": "33"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 4200+(H.S. - Grasp Lv x 90)%\nATK(E x plosion) 5100+(H.S. - Grasp Lv x 90)%",
                   "sp-cost": "37"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 5400+(H.S. - Grasp Lv x 120)%\nATK(E x plosion) 6600+(H.S. - Grasp Lv x 120)%",
                   "sp-cost": "41"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 6600+(H.S. - Grasp Lv x 150)%\nATK(E x plosion) 8100+(H.S. - Grasp Lv x 150)%",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK 7800+(H.S. - Grasp Lv x 180)%\nATK(E x plosion) 9600+(H.S. - Grasp Lv x 180)%",
                   "sp-cost": "49"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK 9000+(H.S. - Grasp Lv x 210)%\nATK(E x plosion) 11100+(H.S. - Grasp Lv x 210)%",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK 10200+(H.S. - Grasp Lv x 240)%\nATK(E x plosion) 12600+(H.S. - Grasp Lv x 240)%",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK 11400+(H.S. - Grasp Lv x 270)%\nATK(E x plosion) 14100+(H.S. - Grasp Lv x 270)%",
                   "sp-cost": "61"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK 12600+(H.S. - Grasp Lv x 300)%\nATK(E x plosion) 15600+(H.S. - Grasp Lv x 300)%",
                   "sp-cost": "65"
                 }
               }
@@ -19034,70 +18693,70 @@ export const shinkiroData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 2250+(Shadow DanceLv x 50)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "36"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 3000+(Shadow DanceLv x 100)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "39"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 3750+(Shadow DanceLv x 150)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "42"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 4500+(Shadow DanceLv x 200)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 5250+(Shadow DanceLv x 250)%\nRange: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "48"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK 6000+(Shadow DanceLv x 300)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK 6750+(Shadow DanceLv x 350)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK 7500+(Shadow DanceLv x 400)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK 8250+(Shadow DanceLv x 450)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK 9000+(Shadow DanceLv x 500)%\nRange: 7 x 7",
+                  "effect": "Range: 7 x 7",
                   "sp-cost": "63"
                 }
               }
@@ -19360,70 +19019,70 @@ export const shinkiroData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 1400+(Darkening Cannon Lv x 15)%/Range: 3 x 3",
+                  "effect": "Range: 3 x 3",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 2350+(Darkening Cannon Lv x 30)%/Range: 3 x 3",
+                  "effect": "Range: 3 x 3",
                   "sp-cost": "49"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 3300+(Darkening Cannon Lv x 45)%/Range: 3 x 3",
+                  "effect": "Range: 3 x 3",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 4250+(Darkening Cannon Lv x 60)%/Range: 3 x 3",
+                  "effect": "Range: 3 x 3",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 5200+(Darkening Cannon Lv x 75)%/Range: 3 x 3",
+                  "effect": "Range: 3 x 3",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK 6150+(Darkening Cannon Lv x 90)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK 7100+(Darkening Cannon Lv x 105)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK 8050+(Darkening Cannon Lv x 120)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "61"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK 9000+(Darkening Cannon Lv x 135)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "63"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK 9950+(Darkening Cannon Lv x 150)%/Range: 5 x 5",
+                  "effect": "Range: 5 x 5",
                   "sp-cost": "65"
                 }
               }
@@ -19657,10 +19316,6 @@ export const shinkiroData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19669,7 +19324,6 @@ export const shinkiroData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "18000%",
                   "sp-cost": "70"
                 }
               }
@@ -19819,10 +19473,6 @@ export const shinkiroData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19831,7 +19481,6 @@ export const shinkiroData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "18000%",
                   "sp-cost": "70"
                 }
               }
@@ -20020,10 +19669,6 @@ export const shinkiroData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -20037,7 +19682,6 @@ export const shinkiroData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-matk": "1400%",
                   "sp-cost": "40"
                 }
               },
@@ -20045,7 +19689,6 @@ export const shinkiroData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-matk": "2350%",
                   "sp-cost": "46"
                 }
               },
@@ -20053,7 +19696,6 @@ export const shinkiroData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-matk": "3300%",
                   "sp-cost": "52"
                 }
               },
@@ -20061,7 +19703,6 @@ export const shinkiroData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-matk": "4250%",
                   "sp-cost": "58"
                 }
               },
@@ -20069,7 +19710,6 @@ export const shinkiroData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-matk": "5200%",
                   "sp-cost": "64"
                 }
               },
@@ -20077,7 +19717,6 @@ export const shinkiroData = {
                 "level": 6,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-matk": "6150%",
                   "sp-cost": "70"
                 }
               },
@@ -20085,7 +19724,6 @@ export const shinkiroData = {
                 "level": 7,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-matk": "7100%",
                   "sp-cost": "76"
                 }
               },
@@ -20093,7 +19731,6 @@ export const shinkiroData = {
                 "level": 8,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-matk": "8050%",
                   "sp-cost": "82"
                 }
               },
@@ -20101,7 +19738,6 @@ export const shinkiroData = {
                 "level": 9,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-matk": "9000%",
                   "sp-cost": "88"
                 }
               },
@@ -20109,7 +19745,6 @@ export const shinkiroData = {
                 "level": 10,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-matk": "9950%",
                   "sp-cost": "94"
                 }
               }
@@ -20291,10 +19926,6 @@ export const shinkiroData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -20303,7 +19934,6 @@ export const shinkiroData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "15500%",
                   "sp-cost": "120"
                 }
               }

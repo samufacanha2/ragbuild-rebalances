@@ -1,5 +1,5 @@
 export const cardinalData = {
-  "generatedAt": "2026-07-09T03:38:23.024Z",
+  "generatedAt": "2026-07-09T13:21:09.383Z",
   "classId": 4256,
   "classSlug": "cardinal",
   "className": "Cardinal",
@@ -1397,17 +1397,12 @@ export const cardinalData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 950+(Fidus Animus Lv x 5)%\n/ 1050+(Fidus Animus Lv x 5)% (Demon,Undead)",
                       "area-of-effect": "5x5",
                       "sp-cost": "80"
                     }
@@ -1415,7 +1410,6 @@ export const cardinalData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 1900+(Fidus Animus Lv x 10)%\n/ 2100+(Fidus Animus Lv x 10)% (Demon,Undead)",
                       "area-of-effect": "5x5",
                       "sp-cost": "83"
                     }
@@ -1423,7 +1417,6 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 2850+(Fidus Animus Lv x 15)%\n/ 3150+(Fidus Animus Lv x 15)% (Demon,Undead)",
                       "area-of-effect": "5x5",
                       "sp-cost": "86"
                     }
@@ -1431,7 +1424,6 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 3800+(Fidus Animus Lv x 20)%\n/ 4200+(Fidus Animus Lv x 20)% (Demon,Undead)",
                       "area-of-effect": "7x7",
                       "sp-cost": "89"
                     }
@@ -1439,7 +1431,6 @@ export const cardinalData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 4750+(Fidus Animus Lv x 25)%\n/ 5250+(Fidus Animus Lv x 25)% (Demon,Undead)",
                       "area-of-effect": "7x7",
                       "sp-cost": "92"
                     }
@@ -1515,8 +1506,8 @@ export const cardinalData = {
                 {
                   "label": "Damage",
                   "before": "2750%/3500%(demon and undead race)Matk",
-                  "after": "4250%/4750%(demon and undead race)Matk based on level 5 (Fidus Animus level 10)",
-                  "scope": "",
+                  "after": "4250%/4750%(demon and undead race)Matk",
+                  "scope": "Lv 5 (Fidus Animus level 10)",
                   "source": "Increases damage from 2750%/3500%(demon and undead race)Matk to 4250%/4750%(demon and undead race)Matk based on level 5 (Fidus Animus level 10)."
                 }
               ]
@@ -1748,17 +1739,12 @@ export const cardinalData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1050+(Mace & Book Mastery level x 50)%",
                       "area-of-effect": "3x3",
                       "sp-cost": "38"
                     }
@@ -1766,7 +1752,6 @@ export const cardinalData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 2100+(Mace & Book Mastery level x 100)%",
                       "area-of-effect": "3x3",
                       "sp-cost": "41"
                     }
@@ -1774,7 +1759,6 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 3150+(Mace & Book Mastery level x 150)%",
                       "area-of-effect": "3x3",
                       "sp-cost": "44"
                     }
@@ -1782,7 +1766,6 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 4200+(Mace & Book Mastery level x 200)%",
                       "area-of-effect": "3x3",
                       "sp-cost": "47"
                     }
@@ -1790,7 +1773,6 @@ export const cardinalData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 5250+(Mace & Book Mastery level x 250)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "50"
                     }
@@ -1798,7 +1780,6 @@ export const cardinalData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 6300+(Mace & Book Mastery level x 300)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "53"
                     }
@@ -1806,7 +1787,6 @@ export const cardinalData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 7350+(Mace & Book Mastery level x 350)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "56"
                     }
@@ -1814,7 +1794,6 @@ export const cardinalData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 8400+(Mace & Book Mastery level x 400)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "59"
                     }
@@ -1822,7 +1801,6 @@ export const cardinalData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 9450+(Mace & Book Mastery level x 450)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "62"
                     }
@@ -1830,7 +1808,6 @@ export const cardinalData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 10500+(Mace & Book Mastery level x 500)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "65"
                     }
@@ -1899,8 +1876,8 @@ export const cardinalData = {
                 {
                   "label": "Damage",
                   "before": "3200%Atk",
-                  "after": "11500%Atk based on level 10 (Mace & Book Mastery Level 10)",
-                  "scope": "",
+                  "after": "11500%Atk",
+                  "scope": "Lv 10 (Mace & Book Mastery Level 10)",
                   "source": "Increases damage from 3200%Atk to 11500%Atk based on level 10 (Mace & Book Mastery Level 10)."
                 }
               ]
@@ -2268,70 +2245,70 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 1000+(Fidus Animus Lv x 10)%(1st)\n/ 1750+(Fidus Animus Lv x 50)%(2nd)/Quiet inflicting chance: 25%",
+                      "effect": "Quiet inflicting chance: 25%",
                       "sp-cost": "107"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 2000+(Fidus Animus Lv x 20)%(1st)\n/ 3500+(Fidus Animus Lv x 100)%(2nd)/Quiet inflicting chance: 30%",
+                      "effect": "Quiet inflicting chance: 30%",
                       "sp-cost": "109"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 3000+(Fidus Animus Lv x 30)%(1st)\n/ 5250+(Fidus Animus Lv x 150)%(2nd)/Quiet inflicting chance: 35%",
+                      "effect": "Quiet inflicting chance: 35%",
                       "sp-cost": "111"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 4000+(Fidus Animus Lv x 40)%(1st)\n/ 7000+(Fidus Animus Lv x 200)%(2nd)/Quiet inflicting chance: 40%",
+                      "effect": "Quiet inflicting chance: 40%",
                       "sp-cost": "113"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 5000+(Fidus Animus Lv x 50)%(1st)\n/ 8750+(Fidus Animus Lv x 250)%(2nd)/Quiet inflicting chance: 45%",
+                      "effect": "Quiet inflicting chance: 45%",
                       "sp-cost": "115"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK 6000+(Fidus Animus Lv x 60)%(1st)\n/ 10500+(Fidus Animus Lv x 300)%(2nd)/Quiet inflicting chance: 50%",
+                      "effect": "Quiet inflicting chance: 50%",
                       "sp-cost": "117"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK 7000+(Fidus Animus Lv x 70)%(1st)\n/ 12250+(Fidus Animus Lv x 350)%(2nd)/Quiet inflicting chance: 55%",
+                      "effect": "Quiet inflicting chance: 55%",
                       "sp-cost": "119"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK 8000+(Fidus Animus Lv x 80)%(1st)\n/ 14000+(Fidus Animus Lv x 400)%(2nd)/Quiet inflicting chance: 60%",
+                      "effect": "Quiet inflicting chance: 60%",
                       "sp-cost": "121"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK 9000+(Fidus Animus Lv x 90)%(1st)\n/ 15750+(Fidus Animus Lv x 450)%(2nd)/Quiet inflicting chance: 65%",
+                      "effect": "Quiet inflicting chance: 65%",
                       "sp-cost": "123"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK 10000+(Fidus Animus Lv x 100)%(1st)\n/ 17500+(Fidus Animus Lv x 500)%(2nd)/Quiet inflicting chance: 70%",
+                      "effect": "Quiet inflicting chance: 70%",
                       "sp-cost": "125"
                     }
                   }
@@ -2362,18 +2339,11 @@ export const cardinalData = {
                   "source": "Reduces cooldown from 3 seconds to 2 seconds based on level 5."
                 },
                 {
-                  "label": "Damage (includes Fidus Animus Level 10 Bonus)",
-                  "before": "2500%Matk",
-                  "after": "5000%Matk",
+                  "label": "Damage",
+                  "before": "2500%Matk (includes Fidus Animus level 10 bonus)/1900%Matk (secondary attack)",
+                  "after": "5000%Matk (includes Fidus Animus level 10 bonus)/6500%Matk (secondary attack)",
                   "scope": "Lv 10",
-                  "source": "Increases damage (includes Fidus Animus level 10 bonus) from 2500%Matk to 5000%Matk based on level 10."
-                },
-                {
-                  "label": "Damage Of The Secondary Attack",
-                  "before": "1900%Matk",
-                  "after": "6500%Matk",
-                  "scope": "Lv 10",
-                  "source": "Increases damage of the secondary attack from 1900%Matk to 6500%Matk based on level 10."
+                  "source": "Increases damage (includes Fidus Animus level 10 bonus) from 2500%Matk to 5000%Matk based on level 10. / Increases damage of the secondary attack from 1900%Matk to 6500%Matk based on level 10."
                 }
               ]
             },
@@ -2443,8 +2413,8 @@ export const cardinalData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "12500%Matk",
-                  "after": "17500%Matk",
+                  "before": "12500%Matk (area damage)",
+                  "after": "17500%Matk (area damage)",
                   "scope": "Lv 10",
                   "source": "Increases base damage of area damage from 12500%Matk to 17500%Matk based on level 10."
                 },
@@ -2571,70 +2541,9 @@ export const cardinalData = {
               {
                 "label": "Property",
                 "value": "holy property magical damage"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (MATK) + (Fidus Animus level x Skill Level Factor))% MATK"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
-                    "id": "skill-level-factor",
-                    "label": "Skill Level Factor"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-matk": "4,000",
-                      "skill-level-factor": "70"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-matk": "8,000",
-                      "skill-level-factor": "70"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-matk": "12,000",
-                      "skill-level-factor": "70"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-matk": "16,000",
-                      "skill-level-factor": "70"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-matk": "20,000",
-                      "skill-level-factor": "70"
-                    }
-                  }
-                ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "(Base Damage (MATK) + (Fidus Animus level x Skill Level Factor))% MATK"
-                  }
-                ]
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [
@@ -2826,10 +2735,6 @@ export const cardinalData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2838,70 +2743,60 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "1650%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "3300%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "4950%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "6600%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "8250%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "9900%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "11550%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "13200%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "14850%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "16500%",
                       "sp-cost": "75"
                     }
                   }
@@ -2958,8 +2853,8 @@ export const cardinalData = {
                 {
                   "label": "Damage",
                   "before": "8080%/12150%(demon and undead race)Atk",
-                  "after": "16580%/18150%(demon and undead race)Atk based on level 10 (Mace & Book Mastery Level 10)",
-                  "scope": "",
+                  "after": "16580%/18150%(demon and undead race)Atk",
+                  "scope": "Lv 10 (Mace & Book Mastery Level 10)",
                   "source": "Increases damage from 8080%/12150%(demon and undead race)Atk to 16580%/18150%(demon and undead race)Atk based on level 10 (Mace & Book Mastery Level 10)."
                 },
                 {
@@ -3628,10 +3523,6 @@ export const cardinalData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -3644,7 +3535,6 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "2250%",
                       "area-of-effect": "5x5",
                       "sp-cost": "150"
                     }
@@ -3652,7 +3542,6 @@ export const cardinalData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "4350%",
                       "area-of-effect": "5x5",
                       "sp-cost": "150"
                     }
@@ -3660,7 +3549,6 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "6450%",
                       "area-of-effect": "5x5",
                       "sp-cost": "150"
                     }
@@ -3668,7 +3556,6 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "8550%",
                       "area-of-effect": "7x7",
                       "sp-cost": "150"
                     }
@@ -3676,7 +3563,6 @@ export const cardinalData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "10650%",
                       "area-of-effect": "7x7",
                       "sp-cost": "150"
                     }
@@ -3684,7 +3570,6 @@ export const cardinalData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "12750%",
                       "area-of-effect": "7x7",
                       "sp-cost": "150"
                     }
@@ -3692,7 +3577,6 @@ export const cardinalData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "14850%",
                       "area-of-effect": "9x9",
                       "sp-cost": "150"
                     }
@@ -3700,7 +3584,6 @@ export const cardinalData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "16950%",
                       "area-of-effect": "9x9",
                       "sp-cost": "150"
                     }
@@ -3708,7 +3591,6 @@ export const cardinalData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "19050%",
                       "area-of-effect": "9x9",
                       "sp-cost": "150"
                     }
@@ -3716,7 +3598,6 @@ export const cardinalData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "21150%",
                       "area-of-effect": "11x11",
                       "sp-cost": "150"
                     }
@@ -3765,8 +3646,8 @@ export const cardinalData = {
                 {
                   "label": "Damage",
                   "before": "2030%/3050%(demon and undead race)Matk",
-                  "after": "21180%/22750%(demon and undead race)Matk per hit based on level 10 (Fidus Animus level 10)",
-                  "scope": "",
+                  "after": "21180%/22750%(demon and undead race)Matk per hit",
+                  "scope": "Lv 10 (Fidus Animus level 10)",
                   "source": "Increases damage from 2030%/3050%(demon and undead race)Matk to 21180%/22750%(demon and undead race)Matk per hit based on level 10 (Fidus Animus level 10)."
                 }
               ]
@@ -3792,9 +3673,9 @@ export const cardinalData = {
                   "source": "Reduces AP consumption from 30 to 20."
                 },
                 {
-                  "label": "Damage Property",
-                  "before": "holy",
-                  "after": "neutral",
+                  "label": "Damage",
+                  "before": "holy (property)",
+                  "after": "neutral (property)",
                   "scope": "",
                   "source": "Changes damage property from holy to neutral."
                 }
@@ -3962,7 +3843,7 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "HP/SP 20% Recovery",
+                      "effect": "HP / SP 20% Recovery",
                       "duration": "180 seconds",
                       "p-atk-and-s-matk": "+ 10",
                       "sp-cost": "60"
@@ -3971,7 +3852,7 @@ export const cardinalData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "HP/SP 40% Recovery",
+                      "effect": "HP / SP 40% Recovery",
                       "duration": "210 seconds",
                       "p-atk-and-s-matk": "+ 20",
                       "sp-cost": "60"
@@ -3980,7 +3861,7 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "HP/SP 60% Recovery",
+                      "effect": "HP / SP 60% Recovery",
                       "duration": "240 seconds",
                       "p-atk-and-s-matk": "+ 30",
                       "sp-cost": "60"
@@ -3989,7 +3870,7 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "HP/SP 80% Recovery",
+                      "effect": "HP / SP 80% Recovery",
                       "duration": "270 seconds",
                       "p-atk-and-s-matk": "+ 40",
                       "sp-cost": "60"
@@ -3998,7 +3879,7 @@ export const cardinalData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "HP/SP 100% Recovery",
+                      "effect": "HP / SP 100% Recovery",
                       "duration": "300 seconds",
                       "p-atk-and-s-matk": "+ 50",
                       "sp-cost": "60"
@@ -4263,10 +4144,6 @@ export const cardinalData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -4279,7 +4156,6 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "370%",
                       "sp-cost": "20",
                       "range": "11 cells"
                     }
@@ -4287,7 +4163,6 @@ export const cardinalData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "440%",
                       "sp-cost": "23",
                       "range": "11 cells"
                     }
@@ -4295,7 +4170,6 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "510%",
                       "sp-cost": "26",
                       "range": "11 cells"
                     }
@@ -4303,7 +4177,6 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "580%",
                       "sp-cost": "29",
                       "range": "11 cells"
                     }
@@ -4311,7 +4184,6 @@ export const cardinalData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "650%",
                       "sp-cost": "32",
                       "range": "11 cells"
                     }
@@ -4319,7 +4191,6 @@ export const cardinalData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "720%",
                       "sp-cost": "34",
                       "range": "11 cells"
                     }
@@ -4327,7 +4198,6 @@ export const cardinalData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "790%",
                       "sp-cost": "36",
                       "range": "11 cells"
                     }
@@ -4335,7 +4205,6 @@ export const cardinalData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "860%",
                       "sp-cost": "38",
                       "range": "11 cells"
                     }
@@ -4343,7 +4212,6 @@ export const cardinalData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "930%",
                       "sp-cost": "40",
                       "range": "11 cells"
                     }
@@ -4351,7 +4219,6 @@ export const cardinalData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "1000%",
                       "sp-cost": "42",
                       "range": "11 cells"
                     }
@@ -5525,7 +5392,7 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Physical ATK + 165% Magical Attack + 440% / Lasts for 90 sec",
+                      "effect": "Lasts for 90 sec",
                       "sp-cost": "55",
                       "range": "11 cells",
                       "data-1": "90000"
@@ -5534,7 +5401,7 @@ export const cardinalData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Physical ATK + 180% Magical Attack + 480% / Lasts for 120 sec",
+                      "effect": "Lasts for 120 sec",
                       "sp-cost": "60",
                       "range": "11 cells",
                       "data-1": "120000"
@@ -5543,7 +5410,7 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Physical ATK + 195% Magical Attack + 520% / Lasts for 150 sec",
+                      "effect": "Lasts for 150 sec",
                       "sp-cost": "65",
                       "range": "11 cells",
                       "data-1": "150000"
@@ -5552,7 +5419,7 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Physical ATK + 210% Magical Attack + 560% / Lasts for 180 sec",
+                      "effect": "Lasts for 180 sec",
                       "sp-cost": "70",
                       "range": "11 cells",
                       "data-1": "180000"
@@ -5561,7 +5428,7 @@ export const cardinalData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Physical ATK + 225% Magical Attack + 600% / Lasts for 210 sec",
+                      "effect": "Lasts for 210 sec",
                       "sp-cost": "75",
                       "range": "11 cells",
                       "data-1": "210000"
@@ -5570,7 +5437,7 @@ export const cardinalData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Physical ATK + 240% Magical Attack + 640% / Lasts for 240 sec",
+                      "effect": "Lasts for 240 sec",
                       "sp-cost": "80",
                       "range": "11 cells",
                       "data-1": "240000"
@@ -5579,7 +5446,7 @@ export const cardinalData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Physical ATK + 255% Magical Attack + 680% / Lasts for 270 sec",
+                      "effect": "Lasts for 270 sec",
                       "sp-cost": "85",
                       "range": "11 cells",
                       "data-1": "270000"
@@ -5588,7 +5455,7 @@ export const cardinalData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Physical ATK + 270% Magical Attack + 720% / Lasts for 300 sec",
+                      "effect": "Lasts for 300 sec",
                       "sp-cost": "90",
                       "range": "11 cells",
                       "data-1": "300000"
@@ -5597,7 +5464,7 @@ export const cardinalData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Physical ATK + 285% Magical Attack + 760% / Lasts for 330 sec",
+                      "effect": "Lasts for 330 sec",
                       "sp-cost": "95",
                       "range": "11 cells",
                       "data-1": "330000"
@@ -5606,7 +5473,7 @@ export const cardinalData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Physical ATK + 300% Magical Attack + 800% / Lasts for 360 sec",
+                      "effect": "Lasts for 360 sec",
                       "sp-cost": "100",
                       "range": "11 cells",
                       "data-1": "360000"
@@ -7226,29 +7093,12 @@ export const cardinalData = {
                   {
                     "id": "range",
                     "label": "Range"
-                  },
-                  {
-                    "id": "success-rate-100-critical-damage",
-                    "label": "Success Rate 100% / Critical Damage"
-                  },
-                  {
-                    "id": "success-rate-70-critical-damage",
-                    "label": "Success Rate 70% / Critical Damage"
-                  },
-                  {
-                    "id": "success-rate-80-critical-damage",
-                    "label": "Success Rate 80% / Critical Damage"
-                  },
-                  {
-                    "id": "success-rate-90-critical-damage",
-                    "label": "Success Rate 90% / Critical Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "success-rate-70-critical-damage": "+5%",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "70",
@@ -7259,7 +7109,6 @@ export const cardinalData = {
                   {
                     "level": 2,
                     "values": {
-                      "success-rate-80-critical-damage": "+10%",
                       "sp-cost": "60",
                       "range": "11 cells",
                       "data-1": "80",
@@ -7270,7 +7119,6 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
-                      "success-rate-90-critical-damage": "+15%",
                       "sp-cost": "70",
                       "range": "11 cells",
                       "data-1": "90",
@@ -7281,7 +7129,6 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
-                      "success-rate-100-critical-damage": "+20%",
                       "sp-cost": "80",
                       "range": "11 cells",
                       "data-1": "100",
@@ -7701,10 +7548,6 @@ export const cardinalData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7738,7 +7581,6 @@ export const cardinalData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "550%",
                       "sp-cost": "32",
                       "range": "11 cells",
                       "data-1": "6000",
@@ -7751,7 +7593,6 @@ export const cardinalData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "800%",
                       "sp-cost": "40",
                       "range": "11 cells",
                       "data-1": "7000",
@@ -7764,7 +7605,6 @@ export const cardinalData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "1050%",
                       "sp-cost": "48",
                       "range": "11 cells",
                       "data-1": "8000",
@@ -7777,7 +7617,6 @@ export const cardinalData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "1300%",
                       "sp-cost": "56",
                       "range": "11 cells",
                       "data-1": "9000",
@@ -7790,7 +7629,6 @@ export const cardinalData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "1550%",
                       "sp-cost": "64",
                       "range": "11 cells",
                       "data-1": "10000",
@@ -7803,7 +7641,6 @@ export const cardinalData = {
                     "level": 6,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "1800%",
                       "sp-cost": "72",
                       "range": "11 cells",
                       "data-1": "11000",
@@ -7816,7 +7653,6 @@ export const cardinalData = {
                     "level": 7,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-matk": "2050%",
                       "sp-cost": "80",
                       "range": "11 cells",
                       "data-1": "12000",
@@ -7829,7 +7665,6 @@ export const cardinalData = {
                     "level": 8,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-matk": "2300%",
                       "sp-cost": "88",
                       "range": "11 cells",
                       "data-1": "13000",
@@ -7842,7 +7677,6 @@ export const cardinalData = {
                     "level": 9,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-matk": "2550%",
                       "sp-cost": "96",
                       "range": "11 cells",
                       "data-1": "14000",
@@ -7855,7 +7689,6 @@ export const cardinalData = {
                     "level": 10,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-matk": "2800%",
                       "sp-cost": "104",
                       "range": "11 cells",
                       "data-1": "15000",
@@ -11098,70 +10931,70 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(3 + 0.2% of Ma x SP)/10 sec",
+                      "effect": "(3 + 0.2% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(6 + 0.4% of Ma x SP)/10 sec",
+                      "effect": "(6 + 0.4% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(9 + 0.6% of Ma x SP)/10 sec",
+                      "effect": "(9 + 0.6% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(12 + 0.8% of Ma x SP)/10 sec",
+                      "effect": "(12 + 0.8% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(15 + 1.0% of Ma x SP)/10 sec",
+                      "effect": "(15 + 1.0% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(18 + 1.2% of Ma x SP)/10 sec",
+                      "effect": "(18 + 1.2% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(21 + 1.4% of Ma x SP)/10 sec",
+                      "effect": "(21 + 1.4% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(24 + 1.6% of Ma x SP)/10 sec",
+                      "effect": "(24 + 1.6% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(27 + 1.8% of Ma x SP)/10 sec",
+                      "effect": "(27 + 1.8% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(30 + 2.0% of Ma x SP)/10 sec",
+                      "effect": "(30 + 2.0% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   }
@@ -13127,116 +12960,66 @@ export const cardinalData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage-12-cri",
-                    "label": "Damage +12, Cri"
-                  },
-                  {
-                    "id": "damage-15-cri",
-                    "label": "Damage +15, Cri"
-                  },
-                  {
-                    "id": "damage-18-cri",
-                    "label": "Damage +18, Cri"
-                  },
-                  {
-                    "id": "damage-21-cri",
-                    "label": "Damage +21, Cri"
-                  },
-                  {
-                    "id": "damage-24-cri",
-                    "label": "Damage +24, Cri"
-                  },
-                  {
-                    "id": "damage-27-cri",
-                    "label": "Damage +27, Cri"
-                  },
-                  {
-                    "id": "damage-3-cri",
-                    "label": "Damage +3, Cri"
-                  },
-                  {
-                    "id": "damage-30-cri",
-                    "label": "Damage +30, Cri"
-                  },
-                  {
-                    "id": "damage-6-cri",
-                    "label": "Damage +6, Cri"
-                  },
-                  {
-                    "id": "damage-9-cri",
-                    "label": "Damage +9, Cri"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage-3-cri": "+ 1",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage-6-cri": "+ 2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage-9-cri": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage-12-cri": "+ 4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage-15-cri": "+ 5",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage-18-cri": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage-21-cri": "+ 7",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage-24-cri": "+ 8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage-27-cri": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage-30-cri": "+10",
                       "sp-cost": "0"
                     }
                   }
@@ -13643,61 +13426,36 @@ export const cardinalData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "magic-damage-3-physical-damage",
-                    "label": "Magic Damage + 3%, Physical Damage"
-                  },
-                  {
-                    "id": "magic-damage-6-physical-damage",
-                    "label": "Magic Damage + 6%, Physical Damage"
-                  },
-                  {
-                    "id": "magic-damage-9-physical-damage",
-                    "label": "Magic Damage + 9%, Physical Damage"
-                  },
-                  {
-                    "id": "magic-damage-12-physical-damage",
-                    "label": "Magic Damage +12%, Physical Damage"
-                  },
-                  {
-                    "id": "magic-damage-15-physical-damage",
-                    "label": "Magic Damage +15%, Physical Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "magic-damage-3-physical-damage": "+ 5%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "magic-damage-6-physical-damage": "+10%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "magic-damage-9-physical-damage": "+15%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "magic-damage-12-physical-damage": "+20%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "magic-damage-15-physical-damage": "+25%",
                       "sp-cost": "80"
                     }
                   }
@@ -14849,7 +14607,7 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -14877,7 +14635,7 @@ export const cardinalData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -15391,80 +15149,66 @@ export const cardinalData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage-reduction",
-                    "label": "Damage Reduction"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage-reduction": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage-reduction": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage-reduction": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage-reduction": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage-reduction": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage-reduction": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage-reduction": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage-reduction": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage-reduction": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage-reduction": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -16007,80 +15751,66 @@ export const cardinalData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "AGI+3, ATK Speed: +1%, Duration: 60sec",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "AGI+4, ATK Speed: +2%, Duration: 80sec",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "AGI+5, ATK Speed: +3%, Duration:100sec",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "AGI+6, ATK Speed: +4%, Duration:120sec",
                       "sp-cost": "27"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "AGI+7, ATK Speed: +5%, Duration:140sec",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "AGI+8, ATK Speed: +6%, Duration:160sec",
                       "sp-cost": "33"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "AGI+9, ATK Speed: +7%, Duration:180sec",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "AGI+10, ATK Speed: +8%, Duration:200sec",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "AGI+11, ATK Speed: +9%, Duration:220sec",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "AGI+12, ATK Speed: +10%, Duration:240sec",
                       "sp-cost": "45"
                     }
                   }
@@ -16465,80 +16195,66 @@ export const cardinalData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -17008,7 +16724,7 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "3 custom position available\n[Custom Position] : Stand in the area and type in [/memo] to store a Memo Point of the current spot",
+                      "effect": "3 custom position available\n[Custom Position] : Stand in the area and type in [ / memo] to store a Memo Point of the current spot",
                       "sp-cost": "26"
                     }
                   }
@@ -18719,17 +18435,12 @@ export const cardinalData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 950+(Fidus Animus Lv x 5)%\n/ 1050+(Fidus Animus Lv x 5)% (Demon,Undead)",
                   "area-of-effect": "5x5",
                   "sp-cost": "80"
                 }
@@ -18737,7 +18448,6 @@ export const cardinalData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 1900+(Fidus Animus Lv x 10)%\n/ 2100+(Fidus Animus Lv x 10)% (Demon,Undead)",
                   "area-of-effect": "5x5",
                   "sp-cost": "83"
                 }
@@ -18745,7 +18455,6 @@ export const cardinalData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 2850+(Fidus Animus Lv x 15)%\n/ 3150+(Fidus Animus Lv x 15)% (Demon,Undead)",
                   "area-of-effect": "5x5",
                   "sp-cost": "86"
                 }
@@ -18753,7 +18462,6 @@ export const cardinalData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 3800+(Fidus Animus Lv x 20)%\n/ 4200+(Fidus Animus Lv x 20)% (Demon,Undead)",
                   "area-of-effect": "7x7",
                   "sp-cost": "89"
                 }
@@ -18761,7 +18469,6 @@ export const cardinalData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 4750+(Fidus Animus Lv x 25)%\n/ 5250+(Fidus Animus Lv x 25)% (Demon,Undead)",
                   "area-of-effect": "7x7",
                   "sp-cost": "92"
                 }
@@ -18837,8 +18544,8 @@ export const cardinalData = {
             {
               "label": "Damage",
               "before": "2750%/3500%(demon and undead race)Matk",
-              "after": "4250%/4750%(demon and undead race)Matk based on level 5 (Fidus Animus level 10)",
-              "scope": "",
+              "after": "4250%/4750%(demon and undead race)Matk",
+              "scope": "Lv 5 (Fidus Animus level 10)",
               "source": "Increases damage from 2750%/3500%(demon and undead race)Matk to 4250%/4750%(demon and undead race)Matk based on level 5 (Fidus Animus level 10)."
             }
           ]
@@ -19070,17 +18777,12 @@ export const cardinalData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 1050+(Mace & Book Mastery level x 50)%",
                   "area-of-effect": "3x3",
                   "sp-cost": "38"
                 }
@@ -19088,7 +18790,6 @@ export const cardinalData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 2100+(Mace & Book Mastery level x 100)%",
                   "area-of-effect": "3x3",
                   "sp-cost": "41"
                 }
@@ -19096,7 +18797,6 @@ export const cardinalData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 3150+(Mace & Book Mastery level x 150)%",
                   "area-of-effect": "3x3",
                   "sp-cost": "44"
                 }
@@ -19104,7 +18804,6 @@ export const cardinalData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 4200+(Mace & Book Mastery level x 200)%",
                   "area-of-effect": "3x3",
                   "sp-cost": "47"
                 }
@@ -19112,7 +18811,6 @@ export const cardinalData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 5250+(Mace & Book Mastery level x 250)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "50"
                 }
@@ -19120,7 +18818,6 @@ export const cardinalData = {
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK 6300+(Mace & Book Mastery level x 300)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "53"
                 }
@@ -19128,7 +18825,6 @@ export const cardinalData = {
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK 7350+(Mace & Book Mastery level x 350)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "56"
                 }
@@ -19136,7 +18832,6 @@ export const cardinalData = {
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK 8400+(Mace & Book Mastery level x 400)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "59"
                 }
@@ -19144,7 +18839,6 @@ export const cardinalData = {
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK 9450+(Mace & Book Mastery level x 450)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "62"
                 }
@@ -19152,7 +18846,6 @@ export const cardinalData = {
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK 10500+(Mace & Book Mastery level x 500)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "65"
                 }
@@ -19221,8 +18914,8 @@ export const cardinalData = {
             {
               "label": "Damage",
               "before": "3200%Atk",
-              "after": "11500%Atk based on level 10 (Mace & Book Mastery Level 10)",
-              "scope": "",
+              "after": "11500%Atk",
+              "scope": "Lv 10 (Mace & Book Mastery Level 10)",
               "source": "Increases damage from 3200%Atk to 11500%Atk based on level 10 (Mace & Book Mastery Level 10)."
             }
           ]
@@ -19590,70 +19283,70 @@ export const cardinalData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 1000+(Fidus Animus Lv x 10)%(1st)\n/ 1750+(Fidus Animus Lv x 50)%(2nd)/Quiet inflicting chance: 25%",
+                  "effect": "Quiet inflicting chance: 25%",
                   "sp-cost": "107"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 2000+(Fidus Animus Lv x 20)%(1st)\n/ 3500+(Fidus Animus Lv x 100)%(2nd)/Quiet inflicting chance: 30%",
+                  "effect": "Quiet inflicting chance: 30%",
                   "sp-cost": "109"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 3000+(Fidus Animus Lv x 30)%(1st)\n/ 5250+(Fidus Animus Lv x 150)%(2nd)/Quiet inflicting chance: 35%",
+                  "effect": "Quiet inflicting chance: 35%",
                   "sp-cost": "111"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 4000+(Fidus Animus Lv x 40)%(1st)\n/ 7000+(Fidus Animus Lv x 200)%(2nd)/Quiet inflicting chance: 40%",
+                  "effect": "Quiet inflicting chance: 40%",
                   "sp-cost": "113"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 5000+(Fidus Animus Lv x 50)%(1st)\n/ 8750+(Fidus Animus Lv x 250)%(2nd)/Quiet inflicting chance: 45%",
+                  "effect": "Quiet inflicting chance: 45%",
                   "sp-cost": "115"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK 6000+(Fidus Animus Lv x 60)%(1st)\n/ 10500+(Fidus Animus Lv x 300)%(2nd)/Quiet inflicting chance: 50%",
+                  "effect": "Quiet inflicting chance: 50%",
                   "sp-cost": "117"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK 7000+(Fidus Animus Lv x 70)%(1st)\n/ 12250+(Fidus Animus Lv x 350)%(2nd)/Quiet inflicting chance: 55%",
+                  "effect": "Quiet inflicting chance: 55%",
                   "sp-cost": "119"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK 8000+(Fidus Animus Lv x 80)%(1st)\n/ 14000+(Fidus Animus Lv x 400)%(2nd)/Quiet inflicting chance: 60%",
+                  "effect": "Quiet inflicting chance: 60%",
                   "sp-cost": "121"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK 9000+(Fidus Animus Lv x 90)%(1st)\n/ 15750+(Fidus Animus Lv x 450)%(2nd)/Quiet inflicting chance: 65%",
+                  "effect": "Quiet inflicting chance: 65%",
                   "sp-cost": "123"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK 10000+(Fidus Animus Lv x 100)%(1st)\n/ 17500+(Fidus Animus Lv x 500)%(2nd)/Quiet inflicting chance: 70%",
+                  "effect": "Quiet inflicting chance: 70%",
                   "sp-cost": "125"
                 }
               }
@@ -19684,18 +19377,11 @@ export const cardinalData = {
               "source": "Reduces cooldown from 3 seconds to 2 seconds based on level 5."
             },
             {
-              "label": "Damage (includes Fidus Animus Level 10 Bonus)",
-              "before": "2500%Matk",
-              "after": "5000%Matk",
+              "label": "Damage",
+              "before": "2500%Matk (includes Fidus Animus level 10 bonus)/1900%Matk (secondary attack)",
+              "after": "5000%Matk (includes Fidus Animus level 10 bonus)/6500%Matk (secondary attack)",
               "scope": "Lv 10",
-              "source": "Increases damage (includes Fidus Animus level 10 bonus) from 2500%Matk to 5000%Matk based on level 10."
-            },
-            {
-              "label": "Damage Of The Secondary Attack",
-              "before": "1900%Matk",
-              "after": "6500%Matk",
-              "scope": "Lv 10",
-              "source": "Increases damage of the secondary attack from 1900%Matk to 6500%Matk based on level 10."
+              "source": "Increases damage (includes Fidus Animus level 10 bonus) from 2500%Matk to 5000%Matk based on level 10. / Increases damage of the secondary attack from 1900%Matk to 6500%Matk based on level 10."
             }
           ]
         },
@@ -19765,8 +19451,8 @@ export const cardinalData = {
             },
             {
               "label": "Damage",
-              "before": "12500%Matk",
-              "after": "17500%Matk",
+              "before": "12500%Matk (area damage)",
+              "after": "17500%Matk (area damage)",
               "scope": "Lv 10",
               "source": "Increases base damage of area damage from 12500%Matk to 17500%Matk based on level 10."
             },
@@ -19893,70 +19579,9 @@ export const cardinalData = {
           {
             "label": "Property",
             "value": "holy property magical damage"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "(Base Damage (MATK) + (Fidus Animus level x Skill Level Factor))% MATK"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
-                "id": "skill-level-factor",
-                "label": "Skill Level Factor"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-matk": "4,000",
-                  "skill-level-factor": "70"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-matk": "8,000",
-                  "skill-level-factor": "70"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-matk": "12,000",
-                  "skill-level-factor": "70"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-matk": "16,000",
-                  "skill-level-factor": "70"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-matk": "20,000",
-                  "skill-level-factor": "70"
-                }
-              }
-            ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (MATK) + (Fidus Animus level x Skill Level Factor))% MATK"
-              }
-            ]
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [
@@ -20148,10 +19773,6 @@ export const cardinalData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -20160,70 +19781,60 @@ export const cardinalData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "1650%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "3300%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "4950%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "6600%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "8250%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk": "9900%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk": "11550%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk": "13200%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk": "14850%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk": "16500%",
                   "sp-cost": "75"
                 }
               }
@@ -20280,8 +19891,8 @@ export const cardinalData = {
             {
               "label": "Damage",
               "before": "8080%/12150%(demon and undead race)Atk",
-              "after": "16580%/18150%(demon and undead race)Atk based on level 10 (Mace & Book Mastery Level 10)",
-              "scope": "",
+              "after": "16580%/18150%(demon and undead race)Atk",
+              "scope": "Lv 10 (Mace & Book Mastery Level 10)",
               "source": "Increases damage from 8080%/12150%(demon and undead race)Atk to 16580%/18150%(demon and undead race)Atk based on level 10 (Mace & Book Mastery Level 10)."
             },
             {
@@ -20950,10 +20561,6 @@ export const cardinalData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -20966,7 +20573,6 @@ export const cardinalData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "2250%",
                   "area-of-effect": "5x5",
                   "sp-cost": "150"
                 }
@@ -20974,7 +20580,6 @@ export const cardinalData = {
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "4350%",
                   "area-of-effect": "5x5",
                   "sp-cost": "150"
                 }
@@ -20982,7 +20587,6 @@ export const cardinalData = {
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "6450%",
                   "area-of-effect": "5x5",
                   "sp-cost": "150"
                 }
@@ -20990,7 +20594,6 @@ export const cardinalData = {
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "8550%",
                   "area-of-effect": "7x7",
                   "sp-cost": "150"
                 }
@@ -20998,7 +20601,6 @@ export const cardinalData = {
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "10650%",
                   "area-of-effect": "7x7",
                   "sp-cost": "150"
                 }
@@ -21006,7 +20608,6 @@ export const cardinalData = {
               {
                 "level": 6,
                 "values": {
-                  "base-damage-matk": "12750%",
                   "area-of-effect": "7x7",
                   "sp-cost": "150"
                 }
@@ -21014,7 +20615,6 @@ export const cardinalData = {
               {
                 "level": 7,
                 "values": {
-                  "base-damage-matk": "14850%",
                   "area-of-effect": "9x9",
                   "sp-cost": "150"
                 }
@@ -21022,7 +20622,6 @@ export const cardinalData = {
               {
                 "level": 8,
                 "values": {
-                  "base-damage-matk": "16950%",
                   "area-of-effect": "9x9",
                   "sp-cost": "150"
                 }
@@ -21030,7 +20629,6 @@ export const cardinalData = {
               {
                 "level": 9,
                 "values": {
-                  "base-damage-matk": "19050%",
                   "area-of-effect": "9x9",
                   "sp-cost": "150"
                 }
@@ -21038,7 +20636,6 @@ export const cardinalData = {
               {
                 "level": 10,
                 "values": {
-                  "base-damage-matk": "21150%",
                   "area-of-effect": "11x11",
                   "sp-cost": "150"
                 }
@@ -21087,8 +20684,8 @@ export const cardinalData = {
             {
               "label": "Damage",
               "before": "2030%/3050%(demon and undead race)Matk",
-              "after": "21180%/22750%(demon and undead race)Matk per hit based on level 10 (Fidus Animus level 10)",
-              "scope": "",
+              "after": "21180%/22750%(demon and undead race)Matk per hit",
+              "scope": "Lv 10 (Fidus Animus level 10)",
               "source": "Increases damage from 2030%/3050%(demon and undead race)Matk to 21180%/22750%(demon and undead race)Matk per hit based on level 10 (Fidus Animus level 10)."
             }
           ]
@@ -21114,9 +20711,9 @@ export const cardinalData = {
               "source": "Reduces AP consumption from 30 to 20."
             },
             {
-              "label": "Damage Property",
-              "before": "holy",
-              "after": "neutral",
+              "label": "Damage",
+              "before": "holy (property)",
+              "after": "neutral (property)",
               "scope": "",
               "source": "Changes damage property from holy to neutral."
             }
@@ -21284,7 +20881,7 @@ export const cardinalData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "HP/SP 20% Recovery",
+                  "effect": "HP / SP 20% Recovery",
                   "duration": "180 seconds",
                   "p-atk-and-s-matk": "+ 10",
                   "sp-cost": "60"
@@ -21293,7 +20890,7 @@ export const cardinalData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "HP/SP 40% Recovery",
+                  "effect": "HP / SP 40% Recovery",
                   "duration": "210 seconds",
                   "p-atk-and-s-matk": "+ 20",
                   "sp-cost": "60"
@@ -21302,7 +20899,7 @@ export const cardinalData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "HP/SP 60% Recovery",
+                  "effect": "HP / SP 60% Recovery",
                   "duration": "240 seconds",
                   "p-atk-and-s-matk": "+ 30",
                   "sp-cost": "60"
@@ -21311,7 +20908,7 @@ export const cardinalData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "HP/SP 80% Recovery",
+                  "effect": "HP / SP 80% Recovery",
                   "duration": "270 seconds",
                   "p-atk-and-s-matk": "+ 40",
                   "sp-cost": "60"
@@ -21320,7 +20917,7 @@ export const cardinalData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "HP/SP 100% Recovery",
+                  "effect": "HP / SP 100% Recovery",
                   "duration": "300 seconds",
                   "p-atk-and-s-matk": "+ 50",
                   "sp-cost": "60"

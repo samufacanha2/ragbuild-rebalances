@@ -1,5 +1,5 @@
 export const shadowCrossData = {
-  "generatedAt": "2026-07-09T12:09:57.886Z",
+  "generatedAt": "2026-07-09T13:20:09.293Z",
   "classId": 4254,
   "classSlug": "shadow-cross",
   "className": "Shadow Cross",
@@ -766,10 +766,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -782,7 +778,6 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "90%",
                       "area-of-effect": "5x5",
                       "sp-cost": "45"
                     }
@@ -790,7 +785,6 @@ export const shadowCrossData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "180%",
                       "area-of-effect": "5x5",
                       "sp-cost": "48"
                     }
@@ -798,7 +792,6 @@ export const shadowCrossData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "270%",
                       "area-of-effect": "5x5",
                       "sp-cost": "51"
                     }
@@ -806,7 +799,6 @@ export const shadowCrossData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "360%",
                       "area-of-effect": "5x5",
                       "sp-cost": "54"
                     }
@@ -814,7 +806,6 @@ export const shadowCrossData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "450%",
                       "area-of-effect": "5x5",
                       "sp-cost": "57"
                     }
@@ -822,7 +813,6 @@ export const shadowCrossData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk-per-hit": "540%",
                       "area-of-effect": "7x7",
                       "sp-cost": "60"
                     }
@@ -830,7 +820,6 @@ export const shadowCrossData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk-per-hit": "630%",
                       "area-of-effect": "7x7",
                       "sp-cost": "63"
                     }
@@ -838,7 +827,6 @@ export const shadowCrossData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk-per-hit": "720%",
                       "area-of-effect": "7x7",
                       "sp-cost": "66"
                     }
@@ -846,7 +834,6 @@ export const shadowCrossData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk-per-hit": "810%",
                       "area-of-effect": "7x7",
                       "sp-cost": "69"
                     }
@@ -854,7 +841,6 @@ export const shadowCrossData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk-per-hit": "900%",
                       "area-of-effect": "7x7",
                       "sp-cost": "72"
                     }
@@ -898,24 +884,10 @@ export const shadowCrossData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "3500%Atk",
-                  "after": "600%Atk",
+                  "before": "3500%Atk/5000%Atk (while under Shadow E x ceed buff)/8 split hits (logic)",
+                  "after": "600%Atk/1000%Atk (while under Shadow E x ceed buff)/3 cumulative hits (logic)",
                   "scope": "Lv 10",
-                  "source": "Changes damage from 3500%Atk to 600%Atk based on level 10."
-                },
-                {
-                  "label": "Damage While Under Shadow Exceed Buff",
-                  "before": "5000%Atk",
-                  "after": "1000%Atk",
-                  "scope": "Lv 10",
-                  "source": "Changes damage while under Shadow Exceed buff from 5000%Atk to 1000%Atk based on level 10."
-                },
-                {
-                  "label": "Damage Logic",
-                  "before": "8 split hits",
-                  "after": "3 cumulative hits",
-                  "scope": "",
-                  "source": "Changes damage logic from 8 split hits to 3 cumulative hits."
+                  "source": "Changes damage from 3500%Atk to 600%Atk based on level 10. / Changes damage while under Shadow Exceed buff from 5000%Atk to 1000%Atk based on level 10. / Changes damage logic from 8 split hits to 3 cumulative hits."
                 }
               ]
             },
@@ -1286,10 +1258,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1298,35 +1266,30 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "265%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "530%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "795%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "1060%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "1325%",
                       "sp-cost": "60"
                     }
                   }
@@ -1525,10 +1488,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -1537,36 +1496,31 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "300%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "600%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "900%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1200%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1500%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -1722,10 +1676,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1734,35 +1684,30 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "80%",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "160%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "240%",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "320%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "400%",
                       "sp-cost": "78"
                     }
                   }
@@ -2012,70 +1957,70 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Ignore Physical RES: 2%/ Effect Duration: 75 seconds",
+                      "effect": "Ignore Physical RES: 2% / Effect Duration: 75 seconds",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Ignore Physical RES: 4%/ Effect Duration: 100 seconds",
+                      "effect": "Ignore Physical RES: 4% / Effect Duration: 100 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Ignore Physical RES: 6%/ Effect Duration: 125 seconds",
+                      "effect": "Ignore Physical RES: 6% / Effect Duration: 125 seconds",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Ignore Physical RES: 8%/ Effect Duration: 150 seconds",
+                      "effect": "Ignore Physical RES: 8% / Effect Duration: 150 seconds",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Ignore Physical RES: 10%/ Effect Duration: 175 seconds",
+                      "effect": "Ignore Physical RES: 10% / Effect Duration: 175 seconds",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Ignore Physical RES: 12%/ Effect Duration: 200 seconds",
+                      "effect": "Ignore Physical RES: 12% / Effect Duration: 200 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Ignore Physical RES: 14%/ Effect Duration: 225 seconds",
+                      "effect": "Ignore Physical RES: 14% / Effect Duration: 225 seconds",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Ignore Physical RES: 16%/ Effect Duration: 250 seconds",
+                      "effect": "Ignore Physical RES: 16% / Effect Duration: 250 seconds",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Ignore Physical RES: 18%/ Effect Duration: 275 seconds",
+                      "effect": "Ignore Physical RES: 18% / Effect Duration: 275 seconds",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Ignore Physical RES: 20%/ Effect Duration: 300 seconds",
+                      "effect": "Ignore Physical RES: 20% / Effect Duration: 300 seconds",
                       "sp-cost": "60"
                     }
                   }
@@ -2261,10 +2206,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2273,35 +2214,30 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk-per-hit": "350%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk-per-hit": "700%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk-per-hit": "1050%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk-per-hit": "1400%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk-per-hit": "1750%",
                       "sp-cost": "60"
                     }
                   }
@@ -2634,7 +2570,7 @@ export const shadowCrossData = {
                     "level": 1,
                     "values": {
                       "duration": "30 seconds",
-                      "effect": "/ Consumed AP: 152",
+                      "effect": "Consumed AP: 152",
                       "sp-cost": "100"
                     }
                   },
@@ -2642,7 +2578,7 @@ export const shadowCrossData = {
                     "level": 2,
                     "values": {
                       "duration": "60 seconds",
-                      "effect": "/ Consumed AP: 149",
+                      "effect": "Consumed AP: 149",
                       "sp-cost": "100"
                     }
                   },
@@ -2650,7 +2586,7 @@ export const shadowCrossData = {
                     "level": 3,
                     "values": {
                       "duration": "90 seconds",
-                      "effect": "/ Consumed AP: 146",
+                      "effect": "Consumed AP: 146",
                       "sp-cost": "100"
                     }
                   },
@@ -2658,7 +2594,7 @@ export const shadowCrossData = {
                     "level": 4,
                     "values": {
                       "duration": "120 seconds",
-                      "effect": "/ Consumed AP: 143",
+                      "effect": "Consumed AP: 143",
                       "sp-cost": "100"
                     }
                   },
@@ -2666,7 +2602,7 @@ export const shadowCrossData = {
                     "level": 5,
                     "values": {
                       "duration": "150 seconds",
-                      "effect": "/ Consumed AP: 140",
+                      "effect": "Consumed AP: 140",
                       "sp-cost": "100"
                     }
                   },
@@ -2674,7 +2610,7 @@ export const shadowCrossData = {
                     "level": 6,
                     "values": {
                       "duration": "180 seconds",
-                      "effect": "/ Consumed AP: 137",
+                      "effect": "Consumed AP: 137",
                       "sp-cost": "100"
                     }
                   },
@@ -2682,7 +2618,7 @@ export const shadowCrossData = {
                     "level": 7,
                     "values": {
                       "duration": "210 seconds",
-                      "effect": "/ Consumed AP: 134",
+                      "effect": "Consumed AP: 134",
                       "sp-cost": "100"
                     }
                   },
@@ -2690,7 +2626,7 @@ export const shadowCrossData = {
                     "level": 8,
                     "values": {
                       "duration": "240 seconds",
-                      "effect": "/ Consumed AP: 131",
+                      "effect": "Consumed AP: 131",
                       "sp-cost": "100"
                     }
                   },
@@ -2698,7 +2634,7 @@ export const shadowCrossData = {
                     "level": 9,
                     "values": {
                       "duration": "270 seconds",
-                      "effect": "/ Consumed AP: 128",
+                      "effect": "Consumed AP: 128",
                       "sp-cost": "100"
                     }
                   },
@@ -2706,7 +2642,7 @@ export const shadowCrossData = {
                     "level": 10,
                     "values": {
                       "duration": "300 seconds",
-                      "effect": "/ Consumed AP: 125",
+                      "effect": "Consumed AP: 125",
                       "sp-cost": "100"
                     }
                   }
@@ -2924,10 +2860,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -2940,7 +2872,6 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "1300%",
                       "effect": "Effective range: : 3 x 3 cells",
                       "sp-cost": "150"
                     }
@@ -2948,7 +2879,6 @@ export const shadowCrossData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "2600%",
                       "effect": "Effective range: : 3 x 3 cells",
                       "sp-cost": "150"
                     }
@@ -2956,7 +2886,6 @@ export const shadowCrossData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "3900%",
                       "effect": "Effective range: : 3 x 3 cells",
                       "sp-cost": "150"
                     }
@@ -2964,7 +2893,6 @@ export const shadowCrossData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "5200%",
                       "effect": "Effective range: : 3 x 3 cells",
                       "sp-cost": "150"
                     }
@@ -2972,7 +2900,6 @@ export const shadowCrossData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "6500%",
                       "effect": "Effective range: : 5 x 5 cells",
                       "sp-cost": "150"
                     }
@@ -2980,7 +2907,6 @@ export const shadowCrossData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "7800%",
                       "effect": "Effective range: : 5 x 5 cells",
                       "sp-cost": "150"
                     }
@@ -2988,7 +2914,6 @@ export const shadowCrossData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "9100%",
                       "effect": "Effective range: : 5 x 5 cells",
                       "sp-cost": "150"
                     }
@@ -2996,7 +2921,6 @@ export const shadowCrossData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "10400%",
                       "effect": "Effective range: : 5 x 5 cells",
                       "sp-cost": "150"
                     }
@@ -3004,7 +2928,6 @@ export const shadowCrossData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "11700%",
                       "effect": "Effective range: : 7 x 7 cells",
                       "sp-cost": "150"
                     }
@@ -3012,7 +2935,6 @@ export const shadowCrossData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "13000%",
                       "effect": "Effective range: : 7 x 7 cells",
                       "sp-cost": "150"
                     }
@@ -3484,10 +3406,6 @@ export const shadowCrossData = {
                     "label": "Effect"
                   },
                   {
-                    "id": "damage",
-                    "label": "Damage"
-                  },
-                  {
                     "id": "speed-cells-sec",
                     "label": "Speed (cells/sec)"
                   }
@@ -3498,7 +3416,6 @@ export const shadowCrossData = {
                     "values": {
                       "effect": "Consume SP 9 per sec. / Movement\nSpeed 100% / Endure the damage once",
                       "sp-cost": "45\n9",
-                      "damage": "1",
                       "speed-cells-sec": "0"
                     }
                   },
@@ -3507,7 +3424,6 @@ export const shadowCrossData = {
                     "values": {
                       "effect": "Consume SP 8 per sec. / Movement\nSpeed 110% / Endure the damage once",
                       "sp-cost": "45\n8",
-                      "damage": "1",
                       "speed-cells-sec": "10"
                     }
                   },
@@ -3516,7 +3432,6 @@ export const shadowCrossData = {
                     "values": {
                       "effect": "Consume SP 7 per sec. / Movement\nSpeed 120% / Endure the damage twice",
                       "sp-cost": "45\n7",
-                      "damage": "2",
                       "speed-cells-sec": "20"
                     }
                   },
@@ -3525,7 +3440,6 @@ export const shadowCrossData = {
                     "values": {
                       "effect": "Consume SP 6 per sec. / Movement\nSpeed 130% / Endure the damage twice",
                       "sp-cost": "45\n6",
-                      "damage": "2",
                       "speed-cells-sec": "30"
                     }
                   },
@@ -3534,7 +3448,6 @@ export const shadowCrossData = {
                     "values": {
                       "effect": "Consume SP 5 per sec. / Movement\nSpeed 140% / Endure the damage three times",
                       "sp-cost": "45\n5",
-                      "damage": "3",
                       "speed-cells-sec": "40"
                     }
                   }
@@ -5789,7 +5702,7 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage 100%/Wound damage 1.3 x",
+                      "effect": "Damage 100% / Wound damage 1.3 x",
                       "sp-cost": "22",
                       "atk": "100",
                       "data-1": "130"
@@ -5798,7 +5711,7 @@ export const shadowCrossData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage 200%/Wound Damage 1.6 x",
+                      "effect": "Damage 200% / Wound Damage 1.6 x",
                       "sp-cost": "34",
                       "atk": "200",
                       "data-1": "160"
@@ -5807,7 +5720,7 @@ export const shadowCrossData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage 300%/Wound Damage 1.9 x",
+                      "effect": "Damage 300% / Wound Damage 1.9 x",
                       "sp-cost": "46",
                       "atk": "300",
                       "data-1": "190"
@@ -5816,7 +5729,7 @@ export const shadowCrossData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage 400%/Wound Damage 2.2 x",
+                      "effect": "Damage 400% / Wound Damage 2.2 x",
                       "sp-cost": "58",
                       "atk": "400",
                       "data-1": "220"
@@ -5825,7 +5738,7 @@ export const shadowCrossData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage 500%/Wound Damage 2.5 x",
+                      "effect": "Damage 500% / Wound Damage 2.5 x",
                       "sp-cost": "70",
                       "atk": "500",
                       "data-1": "250"
@@ -7600,80 +7513,66 @@ export const shadowCrossData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+30",
                       "sp-cost": "0"
                     }
                   }
@@ -8542,10 +8441,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -8558,49 +8453,42 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "28"
                     }
                   },
@@ -8741,45 +8629,36 @@ export const shadowCrossData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+12%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+14%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+16%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+18%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+20%",
                       "sp-cost": "0"
                     }
                   }
@@ -9162,10 +9041,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -9174,70 +9049,60 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "370%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "45"
                     }
                   }
@@ -9528,10 +9393,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -9540,35 +9401,30 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "3"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "3"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "3"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "3"
                     }
                   }
@@ -9745,10 +9601,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -9761,35 +9613,30 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "20"
                     }
                   },
@@ -10018,10 +9865,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -10030,70 +9873,60 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "150%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "450%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "750%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "1050%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "1350%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "1500%",
                       "sp-cost": "60"
                     }
                   }
@@ -10429,10 +10262,6 @@ export const shadowCrossData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -10441,70 +10270,60 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "80%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "320%",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "360%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "440%",
                       "sp-cost": "28"
                     }
                   }
@@ -10674,7 +10493,7 @@ export const shadowCrossData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -10702,7 +10521,7 @@ export const shadowCrossData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -12923,10 +12742,6 @@ export const shadowCrossData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -12939,7 +12754,6 @@ export const shadowCrossData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "90%",
                   "area-of-effect": "5x5",
                   "sp-cost": "45"
                 }
@@ -12947,7 +12761,6 @@ export const shadowCrossData = {
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "180%",
                   "area-of-effect": "5x5",
                   "sp-cost": "48"
                 }
@@ -12955,7 +12768,6 @@ export const shadowCrossData = {
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "270%",
                   "area-of-effect": "5x5",
                   "sp-cost": "51"
                 }
@@ -12963,7 +12775,6 @@ export const shadowCrossData = {
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "360%",
                   "area-of-effect": "5x5",
                   "sp-cost": "54"
                 }
@@ -12971,7 +12782,6 @@ export const shadowCrossData = {
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "450%",
                   "area-of-effect": "5x5",
                   "sp-cost": "57"
                 }
@@ -12979,7 +12789,6 @@ export const shadowCrossData = {
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk-per-hit": "540%",
                   "area-of-effect": "7x7",
                   "sp-cost": "60"
                 }
@@ -12987,7 +12796,6 @@ export const shadowCrossData = {
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk-per-hit": "630%",
                   "area-of-effect": "7x7",
                   "sp-cost": "63"
                 }
@@ -12995,7 +12803,6 @@ export const shadowCrossData = {
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk-per-hit": "720%",
                   "area-of-effect": "7x7",
                   "sp-cost": "66"
                 }
@@ -13003,7 +12810,6 @@ export const shadowCrossData = {
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk-per-hit": "810%",
                   "area-of-effect": "7x7",
                   "sp-cost": "69"
                 }
@@ -13011,7 +12817,6 @@ export const shadowCrossData = {
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk-per-hit": "900%",
                   "area-of-effect": "7x7",
                   "sp-cost": "72"
                 }
@@ -13055,24 +12860,10 @@ export const shadowCrossData = {
             },
             {
               "label": "Damage",
-              "before": "3500%Atk",
-              "after": "600%Atk",
+              "before": "3500%Atk/5000%Atk (while under Shadow E x ceed buff)/8 split hits (logic)",
+              "after": "600%Atk/1000%Atk (while under Shadow E x ceed buff)/3 cumulative hits (logic)",
               "scope": "Lv 10",
-              "source": "Changes damage from 3500%Atk to 600%Atk based on level 10."
-            },
-            {
-              "label": "Damage While Under Shadow Exceed Buff",
-              "before": "5000%Atk",
-              "after": "1000%Atk",
-              "scope": "Lv 10",
-              "source": "Changes damage while under Shadow Exceed buff from 5000%Atk to 1000%Atk based on level 10."
-            },
-            {
-              "label": "Damage Logic",
-              "before": "8 split hits",
-              "after": "3 cumulative hits",
-              "scope": "",
-              "source": "Changes damage logic from 8 split hits to 3 cumulative hits."
+              "source": "Changes damage from 3500%Atk to 600%Atk based on level 10. / Changes damage while under Shadow Exceed buff from 5000%Atk to 1000%Atk based on level 10. / Changes damage logic from 8 split hits to 3 cumulative hits."
             }
           ]
         },
@@ -13443,10 +13234,6 @@ export const shadowCrossData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -13455,35 +13242,30 @@ export const shadowCrossData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "265%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "530%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "795%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "1060%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "1325%",
                   "sp-cost": "60"
                 }
               }
@@ -13682,10 +13464,6 @@ export const shadowCrossData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -13694,36 +13472,31 @@ export const shadowCrossData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "300%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "600%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk-per-hit": "900%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "1200%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "1500%"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
@@ -13879,10 +13652,6 @@ export const shadowCrossData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -13891,35 +13660,30 @@ export const shadowCrossData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "80%",
                   "sp-cost": "46"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "160%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "240%",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "320%",
                   "sp-cost": "70"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "400%",
                   "sp-cost": "78"
                 }
               }
@@ -14169,70 +13933,70 @@ export const shadowCrossData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "Ignore Physical RES: 2%/ Effect Duration: 75 seconds",
+                  "effect": "Ignore Physical RES: 2% / Effect Duration: 75 seconds",
                   "sp-cost": "15"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Ignore Physical RES: 4%/ Effect Duration: 100 seconds",
+                  "effect": "Ignore Physical RES: 4% / Effect Duration: 100 seconds",
                   "sp-cost": "20"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Ignore Physical RES: 6%/ Effect Duration: 125 seconds",
+                  "effect": "Ignore Physical RES: 6% / Effect Duration: 125 seconds",
                   "sp-cost": "25"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Ignore Physical RES: 8%/ Effect Duration: 150 seconds",
+                  "effect": "Ignore Physical RES: 8% / Effect Duration: 150 seconds",
                   "sp-cost": "30"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Ignore Physical RES: 10%/ Effect Duration: 175 seconds",
+                  "effect": "Ignore Physical RES: 10% / Effect Duration: 175 seconds",
                   "sp-cost": "35"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "Ignore Physical RES: 12%/ Effect Duration: 200 seconds",
+                  "effect": "Ignore Physical RES: 12% / Effect Duration: 200 seconds",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "Ignore Physical RES: 14%/ Effect Duration: 225 seconds",
+                  "effect": "Ignore Physical RES: 14% / Effect Duration: 225 seconds",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "Ignore Physical RES: 16%/ Effect Duration: 250 seconds",
+                  "effect": "Ignore Physical RES: 16% / Effect Duration: 250 seconds",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "Ignore Physical RES: 18%/ Effect Duration: 275 seconds",
+                  "effect": "Ignore Physical RES: 18% / Effect Duration: 275 seconds",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "Ignore Physical RES: 20%/ Effect Duration: 300 seconds",
+                  "effect": "Ignore Physical RES: 20% / Effect Duration: 300 seconds",
                   "sp-cost": "60"
                 }
               }
@@ -14418,10 +14182,6 @@ export const shadowCrossData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -14430,35 +14190,30 @@ export const shadowCrossData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk-per-hit": "350%",
                   "sp-cost": "40"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk-per-hit": "700%",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk-per-hit": "1050%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk-per-hit": "1400%",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk-per-hit": "1750%",
                   "sp-cost": "60"
                 }
               }
@@ -14791,7 +14546,7 @@ export const shadowCrossData = {
                 "level": 1,
                 "values": {
                   "duration": "30 seconds",
-                  "effect": "/ Consumed AP: 152",
+                  "effect": "Consumed AP: 152",
                   "sp-cost": "100"
                 }
               },
@@ -14799,7 +14554,7 @@ export const shadowCrossData = {
                 "level": 2,
                 "values": {
                   "duration": "60 seconds",
-                  "effect": "/ Consumed AP: 149",
+                  "effect": "Consumed AP: 149",
                   "sp-cost": "100"
                 }
               },
@@ -14807,7 +14562,7 @@ export const shadowCrossData = {
                 "level": 3,
                 "values": {
                   "duration": "90 seconds",
-                  "effect": "/ Consumed AP: 146",
+                  "effect": "Consumed AP: 146",
                   "sp-cost": "100"
                 }
               },
@@ -14815,7 +14570,7 @@ export const shadowCrossData = {
                 "level": 4,
                 "values": {
                   "duration": "120 seconds",
-                  "effect": "/ Consumed AP: 143",
+                  "effect": "Consumed AP: 143",
                   "sp-cost": "100"
                 }
               },
@@ -14823,7 +14578,7 @@ export const shadowCrossData = {
                 "level": 5,
                 "values": {
                   "duration": "150 seconds",
-                  "effect": "/ Consumed AP: 140",
+                  "effect": "Consumed AP: 140",
                   "sp-cost": "100"
                 }
               },
@@ -14831,7 +14586,7 @@ export const shadowCrossData = {
                 "level": 6,
                 "values": {
                   "duration": "180 seconds",
-                  "effect": "/ Consumed AP: 137",
+                  "effect": "Consumed AP: 137",
                   "sp-cost": "100"
                 }
               },
@@ -14839,7 +14594,7 @@ export const shadowCrossData = {
                 "level": 7,
                 "values": {
                   "duration": "210 seconds",
-                  "effect": "/ Consumed AP: 134",
+                  "effect": "Consumed AP: 134",
                   "sp-cost": "100"
                 }
               },
@@ -14847,7 +14602,7 @@ export const shadowCrossData = {
                 "level": 8,
                 "values": {
                   "duration": "240 seconds",
-                  "effect": "/ Consumed AP: 131",
+                  "effect": "Consumed AP: 131",
                   "sp-cost": "100"
                 }
               },
@@ -14855,7 +14610,7 @@ export const shadowCrossData = {
                 "level": 9,
                 "values": {
                   "duration": "270 seconds",
-                  "effect": "/ Consumed AP: 128",
+                  "effect": "Consumed AP: 128",
                   "sp-cost": "100"
                 }
               },
@@ -14863,7 +14618,7 @@ export const shadowCrossData = {
                 "level": 10,
                 "values": {
                   "duration": "300 seconds",
-                  "effect": "/ Consumed AP: 125",
+                  "effect": "Consumed AP: 125",
                   "sp-cost": "100"
                 }
               }
@@ -15081,10 +14836,6 @@ export const shadowCrossData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -15097,7 +14848,6 @@ export const shadowCrossData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "1300%",
                   "effect": "Effective range: : 3 x 3 cells",
                   "sp-cost": "150"
                 }
@@ -15105,7 +14855,6 @@ export const shadowCrossData = {
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "2600%",
                   "effect": "Effective range: : 3 x 3 cells",
                   "sp-cost": "150"
                 }
@@ -15113,7 +14862,6 @@ export const shadowCrossData = {
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "3900%",
                   "effect": "Effective range: : 3 x 3 cells",
                   "sp-cost": "150"
                 }
@@ -15121,7 +14869,6 @@ export const shadowCrossData = {
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "5200%",
                   "effect": "Effective range: : 3 x 3 cells",
                   "sp-cost": "150"
                 }
@@ -15129,7 +14876,6 @@ export const shadowCrossData = {
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "6500%",
                   "effect": "Effective range: : 5 x 5 cells",
                   "sp-cost": "150"
                 }
@@ -15137,7 +14883,6 @@ export const shadowCrossData = {
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk": "7800%",
                   "effect": "Effective range: : 5 x 5 cells",
                   "sp-cost": "150"
                 }
@@ -15145,7 +14890,6 @@ export const shadowCrossData = {
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk": "9100%",
                   "effect": "Effective range: : 5 x 5 cells",
                   "sp-cost": "150"
                 }
@@ -15153,7 +14897,6 @@ export const shadowCrossData = {
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk": "10400%",
                   "effect": "Effective range: : 5 x 5 cells",
                   "sp-cost": "150"
                 }
@@ -15161,7 +14904,6 @@ export const shadowCrossData = {
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk": "11700%",
                   "effect": "Effective range: : 7 x 7 cells",
                   "sp-cost": "150"
                 }
@@ -15169,7 +14911,6 @@ export const shadowCrossData = {
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk": "13000%",
                   "effect": "Effective range: : 7 x 7 cells",
                   "sp-cost": "150"
                 }

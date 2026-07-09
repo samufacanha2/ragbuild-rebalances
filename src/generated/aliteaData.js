@@ -1,5 +1,5 @@
 export const aliteaData = {
-  "generatedAt": "2026-07-09T03:43:05.507Z",
+  "generatedAt": "2026-07-09T13:23:40.352Z",
   "classId": 4355,
   "classSlug": "alitea",
   "className": "Alitea",
@@ -276,62 +276,37 @@ export const aliteaData = {
                   {
                     "id": "duration",
                     "label": "Duration"
-                  },
-                  {
-                    "id": "increases-long-ranged-physical-damage-by-12-cri",
-                    "label": ": Increases Long Ranged Physical Damage By 12% / Cri"
-                  },
-                  {
-                    "id": "increases-long-ranged-physical-damage-by-18-cri",
-                    "label": ": Increases Long Ranged Physical Damage By 18% / Cri"
-                  },
-                  {
-                    "id": "increases-long-ranged-physical-damage-by-24-cri",
-                    "label": ": Increases Long Ranged Physical Damage By 24% / Cri"
-                  },
-                  {
-                    "id": "increases-long-ranged-physical-damage-by-30-cri",
-                    "label": ": Increases Long Ranged Physical Damage By 30% / Cri"
-                  },
-                  {
-                    "id": "increases-long-ranged-physical-damage-by-6-cri",
-                    "label": ": Increases Long Ranged Physical Damage By 6% / Cri"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration": "60 seconds",
-                      "increases-long-ranged-physical-damage-by-6-cri": "+ 3"
+                      "duration": "60 seconds"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "duration": "120 seconds",
-                      "increases-long-ranged-physical-damage-by-12-cri": "+ 6"
+                      "duration": "120 seconds"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "duration": "180 seconds",
-                      "increases-long-ranged-physical-damage-by-18-cri": "+ 9"
+                      "duration": "180 seconds"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "duration": "240 seconds",
-                      "increases-long-ranged-physical-damage-by-24-cri": "+ 12"
+                      "duration": "240 seconds"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "duration": "300 seconds",
-                      "increases-long-ranged-physical-damage-by-30-cri": "+ 15"
+                      "duration": "300 seconds"
                     }
                   }
                 ],
@@ -594,10 +569,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   },
@@ -610,80 +581,70 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-matk": "15000%"
+                      "area-of-effect": "9x9"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
                       "area-of-effect": "3x3",
-                      "duration": "10.5 seconds",
-                      "base-damage-matk": "7400%"
+                      "duration": "10.5 seconds"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
                       "area-of-effect": "3x3",
-                      "duration": "11 seconds",
-                      "base-damage-matk": "7700%"
+                      "duration": "11 seconds"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
                       "area-of-effect": "3x3",
-                      "duration": "11.5 seconds",
-                      "base-damage-matk": "8000%"
+                      "duration": "11.5 seconds"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
                       "area-of-effect": "3x3",
-                      "duration": "12 seconds",
-                      "base-damage-matk": "8300%"
+                      "duration": "12 seconds"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
                       "area-of-effect": "3x3",
-                      "duration": "12.5 seconds",
-                      "base-damage-matk": "8600%"
+                      "duration": "12.5 seconds"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
                       "area-of-effect": "5x5",
-                      "duration": "13 seconds",
-                      "base-damage-matk": "8900%"
+                      "duration": "13 seconds"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
                       "area-of-effect": "5x5",
-                      "duration": "13.5 seconds",
-                      "base-damage-matk": "9200%"
+                      "duration": "13.5 seconds"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
                       "area-of-effect": "5x5",
-                      "duration": "14 seconds",
-                      "base-damage-matk": "9500%"
+                      "duration": "14 seconds"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
                       "area-of-effect": "5x5",
-                      "duration": "15 seconds",
-                      "base-damage-matk": "9800%"
+                      "duration": "15 seconds"
                     }
                   }
                 ],
@@ -791,10 +752,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -803,36 +760,31 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "8000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "8400%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "8800%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "9200%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "9600%"
+                      "area-of-effect": "5x5"
                     }
                   }
                 ],
@@ -965,10 +917,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -977,71 +925,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "18000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "18500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "19000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "19500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "20000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "20500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "21000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "21500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "22000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "22500%"
+                      "area-of-effect": "5x5"
                     }
                   }
                 ],
@@ -1134,10 +1072,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -1146,36 +1080,31 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "1100%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "2050%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "3000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "3950%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "4900%"
+                      "area-of-effect": "5x5"
                     }
                   }
                 ],
@@ -1303,80 +1232,7 @@ export const aliteaData = {
                 "value": "2"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "2450%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "4900%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "7350%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "9800%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "12250%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-atk": "14700%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-atk": "17150%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-atk": "19600%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-atk": "22050%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-atk": "24500%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -1623,80 +1479,7 @@ export const aliteaData = {
                 "value": "2"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-matk-per-hit": "5500%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-matk-per-hit": "5800%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-matk-per-hit": "6100%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-matk-per-hit": "6400%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-matk-per-hit": "6700%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-matk-per-hit": "7000%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-matk-per-hit": "7300%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-matk-per-hit": "7600%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-matk-per-hit": "7900%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-matk-per-hit": "8200%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -1823,10 +1606,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -1835,71 +1614,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x9",
-                      "base-damage-matk-per-hit": "7050%"
+                      "area-of-effect": "5x9"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x9",
-                      "base-damage-matk-per-hit": "7750%"
+                      "area-of-effect": "5x9"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x9",
-                      "base-damage-matk-per-hit": "8450%"
+                      "area-of-effect": "5x9"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x9",
-                      "base-damage-matk-per-hit": "9150%"
+                      "area-of-effect": "5x9"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x9",
-                      "base-damage-matk-per-hit": "9850%"
+                      "area-of-effect": "5x9"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x9",
-                      "base-damage-matk-per-hit": "10550%"
+                      "area-of-effect": "5x9"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x9",
-                      "base-damage-matk-per-hit": "11250%"
+                      "area-of-effect": "5x9"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "5x9",
-                      "base-damage-matk-per-hit": "11950%"
+                      "area-of-effect": "5x9"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "5x9",
-                      "base-damage-matk-per-hit": "12650%"
+                      "area-of-effect": "5x9"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "5x9",
-                      "base-damage-matk-per-hit": "13350%"
+                      "area-of-effect": "5x9"
                     }
                   }
                 ],
@@ -2012,10 +1781,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -2024,71 +1789,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x12",
-                      "base-damage-matk": "12000%"
+                      "area-of-effect": "3x12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x12",
-                      "base-damage-matk": "12300%"
+                      "area-of-effect": "3x12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "3x12",
-                      "base-damage-matk": "12600%"
+                      "area-of-effect": "3x12"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "3x12",
-                      "base-damage-matk": "12900%"
+                      "area-of-effect": "3x12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "3x12",
-                      "base-damage-matk": "13200%"
+                      "area-of-effect": "3x12"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "3x12",
-                      "base-damage-matk": "13500%"
+                      "area-of-effect": "3x12"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "3x12",
-                      "base-damage-matk": "13800%"
+                      "area-of-effect": "3x12"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "3x12",
-                      "base-damage-matk": "14100%"
+                      "area-of-effect": "3x12"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "3x12",
-                      "base-damage-matk": "14400%"
+                      "area-of-effect": "3x12"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "3x12",
-                      "base-damage-matk": "14700%"
+                      "area-of-effect": "3x12"
                     }
                   }
                 ],
@@ -2181,10 +1936,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -2193,36 +1944,31 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "1600%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "2750%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "3900%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "5050%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "6200%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -2350,80 +2096,7 @@ export const aliteaData = {
                 "value": "3"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "2050%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "4100%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "6150%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "8200%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "10250%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-atk": "12300%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-atk": "14350%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-atk": "16400%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-atk": "18450%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-atk": "20500%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -2650,10 +2323,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -2662,36 +2331,31 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "6400%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "6900%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "7400%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "7900%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "8400%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -2791,50 +2455,7 @@ export const aliteaData = {
                 "value": "20~15"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-matk": "7800%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-matk": "8200%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-matk": "8600%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-matk": "9000%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-matk": "9400%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -2947,10 +2568,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -2959,36 +2576,31 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-matk": "10400%"
+                      "area-of-effect": "9x9"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-matk": "11200%"
+                      "area-of-effect": "9x9"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-matk": "12000%"
+                      "area-of-effect": "9x9"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-matk": "12800%"
+                      "area-of-effect": "9x9"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-matk": "13600%"
+                      "area-of-effect": "9x9"
                     }
                   }
                 ],
@@ -3081,10 +2693,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -3093,36 +2701,31 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "2200%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "3600%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "5000%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "6400%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "7800%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -3230,80 +2833,7 @@ export const aliteaData = {
                 "value": "20"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "1250%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "2500%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "3750%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "5000%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "6250%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-atk-per-hit": "7500%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-atk-per-hit": "8750%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-atk-per-hit": "10000%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-atk-per-hit": "11250%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-atk-per-hit": "12500%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -3416,10 +2946,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -3428,36 +2954,31 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-matk": "8400%"
+                      "area-of-effect": "9x9"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-matk": "9900%"
+                      "area-of-effect": "9x9"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-matk": "11400%"
+                      "area-of-effect": "9x9"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "11x11",
-                      "base-damage-matk": "12900%"
+                      "area-of-effect": "11x11"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "11x11",
-                      "base-damage-matk": "14400%"
+                      "area-of-effect": "11x11"
                     }
                   }
                 ],
@@ -3545,50 +3066,7 @@ export const aliteaData = {
                 "value": "1"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "1000%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "1250%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "1500%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "1750%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "2000%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -4076,10 +3554,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -4088,36 +3562,31 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "13x13",
-                      "base-damage-matk": "5500%"
+                      "area-of-effect": "13x13"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "13x13",
-                      "base-damage-matk": "6000%"
+                      "area-of-effect": "13x13"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "13x13",
-                      "base-damage-matk": "6500%"
+                      "area-of-effect": "13x13"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "13x13",
-                      "base-damage-matk": "7000%"
+                      "area-of-effect": "13x13"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "13x13",
-                      "base-damage-matk": "7500%"
+                      "area-of-effect": "13x13"
                     }
                   }
                 ],
@@ -4225,80 +3694,7 @@ export const aliteaData = {
                 "value": "15"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "7500%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "9000%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "10500%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "12000%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "13500%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-atk": "15000%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-atk": "16500%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-atk": "18000%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-atk": "19500%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-atk": "21000%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -4405,10 +3801,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -4417,71 +3809,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "1200%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "1280%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "1360%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "1440%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1520%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1600%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1680%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1760%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1840%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1920%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -4603,10 +3985,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -4615,71 +3993,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x7",
-                      "base-damage-atk-per-hit": "1000%"
+                      "area-of-effect": "3x7"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x7",
-                      "base-damage-atk-per-hit": "1080%"
+                      "area-of-effect": "3x7"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "3x7",
-                      "base-damage-atk-per-hit": "1160%"
+                      "area-of-effect": "3x7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "3x7",
-                      "base-damage-atk-per-hit": "1240%"
+                      "area-of-effect": "3x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "3x7",
-                      "base-damage-atk-per-hit": "1320%"
+                      "area-of-effect": "3x7"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "3x7",
-                      "base-damage-atk-per-hit": "1400%"
+                      "area-of-effect": "3x7"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "3x7",
-                      "base-damage-atk-per-hit": "1480%"
+                      "area-of-effect": "3x7"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "3x7",
-                      "base-damage-atk-per-hit": "1560%"
+                      "area-of-effect": "3x7"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "3x7",
-                      "base-damage-atk-per-hit": "1640%"
+                      "area-of-effect": "3x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "3x7",
-                      "base-damage-atk-per-hit": "1720%"
+                      "area-of-effect": "3x7"
                     }
                   }
                 ],
@@ -4961,10 +4329,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -4973,71 +4337,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "720%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "840%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "960%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "1080%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "1200%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "1320%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "1440%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1560%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1680%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1800%"
+                      "area-of-effect": "5x5"
                     }
                   }
                 ],
@@ -5159,10 +4513,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -5171,71 +4521,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "840%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "910%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "980%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1050%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1120%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1190%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1260%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1330%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1410%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1470%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -5344,10 +4684,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -5356,36 +4692,31 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "11x11",
-                      "base-damage-matk-per-hit": "6000%"
+                      "area-of-effect": "11x11"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "11x11",
-                      "base-damage-matk-per-hit": "8000%"
+                      "area-of-effect": "11x11"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "11x11",
-                      "base-damage-matk-per-hit": "10000%"
+                      "area-of-effect": "11x11"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "11x11",
-                      "base-damage-matk-per-hit": "12000%"
+                      "area-of-effect": "11x11"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "11x11",
-                      "base-damage-matk-per-hit": "14000%"
+                      "area-of-effect": "11x11"
                     }
                   }
                 ],
@@ -5474,10 +4805,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -5486,36 +4813,31 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "1150%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "1200%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "1250%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1300%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1350%"
+                      "area-of-effect": "5x5"
                     }
                   }
                 ],
@@ -5644,10 +4966,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -5656,71 +4974,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "640%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "680%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "720%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "760%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "800%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "840%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "880%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-atk-per-hit": "920%"
+                      "area-of-effect": "9x9"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-atk-per-hit": "960%"
+                      "area-of-effect": "9x9"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-atk-per-hit": "1000%"
+                      "area-of-effect": "9x9"
                     }
                   }
                 ],
@@ -6002,10 +5310,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -6014,71 +5318,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1140%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1210%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1280%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1350%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1420%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1490%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1560%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1630%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1700%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1770%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -6213,10 +5507,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -6225,71 +5515,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1400%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1470%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1540%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1610%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1680%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1750%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1820%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1890%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1960%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "2030%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -6413,80 +5693,7 @@ export const aliteaData = {
                 "value": "Single target"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-matk": "1510%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-matk": "1570%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-matk": "1630%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-matk": "1690%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-matk": "1750%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-matk": "1810%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-matk": "1870%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-matk": "1930%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-matk": "1990%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-matk": "2050%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -6609,10 +5816,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -6621,71 +5824,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "880%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "950%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "1020%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "1090%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1160%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1230%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1300%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1370%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1440%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1510%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -6780,10 +5973,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -6792,36 +5981,31 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1100%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1190%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "1280%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1370%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1460%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -6956,10 +6140,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -6968,71 +6148,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "5200%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "5400%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "5600%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "5800%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "6000%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-matk-per-hit": "6200%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "6400%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "6600%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "6800%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "7000%"
+                      "area-of-effect": "5x5"
                     }
                   }
                 ],
@@ -7161,10 +6331,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -7173,71 +6339,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1000%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1070%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1140%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1210%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1280%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1350%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk-per-hit": "1420%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1490%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1560%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "1630%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -7347,80 +6503,7 @@ export const aliteaData = {
                 "value": "Instant Casting"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "740%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "820%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "900%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "980%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "1060%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-atk": "1140%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-atk": "1220%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-atk": "1300%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-atk": "1380%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-atk": "1460%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -7516,10 +6599,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -7528,71 +6607,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "600%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "680%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "760%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "840%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "920%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1000%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1080%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1160%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1240%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "1320%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -8065,62 +7134,37 @@ export const aliteaData = {
                   {
                     "id": "duration",
                     "label": "Duration"
-                  },
-                  {
-                    "id": "reduces-physical-magical-damage-taken-from-enemies-by-12-movement-speed",
-                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 12% / Movement Speed"
-                  },
-                  {
-                    "id": "reduces-physical-magical-damage-taken-from-enemies-by-15-movement-speed",
-                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 15% / Movement Speed"
-                  },
-                  {
-                    "id": "reduces-physical-magical-damage-taken-from-enemies-by-5-movement-speed",
-                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 5% / Movement Speed"
-                  },
-                  {
-                    "id": "reduces-physical-magical-damage-taken-from-enemies-by-7-movement-speed",
-                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 7% / Movement Speed"
-                  },
-                  {
-                    "id": "reduces-physical-magical-damage-taken-from-enemies-by-9-movement-speed",
-                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 9% / Movement Speed"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration": "1.5 second",
-                      "reduces-physical-magical-damage-taken-from-enemies-by-5-movement-speed": "+ 50%"
+                      "duration": "1.5 second"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "duration": "2 seconds",
-                      "reduces-physical-magical-damage-taken-from-enemies-by-7-movement-speed": "+ 75%"
+                      "duration": "2 seconds"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "duration": "2.5 seconds",
-                      "reduces-physical-magical-damage-taken-from-enemies-by-9-movement-speed": "+ 100%"
+                      "duration": "2.5 seconds"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "duration": "3 seconds",
-                      "reduces-physical-magical-damage-taken-from-enemies-by-12-movement-speed": "+ 125%"
+                      "duration": "3 seconds"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "duration": "4 seconds",
-                      "reduces-physical-magical-damage-taken-from-enemies-by-15-movement-speed": "+ 150%"
+                      "duration": "4 seconds"
                     }
                   }
                 ],
@@ -9161,80 +8205,7 @@ export const aliteaData = {
                 "value": "Single target"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-matk-per-hit": "100%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-matk-per-hit": "200%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-matk-per-hit": "300%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-matk-per-hit": "400%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-matk-per-hit": "500%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-matk-per-hit": "600%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-matk-per-hit": "700%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-matk-per-hit": "800%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-matk-per-hit": "900%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-matk-per-hit": "1000%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -9345,80 +8316,7 @@ export const aliteaData = {
                 "value": "Single target"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-matk-per-hit": "50%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-matk-per-hit": "100%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-matk-per-hit": "150%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-matk-per-hit": "200%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-matk-per-hit": "250%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-matk-per-hit": "300%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-matk-per-hit": "350%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-matk-per-hit": "400%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-matk-per-hit": "450%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-matk-per-hit": "500%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -9529,80 +8427,7 @@ export const aliteaData = {
                 "value": "Single target"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-matk": "100%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-matk": "200%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-matk": "300%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-matk": "400%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-matk": "500%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-matk": "600%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-matk": "700%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-matk": "800%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-matk": "900%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-matk": "1000%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -9967,10 +8792,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -9979,71 +8800,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "50%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "100%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "150%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "200%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "250%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "300%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "350%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "400%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "450%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "500%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -10172,10 +8983,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk-per-hit",
-                    "label": "Base Damage (MATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -10184,71 +8991,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "50%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "100%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "150%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "200%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "250%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "300%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "350%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "400%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "450%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk-per-hit": "500%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -10377,10 +9174,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -10389,71 +9182,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "100%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "200%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "300%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "400%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "600%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "700%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "800%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "900%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "1000%"
+                      "area-of-effect": "5x5"
                     }
                   }
                 ],
@@ -10562,10 +9345,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -10574,71 +9353,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "80%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "160%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "240%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "320%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "400%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "480%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "560%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "640%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "720%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "800%"
+                      "area-of-effect": "5x5"
                     }
                   }
                 ],
@@ -10742,80 +9511,7 @@ export const aliteaData = {
                 "value": "Single target"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "20%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "40%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "60%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "80%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "100%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-atk-per-hit": "120%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-atk-per-hit": "140%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-atk-per-hit": "160%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-atk-per-hit": "180%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-atk-per-hit": "200%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -11273,80 +9969,7 @@ export const aliteaData = {
                 "value": "Single target"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "60%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "120%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "180%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "240%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "300%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-atk-per-hit": "360%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-atk-per-hit": "420%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-atk-per-hit": "480%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-atk-per-hit": "560%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-atk-per-hit": "600%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -11449,10 +10072,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -11461,71 +10080,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "20%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "40%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk-per-hit": "60%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "80%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "100%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "120%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk-per-hit": "140%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "160%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "180%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk-per-hit": "200%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -11629,80 +10238,7 @@ export const aliteaData = {
                 "value": "Single target"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "80%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "160%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "240%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "320%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "400%"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-atk": "480%"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-atk": "560%"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-atk": "640%"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-atk": "720%"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-atk": "800%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -11805,10 +10341,6 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
                   }
@@ -11817,71 +10349,61 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk": "100%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk": "200%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk": "300%"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "400%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "500%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "600%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "700%"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "800%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "900%"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "1000%"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
@@ -12097,62 +10619,37 @@ export const aliteaData = {
               {
                 "id": "duration",
                 "label": "Duration"
-              },
-              {
-                "id": "increases-long-ranged-physical-damage-by-12-cri",
-                "label": ": Increases Long Ranged Physical Damage By 12% / Cri"
-              },
-              {
-                "id": "increases-long-ranged-physical-damage-by-18-cri",
-                "label": ": Increases Long Ranged Physical Damage By 18% / Cri"
-              },
-              {
-                "id": "increases-long-ranged-physical-damage-by-24-cri",
-                "label": ": Increases Long Ranged Physical Damage By 24% / Cri"
-              },
-              {
-                "id": "increases-long-ranged-physical-damage-by-30-cri",
-                "label": ": Increases Long Ranged Physical Damage By 30% / Cri"
-              },
-              {
-                "id": "increases-long-ranged-physical-damage-by-6-cri",
-                "label": ": Increases Long Ranged Physical Damage By 6% / Cri"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "duration": "60 seconds",
-                  "increases-long-ranged-physical-damage-by-6-cri": "+ 3"
+                  "duration": "60 seconds"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "duration": "120 seconds",
-                  "increases-long-ranged-physical-damage-by-12-cri": "+ 6"
+                  "duration": "120 seconds"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "duration": "180 seconds",
-                  "increases-long-ranged-physical-damage-by-18-cri": "+ 9"
+                  "duration": "180 seconds"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "duration": "240 seconds",
-                  "increases-long-ranged-physical-damage-by-24-cri": "+ 12"
+                  "duration": "240 seconds"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "duration": "300 seconds",
-                  "increases-long-ranged-physical-damage-by-30-cri": "+ 15"
+                  "duration": "300 seconds"
                 }
               }
             ],
@@ -12415,10 +10912,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               },
@@ -12431,80 +10924,70 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-matk": "15000%"
+                  "area-of-effect": "9x9"
                 }
               },
               {
                 "level": 2,
                 "values": {
                   "area-of-effect": "3x3",
-                  "duration": "10.5 seconds",
-                  "base-damage-matk": "7400%"
+                  "duration": "10.5 seconds"
                 }
               },
               {
                 "level": 3,
                 "values": {
                   "area-of-effect": "3x3",
-                  "duration": "11 seconds",
-                  "base-damage-matk": "7700%"
+                  "duration": "11 seconds"
                 }
               },
               {
                 "level": 4,
                 "values": {
                   "area-of-effect": "3x3",
-                  "duration": "11.5 seconds",
-                  "base-damage-matk": "8000%"
+                  "duration": "11.5 seconds"
                 }
               },
               {
                 "level": 5,
                 "values": {
                   "area-of-effect": "3x3",
-                  "duration": "12 seconds",
-                  "base-damage-matk": "8300%"
+                  "duration": "12 seconds"
                 }
               },
               {
                 "level": 6,
                 "values": {
                   "area-of-effect": "3x3",
-                  "duration": "12.5 seconds",
-                  "base-damage-matk": "8600%"
+                  "duration": "12.5 seconds"
                 }
               },
               {
                 "level": 7,
                 "values": {
                   "area-of-effect": "5x5",
-                  "duration": "13 seconds",
-                  "base-damage-matk": "8900%"
+                  "duration": "13 seconds"
                 }
               },
               {
                 "level": 8,
                 "values": {
                   "area-of-effect": "5x5",
-                  "duration": "13.5 seconds",
-                  "base-damage-matk": "9200%"
+                  "duration": "13.5 seconds"
                 }
               },
               {
                 "level": 9,
                 "values": {
                   "area-of-effect": "5x5",
-                  "duration": "14 seconds",
-                  "base-damage-matk": "9500%"
+                  "duration": "14 seconds"
                 }
               },
               {
                 "level": 10,
                 "values": {
                   "area-of-effect": "5x5",
-                  "duration": "15 seconds",
-                  "base-damage-matk": "9800%"
+                  "duration": "15 seconds"
                 }
               }
             ],
@@ -12612,10 +11095,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk-per-hit",
-                "label": "Base Damage (MATK per Hit)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -12624,36 +11103,31 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk-per-hit": "8000%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk-per-hit": "8400%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk-per-hit": "8800%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk-per-hit": "9200%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk-per-hit": "9600%"
+                  "area-of-effect": "5x5"
                 }
               }
             ],
@@ -12786,10 +11260,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -12798,71 +11268,61 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "18000%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "18500%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "19000%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "19500%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "20000%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "20500%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "21000%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "21500%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "22000%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "22500%"
+                  "area-of-effect": "5x5"
                 }
               }
             ],
@@ -12955,10 +11415,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -12967,36 +11423,31 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "1100%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "2050%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "3000%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "3950%"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "4900%"
+                  "area-of-effect": "5x5"
                 }
               }
             ],
@@ -13124,80 +11575,7 @@ export const aliteaData = {
             "value": "2"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk": "2450%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk": "4900%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk": "7350%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk": "9800%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk": "12250%"
-                }
-              },
-              {
-                "level": 6,
-                "values": {
-                  "base-damage-atk": "14700%"
-                }
-              },
-              {
-                "level": 7,
-                "values": {
-                  "base-damage-atk": "17150%"
-                }
-              },
-              {
-                "level": 8,
-                "values": {
-                  "base-damage-atk": "19600%"
-                }
-              },
-              {
-                "level": 9,
-                "values": {
-                  "base-damage-atk": "22050%"
-                }
-              },
-              {
-                "level": 10,
-                "values": {
-                  "base-damage-atk": "24500%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [],
@@ -13444,80 +11822,7 @@ export const aliteaData = {
             "value": "2"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-matk-per-hit",
-                "label": "Base Damage (MATK per Hit)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-matk-per-hit": "5500%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-matk-per-hit": "5800%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-matk-per-hit": "6100%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-matk-per-hit": "6400%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-matk-per-hit": "6700%"
-                }
-              },
-              {
-                "level": 6,
-                "values": {
-                  "base-damage-matk-per-hit": "7000%"
-                }
-              },
-              {
-                "level": 7,
-                "values": {
-                  "base-damage-matk-per-hit": "7300%"
-                }
-              },
-              {
-                "level": 8,
-                "values": {
-                  "base-damage-matk-per-hit": "7600%"
-                }
-              },
-              {
-                "level": 9,
-                "values": {
-                  "base-damage-matk-per-hit": "7900%"
-                }
-              },
-              {
-                "level": 10,
-                "values": {
-                  "base-damage-matk-per-hit": "8200%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [],
@@ -13644,10 +11949,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk-per-hit",
-                "label": "Base Damage (MATK per Hit)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -13656,71 +11957,61 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x9",
-                  "base-damage-matk-per-hit": "7050%"
+                  "area-of-effect": "5x9"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x9",
-                  "base-damage-matk-per-hit": "7750%"
+                  "area-of-effect": "5x9"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "5x9",
-                  "base-damage-matk-per-hit": "8450%"
+                  "area-of-effect": "5x9"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "5x9",
-                  "base-damage-matk-per-hit": "9150%"
+                  "area-of-effect": "5x9"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "5x9",
-                  "base-damage-matk-per-hit": "9850%"
+                  "area-of-effect": "5x9"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "area-of-effect": "5x9",
-                  "base-damage-matk-per-hit": "10550%"
+                  "area-of-effect": "5x9"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "area-of-effect": "5x9",
-                  "base-damage-matk-per-hit": "11250%"
+                  "area-of-effect": "5x9"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "area-of-effect": "5x9",
-                  "base-damage-matk-per-hit": "11950%"
+                  "area-of-effect": "5x9"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "area-of-effect": "5x9",
-                  "base-damage-matk-per-hit": "12650%"
+                  "area-of-effect": "5x9"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "area-of-effect": "5x9",
-                  "base-damage-matk-per-hit": "13350%"
+                  "area-of-effect": "5x9"
                 }
               }
             ],
@@ -13833,10 +12124,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -13845,71 +12132,61 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "3x12",
-                  "base-damage-matk": "12000%"
+                  "area-of-effect": "3x12"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "3x12",
-                  "base-damage-matk": "12300%"
+                  "area-of-effect": "3x12"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "3x12",
-                  "base-damage-matk": "12600%"
+                  "area-of-effect": "3x12"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "3x12",
-                  "base-damage-matk": "12900%"
+                  "area-of-effect": "3x12"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "3x12",
-                  "base-damage-matk": "13200%"
+                  "area-of-effect": "3x12"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "area-of-effect": "3x12",
-                  "base-damage-matk": "13500%"
+                  "area-of-effect": "3x12"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "area-of-effect": "3x12",
-                  "base-damage-matk": "13800%"
+                  "area-of-effect": "3x12"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "area-of-effect": "3x12",
-                  "base-damage-matk": "14100%"
+                  "area-of-effect": "3x12"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "area-of-effect": "3x12",
-                  "base-damage-matk": "14400%"
+                  "area-of-effect": "3x12"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "area-of-effect": "3x12",
-                  "base-damage-matk": "14700%"
+                  "area-of-effect": "3x12"
                 }
               }
             ],
@@ -14002,10 +12279,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -14014,36 +12287,31 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk": "1600%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk": "2750%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk": "3900%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk": "5050%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk": "6200%"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
@@ -14171,80 +12439,7 @@ export const aliteaData = {
             "value": "3"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk": "2050%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk": "4100%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk": "6150%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk": "8200%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk": "10250%"
-                }
-              },
-              {
-                "level": 6,
-                "values": {
-                  "base-damage-atk": "12300%"
-                }
-              },
-              {
-                "level": 7,
-                "values": {
-                  "base-damage-atk": "14350%"
-                }
-              },
-              {
-                "level": 8,
-                "values": {
-                  "base-damage-atk": "16400%"
-                }
-              },
-              {
-                "level": 9,
-                "values": {
-                  "base-damage-atk": "18450%"
-                }
-              },
-              {
-                "level": 10,
-                "values": {
-                  "base-damage-atk": "20500%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [],
@@ -14471,10 +12666,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk-per-hit",
-                "label": "Base Damage (MATK per Hit)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -14483,36 +12674,31 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk-per-hit": "6400%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk-per-hit": "6900%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk-per-hit": "7400%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk-per-hit": "7900%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk-per-hit": "8400%"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
@@ -14612,50 +12798,7 @@ export const aliteaData = {
             "value": "20~15"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-matk": "7800%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-matk": "8200%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-matk": "8600%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-matk": "9000%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-matk": "9400%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [],
@@ -14768,10 +12911,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -14780,36 +12919,31 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-matk": "10400%"
+                  "area-of-effect": "9x9"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-matk": "11200%"
+                  "area-of-effect": "9x9"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-matk": "12000%"
+                  "area-of-effect": "9x9"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-matk": "12800%"
+                  "area-of-effect": "9x9"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-matk": "13600%"
+                  "area-of-effect": "9x9"
                 }
               }
             ],
@@ -14902,10 +13036,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -14914,36 +13044,31 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "2200%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "3600%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "5000%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "6400%"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk-per-hit": "7800%"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
@@ -15051,80 +13176,7 @@ export const aliteaData = {
             "value": "20"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk-per-hit": "1250%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk-per-hit": "2500%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk-per-hit": "3750%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk-per-hit": "5000%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk-per-hit": "6250%"
-                }
-              },
-              {
-                "level": 6,
-                "values": {
-                  "base-damage-atk-per-hit": "7500%"
-                }
-              },
-              {
-                "level": 7,
-                "values": {
-                  "base-damage-atk-per-hit": "8750%"
-                }
-              },
-              {
-                "level": 8,
-                "values": {
-                  "base-damage-atk-per-hit": "10000%"
-                }
-              },
-              {
-                "level": 9,
-                "values": {
-                  "base-damage-atk-per-hit": "11250%"
-                }
-              },
-              {
-                "level": 10,
-                "values": {
-                  "base-damage-atk-per-hit": "12500%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [],
@@ -15237,10 +13289,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -15249,36 +13297,31 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-matk": "8400%"
+                  "area-of-effect": "9x9"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-matk": "9900%"
+                  "area-of-effect": "9x9"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-matk": "11400%"
+                  "area-of-effect": "9x9"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "11x11",
-                  "base-damage-matk": "12900%"
+                  "area-of-effect": "11x11"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "11x11",
-                  "base-damage-matk": "14400%"
+                  "area-of-effect": "11x11"
                 }
               }
             ],
@@ -15366,50 +13409,7 @@ export const aliteaData = {
             "value": "1"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk-per-hit": "1000%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk-per-hit": "1250%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk-per-hit": "1500%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk-per-hit": "1750%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk-per-hit": "2000%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [],
@@ -15897,10 +13897,6 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
               }
@@ -15909,36 +13905,31 @@ export const aliteaData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "13x13",
-                  "base-damage-matk": "5500%"
+                  "area-of-effect": "13x13"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "13x13",
-                  "base-damage-matk": "6000%"
+                  "area-of-effect": "13x13"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "13x13",
-                  "base-damage-matk": "6500%"
+                  "area-of-effect": "13x13"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "13x13",
-                  "base-damage-matk": "7000%"
+                  "area-of-effect": "13x13"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "13x13",
-                  "base-damage-matk": "7500%"
+                  "area-of-effect": "13x13"
                 }
               }
             ],
@@ -16046,80 +14037,7 @@ export const aliteaData = {
             "value": "15"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk": "7500%"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk": "9000%"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk": "10500%"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk": "12000%"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk": "13500%"
-                }
-              },
-              {
-                "level": 6,
-                "values": {
-                  "base-damage-atk": "15000%"
-                }
-              },
-              {
-                "level": 7,
-                "values": {
-                  "base-damage-atk": "16500%"
-                }
-              },
-              {
-                "level": 8,
-                "values": {
-                  "base-damage-atk": "18000%"
-                }
-              },
-              {
-                "level": 9,
-                "values": {
-                  "base-damage-atk": "19500%"
-                }
-              },
-              {
-                "level": 10,
-                "values": {
-                  "base-damage-atk": "21000%"
-                }
-              }
-            ],
-            "formulaRows": []
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [],

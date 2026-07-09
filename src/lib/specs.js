@@ -68,28 +68,42 @@ export function effectiveLevelTable(model, skill, versionId) {
     })),
   }
   const selectedIndex = selectedVersionIndex(model, versionId)
-  const futureLabels = new Set()
+
+  for (const entry of effectiveLevelDeltas(model, skill, selectedIndex)) applyLevelDelta(table, entry.delta, entry.value)
+  stripDamageFromLevelTable(table)
+
+  return table.columns.length ? table : null
+}
+
+function effectiveLevelDeltas(model, skill, selectedIndex) {
+  const byKey = new Map()
 
   for (const delta of specDeltas(model, skill)) {
-    const shouldApply = delta.versionIndex <= selectedIndex
-    const isNextFuture = delta.versionIndex > selectedIndex && !futureLabels.has(delta.label)
+    const key = levelDeltaKey(delta)
+    const entry = byKey.get(key) ?? { applied: null, future: null }
 
-    if (!shouldApply && !isNextFuture) continue
-    applyLevelDelta(table, delta, shouldApply ? delta.after : delta.before)
-    if (isNextFuture) futureLabels.add(delta.label)
+    if (delta.versionIndex <= selectedIndex) {
+      entry.applied = { delta, value: delta.after }
+    } else if (!entry.future) {
+      entry.future = { delta, value: delta.before }
+    }
+
+    byKey.set(key, entry)
   }
 
-  return table
+  return [...byKey.values()].map((entry) => entry.applied ?? entry.future).filter(Boolean)
+}
+
+function levelDeltaKey(delta) {
+  const level = delta.scope?.match(/Lv\s+\d+/i)?.[0] ?? delta.scope ?? ''
+  return [delta.label, level].join('|')
 }
 
 function applyLevelDelta(table, delta, value) {
   const targetRow = rowForDelta(table, delta)
   if (!targetRow) return
 
-  if (delta.label === 'Damage') {
-    applyDamageDelta(table, targetRow, value)
-    return
-  }
+  if (delta.label === 'Damage') return
 
   const label = delta.label === 'Buff Duration' ? 'Duration' : delta.label
   const column = table.columns.find((candidate) => candidate.label === label)
@@ -104,104 +118,51 @@ function rowForDelta(table, delta) {
   return table.rows.find((row) => row.level === Number(level)) ?? null
 }
 
-function applyDamageDelta(table, row, value) {
-  const damage = parseDamageDelta(value)
-  const baseColumn =
-    table.columns.find((column) => column.label === 'Base Damage (ATK)') ??
-    table.columns.find((column) => column.label === 'Base Damage (ATK per Hit)') ??
-    table.columns.find((column) => column.label === 'Base Damage (MATK)') ??
-    table.columns.find((column) => column.label === 'Base Damage (MATK per Hit)') ??
-    table.columns.find((column) => column.label === 'Cursed Target Factor')
-  const blessingColumn = table.columns.find((column) => column.label === 'Under Blessing of Four Directions')
-
-  if (baseColumn && damage.base) applyDamageColumnDelta(table, baseColumn, row, damage.base)
-  if (blessingColumn && damage.blessing) applyDamageColumnDelta(table, blessingColumn, row, damage.blessing)
+function removeDamageEffect(value) {
+  return String(value ?? '')
+    .split(/\n+/)
+    .map((line) =>
+      line
+        .split(/\s*\/\s*/)
+        .map((segment) => segment.trim())
+        .filter((segment) => segment && !effectSegmentLooksLikeDamage(segment))
+        .join(' / '),
+    )
+    .filter(Boolean)
+    .join('\n')
 }
 
-function applyDamageColumnDelta(table, column, targetRow, damage) {
-  const inferredValues = inferDamageColumnValues(table, column, targetRow.level, damage)
+function effectSegmentLooksLikeDamage(value) {
+  const text = String(value ?? '').trim()
+  if (!text) return false
+  if (/\b(?:ATK|MATK)\b/i.test(text) && /[0-9]/.test(text)) return true
+  return /[0-9][0-9,]*\s*\+\s*\([^)]*(?:level|lv|mastery|count)[^)]*\)\s*%/i.test(text)
+}
 
-  if (inferredValues) {
-    for (const row of table.rows) row.values[column.id] = inferredValues.get(row.level)
-    return
-  }
+function stripDamageFromLevelTable(table) {
+  const damageColumnIds = new Set(table.columns.filter((column) => isDamageLevelColumn(column.label)).map((column) => column.id))
+  const effectColumn = table.columns.find((column) => column.label === 'Effect')
 
   for (const row of table.rows) {
-    if (row.level === targetRow.level) {
-      row.values[column.id] = formatDamageAmount(damage.amount, damage.percent)
-    } else {
-      delete row.values[column.id]
+    for (const id of damageColumnIds) delete row.values[id]
+
+    if (effectColumn && row.values[effectColumn.id]) {
+      const effect = removeDamageEffect(row.values[effectColumn.id])
+      if (effect) {
+        row.values[effectColumn.id] = effect
+      } else {
+        delete row.values[effectColumn.id]
+      }
     }
   }
+
+  table.columns = table.columns.filter((column) => !damageColumnIds.has(column.id))
+  table.columns = table.columns.filter((column) => table.rows.some((row) => row.values[column.id]))
 }
 
-function parseDamageDelta(value) {
-  const values = String(value ?? '')
-    .split('/')
-    .map(parseDamageValue)
-    .filter(Boolean)
-
-  return {
-    base: values[0] ?? '',
-    blessing: values[1] ?? '',
-  }
-}
-
-function parseDamageValue(value) {
-  const text = String(value ?? '')
-  const match = text.match(/([0-9][0-9,]*)(?=\s*(?:%|\+))/)
-  if (!match) return null
-
-  return {
-    amount: Number(match[1].replace(/,/g, '')),
-    percent: text.slice(match.index + match[1].length).trimStart().startsWith('%'),
-  }
-}
-
-function inferDamageColumnValues(table, column, targetLevel, damage) {
-  const maxLevel = Math.max(...table.rows.map((row) => row.level))
-  if (targetLevel !== maxLevel) return null
-
-  const parsedRows = table.rows.map((row) => ({
-    level: row.level,
-    value: parseSimpleDamageValue(row.values[column.id]),
-  }))
-  if (parsedRows.some((row) => !row.value)) return null
-  if (!hasLinearLevelScaling(parsedRows)) return null
-
-  const percent = damage.percent || parsedRows.some((row) => row.value.percent)
-  return new Map(
-    parsedRows.map((row) => [
-      row.level,
-      formatDamageAmount((damage.amount * row.level) / targetLevel, percent),
-    ]),
-  )
-}
-
-function parseSimpleDamageValue(value) {
-  const match = String(value ?? '').trim().match(/^([0-9][0-9,]*)(%)?$/)
-  if (!match) return null
-
-  return {
-    amount: Number(match[1].replace(/,/g, '')),
-    percent: Boolean(match[2]),
-  }
-}
-
-function hasLinearLevelScaling(rows) {
-  const [first] = rows
-  if (!first?.level || !first.value) return false
-
-  const base = first.value.amount / first.level
-  return rows.every((row) => row.level && Math.abs(row.value.amount / row.level - base) < 0.0001)
-}
-
-function formatDamageAmount(amount, percent) {
-  const rounded = Math.round(amount * 100) / 100
-  const value = Number.isInteger(rounded)
-    ? formatNumber(String(rounded))
-    : rounded.toLocaleString('en-US', { maximumFractionDigits: 2 })
-  return `${value}${percent ? '%' : ''}`
+function isDamageLevelColumn(label) {
+  if (/damage/i.test(label)) return true
+  return ['Under Blessing of Four Directions', 'Cursed Target Factor', 'Skill Level Factor'].includes(label)
 }
 
 function levelTableCoveredLabels(table) {
@@ -214,16 +175,6 @@ function levelTableCoveredLabels(table) {
   if (columnLabels.has('Duration')) {
     covered.add('Duration')
     covered.add('Buff Duration')
-  }
-  if (
-    columnLabels.has('Base Damage (ATK)') ||
-    columnLabels.has('Base Damage (ATK per Hit)') ||
-    columnLabels.has('Base Damage (MATK)') ||
-    columnLabels.has('Base Damage (MATK per Hit)') ||
-    columnLabels.has('Under Blessing of Four Directions') ||
-    columnLabels.has('Cursed Target Factor')
-  ) {
-    covered.add('Damage')
   }
 
   return covered
@@ -260,34 +211,92 @@ function specDeltas(model, skill) {
 }
 
 function specRowsForEntry(entry) {
-  const rows = [...(entry.specRows ?? [])]
-  const seen = new Set(rows.map(specRowKey))
+  const rows = []
+  const seen = new Set()
+
+  for (const row of entry.specRows ?? []) addSpecRow(rows, seen, normalizeSpecRow(row))
 
   for (const note of entry.notes ?? []) {
     for (const row of parseSpecRowsFromNote(note)) {
-      const key = specRowKey(row)
-      if (seen.has(key)) continue
-
-      rows.push(row)
-      seen.add(key)
+      addSpecRow(rows, seen, row)
     }
   }
 
-  return rows
+  return mergeSpecRows(rows)
+}
+
+function addSpecRow(rows, seen, row) {
+  const key = specRowKey(row)
+  if (seen.has(key)) return
+
+  rows.push(row)
+  seen.add(key)
+}
+
+function normalizeSpecRow(row) {
+  const label = normalizeSpecLabel(row.label)
+  const qualifier = label === 'Damage' ? damageMetricQualifier(row.label) : ''
+
+  return {
+    ...row,
+    label,
+    before: appendDamageQualifier(row.before, qualifier),
+    after: appendDamageQualifier(row.after, qualifier),
+  }
+}
+
+function mergeSpecRows(rows) {
+  const merged = []
+  const damageByScope = new Map()
+
+  for (const row of rows) {
+    if (row.label !== 'Damage') {
+      merged.push(row)
+      continue
+    }
+
+    const key = 'Damage'
+    const existing = damageByScope.get(key)
+    if (!existing) {
+      const copy = { ...row }
+      damageByScope.set(key, copy)
+      merged.push(copy)
+      continue
+    }
+
+    existing.before = joinSpecValues(existing.before, row.before)
+    existing.after = joinSpecValues(existing.after, row.after)
+    existing.scope = joinSpecValues(existing.scope, row.scope)
+    existing.source = joinSources(existing.source, row.source)
+  }
+
+  return merged
+}
+
+function joinSpecValues(left, right) {
+  if (!left) return right
+  if (!right || left === right) return left
+  return `${left}/${right}`
+}
+
+function joinSources(left, right) {
+  if (!left) return right
+  if (!right || left.includes(right)) return left
+  return `${left} / ${right}`
 }
 
 function parseSpecRowsFromNote(note) {
   const changeMatch = String(note ?? '').match(
-    /^(Increases|Reduces|Decreases|Changes)\s+(.+?)\s+from\s+(.+?)\s+to\s+(.+?)(?:\s+based on level\s+(\d+))?\.?$/i,
+    /^(Increases|Reduces|Decreases|Changes)\s+(.+?)\s+from\s+(.+?)\s+to\s+(.+?)(?:\s+based on level\s+(\d+)(?:\s+(\([^)]+\)))?)?\.?$/i,
   )
   if (!changeMatch) return []
 
   return [
     {
       label: noteSpecLabel(changeMatch[2]),
-      before: normalizeSkillValue(changeMatch[3]),
-      after: normalizeSkillValue(changeMatch[4]),
-      scope: changeMatch[5] ? `Lv ${changeMatch[5]}` : '',
+      before: appendDamageQualifier(normalizeSkillValue(changeMatch[3]), damageMetricQualifier(changeMatch[2])),
+      after: appendDamageQualifier(normalizeSkillValue(changeMatch[4]), damageMetricQualifier(changeMatch[2])),
+      scope: changeMatch[5] ? `Lv ${changeMatch[5]}${changeMatch[6] ? ` ${normalizeSkillValue(changeMatch[6])}` : ''}` : '',
       source: note,
     },
   ]
@@ -302,7 +311,7 @@ function noteSpecLabel(rawMetric) {
   if (metric.includes('sp consumption')) return 'SP Cost'
   if (metric.includes('ap consumption')) return 'AP Consumed'
   if (metric.includes('ap recovery')) return 'AP Generated'
-  if (metric.includes('base damage') || metric === 'damage') return 'Damage'
+  if (/^(?:base\s+)?damage\b/.test(metric)) return 'Damage'
   if (metric.includes('cooldown')) return 'Cooldown'
   if (metric.includes('delay')) return 'Cast Delay'
   if (metric.includes('cast range')) return 'Cast Range'
@@ -336,7 +345,29 @@ function futureChangeNote(delta) {
 function normalizeSpecLabel(label) {
   if (label === 'AP Cost') return 'AP Consumed'
   if (label === 'After Cast Delay') return 'Cast Delay'
+  if (/^(?:base\s+)?damage\b/i.test(label)) return 'Damage'
   return label
+}
+
+function damageMetricQualifier(rawMetric) {
+  const metric = normalizeSkillValue(rawMetric).replace(/^base\s+/i, '')
+  const parenMatch = metric.match(/^damage\s*\((.+)\)$/i)
+  if (parenMatch) return parenMatch[1]
+
+  const suffixMatch = metric.match(/^damage\s+(?:of\s+(?:the\s+)?|)(.+)$/i)
+  if (!suffixMatch) return ''
+
+  const qualifier = suffixMatch[1].trim()
+  return qualifier && !/^from\b/i.test(qualifier) ? qualifier : ''
+}
+
+function appendDamageQualifier(value, qualifier) {
+  const normalizedValue = normalizeSkillValue(value)
+  const normalizedQualifier = normalizeSkillValue(qualifier)
+  if (!normalizedValue || !normalizedQualifier || normalizedValue.toLowerCase().includes(normalizedQualifier.toLowerCase())) {
+    return normalizedValue
+  }
+  return `${normalizedValue} (${normalizedQualifier})`
 }
 
 function normalizeSkillValue(value) {
@@ -346,10 +377,4 @@ function normalizeSkillValue(value) {
     .replace(/\s*x\s*/gi, ' x ')
     .replace(/\s*cell(s)?/gi, ' cells')
     .replace(/\s+%/g, '%')
-}
-
-function formatNumber(value) {
-  const digits = String(value).replace(/,/g, '')
-  if (!/^\d+$/.test(digits)) return String(value)
-  return Number(digits).toLocaleString('en-US')
 }

@@ -1,5 +1,5 @@
 export const imperialGuardData = {
-  "generatedAt": "2026-07-09T12:09:17.775Z",
+  "generatedAt": "2026-07-09T13:19:25.908Z",
   "classId": 4258,
   "classSlug": "imperial-guard",
   "className": "Imperial Guard",
@@ -1109,24 +1109,12 @@ export const imperialGuardData = {
               {
                 "label": "Property",
                 "value": "neutral property magical damage"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (MATK) + (Spear & Sword Mastery level x Skill Level Factor))% MATK"
               }
             ],
             "levelTables": [
               {
                 "title": "Level Scaling",
                 "columns": [
-                  {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
-                    "id": "skill-level-factor",
-                    "label": "Skill Level Factor"
-                  },
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
@@ -1136,50 +1124,35 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "7,450",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-matk": "9,300",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk": "11,150",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-matk": "13,000",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "9x9",
-                      "base-damage-matk": "14,850",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "9x9"
                     }
                   }
                 ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "(Base Damage (MATK) + (Spear & Sword Mastery level x Skill Level Factor))% MATK"
-                  }
-                ]
+                "formulaRows": []
               }
             ]
           },
@@ -1552,17 +1525,12 @@ export const imperialGuardData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 320+(Spear & Sword Mastery Level x 10)%\n/ 450+(Spear & Sword Mastery Level x 15)%(Holy Shield)",
                       "area-of-effect": "3x3",
                       "sp-cost": "67"
                     }
@@ -1570,7 +1538,6 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 640+(Spear & Sword Mastery Level x 20)%\n/ 900+(Spear & Sword Mastery Level x 30)%(Holy Shield)",
                       "area-of-effect": "3x3",
                       "sp-cost": "70"
                     }
@@ -1578,7 +1545,6 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 960+(Spear & Sword Mastery Level x 30)%\n/ 1350+(Spear & Sword Mastery Level x 45)%(Holy Shield)",
                       "area-of-effect": "3x3",
                       "sp-cost": "73"
                     }
@@ -1586,7 +1552,6 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 1280+(Spear & Sword Mastery Level x 40)%\n/ 1800+(Spear & Sword Mastery Level x 60)%(Holy Shield)",
                       "area-of-effect": "5x5",
                       "sp-cost": "76"
                     }
@@ -1594,7 +1559,6 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 1600+(Spear & Sword Mastery Level x 50)%\n/ 2250+(Spear & Sword Mastery Level x 75)%(Holy Shield)",
                       "area-of-effect": "5x5",
                       "sp-cost": "79"
                     }
@@ -1602,7 +1566,6 @@ export const imperialGuardData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "MATK 1920+(Spear & Sword Mastery Level x 60)%\n/ 2700+(Spear & Sword Mastery Level x 90)%(Holy Shield)",
                       "area-of-effect": "5x5",
                       "sp-cost": "82"
                     }
@@ -1610,7 +1573,6 @@ export const imperialGuardData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "MATK 2240+(Spear & Sword Mastery Level x 70)%\n/ 3150+(Spear & Sword Mastery Level x 105)%(Holy Shield)",
                       "area-of-effect": "7x7",
                       "sp-cost": "85"
                     }
@@ -1618,7 +1580,6 @@ export const imperialGuardData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "MATK 2560+(Spear & Sword Mastery Level x 80)%\n/ 3600+(Spear & Sword Mastery Level x 120)%(Holy Shield)",
                       "area-of-effect": "7x7",
                       "sp-cost": "88"
                     }
@@ -1626,7 +1587,6 @@ export const imperialGuardData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "MATK 2880+(Spear & Sword Mastery Level x 90)%\n/ 4050+(Spear & Sword Mastery Level x 135)%(Holy Shield)",
                       "area-of-effect": "7x7",
                       "sp-cost": "91"
                     }
@@ -1634,7 +1594,6 @@ export const imperialGuardData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "MATK 3200+(Spear & Sword Mastery Level x 100)%\n/ 4500+(Spear & Sword Mastery Level x 150)%(Holy Shield)",
                       "area-of-effect": "9x9",
                       "sp-cost": "94"
                     }
@@ -1673,9 +1632,9 @@ export const imperialGuardData = {
                   "source": "Reduces delay after skill from 1 second to 0.5 seconds based on level 10."
                 },
                 {
-                  "label": "Damage (includes Spear & Sword Mastery Level 10 Bonus)",
-                  "before": "400%Matk",
-                  "after": "2000%Matk, and 600%Matk to 3500%Matk while using Holy Shield",
+                  "label": "Damage",
+                  "before": "400%Matk (includes Spear & Sword Mastery level 10 bonus)",
+                  "after": "2000%Matk, and 600%Matk to 3500%Matk while using Holy Shield (includes Spear & Sword Mastery level 10 bonus)",
                   "scope": "",
                   "source": "Increases damage (includes Spear & Sword Mastery level 10 bonus) from 400%Matk to 2000%Matk, and 600%Matk to 3500%Matk while using Holy Shield."
                 }
@@ -1726,8 +1685,8 @@ export const imperialGuardData = {
                 {
                   "label": "Damage",
                   "before": "2000%/3500%(Holy Shield)Matk",
-                  "after": "3700%/5500%(Holy Shield)Matk per hit based on level 10 (Spear & Sword Mastery level 10)",
-                  "scope": "",
+                  "after": "3700%/5500%(Holy Shield)Matk per hit",
+                  "scope": "Lv 10 (Spear & Sword Mastery level 10)",
                   "source": "Increases damage from 2000%/3500%(Holy Shield)Matk to 3700%/5500%(Holy Shield)Matk per hit based on level 10 (Spear & Sword Mastery level 10)."
                 }
               ]
@@ -1992,70 +1951,70 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK Per Hit 160\n+ (Spear & Sword Mastery Level x 25)%",
+                      "effect": "+ (Spear & Sword Mastery Level x 25)%",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK Per Hit 320\n+ (Spear & Sword Mastery Level x 50)%",
+                      "effect": "+ (Spear & Sword Mastery Level x 50)%",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK Per Hit 480\n+ (Spear & Sword Mastery Level x 75)%",
+                      "effect": "+ (Spear & Sword Mastery Level x 75)%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK Per Hit 640\n+ (Spear & Sword Mastery Level x 100)%",
+                      "effect": "+ (Spear & Sword Mastery Level x 100)%",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK Per Hit 800\n+ (Spear & Sword Mastery Level x 125)%",
+                      "effect": "+ (Spear & Sword Mastery Level x 125)%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK Per Hit 960\n+ (Spear & Sword Mastery Level x 150)%",
+                      "effect": "+ (Spear & Sword Mastery Level x 150)%",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK Per Hit 1120\n+ (Spear & Sword Mastery Level x 175)%",
+                      "effect": "+ (Spear & Sword Mastery Level x 175)%",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK Per Hit 1280\n+ (Spear & Sword Mastery Level x 200)%",
+                      "effect": "+ (Spear & Sword Mastery Level x 200)%",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK Per Hit 1440\n+ (Spear & Sword Mastery Level x 225)%",
+                      "effect": "+ (Spear & Sword Mastery Level x 225)%",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK Per Hit 1600\n+ (Spear & Sword Mastery Level x 250)%",
+                      "effect": "+ (Spear & Sword Mastery Level x 250)%",
                       "sp-cost": "65"
                     }
                   }
@@ -2155,8 +2114,8 @@ export const imperialGuardData = {
                 {
                   "label": "Damage",
                   "before": "1800%Atk",
-                  "after": "2200%Atk per hit based on level 10 (Spear & Sword Mastery level 10)",
-                  "scope": "",
+                  "after": "2200%Atk per hit",
+                  "scope": "Lv 10 (Spear & Sword Mastery level 10)",
                   "source": "Increases damage from 1800%Atk to 2200%Atk per hit based on level 10 (Spear & Sword Mastery level 10)."
                 },
                 {
@@ -2182,8 +2141,8 @@ export const imperialGuardData = {
               "specRows": [
                 {
                   "label": "Damage",
-                  "before": "1200%Atk",
-                  "after": "1600%Atk",
+                  "before": "1200%Atk (of)",
+                  "after": "1600%Atk (of)",
                   "scope": "Lv 10",
                   "source": "Increases base damage of from 1200%Atk to 1600%Atk based on level 10."
                 },
@@ -2372,17 +2331,12 @@ export const imperialGuardData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 3500+(Shield Mastery level x 50)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "40"
                     }
@@ -2390,7 +2344,6 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 6350+(Shield Mastery level x 100)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "45"
                     }
@@ -2398,7 +2351,6 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 9200+(Shield Mastery level x 150)%",
                       "area-of-effect": "5x5",
                       "sp-cost": "50"
                     }
@@ -2406,7 +2358,6 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 12050+(Shield Mastery level x 200)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "55"
                     }
@@ -2414,7 +2365,6 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 14900+(Shield Mastery level x 250)%",
                       "area-of-effect": "7x7",
                       "sp-cost": "60"
                     }
@@ -2476,8 +2426,8 @@ export const imperialGuardData = {
                 {
                   "label": "Damage",
                   "before": "6440%Atk",
-                  "after": "14440%Atk based on level 5 (Shield Mastery level 10, shield refine rate is 10 and shield weight is 150)",
-                  "scope": "",
+                  "after": "14440%Atk",
+                  "scope": "Lv 5 (Shield Mastery level 10, shield refine rate is 10 and shield weight is 150)",
                   "source": "Increases damage from 6440%Atk to 14440%Atk based on level 5 (Shield Mastery level 10, shield refine rate is 10 and shield weight is 150)."
                 },
                 {
@@ -3208,70 +3158,9 @@ export const imperialGuardData = {
               {
                 "label": "AP Generated",
                 "value": "2"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK per Hit) + (Spear & Sword Mastery level x Skill Level Factor))% ATK per hit"
               }
             ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk-per-hit",
-                    "label": "Base Damage (ATK per Hit)"
-                  },
-                  {
-                    "id": "skill-level-factor",
-                    "label": "Skill Level Factor"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk-per-hit": "3,000",
-                      "skill-level-factor": "25"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk-per-hit": "4,350",
-                      "skill-level-factor": "25"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk-per-hit": "5,700",
-                      "skill-level-factor": "25"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk-per-hit": "7,050",
-                      "skill-level-factor": "25"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk-per-hit": "8,400",
-                      "skill-level-factor": "25"
-                    }
-                  }
-                ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "(Base Damage (ATK per Hit) + (Spear & Sword Mastery level x Skill Level Factor))% ATK per hit"
-                  }
-                ]
-              }
-            ]
+            "levelTables": []
           },
           "irowikiUrl": "",
           "balanceNotes": [],
@@ -3446,10 +3335,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3458,70 +3343,60 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "1750%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "3250%",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "4750%",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "6250%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "7750%",
                       "sp-cost": "63"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "9250%",
                       "sp-cost": "66"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "10750%",
                       "sp-cost": "69"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "12250%",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "13750%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "15250%",
                       "sp-cost": "78"
                     }
                   }
@@ -3714,24 +3589,12 @@ export const imperialGuardData = {
               {
                 "label": "AP Generated",
                 "value": "2"
-              },
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK) + (Spear & Sword Mastery level x Skill Level Factor))% ATK"
               }
             ],
             "levelTables": [
               {
                 "title": "Level Scaling",
                 "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
-                    "id": "skill-level-factor",
-                    "label": "Skill Level Factor"
-                  },
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
@@ -3741,90 +3604,65 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk": "4,650",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk": "5,800",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk": "6,950",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "area-of-effect": "3x3",
-                      "base-damage-atk": "8,100",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "3x3"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "9,250",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "10,400",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "11,550",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "area-of-effect": "5x5",
-                      "base-damage-atk": "12,700",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "5x5"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "13,850",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "7x7"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "area-of-effect": "7x7",
-                      "base-damage-atk": "15,000",
-                      "skill-level-factor": "50"
+                      "area-of-effect": "7x7"
                     }
                   }
                 ],
-                "formulaRows": [
-                  {
-                    "label": "Damage Formula",
-                    "value": "(Base Damage (ATK) + (Spear & Sword Mastery level x Skill Level Factor))% ATK"
-                  }
-                ]
+                "formulaRows": []
               }
             ]
           },
@@ -4148,10 +3986,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -4160,70 +3994,60 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1950%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "3900%",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "5850%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "7800%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "9750%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "11700%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "13650%",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "15600%",
                       "sp-cost": "95"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "17550%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "19500%",
                       "sp-cost": "105"
                     }
                   }
@@ -4296,9 +4120,9 @@ export const imperialGuardData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage Property",
-                  "before": "holy",
-                  "after": "neutral",
+                  "label": "Damage",
+                  "before": "holy (property)",
+                  "after": "neutral (property)",
                   "scope": "",
                   "source": "Changes damage property from holy to neutral."
                 }
@@ -4482,10 +4306,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -4502,7 +4322,6 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "20",
                       "data-1": "3",
                       "data-2": "40"
@@ -4511,7 +4330,6 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "24",
                       "data-1": "3",
                       "data-2": "48"
@@ -4520,7 +4338,6 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "360%",
                       "sp-cost": "28",
                       "data-1": "3",
                       "data-2": "56"
@@ -4529,7 +4346,6 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "480%",
                       "sp-cost": "32",
                       "data-1": "3",
                       "data-2": "64"
@@ -4538,7 +4354,6 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "36",
                       "data-1": "3",
                       "data-2": "72"
@@ -4786,10 +4601,6 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
                     "id": "hit",
                     "label": "Hit %"
                   },
@@ -4802,7 +4613,6 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 100 +(Bash Lv x 70)%",
                       "sp-cost": "20",
                       "range": "7 cells",
                       "hit": "105"
@@ -4811,7 +4621,6 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 200 +(Bash Lv x 70)%",
                       "sp-cost": "22",
                       "range": "7 cells",
                       "hit": "110"
@@ -4820,7 +4629,6 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 300 +(Bash Lv x 70)%",
                       "sp-cost": "24",
                       "range": "7 cells",
                       "hit": "115"
@@ -4829,7 +4637,6 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 400 +(Bash Lv x 70)%",
                       "sp-cost": "26",
                       "range": "7 cells",
                       "hit": "120"
@@ -4838,7 +4645,6 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 500 +(Bash Lv x 70)%",
                       "sp-cost": "28",
                       "range": "7 cells",
                       "hit": "125"
@@ -4847,7 +4653,6 @@ export const imperialGuardData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 600 +(Bash Lv x 70)%",
                       "sp-cost": "30",
                       "range": "7 cells",
                       "hit": "130"
@@ -4856,7 +4661,6 @@ export const imperialGuardData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 700 +(Bash Lv x 70)%",
                       "sp-cost": "32",
                       "range": "7 cells",
                       "hit": "135"
@@ -4865,7 +4669,6 @@ export const imperialGuardData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 800 +(Bash Lv x 70)%",
                       "sp-cost": "34",
                       "range": "7 cells",
                       "hit": "140"
@@ -4874,7 +4677,6 @@ export const imperialGuardData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 900 +(Bash Lv x 70)%",
                       "sp-cost": "36",
                       "range": "7 cells",
                       "hit": "145"
@@ -4883,7 +4685,6 @@ export const imperialGuardData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 1000 +(Bash Lv x 70)%",
                       "sp-cost": "38",
                       "range": "7 cells",
                       "hit": "150"
@@ -4910,18 +4711,11 @@ export const imperialGuardData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage (includes Bash Level 10 Bonus)",
-                  "before": "1300%Atk",
-                  "after": "1700%Atk",
+                  "label": "Damage",
+                  "before": "1300%Atk (includes Bash level 10 bonus)/1700%Atk (while under Grand Judgement buff)",
+                  "after": "1700%Atk (includes Bash level 10 bonus)/2500%Atk (while under Grand Judgement buff)",
                   "scope": "Lv 10",
-                  "source": "Increases damage (includes Bash level 10 bonus) from 1300%Atk to 1700%Atk based on level 10."
-                },
-                {
-                  "label": "Damage While Under Grand Judgement Buff",
-                  "before": "1700%Atk",
-                  "after": "2500%Atk",
-                  "scope": "",
-                  "source": "Increases damage while under Grand Judgement buff from 1700%Atk to 2500%Atk."
+                  "source": "Increases damage (includes Bash level 10 bonus) from 1300%Atk to 1700%Atk based on level 10. / Increases damage while under Grand Judgement buff from 1700%Atk to 2500%Atk."
                 },
                 {
                   "label": "SP Cost",
@@ -6070,10 +5864,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -6082,70 +5872,60 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "800%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1000%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "1400%",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "1600%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "1800%",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "2000%",
                       "sp-cost": "28"
                     }
                   }
@@ -6167,9 +5947,9 @@ export const imperialGuardData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage While Under Shield Shooting Buff By Adding Damage Bonus",
-                  "before": "Shield Mastery. (Based on Shield Press level 10 and Shield Mastery level 10. Damage will be increased from 2600%Atk",
-                  "after": "4100%Atk)",
+                  "label": "Damage",
+                  "before": "Shield Mastery. (Based on Shield Press level 10 and Shield Mastery level 10. Damage will be increased from 2600%Atk (while under Shield Shooting buff by adding damage bonus)",
+                  "after": "4100%Atk) (while under Shield Shooting buff by adding damage bonus)",
                   "scope": "",
                   "source": "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Shield Press level 10 and Shield Mastery level 10. Damage will be increased from 2600%Atk to 4100%Atk)."
                 }
@@ -6557,10 +6337,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -6573,7 +6349,6 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "100%",
                       "sp-cost": "50",
                       "range": "5 cells"
                     }
@@ -6581,7 +6356,6 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "50",
                       "range": "5 cells"
                     }
@@ -6589,7 +6363,6 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "50",
                       "range": "5 cells"
                     }
@@ -6597,7 +6370,6 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "50",
                       "range": "5 cells"
                     }
@@ -6605,7 +6377,6 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "500%",
                       "sp-cost": "50",
                       "range": "5 cells"
                     }
@@ -7171,10 +6942,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7191,7 +6958,6 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "350%",
                       "sp-cost": "45",
                       "data-1": "3",
                       "data-2": "5"
@@ -7200,7 +6966,6 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "700%",
                       "sp-cost": "50",
                       "data-1": "3",
                       "data-2": "5"
@@ -7209,7 +6974,6 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "1050%",
                       "sp-cost": "55",
                       "data-1": "6",
                       "data-2": "5"
@@ -7218,7 +6982,6 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "1400%",
                       "sp-cost": "60",
                       "data-1": "6",
                       "data-2": "5"
@@ -7227,7 +6990,6 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "1750%",
                       "sp-cost": "65",
                       "data-1": "9",
                       "data-2": "5"
@@ -7236,7 +6998,6 @@ export const imperialGuardData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "2100%",
                       "sp-cost": "70",
                       "data-1": "9",
                       "data-2": "5"
@@ -7245,7 +7006,6 @@ export const imperialGuardData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "2450%",
                       "sp-cost": "75",
                       "data-1": "12",
                       "data-2": "5"
@@ -7254,7 +7014,6 @@ export const imperialGuardData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "2800%",
                       "sp-cost": "80",
                       "data-1": "12",
                       "data-2": "5"
@@ -7263,7 +7022,6 @@ export const imperialGuardData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "3150%",
                       "sp-cost": "85",
                       "data-1": "15",
                       "data-2": "5"
@@ -7272,7 +7030,6 @@ export const imperialGuardData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "3500%",
                       "sp-cost": "90",
                       "data-1": "15",
                       "data-2": "5"
@@ -7522,10 +7279,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7550,7 +7303,6 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "380%",
                       "sp-cost": "52",
                       "data-1": "1",
                       "data-2": "5",
@@ -7561,7 +7313,6 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "760%",
                       "sp-cost": "60",
                       "data-1": "1",
                       "data-2": "5",
@@ -7572,7 +7323,6 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1140%",
                       "sp-cost": "68",
                       "data-1": "2",
                       "data-2": "5",
@@ -7583,7 +7333,6 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1520%",
                       "sp-cost": "76",
                       "data-1": "2",
                       "data-2": "5",
@@ -7594,7 +7343,6 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1900%",
                       "sp-cost": "84",
                       "data-1": "3",
                       "data-2": "5",
@@ -7628,9 +7376,9 @@ export const imperialGuardData = {
                   "source": "Reduces cooldown from 3 seconds to 2.5 seconds based on level 5."
                 },
                 {
-                  "label": "Damage While Under Shield Shooting Buff By Adding Damage Bonus",
-                  "before": "Shield Mastery. (Based on Earth Drive level 5 and Shield Mastery level 10. Damage will be increased from 2100%Atk",
-                  "after": "3750%Atk)",
+                  "label": "Damage",
+                  "before": "Shield Mastery. (Based on Earth Drive level 5 and Shield Mastery level 10. Damage will be increased from 2100%Atk (while under Shield Shooting buff by adding damage bonus)",
+                  "after": "3750%Atk) (while under Shield Shooting buff by adding damage bonus)",
                   "scope": "",
                   "source": "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Earth Drive level 5 and Shield Mastery level 10. Damage will be increased from 2100%Atk to 3750%Atk)."
                 }
@@ -8000,7 +7748,7 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 120 +(STR x 1)% / Range : 3 x 3",
+                      "effect": "Range : 3 x 3",
                       "sp-cost": "30",
                       "range": "11 cells"
                     }
@@ -8008,7 +7756,7 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 240 +(STR x 2)% / Range : 3 x 3",
+                      "effect": "Range : 3 x 3",
                       "sp-cost": "35",
                       "range": "11 cells"
                     }
@@ -8016,7 +7764,7 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 360 +(STR x 3)% / Range : 5 x 5",
+                      "effect": "Range : 5 x 5",
                       "sp-cost": "40",
                       "range": "11 cells"
                     }
@@ -8024,7 +7772,7 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 480 +(STR x 4)% / Range : 5 x 5",
+                      "effect": "Range : 5 x 5",
                       "sp-cost": "45",
                       "range": "11 cells"
                     }
@@ -8032,7 +7780,7 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 600 +(STR x 5)% / Range : 7 x 7",
+                      "effect": "Range : 7 x 7",
                       "sp-cost": "50",
                       "range": "11 cells"
                     }
@@ -8080,18 +7828,11 @@ export const imperialGuardData = {
                   "source": "Increases critical chance from the half of the user's cri to the user's cri."
                 },
                 {
-                  "label": "Damage (on Str 130)",
-                  "before": "900%Atk",
-                  "after": "1250%Atk",
+                  "label": "Damage",
+                  "before": "900%Atk (on Str 130)/1050%Atk (while under Grand Judgement buff)",
+                  "after": "1250%Atk (on Str 130)/1650%Atk (while under Grand Judgement buff)",
                   "scope": "Lv 5",
-                  "source": "Increases damage (on Str 130) from 900%Atk to 1250%Atk based on level 5."
-                },
-                {
-                  "label": "Damage While Under Grand Judgement Buff",
-                  "before": "1050%Atk",
-                  "after": "1650%Atk",
-                  "scope": "Lv 5",
-                  "source": "Increases damage while under Grand Judgement buff from 1050%Atk to 1650%Atk based on level 5."
+                  "source": "Increases damage (on Str 130) from 900%Atk to 1250%Atk based on level 5. / Increases damage while under Grand Judgement buff from 1050%Atk to 1650%Atk based on level 5."
                 }
               ]
             }
@@ -8248,10 +7989,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -8264,7 +8001,6 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "350%",
                       "sp-cost": "20",
                       "data-1": "3"
                     }
@@ -8272,7 +8008,6 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "700%",
                       "sp-cost": "30",
                       "data-1": "4"
                     }
@@ -8280,7 +8015,6 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "1050%",
                       "sp-cost": "40",
                       "data-1": "5"
                     }
@@ -8288,7 +8022,6 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1400%",
                       "sp-cost": "50",
                       "data-1": "6"
                     }
@@ -8296,7 +8029,6 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1750%",
                       "sp-cost": "60",
                       "data-1": "7"
                     }
@@ -8321,17 +8053,10 @@ export const imperialGuardData = {
               "specRows": [
                 {
                   "label": "Damage",
-                  "before": "1500%Atk",
-                  "after": "1750%Atk",
+                  "before": "1500%Atk/2250%Atk (while under Overbrand Ready buff)",
+                  "after": "1750%Atk/2500%Atk (while under Overbrand Ready buff)",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 1500%Atk to 1750%Atk based on level 5."
-                },
-                {
-                  "label": "Damage While Under Overbrand Ready Buff",
-                  "before": "2250%Atk",
-                  "after": "2500%Atk",
-                  "scope": "Lv 5",
-                  "source": "Increases damage while under Overbrand Ready buff from 2250%Atk to 2500%Atk based on level 5."
+                  "source": "Increases damage from 1500%Atk to 1750%Atk based on level 5. / Increases damage while under Overbrand Ready buff from 2250%Atk to 2500%Atk based on level 5."
                 }
               ]
             }
@@ -8920,10 +8645,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -8936,7 +8657,6 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "37",
                       "range": "3 cells"
                     }
@@ -8944,7 +8664,6 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "600%",
                       "sp-cost": "44",
                       "range": "3 cells"
                     }
@@ -8952,7 +8671,6 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "900%",
                       "sp-cost": "51",
                       "range": "3 cells"
                     }
@@ -8960,7 +8678,6 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1200%",
                       "sp-cost": "58",
                       "range": "3 cells"
                     }
@@ -8968,7 +8685,6 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1500%",
                       "sp-cost": "65",
                       "range": "3 cells"
                     }
@@ -9264,7 +8980,7 @@ export const imperialGuardData = {
                     "level": 1,
                     "values": {
                       "hit-12-all-state-6-maxhp": "+4%",
-                      "effect": "/ ATK +40/ MATK +40/ Duration 60 sec\nConsumes HP 3%, SP 4% per 5 sec",
+                      "effect": "Duration 60 sec\nConsumes HP 3%, SP 4% per 5 sec",
                       "sp-cost": "80",
                       "data-1": "30",
                       "data-2": "40",
@@ -9275,7 +8991,7 @@ export const imperialGuardData = {
                     "level": 2,
                     "values": {
                       "hit-24-all-state-12-maxhp": "+8%",
-                      "effect": "/ ATK +80/ MATK +80/ Duration 90 sec\nConsumes HP 2.5%, SP 3.5% per 5 sec",
+                      "effect": "Duration 90 sec\nConsumes HP 2.5%, SP 3.5% per 5 sec",
                       "sp-cost": "90",
                       "data-1": "25",
                       "data-2": "35",
@@ -9286,7 +9002,7 @@ export const imperialGuardData = {
                     "level": 3,
                     "values": {
                       "hit-36-all-state-18-maxhp": "+12%",
-                      "effect": "/ ATK +120/ MATK +120/ Duration 120 sec\nConsumes HP 2%, SP 3% per 5 sec",
+                      "effect": "Duration 120 sec\nConsumes HP 2%, SP 3% per 5 sec",
                       "sp-cost": "100",
                       "data-1": "20",
                       "data-2": "30",
@@ -9297,7 +9013,7 @@ export const imperialGuardData = {
                     "level": 4,
                     "values": {
                       "hit-48-all-state-24-maxhp": "+16%",
-                      "effect": "/ ATK +160/ MATK +160/ Duration 150 sec\nConsumes HP 1.5%, SP 2.5% per 5 sec",
+                      "effect": "Duration 150 sec\nConsumes HP 1.5%, SP 2.5% per 5 sec",
                       "sp-cost": "110",
                       "data-1": "15",
                       "data-2": "25",
@@ -9308,7 +9024,7 @@ export const imperialGuardData = {
                     "level": 5,
                     "values": {
                       "hit-60-all-state-30-maxhp": "+20%",
-                      "effect": "/ ATK +200/ MATK +200/ Duration 180 sec\nConsumes HP 1%, SP 2% per 5 sec",
+                      "effect": "Duration 180 sec\nConsumes HP 1%, SP 2% per 5 sec",
                       "sp-cost": "120",
                       "data-1": "10",
                       "data-2": "20",
@@ -10187,116 +9903,66 @@ export const imperialGuardData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "not-mounted-damage-4-mounted",
-                    "label": "Not Mounted, Damage + 4, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-8-mounted",
-                    "label": "Not Mounted, Damage + 8, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-12-mounted",
-                    "label": "Not Mounted, Damage +12, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-16-mounted",
-                    "label": "Not Mounted, Damage +16, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-20-mounted",
-                    "label": "Not Mounted, Damage +20, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-24-mounted",
-                    "label": "Not Mounted, Damage +24, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-28-mounted",
-                    "label": "Not Mounted, Damage +28, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-32-mounted",
-                    "label": "Not Mounted, Damage +32, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-36-mounted",
-                    "label": "Not Mounted, Damage +36, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-40-mounted",
-                    "label": "Not Mounted, Damage +40, Mounted,"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "not-mounted-damage-4-mounted": "+ 5",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "not-mounted-damage-8-mounted": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "not-mounted-damage-12-mounted": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "not-mounted-damage-16-mounted": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "not-mounted-damage-20-mounted": "+25",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "not-mounted-damage-24-mounted": "+30",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "not-mounted-damage-28-mounted": "+35",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "not-mounted-damage-32-mounted": "+40",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "not-mounted-damage-36-mounted": "+45",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "not-mounted-damage-40-mounted": "+50",
                       "sp-cost": "0"
                     }
                   }
@@ -10699,10 +10365,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -10711,70 +10373,60 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "135%",
                       "sp-cost": "11"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "170%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "205%",
                       "sp-cost": "13"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "275%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "345%",
                       "sp-cost": "17"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "380%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "415%",
                       "sp-cost": "19"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "450%",
                       "sp-cost": "20"
                     }
                   }
@@ -10890,10 +10542,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -10902,35 +10550,30 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "10"
                     }
                   }
@@ -11311,45 +10954,36 @@ export const imperialGuardData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK Speed : 60%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK Speed : 70%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK Speed : 80%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK Speed : 90%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK Speed :100%",
                       "sp-cost": "0"
                     }
                   }
@@ -11503,80 +11137,66 @@ export const imperialGuardData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage-reduction",
-                    "label": "Damage Reduction"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage-reduction": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage-reduction": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage-reduction": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage-reduction": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage-reduction": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage-reduction": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage-reduction": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage-reduction": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage-reduction": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage-reduction": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -11758,10 +11378,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -11770,70 +11386,60 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "140%",
                       "sp-cost": "37"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "180%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "220%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "260%",
                       "sp-cost": "58"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "300%",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "340%",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "380%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "420%",
                       "sp-cost": "86"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "460%",
                       "sp-cost": "93"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "500%",
                       "sp-cost": "100"
                     }
                   }
@@ -11949,10 +11555,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -11961,35 +11563,30 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "80%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "320%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "12"
                     }
                   }
@@ -12144,10 +11741,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12156,35 +11749,30 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "650%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "800%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "950%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "1100%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "1250%",
                       "sp-cost": "50"
                     }
                   }
@@ -12338,80 +11926,66 @@ export const imperialGuardData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -12760,45 +12334,36 @@ export const imperialGuardData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage reduction from long distance: 20%, ATK Speed: 80%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage reduction from long distance: 35%, ATK Speed: 85%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage reduction from long distance: 50%, ATK Speed: 90%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage reduction from long distance: 65%, ATK Speed: 95%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage reduction from long distance: 80%, ATK Speed:100%",
                       "sp-cost": "30"
                     }
                   }
@@ -12919,10 +12484,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -12951,7 +12512,6 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "500%",
                       "atk-500-accuracy-rate": "+20",
                       "sp-cost": "28"
                     }
@@ -12959,7 +12519,6 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "700%",
                       "atk-700-accuracy-rate": "+20",
                       "sp-cost": "31"
                     }
@@ -12967,7 +12526,6 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "900%",
                       "atk-900-accuracy-rate": "+20",
                       "sp-cost": "34"
                     }
@@ -12975,7 +12533,6 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "1100%",
                       "atk-1100-accuracy-rate": "+20",
                       "sp-cost": "37"
                     }
@@ -12983,7 +12540,6 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "1300%",
                       "atk-1300-accuracy-rate": "+20",
                       "sp-cost": "40"
                     }
@@ -13006,9 +12562,9 @@ export const imperialGuardData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage While Under Shield Shooting Buff By Adding Damage Bonus",
-                  "before": "Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk",
-                  "after": "2000%Atk)",
+                  "label": "Damage",
+                  "before": "Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk (while under Shield Shooting buff by adding damage bonus)",
+                  "after": "2000%Atk) (while under Shield Shooting buff by adding damage bonus)",
                   "scope": "",
                   "source": "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk to 2000%Atk)."
                 }
@@ -14066,7 +13622,7 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -14094,7 +13650,7 @@ export const imperialGuardData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -14254,80 +13810,66 @@ export const imperialGuardData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -14488,70 +14030,70 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(HP 5+0.2% of Ma x HP)/10 sec",
+                      "effect": "(HP 5+0.2% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(HP 10+0.4% of Ma x HP)/10 sec",
+                      "effect": "(HP 10+0.4% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(HP 15+0.6% of Ma x HP)/10 sec",
+                      "effect": "(HP 15+0.6% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(HP 20+0.8% of Ma x HP)/10 sec",
+                      "effect": "(HP 20+0.8% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(HP 25+1.0% of Ma x HP)/10 sec",
+                      "effect": "(HP 25+1.0% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(HP 30+1.2% of Ma x HP)/10 sec",
+                      "effect": "(HP 30+1.2% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(HP 35+1.4% of Ma x HP)/10 sec",
+                      "effect": "(HP 35+1.4% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(HP 40+1.6% of Ma x HP)/10 sec",
+                      "effect": "(HP 40+1.6% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(HP 45+1.8% of Ma x HP)/10 sec",
+                      "effect": "(HP 45+1.8% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(HP 50+2.0% of Ma x HP)/10 sec",
+                      "effect": "(HP 50+2.0% of Ma x HP) / 10 sec",
                       "sp-cost": "0"
                     }
                   }
@@ -14700,10 +14242,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14712,70 +14250,60 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "130%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "190%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "250%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "310%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "340%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "370%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "400%",
                       "sp-cost": "15"
                     }
                   }
@@ -15418,80 +14946,66 @@ export const imperialGuardData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage": "+8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -15663,10 +15177,6 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -15675,70 +15185,60 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-atk": "120%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-atk": "140%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-atk": "160%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-atk": "180%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-atk": "200%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-atk": "220%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-atk": "240%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-atk": "260%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-atk": "280%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-atk": "300%",
                       "sp-cost": "30"
                     }
                   }
@@ -16846,24 +16346,12 @@ export const imperialGuardData = {
           {
             "label": "Property",
             "value": "neutral property magical damage"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "(Base Damage (MATK) + (Spear & Sword Mastery level x Skill Level Factor))% MATK"
           }
         ],
         "levelTables": [
           {
             "title": "Level Scaling",
             "columns": [
-              {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
-                "id": "skill-level-factor",
-                "label": "Skill Level Factor"
-              },
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
@@ -16873,50 +16361,35 @@ export const imperialGuardData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "7,450",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-matk": "9,300",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk": "11,150",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-matk": "13,000",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "9x9",
-                  "base-damage-matk": "14,850",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "9x9"
                 }
               }
             ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (MATK) + (Spear & Sword Mastery level x Skill Level Factor))% MATK"
-              }
-            ]
+            "formulaRows": []
           }
         ]
       },
@@ -17289,17 +16762,12 @@ export const imperialGuardData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 320+(Spear & Sword Mastery Level x 10)%\n/ 450+(Spear & Sword Mastery Level x 15)%(Holy Shield)",
                   "area-of-effect": "3x3",
                   "sp-cost": "67"
                 }
@@ -17307,7 +16775,6 @@ export const imperialGuardData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 640+(Spear & Sword Mastery Level x 20)%\n/ 900+(Spear & Sword Mastery Level x 30)%(Holy Shield)",
                   "area-of-effect": "3x3",
                   "sp-cost": "70"
                 }
@@ -17315,7 +16782,6 @@ export const imperialGuardData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 960+(Spear & Sword Mastery Level x 30)%\n/ 1350+(Spear & Sword Mastery Level x 45)%(Holy Shield)",
                   "area-of-effect": "3x3",
                   "sp-cost": "73"
                 }
@@ -17323,7 +16789,6 @@ export const imperialGuardData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 1280+(Spear & Sword Mastery Level x 40)%\n/ 1800+(Spear & Sword Mastery Level x 60)%(Holy Shield)",
                   "area-of-effect": "5x5",
                   "sp-cost": "76"
                 }
@@ -17331,7 +16796,6 @@ export const imperialGuardData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 1600+(Spear & Sword Mastery Level x 50)%\n/ 2250+(Spear & Sword Mastery Level x 75)%(Holy Shield)",
                   "area-of-effect": "5x5",
                   "sp-cost": "79"
                 }
@@ -17339,7 +16803,6 @@ export const imperialGuardData = {
               {
                 "level": 6,
                 "values": {
-                  "effect": "MATK 1920+(Spear & Sword Mastery Level x 60)%\n/ 2700+(Spear & Sword Mastery Level x 90)%(Holy Shield)",
                   "area-of-effect": "5x5",
                   "sp-cost": "82"
                 }
@@ -17347,7 +16810,6 @@ export const imperialGuardData = {
               {
                 "level": 7,
                 "values": {
-                  "effect": "MATK 2240+(Spear & Sword Mastery Level x 70)%\n/ 3150+(Spear & Sword Mastery Level x 105)%(Holy Shield)",
                   "area-of-effect": "7x7",
                   "sp-cost": "85"
                 }
@@ -17355,7 +16817,6 @@ export const imperialGuardData = {
               {
                 "level": 8,
                 "values": {
-                  "effect": "MATK 2560+(Spear & Sword Mastery Level x 80)%\n/ 3600+(Spear & Sword Mastery Level x 120)%(Holy Shield)",
                   "area-of-effect": "7x7",
                   "sp-cost": "88"
                 }
@@ -17363,7 +16824,6 @@ export const imperialGuardData = {
               {
                 "level": 9,
                 "values": {
-                  "effect": "MATK 2880+(Spear & Sword Mastery Level x 90)%\n/ 4050+(Spear & Sword Mastery Level x 135)%(Holy Shield)",
                   "area-of-effect": "7x7",
                   "sp-cost": "91"
                 }
@@ -17371,7 +16831,6 @@ export const imperialGuardData = {
               {
                 "level": 10,
                 "values": {
-                  "effect": "MATK 3200+(Spear & Sword Mastery Level x 100)%\n/ 4500+(Spear & Sword Mastery Level x 150)%(Holy Shield)",
                   "area-of-effect": "9x9",
                   "sp-cost": "94"
                 }
@@ -17410,9 +16869,9 @@ export const imperialGuardData = {
               "source": "Reduces delay after skill from 1 second to 0.5 seconds based on level 10."
             },
             {
-              "label": "Damage (includes Spear & Sword Mastery Level 10 Bonus)",
-              "before": "400%Matk",
-              "after": "2000%Matk, and 600%Matk to 3500%Matk while using Holy Shield",
+              "label": "Damage",
+              "before": "400%Matk (includes Spear & Sword Mastery level 10 bonus)",
+              "after": "2000%Matk, and 600%Matk to 3500%Matk while using Holy Shield (includes Spear & Sword Mastery level 10 bonus)",
               "scope": "",
               "source": "Increases damage (includes Spear & Sword Mastery level 10 bonus) from 400%Matk to 2000%Matk, and 600%Matk to 3500%Matk while using Holy Shield."
             }
@@ -17463,8 +16922,8 @@ export const imperialGuardData = {
             {
               "label": "Damage",
               "before": "2000%/3500%(Holy Shield)Matk",
-              "after": "3700%/5500%(Holy Shield)Matk per hit based on level 10 (Spear & Sword Mastery level 10)",
-              "scope": "",
+              "after": "3700%/5500%(Holy Shield)Matk per hit",
+              "scope": "Lv 10 (Spear & Sword Mastery level 10)",
               "source": "Increases damage from 2000%/3500%(Holy Shield)Matk to 3700%/5500%(Holy Shield)Matk per hit based on level 10 (Spear & Sword Mastery level 10)."
             }
           ]
@@ -17729,70 +17188,70 @@ export const imperialGuardData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK Per Hit 160\n+ (Spear & Sword Mastery Level x 25)%",
+                  "effect": "+ (Spear & Sword Mastery Level x 25)%",
                   "sp-cost": "38"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK Per Hit 320\n+ (Spear & Sword Mastery Level x 50)%",
+                  "effect": "+ (Spear & Sword Mastery Level x 50)%",
                   "sp-cost": "41"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK Per Hit 480\n+ (Spear & Sword Mastery Level x 75)%",
+                  "effect": "+ (Spear & Sword Mastery Level x 75)%",
                   "sp-cost": "44"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK Per Hit 640\n+ (Spear & Sword Mastery Level x 100)%",
+                  "effect": "+ (Spear & Sword Mastery Level x 100)%",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK Per Hit 800\n+ (Spear & Sword Mastery Level x 125)%",
+                  "effect": "+ (Spear & Sword Mastery Level x 125)%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "ATK Per Hit 960\n+ (Spear & Sword Mastery Level x 150)%",
+                  "effect": "+ (Spear & Sword Mastery Level x 150)%",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "ATK Per Hit 1120\n+ (Spear & Sword Mastery Level x 175)%",
+                  "effect": "+ (Spear & Sword Mastery Level x 175)%",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "ATK Per Hit 1280\n+ (Spear & Sword Mastery Level x 200)%",
+                  "effect": "+ (Spear & Sword Mastery Level x 200)%",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "ATK Per Hit 1440\n+ (Spear & Sword Mastery Level x 225)%",
+                  "effect": "+ (Spear & Sword Mastery Level x 225)%",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "ATK Per Hit 1600\n+ (Spear & Sword Mastery Level x 250)%",
+                  "effect": "+ (Spear & Sword Mastery Level x 250)%",
                   "sp-cost": "65"
                 }
               }
@@ -17892,8 +17351,8 @@ export const imperialGuardData = {
             {
               "label": "Damage",
               "before": "1800%Atk",
-              "after": "2200%Atk per hit based on level 10 (Spear & Sword Mastery level 10)",
-              "scope": "",
+              "after": "2200%Atk per hit",
+              "scope": "Lv 10 (Spear & Sword Mastery level 10)",
               "source": "Increases damage from 1800%Atk to 2200%Atk per hit based on level 10 (Spear & Sword Mastery level 10)."
             },
             {
@@ -17919,8 +17378,8 @@ export const imperialGuardData = {
           "specRows": [
             {
               "label": "Damage",
-              "before": "1200%Atk",
-              "after": "1600%Atk",
+              "before": "1200%Atk (of)",
+              "after": "1600%Atk (of)",
               "scope": "Lv 10",
               "source": "Increases base damage of from 1200%Atk to 1600%Atk based on level 10."
             },
@@ -18109,17 +17568,12 @@ export const imperialGuardData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "ATK 3500+(Shield Mastery level x 50)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "40"
                 }
@@ -18127,7 +17581,6 @@ export const imperialGuardData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "ATK 6350+(Shield Mastery level x 100)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "45"
                 }
@@ -18135,7 +17588,6 @@ export const imperialGuardData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "ATK 9200+(Shield Mastery level x 150)%",
                   "area-of-effect": "5x5",
                   "sp-cost": "50"
                 }
@@ -18143,7 +17595,6 @@ export const imperialGuardData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "ATK 12050+(Shield Mastery level x 200)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "55"
                 }
@@ -18151,7 +17602,6 @@ export const imperialGuardData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "ATK 14900+(Shield Mastery level x 250)%",
                   "area-of-effect": "7x7",
                   "sp-cost": "60"
                 }
@@ -18213,8 +17663,8 @@ export const imperialGuardData = {
             {
               "label": "Damage",
               "before": "6440%Atk",
-              "after": "14440%Atk based on level 5 (Shield Mastery level 10, shield refine rate is 10 and shield weight is 150)",
-              "scope": "",
+              "after": "14440%Atk",
+              "scope": "Lv 5 (Shield Mastery level 10, shield refine rate is 10 and shield weight is 150)",
               "source": "Increases damage from 6440%Atk to 14440%Atk based on level 5 (Shield Mastery level 10, shield refine rate is 10 and shield weight is 150)."
             },
             {
@@ -18945,70 +18395,9 @@ export const imperialGuardData = {
           {
             "label": "AP Generated",
             "value": "2"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "(Base Damage (ATK per Hit) + (Spear & Sword Mastery level x Skill Level Factor))% ATK per hit"
           }
         ],
-        "levelTables": [
-          {
-            "title": "Level Scaling",
-            "columns": [
-              {
-                "id": "base-damage-atk-per-hit",
-                "label": "Base Damage (ATK per Hit)"
-              },
-              {
-                "id": "skill-level-factor",
-                "label": "Skill Level Factor"
-              }
-            ],
-            "rows": [
-              {
-                "level": 1,
-                "values": {
-                  "base-damage-atk-per-hit": "3,000",
-                  "skill-level-factor": "25"
-                }
-              },
-              {
-                "level": 2,
-                "values": {
-                  "base-damage-atk-per-hit": "4,350",
-                  "skill-level-factor": "25"
-                }
-              },
-              {
-                "level": 3,
-                "values": {
-                  "base-damage-atk-per-hit": "5,700",
-                  "skill-level-factor": "25"
-                }
-              },
-              {
-                "level": 4,
-                "values": {
-                  "base-damage-atk-per-hit": "7,050",
-                  "skill-level-factor": "25"
-                }
-              },
-              {
-                "level": 5,
-                "values": {
-                  "base-damage-atk-per-hit": "8,400",
-                  "skill-level-factor": "25"
-                }
-              }
-            ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK per Hit) + (Spear & Sword Mastery level x Skill Level Factor))% ATK per hit"
-              }
-            ]
-          }
-        ]
+        "levelTables": []
       },
       "irowikiUrl": "",
       "balanceNotes": [],
@@ -19183,10 +18572,6 @@ export const imperialGuardData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19195,70 +18580,60 @@ export const imperialGuardData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-atk": "1750%",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-atk": "3250%",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-atk": "4750%",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-atk": "6250%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-atk": "7750%",
                   "sp-cost": "63"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-atk": "9250%",
                   "sp-cost": "66"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-atk": "10750%",
                   "sp-cost": "69"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-atk": "12250%",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-atk": "13750%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-atk": "15250%",
                   "sp-cost": "78"
                 }
               }
@@ -19451,24 +18826,12 @@ export const imperialGuardData = {
           {
             "label": "AP Generated",
             "value": "2"
-          },
-          {
-            "label": "Damage Formula",
-            "value": "(Base Damage (ATK) + (Spear & Sword Mastery level x Skill Level Factor))% ATK"
           }
         ],
         "levelTables": [
           {
             "title": "Level Scaling",
             "columns": [
-              {
-                "id": "base-damage-atk",
-                "label": "Base Damage (ATK)"
-              },
-              {
-                "id": "skill-level-factor",
-                "label": "Skill Level Factor"
-              },
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
@@ -19478,90 +18841,65 @@ export const imperialGuardData = {
               {
                 "level": 1,
                 "values": {
-                  "area-of-effect": "3x3",
-                  "base-damage-atk": "4,650",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "3x3"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "area-of-effect": "3x3",
-                  "base-damage-atk": "5,800",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "3x3"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "area-of-effect": "3x3",
-                  "base-damage-atk": "6,950",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "3x3"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "area-of-effect": "3x3",
-                  "base-damage-atk": "8,100",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "3x3"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "9,250",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "10,400",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "11,550",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "area-of-effect": "5x5",
-                  "base-damage-atk": "12,700",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "5x5"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk": "13,850",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "7x7"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "area-of-effect": "7x7",
-                  "base-damage-atk": "15,000",
-                  "skill-level-factor": "50"
+                  "area-of-effect": "7x7"
                 }
               }
             ],
-            "formulaRows": [
-              {
-                "label": "Damage Formula",
-                "value": "(Base Damage (ATK) + (Spear & Sword Mastery level x Skill Level Factor))% ATK"
-              }
-            ]
+            "formulaRows": []
           }
         ]
       },
@@ -19885,10 +19223,6 @@ export const imperialGuardData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19897,70 +19231,60 @@ export const imperialGuardData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "1950%",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "3900%",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "5850%",
                   "sp-cost": "70"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "7800%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "9750%",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-matk": "11700%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-matk": "13650%",
                   "sp-cost": "90"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-matk": "15600%",
                   "sp-cost": "95"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-matk": "17550%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-matk": "19500%",
                   "sp-cost": "105"
                 }
               }
@@ -20033,9 +19357,9 @@ export const imperialGuardData = {
           ],
           "specRows": [
             {
-              "label": "Damage Property",
-              "before": "holy",
-              "after": "neutral",
+              "label": "Damage",
+              "before": "holy (property)",
+              "after": "neutral (property)",
               "scope": "",
               "source": "Changes damage property from holy to neutral."
             }

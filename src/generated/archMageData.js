@@ -1,5 +1,5 @@
 export const archMageData = {
-  "generatedAt": "2026-07-09T03:37:44.992Z",
+  "generatedAt": "2026-07-09T13:20:38.277Z",
   "classId": 4255,
   "classSlug": "arch-mage",
   "className": "Arch Mage",
@@ -841,10 +841,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -853,35 +849,30 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "790%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1530%",
                       "sp-cost": "76"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "2270%",
                       "sp-cost": "82"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "3010%",
                       "sp-cost": "88"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "3750%",
                       "sp-cost": "94"
                     }
                   }
@@ -1072,10 +1063,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1089,7 +1076,6 @@ export const archMageData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-matk": "940%",
                       "sp-cost": "85"
                     }
                   },
@@ -1097,7 +1083,6 @@ export const archMageData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-matk": "1700%",
                       "sp-cost": "95"
                     }
                   },
@@ -1105,7 +1090,6 @@ export const archMageData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-matk": "2460%",
                       "sp-cost": "105"
                     }
                   },
@@ -1113,7 +1097,6 @@ export const archMageData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-matk": "3220%",
                       "sp-cost": "115"
                     }
                   },
@@ -1121,7 +1104,6 @@ export const archMageData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "13x13",
-                      "base-damage-matk": "3980%",
                       "sp-cost": "125"
                     }
                   }
@@ -1343,10 +1325,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1355,35 +1333,30 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "860%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1620%",
                       "sp-cost": "82"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "2380%",
                       "sp-cost": "86"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "3140%",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "3900%",
                       "sp-cost": "94"
                     }
                   }
@@ -1578,10 +1551,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1590,35 +1559,30 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "830%",
                       "sp-cost": "74"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1560%",
                       "sp-cost": "79"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "2290%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "3020%",
                       "sp-cost": "89"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "3750%",
                       "sp-cost": "94"
                     }
                   }
@@ -1819,10 +1783,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -1831,35 +1791,30 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "250%",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "500%",
                       "sp-cost": "95"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "750%",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "1000%",
                       "sp-cost": "105"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "1250%",
                       "sp-cost": "110"
                     }
                   }
@@ -2230,10 +2185,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -2247,7 +2198,6 @@ export const archMageData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-matk": "350%",
                       "sp-cost": "74"
                     }
                   },
@@ -2255,7 +2205,6 @@ export const archMageData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-matk": "700%",
                       "sp-cost": "78"
                     }
                   },
@@ -2263,7 +2212,6 @@ export const archMageData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-matk": "1050%",
                       "sp-cost": "82"
                     }
                   },
@@ -2271,7 +2219,6 @@ export const archMageData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "1400%",
                       "sp-cost": "86"
                     }
                   },
@@ -2279,7 +2226,6 @@ export const archMageData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "1750%",
                       "sp-cost": "90"
                     }
                   }
@@ -2327,9 +2273,9 @@ export const archMageData = {
                   "source": "Reduces AP recovery rate from 4 to 1."
                 },
                 {
-                  "label": "Damage Of The Secondary Attack That Deal Damage To The Target And Surrounding Enemies Around The Target",
-                  "before": "2000%Matk",
-                  "after": "3000%Matk",
+                  "label": "Damage",
+                  "before": "2000%Matk (secondary attack that deal damage to the target and surrounding enemies around the target)",
+                  "after": "3000%Matk (secondary attack that deal damage to the target and surrounding enemies around the target)",
                   "scope": "Lv 5",
                   "source": "Increases damage of the secondary attack that deal damage to the target and surrounding enemies around the target from 2000%Matk to 3000%Matk based on level 5."
                 },
@@ -2390,17 +2336,10 @@ export const archMageData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "1500%Matk",
-                  "after": "1750%Matk",
+                  "before": "1500%Matk (linear damage)/3000%Matk (e x plosion damage)",
+                  "after": "1750%Matk (linear damage)/3500%Matk (e x plosion damage)",
                   "scope": "Lv 5",
-                  "source": "Increases base damage of linear damage from 1500%Matk to 1750%Matk based on level 5."
-                },
-                {
-                  "label": "Damage",
-                  "before": "3000%Matk",
-                  "after": "3500%Matk",
-                  "scope": "Lv 5",
-                  "source": "Increases base damage of explosion damage from 3000%Matk to 3500%Matk based on level 5."
+                  "source": "Increases base damage of linear damage from 1500%Matk to 1750%Matk based on level 5. / Increases base damage of explosion damage from 3000%Matk to 3500%Matk based on level 5."
                 }
               ]
             },
@@ -2553,10 +2492,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -2570,7 +2505,6 @@ export const archMageData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-matk": "1300%",
                       "sp-cost": "103"
                     }
                   },
@@ -2578,7 +2512,6 @@ export const archMageData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-matk": "2200%",
                       "sp-cost": "106"
                     }
                   },
@@ -2586,7 +2519,6 @@ export const archMageData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-matk": "3100%",
                       "sp-cost": "109"
                     }
                   },
@@ -2594,7 +2526,6 @@ export const archMageData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-matk": "4000%",
                       "sp-cost": "112"
                     }
                   },
@@ -2602,7 +2533,6 @@ export const archMageData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "13x13",
-                      "base-damage-matk": "4900%",
                       "sp-cost": "115"
                     }
                   }
@@ -2884,10 +2814,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -2896,35 +2822,30 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1200%",
                       "sp-cost": "76"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "2400%",
                       "sp-cost": "79"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "3600%",
                       "sp-cost": "82"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "4800%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "6000%",
                       "sp-cost": "88"
                     }
                   }
@@ -3182,10 +3103,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -3199,7 +3116,6 @@ export const archMageData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-matk": "1200%",
                       "sp-cost": "72"
                     }
                   },
@@ -3207,7 +3123,6 @@ export const archMageData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-matk": "2400%",
                       "sp-cost": "76"
                     }
                   },
@@ -3215,7 +3130,6 @@ export const archMageData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "base-damage-matk": "3600%",
                       "sp-cost": "80"
                     }
                   },
@@ -3223,7 +3137,6 @@ export const archMageData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "4800%",
                       "sp-cost": "84"
                     }
                   },
@@ -3231,7 +3144,6 @@ export const archMageData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "6000%",
                       "sp-cost": "88"
                     }
                   }
@@ -3515,10 +3427,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3527,35 +3435,30 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "950%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1900%",
                       "sp-cost": "86"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "2850%",
                       "sp-cost": "94"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "3800%",
                       "sp-cost": "102"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "4750%",
                       "sp-cost": "110"
                     }
                   }
@@ -3778,10 +3681,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3790,35 +3689,30 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "2800%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "5600%",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "8400%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "11200%",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "14000%",
                       "sp-cost": "90"
                     }
                   }
@@ -3982,10 +3876,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -3994,35 +3884,30 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1400%",
                       "sp-cost": "94"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "2600%",
                       "sp-cost": "102"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "3800%",
                       "sp-cost": "110"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "5000%",
                       "sp-cost": "118"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "6200%",
                       "sp-cost": "126"
                     }
                   }
@@ -4223,10 +4108,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -4240,7 +4121,6 @@ export const archMageData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-matk": "1550%",
                       "sp-cost": "170"
                     }
                   },
@@ -4248,7 +4128,6 @@ export const archMageData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-matk": "2850%",
                       "sp-cost": "174"
                     }
                   },
@@ -4256,7 +4135,6 @@ export const archMageData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-matk": "4150%",
                       "sp-cost": "178"
                     }
                   },
@@ -4264,7 +4142,6 @@ export const archMageData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-matk": "5450%",
                       "sp-cost": "182"
                     }
                   },
@@ -4272,7 +4149,6 @@ export const archMageData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "13x13",
-                      "base-damage-matk": "6750%",
                       "sp-cost": "186"
                     }
                   }
@@ -4487,10 +4363,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -4504,7 +4376,6 @@ export const archMageData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "3450%",
                       "sp-cost": "170"
                     }
                   },
@@ -4512,7 +4383,6 @@ export const archMageData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
-                      "base-damage-matk": "6300%",
                       "sp-cost": "174"
                     }
                   },
@@ -4520,7 +4390,6 @@ export const archMageData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-matk": "9150%",
                       "sp-cost": "178"
                     }
                   },
@@ -4528,7 +4397,6 @@ export const archMageData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "9x9",
-                      "base-damage-matk": "12000%",
                       "sp-cost": "182"
                     }
                   },
@@ -4536,7 +4404,6 @@ export const archMageData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "11x11",
-                      "base-damage-matk": "14850%",
                       "sp-cost": "186"
                     }
                   }
@@ -4630,24 +4497,10 @@ export const archMageData = {
                 },
                 {
                   "label": "Damage",
-                  "before": "14250%Matk",
-                  "after": "14850%Matk",
+                  "before": "14250%Matk/Clima x level 3 from 200% (bonus)/Clima x level 5 from 50% increasing (modifier)",
+                  "after": "14850%Matk/150% (bonus)/20% reducing (modifier)",
                   "scope": "Lv 5",
-                  "source": "Increases base damage from 14250%Matk to 14850%Matk based on level 5."
-                },
-                {
-                  "label": "Damage Bonus",
-                  "before": "Clima x level 3 from 200%",
-                  "after": "150%",
-                  "scope": "",
-                  "source": "Reduces damage bonus from Climax level 3 from 200% to 150%."
-                },
-                {
-                  "label": "Damage Modifier",
-                  "before": "Clima x level 5 from 50% increasing",
-                  "after": "20% reducing",
-                  "scope": "",
-                  "source": "Changes damage modifier from Climax level 5 from 50% increasing to 20% reducing."
+                  "source": "Increases base damage from 14250%Matk to 14850%Matk based on level 5. / Reduces damage bonus from Climax level 3 from 200% to 150%. / Changes damage modifier from Climax level 5 from 50% increasing to 20% reducing."
                 },
                 {
                   "label": "SP Cost",
@@ -4784,10 +4637,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -4796,35 +4645,30 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1400%",
                       "sp-cost": "110"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "2600%",
                       "sp-cost": "114"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "3800%",
                       "sp-cost": "118"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "5000%",
                       "sp-cost": "122"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "6200%",
                       "sp-cost": "126"
                     }
                   }
@@ -5079,10 +4923,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -5091,70 +4931,60 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "2100%\n650%",
                       "sp-cost": "130"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "3900%\n1300%",
                       "sp-cost": "130"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "5700%\n1950%",
                       "sp-cost": "130"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "7500%\n2600%",
                       "sp-cost": "130"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "9300%\n3250%",
                       "sp-cost": "130"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "11100%\n3900%",
                       "sp-cost": "130"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "12900%\n4550%",
                       "sp-cost": "130"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "14700%\n5200%",
                       "sp-cost": "130"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "16500%\n5850%",
                       "sp-cost": "130"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "18300%\n6500%",
                       "sp-cost": "130"
                     }
                   }
@@ -5679,7 +5509,7 @@ export const archMageData = {
                     "level": 1,
                     "values": {
                       "40-sp-movement": "-10%",
-                      "effect": "AGI/DE x : -6% Monster / -3% Player",
+                      "effect": "AGI / DE x : -6% Monster / -3% Player",
                       "sp-cost": "40",
                       "range": "11 cells",
                       "data-1": "50",
@@ -5691,7 +5521,7 @@ export const archMageData = {
                     "level": 2,
                     "values": {
                       "42-sp-movement": "-20%",
-                      "effect": "AGI/DE x : -12% Monster / -6% Player",
+                      "effect": "AGI / DE x : -12% Monster / -6% Player",
                       "sp-cost": "42",
                       "range": "11 cells",
                       "data-1": "60",
@@ -5703,7 +5533,7 @@ export const archMageData = {
                     "level": 3,
                     "values": {
                       "44-sp-movement": "-30%",
-                      "effect": "AGI/DE x : -18% Monster / -9% Player",
+                      "effect": "AGI / DE x : -18% Monster / -9% Player",
                       "sp-cost": "44",
                       "range": "11 cells",
                       "data-1": "70",
@@ -5715,7 +5545,7 @@ export const archMageData = {
                     "level": 4,
                     "values": {
                       "46-sp-movement": "-40%",
-                      "effect": "AGI/DE x : -24% Monster / -12% Player",
+                      "effect": "AGI / DE x : -24% Monster / -12% Player",
                       "sp-cost": "46",
                       "range": "11 cells",
                       "data-1": "80",
@@ -5727,7 +5557,7 @@ export const archMageData = {
                     "level": 5,
                     "values": {
                       "48-sp-movement": "-50%",
-                      "effect": "AGI/DE x : -30% Monster / -15% Player",
+                      "effect": "AGI / DE x : -30% Monster / -15% Player",
                       "sp-cost": "48",
                       "range": "11 cells",
                       "data-1": "90",
@@ -7581,10 +7411,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7601,7 +7427,6 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1300%",
                       "sp-cost": "60",
                       "range": "11 cells",
                       "atk": "1600"
@@ -7610,7 +7435,6 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1900%",
                       "sp-cost": "70",
                       "range": "11 cells",
                       "atk": "1900"
@@ -7619,7 +7443,6 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "2500%",
                       "sp-cost": "80",
                       "range": "11 cells",
                       "atk": "2200"
@@ -7628,7 +7451,6 @@ export const archMageData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "3100%",
                       "sp-cost": "90",
                       "range": "11 cells",
                       "atk": "2500"
@@ -7637,7 +7459,6 @@ export const archMageData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "3700%",
                       "sp-cost": "100",
                       "range": "11 cells",
                       "atk": "2800"
@@ -7866,10 +7687,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -7894,7 +7711,6 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "300%",
                       "sp-cost": "40",
                       "range": "11 cells",
                       "atk": "300",
@@ -7905,7 +7721,6 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "400%",
                       "sp-cost": "48",
                       "range": "11 cells",
                       "atk": "400",
@@ -7916,7 +7731,6 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "500%",
                       "sp-cost": "56",
                       "range": "11 cells",
                       "atk": "500",
@@ -7927,7 +7741,6 @@ export const archMageData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "600%",
                       "sp-cost": "64",
                       "range": "11 cells",
                       "atk": "600",
@@ -7938,7 +7751,6 @@ export const archMageData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "700%",
                       "sp-cost": "72",
                       "range": "11 cells",
                       "atk": "700",
@@ -8168,7 +7980,7 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "80 SP /5 Attacks",
+                      "effect": "80 SP / 5 Attacks",
                       "sp-cost": "80",
                       "range": "11 cells",
                       "atk": "0",
@@ -8178,7 +7990,7 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "90 SP /6 Attacks",
+                      "effect": "90 SP / 6 Attacks",
                       "sp-cost": "90",
                       "range": "11 cells",
                       "atk": "0",
@@ -8188,7 +8000,7 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "100 SP /7 Attacks",
+                      "effect": "100 SP / 7 Attacks",
                       "sp-cost": "100",
                       "range": "11 cells",
                       "atk": "0",
@@ -8198,7 +8010,7 @@ export const archMageData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "110 SP /8 Attacks",
+                      "effect": "110 SP / 8 Attacks",
                       "sp-cost": "110",
                       "range": "11 cells",
                       "atk": "0",
@@ -8208,7 +8020,7 @@ export const archMageData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "120 SP /9 Attacks",
+                      "effect": "120 SP / 9 Attacks",
                       "sp-cost": "120",
                       "range": "11 cells",
                       "atk": "0",
@@ -8692,10 +8504,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -8716,7 +8524,6 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1200%",
                       "sp-cost": "30",
                       "range": "11 cells",
                       "atk": "500",
@@ -8726,7 +8533,6 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1400%",
                       "sp-cost": "35",
                       "range": "11 cells",
                       "atk": "600",
@@ -8736,7 +8542,6 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "1600%",
                       "sp-cost": "40",
                       "range": "11 cells",
                       "atk": "700",
@@ -8746,7 +8551,6 @@ export const archMageData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "1800%",
                       "sp-cost": "45",
                       "range": "11 cells",
                       "atk": "800",
@@ -8756,7 +8560,6 @@ export const archMageData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "2000%",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "atk": "900",
@@ -9266,7 +9069,7 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK(Fire/Shadow) 400%/1000%/Area 3 x 3",
+                      "effect": "MATK(Fire / Shadow) 400% / 1000% / Area 3 x 3",
                       "sp-cost": "64",
                       "range": "11 cells",
                       "data-1": "600",
@@ -9276,7 +9079,7 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK(Fire/Shadow) 800%/1200%/Area 3 x 3",
+                      "effect": "MATK(Fire / Shadow) 800% / 1200% / Area 3 x 3",
                       "sp-cost": "70",
                       "range": "11 cells",
                       "data-1": "650",
@@ -9286,7 +9089,7 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK(Fire/Shadow) 1200%/1800%/Area 3 x 3",
+                      "effect": "MATK(Fire / Shadow) 1200% / 1800% / Area 3 x 3",
                       "sp-cost": "76",
                       "range": "11 cells",
                       "data-1": "700",
@@ -9296,7 +9099,7 @@ export const archMageData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK(Fire/Shadow) 1600%/2400%/Area 5 x 5",
+                      "effect": "MATK(Fire / Shadow) 1600% / 2400% / Area 5 x 5",
                       "sp-cost": "82",
                       "range": "11 cells",
                       "data-1": "750",
@@ -9306,7 +9109,7 @@ export const archMageData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK(Fire/Shadow) 2000%/3000%/Area 5 x 5",
+                      "effect": "MATK(Fire / Shadow) 2000% / 3000% / Area 5 x 5",
                       "sp-cost": "88",
                       "range": "11 cells",
                       "data-1": "800",
@@ -9536,10 +9339,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -9564,7 +9363,6 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1300%",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "atk": "1300",
@@ -9575,7 +9373,6 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1600%",
                       "sp-cost": "60",
                       "range": "11 cells",
                       "atk": "1600",
@@ -9586,7 +9383,6 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "1900%",
                       "sp-cost": "70",
                       "range": "11 cells",
                       "atk": "1900",
@@ -9597,7 +9393,6 @@ export const archMageData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "2200%",
                       "sp-cost": "80",
                       "range": "11 cells",
                       "atk": "2200",
@@ -9608,7 +9403,6 @@ export const archMageData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "2500%",
                       "sp-cost": "90",
                       "range": "11 cells",
                       "atk": "2500",
@@ -9839,10 +9633,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -9867,7 +9657,6 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1600%",
                       "sp-cost": "70",
                       "range": "6 cells",
                       "data-1": "5",
@@ -9878,7 +9667,6 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "2200%",
                       "sp-cost": "78",
                       "range": "6 cells",
                       "data-1": "6",
@@ -9889,7 +9677,6 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "2800%",
                       "sp-cost": "86",
                       "range": "6 cells",
                       "data-1": "7",
@@ -9900,7 +9687,6 @@ export const archMageData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "3400%",
                       "sp-cost": "94",
                       "range": "6 cells",
                       "data-1": "8",
@@ -9911,7 +9697,6 @@ export const archMageData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "4000%",
                       "sp-cost": "102",
                       "range": "6 cells",
                       "data-1": "9",
@@ -10407,10 +10192,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -10439,7 +10220,6 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "3200%",
                       "sp-cost": "70",
                       "range": "11 cells",
                       "atk": "3000",
@@ -10451,7 +10231,6 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "3900%",
                       "sp-cost": "90",
                       "range": "11 cells",
                       "atk": "3500",
@@ -10463,7 +10242,6 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "4600%",
                       "sp-cost": "110",
                       "range": "11 cells",
                       "atk": "4000",
@@ -10475,7 +10253,6 @@ export const archMageData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "5300%",
                       "sp-cost": "130",
                       "range": "11 cells",
                       "atk": "4500",
@@ -10487,7 +10264,6 @@ export const archMageData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "6000%",
                       "sp-cost": "150",
                       "range": "11 cells",
                       "atk": "5000",
@@ -11329,10 +11105,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -11349,7 +11121,6 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "1200%",
                       "sp-cost": "120",
                       "range": "11 cells",
                       "atk": "1000"
@@ -11358,7 +11129,6 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "1600%",
                       "sp-cost": "150",
                       "range": "11 cells",
                       "atk": "1500"
@@ -11367,7 +11137,6 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "2000%",
                       "sp-cost": "180",
                       "range": "11 cells",
                       "atk": "2000"
@@ -11376,7 +11145,6 @@ export const archMageData = {
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "2400%",
                       "sp-cost": "210",
                       "range": "11 cells",
                       "atk": "2500"
@@ -11385,7 +11153,6 @@ export const archMageData = {
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "2800%",
                       "sp-cost": "240",
                       "range": "11 cells",
                       "atk": "3000"
@@ -11394,7 +11161,6 @@ export const archMageData = {
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "3200%",
                       "sp-cost": "200",
                       "range": "11 cells",
                       "atk": "3200"
@@ -11403,7 +11169,6 @@ export const archMageData = {
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "3600%",
                       "sp-cost": "240",
                       "range": "11 cells",
                       "atk": "3400"
@@ -11412,7 +11177,6 @@ export const archMageData = {
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "4000%",
                       "sp-cost": "280",
                       "range": "11 cells",
                       "atk": "3600"
@@ -11421,7 +11185,6 @@ export const archMageData = {
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "4400%",
                       "sp-cost": "320",
                       "range": "11 cells",
                       "atk": "3800"
@@ -11430,7 +11193,6 @@ export const archMageData = {
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "4800%",
                       "sp-cost": "360",
                       "range": "11 cells",
                       "atk": "4000"
@@ -12373,45 +12135,36 @@ export const archMageData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1time",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 2time",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 3time",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 4time",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 5time",
                       "sp-cost": "30"
                     }
                   }
@@ -12593,10 +12346,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -12605,70 +12354,60 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "140%",
                       "sp-cost": "37"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "180%",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "200%",
                       "sp-cost": "43"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "220%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "240%",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "260%",
                       "sp-cost": "49"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "280%",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "300%",
                       "sp-cost": "53"
                     }
                   }
@@ -13497,10 +13236,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -13509,70 +13244,60 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "500%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "600%",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "700%",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "800%",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "900%",
                       "sp-cost": "76"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "1000%",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "1100%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "1200%",
                       "sp-cost": "88"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "1300%",
                       "sp-cost": "92"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "1400%",
                       "sp-cost": "96"
                     }
                   }
@@ -13699,10 +13424,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -13711,35 +13432,30 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "125%",
                       "sp-cost": "28"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "250%",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "375%",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "500%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "625%",
                       "sp-cost": "44"
                     }
                   }
@@ -14428,10 +14144,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -14440,35 +14152,30 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "130%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "190%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "220%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "250%",
                       "sp-cost": "25"
                     }
                   }
@@ -14592,35 +14299,35 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 5sec, AGI/DE x Reduction: 10%",
+                      "effect": "Duration: 5sec, AGI / DE x Reduction: 10%",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration:10sec, AGI/DE x Reduction: 20%",
+                      "effect": "Duration:10sec, AGI / DE x Reduction: 20%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration:15sec, AGI/DE x Reduction: 30%",
+                      "effect": "Duration:15sec, AGI / DE x Reduction: 30%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration:20sec, AGI/DE x Reduction: 40%",
+                      "effect": "Duration:20sec, AGI / DE x Reduction: 40%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration:25sec, AGI/DE x Reduction: 50%",
+                      "effect": "Duration:25sec, AGI / DE x Reduction: 50%",
                       "sp-cost": "25"
                     }
                   }
@@ -15163,10 +14870,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -15175,70 +14878,60 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "170%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "220%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "270%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "320%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "370%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "420%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "470%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "520%",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "570%",
                       "sp-cost": "78"
                     }
                   }
@@ -15415,7 +15108,7 @@ export const archMageData = {
                     "level": 1,
                     "values": {
                       "5-sec-duration-enemy-speed": "-5%",
-                      "effect": "400 Damage/Sec",
+                      "effect": "400 Damage / Sec",
                       "sp-cost": "60"
                     }
                   },
@@ -15423,7 +15116,7 @@ export const archMageData = {
                     "level": 2,
                     "values": {
                       "6-sec-duration-enemy-speed": "-10%",
-                      "effect": "600 Damage/Sec",
+                      "effect": "600 Damage / Sec",
                       "sp-cost": "70"
                     }
                   },
@@ -15431,7 +15124,7 @@ export const archMageData = {
                     "level": 3,
                     "values": {
                       "7-sec-duration-enemy-speed": "-15%",
-                      "effect": "800 Damage/Sec",
+                      "effect": "800 Damage / Sec",
                       "sp-cost": "80"
                     }
                   },
@@ -15439,7 +15132,7 @@ export const archMageData = {
                     "level": 4,
                     "values": {
                       "8-sec-duration-enemy-speed": "-20%",
-                      "effect": "1,000 Damage/Sec",
+                      "effect": "1,000 Damage / Sec",
                       "sp-cost": "90"
                     }
                   },
@@ -15447,7 +15140,7 @@ export const archMageData = {
                     "level": 5,
                     "values": {
                       "9-sec-duration-enemy-speed": "-25%",
-                      "effect": "1,200 Damage/Sec",
+                      "effect": "1,200 Damage / Sec",
                       "sp-cost": "100"
                     }
                   }
@@ -15617,7 +15310,7 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "effect": "Enables Sitting\nSitting doubles HP / SP Recovery Speed\nPress the Insert key or type / sit",
                       "sp-cost": "0"
                     }
                   },
@@ -15645,7 +15338,7 @@ export const archMageData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "effect": "Organize Party\nCreate a party by typing / organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
@@ -16514,10 +16207,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -16526,70 +16215,60 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "80%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "90%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "100%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "110%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "130%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "140%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "150%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "170%",
                       "sp-cost": "18"
                     }
                   }
@@ -17142,70 +16821,70 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(3 + 0.2% of Ma x SP)/10 sec",
+                      "effect": "(3 + 0.2% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(6 + 0.4% of Ma x SP)/10 sec",
+                      "effect": "(6 + 0.4% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(9 + 0.6% of Ma x SP)/10 sec",
+                      "effect": "(9 + 0.6% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(12 + 0.8% of Ma x SP)/10 sec",
+                      "effect": "(12 + 0.8% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(15 + 1.0% of Ma x SP)/10 sec",
+                      "effect": "(15 + 1.0% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(18 + 1.2% of Ma x SP)/10 sec",
+                      "effect": "(18 + 1.2% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(21 + 1.4% of Ma x SP)/10 sec",
+                      "effect": "(21 + 1.4% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(24 + 1.6% of Ma x SP)/10 sec",
+                      "effect": "(24 + 1.6% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(27 + 1.8% of Ma x SP)/10 sec",
+                      "effect": "(27 + 1.8% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(30 + 2.0% of Ma x SP)/10 sec",
+                      "effect": "(30 + 2.0% of Ma x SP) / 10 sec",
                       "sp-cost": "0"
                     }
                   }
@@ -17381,10 +17060,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -17393,70 +17068,60 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "110%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "120%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "130%",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "140%",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "150%",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "170%",
                       "sp-cost": "19"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "180%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "190%",
                       "sp-cost": "17"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "200%",
                       "sp-cost": "16"
                     }
                   }
@@ -17876,80 +17541,66 @@ export const archMageData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 1time, + 5% dmg to Undead, SP Consumption:18",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 1time, +10% dmg to Undead, SP Consumption:14",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 2times, +15% dmg to Undead, SP Consumption:24",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 2times, +20% dmg to Undead, SP Consumption:20",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 3times, +25% dmg to Undead, SP Consumption:30",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "ATK 3times, +30% dmg to Undead, SP Consumption:26",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "ATK 4times, +35% dmg to Undead, SP Consumption:36",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "ATK 4times, +40% dmg to Undead, SP Consumption:32",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "ATK 5times, +45% dmg to Undead, SP Consumption:42",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "ATK 5times, +50% dmg to Undead, SP Consumption:38",
                       "sp-cost": "38"
                     }
                   }
@@ -18125,10 +17776,6 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   }
@@ -18137,70 +17784,60 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "base-damage-matk": "160%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "base-damage-matk": "180%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "base-damage-matk": "200%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "base-damage-matk": "220%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "base-damage-matk": "240%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "base-damage-matk": "260%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "base-damage-matk": "280%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "base-damage-matk": "300%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "base-damage-matk": "320%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "base-damage-matk": "340%",
                       "sp-cost": "25"
                     }
                   }
@@ -19129,10 +18766,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19141,35 +18774,30 @@ export const archMageData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "790%",
                   "sp-cost": "70"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "1530%",
                   "sp-cost": "76"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "2270%",
                   "sp-cost": "82"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "3010%",
                   "sp-cost": "88"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "3750%",
                   "sp-cost": "94"
                 }
               }
@@ -19360,10 +18988,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -19377,7 +19001,6 @@ export const archMageData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-matk": "940%",
                   "sp-cost": "85"
                 }
               },
@@ -19385,7 +19008,6 @@ export const archMageData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-matk": "1700%",
                   "sp-cost": "95"
                 }
               },
@@ -19393,7 +19015,6 @@ export const archMageData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "11x11",
-                  "base-damage-matk": "2460%",
                   "sp-cost": "105"
                 }
               },
@@ -19401,7 +19022,6 @@ export const archMageData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "11x11",
-                  "base-damage-matk": "3220%",
                   "sp-cost": "115"
                 }
               },
@@ -19409,7 +19029,6 @@ export const archMageData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "13x13",
-                  "base-damage-matk": "3980%",
                   "sp-cost": "125"
                 }
               }
@@ -19631,10 +19250,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19643,35 +19258,30 @@ export const archMageData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "860%",
                   "sp-cost": "78"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "1620%",
                   "sp-cost": "82"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "2380%",
                   "sp-cost": "86"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "3140%",
                   "sp-cost": "90"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "3900%",
                   "sp-cost": "94"
                 }
               }
@@ -19866,10 +19476,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -19878,35 +19484,30 @@ export const archMageData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "830%",
                   "sp-cost": "74"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "1560%",
                   "sp-cost": "79"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "2290%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "3020%",
                   "sp-cost": "89"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "3750%",
                   "sp-cost": "94"
                 }
               }
@@ -20107,10 +19708,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -20119,35 +19716,30 @@ export const archMageData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "250%",
                   "sp-cost": "90"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "500%",
                   "sp-cost": "95"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "750%",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "1000%",
                   "sp-cost": "105"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "1250%",
                   "sp-cost": "110"
                 }
               }
@@ -20518,10 +20110,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -20535,7 +20123,6 @@ export const archMageData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-matk": "350%",
                   "sp-cost": "74"
                 }
               },
@@ -20543,7 +20130,6 @@ export const archMageData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-matk": "700%",
                   "sp-cost": "78"
                 }
               },
@@ -20551,7 +20137,6 @@ export const archMageData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-matk": "1050%",
                   "sp-cost": "82"
                 }
               },
@@ -20559,7 +20144,6 @@ export const archMageData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-matk": "1400%",
                   "sp-cost": "86"
                 }
               },
@@ -20567,7 +20151,6 @@ export const archMageData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-matk": "1750%",
                   "sp-cost": "90"
                 }
               }
@@ -20615,9 +20198,9 @@ export const archMageData = {
               "source": "Reduces AP recovery rate from 4 to 1."
             },
             {
-              "label": "Damage Of The Secondary Attack That Deal Damage To The Target And Surrounding Enemies Around The Target",
-              "before": "2000%Matk",
-              "after": "3000%Matk",
+              "label": "Damage",
+              "before": "2000%Matk (secondary attack that deal damage to the target and surrounding enemies around the target)",
+              "after": "3000%Matk (secondary attack that deal damage to the target and surrounding enemies around the target)",
               "scope": "Lv 5",
               "source": "Increases damage of the secondary attack that deal damage to the target and surrounding enemies around the target from 2000%Matk to 3000%Matk based on level 5."
             },
@@ -20678,17 +20261,10 @@ export const archMageData = {
             },
             {
               "label": "Damage",
-              "before": "1500%Matk",
-              "after": "1750%Matk",
+              "before": "1500%Matk (linear damage)/3000%Matk (e x plosion damage)",
+              "after": "1750%Matk (linear damage)/3500%Matk (e x plosion damage)",
               "scope": "Lv 5",
-              "source": "Increases base damage of linear damage from 1500%Matk to 1750%Matk based on level 5."
-            },
-            {
-              "label": "Damage",
-              "before": "3000%Matk",
-              "after": "3500%Matk",
-              "scope": "Lv 5",
-              "source": "Increases base damage of explosion damage from 3000%Matk to 3500%Matk based on level 5."
+              "source": "Increases base damage of linear damage from 1500%Matk to 1750%Matk based on level 5. / Increases base damage of explosion damage from 3000%Matk to 3500%Matk based on level 5."
             }
           ]
         },
@@ -20841,10 +20417,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -20858,7 +20430,6 @@ export const archMageData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-matk": "1300%",
                   "sp-cost": "103"
                 }
               },
@@ -20866,7 +20437,6 @@ export const archMageData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-matk": "2200%",
                   "sp-cost": "106"
                 }
               },
@@ -20874,7 +20444,6 @@ export const archMageData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "11x11",
-                  "base-damage-matk": "3100%",
                   "sp-cost": "109"
                 }
               },
@@ -20882,7 +20451,6 @@ export const archMageData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "11x11",
-                  "base-damage-matk": "4000%",
                   "sp-cost": "112"
                 }
               },
@@ -20890,7 +20458,6 @@ export const archMageData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "13x13",
-                  "base-damage-matk": "4900%",
                   "sp-cost": "115"
                 }
               }
@@ -21172,10 +20739,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -21184,35 +20747,30 @@ export const archMageData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "1200%",
                   "sp-cost": "76"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "2400%",
                   "sp-cost": "79"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "3600%",
                   "sp-cost": "82"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "4800%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "6000%",
                   "sp-cost": "88"
                 }
               }
@@ -21470,10 +21028,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -21487,7 +21041,6 @@ export const archMageData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-matk": "1200%",
                   "sp-cost": "72"
                 }
               },
@@ -21495,7 +21048,6 @@ export const archMageData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-matk": "2400%",
                   "sp-cost": "76"
                 }
               },
@@ -21503,7 +21055,6 @@ export const archMageData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "5x5",
-                  "base-damage-matk": "3600%",
                   "sp-cost": "80"
                 }
               },
@@ -21511,7 +21062,6 @@ export const archMageData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-matk": "4800%",
                   "sp-cost": "84"
                 }
               },
@@ -21519,7 +21069,6 @@ export const archMageData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-matk": "6000%",
                   "sp-cost": "88"
                 }
               }
@@ -21803,10 +21352,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -21815,35 +21360,30 @@ export const archMageData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "950%",
                   "sp-cost": "78"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "1900%",
                   "sp-cost": "86"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "2850%",
                   "sp-cost": "94"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "3800%",
                   "sp-cost": "102"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "4750%",
                   "sp-cost": "110"
                 }
               }
@@ -22066,10 +21606,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -22078,35 +21614,30 @@ export const archMageData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "2800%",
                   "sp-cost": "70"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "5600%",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "8400%",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "11200%",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "14000%",
                   "sp-cost": "90"
                 }
               }
@@ -22270,10 +21801,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -22282,35 +21809,30 @@ export const archMageData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "1400%",
                   "sp-cost": "94"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "2600%",
                   "sp-cost": "102"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "3800%",
                   "sp-cost": "110"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "5000%",
                   "sp-cost": "118"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "6200%",
                   "sp-cost": "126"
                 }
               }
@@ -22511,10 +22033,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -22528,7 +22046,6 @@ export const archMageData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-matk": "1550%",
                   "sp-cost": "170"
                 }
               },
@@ -22536,7 +22053,6 @@ export const archMageData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-matk": "2850%",
                   "sp-cost": "174"
                 }
               },
@@ -22544,7 +22060,6 @@ export const archMageData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "11x11",
-                  "base-damage-matk": "4150%",
                   "sp-cost": "178"
                 }
               },
@@ -22552,7 +22067,6 @@ export const archMageData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "11x11",
-                  "base-damage-matk": "5450%",
                   "sp-cost": "182"
                 }
               },
@@ -22560,7 +22074,6 @@ export const archMageData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "13x13",
-                  "base-damage-matk": "6750%",
                   "sp-cost": "186"
                 }
               }
@@ -22775,10 +22288,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -22792,7 +22301,6 @@ export const archMageData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-matk": "3450%",
                   "sp-cost": "170"
                 }
               },
@@ -22800,7 +22308,6 @@ export const archMageData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "7x7",
-                  "base-damage-matk": "6300%",
                   "sp-cost": "174"
                 }
               },
@@ -22808,7 +22315,6 @@ export const archMageData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-matk": "9150%",
                   "sp-cost": "178"
                 }
               },
@@ -22816,7 +22322,6 @@ export const archMageData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "9x9",
-                  "base-damage-matk": "12000%",
                   "sp-cost": "182"
                 }
               },
@@ -22824,7 +22329,6 @@ export const archMageData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "11x11",
-                  "base-damage-matk": "14850%",
                   "sp-cost": "186"
                 }
               }
@@ -22918,24 +22422,10 @@ export const archMageData = {
             },
             {
               "label": "Damage",
-              "before": "14250%Matk",
-              "after": "14850%Matk",
+              "before": "14250%Matk/Clima x level 3 from 200% (bonus)/Clima x level 5 from 50% increasing (modifier)",
+              "after": "14850%Matk/150% (bonus)/20% reducing (modifier)",
               "scope": "Lv 5",
-              "source": "Increases base damage from 14250%Matk to 14850%Matk based on level 5."
-            },
-            {
-              "label": "Damage Bonus",
-              "before": "Clima x level 3 from 200%",
-              "after": "150%",
-              "scope": "",
-              "source": "Reduces damage bonus from Climax level 3 from 200% to 150%."
-            },
-            {
-              "label": "Damage Modifier",
-              "before": "Clima x level 5 from 50% increasing",
-              "after": "20% reducing",
-              "scope": "",
-              "source": "Changes damage modifier from Climax level 5 from 50% increasing to 20% reducing."
+              "source": "Increases base damage from 14250%Matk to 14850%Matk based on level 5. / Reduces damage bonus from Climax level 3 from 200% to 150%. / Changes damage modifier from Climax level 5 from 50% increasing to 20% reducing."
             },
             {
               "label": "SP Cost",
@@ -23072,10 +22562,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -23084,35 +22570,30 @@ export const archMageData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "1400%",
                   "sp-cost": "110"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "2600%",
                   "sp-cost": "114"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "3800%",
                   "sp-cost": "118"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "5000%",
                   "sp-cost": "122"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "6200%",
                   "sp-cost": "126"
                 }
               }
@@ -23367,10 +22848,6 @@ export const archMageData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "base-damage-matk",
-                "label": "Base Damage (MATK)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               }
@@ -23379,70 +22856,60 @@ export const archMageData = {
               {
                 "level": 1,
                 "values": {
-                  "base-damage-matk": "2100%\n650%",
                   "sp-cost": "130"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "base-damage-matk": "3900%\n1300%",
                   "sp-cost": "130"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "base-damage-matk": "5700%\n1950%",
                   "sp-cost": "130"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "base-damage-matk": "7500%\n2600%",
                   "sp-cost": "130"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "base-damage-matk": "9300%\n3250%",
                   "sp-cost": "130"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "base-damage-matk": "11100%\n3900%",
                   "sp-cost": "130"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "base-damage-matk": "12900%\n4550%",
                   "sp-cost": "130"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "base-damage-matk": "14700%\n5200%",
                   "sp-cost": "130"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "base-damage-matk": "16500%\n5850%",
                   "sp-cost": "130"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "base-damage-matk": "18300%\n6500%",
                   "sp-cost": "130"
                 }
               }
