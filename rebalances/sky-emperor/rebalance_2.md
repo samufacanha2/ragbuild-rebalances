@@ -50,8 +50,8 @@ addsNewSkills: false
 	- Increases SP consumption from 45 to 63 based on level 5.
 
 	15.10. All in the Sky
-	- Reduces cooldown from 60 seconds to 1.52 seconds.
+	- Reduces cooldown from 60 seconds to 2 seconds.
 	- Removes delay after skill.
 	- Reduces SP consumption from 100 to 85.
-	- Reduces AP consumption from 100 to 2535.
+	- Reduces AP consumption from 100 to 35.
 	- Increases damage from 20000%Atk to 23000%Atk per hit based on level 10.

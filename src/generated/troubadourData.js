@@ -1,5 +1,5 @@
 export const troubadourData = {
-  "generatedAt": "2026-07-09T03:39:19.437Z",
+  "generatedAt": "2026-07-09T12:11:32.571Z",
   "classId": 4263,
   "classSlug": "troubadour",
   "className": "Troubadour",
@@ -116,7 +116,7 @@ export const troubadourData = {
           "section": "12.4",
           "name": "Rose Blossom",
           "notes": [
-            "Reduces cooldown from 3 seconds to 10.5 second based on level 5.",
+            "Reduces cooldown from 3 seconds to 0.5 second based on level 5.",
             "Reduces SP consumption from 275 to 125 based on level 5.",
             "Reduces AP recovery rate from 5 to 3 based on level 5.",
             "Increases damage of the primary attack from 2500%Atk to 3750%Atk based on level 5.",
@@ -1822,7 +1822,7 @@ export const troubadourData = {
               "file": "rebalances/troubadour/rebalance_1.md",
               "section": "12.4",
               "notes": [
-                "Reduces cooldown from 3 seconds to 10.5 second based on level 5.",
+                "Reduces cooldown from 3 seconds to 0.5 second based on level 5.",
                 "Reduces SP consumption from 275 to 125 based on level 5.",
                 "Reduces AP recovery rate from 5 to 3 based on level 5.",
                 "Increases damage of the primary attack from 2500%Atk to 3750%Atk based on level 5.",
@@ -1834,9 +1834,9 @@ export const troubadourData = {
                 {
                   "label": "Cooldown",
                   "before": "3 seconds",
-                  "after": "10.5 second",
+                  "after": "0.5 second",
                   "scope": "Lv 5",
-                  "source": "Reduces cooldown from 3 seconds to 10.5 second based on level 5."
+                  "source": "Reduces cooldown from 3 seconds to 0.5 second based on level 5."
                 },
                 {
                   "label": "SP Cost",
@@ -19900,7 +19900,7 @@ export const troubadourData = {
           "file": "rebalances/troubadour/rebalance_1.md",
           "section": "12.4",
           "notes": [
-            "Reduces cooldown from 3 seconds to 10.5 second based on level 5.",
+            "Reduces cooldown from 3 seconds to 0.5 second based on level 5.",
             "Reduces SP consumption from 275 to 125 based on level 5.",
             "Reduces AP recovery rate from 5 to 3 based on level 5.",
             "Increases damage of the primary attack from 2500%Atk to 3750%Atk based on level 5.",
@@ -19912,9 +19912,9 @@ export const troubadourData = {
             {
               "label": "Cooldown",
               "before": "3 seconds",
-              "after": "10.5 second",
+              "after": "0.5 second",
               "scope": "Lv 5",
-              "source": "Reduces cooldown from 3 seconds to 10.5 second based on level 5."
+              "source": "Reduces cooldown from 3 seconds to 0.5 second based on level 5."
             },
             {
               "label": "SP Cost",

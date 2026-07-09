@@ -1,5 +1,5 @@
 export const skyEmperorData = {
-  "generatedAt": "2026-07-09T04:23:47.367Z",
+  "generatedAt": "2026-07-09T12:12:19.754Z",
   "classId": 4302,
   "classSlug": "sky-emperor",
   "className": "Sky Emperor",
@@ -164,10 +164,10 @@ export const skyEmperorData = {
           "section": "15.10",
           "name": "All in the Sky",
           "notes": [
-            "Reduces cooldown from 60 seconds to 1.52 seconds.",
+            "Reduces cooldown from 60 seconds to 2 seconds.",
             "Removes delay after skill.",
             "Reduces SP consumption from 100 to 85.",
-            "Reduces AP consumption from 100 to 2535.",
+            "Reduces AP consumption from 100 to 35.",
             "Increases damage from 20000%Atk to 23000%Atk per hit based on level 10."
           ]
         }
@@ -2856,19 +2856,19 @@ export const skyEmperorData = {
               "file": "rebalances/sky-emperor/rebalance_2.md",
               "section": "15.10",
               "notes": [
-                "Reduces cooldown from 60 seconds to 1.52 seconds.",
+                "Reduces cooldown from 60 seconds to 2 seconds.",
                 "Removes delay after skill.",
                 "Reduces SP consumption from 100 to 85.",
-                "Reduces AP consumption from 100 to 2535.",
+                "Reduces AP consumption from 100 to 35.",
                 "Increases damage from 20000%Atk to 23000%Atk per hit based on level 10."
               ],
               "specRows": [
                 {
                   "label": "Cooldown",
                   "before": "60 seconds",
-                  "after": "1.52 seconds",
+                  "after": "2 seconds",
                   "scope": "",
-                  "source": "Reduces cooldown from 60 seconds to 1.52 seconds."
+                  "source": "Reduces cooldown from 60 seconds to 2 seconds."
                 },
                 {
                   "label": "Cast Delay",
@@ -2887,9 +2887,9 @@ export const skyEmperorData = {
                 {
                   "label": "AP Consumed",
                   "before": "100",
-                  "after": "2535",
+                  "after": "35",
                   "scope": "",
-                  "source": "Reduces AP consumption from 100 to 2535."
+                  "source": "Reduces AP consumption from 100 to 35."
                 },
                 {
                   "label": "Damage",
@@ -16429,19 +16429,19 @@ export const skyEmperorData = {
           "file": "rebalances/sky-emperor/rebalance_2.md",
           "section": "15.10",
           "notes": [
-            "Reduces cooldown from 60 seconds to 1.52 seconds.",
+            "Reduces cooldown from 60 seconds to 2 seconds.",
             "Removes delay after skill.",
             "Reduces SP consumption from 100 to 85.",
-            "Reduces AP consumption from 100 to 2535.",
+            "Reduces AP consumption from 100 to 35.",
             "Increases damage from 20000%Atk to 23000%Atk per hit based on level 10."
           ],
           "specRows": [
             {
               "label": "Cooldown",
               "before": "60 seconds",
-              "after": "1.52 seconds",
+              "after": "2 seconds",
               "scope": "",
-              "source": "Reduces cooldown from 60 seconds to 1.52 seconds."
+              "source": "Reduces cooldown from 60 seconds to 2 seconds."
             },
             {
               "label": "Cast Delay",
@@ -16460,9 +16460,9 @@ export const skyEmperorData = {
             {
               "label": "AP Consumed",
               "before": "100",
-              "after": "2535",
+              "after": "35",
               "scope": "",
-              "source": "Reduces AP consumption from 100 to 2535."
+              "source": "Reduces AP consumption from 100 to 35."
             },
             {
               "label": "Damage",

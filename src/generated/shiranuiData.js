@@ -1,5 +1,5 @@
 export const shiranuiData = {
-  "generatedAt": "2026-07-09T04:23:30.205Z",
+  "generatedAt": "2026-07-09T12:12:05.893Z",
   "classId": 4305,
   "classSlug": "shiranui",
   "className": "Shiranui",
@@ -364,21 +364,21 @@ export const shiranuiData = {
           "section": "14.1",
           "name": "Shadow Dance",
           "notes": [
-            "Increases base damage from 8050+(Shadow Hunting skill level x 500)%Atk to 9750+(Shadow Hunting skill level x 500700)%Atk based on level 10."
+            "Increases base damage from 8050+(Shadow Hunting skill level x 500)%Atk to 9750+(Shadow Hunting skill level x 700)%Atk based on level 10."
           ]
         },
         {
           "section": "14.2",
           "name": "Shadow Flash",
           "notes": [
-            "Increases base damage from 9000+(Shadow Dance skill level x 500)%Atk to 11000+(Shadow Dance skill level x 10001500)%Atk based on level 10."
+            "Increases base damage from 9000+(Shadow Dance skill level x 500)%Atk to 11000+(Shadow Dance skill level x 1500)%Atk based on level 10."
           ]
         },
         {
           "section": "14.3",
           "name": "Huuma Shuriken - Construct",
           "notes": [
-            "Increases base damage from 12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(explosion)Atk to 1590018400+(Huuma Shuriken - Grasp level x 5001000)%/18400+(Huuma Shuriken - Grasp level x 5001000)%(explosion)Atk based on level 10.",
+            "Increases base damage from 12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(explosion)Atk to 18400+(Huuma Shuriken - Grasp level x 1000)%/18400+(Huuma Shuriken - Grasp level x 1000)%(explosion)Atk based on level 10.",
             "Reduces skill cooldown from 1 second to 0.7 seconds."
           ]
         },
@@ -386,7 +386,7 @@ export const shiranuiData = {
           "section": "14.4",
           "name": "Kunai - Rotation",
           "notes": [
-            "Increases base damage from 4300+(Kunai - Distortion skill level x 350)%Atk to 50506200+(Kunai - Distortion skill level x 350500)%Atk based on level 5."
+            "Increases base damage from 4300+(Kunai - Distortion skill level x 350)%Atk to 6200+(Kunai - Distortion skill level x 500)%Atk based on level 5."
           ]
         },
         {
@@ -2362,15 +2362,15 @@ export const shiranuiData = {
               "file": "rebalances/shiranui/rebalance_4.md",
               "section": "14.4",
               "notes": [
-                "Increases base damage from 4300+(Kunai - Distortion skill level x 350)%Atk to 50506200+(Kunai - Distortion skill level x 350500)%Atk based on level 5."
+                "Increases base damage from 4300+(Kunai - Distortion skill level x 350)%Atk to 6200+(Kunai - Distortion skill level x 500)%Atk based on level 5."
               ],
               "specRows": [
                 {
                   "label": "Damage",
                   "before": "4300+(Kunai - Distortion skill level x 350)%Atk",
-                  "after": "50506200+(Kunai - Distortion skill level x 350500)%Atk",
+                  "after": "6200+(Kunai - Distortion skill level x 500)%Atk",
                   "scope": "Lv 5",
-                  "source": "Increases base damage from 4300+(Kunai - Distortion skill level x 350)%Atk to 50506200+(Kunai - Distortion skill level x 350500)%Atk based on level 5."
+                  "source": "Increases base damage from 4300+(Kunai - Distortion skill level x 350)%Atk to 6200+(Kunai - Distortion skill level x 500)%Atk based on level 5."
                 }
               ]
             }
@@ -3013,15 +3013,15 @@ export const shiranuiData = {
               "file": "rebalances/shiranui/rebalance_4.md",
               "section": "14.1",
               "notes": [
-                "Increases base damage from 8050+(Shadow Hunting skill level x 500)%Atk to 9750+(Shadow Hunting skill level x 500700)%Atk based on level 10."
+                "Increases base damage from 8050+(Shadow Hunting skill level x 500)%Atk to 9750+(Shadow Hunting skill level x 700)%Atk based on level 10."
               ],
               "specRows": [
                 {
                   "label": "Damage",
                   "before": "8050+(Shadow Hunting skill level x 500)%Atk",
-                  "after": "9750+(Shadow Hunting skill level x 500700)%Atk",
+                  "after": "9750+(Shadow Hunting skill level x 700)%Atk",
                   "scope": "Lv 10",
-                  "source": "Increases base damage from 8050+(Shadow Hunting skill level x 500)%Atk to 9750+(Shadow Hunting skill level x 500700)%Atk based on level 10."
+                  "source": "Increases base damage from 8050+(Shadow Hunting skill level x 500)%Atk to 9750+(Shadow Hunting skill level x 700)%Atk based on level 10."
                 }
               ]
             }
@@ -4056,16 +4056,16 @@ export const shiranuiData = {
               "file": "rebalances/shiranui/rebalance_4.md",
               "section": "14.3",
               "notes": [
-                "Increases base damage from 12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(explosion)Atk to 1590018400+(Huuma Shuriken - Grasp level x 5001000)%/18400+(Huuma Shuriken - Grasp level x 5001000)%(explosion)Atk based on level 10.",
+                "Increases base damage from 12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(explosion)Atk to 18400+(Huuma Shuriken - Grasp level x 1000)%/18400+(Huuma Shuriken - Grasp level x 1000)%(explosion)Atk based on level 10.",
                 "Reduces skill cooldown from 1 second to 0.7 seconds."
               ],
               "specRows": [
                 {
                   "label": "Damage",
                   "before": "12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(e x plosion)Atk",
-                  "after": "1590018400+(Huuma Shuriken - Grasp level x 5001000)%/18400+(Huuma Shuriken - Grasp level x 5001000)%(e x plosion)Atk",
+                  "after": "18400+(Huuma Shuriken - Grasp level x 1000)%/18400+(Huuma Shuriken - Grasp level x 1000)%(e x plosion)Atk",
                   "scope": "Lv 10",
-                  "source": "Increases base damage from 12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(explosion)Atk to 1590018400+(Huuma Shuriken - Grasp level x 5001000)%/18400+(Huuma Shuriken - Grasp level x 5001000)%(explosion)Atk based on level 10."
+                  "source": "Increases base damage from 12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(explosion)Atk to 18400+(Huuma Shuriken - Grasp level x 1000)%/18400+(Huuma Shuriken - Grasp level x 1000)%(explosion)Atk based on level 10."
                 },
                 {
                   "label": "Cooldown",
@@ -4397,15 +4397,15 @@ export const shiranuiData = {
               "file": "rebalances/shiranui/rebalance_4.md",
               "section": "14.2",
               "notes": [
-                "Increases base damage from 9000+(Shadow Dance skill level x 500)%Atk to 11000+(Shadow Dance skill level x 10001500)%Atk based on level 10."
+                "Increases base damage from 9000+(Shadow Dance skill level x 500)%Atk to 11000+(Shadow Dance skill level x 1500)%Atk based on level 10."
               ],
               "specRows": [
                 {
                   "label": "Damage",
                   "before": "9000+(Shadow Dance skill level x 500)%Atk",
-                  "after": "11000+(Shadow Dance skill level x 10001500)%Atk",
+                  "after": "11000+(Shadow Dance skill level x 1500)%Atk",
                   "scope": "Lv 10",
-                  "source": "Increases base damage from 9000+(Shadow Dance skill level x 500)%Atk to 11000+(Shadow Dance skill level x 10001500)%Atk based on level 10."
+                  "source": "Increases base damage from 9000+(Shadow Dance skill level x 500)%Atk to 11000+(Shadow Dance skill level x 1500)%Atk based on level 10."
                 }
               ]
             }
@@ -17270,15 +17270,15 @@ export const shiranuiData = {
           "file": "rebalances/shiranui/rebalance_4.md",
           "section": "14.4",
           "notes": [
-            "Increases base damage from 4300+(Kunai - Distortion skill level x 350)%Atk to 50506200+(Kunai - Distortion skill level x 350500)%Atk based on level 5."
+            "Increases base damage from 4300+(Kunai - Distortion skill level x 350)%Atk to 6200+(Kunai - Distortion skill level x 500)%Atk based on level 5."
           ],
           "specRows": [
             {
               "label": "Damage",
               "before": "4300+(Kunai - Distortion skill level x 350)%Atk",
-              "after": "50506200+(Kunai - Distortion skill level x 350500)%Atk",
+              "after": "6200+(Kunai - Distortion skill level x 500)%Atk",
               "scope": "Lv 5",
-              "source": "Increases base damage from 4300+(Kunai - Distortion skill level x 350)%Atk to 50506200+(Kunai - Distortion skill level x 350500)%Atk based on level 5."
+              "source": "Increases base damage from 4300+(Kunai - Distortion skill level x 350)%Atk to 6200+(Kunai - Distortion skill level x 500)%Atk based on level 5."
             }
           ]
         }
@@ -17921,15 +17921,15 @@ export const shiranuiData = {
           "file": "rebalances/shiranui/rebalance_4.md",
           "section": "14.1",
           "notes": [
-            "Increases base damage from 8050+(Shadow Hunting skill level x 500)%Atk to 9750+(Shadow Hunting skill level x 500700)%Atk based on level 10."
+            "Increases base damage from 8050+(Shadow Hunting skill level x 500)%Atk to 9750+(Shadow Hunting skill level x 700)%Atk based on level 10."
           ],
           "specRows": [
             {
               "label": "Damage",
               "before": "8050+(Shadow Hunting skill level x 500)%Atk",
-              "after": "9750+(Shadow Hunting skill level x 500700)%Atk",
+              "after": "9750+(Shadow Hunting skill level x 700)%Atk",
               "scope": "Lv 10",
-              "source": "Increases base damage from 8050+(Shadow Hunting skill level x 500)%Atk to 9750+(Shadow Hunting skill level x 500700)%Atk based on level 10."
+              "source": "Increases base damage from 8050+(Shadow Hunting skill level x 500)%Atk to 9750+(Shadow Hunting skill level x 700)%Atk based on level 10."
             }
           ]
         }
@@ -18964,16 +18964,16 @@ export const shiranuiData = {
           "file": "rebalances/shiranui/rebalance_4.md",
           "section": "14.3",
           "notes": [
-            "Increases base damage from 12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(explosion)Atk to 1590018400+(Huuma Shuriken - Grasp level x 5001000)%/18400+(Huuma Shuriken - Grasp level x 5001000)%(explosion)Atk based on level 10.",
+            "Increases base damage from 12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(explosion)Atk to 18400+(Huuma Shuriken - Grasp level x 1000)%/18400+(Huuma Shuriken - Grasp level x 1000)%(explosion)Atk based on level 10.",
             "Reduces skill cooldown from 1 second to 0.7 seconds."
           ],
           "specRows": [
             {
               "label": "Damage",
               "before": "12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(e x plosion)Atk",
-              "after": "1590018400+(Huuma Shuriken - Grasp level x 5001000)%/18400+(Huuma Shuriken - Grasp level x 5001000)%(e x plosion)Atk",
+              "after": "18400+(Huuma Shuriken - Grasp level x 1000)%/18400+(Huuma Shuriken - Grasp level x 1000)%(e x plosion)Atk",
               "scope": "Lv 10",
-              "source": "Increases base damage from 12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(explosion)Atk to 1590018400+(Huuma Shuriken - Grasp level x 5001000)%/18400+(Huuma Shuriken - Grasp level x 5001000)%(explosion)Atk based on level 10."
+              "source": "Increases base damage from 12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(explosion)Atk to 18400+(Huuma Shuriken - Grasp level x 1000)%/18400+(Huuma Shuriken - Grasp level x 1000)%(explosion)Atk based on level 10."
             },
             {
               "label": "Cooldown",
@@ -19305,15 +19305,15 @@ export const shiranuiData = {
           "file": "rebalances/shiranui/rebalance_4.md",
           "section": "14.2",
           "notes": [
-            "Increases base damage from 9000+(Shadow Dance skill level x 500)%Atk to 11000+(Shadow Dance skill level x 10001500)%Atk based on level 10."
+            "Increases base damage from 9000+(Shadow Dance skill level x 500)%Atk to 11000+(Shadow Dance skill level x 1500)%Atk based on level 10."
           ],
           "specRows": [
             {
               "label": "Damage",
               "before": "9000+(Shadow Dance skill level x 500)%Atk",
-              "after": "11000+(Shadow Dance skill level x 10001500)%Atk",
+              "after": "11000+(Shadow Dance skill level x 1500)%Atk",
               "scope": "Lv 10",
-              "source": "Increases base damage from 9000+(Shadow Dance skill level x 500)%Atk to 11000+(Shadow Dance skill level x 10001500)%Atk based on level 10."
+              "source": "Increases base damage from 9000+(Shadow Dance skill level x 500)%Atk to 11000+(Shadow Dance skill level x 1500)%Atk based on level 10."
             }
           ]
         }

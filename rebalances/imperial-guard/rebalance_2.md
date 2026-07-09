@@ -33,8 +33,8 @@ addsNewSkills: false
 	- Increases damage from 2000%/3500%(Holy Shield)Matk to 3700%/5500%(Holy Shield)Matk per hit based on level 10 (Spear & Sword Mastery level 10).
 
 	2.4. Grand Judgement
-	- Reduces cooldown from 60 seconds to 50.5 seconds. (actual cooldown from testing is 0.5 seconds)
-	- Removes 1.50.5 seconds delay after skill.
+	- Reduces cooldown from 60 seconds to 0.5 seconds. (actual cooldown from testing is 0.5 seconds)
+	- Removes 0.5 seconds delay after skill.
 	- Increases SP consumption from 68 to 78 based on level 10.
 	- Reduces AP consumption from 150 to 15.
 	- Reduces duration of Grand Judgement buff from 300 seconds to 150 seconds.
@@ -42,7 +42,7 @@ addsNewSkills: false
 
 	2.5. Judgement Cross
 	- Reduces cooldown from 60 seconds to 0.5 seconds.
-	- Removes 0.51.5 seconds delay after skill.
+	- Removes 1.5 seconds delay after skill.
 	- Reduces SP consumption from 150 to 105 based on level 10.
 	- Reduces AP consumption from 150 to 10.
 	- Increases damage from 7500%/11000%(plant and insect race)Matk to 19500%/21000%(plant and insect race)Matk based on level 10.

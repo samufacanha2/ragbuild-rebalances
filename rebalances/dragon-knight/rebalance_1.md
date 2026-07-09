@@ -18,12 +18,12 @@ addsNewSkills: false
 	- Increases area of effect from 5x5 cells to 9x9 cells.
 
 	1.2. Storm Slash
-	- Reduces cooldown from 1 second to 0.50.35 seconds based on level 5.
+	- Reduces cooldown from 1 second to 0.35 seconds based on level 5.
 	- Reduces delay after skill from 1 second to 0.5 seconds based on level 5.
 	- Increases SP consumption from 50 to 60 based on level 5.
 
 	1.3. Madness Crusher
-	- Reduces cooldown from 2 seconds to 0.50.35 seconds based on level 5.
+	- Reduces cooldown from 2 seconds to 0.35 seconds based on level 5.
 	- Increases damage from 2250%Atk to 3000%Atk based on level 5.
 	- Deals additional damage depends on level of weapon used.
 

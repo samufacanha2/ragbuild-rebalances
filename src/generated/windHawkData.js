@@ -1,5 +1,5 @@
 export const windHawkData = {
-  "generatedAt": "2026-07-09T03:39:00.818Z",
+  "generatedAt": "2026-07-09T12:11:19.231Z",
   "classId": 4257,
   "classSlug": "wind-hawk",
   "className": "Wind Hawk",
@@ -247,15 +247,15 @@ export const windHawkData = {
           "name": "Gale Storm",
           "notes": [
             "Reduces skill cooldown from 1.2 seconds to 0.7 seconds.",
-            "Increases base damage from 10000%Atk to 1650013500%Atk based on level 5."
+            "Increases base damage from 10000%Atk to 13500%Atk based on level 5."
           ]
         },
         {
           "section": "6.2",
           "name": "Crescive Bolt",
           "notes": [
-            "Increases base damage from 9400%Atk to 1150013500%Atk based on level 10.",
-            "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 4020% per stack (up to 12060% on 3 stacks).",
+            "Increases base damage from 9400%Atk to 13500%Atk based on level 10.",
+            "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks).",
             "Changes sound effect."
           ]
         },
@@ -631,24 +631,24 @@ export const windHawkData = {
               "file": "rebalances/wind-hawk/rebalance_4.md",
               "section": "6.2",
               "notes": [
-                "Increases base damage from 9400%Atk to 1150013500%Atk based on level 10.",
-                "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 4020% per stack (up to 12060% on 3 stacks).",
+                "Increases base damage from 9400%Atk to 13500%Atk based on level 10.",
+                "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks).",
                 "Changes sound effect."
               ],
               "specRows": [
                 {
                   "label": "Damage",
                   "before": "9400%Atk",
-                  "after": "1150013500%Atk",
+                  "after": "13500%Atk",
                   "scope": "Lv 10",
-                  "source": "Increases base damage from 9400%Atk to 1150013500%Atk based on level 10."
+                  "source": "Increases base damage from 9400%Atk to 13500%Atk based on level 10."
                 },
                 {
                   "label": "Damage Bonus On Standing Still",
                   "before": "10% per stack (up",
-                  "after": "30% on 3 stacks) to 4020% per stack (up to 12060% on 3 stacks)",
+                  "after": "30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)",
                   "scope": "",
-                  "source": "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 4020% per stack (up to 12060% on 3 stacks)."
+                  "source": "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)."
                 }
               ]
             }
@@ -1396,7 +1396,7 @@ export const windHawkData = {
               "section": "6.1",
               "notes": [
                 "Reduces skill cooldown from 1.2 seconds to 0.7 seconds.",
-                "Increases base damage from 10000%Atk to 1650013500%Atk based on level 5."
+                "Increases base damage from 10000%Atk to 13500%Atk based on level 5."
               ],
               "specRows": [
                 {
@@ -1409,9 +1409,9 @@ export const windHawkData = {
                 {
                   "label": "Damage",
                   "before": "10000%Atk",
-                  "after": "1650013500%Atk",
+                  "after": "13500%Atk",
                   "scope": "Lv 5",
-                  "source": "Increases base damage from 10000%Atk to 1650013500%Atk based on level 5."
+                  "source": "Increases base damage from 10000%Atk to 13500%Atk based on level 5."
                 }
               ]
             }
@@ -14313,24 +14313,24 @@ export const windHawkData = {
           "file": "rebalances/wind-hawk/rebalance_4.md",
           "section": "6.2",
           "notes": [
-            "Increases base damage from 9400%Atk to 1150013500%Atk based on level 10.",
-            "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 4020% per stack (up to 12060% on 3 stacks).",
+            "Increases base damage from 9400%Atk to 13500%Atk based on level 10.",
+            "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks).",
             "Changes sound effect."
           ],
           "specRows": [
             {
               "label": "Damage",
               "before": "9400%Atk",
-              "after": "1150013500%Atk",
+              "after": "13500%Atk",
               "scope": "Lv 10",
-              "source": "Increases base damage from 9400%Atk to 1150013500%Atk based on level 10."
+              "source": "Increases base damage from 9400%Atk to 13500%Atk based on level 10."
             },
             {
               "label": "Damage Bonus On Standing Still",
               "before": "10% per stack (up",
-              "after": "30% on 3 stacks) to 4020% per stack (up to 12060% on 3 stacks)",
+              "after": "30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)",
               "scope": "",
-              "source": "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 4020% per stack (up to 12060% on 3 stacks)."
+              "source": "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)."
             }
           ]
         }
@@ -15078,7 +15078,7 @@ export const windHawkData = {
           "section": "6.1",
           "notes": [
             "Reduces skill cooldown from 1.2 seconds to 0.7 seconds.",
-            "Increases base damage from 10000%Atk to 1650013500%Atk based on level 5."
+            "Increases base damage from 10000%Atk to 13500%Atk based on level 5."
           ],
           "specRows": [
             {
@@ -15091,9 +15091,9 @@ export const windHawkData = {
             {
               "label": "Damage",
               "before": "10000%Atk",
-              "after": "1650013500%Atk",
+              "after": "13500%Atk",
               "scope": "Lv 5",
-              "source": "Increases base damage from 10000%Atk to 1650013500%Atk based on level 5."
+              "source": "Increases base damage from 10000%Atk to 13500%Atk based on level 5."
             }
           ]
         }

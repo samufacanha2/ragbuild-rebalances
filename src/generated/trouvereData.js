@@ -1,5 +1,5 @@
 export const trouvereData = {
-  "generatedAt": "2026-07-09T03:39:25.006Z",
+  "generatedAt": "2026-07-09T12:11:37.475Z",
   "classId": 4264,
   "classSlug": "trouvere",
   "className": "Trouvere",
@@ -116,7 +116,7 @@ export const trouvereData = {
           "section": "12.4",
           "name": "Rose Blossom",
           "notes": [
-            "Reduces cooldown from 3 seconds to 10.5 second based on level 5.",
+            "Reduces cooldown from 3 seconds to 0.5 second based on level 5.",
             "Reduces SP consumption from 275 to 125 based on level 5.",
             "Reduces AP recovery rate from 5 to 3 based on level 5.",
             "Increases damage of the primary attack from 2500%Atk to 3750%Atk based on level 5.",
@@ -1822,7 +1822,7 @@ export const trouvereData = {
               "file": "rebalances/trouvere/rebalance_1.md",
               "section": "12.4",
               "notes": [
-                "Reduces cooldown from 3 seconds to 10.5 second based on level 5.",
+                "Reduces cooldown from 3 seconds to 0.5 second based on level 5.",
                 "Reduces SP consumption from 275 to 125 based on level 5.",
                 "Reduces AP recovery rate from 5 to 3 based on level 5.",
                 "Increases damage of the primary attack from 2500%Atk to 3750%Atk based on level 5.",
@@ -1834,9 +1834,9 @@ export const trouvereData = {
                 {
                   "label": "Cooldown",
                   "before": "3 seconds",
-                  "after": "10.5 second",
+                  "after": "0.5 second",
                   "scope": "Lv 5",
-                  "source": "Reduces cooldown from 3 seconds to 10.5 second based on level 5."
+                  "source": "Reduces cooldown from 3 seconds to 0.5 second based on level 5."
                 },
                 {
                   "label": "SP Cost",
@@ -19882,7 +19882,7 @@ export const trouvereData = {
           "file": "rebalances/trouvere/rebalance_1.md",
           "section": "12.4",
           "notes": [
-            "Reduces cooldown from 3 seconds to 10.5 second based on level 5.",
+            "Reduces cooldown from 3 seconds to 0.5 second based on level 5.",
             "Reduces SP consumption from 275 to 125 based on level 5.",
             "Reduces AP recovery rate from 5 to 3 based on level 5.",
             "Increases damage of the primary attack from 2500%Atk to 3750%Atk based on level 5.",
@@ -19894,9 +19894,9 @@ export const trouvereData = {
             {
               "label": "Cooldown",
               "before": "3 seconds",
-              "after": "10.5 second",
+              "after": "0.5 second",
               "scope": "Lv 5",
-              "source": "Reduces cooldown from 3 seconds to 10.5 second based on level 5."
+              "source": "Reduces cooldown from 3 seconds to 0.5 second based on level 5."
             },
             {
               "label": "SP Cost",

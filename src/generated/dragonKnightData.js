@@ -1,5 +1,5 @@
 export const dragonKnightData = {
-  "generatedAt": "2026-07-09T03:35:47.930Z",
+  "generatedAt": "2026-07-09T12:09:04.765Z",
   "classId": 4252,
   "classSlug": "dragon-knight",
   "className": "Dragon Knight",
@@ -101,7 +101,7 @@ export const dragonKnightData = {
           "section": "1.2",
           "name": "Storm Slash",
           "notes": [
-            "Reduces cooldown from 1 second to 0.50.35 seconds based on level 5.",
+            "Reduces cooldown from 1 second to 0.35 seconds based on level 5.",
             "Reduces delay after skill from 1 second to 0.5 seconds based on level 5.",
             "Increases SP consumption from 50 to 60 based on level 5."
           ]
@@ -110,7 +110,7 @@ export const dragonKnightData = {
           "section": "1.3",
           "name": "Madness Crusher",
           "notes": [
-            "Reduces cooldown from 2 seconds to 0.50.35 seconds based on level 5.",
+            "Reduces cooldown from 2 seconds to 0.35 seconds based on level 5.",
             "Increases damage from 2250%Atk to 3000%Atk based on level 5.",
             "Deals additional damage depends on level of weapon used."
           ]
@@ -2297,7 +2297,7 @@ export const dragonKnightData = {
               "file": "rebalances/dragon-knight/rebalance_1.md",
               "section": "1.2",
               "notes": [
-                "Reduces cooldown from 1 second to 0.50.35 seconds based on level 5.",
+                "Reduces cooldown from 1 second to 0.35 seconds based on level 5.",
                 "Reduces delay after skill from 1 second to 0.5 seconds based on level 5.",
                 "Increases SP consumption from 50 to 60 based on level 5."
               ],
@@ -2305,9 +2305,9 @@ export const dragonKnightData = {
                 {
                   "label": "Cooldown",
                   "before": "1 second",
-                  "after": "0.50.35 seconds",
+                  "after": "0.35 seconds",
                   "scope": "Lv 5",
-                  "source": "Reduces cooldown from 1 second to 0.50.35 seconds based on level 5."
+                  "source": "Reduces cooldown from 1 second to 0.35 seconds based on level 5."
                 },
                 {
                   "label": "Cast Delay",
@@ -2791,7 +2791,7 @@ export const dragonKnightData = {
               "file": "rebalances/dragon-knight/rebalance_1.md",
               "section": "1.3",
               "notes": [
-                "Reduces cooldown from 2 seconds to 0.50.35 seconds based on level 5.",
+                "Reduces cooldown from 2 seconds to 0.35 seconds based on level 5.",
                 "Increases damage from 2250%Atk to 3000%Atk based on level 5.",
                 "Deals additional damage depends on level of weapon used."
               ],
@@ -2799,9 +2799,9 @@ export const dragonKnightData = {
                 {
                   "label": "Cooldown",
                   "before": "2 seconds",
-                  "after": "0.50.35 seconds",
+                  "after": "0.35 seconds",
                   "scope": "Lv 5",
-                  "source": "Reduces cooldown from 2 seconds to 0.50.35 seconds based on level 5."
+                  "source": "Reduces cooldown from 2 seconds to 0.35 seconds based on level 5."
                 },
                 {
                   "label": "Damage",
@@ -15542,7 +15542,7 @@ export const dragonKnightData = {
           "file": "rebalances/dragon-knight/rebalance_1.md",
           "section": "1.2",
           "notes": [
-            "Reduces cooldown from 1 second to 0.50.35 seconds based on level 5.",
+            "Reduces cooldown from 1 second to 0.35 seconds based on level 5.",
             "Reduces delay after skill from 1 second to 0.5 seconds based on level 5.",
             "Increases SP consumption from 50 to 60 based on level 5."
           ],
@@ -15550,9 +15550,9 @@ export const dragonKnightData = {
             {
               "label": "Cooldown",
               "before": "1 second",
-              "after": "0.50.35 seconds",
+              "after": "0.35 seconds",
               "scope": "Lv 5",
-              "source": "Reduces cooldown from 1 second to 0.50.35 seconds based on level 5."
+              "source": "Reduces cooldown from 1 second to 0.35 seconds based on level 5."
             },
             {
               "label": "Cast Delay",
@@ -16036,7 +16036,7 @@ export const dragonKnightData = {
           "file": "rebalances/dragon-knight/rebalance_1.md",
           "section": "1.3",
           "notes": [
-            "Reduces cooldown from 2 seconds to 0.50.35 seconds based on level 5.",
+            "Reduces cooldown from 2 seconds to 0.35 seconds based on level 5.",
             "Increases damage from 2250%Atk to 3000%Atk based on level 5.",
             "Deals additional damage depends on level of weapon used."
           ],
@@ -16044,9 +16044,9 @@ export const dragonKnightData = {
             {
               "label": "Cooldown",
               "before": "2 seconds",
-              "after": "0.50.35 seconds",
+              "after": "0.35 seconds",
               "scope": "Lv 5",
-              "source": "Reduces cooldown from 2 seconds to 0.50.35 seconds based on level 5."
+              "source": "Reduces cooldown from 2 seconds to 0.35 seconds based on level 5."
             },
             {
               "label": "Damage",

@@ -1,5 +1,5 @@
 export const abyssChaserData = {
-  "generatedAt": "2026-07-09T03:37:26.616Z",
+  "generatedAt": "2026-07-09T12:10:10.383Z",
   "classId": 4260,
   "classSlug": "abyss-chaser",
   "className": "Abyss Chaser",
@@ -101,7 +101,7 @@ export const abyssChaserData = {
           "notes": [
             "Removes fixed casting time and variable casting time.",
             "Reduces cooldown from 2 seconds to 0.25 seconds based on level 5.",
-            "Reduces damage from 26002500%Atk to 1600%Atk based on level 5.",
+            "Reduces damage from 2500%Atk to 1600%Atk based on level 5.",
             "Increases cast range to 9 cells.",
             "Changes damage bonus from CRT to POW."
           ]
@@ -344,7 +344,7 @@ export const abyssChaserData = {
           "section": "9.4",
           "name": "Deft Stab",
           "notes": [
-            "Increases base damage from 3750%Atk to 54006200%Atk based on level 10.",
+            "Increases base damage from 3750%Atk to 6200%Atk based on level 10.",
             "Increases factor weight of POW in skill formula from 5 to 7."
           ]
         },
@@ -2808,16 +2808,16 @@ export const abyssChaserData = {
               "file": "rebalances/abyss-chaser/rebalance_4.md",
               "section": "9.4",
               "notes": [
-                "Increases base damage from 3750%Atk to 54006200%Atk based on level 10.",
+                "Increases base damage from 3750%Atk to 6200%Atk based on level 10.",
                 "Increases factor weight of POW in skill formula from 5 to 7."
               ],
               "specRows": [
                 {
                   "label": "Damage",
                   "before": "3750%Atk",
-                  "after": "54006200%Atk",
+                  "after": "6200%Atk",
                   "scope": "Lv 10",
-                  "source": "Increases base damage from 3750%Atk to 54006200%Atk based on level 10."
+                  "source": "Increases base damage from 3750%Atk to 6200%Atk based on level 10."
                 },
                 {
                   "label": "Factor Weight Of Pow In Skill Formula",
@@ -19332,16 +19332,16 @@ export const abyssChaserData = {
           "file": "rebalances/abyss-chaser/rebalance_4.md",
           "section": "9.4",
           "notes": [
-            "Increases base damage from 3750%Atk to 54006200%Atk based on level 10.",
+            "Increases base damage from 3750%Atk to 6200%Atk based on level 10.",
             "Increases factor weight of POW in skill formula from 5 to 7."
           ],
           "specRows": [
             {
               "label": "Damage",
               "before": "3750%Atk",
-              "after": "54006200%Atk",
+              "after": "6200%Atk",
               "scope": "Lv 10",
-              "source": "Increases base damage from 3750%Atk to 54006200%Atk based on level 10."
+              "source": "Increases base damage from 3750%Atk to 6200%Atk based on level 10."
             },
             {
               "label": "Factor Weight Of Pow In Skill Formula",

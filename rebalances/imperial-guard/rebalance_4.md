@@ -39,7 +39,7 @@ addsNewSkills: false
 
 	7.6. Shield Shooting
 	- Increases AP recovery rate from 3 to 5.
-	- Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 1830018500+(Shield Mastery skill level x 500750)%Atk based on level 5.
+	- Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 18500+(Shield Mastery skill level x 750)%Atk based on level 5.
 	- Increases factor weight of shield refine rate in skill formula from 25 to 100.
 	- Increases factor weight of POW in skill formula from 7 to 10.
 

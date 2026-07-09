@@ -26,7 +26,7 @@ addsNewSkills: false
 	- Reduces SP consumption from 128 to 90 based on level 5.
 
 	12.4. Rose Blossom
-	- Reduces cooldown from 3 seconds to 10.5 second based on level 5.
+	- Reduces cooldown from 3 seconds to 0.5 second based on level 5.
 	- Reduces SP consumption from 275 to 125 based on level 5.
 	- Reduces AP recovery rate from 5 to 3 based on level 5.
 	- Increases damage of the primary attack from 2500%Atk to 3750%Atk based on level 5.

@@ -1,5 +1,5 @@
 export const imperialGuardData = {
-  "generatedAt": "2026-07-09T03:36:14.979Z",
+  "generatedAt": "2026-07-09T12:09:17.775Z",
   "classId": 4258,
   "classSlug": "imperial-guard",
   "className": "Imperial Guard",
@@ -251,8 +251,8 @@ export const imperialGuardData = {
           "section": "2.4",
           "name": "Grand Judgement",
           "notes": [
-            "Reduces cooldown from 60 seconds to 50.5 seconds. (actual cooldown from testing is 0.5 seconds)",
-            "Removes 1.50.5 seconds delay after skill.",
+            "Reduces cooldown from 60 seconds to 0.5 seconds. (actual cooldown from testing is 0.5 seconds)",
+            "Removes 0.5 seconds delay after skill.",
             "Increases SP consumption from 68 to 78 based on level 10.",
             "Reduces AP consumption from 150 to 15.",
             "Reduces duration of Grand Judgement buff from 300 seconds to 150 seconds.",
@@ -264,7 +264,7 @@ export const imperialGuardData = {
           "name": "Judgement Cross",
           "notes": [
             "Reduces cooldown from 60 seconds to 0.5 seconds.",
-            "Removes 0.51.5 seconds delay after skill.",
+            "Removes 1.5 seconds delay after skill.",
             "Reduces SP consumption from 150 to 105 based on level 10.",
             "Reduces AP consumption from 150 to 10.",
             "Increases damage from 7500%/11000%(plant and insect race)Matk to 19500%/21000%(plant and insect race)Matk based on level 10."
@@ -382,7 +382,7 @@ export const imperialGuardData = {
           "name": "Shield Shooting",
           "notes": [
             "Increases AP recovery rate from 3 to 5.",
-            "Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 1830018500+(Shield Mastery skill level x 500750)%Atk based on level 5.",
+            "Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 18500+(Shield Mastery skill level x 750)%Atk based on level 5.",
             "Increases factor weight of shield refine rate in skill formula from 25 to 100.",
             "Increases factor weight of POW in skill formula from 7 to 10."
           ]
@@ -2549,7 +2549,7 @@ export const imperialGuardData = {
               "section": "7.6",
               "notes": [
                 "Increases AP recovery rate from 3 to 5.",
-                "Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 1830018500+(Shield Mastery skill level x 500750)%Atk based on level 5.",
+                "Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 18500+(Shield Mastery skill level x 750)%Atk based on level 5.",
                 "Increases factor weight of shield refine rate in skill formula from 25 to 100.",
                 "Increases factor weight of POW in skill formula from 7 to 10."
               ],
@@ -2564,9 +2564,9 @@ export const imperialGuardData = {
                 {
                   "label": "Damage",
                   "before": "14900+(Shield Mastery skill level x 250)%Atk",
-                  "after": "1830018500+(Shield Mastery skill level x 500750)%Atk",
+                  "after": "18500+(Shield Mastery skill level x 750)%Atk",
                   "scope": "Lv 5",
-                  "source": "Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 1830018500+(Shield Mastery skill level x 500750)%Atk based on level 5."
+                  "source": "Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 18500+(Shield Mastery skill level x 750)%Atk based on level 5."
                 },
                 {
                   "label": "Factor Weight Of Shield Refine Rate In Skill Formula",
@@ -3539,8 +3539,8 @@ export const imperialGuardData = {
               "file": "rebalances/imperial-guard/rebalance_2.md",
               "section": "2.4",
               "notes": [
-                "Reduces cooldown from 60 seconds to 50.5 seconds. (actual cooldown from testing is 0.5 seconds)",
-                "Removes 1.50.5 seconds delay after skill.",
+                "Reduces cooldown from 60 seconds to 0.5 seconds. (actual cooldown from testing is 0.5 seconds)",
+                "Removes 0.5 seconds delay after skill.",
                 "Increases SP consumption from 68 to 78 based on level 10.",
                 "Reduces AP consumption from 150 to 15.",
                 "Reduces duration of Grand Judgement buff from 300 seconds to 150 seconds.",
@@ -3550,16 +3550,16 @@ export const imperialGuardData = {
                 {
                   "label": "Cooldown",
                   "before": "60 seconds",
-                  "after": "50.5 seconds. (actual cooldown from testing is 0.5 seconds)",
+                  "after": "0.5 seconds. (actual cooldown from testing is 0.5 seconds)",
                   "scope": "",
-                  "source": "Reduces cooldown from 60 seconds to 50.5 seconds. (actual cooldown from testing is 0.5 seconds)"
+                  "source": "Reduces cooldown from 60 seconds to 0.5 seconds. (actual cooldown from testing is 0.5 seconds)"
                 },
                 {
                   "label": "Cast Delay",
-                  "before": "1.50.5 seconds delay",
+                  "before": "0.5 seconds delay",
                   "after": "Removed",
                   "scope": "",
-                  "source": "Removes 1.50.5 seconds delay after skill."
+                  "source": "Removes 0.5 seconds delay after skill."
                 },
                 {
                   "label": "SP Cost",
@@ -4242,7 +4242,7 @@ export const imperialGuardData = {
               "section": "2.5",
               "notes": [
                 "Reduces cooldown from 60 seconds to 0.5 seconds.",
-                "Removes 0.51.5 seconds delay after skill.",
+                "Removes 1.5 seconds delay after skill.",
                 "Reduces SP consumption from 150 to 105 based on level 10.",
                 "Reduces AP consumption from 150 to 10.",
                 "Increases damage from 7500%/11000%(plant and insect race)Matk to 19500%/21000%(plant and insect race)Matk based on level 10."
@@ -4257,10 +4257,10 @@ export const imperialGuardData = {
                 },
                 {
                   "label": "Cast Delay",
-                  "before": "0.51.5 seconds delay",
+                  "before": "1.5 seconds delay",
                   "after": "Removed",
                   "scope": "",
-                  "source": "Removes 0.51.5 seconds delay after skill."
+                  "source": "Removes 1.5 seconds delay after skill."
                 },
                 {
                   "label": "SP Cost",
@@ -18286,7 +18286,7 @@ export const imperialGuardData = {
           "section": "7.6",
           "notes": [
             "Increases AP recovery rate from 3 to 5.",
-            "Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 1830018500+(Shield Mastery skill level x 500750)%Atk based on level 5.",
+            "Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 18500+(Shield Mastery skill level x 750)%Atk based on level 5.",
             "Increases factor weight of shield refine rate in skill formula from 25 to 100.",
             "Increases factor weight of POW in skill formula from 7 to 10."
           ],
@@ -18301,9 +18301,9 @@ export const imperialGuardData = {
             {
               "label": "Damage",
               "before": "14900+(Shield Mastery skill level x 250)%Atk",
-              "after": "1830018500+(Shield Mastery skill level x 500750)%Atk",
+              "after": "18500+(Shield Mastery skill level x 750)%Atk",
               "scope": "Lv 5",
-              "source": "Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 1830018500+(Shield Mastery skill level x 500750)%Atk based on level 5."
+              "source": "Increases base damage from 14900+(Shield Mastery skill level x 250)%Atk to 18500+(Shield Mastery skill level x 750)%Atk based on level 5."
             },
             {
               "label": "Factor Weight Of Shield Refine Rate In Skill Formula",
@@ -19276,8 +19276,8 @@ export const imperialGuardData = {
           "file": "rebalances/imperial-guard/rebalance_2.md",
           "section": "2.4",
           "notes": [
-            "Reduces cooldown from 60 seconds to 50.5 seconds. (actual cooldown from testing is 0.5 seconds)",
-            "Removes 1.50.5 seconds delay after skill.",
+            "Reduces cooldown from 60 seconds to 0.5 seconds. (actual cooldown from testing is 0.5 seconds)",
+            "Removes 0.5 seconds delay after skill.",
             "Increases SP consumption from 68 to 78 based on level 10.",
             "Reduces AP consumption from 150 to 15.",
             "Reduces duration of Grand Judgement buff from 300 seconds to 150 seconds.",
@@ -19287,16 +19287,16 @@ export const imperialGuardData = {
             {
               "label": "Cooldown",
               "before": "60 seconds",
-              "after": "50.5 seconds. (actual cooldown from testing is 0.5 seconds)",
+              "after": "0.5 seconds. (actual cooldown from testing is 0.5 seconds)",
               "scope": "",
-              "source": "Reduces cooldown from 60 seconds to 50.5 seconds. (actual cooldown from testing is 0.5 seconds)"
+              "source": "Reduces cooldown from 60 seconds to 0.5 seconds. (actual cooldown from testing is 0.5 seconds)"
             },
             {
               "label": "Cast Delay",
-              "before": "1.50.5 seconds delay",
+              "before": "0.5 seconds delay",
               "after": "Removed",
               "scope": "",
-              "source": "Removes 1.50.5 seconds delay after skill."
+              "source": "Removes 0.5 seconds delay after skill."
             },
             {
               "label": "SP Cost",
@@ -19979,7 +19979,7 @@ export const imperialGuardData = {
           "section": "2.5",
           "notes": [
             "Reduces cooldown from 60 seconds to 0.5 seconds.",
-            "Removes 0.51.5 seconds delay after skill.",
+            "Removes 1.5 seconds delay after skill.",
             "Reduces SP consumption from 150 to 105 based on level 10.",
             "Reduces AP consumption from 150 to 10.",
             "Increases damage from 7500%/11000%(plant and insect race)Matk to 19500%/21000%(plant and insect race)Matk based on level 10."
@@ -19994,10 +19994,10 @@ export const imperialGuardData = {
             },
             {
               "label": "Cast Delay",
-              "before": "0.51.5 seconds delay",
+              "before": "1.5 seconds delay",
               "after": "Removed",
               "scope": "",
-              "source": "Removes 0.51.5 seconds delay after skill."
+              "source": "Removes 1.5 seconds delay after skill."
             },
             {
               "label": "SP Cost",

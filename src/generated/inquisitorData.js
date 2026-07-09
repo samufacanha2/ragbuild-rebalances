@@ -1,5 +1,5 @@
 export const inquisitorData = {
-  "generatedAt": "2026-07-09T03:38:40.623Z",
+  "generatedAt": "2026-07-09T12:11:04.720Z",
   "classId": 4262,
   "classSlug": "inquisitor",
   "className": "Inquisitor",
@@ -51,7 +51,7 @@ export const inquisitorData = {
   ],
   "summary": {
     "changedSkills": 11,
-    "noteCount": 76,
+    "noteCount": 75,
     "addedSkills": 1,
     "versions": 5
   },
@@ -185,7 +185,7 @@ export const inquisitorData = {
           "notes": [
             "Reduces cooldown from 1 second to 0.7 seconds.",
             "Increases SP consumption from 60 to 65 based on level 5.",
-            "Increases AP recovery rate from 1 to 24.",
+            "Increases AP recovery rate from 1 to 4.",
             "Unifies area of effect to 7 x 7 cells regardless of skill level.",
             "Increases damage from 2500%Atk to 11600%Atk based on level 5.",
             "Increases factor weight of POW in skill formula from 4 to 5."
@@ -197,7 +197,7 @@ export const inquisitorData = {
           "notes": [
             "Reduces cooldown from 1 second to 0.7 seconds.",
             "Increases SP consumption from 65 to 70 based on level 5.",
-            "Increases AP recovery rate from 2 to 34.",
+            "Increases AP recovery rate from 2 to 4.",
             "Unifies area of effect to 7 x 7 cells regardless of skill level.",
             "Increases damage from 2625%Atk to 13150%Atk based on level 5.",
             "Increases factor weight of POW in skill formula from 4 to 7."
@@ -261,9 +261,8 @@ export const inquisitorData = {
           "section": "10.9",
           "name": "Explosion Blaster",
           "notes": [
-            "Reduces cooldown from 1 second to 0.50.7 seconds.",
+            "Reduces cooldown from 1 second to 0.7 seconds.",
             "Reduces SP consumption from 120 to 90 based on level 5.",
-            "Reduces AP recovery rate from 4 to 3.",
             "Increases damage from 3250%/4250%(Oleum Sanctum)Atk to 14000%/16000%(Oleum Sanctum)Atk per hit based on level 5.",
             "Increases area of effect from 9 x 9 cells to 11 x 11 cells based on level 5.",
             "Increases factor weight of POW in skill formula from 3/5 to 15/15."
@@ -2384,9 +2383,8 @@ export const inquisitorData = {
               "file": "rebalances/inquisitor/rebalance_2.md",
               "section": "10.9",
               "notes": [
-                "Reduces cooldown from 1 second to 0.50.7 seconds.",
+                "Reduces cooldown from 1 second to 0.7 seconds.",
                 "Reduces SP consumption from 120 to 90 based on level 5.",
-                "Reduces AP recovery rate from 4 to 3.",
                 "Increases damage from 3250%/4250%(Oleum Sanctum)Atk to 14000%/16000%(Oleum Sanctum)Atk per hit based on level 5.",
                 "Increases area of effect from 9 x 9 cells to 11 x 11 cells based on level 5.",
                 "Increases factor weight of POW in skill formula from 3/5 to 15/15."
@@ -2395,9 +2393,9 @@ export const inquisitorData = {
                 {
                   "label": "Cooldown",
                   "before": "1 second",
-                  "after": "0.50.7 seconds",
+                  "after": "0.7 seconds",
                   "scope": "",
-                  "source": "Reduces cooldown from 1 second to 0.50.7 seconds."
+                  "source": "Reduces cooldown from 1 second to 0.7 seconds."
                 },
                 {
                   "label": "SP Cost",
@@ -2405,13 +2403,6 @@ export const inquisitorData = {
                   "after": "90",
                   "scope": "Lv 5",
                   "source": "Reduces SP consumption from 120 to 90 based on level 5."
-                },
-                {
-                  "label": "AP Generated",
-                  "before": "4",
-                  "after": "3",
-                  "scope": "",
-                  "source": "Reduces AP recovery rate from 4 to 3."
                 },
                 {
                   "label": "Damage",
@@ -2697,7 +2688,7 @@ export const inquisitorData = {
               "notes": [
                 "Reduces cooldown from 1 second to 0.7 seconds.",
                 "Increases SP consumption from 60 to 65 based on level 5.",
-                "Increases AP recovery rate from 1 to 24.",
+                "Increases AP recovery rate from 1 to 4.",
                 "Unifies area of effect to 7 x 7 cells regardless of skill level.",
                 "Increases damage from 2500%Atk to 11600%Atk based on level 5.",
                 "Increases factor weight of POW in skill formula from 4 to 5."
@@ -2720,9 +2711,9 @@ export const inquisitorData = {
                 {
                   "label": "AP Generated",
                   "before": "1",
-                  "after": "24",
+                  "after": "4",
                   "scope": "",
-                  "source": "Increases AP recovery rate from 1 to 24."
+                  "source": "Increases AP recovery rate from 1 to 4."
                 },
                 {
                   "label": "Damage",
@@ -19264,9 +19255,8 @@ export const inquisitorData = {
           "file": "rebalances/inquisitor/rebalance_2.md",
           "section": "10.9",
           "notes": [
-            "Reduces cooldown from 1 second to 0.50.7 seconds.",
+            "Reduces cooldown from 1 second to 0.7 seconds.",
             "Reduces SP consumption from 120 to 90 based on level 5.",
-            "Reduces AP recovery rate from 4 to 3.",
             "Increases damage from 3250%/4250%(Oleum Sanctum)Atk to 14000%/16000%(Oleum Sanctum)Atk per hit based on level 5.",
             "Increases area of effect from 9 x 9 cells to 11 x 11 cells based on level 5.",
             "Increases factor weight of POW in skill formula from 3/5 to 15/15."
@@ -19275,9 +19265,9 @@ export const inquisitorData = {
             {
               "label": "Cooldown",
               "before": "1 second",
-              "after": "0.50.7 seconds",
+              "after": "0.7 seconds",
               "scope": "",
-              "source": "Reduces cooldown from 1 second to 0.50.7 seconds."
+              "source": "Reduces cooldown from 1 second to 0.7 seconds."
             },
             {
               "label": "SP Cost",
@@ -19285,13 +19275,6 @@ export const inquisitorData = {
               "after": "90",
               "scope": "Lv 5",
               "source": "Reduces SP consumption from 120 to 90 based on level 5."
-            },
-            {
-              "label": "AP Generated",
-              "before": "4",
-              "after": "3",
-              "scope": "",
-              "source": "Reduces AP recovery rate from 4 to 3."
             },
             {
               "label": "Damage",
@@ -19577,7 +19560,7 @@ export const inquisitorData = {
           "notes": [
             "Reduces cooldown from 1 second to 0.7 seconds.",
             "Increases SP consumption from 60 to 65 based on level 5.",
-            "Increases AP recovery rate from 1 to 24.",
+            "Increases AP recovery rate from 1 to 4.",
             "Unifies area of effect to 7 x 7 cells regardless of skill level.",
             "Increases damage from 2500%Atk to 11600%Atk based on level 5.",
             "Increases factor weight of POW in skill formula from 4 to 5."
@@ -19600,9 +19583,9 @@ export const inquisitorData = {
             {
               "label": "AP Generated",
               "before": "1",
-              "after": "24",
+              "after": "4",
               "scope": "",
-              "source": "Increases AP recovery rate from 1 to 24."
+              "source": "Increases AP recovery rate from 1 to 4."
             },
             {
               "label": "Damage",

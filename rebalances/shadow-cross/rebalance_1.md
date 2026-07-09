@@ -26,5 +26,5 @@ addsNewSkills: false
 	- Increases number of hit to 5 hits if using the skill while under Cloaking Exceed buff.
 
 	5.3. Eternal Slash
-	- Reduces cooldown from 1.5 seconds to 0.350.75 seconds based on level 5.
+	- Reduces cooldown from 1.5 seconds to 0.75 seconds based on level 5.
 	- Reduces delay after skill from 1 second to 0.5 seconds.

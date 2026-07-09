@@ -18,7 +18,7 @@ addsNewSkills: false
 	6.2. Unlucky Rush
 	- Removes fixed casting time and variable casting time.
 	- Reduces cooldown from 2 seconds to 0.25 seconds based on level 5.
-	- Reduces damage from 26002500%Atk to 1600%Atk based on level 5.
+	- Reduces damage from 2500%Atk to 1600%Atk based on level 5.
 	- Increases cast range to 9 cells.
 	- Changes damage bonus from CRT to POW.
 

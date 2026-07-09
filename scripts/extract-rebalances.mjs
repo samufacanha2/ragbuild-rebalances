@@ -155,10 +155,154 @@ function commentText(html, sourceUrl) {
   });
 
   if (!comment?.text) {
+    const renderedText = renderedCommentText(html, commentId);
+    if (renderedText) return renderedText;
+
     throw new Error(`Could not find Divine Pride forum comment ${commentId}.`);
   }
 
-  return normalizeForumText(comment.text);
+  return removeCollapsedDeletedText(normalizeForumText(comment.text), renderedCommentHtml(html, commentId));
+}
+
+function renderedCommentText(html, commentId) {
+  const article = renderedCommentHtml(html, commentId);
+  if (!article) return "";
+
+  const contentStart = article.search(/<div\b[^>]*\bdata-role=(["'])commentContent\1[^>]*>/i);
+  const content = contentStart >= 0 ? elementInnerHtml(article, "div", contentStart) : article;
+  return normalizeForumText(renderedHtmlText(content));
+}
+
+function renderedCommentHtml(html, commentId) {
+  if (!commentId) return "";
+  return articleHtmlById(html, `elComment_${commentId}`);
+}
+
+function removeCollapsedDeletedText(text, html) {
+  if (!html) return text;
+
+  const replacements = deletedLineReplacements(html);
+  if (!replacements.size) return text;
+
+  return text.split("\n").map((line) => {
+    const replacement = replacements.get(normalizeInlineText(line));
+    if (replacement === undefined) return line;
+    if (!replacement) return null;
+
+    return `${line.match(/^\s*/)?.[0] ?? ""}${replacement}`;
+  }).filter((line) => line !== null).join("\n");
+}
+
+function deletedLineReplacements(html) {
+  const replacements = new Map();
+  const blockRegex = /<(p|li)\b[^>]*>[\s\S]*?<\/\1>/gi;
+  let match = blockRegex.exec(html);
+
+  while (match) {
+    if (/<(s|strike|del)\b/i.test(match[0])) {
+      const originalLines = normalizedRenderedLines(match[0], { keepDeletedText: true });
+      const correctedLines = normalizedRenderedLines(match[0]);
+      addLineReplacements(replacements, originalLines, correctedLines);
+    }
+    match = blockRegex.exec(html);
+  }
+
+  return replacements;
+}
+
+function addLineReplacements(replacements, originalLines, correctedLines) {
+  let originalIndex = 0;
+  let correctedIndex = 0;
+
+  while (originalIndex < originalLines.length && correctedIndex < correctedLines.length) {
+    const originalLine = originalLines[originalIndex];
+    const correctedLine = correctedLines[correctedIndex];
+
+    if (originalLine === correctedLine) {
+      originalIndex += 1;
+      correctedIndex += 1;
+      continue;
+    }
+
+    if (originalLines[originalIndex + 1] === correctedLine) {
+      replacements.set(originalLine, "");
+      originalIndex += 1;
+      continue;
+    }
+
+    if (originalLine === correctedLines[correctedIndex + 1]) {
+      correctedIndex += 1;
+      continue;
+    }
+
+    replacements.set(originalLine, correctedLine);
+    originalIndex += 1;
+    correctedIndex += 1;
+  }
+
+  while (originalIndex < originalLines.length) {
+    replacements.set(originalLines[originalIndex], "");
+    originalIndex += 1;
+  }
+}
+
+function normalizedRenderedLines(html, options) {
+  return renderedHtmlText(html, options)
+    .split("\n")
+    .map((line) => normalizeInlineText(line))
+    .filter(Boolean);
+}
+
+function normalizeInlineText(value) {
+  return String(value ?? "").replace(/\s+/g, " ").trim();
+}
+
+function articleHtmlById(html, id) {
+  const escapedId = escapeRegExp(id);
+  const articleRegex = new RegExp(`<article\\b(?=[^>]*\\bid=(["'])${escapedId}\\1)[^>]*>[\\s\\S]*?<\\/article>`, "i");
+  return html.match(articleRegex)?.[0] ?? "";
+}
+
+function elementInnerHtml(html, tagName, startIndex) {
+  const openEnd = html.indexOf(">", startIndex);
+  if (openEnd < 0) return "";
+
+  const tagRegex = new RegExp(`<\\/?${escapeRegExp(tagName)}\\b[^>]*>`, "gi");
+  tagRegex.lastIndex = openEnd + 1;
+
+  let depth = 1;
+  let match = tagRegex.exec(html);
+
+  while (match) {
+    if (match[0].startsWith("</")) {
+      depth -= 1;
+      if (depth === 0) return html.slice(openEnd + 1, match.index);
+    } else if (!/\/>$/.test(match[0])) {
+      depth += 1;
+    }
+    match = tagRegex.exec(html);
+  }
+
+  return html.slice(openEnd + 1);
+}
+
+function renderedHtmlText(html, options = {}) {
+  const stripDeletedText = options.keepDeletedText ? (value) => value : (value) => (
+    value.replace(/<(s|strike|del)\b[^>]*>[\s\S]*?<\/\1>/gi, "")
+  );
+
+  return decodeHtmlEntities(stripDeletedText(String(html ?? ""))
+    .replace(/<blockquote\b[\s\S]*?<\/blockquote>/gi, "\n")
+    .replace(/<img\b[^>]*>/gi, "\n")
+    .replace(/<br\b[^>]*\/?>/gi, "\n")
+    .replace(/<\/(?:p|div|section|article|h[1-6])>/gi, "\n\n")
+    .replace(/<li\b[^>]*>/gi, "\n- ")
+    .replace(/<\/li>/gi, "\n")
+    .replace(/<[^>]+>/g, ""));
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function topicText(html) {
@@ -255,7 +399,7 @@ async function writeSection(source, classSlug, className, sectionText) {
     return { path: relativePath, written: false };
   }
 
-  const content = [
+  const content = await shouldWriteFrontmatter(filePath) ? [
     "---",
     `rebalance: ${source.number}`,
     `label: ${JSON.stringify(source.label)}`,
@@ -268,6 +412,9 @@ async function writeSection(source, classSlug, className, sectionText) {
     `addsNewSkills: ${Boolean(source.addsNewSkills)}`,
     "---",
     "",
+    sectionText.trim(),
+    ""
+  ].join("\n") : [
     sectionText.trim(),
     ""
   ].join("\n");
@@ -292,6 +439,13 @@ async function shouldKeepExisting(filePath) {
 
   const text = await fs.readFile(filePath, "utf8");
   return !text.startsWith("---\nrebalance:");
+}
+
+async function shouldWriteFrontmatter(filePath) {
+  if (!await exists(filePath)) return true;
+
+  const text = await fs.readFile(filePath, "utf8");
+  return text.startsWith("---\nrebalance:");
 }
 
 function extractAddedSkills(sectionText) {
@@ -321,14 +475,30 @@ function extractAddedSkills(sectionText) {
 }
 
 function normalizeForumText(value) {
-  return String(value ?? "")
+  return decodeHtmlEntities(value)
     .replace(/\r\n/g, "\n")
     .replace(/\r/g, "\n")
-    .replace(/&amp;/g, "&")
     .replace(/\u00a0/g, " ")
     .replace(/[ \t]+\n/g, "\n")
     .replace(/\n{3,}/g, "\n\n")
     .trim();
+}
+
+function decodeHtmlEntities(value) {
+  return String(value ?? "").replace(/&(#x[\da-f]+|#\d+|amp|lt|gt|quot|apos|nbsp);/gi, (match, entity) => {
+    const normalized = entity.toLowerCase();
+    if (normalized.startsWith("#x")) return String.fromCodePoint(Number.parseInt(normalized.slice(2), 16));
+    if (normalized.startsWith("#")) return String.fromCodePoint(Number.parseInt(normalized.slice(1), 10));
+
+    return {
+      amp: "&",
+      lt: "<",
+      gt: ">",
+      quot: "\"",
+      apos: "'",
+      nbsp: " "
+    }[normalized] ?? match;
+  });
 }
 
 function normalizeWhitespace(value) {

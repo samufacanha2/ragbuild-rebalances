@@ -1,5 +1,5 @@
 export const soulAsceticData = {
-  "generatedAt": "2026-07-09T04:23:59.492Z",
+  "generatedAt": "2026-07-09T12:12:33.354Z",
   "classId": 4303,
   "classSlug": "soul-ascetic",
   "className": "Soul Ascetic",
@@ -123,10 +123,10 @@ export const soulAsceticData = {
           "section": "16.5",
           "name": "Talisman of White Tiger",
           "notes": [
-            "Increases cooldown from 0.3 seconds to 0.50.4 seconds.",
+            "Increases cooldown from 0.3 seconds to 0.4 seconds.",
             "Increases SP consumption from 78 to 92 based on level 5.",
             "Increases AP recovery rate from 1 to 2.",
-            "Increases damage from 3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk to 49505100%/65007100%(Blessing of the Four Directions and the Five Elements)Matk based on level 5."
+            "Increases damage from 3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk to 5100%/7100%(Blessing of the Four Directions and the Five Elements)Matk based on level 5."
           ]
         },
         {
@@ -2559,18 +2559,18 @@ export const soulAsceticData = {
               "file": "rebalances/soul-ascetic/rebalance_2.md",
               "section": "16.5",
               "notes": [
-                "Increases cooldown from 0.3 seconds to 0.50.4 seconds.",
+                "Increases cooldown from 0.3 seconds to 0.4 seconds.",
                 "Increases SP consumption from 78 to 92 based on level 5.",
                 "Increases AP recovery rate from 1 to 2.",
-                "Increases damage from 3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk to 49505100%/65007100%(Blessing of the Four Directions and the Five Elements)Matk based on level 5."
+                "Increases damage from 3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk to 5100%/7100%(Blessing of the Four Directions and the Five Elements)Matk based on level 5."
               ],
               "specRows": [
                 {
                   "label": "Cooldown",
                   "before": "0.3 seconds",
-                  "after": "0.50.4 seconds",
+                  "after": "0.4 seconds",
                   "scope": "",
-                  "source": "Increases cooldown from 0.3 seconds to 0.50.4 seconds."
+                  "source": "Increases cooldown from 0.3 seconds to 0.4 seconds."
                 },
                 {
                   "label": "SP Cost",
@@ -2589,9 +2589,9 @@ export const soulAsceticData = {
                 {
                   "label": "Damage",
                   "before": "3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk",
-                  "after": "49505100%/65007100%(Blessing of the Four Directions and the Five Elements)Matk",
+                  "after": "5100%/7100%(Blessing of the Four Directions and the Five Elements)Matk",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk to 49505100%/65007100%(Blessing of the Four Directions and the Five Elements)Matk based on level 5."
+                  "source": "Increases damage from 3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk to 5100%/7100%(Blessing of the Four Directions and the Five Elements)Matk based on level 5."
                 }
               ]
             },
@@ -18782,18 +18782,18 @@ export const soulAsceticData = {
           "file": "rebalances/soul-ascetic/rebalance_2.md",
           "section": "16.5",
           "notes": [
-            "Increases cooldown from 0.3 seconds to 0.50.4 seconds.",
+            "Increases cooldown from 0.3 seconds to 0.4 seconds.",
             "Increases SP consumption from 78 to 92 based on level 5.",
             "Increases AP recovery rate from 1 to 2.",
-            "Increases damage from 3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk to 49505100%/65007100%(Blessing of the Four Directions and the Five Elements)Matk based on level 5."
+            "Increases damage from 3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk to 5100%/7100%(Blessing of the Four Directions and the Five Elements)Matk based on level 5."
           ],
           "specRows": [
             {
               "label": "Cooldown",
               "before": "0.3 seconds",
-              "after": "0.50.4 seconds",
+              "after": "0.4 seconds",
               "scope": "",
-              "source": "Increases cooldown from 0.3 seconds to 0.50.4 seconds."
+              "source": "Increases cooldown from 0.3 seconds to 0.4 seconds."
             },
             {
               "label": "SP Cost",
@@ -18812,9 +18812,9 @@ export const soulAsceticData = {
             {
               "label": "Damage",
               "before": "3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk",
-              "after": "49505100%/65007100%(Blessing of the Four Directions and the Five Elements)Matk",
+              "after": "5100%/7100%(Blessing of the Four Directions and the Five Elements)Matk",
               "scope": "Lv 5",
-              "source": "Increases damage from 3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk to 49505100%/65007100%(Blessing of the Four Directions and the Five Elements)Matk based on level 5."
+              "source": "Increases damage from 3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk to 5100%/7100%(Blessing of the Four Directions and the Five Elements)Matk based on level 5."
             }
           ]
         },

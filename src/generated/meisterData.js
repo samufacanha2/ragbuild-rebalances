@@ -1,5 +1,5 @@
 export const meisterData = {
-  "generatedAt": "2026-07-09T03:36:38.409Z",
+  "generatedAt": "2026-07-09T12:09:34.652Z",
   "classId": 4253,
   "classSlug": "meister",
   "className": "Meister",
@@ -281,14 +281,14 @@ export const meisterData = {
           "name": "Mighty Smash",
           "notes": [
             "Increases global cooldown from 0.25 seconds to 0.7 seconds based on level 10.",
-            "Increases base damage from 1825%/1850%(Axe Stomp)Atk to 2140%/2180%2480%/2500%(Axe Stomp)Atk per hit based on level 10."
+            "Increases base damage from 1825%/1850%(Axe Stomp)Atk to 2480%/2500%(Axe Stomp)Atk per hit based on level 10."
           ]
         },
         {
           "section": "2.3",
           "name": "Spark Blaster",
           "notes": [
-            "Increases base damage from 9250%Atk to 1245014600%Atk based on level 10."
+            "Increases base damage from 9250%Atk to 14600%Atk based on level 10."
           ]
         },
         {
@@ -1803,15 +1803,15 @@ export const meisterData = {
               "file": "rebalances/meister/rebalance_4.md",
               "section": "2.3",
               "notes": [
-                "Increases base damage from 9250%Atk to 1245014600%Atk based on level 10."
+                "Increases base damage from 9250%Atk to 14600%Atk based on level 10."
               ],
               "specRows": [
                 {
                   "label": "Damage",
                   "before": "9250%Atk",
-                  "after": "1245014600%Atk",
+                  "after": "14600%Atk",
                   "scope": "Lv 10",
-                  "source": "Increases base damage from 9250%Atk to 1245014600%Atk based on level 10."
+                  "source": "Increases base damage from 9250%Atk to 14600%Atk based on level 10."
                 }
               ]
             }
@@ -2114,7 +2114,7 @@ export const meisterData = {
               "section": "2.2",
               "notes": [
                 "Increases global cooldown from 0.25 seconds to 0.7 seconds based on level 10.",
-                "Increases base damage from 1825%/1850%(Axe Stomp)Atk to 2140%/2180%2480%/2500%(Axe Stomp)Atk per hit based on level 10."
+                "Increases base damage from 1825%/1850%(Axe Stomp)Atk to 2480%/2500%(Axe Stomp)Atk per hit based on level 10."
               ],
               "specRows": [
                 {
@@ -2127,9 +2127,9 @@ export const meisterData = {
                 {
                   "label": "Damage",
                   "before": "1825%/1850%(A x e Stomp)Atk",
-                  "after": "2140%/2180%2480%/2500%(A x e Stomp)Atk per hit",
+                  "after": "2480%/2500%(A x e Stomp)Atk per hit",
                   "scope": "Lv 10",
-                  "source": "Increases base damage from 1825%/1850%(Axe Stomp)Atk to 2140%/2180%2480%/2500%(Axe Stomp)Atk per hit based on level 10."
+                  "source": "Increases base damage from 1825%/1850%(Axe Stomp)Atk to 2480%/2500%(Axe Stomp)Atk per hit based on level 10."
                 }
               ]
             }
@@ -18440,15 +18440,15 @@ export const meisterData = {
           "file": "rebalances/meister/rebalance_4.md",
           "section": "2.3",
           "notes": [
-            "Increases base damage from 9250%Atk to 1245014600%Atk based on level 10."
+            "Increases base damage from 9250%Atk to 14600%Atk based on level 10."
           ],
           "specRows": [
             {
               "label": "Damage",
               "before": "9250%Atk",
-              "after": "1245014600%Atk",
+              "after": "14600%Atk",
               "scope": "Lv 10",
-              "source": "Increases base damage from 9250%Atk to 1245014600%Atk based on level 10."
+              "source": "Increases base damage from 9250%Atk to 14600%Atk based on level 10."
             }
           ]
         }
@@ -18751,7 +18751,7 @@ export const meisterData = {
           "section": "2.2",
           "notes": [
             "Increases global cooldown from 0.25 seconds to 0.7 seconds based on level 10.",
-            "Increases base damage from 1825%/1850%(Axe Stomp)Atk to 2140%/2180%2480%/2500%(Axe Stomp)Atk per hit based on level 10."
+            "Increases base damage from 1825%/1850%(Axe Stomp)Atk to 2480%/2500%(Axe Stomp)Atk per hit based on level 10."
           ],
           "specRows": [
             {
@@ -18764,9 +18764,9 @@ export const meisterData = {
             {
               "label": "Damage",
               "before": "1825%/1850%(A x e Stomp)Atk",
-              "after": "2140%/2180%2480%/2500%(A x e Stomp)Atk per hit",
+              "after": "2480%/2500%(A x e Stomp)Atk per hit",
               "scope": "Lv 10",
-              "source": "Increases base damage from 1825%/1850%(Axe Stomp)Atk to 2140%/2180%2480%/2500%(Axe Stomp)Atk per hit based on level 10."
+              "source": "Increases base damage from 1825%/1850%(Axe Stomp)Atk to 2480%/2500%(Axe Stomp)Atk per hit based on level 10."
             }
           ]
         }

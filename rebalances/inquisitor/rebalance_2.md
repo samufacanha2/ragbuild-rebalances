@@ -24,7 +24,7 @@ addsNewSkills: false
 	10.2. Second Faith
 	- Reduces cooldown from 1 second to 0.7 seconds.
 	- Increases SP consumption from 60 to 65 based on level 5.
-	- Increases AP recovery rate from 1 to 24.
+	- Increases AP recovery rate from 1 to 4.
 	- Unifies area of effect to 7 x 7 cells regardless of skill level.
 	- Increases damage from 2500%Atk to 11600%Atk based on level 5.
 	- Increases factor weight of POW in skill formula from 4 to 5.
@@ -32,7 +32,7 @@ addsNewSkills: false
 	10.3. Second Judgement
 	- Reduces cooldown from 1 second to 0.7 seconds.
 	- Increases SP consumption from 65 to 70 based on level 5.
-	- Increases AP recovery rate from 2 to 34.
+	- Increases AP recovery rate from 2 to 4.
 	- Unifies area of effect to 7 x 7 cells regardless of skill level.
 	- Increases damage from 2625%Atk to 13150%Atk based on level 5.
 	- Increases factor weight of POW in skill formula from 4 to 7.
@@ -72,9 +72,8 @@ addsNewSkills: false
 	- Increases factor weight of POW in skill formula from 3 to 5.
 
 	10.9. Explosion Blaster
-	- Reduces cooldown from 1 second to 0.50.7 seconds.
+	- Reduces cooldown from 1 second to 0.7 seconds.
 	- Reduces SP consumption from 120 to 90 based on level 5.
-	- Reduces AP recovery rate from 4 to 3.
 	- Increases damage from 3250%/4250%(Oleum Sanctum)Atk to 14000%/16000%(Oleum Sanctum)Atk per hit based on level 5.
 	- Increases area of effect from 9 x 9 cells to 11 x 11 cells based on level 5.
 	- Increases factor weight of POW in skill formula from 3/5 to 15/15.

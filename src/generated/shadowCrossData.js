@@ -1,5 +1,5 @@
 export const shadowCrossData = {
-  "generatedAt": "2026-07-09T03:37:10.297Z",
+  "generatedAt": "2026-07-09T12:09:57.886Z",
   "classId": 4254,
   "classSlug": "shadow-cross",
   "className": "Shadow Cross",
@@ -112,7 +112,7 @@ export const shadowCrossData = {
           "section": "5.3",
           "name": "Eternal Slash",
           "notes": [
-            "Reduces cooldown from 1.5 seconds to 0.350.75 seconds based on level 5.",
+            "Reduces cooldown from 1.5 seconds to 0.75 seconds based on level 5.",
             "Reduces delay after skill from 1 second to 0.5 seconds."
           ]
         }
@@ -1344,16 +1344,16 @@ export const shadowCrossData = {
               "file": "rebalances/shadow-cross/rebalance_1.md",
               "section": "5.3",
               "notes": [
-                "Reduces cooldown from 1.5 seconds to 0.350.75 seconds based on level 5.",
+                "Reduces cooldown from 1.5 seconds to 0.75 seconds based on level 5.",
                 "Reduces delay after skill from 1 second to 0.5 seconds."
               ],
               "specRows": [
                 {
                   "label": "Cooldown",
                   "before": "1.5 seconds",
-                  "after": "0.350.75 seconds",
+                  "after": "0.75 seconds",
                   "scope": "Lv 5",
-                  "source": "Reduces cooldown from 1.5 seconds to 0.350.75 seconds based on level 5."
+                  "source": "Reduces cooldown from 1.5 seconds to 0.75 seconds based on level 5."
                 },
                 {
                   "label": "Cast Delay",
@@ -13501,16 +13501,16 @@ export const shadowCrossData = {
           "file": "rebalances/shadow-cross/rebalance_1.md",
           "section": "5.3",
           "notes": [
-            "Reduces cooldown from 1.5 seconds to 0.350.75 seconds based on level 5.",
+            "Reduces cooldown from 1.5 seconds to 0.75 seconds based on level 5.",
             "Reduces delay after skill from 1 second to 0.5 seconds."
           ],
           "specRows": [
             {
               "label": "Cooldown",
               "before": "1.5 seconds",
-              "after": "0.350.75 seconds",
+              "after": "0.75 seconds",
               "scope": "Lv 5",
-              "source": "Reduces cooldown from 1.5 seconds to 0.350.75 seconds based on level 5."
+              "source": "Reduces cooldown from 1.5 seconds to 0.75 seconds based on level 5."
             },
             {
               "label": "Cast Delay",

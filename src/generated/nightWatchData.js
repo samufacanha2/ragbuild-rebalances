@@ -1,5 +1,5 @@
 export const nightWatchData = {
-  "generatedAt": "2026-07-09T04:23:11.506Z",
+  "generatedAt": "2026-07-09T12:11:49.702Z",
   "classId": 4306,
   "classSlug": "night-watch",
   "className": "Night Watch",
@@ -91,7 +91,7 @@ export const nightWatchData = {
           "name": "Only One Bullet",
           "notes": [
             "Increases SP consumption from 38 to 55 based on level 5.",
-            "Increases damage from 4750%(rifle)/6500%(pistol)Atk to 58007550%(rifle)/77508300%(pistol)Atk based on level 5.",
+            "Increases damage from 4750%(rifle)/6500%(pistol)Atk to 7550%(rifle)/8300%(pistol)Atk based on level 5.",
             "Increase bonus damage per aiming count from 1250% to 1750% based on level 5."
           ]
         },
@@ -99,7 +99,7 @@ export const nightWatchData = {
           "section": "14.2",
           "name": "Spiral Shooting",
           "notes": [
-            "Increases damage from 4900%(rifle)/6000%(grenade launcher) to 78009700%(rifle)/8500%(grenade launcher) based on level 5.",
+            "Increases damage from 4900%(rifle)/6000%(grenade launcher) to 9700%(rifle)/8500%(grenade launcher) based on level 5.",
             "Reduces bullet consumption from 10 to 6."
           ]
         },
@@ -107,10 +107,10 @@ export const nightWatchData = {
           "section": "14.3",
           "name": "Magazine for One",
           "notes": [
-            "Reduces cooldown from 0.75 seconds to 0.70.5 seconds.",
+            "Reduces cooldown from 0.75 seconds to 0.5 seconds.",
             "Increases SP consumption from 42 to 58 based on level 5.",
             "Increases AP recovery rate from 1 to 2.",
-            "Increases damage from 1700%(gatling gun)/2100%(pistol)Atk to 20501950%(gatling gun)/30002400%(pistol)Atk per hit based on level 5.",
+            "Increases damage from 1700%(gatling gun)/2100%(pistol)Atk to 1950%(gatling gun)/2400%(pistol)Atk per hit based on level 5.",
             "Reduces bullet consumption when equipping gatling gun from 40 to 10.",
             "Increase bonus damage per aiming count from 250% to 500% based on level 5."
           ]
@@ -119,7 +119,7 @@ export const nightWatchData = {
           "section": "14.4",
           "name": "Wild Fire",
           "notes": [
-            "Increases damage from 8000%(shotgun)/7000%(grenade launcher)Atk to 1070013250%(shotgun)/12500%(grenade launcher)Atk based on level 5."
+            "Increases damage from 8000%(shotgun)/7000%(grenade launcher)Atk to 13250%(shotgun)/12500%(grenade launcher)Atk based on level 5."
           ]
         },
         {
@@ -1950,7 +1950,7 @@ export const nightWatchData = {
               "section": "14.1",
               "notes": [
                 "Increases SP consumption from 38 to 55 based on level 5.",
-                "Increases damage from 4750%(rifle)/6500%(pistol)Atk to 58007550%(rifle)/77508300%(pistol)Atk based on level 5.",
+                "Increases damage from 4750%(rifle)/6500%(pistol)Atk to 7550%(rifle)/8300%(pistol)Atk based on level 5.",
                 "Increase bonus damage per aiming count from 1250% to 1750% based on level 5."
               ],
               "specRows": [
@@ -1964,9 +1964,9 @@ export const nightWatchData = {
                 {
                   "label": "Damage",
                   "before": "4750%(rifle)/6500%(pistol)Atk",
-                  "after": "58007550%(rifle)/77508300%(pistol)Atk",
+                  "after": "7550%(rifle)/8300%(pistol)Atk",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 4750%(rifle)/6500%(pistol)Atk to 58007550%(rifle)/77508300%(pistol)Atk based on level 5."
+                  "source": "Increases damage from 4750%(rifle)/6500%(pistol)Atk to 7550%(rifle)/8300%(pistol)Atk based on level 5."
                 }
               ]
             },
@@ -2199,16 +2199,16 @@ export const nightWatchData = {
               "file": "rebalances/night-watch/rebalance_2.md",
               "section": "14.2",
               "notes": [
-                "Increases damage from 4900%(rifle)/6000%(grenade launcher) to 78009700%(rifle)/8500%(grenade launcher) based on level 5.",
+                "Increases damage from 4900%(rifle)/6000%(grenade launcher) to 9700%(rifle)/8500%(grenade launcher) based on level 5.",
                 "Reduces bullet consumption from 10 to 6."
               ],
               "specRows": [
                 {
                   "label": "Damage",
                   "before": "4900%(rifle)/6000%(grenade launcher)",
-                  "after": "78009700%(rifle)/8500%(grenade launcher)",
+                  "after": "9700%(rifle)/8500%(grenade launcher)",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 4900%(rifle)/6000%(grenade launcher) to 78009700%(rifle)/8500%(grenade launcher) based on level 5."
+                  "source": "Increases damage from 4900%(rifle)/6000%(grenade launcher) to 9700%(rifle)/8500%(grenade launcher) based on level 5."
                 },
                 {
                   "label": "Bullet Consumption",
@@ -2431,10 +2431,10 @@ export const nightWatchData = {
               "file": "rebalances/night-watch/rebalance_2.md",
               "section": "14.3",
               "notes": [
-                "Reduces cooldown from 0.75 seconds to 0.70.5 seconds.",
+                "Reduces cooldown from 0.75 seconds to 0.5 seconds.",
                 "Increases SP consumption from 42 to 58 based on level 5.",
                 "Increases AP recovery rate from 1 to 2.",
-                "Increases damage from 1700%(gatling gun)/2100%(pistol)Atk to 20501950%(gatling gun)/30002400%(pistol)Atk per hit based on level 5.",
+                "Increases damage from 1700%(gatling gun)/2100%(pistol)Atk to 1950%(gatling gun)/2400%(pistol)Atk per hit based on level 5.",
                 "Reduces bullet consumption when equipping gatling gun from 40 to 10.",
                 "Increase bonus damage per aiming count from 250% to 500% based on level 5."
               ],
@@ -2442,9 +2442,9 @@ export const nightWatchData = {
                 {
                   "label": "Cooldown",
                   "before": "0.75 seconds",
-                  "after": "0.70.5 seconds",
+                  "after": "0.5 seconds",
                   "scope": "",
-                  "source": "Reduces cooldown from 0.75 seconds to 0.70.5 seconds."
+                  "source": "Reduces cooldown from 0.75 seconds to 0.5 seconds."
                 },
                 {
                   "label": "SP Cost",
@@ -2463,9 +2463,9 @@ export const nightWatchData = {
                 {
                   "label": "Damage",
                   "before": "1700%(gatling gun)/2100%(pistol)Atk",
-                  "after": "20501950%(gatling gun)/30002400%(pistol)Atk per hit",
+                  "after": "1950%(gatling gun)/2400%(pistol)Atk per hit",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 1700%(gatling gun)/2100%(pistol)Atk to 20501950%(gatling gun)/30002400%(pistol)Atk per hit based on level 5."
+                  "source": "Increases damage from 1700%(gatling gun)/2100%(pistol)Atk to 1950%(gatling gun)/2400%(pistol)Atk per hit based on level 5."
                 },
                 {
                   "label": "Bullet Consumption When Equipping Gatling Gun",
@@ -2688,15 +2688,15 @@ export const nightWatchData = {
               "file": "rebalances/night-watch/rebalance_2.md",
               "section": "14.4",
               "notes": [
-                "Increases damage from 8000%(shotgun)/7000%(grenade launcher)Atk to 1070013250%(shotgun)/12500%(grenade launcher)Atk based on level 5."
+                "Increases damage from 8000%(shotgun)/7000%(grenade launcher)Atk to 13250%(shotgun)/12500%(grenade launcher)Atk based on level 5."
               ],
               "specRows": [
                 {
                   "label": "Damage",
                   "before": "8000%(shotgun)/7000%(grenade launcher)Atk",
-                  "after": "1070013250%(shotgun)/12500%(grenade launcher)Atk",
+                  "after": "13250%(shotgun)/12500%(grenade launcher)Atk",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 8000%(shotgun)/7000%(grenade launcher)Atk to 1070013250%(shotgun)/12500%(grenade launcher)Atk based on level 5."
+                  "source": "Increases damage from 8000%(shotgun)/7000%(grenade launcher)Atk to 13250%(shotgun)/12500%(grenade launcher)Atk based on level 5."
                 }
               ]
             },
@@ -16423,7 +16423,7 @@ export const nightWatchData = {
           "section": "14.1",
           "notes": [
             "Increases SP consumption from 38 to 55 based on level 5.",
-            "Increases damage from 4750%(rifle)/6500%(pistol)Atk to 58007550%(rifle)/77508300%(pistol)Atk based on level 5.",
+            "Increases damage from 4750%(rifle)/6500%(pistol)Atk to 7550%(rifle)/8300%(pistol)Atk based on level 5.",
             "Increase bonus damage per aiming count from 1250% to 1750% based on level 5."
           ],
           "specRows": [
@@ -16437,9 +16437,9 @@ export const nightWatchData = {
             {
               "label": "Damage",
               "before": "4750%(rifle)/6500%(pistol)Atk",
-              "after": "58007550%(rifle)/77508300%(pistol)Atk",
+              "after": "7550%(rifle)/8300%(pistol)Atk",
               "scope": "Lv 5",
-              "source": "Increases damage from 4750%(rifle)/6500%(pistol)Atk to 58007550%(rifle)/77508300%(pistol)Atk based on level 5."
+              "source": "Increases damage from 4750%(rifle)/6500%(pistol)Atk to 7550%(rifle)/8300%(pistol)Atk based on level 5."
             }
           ]
         },
@@ -16672,16 +16672,16 @@ export const nightWatchData = {
           "file": "rebalances/night-watch/rebalance_2.md",
           "section": "14.2",
           "notes": [
-            "Increases damage from 4900%(rifle)/6000%(grenade launcher) to 78009700%(rifle)/8500%(grenade launcher) based on level 5.",
+            "Increases damage from 4900%(rifle)/6000%(grenade launcher) to 9700%(rifle)/8500%(grenade launcher) based on level 5.",
             "Reduces bullet consumption from 10 to 6."
           ],
           "specRows": [
             {
               "label": "Damage",
               "before": "4900%(rifle)/6000%(grenade launcher)",
-              "after": "78009700%(rifle)/8500%(grenade launcher)",
+              "after": "9700%(rifle)/8500%(grenade launcher)",
               "scope": "Lv 5",
-              "source": "Increases damage from 4900%(rifle)/6000%(grenade launcher) to 78009700%(rifle)/8500%(grenade launcher) based on level 5."
+              "source": "Increases damage from 4900%(rifle)/6000%(grenade launcher) to 9700%(rifle)/8500%(grenade launcher) based on level 5."
             },
             {
               "label": "Bullet Consumption",
@@ -16904,10 +16904,10 @@ export const nightWatchData = {
           "file": "rebalances/night-watch/rebalance_2.md",
           "section": "14.3",
           "notes": [
-            "Reduces cooldown from 0.75 seconds to 0.70.5 seconds.",
+            "Reduces cooldown from 0.75 seconds to 0.5 seconds.",
             "Increases SP consumption from 42 to 58 based on level 5.",
             "Increases AP recovery rate from 1 to 2.",
-            "Increases damage from 1700%(gatling gun)/2100%(pistol)Atk to 20501950%(gatling gun)/30002400%(pistol)Atk per hit based on level 5.",
+            "Increases damage from 1700%(gatling gun)/2100%(pistol)Atk to 1950%(gatling gun)/2400%(pistol)Atk per hit based on level 5.",
             "Reduces bullet consumption when equipping gatling gun from 40 to 10.",
             "Increase bonus damage per aiming count from 250% to 500% based on level 5."
           ],
@@ -16915,9 +16915,9 @@ export const nightWatchData = {
             {
               "label": "Cooldown",
               "before": "0.75 seconds",
-              "after": "0.70.5 seconds",
+              "after": "0.5 seconds",
               "scope": "",
-              "source": "Reduces cooldown from 0.75 seconds to 0.70.5 seconds."
+              "source": "Reduces cooldown from 0.75 seconds to 0.5 seconds."
             },
             {
               "label": "SP Cost",
@@ -16936,9 +16936,9 @@ export const nightWatchData = {
             {
               "label": "Damage",
               "before": "1700%(gatling gun)/2100%(pistol)Atk",
-              "after": "20501950%(gatling gun)/30002400%(pistol)Atk per hit",
+              "after": "1950%(gatling gun)/2400%(pistol)Atk per hit",
               "scope": "Lv 5",
-              "source": "Increases damage from 1700%(gatling gun)/2100%(pistol)Atk to 20501950%(gatling gun)/30002400%(pistol)Atk per hit based on level 5."
+              "source": "Increases damage from 1700%(gatling gun)/2100%(pistol)Atk to 1950%(gatling gun)/2400%(pistol)Atk per hit based on level 5."
             },
             {
               "label": "Bullet Consumption When Equipping Gatling Gun",
@@ -17161,15 +17161,15 @@ export const nightWatchData = {
           "file": "rebalances/night-watch/rebalance_2.md",
           "section": "14.4",
           "notes": [
-            "Increases damage from 8000%(shotgun)/7000%(grenade launcher)Atk to 1070013250%(shotgun)/12500%(grenade launcher)Atk based on level 5."
+            "Increases damage from 8000%(shotgun)/7000%(grenade launcher)Atk to 13250%(shotgun)/12500%(grenade launcher)Atk based on level 5."
           ],
           "specRows": [
             {
               "label": "Damage",
               "before": "8000%(shotgun)/7000%(grenade launcher)Atk",
-              "after": "1070013250%(shotgun)/12500%(grenade launcher)Atk",
+              "after": "13250%(shotgun)/12500%(grenade launcher)Atk",
               "scope": "Lv 5",
-              "source": "Increases damage from 8000%(shotgun)/7000%(grenade launcher)Atk to 1070013250%(shotgun)/12500%(grenade launcher)Atk based on level 5."
+              "source": "Increases damage from 8000%(shotgun)/7000%(grenade launcher)Atk to 13250%(shotgun)/12500%(grenade launcher)Atk based on level 5."
             }
           ]
         },

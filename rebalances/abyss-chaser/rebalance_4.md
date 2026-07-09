@@ -26,7 +26,7 @@ addsNewSkills: false
 	- Increases base damage from 4600%Atk to 7350%Atk based on level 5.
 
 	9.4. Deft Stab
-	- Increases base damage from 3750%Atk to 54006200%Atk based on level 10.
+	- Increases base damage from 3750%Atk to 6200%Atk based on level 10.
 	- Increases factor weight of POW in skill formula from 5 to 7.
 
 	9.5. From the Abyss
