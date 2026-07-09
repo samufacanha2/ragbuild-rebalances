@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { assetUrl } from '../lib/dom.js'
 import { allocatedTotal, skillLevel } from '../lib/pointBuy.js'
 import { notesForVersion } from '../lib/specs.js'
-import { translatedSkillName } from '../lib/translations.js'
+import { translatedSkillName, translateUi } from '../lib/translations.js'
 
 export function SkillTree({
   model,
@@ -116,11 +116,11 @@ function SkillNode({
           <span className="skill-level-text">{skill.maxLevel}</span>
         </span>
       </button>
-      {requiredLevel ? <span className="requirement-badge">Req Lv {requiredLevel}</span> : null}
+      {requiredLevel ? <span className="requirement-badge">{translateUi('Req Lv', language)} {requiredLevel}</span> : null}
       <div className="skill-stepper" aria-label={`${skill.name} point controls`}>
         <button
           type="button"
-          aria-label={`Remove one point from ${name}`}
+          aria-label={`${translateUi('Remove one point from', language)} ${name}`}
           onClick={() => onDecreaseSkill(skill.id)}
           disabled={!canDecreaseSkill(skill.id)}
         >
@@ -128,7 +128,7 @@ function SkillNode({
         </button>
         <button
           type="button"
-          aria-label={`Add one point to ${name}`}
+          aria-label={`${translateUi('Add one point to', language)} ${name}`}
           onClick={() => onIncreaseSkill(skill.id)}
           disabled={currentLevel >= skill.maxLevel || allocatedTotal(levels) >= model.data.pointLimit}
         >

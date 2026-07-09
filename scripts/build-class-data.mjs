@@ -1093,7 +1093,7 @@ function groupRebalancesBySkill(versions) {
 
 function parseSpecRows(note) {
   const rows = [];
-  const changeMatch = note.match(/^(Increases|Reduces|Decreases)\s+(.+?)\s+from\s+(.+?)\s+to\s+(.+?)(?:\s+based on level\s+(\d+))?\.?$/i);
+  const changeMatch = note.match(/^(Increases|Reduces|Decreases|Changes)\s+(.+?)\s+from\s+(.+?)\s+to\s+(.+?)(?:\s+based on level\s+(\d+))?\.?$/i);
   if (changeMatch) {
     rows.push({
       label: specLabel(changeMatch[2]),

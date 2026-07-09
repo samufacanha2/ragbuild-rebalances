@@ -1,4 +1,4 @@
-import { translateSpecLabel, translateUi } from '../lib/translations.js'
+import { translateChangeNote, translateSpecLabel, translateSpecValue, translateUi } from '../lib/translations.js'
 
 export function EffectiveSpecTable({ rows, language }) {
   if (!rows.length) return <p className="subtle">{translateUi('No additional timing or range fields were found.', language)}</p>
@@ -12,9 +12,9 @@ export function EffectiveSpecTable({ rows, language }) {
               <th scope="row">{translateSpecLabel(row.label, language)}</th>
               <td>
                 <span className={row.changed ? 'changed-spec-value' : ''}>
-                  {row.value}
+                  {translateSpecValue(row.value, language)}
                 </span>
-                {row.changeNote ? <small>{row.changeNote}</small> : null}
+                {row.changeNote ? <small>{translateChangeNote(row.changeNote, language)}</small> : null}
               </td>
             </tr>
           ))}
@@ -43,7 +43,7 @@ export function LevelScalingTable({ table, level, language }) {
               <tr key={row.level} className={row.level === level ? 'current-level-row' : ''}>
                 <th scope="row">{row.level}</th>
                 {table.columns.map((column) => (
-                  <td key={column.id}>{row.values[column.id] || '-'}</td>
+                  <td key={column.id}>{translateSpecValue(row.values[column.id] || '-', language)}</td>
                 ))}
               </tr>
             ))}

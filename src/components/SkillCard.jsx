@@ -1,7 +1,12 @@
 import { assetUrl } from '../lib/dom.js'
 import { allocatedTotal } from '../lib/pointBuy.js'
 import { effectiveLevelTable, effectiveSpecRows, notesForVersion, specVersionTitle } from '../lib/specs.js'
-import { translatedRequirementName, translatedSkillDescription, translatedSkillName, translateUi } from '../lib/translations.js'
+import {
+  translatedRequirementName,
+  translatedSkillDescription,
+  translatedSkillName,
+  translateUi,
+} from '../lib/translations.js'
 import { PatchNotes } from './PatchNotes.jsx'
 import { EffectiveSpecTable, LevelScalingTable } from './SpecTables.jsx'
 import { TextBlock } from './TextBlock.jsx'
@@ -26,7 +31,7 @@ export function SkillCard({
       <header className="skill-card-head">
         <img src={assetUrl(skill.iconUrl)} alt="" width="48" height="48" />
         <div>
-          <p className="eyebrow">Skill {skill.id}</p>
+          <p className="eyebrow">{translateUi('Skill', language)} {skill.id}</p>
           <h2>{name}</h2>
         </div>
       </header>
@@ -65,8 +70,8 @@ export function SkillCard({
           {skill.tree.requirements.length ? (
             skill.tree.requirements.map((requirement) => (
               <li key={requirement.id}>
-                {translatedRequirementName(requirement, model, language)} Lv {requirement.level}
-                {requirement.visible ? '' : ' (previous class)'}
+                {translatedRequirementName(requirement, model, language)} {translateUi('Lv', language)} {requirement.level}
+                {requirement.visible ? '' : ` (${translateUi('previous class', language)})`}
               </li>
             ))
           ) : (
@@ -75,7 +80,7 @@ export function SkillCard({
         </ul>
       </section>
 
-      <PatchNotes model={model} notes={notes} specVersion={specVersion} />
+      <PatchNotes model={model} notes={notes} specVersion={specVersion} language={language} />
     </article>
   )
 }

@@ -9,18 +9,15 @@ import { SkillTree } from './SkillTree.jsx'
 
 const EMPTY_LEVELS = {}
 
-export function ClassSkillPlanner({ dataSet }) {
+export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabChange }) {
   const tabs = useMemo(() => skillTabsForData(dataSet.data), [dataSet.data])
   const savedSettings = useMemo(() => readPlannerSettings(dataSet.id), [dataSet.id])
-  const initialTabId = tabs.some((tab) => tab.id === savedSettings?.activeTabId)
-    ? savedSettings.activeTabId
-    : tabs[0]?.id
+  const initialTabId = firstValidTabId(tabs, routeTabId, savedSettings?.activeTabId)
   const [activeTabId, setActiveTabId] = useState(initialTabId)
   const activeTab = tabs.find((tab) => tab.id === activeTabId) ?? tabs[0]
   const [specVersion, setSpecVersion] = useState(() =>
     isValidSpecVersion(dataSet.data, savedSettings?.specVersion) ? savedSettings.specVersion : 'current',
   )
-  const [language, setLanguage] = useState(() => (savedSettings?.language === 'pt-BR' ? 'pt-BR' : 'en'))
   const [levelsByTab, setLevelsByTab] = useState(() => sanitizeLevelsByTab(savedSettings?.levelsByTab))
   const plannerIndex = useMemo(() => createPlannerIndex(tabs), [tabs])
   const activeData = useMemo(
@@ -50,6 +47,17 @@ export function ClassSkillPlanner({ dataSet }) {
   )
 
   useEffect(() => {
+    if (!tabs.some((tab) => tab.id === routeTabId)) return
+    if (routeTabId !== activeTabId) setActiveTabId(routeTabId)
+  }, [activeTabId, routeTabId, tabs])
+
+  useEffect(() => {
+    if (!activeTab?.id) return
+    if (tabs.some((tab) => tab.id === routeTabId)) return
+    onActiveTabChange(activeTab.id, { replace: true })
+  }, [activeTab?.id, onActiveTabChange, routeTabId, tabs])
+
+  useEffect(() => {
     if (selectedId && model.skillById.has(selectedId)) return
     setSelectedId(model.initialSkillId)
   }, [model, selectedId])
@@ -58,10 +66,9 @@ export function ClassSkillPlanner({ dataSet }) {
     writePlannerSettings(dataSet.id, {
       activeTabId: activeTab.id,
       specVersion,
-      language,
       levelsByTab,
     })
-  }, [activeTab.id, dataSet.id, language, levelsByTab, specVersion])
+  }, [activeTab.id, dataSet.id, levelsByTab, specVersion])
 
   const selectedSkill = useMemo(
     () => model.data.skills.find((skill) => skill.id === selectedId) ?? null,
@@ -103,6 +110,14 @@ export function ClassSkillPlanner({ dataSet }) {
     setLevelsByTab((current) => withTabLevels(current, activeTab.id, {}))
   }, [activeTab.id])
 
+  const changeTab = useCallback(
+    (tabId) => {
+      setActiveTabId(tabId)
+      onActiveTabChange(tabId)
+    },
+    [onActiveTabChange],
+  )
+
   return (
     <main className="app-shell">
       <section className="tree-area" aria-label={`${model.data.className} skill tree`}>
@@ -111,7 +126,6 @@ export function ClassSkillPlanner({ dataSet }) {
           specVersion={specVersion}
           language={language}
           onSpecVersionChange={setSpecVersion}
-          onLanguageChange={setLanguage}
         />
 
         {tabs.length > 1 ? (
@@ -123,7 +137,7 @@ export function ClassSkillPlanner({ dataSet }) {
                 type="button"
                 role="tab"
                 aria-selected={tab.id === activeTab.id}
-                onClick={() => setActiveTabId(tab.id)}
+                onClick={() => changeTab(tab.id)}
               >
                 {tab.label}
               </button>
@@ -131,7 +145,7 @@ export function ClassSkillPlanner({ dataSet }) {
           </div>
         ) : null}
 
-        <BuildToolbar totalPoints={totalPoints} pointLimit={pointLimit} onReset={resetBuild} />
+        <BuildToolbar totalPoints={totalPoints} pointLimit={pointLimit} language={language} onReset={resetBuild} />
 
         <SkillTree
           model={activeModel}
@@ -177,6 +191,14 @@ function skillTabsForData(data) {
       skills: data.skills,
     },
   ]
+}
+
+function firstValidTabId(tabs, ...tabIds) {
+  for (const tabId of tabIds) {
+    if (tabs.some((tab) => tab.id === tabId)) return tabId
+  }
+
+  return tabs[0]?.id
 }
 
 function readPlannerSettings(classId) {

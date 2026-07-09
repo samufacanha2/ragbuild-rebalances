@@ -37,6 +37,41 @@ select {
   font: inherit;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
+.locale-menu {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 30;
+}
+
+.locale-menu select {
+  min-width: 132px;
+  border: 1px solid rgba(21, 122, 126, 0.32);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 10px 12px;
+  box-shadow: 0 12px 32px rgba(23, 33, 47, 0.18);
+  font-weight: 800;
+}
+
+.locale-menu select:focus-visible {
+  outline: 3px solid rgba(21, 122, 126, 0.2);
+  outline-offset: 2px;
+}
+
 .app-shell {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 390px;
@@ -335,9 +370,9 @@ h3 {
 .controls {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  grid-template-columns: minmax(180px, 1fr);
   gap: 6px;
-  min-width: min(390px, 100%);
+  min-width: min(230px, 100%);
 }
 
 .control-field {
@@ -973,6 +1008,11 @@ th {
     width: 15px;
     height: 15px;
     font-size: 0.66rem;
+  }
+
+  .locale-menu {
+    right: max(12px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
   }
 
 }

@@ -114,21 +114,94 @@ function applyDamageDelta(table, row, value) {
     table.columns.find((column) => column.label === 'Cursed Target Factor')
   const blessingColumn = table.columns.find((column) => column.label === 'Under Blessing of Four Directions')
 
-  if (baseColumn && damage.base) row.values[baseColumn.id] = damage.base
-  if (blessingColumn && damage.blessing) row.values[blessingColumn.id] = damage.blessing
+  if (baseColumn && damage.base) applyDamageColumnDelta(table, baseColumn, row, damage.base)
+  if (blessingColumn && damage.blessing) applyDamageColumnDelta(table, blessingColumn, row, damage.blessing)
+}
+
+function applyDamageColumnDelta(table, column, targetRow, damage) {
+  const inferredValues = inferDamageColumnValues(table, column, targetRow.level, damage)
+
+  if (inferredValues) {
+    for (const row of table.rows) row.values[column.id] = inferredValues.get(row.level)
+    return
+  }
+
+  for (const row of table.rows) {
+    if (row.level === targetRow.level) {
+      row.values[column.id] = formatDamageAmount(damage.amount, damage.percent)
+    } else {
+      delete row.values[column.id]
+    }
+  }
 }
 
 function parseDamageDelta(value) {
   const values = String(value ?? '')
     .split('/')
-    .map((part) => part.match(/([0-9][0-9,]*)(?=\s*(?:%|\+))/)?.[1])
+    .map(parseDamageValue)
     .filter(Boolean)
-    .map(formatNumber)
 
   return {
     base: values[0] ?? '',
     blessing: values[1] ?? '',
   }
+}
+
+function parseDamageValue(value) {
+  const text = String(value ?? '')
+  const match = text.match(/([0-9][0-9,]*)(?=\s*(?:%|\+))/)
+  if (!match) return null
+
+  return {
+    amount: Number(match[1].replace(/,/g, '')),
+    percent: text.slice(match.index + match[1].length).trimStart().startsWith('%'),
+  }
+}
+
+function inferDamageColumnValues(table, column, targetLevel, damage) {
+  const maxLevel = Math.max(...table.rows.map((row) => row.level))
+  if (targetLevel !== maxLevel) return null
+
+  const parsedRows = table.rows.map((row) => ({
+    level: row.level,
+    value: parseSimpleDamageValue(row.values[column.id]),
+  }))
+  if (parsedRows.some((row) => !row.value)) return null
+  if (!hasLinearLevelScaling(parsedRows)) return null
+
+  const percent = damage.percent || parsedRows.some((row) => row.value.percent)
+  return new Map(
+    parsedRows.map((row) => [
+      row.level,
+      formatDamageAmount((damage.amount * row.level) / targetLevel, percent),
+    ]),
+  )
+}
+
+function parseSimpleDamageValue(value) {
+  const match = String(value ?? '').trim().match(/^([0-9][0-9,]*)(%)?$/)
+  if (!match) return null
+
+  return {
+    amount: Number(match[1].replace(/,/g, '')),
+    percent: Boolean(match[2]),
+  }
+}
+
+function hasLinearLevelScaling(rows) {
+  const [first] = rows
+  if (!first?.level || !first.value) return false
+
+  const base = first.value.amount / first.level
+  return rows.every((row) => row.level && Math.abs(row.value.amount / row.level - base) < 0.0001)
+}
+
+function formatDamageAmount(amount, percent) {
+  const rounded = Math.round(amount * 100) / 100
+  const value = Number.isInteger(rounded)
+    ? formatNumber(String(rounded))
+    : rounded.toLocaleString('en-US', { maximumFractionDigits: 2 })
+  return `${value}${percent ? '%' : ''}`
 }
 
 function levelTableCoveredLabels(table) {
@@ -175,7 +248,7 @@ function baseSpecMap(rows) {
 function specDeltas(model, skill) {
   return skill.balanceNotes
     .flatMap((entry) =>
-      (entry.specRows ?? []).map((row) => ({
+      specRowsForEntry(entry).map((row) => ({
         ...row,
         label: normalizeSpecLabel(row.label),
         versionId: entry.versionId,
@@ -184,6 +257,62 @@ function specDeltas(model, skill) {
       })),
     )
     .sort((a, b) => a.versionIndex - b.versionIndex)
+}
+
+function specRowsForEntry(entry) {
+  const rows = [...(entry.specRows ?? [])]
+  const seen = new Set(rows.map(specRowKey))
+
+  for (const note of entry.notes ?? []) {
+    for (const row of parseSpecRowsFromNote(note)) {
+      const key = specRowKey(row)
+      if (seen.has(key)) continue
+
+      rows.push(row)
+      seen.add(key)
+    }
+  }
+
+  return rows
+}
+
+function parseSpecRowsFromNote(note) {
+  const changeMatch = String(note ?? '').match(
+    /^(Increases|Reduces|Decreases|Changes)\s+(.+?)\s+from\s+(.+?)\s+to\s+(.+?)(?:\s+based on level\s+(\d+))?\.?$/i,
+  )
+  if (!changeMatch) return []
+
+  return [
+    {
+      label: noteSpecLabel(changeMatch[2]),
+      before: normalizeSkillValue(changeMatch[3]),
+      after: normalizeSkillValue(changeMatch[4]),
+      scope: changeMatch[5] ? `Lv ${changeMatch[5]}` : '',
+      source: note,
+    },
+  ]
+}
+
+function specRowKey(row) {
+  return [normalizeSpecLabel(row.label), row.scope ?? '', row.source ?? ''].join('|')
+}
+
+function noteSpecLabel(rawMetric) {
+  const metric = normalizeSkillValue(rawMetric).toLowerCase()
+  if (metric.includes('sp consumption')) return 'SP Cost'
+  if (metric.includes('ap consumption')) return 'AP Consumed'
+  if (metric.includes('ap recovery')) return 'AP Generated'
+  if (metric.includes('base damage') || metric === 'damage') return 'Damage'
+  if (metric.includes('cooldown')) return 'Cooldown'
+  if (metric.includes('delay')) return 'Cast Delay'
+  if (metric.includes('cast range')) return 'Cast Range'
+  if (metric.includes('area of effect')) return 'Area of Effect'
+  if (metric.includes('buff duration')) return 'Buff Duration'
+
+  return rawMetric
+    .split(/\s+/)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ')
 }
 
 function selectedVersionIndex(model, versionId) {
@@ -208,6 +337,15 @@ function normalizeSpecLabel(label) {
   if (label === 'AP Cost') return 'AP Consumed'
   if (label === 'After Cast Delay') return 'Cast Delay'
   return label
+}
+
+function normalizeSkillValue(value) {
+  return String(value ?? '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\s*x\s*/gi, ' x ')
+    .replace(/\s*cell(s)?/gi, ' cells')
+    .replace(/\s+%/g, '%')
 }
 
 function formatNumber(value) {

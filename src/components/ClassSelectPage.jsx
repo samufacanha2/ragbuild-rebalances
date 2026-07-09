@@ -1,9 +1,10 @@
 import { assetUrl } from '../lib/dom.js'
+import { translateUi } from '../lib/translations.js'
 
-export function ClassSelectPage({ dataSets, onSelectClass }) {
+export function ClassSelectPage({ dataSets, language, onSelectClass }) {
   return (
     <main className="class-select-page">
-      <section className="class-grid" aria-label="Classes">
+      <section className="class-grid" aria-label={translateUi('Classes', language)}>
         {dataSets.map((dataSet) => (
           <button
             className={dataSet.mode === 'tree' ? 'class-card is-tree-ready' : 'class-card'}

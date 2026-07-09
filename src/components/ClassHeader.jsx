@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { assetUrl } from '../lib/dom.js'
-import { languageOptions, translateUi } from '../lib/translations.js'
+import { translateUi } from '../lib/translations.js'
 
-export function ClassHeader({ model, specVersion, language, onSpecVersionChange, onLanguageChange }) {
+export function ClassHeader({ model, specVersion, language, onSpecVersionChange }) {
   const [showVersionTour, setShowVersionTour] = useState(() => {
     try {
       return window.localStorage.getItem(model.versionTourStorageKey) !== 'true'
@@ -50,23 +50,13 @@ export function ClassHeader({ model, specVersion, language, onSpecVersionChange,
             onPointerDown={completeVersionTour}
             onChange={(event) => onSpecVersionChange(event.target.value)}
           >
-            <option value="pre">Pre-rebalances</option>
+            <option value="pre">{translateUi('Pre-rebalances', language)}</option>
             {model.data.rebalanceVersions.map((version) => (
               <option key={version.id} value={version.id}>
                 {version.label}
               </option>
             ))}
-            <option value="current">Current specs</option>
-          </select>
-        </span>
-        <span className="control-field">
-          <label htmlFor="language">{translateUi('Language', language)}</label>
-          <select id="language" value={language} onChange={(event) => onLanguageChange(event.target.value)}>
-            {languageOptions.map((option) => (
-              <option key={option.id} value={option.id}>
-                {option.label}
-              </option>
-            ))}
+            <option value="current">{translateUi('Current specs', language)}</option>
           </select>
         </span>
         {showVersionTour ? (
