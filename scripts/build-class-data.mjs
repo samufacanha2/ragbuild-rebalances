@@ -175,8 +175,9 @@ function buildTabSkills({ treeSkills, treeById, skillDetails, rebalanceByName })
   const visibleIds = new Set(treeSkills.map((skill) => skill.id));
 
   return treeSkills.map((treeSkill) => {
-    const parsed = skillDetails.get(treeSkill.id) ?? fallbackSkill(treeSkill);
-    const balanceNotes = rebalanceByName.get(normalizeName(parsed.name)) ?? rebalanceByName.get(normalizeName(treeSkill.name)) ?? [];
+    const baseParsed = skillDetails.get(treeSkill.id) ?? fallbackSkill(treeSkill);
+    const balanceNotes = rebalanceByName.get(normalizeName(baseParsed.name)) ?? rebalanceByName.get(normalizeName(treeSkill.name)) ?? [];
+    const parsed = reconcileApDirectionWithNotes(baseParsed, balanceNotes);
 
     return {
       ...parsed,
@@ -391,16 +392,17 @@ async function fetchSkillDetails(treeSkill) {
     maxLevel: treeSkill.MaxLevel,
     text: decodeHtml(description)
   });
+  const skill = reconcileParsedApDirection(parsed, parseResourceApHistoryDirection(html));
   const pageDetails = parseSkillPageDetails(html);
-  const translations = await fetchSkillTranslations({ id: treeSkill.id, englishName: parsed.name || treeSkill.name });
+  const translations = await fetchSkillTranslations({ id: treeSkill.id, englishName: skill.name || treeSkill.name });
 
   const result = {
     ...fallbackSkill(treeSkill),
-    ...parsed,
+    ...skill,
     ...pageDetails,
     translations,
     apiStatus: translations["pt-BR"] ? "translated" : "not-used",
-    maxLevel: parsed.maxLevel || treeSkill.MaxLevel
+    maxLevel: skill.maxLevel || treeSkill.MaxLevel
   };
   skillDetailsCache.set(treeSkill.id, result);
   return result;
@@ -498,6 +500,50 @@ function parseSkillDescription({ fallbackName, maxLevel, text }) {
     description: descriptionLines.join("\n"),
     levelDetails
   };
+}
+
+function reconcileParsedApDirection(skill, direction) {
+  if (direction === "recovery" && skill.consumesAp && !skill.recoversAp) {
+    return { ...skill, recoversAp: skill.consumesAp, consumesAp: "" };
+  }
+  if (direction === "consumption" && skill.recoversAp && !skill.consumesAp) {
+    return { ...skill, recoversAp: "", consumesAp: skill.recoversAp };
+  }
+  return skill;
+}
+
+function reconcileApDirectionWithNotes(skill, balanceNotes) {
+  const labels = new Set(
+    balanceNotes
+      .flatMap((entry) => entry.specRows ?? [])
+      .map((row) => row.label)
+  );
+
+  if (labels.has("AP Generated") && !labels.has("AP Consumed") && skill.consumesAp && !skill.recoversAp) {
+    return { ...skill, recoversAp: skill.consumesAp, consumesAp: "" };
+  }
+  if (labels.has("AP Consumed") && !labels.has("AP Generated") && skill.recoversAp && !skill.consumesAp) {
+    return { ...skill, recoversAp: "", consumesAp: skill.recoversAp };
+  }
+  return skill;
+}
+
+function parseResourceApHistoryDirection(html) {
+  // Divine Pride currently labels both AP recovery and AP cost as "Resource Consumption";
+  // the most recent history entry still shows whether that AP line came from Recovery or Consumes.
+  const text = normalizeWhitespace(stripTags(html));
+  const historyIndex = text.search(/\bDate Field Old New\b/i);
+  if (historyIndex < 0) return "";
+
+  const history = text.slice(historyIndex);
+  const descriptionIndex = history.search(/\bdescription\b/i);
+  const sample = history.slice(descriptionIndex >= 0 ? descriptionIndex : 0, 2500);
+  const recoveryIndex = sample.search(/\bRecovery\s*:\s*AP\b/i);
+  const consumesIndex = sample.search(/\bConsumes\s*:\s*AP\b/i);
+
+  if (recoveryIndex >= 0 && (consumesIndex < 0 || recoveryIndex < consumesIndex)) return "recovery";
+  if (consumesIndex >= 0 && (recoveryIndex < 0 || consumesIndex < recoveryIndex)) return "consumption";
+  return "";
 }
 
 function parseSkillPageDetails(html) {

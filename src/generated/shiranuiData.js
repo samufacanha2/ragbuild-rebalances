@@ -1,5 +1,5 @@
 export const shiranuiData = {
-  "generatedAt": "2026-07-09T03:39:57.587Z",
+  "generatedAt": "2026-07-09T04:23:30.205Z",
   "classId": 4305,
   "classSlug": "shiranui",
   "className": "Shiranui",
@@ -1301,8 +1301,8 @@ export const shiranuiData = {
           "group": "Active",
           "type": "Melee Physical",
           "target": "1 Cell Ground Target",
-          "recoversAp": "",
-          "consumesAp": "2",
+          "recoversAp": "2",
+          "consumesAp": "",
           "description": "Swing the shadow sword at the location, inflicting melee physical damage to targets within a 5x5 range and applying a nightmare effect for 5 seconds.\nDamage is additionally increased depending on Shadow Flash skill level, caster's base level, and POW.",
           "levelDetails": [
             {
@@ -1426,7 +1426,7 @@ export const shiranuiData = {
                 "value": "1 Cell Ground Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "2"
               }
             ],
@@ -2390,8 +2390,8 @@ export const shiranuiData = {
           "group": "Active",
           "type": "Range Physical",
           "target": "1 Cell Ground Target",
-          "recoversAp": "",
-          "consumesAp": "3",
+          "recoversAp": "3",
+          "consumesAp": "",
           "description": "Throws a Huuma Shuriken to install a powerful [Hidden Weapon Zone] at a 1 Cell Ground Target, dealing Range Physical damage every 0.25 seconds to enemies within the surrounding range for 5 seconds and applying the Nightmare effect for 5 seconds.\nUp to two [Hidden Weapon Zone] can be installed.\nDeals additional damage depends on level of Huuma Shuriken - Construct user learned, user's base level and POW. Attack properties depend on the properties of the equipped kunai.",
           "levelDetails": [
             {
@@ -2515,7 +2515,7 @@ export const shiranuiData = {
                 "value": "1 Cell Ground Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "3"
               },
               {
@@ -2684,8 +2684,8 @@ export const shiranuiData = {
           "group": "Active",
           "type": "Melee Physical",
           "target": "Instant Cast",
-          "recoversAp": "",
-          "consumesAp": "2",
+          "recoversAp": "2",
+          "consumesAp": "",
           "description": "Swings a shadow and inflicts melee physical damage to enemies within the surrounding range.\nDamage increases additionally depending on Shadow Hunting skill level, caster's base level, and POW.",
           "levelDetails": [
             {
@@ -2809,7 +2809,7 @@ export const shiranuiData = {
                 "value": "Instant Cast"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "2"
               }
             ],
@@ -16209,8 +16209,8 @@ export const shiranuiData = {
       "group": "Active",
       "type": "Melee Physical",
       "target": "1 Cell Ground Target",
-      "recoversAp": "",
-      "consumesAp": "2",
+      "recoversAp": "2",
+      "consumesAp": "",
       "description": "Swing the shadow sword at the location, inflicting melee physical damage to targets within a 5x5 range and applying a nightmare effect for 5 seconds.\nDamage is additionally increased depending on Shadow Flash skill level, caster's base level, and POW.",
       "levelDetails": [
         {
@@ -16334,7 +16334,7 @@ export const shiranuiData = {
             "value": "1 Cell Ground Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "2"
           }
         ],
@@ -17298,8 +17298,8 @@ export const shiranuiData = {
       "group": "Active",
       "type": "Range Physical",
       "target": "1 Cell Ground Target",
-      "recoversAp": "",
-      "consumesAp": "3",
+      "recoversAp": "3",
+      "consumesAp": "",
       "description": "Throws a Huuma Shuriken to install a powerful [Hidden Weapon Zone] at a 1 Cell Ground Target, dealing Range Physical damage every 0.25 seconds to enemies within the surrounding range for 5 seconds and applying the Nightmare effect for 5 seconds.\nUp to two [Hidden Weapon Zone] can be installed.\nDeals additional damage depends on level of Huuma Shuriken - Construct user learned, user's base level and POW. Attack properties depend on the properties of the equipped kunai.",
       "levelDetails": [
         {
@@ -17423,7 +17423,7 @@ export const shiranuiData = {
             "value": "1 Cell Ground Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "3"
           },
           {
@@ -17592,8 +17592,8 @@ export const shiranuiData = {
       "group": "Active",
       "type": "Melee Physical",
       "target": "Instant Cast",
-      "recoversAp": "",
-      "consumesAp": "2",
+      "recoversAp": "2",
+      "consumesAp": "",
       "description": "Swings a shadow and inflicts melee physical damage to enemies within the surrounding range.\nDamage increases additionally depending on Shadow Hunting skill level, caster's base level, and POW.",
       "levelDetails": [
         {
@@ -17717,7 +17717,7 @@ export const shiranuiData = {
             "value": "Instant Cast"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "2"
           }
         ],

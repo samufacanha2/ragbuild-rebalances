@@ -1,5 +1,5 @@
 export const skyEmperorData = {
-  "generatedAt": "2026-07-09T03:40:56.368Z",
+  "generatedAt": "2026-07-09T04:23:47.367Z",
   "classId": 4302,
   "classSlug": "sky-emperor",
   "className": "Sky Emperor",
@@ -2356,8 +2356,8 @@ export const skyEmperorData = {
           "group": "Active",
           "type": "Melee Physical",
           "target": "Single Target",
-          "recoversAp": "",
-          "consumesAp": "3",
+          "recoversAp": "3",
+          "consumesAp": "",
           "description": "Can only be used within the ranged of the user's Twinkling Galaxy.\nStops Twinkling Galaxy and changes it to the more powerful Star Cannon.\nDrops multiple shooting stars up to 2 stars once every 0.5 seconds for 2.5 seconds within range. Star Cannon's shooting star inflicts melee physical damage to the target and surrounding enemies within 5x5 cells.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.",
           "levelDetails": [
             {
@@ -2451,7 +2451,7 @@ export const skyEmperorData = {
                 "value": "Lv 1: 13 x 13 cells / Lv 2: 13 x 13 cells / Lv 3: 11 x 11 cells / Lv 4: 11 x 11 cells / Lv 5: 9 x 9 cells"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "3"
               },
               {
@@ -15929,8 +15929,8 @@ export const skyEmperorData = {
       "group": "Active",
       "type": "Melee Physical",
       "target": "Single Target",
-      "recoversAp": "",
-      "consumesAp": "3",
+      "recoversAp": "3",
+      "consumesAp": "",
       "description": "Can only be used within the ranged of the user's Twinkling Galaxy.\nStops Twinkling Galaxy and changes it to the more powerful Star Cannon.\nDrops multiple shooting stars up to 2 stars once every 0.5 seconds for 2.5 seconds within range. Star Cannon's shooting star inflicts melee physical damage to the target and surrounding enemies within 5x5 cells.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.",
       "levelDetails": [
         {
@@ -16024,7 +16024,7 @@ export const skyEmperorData = {
             "value": "Lv 1: 13 x 13 cells / Lv 2: 13 x 13 cells / Lv 3: 11 x 11 cells / Lv 4: 11 x 11 cells / Lv 5: 9 x 9 cells"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "3"
           },
           {

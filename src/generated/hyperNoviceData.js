@@ -1,5 +1,5 @@
 export const hyperNoviceData = {
-  "generatedAt": "2026-07-09T03:42:49.463Z",
+  "generatedAt": "2026-07-09T04:24:18.010Z",
   "classId": 4307,
   "classSlug": "hyper-novice",
   "className": "Hyper Novice",
@@ -832,8 +832,8 @@ export const hyperNoviceData = {
           "group": "Active",
           "type": "Melee Physical",
           "target": "Single Target",
-          "recoversAp": "",
-          "consumesAp": "3",
+          "recoversAp": "3",
+          "consumesAp": "",
           "description": "Inflicts melee physical damage to the target and targets within a 9x9 cell range around it and knocks them back.\nThe number of attacks increases depending on the number of enemies in the range, and attacks up to 5 times.\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW. After casting, the weapon cannot be replaced for 1 second.",
           "levelDetails": [
             {
@@ -957,7 +957,7 @@ export const hyperNoviceData = {
                 "value": "Single Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "3"
               }
             ],
@@ -1165,8 +1165,8 @@ export const hyperNoviceData = {
           "group": "Active",
           "type": "Range Physical",
           "target": "Single Target",
-          "recoversAp": "",
-          "consumesAp": "2",
+          "recoversAp": "2",
+          "consumesAp": "",
           "description": "Available when wearing a shield.\nThrows a shield at the target, inflicting long range physical damage to the target and enemies within 9x9 cells around it.\nFor 5 seconds, hit enemies' movement speed is reduced by 20% and damage taken increases by 10% (does not apply to boss-type monsters).\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.\nAfter casting, the weapon cannot be replaced for 1.2 seconds.",
           "levelDetails": [
             {
@@ -1310,7 +1310,7 @@ export const hyperNoviceData = {
                 "value": "Single Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "2"
               }
             ],
@@ -2355,8 +2355,8 @@ export const hyperNoviceData = {
           "group": "Active",
           "type": "Magic",
           "target": "Instant Cast",
-          "recoversAp": "",
-          "consumesAp": "2",
+          "recoversAp": "2",
+          "consumesAp": "",
           "description": "Twists the ground around you and inflicts earth magic damage to enemies within the range.\nDamage increases additionally based on the Self Study Sorcery skill level, the caster's base level, and SPL stat.",
           "levelDetails": [
             {
@@ -2495,7 +2495,7 @@ export const hyperNoviceData = {
                 "value": "Instant Cast"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "2"
               }
             ],
@@ -2693,8 +2693,8 @@ export const hyperNoviceData = {
           "group": "Active",
           "type": "Melee Physical",
           "target": "Single Target",
-          "recoversAp": "",
-          "consumesAp": "2",
+          "recoversAp": "2",
+          "consumesAp": "",
           "description": "Inflicts powerful melee physical damage to one target and has a chance to inflicts Stun.\nThe probability and duration of being stun are affected by the target's resistance to status ailments.\nWhen cast on a target whose current HP is less than 50%, double damage is applied.\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.\nCritical damage is applied based on the user's critical rate, The effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -2818,7 +2818,7 @@ export const hyperNoviceData = {
                 "value": "Single Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "2"
               }
             ],
@@ -2991,8 +2991,8 @@ export const hyperNoviceData = {
           "group": "Active",
           "type": "Range Physical",
           "target": "Single Target",
-          "recoversAp": "",
-          "consumesAp": "2",
+          "recoversAp": "2",
+          "consumesAp": "",
           "description": "Inflicts long-distance physical damage to one target with a powerful stab with added rotational force.\nEnemies hit are unable to move for 2 seconds. (does not apply to boss-type monsters)\nThere is a damage factor depending on the size of the target.\n(Small: 1.5 times/Medium: 1.3 times/Large: 1.2 times)\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.",
           "levelDetails": [
             {
@@ -3136,7 +3136,7 @@ export const hyperNoviceData = {
                 "value": "Single Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "2"
               },
               {
@@ -3351,8 +3351,8 @@ export const hyperNoviceData = {
           "group": "Active",
           "type": "Magic",
           "target": "Instant Cast",
-          "recoversAp": "",
-          "consumesAp": "5",
+          "recoversAp": "5",
+          "consumesAp": "",
           "description": "Unleashes a powerful gravitational field around the caster, dealing Neutral-element Magic damage to enemies within range through a strong shock.\nThe gravitational field lasts for 5 seconds, dealing additional Neutral-element Magic damage to enemies within the range every 0.5 seconds, and applying the [Gravitational Field] effect while they remain inside.\n[Gravitational Field] Effect: Reduces movement speed and increases received Physical and Magic damage (does not apply to boss-type monsters). Damage increases additionally based on the Self Study Sorcery skill level, the caster's base level, and SPL stat.",
           "levelDetails": [
             {
@@ -3486,7 +3486,7 @@ export const hyperNoviceData = {
                 "value": "Instant Cast"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "5"
               },
               {
@@ -24699,8 +24699,8 @@ export const hyperNoviceData = {
       "group": "Active",
       "type": "Melee Physical",
       "target": "Single Target",
-      "recoversAp": "",
-      "consumesAp": "3",
+      "recoversAp": "3",
+      "consumesAp": "",
       "description": "Inflicts melee physical damage to the target and targets within a 9x9 cell range around it and knocks them back.\nThe number of attacks increases depending on the number of enemies in the range, and attacks up to 5 times.\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW. After casting, the weapon cannot be replaced for 1 second.",
       "levelDetails": [
         {
@@ -24824,7 +24824,7 @@ export const hyperNoviceData = {
             "value": "Single Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "3"
           }
         ],
@@ -25032,8 +25032,8 @@ export const hyperNoviceData = {
       "group": "Active",
       "type": "Range Physical",
       "target": "Single Target",
-      "recoversAp": "",
-      "consumesAp": "2",
+      "recoversAp": "2",
+      "consumesAp": "",
       "description": "Available when wearing a shield.\nThrows a shield at the target, inflicting long range physical damage to the target and enemies within 9x9 cells around it.\nFor 5 seconds, hit enemies' movement speed is reduced by 20% and damage taken increases by 10% (does not apply to boss-type monsters).\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.\nAfter casting, the weapon cannot be replaced for 1.2 seconds.",
       "levelDetails": [
         {
@@ -25177,7 +25177,7 @@ export const hyperNoviceData = {
             "value": "Single Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "2"
           }
         ],
@@ -26222,8 +26222,8 @@ export const hyperNoviceData = {
       "group": "Active",
       "type": "Magic",
       "target": "Instant Cast",
-      "recoversAp": "",
-      "consumesAp": "2",
+      "recoversAp": "2",
+      "consumesAp": "",
       "description": "Twists the ground around you and inflicts earth magic damage to enemies within the range.\nDamage increases additionally based on the Self Study Sorcery skill level, the caster's base level, and SPL stat.",
       "levelDetails": [
         {
@@ -26362,7 +26362,7 @@ export const hyperNoviceData = {
             "value": "Instant Cast"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "2"
           }
         ],
@@ -26560,8 +26560,8 @@ export const hyperNoviceData = {
       "group": "Active",
       "type": "Melee Physical",
       "target": "Single Target",
-      "recoversAp": "",
-      "consumesAp": "2",
+      "recoversAp": "2",
+      "consumesAp": "",
       "description": "Inflicts powerful melee physical damage to one target and has a chance to inflicts Stun.\nThe probability and duration of being stun are affected by the target's resistance to status ailments.\nWhen cast on a target whose current HP is less than 50%, double damage is applied.\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.\nCritical damage is applied based on the user's critical rate, The effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -26685,7 +26685,7 @@ export const hyperNoviceData = {
             "value": "Single Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "2"
           }
         ],
@@ -26858,8 +26858,8 @@ export const hyperNoviceData = {
       "group": "Active",
       "type": "Range Physical",
       "target": "Single Target",
-      "recoversAp": "",
-      "consumesAp": "2",
+      "recoversAp": "2",
+      "consumesAp": "",
       "description": "Inflicts long-distance physical damage to one target with a powerful stab with added rotational force.\nEnemies hit are unable to move for 2 seconds. (does not apply to boss-type monsters)\nThere is a damage factor depending on the size of the target.\n(Small: 1.5 times/Medium: 1.3 times/Large: 1.2 times)\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.",
       "levelDetails": [
         {
@@ -27003,7 +27003,7 @@ export const hyperNoviceData = {
             "value": "Single Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "2"
           },
           {
@@ -27218,8 +27218,8 @@ export const hyperNoviceData = {
       "group": "Active",
       "type": "Magic",
       "target": "Instant Cast",
-      "recoversAp": "",
-      "consumesAp": "5",
+      "recoversAp": "5",
+      "consumesAp": "",
       "description": "Unleashes a powerful gravitational field around the caster, dealing Neutral-element Magic damage to enemies within range through a strong shock.\nThe gravitational field lasts for 5 seconds, dealing additional Neutral-element Magic damage to enemies within the range every 0.5 seconds, and applying the [Gravitational Field] effect while they remain inside.\n[Gravitational Field] Effect: Reduces movement speed and increases received Physical and Magic damage (does not apply to boss-type monsters). Damage increases additionally based on the Self Study Sorcery skill level, the caster's base level, and SPL stat.",
       "levelDetails": [
         {
@@ -27353,7 +27353,7 @@ export const hyperNoviceData = {
             "value": "Instant Cast"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "5"
           },
           {

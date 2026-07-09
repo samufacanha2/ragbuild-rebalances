@@ -1,5 +1,5 @@
 export const spiritHandlerData = {
-  "generatedAt": "2026-07-09T03:42:41.717Z",
+  "generatedAt": "2026-07-09T04:24:10.410Z",
   "classId": 4308,
   "classSlug": "spirit-handler",
   "className": "Spirit Handler",
@@ -502,8 +502,8 @@ export const spiritHandlerData = {
           "group": "Active",
           "type": "Range Physical",
           "target": "Single Target",
-          "recoversAp": "",
-          "consumesAp": "1",
+          "recoversAp": "1",
+          "consumesAp": "",
           "description": "Borrows the sharp claws of Chulho to slash at the air toward the target, dealing Range Physical damage.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and POW.\nIf the user learned Commune With Chulho, increases skill damage and applies critical damage, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -603,7 +603,7 @@ export const spiritHandlerData = {
                 "value": "Single Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "1"
               }
             ],
@@ -2056,8 +2056,8 @@ export const spiritHandlerData = {
           "group": "Active",
           "type": "Magic",
           "target": "1 Cell Ground Target",
-          "recoversAp": "",
-          "consumesAp": "4",
+          "recoversAp": "4",
+          "consumesAp": "",
           "description": "Using the mysterious power of Hyeonrok, creates wind on the ground and inflicts neutral magic damage every 0.3 seconds for 4.5 seconds to targets within the range.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and SPL.\nIf the user learned Commune With Hyunrok, increases skill damage.\nDamage property can be changed according to Colors of Hyunrok.",
           "levelDetails": [
             {
@@ -2183,7 +2183,7 @@ export const spiritHandlerData = {
                 "value": "1 Cell Ground Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "4"
               },
               {
@@ -2846,8 +2846,8 @@ export const spiritHandlerData = {
           "group": "Active",
           "type": "Magic",
           "target": "Single Target",
-          "recoversAp": "",
-          "consumesAp": "1, 2(if Commune With Hyunrok is learned)",
+          "recoversAp": "1, 2(if Commune With Hyunrok is learned)",
+          "consumesAp": "",
           "description": "Using the mysterious power of Hyunrok, fires a powerful magic cannon at the target.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and SPL.\nIf the user learned Commune With Hyunrok, increases skill damage and increases AP recovery amount.\nDamage property can be changed according to Colors of Hyunrok.",
           "levelDetails": [
             {
@@ -2953,7 +2953,7 @@ export const spiritHandlerData = {
                 "value": "Single Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "1, 2(if Commune With Hyunrok is learned)"
               }
             ],
@@ -12297,8 +12297,8 @@ export const spiritHandlerData = {
       "group": "Active",
       "type": "Range Physical",
       "target": "Single Target",
-      "recoversAp": "",
-      "consumesAp": "1",
+      "recoversAp": "1",
+      "consumesAp": "",
       "description": "Borrows the sharp claws of Chulho to slash at the air toward the target, dealing Range Physical damage.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and POW.\nIf the user learned Commune With Chulho, increases skill damage and applies critical damage, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -12398,7 +12398,7 @@ export const spiritHandlerData = {
             "value": "Single Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "1"
           }
         ],
@@ -13851,8 +13851,8 @@ export const spiritHandlerData = {
       "group": "Active",
       "type": "Magic",
       "target": "1 Cell Ground Target",
-      "recoversAp": "",
-      "consumesAp": "4",
+      "recoversAp": "4",
+      "consumesAp": "",
       "description": "Using the mysterious power of Hyeonrok, creates wind on the ground and inflicts neutral magic damage every 0.3 seconds for 4.5 seconds to targets within the range.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and SPL.\nIf the user learned Commune With Hyunrok, increases skill damage.\nDamage property can be changed according to Colors of Hyunrok.",
       "levelDetails": [
         {
@@ -13978,7 +13978,7 @@ export const spiritHandlerData = {
             "value": "1 Cell Ground Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "4"
           },
           {
@@ -14641,8 +14641,8 @@ export const spiritHandlerData = {
       "group": "Active",
       "type": "Magic",
       "target": "Single Target",
-      "recoversAp": "",
-      "consumesAp": "1, 2(if Commune With Hyunrok is learned)",
+      "recoversAp": "1, 2(if Commune With Hyunrok is learned)",
+      "consumesAp": "",
       "description": "Using the mysterious power of Hyunrok, fires a powerful magic cannon at the target.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and SPL.\nIf the user learned Commune With Hyunrok, increases skill damage and increases AP recovery amount.\nDamage property can be changed according to Colors of Hyunrok.",
       "levelDetails": [
         {
@@ -14748,7 +14748,7 @@ export const spiritHandlerData = {
             "value": "Single Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "1, 2(if Commune With Hyunrok is learned)"
           }
         ],

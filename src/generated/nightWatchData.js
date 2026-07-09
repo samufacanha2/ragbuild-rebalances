@@ -1,5 +1,5 @@
 export const nightWatchData = {
-  "generatedAt": "2026-07-09T03:39:38.655Z",
+  "generatedAt": "2026-07-09T04:23:11.506Z",
   "classId": 4306,
   "classSlug": "night-watch",
   "className": "Night Watch",
@@ -1140,8 +1140,8 @@ export const nightWatchData = {
           "group": "Active",
           "type": "Range Physical",
           "target": "1 Cell Ground Target",
-          "recoversAp": "",
-          "consumesAp": "2",
+          "recoversAp": "2",
+          "consumesAp": "",
           "description": "Throws a grenade toward the ground, inflicting long range physical damage to all targets within the range.\nDamage is additionally increased depending on the Grenade Mastery skill level, caster's base level, and CON.\nConsumes 1 Throwing Grenade, and damage properties change depending on the Grenade fragment.",
           "levelDetails": [
             {
@@ -1225,7 +1225,7 @@ export const nightWatchData = {
                 "value": "1 Cell Ground Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "2"
               }
             ],
@@ -2032,8 +2032,8 @@ export const nightWatchData = {
           "group": "Active",
           "type": "Range Physical",
           "target": "Single Target",
-          "recoversAp": "",
-          "consumesAp": "1",
+          "recoversAp": "1",
+          "consumesAp": "",
           "description": "Grenade Launcher and Rifle exclusive skills.\nFires a bullet with added rotational force at one target, inflicting long range physical damage to the target and enemies arround the target.\nWhen cast with a Grenade launcher, it attacks twice. When cast with a Rifle, critical damage is applied according to the caster's critical probability.\nThe effectiveness of critical modifier is applied by half.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed. Damage is additionally increased depending on the caster's base level and CON.\nConsumes 6 equipped bullets.",
           "levelDetails": [
             {
@@ -2123,7 +2123,7 @@ export const nightWatchData = {
                 "value": "Single Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "1"
               }
             ],
@@ -2273,8 +2273,8 @@ export const nightWatchData = {
           "group": "Active",
           "type": "Range Physical",
           "target": "Single Target",
-          "recoversAp": "",
-          "consumesAp": "1",
+          "recoversAp": "1",
+          "consumesAp": "",
           "description": "Gatling gun and Revolver exclusive skills.\nFires multiple bullets at one target, inflicting long range physical damage to the target.\nWhen cast with a Gatling gun, it attacks 10 times and consumes 10 equipped bullets.\nWhen cast with a Revolver, it attacks 6 times, critical damage is applied according to the caster's critical probability, and 6 equipped bullets are consumed.\nThe effectiveness of critical modifier is applied by half.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed. Damage is additionally increased depending on the caster's base level and CON.",
           "levelDetails": [
             {
@@ -2364,7 +2364,7 @@ export const nightWatchData = {
                 "value": "Single Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "1"
               }
             ],
@@ -2530,8 +2530,8 @@ export const nightWatchData = {
           "group": "Active",
           "type": "Range Physical",
           "target": "1 Cell Ground Target",
-          "recoversAp": "",
-          "consumesAp": "1",
+          "recoversAp": "1",
+          "consumesAp": "",
           "description": "Shotgun and Grenade Launcher exclusive skills.\nFires a bullet toward the ground, inflicting long range physical damage to all targets within the range.\nWhen cast with a Shotgun, it inflicts greater damage in a narrower range than the grenade launcher.\nWhen cast with a Grenade launcher, it inflicts damage over a wider range than a shotgun.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed.\nDamage is additionally increased depending on the caster's base level and CON. Consumes 5 equipped bullets.",
           "levelDetails": [
             {
@@ -2621,7 +2621,7 @@ export const nightWatchData = {
                 "value": "1 Cell Ground Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "1"
               }
             ],
@@ -2754,8 +2754,8 @@ export const nightWatchData = {
           "group": "Active",
           "type": "Range Physical",
           "target": "1 Cell Ground Target",
-          "recoversAp": "",
-          "consumesAp": "3",
+          "recoversAp": "3",
+          "consumesAp": "",
           "description": "Throws 3 grenades toward the ground in succession, inflicting long range physical damage to all targets within the range.\nThe thrown grenade explodes three times at intervals of 0.3 seconds, and the first explosion has an effect area of 5x5 cells, the second explosion has an effect area of 7x7 cells, and the third explosion has an effect area of 9x9 cells.\nDamage is additionally increased depending on the Grenade Mastery skill level, caster's base level, and CON.\nConsumes 3 Throwing Grenades, and damage properties change depending on the Grenade fragment.",
           "levelDetails": [
             {
@@ -2839,7 +2839,7 @@ export const nightWatchData = {
                 "value": "1 Cell Ground Target"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "3"
               }
             ],
@@ -15613,8 +15613,8 @@ export const nightWatchData = {
       "group": "Active",
       "type": "Range Physical",
       "target": "1 Cell Ground Target",
-      "recoversAp": "",
-      "consumesAp": "2",
+      "recoversAp": "2",
+      "consumesAp": "",
       "description": "Throws a grenade toward the ground, inflicting long range physical damage to all targets within the range.\nDamage is additionally increased depending on the Grenade Mastery skill level, caster's base level, and CON.\nConsumes 1 Throwing Grenade, and damage properties change depending on the Grenade fragment.",
       "levelDetails": [
         {
@@ -15698,7 +15698,7 @@ export const nightWatchData = {
             "value": "1 Cell Ground Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "2"
           }
         ],
@@ -16505,8 +16505,8 @@ export const nightWatchData = {
       "group": "Active",
       "type": "Range Physical",
       "target": "Single Target",
-      "recoversAp": "",
-      "consumesAp": "1",
+      "recoversAp": "1",
+      "consumesAp": "",
       "description": "Grenade Launcher and Rifle exclusive skills.\nFires a bullet with added rotational force at one target, inflicting long range physical damage to the target and enemies arround the target.\nWhen cast with a Grenade launcher, it attacks twice. When cast with a Rifle, critical damage is applied according to the caster's critical probability.\nThe effectiveness of critical modifier is applied by half.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed. Damage is additionally increased depending on the caster's base level and CON.\nConsumes 6 equipped bullets.",
       "levelDetails": [
         {
@@ -16596,7 +16596,7 @@ export const nightWatchData = {
             "value": "Single Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "1"
           }
         ],
@@ -16746,8 +16746,8 @@ export const nightWatchData = {
       "group": "Active",
       "type": "Range Physical",
       "target": "Single Target",
-      "recoversAp": "",
-      "consumesAp": "1",
+      "recoversAp": "1",
+      "consumesAp": "",
       "description": "Gatling gun and Revolver exclusive skills.\nFires multiple bullets at one target, inflicting long range physical damage to the target.\nWhen cast with a Gatling gun, it attacks 10 times and consumes 10 equipped bullets.\nWhen cast with a Revolver, it attacks 6 times, critical damage is applied according to the caster's critical probability, and 6 equipped bullets are consumed.\nThe effectiveness of critical modifier is applied by half.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed. Damage is additionally increased depending on the caster's base level and CON.",
       "levelDetails": [
         {
@@ -16837,7 +16837,7 @@ export const nightWatchData = {
             "value": "Single Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "1"
           }
         ],
@@ -17003,8 +17003,8 @@ export const nightWatchData = {
       "group": "Active",
       "type": "Range Physical",
       "target": "1 Cell Ground Target",
-      "recoversAp": "",
-      "consumesAp": "1",
+      "recoversAp": "1",
+      "consumesAp": "",
       "description": "Shotgun and Grenade Launcher exclusive skills.\nFires a bullet toward the ground, inflicting long range physical damage to all targets within the range.\nWhen cast with a Shotgun, it inflicts greater damage in a narrower range than the grenade launcher.\nWhen cast with a Grenade launcher, it inflicts damage over a wider range than a shotgun.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed.\nDamage is additionally increased depending on the caster's base level and CON. Consumes 5 equipped bullets.",
       "levelDetails": [
         {
@@ -17094,7 +17094,7 @@ export const nightWatchData = {
             "value": "1 Cell Ground Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "1"
           }
         ],
@@ -17227,8 +17227,8 @@ export const nightWatchData = {
       "group": "Active",
       "type": "Range Physical",
       "target": "1 Cell Ground Target",
-      "recoversAp": "",
-      "consumesAp": "3",
+      "recoversAp": "3",
+      "consumesAp": "",
       "description": "Throws 3 grenades toward the ground in succession, inflicting long range physical damage to all targets within the range.\nThe thrown grenade explodes three times at intervals of 0.3 seconds, and the first explosion has an effect area of 5x5 cells, the second explosion has an effect area of 7x7 cells, and the third explosion has an effect area of 9x9 cells.\nDamage is additionally increased depending on the Grenade Mastery skill level, caster's base level, and CON.\nConsumes 3 Throwing Grenades, and damage properties change depending on the Grenade fragment.",
       "levelDetails": [
         {
@@ -17312,7 +17312,7 @@ export const nightWatchData = {
             "value": "1 Cell Ground Target"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "3"
           }
         ],

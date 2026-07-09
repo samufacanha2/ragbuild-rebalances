@@ -1,5 +1,5 @@
 export const soulAsceticData = {
-  "generatedAt": "2026-07-09T03:42:26.683Z",
+  "generatedAt": "2026-07-09T04:23:59.492Z",
   "classId": 4303,
   "classSlug": "soul-ascetic",
   "className": "Soul Ascetic",
@@ -2140,8 +2140,8 @@ export const soulAsceticData = {
           "group": "Active",
           "type": "Magic",
           "target": "Single Target",
-          "recoversAp": "",
-          "consumesAp": "2",
+          "recoversAp": "2",
+          "consumesAp": "",
           "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Qinglong, guardian deity of the East, to the target, inflicts neutral property magical damage to the target and grants the user [Blessing of the East].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
           "levelDetails": [
             {
@@ -2229,7 +2229,7 @@ export const soulAsceticData = {
                 "value": "1 Soul Talisman"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "2"
               },
               {
@@ -2390,8 +2390,8 @@ export const soulAsceticData = {
           "group": "Active",
           "type": "Magic",
           "target": "Instant Cast",
-          "recoversAp": "",
-          "consumesAp": "2",
+          "recoversAp": "2",
+          "consumesAp": "",
           "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Baihu, guardian deity of the West, to the target, inflicts neutral property magical damage to all targets around the user.\nIf the user has [Blessing of the East] buff, The buff will be changed to [Blessing of the West].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
           "levelDetails": [
             {
@@ -2479,7 +2479,7 @@ export const soulAsceticData = {
                 "value": "1 Soul Talisman"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "2"
               },
               {
@@ -2638,8 +2638,8 @@ export const soulAsceticData = {
           "group": "Active",
           "type": "Magic",
           "target": "Single Target",
-          "recoversAp": "",
-          "consumesAp": "3",
+          "recoversAp": "3",
+          "consumesAp": "",
           "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Zhuque, guardian deity of the South, to the target, inflicts neutral property magical damage to the target and surrounding enemies around the target.\nIf the [Blessing of the West] effect is applied to you when casting a skill, the effect is changed to [Blessing of the South].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
           "levelDetails": [
             {
@@ -2727,7 +2727,7 @@ export const soulAsceticData = {
                 "value": "1 Soul Talisman"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "3"
               },
               {
@@ -2889,8 +2889,8 @@ export const soulAsceticData = {
           "group": "Active",
           "type": "Magic",
           "target": "1 Cell Ground Target",
-          "recoversAp": "",
-          "consumesAp": "3",
+          "recoversAp": "3",
+          "consumesAp": "",
           "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Xuanwu, guardian deity of the North, to the target cell, inflicts neutral property magical damage to all target within range.\nIf the user has [Blessing of the South] buff, The buff will be changed to [Blessing of the North].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
           "levelDetails": [
             {
@@ -2978,7 +2978,7 @@ export const soulAsceticData = {
                 "value": "1 Soul Talisman"
               },
               {
-                "label": "AP Consumed",
+                "label": "AP Generated",
                 "value": "3"
               },
               {
@@ -18363,8 +18363,8 @@ export const soulAsceticData = {
       "group": "Active",
       "type": "Magic",
       "target": "Single Target",
-      "recoversAp": "",
-      "consumesAp": "2",
+      "recoversAp": "2",
+      "consumesAp": "",
       "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Qinglong, guardian deity of the East, to the target, inflicts neutral property magical damage to the target and grants the user [Blessing of the East].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
       "levelDetails": [
         {
@@ -18452,7 +18452,7 @@ export const soulAsceticData = {
             "value": "1 Soul Talisman"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "2"
           },
           {
@@ -18613,8 +18613,8 @@ export const soulAsceticData = {
       "group": "Active",
       "type": "Magic",
       "target": "Instant Cast",
-      "recoversAp": "",
-      "consumesAp": "2",
+      "recoversAp": "2",
+      "consumesAp": "",
       "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Baihu, guardian deity of the West, to the target, inflicts neutral property magical damage to all targets around the user.\nIf the user has [Blessing of the East] buff, The buff will be changed to [Blessing of the West].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
       "levelDetails": [
         {
@@ -18702,7 +18702,7 @@ export const soulAsceticData = {
             "value": "1 Soul Talisman"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "2"
           },
           {
@@ -18861,8 +18861,8 @@ export const soulAsceticData = {
       "group": "Active",
       "type": "Magic",
       "target": "Single Target",
-      "recoversAp": "",
-      "consumesAp": "3",
+      "recoversAp": "3",
+      "consumesAp": "",
       "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Zhuque, guardian deity of the South, to the target, inflicts neutral property magical damage to the target and surrounding enemies around the target.\nIf the [Blessing of the West] effect is applied to you when casting a skill, the effect is changed to [Blessing of the South].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
       "levelDetails": [
         {
@@ -18950,7 +18950,7 @@ export const soulAsceticData = {
             "value": "1 Soul Talisman"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "3"
           },
           {
@@ -19112,8 +19112,8 @@ export const soulAsceticData = {
       "group": "Active",
       "type": "Magic",
       "target": "1 Cell Ground Target",
-      "recoversAp": "",
-      "consumesAp": "3",
+      "recoversAp": "3",
+      "consumesAp": "",
       "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Xuanwu, guardian deity of the North, to the target cell, inflicts neutral property magical damage to all target within range.\nIf the user has [Blessing of the South] buff, The buff will be changed to [Blessing of the North].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
       "levelDetails": [
         {
@@ -19201,7 +19201,7 @@ export const soulAsceticData = {
             "value": "1 Soul Talisman"
           },
           {
-            "label": "AP Consumed",
+            "label": "AP Generated",
             "value": "3"
           },
           {
