@@ -1,0 +1,27 @@
+{
+  "name": "soul-ascetic-balance-tool",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "assets:download": "node scripts/download-assets.mjs",
+    "build:data": "node scripts/build-class-data.mjs",
+    "rebalances:extract": "node scripts/extract-rebalances.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "build:pages": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "oxlint": "^1.71.0",
+    "vite": "^8.1.1"
+  }
+}

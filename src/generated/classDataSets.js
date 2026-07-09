@@ -1,0 +1,25 @@
+export const classDataSets = [
+  { id: 'dragon-knight', label: "Dragon Knight", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4252.png', load: () => import('./dragonKnightData.js').then((module) => module.dragonKnightData) },
+  { id: 'imperial-guard', label: "Imperial Guard", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4258.png', load: () => import('./imperialGuardData.js').then((module) => module.imperialGuardData) },
+  { id: 'meister', label: "Meister", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4253.png', load: () => import('./meisterData.js').then((module) => module.meisterData) },
+  { id: 'biolo', label: "Biolo", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4259.png', load: () => import('./bioloData.js').then((module) => module.bioloData) },
+  { id: 'shadow-cross', label: "Shadow Cross", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4254.png', load: () => import('./shadowCrossData.js').then((module) => module.shadowCrossData) },
+  { id: 'abyss-chaser', label: "Abyss Chaser", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4260.png', load: () => import('./abyssChaserData.js').then((module) => module.abyssChaserData) },
+  { id: 'arch-mage', label: "Arch Mage", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4255.png', load: () => import('./archMageData.js').then((module) => module.archMageData) },
+  { id: 'elemental-master', label: "Elemental Master", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4261.png', load: () => import('./elementalMasterData.js').then((module) => module.elementalMasterData) },
+  { id: 'cardinal', label: "Cardinal", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4256.png', load: () => import('./cardinalData.js').then((module) => module.cardinalData) },
+  { id: 'inquisitor', label: "Inquisitor", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4262.png', load: () => import('./inquisitorData.js').then((module) => module.inquisitorData) },
+  { id: 'wind-hawk', label: "Wind Hawk", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4257.png', load: () => import('./windHawkData.js').then((module) => module.windHawkData) },
+  { id: 'troubadour', label: "Troubadour", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4263.png', load: () => import('./troubadourData.js').then((module) => module.troubadourData) },
+  { id: 'trouvere', label: "Trouvere", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4264.png', load: () => import('./trouvereData.js').then((module) => module.trouvereData) },
+  { id: 'night-watch', label: "Night Watch", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4306.png', load: () => import('./nightWatchData.js').then((module) => module.nightWatchData) },
+  { id: 'shinkiro', label: "Shinkiro", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4304.png', load: () => import('./shinkiroData.js').then((module) => module.shinkiroData) },
+  { id: 'shiranui', label: "Shiranui", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4305.png', load: () => import('./shiranuiData.js').then((module) => module.shiranuiData) },
+  { id: 'sky-emperor', label: "Sky Emperor", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4302.png', load: () => import('./skyEmperorData.js').then((module) => module.skyEmperorData) },
+  { id: 'soul-ascetic', label: "Soul Ascetic", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4303.png', load: () => import('./soulAsceticData.js').then((module) => module.soulAsceticData) },
+  { id: 'spirit-handler', label: "Spirit Handler", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4308.png', load: () => import('./spiritHandlerData.js').then((module) => module.spiritHandlerData) },
+  { id: 'hyper-novice', label: "Hyper Novice", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4307.png', load: () => import('./hyperNoviceData.js').then((module) => module.hyperNoviceData) },
+  { id: 'alitea', label: "Alitea", mode: 'tree', jobIconUrl: 'assets/divine-pride/jobs/4355.png', load: () => import('./aliteaData.js').then((module) => module.aliteaData) },
+]
+
+export default classDataSets

@@ -1,0 +1,56 @@
+[
+  {
+    "number": 1,
+    "id": "rebalance-1",
+    "label": "Rebalance 1",
+    "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+    "scope": "main",
+    "appliesTo": "Main classes only",
+    "maxJobLevel": 50,
+    "pointLimit": 49,
+    "notes": "Does not apply to expanded classes such as Soul Ascetic."
+  },
+  {
+    "number": 2,
+    "id": "rebalance-2",
+    "label": "Rebalance 2",
+    "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126",
+    "scope": "main-and-expanded",
+    "appliesTo": "Main and expanded classes",
+    "maxJobLevel": 50,
+    "pointLimit": 49
+  },
+  {
+    "number": 3,
+    "id": "rebalance-3",
+    "label": "Rebalance 3",
+    "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=12421",
+    "scope": "main-and-expanded",
+    "appliesTo": "Main and expanded classes",
+    "maxJobLevel": 55,
+    "pointLimit": 54,
+    "notes": "From this rebalance onward the max job level changes to 55."
+  },
+  {
+    "number": 4,
+    "id": "rebalance-4",
+    "label": "Rebalance 4",
+    "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917",
+    "scope": "main-and-expanded",
+    "appliesTo": "Main and expanded classes",
+    "maxJobLevel": 55,
+    "pointLimit": 54
+  },
+  {
+    "number": 5,
+    "id": "rebalance-5",
+    "label": "Rebalance 5",
+    "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/7814-kro-27560-level-expansion-and-new-skills/",
+    "scope": "main-and-expanded",
+    "appliesTo": "Main and expanded classes",
+    "maxJobLevel": 60,
+    "pointLimit": 59,
+    "addsNewSkills": true,
+    "notes": "275/60 expansion. From this rebalance onward the max job level changes to 60."
+  }
+]
