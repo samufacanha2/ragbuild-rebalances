@@ -1,5 +1,5 @@
 export const inquisitorData = {
-  "generatedAt": "2026-07-08T21:14:58.318Z",
+  "generatedAt": "2026-07-09T03:38:40.623Z",
   "classId": 4262,
   "classSlug": "inquisitor",
   "className": "Inquisitor",
@@ -2125,7 +2125,15 @@ export const inquisitorData = {
                 "Unifies duration to 300 seconds regardless of skill level.",
                 "Changes AP consumption from 100 regardless of skill level to scaling with skill level, from 120 on level 1 down to 60 on level 5."
               ],
-              "specRows": []
+              "specRows": [
+                {
+                  "label": "AP Consumed",
+                  "before": "100 regardless of skill level",
+                  "after": "scaling with skill level, from 120 on level 1 down to 60 on level 5",
+                  "scope": "",
+                  "source": "Changes AP consumption from 100 regardless of skill level to scaling with skill level, from 120 on level 1 down to 60 on level 5."
+                }
+              ]
             }
           ],
           "api": {
@@ -3877,7 +3885,15 @@ export const inquisitorData = {
               "notes": [
                 "Changes damage logic from 3 split hits to 5 cumulative hits."
               ],
-              "specRows": []
+              "specRows": [
+                {
+                  "label": "Damage Logic",
+                  "before": "3 split hits",
+                  "after": "5 cumulative hits",
+                  "scope": "",
+                  "source": "Changes damage logic from 3 split hits to 5 cumulative hits."
+                }
+              ]
             },
             {
               "skillName": "Third Consecration",
@@ -12452,6 +12468,168 @@ export const inquisitorData = {
           }
         },
         {
+          "id": 370,
+          "imageFile": "370.png",
+          "name": "Raging Palm Strike",
+          "maxLevel": 5,
+          "prerequisiteText": "Iron Fists 7, Summon Spirit Sphere 5",
+          "group": "Active",
+          "type": "Physical Attack",
+          "target": "1 Target",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Strike an enemy using the palms,\npushing back the enemy and causing damage, which\nis determined by the skill's level, after a\n1 second delay. This skill can only be used\nduring the Fury status.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "ATK 300%"
+            },
+            {
+              "level": 2,
+              "text": "ATK 400%"
+            },
+            {
+              "level": 3,
+              "text": "ATK 500%"
+            },
+            {
+              "level": 4,
+              "text": "ATK 600%"
+            },
+            {
+              "level": 5,
+              "text": "ATK 700%"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "2"
+                },
+                {
+                  "level": 2,
+                  "value": "4"
+                },
+                {
+                  "level": 3,
+                  "value": "6"
+                },
+                {
+                  "level": 4,
+                  "value": "8"
+                },
+                {
+                  "level": 5,
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/370.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/370",
+          "tree": {
+            "idx": 11,
+            "row": 1,
+            "col": 2,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 259,
+                "level": 7,
+                "name": "Iron Fists",
+                "visible": true
+              },
+              {
+                "id": 261,
+                "level": 5,
+                "name": "Summon Spirit Sphere",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Target",
+                "value": "1 Target"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "base-damage-atk",
+                    "label": "Base Damage (ATK)"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "base-damage-atk": "300%",
+                      "sp-cost": "2"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "base-damage-atk": "400%",
+                      "sp-cost": "4"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "base-damage-atk": "500%",
+                      "sp-cost": "6"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "base-damage-atk": "600%",
+                      "sp-cost": "8"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "base-damage-atk": "700%",
+                      "sp-cost": "10"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 1016,
           "imageFile": "1016.png",
           "name": "Excruciating Palm",
@@ -13305,6 +13483,115 @@ export const inquisitorData = {
           }
         },
         {
+          "id": 401,
+          "imageFile": "401.png",
+          "name": "Zen",
+          "maxLevel": 1,
+          "prerequisiteText": "Fury 5",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Summon 5 Spirit Spheres at one time.\nThe cast time of this skill is double the time\nof the Summon Spirit Sphere skill.",
+          "levelDetails": [],
+          "fixedCastTime": "1 second",
+          "variableCastTime": "0 seconds",
+          "castDelay": "0 seconds",
+          "cooldown": "0 seconds",
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "20"
+                }
+              ]
+            }
+          ],
+          "translations": {
+            "pt-BR": {
+              "name": " Zen ",
+              "description": "Invoca todas as esferas espirituais de uma só vez.\nAuréola do Poder · Golpe Pantocrator · Soco Guilhotina Auréola do Juiz · Toque Intercessor · Veredicto Auréola das Chamas · Palma Fervorosa · Fogueira Espiritual\nConcentrar · Olhos de Águia · Olhos de Coruja",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Zen"
+            }
+          },
+          "apiStatus": "translated",
+          "iconUrl": "assets/divine-pride/skills/401.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/401",
+          "tree": {
+            "idx": 21,
+            "row": 2,
+            "col": 3,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 270,
+                "level": 5,
+                "name": "Fury",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0 seconds"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "20"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "translated",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 271,
           "imageFile": "271.png",
           "name": "Guillotine Fist",
@@ -13593,6 +13880,174 @@ export const inquisitorData = {
           }
         },
         {
+          "id": 371,
+          "imageFile": "371.png",
+          "name": "Glacier Fist",
+          "maxLevel": 5,
+          "prerequisiteText": "Iron Fists 5, Raging Trifecta Blow 5, Raging Thrust 3",
+          "group": "Active",
+          "type": "Physical Attack",
+          "target": "1 Target",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "A combo skill that can be cast\nafter using Raging Quadruple Blow. An enemy hit\nby this skill is immobilized for a short period\nof time. Each cast requires 1 Spirit Sphere.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "ATK 650%, Freezing Chance 20%"
+            },
+            {
+              "level": 2,
+              "text": "ATK 800%, Freezing Chance 30%"
+            },
+            {
+              "level": 3,
+              "text": "ATK 950%, Freezing Chance 40%"
+            },
+            {
+              "level": 4,
+              "text": "ATK 1100%, Freezing Chance 50%"
+            },
+            {
+              "level": 5,
+              "text": "ATK 1250%, Freezing Chance 60%"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "4"
+                },
+                {
+                  "level": 2,
+                  "value": "6"
+                },
+                {
+                  "level": 3,
+                  "value": "8"
+                },
+                {
+                  "level": 4,
+                  "value": "10"
+                },
+                {
+                  "level": 5,
+                  "value": "12"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/371.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/371",
+          "tree": {
+            "idx": 25,
+            "row": 2,
+            "col": 7,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 259,
+                "level": 5,
+                "name": "Iron Fists",
+                "visible": true
+              },
+              {
+                "id": 263,
+                "level": 5,
+                "name": "Raging Trifecta Blow",
+                "visible": true
+              },
+              {
+                "id": 273,
+                "level": 3,
+                "name": "Raging Thrust",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Target",
+                "value": "1 Target"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "base-damage-atk",
+                    "label": "Base Damage (ATK)"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "base-damage-atk": "650%",
+                      "sp-cost": "4"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "base-damage-atk": "800%",
+                      "sp-cost": "6"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "base-damage-atk": "950%",
+                      "sp-cost": "8"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "base-damage-atk": "1100%",
+                      "sp-cost": "10"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "base-damage-atk": "1250%",
+                      "sp-cost": "12"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 264,
           "imageFile": "264.png",
           "name": "Snap",
@@ -13671,445 +14126,6 @@ export const inquisitorData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "14"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 370,
-          "imageFile": "370.png",
-          "name": "Raging Palm Strike",
-          "maxLevel": 5,
-          "prerequisiteText": "Iron Fists 7, Summon Spirit Sphere 5",
-          "group": "Active",
-          "type": "Physical Attack",
-          "target": "1 Target",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Strike an enemy using the palms,\npushing back the enemy and causing damage, which\nis determined by the skill's level, after a\n1 second delay. This skill can only be used\nduring the Fury status.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "ATK 300%"
-            },
-            {
-              "level": 2,
-              "text": "ATK 400%"
-            },
-            {
-              "level": 3,
-              "text": "ATK 500%"
-            },
-            {
-              "level": 4,
-              "text": "ATK 600%"
-            },
-            {
-              "level": 5,
-              "text": "ATK 700%"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "2"
-                },
-                {
-                  "level": 2,
-                  "value": "4"
-                },
-                {
-                  "level": 3,
-                  "value": "6"
-                },
-                {
-                  "level": 4,
-                  "value": "8"
-                },
-                {
-                  "level": 5,
-                  "value": "10"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/370.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/370",
-          "tree": {
-            "idx": 11,
-            "row": 1,
-            "col": 2,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 259,
-                "level": 7,
-                "name": "Iron Fists",
-                "visible": false
-              },
-              {
-                "id": 261,
-                "level": 5,
-                "name": "Summon Spirit Sphere",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Target",
-                "value": "1 Target"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "300%",
-                      "sp-cost": "2"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "400%",
-                      "sp-cost": "4"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "500%",
-                      "sp-cost": "6"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "600%",
-                      "sp-cost": "8"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "700%",
-                      "sp-cost": "10"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 401,
-          "imageFile": "401.png",
-          "name": "Zen",
-          "maxLevel": 1,
-          "prerequisiteText": "Fury 5",
-          "group": "Supportive",
-          "type": "",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Summon 5 Spirit Spheres at one time.\nThe cast time of this skill is double the time\nof the Summon Spirit Sphere skill.",
-          "levelDetails": [],
-          "fixedCastTime": "1 second",
-          "variableCastTime": "0 seconds",
-          "castDelay": "0 seconds",
-          "cooldown": "0 seconds",
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "20"
-                }
-              ]
-            }
-          ],
-          "translations": {
-            "pt-BR": {
-              "name": " Zen ",
-              "description": "Invoca todas as esferas espirituais de uma só vez.\nAuréola do Poder · Golpe Pantocrator · Soco Guilhotina Auréola do Juiz · Toque Intercessor · Veredicto Auréola das Chamas · Palma Fervorosa · Fogueira Espiritual\nConcentrar · Olhos de Águia · Olhos de Coruja",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Zen"
-            }
-          },
-          "apiStatus": "translated",
-          "iconUrl": "assets/divine-pride/skills/401.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/401",
-          "tree": {
-            "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 270,
-                "level": 5,
-                "name": "Fury",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Supportive Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "1"
-              },
-              {
-                "label": "Fixed Cast Time",
-                "value": "1 second"
-              },
-              {
-                "label": "Variable Cast Time",
-                "value": "0 seconds"
-              },
-              {
-                "label": "Cast Delay",
-                "value": "0 seconds"
-              },
-              {
-                "label": "Cooldown",
-                "value": "0 seconds"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "20"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "translated",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 371,
-          "imageFile": "371.png",
-          "name": "Glacier Fist",
-          "maxLevel": 5,
-          "prerequisiteText": "Iron Fists 5, Raging Trifecta Blow 5, Raging Thrust 3",
-          "group": "Active",
-          "type": "Physical Attack",
-          "target": "1 Target",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "A combo skill that can be cast\nafter using Raging Quadruple Blow. An enemy hit\nby this skill is immobilized for a short period\nof time. Each cast requires 1 Spirit Sphere.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "ATK 650%, Freezing Chance 20%"
-            },
-            {
-              "level": 2,
-              "text": "ATK 800%, Freezing Chance 30%"
-            },
-            {
-              "level": 3,
-              "text": "ATK 950%, Freezing Chance 40%"
-            },
-            {
-              "level": 4,
-              "text": "ATK 1100%, Freezing Chance 50%"
-            },
-            {
-              "level": 5,
-              "text": "ATK 1250%, Freezing Chance 60%"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "4"
-                },
-                {
-                  "level": 2,
-                  "value": "6"
-                },
-                {
-                  "level": 3,
-                  "value": "8"
-                },
-                {
-                  "level": 4,
-                  "value": "10"
-                },
-                {
-                  "level": 5,
-                  "value": "12"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/371.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/371",
-          "tree": {
-            "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 259,
-                "level": 5,
-                "name": "Iron Fists",
-                "visible": false
-              },
-              {
-                "id": 263,
-                "level": 5,
-                "name": "Raging Trifecta Blow",
-                "visible": false
-              },
-              {
-                "id": 273,
-                "level": 3,
-                "name": "Raging Thrust",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Target",
-                "value": "1 Target"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "650%",
-                      "sp-cost": "4"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "800%",
-                      "sp-cost": "6"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "950%",
-                      "sp-cost": "8"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "1100%",
-                      "sp-cost": "10"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "1250%",
-                      "sp-cost": "12"
                     }
                   }
                 ],
@@ -14240,13 +14256,13 @@ export const inquisitorData = {
                 "id": 259,
                 "level": 5,
                 "name": "Iron Fists",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 261,
                 "level": 5,
                 "name": "Summon Spirit Sphere",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 371,
@@ -14379,6 +14395,206 @@ export const inquisitorData = {
         "rows": 3
       },
       "skills": [
+        {
+          "id": 1,
+          "imageFile": "1.png",
+          "name": "Basic Skill",
+          "maxLevel": 9,
+          "prerequisiteText": "basic skill",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate."
+            },
+            {
+              "level": 2,
+              "text": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons."
+            },
+            {
+              "level": 3,
+              "text": "Enables Sitting\nSitting doubles HP/SP Recovery Speed.\nPress the Insert key or type /sit."
+            },
+            {
+              "level": 4,
+              "text": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window."
+            },
+            {
+              "level": 5,
+              "text": "Join a Party\nCharacter can join a party."
+            },
+            {
+              "level": 6,
+              "text": "Enables Use of Kafra Storage\nAllows use of Kafra Storage."
+            },
+            {
+              "level": 7,
+              "text": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)."
+            },
+            {
+              "level": 9,
+              "text": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes."
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                },
+                {
+                  "level": 6,
+                  "value": "0"
+                },
+                {
+                  "level": 7,
+                  "value": "0"
+                },
+                {
+                  "level": 8,
+                  "value": "0"
+                },
+                {
+                  "level": 9,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/1.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/1",
+          "tree": {
+            "idx": 0,
+            "row": 0,
+            "col": 0,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "9"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Join a Party\nCharacter can join a party",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Enables Use of Kafra Storage\nAllows use of Kafra Storage",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
         {
           "id": 24,
           "imageFile": "24.png",
@@ -15027,6 +15243,85 @@ export const inquisitorData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "15"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 142,
+          "imageFile": "142.png",
+          "name": "First Aid",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest",
+          "group": "Supportive",
+          "type": "",
+          "target": "Player",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume 3SP to restore 5HP.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/142.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/142",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "3"
                     }
                   }
                 ],
@@ -16202,6 +16497,81 @@ export const inquisitorData = {
           "balanceNotes": [],
           "api": {
             "status": "translated",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 143,
+          "imageFile": "143.png",
+          "name": "Play Dead",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest, Novice Only",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/143.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/143",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18635,7 +19005,15 @@ export const inquisitorData = {
             "Unifies duration to 300 seconds regardless of skill level.",
             "Changes AP consumption from 100 regardless of skill level to scaling with skill level, from 120 on level 1 down to 60 on level 5."
           ],
-          "specRows": []
+          "specRows": [
+            {
+              "label": "AP Consumed",
+              "before": "100 regardless of skill level",
+              "after": "scaling with skill level, from 120 on level 1 down to 60 on level 5",
+              "scope": "",
+              "source": "Changes AP consumption from 100 regardless of skill level to scaling with skill level, from 120 on level 1 down to 60 on level 5."
+            }
+          ]
         }
       ],
       "api": {
@@ -20387,7 +20765,15 @@ export const inquisitorData = {
           "notes": [
             "Changes damage logic from 3 split hits to 5 cumulative hits."
           ],
-          "specRows": []
+          "specRows": [
+            {
+              "label": "Damage Logic",
+              "before": "3 split hits",
+              "after": "5 cumulative hits",
+              "scope": "",
+              "source": "Changes damage logic from 3 split hits to 5 cumulative hits."
+            }
+          ]
         },
         {
           "skillName": "Third Consecration",

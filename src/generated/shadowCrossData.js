@@ -1,5 +1,5 @@
 export const shadowCrossData = {
-  "generatedAt": "2026-07-08T21:13:17.674Z",
+  "generatedAt": "2026-07-09T03:37:10.297Z",
   "classId": 4254,
   "classSlug": "shadow-cross",
   "className": "Shadow Cross",
@@ -895,6 +895,27 @@ export const shadowCrossData = {
                   "after": "1 second",
                   "scope": "Lv 10",
                   "source": "Reduces cooldown from 3 seconds to 1 second based on level 10."
+                },
+                {
+                  "label": "Damage",
+                  "before": "3500%Atk",
+                  "after": "600%Atk",
+                  "scope": "Lv 10",
+                  "source": "Changes damage from 3500%Atk to 600%Atk based on level 10."
+                },
+                {
+                  "label": "Damage While Under Shadow Exceed Buff",
+                  "before": "5000%Atk",
+                  "after": "1000%Atk",
+                  "scope": "Lv 10",
+                  "source": "Changes damage while under Shadow Exceed buff from 5000%Atk to 1000%Atk based on level 10."
+                },
+                {
+                  "label": "Damage Logic",
+                  "before": "8 split hits",
+                  "after": "3 cumulative hits",
+                  "scope": "",
+                  "source": "Changes damage logic from 8 split hits to 3 cumulative hits."
                 }
               ]
             },
@@ -3057,7 +3078,7 @@ export const shadowCrossData = {
     },
     {
       "id": "previous-1",
-      "label": "Guillotine Cross",
+      "label": "Glt. Cross",
       "pointLimit": 69,
       "tree": {
         "columns": 9,
@@ -8618,6 +8639,164 @@ export const shadowCrossData = {
           }
         },
         {
+          "id": 376,
+          "imageFile": "376.png",
+          "name": "Advanced Katar Mastery",
+          "maxLevel": 5,
+          "prerequisiteText": "Double Attack 5, Katar Matery 7",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Enhance the damage that is\ninflicted with Katar Class Weapons.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Damage +12%"
+            },
+            {
+              "level": 2,
+              "text": "Damage +14%"
+            },
+            {
+              "level": 3,
+              "text": "Damage +16%"
+            },
+            {
+              "level": 4,
+              "text": "Damage +18%"
+            },
+            {
+              "level": 5,
+              "text": "Damage +20%"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/376.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/376",
+          "tree": {
+            "idx": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 48,
+                "level": 5,
+                "name": "Double Attack",
+                "visible": false
+              },
+              {
+                "id": 134,
+                "level": 7,
+                "name": "Katar Mastery",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "damage",
+                    "label": "Damage"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "damage": "+12%",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "damage": "+14%",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "damage": "+16%",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "damage": "+18%",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "damage": "+20%",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 140,
           "imageFile": "140.png",
           "name": "Venom Dust",
@@ -9060,6 +9239,100 @@ export const shadowCrossData = {
                     "values": {
                       "base-damage-atk": "400%",
                       "sp-cost": "45"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 407,
+          "imageFile": "407.png",
+          "name": "Create Deadly Poison",
+          "maxLevel": 1,
+          "prerequisiteText": "Envenom 10, Detoxify 1,",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Create a bottle of Deadly Poison\nthat will increase the Attack Speed of Assassin\nCrosses with the risk of being inflicted with\nthe Poison status, but will instantly kill\ncharacters in any other job if they drink it.\nCaster's DEX and LUK affect this skill's\nsuccess rate. If this skill fails, the caster\nloses an amount of HP equal to 25% of\nhis MaxHP.\nItems Required to create Deadly Poison:\n1 Empty Bottle\n1 Poison Spore\n1 Venom Canine\n1 Bee Sting\n1 Cactus Needle\n1 Berserk Potion\n1 Karvodailnirol",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "50"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/407.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/407",
+          "tree": {
+            "idx": 12,
+            "row": 1,
+            "col": 3,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 52,
+                "level": 10,
+                "name": "Envenom",
+                "visible": false
+              },
+              {
+                "id": 53,
+                "level": 1,
+                "name": "Detoxify",
+                "visible": false
+              },
+              {
+                "id": 138,
+                "level": 5,
+                "name": "Enchant Poison",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "50"
                     }
                   }
                 ],
@@ -9569,258 +9842,6 @@ export const shadowCrossData = {
           }
         },
         {
-          "id": 376,
-          "imageFile": "376.png",
-          "name": "Advanced Katar Mastery",
-          "maxLevel": 5,
-          "prerequisiteText": "Double Attack 5, Katar Matery 7",
-          "group": "Passive",
-          "type": "",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Enhance the damage that is\ninflicted with Katar Class Weapons.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "Damage +12%"
-            },
-            {
-              "level": 2,
-              "text": "Damage +14%"
-            },
-            {
-              "level": 3,
-              "text": "Damage +16%"
-            },
-            {
-              "level": 4,
-              "text": "Damage +18%"
-            },
-            {
-              "level": 5,
-              "text": "Damage +20%"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "0"
-                },
-                {
-                  "level": 2,
-                  "value": "0"
-                },
-                {
-                  "level": 3,
-                  "value": "0"
-                },
-                {
-                  "level": 4,
-                  "value": "0"
-                },
-                {
-                  "level": 5,
-                  "value": "0"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/376.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/376",
-          "tree": {
-            "idx": 9,
-            "row": 1,
-            "col": 0,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 48,
-                "level": 5,
-                "name": "Double Attack",
-                "visible": false
-              },
-              {
-                "id": 134,
-                "level": 7,
-                "name": "Katar Mastery",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Passive Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "damage",
-                    "label": "Damage"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "damage": "+12%",
-                      "sp-cost": "0"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "damage": "+14%",
-                      "sp-cost": "0"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "damage": "+16%",
-                      "sp-cost": "0"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "damage": "+18%",
-                      "sp-cost": "0"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "damage": "+20%",
-                      "sp-cost": "0"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 407,
-          "imageFile": "407.png",
-          "name": "Create Deadly Poison",
-          "maxLevel": 1,
-          "prerequisiteText": "Envenom 10, Detoxify 1,",
-          "group": "Supportive",
-          "type": "",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Create a bottle of Deadly Poison\nthat will increase the Attack Speed of Assassin\nCrosses with the risk of being inflicted with\nthe Poison status, but will instantly kill\ncharacters in any other job if they drink it.\nCaster's DEX and LUK affect this skill's\nsuccess rate. If this skill fails, the caster\nloses an amount of HP equal to 25% of\nhis MaxHP.\nItems Required to create Deadly Poison:\n1 Empty Bottle\n1 Poison Spore\n1 Venom Canine\n1 Bee Sting\n1 Cactus Needle\n1 Berserk Potion\n1 Karvodailnirol",
-          "levelDetails": [],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "50"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/407.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/407",
-          "tree": {
-            "idx": 12,
-            "row": 1,
-            "col": 3,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 52,
-                "level": 10,
-                "name": "Envenom",
-                "visible": false
-              },
-              {
-                "id": 53,
-                "level": 1,
-                "name": "Detoxify",
-                "visible": false
-              },
-              {
-                "id": 138,
-                "level": 5,
-                "name": "Enchant Poison",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Supportive Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "1"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "50"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
           "id": 379,
           "imageFile": "379.png",
           "name": "Soul Destroyer",
@@ -9951,13 +9972,13 @@ export const shadowCrossData = {
                 "id": 135,
                 "level": 3,
                 "name": "Cloaking",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 138,
                 "level": 6,
                 "name": "Enchant Poison",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -10354,19 +10375,19 @@ export const shadowCrossData = {
                 "id": 132,
                 "level": 3,
                 "name": "Righthand Mastery",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 134,
                 "level": 5,
                 "name": "Katar Mastery",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 136,
                 "level": 5,
                 "name": "Sonic Blow",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 379,
@@ -10511,6 +10532,206 @@ export const shadowCrossData = {
         "rows": 2
       },
       "skills": [
+        {
+          "id": 1,
+          "imageFile": "1.png",
+          "name": "Basic Skill",
+          "maxLevel": 9,
+          "prerequisiteText": "basic skill",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate."
+            },
+            {
+              "level": 2,
+              "text": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons."
+            },
+            {
+              "level": 3,
+              "text": "Enables Sitting\nSitting doubles HP/SP Recovery Speed.\nPress the Insert key or type /sit."
+            },
+            {
+              "level": 4,
+              "text": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window."
+            },
+            {
+              "level": 5,
+              "text": "Join a Party\nCharacter can join a party."
+            },
+            {
+              "level": 6,
+              "text": "Enables Use of Kafra Storage\nAllows use of Kafra Storage."
+            },
+            {
+              "level": 7,
+              "text": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)."
+            },
+            {
+              "level": 9,
+              "text": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes."
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                },
+                {
+                  "level": 6,
+                  "value": "0"
+                },
+                {
+                  "level": 7,
+                  "value": "0"
+                },
+                {
+                  "level": 8,
+                  "value": "0"
+                },
+                {
+                  "level": 9,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/1.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/1",
+          "tree": {
+            "idx": 0,
+            "row": 0,
+            "col": 0,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "9"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Join a Party\nCharacter can join a party",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Enables Use of Kafra Storage\nAllows use of Kafra Storage",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
         {
           "id": 48,
           "imageFile": "48.png",
@@ -11338,6 +11559,85 @@ export const shadowCrossData = {
           }
         },
         {
+          "id": 142,
+          "imageFile": "142.png",
+          "name": "First Aid",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest",
+          "group": "Supportive",
+          "type": "",
+          "target": "Player",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume 3SP to restore 5HP.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/142.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/142",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "3"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 49,
           "imageFile": "49.png",
           "name": "Improve Dodge",
@@ -12063,6 +12363,81 @@ export const shadowCrossData = {
             "entries": [],
             "selectedEntry": null
           }
+        },
+        {
+          "id": 143,
+          "imageFile": "143.png",
+          "name": "Play Dead",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest, Novice Only",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/143.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/143",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
         }
       ]
     }
@@ -12677,6 +13052,27 @@ export const shadowCrossData = {
               "after": "1 second",
               "scope": "Lv 10",
               "source": "Reduces cooldown from 3 seconds to 1 second based on level 10."
+            },
+            {
+              "label": "Damage",
+              "before": "3500%Atk",
+              "after": "600%Atk",
+              "scope": "Lv 10",
+              "source": "Changes damage from 3500%Atk to 600%Atk based on level 10."
+            },
+            {
+              "label": "Damage While Under Shadow Exceed Buff",
+              "before": "5000%Atk",
+              "after": "1000%Atk",
+              "scope": "Lv 10",
+              "source": "Changes damage while under Shadow Exceed buff from 5000%Atk to 1000%Atk based on level 10."
+            },
+            {
+              "label": "Damage Logic",
+              "before": "8 split hits",
+              "after": "3 cumulative hits",
+              "scope": "",
+              "source": "Changes damage logic from 8 split hits to 3 cumulative hits."
             }
           ]
         },

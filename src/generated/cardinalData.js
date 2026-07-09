@@ -1,5 +1,5 @@
 export const cardinalData = {
-  "generatedAt": "2026-07-08T21:14:42.337Z",
+  "generatedAt": "2026-07-09T03:38:23.024Z",
   "classId": 4256,
   "classSlug": "cardinal",
   "className": "Cardinal",
@@ -3790,6 +3790,13 @@ export const cardinalData = {
                   "after": "20",
                   "scope": "",
                   "source": "Reduces AP consumption from 30 to 20."
+                },
+                {
+                  "label": "Damage Property",
+                  "before": "holy",
+                  "after": "neutral",
+                  "scope": "",
+                  "source": "Changes damage property from holy to neutral."
                 }
               ]
             }
@@ -12231,6 +12238,186 @@ export const cardinalData = {
           }
         },
         {
+          "id": 361,
+          "imageFile": "361.png",
+          "name": "Assumptio",
+          "maxLevel": 5,
+          "prerequisiteText": "Angelus 1, Improved SP Recovery 3, Impositio Manus 3",
+          "group": "Active",
+          "type": "Buff",
+          "target": "1 Target",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Places a temporary buff on a single target that doubles their Hard Defense and Hard Magic Defense.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "DEF + 50, Received heal amount + 2%, Duration 20sec"
+            },
+            {
+              "level": 2,
+              "text": "DEF +100, Received heal amount + 4%, Duration 40sec"
+            },
+            {
+              "level": 3,
+              "text": "DEF +150, Received heal amount + 6%, Duration 60sec"
+            },
+            {
+              "level": 4,
+              "text": "DEF +200, Received heal amount + 8%, Duration 80sec"
+            },
+            {
+              "level": 5,
+              "text": "DEF +250, Received heal amount +10%, Duration 100sec"
+            }
+          ],
+          "cooldown": "0 seconds",
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "20"
+                },
+                {
+                  "level": 2,
+                  "value": "30"
+                },
+                {
+                  "level": 3,
+                  "value": "40"
+                },
+                {
+                  "level": 4,
+                  "value": "50"
+                },
+                {
+                  "level": 5,
+                  "value": "60"
+                }
+              ]
+            }
+          ],
+          "translations": {
+            "pt-BR": {
+              "name": " Assumptio ",
+              "description": "Abençoa o alvo, aumentando a DEF e a Cura recebida.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Assumptio"
+            }
+          },
+          "apiStatus": "translated",
+          "iconUrl": "assets/divine-pride/skills/361.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/361",
+          "tree": {
+            "idx": 10,
+            "row": 1,
+            "col": 1,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 9,
+                "level": 3,
+                "name": "Increase SP Recovery",
+                "visible": true
+              },
+              {
+                "id": 33,
+                "level": 1,
+                "name": "Angelus",
+                "visible": false
+              },
+              {
+                "id": 66,
+                "level": 3,
+                "name": "Impositio Manus",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "1 Target"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "DEF + 50, Received heal amount + 2%, Duration 20sec",
+                      "sp-cost": "20"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "DEF +100, Received heal amount + 4%, Duration 40sec",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "DEF +150, Received heal amount + 6%, Duration 60sec",
+                      "sp-cost": "40"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "DEF +200, Received heal amount + 8%, Duration 80sec",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "DEF +250, Received heal amount +10%, Duration 100sec",
+                      "sp-cost": "60"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "translated",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 78,
           "imageFile": "78.png",
           "name": "Lex Aeterna",
@@ -13324,6 +13511,456 @@ export const cardinalData = {
           }
         },
         {
+          "id": 362,
+          "imageFile": "362.png",
+          "name": "Basilica",
+          "maxLevel": 5,
+          "prerequisiteText": "Gloria 2, Improved SP Recovery 1, Kyrie Eleison 3",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "Immediately",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Enhances itself by accepting the power of sanctuary temporarily.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Magic damage + 3%, Physical damage + 5%"
+            },
+            {
+              "level": 2,
+              "text": "Magic damage + 6%, Physical damage +10%"
+            },
+            {
+              "level": 3,
+              "text": "Magic damage + 9%, Physical damage +15%"
+            },
+            {
+              "level": 4,
+              "text": "Magic damage +12%, Physical damage +20%"
+            },
+            {
+              "level": 5,
+              "text": "Magic damage +15%, Physical damage +25%"
+            }
+          ],
+          "fixedCastTime": "1 second",
+          "variableCastTime": "3 seconds",
+          "castDelay": "1 second",
+          "cooldown": "30 seconds",
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "40"
+                },
+                {
+                  "level": 2,
+                  "value": "50"
+                },
+                {
+                  "level": 3,
+                  "value": "60"
+                },
+                {
+                  "level": 4,
+                  "value": "70"
+                },
+                {
+                  "level": 5,
+                  "value": "80"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/362.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/362",
+          "tree": {
+            "idx": 17,
+            "row": 1,
+            "col": 8,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 9,
+                "level": 1,
+                "name": "Increase SP Recovery",
+                "visible": true
+              },
+              {
+                "id": 73,
+                "level": 3,
+                "name": "Kyrie Eleison",
+                "visible": true
+              },
+              {
+                "id": 75,
+                "level": 2,
+                "name": "Gloria",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "30 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Immediately"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "magic-damage-3-physical-damage",
+                    "label": "Magic Damage + 3%, Physical Damage"
+                  },
+                  {
+                    "id": "magic-damage-6-physical-damage",
+                    "label": "Magic Damage + 6%, Physical Damage"
+                  },
+                  {
+                    "id": "magic-damage-9-physical-damage",
+                    "label": "Magic Damage + 9%, Physical Damage"
+                  },
+                  {
+                    "id": "magic-damage-12-physical-damage",
+                    "label": "Magic Damage +12%, Physical Damage"
+                  },
+                  {
+                    "id": "magic-damage-15-physical-damage",
+                    "label": "Magic Damage +15%, Physical Damage"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "magic-damage-3-physical-damage": "+ 5%",
+                      "sp-cost": "40"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "magic-damage-6-physical-damage": "+10%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "magic-damage-9-physical-damage": "+15%",
+                      "sp-cost": "60"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "magic-damage-12-physical-damage": "+20%",
+                      "sp-cost": "70"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "magic-damage-15-physical-damage": "+25%",
+                      "sp-cost": "80"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 363,
+          "imageFile": "363.png",
+          "name": "Meditatio",
+          "maxLevel": 10,
+          "prerequisiteText": "Improved SP Recovery 5, Lex Divina 5, Aspersio 3",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Increases the player's Maximum SP and SP regeneration rate.\nIt also increases the amount of HP that is restored using the Heal skill.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "MaxSP +1%, SP Regeneration 3% increase"
+            },
+            {
+              "level": 2,
+              "text": "MaxSP +2%, SP Regeneration 6% increase"
+            },
+            {
+              "level": 3,
+              "text": "MaxSP +3%, SP Regeneration 9% increase"
+            },
+            {
+              "level": 4,
+              "text": "MaxSP +4%, SP Regeneration 12% increase"
+            },
+            {
+              "level": 5,
+              "text": "MaxSP +5%, SP Regeneration 15% increase"
+            },
+            {
+              "level": 6,
+              "text": "MaxSP +6%, SP Regeneration 18% increase"
+            },
+            {
+              "level": 7,
+              "text": "MaxSP +7%, SP Regeneration 21% increase"
+            },
+            {
+              "level": 8,
+              "text": "MaxSP +8%, SP Regeneration 24% increase"
+            },
+            {
+              "level": 9,
+              "text": "MaxSP +9%, SP Regeneration 27% increase"
+            },
+            {
+              "level": 10,
+              "text": "MaxSP +10%, SP Regeneration 30% increase"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                },
+                {
+                  "level": 6,
+                  "value": "0"
+                },
+                {
+                  "level": 7,
+                  "value": "0"
+                },
+                {
+                  "level": 8,
+                  "value": "0"
+                },
+                {
+                  "level": 9,
+                  "value": "0"
+                },
+                {
+                  "level": 10,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {
+            "pt-BR": {
+              "name": " Meditatio ",
+              "description": "Medita para Deus.\nAcelera a regeneração natural de SP , aumenta o SP e melhora a efetividade de cura.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Meditatio"
+            }
+          },
+          "apiStatus": "translated",
+          "iconUrl": "assets/divine-pride/skills/363.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/363",
+          "tree": {
+            "idx": 19,
+            "row": 2,
+            "col": 1,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 9,
+                "level": 5,
+                "name": "Increase SP Recovery",
+                "visible": true
+              },
+              {
+                "id": 68,
+                "level": 3,
+                "name": "Aspersio",
+                "visible": true
+              },
+              {
+                "id": 76,
+                "level": 5,
+                "name": "Lex Divina",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "10"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Ma x SP +1%, SP Regeneration 3% increase",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Ma x SP +2%, SP Regeneration 6% increase",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Ma x SP +3%, SP Regeneration 9% increase",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Ma x SP +4%, SP Regeneration 12% increase",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Ma x SP +5%, SP Regeneration 15% increase",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Ma x SP +6%, SP Regeneration 18% increase",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Ma x SP +7%, SP Regeneration 21% increase",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "effect": "Ma x SP +8%, SP Regeneration 24% increase",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Ma x SP +9%, SP Regeneration 27% increase",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 10,
+                    "values": {
+                      "effect": "Ma x SP +10%, SP Regeneration 30% increase",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "translated",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 12,
           "imageFile": "12.png",
           "name": "Safety wall",
@@ -13545,6 +14182,160 @@ export const cardinalData = {
                     "values": {
                       "effect": "Durability:3000, Number of Defence:11times",
                       "sp-cost": "40"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 481,
+          "imageFile": "481.png",
+          "name": "Spiritual Thrift",
+          "maxLevel": 5,
+          "prerequisiteText": "Mace Mastery 10,",
+          "group": "",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Reduce the amount of SP that is\nconsumed by skills.\nReduction of SP Consumption By Level",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "4%"
+            },
+            {
+              "level": 2,
+              "text": "8%"
+            },
+            {
+              "level": 3,
+              "text": "12%"
+            },
+            {
+              "level": 4,
+              "text": "16%"
+            },
+            {
+              "level": 5,
+              "text": "20%"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/481.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/481",
+          "tree": {
+            "idx": 22,
+            "row": 2,
+            "col": 4,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 23,
+                "level": 10,
+                "name": "Demon Bane",
+                "visible": false
+              },
+              {
+                "id": 65,
+                "level": 10,
+                "name": "Mace Mastery",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Levels",
+                "value": "5"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "4%",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "8%",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "12%",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "16%",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "20%",
+                      "sp-cost": "0"
                     }
                   }
                 ],
@@ -13904,443 +14695,62 @@ export const cardinalData = {
             "entries": [],
             "selectedEntry": null
           }
-        },
+        }
+      ]
+    },
+    {
+      "id": "previous-3",
+      "label": "Acolyte",
+      "pointLimit": 49,
+      "tree": {
+        "columns": 9,
+        "rows": 3
+      },
+      "skills": [
         {
-          "id": 361,
-          "imageFile": "361.png",
-          "name": "Assumptio",
-          "maxLevel": 5,
-          "prerequisiteText": "Angelus 1, Improved SP Recovery 3, Impositio Manus 3",
-          "group": "Active",
-          "type": "Buff",
-          "target": "1 Target",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Places a temporary buff on a single target that doubles their Hard Defense and Hard Magic Defense.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "DEF + 50, Received heal amount + 2%, Duration 20sec"
-            },
-            {
-              "level": 2,
-              "text": "DEF +100, Received heal amount + 4%, Duration 40sec"
-            },
-            {
-              "level": 3,
-              "text": "DEF +150, Received heal amount + 6%, Duration 60sec"
-            },
-            {
-              "level": 4,
-              "text": "DEF +200, Received heal amount + 8%, Duration 80sec"
-            },
-            {
-              "level": 5,
-              "text": "DEF +250, Received heal amount +10%, Duration 100sec"
-            }
-          ],
-          "cooldown": "0 seconds",
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "20"
-                },
-                {
-                  "level": 2,
-                  "value": "30"
-                },
-                {
-                  "level": 3,
-                  "value": "40"
-                },
-                {
-                  "level": 4,
-                  "value": "50"
-                },
-                {
-                  "level": 5,
-                  "value": "60"
-                }
-              ]
-            }
-          ],
-          "translations": {
-            "pt-BR": {
-              "name": " Assumptio ",
-              "description": "Abençoa o alvo, aumentando a DEF e a Cura recebida.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Assumptio"
-            }
-          },
-          "apiStatus": "translated",
-          "iconUrl": "assets/divine-pride/skills/361.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/361",
-          "tree": {
-            "idx": 10,
-            "row": 1,
-            "col": 1,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 9,
-                "level": 3,
-                "name": "Increase SP Recovery",
-                "visible": false
-              },
-              {
-                "id": 33,
-                "level": 1,
-                "name": "Angelus",
-                "visible": false
-              },
-              {
-                "id": 66,
-                "level": 3,
-                "name": "Impositio Manus",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Cooldown",
-                "value": "0 seconds"
-              },
-              {
-                "label": "Target",
-                "value": "1 Target"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "DEF + 50, Received heal amount + 2%, Duration 20sec",
-                      "sp-cost": "20"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "DEF +100, Received heal amount + 4%, Duration 40sec",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "DEF +150, Received heal amount + 6%, Duration 60sec",
-                      "sp-cost": "40"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "DEF +200, Received heal amount + 8%, Duration 80sec",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "DEF +250, Received heal amount +10%, Duration 100sec",
-                      "sp-cost": "60"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "translated",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 362,
-          "imageFile": "362.png",
-          "name": "Basilica",
-          "maxLevel": 5,
-          "prerequisiteText": "Gloria 2, Improved SP Recovery 1, Kyrie Eleison 3",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "Immediately",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Enhances itself by accepting the power of sanctuary temporarily.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "Magic damage + 3%, Physical damage + 5%"
-            },
-            {
-              "level": 2,
-              "text": "Magic damage + 6%, Physical damage +10%"
-            },
-            {
-              "level": 3,
-              "text": "Magic damage + 9%, Physical damage +15%"
-            },
-            {
-              "level": 4,
-              "text": "Magic damage +12%, Physical damage +20%"
-            },
-            {
-              "level": 5,
-              "text": "Magic damage +15%, Physical damage +25%"
-            }
-          ],
-          "fixedCastTime": "1 second",
-          "variableCastTime": "3 seconds",
-          "castDelay": "1 second",
-          "cooldown": "30 seconds",
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "40"
-                },
-                {
-                  "level": 2,
-                  "value": "50"
-                },
-                {
-                  "level": 3,
-                  "value": "60"
-                },
-                {
-                  "level": 4,
-                  "value": "70"
-                },
-                {
-                  "level": 5,
-                  "value": "80"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/362.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/362",
-          "tree": {
-            "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 9,
-                "level": 1,
-                "name": "Increase SP Recovery",
-                "visible": false
-              },
-              {
-                "id": 73,
-                "level": 3,
-                "name": "Kyrie Eleison",
-                "visible": false
-              },
-              {
-                "id": 75,
-                "level": 2,
-                "name": "Gloria",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Fixed Cast Time",
-                "value": "1 second"
-              },
-              {
-                "label": "Variable Cast Time",
-                "value": "3 seconds"
-              },
-              {
-                "label": "Cast Delay",
-                "value": "1 second"
-              },
-              {
-                "label": "Cooldown",
-                "value": "30 seconds"
-              },
-              {
-                "label": "Target",
-                "value": "Immediately"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "magic-damage-3-physical-damage",
-                    "label": "Magic Damage + 3%, Physical Damage"
-                  },
-                  {
-                    "id": "magic-damage-6-physical-damage",
-                    "label": "Magic Damage + 6%, Physical Damage"
-                  },
-                  {
-                    "id": "magic-damage-9-physical-damage",
-                    "label": "Magic Damage + 9%, Physical Damage"
-                  },
-                  {
-                    "id": "magic-damage-12-physical-damage",
-                    "label": "Magic Damage +12%, Physical Damage"
-                  },
-                  {
-                    "id": "magic-damage-15-physical-damage",
-                    "label": "Magic Damage +15%, Physical Damage"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "magic-damage-3-physical-damage": "+ 5%",
-                      "sp-cost": "40"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "magic-damage-6-physical-damage": "+10%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "magic-damage-9-physical-damage": "+15%",
-                      "sp-cost": "60"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "magic-damage-12-physical-damage": "+20%",
-                      "sp-cost": "70"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "magic-damage-15-physical-damage": "+25%",
-                      "sp-cost": "80"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 363,
-          "imageFile": "363.png",
-          "name": "Meditatio",
-          "maxLevel": 10,
-          "prerequisiteText": "Improved SP Recovery 5, Lex Divina 5, Aspersio 3",
+          "id": 1,
+          "imageFile": "1.png",
+          "name": "Basic Skill",
+          "maxLevel": 9,
+          "prerequisiteText": "basic skill",
           "group": "Passive",
           "type": "",
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
-          "description": "Increases the player's Maximum SP and SP regeneration rate.\nIt also increases the amount of HP that is restored using the Heal skill.",
+          "description": "",
           "levelDetails": [
             {
               "level": 1,
-              "text": "MaxSP +1%, SP Regeneration 3% increase"
+              "text": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate."
             },
             {
               "level": 2,
-              "text": "MaxSP +2%, SP Regeneration 6% increase"
+              "text": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons."
             },
             {
               "level": 3,
-              "text": "MaxSP +3%, SP Regeneration 9% increase"
+              "text": "Enables Sitting\nSitting doubles HP/SP Recovery Speed.\nPress the Insert key or type /sit."
             },
             {
               "level": 4,
-              "text": "MaxSP +4%, SP Regeneration 12% increase"
+              "text": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window."
             },
             {
               "level": 5,
-              "text": "MaxSP +5%, SP Regeneration 15% increase"
+              "text": "Join a Party\nCharacter can join a party."
             },
             {
               "level": 6,
-              "text": "MaxSP +6%, SP Regeneration 18% increase"
+              "text": "Enables Use of Kafra Storage\nAllows use of Kafra Storage."
             },
             {
               "level": 7,
-              "text": "MaxSP +7%, SP Regeneration 21% increase"
-            },
-            {
-              "level": 8,
-              "text": "MaxSP +8%, SP Regeneration 24% increase"
+              "text": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)."
             },
             {
               "level": 9,
-              "text": "MaxSP +9%, SP Regeneration 27% increase"
-            },
-            {
-              "level": 10,
-              "text": "MaxSP +10%, SP Regeneration 30% increase"
+              "text": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes."
             }
           ],
           "levelExtras": [
@@ -14382,50 +14792,20 @@ export const cardinalData = {
                 {
                   "level": 9,
                   "value": "0"
-                },
-                {
-                  "level": 10,
-                  "value": "0"
                 }
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Meditatio ",
-              "description": "Medita para Deus.\nAcelera a regeneração natural de SP , aumenta o SP e melhora a efetividade de cura.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Meditatio"
-            }
-          },
-          "apiStatus": "translated",
-          "iconUrl": "assets/divine-pride/skills/363.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/363",
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/1.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
-            "idx": 19,
-            "row": 2,
-            "col": 1,
+            "idx": 0,
+            "row": 0,
+            "col": 0,
             "columns": 9,
-            "requirements": [
-              {
-                "id": 9,
-                "level": 5,
-                "name": "Increase SP Recovery",
-                "visible": false
-              },
-              {
-                "id": 68,
-                "level": 3,
-                "name": "Aspersio",
-                "visible": false
-              },
-              {
-                "id": 76,
-                "level": 5,
-                "name": "Lex Divina",
-                "visible": false
-              }
-            ]
+            "requirements": []
           },
           "details": {
             "rows": [
@@ -14435,7 +14815,7 @@ export const cardinalData = {
               },
               {
                 "label": "Levels",
-                "value": "10"
+                "value": "9"
               }
             ],
             "levelTables": [
@@ -14455,224 +14835,62 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Ma x SP +1%, SP Regeneration 3% increase",
+                      "effect": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Ma x SP +2%, SP Regeneration 6% increase",
+                      "effect": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Ma x SP +3%, SP Regeneration 9% increase",
+                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Ma x SP +4%, SP Regeneration 12% increase",
+                      "effect": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Ma x SP +5%, SP Regeneration 15% increase",
+                      "effect": "Join a Party\nCharacter can join a party",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Ma x SP +6%, SP Regeneration 18% increase",
+                      "effect": "Enables Use of Kafra Storage\nAllows use of Kafra Storage",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Ma x SP +7%, SP Regeneration 21% increase",
+                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Ma x SP +8%, SP Regeneration 24% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Ma x SP +9%, SP Regeneration 27% increase",
-                      "sp-cost": "0"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "effect": "Ma x SP +10%, SP Regeneration 30% increase",
-                      "sp-cost": "0"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "translated",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 481,
-          "imageFile": "481.png",
-          "name": "Spiritual Thrift",
-          "maxLevel": 5,
-          "prerequisiteText": "Mace Mastery 10,",
-          "group": "",
-          "type": "",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Reduce the amount of SP that is\nconsumed by skills.\nReduction of SP Consumption By Level",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "4%"
-            },
-            {
-              "level": 2,
-              "text": "8%"
-            },
-            {
-              "level": 3,
-              "text": "12%"
-            },
-            {
-              "level": 4,
-              "text": "16%"
-            },
-            {
-              "level": 5,
-              "text": "20%"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "0"
-                },
-                {
-                  "level": 2,
-                  "value": "0"
-                },
-                {
-                  "level": 3,
-                  "value": "0"
-                },
-                {
-                  "level": 4,
-                  "value": "0"
-                },
-                {
-                  "level": 5,
-                  "value": "0"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/481.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/481",
-          "tree": {
-            "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 23,
-                "level": 10,
-                "name": "Demon Bane",
-                "visible": false
-              },
-              {
-                "id": 65,
-                "level": 10,
-                "name": "Mace Mastery",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Levels",
-                "value": "5"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "4%",
-                      "sp-cost": "0"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "8%",
-                      "sp-cost": "0"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "12%",
-                      "sp-cost": "0"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "16%",
-                      "sp-cost": "0"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "20%",
+                      "effect": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes",
                       "sp-cost": "0"
                     }
                   }
@@ -14688,18 +14906,7 @@ export const cardinalData = {
             "entries": [],
             "selectedEntry": null
           }
-        }
-      ]
-    },
-    {
-      "id": "previous-3",
-      "label": "Acolyte",
-      "pointLimit": 49,
-      "tree": {
-        "columns": 9,
-        "rows": 3
-      },
-      "skills": [
+        },
         {
           "id": 24,
           "imageFile": "24.png",
@@ -15348,6 +15555,85 @@ export const cardinalData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "15"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 142,
+          "imageFile": "142.png",
+          "name": "First Aid",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest",
+          "group": "Supportive",
+          "type": "",
+          "target": "Player",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume 3SP to restore 5HP.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/142.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/142",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "3"
                     }
                   }
                 ],
@@ -16523,6 +16809,81 @@ export const cardinalData = {
           "balanceNotes": [],
           "api": {
             "status": "translated",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 143,
+          "imageFile": "143.png",
+          "name": "Play Dead",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest, Novice Only",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/143.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/143",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -20751,6 +21112,13 @@ export const cardinalData = {
               "after": "20",
               "scope": "",
               "source": "Reduces AP consumption from 30 to 20."
+            },
+            {
+              "label": "Damage Property",
+              "before": "holy",
+              "after": "neutral",
+              "scope": "",
+              "source": "Changes damage property from holy to neutral."
             }
           ]
         }

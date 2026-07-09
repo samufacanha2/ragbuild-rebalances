@@ -1,5 +1,5 @@
 export const bioloData = {
-  "generatedAt": "2026-07-08T21:12:53.537Z",
+  "generatedAt": "2026-07-09T03:36:54.971Z",
   "classId": 4259,
   "classSlug": "biolo",
   "className": "Biolo",
@@ -9708,6 +9708,233 @@ export const bioloData = {
           }
         },
         {
+          "id": 478,
+          "imageFile": "478.png",
+          "name": "Aid Condensed Potion",
+          "maxLevel": 10,
+          "prerequisiteText": "Aid Potion 5",
+          "group": "Active",
+          "type": "1 cell on ground",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume one Condensed Potion to\nheal all Party Members within a 7*7 cell area\naround the targeted spot.\nOnly normal type Condensed Potion can be consumed.\nThis skill doesn't get affected by ranker effect.\nPotion Efficiency & Required Condensed Potion",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "110%, [Red]"
+            },
+            {
+              "level": 2,
+              "text": "120%, [Red]"
+            },
+            {
+              "level": 3,
+              "text": "130%, [Red]"
+            },
+            {
+              "level": 4,
+              "text": "140%, [Red]"
+            },
+            {
+              "level": 5,
+              "text": "150%, [Red]"
+            },
+            {
+              "level": 6,
+              "text": "160%, [Yellow]"
+            },
+            {
+              "level": 7,
+              "text": "170%, [Yellow]"
+            },
+            {
+              "level": 8,
+              "text": "180%, [Yellow]"
+            },
+            {
+              "level": 9,
+              "text": "190%, [Yellow]"
+            },
+            {
+              "level": 10,
+              "text": "200%, [White]"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "30"
+                },
+                {
+                  "level": 2,
+                  "value": "30"
+                },
+                {
+                  "level": 3,
+                  "value": "30"
+                },
+                {
+                  "level": 4,
+                  "value": "30"
+                },
+                {
+                  "level": 5,
+                  "value": "30"
+                },
+                {
+                  "level": 6,
+                  "value": "30"
+                },
+                {
+                  "level": 7,
+                  "value": "30"
+                },
+                {
+                  "level": 8,
+                  "value": "30"
+                },
+                {
+                  "level": 9,
+                  "value": "30"
+                },
+                {
+                  "level": 10,
+                  "value": "30"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/478.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/478",
+          "tree": {
+            "idx": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 231,
+                "level": 5,
+                "name": "Aid Potion",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "10"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "110%, [Red]",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "120%, [Red]",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "130%, [Red]",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "140%, [Red]",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "150%, [Red]",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "160%, [Yellow]",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "170%, [Yellow]",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "effect": "180%, [Yellow]",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "190%, [Yellow]",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 10,
+                    "values": {
+                      "effect": "200%, [White]",
+                      "sp-cost": "30"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 235,
           "imageFile": "235.png",
           "name": "Chemical Protection(Shield) (Chemical Protection Shield)",
@@ -10763,6 +10990,263 @@ export const bioloData = {
           }
         },
         {
+          "id": 490,
+          "imageFile": "490.png",
+          "name": "Acid Bomb",
+          "maxLevel": 10,
+          "prerequisiteText": "Demonstration 5, Acid Terror 5",
+          "group": "Active",
+          "type": "Ranged Physical",
+          "target": "Target 1",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Ranged Physical Damage to a target, consumes 1 Fire and Acid Bottle.\nDamage increases based on BaseLv, INT, and target's VIT.\nDeals half of the damage to players\nand adds a chance to break target's weapon and armors based on skill level.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "ATK 200%"
+            },
+            {
+              "level": 2,
+              "text": "ATK 400%"
+            },
+            {
+              "level": 3,
+              "text": "ATK 600%"
+            },
+            {
+              "level": 4,
+              "text": "ATK 800%"
+            },
+            {
+              "level": 5,
+              "text": "ATK 1000%"
+            },
+            {
+              "level": 6,
+              "text": "ATK 1200%"
+            },
+            {
+              "level": 7,
+              "text": "ATK 1400%"
+            },
+            {
+              "level": 8,
+              "text": "ATK 1600%"
+            },
+            {
+              "level": 9,
+              "text": "ATK 1800%"
+            },
+            {
+              "level": 10,
+              "text": "ATK 2000%"
+            }
+          ],
+          "fixedCastTime": "1 second",
+          "variableCastTime": "0 seconds",
+          "castDelay": "1 second",
+          "cooldown": "0.15 seconds",
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "50"
+                },
+                {
+                  "level": 2,
+                  "value": "50"
+                },
+                {
+                  "level": 3,
+                  "value": "50"
+                },
+                {
+                  "level": 4,
+                  "value": "50"
+                },
+                {
+                  "level": 5,
+                  "value": "50"
+                },
+                {
+                  "level": 6,
+                  "value": "50"
+                },
+                {
+                  "level": 7,
+                  "value": "50"
+                },
+                {
+                  "level": 8,
+                  "value": "50"
+                },
+                {
+                  "level": 9,
+                  "value": "50"
+                },
+                {
+                  "level": 10,
+                  "value": "50"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/490.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/490",
+          "tree": {
+            "idx": 23,
+            "row": 2,
+            "col": 5,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 229,
+                "level": 5,
+                "name": "Bomb",
+                "visible": true
+              },
+              {
+                "id": 230,
+                "level": 5,
+                "name": "Acid Terror",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "10"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.15 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Target 1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "base-damage-atk",
+                    "label": "Base Damage (ATK)"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "base-damage-atk": "200%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "base-damage-atk": "400%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "base-damage-atk": "600%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "base-damage-atk": "800%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "base-damage-atk": "1000%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "base-damage-atk": "1200%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "base-damage-atk": "1400%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "base-damage-atk": "1600%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "base-damage-atk": "1800%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 10,
+                    "values": {
+                      "base-damage-atk": "2000%",
+                      "sp-cost": "50"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 234,
           "imageFile": "234.png",
           "name": "Chemical Protection(Weapon) (Chemical Protection Weapon)",
@@ -11242,490 +11726,6 @@ export const bioloData = {
           }
         },
         {
-          "id": 478,
-          "imageFile": "478.png",
-          "name": "Aid Condensed Potion",
-          "maxLevel": 10,
-          "prerequisiteText": "Aid Potion 5",
-          "group": "Active",
-          "type": "1 cell on ground",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Consume one Condensed Potion to\nheal all Party Members within a 7*7 cell area\naround the targeted spot.\nOnly normal type Condensed Potion can be consumed.\nThis skill doesn't get affected by ranker effect.\nPotion Efficiency & Required Condensed Potion",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "110%, [Red]"
-            },
-            {
-              "level": 2,
-              "text": "120%, [Red]"
-            },
-            {
-              "level": 3,
-              "text": "130%, [Red]"
-            },
-            {
-              "level": 4,
-              "text": "140%, [Red]"
-            },
-            {
-              "level": 5,
-              "text": "150%, [Red]"
-            },
-            {
-              "level": 6,
-              "text": "160%, [Yellow]"
-            },
-            {
-              "level": 7,
-              "text": "170%, [Yellow]"
-            },
-            {
-              "level": 8,
-              "text": "180%, [Yellow]"
-            },
-            {
-              "level": 9,
-              "text": "190%, [Yellow]"
-            },
-            {
-              "level": 10,
-              "text": "200%, [White]"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "30"
-                },
-                {
-                  "level": 2,
-                  "value": "30"
-                },
-                {
-                  "level": 3,
-                  "value": "30"
-                },
-                {
-                  "level": 4,
-                  "value": "30"
-                },
-                {
-                  "level": 5,
-                  "value": "30"
-                },
-                {
-                  "level": 6,
-                  "value": "30"
-                },
-                {
-                  "level": 7,
-                  "value": "30"
-                },
-                {
-                  "level": 8,
-                  "value": "30"
-                },
-                {
-                  "level": 9,
-                  "value": "30"
-                },
-                {
-                  "level": 10,
-                  "value": "30"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/478.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/478",
-          "tree": {
-            "idx": 9,
-            "row": 1,
-            "col": 0,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 231,
-                "level": 5,
-                "name": "Aid Potion",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "10"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "110%, [Red]",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "120%, [Red]",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "130%, [Red]",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "140%, [Red]",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "150%, [Red]",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "effect": "160%, [Yellow]",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "effect": "170%, [Yellow]",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "effect": "180%, [Yellow]",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "effect": "190%, [Yellow]",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "effect": "200%, [White]",
-                      "sp-cost": "30"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 490,
-          "imageFile": "490.png",
-          "name": "Acid Bomb",
-          "maxLevel": 10,
-          "prerequisiteText": "Demonstration 5, Acid Terror 5",
-          "group": "Active",
-          "type": "Ranged Physical",
-          "target": "Target 1",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Ranged Physical Damage to a target, consumes 1 Fire and Acid Bottle.\nDamage increases based on BaseLv, INT, and target's VIT.\nDeals half of the damage to players\nand adds a chance to break target's weapon and armors based on skill level.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "ATK 200%"
-            },
-            {
-              "level": 2,
-              "text": "ATK 400%"
-            },
-            {
-              "level": 3,
-              "text": "ATK 600%"
-            },
-            {
-              "level": 4,
-              "text": "ATK 800%"
-            },
-            {
-              "level": 5,
-              "text": "ATK 1000%"
-            },
-            {
-              "level": 6,
-              "text": "ATK 1200%"
-            },
-            {
-              "level": 7,
-              "text": "ATK 1400%"
-            },
-            {
-              "level": 8,
-              "text": "ATK 1600%"
-            },
-            {
-              "level": 9,
-              "text": "ATK 1800%"
-            },
-            {
-              "level": 10,
-              "text": "ATK 2000%"
-            }
-          ],
-          "fixedCastTime": "1 second",
-          "variableCastTime": "0 seconds",
-          "castDelay": "1 second",
-          "cooldown": "0.15 seconds",
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "50"
-                },
-                {
-                  "level": 2,
-                  "value": "50"
-                },
-                {
-                  "level": 3,
-                  "value": "50"
-                },
-                {
-                  "level": 4,
-                  "value": "50"
-                },
-                {
-                  "level": 5,
-                  "value": "50"
-                },
-                {
-                  "level": 6,
-                  "value": "50"
-                },
-                {
-                  "level": 7,
-                  "value": "50"
-                },
-                {
-                  "level": 8,
-                  "value": "50"
-                },
-                {
-                  "level": 9,
-                  "value": "50"
-                },
-                {
-                  "level": 10,
-                  "value": "50"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/490.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/490",
-          "tree": {
-            "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 229,
-                "level": 5,
-                "name": "Bomb",
-                "visible": false
-              },
-              {
-                "id": 230,
-                "level": 5,
-                "name": "Acid Terror",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "10"
-              },
-              {
-                "label": "Fixed Cast Time",
-                "value": "1 second"
-              },
-              {
-                "label": "Variable Cast Time",
-                "value": "0 seconds"
-              },
-              {
-                "label": "Cast Delay",
-                "value": "1 second"
-              },
-              {
-                "label": "Cooldown",
-                "value": "0.15 seconds"
-              },
-              {
-                "label": "Target",
-                "value": "Target 1"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "200%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "400%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "600%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "800%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "1000%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-atk": "1200%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-atk": "1400%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-atk": "1600%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-atk": "1800%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-atk": "2000%",
-                      "sp-cost": "50"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
           "id": 479,
           "imageFile": "479.png",
           "name": "Full Chemical Protection",
@@ -11800,25 +11800,25 @@ export const bioloData = {
                 "id": 234,
                 "level": 5,
                 "name": "Alchemical Weapon",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 235,
                 "level": 5,
                 "name": "Synthesized Shield",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 236,
                 "level": 5,
                 "name": "Synthetic Armor",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 237,
                 "level": 5,
                 "name": "Biochemical Helm",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -11906,6 +11906,206 @@ export const bioloData = {
         "rows": 3
       },
       "skills": [
+        {
+          "id": 1,
+          "imageFile": "1.png",
+          "name": "Basic Skill",
+          "maxLevel": 9,
+          "prerequisiteText": "basic skill",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate."
+            },
+            {
+              "level": 2,
+              "text": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons."
+            },
+            {
+              "level": 3,
+              "text": "Enables Sitting\nSitting doubles HP/SP Recovery Speed.\nPress the Insert key or type /sit."
+            },
+            {
+              "level": 4,
+              "text": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window."
+            },
+            {
+              "level": 5,
+              "text": "Join a Party\nCharacter can join a party."
+            },
+            {
+              "level": 6,
+              "text": "Enables Use of Kafra Storage\nAllows use of Kafra Storage."
+            },
+            {
+              "level": 7,
+              "text": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)."
+            },
+            {
+              "level": 9,
+              "text": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes."
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                },
+                {
+                  "level": 6,
+                  "value": "0"
+                },
+                {
+                  "level": 7,
+                  "value": "0"
+                },
+                {
+                  "level": 8,
+                  "value": "0"
+                },
+                {
+                  "level": 9,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/1.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/1",
+          "tree": {
+            "idx": 0,
+            "row": 0,
+            "col": 0,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "9"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Join a Party\nCharacter can join a party",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Enables Use of Kafra Storage\nAllows use of Kafra Storage",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
         {
           "id": 36,
           "imageFile": "36.png",
@@ -12493,6 +12693,85 @@ export const bioloData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "8"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 142,
+          "imageFile": "142.png",
+          "name": "First Aid",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest",
+          "group": "Supportive",
+          "type": "",
+          "target": "Player",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume 3SP to restore 5HP.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/142.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/142",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "3"
                     }
                   }
                 ],
@@ -13111,6 +13390,81 @@ export const bioloData = {
                     "values": {
                       "sp-cost": "40",
                       "data-1": "658188"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 143,
+          "imageFile": "143.png",
+          "name": "Play Dead",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest, Novice Only",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/143.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/143",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
                     }
                   }
                 ],

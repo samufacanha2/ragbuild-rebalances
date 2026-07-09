@@ -1,5 +1,5 @@
 export const meisterData = {
-  "generatedAt": "2026-07-08T21:12:38.940Z",
+  "generatedAt": "2026-07-09T03:36:38.409Z",
   "classId": 4253,
   "classSlug": "meister",
   "className": "Meister",
@@ -13328,6 +13328,590 @@ export const meisterData = {
           }
         },
         {
+          "id": 387,
+          "imageFile": "387.png",
+          "name": "Cart Boost",
+          "maxLevel": 1,
+          "prerequisiteText": "Push Cart 5, Hilt Binding 1, Cart Revolution, Change Cart",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Increase Movement Speed when\na Pushcart is equipped. Effects which decrease\nMovement Speed cannot interfere with this skill.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "20"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/387.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/387",
+          "tree": {
+            "idx": 21,
+            "row": 2,
+            "col": 3,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 39,
+                "level": 5,
+                "name": "Pushcart",
+                "visible": false
+              },
+              {
+                "id": 105,
+                "level": 1,
+                "name": "Hilt Binding",
+                "visible": true
+              },
+              {
+                "id": 153,
+                "level": 0,
+                "name": "Cart Revolution",
+                "visible": false
+              },
+              {
+                "id": 154,
+                "level": 0,
+                "name": "Change Cart",
+                "visible": false
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "20"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 384,
+          "imageFile": "384.png",
+          "name": "Shattering Strike",
+          "maxLevel": 10,
+          "prerequisiteText": "Skin Tempering 3, Hilt Binding 1,",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "This skill has the chance of\ndestroying an equipped weapon or armor when\nused in PvP zones on other players, or to\ndecrease Attack Power or Defense when used on\nmonsters. This skill's level affects its\nduration and rate of success.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Duration 15 sec"
+            },
+            {
+              "level": 2,
+              "text": "Duration 20 sec"
+            },
+            {
+              "level": 3,
+              "text": "Duration 25 sec"
+            },
+            {
+              "level": 4,
+              "text": "Duration 30 sec"
+            },
+            {
+              "level": 5,
+              "text": "Duration 35 sec"
+            },
+            {
+              "level": 6,
+              "text": "Duration 40 sec"
+            },
+            {
+              "level": 7,
+              "text": "Duration 45 sec"
+            },
+            {
+              "level": 8,
+              "text": "Duration 50 sec"
+            },
+            {
+              "level": 9,
+              "text": "Duration 55 sec"
+            },
+            {
+              "level": 10,
+              "text": "Duration 60 sec"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "50"
+                },
+                {
+                  "level": 2,
+                  "value": "50"
+                },
+                {
+                  "level": 3,
+                  "value": "60"
+                },
+                {
+                  "level": 4,
+                  "value": "60"
+                },
+                {
+                  "level": 5,
+                  "value": "70"
+                },
+                {
+                  "level": 6,
+                  "value": "70"
+                },
+                {
+                  "level": 7,
+                  "value": "80"
+                },
+                {
+                  "level": 8,
+                  "value": "80"
+                },
+                {
+                  "level": 9,
+                  "value": "90"
+                },
+                {
+                  "level": 10,
+                  "value": "90"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/384.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/384",
+          "tree": {
+            "idx": 22,
+            "row": 2,
+            "col": 4,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 105,
+                "level": 1,
+                "name": "Hilt Binding",
+                "visible": true
+              },
+              {
+                "id": 107,
+                "level": 5,
+                "name": "Weaponry Research",
+                "visible": true
+              },
+              {
+                "id": 109,
+                "level": 3,
+                "name": "Skin Tempering",
+                "visible": true
+              },
+              {
+                "id": 113,
+                "level": 3,
+                "name": "Power Thrust",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "10"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Duration 15 sec",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Duration 20 sec",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Duration 25 sec",
+                      "sp-cost": "60"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Duration 30 sec",
+                      "sp-cost": "60"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Duration 35 sec",
+                      "sp-cost": "70"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Duration 40 sec",
+                      "sp-cost": "70"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Duration 45 sec",
+                      "sp-cost": "80"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "effect": "Duration 50 sec",
+                      "sp-cost": "80"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Duration 55 sec",
+                      "sp-cost": "90"
+                    }
+                  },
+                  {
+                    "level": 10,
+                    "values": {
+                      "effect": "Duration 60 sec",
+                      "sp-cost": "90"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 477,
+          "imageFile": "477.png",
+          "name": "Upgrade Weapon",
+          "maxLevel": 10,
+          "prerequisiteText": "Weaponry Research 10",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Refine weapons to increase their\ngrade. Unlike weapon smithing, which is affected\nby DEX or LUK, this skill's success rate is\naffected by the caster's Job Level. Master\nSmiths have about the same rate of success as\nItem Upgrade NPCs at Job Level 50, have a 5%\ngreater chance of success than Item Upgrade\nNPCs at Job Level 60, and have a 10% greater\nchance of success at Job Level 70. If upgrade\nattempt fails, the weapon will be destroyed.\nLvl 1 Weapon Upgrade requires 1 Phracon. Lvl 2\nWeapon Upgrade requires 1 Emveretarcon. Lvl 3-4\nWeapon Upgrade requires 1 Oridecon.\nMaximum Possible Upgrade Limit By Level",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "+1"
+            },
+            {
+              "level": 2,
+              "text": "+2"
+            },
+            {
+              "level": 3,
+              "text": "+3"
+            },
+            {
+              "level": 4,
+              "text": "+4"
+            },
+            {
+              "level": 5,
+              "text": "+5"
+            },
+            {
+              "level": 6,
+              "text": "+6"
+            },
+            {
+              "level": 7,
+              "text": "+7"
+            },
+            {
+              "level": 8,
+              "text": "+8"
+            },
+            {
+              "level": 9,
+              "text": "+9"
+            },
+            {
+              "level": 10,
+              "text": "+10"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "30"
+                },
+                {
+                  "level": 2,
+                  "value": "30"
+                },
+                {
+                  "level": 3,
+                  "value": "30"
+                },
+                {
+                  "level": 4,
+                  "value": "30"
+                },
+                {
+                  "level": 5,
+                  "value": "30"
+                },
+                {
+                  "level": 6,
+                  "value": "30"
+                },
+                {
+                  "level": 7,
+                  "value": "30"
+                },
+                {
+                  "level": 8,
+                  "value": "30"
+                },
+                {
+                  "level": 9,
+                  "value": "30"
+                },
+                {
+                  "level": 10,
+                  "value": "30"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/477.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/477",
+          "tree": {
+            "idx": 23,
+            "row": 2,
+            "col": 5,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 107,
+                "level": 10,
+                "name": "Weaponry Research",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "10"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "+1",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "+2",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "+3",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "+4",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "+5",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "+6",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "+7",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "effect": "+8",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "+9",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 10,
+                    "values": {
+                      "effect": "+10",
+                      "sp-cost": "30"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 114,
           "imageFile": "114.png",
           "name": "Maximize Power",
@@ -13490,6 +14074,162 @@ export const meisterData = {
           }
         },
         {
+          "id": 486,
+          "imageFile": "486.png",
+          "name": "Maximum Power-Thrust",
+          "maxLevel": 5,
+          "prerequisiteText": "Power Thrust 5",
+          "group": "Active",
+          "type": "Buff",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Increase caster's weapon damage by\nspending a certain amount of zeny. Cannot be\nactivated to anyone beside the caster.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Damage : 20%, Zeny Amount : 3000z"
+            },
+            {
+              "level": 2,
+              "text": "Damage : 40%, Zeny Amount : 3500z"
+            },
+            {
+              "level": 3,
+              "text": "Damage : 60% , Zeny Amount : 4000z"
+            },
+            {
+              "level": 4,
+              "text": "Damage : 80% , Zeny Amount : 4500z"
+            },
+            {
+              "level": 5,
+              "text": "Damage :100% , Zeny Amount : 5000z"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "15"
+                },
+                {
+                  "level": 2,
+                  "value": "15"
+                },
+                {
+                  "level": 3,
+                  "value": "15"
+                },
+                {
+                  "level": 4,
+                  "value": "15"
+                },
+                {
+                  "level": 5,
+                  "value": "15"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/486.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/486",
+          "tree": {
+            "idx": 25,
+            "row": 2,
+            "col": 7,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 113,
+                "level": 5,
+                "name": "Power Thrust",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Damage : 20%, Zeny Amount : 3000z",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Damage : 40%, Zeny Amount : 3500z",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Damage : 60% , Zeny Amount : 4000z",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Damage : 80% , Zeny Amount : 4500z",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Damage :100% , Zeny Amount : 5000z",
+                      "sp-cost": "15"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 101,
           "imageFile": "101.png",
           "name": "Smith Axe",
@@ -13596,6 +14336,249 @@ export const meisterData = {
                     "values": {
                       "effect": "success rate: 15%",
                       "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 485,
+          "imageFile": "485.png",
+          "name": "High Speed Cart Ram",
+          "maxLevel": 10,
+          "prerequisiteText": "Mammonite 10, Hammerfall 5, Cart Boost 1",
+          "group": "Active",
+          "type": "Physical Attack",
+          "target": "1 Target",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "This skill is only enabled during\nCart Boost status. Spend a certain amount of\nzeny to smash a Pushcart into an enemy with a\nchance of inflicting the Stun status. The amount\nof this skill's damage is affected by the\nskill's level and the weight of items carried\nin the Pushcart.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Zeny amount 600z , Stun Chance 5%"
+            },
+            {
+              "level": 2,
+              "text": "Zeny amount 700z , Stun Chance 10%"
+            },
+            {
+              "level": 3,
+              "text": "Zeny amount 800z , Stun Chance 15%"
+            },
+            {
+              "level": 4,
+              "text": "Zeny amount 900z , Stun Chance 20%"
+            },
+            {
+              "level": 5,
+              "text": "Zeny amount 1000z , Stun Chance 25%"
+            },
+            {
+              "level": 6,
+              "text": "Zeny amount 1100z , Stun Chance 30%"
+            },
+            {
+              "level": 7,
+              "text": "Zeny amount 1200z , Stun Chance 35%"
+            },
+            {
+              "level": 8,
+              "text": "Zeny amount 1300z , Stun Chance 40%"
+            },
+            {
+              "level": 9,
+              "text": "Zeny amount 1400z , Stun Chance 45%"
+            },
+            {
+              "level": 10,
+              "text": "Zeny amount 1500z , Stun Chance 50%"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "15"
+                },
+                {
+                  "level": 2,
+                  "value": "15"
+                },
+                {
+                  "level": 3,
+                  "value": "15"
+                },
+                {
+                  "level": 4,
+                  "value": "15"
+                },
+                {
+                  "level": 5,
+                  "value": "15"
+                },
+                {
+                  "level": 6,
+                  "value": "15"
+                },
+                {
+                  "level": 7,
+                  "value": "15"
+                },
+                {
+                  "level": 8,
+                  "value": "15"
+                },
+                {
+                  "level": 9,
+                  "value": "15"
+                },
+                {
+                  "level": 10,
+                  "value": "15"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/485.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/485",
+          "tree": {
+            "idx": 28,
+            "row": 3,
+            "col": 1,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 42,
+                "level": 10,
+                "name": "Mammonite",
+                "visible": false
+              },
+              {
+                "id": 110,
+                "level": 5,
+                "name": "Hammerfall",
+                "visible": true
+              },
+              {
+                "id": 387,
+                "level": 1,
+                "name": "Cart Boost",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "10"
+              },
+              {
+                "label": "Target",
+                "value": "1 Target"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Zeny amount 600z , Stun Chance 5%",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Zeny amount 700z , Stun Chance 10%",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Zeny amount 800z , Stun Chance 15%",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Zeny amount 900z , Stun Chance 20%",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Zeny amount 1000z , Stun Chance 25%",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Zeny amount 1100z , Stun Chance 30%",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Zeny amount 1200z , Stun Chance 35%",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "effect": "Zeny amount 1300z , Stun Chance 40%",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Zeny amount 1400z , Stun Chance 45%",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 10,
+                    "values": {
+                      "effect": "Zeny amount 1500z , Stun Chance 50%",
+                      "sp-cost": "15"
                     }
                   }
                 ],
@@ -13846,989 +14829,6 @@ export const meisterData = {
             "entries": [],
             "selectedEntry": null
           }
-        },
-        {
-          "id": 387,
-          "imageFile": "387.png",
-          "name": "Cart Boost",
-          "maxLevel": 1,
-          "prerequisiteText": "Push Cart 5, Hilt Binding 1, Cart Revolution, Change Cart",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Increase Movement Speed when\na Pushcart is equipped. Effects which decrease\nMovement Speed cannot interfere with this skill.",
-          "levelDetails": [],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "20"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/387.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/387",
-          "tree": {
-            "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 39,
-                "level": 5,
-                "name": "Pushcart",
-                "visible": false
-              },
-              {
-                "id": 105,
-                "level": 1,
-                "name": "Hilt Binding",
-                "visible": false
-              },
-              {
-                "id": 153,
-                "level": 0,
-                "name": "Cart Revolution",
-                "visible": false
-              },
-              {
-                "id": 154,
-                "level": 0,
-                "name": "Change Cart",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "1"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "20"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 384,
-          "imageFile": "384.png",
-          "name": "Shattering Strike",
-          "maxLevel": 10,
-          "prerequisiteText": "Skin Tempering 3, Hilt Binding 1,",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "This skill has the chance of\ndestroying an equipped weapon or armor when\nused in PvP zones on other players, or to\ndecrease Attack Power or Defense when used on\nmonsters. This skill's level affects its\nduration and rate of success.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "Duration 15 sec"
-            },
-            {
-              "level": 2,
-              "text": "Duration 20 sec"
-            },
-            {
-              "level": 3,
-              "text": "Duration 25 sec"
-            },
-            {
-              "level": 4,
-              "text": "Duration 30 sec"
-            },
-            {
-              "level": 5,
-              "text": "Duration 35 sec"
-            },
-            {
-              "level": 6,
-              "text": "Duration 40 sec"
-            },
-            {
-              "level": 7,
-              "text": "Duration 45 sec"
-            },
-            {
-              "level": 8,
-              "text": "Duration 50 sec"
-            },
-            {
-              "level": 9,
-              "text": "Duration 55 sec"
-            },
-            {
-              "level": 10,
-              "text": "Duration 60 sec"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "50"
-                },
-                {
-                  "level": 2,
-                  "value": "50"
-                },
-                {
-                  "level": 3,
-                  "value": "60"
-                },
-                {
-                  "level": 4,
-                  "value": "60"
-                },
-                {
-                  "level": 5,
-                  "value": "70"
-                },
-                {
-                  "level": 6,
-                  "value": "70"
-                },
-                {
-                  "level": 7,
-                  "value": "80"
-                },
-                {
-                  "level": 8,
-                  "value": "80"
-                },
-                {
-                  "level": 9,
-                  "value": "90"
-                },
-                {
-                  "level": 10,
-                  "value": "90"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/384.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/384",
-          "tree": {
-            "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 105,
-                "level": 1,
-                "name": "Hilt Binding",
-                "visible": false
-              },
-              {
-                "id": 107,
-                "level": 5,
-                "name": "Weaponry Research",
-                "visible": false
-              },
-              {
-                "id": 109,
-                "level": 3,
-                "name": "Skin Tempering",
-                "visible": false
-              },
-              {
-                "id": 113,
-                "level": 3,
-                "name": "Power Thrust",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "10"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "Duration 15 sec",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "Duration 20 sec",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "Duration 25 sec",
-                      "sp-cost": "60"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "Duration 30 sec",
-                      "sp-cost": "60"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "Duration 35 sec",
-                      "sp-cost": "70"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "effect": "Duration 40 sec",
-                      "sp-cost": "70"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "effect": "Duration 45 sec",
-                      "sp-cost": "80"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "effect": "Duration 50 sec",
-                      "sp-cost": "80"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "effect": "Duration 55 sec",
-                      "sp-cost": "90"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "effect": "Duration 60 sec",
-                      "sp-cost": "90"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 477,
-          "imageFile": "477.png",
-          "name": "Upgrade Weapon",
-          "maxLevel": 10,
-          "prerequisiteText": "Weaponry Research 10",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Refine weapons to increase their\ngrade. Unlike weapon smithing, which is affected\nby DEX or LUK, this skill's success rate is\naffected by the caster's Job Level. Master\nSmiths have about the same rate of success as\nItem Upgrade NPCs at Job Level 50, have a 5%\ngreater chance of success than Item Upgrade\nNPCs at Job Level 60, and have a 10% greater\nchance of success at Job Level 70. If upgrade\nattempt fails, the weapon will be destroyed.\nLvl 1 Weapon Upgrade requires 1 Phracon. Lvl 2\nWeapon Upgrade requires 1 Emveretarcon. Lvl 3-4\nWeapon Upgrade requires 1 Oridecon.\nMaximum Possible Upgrade Limit By Level",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "+1"
-            },
-            {
-              "level": 2,
-              "text": "+2"
-            },
-            {
-              "level": 3,
-              "text": "+3"
-            },
-            {
-              "level": 4,
-              "text": "+4"
-            },
-            {
-              "level": 5,
-              "text": "+5"
-            },
-            {
-              "level": 6,
-              "text": "+6"
-            },
-            {
-              "level": 7,
-              "text": "+7"
-            },
-            {
-              "level": 8,
-              "text": "+8"
-            },
-            {
-              "level": 9,
-              "text": "+9"
-            },
-            {
-              "level": 10,
-              "text": "+10"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "30"
-                },
-                {
-                  "level": 2,
-                  "value": "30"
-                },
-                {
-                  "level": 3,
-                  "value": "30"
-                },
-                {
-                  "level": 4,
-                  "value": "30"
-                },
-                {
-                  "level": 5,
-                  "value": "30"
-                },
-                {
-                  "level": 6,
-                  "value": "30"
-                },
-                {
-                  "level": 7,
-                  "value": "30"
-                },
-                {
-                  "level": 8,
-                  "value": "30"
-                },
-                {
-                  "level": 9,
-                  "value": "30"
-                },
-                {
-                  "level": 10,
-                  "value": "30"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/477.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/477",
-          "tree": {
-            "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 107,
-                "level": 10,
-                "name": "Weaponry Research",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "10"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "+1",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "+2",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "+3",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "+4",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "+5",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "effect": "+6",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "effect": "+7",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "effect": "+8",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "effect": "+9",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "effect": "+10",
-                      "sp-cost": "30"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 486,
-          "imageFile": "486.png",
-          "name": "Maximum Power-Thrust",
-          "maxLevel": 5,
-          "prerequisiteText": "Power Thrust 5",
-          "group": "Active",
-          "type": "Buff",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Increase caster's weapon damage by\nspending a certain amount of zeny. Cannot be\nactivated to anyone beside the caster.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "Damage : 20%, Zeny Amount : 3000z"
-            },
-            {
-              "level": 2,
-              "text": "Damage : 40%, Zeny Amount : 3500z"
-            },
-            {
-              "level": 3,
-              "text": "Damage : 60% , Zeny Amount : 4000z"
-            },
-            {
-              "level": 4,
-              "text": "Damage : 80% , Zeny Amount : 4500z"
-            },
-            {
-              "level": 5,
-              "text": "Damage :100% , Zeny Amount : 5000z"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "15"
-                },
-                {
-                  "level": 2,
-                  "value": "15"
-                },
-                {
-                  "level": 3,
-                  "value": "15"
-                },
-                {
-                  "level": 4,
-                  "value": "15"
-                },
-                {
-                  "level": 5,
-                  "value": "15"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/486.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/486",
-          "tree": {
-            "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 113,
-                "level": 5,
-                "name": "Power Thrust",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "Damage : 20%, Zeny Amount : 3000z",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "Damage : 40%, Zeny Amount : 3500z",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "Damage : 60% , Zeny Amount : 4000z",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "Damage : 80% , Zeny Amount : 4500z",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "Damage :100% , Zeny Amount : 5000z",
-                      "sp-cost": "15"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 485,
-          "imageFile": "485.png",
-          "name": "High Speed Cart Ram",
-          "maxLevel": 10,
-          "prerequisiteText": "Mammonite 10, Hammerfall 5, Cart Boost 1",
-          "group": "Active",
-          "type": "Physical Attack",
-          "target": "1 Target",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "This skill is only enabled during\nCart Boost status. Spend a certain amount of\nzeny to smash a Pushcart into an enemy with a\nchance of inflicting the Stun status. The amount\nof this skill's damage is affected by the\nskill's level and the weight of items carried\nin the Pushcart.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "Zeny amount 600z , Stun Chance 5%"
-            },
-            {
-              "level": 2,
-              "text": "Zeny amount 700z , Stun Chance 10%"
-            },
-            {
-              "level": 3,
-              "text": "Zeny amount 800z , Stun Chance 15%"
-            },
-            {
-              "level": 4,
-              "text": "Zeny amount 900z , Stun Chance 20%"
-            },
-            {
-              "level": 5,
-              "text": "Zeny amount 1000z , Stun Chance 25%"
-            },
-            {
-              "level": 6,
-              "text": "Zeny amount 1100z , Stun Chance 30%"
-            },
-            {
-              "level": 7,
-              "text": "Zeny amount 1200z , Stun Chance 35%"
-            },
-            {
-              "level": 8,
-              "text": "Zeny amount 1300z , Stun Chance 40%"
-            },
-            {
-              "level": 9,
-              "text": "Zeny amount 1400z , Stun Chance 45%"
-            },
-            {
-              "level": 10,
-              "text": "Zeny amount 1500z , Stun Chance 50%"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "15"
-                },
-                {
-                  "level": 2,
-                  "value": "15"
-                },
-                {
-                  "level": 3,
-                  "value": "15"
-                },
-                {
-                  "level": 4,
-                  "value": "15"
-                },
-                {
-                  "level": 5,
-                  "value": "15"
-                },
-                {
-                  "level": 6,
-                  "value": "15"
-                },
-                {
-                  "level": 7,
-                  "value": "15"
-                },
-                {
-                  "level": 8,
-                  "value": "15"
-                },
-                {
-                  "level": 9,
-                  "value": "15"
-                },
-                {
-                  "level": 10,
-                  "value": "15"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/485.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/485",
-          "tree": {
-            "idx": 28,
-            "row": 3,
-            "col": 1,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 42,
-                "level": 10,
-                "name": "Mammonite",
-                "visible": false
-              },
-              {
-                "id": 110,
-                "level": 5,
-                "name": "Hammerfall",
-                "visible": false
-              },
-              {
-                "id": 387,
-                "level": 1,
-                "name": "Cart Boost",
-                "visible": true
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "10"
-              },
-              {
-                "label": "Target",
-                "value": "1 Target"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "Zeny amount 600z , Stun Chance 5%",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "Zeny amount 700z , Stun Chance 10%",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "Zeny amount 800z , Stun Chance 15%",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "Zeny amount 900z , Stun Chance 20%",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "Zeny amount 1000z , Stun Chance 25%",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "effect": "Zeny amount 1100z , Stun Chance 30%",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "effect": "Zeny amount 1200z , Stun Chance 35%",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "effect": "Zeny amount 1300z , Stun Chance 40%",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "effect": "Zeny amount 1400z , Stun Chance 45%",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "effect": "Zeny amount 1500z , Stun Chance 50%",
-                      "sp-cost": "15"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
         }
       ]
     },
@@ -14841,6 +14841,206 @@ export const meisterData = {
         "rows": 3
       },
       "skills": [
+        {
+          "id": 1,
+          "imageFile": "1.png",
+          "name": "Basic Skill",
+          "maxLevel": 9,
+          "prerequisiteText": "basic skill",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate."
+            },
+            {
+              "level": 2,
+              "text": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons."
+            },
+            {
+              "level": 3,
+              "text": "Enables Sitting\nSitting doubles HP/SP Recovery Speed.\nPress the Insert key or type /sit."
+            },
+            {
+              "level": 4,
+              "text": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window."
+            },
+            {
+              "level": 5,
+              "text": "Join a Party\nCharacter can join a party."
+            },
+            {
+              "level": 6,
+              "text": "Enables Use of Kafra Storage\nAllows use of Kafra Storage."
+            },
+            {
+              "level": 7,
+              "text": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)."
+            },
+            {
+              "level": 9,
+              "text": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes."
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                },
+                {
+                  "level": 6,
+                  "value": "0"
+                },
+                {
+                  "level": 7,
+                  "value": "0"
+                },
+                {
+                  "level": 8,
+                  "value": "0"
+                },
+                {
+                  "level": 9,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/1.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/1",
+          "tree": {
+            "idx": 0,
+            "row": 0,
+            "col": 0,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "9"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Join a Party\nCharacter can join a party",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Enables Use of Kafra Storage\nAllows use of Kafra Storage",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
         {
           "id": 36,
           "imageFile": "36.png",
@@ -15428,6 +15628,85 @@ export const meisterData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "8"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 142,
+          "imageFile": "142.png",
+          "name": "First Aid",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest",
+          "group": "Supportive",
+          "type": "",
+          "target": "Player",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume 3SP to restore 5HP.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/142.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/142",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "3"
                     }
                   }
                 ],
@@ -16046,6 +16325,81 @@ export const meisterData = {
                     "values": {
                       "sp-cost": "40",
                       "data-1": "658188"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 143,
+          "imageFile": "143.png",
+          "name": "Play Dead",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest, Novice Only",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/143.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/143",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
                     }
                   }
                 ],

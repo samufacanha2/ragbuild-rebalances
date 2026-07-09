@@ -1,5 +1,5 @@
 export const abyssChaserData = {
-  "generatedAt": "2026-07-08T21:13:35.449Z",
+  "generatedAt": "2026-07-09T03:37:26.616Z",
   "classId": 4260,
   "classSlug": "abyss-chaser",
   "className": "Abyss Chaser",
@@ -2791,6 +2791,13 @@ export const abyssChaserData = {
                   "after": "3750%Atk",
                   "scope": "Lv 10",
                   "source": "Reduces base damage from 5850%Atk to 3750%Atk based on level 10."
+                },
+                {
+                  "label": "Damage Logic",
+                  "before": "5 split hits",
+                  "after": "5 cumulative hits",
+                  "scope": "",
+                  "source": "Changes damage logic from 5 split hits to 5 cumulative hits."
                 }
               ]
             },
@@ -4375,6 +4382,13 @@ export const abyssChaserData = {
                   "after": "10",
                   "scope": "",
                   "source": "Reduces AP consumption from 15 to 10."
+                },
+                {
+                  "label": "Damage Property",
+                  "before": "neutral",
+                  "after": "fire",
+                  "scope": "",
+                  "source": "Changes damage property from neutral to fire."
                 },
                 {
                   "label": "Damage",
@@ -12199,6 +12213,168 @@ export const abyssChaserData = {
           }
         },
         {
+          "id": 389,
+          "imageFile": "389.png",
+          "name": "Stealth",
+          "maxLevel": 5,
+          "prerequisiteText": "Hiding 5, Stalk 3",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Enter a special Hiding status in\nwhich caster can move without being detected by\nskills such as Improve Concentration, Sight or\nRuwach. However, the caster will leave\nfootprints and can be damaged by skills that\ntarget the ground. Ineffective against Insect,\nDevil and Boss monsters. During WoE (Guild War),\nthis skill will consume 5 times as much SP.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "12 SP/10 sec 70% Movement Speed\n+1 STR added after 1st 10 sec"
+            },
+            {
+              "level": 2,
+              "text": "14 SP/10 sec 75% Movement Speed\n+2 STR added after 1st 10 sec"
+            },
+            {
+              "level": 3,
+              "text": "16 SP/10 sec 80% Movement Speed\n+4 STR added after 1st 10 sec"
+            },
+            {
+              "level": 4,
+              "text": "18 SP/10 sec 85% Movement Speed\n+8 STR added after 1st 10 sec"
+            },
+            {
+              "level": 5,
+              "text": "20 SP/10 sec 90% Movement Speed\n+16 STR added after 1st 10 sec"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "10"
+                },
+                {
+                  "level": 2,
+                  "value": "10"
+                },
+                {
+                  "level": 3,
+                  "value": "10"
+                },
+                {
+                  "level": 4,
+                  "value": "10"
+                },
+                {
+                  "level": 5,
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/389.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/389",
+          "tree": {
+            "idx": 8,
+            "row": 0,
+            "col": 8,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 51,
+                "level": 5,
+                "name": "Hiding",
+                "visible": false
+              },
+              {
+                "id": 213,
+                "level": 3,
+                "name": "Stalk",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "12 SP/10 sec 70% Movement Speed\n+1 STR added after 1st 10 sec",
+                      "sp-cost": "10"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "14 SP/10 sec 75% Movement Speed\n+2 STR added after 1st 10 sec",
+                      "sp-cost": "10"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "16 SP/10 sec 80% Movement Speed\n+4 STR added after 1st 10 sec",
+                      "sp-cost": "10"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "18 SP/10 sec 85% Movement Speed\n+8 STR added after 1st 10 sec",
+                      "sp-cost": "10"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "20 SP/10 sec 90% Movement Speed\n+16 STR added after 1st 10 sec",
+                      "sp-cost": "10"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 211,
           "imageFile": "211.png",
           "name": "Steal Coin",
@@ -14138,6 +14314,311 @@ export const abyssChaserData = {
           }
         },
         {
+          "id": 476,
+          "imageFile": "476.png",
+          "name": "Full Divestment",
+          "maxLevel": 5,
+          "prerequisiteText": "Divest Weapon 5",
+          "group": "",
+          "type": "Debuff",
+          "target": "1 Target",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Cast all four Divest skills at the\nsame time. This skill's success rate increases\nif the caster has higher DEX than the skill's\ntarget.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "7% Success Rate"
+            },
+            {
+              "level": 2,
+              "text": "9% Success Rate"
+            },
+            {
+              "level": 3,
+              "text": "11% Success Rate"
+            },
+            {
+              "level": 4,
+              "text": "13% Success Rate"
+            },
+            {
+              "level": 5,
+              "text": "15% Success Rate"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "22"
+                },
+                {
+                  "level": 2,
+                  "value": "24"
+                },
+                {
+                  "level": 3,
+                  "value": "26"
+                },
+                {
+                  "level": 4,
+                  "value": "28"
+                },
+                {
+                  "level": 5,
+                  "value": "30"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/476.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/476",
+          "tree": {
+            "idx": 30,
+            "row": 3,
+            "col": 3,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 215,
+                "level": 5,
+                "name": "Divest Weapon",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Debuff"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Target",
+                "value": "1 Target"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "7% Success Rate",
+                      "sp-cost": "22"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "9% Success Rate",
+                      "sp-cost": "24"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "11% Success Rate",
+                      "sp-cost": "26"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "13% Success Rate",
+                      "sp-cost": "28"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "15% Success Rate",
+                      "sp-cost": "30"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 390,
+          "imageFile": "390.png",
+          "name": "Counter Instinct",
+          "maxLevel": 5,
+          "prerequisiteText": "basic skill",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "If an enemy is using a Sword Class\nWeapon, activating this skill can deflect\nattacks, reducing damage from Swords by half.\nA total of 3 attacks can be deflected after\nthis skill is cast. On monsters, the damage\nthat is deflected will be directed back at the\nmonster.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "15% Deflect Sword Attack Success"
+            },
+            {
+              "level": 2,
+              "text": "30% Deflect Sword Attack Success"
+            },
+            {
+              "level": 3,
+              "text": "45% Deflect Sword Attack Success"
+            },
+            {
+              "level": 4,
+              "text": "60% Deflect Sword Attack Success"
+            },
+            {
+              "level": 5,
+              "text": "75% Deflect Sword Attack Success"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "10"
+                },
+                {
+                  "level": 2,
+                  "value": "15"
+                },
+                {
+                  "level": 3,
+                  "value": "20"
+                },
+                {
+                  "level": 4,
+                  "value": "25"
+                },
+                {
+                  "level": 5,
+                  "value": "30"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/390.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/390",
+          "tree": {
+            "idx": 31,
+            "row": 3,
+            "col": 4,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "15% Deflect Sword Attack Success",
+                      "sp-cost": "10"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "30% Deflect Sword Attack Success",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "45% Deflect Sword Attack Success",
+                      "sp-cost": "20"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "60% Deflect Sword Attack Success",
+                      "sp-cost": "25"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "75% Deflect Sword Attack Success",
+                      "sp-cost": "30"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 220,
           "imageFile": "220.png",
           "name": "Graffiti",
@@ -14454,473 +14935,6 @@ export const abyssChaserData = {
           }
         },
         {
-          "id": 389,
-          "imageFile": "389.png",
-          "name": "Stealth",
-          "maxLevel": 5,
-          "prerequisiteText": "Hiding 5, Stalk 3",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Enter a special Hiding status in\nwhich caster can move without being detected by\nskills such as Improve Concentration, Sight or\nRuwach. However, the caster will leave\nfootprints and can be damaged by skills that\ntarget the ground. Ineffective against Insect,\nDevil and Boss monsters. During WoE (Guild War),\nthis skill will consume 5 times as much SP.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "12 SP/10 sec 70% Movement Speed\n+1 STR added after 1st 10 sec"
-            },
-            {
-              "level": 2,
-              "text": "14 SP/10 sec 75% Movement Speed\n+2 STR added after 1st 10 sec"
-            },
-            {
-              "level": 3,
-              "text": "16 SP/10 sec 80% Movement Speed\n+4 STR added after 1st 10 sec"
-            },
-            {
-              "level": 4,
-              "text": "18 SP/10 sec 85% Movement Speed\n+8 STR added after 1st 10 sec"
-            },
-            {
-              "level": 5,
-              "text": "20 SP/10 sec 90% Movement Speed\n+16 STR added after 1st 10 sec"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "10"
-                },
-                {
-                  "level": 2,
-                  "value": "10"
-                },
-                {
-                  "level": 3,
-                  "value": "10"
-                },
-                {
-                  "level": 4,
-                  "value": "10"
-                },
-                {
-                  "level": 5,
-                  "value": "10"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/389.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/389",
-          "tree": {
-            "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 51,
-                "level": 5,
-                "name": "Hiding",
-                "visible": false
-              },
-              {
-                "id": 213,
-                "level": 3,
-                "name": "Stalk",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "12 SP/10 sec 70% Movement Speed\n+1 STR added after 1st 10 sec",
-                      "sp-cost": "10"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "14 SP/10 sec 75% Movement Speed\n+2 STR added after 1st 10 sec",
-                      "sp-cost": "10"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "16 SP/10 sec 80% Movement Speed\n+4 STR added after 1st 10 sec",
-                      "sp-cost": "10"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "18 SP/10 sec 85% Movement Speed\n+8 STR added after 1st 10 sec",
-                      "sp-cost": "10"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "20 SP/10 sec 90% Movement Speed\n+16 STR added after 1st 10 sec",
-                      "sp-cost": "10"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 476,
-          "imageFile": "476.png",
-          "name": "Full Divestment",
-          "maxLevel": 5,
-          "prerequisiteText": "Divest Weapon 5",
-          "group": "",
-          "type": "Debuff",
-          "target": "1 Target",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Cast all four Divest skills at the\nsame time. This skill's success rate increases\nif the caster has higher DEX than the skill's\ntarget.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "7% Success Rate"
-            },
-            {
-              "level": 2,
-              "text": "9% Success Rate"
-            },
-            {
-              "level": 3,
-              "text": "11% Success Rate"
-            },
-            {
-              "level": 4,
-              "text": "13% Success Rate"
-            },
-            {
-              "level": 5,
-              "text": "15% Success Rate"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "22"
-                },
-                {
-                  "level": 2,
-                  "value": "24"
-                },
-                {
-                  "level": 3,
-                  "value": "26"
-                },
-                {
-                  "level": 4,
-                  "value": "28"
-                },
-                {
-                  "level": 5,
-                  "value": "30"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/476.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/476",
-          "tree": {
-            "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 215,
-                "level": 5,
-                "name": "Divest Weapon",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Debuff"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Target",
-                "value": "1 Target"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "7% Success Rate",
-                      "sp-cost": "22"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "9% Success Rate",
-                      "sp-cost": "24"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "11% Success Rate",
-                      "sp-cost": "26"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "13% Success Rate",
-                      "sp-cost": "28"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "15% Success Rate",
-                      "sp-cost": "30"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 390,
-          "imageFile": "390.png",
-          "name": "Counter Instinct",
-          "maxLevel": 5,
-          "prerequisiteText": "basic skill",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "If an enemy is using a Sword Class\nWeapon, activating this skill can deflect\nattacks, reducing damage from Swords by half.\nA total of 3 attacks can be deflected after\nthis skill is cast. On monsters, the damage\nthat is deflected will be directed back at the\nmonster.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "15% Deflect Sword Attack Success"
-            },
-            {
-              "level": 2,
-              "text": "30% Deflect Sword Attack Success"
-            },
-            {
-              "level": 3,
-              "text": "45% Deflect Sword Attack Success"
-            },
-            {
-              "level": 4,
-              "text": "60% Deflect Sword Attack Success"
-            },
-            {
-              "level": 5,
-              "text": "75% Deflect Sword Attack Success"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "10"
-                },
-                {
-                  "level": 2,
-                  "value": "15"
-                },
-                {
-                  "level": 3,
-                  "value": "20"
-                },
-                {
-                  "level": 4,
-                  "value": "25"
-                },
-                {
-                  "level": 5,
-                  "value": "30"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/390.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/390",
-          "tree": {
-            "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
-            "requirements": []
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "15% Deflect Sword Attack Success",
-                      "sp-cost": "10"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "30% Deflect Sword Attack Success",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "45% Deflect Sword Attack Success",
-                      "sp-cost": "20"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "60% Deflect Sword Attack Success",
-                      "sp-cost": "25"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "75% Deflect Sword Attack Success",
-                      "sp-cost": "30"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
           "id": 475,
           "imageFile": "475.png",
           "name": "Preserve",
@@ -14958,7 +14972,7 @@ export const abyssChaserData = {
                 "id": 225,
                 "level": 10,
                 "name": "Intimidate",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -15017,6 +15031,206 @@ export const abyssChaserData = {
         "rows": 2
       },
       "skills": [
+        {
+          "id": 1,
+          "imageFile": "1.png",
+          "name": "Basic Skill",
+          "maxLevel": 9,
+          "prerequisiteText": "basic skill",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate."
+            },
+            {
+              "level": 2,
+              "text": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons."
+            },
+            {
+              "level": 3,
+              "text": "Enables Sitting\nSitting doubles HP/SP Recovery Speed.\nPress the Insert key or type /sit."
+            },
+            {
+              "level": 4,
+              "text": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window."
+            },
+            {
+              "level": 5,
+              "text": "Join a Party\nCharacter can join a party."
+            },
+            {
+              "level": 6,
+              "text": "Enables Use of Kafra Storage\nAllows use of Kafra Storage."
+            },
+            {
+              "level": 7,
+              "text": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)."
+            },
+            {
+              "level": 9,
+              "text": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes."
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                },
+                {
+                  "level": 6,
+                  "value": "0"
+                },
+                {
+                  "level": 7,
+                  "value": "0"
+                },
+                {
+                  "level": 8,
+                  "value": "0"
+                },
+                {
+                  "level": 9,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/1.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/1",
+          "tree": {
+            "idx": 0,
+            "row": 0,
+            "col": 0,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "9"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Join a Party\nCharacter can join a party",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Enables Use of Kafra Storage\nAllows use of Kafra Storage",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
         {
           "id": 48,
           "imageFile": "48.png",
@@ -15844,6 +16058,85 @@ export const abyssChaserData = {
           }
         },
         {
+          "id": 142,
+          "imageFile": "142.png",
+          "name": "First Aid",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest",
+          "group": "Supportive",
+          "type": "",
+          "target": "Player",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume 3SP to restore 5HP.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/142.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/142",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "3"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 49,
           "imageFile": "49.png",
           "name": "Improve Dodge",
@@ -16555,6 +16848,81 @@ export const abyssChaserData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "2"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 143,
+          "imageFile": "143.png",
+          "name": "Play Dead",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest, Novice Only",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/143.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/143",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
                     }
                   }
                 ],
@@ -18947,6 +19315,13 @@ export const abyssChaserData = {
               "after": "3750%Atk",
               "scope": "Lv 10",
               "source": "Reduces base damage from 5850%Atk to 3750%Atk based on level 10."
+            },
+            {
+              "label": "Damage Logic",
+              "before": "5 split hits",
+              "after": "5 cumulative hits",
+              "scope": "",
+              "source": "Changes damage logic from 5 split hits to 5 cumulative hits."
             }
           ]
         },
@@ -20531,6 +20906,13 @@ export const abyssChaserData = {
               "after": "10",
               "scope": "",
               "source": "Reduces AP consumption from 15 to 10."
+            },
+            {
+              "label": "Damage Property",
+              "before": "neutral",
+              "after": "fire",
+              "scope": "",
+              "source": "Changes damage property from neutral to fire."
             },
             {
               "label": "Damage",

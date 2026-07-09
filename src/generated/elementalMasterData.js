@@ -1,5 +1,5 @@
 export const elementalMasterData = {
-  "generatedAt": "2026-07-08T21:14:29.042Z",
+  "generatedAt": "2026-07-09T03:38:07.900Z",
   "classId": 4261,
   "classSlug": "elemental-master",
   "className": "Elemental Master",
@@ -12973,6 +12973,88 @@ export const elementalMasterData = {
           }
         },
         {
+          "id": 405,
+          "imageFile": "405.png",
+          "name": "Fiber Lock",
+          "maxLevel": 1,
+          "prerequisiteText": "Dragonology 4",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Shoot a spider web that will bind\nand immobilize a target, and decrease its Flee\nRate by half for 8 seconds. Fire property\nattacks will cause 2.5 times more damage on\nFiber Locked targets and cancel the Fiber\nLocked status. A Maximum of 2 Spider Webs can\nbe shot at once. Each cast requires 1 Cobweb.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "30"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/405.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/405",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 284,
+                "level": 4,
+                "name": "Dragonology",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "30"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 90,
           "imageFile": "90.png",
           "name": "Earth Spike",
@@ -14026,6 +14108,98 @@ export const elementalMasterData = {
           }
         },
         {
+          "id": 374,
+          "imageFile": "374.png",
+          "name": "Soul Exhale",
+          "maxLevel": 1,
+          "prerequisiteText": "Magic Rod 3, Spell Breaker 2",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "1 Target",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Exchange caster's remaining SP with\ntarget's remaining SP. The SP that the caster\nreceives cannot exceed the caster's MaxSP limit.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/374.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/374",
+          "tree": {
+            "idx": 21,
+            "row": 2,
+            "col": 3,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 276,
+                "level": 3,
+                "name": "Magic Rod",
+                "visible": true
+              },
+              {
+                "id": 277,
+                "level": 2,
+                "name": "Spell Breaker",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "1 Target"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 91,
           "imageFile": "91.png",
           "name": "Heaven's Drive",
@@ -14580,6 +14754,94 @@ export const elementalMasterData = {
           }
         },
         {
+          "id": 404,
+          "imageFile": "404.png",
+          "name": "Blinding Mist",
+          "maxLevel": 1,
+          "prerequisiteText": "Whirlwind 2, Deluge 2",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Create a wall of fog in a 5*3 cell\narea that will cause the Blind status on players\nand monsters. All long ranged attacks targeted\nat players within the skill's range will have\na greater chance of missing and have reduced\ndamage. Negative effects only apply to monsters\nin normal fields, but will also apply to players\nin PvP zones.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "25"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/404.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/404",
+          "tree": {
+            "idx": 25,
+            "row": 2,
+            "col": 7,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 286,
+                "level": 2,
+                "name": "Deluge",
+                "visible": true
+              },
+              {
+                "id": 287,
+                "level": 2,
+                "name": "Whirlwind",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "25"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 288,
           "imageFile": "288.png",
           "name": "Land Protector",
@@ -14744,456 +15006,6 @@ export const elementalMasterData = {
           }
         },
         {
-          "id": 290,
-          "imageFile": "290.png",
-          "name": "Hocus Pocus",
-          "maxLevel": 10,
-          "prerequisiteText": "Auto Spell 5, Dispell 1, Land Protector 1",
-          "group": "Active",
-          "type": "???",
-          "target": "???",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Casts a random skill among character, monster, and a few exclusive skills. Each cast consumes two Yellow Gemstones and SP50\nSkill Level affects the variety of skills that can be cast, and the level of the randomly selected skill if applicable.\nEven if there is an effect of nullifying the gemstone consumption, at least one yellow gemstone is consumed.",
-          "levelDetails": [],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "50"
-                },
-                {
-                  "level": 2,
-                  "value": "50"
-                },
-                {
-                  "level": 3,
-                  "value": "50"
-                },
-                {
-                  "level": 4,
-                  "value": "50"
-                },
-                {
-                  "level": 5,
-                  "value": "50"
-                },
-                {
-                  "level": 6,
-                  "value": "50"
-                },
-                {
-                  "level": 7,
-                  "value": "50"
-                },
-                {
-                  "level": 8,
-                  "value": "50"
-                },
-                {
-                  "level": 9,
-                  "value": "50"
-                },
-                {
-                  "level": 10,
-                  "value": "50"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/290.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/290",
-          "tree": {
-            "idx": 33,
-            "row": 3,
-            "col": 6,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 279,
-                "level": 5,
-                "name": "Hindsight",
-                "visible": true
-              },
-              {
-                "id": 288,
-                "level": 1,
-                "name": "Land Protector",
-                "visible": true
-              },
-              {
-                "id": 289,
-                "level": 1,
-                "name": "Dispell",
-                "visible": true
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "10"
-              },
-              {
-                "label": "Target",
-                "value": "???"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "sp-cost": "50"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 405,
-          "imageFile": "405.png",
-          "name": "Fiber Lock",
-          "maxLevel": 1,
-          "prerequisiteText": "Dragonology 4",
-          "group": "Supportive",
-          "type": "",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Shoot a spider web that will bind\nand immobilize a target, and decrease its Flee\nRate by half for 8 seconds. Fire property\nattacks will cause 2.5 times more damage on\nFiber Locked targets and cancel the Fiber\nLocked status. A Maximum of 2 Spider Webs can\nbe shot at once. Each cast requires 1 Cobweb.",
-          "levelDetails": [],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "30"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/405.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/405",
-          "tree": {
-            "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 284,
-                "level": 4,
-                "name": "Dragonology",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Supportive Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "1"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "30"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 374,
-          "imageFile": "374.png",
-          "name": "Soul Exhale",
-          "maxLevel": 1,
-          "prerequisiteText": "Magic Rod 3, Spell Breaker 2",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "1 Target",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Exchange caster's remaining SP with\ntarget's remaining SP. The SP that the caster\nreceives cannot exceed the caster's MaxSP limit.",
-          "levelDetails": [],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "5"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/374.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/374",
-          "tree": {
-            "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 276,
-                "level": 3,
-                "name": "Magic Rod",
-                "visible": false
-              },
-              {
-                "id": 277,
-                "level": 2,
-                "name": "Spell Breaker",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "1"
-              },
-              {
-                "label": "Target",
-                "value": "1 Target"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "5"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 404,
-          "imageFile": "404.png",
-          "name": "Blinding Mist",
-          "maxLevel": 1,
-          "prerequisiteText": "Whirlwind 2, Deluge 2",
-          "group": "Supportive",
-          "type": "",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Create a wall of fog in a 5*3 cell\narea that will cause the Blind status on players\nand monsters. All long ranged attacks targeted\nat players within the skill's range will have\na greater chance of missing and have reduced\ndamage. Negative effects only apply to monsters\nin normal fields, but will also apply to players\nin PvP zones.",
-          "levelDetails": [],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "25"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/404.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/404",
-          "tree": {
-            "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 286,
-                "level": 2,
-                "name": "Deluge",
-                "visible": false
-              },
-              {
-                "id": 287,
-                "level": 2,
-                "name": "Whirlwind",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Supportive Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "1"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "25"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
           "id": 373,
           "imageFile": "373.png",
           "name": "Indulge",
@@ -15278,7 +15090,7 @@ export const elementalMasterData = {
                 "id": 276,
                 "level": 1,
                 "name": "Magic Rod",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -15450,7 +15262,7 @@ export const elementalMasterData = {
                 "id": 279,
                 "level": 1,
                 "name": "Hindsight",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -15565,19 +15377,19 @@ export const elementalMasterData = {
                 "id": 274,
                 "level": 5,
                 "name": "Study",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 278,
                 "level": 5,
                 "name": "Free Cast",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 279,
                 "level": 1,
                 "name": "Hindsight",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -15712,19 +15524,19 @@ export const elementalMasterData = {
                 "id": 275,
                 "level": 5,
                 "name": "Cast Cancel",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 276,
                 "level": 3,
                 "name": "Magic Rod",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 289,
                 "level": 3,
                 "name": "Dispell",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -15978,18 +15790,406 @@ export const elementalMasterData = {
             "entries": [],
             "selectedEntry": null
           }
+        },
+        {
+          "id": 290,
+          "imageFile": "290.png",
+          "name": "Hocus Pocus",
+          "maxLevel": 10,
+          "prerequisiteText": "Auto Spell 5, Dispell 1, Land Protector 1",
+          "group": "Active",
+          "type": "???",
+          "target": "???",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Casts a random skill among character, monster, and a few exclusive skills. Each cast consumes two Yellow Gemstones and SP50\nSkill Level affects the variety of skills that can be cast, and the level of the randomly selected skill if applicable.\nEven if there is an effect of nullifying the gemstone consumption, at least one yellow gemstone is consumed.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "50"
+                },
+                {
+                  "level": 2,
+                  "value": "50"
+                },
+                {
+                  "level": 3,
+                  "value": "50"
+                },
+                {
+                  "level": 4,
+                  "value": "50"
+                },
+                {
+                  "level": 5,
+                  "value": "50"
+                },
+                {
+                  "level": 6,
+                  "value": "50"
+                },
+                {
+                  "level": 7,
+                  "value": "50"
+                },
+                {
+                  "level": 8,
+                  "value": "50"
+                },
+                {
+                  "level": 9,
+                  "value": "50"
+                },
+                {
+                  "level": 10,
+                  "value": "50"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/290.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/290",
+          "tree": {
+            "idx": 33,
+            "row": 3,
+            "col": 6,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 279,
+                "level": 5,
+                "name": "Hindsight",
+                "visible": true
+              },
+              {
+                "id": 288,
+                "level": 1,
+                "name": "Land Protector",
+                "visible": true
+              },
+              {
+                "id": 289,
+                "level": 1,
+                "name": "Dispell",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "10"
+              },
+              {
+                "label": "Target",
+                "value": "???"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 10,
+                    "values": {
+                      "sp-cost": "50"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
         }
       ]
     },
     {
       "id": "previous-3",
-      "label": "Mage",
+      "label": "Magician",
       "pointLimit": 49,
       "tree": {
         "columns": 9,
         "rows": 3
       },
       "skills": [
+        {
+          "id": 1,
+          "imageFile": "1.png",
+          "name": "Basic Skill",
+          "maxLevel": 9,
+          "prerequisiteText": "basic skill",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate."
+            },
+            {
+              "level": 2,
+              "text": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons."
+            },
+            {
+              "level": 3,
+              "text": "Enables Sitting\nSitting doubles HP/SP Recovery Speed.\nPress the Insert key or type /sit."
+            },
+            {
+              "level": 4,
+              "text": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window."
+            },
+            {
+              "level": 5,
+              "text": "Join a Party\nCharacter can join a party."
+            },
+            {
+              "level": 6,
+              "text": "Enables Use of Kafra Storage\nAllows use of Kafra Storage."
+            },
+            {
+              "level": 7,
+              "text": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)."
+            },
+            {
+              "level": 9,
+              "text": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes."
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                },
+                {
+                  "level": 6,
+                  "value": "0"
+                },
+                {
+                  "level": 7,
+                  "value": "0"
+                },
+                {
+                  "level": 8,
+                  "value": "0"
+                },
+                {
+                  "level": 9,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/1.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/1",
+          "tree": {
+            "idx": 0,
+            "row": 0,
+            "col": 0,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "9"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Join a Party\nCharacter can join a party",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Enables Use of Kafra Storage\nAllows use of Kafra Storage",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
         {
           "id": 16,
           "imageFile": "16.png",
@@ -17219,6 +17419,85 @@ export const elementalMasterData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "10"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 142,
+          "imageFile": "142.png",
+          "name": "First Aid",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest",
+          "group": "Supportive",
+          "type": "",
+          "target": "Player",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume 3SP to restore 5HP.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/142.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/142",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "3"
                     }
                   }
                 ],
@@ -18513,6 +18792,81 @@ export const elementalMasterData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "30"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 143,
+          "imageFile": "143.png",
+          "name": "Play Dead",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest, Novice Only",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/143.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/143",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
                     }
                   }
                 ],

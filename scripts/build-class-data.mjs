@@ -10,8 +10,6 @@ const defaultApiUrl = "https://www.divine-pride.net";
 const apiDocsUrl = `${defaultApiUrl}/api`;
 const browikiUrl = "https://browiki.org";
 const basePointLimit = 49;
-const previousFirstJobPointLimit = 49;
-const previousAdvancedJobPointLimit = 69;
 const treeColumns = 9;
 const skillDetailsCache = new Map();
 const translationCache = new Map();
@@ -97,9 +95,21 @@ async function buildClassData({ classConfig, rebalanceManifest, pointLimitTimeli
   const addedSkills = await parseAddedSkills(classConfig.classSlug, rebalanceManifest);
   const pointLimit = pointLimitTimeline.at(-1)?.pointLimit ?? basePointLimit;
   const allTreeSkills = treePage.skills;
-  const currentTreeSkills = allTreeSkills.filter((skill) => isCurrentClassSkill(classConfig, skill.id));
+  const treeSkillById = new Map(allTreeSkills.map((skill) => [skill.id, skill]));
+  const treeSegments = treePage.segments
+    .map((segment) => ({
+      ...segment,
+      skills: segment.skillIds.map((id) => treeSkillById.get(id)).filter(Boolean)
+    }))
+    .filter((segment) => segment.skills.length);
+  const currentSegment = treeSegments.find((segment) => segment.jobId === classConfig.classId);
+  const currentTreeSkills = currentSegment?.skills.length
+    ? currentSegment.skills
+    : allTreeSkills.filter((skill) => isCurrentClassSkill(classConfig, skill.id));
   const currentIds = new Set(currentTreeSkills.map((skill) => skill.id));
-  const previousSegments = segmentPreviousSkills(allTreeSkills.filter((skill) => !currentIds.has(skill.id)));
+  const previousSegments = currentSegment
+    ? treeSegments.filter((segment) => segment.jobId !== currentSegment.jobId)
+    : segmentPreviousSkills(allTreeSkills.filter((skill) => !currentIds.has(skill.id)));
   const tabTreeSkills = [currentTreeSkills, ...previousSegments.map((segment) => segment.skills)];
   const uniqueTabSkills = uniqueById(tabTreeSkills.flat());
   const treeById = new Map(allTreeSkills.map((skill) => [skill.id, skill]));
@@ -203,31 +213,29 @@ function buildPreviousTabs({ classConfig, previousSegments, hasNoviceSegment, tr
   const labeled = previousSegments
     .map((segment, index) => ({
       id: `previous-${index + 1}`,
-      label: segmentLabel(classConfig, segment, index, hasNoviceSegment),
+      label: segment.label ?? segmentLabel(classConfig, segment, index, hasNoviceSegment),
+      pointLimit: numericPointLimit(segment.pointLimit),
       skills: buildTabSkills({ treeSkills: segment.skills, treeById, skillDetails, rebalanceByName })
     }))
     .filter((entry) => entry.label !== "Novice");
 
   const merged = [];
   for (let index = 0; index < labeled.length; index += 1) {
-    const entry = labeled[index];
-    const next = labeled[index + 1];
+    const entry = withFallbackPreviousPointLimit(labeled[index], index);
+    const next = labeled[index + 1] ? withFallbackPreviousPointLimit(labeled[index + 1], index + 1) : null;
 
-    if (shouldMergeSecondJobTabs(labeled, index)) {
+    if (shouldMergeSecondJobTabs(classConfig, labeled, index)) {
       merged.push({
         id: next.id,
         label: next.label,
         skills: [...entry.skills, ...next.skills],
-        pointLimit: previousAdvancedJobPointLimit
+        pointLimit: Math.max(entry.pointLimit, next.pointLimit)
       });
       index += 1;
       continue;
     }
 
-    merged.push({
-      ...entry,
-      pointLimit: index === 0 ? previousFirstJobPointLimit : previousAdvancedJobPointLimit
-    });
+    merged.push(entry);
   }
 
   return merged.reverse().map((entry, index) =>
@@ -240,9 +248,26 @@ function buildPreviousTabs({ classConfig, previousSegments, hasNoviceSegment, tr
   );
 }
 
-function shouldMergeSecondJobTabs(entries, index) {
+function shouldMergeSecondJobTabs(classConfig, entries, index) {
+  if (!isMainJobLineage(classConfig)) return false;
   if (entries.length < 4) return false;
   return index === 1 && Boolean(entries[index + 1]);
+}
+
+function isMainJobLineage(classConfig) {
+  return classConfig.previousLabels?.length >= 5 && classConfig.previousLabels[0] === "Novice";
+}
+
+function numericPointLimit(value) {
+  const number = Number(value);
+  return Number.isFinite(number) && number > 0 ? number : null;
+}
+
+function withFallbackPreviousPointLimit(entry, index) {
+  return {
+    ...entry,
+    pointLimit: entry.pointLimit ?? (index === 0 ? 49 : 69)
+  };
 }
 
 function buildSkillTab({ id, label, pointLimit, skills }) {
@@ -299,6 +324,7 @@ async function fetchSkillTreePage(classConfig) {
   const className =
     html.match(/<meta property="og:title" content="Skilltree:\s*([^"]+)"/)?.[1] ??
     classConfig.className;
+  const jobs = parseSkillTreeJobs(html);
   const skillsJson = html.match(/var\s+skills\s*=\s*(\[[\s\S]*?\]);/)?.[1];
 
   if (!skillsJson) {
@@ -307,7 +333,48 @@ async function fetchSkillTreePage(classConfig) {
 
   return {
     className: decodeHtml(className),
+    segments: parseSkillTreeSegments(html, jobs),
     skills: JSON.parse(skillsJson)
+  };
+}
+
+function parseSkillTreeJobs(html) {
+  const jobsJson = html.match(/var\s+jobs\s*=\s*(\{[\s\S]*?\});/)?.[1];
+  if (!jobsJson) return {};
+
+  try {
+    return JSON.parse(jobsJson);
+  } catch {
+    return {};
+  }
+}
+
+function parseSkillTreeSegments(html, jobs) {
+  const start = html.search(/<div class="skilltree\b[^"]*treejob-/);
+  const end = html.search(/<div class="totalskilltreesum"/);
+  if (start < 0 || end < 0 || end <= start) return [];
+
+  return html
+    .slice(start, end)
+    .split(/(?=<div class="skilltree\b[^"]*treejob-)/)
+    .map((block) => parseSkillTreeSegment(block, jobs))
+    .filter(Boolean);
+}
+
+function parseSkillTreeSegment(block, jobs) {
+  if (!block.includes("skilltree")) return null;
+
+  const jobId = Number(block.match(/\bjob="(\d+)"/)?.[1] ?? block.match(/treejob-(\d+)/)?.[1]);
+  const label = decodeHtml(stripTags(block.match(/<legend>([\s\S]*?)<\/legend>/)?.[1] ?? "")).trim();
+  const skillIds = [...block.matchAll(/skillid="(\d+)"/g)].map((match) => Number(match[1]));
+
+  if (!jobId || !label || !skillIds.length) return null;
+
+  return {
+    jobId,
+    label,
+    pointLimit: numericPointLimit(jobs[String(jobId)]),
+    skillIds
   };
 }
 

@@ -1,5 +1,5 @@
 export const aliteaData = {
-  "generatedAt": "2026-07-08T21:17:19.328Z",
+  "generatedAt": "2026-07-09T03:43:05.507Z",
   "classId": 4355,
   "classSlug": "alitea",
   "className": "Alitea",
@@ -81,6 +81,127 @@ export const aliteaData = {
       },
       "skills": [
         {
+          "id": 6576,
+          "imageFile": "6576.png",
+          "name": "Pulse of Madness",
+          "maxLevel": 5,
+          "prerequisiteText": "Sixth Sense 1",
+          "group": "Active",
+          "type": "Buff",
+          "target": "Instant Casting",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Can only be used while in [Werewolf] state.\nThe pulse of madness pulses violently, during the skill duration, using Wolf attack-type skills has a chance to gain 1 stack of Madness.\nMadness can be stacked up to 3 times. Wolf attack-type skills are enhanced according to the level of stack, and the effects of each level are accumulative.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": ": Chance to gain Madness : 20%."
+            },
+            {
+              "level": 2,
+              "text": ": Chance to gain Madness : 30%."
+            },
+            {
+              "level": 3,
+              "text": ": Chance to gain Madness : 40%."
+            },
+            {
+              "level": 4,
+              "text": ": Chance to gain Madness : 50%."
+            },
+            {
+              "level": 5,
+              "text": ": Chance to gain Madness : 60%."
+            }
+          ],
+          "levelExtras": [],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/6576.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/6576",
+          "tree": {
+            "idx": 0,
+            "row": 0,
+            "col": 0,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 6575,
+                "level": 1,
+                "name": "Sixth Sense",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Target",
+                "value": "Instant Casting"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": ": Chance to gain Madness : 20%"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": ": Chance to gain Madness : 30%"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": ": Chance to gain Madness : 40%"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": ": Chance to gain Madness : 50%"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": ": Chance to gain Madness : 60%"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 6583,
           "imageFile": "6583.png",
           "name": "Flip Flap",
@@ -129,7 +250,7 @@ export const aliteaData = {
                 "id": 6575,
                 "level": 1,
                 "name": "Sixth Sense",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -211,6 +332,132 @@ export const aliteaData = {
                     "values": {
                       "duration": "300 seconds",
                       "increases-long-ranged-physical-damage-by-30-cri": "+ 15"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 6575,
+          "imageFile": "6575.png",
+          "name": "Sixth Sense",
+          "maxLevel": 5,
+          "prerequisiteText": "basic skill",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Maximizes the sixth sense, increasing combat ability.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "P.Atk + 2 / CRI + 2"
+            },
+            {
+              "level": 2,
+              "text": "P.Atk + 4 / CRI + 4"
+            },
+            {
+              "level": 3,
+              "text": "P.Atk + 6 / CRI + 6"
+            },
+            {
+              "level": 4,
+              "text": "P.Atk + 8 / CRI + 8"
+            },
+            {
+              "level": 5,
+              "text": "P.Atk + 10 / CRI + 10"
+            }
+          ],
+          "levelExtras": [],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/6575.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/6575",
+          "tree": {
+            "idx": 2,
+            "row": 0,
+            "col": 2,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "p-atk-10-cri",
+                    "label": "P.atk + 10 / Cri"
+                  },
+                  {
+                    "id": "p-atk-2-cri",
+                    "label": "P.atk + 2 / Cri"
+                  },
+                  {
+                    "id": "p-atk-4-cri",
+                    "label": "P.atk + 4 / Cri"
+                  },
+                  {
+                    "id": "p-atk-6-cri",
+                    "label": "P.atk + 6 / Cri"
+                  },
+                  {
+                    "id": "p-atk-8-cri",
+                    "label": "P.atk + 8 / Cri"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "p-atk-2-cri": "+ 2"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "p-atk-4-cri": "+ 4"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "p-atk-6-cri": "+ 6"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "p-atk-8-cri": "+ 8"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "p-atk-10-cri": "+ 10"
                     }
                   }
                 ],
@@ -859,7 +1106,7 @@ export const aliteaData = {
                 "id": 6575,
                 "level": 3,
                 "name": "Sixth Sense",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -1017,7 +1264,7 @@ export const aliteaData = {
                 "id": 6575,
                 "level": 3,
                 "name": "Sixth Sense",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -1188,7 +1435,7 @@ export const aliteaData = {
                 "id": 6576,
                 "level": 3,
                 "name": "Pulse of Madness",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -4065,265 +4312,7 @@ export const aliteaData = {
     },
     {
       "id": "previous-1",
-      "label": "Previous Class 4",
-      "pointLimit": 69,
-      "tree": {
-        "columns": 9,
-        "rows": 1
-      },
-      "skills": [
-        {
-          "id": 6576,
-          "imageFile": "6576.png",
-          "name": "Pulse of Madness",
-          "maxLevel": 5,
-          "prerequisiteText": "Sixth Sense 1",
-          "group": "Active",
-          "type": "Buff",
-          "target": "Instant Casting",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Can only be used while in [Werewolf] state.\nThe pulse of madness pulses violently, during the skill duration, using Wolf attack-type skills has a chance to gain 1 stack of Madness.\nMadness can be stacked up to 3 times. Wolf attack-type skills are enhanced according to the level of stack, and the effects of each level are accumulative.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": ": Chance to gain Madness : 20%."
-            },
-            {
-              "level": 2,
-              "text": ": Chance to gain Madness : 30%."
-            },
-            {
-              "level": 3,
-              "text": ": Chance to gain Madness : 40%."
-            },
-            {
-              "level": 4,
-              "text": ": Chance to gain Madness : 50%."
-            },
-            {
-              "level": 5,
-              "text": ": Chance to gain Madness : 60%."
-            }
-          ],
-          "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/6576.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/6576",
-          "tree": {
-            "idx": 0,
-            "row": 0,
-            "col": 0,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 6575,
-                "level": 1,
-                "name": "Sixth Sense",
-                "visible": true
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Target",
-                "value": "Instant Casting"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": ": Chance to gain Madness : 20%"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": ": Chance to gain Madness : 30%"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": ": Chance to gain Madness : 40%"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": ": Chance to gain Madness : 50%"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": ": Chance to gain Madness : 60%"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 6575,
-          "imageFile": "6575.png",
-          "name": "Sixth Sense",
-          "maxLevel": 5,
-          "prerequisiteText": "basic skill",
-          "group": "Passive",
-          "type": "",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Maximizes the sixth sense, increasing combat ability.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "P.Atk + 2 / CRI + 2"
-            },
-            {
-              "level": 2,
-              "text": "P.Atk + 4 / CRI + 4"
-            },
-            {
-              "level": 3,
-              "text": "P.Atk + 6 / CRI + 6"
-            },
-            {
-              "level": 4,
-              "text": "P.Atk + 8 / CRI + 8"
-            },
-            {
-              "level": 5,
-              "text": "P.Atk + 10 / CRI + 10"
-            }
-          ],
-          "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/6575.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/6575",
-          "tree": {
-            "idx": 2,
-            "row": 0,
-            "col": 2,
-            "columns": 9,
-            "requirements": []
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Passive Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "p-atk-10-cri",
-                    "label": "P.atk + 10 / Cri"
-                  },
-                  {
-                    "id": "p-atk-2-cri",
-                    "label": "P.atk + 2 / Cri"
-                  },
-                  {
-                    "id": "p-atk-4-cri",
-                    "label": "P.atk + 4 / Cri"
-                  },
-                  {
-                    "id": "p-atk-6-cri",
-                    "label": "P.atk + 6 / Cri"
-                  },
-                  {
-                    "id": "p-atk-8-cri",
-                    "label": "P.atk + 8 / Cri"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "p-atk-2-cri": "+ 2"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "p-atk-4-cri": "+ 4"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "p-atk-6-cri": "+ 6"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "p-atk-8-cri": "+ 8"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "p-atk-10-cri": "+ 10"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        }
-      ]
-    },
-    {
-      "id": "previous-2",
-      "label": "Previous Class 3",
+      "label": "Karnos",
       "pointLimit": 69,
       "tree": {
         "columns": 9,
@@ -8150,9 +8139,9 @@ export const aliteaData = {
       ]
     },
     {
-      "id": "previous-3",
-      "label": "Previous Class 2",
-      "pointLimit": 49,
+      "id": "previous-2",
+      "label": "Druid",
+      "pointLimit": 69,
       "tree": {
         "columns": 9,
         "rows": 5
@@ -11913,6 +11902,127 @@ export const aliteaData = {
   ],
   "skills": [
     {
+      "id": 6576,
+      "imageFile": "6576.png",
+      "name": "Pulse of Madness",
+      "maxLevel": 5,
+      "prerequisiteText": "Sixth Sense 1",
+      "group": "Active",
+      "type": "Buff",
+      "target": "Instant Casting",
+      "recoversAp": "",
+      "consumesAp": "",
+      "description": "Can only be used while in [Werewolf] state.\nThe pulse of madness pulses violently, during the skill duration, using Wolf attack-type skills has a chance to gain 1 stack of Madness.\nMadness can be stacked up to 3 times. Wolf attack-type skills are enhanced according to the level of stack, and the effects of each level are accumulative.",
+      "levelDetails": [
+        {
+          "level": 1,
+          "text": ": Chance to gain Madness : 20%."
+        },
+        {
+          "level": 2,
+          "text": ": Chance to gain Madness : 30%."
+        },
+        {
+          "level": 3,
+          "text": ": Chance to gain Madness : 40%."
+        },
+        {
+          "level": 4,
+          "text": ": Chance to gain Madness : 50%."
+        },
+        {
+          "level": 5,
+          "text": ": Chance to gain Madness : 60%."
+        }
+      ],
+      "levelExtras": [],
+      "translations": {},
+      "apiStatus": "not-used",
+      "iconUrl": "assets/divine-pride/skills/6576.png",
+      "sourceUrl": "https://www.divine-pride.net/database/skill/6576",
+      "tree": {
+        "idx": 0,
+        "row": 0,
+        "col": 0,
+        "columns": 9,
+        "requirements": [
+          {
+            "id": 6575,
+            "level": 1,
+            "name": "Sixth Sense",
+            "visible": true
+          }
+        ]
+      },
+      "details": {
+        "rows": [
+          {
+            "label": "Type",
+            "value": "Active Skill"
+          },
+          {
+            "label": "Levels",
+            "value": "5"
+          },
+          {
+            "label": "Target",
+            "value": "Instant Casting"
+          }
+        ],
+        "levelTables": [
+          {
+            "title": "Level Scaling",
+            "columns": [
+              {
+                "id": "effect",
+                "label": "Effect"
+              }
+            ],
+            "rows": [
+              {
+                "level": 1,
+                "values": {
+                  "effect": ": Chance to gain Madness : 20%"
+                }
+              },
+              {
+                "level": 2,
+                "values": {
+                  "effect": ": Chance to gain Madness : 30%"
+                }
+              },
+              {
+                "level": 3,
+                "values": {
+                  "effect": ": Chance to gain Madness : 40%"
+                }
+              },
+              {
+                "level": 4,
+                "values": {
+                  "effect": ": Chance to gain Madness : 50%"
+                }
+              },
+              {
+                "level": 5,
+                "values": {
+                  "effect": ": Chance to gain Madness : 60%"
+                }
+              }
+            ],
+            "formulaRows": []
+          }
+        ]
+      },
+      "irowikiUrl": "",
+      "balanceNotes": [],
+      "api": {
+        "status": "not-used",
+        "entries": [],
+        "selectedEntry": null
+      }
+    },
+    {
       "id": 6583,
       "imageFile": "6583.png",
       "name": "Flip Flap",
@@ -11961,7 +12071,7 @@ export const aliteaData = {
             "id": 6575,
             "level": 1,
             "name": "Sixth Sense",
-            "visible": false
+            "visible": true
           }
         ]
       },
@@ -12043,6 +12153,132 @@ export const aliteaData = {
                 "values": {
                   "duration": "300 seconds",
                   "increases-long-ranged-physical-damage-by-30-cri": "+ 15"
+                }
+              }
+            ],
+            "formulaRows": []
+          }
+        ]
+      },
+      "irowikiUrl": "",
+      "balanceNotes": [],
+      "api": {
+        "status": "not-used",
+        "entries": [],
+        "selectedEntry": null
+      }
+    },
+    {
+      "id": 6575,
+      "imageFile": "6575.png",
+      "name": "Sixth Sense",
+      "maxLevel": 5,
+      "prerequisiteText": "basic skill",
+      "group": "Passive",
+      "type": "",
+      "target": "",
+      "recoversAp": "",
+      "consumesAp": "",
+      "description": "Maximizes the sixth sense, increasing combat ability.",
+      "levelDetails": [
+        {
+          "level": 1,
+          "text": "P.Atk + 2 / CRI + 2"
+        },
+        {
+          "level": 2,
+          "text": "P.Atk + 4 / CRI + 4"
+        },
+        {
+          "level": 3,
+          "text": "P.Atk + 6 / CRI + 6"
+        },
+        {
+          "level": 4,
+          "text": "P.Atk + 8 / CRI + 8"
+        },
+        {
+          "level": 5,
+          "text": "P.Atk + 10 / CRI + 10"
+        }
+      ],
+      "levelExtras": [],
+      "translations": {},
+      "apiStatus": "not-used",
+      "iconUrl": "assets/divine-pride/skills/6575.png",
+      "sourceUrl": "https://www.divine-pride.net/database/skill/6575",
+      "tree": {
+        "idx": 2,
+        "row": 0,
+        "col": 2,
+        "columns": 9,
+        "requirements": []
+      },
+      "details": {
+        "rows": [
+          {
+            "label": "Type",
+            "value": "Passive Skill"
+          },
+          {
+            "label": "Levels",
+            "value": "5"
+          }
+        ],
+        "levelTables": [
+          {
+            "title": "Level Scaling",
+            "columns": [
+              {
+                "id": "p-atk-10-cri",
+                "label": "P.atk + 10 / Cri"
+              },
+              {
+                "id": "p-atk-2-cri",
+                "label": "P.atk + 2 / Cri"
+              },
+              {
+                "id": "p-atk-4-cri",
+                "label": "P.atk + 4 / Cri"
+              },
+              {
+                "id": "p-atk-6-cri",
+                "label": "P.atk + 6 / Cri"
+              },
+              {
+                "id": "p-atk-8-cri",
+                "label": "P.atk + 8 / Cri"
+              }
+            ],
+            "rows": [
+              {
+                "level": 1,
+                "values": {
+                  "p-atk-2-cri": "+ 2"
+                }
+              },
+              {
+                "level": 2,
+                "values": {
+                  "p-atk-4-cri": "+ 4"
+                }
+              },
+              {
+                "level": 3,
+                "values": {
+                  "p-atk-6-cri": "+ 6"
+                }
+              },
+              {
+                "level": 4,
+                "values": {
+                  "p-atk-8-cri": "+ 8"
+                }
+              },
+              {
+                "level": 5,
+                "values": {
+                  "p-atk-10-cri": "+ 10"
                 }
               }
             ],
@@ -12691,7 +12927,7 @@ export const aliteaData = {
             "id": 6575,
             "level": 3,
             "name": "Sixth Sense",
-            "visible": false
+            "visible": true
           }
         ]
       },
@@ -12849,7 +13085,7 @@ export const aliteaData = {
             "id": 6575,
             "level": 3,
             "name": "Sixth Sense",
-            "visible": false
+            "visible": true
           }
         ]
       },
@@ -13020,7 +13256,7 @@ export const aliteaData = {
             "id": 6576,
             "level": 3,
             "name": "Pulse of Madness",
-            "visible": false
+            "visible": true
           }
         ]
       },

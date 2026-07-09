@@ -1,5 +1,5 @@
 export const dragonKnightData = {
-  "generatedAt": "2026-07-08T21:12:00.586Z",
+  "generatedAt": "2026-07-09T03:35:47.930Z",
   "classId": 4252,
   "classSlug": "dragon-knight",
   "className": "Dragon Knight",
@@ -1483,6 +1483,13 @@ export const dragonKnightData = {
                 "Increases factor weight of POW in skill formula from 5 to 7."
               ],
               "specRows": [
+                {
+                  "label": "Damage Logic",
+                  "before": "2 split hits",
+                  "after": "2 cumulative hits",
+                  "scope": "",
+                  "source": "Changes damage logic from 2 split hits to 2 cumulative hits."
+                },
                 {
                   "label": "Damage",
                   "before": "3000%Atk",
@@ -3437,6 +3444,13 @@ export const dragonKnightData = {
                 "Increases HP consumption on each attack from 2 to 10 based on level 10."
               ],
               "specRows": [
+                {
+                  "label": "Bonus Flat Damage",
+                  "before": "+200% regardless of skill level",
+                  "after": "scaling with skill level up to +250%",
+                  "scope": "Lv 10",
+                  "source": "Changes bonus flat damage from +200% regardless of skill level to scaling with skill level up to +250% based on level 10."
+                },
                 {
                   "label": "Bonus Damage Against Demihuman And Angel Race Monsters",
                   "before": "50%",
@@ -8220,6 +8234,183 @@ export const dragonKnightData = {
           }
         },
         {
+          "id": 359,
+          "imageFile": "359.png",
+          "name": "Berserk",
+          "maxLevel": 1,
+          "prerequisiteText": "over Lord Knight Job Level 50",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "HP increases, moving speed and attack power increases, but the flee rate decreases and all other actions are impossible.\nItems cannot be used, and it is impossible to be treated with heel skills. In this state, HP gradually decreases over time.\nAfter use, HP and SP do not recover naturally for 5 minutes.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "200"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/359.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/359",
+          "tree": {
+            "idx": 4,
+            "row": 0,
+            "col": 4,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "200"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 358,
+          "imageFile": "358.png",
+          "name": "Tension Relax",
+          "maxLevel": 1,
+          "prerequisiteText": "Provoke 5, HP Recovery 10, Endure 3",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Sits down and relaxes to triple the HP Recovery rate.\nStanding up cancels this skill, whether the user manually stood up or was knocked out of sitting by an attack.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "15"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/358.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/358",
+          "tree": {
+            "idx": 5,
+            "row": 0,
+            "col": 5,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 4,
+                "level": 10,
+                "name": "Increase HP Recovery",
+                "visible": false
+              },
+              {
+                "id": 6,
+                "level": 5,
+                "name": "Provoke",
+                "visible": false
+              },
+              {
+                "id": 8,
+                "level": 3,
+                "name": "Endure",
+                "visible": false
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "15"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 1001,
           "imageFile": "1001.png",
           "name": "Charge Attack",
@@ -8303,6 +8494,249 @@ export const dragonKnightData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "40"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 356,
+          "imageFile": "356.png",
+          "name": "Parrying",
+          "maxLevel": 10,
+          "prerequisiteText": "Provoke 5, Two-Handed Sword Mastery 10, Two Hand Quicken 3",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Allows the user to block physical attacks with the equipped two-handed sword by chance temporarily.\nOnly available with two handed sword.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Block +23%"
+            },
+            {
+              "level": 2,
+              "text": "Block +26%"
+            },
+            {
+              "level": 3,
+              "text": "Block +29%"
+            },
+            {
+              "level": 4,
+              "text": "Block +32%"
+            },
+            {
+              "level": 5,
+              "text": "Block +35%"
+            },
+            {
+              "level": 6,
+              "text": "Block +38%"
+            },
+            {
+              "level": 7,
+              "text": "Block +41%"
+            },
+            {
+              "level": 8,
+              "text": "Block +44%"
+            },
+            {
+              "level": 9,
+              "text": "Block +47%"
+            },
+            {
+              "level": 10,
+              "text": "Block +50%"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "50"
+                },
+                {
+                  "level": 2,
+                  "value": "50"
+                },
+                {
+                  "level": 3,
+                  "value": "50"
+                },
+                {
+                  "level": 4,
+                  "value": "50"
+                },
+                {
+                  "level": 5,
+                  "value": "50"
+                },
+                {
+                  "level": 6,
+                  "value": "50"
+                },
+                {
+                  "level": 7,
+                  "value": "50"
+                },
+                {
+                  "level": 8,
+                  "value": "50"
+                },
+                {
+                  "level": 9,
+                  "value": "50"
+                },
+                {
+                  "level": 10,
+                  "value": "50"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/356.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/356",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 3,
+                "level": 10,
+                "name": "Two Handed Sword Mastery",
+                "visible": false
+              },
+              {
+                "id": 6,
+                "level": 5,
+                "name": "Provoke",
+                "visible": false
+              },
+              {
+                "id": 60,
+                "level": 3,
+                "name": "Two Hand Quicken",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "10"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "block",
+                    "label": "Block"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "block": "+23%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "block": "+26%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "block": "+29%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "block": "+32%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "block": "+35%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "block": "+38%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "block": "+41%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "block": "+44%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "block": "+47%",
+                      "sp-cost": "50"
+                    }
+                  },
+                  {
+                    "level": 10,
+                    "values": {
+                      "block": "+50%",
+                      "sp-cost": "50"
                     }
                   }
                 ],
@@ -9213,6 +9647,352 @@ export const dragonKnightData = {
           }
         },
         {
+          "id": 355,
+          "imageFile": "355.png",
+          "name": "Aura Blade",
+          "maxLevel": 5,
+          "prerequisiteText": "Bash 5, Magnum Break 5, Two-Handed Sword Mastery 5",
+          "group": "Active",
+          "type": "Buff",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Produces a special aura around the equipped weapon to strengthen its power temporarily.\nDamage is affected by the caster's base level.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Additional Damage : Base level X 4"
+            },
+            {
+              "level": 2,
+              "text": "Additional Damage : Base level X 5"
+            },
+            {
+              "level": 3,
+              "text": "Additional Damage : Base level X 6"
+            },
+            {
+              "level": 4,
+              "text": "Additional Damage : Base level X 7"
+            },
+            {
+              "level": 5,
+              "text": "Additional Damage : Base level X 8"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "18"
+                },
+                {
+                  "level": 2,
+                  "value": "26"
+                },
+                {
+                  "level": 3,
+                  "value": "34"
+                },
+                {
+                  "level": 4,
+                  "value": "42"
+                },
+                {
+                  "level": 5,
+                  "value": "50"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/355.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/355",
+          "tree": {
+            "idx": 11,
+            "row": 1,
+            "col": 2,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 3,
+                "level": 5,
+                "name": "Two Handed Sword Mastery",
+                "visible": false
+              },
+              {
+                "id": 7,
+                "level": 5,
+                "name": "Magnum Break",
+                "visible": false
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Additional Damage : Base level x 4",
+                      "sp-cost": "18"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Additional Damage : Base level x 5",
+                      "sp-cost": "26"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Additional Damage : Base level x 6",
+                      "sp-cost": "34"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Additional Damage : Base level x 7",
+                      "sp-cost": "42"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Additional Damage : Base level x 8",
+                      "sp-cost": "50"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 357,
+          "imageFile": "357.png",
+          "name": "Spear Dynamo",
+          "maxLevel": 5,
+          "prerequisiteText": "HP Recovery 5, Spear Mastery 5, Riding 1",
+          "group": "Active",
+          "type": "Buff",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "This skill also boosts attack power and Hit rate and endure effect at cost of physical defense.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "HIT +10, ATK + 7%, DEF - 7%"
+            },
+            {
+              "level": 2,
+              "text": "HIT +20, ATK + 9%, DEF - 9%"
+            },
+            {
+              "level": 3,
+              "text": "HIT +30, ATK +11%, DEF -11%"
+            },
+            {
+              "level": 4,
+              "text": "HIT +40, ATK +13%, DEF -13%"
+            },
+            {
+              "level": 5,
+              "text": "HIT +50, ATK +15%, DEF -15%"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "14"
+                },
+                {
+                  "level": 2,
+                  "value": "18"
+                },
+                {
+                  "level": 3,
+                  "value": "22"
+                },
+                {
+                  "level": 4,
+                  "value": "26"
+                },
+                {
+                  "level": 5,
+                  "value": "30"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/357.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/357",
+          "tree": {
+            "idx": 12,
+            "row": 1,
+            "col": 3,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 4,
+                "level": 5,
+                "name": "Increase HP Recovery",
+                "visible": false
+              },
+              {
+                "id": 55,
+                "level": 5,
+                "name": "Spear Mastery",
+                "visible": true
+              },
+              {
+                "id": 63,
+                "level": 1,
+                "name": "Peco Peco Ride",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "hit-10-atk-7-def",
+                    "label": "Hit +10, Atk + 7%, Def"
+                  },
+                  {
+                    "id": "hit-20-atk-9-def",
+                    "label": "Hit +20, Atk + 9%, Def"
+                  },
+                  {
+                    "id": "hit-30-atk-11-def",
+                    "label": "Hit +30, Atk +11%, Def"
+                  },
+                  {
+                    "id": "hit-40-atk-13-def",
+                    "label": "Hit +40, Atk +13%, Def"
+                  },
+                  {
+                    "id": "hit-50-atk-15-def",
+                    "label": "Hit +50, Atk +15%, Def"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "hit-10-atk-7-def": "- 7%",
+                      "sp-cost": "14"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "hit-20-atk-9-def": "- 9%",
+                      "sp-cost": "18"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "hit-30-atk-11-def": "-11%",
+                      "sp-cost": "22"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "hit-40-atk-13-def": "-13%",
+                      "sp-cost": "26"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "hit-50-atk-15-def": "-15%",
+                      "sp-cost": "30"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 495,
           "imageFile": "495.png",
           "name": "One Hand Quicken",
@@ -9772,6 +10552,164 @@ export const dragonKnightData = {
           }
         },
         {
+          "id": 398,
+          "imageFile": "398.png",
+          "name": "Traumatic Blow",
+          "maxLevel": 5,
+          "prerequisiteText": "Spear Mastery 9,",
+          "group": "Aggressive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Brutally strike an enemy with the\nchance of causing the Bleeding status, which\nwill make the target continuously receive extra\ndamage for a while.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Atk 140%"
+            },
+            {
+              "level": 2,
+              "text": "Atk 180%"
+            },
+            {
+              "level": 3,
+              "text": "Atk 220%"
+            },
+            {
+              "level": 4,
+              "text": "Atk 260%"
+            },
+            {
+              "level": 5,
+              "text": "Atk 300%"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "23"
+                },
+                {
+                  "level": 2,
+                  "value": "23"
+                },
+                {
+                  "level": 3,
+                  "value": "23"
+                },
+                {
+                  "level": 4,
+                  "value": "23"
+                },
+                {
+                  "level": 5,
+                  "value": "23"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/398.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/398",
+          "tree": {
+            "idx": 19,
+            "row": 2,
+            "col": 1,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 55,
+                "level": 9,
+                "name": "Spear Mastery",
+                "visible": true
+              },
+              {
+                "id": 63,
+                "level": 1,
+                "name": "Peco Peco Ride",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Aggressive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "base-damage-atk",
+                    "label": "Base Damage (ATK)"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "base-damage-atk": "140%",
+                      "sp-cost": "23"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "base-damage-atk": "180%",
+                      "sp-cost": "23"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "base-damage-atk": "220%",
+                      "sp-cost": "23"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "base-damage-atk": "260%",
+                      "sp-cost": "23"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "base-damage-atk": "300%",
+                      "sp-cost": "23"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 57,
           "imageFile": "57.png",
           "name": "Brandish Spear",
@@ -10033,930 +10971,6 @@ export const dragonKnightData = {
           }
         },
         {
-          "id": 359,
-          "imageFile": "359.png",
-          "name": "Berserk",
-          "maxLevel": 1,
-          "prerequisiteText": "over Lord Knight Job Level 50",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "HP increases, moving speed and attack power increases, but the flee rate decreases and all other actions are impossible.\nItems cannot be used, and it is impossible to be treated with heel skills. In this state, HP gradually decreases over time.\nAfter use, HP and SP do not recover naturally for 5 minutes.",
-          "levelDetails": [],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "200"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/359.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/359",
-          "tree": {
-            "idx": 4,
-            "row": 0,
-            "col": 4,
-            "columns": 9,
-            "requirements": []
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "1"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "200"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 358,
-          "imageFile": "358.png",
-          "name": "Tension Relax",
-          "maxLevel": 1,
-          "prerequisiteText": "Provoke 5, HP Recovery 10, Endure 3",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Sits down and relaxes to triple the HP Recovery rate.\nStanding up cancels this skill, whether the user manually stood up or was knocked out of sitting by an attack.",
-          "levelDetails": [],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "15"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/358.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/358",
-          "tree": {
-            "idx": 5,
-            "row": 0,
-            "col": 5,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 4,
-                "level": 10,
-                "name": "Increase HP Recovery",
-                "visible": false
-              },
-              {
-                "id": 6,
-                "level": 5,
-                "name": "Provoke",
-                "visible": false
-              },
-              {
-                "id": 8,
-                "level": 3,
-                "name": "Endure",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "1"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "15"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 356,
-          "imageFile": "356.png",
-          "name": "Parrying",
-          "maxLevel": 10,
-          "prerequisiteText": "Provoke 5, Two-Handed Sword Mastery 10, Two Hand Quicken 3",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Allows the user to block physical attacks with the equipped two-handed sword by chance temporarily.\nOnly available with two handed sword.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "Block +23%"
-            },
-            {
-              "level": 2,
-              "text": "Block +26%"
-            },
-            {
-              "level": 3,
-              "text": "Block +29%"
-            },
-            {
-              "level": 4,
-              "text": "Block +32%"
-            },
-            {
-              "level": 5,
-              "text": "Block +35%"
-            },
-            {
-              "level": 6,
-              "text": "Block +38%"
-            },
-            {
-              "level": 7,
-              "text": "Block +41%"
-            },
-            {
-              "level": 8,
-              "text": "Block +44%"
-            },
-            {
-              "level": 9,
-              "text": "Block +47%"
-            },
-            {
-              "level": 10,
-              "text": "Block +50%"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "50"
-                },
-                {
-                  "level": 2,
-                  "value": "50"
-                },
-                {
-                  "level": 3,
-                  "value": "50"
-                },
-                {
-                  "level": 4,
-                  "value": "50"
-                },
-                {
-                  "level": 5,
-                  "value": "50"
-                },
-                {
-                  "level": 6,
-                  "value": "50"
-                },
-                {
-                  "level": 7,
-                  "value": "50"
-                },
-                {
-                  "level": 8,
-                  "value": "50"
-                },
-                {
-                  "level": 9,
-                  "value": "50"
-                },
-                {
-                  "level": 10,
-                  "value": "50"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/356.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/356",
-          "tree": {
-            "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 3,
-                "level": 10,
-                "name": "Two Handed Sword Mastery",
-                "visible": false
-              },
-              {
-                "id": 6,
-                "level": 5,
-                "name": "Provoke",
-                "visible": false
-              },
-              {
-                "id": 60,
-                "level": 3,
-                "name": "Two Hand Quicken",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "10"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "block",
-                    "label": "Block"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "block": "+23%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "block": "+26%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "block": "+29%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "block": "+32%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "block": "+35%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "block": "+38%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "block": "+41%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "block": "+44%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "block": "+47%",
-                      "sp-cost": "50"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "block": "+50%",
-                      "sp-cost": "50"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 355,
-          "imageFile": "355.png",
-          "name": "Aura Blade",
-          "maxLevel": 5,
-          "prerequisiteText": "Bash 5, Magnum Break 5, Two-Handed Sword Mastery 5",
-          "group": "Active",
-          "type": "Buff",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Produces a special aura around the equipped weapon to strengthen its power temporarily.\nDamage is affected by the caster's base level.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "Additional Damage : Base level X 4"
-            },
-            {
-              "level": 2,
-              "text": "Additional Damage : Base level X 5"
-            },
-            {
-              "level": 3,
-              "text": "Additional Damage : Base level X 6"
-            },
-            {
-              "level": 4,
-              "text": "Additional Damage : Base level X 7"
-            },
-            {
-              "level": 5,
-              "text": "Additional Damage : Base level X 8"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "18"
-                },
-                {
-                  "level": 2,
-                  "value": "26"
-                },
-                {
-                  "level": 3,
-                  "value": "34"
-                },
-                {
-                  "level": 4,
-                  "value": "42"
-                },
-                {
-                  "level": 5,
-                  "value": "50"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/355.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/355",
-          "tree": {
-            "idx": 11,
-            "row": 1,
-            "col": 2,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 3,
-                "level": 5,
-                "name": "Two Handed Sword Mastery",
-                "visible": false
-              },
-              {
-                "id": 7,
-                "level": 5,
-                "name": "Magnum Break",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "Additional Damage : Base level x 4",
-                      "sp-cost": "18"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "Additional Damage : Base level x 5",
-                      "sp-cost": "26"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "Additional Damage : Base level x 6",
-                      "sp-cost": "34"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "Additional Damage : Base level x 7",
-                      "sp-cost": "42"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "Additional Damage : Base level x 8",
-                      "sp-cost": "50"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 357,
-          "imageFile": "357.png",
-          "name": "Spear Dynamo",
-          "maxLevel": 5,
-          "prerequisiteText": "HP Recovery 5, Spear Mastery 5, Riding 1",
-          "group": "Active",
-          "type": "Buff",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "This skill also boosts attack power and Hit rate and endure effect at cost of physical defense.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "HIT +10, ATK + 7%, DEF - 7%"
-            },
-            {
-              "level": 2,
-              "text": "HIT +20, ATK + 9%, DEF - 9%"
-            },
-            {
-              "level": 3,
-              "text": "HIT +30, ATK +11%, DEF -11%"
-            },
-            {
-              "level": 4,
-              "text": "HIT +40, ATK +13%, DEF -13%"
-            },
-            {
-              "level": 5,
-              "text": "HIT +50, ATK +15%, DEF -15%"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "14"
-                },
-                {
-                  "level": 2,
-                  "value": "18"
-                },
-                {
-                  "level": 3,
-                  "value": "22"
-                },
-                {
-                  "level": 4,
-                  "value": "26"
-                },
-                {
-                  "level": 5,
-                  "value": "30"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/357.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/357",
-          "tree": {
-            "idx": 12,
-            "row": 1,
-            "col": 3,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 4,
-                "level": 5,
-                "name": "Increase HP Recovery",
-                "visible": false
-              },
-              {
-                "id": 55,
-                "level": 5,
-                "name": "Spear Mastery",
-                "visible": false
-              },
-              {
-                "id": 63,
-                "level": 1,
-                "name": "Peco Peco Ride",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "hit-10-atk-7-def",
-                    "label": "Hit +10, Atk + 7%, Def"
-                  },
-                  {
-                    "id": "hit-20-atk-9-def",
-                    "label": "Hit +20, Atk + 9%, Def"
-                  },
-                  {
-                    "id": "hit-30-atk-11-def",
-                    "label": "Hit +30, Atk +11%, Def"
-                  },
-                  {
-                    "id": "hit-40-atk-13-def",
-                    "label": "Hit +40, Atk +13%, Def"
-                  },
-                  {
-                    "id": "hit-50-atk-15-def",
-                    "label": "Hit +50, Atk +15%, Def"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "hit-10-atk-7-def": "- 7%",
-                      "sp-cost": "14"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "hit-20-atk-9-def": "- 9%",
-                      "sp-cost": "18"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "hit-30-atk-11-def": "-11%",
-                      "sp-cost": "22"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "hit-40-atk-13-def": "-13%",
-                      "sp-cost": "26"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "hit-50-atk-15-def": "-15%",
-                      "sp-cost": "30"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 398,
-          "imageFile": "398.png",
-          "name": "Traumatic Blow",
-          "maxLevel": 5,
-          "prerequisiteText": "Spear Mastery 9,",
-          "group": "Aggressive",
-          "type": "",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Brutally strike an enemy with the\nchance of causing the Bleeding status, which\nwill make the target continuously receive extra\ndamage for a while.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "Atk 140%"
-            },
-            {
-              "level": 2,
-              "text": "Atk 180%"
-            },
-            {
-              "level": 3,
-              "text": "Atk 220%"
-            },
-            {
-              "level": 4,
-              "text": "Atk 260%"
-            },
-            {
-              "level": 5,
-              "text": "Atk 300%"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "23"
-                },
-                {
-                  "level": 2,
-                  "value": "23"
-                },
-                {
-                  "level": 3,
-                  "value": "23"
-                },
-                {
-                  "level": 4,
-                  "value": "23"
-                },
-                {
-                  "level": 5,
-                  "value": "23"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/398.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/398",
-          "tree": {
-            "idx": 19,
-            "row": 2,
-            "col": 1,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 55,
-                "level": 9,
-                "name": "Spear Mastery",
-                "visible": false
-              },
-              {
-                "id": 63,
-                "level": 1,
-                "name": "Peco Peco Ride",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Aggressive Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "140%",
-                      "sp-cost": "23"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "180%",
-                      "sp-cost": "23"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "220%",
-                      "sp-cost": "23"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "260%",
-                      "sp-cost": "23"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "300%",
-                      "sp-cost": "23"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
           "id": 397,
           "imageFile": "397.png",
           "name": "Clashing Spiral",
@@ -11013,25 +11027,25 @@ export const dragonKnightData = {
                 "id": 55,
                 "level": 5,
                 "name": "Spear Mastery",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 56,
                 "level": 5,
                 "name": "Pierce",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 58,
                 "level": 5,
                 "name": "Spear Stab",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 63,
                 "level": 1,
                 "name": "Peco Peco Ride",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -11226,7 +11240,7 @@ export const dragonKnightData = {
                 "id": 64,
                 "level": 3,
                 "name": "Cavalier Mastery",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 398,
@@ -11355,6 +11369,206 @@ export const dragonKnightData = {
         "rows": 2
       },
       "skills": [
+        {
+          "id": 1,
+          "imageFile": "1.png",
+          "name": "Basic Skill",
+          "maxLevel": 9,
+          "prerequisiteText": "basic skill",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate."
+            },
+            {
+              "level": 2,
+              "text": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons."
+            },
+            {
+              "level": 3,
+              "text": "Enables Sitting\nSitting doubles HP/SP Recovery Speed.\nPress the Insert key or type /sit."
+            },
+            {
+              "level": 4,
+              "text": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window."
+            },
+            {
+              "level": 5,
+              "text": "Join a Party\nCharacter can join a party."
+            },
+            {
+              "level": 6,
+              "text": "Enables Use of Kafra Storage\nAllows use of Kafra Storage."
+            },
+            {
+              "level": 7,
+              "text": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)."
+            },
+            {
+              "level": 9,
+              "text": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes."
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                },
+                {
+                  "level": 6,
+                  "value": "0"
+                },
+                {
+                  "level": 7,
+                  "value": "0"
+                },
+                {
+                  "level": 8,
+                  "value": "0"
+                },
+                {
+                  "level": 9,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/1.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/1",
+          "tree": {
+            "idx": 0,
+            "row": 0,
+            "col": 0,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "9"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Join a Party\nCharacter can join a party",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Enables Use of Kafra Storage\nAllows use of Kafra Storage",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
         {
           "id": 2,
           "imageFile": "2.png",
@@ -12434,6 +12648,85 @@ export const dragonKnightData = {
           }
         },
         {
+          "id": 142,
+          "imageFile": "142.png",
+          "name": "First Aid",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest",
+          "group": "Supportive",
+          "type": "",
+          "target": "Player",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume 3SP to restore 5HP.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/142.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/142",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "3"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 3,
           "imageFile": "3.png",
           "name": "Two Handed Sword Mastery",
@@ -13234,6 +13527,81 @@ export const dragonKnightData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 143,
+          "imageFile": "143.png",
+          "name": "Play Dead",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest, Novice Only",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/143.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/143",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
                     }
                   }
                 ],
@@ -14360,6 +14728,13 @@ export const dragonKnightData = {
             "Increases factor weight of POW in skill formula from 5 to 7."
           ],
           "specRows": [
+            {
+              "label": "Damage Logic",
+              "before": "2 split hits",
+              "after": "2 cumulative hits",
+              "scope": "",
+              "source": "Changes damage logic from 2 split hits to 2 cumulative hits."
+            },
             {
               "label": "Damage",
               "before": "3000%Atk",
@@ -16314,6 +16689,13 @@ export const dragonKnightData = {
             "Increases HP consumption on each attack from 2 to 10 based on level 10."
           ],
           "specRows": [
+            {
+              "label": "Bonus Flat Damage",
+              "before": "+200% regardless of skill level",
+              "after": "scaling with skill level up to +250%",
+              "scope": "Lv 10",
+              "source": "Changes bonus flat damage from +200% regardless of skill level to scaling with skill level up to +250% based on level 10."
+            },
             {
               "label": "Bonus Damage Against Demihuman And Angel Race Monsters",
               "before": "50%",

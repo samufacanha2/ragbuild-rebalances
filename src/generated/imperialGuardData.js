@@ -1,5 +1,5 @@
 export const imperialGuardData = {
-  "generatedAt": "2026-07-08T21:12:13.238Z",
+  "generatedAt": "2026-07-09T03:36:14.979Z",
   "classId": 4258,
   "classSlug": "imperial-guard",
   "className": "Imperial Guard",
@@ -964,7 +964,15 @@ export const imperialGuardData = {
               "notes": [
                 "Changes bonus from Atk + 30 to P.Atk + 15 and S.Matk + 15 based on level 5."
               ],
-              "specRows": []
+              "specRows": [
+                {
+                  "label": "Bonus",
+                  "before": "Atk + 30",
+                  "after": "P.Atk + 15 and S.Matk + 15",
+                  "scope": "Lv 5",
+                  "source": "Changes bonus from Atk + 30 to P.Atk + 15 and S.Matk + 15 based on level 5."
+                }
+              ]
             },
             {
               "skillName": "Attack Stance",
@@ -4286,7 +4294,15 @@ export const imperialGuardData = {
               "notes": [
                 "Changes damage property from holy to neutral."
               ],
-              "specRows": []
+              "specRows": [
+                {
+                  "label": "Damage Property",
+                  "before": "holy",
+                  "after": "neutral",
+                  "scope": "",
+                  "source": "Changes damage property from holy to neutral."
+                }
+              ]
             }
           ],
           "api": {
@@ -11991,6 +12007,201 @@ export const imperialGuardData = {
           }
         },
         {
+          "id": 367,
+          "imageFile": "367.png",
+          "name": "Gloria Domini",
+          "maxLevel": 5,
+          "prerequisiteText": "Endure 5, Faith 5, Smite 2",
+          "group": "Active",
+          "type": "Magic",
+          "target": "1 Target",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Summon a massive crucifix to magical attack\nenemies with Holy property.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "MATK 650%"
+            },
+            {
+              "level": 2,
+              "text": "MATK 800%"
+            },
+            {
+              "level": 3,
+              "text": "MATK 950%"
+            },
+            {
+              "level": 4,
+              "text": "MATK 1100%"
+            },
+            {
+              "level": 5,
+              "text": "MATK 1250%"
+            }
+          ],
+          "fixedCastTime": "0.4 seconds",
+          "variableCastTime": "1 second",
+          "castDelay": "1 second",
+          "cooldown": "0 seconds",
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "30"
+                },
+                {
+                  "level": 2,
+                  "value": "35"
+                },
+                {
+                  "level": 3,
+                  "value": "40"
+                },
+                {
+                  "level": 4,
+                  "value": "45"
+                },
+                {
+                  "level": 5,
+                  "value": "50"
+                }
+              ]
+            }
+          ],
+          "translations": {
+            "pt-BR": {
+              "name": " Gloria Domini ",
+              "description": "Derruba a santíssima cruz, fazendo uma imensa pressão no alvo.\nCausa dano mágico de propriedade Sagrado no alvo único.\nDano = {[(Nv. da habilidade × 150) + 500] × (Nv. de base ÷ 100)}%",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gloria_Domini"
+            }
+          },
+          "apiStatus": "translated",
+          "iconUrl": "assets/divine-pride/skills/367.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/367",
+          "tree": {
+            "idx": 17,
+            "row": 1,
+            "col": 8,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 8,
+                "level": 5,
+                "name": "Endure",
+                "visible": false
+              },
+              {
+                "id": 248,
+                "level": 5,
+                "name": "Faith",
+                "visible": true
+              },
+              {
+                "id": 250,
+                "level": 2,
+                "name": "Smite",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.4 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "1 Target"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "base-damage-matk",
+                    "label": "Base Damage (MATK)"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "base-damage-matk": "650%",
+                      "sp-cost": "30"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "base-damage-matk": "800%",
+                      "sp-cost": "35"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "base-damage-matk": "950%",
+                      "sp-cost": "40"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "base-damage-matk": "1100%",
+                      "sp-cost": "45"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "base-damage-matk": "1250%",
+                      "sp-cost": "50"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "translated",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 23,
           "imageFile": "23.png",
           "name": "Demonbane",
@@ -12605,6 +12816,212 @@ export const imperialGuardData = {
           }
         },
         {
+          "id": 480,
+          "imageFile": "480.png",
+          "name": "Rapid Smiting",
+          "maxLevel": 5,
+          "prerequisiteText": "Shield Boomerang 5",
+          "group": "Active",
+          "type": "Ranged Physical Attack",
+          "target": "1 Target",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Enable the chance of striking an\nenemy 5 times with a Shield while in battle.\nAccuracy Rate affects chance of success and the\nShield's weight and Upgrade status and caster's level affects the\namount of damage. Rapid Smiting requires Shield.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "ATK 500% , Accuracy Rate +20"
+            },
+            {
+              "level": 2,
+              "text": "ATK 700% , Accuracy Rate +20"
+            },
+            {
+              "level": 3,
+              "text": "ATK 900% , Accuracy Rate +20"
+            },
+            {
+              "level": 4,
+              "text": "ATK 1100%, Accuracy Rate +20"
+            },
+            {
+              "level": 5,
+              "text": "ATK 1300% , Accuracy Rate +20"
+            }
+          ],
+          "cooldown": "0.5 seconds",
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "28"
+                },
+                {
+                  "level": 2,
+                  "value": "31"
+                },
+                {
+                  "level": 3,
+                  "value": "34"
+                },
+                {
+                  "level": 4,
+                  "value": "37"
+                },
+                {
+                  "level": 5,
+                  "value": "40"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/480.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/480",
+          "tree": {
+            "idx": 25,
+            "row": 2,
+            "col": 7,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 251,
+                "level": 5,
+                "name": "Shield Boomerang",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "1 Target"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "base-damage-atk",
+                    "label": "Base Damage (ATK)"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "atk-1100-accuracy-rate",
+                    "label": "Atk 1100%, Accuracy Rate"
+                  },
+                  {
+                    "id": "atk-1300-accuracy-rate",
+                    "label": "Atk 1300% , Accuracy Rate"
+                  },
+                  {
+                    "id": "atk-500-accuracy-rate",
+                    "label": "Atk 500% , Accuracy Rate"
+                  },
+                  {
+                    "id": "atk-700-accuracy-rate",
+                    "label": "Atk 700% , Accuracy Rate"
+                  },
+                  {
+                    "id": "atk-900-accuracy-rate",
+                    "label": "Atk 900% , Accuracy Rate"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "base-damage-atk": "500%",
+                      "atk-500-accuracy-rate": "+20",
+                      "sp-cost": "28"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "base-damage-atk": "700%",
+                      "atk-700-accuracy-rate": "+20",
+                      "sp-cost": "31"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "base-damage-atk": "900%",
+                      "atk-900-accuracy-rate": "+20",
+                      "sp-cost": "34"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "base-damage-atk": "1100%",
+                      "atk-1100-accuracy-rate": "+20",
+                      "sp-cost": "37"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "base-damage-atk": "1300%",
+                      "atk-1300-accuracy-rate": "+20",
+                      "sp-cost": "40"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [
+            {
+              "skillName": "Rapid Smiting",
+              "versionId": "rebalance-1",
+              "versionLabel": "Rebalance 1",
+              "file": "rebalances/imperial-guard/rebalance_1.md",
+              "section": "2.12",
+              "notes": [
+                "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk to 2000%Atk)."
+              ],
+              "specRows": [
+                {
+                  "label": "Damage While Under Shield Shooting Buff By Adding Damage Bonus",
+                  "before": "Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk",
+                  "after": "2000%Atk)",
+                  "scope": "",
+                  "source": "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk to 2000%Atk)."
+                }
+              ]
+            }
+          ],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 28,
           "imageFile": "28.png",
           "name": "Heal",
@@ -12969,6 +13386,194 @@ export const imperialGuardData = {
           }
         },
         {
+          "id": 369,
+          "imageFile": "369.png",
+          "name": "Battle Chant",
+          "maxLevel": 10,
+          "prerequisiteText": "Faith 8, Divine Protection 3, Demon Bane 5",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "Immediately",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Sing a hymn that will cause one\nout of 10 different negative status effects to\nenemies and will endow one out of 10 positive\nstatuses upon Party Members within this skill's\nrange. This skill is cancelled if the caster is\nmuted during the casting of Battle Chant.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "80"
+                },
+                {
+                  "level": 2,
+                  "value": "80"
+                },
+                {
+                  "level": 3,
+                  "value": "80"
+                },
+                {
+                  "level": 4,
+                  "value": "80"
+                },
+                {
+                  "level": 5,
+                  "value": "80"
+                },
+                {
+                  "level": 6,
+                  "value": "100"
+                },
+                {
+                  "level": 7,
+                  "value": "100"
+                },
+                {
+                  "level": 8,
+                  "value": "100"
+                },
+                {
+                  "level": 9,
+                  "value": "100"
+                },
+                {
+                  "level": 10,
+                  "value": "100"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/369.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/369",
+          "tree": {
+            "idx": 30,
+            "row": 3,
+            "col": 3,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 22,
+                "level": 3,
+                "name": "Divine Protection",
+                "visible": true
+              },
+              {
+                "id": 23,
+                "level": 5,
+                "name": "Demon Bane",
+                "visible": true
+              },
+              {
+                "id": 248,
+                "level": 8,
+                "name": "Faith",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "10"
+              },
+              {
+                "label": "Target",
+                "value": "Immediately"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "80"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "sp-cost": "80"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "sp-cost": "80"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "sp-cost": "80"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "sp-cost": "80"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "sp-cost": "100"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "sp-cost": "100"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "100"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "sp-cost": "100"
+                    }
+                  },
+                  {
+                    "level": 10,
+                    "values": {
+                      "sp-cost": "100"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 256,
           "imageFile": "256.png",
           "name": "Providence",
@@ -13147,595 +13752,6 @@ export const imperialGuardData = {
           }
         },
         {
-          "id": 367,
-          "imageFile": "367.png",
-          "name": "Gloria Domini",
-          "maxLevel": 5,
-          "prerequisiteText": "Endure 5, Faith 5, Smite 2",
-          "group": "Active",
-          "type": "Magic",
-          "target": "1 Target",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Summon a massive crucifix to magical attack\nenemies with Holy property.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "MATK 650%"
-            },
-            {
-              "level": 2,
-              "text": "MATK 800%"
-            },
-            {
-              "level": 3,
-              "text": "MATK 950%"
-            },
-            {
-              "level": 4,
-              "text": "MATK 1100%"
-            },
-            {
-              "level": 5,
-              "text": "MATK 1250%"
-            }
-          ],
-          "fixedCastTime": "0.4 seconds",
-          "variableCastTime": "1 second",
-          "castDelay": "1 second",
-          "cooldown": "0 seconds",
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "30"
-                },
-                {
-                  "level": 2,
-                  "value": "35"
-                },
-                {
-                  "level": 3,
-                  "value": "40"
-                },
-                {
-                  "level": 4,
-                  "value": "45"
-                },
-                {
-                  "level": 5,
-                  "value": "50"
-                }
-              ]
-            }
-          ],
-          "translations": {
-            "pt-BR": {
-              "name": " Gloria Domini ",
-              "description": "Derruba a santíssima cruz, fazendo uma imensa pressão no alvo.\nCausa dano mágico de propriedade Sagrado no alvo único.\nDano = {[(Nv. da habilidade × 150) + 500] × (Nv. de base ÷ 100)}%",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Gloria_Domini"
-            }
-          },
-          "apiStatus": "translated",
-          "iconUrl": "assets/divine-pride/skills/367.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/367",
-          "tree": {
-            "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 8,
-                "level": 5,
-                "name": "Endure",
-                "visible": false
-              },
-              {
-                "id": 248,
-                "level": 5,
-                "name": "Faith",
-                "visible": false
-              },
-              {
-                "id": 250,
-                "level": 2,
-                "name": "Smite",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Fixed Cast Time",
-                "value": "0.4 seconds"
-              },
-              {
-                "label": "Variable Cast Time",
-                "value": "1 second"
-              },
-              {
-                "label": "Cast Delay",
-                "value": "1 second"
-              },
-              {
-                "label": "Cooldown",
-                "value": "0 seconds"
-              },
-              {
-                "label": "Target",
-                "value": "1 Target"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-matk": "650%",
-                      "sp-cost": "30"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-matk": "800%",
-                      "sp-cost": "35"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-matk": "950%",
-                      "sp-cost": "40"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-matk": "1100%",
-                      "sp-cost": "45"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-matk": "1250%",
-                      "sp-cost": "50"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "translated",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 480,
-          "imageFile": "480.png",
-          "name": "Rapid Smiting",
-          "maxLevel": 5,
-          "prerequisiteText": "Shield Boomerang 5",
-          "group": "Active",
-          "type": "Ranged Physical Attack",
-          "target": "1 Target",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Enable the chance of striking an\nenemy 5 times with a Shield while in battle.\nAccuracy Rate affects chance of success and the\nShield's weight and Upgrade status and caster's level affects the\namount of damage. Rapid Smiting requires Shield.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "ATK 500% , Accuracy Rate +20"
-            },
-            {
-              "level": 2,
-              "text": "ATK 700% , Accuracy Rate +20"
-            },
-            {
-              "level": 3,
-              "text": "ATK 900% , Accuracy Rate +20"
-            },
-            {
-              "level": 4,
-              "text": "ATK 1100%, Accuracy Rate +20"
-            },
-            {
-              "level": 5,
-              "text": "ATK 1300% , Accuracy Rate +20"
-            }
-          ],
-          "cooldown": "0.5 seconds",
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "28"
-                },
-                {
-                  "level": 2,
-                  "value": "31"
-                },
-                {
-                  "level": 3,
-                  "value": "34"
-                },
-                {
-                  "level": 4,
-                  "value": "37"
-                },
-                {
-                  "level": 5,
-                  "value": "40"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/480.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/480",
-          "tree": {
-            "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 251,
-                "level": 5,
-                "name": "Shield Boomerang",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Cooldown",
-                "value": "0.5 seconds"
-              },
-              {
-                "label": "Target",
-                "value": "1 Target"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "atk-1100-accuracy-rate",
-                    "label": "Atk 1100%, Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-1300-accuracy-rate",
-                    "label": "Atk 1300% , Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-500-accuracy-rate",
-                    "label": "Atk 500% , Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-700-accuracy-rate",
-                    "label": "Atk 700% , Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-900-accuracy-rate",
-                    "label": "Atk 900% , Accuracy Rate"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "500%",
-                      "atk-500-accuracy-rate": "+20",
-                      "sp-cost": "28"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "700%",
-                      "atk-700-accuracy-rate": "+20",
-                      "sp-cost": "31"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "900%",
-                      "atk-900-accuracy-rate": "+20",
-                      "sp-cost": "34"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "1100%",
-                      "atk-1100-accuracy-rate": "+20",
-                      "sp-cost": "37"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "1300%",
-                      "atk-1300-accuracy-rate": "+20",
-                      "sp-cost": "40"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [
-            {
-              "skillName": "Rapid Smiting",
-              "versionId": "rebalance-1",
-              "versionLabel": "Rebalance 1",
-              "file": "rebalances/imperial-guard/rebalance_1.md",
-              "section": "2.12",
-              "notes": [
-                "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk to 2000%Atk)."
-              ],
-              "specRows": [
-                {
-                  "label": "Damage While Under Shield Shooting Buff By Adding Damage Bonus",
-                  "before": "Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk",
-                  "after": "2000%Atk)",
-                  "scope": "",
-                  "source": "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk to 2000%Atk)."
-                }
-              ]
-            }
-          ],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 369,
-          "imageFile": "369.png",
-          "name": "Battle Chant",
-          "maxLevel": 10,
-          "prerequisiteText": "Faith 8, Divine Protection 3, Demon Bane 5",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "Immediately",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Sing a hymn that will cause one\nout of 10 different negative status effects to\nenemies and will endow one out of 10 positive\nstatuses upon Party Members within this skill's\nrange. This skill is cancelled if the caster is\nmuted during the casting of Battle Chant.",
-          "levelDetails": [],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "80"
-                },
-                {
-                  "level": 2,
-                  "value": "80"
-                },
-                {
-                  "level": 3,
-                  "value": "80"
-                },
-                {
-                  "level": 4,
-                  "value": "80"
-                },
-                {
-                  "level": 5,
-                  "value": "80"
-                },
-                {
-                  "level": 6,
-                  "value": "100"
-                },
-                {
-                  "level": 7,
-                  "value": "100"
-                },
-                {
-                  "level": 8,
-                  "value": "100"
-                },
-                {
-                  "level": 9,
-                  "value": "100"
-                },
-                {
-                  "level": 10,
-                  "value": "100"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/369.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/369",
-          "tree": {
-            "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 22,
-                "level": 3,
-                "name": "Divine Protection",
-                "visible": false
-              },
-              {
-                "id": 23,
-                "level": 5,
-                "name": "Demon Bane",
-                "visible": false
-              },
-              {
-                "id": 248,
-                "level": 8,
-                "name": "Faith",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "10"
-              },
-              {
-                "label": "Target",
-                "value": "Immediately"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "80"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "sp-cost": "80"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "sp-cost": "80"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "sp-cost": "80"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "sp-cost": "80"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "sp-cost": "100"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "sp-cost": "100"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "sp-cost": "100"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "sp-cost": "100"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "sp-cost": "100"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
           "id": 368,
           "imageFile": "368.png",
           "name": "Martyr's Reckoning",
@@ -13816,7 +13832,7 @@ export const imperialGuardData = {
                 "id": 255,
                 "level": 3,
                 "name": "Sacrifice",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -13908,6 +13924,206 @@ export const imperialGuardData = {
         "rows": 2
       },
       "skills": [
+        {
+          "id": 1,
+          "imageFile": "1.png",
+          "name": "Basic Skill",
+          "maxLevel": 9,
+          "prerequisiteText": "basic skill",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate."
+            },
+            {
+              "level": 2,
+              "text": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons."
+            },
+            {
+              "level": 3,
+              "text": "Enables Sitting\nSitting doubles HP/SP Recovery Speed.\nPress the Insert key or type /sit."
+            },
+            {
+              "level": 4,
+              "text": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window."
+            },
+            {
+              "level": 5,
+              "text": "Join a Party\nCharacter can join a party."
+            },
+            {
+              "level": 6,
+              "text": "Enables Use of Kafra Storage\nAllows use of Kafra Storage."
+            },
+            {
+              "level": 7,
+              "text": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)."
+            },
+            {
+              "level": 9,
+              "text": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes."
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                },
+                {
+                  "level": 6,
+                  "value": "0"
+                },
+                {
+                  "level": 7,
+                  "value": "0"
+                },
+                {
+                  "level": 8,
+                  "value": "0"
+                },
+                {
+                  "level": 9,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/1.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/1",
+          "tree": {
+            "idx": 0,
+            "row": 0,
+            "col": 0,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "9"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Join a Party\nCharacter can join a party",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Enables Use of Kafra Storage\nAllows use of Kafra Storage",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
         {
           "id": 2,
           "imageFile": "2.png",
@@ -14987,6 +15203,85 @@ export const imperialGuardData = {
           }
         },
         {
+          "id": 142,
+          "imageFile": "142.png",
+          "name": "First Aid",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest",
+          "group": "Supportive",
+          "type": "",
+          "target": "Player",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume 3SP to restore 5HP.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/142.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/142",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "3"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 3,
           "imageFile": "3.png",
           "name": "Two Handed Sword Mastery",
@@ -15801,6 +16096,81 @@ export const imperialGuardData = {
             "entries": [],
             "selectedEntry": null
           }
+        },
+        {
+          "id": 143,
+          "imageFile": "143.png",
+          "name": "Play Dead",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest, Novice Only",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/143.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/143",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
         }
       ]
     }
@@ -16331,7 +16701,15 @@ export const imperialGuardData = {
           "notes": [
             "Changes bonus from Atk + 30 to P.Atk + 15 and S.Matk + 15 based on level 5."
           ],
-          "specRows": []
+          "specRows": [
+            {
+              "label": "Bonus",
+              "before": "Atk + 30",
+              "after": "P.Atk + 15 and S.Matk + 15",
+              "scope": "Lv 5",
+              "source": "Changes bonus from Atk + 30 to P.Atk + 15 and S.Matk + 15 based on level 5."
+            }
+          ]
         },
         {
           "skillName": "Attack Stance",
@@ -19653,7 +20031,15 @@ export const imperialGuardData = {
           "notes": [
             "Changes damage property from holy to neutral."
           ],
-          "specRows": []
+          "specRows": [
+            {
+              "label": "Damage Property",
+              "before": "holy",
+              "after": "neutral",
+              "scope": "",
+              "source": "Changes damage property from holy to neutral."
+            }
+          ]
         }
       ],
       "api": {

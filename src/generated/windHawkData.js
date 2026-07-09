@@ -1,5 +1,5 @@
 export const windHawkData = {
-  "generatedAt": "2026-07-08T21:15:12.123Z",
+  "generatedAt": "2026-07-09T03:39:00.818Z",
   "classId": 4257,
   "classSlug": "wind-hawk",
   "className": "Wind Hawk",
@@ -9152,6 +9152,188 @@ export const windHawkData = {
           }
         },
         {
+          "id": 382,
+          "imageFile": "382.png",
+          "name": "Focused Arrow Strike",
+          "maxLevel": 5,
+          "prerequisiteText": "Double Strafe 5, Attention Concentrate 10",
+          "group": "Active",
+          "type": "Ranged physical",
+          "target": "Target 1",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Inflicts ranged physical damage to all enemies within the Area of Effect of 5x5 cell.\nHalf of Critical chance is applied.\nHalf of Critical damage option is applied.\nRange of Sharp Shooting is fixed at 11cell.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "ATK 600%"
+            },
+            {
+              "level": 2,
+              "text": "ATK 900%"
+            },
+            {
+              "level": 3,
+              "text": "ATK 1200%"
+            },
+            {
+              "level": 4,
+              "text": "ATK 1500%"
+            },
+            {
+              "level": 5,
+              "text": "ATK 1800%"
+            }
+          ],
+          "fixedCastTime": "0.5 seconds",
+          "variableCastTime": "0.5 seconds",
+          "castDelay": "0.5 seconds",
+          "cooldown": "0.15 seconds",
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "16"
+                },
+                {
+                  "level": 2,
+                  "value": "18"
+                },
+                {
+                  "level": 3,
+                  "value": "20"
+                },
+                {
+                  "level": 4,
+                  "value": "22"
+                },
+                {
+                  "level": 5,
+                  "value": "24"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/382.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/382",
+          "tree": {
+            "idx": 5,
+            "row": 0,
+            "col": 5,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 45,
+                "level": 10,
+                "name": "Improve Concentration",
+                "visible": false
+              },
+              {
+                "id": 46,
+                "level": 5,
+                "name": "Double Strafe",
+                "visible": false
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.15 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Target 1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "base-damage-atk",
+                    "label": "Base Damage (ATK)"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "base-damage-atk": "600%",
+                      "sp-cost": "16"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "base-damage-atk": "900%",
+                      "sp-cost": "18"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "base-damage-atk": "1200%",
+                      "sp-cost": "20"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "base-damage-atk": "1500%",
+                      "sp-cost": "22"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "base-damage-atk": "1800%",
+                      "sp-cost": "24"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 499,
           "imageFile": "499.png",
           "name": "Beast Charge",
@@ -9694,6 +9876,192 @@ export const windHawkData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "5"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 383,
+          "imageFile": "383.png",
+          "name": "Wind Walker",
+          "maxLevel": 10,
+          "prerequisiteText": "Improve Concentration 9",
+          "group": "Active",
+          "type": "Supportive",
+          "target": "Caster Only",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Increase the Movement Speed and\nFlee Rate of the caster and Party Members.\nHowever, Movement Speed will not be increased\nif a similar effect, such as Increase AGI, has\nalready been cast. Skills which decrease\nMovement Speed, such as Quagmire, cancel the\nMovement Speed increase from Wind Walker.",
+          "levelDetails": [],
+          "castDelay": "2 seconds",
+          "cooldown": "1 second",
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "46"
+                },
+                {
+                  "level": 2,
+                  "value": "52"
+                },
+                {
+                  "level": 3,
+                  "value": "58"
+                },
+                {
+                  "level": 4,
+                  "value": "64"
+                },
+                {
+                  "level": 5,
+                  "value": "70"
+                },
+                {
+                  "level": 6,
+                  "value": "76"
+                },
+                {
+                  "level": 7,
+                  "value": "82"
+                },
+                {
+                  "level": 8,
+                  "value": "88"
+                },
+                {
+                  "level": 9,
+                  "value": "94"
+                },
+                {
+                  "level": 10,
+                  "value": "100"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/383.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/383",
+          "tree": {
+            "idx": 12,
+            "row": 1,
+            "col": 3,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 45,
+                "level": 9,
+                "name": "Improve Concentration",
+                "visible": false
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "1 second"
+              },
+              {
+                "label": "Target",
+                "value": "Caster Only"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "46"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "sp-cost": "52"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "sp-cost": "58"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "sp-cost": "64"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "sp-cost": "70"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "sp-cost": "76"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "sp-cost": "82"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "88"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "sp-cost": "94"
+                    }
+                  },
+                  {
+                    "level": 10,
+                    "values": {
+                      "sp-cost": "100"
                     }
                   }
                 ],
@@ -11216,552 +11584,6 @@ export const windHawkData = {
           }
         },
         {
-          "id": 123,
-          "imageFile": "123.png",
-          "name": "Claymore Trap",
-          "maxLevel": 5,
-          "prerequisiteText": "Blast Mine 1, Shockwave Trap 1",
-          "group": "Active",
-          "type": "1 cell on ground",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Sets 2 traps that will explode when an enemy steps on it, inflicting piercing Fire property damage to all enemies within its area of effect.\nCremore traps can be directly attacked and blown up.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "Operating time: 20sec"
-            },
-            {
-              "level": 2,
-              "text": "Operating time: 40sec"
-            },
-            {
-              "level": 3,
-              "text": "Operating time: 60sec"
-            },
-            {
-              "level": 4,
-              "text": "Operating time: 80sec"
-            },
-            {
-              "level": 5,
-              "text": "Operating time:100sec"
-            }
-          ],
-          "fixedCastTime": "0.3 seconds",
-          "variableCastTime": "0.5 seconds",
-          "castDelay": "1 second",
-          "cooldown": "0 seconds",
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "15"
-                },
-                {
-                  "level": 2,
-                  "value": "15"
-                },
-                {
-                  "level": 3,
-                  "value": "15"
-                },
-                {
-                  "level": 4,
-                  "value": "15"
-                },
-                {
-                  "level": 5,
-                  "value": "15"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/123.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/123",
-          "tree": {
-            "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 118,
-                "level": 1,
-                "name": "Shockwave Trap",
-                "visible": true
-              },
-              {
-                "id": 122,
-                "level": 1,
-                "name": "Blast Mine",
-                "visible": true
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Fixed Cast Time",
-                "value": "0.3 seconds"
-              },
-              {
-                "label": "Variable Cast Time",
-                "value": "0.5 seconds"
-              },
-              {
-                "label": "Cast Delay",
-                "value": "1 second"
-              },
-              {
-                "label": "Cooldown",
-                "value": "0 seconds"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "Operating time: 20sec",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "Operating time: 40sec",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "Operating time: 60sec",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "Operating time: 80sec",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "Operating time:100sec",
-                      "sp-cost": "15"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 382,
-          "imageFile": "382.png",
-          "name": "Focused Arrow Strike",
-          "maxLevel": 5,
-          "prerequisiteText": "Double Strafe 5, Attention Concentrate 10",
-          "group": "Active",
-          "type": "Ranged physical",
-          "target": "Target 1",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Inflicts ranged physical damage to all enemies within the Area of Effect of 5x5 cell.\nHalf of Critical chance is applied.\nHalf of Critical damage option is applied.\nRange of Sharp Shooting is fixed at 11cell.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "ATK 600%"
-            },
-            {
-              "level": 2,
-              "text": "ATK 900%"
-            },
-            {
-              "level": 3,
-              "text": "ATK 1200%"
-            },
-            {
-              "level": 4,
-              "text": "ATK 1500%"
-            },
-            {
-              "level": 5,
-              "text": "ATK 1800%"
-            }
-          ],
-          "fixedCastTime": "0.5 seconds",
-          "variableCastTime": "0.5 seconds",
-          "castDelay": "0.5 seconds",
-          "cooldown": "0.15 seconds",
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "16"
-                },
-                {
-                  "level": 2,
-                  "value": "18"
-                },
-                {
-                  "level": 3,
-                  "value": "20"
-                },
-                {
-                  "level": 4,
-                  "value": "22"
-                },
-                {
-                  "level": 5,
-                  "value": "24"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/382.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/382",
-          "tree": {
-            "idx": 5,
-            "row": 0,
-            "col": 5,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 45,
-                "level": 10,
-                "name": "Improve Concentration",
-                "visible": false
-              },
-              {
-                "id": 46,
-                "level": 5,
-                "name": "Double Strafe",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Fixed Cast Time",
-                "value": "0.5 seconds"
-              },
-              {
-                "label": "Variable Cast Time",
-                "value": "0.5 seconds"
-              },
-              {
-                "label": "Cast Delay",
-                "value": "0.5 seconds"
-              },
-              {
-                "label": "Cooldown",
-                "value": "0.15 seconds"
-              },
-              {
-                "label": "Target",
-                "value": "Target 1"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-atk",
-                    "label": "Base Damage (ATK)"
-                  },
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-atk": "600%",
-                      "sp-cost": "16"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-atk": "900%",
-                      "sp-cost": "18"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-atk": "1200%",
-                      "sp-cost": "20"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-atk": "1500%",
-                      "sp-cost": "22"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-atk": "1800%",
-                      "sp-cost": "24"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 383,
-          "imageFile": "383.png",
-          "name": "Wind Walker",
-          "maxLevel": 10,
-          "prerequisiteText": "Improve Concentration 9",
-          "group": "Active",
-          "type": "Supportive",
-          "target": "Caster Only",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Increase the Movement Speed and\nFlee Rate of the caster and Party Members.\nHowever, Movement Speed will not be increased\nif a similar effect, such as Increase AGI, has\nalready been cast. Skills which decrease\nMovement Speed, such as Quagmire, cancel the\nMovement Speed increase from Wind Walker.",
-          "levelDetails": [],
-          "castDelay": "2 seconds",
-          "cooldown": "1 second",
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "46"
-                },
-                {
-                  "level": 2,
-                  "value": "52"
-                },
-                {
-                  "level": 3,
-                  "value": "58"
-                },
-                {
-                  "level": 4,
-                  "value": "64"
-                },
-                {
-                  "level": 5,
-                  "value": "70"
-                },
-                {
-                  "level": 6,
-                  "value": "76"
-                },
-                {
-                  "level": 7,
-                  "value": "82"
-                },
-                {
-                  "level": 8,
-                  "value": "88"
-                },
-                {
-                  "level": 9,
-                  "value": "94"
-                },
-                {
-                  "level": 10,
-                  "value": "100"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/383.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/383",
-          "tree": {
-            "idx": 12,
-            "row": 1,
-            "col": 3,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 45,
-                "level": 9,
-                "name": "Improve Concentration",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "10"
-              },
-              {
-                "label": "Cast Delay",
-                "value": "2 seconds"
-              },
-              {
-                "label": "Cooldown",
-                "value": "1 second"
-              },
-              {
-                "label": "Target",
-                "value": "Caster Only"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "46"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "sp-cost": "52"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "sp-cost": "58"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "sp-cost": "64"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "sp-cost": "70"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "sp-cost": "76"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "sp-cost": "82"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "sp-cost": "88"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "sp-cost": "94"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "sp-cost": "100"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
           "id": 380,
           "imageFile": "380.png",
           "name": "Falcon Eyes",
@@ -11894,7 +11716,7 @@ export const windHawkData = {
                 "id": 127,
                 "level": 1,
                 "name": "Falconry Mastery",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -12110,19 +11932,19 @@ export const windHawkData = {
                 "id": 127,
                 "level": 1,
                 "name": "Falconry Mastery",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 128,
                 "level": 3,
                 "name": "Steel Crow",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 129,
                 "level": 5,
                 "name": "Blitz Beat",
-                "visible": false
+                "visible": true
               }
             ]
           },
@@ -12209,6 +12031,184 @@ export const windHawkData = {
             "entries": [],
             "selectedEntry": null
           }
+        },
+        {
+          "id": 123,
+          "imageFile": "123.png",
+          "name": "Claymore Trap",
+          "maxLevel": 5,
+          "prerequisiteText": "Blast Mine 1, Shockwave Trap 1",
+          "group": "Active",
+          "type": "1 cell on ground",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Sets 2 traps that will explode when an enemy steps on it, inflicting piercing Fire property damage to all enemies within its area of effect.\nCremore traps can be directly attacked and blown up.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Operating time: 20sec"
+            },
+            {
+              "level": 2,
+              "text": "Operating time: 40sec"
+            },
+            {
+              "level": 3,
+              "text": "Operating time: 60sec"
+            },
+            {
+              "level": 4,
+              "text": "Operating time: 80sec"
+            },
+            {
+              "level": 5,
+              "text": "Operating time:100sec"
+            }
+          ],
+          "fixedCastTime": "0.3 seconds",
+          "variableCastTime": "0.5 seconds",
+          "castDelay": "1 second",
+          "cooldown": "0 seconds",
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "15"
+                },
+                {
+                  "level": 2,
+                  "value": "15"
+                },
+                {
+                  "level": 3,
+                  "value": "15"
+                },
+                {
+                  "level": 4,
+                  "value": "15"
+                },
+                {
+                  "level": 5,
+                  "value": "15"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/123.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/123",
+          "tree": {
+            "idx": 29,
+            "row": 3,
+            "col": 2,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 118,
+                "level": 1,
+                "name": "Shockwave Trap",
+                "visible": true
+              },
+              {
+                "id": 122,
+                "level": 1,
+                "name": "Blast Mine",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0 seconds"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Operating time: 20sec",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Operating time: 40sec",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Operating time: 60sec",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Operating time: 80sec",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Operating time:100sec",
+                      "sp-cost": "15"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
         }
       ]
     },
@@ -12221,6 +12221,206 @@ export const windHawkData = {
         "rows": 2
       },
       "skills": [
+        {
+          "id": 1,
+          "imageFile": "1.png",
+          "name": "Basic Skill",
+          "maxLevel": 9,
+          "prerequisiteText": "basic skill",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate."
+            },
+            {
+              "level": 2,
+              "text": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons."
+            },
+            {
+              "level": 3,
+              "text": "Enables Sitting\nSitting doubles HP/SP Recovery Speed.\nPress the Insert key or type /sit."
+            },
+            {
+              "level": 4,
+              "text": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window."
+            },
+            {
+              "level": 5,
+              "text": "Join a Party\nCharacter can join a party."
+            },
+            {
+              "level": 6,
+              "text": "Enables Use of Kafra Storage\nAllows use of Kafra Storage."
+            },
+            {
+              "level": 7,
+              "text": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)."
+            },
+            {
+              "level": 9,
+              "text": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes."
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                },
+                {
+                  "level": 6,
+                  "value": "0"
+                },
+                {
+                  "level": 7,
+                  "value": "0"
+                },
+                {
+                  "level": 8,
+                  "value": "0"
+                },
+                {
+                  "level": 9,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/1.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/1",
+          "tree": {
+            "idx": 0,
+            "row": 0,
+            "col": 0,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "9"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Join a Party\nCharacter can join a party",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Enables Use of Kafra Storage\nAllows use of Kafra Storage",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
         {
           "id": 46,
           "imageFile": "46.png",
@@ -12865,6 +13065,85 @@ export const windHawkData = {
           }
         },
         {
+          "id": 142,
+          "imageFile": "142.png",
+          "name": "First Aid",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest",
+          "group": "Supportive",
+          "type": "",
+          "target": "Player",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume 3SP to restore 5HP.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/142.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/142",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "3"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 47,
           "imageFile": "47.png",
           "name": "Arrow Shower",
@@ -13382,6 +13661,81 @@ export const windHawkData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "10"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 143,
+          "imageFile": "143.png",
+          "name": "Play Dead",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest, Novice Only",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/143.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/143",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
                     }
                   }
                 ],

@@ -1,5 +1,5 @@
 export const archMageData = {
-  "generatedAt": "2026-07-08T21:13:54.851Z",
+  "generatedAt": "2026-07-09T03:37:44.992Z",
   "classId": 4255,
   "classSlug": "arch-mage",
   "className": "Arch Mage",
@@ -4641,6 +4641,13 @@ export const archMageData = {
                   "after": "150%",
                   "scope": "",
                   "source": "Reduces damage bonus from Climax level 3 from 200% to 150%."
+                },
+                {
+                  "label": "Damage Modifier",
+                  "before": "Clima x level 5 from 50% increasing",
+                  "after": "20% reducing",
+                  "scope": "",
+                  "source": "Changes damage modifier from Climax level 5 from 50% increasing to 20% reducing."
                 },
                 {
                   "label": "SP Cost",
@@ -12999,6 +13006,111 @@ export const archMageData = {
           }
         },
         {
+          "id": 483,
+          "imageFile": "483.png",
+          "name": "Ganbantein",
+          "maxLevel": 1,
+          "prerequisiteText": "Sense 1, Icewall 1",
+          "group": "",
+          "type": "",
+          "target": "Ground",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Enable the chance of canceling any\nground targeting magic spell cast on a 3*3 cell\narea around the targeted spot. This skill will\ncancel Magnetic Earth on areas that have been\nenchanted by that skill. This skill is\nunaffected by items or skills that remove\nGemstone requirements. Each cast requires\n1 Blue Gemstone and Yellow Gemstone.\n5 second Cast Delay.",
+          "levelDetails": [],
+          "variableCastTime": "0 seconds",
+          "cooldown": "2.5 seconds",
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "40"
+                }
+              ]
+            }
+          ],
+          "translations": {
+            "pt-BR": {
+              "name": " Ganbantein ",
+              "description": "Conjura uma magia em latim.\nTem 80% de chance de anular total ou parcialmente as habilidades de solo na área selecionada.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ganbantein"
+            }
+          },
+          "apiStatus": "translated",
+          "iconUrl": "assets/divine-pride/skills/483.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/483",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 87,
+                "level": 1,
+                "name": "Ice Wall",
+                "visible": true
+              },
+              {
+                "id": 93,
+                "level": 1,
+                "name": "Sense",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "2.5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "40"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "translated",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 88,
           "imageFile": "88.png",
           "name": "Frost Nova",
@@ -13893,673 +14005,6 @@ export const archMageData = {
           }
         },
         {
-          "id": 86,
-          "imageFile": "86.png",
-          "name": "Waterball",
-          "maxLevel": 5,
-          "prerequisiteText": "Cold Bolt 1, Lightning Bolt 1",
-          "group": "Active",
-          "type": "Magic",
-          "target": "1 Enemy",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Requires to be in shallow water.\nInflicts Water property Magic Damage to a single target multiple times in rapid succession.\nThe range increases upon skill level, and can also be used above skill effects such as Deluge.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "MATK 130% per 1time, Range: 1X1"
-            },
-            {
-              "level": 2,
-              "text": "MATK 160% per 1time, Range: 3X3"
-            },
-            {
-              "level": 3,
-              "text": "MATK 190% per 1time, Range: 3X3"
-            },
-            {
-              "level": 4,
-              "text": "MATK 220% per 1time, Range: 5X5"
-            },
-            {
-              "level": 5,
-              "text": "MATK 250% per 1time, Range: 5X5"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "15"
-                },
-                {
-                  "level": 2,
-                  "value": "20"
-                },
-                {
-                  "level": 3,
-                  "value": "20"
-                },
-                {
-                  "level": 4,
-                  "value": "25"
-                },
-                {
-                  "level": 5,
-                  "value": "25"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/86.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/86",
-          "tree": {
-            "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 14,
-                "level": 1,
-                "name": "Cold Bolt",
-                "visible": false
-              },
-              {
-                "id": 20,
-                "level": 1,
-                "name": "Lightning Bolt",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              },
-              {
-                "label": "Target",
-                "value": "1 Enemy"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-matk": "130%",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-matk": "160%",
-                      "sp-cost": "20"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-matk": "190%",
-                      "sp-cost": "20"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-matk": "220%",
-                      "sp-cost": "25"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-matk": "250%",
-                      "sp-cost": "25"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 92,
-          "imageFile": "92.png",
-          "name": "Quagmire",
-          "maxLevel": 5,
-          "prerequisiteText": "Heaven's Drive 1",
-          "group": "Active",
-          "type": "1 cell on ground",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Turns a targeted location into a marshland that reduces Movement Speed, AGI and DEX of all enemies within its area of effect.\nThis skill cannot reduce the affected stats of monsters by more than 50%, and those of players by more than 25%.\nAlso removes certain skill effects, such as Increase AGI, Twohand Quicken, Wind Walker and Adrenaline Rush.\nA Maximum of three quagmires can be placed before the first one expires.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "Duration: 5sec, AGI/DEXReduction: 10%"
-            },
-            {
-              "level": 2,
-              "text": "Duration:10sec, AGI/DEXReduction: 20%"
-            },
-            {
-              "level": 3,
-              "text": "Duration:15sec, AGI/DEXReduction: 30%"
-            },
-            {
-              "level": 4,
-              "text": "Duration:20sec, AGI/DEXReduction: 40%"
-            },
-            {
-              "level": 5,
-              "text": "Duration:25sec, AGI/DEXReduction: 50%"
-            }
-          ],
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "5"
-                },
-                {
-                  "level": 2,
-                  "value": "10"
-                },
-                {
-                  "level": 3,
-                  "value": "15"
-                },
-                {
-                  "level": 4,
-                  "value": "20"
-                },
-                {
-                  "level": 5,
-                  "value": "25"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/92.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/92",
-          "tree": {
-            "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 91,
-                "level": 1,
-                "name": "Heaven's Drive",
-                "visible": true
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "5"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "effect": "Duration: 5sec, AGI/DE x Reduction: 10%",
-                      "sp-cost": "5"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "effect": "Duration:10sec, AGI/DE x Reduction: 20%",
-                      "sp-cost": "10"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "effect": "Duration:15sec, AGI/DE x Reduction: 30%",
-                      "sp-cost": "15"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "effect": "Duration:20sec, AGI/DE x Reduction: 40%",
-                      "sp-cost": "20"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "effect": "Duration:25sec, AGI/DE x Reduction: 50%",
-                      "sp-cost": "25"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 89,
-          "imageFile": "89.png",
-          "name": "Storm Gust",
-          "maxLevel": 10,
-          "prerequisiteText": "Frost Diver 1, Jupitel 3",
-          "group": "Active",
-          "type": "1 cell on ground",
-          "target": "",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Summons a vicious blizzard upon a targeted location that will inflict Water property magic damage every half a second to all enemies within its area of effect.\nIt lasts for 4.5s, hits every 0.45s and push them 2 cells.\nIt has a chance of leaving enemies frozen,and frozen enemies will not take further damage from this skill.",
-          "levelDetails": [
-            {
-              "level": 1,
-              "text": "MATK 120% per 1time"
-            },
-            {
-              "level": 2,
-              "text": "MATK 170% per 1time"
-            },
-            {
-              "level": 3,
-              "text": "MATK 220% per 1time"
-            },
-            {
-              "level": 4,
-              "text": "MATK 270% per 1time"
-            },
-            {
-              "level": 5,
-              "text": "MATK 320% per 1time"
-            },
-            {
-              "level": 6,
-              "text": "MATK 370% per 1time"
-            },
-            {
-              "level": 7,
-              "text": "MATK 420% per 1time"
-            },
-            {
-              "level": 8,
-              "text": "MATK 470% per 1time"
-            },
-            {
-              "level": 9,
-              "text": "MATK 520% per 1time"
-            },
-            {
-              "level": 10,
-              "text": "MATK 570% per 1time"
-            }
-          ],
-          "fixedCastTime": "1.5 seconds",
-          "castDelay": "1 second",
-          "cooldown": "6 seconds",
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "78"
-                },
-                {
-                  "level": 2,
-                  "value": "78"
-                },
-                {
-                  "level": 3,
-                  "value": "78"
-                },
-                {
-                  "level": 4,
-                  "value": "78"
-                },
-                {
-                  "level": 5,
-                  "value": "78"
-                },
-                {
-                  "level": 6,
-                  "value": "78"
-                },
-                {
-                  "level": 7,
-                  "value": "78"
-                },
-                {
-                  "level": 8,
-                  "value": "78"
-                },
-                {
-                  "level": 9,
-                  "value": "78"
-                },
-                {
-                  "level": 10,
-                  "value": "78"
-                }
-              ]
-            }
-          ],
-          "translations": {},
-          "apiStatus": "not-used",
-          "iconUrl": "assets/divine-pride/skills/89.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/89",
-          "tree": {
-            "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 15,
-                "level": 1,
-                "name": "Frost Driver",
-                "visible": false
-              },
-              {
-                "id": 84,
-                "level": 3,
-                "name": "Jupitel Thunder",
-                "visible": true
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Type",
-                "value": "Active Skill"
-              },
-              {
-                "label": "Levels",
-                "value": "10"
-              },
-              {
-                "label": "Fixed Cast Time",
-                "value": "1.5 seconds"
-              },
-              {
-                "label": "Cast Delay",
-                "value": "1 second"
-              },
-              {
-                "label": "Cooldown",
-                "value": "6 seconds"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "base-damage-matk",
-                    "label": "Base Damage (MATK)"
-                  },
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "base-damage-matk": "120%",
-                      "sp-cost": "78"
-                    }
-                  },
-                  {
-                    "level": 2,
-                    "values": {
-                      "base-damage-matk": "170%",
-                      "sp-cost": "78"
-                    }
-                  },
-                  {
-                    "level": 3,
-                    "values": {
-                      "base-damage-matk": "220%",
-                      "sp-cost": "78"
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "values": {
-                      "base-damage-matk": "270%",
-                      "sp-cost": "78"
-                    }
-                  },
-                  {
-                    "level": 5,
-                    "values": {
-                      "base-damage-matk": "320%",
-                      "sp-cost": "78"
-                    }
-                  },
-                  {
-                    "level": 6,
-                    "values": {
-                      "base-damage-matk": "370%",
-                      "sp-cost": "78"
-                    }
-                  },
-                  {
-                    "level": 7,
-                    "values": {
-                      "base-damage-matk": "420%",
-                      "sp-cost": "78"
-                    }
-                  },
-                  {
-                    "level": 8,
-                    "values": {
-                      "base-damage-matk": "470%",
-                      "sp-cost": "78"
-                    }
-                  },
-                  {
-                    "level": 9,
-                    "values": {
-                      "base-damage-matk": "520%",
-                      "sp-cost": "78"
-                    }
-                  },
-                  {
-                    "level": 10,
-                    "values": {
-                      "base-damage-matk": "570%",
-                      "sp-cost": "78"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "not-used",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
-          "id": 483,
-          "imageFile": "483.png",
-          "name": "Ganbantein",
-          "maxLevel": 1,
-          "prerequisiteText": "Sense 1, Icewall 1",
-          "group": "",
-          "type": "",
-          "target": "Ground",
-          "recoversAp": "",
-          "consumesAp": "",
-          "description": "Enable the chance of canceling any\nground targeting magic spell cast on a 3*3 cell\narea around the targeted spot. This skill will\ncancel Magnetic Earth on areas that have been\nenchanted by that skill. This skill is\nunaffected by items or skills that remove\nGemstone requirements. Each cast requires\n1 Blue Gemstone and Yellow Gemstone.\n5 second Cast Delay.",
-          "levelDetails": [],
-          "variableCastTime": "0 seconds",
-          "cooldown": "2.5 seconds",
-          "levelExtras": [
-            {
-              "label": "SP Cost",
-              "values": [
-                {
-                  "level": 1,
-                  "value": "40"
-                }
-              ]
-            }
-          ],
-          "translations": {
-            "pt-BR": {
-              "name": " Ganbantein ",
-              "description": "Conjura uma magia em latim.\nTem 80% de chance de anular total ou parcialmente as habilidades de solo na área selecionada.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Ganbantein"
-            }
-          },
-          "apiStatus": "translated",
-          "iconUrl": "assets/divine-pride/skills/483.png",
-          "sourceUrl": "https://www.divine-pride.net/database/skill/483",
-          "tree": {
-            "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
-            "requirements": [
-              {
-                "id": 87,
-                "level": 1,
-                "name": "Ice Wall",
-                "visible": false
-              },
-              {
-                "id": 93,
-                "level": 1,
-                "name": "Sense",
-                "visible": false
-              }
-            ]
-          },
-          "details": {
-            "rows": [
-              {
-                "label": "Levels",
-                "value": "1"
-              },
-              {
-                "label": "Variable Cast Time",
-                "value": "0 seconds"
-              },
-              {
-                "label": "Cooldown",
-                "value": "2.5 seconds"
-              },
-              {
-                "label": "Target",
-                "value": "Ground"
-              }
-            ],
-            "levelTables": [
-              {
-                "title": "Level Scaling",
-                "columns": [
-                  {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": 1,
-                    "values": {
-                      "sp-cost": "40"
-                    }
-                  }
-                ],
-                "formulaRows": []
-              }
-            ]
-          },
-          "irowikiUrl": "",
-          "balanceNotes": [],
-          "api": {
-            "status": "translated",
-            "entries": [],
-            "selectedEntry": null
-          }
-        },
-        {
           "id": 365,
           "imageFile": "365.png",
           "name": "Stave Crasher (Magic Crasher)",
@@ -14863,6 +14308,320 @@ export const archMageData = {
                     "values": {
                       "maxsp": "+20%",
                       "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 86,
+          "imageFile": "86.png",
+          "name": "Waterball",
+          "maxLevel": 5,
+          "prerequisiteText": "Cold Bolt 1, Lightning Bolt 1",
+          "group": "Active",
+          "type": "Magic",
+          "target": "1 Enemy",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Requires to be in shallow water.\nInflicts Water property Magic Damage to a single target multiple times in rapid succession.\nThe range increases upon skill level, and can also be used above skill effects such as Deluge.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "MATK 130% per 1time, Range: 1X1"
+            },
+            {
+              "level": 2,
+              "text": "MATK 160% per 1time, Range: 3X3"
+            },
+            {
+              "level": 3,
+              "text": "MATK 190% per 1time, Range: 3X3"
+            },
+            {
+              "level": 4,
+              "text": "MATK 220% per 1time, Range: 5X5"
+            },
+            {
+              "level": 5,
+              "text": "MATK 250% per 1time, Range: 5X5"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "15"
+                },
+                {
+                  "level": 2,
+                  "value": "20"
+                },
+                {
+                  "level": 3,
+                  "value": "20"
+                },
+                {
+                  "level": 4,
+                  "value": "25"
+                },
+                {
+                  "level": 5,
+                  "value": "25"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/86.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/86",
+          "tree": {
+            "idx": 15,
+            "row": 1,
+            "col": 6,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 14,
+                "level": 1,
+                "name": "Cold Bolt",
+                "visible": false
+              },
+              {
+                "id": 20,
+                "level": 1,
+                "name": "Lightning Bolt",
+                "visible": false
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              },
+              {
+                "label": "Target",
+                "value": "1 Enemy"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "base-damage-matk",
+                    "label": "Base Damage (MATK)"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "base-damage-matk": "130%",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "base-damage-matk": "160%",
+                      "sp-cost": "20"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "base-damage-matk": "190%",
+                      "sp-cost": "20"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "base-damage-matk": "220%",
+                      "sp-cost": "25"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "base-damage-matk": "250%",
+                      "sp-cost": "25"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 92,
+          "imageFile": "92.png",
+          "name": "Quagmire",
+          "maxLevel": 5,
+          "prerequisiteText": "Heaven's Drive 1",
+          "group": "Active",
+          "type": "1 cell on ground",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Turns a targeted location into a marshland that reduces Movement Speed, AGI and DEX of all enemies within its area of effect.\nThis skill cannot reduce the affected stats of monsters by more than 50%, and those of players by more than 25%.\nAlso removes certain skill effects, such as Increase AGI, Twohand Quicken, Wind Walker and Adrenaline Rush.\nA Maximum of three quagmires can be placed before the first one expires.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Duration: 5sec, AGI/DEXReduction: 10%"
+            },
+            {
+              "level": 2,
+              "text": "Duration:10sec, AGI/DEXReduction: 20%"
+            },
+            {
+              "level": 3,
+              "text": "Duration:15sec, AGI/DEXReduction: 30%"
+            },
+            {
+              "level": 4,
+              "text": "Duration:20sec, AGI/DEXReduction: 40%"
+            },
+            {
+              "level": 5,
+              "text": "Duration:25sec, AGI/DEXReduction: 50%"
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                },
+                {
+                  "level": 2,
+                  "value": "10"
+                },
+                {
+                  "level": 3,
+                  "value": "15"
+                },
+                {
+                  "level": 4,
+                  "value": "20"
+                },
+                {
+                  "level": 5,
+                  "value": "25"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/92.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/92",
+          "tree": {
+            "idx": 17,
+            "row": 1,
+            "col": 8,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 91,
+                "level": 1,
+                "name": "Heaven's Drive",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "5"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Duration: 5sec, AGI/DE x Reduction: 10%",
+                      "sp-cost": "5"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Duration:10sec, AGI/DE x Reduction: 20%",
+                      "sp-cost": "10"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Duration:15sec, AGI/DE x Reduction: 30%",
+                      "sp-cost": "15"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Duration:20sec, AGI/DE x Reduction: 40%",
+                      "sp-cost": "20"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Duration:25sec, AGI/DE x Reduction: 50%",
+                      "sp-cost": "25"
                     }
                   }
                 ],
@@ -15249,6 +15008,254 @@ export const archMageData = {
           }
         },
         {
+          "id": 89,
+          "imageFile": "89.png",
+          "name": "Storm Gust",
+          "maxLevel": 10,
+          "prerequisiteText": "Frost Diver 1, Jupitel 3",
+          "group": "Active",
+          "type": "1 cell on ground",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Summons a vicious blizzard upon a targeted location that will inflict Water property magic damage every half a second to all enemies within its area of effect.\nIt lasts for 4.5s, hits every 0.45s and push them 2 cells.\nIt has a chance of leaving enemies frozen,and frozen enemies will not take further damage from this skill.",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "MATK 120% per 1time"
+            },
+            {
+              "level": 2,
+              "text": "MATK 170% per 1time"
+            },
+            {
+              "level": 3,
+              "text": "MATK 220% per 1time"
+            },
+            {
+              "level": 4,
+              "text": "MATK 270% per 1time"
+            },
+            {
+              "level": 5,
+              "text": "MATK 320% per 1time"
+            },
+            {
+              "level": 6,
+              "text": "MATK 370% per 1time"
+            },
+            {
+              "level": 7,
+              "text": "MATK 420% per 1time"
+            },
+            {
+              "level": 8,
+              "text": "MATK 470% per 1time"
+            },
+            {
+              "level": 9,
+              "text": "MATK 520% per 1time"
+            },
+            {
+              "level": 10,
+              "text": "MATK 570% per 1time"
+            }
+          ],
+          "fixedCastTime": "1.5 seconds",
+          "castDelay": "1 second",
+          "cooldown": "6 seconds",
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "78"
+                },
+                {
+                  "level": 2,
+                  "value": "78"
+                },
+                {
+                  "level": 3,
+                  "value": "78"
+                },
+                {
+                  "level": 4,
+                  "value": "78"
+                },
+                {
+                  "level": 5,
+                  "value": "78"
+                },
+                {
+                  "level": 6,
+                  "value": "78"
+                },
+                {
+                  "level": 7,
+                  "value": "78"
+                },
+                {
+                  "level": 8,
+                  "value": "78"
+                },
+                {
+                  "level": 9,
+                  "value": "78"
+                },
+                {
+                  "level": 10,
+                  "value": "78"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/89.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/89",
+          "tree": {
+            "idx": 22,
+            "row": 2,
+            "col": 4,
+            "columns": 9,
+            "requirements": [
+              {
+                "id": 15,
+                "level": 1,
+                "name": "Frost Driver",
+                "visible": false
+              },
+              {
+                "id": 84,
+                "level": 3,
+                "name": "Jupitel Thunder",
+                "visible": true
+              }
+            ]
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "10"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "6 seconds"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "base-damage-matk",
+                    "label": "Base Damage (MATK)"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "base-damage-matk": "120%",
+                      "sp-cost": "78"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "base-damage-matk": "170%",
+                      "sp-cost": "78"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "base-damage-matk": "220%",
+                      "sp-cost": "78"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "base-damage-matk": "270%",
+                      "sp-cost": "78"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "base-damage-matk": "320%",
+                      "sp-cost": "78"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "base-damage-matk": "370%",
+                      "sp-cost": "78"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "base-damage-matk": "420%",
+                      "sp-cost": "78"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "base-damage-matk": "470%",
+                      "sp-cost": "78"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "base-damage-matk": "520%",
+                      "sp-cost": "78"
+                    }
+                  },
+                  {
+                    "level": 10,
+                    "values": {
+                      "base-damage-matk": "570%",
+                      "sp-cost": "78"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
           "id": 484,
           "imageFile": "484.png",
           "name": "Gravitational Field",
@@ -15327,7 +15334,7 @@ export const archMageData = {
                 "id": 92,
                 "level": 1,
                 "name": "Quagmire",
-                "visible": false
+                "visible": true
               },
               {
                 "id": 365,
@@ -15461,13 +15468,213 @@ export const archMageData = {
     },
     {
       "id": "previous-3",
-      "label": "Mage",
+      "label": "Magician",
       "pointLimit": 49,
       "tree": {
         "columns": 9,
         "rows": 3
       },
       "skills": [
+        {
+          "id": 1,
+          "imageFile": "1.png",
+          "name": "Basic Skill",
+          "maxLevel": 9,
+          "prerequisiteText": "basic skill",
+          "group": "Passive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "",
+          "levelDetails": [
+            {
+              "level": 1,
+              "text": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate."
+            },
+            {
+              "level": 2,
+              "text": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons."
+            },
+            {
+              "level": 3,
+              "text": "Enables Sitting\nSitting doubles HP/SP Recovery Speed.\nPress the Insert key or type /sit."
+            },
+            {
+              "level": 4,
+              "text": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window."
+            },
+            {
+              "level": 5,
+              "text": "Join a Party\nCharacter can join a party."
+            },
+            {
+              "level": 6,
+              "text": "Enables Use of Kafra Storage\nAllows use of Kafra Storage."
+            },
+            {
+              "level": 7,
+              "text": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)."
+            },
+            {
+              "level": 9,
+              "text": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes."
+            }
+          ],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "0"
+                },
+                {
+                  "level": 2,
+                  "value": "0"
+                },
+                {
+                  "level": 3,
+                  "value": "0"
+                },
+                {
+                  "level": 4,
+                  "value": "0"
+                },
+                {
+                  "level": 5,
+                  "value": "0"
+                },
+                {
+                  "level": 6,
+                  "value": "0"
+                },
+                {
+                  "level": 7,
+                  "value": "0"
+                },
+                {
+                  "level": 8,
+                  "value": "0"
+                },
+                {
+                  "level": 9,
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/1.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/1",
+          "tree": {
+            "idx": 0,
+            "row": 0,
+            "col": 0,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "9"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "effect": "Enables Trading\nAllows the trading of items with other characters. Right click on a character to initiate",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "effect": "Enables Emotions\nAlt+(0~9) and Ctrl+(1,-,=.)\nAlt+L opens additional Emotion icons",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "effect": "Enables Sitting\nSitting doubles HP/SP Recovery Speed\nPress the Insert key or type /sit",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "effect": "Enables Chat Room Creation\nAlt + C Opens a Chat Room or click the\nChat button in the Basic Information Window",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "effect": "Join a Party\nCharacter can join a party",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 6,
+                    "values": {
+                      "effect": "Enables Use of Kafra Storage\nAllows use of Kafra Storage",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 7,
+                    "values": {
+                      "effect": "Organize Party\nCreate a party by typing /organize ''[Party Name]''\nSet party options in the Party Window (Alt+Z)",
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 8,
+                    "values": {
+                      "sp-cost": "0"
+                    }
+                  },
+                  {
+                    "level": 9,
+                    "values": {
+                      "effect": "Enables Change to First Job Class\nQualifies character for change from Novice to one\nof the First Job Classes",
+                      "sp-cost": "0"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
         {
           "id": 16,
           "imageFile": "16.png",
@@ -16697,6 +16904,85 @@ export const archMageData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "10"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 142,
+          "imageFile": "142.png",
+          "name": "First Aid",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest",
+          "group": "Supportive",
+          "type": "",
+          "target": "Player",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Consume 3SP to restore 5HP.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/142.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/142",
+          "tree": {
+            "idx": 7,
+            "row": 0,
+            "col": 7,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "3"
                     }
                   }
                 ],
@@ -17991,6 +18277,81 @@ export const archMageData = {
                     "level": 1,
                     "values": {
                       "sp-cost": "30"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
+          },
+          "irowikiUrl": "",
+          "balanceNotes": [],
+          "api": {
+            "status": "not-used",
+            "entries": [],
+            "selectedEntry": null
+          }
+        },
+        {
+          "id": 143,
+          "imageFile": "143.png",
+          "name": "Play Dead",
+          "maxLevel": 1,
+          "prerequisiteText": "Finish Quest, Novice Only",
+          "group": "Supportive",
+          "type": "",
+          "target": "",
+          "recoversAp": "",
+          "consumesAp": "",
+          "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
+          "levelDetails": [],
+          "levelExtras": [
+            {
+              "label": "SP Cost",
+              "values": [
+                {
+                  "level": 1,
+                  "value": "5"
+                }
+              ]
+            }
+          ],
+          "translations": {},
+          "apiStatus": "not-used",
+          "iconUrl": "assets/divine-pride/skills/143.png",
+          "sourceUrl": "https://www.divine-pride.net/database/skill/143",
+          "tree": {
+            "idx": 14,
+            "row": 1,
+            "col": 5,
+            "columns": 9,
+            "requirements": []
+          },
+          "details": {
+            "rows": [
+              {
+                "label": "Type",
+                "value": "Supportive Skill"
+              },
+              {
+                "label": "Levels",
+                "value": "1"
+              }
+            ],
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "sp-cost": "5"
                     }
                   }
                 ],
@@ -22568,6 +22929,13 @@ export const archMageData = {
               "after": "150%",
               "scope": "",
               "source": "Reduces damage bonus from Climax level 3 from 200% to 150%."
+            },
+            {
+              "label": "Damage Modifier",
+              "before": "Clima x level 5 from 50% increasing",
+              "after": "20% reducing",
+              "scope": "",
+              "source": "Changes damage modifier from Climax level 5 from 50% increasing to 20% reducing."
             },
             {
               "label": "SP Cost",

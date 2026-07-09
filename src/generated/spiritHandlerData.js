@@ -1,5 +1,5 @@
 export const spiritHandlerData = {
-  "generatedAt": "2026-07-08T21:16:54.550Z",
+  "generatedAt": "2026-07-09T03:42:41.717Z",
   "classId": 4308,
   "classSlug": "spirit-handler",
   "className": "Spirit Handler",
@@ -3895,7 +3895,7 @@ export const spiritHandlerData = {
     {
       "id": "previous-1",
       "label": "Summoner",
-      "pointLimit": 49,
+      "pointLimit": 59,
       "tree": {
         "columns": 9,
         "rows": 8
