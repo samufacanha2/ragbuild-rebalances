@@ -33,7 +33,8 @@ a {
 }
 
 button,
-select {
+select,
+input {
   font: inherit;
 }
 
@@ -111,7 +112,54 @@ select {
 .class-select-page {
   width: min(1180px, calc(100vw - 40px));
   margin: 0 auto;
-  padding: 42px 0;
+  padding: 24px 0 92px;
+}
+
+.class-select-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+  align-items: end;
+  gap: 16px;
+  background: rgba(245, 247, 251, 0.92);
+  padding: 18px 0 14px;
+  backdrop-filter: blur(12px);
+}
+
+.class-select-header h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+}
+
+.class-search {
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+
+.class-search input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 12px 70px 12px 14px;
+  box-shadow: 0 8px 22px rgba(23, 33, 47, 0.08);
+}
+
+.class-search input:focus-visible {
+  outline: 3px solid rgba(21, 122, 126, 0.2);
+  outline-offset: 2px;
+}
+
+.class-search-count {
+  position: absolute;
+  right: 12px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
 }
 
 .class-grid {
@@ -135,6 +183,10 @@ select {
   text-align: center;
   box-shadow: 0 10px 26px rgba(23, 33, 47, 0.08);
   cursor: pointer;
+  transition:
+    border-color 140ms ease,
+    box-shadow 140ms ease,
+    transform 140ms ease;
 }
 
 .class-card:hover,
@@ -174,6 +226,10 @@ select {
   overflow-wrap: anywhere;
   font-size: 1.08rem;
   line-height: 1.15;
+}
+
+.class-search-empty {
+  grid-column: 1 / -1;
 }
 
 .view-actions {
@@ -543,6 +599,8 @@ h3 {
 
 .tree-board {
   position: relative;
+  --tree-active-columns: var(--tree-columns, 9);
+  --tree-row-height: 72px;
   width: 100%;
   min-width: 0;
   border: 1px solid var(--line);
@@ -551,7 +609,7 @@ h3 {
     linear-gradient(90deg, rgba(90, 95, 159, 0.08) 1px, transparent 1px),
     linear-gradient(180deg, rgba(21, 122, 126, 0.08) 1px, transparent 1px),
     transparent;
-  background-size: calc(100% / var(--tree-columns, 9)) 100%, 100% 72px, auto;
+  background-size: calc(100% / var(--tree-active-columns)) 100%, 100% var(--tree-row-height), auto;
   box-shadow: 0 10px 28px rgba(23, 33, 47, 0.08);
 }
 
@@ -559,13 +617,15 @@ h3 {
   position: relative;
   display: grid;
   grid-template-columns: repeat(var(--tree-columns), minmax(0, 1fr));
-  grid-template-rows: repeat(var(--tree-rows), 72px);
+  grid-template-rows: repeat(var(--tree-rows), var(--tree-row-height));
   gap: 0;
   padding: 0;
 }
 
 .skill-node {
   position: relative;
+  grid-column: var(--skill-column);
+  grid-row: var(--skill-row);
   align-self: stretch;
   justify-self: stretch;
   display: grid;
@@ -935,8 +995,55 @@ th {
 }
 
 @media (max-width: 720px) {
-  .app-shell {
+  .app-shell,
+  .rebalance-shell {
     padding-top: 16px;
+    padding-bottom: 92px;
+  }
+
+  .class-select-page {
+    width: min(100vw - 24px, 980px);
+    padding-top: 0;
+  }
+
+  .class-select-header {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 14px 0 12px;
+  }
+
+  .class-search input {
+    min-height: 46px;
+  }
+
+  .class-grid {
+    grid-template-columns: repeat(auto-fill, minmax(142px, 1fr));
+    gap: 10px;
+  }
+
+  .class-card {
+    gap: 10px;
+    min-height: 168px;
+    padding: 14px 10px;
+  }
+
+  .class-card-icon,
+  .class-card-initials {
+    width: 74px;
+    height: 96px;
+  }
+
+  .class-card-initials {
+    height: 74px;
+    font-size: 1.35rem;
+  }
+
+  .class-card strong {
+    font-size: 0.96rem;
+  }
+
+  .build-toolbar {
+    flex-wrap: wrap;
   }
 
   .topbar,
@@ -962,57 +1069,78 @@ th {
     grid-template-columns: 1fr;
   }
 
-  .tree-board {
-    min-width: 0;
-  }
-
-  .tree-grid {
-    grid-template-columns: repeat(var(--tree-columns), minmax(0, 1fr));
-    grid-template-rows: repeat(var(--tree-rows), 68px);
-    gap: 0;
-    padding: 0;
-  }
-
-  .skill-node {
-    padding: 1px;
-  }
-
-  .skill-name {
-    font-size: 0.58rem;
-  }
-
-  .skill-body {
-    grid-template-columns: minmax(8px, 1fr) 24px minmax(8px, 1fr);
-    gap: 2px;
-  }
-
-  .icon-shell {
-    width: 24px;
-    height: 24px;
-  }
-
-  .icon-shell img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .skill-level-text {
-    font-size: 0.6rem;
-  }
-
-  .skill-stepper {
-    grid-template-columns: 15px 15px;
-  }
-
-  .skill-stepper button {
-    width: 15px;
-    height: 15px;
-    font-size: 0.66rem;
-  }
-
   .locale-menu {
     right: max(12px, env(safe-area-inset-right));
     bottom: max(12px, env(safe-area-inset-bottom));
   }
 
+}
+
+@media (max-width: 900px) {
+  .tree-wrap {
+    overflow-x: auto;
+    margin-inline: -12px;
+    padding: 0 12px 10px;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tree-board {
+    --tree-active-columns: var(--tree-mobile-columns, var(--tree-columns, 9));
+    --tree-row-height: 88px;
+    width: max(100%, var(--tree-mobile-min-width, 620px));
+    min-width: var(--tree-mobile-min-width, 620px);
+  }
+
+  .tree-grid {
+    grid-template-columns: repeat(var(--tree-mobile-columns), minmax(124px, 1fr));
+    grid-template-rows: repeat(var(--tree-mobile-rows), var(--tree-row-height));
+  }
+
+  .skill-node {
+    grid-column: var(--skill-mobile-column);
+    grid-row: var(--skill-mobile-row);
+    padding: 4px;
+  }
+
+  .skill-select {
+    gap: 4px;
+    min-height: 58px;
+  }
+
+  .skill-name {
+    font-size: 0.72rem;
+    line-height: 1.12;
+  }
+
+  .skill-body {
+    grid-template-columns: minmax(16px, 1fr) 32px minmax(16px, 1fr);
+    gap: 4px;
+  }
+
+  .icon-shell {
+    width: 32px;
+    height: 32px;
+  }
+
+  .icon-shell img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .skill-level-text {
+    font-size: 0.72rem;
+  }
+
+  .skill-stepper {
+    grid-template-columns: 21px 21px;
+    gap: 3px;
+    opacity: 1;
+  }
+
+  .skill-stepper button {
+    width: 21px;
+    height: 21px;
+    font-size: 0.78rem;
+  }
 }

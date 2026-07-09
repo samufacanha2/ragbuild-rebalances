@@ -30,6 +30,9 @@ export function SkillTree({
         style={{
           '--tree-columns': model.visibleTree.columns,
           '--tree-rows': model.visibleTree.rows,
+          '--tree-mobile-columns': model.visibleTree.rows,
+          '--tree-mobile-rows': model.visibleTree.columns,
+          '--tree-mobile-min-width': `${model.visibleTree.rows * 124}px`,
         }}
       >
         <div className="tree-grid">
@@ -75,6 +78,8 @@ function SkillNode({
   const currentLevel = skillLevel(levels, skill.id)
   const name = translatedSkillName(skill, language)
   const notes = notesForVersion(skill, specVersion)
+  const treeColumn = (skill.tree.col ?? 0) - model.visibleTree.minCol + 1
+  const treeRow = (skill.tree.row ?? 0) + 1
   const className = [
     'skill-node',
     skill.balanceNotes.length ? 'has-notes' : '',
@@ -91,8 +96,10 @@ function SkillNode({
     <div
       className={className}
       style={{
-        gridColumn: String((skill.tree.col ?? 0) - model.visibleTree.minCol + 1),
-        gridRow: String((skill.tree.row ?? 0) + 1),
+        '--skill-column': treeColumn,
+        '--skill-row': treeRow,
+        '--skill-mobile-column': treeRow,
+        '--skill-mobile-row': treeColumn,
       }}
       onMouseEnter={() => onHoverSkill(skill.id)}
       onMouseLeave={() => onHoverSkill(null)}

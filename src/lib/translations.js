@@ -183,6 +183,7 @@ const uiTranslations = {
   'Lv': 'Nv.',
   'No rebalance notes are applied before the first rebalance.':
     'Nenhuma nota de rebalanceamento e aplicada antes do primeiro rebalanceamento.',
+  'No classes match your search.': 'Nenhuma classe corresponde a busca.',
   'No rebalance notes for this skill.': 'Nenhuma nota de rebalanceamento para esta habilidade.',
   'No additional timing or range fields were found.': 'Nenhum campo adicional de tempo ou alcance foi encontrado.',
   'Patch Notes': 'Notas de alteracao',
@@ -192,6 +193,7 @@ const uiTranslations = {
   'Remove one point from': 'Remover um ponto de',
   'Req Lv': 'Req Nv.',
   'Reset': 'Limpar',
+  'Search classes': 'Buscar classes',
   'Skill': 'Habilidade',
   'Skill Specs': 'Especificacoes',
   'This skill is unchanged in the selected rebalance.': 'Esta habilidade nao muda no rebalanceamento selecionado.',
