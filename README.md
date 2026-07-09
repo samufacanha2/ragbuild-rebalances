@@ -1,6 +1,6 @@
-# Soul Ascetic Skill Tree
+# ragbuild-rebalances
 
-Vite and React comparison tool for the current Soul Ascetic skills and rebalance notes.
+Vite and React comparison tool for Ragbuild skill data and rebalance notes.
 
 ## Assets
 
@@ -40,5 +40,5 @@ Then visit the Vite URL printed in the terminal.
 
 ## GitHub Pages
 
-This repo includes a GitHub Actions workflow for Pages. Push to `main`, enable Pages with
-`GitHub Actions` as the source, and the workflow will publish `dist`.
+This repo includes a GitHub Actions workflow for Pages. Push to `main`, and the workflow
+will enable Pages for GitHub Actions and publish `dist`.
