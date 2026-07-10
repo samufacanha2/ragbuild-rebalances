@@ -1,5 +1,5 @@
 export const trouvereData = {
-  "generatedAt": "2026-07-09T13:21:54.771Z",
+  "generatedAt": "2026-07-10T00:56:13.983Z",
   "classId": 4264,
   "classSlug": "trouvere",
   "className": "Trouvere",
@@ -7209,6 +7209,10 @@ export const trouvereData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "effect",
+                    "label": "Effect"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -7229,6 +7233,7 @@ export const trouvereData = {
                   {
                     "level": 1,
                     "values": {
+                      "effect": "MATK + 7, Additional increase based on caster's Lesson level",
                       "sp-cost": "84",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7239,6 +7244,7 @@ export const trouvereData = {
                   {
                     "level": 2,
                     "values": {
+                      "effect": "MATK + 10, Additional increase based on caster's Lesson level",
                       "sp-cost": "96",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7249,6 +7255,7 @@ export const trouvereData = {
                   {
                     "level": 3,
                     "values": {
+                      "effect": "MATK + 13, Additional increase based on caster's Lesson level",
                       "sp-cost": "108",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7259,6 +7266,7 @@ export const trouvereData = {
                   {
                     "level": 4,
                     "values": {
+                      "effect": "MATK + 15, Additional increase based on caster's Lesson level",
                       "sp-cost": "120",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7269,6 +7277,7 @@ export const trouvereData = {
                   {
                     "level": 5,
                     "values": {
+                      "effect": "MATK + 20, Additional increase based on caster's Lesson level",
                       "sp-cost": "134",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7837,12 +7846,33 @@ export const trouvereData = {
                   {
                     "id": "range",
                     "label": "Range"
+                  },
+                  {
+                    "id": "skill-range-11-x-11-fixed-casting-time-30-aspd-5-ranged-damage",
+                    "label": "Skill Range 11 X 11 / Fixed Casting Time -30%, Aspd +5%, Ranged Damage"
+                  },
+                  {
+                    "id": "skill-range-13-x-13-fixed-casting-time-40-aspd-10-ranged-damage",
+                    "label": "Skill Range 13 X 13 / Fixed Casting Time -40%, Aspd +10%, Ranged Damage"
+                  },
+                  {
+                    "id": "skill-range-15-x-15-fixed-casting-time-50-aspd-15-ranged-damage",
+                    "label": "Skill Range 15 X 15 / Fixed Casting Time -50%, Aspd +15%, Ranged Damage"
+                  },
+                  {
+                    "id": "skill-range-17-x-17-fixed-casting-time-60-aspd-20-ranged-damage",
+                    "label": "Skill Range 17 X 17 / Fixed Casting Time -60%, Aspd +20%, Ranged Damage"
+                  },
+                  {
+                    "id": "skill-range-19-x-19-fixed-casting-time-70-aspd-25-ranged-damage",
+                    "label": "Skill Range 19 X 19 / Fixed Casting Time -70%, Aspd +25%, Ranged Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "skill-range-11-x-11-fixed-casting-time-30-aspd-5-ranged-damage": "+1%",
                       "sp-cost": "120",
                       "range": "1 cells",
                       "data-1": "30000",
@@ -7852,6 +7882,7 @@ export const trouvereData = {
                   {
                     "level": 2,
                     "values": {
+                      "skill-range-13-x-13-fixed-casting-time-40-aspd-10-ranged-damage": "+2%",
                       "sp-cost": "140",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7861,6 +7892,7 @@ export const trouvereData = {
                   {
                     "level": 3,
                     "values": {
+                      "skill-range-15-x-15-fixed-casting-time-50-aspd-15-ranged-damage": "+3%",
                       "sp-cost": "160",
                       "range": "1 cells",
                       "data-1": "90000",
@@ -7870,6 +7902,7 @@ export const trouvereData = {
                   {
                     "level": 4,
                     "values": {
+                      "skill-range-17-x-17-fixed-casting-time-60-aspd-20-ranged-damage": "+4%",
                       "sp-cost": "180",
                       "range": "1 cells",
                       "data-1": "120000",
@@ -7879,6 +7912,7 @@ export const trouvereData = {
                   {
                     "level": 5,
                     "values": {
+                      "skill-range-19-x-19-fixed-casting-time-70-aspd-25-ranged-damage": "+5%",
                       "sp-cost": "200",
                       "range": "1 cells",
                       "data-1": "150000",
@@ -8734,35 +8768,32 @@ export const trouvereData = {
                     "label": "Data 2"
                   },
                   {
+                    "id": "flee",
+                    "label": "Flee"
+                  },
+                  {
                     "id": "range",
                     "label": "Range"
                   },
                   {
-                    "id": "skill-range-11x11-hit-200-flee",
-                    "label": "Skill Range 11x11 / Hit -200 / Flee"
+                    "id": "skill-range-11x11-hit",
+                    "label": "Skill Range 11x11 / Hit"
                   },
                   {
-                    "id": "skill-range-11x11-hit-250-flee",
-                    "label": "Skill Range 11x11 / Hit -250 / Flee"
+                    "id": "skill-range-13x13-hit",
+                    "label": "Skill Range 13x13 / Hit"
                   },
                   {
-                    "id": "skill-range-13x13-hit-300-flee",
-                    "label": "Skill Range 13x13 / Hit -300 / Flee"
-                  },
-                  {
-                    "id": "skill-range-9x9-hit-100-flee",
-                    "label": "Skill Range 9x9 / Hit -100 / Flee"
-                  },
-                  {
-                    "id": "skill-range-9x9-hit-150-flee",
-                    "label": "Skill Range 9x9 / Hit -150 / Flee"
+                    "id": "skill-range-9x9-hit",
+                    "label": "Skill Range 9x9 / Hit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "skill-range-9x9-hit-100-flee": "-50",
+                      "skill-range-9x9-hit": "-100",
+                      "flee": "-50",
                       "sp-cost": "150",
                       "range": "1 cells",
                       "data-1": "10000",
@@ -8772,7 +8803,8 @@ export const trouvereData = {
                   {
                     "level": 2,
                     "values": {
-                      "skill-range-9x9-hit-150-flee": "-80",
+                      "skill-range-9x9-hit": "-150",
+                      "flee": "-80",
                       "sp-cost": "160",
                       "range": "1 cells",
                       "data-1": "15000",
@@ -8782,7 +8814,8 @@ export const trouvereData = {
                   {
                     "level": 3,
                     "values": {
-                      "skill-range-11x11-hit-200-flee": "-110",
+                      "skill-range-11x11-hit": "-200",
+                      "flee": "-110",
                       "sp-cost": "170",
                       "range": "1 cells",
                       "data-1": "20000",
@@ -8792,7 +8825,8 @@ export const trouvereData = {
                   {
                     "level": 4,
                     "values": {
-                      "skill-range-11x11-hit-250-flee": "-140",
+                      "skill-range-11x11-hit": "-250",
+                      "flee": "-140",
                       "sp-cost": "180",
                       "range": "1 cells",
                       "data-1": "25000",
@@ -8802,7 +8836,8 @@ export const trouvereData = {
                   {
                     "level": 5,
                     "values": {
-                      "skill-range-13x13-hit-300-flee": "-170",
+                      "skill-range-13x13-hit": "-300",
+                      "flee": "-170",
                       "sp-cost": "190",
                       "range": "1 cells",
                       "data-1": "30000",
@@ -10663,12 +10698,53 @@ export const trouvereData = {
                   {
                     "id": "data-3",
                     "label": "Data 3"
+                  },
+                  {
+                    "id": "whip-damage-12-cri-4-maxsp",
+                    "label": "Whip Damage +12, Cri + 4, Maxsp"
+                  },
+                  {
+                    "id": "whip-damage-15-cri-5-maxsp",
+                    "label": "Whip Damage +15, Cri + 5, Maxsp"
+                  },
+                  {
+                    "id": "whip-damage-18-cri-6-maxsp",
+                    "label": "Whip Damage +18, Cri + 6, Maxsp"
+                  },
+                  {
+                    "id": "whip-damage-21-cri-7-maxsp",
+                    "label": "Whip Damage +21, Cri + 7, Maxsp"
+                  },
+                  {
+                    "id": "whip-damage-24-cri-8-maxsp",
+                    "label": "Whip Damage +24, Cri + 8, Maxsp"
+                  },
+                  {
+                    "id": "whip-damage-27-cri-9-maxsp",
+                    "label": "Whip Damage +27, Cri + 9, Maxsp"
+                  },
+                  {
+                    "id": "whip-damage-3-cri-1-maxsp",
+                    "label": "Whip Damage +3, Cri + 1, Maxsp"
+                  },
+                  {
+                    "id": "whip-damage-30-cri-10-maxsp",
+                    "label": "Whip Damage +30, Cri + 10, Maxsp"
+                  },
+                  {
+                    "id": "whip-damage-6-cri-2-maxsp",
+                    "label": "Whip Damage +6, Cri + 2, Maxsp"
+                  },
+                  {
+                    "id": "whip-damage-9-cri-3-maxsp",
+                    "label": "Whip Damage +9, Cri + 3, Maxsp"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "whip-damage-3-cri-1-maxsp": "+ 1%",
                       "sp-cost": "0",
                       "data-1": "3",
                       "data-2": "10",
@@ -10678,6 +10754,7 @@ export const trouvereData = {
                   {
                     "level": 2,
                     "values": {
+                      "whip-damage-6-cri-2-maxsp": "+ 2%",
                       "sp-cost": "0",
                       "data-1": "6",
                       "data-2": "20",
@@ -10687,6 +10764,7 @@ export const trouvereData = {
                   {
                     "level": 3,
                     "values": {
+                      "whip-damage-9-cri-3-maxsp": "+ 3%",
                       "sp-cost": "0",
                       "data-1": "9",
                       "data-2": "30",
@@ -10696,6 +10774,7 @@ export const trouvereData = {
                   {
                     "level": 4,
                     "values": {
+                      "whip-damage-12-cri-4-maxsp": "+ 4%",
                       "sp-cost": "0",
                       "data-1": "12",
                       "data-2": "40",
@@ -10705,6 +10784,7 @@ export const trouvereData = {
                   {
                     "level": 5,
                     "values": {
+                      "whip-damage-15-cri-5-maxsp": "+ 5%",
                       "sp-cost": "0",
                       "data-1": "15",
                       "data-2": "50",
@@ -10714,6 +10794,7 @@ export const trouvereData = {
                   {
                     "level": 6,
                     "values": {
+                      "whip-damage-18-cri-6-maxsp": "+ 6%",
                       "sp-cost": "0",
                       "data-1": "18",
                       "data-2": "60",
@@ -10723,6 +10804,7 @@ export const trouvereData = {
                   {
                     "level": 7,
                     "values": {
+                      "whip-damage-21-cri-7-maxsp": "+ 7%",
                       "sp-cost": "0",
                       "data-1": "21",
                       "data-2": "70",
@@ -10732,6 +10814,7 @@ export const trouvereData = {
                   {
                     "level": 8,
                     "values": {
+                      "whip-damage-24-cri-8-maxsp": "+ 8%",
                       "sp-cost": "0",
                       "data-1": "24",
                       "data-2": "80",
@@ -10741,6 +10824,7 @@ export const trouvereData = {
                   {
                     "level": 9,
                     "values": {
+                      "whip-damage-27-cri-9-maxsp": "+ 9%",
                       "sp-cost": "0",
                       "data-1": "27",
                       "data-2": "90",
@@ -10750,6 +10834,7 @@ export const trouvereData = {
                   {
                     "level": 10,
                     "values": {
+                      "whip-damage-30-cri-10-maxsp": "+ 10%",
                       "sp-cost": "0",
                       "data-1": "30",
                       "data-2": "100",
@@ -12817,6 +12902,46 @@ export const trouvereData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "cri-1-critical-damage",
+                    "label": "Cri +1, Critical Damage"
+                  },
+                  {
+                    "id": "cri-10-critical-damage",
+                    "label": "Cri +10, Critical Damage"
+                  },
+                  {
+                    "id": "cri-2-critical-damage",
+                    "label": "Cri +2, Critical Damage"
+                  },
+                  {
+                    "id": "cri-3-critical-damage",
+                    "label": "Cri +3, Critical Damage"
+                  },
+                  {
+                    "id": "cri-4-critical-damage",
+                    "label": "Cri +4, Critical Damage"
+                  },
+                  {
+                    "id": "cri-5-critical-damage",
+                    "label": "Cri +5, Critical Damage"
+                  },
+                  {
+                    "id": "cri-6-critical-damage",
+                    "label": "Cri +6, Critical Damage"
+                  },
+                  {
+                    "id": "cri-7-critical-damage",
+                    "label": "Cri +7, Critical Damage"
+                  },
+                  {
+                    "id": "cri-8-critical-damage",
+                    "label": "Cri +8, Critical Damage"
+                  },
+                  {
+                    "id": "cri-9-critical-damage",
+                    "label": "Cri +9, Critical Damage"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -12837,6 +12962,7 @@ export const trouvereData = {
                   {
                     "level": 1,
                     "values": {
+                      "cri-1-critical-damage": "+ 2%",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12847,6 +12973,7 @@ export const trouvereData = {
                   {
                     "level": 2,
                     "values": {
+                      "cri-2-critical-damage": "+ 4%",
                       "sp-cost": "45",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12857,6 +12984,7 @@ export const trouvereData = {
                   {
                     "level": 3,
                     "values": {
+                      "cri-3-critical-damage": "+ 6%",
                       "sp-cost": "50",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12867,6 +12995,7 @@ export const trouvereData = {
                   {
                     "level": 4,
                     "values": {
+                      "cri-4-critical-damage": "+ 8%",
                       "sp-cost": "55",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12877,6 +13006,7 @@ export const trouvereData = {
                   {
                     "level": 5,
                     "values": {
+                      "cri-5-critical-damage": "+ 10%",
                       "sp-cost": "60",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12887,6 +13017,7 @@ export const trouvereData = {
                   {
                     "level": 6,
                     "values": {
+                      "cri-6-critical-damage": "+ 12%",
                       "sp-cost": "65",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12897,6 +13028,7 @@ export const trouvereData = {
                   {
                     "level": 7,
                     "values": {
+                      "cri-7-critical-damage": "+ 14%",
                       "sp-cost": "70",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12907,6 +13039,7 @@ export const trouvereData = {
                   {
                     "level": 8,
                     "values": {
+                      "cri-8-critical-damage": "+ 16%",
                       "sp-cost": "75",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12917,6 +13050,7 @@ export const trouvereData = {
                   {
                     "level": 9,
                     "values": {
+                      "cri-9-critical-damage": "+ 18%",
                       "sp-cost": "80",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12927,6 +13061,7 @@ export const trouvereData = {
                   {
                     "level": 10,
                     "values": {
+                      "cri-10-critical-damage": "+ 20%",
                       "sp-cost": "85",
                       "data-1": "60000",
                       "data-2": "15",

@@ -1,5 +1,5 @@
 export const dragonKnightData = {
-  "generatedAt": "2026-07-09T13:19:13.998Z",
+  "generatedAt": "2026-07-10T00:53:19.843Z",
   "classId": 4252,
   "classSlug": "dragon-knight",
   "className": "Dragon Knight",
@@ -7917,66 +7917,116 @@ export const dragonKnightData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "not-mounted-damage-4-mounted",
+                    "label": "Not Mounted, Damage + 4, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-8-mounted",
+                    "label": "Not Mounted, Damage + 8, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-12-mounted",
+                    "label": "Not Mounted, Damage +12, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-16-mounted",
+                    "label": "Not Mounted, Damage +16, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-20-mounted",
+                    "label": "Not Mounted, Damage +20, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-24-mounted",
+                    "label": "Not Mounted, Damage +24, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-28-mounted",
+                    "label": "Not Mounted, Damage +28, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-32-mounted",
+                    "label": "Not Mounted, Damage +32, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-36-mounted",
+                    "label": "Not Mounted, Damage +36, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-40-mounted",
+                    "label": "Not Mounted, Damage +40, Mounted,"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "not-mounted-damage-4-mounted": "+ 5",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "not-mounted-damage-8-mounted": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "not-mounted-damage-12-mounted": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "not-mounted-damage-16-mounted": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "not-mounted-damage-20-mounted": "+25",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "not-mounted-damage-24-mounted": "+30",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "not-mounted-damage-28-mounted": "+35",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "not-mounted-damage-32-mounted": "+40",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "not-mounted-damage-36-mounted": "+45",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "not-mounted-damage-40-mounted": "+50",
                       "sp-cost": "0"
                     }
                   }

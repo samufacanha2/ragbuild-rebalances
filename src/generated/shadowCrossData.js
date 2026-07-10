@@ -1,5 +1,5 @@
 export const shadowCrossData = {
-  "generatedAt": "2026-07-09T13:20:09.293Z",
+  "generatedAt": "2026-07-10T00:54:15.749Z",
   "classId": 4254,
   "classSlug": "shadow-cross",
   "className": "Shadow Cross",
@@ -6354,31 +6354,20 @@ export const shadowCrossData = {
                     "label": "Data 4"
                   },
                   {
-                    "id": "flee-rate-100-ignore-matk",
-                    "label": "Flee Rate +100 / Ignore Matk"
+                    "id": "flee-rate",
+                    "label": "Flee Rate"
                   },
                   {
-                    "id": "flee-rate-150-ignore-matk",
-                    "label": "Flee Rate +150 / Ignore Matk"
-                  },
-                  {
-                    "id": "flee-rate-200-ignore-matk",
-                    "label": "Flee Rate +200 / Ignore Matk"
-                  },
-                  {
-                    "id": "flee-rate-250-ignore-matk",
-                    "label": "Flee Rate +250 / Ignore Matk"
-                  },
-                  {
-                    "id": "flee-rate-50-ignore-matk",
-                    "label": "Flee Rate +50 / Ignore Matk"
+                    "id": "ignore-matk",
+                    "label": "Ignore Matk"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "flee-rate-50-ignore-matk": "+10%",
+                      "flee-rate": "+50",
+                      "ignore-matk": "+10%",
                       "sp-cost": "100",
                       "data-1": "50",
                       "data-2": "10",
@@ -6389,7 +6378,8 @@ export const shadowCrossData = {
                   {
                     "level": 2,
                     "values": {
-                      "flee-rate-100-ignore-matk": "+20%",
+                      "flee-rate": "+100",
+                      "ignore-matk": "+20%",
                       "sp-cost": "100",
                       "data-1": "100",
                       "data-2": "20",
@@ -6400,7 +6390,8 @@ export const shadowCrossData = {
                   {
                     "level": 3,
                     "values": {
-                      "flee-rate-150-ignore-matk": "+30%",
+                      "flee-rate": "+150",
+                      "ignore-matk": "+30%",
                       "sp-cost": "100",
                       "data-1": "150",
                       "data-2": "30",
@@ -6411,7 +6402,8 @@ export const shadowCrossData = {
                   {
                     "level": 4,
                     "values": {
-                      "flee-rate-200-ignore-matk": "+40%",
+                      "flee-rate": "+200",
+                      "ignore-matk": "+40%",
                       "sp-cost": "100",
                       "data-1": "200",
                       "data-2": "40",
@@ -6422,7 +6414,8 @@ export const shadowCrossData = {
                   {
                     "level": 5,
                     "values": {
-                      "flee-rate-250-ignore-matk": "+50%",
+                      "flee-rate": "+250",
+                      "ignore-matk": "+50%",
                       "sp-cost": "100",
                       "data-1": "250",
                       "data-2": "50",
@@ -7513,66 +7506,80 @@ export const shadowCrossData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "damage",
+                    "label": "Damage:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "damage": "+3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "damage": "+6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "damage": "+9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "damage": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "damage": "+21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "damage": "+27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "damage": "+30",
                       "sp-cost": "0"
                     }
                   }

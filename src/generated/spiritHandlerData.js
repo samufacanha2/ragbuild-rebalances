@@ -1,5 +1,5 @@
 export const spiritHandlerData = {
-  "generatedAt": "2026-07-09T13:23:15.526Z",
+  "generatedAt": "2026-07-10T00:57:30.805Z",
   "classId": 4308,
   "classSlug": "spirit-handler",
   "className": "Spirit Handler",
@@ -406,7 +406,7 @@ export const spiritHandlerData = {
                   },
                   {
                     "id": "p-atk-s-matk",
-                    "label": "P.atk/s.matk"
+                    "label": "P.Atk/S.Matk"
                   }
                 ],
                 "rows": [
@@ -1670,13 +1670,18 @@ export const spiritHandlerData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "pow-crt-con",
+                    "label": "Pow,crt,con"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "POW,CRT,CON +2 / Duration: 60 sec\nRange(Commune): 9 x 9 cells",
+                      "pow-crt-con": "+2",
+                      "effect": "Duration: 60 sec\nRange(Commune): 9 x 9 cells",
                       "area-of-effect": "5x5",
                       "sp-cost": "80"
                     }
@@ -1684,7 +1689,8 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "POW,CRT,CON +4 / Duration: 75 sec\nRange(Commune): 11 x 11 cells",
+                      "pow-crt-con": "+4",
+                      "effect": "Duration: 75 sec\nRange(Commune): 11 x 11 cells",
                       "area-of-effect": "7x7",
                       "sp-cost": "90"
                     }
@@ -1692,7 +1698,8 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "POW,CRT,CON +6 / Duration: 90 sec\nRange(Commune): 13 x 13 cells",
+                      "pow-crt-con": "+6",
+                      "effect": "Duration: 90 sec\nRange(Commune): 13 x 13 cells",
                       "area-of-effect": "9x9",
                       "sp-cost": "100"
                     }
@@ -1700,7 +1707,8 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "POW,CRT,CON +8 / Duration: 105 sec\nRange(Commune): 15 x 15 cells",
+                      "pow-crt-con": "+8",
+                      "effect": "Duration: 105 sec\nRange(Commune): 15 x 15 cells",
                       "area-of-effect": "11x11",
                       "sp-cost": "110"
                     }
@@ -1708,7 +1716,8 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "POW,CRT,CON +10 / Duration: 120 sec\nRange(Commune): 17 x 17 cells",
+                      "pow-crt-con": "+10",
+                      "effect": "Duration: 120 sec\nRange(Commune): 17 x 17 cells",
                       "area-of-effect": "13x13",
                       "sp-cost": "120"
                     }
@@ -1885,13 +1894,18 @@ export const spiritHandlerData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "spl-wis-sta",
+                    "label": "SPL,wis,sta"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "SPL,WIS,STA +2 / Duration: 60 sec\nRange(Commune): 9 x 9 cells",
+                      "spl-wis-sta": "+2",
+                      "effect": "Duration: 60 sec\nRange(Commune): 9 x 9 cells",
                       "area-of-effect": "5x5",
                       "sp-cost": "80"
                     }
@@ -1899,7 +1913,8 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "SPL,WIS,STA +4 / Duration: 75 sec\nRange(Commune): 11 x 11 cells",
+                      "spl-wis-sta": "+4",
+                      "effect": "Duration: 75 sec\nRange(Commune): 11 x 11 cells",
                       "area-of-effect": "7x7",
                       "sp-cost": "90"
                     }
@@ -1907,7 +1922,8 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "SPL,WIS,STA +6 / Duration: 90 sec\nRange(Commune): 13 x 13 cells",
+                      "spl-wis-sta": "+6",
+                      "effect": "Duration: 90 sec\nRange(Commune): 13 x 13 cells",
                       "area-of-effect": "9x9",
                       "sp-cost": "100"
                     }
@@ -1915,7 +1931,8 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "SPL,WIS,STA +8 / Duration: 105 sec\nRange(Commune): 15 x 15 cells",
+                      "spl-wis-sta": "+8",
+                      "effect": "Duration: 105 sec\nRange(Commune): 15 x 15 cells",
                       "area-of-effect": "11x11",
                       "sp-cost": "110"
                     }
@@ -1923,7 +1940,8 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "SPL,WIS,STA +10 / Duration: 120 sec\nRange(Commune): 17 x 17 cells",
+                      "spl-wis-sta": "+10",
+                      "effect": "Duration: 120 sec\nRange(Commune): 17 x 17 cells",
                       "area-of-effect": "13x13",
                       "sp-cost": "120"
                     }
@@ -3442,23 +3460,23 @@ export const spiritHandlerData = {
                   },
                   {
                     "id": "duration-120sec-p-atk-s-matk-h-plus",
-                    "label": "Duration: 120sec/p.atk/s.matk/h.plus"
+                    "label": "Duration: 120sec/P.Atk/S.Matk/h.plus"
                   },
                   {
                     "id": "duration-150sec-p-atk-s-matk-h-plus",
-                    "label": "Duration: 150sec/p.atk/s.matk/h.plus"
+                    "label": "Duration: 150sec/P.Atk/S.Matk/h.plus"
                   },
                   {
                     "id": "duration-30sec-p-atk-s-matk-h-plus",
-                    "label": "Duration: 30sec/p.atk/s.matk/h.plus"
+                    "label": "Duration: 30sec/P.Atk/S.Matk/h.plus"
                   },
                   {
                     "id": "duration-60sec-p-atk-s-matk-h-plus",
-                    "label": "Duration: 60sec/p.atk/s.matk/h.plus"
+                    "label": "Duration: 60sec/P.Atk/S.Matk/h.plus"
                   },
                   {
                     "id": "duration-90sec-p-atk-s-matk-h-plus",
-                    "label": "Duration: 90sec/p.atk/s.matk/h.plus"
+                    "label": "Duration: 90sec/P.Atk/S.Matk/h.plus"
                   }
                 ],
                 "rows": [
@@ -3644,7 +3662,7 @@ export const spiritHandlerData = {
                   },
                   {
                     "id": "p-atk-s-matk",
-                    "label": "P.atk/s.matk"
+                    "label": "P.Atk/S.Matk"
                   }
                 ],
                 "rows": [
@@ -11986,7 +12004,7 @@ export const spiritHandlerData = {
               },
               {
                 "id": "p-atk-s-matk",
-                "label": "P.atk/s.matk"
+                "label": "P.Atk/S.Matk"
               }
             ],
             "rows": [
@@ -13250,13 +13268,18 @@ export const spiritHandlerData = {
               {
                 "id": "effect",
                 "label": "Effect"
+              },
+              {
+                "id": "pow-crt-con",
+                "label": "Pow,crt,con"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "POW,CRT,CON +2 / Duration: 60 sec\nRange(Commune): 9 x 9 cells",
+                  "pow-crt-con": "+2",
+                  "effect": "Duration: 60 sec\nRange(Commune): 9 x 9 cells",
                   "area-of-effect": "5x5",
                   "sp-cost": "80"
                 }
@@ -13264,7 +13287,8 @@ export const spiritHandlerData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "POW,CRT,CON +4 / Duration: 75 sec\nRange(Commune): 11 x 11 cells",
+                  "pow-crt-con": "+4",
+                  "effect": "Duration: 75 sec\nRange(Commune): 11 x 11 cells",
                   "area-of-effect": "7x7",
                   "sp-cost": "90"
                 }
@@ -13272,7 +13296,8 @@ export const spiritHandlerData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "POW,CRT,CON +6 / Duration: 90 sec\nRange(Commune): 13 x 13 cells",
+                  "pow-crt-con": "+6",
+                  "effect": "Duration: 90 sec\nRange(Commune): 13 x 13 cells",
                   "area-of-effect": "9x9",
                   "sp-cost": "100"
                 }
@@ -13280,7 +13305,8 @@ export const spiritHandlerData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "POW,CRT,CON +8 / Duration: 105 sec\nRange(Commune): 15 x 15 cells",
+                  "pow-crt-con": "+8",
+                  "effect": "Duration: 105 sec\nRange(Commune): 15 x 15 cells",
                   "area-of-effect": "11x11",
                   "sp-cost": "110"
                 }
@@ -13288,7 +13314,8 @@ export const spiritHandlerData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "POW,CRT,CON +10 / Duration: 120 sec\nRange(Commune): 17 x 17 cells",
+                  "pow-crt-con": "+10",
+                  "effect": "Duration: 120 sec\nRange(Commune): 17 x 17 cells",
                   "area-of-effect": "13x13",
                   "sp-cost": "120"
                 }
@@ -13465,13 +13492,18 @@ export const spiritHandlerData = {
               {
                 "id": "effect",
                 "label": "Effect"
+              },
+              {
+                "id": "spl-wis-sta",
+                "label": "SPL,wis,sta"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "SPL,WIS,STA +2 / Duration: 60 sec\nRange(Commune): 9 x 9 cells",
+                  "spl-wis-sta": "+2",
+                  "effect": "Duration: 60 sec\nRange(Commune): 9 x 9 cells",
                   "area-of-effect": "5x5",
                   "sp-cost": "80"
                 }
@@ -13479,7 +13511,8 @@ export const spiritHandlerData = {
               {
                 "level": 2,
                 "values": {
-                  "effect": "SPL,WIS,STA +4 / Duration: 75 sec\nRange(Commune): 11 x 11 cells",
+                  "spl-wis-sta": "+4",
+                  "effect": "Duration: 75 sec\nRange(Commune): 11 x 11 cells",
                   "area-of-effect": "7x7",
                   "sp-cost": "90"
                 }
@@ -13487,7 +13520,8 @@ export const spiritHandlerData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "SPL,WIS,STA +6 / Duration: 90 sec\nRange(Commune): 13 x 13 cells",
+                  "spl-wis-sta": "+6",
+                  "effect": "Duration: 90 sec\nRange(Commune): 13 x 13 cells",
                   "area-of-effect": "9x9",
                   "sp-cost": "100"
                 }
@@ -13495,7 +13529,8 @@ export const spiritHandlerData = {
               {
                 "level": 4,
                 "values": {
-                  "effect": "SPL,WIS,STA +8 / Duration: 105 sec\nRange(Commune): 15 x 15 cells",
+                  "spl-wis-sta": "+8",
+                  "effect": "Duration: 105 sec\nRange(Commune): 15 x 15 cells",
                   "area-of-effect": "11x11",
                   "sp-cost": "110"
                 }
@@ -13503,7 +13538,8 @@ export const spiritHandlerData = {
               {
                 "level": 5,
                 "values": {
-                  "effect": "SPL,WIS,STA +10 / Duration: 120 sec\nRange(Commune): 17 x 17 cells",
+                  "spl-wis-sta": "+10",
+                  "effect": "Duration: 120 sec\nRange(Commune): 17 x 17 cells",
                   "area-of-effect": "13x13",
                   "sp-cost": "120"
                 }
@@ -15022,23 +15058,23 @@ export const spiritHandlerData = {
               },
               {
                 "id": "duration-120sec-p-atk-s-matk-h-plus",
-                "label": "Duration: 120sec/p.atk/s.matk/h.plus"
+                "label": "Duration: 120sec/P.Atk/S.Matk/h.plus"
               },
               {
                 "id": "duration-150sec-p-atk-s-matk-h-plus",
-                "label": "Duration: 150sec/p.atk/s.matk/h.plus"
+                "label": "Duration: 150sec/P.Atk/S.Matk/h.plus"
               },
               {
                 "id": "duration-30sec-p-atk-s-matk-h-plus",
-                "label": "Duration: 30sec/p.atk/s.matk/h.plus"
+                "label": "Duration: 30sec/P.Atk/S.Matk/h.plus"
               },
               {
                 "id": "duration-60sec-p-atk-s-matk-h-plus",
-                "label": "Duration: 60sec/p.atk/s.matk/h.plus"
+                "label": "Duration: 60sec/P.Atk/S.Matk/h.plus"
               },
               {
                 "id": "duration-90sec-p-atk-s-matk-h-plus",
-                "label": "Duration: 90sec/p.atk/s.matk/h.plus"
+                "label": "Duration: 90sec/P.Atk/S.Matk/h.plus"
               }
             ],
             "rows": [
@@ -15224,7 +15260,7 @@ export const spiritHandlerData = {
               },
               {
                 "id": "p-atk-s-matk",
-                "label": "P.atk/s.matk"
+                "label": "P.Atk/S.Matk"
               }
             ],
             "rows": [

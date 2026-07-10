@@ -1,5 +1,5 @@
 export const cardinalData = {
-  "generatedAt": "2026-07-09T13:21:09.383Z",
+  "generatedAt": "2026-07-10T00:55:26.789Z",
   "classId": 4256,
   "classSlug": "cardinal",
   "className": "Cardinal",
@@ -3836,7 +3836,7 @@ export const cardinalData = {
                   },
                   {
                     "id": "p-atk-and-s-matk",
-                    "label": "P.atk And S.matk"
+                    "label": "P.Atk And S.Matk"
                   }
                 ],
                 "rows": [
@@ -5384,6 +5384,46 @@ export const cardinalData = {
                     "label": "Data 1"
                   },
                   {
+                    "id": "physical-atk-165-magical-attack",
+                    "label": "Physical Atk + 165% Magical Attack"
+                  },
+                  {
+                    "id": "physical-atk-180-magical-attack",
+                    "label": "Physical Atk + 180% Magical Attack"
+                  },
+                  {
+                    "id": "physical-atk-195-magical-attack",
+                    "label": "Physical Atk + 195% Magical Attack"
+                  },
+                  {
+                    "id": "physical-atk-210-magical-attack",
+                    "label": "Physical Atk + 210% Magical Attack"
+                  },
+                  {
+                    "id": "physical-atk-225-magical-attack",
+                    "label": "Physical Atk + 225% Magical Attack"
+                  },
+                  {
+                    "id": "physical-atk-240-magical-attack",
+                    "label": "Physical Atk + 240% Magical Attack"
+                  },
+                  {
+                    "id": "physical-atk-255-magical-attack",
+                    "label": "Physical Atk + 255% Magical Attack"
+                  },
+                  {
+                    "id": "physical-atk-270-magical-attack",
+                    "label": "Physical Atk + 270% Magical Attack"
+                  },
+                  {
+                    "id": "physical-atk-285-magical-attack",
+                    "label": "Physical Atk + 285% Magical Attack"
+                  },
+                  {
+                    "id": "physical-atk-300-magical-attack",
+                    "label": "Physical Atk + 300% Magical Attack"
+                  },
+                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -5392,6 +5432,7 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
+                      "physical-atk-165-magical-attack": "+ 440%",
                       "effect": "Lasts for 90 sec",
                       "sp-cost": "55",
                       "range": "11 cells",
@@ -5401,6 +5442,7 @@ export const cardinalData = {
                   {
                     "level": 2,
                     "values": {
+                      "physical-atk-180-magical-attack": "+ 480%",
                       "effect": "Lasts for 120 sec",
                       "sp-cost": "60",
                       "range": "11 cells",
@@ -5410,6 +5452,7 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
+                      "physical-atk-195-magical-attack": "+ 520%",
                       "effect": "Lasts for 150 sec",
                       "sp-cost": "65",
                       "range": "11 cells",
@@ -5419,6 +5462,7 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
+                      "physical-atk-210-magical-attack": "+ 560%",
                       "effect": "Lasts for 180 sec",
                       "sp-cost": "70",
                       "range": "11 cells",
@@ -5428,6 +5472,7 @@ export const cardinalData = {
                   {
                     "level": 5,
                     "values": {
+                      "physical-atk-225-magical-attack": "+ 600%",
                       "effect": "Lasts for 210 sec",
                       "sp-cost": "75",
                       "range": "11 cells",
@@ -5437,6 +5482,7 @@ export const cardinalData = {
                   {
                     "level": 6,
                     "values": {
+                      "physical-atk-240-magical-attack": "+ 640%",
                       "effect": "Lasts for 240 sec",
                       "sp-cost": "80",
                       "range": "11 cells",
@@ -5446,6 +5492,7 @@ export const cardinalData = {
                   {
                     "level": 7,
                     "values": {
+                      "physical-atk-255-magical-attack": "+ 680%",
                       "effect": "Lasts for 270 sec",
                       "sp-cost": "85",
                       "range": "11 cells",
@@ -5455,6 +5502,7 @@ export const cardinalData = {
                   {
                     "level": 8,
                     "values": {
+                      "physical-atk-270-magical-attack": "+ 720%",
                       "effect": "Lasts for 300 sec",
                       "sp-cost": "90",
                       "range": "11 cells",
@@ -5464,6 +5512,7 @@ export const cardinalData = {
                   {
                     "level": 9,
                     "values": {
+                      "physical-atk-285-magical-attack": "+ 760%",
                       "effect": "Lasts for 330 sec",
                       "sp-cost": "95",
                       "range": "11 cells",
@@ -5473,6 +5522,7 @@ export const cardinalData = {
                   {
                     "level": 10,
                     "values": {
+                      "physical-atk-300-magical-attack": "+ 800%",
                       "effect": "Lasts for 360 sec",
                       "sp-cost": "100",
                       "range": "11 cells",
@@ -7093,12 +7143,29 @@ export const cardinalData = {
                   {
                     "id": "range",
                     "label": "Range"
+                  },
+                  {
+                    "id": "success-rate-100-critical-damage",
+                    "label": "Success Rate 100% / Critical Damage"
+                  },
+                  {
+                    "id": "success-rate-70-critical-damage",
+                    "label": "Success Rate 70% / Critical Damage"
+                  },
+                  {
+                    "id": "success-rate-80-critical-damage",
+                    "label": "Success Rate 80% / Critical Damage"
+                  },
+                  {
+                    "id": "success-rate-90-critical-damage",
+                    "label": "Success Rate 90% / Critical Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "success-rate-70-critical-damage": "+5%",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "70",
@@ -7109,6 +7176,7 @@ export const cardinalData = {
                   {
                     "level": 2,
                     "values": {
+                      "success-rate-80-critical-damage": "+10%",
                       "sp-cost": "60",
                       "range": "11 cells",
                       "data-1": "80",
@@ -7119,6 +7187,7 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
+                      "success-rate-90-critical-damage": "+15%",
                       "sp-cost": "70",
                       "range": "11 cells",
                       "data-1": "90",
@@ -7129,6 +7198,7 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
+                      "success-rate-100-critical-damage": "+20%",
                       "sp-cost": "80",
                       "range": "11 cells",
                       "data-1": "100",
@@ -8812,6 +8882,10 @@ export const cardinalData = {
                     "label": "Effect"
                   },
                   {
+                    "id": "90-seconds-healing-power",
+                    "label": "90 Seconds / Healing Power"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -8828,7 +8902,8 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "90 seconds / Healing Power +30% / SP Cost 220%",
+                      "90-seconds-healing-power": "+30%",
+                      "effect": "SP Cost 220%",
                       "sp-cost": "30",
                       "data-1": "130",
                       "data-2": "220",
@@ -8838,7 +8913,8 @@ export const cardinalData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "90 seconds / Healing Power +60% / SP Cost 240%",
+                      "90-seconds-healing-power": "+60%",
+                      "effect": "SP Cost 240%",
                       "sp-cost": "60",
                       "data-1": "160",
                       "data-2": "240",
@@ -8848,7 +8924,8 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "90 seconds / Healing Power +90% / SP Cost 260%",
+                      "90-seconds-healing-power": "+90%",
+                      "effect": "SP Cost 260%",
                       "sp-cost": "90",
                       "data-1": "190",
                       "data-2": "260",
@@ -8858,7 +8935,8 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "90 seconds / Healing Power +120% / SP Cost 280%",
+                      "90-seconds-healing-power": "+120%",
+                      "effect": "SP Cost 280%",
                       "sp-cost": "120",
                       "data-1": "220",
                       "data-2": "280",
@@ -8868,7 +8946,8 @@ export const cardinalData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "90 seconds / Healing Power +150% / SP Cost 300%",
+                      "90-seconds-healing-power": "+150%",
+                      "effect": "SP Cost 300%",
                       "sp-cost": "150",
                       "data-1": "250",
                       "data-2": "300",
@@ -12960,66 +13039,116 @@ export const cardinalData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "damage-12-cri",
+                    "label": "Damage +12, Cri"
+                  },
+                  {
+                    "id": "damage-15-cri",
+                    "label": "Damage +15, Cri"
+                  },
+                  {
+                    "id": "damage-18-cri",
+                    "label": "Damage +18, Cri"
+                  },
+                  {
+                    "id": "damage-21-cri",
+                    "label": "Damage +21, Cri"
+                  },
+                  {
+                    "id": "damage-24-cri",
+                    "label": "Damage +24, Cri"
+                  },
+                  {
+                    "id": "damage-27-cri",
+                    "label": "Damage +27, Cri"
+                  },
+                  {
+                    "id": "damage-3-cri",
+                    "label": "Damage +3, Cri"
+                  },
+                  {
+                    "id": "damage-30-cri",
+                    "label": "Damage +30, Cri"
+                  },
+                  {
+                    "id": "damage-6-cri",
+                    "label": "Damage +6, Cri"
+                  },
+                  {
+                    "id": "damage-9-cri",
+                    "label": "Damage +9, Cri"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "damage-3-cri": "+ 1",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "damage-6-cri": "+ 2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "damage-9-cri": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "damage-12-cri": "+ 4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "damage-15-cri": "+ 5",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "damage-18-cri": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "damage-21-cri": "+ 7",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "damage-24-cri": "+ 8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "damage-27-cri": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "damage-30-cri": "+10",
                       "sp-cost": "0"
                     }
                   }
@@ -13426,36 +13555,61 @@ export const cardinalData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "magic-damage-3-physical-damage",
+                    "label": "Magic Damage + 3%, Physical Damage"
+                  },
+                  {
+                    "id": "magic-damage-6-physical-damage",
+                    "label": "Magic Damage + 6%, Physical Damage"
+                  },
+                  {
+                    "id": "magic-damage-9-physical-damage",
+                    "label": "Magic Damage + 9%, Physical Damage"
+                  },
+                  {
+                    "id": "magic-damage-12-physical-damage",
+                    "label": "Magic Damage +12%, Physical Damage"
+                  },
+                  {
+                    "id": "magic-damage-15-physical-damage",
+                    "label": "Magic Damage +15%, Physical Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "magic-damage-3-physical-damage": "+ 5%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "magic-damage-6-physical-damage": "+10%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "magic-damage-9-physical-damage": "+15%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "magic-damage-12-physical-damage": "+20%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "magic-damage-15-physical-damage": "+25%",
                       "sp-cost": "80"
                     }
                   }
@@ -15149,66 +15303,80 @@ export const cardinalData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "damage-reduction",
+                    "label": "Damage Reduction"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "damage-reduction": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "damage-reduction": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "damage-reduction": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "damage-reduction": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "damage-reduction": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "damage-reduction": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "damage-reduction": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "damage-reduction": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "damage-reduction": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "damage-reduction": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -20874,7 +21042,7 @@ export const cardinalData = {
               },
               {
                 "id": "p-atk-and-s-matk",
-                "label": "P.atk And S.matk"
+                "label": "P.Atk And S.Matk"
               }
             ],
             "rows": [

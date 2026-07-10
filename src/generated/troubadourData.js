@@ -1,5 +1,5 @@
 export const troubadourData = {
-  "generatedAt": "2026-07-09T13:21:49.896Z",
+  "generatedAt": "2026-07-10T00:56:08.238Z",
   "classId": 4263,
   "classSlug": "troubadour",
   "className": "Troubadour",
@@ -6914,6 +6914,10 @@ export const troubadourData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "effect",
+                    "label": "Effect"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -6930,6 +6934,7 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
+                      "effect": "ATK + 7, increases based on caster's Lesson level",
                       "sp-cost": "82",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -6939,6 +6944,7 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
+                      "effect": "ATK + 10, increases based on caster's Lesson level",
                       "sp-cost": "88",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -6948,6 +6954,7 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
+                      "effect": "ATK + 13, increases based on caster's Lesson level",
                       "sp-cost": "94",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -6957,6 +6964,7 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
+                      "effect": "ATK + 15, increases based on caster's Lesson level",
                       "sp-cost": "100",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -6966,6 +6974,7 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
+                      "effect": "ATK + 20, increases based on caster's Lesson level",
                       "sp-cost": "106",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7191,6 +7200,10 @@ export const troubadourData = {
                     "label": "Data 3"
                   },
                   {
+                    "id": "def",
+                    "label": "Def"
+                  },
+                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -7199,7 +7212,8 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Def +6% / Skill Range 15 x 15",
+                      "def": "+6%",
+                      "effect": "Skill Range 15 x 15",
                       "sp-cost": "86",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7209,7 +7223,8 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Def +12% / Skill Range 17 x 17",
+                      "def": "+12%",
+                      "effect": "Skill Range 17 x 17",
                       "sp-cost": "92",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7219,7 +7234,8 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Def +18% / Skill Range 19 x 19",
+                      "def": "+18%",
+                      "effect": "Skill Range 19 x 19",
                       "sp-cost": "98",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7229,7 +7245,8 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Def +24% / Skill Range 21 x 21",
+                      "def": "+24%",
+                      "effect": "Skill Range 21 x 21",
                       "sp-cost": "104",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7239,7 +7256,8 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Def +30% / Skill Range 23 x 23",
+                      "def": "+30%",
+                      "effect": "Skill Range 23 x 23",
                       "sp-cost": "110",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7807,12 +7825,33 @@ export const troubadourData = {
                   {
                     "id": "range",
                     "label": "Range"
+                  },
+                  {
+                    "id": "skill-range-11-x-11-fixed-casting-time-30-aspd-5-ranged-damage",
+                    "label": "Skill Range 11 X 11 / Fixed Casting Time -30%, Aspd +5%, Ranged Damage"
+                  },
+                  {
+                    "id": "skill-range-13-x-13-fixed-casting-time-40-aspd-10-ranged-damage",
+                    "label": "Skill Range 13 X 13 / Fixed Casting Time -40%, Aspd +10%, Ranged Damage"
+                  },
+                  {
+                    "id": "skill-range-15-x-15-fixed-casting-time-50-aspd-15-ranged-damage",
+                    "label": "Skill Range 15 X 15 / Fixed Casting Time -50%, Aspd +15%, Ranged Damage"
+                  },
+                  {
+                    "id": "skill-range-17-x-17-fixed-casting-time-60-aspd-20-ranged-damage",
+                    "label": "Skill Range 17 X 17 / Fixed Casting Time -60%, Aspd +20%, Ranged Damage"
+                  },
+                  {
+                    "id": "skill-range-19-x-19-fixed-casting-time-70-aspd-25-ranged-damage",
+                    "label": "Skill Range 19 X 19 / Fixed Casting Time -70%, Aspd +25%, Ranged Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "skill-range-11-x-11-fixed-casting-time-30-aspd-5-ranged-damage": "+1%",
                       "sp-cost": "120",
                       "range": "1 cells",
                       "data-1": "30000",
@@ -7822,6 +7861,7 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
+                      "skill-range-13-x-13-fixed-casting-time-40-aspd-10-ranged-damage": "+2%",
                       "sp-cost": "140",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7831,6 +7871,7 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
+                      "skill-range-15-x-15-fixed-casting-time-50-aspd-15-ranged-damage": "+3%",
                       "sp-cost": "160",
                       "range": "1 cells",
                       "data-1": "90000",
@@ -7840,6 +7881,7 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
+                      "skill-range-17-x-17-fixed-casting-time-60-aspd-20-ranged-damage": "+4%",
                       "sp-cost": "180",
                       "range": "1 cells",
                       "data-1": "120000",
@@ -7849,6 +7891,7 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
+                      "skill-range-19-x-19-fixed-casting-time-70-aspd-25-ranged-damage": "+5%",
                       "sp-cost": "200",
                       "range": "1 cells",
                       "data-1": "150000",
@@ -8704,35 +8747,32 @@ export const troubadourData = {
                     "label": "Data 2"
                   },
                   {
+                    "id": "flee",
+                    "label": "Flee"
+                  },
+                  {
                     "id": "range",
                     "label": "Range"
                   },
                   {
-                    "id": "skill-range-11x11-hit-200-flee",
-                    "label": "Skill Range 11x11 / Hit -200 / Flee"
+                    "id": "skill-range-11x11-hit",
+                    "label": "Skill Range 11x11 / Hit"
                   },
                   {
-                    "id": "skill-range-11x11-hit-250-flee",
-                    "label": "Skill Range 11x11 / Hit -250 / Flee"
+                    "id": "skill-range-13x13-hit",
+                    "label": "Skill Range 13x13 / Hit"
                   },
                   {
-                    "id": "skill-range-13x13-hit-300-flee",
-                    "label": "Skill Range 13x13 / Hit -300 / Flee"
-                  },
-                  {
-                    "id": "skill-range-9x9-hit-100-flee",
-                    "label": "Skill Range 9x9 / Hit -100 / Flee"
-                  },
-                  {
-                    "id": "skill-range-9x9-hit-150-flee",
-                    "label": "Skill Range 9x9 / Hit -150 / Flee"
+                    "id": "skill-range-9x9-hit",
+                    "label": "Skill Range 9x9 / Hit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "skill-range-9x9-hit-100-flee": "-50",
+                      "skill-range-9x9-hit": "-100",
+                      "flee": "-50",
                       "sp-cost": "150",
                       "range": "1 cells",
                       "data-1": "10000",
@@ -8742,7 +8782,8 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "skill-range-9x9-hit-150-flee": "-80",
+                      "skill-range-9x9-hit": "-150",
+                      "flee": "-80",
                       "sp-cost": "160",
                       "range": "1 cells",
                       "data-1": "15000",
@@ -8752,7 +8793,8 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "skill-range-11x11-hit-200-flee": "-110",
+                      "skill-range-11x11-hit": "-200",
+                      "flee": "-110",
                       "sp-cost": "170",
                       "range": "1 cells",
                       "data-1": "20000",
@@ -8762,7 +8804,8 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "skill-range-11x11-hit-250-flee": "-140",
+                      "skill-range-11x11-hit": "-250",
+                      "flee": "-140",
                       "sp-cost": "180",
                       "range": "1 cells",
                       "data-1": "25000",
@@ -8772,7 +8815,8 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "skill-range-13x13-hit-300-flee": "-170",
+                      "skill-range-13x13-hit": "-300",
+                      "flee": "-170",
                       "sp-cost": "190",
                       "range": "1 cells",
                       "data-1": "30000",

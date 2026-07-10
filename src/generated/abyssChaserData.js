@@ -1,5 +1,5 @@
 export const abyssChaserData = {
-  "generatedAt": "2026-07-09T13:20:22.692Z",
+  "generatedAt": "2026-07-10T00:54:31.682Z",
   "classId": 4260,
   "classSlug": "abyss-chaser",
   "className": "Abyss Chaser",
@@ -3723,114 +3723,96 @@ export const abyssChaserData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "p-atk-s-makt-12-hit",
-                    "label": "+ P.atk/s.makt + 12/hit"
+                    "id": "p-atk-s-makt",
+                    "label": "+ P.Atk/s.makt"
                   },
                   {
-                    "id": "p-atk-s-matk-14-hit",
-                    "label": "+ P.atk/s.matk + 14/hit"
+                    "id": "p-atk-s-matk",
+                    "label": "+ P.Atk/S.Matk"
                   },
                   {
-                    "id": "p-atk-s-matk-16-hit",
-                    "label": "+ P.atk/s.matk + 16/hit"
-                  },
-                  {
-                    "id": "p-atk-s-matk-18-hit",
-                    "label": "+ P.atk/s.matk + 18/hit"
-                  },
-                  {
-                    "id": "p-atk-s-matk-20-hit",
-                    "label": "+ P.atk/s.matk + 20/hit"
-                  },
-                  {
-                    "id": "p-atk-s-matk-22-hit",
-                    "label": "+ P.atk/s.matk + 22/hit"
-                  },
-                  {
-                    "id": "p-atk-s-matk-24-hit",
-                    "label": "+ P.atk/s.matk + 24/hit"
-                  },
-                  {
-                    "id": "p-atk-s-matk-26-hit",
-                    "label": "+ P.atk/s.matk + 26/hit"
-                  },
-                  {
-                    "id": "p-atk-s-matk-28-hit",
-                    "label": "+ P.atk/s.matk + 28/hit"
-                  },
-                  {
-                    "id": "p-atk-s-matk-30-hit",
-                    "label": "+ P.atk/s.matk + 30/hit"
+                    "id": "hit",
+                    "label": "Hit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "p-atk-s-makt-12-hit": "+ 120",
+                      "p-atk-s-makt": "+ 12",
+                      "hit": "+ 120",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "p-atk-s-matk-14-hit": "+ 140",
+                      "p-atk-s-matk": "+ 14",
+                      "hit": "+ 140",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "p-atk-s-matk-16-hit": "+ 160",
+                      "p-atk-s-matk": "+ 16",
+                      "hit": "+ 160",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "p-atk-s-matk-18-hit": "+ 180",
+                      "p-atk-s-matk": "+ 18",
+                      "hit": "+ 180",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "p-atk-s-matk-20-hit": "+ 200",
+                      "p-atk-s-matk": "+ 20",
+                      "hit": "+ 200",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "p-atk-s-matk-22-hit": "+ 220",
+                      "p-atk-s-matk": "+ 22",
+                      "hit": "+ 220",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "p-atk-s-matk-24-hit": "+ 240",
+                      "p-atk-s-matk": "+ 24",
+                      "hit": "+ 240",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "p-atk-s-matk-26-hit": "+ 260",
+                      "p-atk-s-matk": "+ 26",
+                      "hit": "+ 260",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "p-atk-s-matk-28-hit": "+ 280",
+                      "p-atk-s-matk": "+ 28",
+                      "hit": "+ 280",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "p-atk-s-matk-30-hit": "+ 300",
+                      "p-atk-s-matk": "+ 30",
+                      "hit": "+ 300",
                       "sp-cost": "100"
                     }
                   }
@@ -5126,6 +5108,50 @@ export const abyssChaserData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "effect",
+                    "label": "Effect"
+                  },
+                  {
+                    "id": "atk-1080-hit",
+                    "label": "Atk 1080%/hit"
+                  },
+                  {
+                    "id": "atk-120-hit",
+                    "label": "Atk 120%/hit"
+                  },
+                  {
+                    "id": "atk-1200-hit",
+                    "label": "Atk 1200%/hit"
+                  },
+                  {
+                    "id": "atk-240-hit",
+                    "label": "Atk 240%/hit"
+                  },
+                  {
+                    "id": "atk-360-hit",
+                    "label": "Atk 360%/hit"
+                  },
+                  {
+                    "id": "atk-480-hit",
+                    "label": "Atk 480%/hit"
+                  },
+                  {
+                    "id": "atk-600-hit",
+                    "label": "Atk 600%/hit"
+                  },
+                  {
+                    "id": "atk-720-hit",
+                    "label": "Atk 720%/hit"
+                  },
+                  {
+                    "id": "atk-840-hit",
+                    "label": "Atk 840%/hit"
+                  },
+                  {
+                    "id": "atk-960-hit",
+                    "label": "Atk 960%/hit"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -5146,6 +5172,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
+                      "atk-120-hit": "-30",
+                      "effect": "Range 3 x 3",
                       "sp-cost": "10",
                       "range": "1 cells",
                       "data-1": "30",
@@ -5156,6 +5184,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
+                      "atk-240-hit": "-25",
+                      "effect": "Range 3 x 3",
                       "sp-cost": "14",
                       "range": "1 cells",
                       "data-1": "25",
@@ -5166,6 +5196,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
+                      "atk-360-hit": "-20",
+                      "effect": "Range 3 x 3",
                       "sp-cost": "18",
                       "range": "1 cells",
                       "data-1": "20",
@@ -5176,6 +5208,8 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
+                      "atk-480-hit": "-15",
+                      "effect": "Range 3 x 3",
                       "sp-cost": "22",
                       "range": "1 cells",
                       "data-1": "15",
@@ -5186,6 +5220,8 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
+                      "atk-600-hit": "-10",
+                      "effect": "Range 3 x 3",
                       "sp-cost": "26",
                       "range": "1 cells",
                       "data-1": "10",
@@ -5196,6 +5232,8 @@ export const abyssChaserData = {
                   {
                     "level": 6,
                     "values": {
+                      "atk-720-hit": "+ 0",
+                      "effect": "Range 5 x 5",
                       "sp-cost": "30",
                       "range": "1 cells",
                       "data-1": "0",
@@ -5206,6 +5244,8 @@ export const abyssChaserData = {
                   {
                     "level": 7,
                     "values": {
+                      "atk-840-hit": "+ 5",
+                      "effect": "Range 5 x 5",
                       "sp-cost": "34",
                       "range": "1 cells",
                       "data-1": "0",
@@ -5216,6 +5256,8 @@ export const abyssChaserData = {
                   {
                     "level": 8,
                     "values": {
+                      "atk-960-hit": "+10",
+                      "effect": "Range 5 x 5",
                       "sp-cost": "38",
                       "range": "1 cells",
                       "data-1": "0",
@@ -5226,6 +5268,8 @@ export const abyssChaserData = {
                   {
                     "level": 9,
                     "values": {
+                      "atk-1080-hit": "+15",
+                      "effect": "Range 5 x 5",
                       "sp-cost": "42",
                       "range": "1 cells",
                       "data-1": "0",
@@ -5236,6 +5280,8 @@ export const abyssChaserData = {
                   {
                     "level": 10,
                     "values": {
+                      "atk-1200-hit": "+20",
+                      "effect": "Range 5 x 5",
                       "sp-cost": "46",
                       "range": "1 cells",
                       "data-1": "0",
@@ -6803,6 +6849,46 @@ export const abyssChaserData = {
                     "label": "Effect"
                   },
                   {
+                    "id": "chance-12-7lvcast-matk",
+                    "label": "Chance 12%/7lvcast/matk"
+                  },
+                  {
+                    "id": "chance-14-6lvcast-matk",
+                    "label": "Chance 14%/6lvcast/matk"
+                  },
+                  {
+                    "id": "chance-15-7lvcast-matk",
+                    "label": "Chance 15%/7lvcast/matk"
+                  },
+                  {
+                    "id": "chance-16-6lvcast-matk",
+                    "label": "Chance 16%/6lvcast/matk"
+                  },
+                  {
+                    "id": "chance-18-5lvcast-matk",
+                    "label": "Chance 18%/5lvcast/matk"
+                  },
+                  {
+                    "id": "chance-20-5lvcast-matk",
+                    "label": "Chance 20%/5lvcast/matk"
+                  },
+                  {
+                    "id": "chance-22-4lvcast-matk",
+                    "label": "Chance 22%/4lvcast/matk"
+                  },
+                  {
+                    "id": "chance-24-4lvcast-matk",
+                    "label": "Chance 24%/4lvcast/matk"
+                  },
+                  {
+                    "id": "chance-26-3lvcast-matk",
+                    "label": "Chance 26%/3lvcast/matk"
+                  },
+                  {
+                    "id": "chance-28-3lvcast-matk",
+                    "label": "Chance 28%/3lvcast/matk"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -6819,7 +6905,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Chance 28% / 3LvCast / 60 sec",
+                      "chance-28-3lvcast-matk": "+ 5",
+                      "effect": "60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "280",
@@ -6829,7 +6916,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Chance 26% / 3LvCast / 80 sec",
+                      "chance-26-3lvcast-matk": "+10",
+                      "effect": "80 sec",
                       "sp-cost": "45",
                       "data-1": "80000",
                       "data-2": "260",
@@ -6839,7 +6927,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Chance 24% / 4LvCast / 100 sec",
+                      "chance-24-4lvcast-matk": "+15",
+                      "effect": "100 sec",
                       "sp-cost": "50",
                       "data-1": "100000",
                       "data-2": "240",
@@ -6849,7 +6938,8 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Chance 22% / 4LvCast / 120 sec",
+                      "chance-22-4lvcast-matk": "+20",
+                      "effect": "120 sec",
                       "sp-cost": "55",
                       "data-1": "120000",
                       "data-2": "220",
@@ -6859,7 +6949,8 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Chance 20% / 5LvCast / 140 sec",
+                      "chance-20-5lvcast-matk": "+25",
+                      "effect": "140 sec",
                       "sp-cost": "60",
                       "data-1": "140000",
                       "data-2": "200",
@@ -6869,7 +6960,8 @@ export const abyssChaserData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Chance 18% / 5LvCast / 160 sec",
+                      "chance-18-5lvcast-matk": "+30",
+                      "effect": "160 sec",
                       "sp-cost": "65",
                       "data-1": "160000",
                       "data-2": "180",
@@ -6879,7 +6971,8 @@ export const abyssChaserData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Chance 16% / 6LvCast / 180 sec",
+                      "chance-16-6lvcast-matk": "+35",
+                      "effect": "180 sec",
                       "sp-cost": "70",
                       "data-1": "180000",
                       "data-2": "160",
@@ -6889,7 +6982,8 @@ export const abyssChaserData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Chance 14% / 6LvCast / 200 sec",
+                      "chance-14-6lvcast-matk": "+40",
+                      "effect": "200 sec",
                       "sp-cost": "75",
                       "data-1": "200000",
                       "data-2": "140",
@@ -6899,7 +6993,8 @@ export const abyssChaserData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Chance 12% / 7LvCast / 220 sec",
+                      "chance-12-7lvcast-matk": "+45",
+                      "effect": "220 sec",
                       "sp-cost": "80",
                       "data-1": "220000",
                       "data-2": "120",
@@ -6909,7 +7004,8 @@ export const abyssChaserData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Chance 15% / 7LvCast / 300 sec",
+                      "chance-15-7lvcast-matk": "+50",
+                      "effect": "300 sec",
                       "sp-cost": "85",
                       "data-1": "300000",
                       "data-2": "150",
@@ -10109,6 +10205,10 @@ export const abyssChaserData = {
                     "label": "Effect"
                   },
                   {
+                    "id": "critical",
+                    "label": "Critical"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -10129,7 +10229,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Critical +20% / Attack Speed decrease 40% / Consume SP in a sec. 10%",
+                      "critical": "+20%",
+                      "effect": "Attack Speed decrease 40% / Consume SP in a sec. 10%",
                       "sp-cost": "100",
                       "range": "1 cells",
                       "data-1": "20",
@@ -10140,7 +10241,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Critical +40% / Attack Speed decrease 30% / Consume SP in a sec. 8%",
+                      "critical": "+40%",
+                      "effect": "Attack Speed decrease 30% / Consume SP in a sec. 8%",
                       "sp-cost": "100",
                       "range": "1 cells",
                       "data-1": "40",
@@ -10151,7 +10253,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Critical +60% / Attack Speed decrease 20% / Consume SP in a sec. 6%",
+                      "critical": "+60%",
+                      "effect": "Attack Speed decrease 20% / Consume SP in a sec. 6%",
                       "sp-cost": "100",
                       "range": "1 cells",
                       "data-1": "60",
@@ -10162,7 +10265,8 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Critical +80% / Attack Speed decrease 10% / Consume SP in a sec. 5%",
+                      "critical": "+80%",
+                      "effect": "Attack Speed decrease 10% / Consume SP in a sec. 5%",
                       "sp-cost": "100",
                       "range": "1 cells",
                       "data-1": "80",
@@ -10173,7 +10277,8 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Critical +100% / Attack Speed decrease 0% / Consume SP in a sec. 2%",
+                      "critical": "+100%",
+                      "effect": "Attack Speed decrease 0% / Consume SP in a sec. 2%",
                       "sp-cost": "100",
                       "range": "1 cells",
                       "data-1": "100",
@@ -19949,114 +20054,96 @@ export const abyssChaserData = {
                 "label": "SP Cost"
               },
               {
-                "id": "p-atk-s-makt-12-hit",
-                "label": "+ P.atk/s.makt + 12/hit"
+                "id": "p-atk-s-makt",
+                "label": "+ P.Atk/s.makt"
               },
               {
-                "id": "p-atk-s-matk-14-hit",
-                "label": "+ P.atk/s.matk + 14/hit"
+                "id": "p-atk-s-matk",
+                "label": "+ P.Atk/S.Matk"
               },
               {
-                "id": "p-atk-s-matk-16-hit",
-                "label": "+ P.atk/s.matk + 16/hit"
-              },
-              {
-                "id": "p-atk-s-matk-18-hit",
-                "label": "+ P.atk/s.matk + 18/hit"
-              },
-              {
-                "id": "p-atk-s-matk-20-hit",
-                "label": "+ P.atk/s.matk + 20/hit"
-              },
-              {
-                "id": "p-atk-s-matk-22-hit",
-                "label": "+ P.atk/s.matk + 22/hit"
-              },
-              {
-                "id": "p-atk-s-matk-24-hit",
-                "label": "+ P.atk/s.matk + 24/hit"
-              },
-              {
-                "id": "p-atk-s-matk-26-hit",
-                "label": "+ P.atk/s.matk + 26/hit"
-              },
-              {
-                "id": "p-atk-s-matk-28-hit",
-                "label": "+ P.atk/s.matk + 28/hit"
-              },
-              {
-                "id": "p-atk-s-matk-30-hit",
-                "label": "+ P.atk/s.matk + 30/hit"
+                "id": "hit",
+                "label": "Hit"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "p-atk-s-makt-12-hit": "+ 120",
+                  "p-atk-s-makt": "+ 12",
+                  "hit": "+ 120",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "p-atk-s-matk-14-hit": "+ 140",
+                  "p-atk-s-matk": "+ 14",
+                  "hit": "+ 140",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "p-atk-s-matk-16-hit": "+ 160",
+                  "p-atk-s-matk": "+ 16",
+                  "hit": "+ 160",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "p-atk-s-matk-18-hit": "+ 180",
+                  "p-atk-s-matk": "+ 18",
+                  "hit": "+ 180",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "p-atk-s-matk-20-hit": "+ 200",
+                  "p-atk-s-matk": "+ 20",
+                  "hit": "+ 200",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "p-atk-s-matk-22-hit": "+ 220",
+                  "p-atk-s-matk": "+ 22",
+                  "hit": "+ 220",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "p-atk-s-matk-24-hit": "+ 240",
+                  "p-atk-s-matk": "+ 24",
+                  "hit": "+ 240",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "p-atk-s-matk-26-hit": "+ 260",
+                  "p-atk-s-matk": "+ 26",
+                  "hit": "+ 260",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "p-atk-s-matk-28-hit": "+ 280",
+                  "p-atk-s-matk": "+ 28",
+                  "hit": "+ 280",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "p-atk-s-matk-30-hit": "+ 300",
+                  "p-atk-s-matk": "+ 30",
+                  "hit": "+ 300",
                   "sp-cost": "100"
                 }
               }

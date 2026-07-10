@@ -1,5 +1,5 @@
 export const meisterData = {
-  "generatedAt": "2026-07-09T13:19:43.169Z",
+  "generatedAt": "2026-07-10T00:53:50.722Z",
   "classId": 4253,
   "classSlug": "meister",
   "className": "Meister",
@@ -1379,66 +1379,80 @@ export const meisterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "effect": "Improved ABR Stats (ATK 800, MHP : 40000, DEF : 20, MDEF : 4, FLEE : 10)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "effect": "Improved ABR Stats (ATK 1400, MHP : 80000, DEF : 40, MDEF : 8, FLEE : 20)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "effect": "Improved ABR Stats (ATK 2000, MHP : 120000, DEF : 60, MDEF : 12, FLEE : 30)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "effect": "Improved ABR Stats (ATK 2600, MHP : 160000, DEF : 80, MDEF : 16, FLEE : 40)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "effect": "Improved ABR Stats (ATK 3200, MHP : 200000, DEF : 100, MDEF : 20, FLEE : 50)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "effect": "Improved ABR Stats (ATK 3800, MHP : 240000, DEF : 120, MDEF : 24, FLEE : 60)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "effect": "Improved ABR Stats (ATK 4400, MHP : 280000, DEF : 140, MDEF : 28, FLEE : 70)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "effect": "Improved ABR Stats (ATK 5000, MHP : 320000, DEF : 160, MDEF : 32, FLEE : 80)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "effect": "Improved ABR Stats (ATK 5600, MHP : 360000, DEF : 180, MDEF : 36, FLEE : 90)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "effect": "Improved ABR Stats (ATK 6200, MHP : 400000, DEF : 200, MDEF : 40, FLEE : 100)",
                       "sp-cost": "0"
                     }
                   }
@@ -3748,20 +3762,8 @@ export const meisterData = {
                     "label": "Effect"
                   },
                   {
-                    "id": "atk-15-movement-speed",
-                    "label": "Atk +15 / Movement Speed"
-                  },
-                  {
-                    "id": "atk-30-movement-speed",
-                    "label": "Atk +30 / Movement Speed"
-                  },
-                  {
-                    "id": "atk-45-movement-speed",
-                    "label": "Atk +45 / Movement Speed"
-                  },
-                  {
-                    "id": "atk-60-movement-speed",
-                    "label": "Atk +60 / Movement Speed"
+                    "id": "atk",
+                    "label": "Atk"
                   },
                   {
                     "id": "data-1",
@@ -3770,13 +3772,18 @@ export const meisterData = {
                   {
                     "id": "data-2",
                     "label": "Data 2"
+                  },
+                  {
+                    "id": "movement-speed",
+                    "label": "Movement Speed"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "atk-15-movement-speed": "-40%",
+                      "atk": "+15",
+                      "movement-speed": "-40%",
                       "sp-cost": "0",
                       "data-1": "15",
                       "data-2": "40"
@@ -3785,7 +3792,8 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "atk-30-movement-speed": "-30%",
+                      "atk": "+30",
+                      "movement-speed": "-30%",
                       "sp-cost": "0",
                       "data-1": "30",
                       "data-2": "30"
@@ -3794,7 +3802,8 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "atk-45-movement-speed": "-20%",
+                      "atk": "+45",
+                      "movement-speed": "-20%",
                       "sp-cost": "0",
                       "data-1": "45",
                       "data-2": "20"
@@ -3803,7 +3812,8 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "atk-60-movement-speed": "-10%",
+                      "atk": "+60",
+                      "movement-speed": "-10%",
                       "sp-cost": "0",
                       "data-1": "60",
                       "data-2": "10"
@@ -3812,6 +3822,7 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
+                      "atk": "+75",
                       "effect": "No Movement Speed penalty",
                       "sp-cost": "0",
                       "data-1": "75",
@@ -4143,44 +4154,12 @@ export const meisterData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "atk-10-accuracy-rate",
-                    "label": "Atk +10 / Accuracy Rate"
+                    "id": "accuracy-rate",
+                    "label": "Accuracy Rate"
                   },
                   {
-                    "id": "atk-15-accuracy-rate",
-                    "label": "Atk +15 / Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-20-accuracy-rate",
-                    "label": "Atk +20 / Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-25-accuracy-rate",
-                    "label": "Atk +25 / Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-30-accuracy-rate",
-                    "label": "Atk +30 / Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-35-accuracy-rate",
-                    "label": "Atk +35 / Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-40-accuracy-rate",
-                    "label": "Atk +40 / Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-45-accuracy-rate",
-                    "label": "Atk +45 / Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-5-accuracy-rate",
-                    "label": "Atk +5 / Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-50-accuracy-rate",
-                    "label": "Atk +50 / Accuracy Rate"
+                    "id": "atk",
+                    "label": "Atk"
                   },
                   {
                     "id": "data-1",
@@ -4203,7 +4182,8 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "atk-5-accuracy-rate": "+3",
+                      "atk": "+5",
+                      "accuracy-rate": "+3",
                       "sp-cost": "0",
                       "data-1": "5",
                       "data-2": "3",
@@ -4214,7 +4194,8 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "atk-10-accuracy-rate": "+6",
+                      "atk": "+10",
+                      "accuracy-rate": "+6",
                       "sp-cost": "0",
                       "data-1": "10",
                       "data-2": "6",
@@ -4225,7 +4206,8 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "atk-15-accuracy-rate": "+9",
+                      "atk": "+15",
+                      "accuracy-rate": "+9",
                       "sp-cost": "0",
                       "data-1": "15",
                       "data-2": "9",
@@ -4236,7 +4218,8 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "atk-20-accuracy-rate": "+12",
+                      "atk": "+20",
+                      "accuracy-rate": "+12",
                       "sp-cost": "0",
                       "data-1": "20",
                       "data-2": "12",
@@ -4247,7 +4230,8 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "atk-25-accuracy-rate": "+15",
+                      "atk": "+25",
+                      "accuracy-rate": "+15",
                       "sp-cost": "0",
                       "data-1": "25",
                       "data-2": "15",
@@ -4258,7 +4242,8 @@ export const meisterData = {
                   {
                     "level": 6,
                     "values": {
-                      "atk-30-accuracy-rate": "+18",
+                      "atk": "+30",
+                      "accuracy-rate": "+18",
                       "sp-cost": "0",
                       "data-1": "30",
                       "data-2": "18",
@@ -4269,7 +4254,8 @@ export const meisterData = {
                   {
                     "level": 7,
                     "values": {
-                      "atk-35-accuracy-rate": "+21",
+                      "atk": "+35",
+                      "accuracy-rate": "+21",
                       "sp-cost": "0",
                       "data-1": "35",
                       "data-2": "21",
@@ -4280,7 +4266,8 @@ export const meisterData = {
                   {
                     "level": 8,
                     "values": {
-                      "atk-40-accuracy-rate": "+24",
+                      "atk": "+40",
+                      "accuracy-rate": "+24",
                       "sp-cost": "0",
                       "data-1": "40",
                       "data-2": "24",
@@ -4291,7 +4278,8 @@ export const meisterData = {
                   {
                     "level": 9,
                     "values": {
-                      "atk-45-accuracy-rate": "+27",
+                      "atk": "+45",
+                      "accuracy-rate": "+27",
                       "sp-cost": "0",
                       "data-1": "45",
                       "data-2": "27",
@@ -4302,7 +4290,8 @@ export const meisterData = {
                   {
                     "level": 10,
                     "values": {
-                      "atk-50-accuracy-rate": "+30",
+                      "atk": "+50",
+                      "accuracy-rate": "+30",
                       "sp-cost": "0",
                       "data-1": "50",
                       "data-2": "30",
@@ -4465,6 +4454,10 @@ export const meisterData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "atk",
+                    "label": "Atk"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -4473,31 +4466,16 @@ export const meisterData = {
                     "label": "Data 2"
                   },
                   {
-                    "id": "resistance-10-atk",
-                    "label": "Resistance +10 / Atk"
-                  },
-                  {
-                    "id": "resistance-20-atk",
-                    "label": "Resistance +20 / Atk"
-                  },
-                  {
-                    "id": "resistance-30-atk",
-                    "label": "Resistance +30 / Atk"
-                  },
-                  {
-                    "id": "resistance-40-atk",
-                    "label": "Resistance +40 / Atk"
-                  },
-                  {
-                    "id": "resistance-50-atk",
-                    "label": "Resistance +50 / Atk"
+                    "id": "resistance",
+                    "label": "Resistance"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "resistance-10-atk": "+10",
+                      "resistance": "+10",
+                      "atk": "+10",
                       "sp-cost": "0",
                       "data-1": "10",
                       "data-2": "10"
@@ -4506,7 +4484,8 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "resistance-20-atk": "+20",
+                      "resistance": "+20",
+                      "atk": "+20",
                       "sp-cost": "0",
                       "data-1": "20",
                       "data-2": "20"
@@ -4515,7 +4494,8 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "resistance-30-atk": "+30",
+                      "resistance": "+30",
+                      "atk": "+30",
                       "sp-cost": "0",
                       "data-1": "30",
                       "data-2": "30"
@@ -4524,7 +4504,8 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "resistance-40-atk": "+40",
+                      "resistance": "+40",
+                      "atk": "+40",
                       "sp-cost": "0",
                       "data-1": "40",
                       "data-2": "40"
@@ -4533,7 +4514,8 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "resistance-50-atk": "+50",
+                      "resistance": "+50",
+                      "atk": "+50",
                       "sp-cost": "0",
                       "data-1": "50",
                       "data-2": "50"
@@ -5414,13 +5396,18 @@ export const meisterData = {
                   {
                     "id": "data-3",
                     "label": "Data 3"
+                  },
+                  {
+                    "id": "defense",
+                    "label": "Defense"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Defense +40 / Overheat Limit 200",
+                      "defense": "+40",
+                      "effect": "Overheat Limit 200",
                       "sp-cost": "0",
                       "data-1": "40",
                       "data-2": "10",
@@ -5430,7 +5417,8 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Defense +60 / Overheat Limit 280",
+                      "defense": "+60",
+                      "effect": "Overheat Limit 280",
                       "sp-cost": "0",
                       "data-1": "60",
                       "data-2": "20",
@@ -5440,7 +5428,8 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Defense +80 / Overheat Limit 360",
+                      "defense": "+80",
+                      "effect": "Overheat Limit 360",
                       "sp-cost": "0",
                       "data-1": "80",
                       "data-2": "30",
@@ -5450,7 +5439,8 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Defense +100 / Overheat Limit 450",
+                      "defense": "+100",
+                      "effect": "Overheat Limit 450",
                       "sp-cost": "0",
                       "data-1": "100",
                       "data-2": "40",
@@ -6212,6 +6202,10 @@ export const meisterData = {
                     "label": "Effect"
                   },
                   {
+                    "id": "atk",
+                    "label": "Atk"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -6228,6 +6222,7 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
+                      "atk": "+0",
                       "effect": "Duration 20sec",
                       "sp-cost": "25",
                       "range": "2 cells",
@@ -6238,6 +6233,7 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
+                      "atk": "+200",
                       "effect": "Duration 30sec",
                       "sp-cost": "30",
                       "range": "2 cells",
@@ -6248,6 +6244,7 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
+                      "atk": "+400",
                       "effect": "Duration 40sec",
                       "sp-cost": "35",
                       "range": "2 cells",
@@ -6258,6 +6255,7 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
+                      "atk": "+800",
                       "effect": "Duration 50sec",
                       "sp-cost": "40",
                       "range": "2 cells",
@@ -6268,6 +6266,7 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
+                      "atk": "+1000",
                       "effect": "Duration 60sec",
                       "sp-cost": "45",
                       "range": "2 cells",
@@ -7712,7 +7711,7 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration 20sec",
+                      "effect": "MATK 300 / Duration 20sec",
                       "sp-cost": "40",
                       "range": "2 cells",
                       "data-1": "20000",
@@ -7722,7 +7721,7 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration 30sec",
+                      "effect": "MATK 350 / Duration 30sec",
                       "sp-cost": "45",
                       "range": "2 cells",
                       "data-1": "30000",
@@ -7732,7 +7731,7 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration 40sec",
+                      "effect": "MATK 400 / Duration 40sec",
                       "sp-cost": "50",
                       "range": "2 cells",
                       "data-1": "40000",
@@ -7742,7 +7741,7 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration 50sec",
+                      "effect": "MATK 450 / Duration 50sec",
                       "sp-cost": "55",
                       "range": "2 cells",
                       "data-1": "50000",
@@ -7752,7 +7751,7 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration 60sec",
+                      "effect": "MATK 500 / Duration 60sec",
                       "sp-cost": "60",
                       "range": "2 cells",
                       "data-1": "60000",
@@ -10075,13 +10074,18 @@ export const meisterData = {
                   {
                     "id": "data-2",
                     "label": "Data 2"
+                  },
+                  {
+                    "id": "physical-and-magic-defense",
+                    "label": "Physical And Magic Defense"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Physical and Magic defense +15% / Duration 30 sec",
+                      "physical-and-magic-defense": "+15%",
+                      "effect": "Duration 30 sec",
                       "sp-cost": "80",
                       "data-1": "15",
                       "data-2": "30000"
@@ -10090,7 +10094,8 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Physical and Magic defense +20% / Duration 45 sec",
+                      "physical-and-magic-defense": "+20%",
+                      "effect": "Duration 45 sec",
                       "sp-cost": "90",
                       "data-1": "20",
                       "data-2": "45000"
@@ -10099,7 +10104,8 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Physical and Magic defense +25% / Duration 60 sec",
+                      "physical-and-magic-defense": "+25%",
+                      "effect": "Duration 60 sec",
                       "sp-cost": "100",
                       "data-1": "25",
                       "data-2": "60000"
@@ -11640,66 +11646,116 @@ export const meisterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "acurracy-bonus-2-damage",
+                    "label": "Acurracy Bonus: 2, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-4-damage",
+                    "label": "Acurracy Bonus: 4, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-5-damage",
+                    "label": "Acurracy Bonus: 5, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-6-damage",
+                    "label": "Acurracy Bonus: 6, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-10-damage",
+                    "label": "Acurracy Bonus:10, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-12-damage",
+                    "label": "Acurracy Bonus:12, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-14-damage",
+                    "label": "Acurracy Bonus:14, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-16-damage",
+                    "label": "Acurracy Bonus:16, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-18-damage",
+                    "label": "Acurracy Bonus:18, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-20-damage",
+                    "label": "Acurracy Bonus:20, Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "acurracy-bonus-2-damage": "+ 2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "acurracy-bonus-4-damage": "+ 4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "acurracy-bonus-5-damage": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "acurracy-bonus-6-damage": "+ 8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "acurracy-bonus-10-damage": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "acurracy-bonus-12-damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "acurracy-bonus-14-damage": "+14",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "acurracy-bonus-16-damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "acurracy-bonus-18-damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "acurracy-bonus-20-damage": "+20",
                       "sp-cost": "0"
                     }
                   }
@@ -17803,66 +17859,80 @@ export const meisterData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
+              },
+              {
+                "id": "effect",
+                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
+                  "effect": "Improved ABR Stats (ATK 800, MHP : 40000, DEF : 20, MDEF : 4, FLEE : 10)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 2,
                 "values": {
+                  "effect": "Improved ABR Stats (ATK 1400, MHP : 80000, DEF : 40, MDEF : 8, FLEE : 20)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 3,
                 "values": {
+                  "effect": "Improved ABR Stats (ATK 2000, MHP : 120000, DEF : 60, MDEF : 12, FLEE : 30)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 4,
                 "values": {
+                  "effect": "Improved ABR Stats (ATK 2600, MHP : 160000, DEF : 80, MDEF : 16, FLEE : 40)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 5,
                 "values": {
+                  "effect": "Improved ABR Stats (ATK 3200, MHP : 200000, DEF : 100, MDEF : 20, FLEE : 50)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 6,
                 "values": {
+                  "effect": "Improved ABR Stats (ATK 3800, MHP : 240000, DEF : 120, MDEF : 24, FLEE : 60)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 7,
                 "values": {
+                  "effect": "Improved ABR Stats (ATK 4400, MHP : 280000, DEF : 140, MDEF : 28, FLEE : 70)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 8,
                 "values": {
+                  "effect": "Improved ABR Stats (ATK 5000, MHP : 320000, DEF : 160, MDEF : 32, FLEE : 80)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 9,
                 "values": {
+                  "effect": "Improved ABR Stats (ATK 5600, MHP : 360000, DEF : 180, MDEF : 36, FLEE : 90)",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 10,
                 "values": {
+                  "effect": "Improved ABR Stats (ATK 6200, MHP : 400000, DEF : 200, MDEF : 40, FLEE : 100)",
                   "sp-cost": "0"
                 }
               }

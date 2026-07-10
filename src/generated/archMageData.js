@@ -1,5 +1,5 @@
 export const archMageData = {
-  "generatedAt": "2026-07-09T13:20:38.277Z",
+  "generatedAt": "2026-07-10T00:54:49.439Z",
   "classId": 4255,
   "classSlug": "arch-mage",
   "className": "Arch Mage",
@@ -10508,6 +10508,10 @@ export const archMageData = {
                     "label": "Effect"
                   },
                   {
+                    "id": "1-minute-ghost-spell-magic-damage",
+                    "label": "1 Minute / Ghost-spell Magic Damage"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -10528,7 +10532,8 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "1 Minute / Ghost-Spell Magic Damage +40% / -10% Variable Cast Time on all skills / -10% Ghost-Spell SP Cost",
+                      "1-minute-ghost-spell-magic-damage": "+40%",
+                      "effect": "-10% Variable Cast Time on all skills / -10% Ghost-Spell SP Cost",
                       "sp-cost": "100",
                       "data-1": "60000",
                       "data-2": "140",
@@ -10539,7 +10544,8 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "1 Minute / Ghost-Spell Magic Damage +80% / -20% Variable Cast Time on all skills / -20% Ghost-Spell SP Cost",
+                      "1-minute-ghost-spell-magic-damage": "+80%",
+                      "effect": "-20% Variable Cast Time on all skills / -20% Ghost-Spell SP Cost",
                       "sp-cost": "150",
                       "data-1": "60000",
                       "data-2": "180",
@@ -10550,7 +10556,8 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "1 Minute / Ghost-Spell Magic Damage +120% / -30% Variable Cast Time on all skills / -30% Ghost-Spell SP Cost",
+                      "1-minute-ghost-spell-magic-damage": "+120%",
+                      "effect": "-30% Variable Cast Time on all skills / -30% Ghost-Spell SP Cost",
                       "sp-cost": "200",
                       "data-1": "60000",
                       "data-2": "220",
@@ -10561,7 +10568,8 @@ export const archMageData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "1 Minute / Ghost-Spell Magic Damage +160% / -40% Variable Cast Time on all skills / -40% Ghost-Spell SP Cost",
+                      "1-minute-ghost-spell-magic-damage": "+160%",
+                      "effect": "-40% Variable Cast Time on all skills / -40% Ghost-Spell SP Cost",
                       "sp-cost": "250",
                       "data-1": "60000",
                       "data-2": "260",
@@ -10572,7 +10580,8 @@ export const archMageData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "1 Minute / Ghost-Spell Magic Damage +200% / -50% Variable Cast Time on all skills / -50% Ghost-Spell SP Cost",
+                      "1-minute-ghost-spell-magic-damage": "+200%",
+                      "effect": "-50% Variable Cast Time on all skills / -50% Ghost-Spell SP Cost",
                       "sp-cost": "300",
                       "data-1": "60000",
                       "data-2": "300",
@@ -12135,36 +12144,45 @@ export const archMageData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "effect": "ATK 1time",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "effect": "ATK 2time",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "effect": "ATK 3time",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "effect": "ATK 4time",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "effect": "ATK 5time",
                       "sp-cost": "30"
                     }
                   }

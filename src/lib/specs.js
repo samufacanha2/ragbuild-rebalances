@@ -136,7 +136,7 @@ function removeDamageEffect(value) {
 function effectSegmentLooksLikeDamage(value) {
   const text = String(value ?? '').trim()
   if (!text) return false
-  if (/\b(?:ATK|MATK)\b/i.test(text) && /[0-9]/.test(text)) return true
+  if (/\b(?:ATK|MATK)\b/i.test(text) && /[0-9][0-9,]*\s*%/.test(text)) return true
   return /[0-9][0-9,]*\s*\+\s*\([^)]*(?:level|lv|mastery|count)[^)]*\)\s*%/i.test(text)
 }
 
@@ -162,7 +162,9 @@ function stripDamageFromLevelTable(table) {
 }
 
 function isDamageLevelColumn(label) {
-  if (/damage/i.test(label)) return true
+  const normalized = String(label ?? '').trim()
+  if (/^(?:Base\s+)?Damage(?:\s*\(|$)/i.test(normalized)) return true
+  if (/^Bonus Damage \(.+\) Multiplier$/i.test(normalized)) return true
   return ['Under Blessing of Four Directions', 'Cursed Target Factor', 'Skill Level Factor'].includes(label)
 }
 

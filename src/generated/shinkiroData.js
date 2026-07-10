@@ -1,5 +1,5 @@
 export const shinkiroData = {
-  "generatedAt": "2026-07-09T13:22:23.277Z",
+  "generatedAt": "2026-07-10T00:56:42.767Z",
   "classId": 4304,
   "classSlug": "shinkiro",
   "className": "Shinkiro",

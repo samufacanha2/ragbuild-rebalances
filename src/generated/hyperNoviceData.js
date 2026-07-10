@@ -1,5 +1,5 @@
 export const hyperNoviceData = {
-  "generatedAt": "2026-07-09T13:23:24.118Z",
+  "generatedAt": "2026-07-10T00:57:39.146Z",
   "classId": 4307,
   "classSlug": "hyper-novice",
   "className": "Hyper Novice",
@@ -483,12 +483,12 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
+                    "id": "p-atk",
+                    "label": "P.Atk"
                   },
                   {
-                    "id": "p-atk",
-                    "label": "P.atk"
+                    "id": "sp-cost",
+                    "label": "SP Cost"
                   }
                 ],
                 "rows": [
@@ -731,12 +731,12 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
+                    "id": "s-matk",
+                    "label": "S.Matk"
                   },
                   {
-                    "id": "s-matk",
-                    "label": "S.matk"
+                    "id": "sp-cost",
+                    "label": "SP Cost"
                   }
                 ],
                 "rows": [
@@ -4207,23 +4207,23 @@ export const hyperNoviceData = {
                 "columns": [
                   {
                     "id": "maxhp-15000-p-atk-s-matk",
-                    "label": "Maxhp +15000, P.atk & S.matk"
+                    "label": "Maxhp +15000, P.Atk & S.Matk"
                   },
                   {
                     "id": "maxhp-30000-p-atk-s-matk",
-                    "label": "Maxhp +30000, P.atk & S.matk"
+                    "label": "Maxhp +30000, P.Atk & S.Matk"
                   },
                   {
                     "id": "maxhp-45000-p-atk-s-matk",
-                    "label": "Maxhp +45000, P.atk & S.matk"
+                    "label": "Maxhp +45000, P.Atk & S.Matk"
                   },
                   {
                     "id": "maxhp-60000-p-atk-s-matk",
-                    "label": "Maxhp +60000, P.atk & S.matk"
+                    "label": "Maxhp +60000, P.Atk & S.Matk"
                   },
                   {
                     "id": "maxhp-75000-p-atk-s-matk",
-                    "label": "Maxhp +75000, P.atk & S.matk"
+                    "label": "Maxhp +75000, P.Atk & S.Matk"
                   }
                 ],
                 "rows": [
@@ -9695,36 +9695,45 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "effect": "ATK 1time",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "effect": "ATK 2time",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "effect": "ATK 3time",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "effect": "ATK 4time",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "effect": "ATK 5time",
                       "sp-cost": "30"
                     }
                   }
@@ -12436,66 +12445,80 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "damage",
+                    "label": "Damage:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "damage": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "damage": "+8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "damage": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "damage": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "damage": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "damage": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -12649,66 +12672,116 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "acurracy-bonus-2-damage",
+                    "label": "Acurracy Bonus: 2, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-4-damage",
+                    "label": "Acurracy Bonus: 4, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-5-damage",
+                    "label": "Acurracy Bonus: 5, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-6-damage",
+                    "label": "Acurracy Bonus: 6, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-10-damage",
+                    "label": "Acurracy Bonus:10, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-12-damage",
+                    "label": "Acurracy Bonus:12, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-14-damage",
+                    "label": "Acurracy Bonus:14, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-16-damage",
+                    "label": "Acurracy Bonus:16, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-18-damage",
+                    "label": "Acurracy Bonus:18, Damage"
+                  },
+                  {
+                    "id": "acurracy-bonus-20-damage",
+                    "label": "Acurracy Bonus:20, Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "acurracy-bonus-2-damage": "+ 2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "acurracy-bonus-4-damage": "+ 4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "acurracy-bonus-5-damage": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "acurracy-bonus-6-damage": "+ 8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "acurracy-bonus-10-damage": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "acurracy-bonus-12-damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "acurracy-bonus-14-damage": "+14",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "acurracy-bonus-16-damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "acurracy-bonus-18-damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "acurracy-bonus-20-damage": "+20",
                       "sp-cost": "0"
                     }
                   }
@@ -17889,66 +17962,80 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "damage-reduction",
+                    "label": "Damage Reduction"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "damage-reduction": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "damage-reduction": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "damage-reduction": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "damage-reduction": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "damage-reduction": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "damage-reduction": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "damage-reduction": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "damage-reduction": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "damage-reduction": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "damage-reduction": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -23829,12 +23916,12 @@ export const hyperNoviceData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "sp-cost",
-                "label": "SP Cost"
+                "id": "p-atk",
+                "label": "P.Atk"
               },
               {
-                "id": "p-atk",
-                "label": "P.atk"
+                "id": "sp-cost",
+                "label": "SP Cost"
               }
             ],
             "rows": [
@@ -24077,12 +24164,12 @@ export const hyperNoviceData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "sp-cost",
-                "label": "SP Cost"
+                "id": "s-matk",
+                "label": "S.Matk"
               },
               {
-                "id": "s-matk",
-                "label": "S.matk"
+                "id": "sp-cost",
+                "label": "SP Cost"
               }
             ],
             "rows": [
@@ -27553,23 +27640,23 @@ export const hyperNoviceData = {
             "columns": [
               {
                 "id": "maxhp-15000-p-atk-s-matk",
-                "label": "Maxhp +15000, P.atk & S.matk"
+                "label": "Maxhp +15000, P.Atk & S.Matk"
               },
               {
                 "id": "maxhp-30000-p-atk-s-matk",
-                "label": "Maxhp +30000, P.atk & S.matk"
+                "label": "Maxhp +30000, P.Atk & S.Matk"
               },
               {
                 "id": "maxhp-45000-p-atk-s-matk",
-                "label": "Maxhp +45000, P.atk & S.matk"
+                "label": "Maxhp +45000, P.Atk & S.Matk"
               },
               {
                 "id": "maxhp-60000-p-atk-s-matk",
-                "label": "Maxhp +60000, P.atk & S.matk"
+                "label": "Maxhp +60000, P.Atk & S.Matk"
               },
               {
                 "id": "maxhp-75000-p-atk-s-matk",
-                "label": "Maxhp +75000, P.atk & S.matk"
+                "label": "Maxhp +75000, P.Atk & S.Matk"
               }
             ],
             "rows": [

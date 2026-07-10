@@ -1,5 +1,5 @@
 export const nightWatchData = {
-  "generatedAt": "2026-07-09T13:22:07.181Z",
+  "generatedAt": "2026-07-10T00:56:27.092Z",
   "classId": 4306,
   "classSlug": "night-watch",
   "className": "Night Watch",
@@ -430,12 +430,12 @@ export const nightWatchData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
+                    "id": "p-atk",
+                    "label": "P.Atk"
                   },
                   {
-                    "id": "p-atk",
-                    "label": "P.atk"
+                    "id": "sp-cost",
+                    "label": "SP Cost"
                   }
                 ],
                 "rows": [
@@ -819,13 +819,23 @@ export const nightWatchData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "atk",
+                    "label": "Atk"
+                  },
+                  {
+                    "id": "hit",
+                    "label": "Hit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Hit +250 / Cri +30 when aiming mode is active",
+                      "atk": "+150",
+                      "hit": "+250",
+                      "effect": "Cri +30 when aiming mode is active",
                       "sp-cost": "10"
                     }
                   }
@@ -991,68 +1001,96 @@ export const nightWatchData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "p-atk",
+                    "label": "P.Atk"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "long-range-physical-damage",
+                    "label": "Long Range Physical Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "long-range-physical-damage": "+10%",
+                      "p-atk": "+3",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "long-range-physical-damage": "+20%",
+                      "p-atk": "+6",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "long-range-physical-damage": "+30%",
+                      "p-atk": "+9",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "long-range-physical-damage": "+40%",
+                      "p-atk": "+12",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "long-range-physical-damage": "+50%",
+                      "p-atk": "+15",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "long-range-physical-damage": "+60%",
+                      "p-atk": "+18",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "long-range-physical-damage": "+70%",
+                      "p-atk": "+21",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "long-range-physical-damage": "+80%",
+                      "p-atk": "+24",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "long-range-physical-damage": "+90%",
+                      "p-atk": "+27",
                       "sp-cost": "150"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "long-range-physical-damage": "+100%",
+                      "p-atk": "+30",
                       "sp-cost": "150"
                     }
                   }
@@ -7612,6 +7650,10 @@ export const nightWatchData = {
                     "label": "Effect"
                   },
                   {
+                    "id": "aspd",
+                    "label": "Aspd"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -7622,13 +7664,19 @@ export const nightWatchData = {
                   {
                     "id": "data-3",
                     "label": "Data 3"
+                  },
+                  {
+                    "id": "hit",
+                    "label": "Hit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ASPD +1 / HIT -30 / Duration: 60 sec",
+                      "aspd": "+1",
+                      "hit": "-30",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "30",
                       "data-2": "8",
@@ -7638,7 +7686,9 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ASPD +2 / HIT -35 / Duration: 60 sec",
+                      "aspd": "+2",
+                      "hit": "-35",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "35",
                       "data-2": "10",
@@ -7648,7 +7698,9 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ASPD +3 / HIT -40 / Duration: 60 sec",
+                      "aspd": "+3",
+                      "hit": "-40",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "40",
                       "data-2": "12",
@@ -7658,7 +7710,9 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ASPD +4 / HIT -45 / Duration: 60 sec",
+                      "aspd": "+4",
+                      "hit": "-45",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "45",
                       "data-2": "14",
@@ -7668,7 +7722,9 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ASPD +5 / HIT -50 / Duration: 60 sec",
+                      "aspd": "+5",
+                      "hit": "-50",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "50",
                       "data-2": "16",
@@ -14634,12 +14690,12 @@ export const nightWatchData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "sp-cost",
-                "label": "SP Cost"
+                "id": "p-atk",
+                "label": "P.Atk"
               },
               {
-                "id": "p-atk",
-                "label": "P.atk"
+                "id": "sp-cost",
+                "label": "SP Cost"
               }
             ],
             "rows": [
@@ -15023,13 +15079,23 @@ export const nightWatchData = {
               {
                 "id": "effect",
                 "label": "Effect"
+              },
+              {
+                "id": "atk",
+                "label": "Atk"
+              },
+              {
+                "id": "hit",
+                "label": "Hit"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Hit +250 / Cri +30 when aiming mode is active",
+                  "atk": "+150",
+                  "hit": "+250",
+                  "effect": "Cri +30 when aiming mode is active",
                   "sp-cost": "10"
                 }
               }
@@ -15195,68 +15261,96 @@ export const nightWatchData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "p-atk",
+                "label": "P.Atk"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
+              },
+              {
+                "id": "long-range-physical-damage",
+                "label": "Long Range Physical Damage"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
+                  "long-range-physical-damage": "+10%",
+                  "p-atk": "+3",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 2,
                 "values": {
+                  "long-range-physical-damage": "+20%",
+                  "p-atk": "+6",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 3,
                 "values": {
+                  "long-range-physical-damage": "+30%",
+                  "p-atk": "+9",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 4,
                 "values": {
+                  "long-range-physical-damage": "+40%",
+                  "p-atk": "+12",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 5,
                 "values": {
+                  "long-range-physical-damage": "+50%",
+                  "p-atk": "+15",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 6,
                 "values": {
+                  "long-range-physical-damage": "+60%",
+                  "p-atk": "+18",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 7,
                 "values": {
+                  "long-range-physical-damage": "+70%",
+                  "p-atk": "+21",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 8,
                 "values": {
+                  "long-range-physical-damage": "+80%",
+                  "p-atk": "+24",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 9,
                 "values": {
+                  "long-range-physical-damage": "+90%",
+                  "p-atk": "+27",
                   "sp-cost": "150"
                 }
               },
               {
                 "level": 10,
                 "values": {
+                  "long-range-physical-damage": "+100%",
+                  "p-atk": "+30",
                   "sp-cost": "150"
                 }
               }

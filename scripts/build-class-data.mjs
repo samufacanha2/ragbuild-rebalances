@@ -771,7 +771,9 @@ function parseDamageSegment(line, row, table, formulaRows) {
 
 function parseGenericBonusSegment(line, row, table) {
   const normalized = normalizeWhitespace(line);
-  const match = normalized.match(/^(.+?)\s*([+-]\s*[0-9][0-9,.]*(?:\s*%)?)$/i);
+  if (!normalized) return false;
+
+  const match = normalized.match(/^(.+?)\s*([+-]\s*[0-9][0-9,.]*(?:\s*%)?)(?:\s*\/\s*(.+))?$/i);
   if (!match) return false;
 
   const value = normalizeSkillValue(match[2]);
@@ -779,6 +781,10 @@ function parseGenericBonusSegment(line, row, table) {
   if (!labels.length) return false;
 
   for (const label of labels) setLevelValue(row, table, label, value);
+  if (match[3] && !parseGenericBonusSegment(match[3], row, table)) {
+    setLevelValue(row, table, "Effect", normalizeSkillValue(match[3]));
+  }
+
   return true;
 }
 
@@ -796,7 +802,10 @@ function titleCase(value) {
   return normalizeWhitespace(value)
     .split(/\s+/)
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+    .join(" ")
+    .replace(/\bP\.atk\b/gi, "P.Atk")
+    .replace(/\bS\.matk\b/gi, "S.Matk")
+    .replace(/\bSpl\b/g, "SPL");
 }
 
 function pullMetric(line, row, table, label, regex, formatter = normalizeSkillValue) {
@@ -884,7 +893,9 @@ function stripDamageFromLevelTable(table) {
 }
 
 function isDamageLevelColumn(label) {
-  if (/damage/i.test(label)) return true;
+  const normalized = normalizeWhitespace(label);
+  if (/^(?:Base\s+)?Damage(?:\s*\(|$)/i.test(normalized)) return true;
+  if (/^Bonus Damage \(.+\) Multiplier$/i.test(normalized)) return true;
   return ["Under Blessing of Four Directions", "Cursed Target Factor", "Skill Level Factor"].includes(label);
 }
 
@@ -909,7 +920,7 @@ function removeDamageEffect(value) {
 function effectSegmentLooksLikeDamage(value) {
   const text = String(value ?? "").trim();
   if (!text) return false;
-  if (/\b(?:ATK|MATK)\b/i.test(text) && /[0-9]/.test(text)) return true;
+  if (/\b(?:ATK|MATK)\b/i.test(text) && /[0-9][0-9,]*\s*%/.test(text)) return true;
   return /[0-9][0-9,]*\s*\+\s*\([^)]*(?:level|lv|mastery|count)[^)]*\)\s*%/i.test(text);
 }
 

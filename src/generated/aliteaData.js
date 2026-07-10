@@ -1,5 +1,5 @@
 export const aliteaData = {
-  "generatedAt": "2026-07-09T13:23:40.352Z",
+  "generatedAt": "2026-07-10T00:57:56.172Z",
   "classId": 4355,
   "classSlug": "alitea",
   "className": "Alitea",
@@ -276,37 +276,62 @@ export const aliteaData = {
                   {
                     "id": "duration",
                     "label": "Duration"
+                  },
+                  {
+                    "id": "increases-long-ranged-physical-damage-by-12-cri",
+                    "label": ": Increases Long Ranged Physical Damage By 12% / Cri"
+                  },
+                  {
+                    "id": "increases-long-ranged-physical-damage-by-18-cri",
+                    "label": ": Increases Long Ranged Physical Damage By 18% / Cri"
+                  },
+                  {
+                    "id": "increases-long-ranged-physical-damage-by-24-cri",
+                    "label": ": Increases Long Ranged Physical Damage By 24% / Cri"
+                  },
+                  {
+                    "id": "increases-long-ranged-physical-damage-by-30-cri",
+                    "label": ": Increases Long Ranged Physical Damage By 30% / Cri"
+                  },
+                  {
+                    "id": "increases-long-ranged-physical-damage-by-6-cri",
+                    "label": ": Increases Long Ranged Physical Damage By 6% / Cri"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration": "60 seconds"
+                      "duration": "60 seconds",
+                      "increases-long-ranged-physical-damage-by-6-cri": "+ 3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "duration": "120 seconds"
+                      "duration": "120 seconds",
+                      "increases-long-ranged-physical-damage-by-12-cri": "+ 6"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "duration": "180 seconds"
+                      "duration": "180 seconds",
+                      "increases-long-ranged-physical-damage-by-18-cri": "+ 9"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "duration": "240 seconds"
+                      "duration": "240 seconds",
+                      "increases-long-ranged-physical-damage-by-24-cri": "+ 12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "duration": "300 seconds"
+                      "duration": "300 seconds",
+                      "increases-long-ranged-physical-damage-by-30-cri": "+ 15"
                     }
                   }
                 ],
@@ -384,55 +409,48 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "p-atk-10-cri",
-                    "label": "P.atk + 10 / Cri"
+                    "id": "p-atk",
+                    "label": "P.Atk"
                   },
                   {
-                    "id": "p-atk-2-cri",
-                    "label": "P.atk + 2 / Cri"
-                  },
-                  {
-                    "id": "p-atk-4-cri",
-                    "label": "P.atk + 4 / Cri"
-                  },
-                  {
-                    "id": "p-atk-6-cri",
-                    "label": "P.atk + 6 / Cri"
-                  },
-                  {
-                    "id": "p-atk-8-cri",
-                    "label": "P.atk + 8 / Cri"
+                    "id": "cri",
+                    "label": "Cri"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "p-atk-2-cri": "+ 2"
+                      "p-atk": "+ 2",
+                      "cri": "+ 2"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "p-atk-4-cri": "+ 4"
+                      "p-atk": "+ 4",
+                      "cri": "+ 4"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "p-atk-6-cri": "+ 6"
+                      "p-atk": "+ 6",
+                      "cri": "+ 6"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "p-atk-8-cri": "+ 8"
+                      "p-atk": "+ 8",
+                      "cri": "+ 8"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "p-atk-10-cri": "+ 10"
+                      "p-atk": "+ 10",
+                      "cri": "+ 10"
                     }
                   }
                 ],
@@ -3264,7 +3282,7 @@ export const aliteaData = {
                 "columns": [
                   {
                     "id": "s-matk",
-                    "label": "S.matk"
+                    "label": "S.Matk"
                   }
                 ],
                 "rows": [
@@ -6741,37 +6759,46 @@ export const aliteaData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "maxsp",
+                    "label": "Maxsp"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Ma x SP + 2% / increases SP natural recovery by 10%"
+                      "maxsp": "+ 2%",
+                      "effect": "increases SP natural recovery by 10%"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Ma x SP + 4% / increases SP natural recovery by 20%"
+                      "maxsp": "+ 4%",
+                      "effect": "increases SP natural recovery by 20%"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Ma x SP + 6% / increases SP natural recovery by 30%"
+                      "maxsp": "+ 6%",
+                      "effect": "increases SP natural recovery by 30%"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Ma x SP + 8% / increases SP natural recovery by 40%"
+                      "maxsp": "+ 8%",
+                      "effect": "increases SP natural recovery by 40%"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Ma x SP + 10% / increases SP natural recovery by 50%"
+                      "maxsp": "+ 10%",
+                      "effect": "increases SP natural recovery by 50%"
                     }
                   }
                 ],
@@ -7134,37 +7161,62 @@ export const aliteaData = {
                   {
                     "id": "duration",
                     "label": "Duration"
+                  },
+                  {
+                    "id": "reduces-physical-magical-damage-taken-from-enemies-by-12-movement-speed",
+                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 12% / Movement Speed"
+                  },
+                  {
+                    "id": "reduces-physical-magical-damage-taken-from-enemies-by-15-movement-speed",
+                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 15% / Movement Speed"
+                  },
+                  {
+                    "id": "reduces-physical-magical-damage-taken-from-enemies-by-5-movement-speed",
+                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 5% / Movement Speed"
+                  },
+                  {
+                    "id": "reduces-physical-magical-damage-taken-from-enemies-by-7-movement-speed",
+                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 7% / Movement Speed"
+                  },
+                  {
+                    "id": "reduces-physical-magical-damage-taken-from-enemies-by-9-movement-speed",
+                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 9% / Movement Speed"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration": "1.5 second"
+                      "duration": "1.5 second",
+                      "reduces-physical-magical-damage-taken-from-enemies-by-5-movement-speed": "+ 50%"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "duration": "2 seconds"
+                      "duration": "2 seconds",
+                      "reduces-physical-magical-damage-taken-from-enemies-by-7-movement-speed": "+ 75%"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "duration": "2.5 seconds"
+                      "duration": "2.5 seconds",
+                      "reduces-physical-magical-damage-taken-from-enemies-by-9-movement-speed": "+ 100%"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "duration": "3 seconds"
+                      "duration": "3 seconds",
+                      "reduces-physical-magical-damage-taken-from-enemies-by-12-movement-speed": "+ 125%"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "duration": "4 seconds"
+                      "duration": "4 seconds",
+                      "reduces-physical-magical-damage-taken-from-enemies-by-15-movement-speed": "+ 150%"
                     }
                   }
                 ],
@@ -7743,55 +7795,57 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "str-10-luk-10-hit",
-                    "label": "Str + 10 / Luk + 10 / Hit"
+                    "id": "hit",
+                    "label": "Hit"
                   },
                   {
-                    "id": "str-2-luk-2-hit",
-                    "label": "Str + 2 / Luk + 2 / Hit"
+                    "id": "luk",
+                    "label": "Luk"
                   },
                   {
-                    "id": "str-4-luk-4-hit",
-                    "label": "Str + 4 / Luk + 4 / Hit"
-                  },
-                  {
-                    "id": "str-6-luk-6-hit",
-                    "label": "Str + 6 / Luk + 6 / Hit"
-                  },
-                  {
-                    "id": "str-8-luk-8-hit",
-                    "label": "Str + 8 / Luk + 8 / Hit"
+                    "id": "str",
+                    "label": "Str"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "str-2-luk-2-hit": "+ 10"
+                      "str": "+ 2",
+                      "luk": "+ 2",
+                      "hit": "+ 10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "str-4-luk-4-hit": "+ 20"
+                      "str": "+ 4",
+                      "luk": "+ 4",
+                      "hit": "+ 20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "str-6-luk-6-hit": "+ 30"
+                      "str": "+ 6",
+                      "luk": "+ 6",
+                      "hit": "+ 30"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "str-8-luk-8-hit": "+ 40"
+                      "str": "+ 8",
+                      "luk": "+ 8",
+                      "hit": "+ 40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "str-10-luk-10-hit": "+ 50"
+                      "str": "+ 10",
+                      "luk": "+ 10",
+                      "hit": "+ 50"
                     }
                   }
                 ],
@@ -7880,55 +7934,57 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "agi-10-dex-10-flee",
-                    "label": "Agi + 10 / Dex + 10 / Flee"
+                    "id": "agi",
+                    "label": "Agi"
                   },
                   {
-                    "id": "agi-2-dex-2-flee",
-                    "label": "Agi + 2 / Dex + 2 / Flee"
+                    "id": "dex",
+                    "label": "Dex"
                   },
                   {
-                    "id": "agi-4-dex-4-flee",
-                    "label": "Agi + 4 / Dex + 4 / Flee"
-                  },
-                  {
-                    "id": "agi-6-dex-6-flee",
-                    "label": "Agi + 6 / Dex + 6 / Flee"
-                  },
-                  {
-                    "id": "agi-8-dex-8-flee",
-                    "label": "Agi + 8 / Dex + 8 / Flee"
+                    "id": "flee",
+                    "label": "Flee"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "agi-2-dex-2-flee": "+ 10"
+                      "agi": "+ 2",
+                      "dex": "+ 2",
+                      "flee": "+ 10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "agi-4-dex-4-flee": "+ 20"
+                      "agi": "+ 4",
+                      "dex": "+ 4",
+                      "flee": "+ 20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "agi-6-dex-6-flee": "+ 30"
+                      "agi": "+ 6",
+                      "dex": "+ 6",
+                      "flee": "+ 30"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "agi-8-dex-8-flee": "+ 40"
+                      "agi": "+ 8",
+                      "dex": "+ 8",
+                      "flee": "+ 40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "agi-10-dex-10-flee": "+ 50"
+                      "agi": "+ 10",
+                      "dex": "+ 10",
+                      "flee": "+ 50"
                     }
                   }
                 ],
@@ -9607,105 +9663,83 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "def-10-int-vit-mdef",
-                    "label": "Def + 10 / Int/vit/mdef"
+                    "id": "def",
+                    "label": "Def"
                   },
                   {
-                    "id": "def-100-int-vit-mdef",
-                    "label": "Def + 100 / Int/vit/mdef"
-                  },
-                  {
-                    "id": "def-20-int-vit-mdef",
-                    "label": "Def + 20 / Int/vit/mdef"
-                  },
-                  {
-                    "id": "def-30-int-vit-mdef",
-                    "label": "Def + 30 / Int/vit/mdef"
-                  },
-                  {
-                    "id": "def-40-int-vit-mdef",
-                    "label": "Def + 40 / Int/vit/mdef"
-                  },
-                  {
-                    "id": "def-50-int-vit-mdef",
-                    "label": "Def + 50 / Int/vit/mdef"
-                  },
-                  {
-                    "id": "def-60-int-vit-mdef",
-                    "label": "Def + 60 / Int/vit/mdef"
-                  },
-                  {
-                    "id": "def-70-int-vit-mdef",
-                    "label": "Def + 70 / Int/vit/mdef"
-                  },
-                  {
-                    "id": "def-80-int-vit-mdef",
-                    "label": "Def + 80 / Int/vit/mdef"
-                  },
-                  {
-                    "id": "def-90-int-vit-mdef",
-                    "label": "Def + 90 / Int/vit/mdef"
+                    "id": "int-vit-mdef",
+                    "label": "Int/vit/mdef"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "def-10-int-vit-mdef": "+ 1"
+                      "def": "+ 10",
+                      "int-vit-mdef": "+ 1"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "def-20-int-vit-mdef": "+ 2"
+                      "def": "+ 20",
+                      "int-vit-mdef": "+ 2"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "def-30-int-vit-mdef": "+ 3"
+                      "def": "+ 30",
+                      "int-vit-mdef": "+ 3"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "def-40-int-vit-mdef": "+ 4"
+                      "def": "+ 40",
+                      "int-vit-mdef": "+ 4"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "def-50-int-vit-mdef": "+ 5"
+                      "def": "+ 50",
+                      "int-vit-mdef": "+ 5"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "def-60-int-vit-mdef": "+ 6"
+                      "def": "+ 60",
+                      "int-vit-mdef": "+ 6"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "def-70-int-vit-mdef": "+ 7"
+                      "def": "+ 70",
+                      "int-vit-mdef": "+ 7"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "def-80-int-vit-mdef": "+ 8"
+                      "def": "+ 80",
+                      "int-vit-mdef": "+ 8"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "def-90-int-vit-mdef": "+ 9"
+                      "def": "+ 90",
+                      "int-vit-mdef": "+ 9"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "def-100-int-vit-mdef": "+ 10"
+                      "def": "+ 100",
+                      "int-vit-mdef": "+ 10"
                     }
                   }
                 ],
@@ -10619,37 +10653,62 @@ export const aliteaData = {
               {
                 "id": "duration",
                 "label": "Duration"
+              },
+              {
+                "id": "increases-long-ranged-physical-damage-by-12-cri",
+                "label": ": Increases Long Ranged Physical Damage By 12% / Cri"
+              },
+              {
+                "id": "increases-long-ranged-physical-damage-by-18-cri",
+                "label": ": Increases Long Ranged Physical Damage By 18% / Cri"
+              },
+              {
+                "id": "increases-long-ranged-physical-damage-by-24-cri",
+                "label": ": Increases Long Ranged Physical Damage By 24% / Cri"
+              },
+              {
+                "id": "increases-long-ranged-physical-damage-by-30-cri",
+                "label": ": Increases Long Ranged Physical Damage By 30% / Cri"
+              },
+              {
+                "id": "increases-long-ranged-physical-damage-by-6-cri",
+                "label": ": Increases Long Ranged Physical Damage By 6% / Cri"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "duration": "60 seconds"
+                  "duration": "60 seconds",
+                  "increases-long-ranged-physical-damage-by-6-cri": "+ 3"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "duration": "120 seconds"
+                  "duration": "120 seconds",
+                  "increases-long-ranged-physical-damage-by-12-cri": "+ 6"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "duration": "180 seconds"
+                  "duration": "180 seconds",
+                  "increases-long-ranged-physical-damage-by-18-cri": "+ 9"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "duration": "240 seconds"
+                  "duration": "240 seconds",
+                  "increases-long-ranged-physical-damage-by-24-cri": "+ 12"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "duration": "300 seconds"
+                  "duration": "300 seconds",
+                  "increases-long-ranged-physical-damage-by-30-cri": "+ 15"
                 }
               }
             ],
@@ -10727,55 +10786,48 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "p-atk-10-cri",
-                "label": "P.atk + 10 / Cri"
+                "id": "p-atk",
+                "label": "P.Atk"
               },
               {
-                "id": "p-atk-2-cri",
-                "label": "P.atk + 2 / Cri"
-              },
-              {
-                "id": "p-atk-4-cri",
-                "label": "P.atk + 4 / Cri"
-              },
-              {
-                "id": "p-atk-6-cri",
-                "label": "P.atk + 6 / Cri"
-              },
-              {
-                "id": "p-atk-8-cri",
-                "label": "P.atk + 8 / Cri"
+                "id": "cri",
+                "label": "Cri"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "p-atk-2-cri": "+ 2"
+                  "p-atk": "+ 2",
+                  "cri": "+ 2"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "p-atk-4-cri": "+ 4"
+                  "p-atk": "+ 4",
+                  "cri": "+ 4"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "p-atk-6-cri": "+ 6"
+                  "p-atk": "+ 6",
+                  "cri": "+ 6"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "p-atk-8-cri": "+ 8"
+                  "p-atk": "+ 8",
+                  "cri": "+ 8"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "p-atk-10-cri": "+ 10"
+                  "p-atk": "+ 10",
+                  "cri": "+ 10"
                 }
               }
             ],
@@ -13607,7 +13659,7 @@ export const aliteaData = {
             "columns": [
               {
                 "id": "s-matk",
-                "label": "S.matk"
+                "label": "S.Matk"
               }
             ],
             "rows": [

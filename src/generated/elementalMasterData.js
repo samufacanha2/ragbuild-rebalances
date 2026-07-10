@@ -1,5 +1,5 @@
 export const elementalMasterData = {
-  "generatedAt": "2026-07-09T13:20:55.481Z",
+  "generatedAt": "2026-07-10T00:55:13.485Z",
   "classId": 4261,
   "classSlug": "elemental-master",
   "className": "Elemental Master",
@@ -4418,6 +4418,10 @@ export const elementalMasterData = {
                     "label": "Effect"
                   },
                   {
+                    "id": "atk",
+                    "label": "Atk"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -4438,6 +4442,10 @@ export const elementalMasterData = {
                     "label": "Data 5"
                   },
                   {
+                    "id": "guide-hit",
+                    "label": "Guide Hit"
+                  },
+                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -4446,7 +4454,9 @@ export const elementalMasterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Guide Hit+30 / Consumes SP5",
+                      "atk": "+20",
+                      "guide-hit": "+30",
+                      "effect": "Consumes SP5",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "35",
@@ -4459,7 +4469,9 @@ export const elementalMasterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Guide Hit+40 / Consumes SP4",
+                      "atk": "+40",
+                      "guide-hit": "+40",
+                      "effect": "Consumes SP4",
                       "sp-cost": "55",
                       "range": "9 cells",
                       "data-1": "45",
@@ -4472,7 +4484,9 @@ export const elementalMasterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Guide Hit+50 / Consumes SP3",
+                      "atk": "+60",
+                      "guide-hit": "+50",
+                      "effect": "Consumes SP3",
                       "sp-cost": "60",
                       "range": "9 cells",
                       "data-1": "55",
@@ -4485,7 +4499,9 @@ export const elementalMasterData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Guide Hit+60 / Consumes SP2",
+                      "atk": "+80",
+                      "guide-hit": "+60",
+                      "effect": "Consumes SP2",
                       "sp-cost": "65",
                       "range": "9 cells",
                       "data-1": "65",
@@ -4498,7 +4514,9 @@ export const elementalMasterData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Guide Hit+70 / Consumes SP1",
+                      "atk": "+100",
+                      "guide-hit": "+70",
+                      "effect": "Consumes SP1",
                       "sp-cost": "70",
                       "range": "9 cells",
                       "data-1": "75",
@@ -8981,13 +8999,34 @@ export const elementalMasterData = {
                   {
                     "id": "data-4",
                     "label": "Data 4"
+                  },
+                  {
+                    "id": "maxhp-10-maxsp-10-increase-atk",
+                    "label": "Maxhp 10%, Maxsp 10% Increase / Atk"
+                  },
+                  {
+                    "id": "maxhp-15-maxsp-15-increase-atk",
+                    "label": "Maxhp 15%, Maxsp 15% Increase / Atk"
+                  },
+                  {
+                    "id": "maxhp-20-maxsp-20-increase-atk",
+                    "label": "Maxhp 20%, Maxsp 20% Increase / Atk"
+                  },
+                  {
+                    "id": "maxhp-25-maxsp-25-increase-atk",
+                    "label": "Maxhp 25%, Maxsp 25% Increase / Atk"
+                  },
+                  {
+                    "id": "maxhp-5-maxsp-5-increase-atk",
+                    "label": "Maxhp 5%, Maxsp 5% Increase / Atk"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Ma x HP 5%, Ma x SP 5% Increase / SP cost reduction 10%",
+                      "maxhp-5-maxsp-5-increase-atk": "+25",
+                      "effect": "SP cost reduction 10%",
                       "sp-cost": "0",
                       "data-1": "5",
                       "data-2": "5",
@@ -8998,7 +9037,8 @@ export const elementalMasterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Ma x HP 10%, Ma x SP 10% Increase / SP cost reduction 15%",
+                      "maxhp-10-maxsp-10-increase-atk": "+50",
+                      "effect": "SP cost reduction 15%",
                       "sp-cost": "0",
                       "data-1": "10",
                       "data-2": "10",
@@ -9009,7 +9049,8 @@ export const elementalMasterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Ma x HP 15%, Ma x SP 15% Increase / SP cost reduction 20%",
+                      "maxhp-15-maxsp-15-increase-atk": "+75",
+                      "effect": "SP cost reduction 20%",
                       "sp-cost": "0",
                       "data-1": "15",
                       "data-2": "15",
@@ -9020,7 +9061,8 @@ export const elementalMasterData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Ma x HP 20%, Ma x SP 20% Increase / SP cost reduction 25%",
+                      "maxhp-20-maxsp-20-increase-atk": "+100",
+                      "effect": "SP cost reduction 25%",
                       "sp-cost": "0",
                       "data-1": "20",
                       "data-2": "20",
@@ -9031,7 +9073,8 @@ export const elementalMasterData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Ma x HP 25%, Ma x SP 25% Increase / SP cost reduction 30%",
+                      "maxhp-25-maxsp-25-increase-atk": "+125",
+                      "effect": "SP cost reduction 30%",
                       "sp-cost": "0",
                       "data-1": "25",
                       "data-2": "25",
@@ -11698,36 +11741,61 @@ export const elementalMasterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "tolerance-4-physical-magic-damage-4-2-int",
+                    "label": "Tolerance 4%,physical/magic Damage:4/2%,int"
+                  },
+                  {
+                    "id": "tolerance-8-physical-magic-damage-8-4-int",
+                    "label": "Tolerance 8%,physical/magic Damage:8/4%,int"
+                  },
+                  {
+                    "id": "tolerance12-physical-magic-damage-12-6-int",
+                    "label": "Tolerance12%,physical/magic Damage:12/6%,int"
+                  },
+                  {
+                    "id": "tolerance16-physical-magic-damage-16-8-int",
+                    "label": "Tolerance16%,physical/magic Damage:16/8%,int"
+                  },
+                  {
+                    "id": "tolerance20-physical-magic-damage-20-10-int",
+                    "label": "Tolerance20%,physical/magic Damage:20/10+%,int"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "tolerance-4-physical-magic-damage-4-2-int": "+1",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "tolerance-8-physical-magic-damage-8-4-int": "+1",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "tolerance12-physical-magic-damage-12-6-int": "+2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "tolerance16-physical-magic-damage-16-8-int": "+2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "tolerance20-physical-magic-damage-20-10-int": "+3",
                       "sp-cost": "0"
                     }
                   }
@@ -12977,36 +13045,45 @@ export const elementalMasterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "effect": "ATK 1time",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "effect": "ATK 2time",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "effect": "ATK 3time",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "effect": "ATK 4time",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "effect": "ATK 5time",
                       "sp-cost": "30"
                     }
                   }

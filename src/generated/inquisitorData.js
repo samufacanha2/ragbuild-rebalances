@@ -1,5 +1,5 @@
 export const inquisitorData = {
-  "generatedAt": "2026-07-09T13:21:22.648Z",
+  "generatedAt": "2026-07-10T00:55:41.419Z",
   "classId": 4262,
   "classSlug": "inquisitor",
   "className": "Inquisitor",
@@ -8980,6 +8980,10 @@ export const inquisitorData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "effect",
+                    "label": "Effect"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -8996,6 +9000,7 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
+                      "effect": "Consumes 5 Spheres, For 4 sec, ATK 40 increased",
                       "sp-cost": "65",
                       "data-1": "4000",
                       "data-2": "5",
@@ -9005,6 +9010,7 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
+                      "effect": "Consumes 5 Spheres, For 4 sec, ATK 60 increased",
                       "sp-cost": "65",
                       "data-1": "4000",
                       "data-2": "5",
@@ -9014,6 +9020,7 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
+                      "effect": "Consumes 4 Spheres, For 4 sec, ATK 80 increased",
                       "sp-cost": "65",
                       "data-1": "4000",
                       "data-2": "4",
@@ -9023,6 +9030,7 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
+                      "effect": "Consumes 4 Spheres, For 4 sec, ATK 100 increased",
                       "sp-cost": "65",
                       "data-1": "4000",
                       "data-2": "4",
@@ -9032,6 +9040,7 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
+                      "effect": "Consumes 3 Spheres, For 4 sec, ATK 120 increased",
                       "sp-cost": "65",
                       "data-1": "4000",
                       "data-2": "3",
@@ -9650,6 +9659,26 @@ export const inquisitorData = {
                     "label": "Data 1"
                   },
                   {
+                    "id": "maxhp-increases-by-10-def",
+                    "label": "Maxhp Increases By 10% / Def"
+                  },
+                  {
+                    "id": "maxhp-increases-by-2-def",
+                    "label": "Maxhp Increases By 2% / Def"
+                  },
+                  {
+                    "id": "maxhp-increases-by-4-def",
+                    "label": "Maxhp Increases By 4% / Def"
+                  },
+                  {
+                    "id": "maxhp-increases-by-6-def",
+                    "label": "Maxhp Increases By 6% / Def"
+                  },
+                  {
+                    "id": "maxhp-increases-by-8-def",
+                    "label": "Maxhp Increases By 8% / Def"
+                  },
+                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -9658,7 +9687,8 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Ma x HP increases by 2% / DEF + 20 / HP Recovery Speed increases by 80%",
+                      "maxhp-increases-by-2-def": "+ 20",
+                      "effect": "HP Recovery Speed increases by 80%",
                       "sp-cost": "40",
                       "range": "2 cells",
                       "data-1": "240000"
@@ -9667,7 +9697,8 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Ma x HP increases by 4% / DEF + 40 / HP Recovery Speed increases by 110%",
+                      "maxhp-increases-by-4-def": "+ 40",
+                      "effect": "HP Recovery Speed increases by 110%",
                       "sp-cost": "50",
                       "range": "2 cells",
                       "data-1": "240000"
@@ -9676,7 +9707,8 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Ma x HP increases by 6% / DEF + 60 / HP Recovery Speed increases by 140%",
+                      "maxhp-increases-by-6-def": "+ 60",
+                      "effect": "HP Recovery Speed increases by 140%",
                       "sp-cost": "60",
                       "range": "2 cells",
                       "data-1": "240000"
@@ -9685,7 +9717,8 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Ma x HP increases by 8% / DEF + 80 / HP Recovery Speed increases by 170%",
+                      "maxhp-increases-by-8-def": "+ 80",
+                      "effect": "HP Recovery Speed increases by 170%",
                       "sp-cost": "70",
                       "range": "2 cells",
                       "data-1": "240000"
@@ -9694,7 +9727,8 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Ma x HP increases by 10% / DEF + 100 / HP Recovery Speed increases by 200%",
+                      "maxhp-increases-by-10-def": "+ 100",
+                      "effect": "HP Recovery Speed increases by 200%",
                       "sp-cost": "80",
                       "range": "2 cells",
                       "data-1": "240000"
@@ -9919,6 +9953,10 @@ export const inquisitorData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "atk",
+                    "label": "Atk"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -9927,24 +9965,24 @@ export const inquisitorData = {
                     "label": "Data 2"
                   },
                   {
-                    "id": "hp-1-consumption-atk-8-atk",
-                    "label": "Hp 1% Consumption / Atk + 8 / Atk"
+                    "id": "hp-1-consumption-atk",
+                    "label": "Hp 1% Consumption / Atk"
                   },
                   {
-                    "id": "hp-2-consumption-atk-16-atk",
-                    "label": "Hp 2% Consumption / Atk +16 / Atk"
+                    "id": "hp-2-consumption-atk",
+                    "label": "Hp 2% Consumption / Atk"
                   },
                   {
-                    "id": "hp-3-consumption-atk-24-atk",
-                    "label": "Hp 3% Consumption / Atk +24 / Atk"
+                    "id": "hp-3-consumption-atk",
+                    "label": "Hp 3% Consumption / Atk"
                   },
                   {
-                    "id": "hp-4-consumption-atk-32-atk",
-                    "label": "Hp 4% Consumption / Atk +32 / Atk"
+                    "id": "hp-4-consumption-atk",
+                    "label": "Hp 4% Consumption / Atk"
                   },
                   {
-                    "id": "hp-5-consumption-atk-40-atk",
-                    "label": "Hp 5% Consumption / Atk +40 / Atk"
+                    "id": "hp-5-consumption-atk",
+                    "label": "Hp 5% Consumption / Atk"
                   },
                   {
                     "id": "range",
@@ -9955,7 +9993,8 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "hp-1-consumption-atk-8-atk": "+ 1%",
+                      "hp-1-consumption-atk": "+ 8",
+                      "atk": "+ 1%",
                       "sp-cost": "40",
                       "range": "2 cells",
                       "data-1": "1",
@@ -9965,7 +10004,8 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "hp-2-consumption-atk-16-atk": "+ 2%",
+                      "hp-2-consumption-atk": "+16",
+                      "atk": "+ 2%",
                       "sp-cost": "50",
                       "range": "2 cells",
                       "data-1": "2",
@@ -9975,7 +10015,8 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "hp-3-consumption-atk-24-atk": "+ 3%",
+                      "hp-3-consumption-atk": "+24",
+                      "atk": "+ 3%",
                       "sp-cost": "60",
                       "range": "2 cells",
                       "data-1": "3",
@@ -9985,7 +10026,8 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "hp-4-consumption-atk-32-atk": "+ 4%",
+                      "hp-4-consumption-atk": "+32",
+                      "atk": "+ 4%",
                       "sp-cost": "70",
                       "range": "2 cells",
                       "data-1": "4",
@@ -9995,7 +10037,8 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "hp-5-consumption-atk-40-atk": "+ 5%",
+                      "hp-5-consumption-atk": "+40",
+                      "atk": "+ 5%",
                       "sp-cost": "80",
                       "range": "2 cells",
                       "data-1": "5",
@@ -14722,66 +14765,80 @@ export const inquisitorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "damage-reduction",
+                    "label": "Damage Reduction"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "damage-reduction": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "damage-reduction": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "damage-reduction": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "damage-reduction": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "damage-reduction": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "damage-reduction": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "damage-reduction": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "damage-reduction": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "damage-reduction": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "damage-reduction": "+ 30",
                       "sp-cost": "0"
                     }
                   }

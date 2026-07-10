@@ -1,5 +1,5 @@
 export const windHawkData = {
-  "generatedAt": "2026-07-09T13:21:36.566Z",
+  "generatedAt": "2026-07-10T00:55:55.231Z",
   "classId": 4257,
   "classSlug": "wind-hawk",
   "className": "Wind Hawk",
@@ -3674,6 +3674,10 @@ export const windHawkData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "additional-damage",
+                    "label": "Additional Damage"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -3684,12 +3688,28 @@ export const windHawkData = {
                   {
                     "id": "data-3",
                     "label": "Data 3"
+                  },
+                  {
+                    "id": "int",
+                    "label": "Int"
+                  },
+                  {
+                    "id": "maxsp",
+                    "label": "Maxsp"
+                  },
+                  {
+                    "id": "skill-range",
+                    "label": "Skill Range"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "additional-damage": "+40",
+                      "int": "+1",
+                      "maxsp": "+220",
+                      "skill-range": "+1",
                       "sp-cost": "0",
                       "data-1": "40",
                       "data-2": "1",
@@ -3699,6 +3719,10 @@ export const windHawkData = {
                   {
                     "level": 2,
                     "values": {
+                      "additional-damage": "+80",
+                      "int": "+2",
+                      "maxsp": "+240",
+                      "skill-range": "+1",
                       "sp-cost": "0",
                       "data-1": "80",
                       "data-2": "2",
@@ -3708,6 +3732,10 @@ export const windHawkData = {
                   {
                     "level": 3,
                     "values": {
+                      "additional-damage": "+120",
+                      "int": "+3",
+                      "maxsp": "+260",
+                      "skill-range": "+2",
                       "sp-cost": "0",
                       "data-1": "120",
                       "data-2": "3",
@@ -3717,6 +3745,10 @@ export const windHawkData = {
                   {
                     "level": 4,
                     "values": {
+                      "additional-damage": "+160",
+                      "int": "+4",
+                      "maxsp": "+280",
+                      "skill-range": "+2",
                       "sp-cost": "0",
                       "data-1": "160",
                       "data-2": "4",
@@ -3726,6 +3758,10 @@ export const windHawkData = {
                   {
                     "level": 5,
                     "values": {
+                      "additional-damage": "+200",
+                      "int": "+5",
+                      "maxsp": "+300",
+                      "skill-range": "+3",
                       "sp-cost": "0",
                       "data-1": "200",
                       "data-2": "5",
@@ -3735,6 +3771,10 @@ export const windHawkData = {
                   {
                     "level": 6,
                     "values": {
+                      "additional-damage": "+240",
+                      "int": "+6",
+                      "maxsp": "+320",
+                      "skill-range": "+3",
                       "sp-cost": "0",
                       "data-1": "240",
                       "data-2": "6",
@@ -3744,6 +3784,10 @@ export const windHawkData = {
                   {
                     "level": 7,
                     "values": {
+                      "additional-damage": "+280",
+                      "int": "+7",
+                      "maxsp": "+340",
+                      "skill-range": "+4",
                       "sp-cost": "0",
                       "data-1": "280",
                       "data-2": "7",
@@ -3753,6 +3797,10 @@ export const windHawkData = {
                   {
                     "level": 8,
                     "values": {
+                      "additional-damage": "+320",
+                      "int": "+8",
+                      "maxsp": "+360",
+                      "skill-range": "+4",
                       "sp-cost": "0",
                       "data-1": "320",
                       "data-2": "8",
@@ -3762,6 +3810,10 @@ export const windHawkData = {
                   {
                     "level": 9,
                     "values": {
+                      "additional-damage": "+360",
+                      "int": "+9",
+                      "maxsp": "+380",
+                      "skill-range": "+5",
                       "sp-cost": "0",
                       "data-1": "360",
                       "data-2": "9",
@@ -3771,6 +3823,10 @@ export const windHawkData = {
                   {
                     "level": 10,
                     "values": {
+                      "additional-damage": "+400",
+                      "int": "+10",
+                      "maxsp": "+400",
+                      "skill-range": "+5",
                       "sp-cost": "0",
                       "data-1": "400",
                       "data-2": "10",
@@ -6088,13 +6144,18 @@ export const windHawkData = {
                   {
                     "id": "data-4",
                     "label": "Data 4"
+                  },
+                  {
+                    "id": "hit-count",
+                    "label": "Hit Count"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Hit Count+1 / Chance 12% / 60 sec ì§€ì†",
+                      "hit-count": "+1",
+                      "effect": "Chance 12% / 60 sec ì§€ì†",
                       "sp-cost": "55",
                       "data-1": "60000",
                       "data-2": "2",
@@ -6105,7 +6166,8 @@ export const windHawkData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Hit Count+1 / Chance 12% / 90 sec ì§€ì†",
+                      "hit-count": "+1",
+                      "effect": "Chance 12% / 90 sec ì§€ì†",
                       "sp-cost": "60",
                       "data-1": "90000",
                       "data-2": "2",
@@ -8541,66 +8603,80 @@ export const windHawkData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "damage",
+                    "label": "Damage:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "damage": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "damage": "+8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "damage": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "damage": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "damage": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "damage": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "damage": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -10978,66 +11054,80 @@ export const windHawkData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "damage",
+                    "label": "Damage:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "damage": "+6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "damage": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "damage": "+18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "damage": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "damage": "+30",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "damage": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "damage": "+42",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "damage": "+48",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "damage": "+54",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "damage": "+60",
                       "sp-cost": "0"
                     }
                   }
@@ -11495,66 +11585,116 @@ export const windHawkData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "hit-12-damage-8-crit",
+                    "label": "Hit +12%, Damage +8%, Crit"
+                  },
+                  {
+                    "id": "hit-15-damage-10-crit",
+                    "label": "Hit +15%, Damage +10%, Crit"
+                  },
+                  {
+                    "id": "hit-18-damage-12-crit",
+                    "label": "Hit +18%, Damage +12%, Crit"
+                  },
+                  {
+                    "id": "hit-21-damage-14-crit",
+                    "label": "Hit +21%, Damage +14%, Crit"
+                  },
+                  {
+                    "id": "hit-24-damage-16-crit",
+                    "label": "Hit +24%, Damage +16%, Crit"
+                  },
+                  {
+                    "id": "hit-27-damage-18-crit",
+                    "label": "Hit +27%, Damage +18%, Crit"
+                  },
+                  {
+                    "id": "hit-3-damage-2-crit",
+                    "label": "Hit +3%, Damage +2%, Crit"
+                  },
+                  {
+                    "id": "hit-30-damage-20-crit",
+                    "label": "Hit +30%, Damage +20%, Crit"
+                  },
+                  {
+                    "id": "hit-6-damage-4-crit",
+                    "label": "Hit +6%, Damage +4%, Crit"
+                  },
+                  {
+                    "id": "hit-9-damage-6-crit",
+                    "label": "Hit +9%, Damage +6%, Crit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "hit-3-damage-2-crit": "+1",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "hit-6-damage-4-crit": "+2",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "hit-9-damage-6-crit": "+3",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "hit-12-damage-8-crit": "+4",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "hit-15-damage-10-crit": "+5",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "hit-18-damage-12-crit": "+6",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "hit-21-damage-14-crit": "+7",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "hit-24-damage-16-crit": "+8",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "hit-27-damage-18-crit": "+9",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "hit-30-damage-20-crit": "+10",
                       "sp-cost": "40"
                     }
                   }

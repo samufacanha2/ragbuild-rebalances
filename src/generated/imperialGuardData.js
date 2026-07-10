@@ -1,5 +1,5 @@
 export const imperialGuardData = {
-  "generatedAt": "2026-07-09T13:19:25.908Z",
+  "generatedAt": "2026-07-10T00:53:33.291Z",
   "classId": 4258,
   "classSlug": "imperial-guard",
   "className": "Imperial Guard",
@@ -892,59 +892,52 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "def-120-p-atk-s-matk",
-                    "label": "Def - 120 / P.atk,s.matk"
+                    "id": "def",
+                    "label": "Def"
                   },
                   {
-                    "id": "def-160-p-atk-s-matk",
-                    "label": "Def - 160 / P.atk,s.matk"
-                  },
-                  {
-                    "id": "def-200-p-atk-s-matk",
-                    "label": "Def - 200 / P.atk,s.matk"
-                  },
-                  {
-                    "id": "def-40-p-atk-s-matk",
-                    "label": "Def - 40 / P.atk,s.matk"
-                  },
-                  {
-                    "id": "def-80-p-atk-s-matk",
-                    "label": "Def - 80 / P.atk,s.matk"
+                    "id": "p-atk-s-matk",
+                    "label": "P.Atk,S.Matk"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "def-40-p-atk-s-matk": "+ 3",
+                      "def": "- 40",
+                      "p-atk-s-matk": "+ 3",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "def-80-p-atk-s-matk": "+ 6",
+                      "def": "- 80",
+                      "p-atk-s-matk": "+ 6",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "def-120-p-atk-s-matk": "+ 9",
+                      "def": "- 120",
+                      "p-atk-s-matk": "+ 9",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "def-160-p-atk-s-matk": "+ 12",
+                      "def": "- 160",
+                      "p-atk-s-matk": "+ 12",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "def-200-p-atk-s-matk": "+ 15",
+                      "def": "- 200",
+                      "p-atk-s-matk": "+ 15",
                       "sp-cost": "50"
                     }
                   }
@@ -1951,70 +1944,70 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "+ (Spear & Sword Mastery Level x 25)%",
+                      "effect": "ATK Per Hit 160\n+ (Spear & Sword Mastery Level x 25)%",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "+ (Spear & Sword Mastery Level x 50)%",
+                      "effect": "ATK Per Hit 320\n+ (Spear & Sword Mastery Level x 50)%",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "+ (Spear & Sword Mastery Level x 75)%",
+                      "effect": "ATK Per Hit 480\n+ (Spear & Sword Mastery Level x 75)%",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "+ (Spear & Sword Mastery Level x 100)%",
+                      "effect": "ATK Per Hit 640\n+ (Spear & Sword Mastery Level x 100)%",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "+ (Spear & Sword Mastery Level x 125)%",
+                      "effect": "ATK Per Hit 800\n+ (Spear & Sword Mastery Level x 125)%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "+ (Spear & Sword Mastery Level x 150)%",
+                      "effect": "ATK Per Hit 960\n+ (Spear & Sword Mastery Level x 150)%",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "+ (Spear & Sword Mastery Level x 175)%",
+                      "effect": "ATK Per Hit 1120\n+ (Spear & Sword Mastery Level x 175)%",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "+ (Spear & Sword Mastery Level x 200)%",
+                      "effect": "ATK Per Hit 1280\n+ (Spear & Sword Mastery Level x 200)%",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "+ (Spear & Sword Mastery Level x 225)%",
+                      "effect": "ATK Per Hit 1440\n+ (Spear & Sword Mastery Level x 225)%",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "+ (Spear & Sword Mastery Level x 250)%",
+                      "effect": "ATK Per Hit 1600\n+ (Spear & Sword Mastery Level x 250)%",
                       "sp-cost": "65"
                     }
                   }
@@ -7748,7 +7741,7 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Range : 3 x 3",
+                      "effect": "ATK 120 +(STR x 1)% / Range : 3 x 3",
                       "sp-cost": "30",
                       "range": "11 cells"
                     }
@@ -7756,7 +7749,7 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Range : 3 x 3",
+                      "effect": "ATK 240 +(STR x 2)% / Range : 3 x 3",
                       "sp-cost": "35",
                       "range": "11 cells"
                     }
@@ -7764,7 +7757,7 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Range : 5 x 5",
+                      "effect": "ATK 360 +(STR x 3)% / Range : 5 x 5",
                       "sp-cost": "40",
                       "range": "11 cells"
                     }
@@ -7772,7 +7765,7 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Range : 5 x 5",
+                      "effect": "ATK 480 +(STR x 4)% / Range : 5 x 5",
                       "sp-cost": "45",
                       "range": "11 cells"
                     }
@@ -7780,7 +7773,7 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Range : 7 x 7",
+                      "effect": "ATK 600 +(STR x 5)% / Range : 7 x 7",
                       "sp-cost": "50",
                       "range": "11 cells"
                     }
@@ -8281,13 +8274,18 @@ export const imperialGuardData = {
                   {
                     "id": "data-3",
                     "label": "Data 3"
+                  },
+                  {
+                    "id": "per-1-party-member-def",
+                    "label": "Per 1 Party Member, Def"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Per 1 party member, DEF + 18 / Duration : 60 sec",
+                      "per-1-party-member-def": "+ 18",
+                      "effect": "Duration : 60 sec",
                       "sp-cost": "30",
                       "data-1": "6",
                       "data-2": "20",
@@ -8297,7 +8295,8 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Per 1 party member, DEF + 21 / Duration : 90 sec",
+                      "per-1-party-member-def": "+ 21",
+                      "effect": "Duration : 90 sec",
                       "sp-cost": "36",
                       "data-1": "5",
                       "data-2": "30",
@@ -8307,7 +8306,8 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Per 1 party member, DEF + 24 / Duration : 120 sec",
+                      "per-1-party-member-def": "+ 24",
+                      "effect": "Duration : 120 sec",
                       "sp-cost": "42",
                       "data-1": "4",
                       "data-2": "40",
@@ -8317,7 +8317,8 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Per 1 party member, DEF + 27 / Duration : 150 sec",
+                      "per-1-party-member-def": "+ 27",
+                      "effect": "Duration : 150 sec",
                       "sp-cost": "48",
                       "data-1": "3",
                       "data-2": "50",
@@ -8327,7 +8328,8 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Per 1 party member, DEF + 30 / Duration : 180 sec",
+                      "per-1-party-member-def": "+ 30",
+                      "effect": "Duration : 180 sec",
                       "sp-cost": "54",
                       "data-1": "2",
                       "data-2": "60",
@@ -8943,6 +8945,14 @@ export const imperialGuardData = {
                     "label": "Effect"
                   },
                   {
+                    "id": "atk",
+                    "label": "/ Atk"
+                  },
+                  {
+                    "id": "all-state",
+                    "label": "All State"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -8955,31 +8965,27 @@ export const imperialGuardData = {
                     "label": "Data 3"
                   },
                   {
-                    "id": "hit-12-all-state-6-maxhp",
-                    "label": "Hit +12/ All State +6/ Maxhp"
+                    "id": "hit",
+                    "label": "Hit"
                   },
                   {
-                    "id": "hit-24-all-state-12-maxhp",
-                    "label": "Hit +24/ All State +12/ Maxhp"
+                    "id": "matk",
+                    "label": "Matk"
                   },
                   {
-                    "id": "hit-36-all-state-18-maxhp",
-                    "label": "Hit +36/ All State +18/ Maxhp"
-                  },
-                  {
-                    "id": "hit-48-all-state-24-maxhp",
-                    "label": "Hit +48/ All State +24/ Maxhp"
-                  },
-                  {
-                    "id": "hit-60-all-state-30-maxhp",
-                    "label": "Hit +60/ All State +30/ Maxhp"
+                    "id": "maxhp",
+                    "label": "Maxhp"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "hit-12-all-state-6-maxhp": "+4%",
+                      "hit": "+12",
+                      "all-state": "+6",
+                      "maxhp": "+4%",
+                      "atk": "+40",
+                      "matk": "+40",
                       "effect": "Duration 60 sec\nConsumes HP 3%, SP 4% per 5 sec",
                       "sp-cost": "80",
                       "data-1": "30",
@@ -8990,7 +8996,11 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "hit-24-all-state-12-maxhp": "+8%",
+                      "hit": "+24",
+                      "all-state": "+12",
+                      "maxhp": "+8%",
+                      "atk": "+80",
+                      "matk": "+80",
                       "effect": "Duration 90 sec\nConsumes HP 2.5%, SP 3.5% per 5 sec",
                       "sp-cost": "90",
                       "data-1": "25",
@@ -9001,7 +9011,11 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "hit-36-all-state-18-maxhp": "+12%",
+                      "hit": "+36",
+                      "all-state": "+18",
+                      "maxhp": "+12%",
+                      "atk": "+120",
+                      "matk": "+120",
                       "effect": "Duration 120 sec\nConsumes HP 2%, SP 3% per 5 sec",
                       "sp-cost": "100",
                       "data-1": "20",
@@ -9012,7 +9026,11 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "hit-48-all-state-24-maxhp": "+16%",
+                      "hit": "+48",
+                      "all-state": "+24",
+                      "maxhp": "+16%",
+                      "atk": "+160",
+                      "matk": "+160",
                       "effect": "Duration 150 sec\nConsumes HP 1.5%, SP 2.5% per 5 sec",
                       "sp-cost": "110",
                       "data-1": "15",
@@ -9023,7 +9041,11 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "hit-60-all-state-30-maxhp": "+20%",
+                      "hit": "+60",
+                      "all-state": "+30",
+                      "maxhp": "+20%",
+                      "atk": "+200",
+                      "matk": "+200",
                       "effect": "Duration 180 sec\nConsumes HP 1%, SP 2% per 5 sec",
                       "sp-cost": "120",
                       "data-1": "10",
@@ -9903,66 +9925,116 @@ export const imperialGuardData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "not-mounted-damage-4-mounted",
+                    "label": "Not Mounted, Damage + 4, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-8-mounted",
+                    "label": "Not Mounted, Damage + 8, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-12-mounted",
+                    "label": "Not Mounted, Damage +12, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-16-mounted",
+                    "label": "Not Mounted, Damage +16, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-20-mounted",
+                    "label": "Not Mounted, Damage +20, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-24-mounted",
+                    "label": "Not Mounted, Damage +24, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-28-mounted",
+                    "label": "Not Mounted, Damage +28, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-32-mounted",
+                    "label": "Not Mounted, Damage +32, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-36-mounted",
+                    "label": "Not Mounted, Damage +36, Mounted,"
+                  },
+                  {
+                    "id": "not-mounted-damage-40-mounted",
+                    "label": "Not Mounted, Damage +40, Mounted,"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "not-mounted-damage-4-mounted": "+ 5",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "not-mounted-damage-8-mounted": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "not-mounted-damage-12-mounted": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "not-mounted-damage-16-mounted": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "not-mounted-damage-20-mounted": "+25",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "not-mounted-damage-24-mounted": "+30",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "not-mounted-damage-28-mounted": "+35",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "not-mounted-damage-32-mounted": "+40",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "not-mounted-damage-36-mounted": "+45",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "not-mounted-damage-40-mounted": "+50",
                       "sp-cost": "0"
                     }
                   }
@@ -11137,66 +11209,80 @@ export const imperialGuardData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "damage-reduction",
+                    "label": "Damage Reduction"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "damage-reduction": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "damage-reduction": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "damage-reduction": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "damage-reduction": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "damage-reduction": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "damage-reduction": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "damage-reduction": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "damage-reduction": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "damage-reduction": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "damage-reduction": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -16129,59 +16215,52 @@ export const imperialGuardData = {
                 "label": "SP Cost"
               },
               {
-                "id": "def-120-p-atk-s-matk",
-                "label": "Def - 120 / P.atk,s.matk"
+                "id": "def",
+                "label": "Def"
               },
               {
-                "id": "def-160-p-atk-s-matk",
-                "label": "Def - 160 / P.atk,s.matk"
-              },
-              {
-                "id": "def-200-p-atk-s-matk",
-                "label": "Def - 200 / P.atk,s.matk"
-              },
-              {
-                "id": "def-40-p-atk-s-matk",
-                "label": "Def - 40 / P.atk,s.matk"
-              },
-              {
-                "id": "def-80-p-atk-s-matk",
-                "label": "Def - 80 / P.atk,s.matk"
+                "id": "p-atk-s-matk",
+                "label": "P.Atk,S.Matk"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "def-40-p-atk-s-matk": "+ 3",
+                  "def": "- 40",
+                  "p-atk-s-matk": "+ 3",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "def-80-p-atk-s-matk": "+ 6",
+                  "def": "- 80",
+                  "p-atk-s-matk": "+ 6",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "def-120-p-atk-s-matk": "+ 9",
+                  "def": "- 120",
+                  "p-atk-s-matk": "+ 9",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "def-160-p-atk-s-matk": "+ 12",
+                  "def": "- 160",
+                  "p-atk-s-matk": "+ 12",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "def-200-p-atk-s-matk": "+ 15",
+                  "def": "- 200",
+                  "p-atk-s-matk": "+ 15",
                   "sp-cost": "50"
                 }
               }
@@ -17188,70 +17267,70 @@ export const imperialGuardData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "+ (Spear & Sword Mastery Level x 25)%",
+                  "effect": "ATK Per Hit 160\n+ (Spear & Sword Mastery Level x 25)%",
                   "sp-cost": "38"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "+ (Spear & Sword Mastery Level x 50)%",
+                  "effect": "ATK Per Hit 320\n+ (Spear & Sword Mastery Level x 50)%",
                   "sp-cost": "41"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "+ (Spear & Sword Mastery Level x 75)%",
+                  "effect": "ATK Per Hit 480\n+ (Spear & Sword Mastery Level x 75)%",
                   "sp-cost": "44"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "+ (Spear & Sword Mastery Level x 100)%",
+                  "effect": "ATK Per Hit 640\n+ (Spear & Sword Mastery Level x 100)%",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "+ (Spear & Sword Mastery Level x 125)%",
+                  "effect": "ATK Per Hit 800\n+ (Spear & Sword Mastery Level x 125)%",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "+ (Spear & Sword Mastery Level x 150)%",
+                  "effect": "ATK Per Hit 960\n+ (Spear & Sword Mastery Level x 150)%",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "+ (Spear & Sword Mastery Level x 175)%",
+                  "effect": "ATK Per Hit 1120\n+ (Spear & Sword Mastery Level x 175)%",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "+ (Spear & Sword Mastery Level x 200)%",
+                  "effect": "ATK Per Hit 1280\n+ (Spear & Sword Mastery Level x 200)%",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "+ (Spear & Sword Mastery Level x 225)%",
+                  "effect": "ATK Per Hit 1440\n+ (Spear & Sword Mastery Level x 225)%",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "+ (Spear & Sword Mastery Level x 250)%",
+                  "effect": "ATK Per Hit 1600\n+ (Spear & Sword Mastery Level x 250)%",
                   "sp-cost": "65"
                 }
               }

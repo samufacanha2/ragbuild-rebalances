@@ -1,5 +1,5 @@
 export const soulAsceticData = {
-  "generatedAt": "2026-07-09T13:22:55.245Z",
+  "generatedAt": "2026-07-10T00:57:18.148Z",
   "classId": 4303,
   "classSlug": "soul-ascetic",
   "className": "Soul Ascetic",
@@ -392,12 +392,12 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
+                    "id": "spl",
+                    "label": "SPL"
                   },
                   {
-                    "id": "spl",
-                    "label": "Spl"
+                    "id": "sp-cost",
+                    "label": "SP Cost"
                   }
                 ],
                 "rows": [
@@ -612,12 +612,12 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
+                    "id": "s-matk",
+                    "label": "S.Matk"
                   },
                   {
-                    "id": "s-matk",
-                    "label": "S.matk"
+                    "id": "sp-cost",
+                    "label": "SP Cost"
                   }
                 ],
                 "rows": [
@@ -1169,6 +1169,10 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "p-atk",
+                    "label": "P.Atk"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1181,6 +1185,7 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
+                      "p-atk": "+2",
                       "effect": "Duration: 180 sec",
                       "sp-cost": "50"
                     }
@@ -1188,6 +1193,7 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
+                      "p-atk": "+4",
                       "effect": "Duration: 210 sec",
                       "sp-cost": "55"
                     }
@@ -1195,6 +1201,7 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
+                      "p-atk": "+6",
                       "effect": "Duration: 240 sec",
                       "sp-cost": "60"
                     }
@@ -1202,6 +1209,7 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
+                      "p-atk": "+8",
                       "effect": "Duration: 270 sec",
                       "sp-cost": "65"
                     }
@@ -1209,6 +1217,7 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
+                      "p-atk": "+10",
                       "effect": "Duration: 300 sec",
                       "sp-cost": "70"
                     }
@@ -1333,6 +1342,10 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "s-matk",
+                    "label": "S.Matk"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1345,6 +1358,7 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
+                      "s-matk": "+2",
                       "effect": "Duration: 180 sec",
                       "sp-cost": "50"
                     }
@@ -1352,6 +1366,7 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
+                      "s-matk": "+4",
                       "effect": "Duration: 210 sec",
                       "sp-cost": "55"
                     }
@@ -1359,6 +1374,7 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
+                      "s-matk": "+6",
                       "effect": "Duration: 240 sec",
                       "sp-cost": "60"
                     }
@@ -1366,6 +1382,7 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
+                      "s-matk": "+8",
                       "effect": "Duration: 270 sec",
                       "sp-cost": "65"
                     }
@@ -1373,6 +1390,7 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
+                      "s-matk": "+10",
                       "effect": "Duration: 300 sec",
                       "sp-cost": "70"
                     }
@@ -1687,36 +1705,45 @@ export const soulAsceticData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "effect",
+                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "effect": "MATK 1750+((Talisman Mastery Lv+Soul Mastery Lv) x 7)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "effect": "MATK 3000+((Talisman Mastery Lv+Soul Mastery Lv) x 14)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "effect": "MATK 4250+((Talisman Mastery Lv+Soul Mastery Lv) x 21)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "effect": "MATK 5500+((Talisman Mastery Lv+Soul Mastery Lv) x 28)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "effect": "MATK 6750+((Talisman Mastery Lv+Soul Mastery Lv) x 35)%",
                       "sp-cost": "84"
                     }
                   }
@@ -2038,6 +2065,10 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "damage-bonus",
+                    "label": "Damage Bonus"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -2050,35 +2081,40 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage bonus +4% / Duration: 180 sec",
+                      "damage-bonus": "+4%",
+                      "effect": "Duration: 180 sec",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage bonus +8% / Duration: 210 sec",
+                      "damage-bonus": "+8%",
+                      "effect": "Duration: 210 sec",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage bonus +12% / Duration: 240 sec",
+                      "damage-bonus": "+12%",
+                      "effect": "Duration: 240 sec",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage bonus +16% / Duration: 270 sec",
+                      "damage-bonus": "+16%",
+                      "effect": "Duration: 270 sec",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage bonus +20% / Duration: 300 sec",
+                      "damage-bonus": "+20%",
+                      "effect": "Duration: 300 sec",
                       "sp-cost": "70"
                     }
                   }
@@ -3381,30 +3417,35 @@ export const soulAsceticData = {
                     "label": "Area of Effect"
                   },
                   {
+                    "id": "effect",
+                    "label": "Effect"
+                  },
+                  {
                     "id": "120-seconds-s-matk",
-                    "label": "/120 Seconds S.matk"
+                    "label": "/120 Seconds S.Matk"
                   },
                   {
                     "id": "150-seconds-s-matk",
-                    "label": "/150 Seconds S.matk"
+                    "label": "/150 Seconds S.Matk"
                   },
                   {
                     "id": "30-seconds-s-matk",
-                    "label": "/30 Seconds S.matk"
+                    "label": "/30 Seconds S.Matk"
                   },
                   {
                     "id": "60-seconds-s-matk",
-                    "label": "/60 Seconds S.matk"
+                    "label": "/60 Seconds S.Matk"
                   },
                   {
                     "id": "90-seconds-s-matk",
-                    "label": "/90 Seconds S.matk"
+                    "label": "/90 Seconds S.Matk"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "effect": "MATK per hit 2500+((Talisman Mastery Lv+Soul MasteryLv) x 15)%",
                       "area-of-effect": "7x7",
                       "30-seconds-s-matk": "+5",
                       "sp-cost": "120"
@@ -3413,6 +3454,7 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
+                      "effect": "MATK per hit 4500+((Talisman Mastery Lv+Soul MasteryLv) x 30)%",
                       "area-of-effect": "7x7",
                       "60-seconds-s-matk": "+10",
                       "sp-cost": "140"
@@ -3421,6 +3463,7 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
+                      "effect": "MATK per hit 6500+((Talisman Mastery Lv+Soul MasteryLv) x 45)%",
                       "area-of-effect": "9x9",
                       "90-seconds-s-matk": "+15",
                       "sp-cost": "160"
@@ -3429,6 +3472,7 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
+                      "effect": "MATK per hit 8500+((Talisman Mastery Lv+Soul MasteryLv) x 60)%",
                       "area-of-effect": "9x9",
                       "120-seconds-s-matk": "+20",
                       "sp-cost": "180"
@@ -3437,6 +3481,7 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
+                      "effect": "MATK per hit 10500+((Talisman Mastery Lv+Soul MasteryLv) x 75)%",
                       "area-of-effect": "11x11",
                       "150-seconds-s-matk": "+25",
                       "sp-cost": "200"
@@ -3723,6 +3768,18 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "melee-damage-bonus",
+                    "label": "Melee Damage Bonus"
+                  },
+                  {
+                    "id": "long-ranged-damage-bonus",
+                    "label": "Long Ranged Damage Bonus"
+                  },
+                  {
+                    "id": "all-property-damage-bonus",
+                    "label": "All Property Damage Bonus"
+                  },
+                  {
                     "id": "ap",
                     "label": "AP"
                   },
@@ -3736,6 +3793,9 @@ export const soulAsceticData = {
                     "level": 1,
                     "values": {
                       "ap": "3",
+                      "melee-damage-bonus": "+7%",
+                      "long-ranged-damage-bonus": "+7%",
+                      "all-property-damage-bonus": "+7%",
                       "sp-cost": "90"
                     }
                   },
@@ -3743,6 +3803,9 @@ export const soulAsceticData = {
                     "level": 2,
                     "values": {
                       "ap": "6",
+                      "melee-damage-bonus": "+9%",
+                      "long-ranged-damage-bonus": "+9%",
+                      "all-property-damage-bonus": "+9%",
                       "sp-cost": "100"
                     }
                   },
@@ -3750,6 +3813,9 @@ export const soulAsceticData = {
                     "level": 3,
                     "values": {
                       "ap": "9",
+                      "melee-damage-bonus": "+11%",
+                      "long-ranged-damage-bonus": "+11%",
+                      "all-property-damage-bonus": "+11%",
                       "sp-cost": "110"
                     }
                   },
@@ -3757,6 +3823,9 @@ export const soulAsceticData = {
                     "level": 4,
                     "values": {
                       "ap": "12",
+                      "melee-damage-bonus": "+13%",
+                      "long-ranged-damage-bonus": "+13%",
+                      "all-property-damage-bonus": "+13%",
                       "sp-cost": "120"
                     }
                   },
@@ -3764,6 +3833,9 @@ export const soulAsceticData = {
                     "level": 5,
                     "values": {
                       "ap": "15",
+                      "melee-damage-bonus": "+15%",
+                      "long-ranged-damage-bonus": "+15%",
+                      "all-property-damage-bonus": "+15%",
                       "sp-cost": "130"
                     }
                   },
@@ -3771,6 +3843,9 @@ export const soulAsceticData = {
                     "level": 6,
                     "values": {
                       "ap": "18",
+                      "melee-damage-bonus": "+17%",
+                      "long-ranged-damage-bonus": "+17%",
+                      "all-property-damage-bonus": "+17%",
                       "sp-cost": "140"
                     }
                   },
@@ -3778,6 +3853,9 @@ export const soulAsceticData = {
                     "level": 7,
                     "values": {
                       "ap": "21",
+                      "melee-damage-bonus": "+19%",
+                      "long-ranged-damage-bonus": "+19%",
+                      "all-property-damage-bonus": "+19%",
                       "sp-cost": "150"
                     }
                   },
@@ -3785,6 +3863,9 @@ export const soulAsceticData = {
                     "level": 8,
                     "values": {
                       "ap": "24",
+                      "melee-damage-bonus": "+21%",
+                      "long-ranged-damage-bonus": "+21%",
+                      "all-property-damage-bonus": "+21%",
                       "sp-cost": "160"
                     }
                   },
@@ -3792,6 +3873,9 @@ export const soulAsceticData = {
                     "level": 9,
                     "values": {
                       "ap": "27",
+                      "melee-damage-bonus": "+23%",
+                      "long-ranged-damage-bonus": "+23%",
+                      "all-property-damage-bonus": "+23%",
                       "sp-cost": "170"
                     }
                   },
@@ -3799,6 +3883,9 @@ export const soulAsceticData = {
                     "level": 10,
                     "values": {
                       "ap": "30",
+                      "melee-damage-bonus": "+25%",
+                      "long-ranged-damage-bonus": "+25%",
+                      "all-property-damage-bonus": "+25%",
                       "sp-cost": "180"
                     }
                   }
@@ -4952,35 +5039,24 @@ export const soulAsceticData = {
                     "label": "Data 2"
                   },
                   {
-                    "id": "mhp-12-sp",
-                    "label": "Mhp -12%/sp"
-                  },
-                  {
-                    "id": "mhp-14-sp",
-                    "label": "Mhp -14%/sp"
-                  },
-                  {
-                    "id": "mhp-16-sp",
-                    "label": "Mhp -16%/sp"
-                  },
-                  {
-                    "id": "mhp-18-sp",
-                    "label": "Mhp -18%/sp"
-                  },
-                  {
-                    "id": "mhp-20-sp",
-                    "label": "Mhp -20%/sp"
+                    "id": "mhp",
+                    "label": "Mhp"
                   },
                   {
                     "id": "range",
                     "label": "Range"
+                  },
+                  {
+                    "id": "sp",
+                    "label": "Sp"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "mhp-12-sp": "+12%",
+                      "mhp": "-12%",
+                      "sp": "+12%",
                       "sp-cost": "24",
                       "range": "7 cells",
                       "data-1": "5",
@@ -4990,7 +5066,8 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "mhp-14-sp": "+14%",
+                      "mhp": "-14%",
+                      "sp": "+14%",
                       "sp-cost": "30",
                       "range": "7 cells",
                       "data-1": "5",
@@ -5000,7 +5077,8 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "mhp-16-sp": "+16%",
+                      "mhp": "-16%",
+                      "sp": "+16%",
                       "sp-cost": "36",
                       "range": "7 cells",
                       "data-1": "5",
@@ -5010,7 +5088,8 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "mhp-18-sp": "+18%",
+                      "mhp": "-18%",
+                      "sp": "+18%",
                       "sp-cost": "42",
                       "range": "7 cells",
                       "data-1": "5",
@@ -5020,7 +5099,8 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "mhp-20-sp": "+20%",
+                      "mhp": "-20%",
+                      "sp": "+20%",
                       "sp-cost": "48",
                       "range": "7 cells",
                       "data-1": "5",
@@ -6882,6 +6962,14 @@ export const soulAsceticData = {
                     "label": "Effect"
                   },
                   {
+                    "id": "aspd",
+                    "label": "Aspd"
+                  },
+                  {
+                    "id": "cri",
+                    "label": "Cri"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -6906,7 +6994,9 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "CRI +12 / ASPD +1 / Duration: 60 sec",
+                      "cri": "+12",
+                      "aspd": "+1",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -6918,7 +7008,9 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "CRI +14 / ASPD +1 / Duration: 120 sec",
+                      "cri": "+14",
+                      "aspd": "+1",
+                      "effect": "Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -6930,7 +7022,9 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "CRI +16 / ASPD +2 / Duration: 180 sec",
+                      "cri": "+16",
+                      "aspd": "+2",
+                      "effect": "Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -6942,7 +7036,9 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "CRI +18 / ASPD +2 / Duration: 240 sec",
+                      "cri": "+18",
+                      "aspd": "+2",
+                      "effect": "Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -6954,7 +7050,9 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "CRI +20 / ASPD +3 / Duration: 300 sec",
+                      "cri": "+20",
+                      "aspd": "+3",
+                      "effect": "Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -7240,15 +7338,25 @@ export const soulAsceticData = {
                     "label": "Data 4"
                   },
                   {
+                    "id": "matk",
+                    "label": "Matk"
+                  },
+                  {
                     "id": "range",
                     "label": "Range"
+                  },
+                  {
+                    "id": "variable-cast-time",
+                    "label": "Variable Cast Time"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Variable Cast Time -5% / Duration: 60 sec",
+                      "matk": "+10",
+                      "variable-cast-time": "-5%",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -7260,7 +7368,9 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Variable Cast Time -5% / Duration: 120 sec",
+                      "matk": "+20",
+                      "variable-cast-time": "-5%",
+                      "effect": "Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -7272,7 +7382,9 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Variable Cast Time -7% / Duration: 180 sec",
+                      "matk": "+30",
+                      "variable-cast-time": "-7%",
+                      "effect": "Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -7284,7 +7396,9 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Variable Cast Time -7% / Duration: 240 sec",
+                      "matk": "+40",
+                      "variable-cast-time": "-7%",
+                      "effect": "Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -7296,7 +7410,9 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Variable Cast Time -10% / Duration: 300 sec",
+                      "matk": "+50",
+                      "variable-cast-time": "-10%",
+                      "effect": "Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -7566,6 +7682,10 @@ export const soulAsceticData = {
                     "label": "Effect"
                   },
                   {
+                    "id": "atk",
+                    "label": "Atk"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -7582,6 +7702,10 @@ export const soulAsceticData = {
                     "label": "Data 4"
                   },
                   {
+                    "id": "hit",
+                    "label": "Hit"
+                  },
+                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -7590,7 +7714,9 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "HIT +10 / Duration: 60 sec",
+                      "atk": "+10",
+                      "hit": "+10",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -7602,7 +7728,9 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "HIT +10 / Duration: 120 sec",
+                      "atk": "+20",
+                      "hit": "+10",
+                      "effect": "Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -7614,7 +7742,9 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "HIT +13 / Duration: 180 sec",
+                      "atk": "+30",
+                      "hit": "+13",
+                      "effect": "Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -7626,7 +7756,9 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "HIT +13 / Duration: 240 sec",
+                      "atk": "+40",
+                      "hit": "+13",
+                      "effect": "Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -7638,7 +7770,9 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "HIT +15 / Duration: 300 sec",
+                      "atk": "+50",
+                      "hit": "+15",
+                      "effect": "Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -7924,6 +8058,14 @@ export const soulAsceticData = {
                     "label": "Data 4"
                   },
                   {
+                    "id": "def",
+                    "label": "Def"
+                  },
+                  {
+                    "id": "mdef",
+                    "label": "Mdef"
+                  },
+                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -7932,7 +8074,9 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "DEF +60 / MDEF +20 / Duration: 60 sec",
+                      "def": "+60",
+                      "mdef": "+20",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -7944,7 +8088,9 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "DEF +120 / MDEF +25 / Duration: 120 sec",
+                      "def": "+120",
+                      "mdef": "+25",
+                      "effect": "Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -7956,7 +8102,9 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "DEF +180 / MDEF +30 / Duration: 180 sec",
+                      "def": "+180",
+                      "mdef": "+30",
+                      "effect": "Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -7968,7 +8116,9 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "DEF +240 / MDEF +35 / Duration: 240 sec",
+                      "def": "+240",
+                      "mdef": "+35",
+                      "effect": "Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -7980,7 +8130,9 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "DEF +300 / MDEF +40 / Duration: 300 sec",
+                      "def": "+300",
+                      "mdef": "+40",
+                      "effect": "Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -16428,12 +16580,12 @@ export const soulAsceticData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "sp-cost",
-                "label": "SP Cost"
+                "id": "spl",
+                "label": "SPL"
               },
               {
-                "id": "spl",
-                "label": "Spl"
+                "id": "sp-cost",
+                "label": "SP Cost"
               }
             ],
             "rows": [
@@ -16648,12 +16800,12 @@ export const soulAsceticData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "sp-cost",
-                "label": "SP Cost"
+                "id": "s-matk",
+                "label": "S.Matk"
               },
               {
-                "id": "s-matk",
-                "label": "S.matk"
+                "id": "sp-cost",
+                "label": "SP Cost"
               }
             ],
             "rows": [
@@ -17205,6 +17357,10 @@ export const soulAsceticData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "p-atk",
+                "label": "P.Atk"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -17217,6 +17373,7 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
+                  "p-atk": "+2",
                   "effect": "Duration: 180 sec",
                   "sp-cost": "50"
                 }
@@ -17224,6 +17381,7 @@ export const soulAsceticData = {
               {
                 "level": 2,
                 "values": {
+                  "p-atk": "+4",
                   "effect": "Duration: 210 sec",
                   "sp-cost": "55"
                 }
@@ -17231,6 +17389,7 @@ export const soulAsceticData = {
               {
                 "level": 3,
                 "values": {
+                  "p-atk": "+6",
                   "effect": "Duration: 240 sec",
                   "sp-cost": "60"
                 }
@@ -17238,6 +17397,7 @@ export const soulAsceticData = {
               {
                 "level": 4,
                 "values": {
+                  "p-atk": "+8",
                   "effect": "Duration: 270 sec",
                   "sp-cost": "65"
                 }
@@ -17245,6 +17405,7 @@ export const soulAsceticData = {
               {
                 "level": 5,
                 "values": {
+                  "p-atk": "+10",
                   "effect": "Duration: 300 sec",
                   "sp-cost": "70"
                 }
@@ -17369,6 +17530,10 @@ export const soulAsceticData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "s-matk",
+                "label": "S.Matk"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -17381,6 +17546,7 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
+                  "s-matk": "+2",
                   "effect": "Duration: 180 sec",
                   "sp-cost": "50"
                 }
@@ -17388,6 +17554,7 @@ export const soulAsceticData = {
               {
                 "level": 2,
                 "values": {
+                  "s-matk": "+4",
                   "effect": "Duration: 210 sec",
                   "sp-cost": "55"
                 }
@@ -17395,6 +17562,7 @@ export const soulAsceticData = {
               {
                 "level": 3,
                 "values": {
+                  "s-matk": "+6",
                   "effect": "Duration: 240 sec",
                   "sp-cost": "60"
                 }
@@ -17402,6 +17570,7 @@ export const soulAsceticData = {
               {
                 "level": 4,
                 "values": {
+                  "s-matk": "+8",
                   "effect": "Duration: 270 sec",
                   "sp-cost": "65"
                 }
@@ -17409,6 +17578,7 @@ export const soulAsceticData = {
               {
                 "level": 5,
                 "values": {
+                  "s-matk": "+10",
                   "effect": "Duration: 300 sec",
                   "sp-cost": "70"
                 }
@@ -17723,36 +17893,45 @@ export const soulAsceticData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
+              },
+              {
+                "id": "effect",
+                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
+                  "effect": "MATK 1750+((Talisman Mastery Lv+Soul Mastery Lv) x 7)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 2,
                 "values": {
+                  "effect": "MATK 3000+((Talisman Mastery Lv+Soul Mastery Lv) x 14)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 3,
                 "values": {
+                  "effect": "MATK 4250+((Talisman Mastery Lv+Soul Mastery Lv) x 21)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 4,
                 "values": {
+                  "effect": "MATK 5500+((Talisman Mastery Lv+Soul Mastery Lv) x 28)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 5,
                 "values": {
+                  "effect": "MATK 6750+((Talisman Mastery Lv+Soul Mastery Lv) x 35)%",
                   "sp-cost": "84"
                 }
               }
@@ -18074,6 +18253,10 @@ export const soulAsceticData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "damage-bonus",
+                "label": "Damage Bonus"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -18086,35 +18269,40 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "Damage bonus +4% / Duration: 180 sec",
+                  "damage-bonus": "+4%",
+                  "effect": "Duration: 180 sec",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Damage bonus +8% / Duration: 210 sec",
+                  "damage-bonus": "+8%",
+                  "effect": "Duration: 210 sec",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Damage bonus +12% / Duration: 240 sec",
+                  "damage-bonus": "+12%",
+                  "effect": "Duration: 240 sec",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Damage bonus +16% / Duration: 270 sec",
+                  "damage-bonus": "+16%",
+                  "effect": "Duration: 270 sec",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Damage bonus +20% / Duration: 300 sec",
+                  "damage-bonus": "+20%",
+                  "effect": "Duration: 300 sec",
                   "sp-cost": "70"
                 }
               }
@@ -19417,30 +19605,35 @@ export const soulAsceticData = {
                 "label": "Area of Effect"
               },
               {
+                "id": "effect",
+                "label": "Effect"
+              },
+              {
                 "id": "120-seconds-s-matk",
-                "label": "/120 Seconds S.matk"
+                "label": "/120 Seconds S.Matk"
               },
               {
                 "id": "150-seconds-s-matk",
-                "label": "/150 Seconds S.matk"
+                "label": "/150 Seconds S.Matk"
               },
               {
                 "id": "30-seconds-s-matk",
-                "label": "/30 Seconds S.matk"
+                "label": "/30 Seconds S.Matk"
               },
               {
                 "id": "60-seconds-s-matk",
-                "label": "/60 Seconds S.matk"
+                "label": "/60 Seconds S.Matk"
               },
               {
                 "id": "90-seconds-s-matk",
-                "label": "/90 Seconds S.matk"
+                "label": "/90 Seconds S.Matk"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
+                  "effect": "MATK per hit 2500+((Talisman Mastery Lv+Soul MasteryLv) x 15)%",
                   "area-of-effect": "7x7",
                   "30-seconds-s-matk": "+5",
                   "sp-cost": "120"
@@ -19449,6 +19642,7 @@ export const soulAsceticData = {
               {
                 "level": 2,
                 "values": {
+                  "effect": "MATK per hit 4500+((Talisman Mastery Lv+Soul MasteryLv) x 30)%",
                   "area-of-effect": "7x7",
                   "60-seconds-s-matk": "+10",
                   "sp-cost": "140"
@@ -19457,6 +19651,7 @@ export const soulAsceticData = {
               {
                 "level": 3,
                 "values": {
+                  "effect": "MATK per hit 6500+((Talisman Mastery Lv+Soul MasteryLv) x 45)%",
                   "area-of-effect": "9x9",
                   "90-seconds-s-matk": "+15",
                   "sp-cost": "160"
@@ -19465,6 +19660,7 @@ export const soulAsceticData = {
               {
                 "level": 4,
                 "values": {
+                  "effect": "MATK per hit 8500+((Talisman Mastery Lv+Soul MasteryLv) x 60)%",
                   "area-of-effect": "9x9",
                   "120-seconds-s-matk": "+20",
                   "sp-cost": "180"
@@ -19473,6 +19669,7 @@ export const soulAsceticData = {
               {
                 "level": 5,
                 "values": {
+                  "effect": "MATK per hit 10500+((Talisman Mastery Lv+Soul MasteryLv) x 75)%",
                   "area-of-effect": "11x11",
                   "150-seconds-s-matk": "+25",
                   "sp-cost": "200"
@@ -19759,6 +19956,18 @@ export const soulAsceticData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "melee-damage-bonus",
+                "label": "Melee Damage Bonus"
+              },
+              {
+                "id": "long-ranged-damage-bonus",
+                "label": "Long Ranged Damage Bonus"
+              },
+              {
+                "id": "all-property-damage-bonus",
+                "label": "All Property Damage Bonus"
+              },
+              {
                 "id": "ap",
                 "label": "AP"
               },
@@ -19772,6 +19981,9 @@ export const soulAsceticData = {
                 "level": 1,
                 "values": {
                   "ap": "3",
+                  "melee-damage-bonus": "+7%",
+                  "long-ranged-damage-bonus": "+7%",
+                  "all-property-damage-bonus": "+7%",
                   "sp-cost": "90"
                 }
               },
@@ -19779,6 +19991,9 @@ export const soulAsceticData = {
                 "level": 2,
                 "values": {
                   "ap": "6",
+                  "melee-damage-bonus": "+9%",
+                  "long-ranged-damage-bonus": "+9%",
+                  "all-property-damage-bonus": "+9%",
                   "sp-cost": "100"
                 }
               },
@@ -19786,6 +20001,9 @@ export const soulAsceticData = {
                 "level": 3,
                 "values": {
                   "ap": "9",
+                  "melee-damage-bonus": "+11%",
+                  "long-ranged-damage-bonus": "+11%",
+                  "all-property-damage-bonus": "+11%",
                   "sp-cost": "110"
                 }
               },
@@ -19793,6 +20011,9 @@ export const soulAsceticData = {
                 "level": 4,
                 "values": {
                   "ap": "12",
+                  "melee-damage-bonus": "+13%",
+                  "long-ranged-damage-bonus": "+13%",
+                  "all-property-damage-bonus": "+13%",
                   "sp-cost": "120"
                 }
               },
@@ -19800,6 +20021,9 @@ export const soulAsceticData = {
                 "level": 5,
                 "values": {
                   "ap": "15",
+                  "melee-damage-bonus": "+15%",
+                  "long-ranged-damage-bonus": "+15%",
+                  "all-property-damage-bonus": "+15%",
                   "sp-cost": "130"
                 }
               },
@@ -19807,6 +20031,9 @@ export const soulAsceticData = {
                 "level": 6,
                 "values": {
                   "ap": "18",
+                  "melee-damage-bonus": "+17%",
+                  "long-ranged-damage-bonus": "+17%",
+                  "all-property-damage-bonus": "+17%",
                   "sp-cost": "140"
                 }
               },
@@ -19814,6 +20041,9 @@ export const soulAsceticData = {
                 "level": 7,
                 "values": {
                   "ap": "21",
+                  "melee-damage-bonus": "+19%",
+                  "long-ranged-damage-bonus": "+19%",
+                  "all-property-damage-bonus": "+19%",
                   "sp-cost": "150"
                 }
               },
@@ -19821,6 +20051,9 @@ export const soulAsceticData = {
                 "level": 8,
                 "values": {
                   "ap": "24",
+                  "melee-damage-bonus": "+21%",
+                  "long-ranged-damage-bonus": "+21%",
+                  "all-property-damage-bonus": "+21%",
                   "sp-cost": "160"
                 }
               },
@@ -19828,6 +20061,9 @@ export const soulAsceticData = {
                 "level": 9,
                 "values": {
                   "ap": "27",
+                  "melee-damage-bonus": "+23%",
+                  "long-ranged-damage-bonus": "+23%",
+                  "all-property-damage-bonus": "+23%",
                   "sp-cost": "170"
                 }
               },
@@ -19835,6 +20071,9 @@ export const soulAsceticData = {
                 "level": 10,
                 "values": {
                   "ap": "30",
+                  "melee-damage-bonus": "+25%",
+                  "long-ranged-damage-bonus": "+25%",
+                  "all-property-damage-bonus": "+25%",
                   "sp-cost": "180"
                 }
               }

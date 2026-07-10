@@ -1,5 +1,5 @@
 export const bioloData = {
-  "generatedAt": "2026-07-09T13:19:57.435Z",
+  "generatedAt": "2026-07-10T00:54:04.339Z",
   "classId": 4259,
   "classSlug": "biolo",
   "className": "Biolo",
@@ -556,114 +556,148 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "atk-1200-mhp-80000-msp-40-def-40-mdef-8-flee",
-                    "label": "Atk +1200/mhp +80000/msp +40/def+40/mdef +8/flee"
+                    "id": "atk",
+                    "label": "Atk"
                   },
                   {
-                    "id": "atk-1800-mhp-120000-msp-60-def-60-mdef-12-flee",
-                    "label": "Atk +1800/mhp +120000/msp +60/def+60/mdef +12/flee"
+                    "id": "def",
+                    "label": "Def"
                   },
                   {
-                    "id": "atk-2400-mhp-160000-msp-80-def-80-mdef-16-flee",
-                    "label": "Atk +2400/mhp +160000/msp +80/def+80/mdef +16/flee"
+                    "id": "flee",
+                    "label": "Flee"
                   },
                   {
-                    "id": "atk-3000-mhp-200000-msp-100-def-100-mdef-20-flee",
-                    "label": "Atk +3000/mhp +200000/msp +100/def+100/mdef +20/flee"
+                    "id": "mdef",
+                    "label": "Mdef"
                   },
                   {
-                    "id": "atk-3600-mhp-240000-msp-120-def-120-mdef-24-flee",
-                    "label": "Atk +3600/mhp +240000/msp +120/def+120/mdef +24/flee"
+                    "id": "mhp",
+                    "label": "Mhp"
                   },
                   {
-                    "id": "atk-4200-mhp-280000-msp-140-def-140-mdef-28-flee",
-                    "label": "Atk +4200/mhp +280000/msp +140/def+140/mdef +28/flee"
-                  },
-                  {
-                    "id": "atk-4800-mhp-320000-msp-160-def-160-mdef-32-flee",
-                    "label": "Atk +4800/mhp +320000/msp +160/def+160/mdef +32/flee"
-                  },
-                  {
-                    "id": "atk-5400-mhp-360000-msp-180-def-180-mdef-36-flee",
-                    "label": "Atk +5400/mhp +360000/msp +180/def+180/mdef +36/flee"
-                  },
-                  {
-                    "id": "atk-600-mhp-40000-msp-20-def-20-mdef-4-flee",
-                    "label": "Atk +600/mhp +40000/msp +20/def+20/mdef +4/flee"
-                  },
-                  {
-                    "id": "atk-6000-mhp-400000-msp-200-def-200-mdef-40-flee",
-                    "label": "Atk +6000/mhp +400000/msp +200/def+200/mdef +40/flee"
+                    "id": "msp",
+                    "label": "Msp"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "atk-600-mhp-40000-msp-20-def-20-mdef-4-flee": "+10",
+                      "atk": "+600",
+                      "mhp": "+40000",
+                      "msp": "+20",
+                      "def": "+20",
+                      "mdef": "+4",
+                      "flee": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "atk-1200-mhp-80000-msp-40-def-40-mdef-8-flee": "+20",
+                      "atk": "+1200",
+                      "mhp": "+80000",
+                      "msp": "+40",
+                      "def": "+40",
+                      "mdef": "+8",
+                      "flee": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "atk-1800-mhp-120000-msp-60-def-60-mdef-12-flee": "+30",
+                      "atk": "+1800",
+                      "mhp": "+120000",
+                      "msp": "+60",
+                      "def": "+60",
+                      "mdef": "+12",
+                      "flee": "+30",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "atk-2400-mhp-160000-msp-80-def-80-mdef-16-flee": "+40",
+                      "atk": "+2400",
+                      "mhp": "+160000",
+                      "msp": "+80",
+                      "def": "+80",
+                      "mdef": "+16",
+                      "flee": "+40",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "atk-3000-mhp-200000-msp-100-def-100-mdef-20-flee": "+50",
+                      "atk": "+3000",
+                      "mhp": "+200000",
+                      "msp": "+100",
+                      "def": "+100",
+                      "mdef": "+20",
+                      "flee": "+50",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "atk-3600-mhp-240000-msp-120-def-120-mdef-24-flee": "+60",
+                      "atk": "+3600",
+                      "mhp": "+240000",
+                      "msp": "+120",
+                      "def": "+120",
+                      "mdef": "+24",
+                      "flee": "+60",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "atk-4200-mhp-280000-msp-140-def-140-mdef-28-flee": "+70",
+                      "atk": "+4200",
+                      "mhp": "+280000",
+                      "msp": "+140",
+                      "def": "+140",
+                      "mdef": "+28",
+                      "flee": "+70",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "atk-4800-mhp-320000-msp-160-def-160-mdef-32-flee": "+80",
+                      "atk": "+4800",
+                      "mhp": "+320000",
+                      "msp": "+160",
+                      "def": "+160",
+                      "mdef": "+32",
+                      "flee": "+80",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "atk-5400-mhp-360000-msp-180-def-180-mdef-36-flee": "+90",
+                      "atk": "+5400",
+                      "mhp": "+360000",
+                      "msp": "+180",
+                      "def": "+180",
+                      "mdef": "+36",
+                      "flee": "+90",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "atk-6000-mhp-400000-msp-200-def-200-mdef-40-flee": "+100",
+                      "atk": "+6000",
+                      "mhp": "+400000",
+                      "msp": "+200",
+                      "def": "+200",
+                      "mdef": "+40",
+                      "flee": "+100",
                       "sp-cost": "0"
                     }
                   }
@@ -3459,24 +3493,12 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "atk-10-accuracy-rate",
-                    "label": "Atk +10 / Accuracy Rate"
+                    "id": "accuracy-rate",
+                    "label": "Accuracy Rate"
                   },
                   {
-                    "id": "atk-20-accuracy-rate",
-                    "label": "Atk +20 / Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-30-accuracy-rate",
-                    "label": "Atk +30 / Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-40-accuracy-rate",
-                    "label": "Atk +40 / Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-50-accuracy-rate",
-                    "label": "Atk +50 / Accuracy Rate"
+                    "id": "atk",
+                    "label": "Atk"
                   },
                   {
                     "id": "data-1",
@@ -3491,7 +3513,8 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "atk-10-accuracy-rate": "+3",
+                      "atk": "+10",
+                      "accuracy-rate": "+3",
                       "sp-cost": "0",
                       "data-1": "10",
                       "data-2": "3"
@@ -3500,7 +3523,8 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "atk-20-accuracy-rate": "+6",
+                      "atk": "+20",
+                      "accuracy-rate": "+6",
                       "sp-cost": "0",
                       "data-1": "20",
                       "data-2": "6"
@@ -3509,7 +3533,8 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "atk-30-accuracy-rate": "+9",
+                      "atk": "+30",
+                      "accuracy-rate": "+9",
                       "sp-cost": "0",
                       "data-1": "30",
                       "data-2": "9"
@@ -3518,7 +3543,8 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "atk-40-accuracy-rate": "+12",
+                      "atk": "+40",
+                      "accuracy-rate": "+12",
                       "sp-cost": "0",
                       "data-1": "40",
                       "data-2": "12"
@@ -3527,7 +3553,8 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "atk-50-accuracy-rate": "+15",
+                      "atk": "+50",
+                      "accuracy-rate": "+15",
                       "sp-cost": "0",
                       "data-1": "50",
                       "data-2": "15"
@@ -3991,24 +4018,12 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "cart-weight-1000-cart-skill-hit-bonus",
-                    "label": "Cart Weight +1000 / Cart Skill Hit Bonus"
+                    "id": "cart-skill-hit-bonus",
+                    "label": "Cart Skill Hit Bonus"
                   },
                   {
-                    "id": "cart-weight-1500-cart-skill-hit-bonus",
-                    "label": "Cart Weight +1500 / Cart Skill Hit Bonus"
-                  },
-                  {
-                    "id": "cart-weight-2000-cart-skill-hit-bonus",
-                    "label": "Cart Weight +2000 / Cart Skill Hit Bonus"
-                  },
-                  {
-                    "id": "cart-weight-2500-cart-skill-hit-bonus",
-                    "label": "Cart Weight +2500 / Cart Skill Hit Bonus"
-                  },
-                  {
-                    "id": "cart-weight-500-cart-skill-hit-bonus",
-                    "label": "Cart Weight +500 / Cart Skill Hit Bonus"
+                    "id": "cart-weight",
+                    "label": "Cart Weight"
                   },
                   {
                     "id": "data-1",
@@ -4023,7 +4038,8 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "cart-weight-500-cart-skill-hit-bonus": "+4",
+                      "cart-weight": "+500",
+                      "cart-skill-hit-bonus": "+4",
                       "sp-cost": "0",
                       "data-1": "4",
                       "data-2": "5000"
@@ -4032,7 +4048,8 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "cart-weight-1000-cart-skill-hit-bonus": "+8",
+                      "cart-weight": "+1000",
+                      "cart-skill-hit-bonus": "+8",
                       "sp-cost": "0",
                       "data-1": "8",
                       "data-2": "10000"
@@ -4041,7 +4058,8 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "cart-weight-1500-cart-skill-hit-bonus": "+12",
+                      "cart-weight": "+1500",
+                      "cart-skill-hit-bonus": "+12",
                       "sp-cost": "0",
                       "data-1": "12",
                       "data-2": "15000"
@@ -4050,7 +4068,8 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "cart-weight-2000-cart-skill-hit-bonus": "+16",
+                      "cart-weight": "+2000",
+                      "cart-skill-hit-bonus": "+16",
                       "sp-cost": "0",
                       "data-1": "16",
                       "data-2": "20000"
@@ -4059,7 +4078,8 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "cart-weight-2500-cart-skill-hit-bonus": "+20",
+                      "cart-weight": "+2500",
+                      "cart-skill-hit-bonus": "+20",
                       "sp-cost": "0",
                       "data-1": "20",
                       "data-2": "25000"
@@ -6591,6 +6611,10 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "effect",
+                    "label": "Effect"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -6603,6 +6627,7 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
+                      "effect": "ATK (250+Cart Remodeling sLv x 20)%",
                       "sp-cost": "40",
                       "range": "7 cells",
                       "data-1": "1"
@@ -6611,6 +6636,7 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
+                      "effect": "ATK (500+Cart Remodeling sLv x 40)%",
                       "sp-cost": "42",
                       "range": "8 cells",
                       "data-1": "1"
@@ -6619,6 +6645,7 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
+                      "effect": "ATK (750+Cart Remodeling sLv x 60)%",
                       "sp-cost": "46",
                       "range": "9 cells",
                       "data-1": "2"
@@ -6627,6 +6654,7 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
+                      "effect": "ATK (1000+Cart Remodeling sLv x 80)%",
                       "sp-cost": "48",
                       "range": "10 cells",
                       "data-1": "2"
@@ -6635,6 +6663,7 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
+                      "effect": "ATK (1250+Cart Remodeling sLv x 100)%",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "3"
@@ -7293,6 +7322,18 @@ export const bioloData = {
                     "label": "Effect"
                   },
                   {
+                    "id": "11x11-aoe-int",
+                    "label": "11x11 Aoe / Int"
+                  },
+                  {
+                    "id": "13x13-aoe-int",
+                    "label": "13x13 Aoe / Int"
+                  },
+                  {
+                    "id": "15x15-aoe-int",
+                    "label": "15x15 Aoe / Int"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -7313,7 +7354,8 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "11 x 11 AoE / INT -4 / SP 30% Decrease / 30% SP",
+                      "11x11-aoe-int": "-4",
+                      "effect": "SP 30% Decrease / 30% SP",
                       "sp-cost": "40",
                       "data-1": "35",
                       "data-2": "30",
@@ -7324,7 +7366,8 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "13 x 13 AoE / INT -8 / SP 35% Decrease / 35% SP",
+                      "13x13-aoe-int": "-8",
+                      "effect": "SP 35% Decrease / 35% SP",
                       "sp-cost": "45",
                       "data-1": "45",
                       "data-2": "35",
@@ -7335,7 +7378,8 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "13 x 13 AoE / INT -12 / SP 40% Decrease / 40% SP",
+                      "13x13-aoe-int": "-12",
+                      "effect": "SP 40% Decrease / 40% SP",
                       "sp-cost": "50",
                       "data-1": "55",
                       "data-2": "40",
@@ -7346,7 +7390,8 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "15 x 15 AoE / INT -16 / SP 45% Decrease / 45% SP",
+                      "15x15-aoe-int": "-16",
+                      "effect": "SP 45% Decrease / 45% SP",
                       "sp-cost": "55",
                       "data-1": "65",
                       "data-2": "45",
@@ -7357,7 +7402,8 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "15 x 15 AoE / INT -20 / SP 50% Decrease / 50% SP",
+                      "15x15-aoe-int": "-20",
+                      "effect": "SP 50% Decrease / 50% SP",
                       "sp-cost": "60",
                       "data-1": "75",
                       "data-2": "50",
@@ -7798,7 +7844,7 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Movement Speed 50% increase",
+                      "effect": "Movement Speed 50% increase / ATK 10 increase",
                       "sp-cost": "20",
                       "data-1": "50",
                       "data-2": "10",
@@ -7808,7 +7854,7 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Movement Speed 50% increase",
+                      "effect": "Movement Speed 50% increase / ATK 20 increase",
                       "sp-cost": "24",
                       "data-1": "50",
                       "data-2": "20",
@@ -7818,7 +7864,7 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Movement Speed 75% increase",
+                      "effect": "Movement Speed 75% increase / ATK 30 increase",
                       "sp-cost": "28",
                       "data-1": "75",
                       "data-2": "30",
@@ -7828,7 +7874,7 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Movement Speed 75% increase",
+                      "effect": "Movement Speed 75% increase / ATK 40 increase",
                       "sp-cost": "32",
                       "data-1": "75",
                       "data-2": "40",
@@ -7838,7 +7884,7 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Movement Speed 100% increase",
+                      "effect": "Movement Speed 100% increase / ATK 50 increase",
                       "sp-cost": "36",
                       "data-1": "100",
                       "data-2": "50",
@@ -14161,114 +14207,148 @@ export const bioloData = {
                 "label": "SP Cost"
               },
               {
-                "id": "atk-1200-mhp-80000-msp-40-def-40-mdef-8-flee",
-                "label": "Atk +1200/mhp +80000/msp +40/def+40/mdef +8/flee"
+                "id": "atk",
+                "label": "Atk"
               },
               {
-                "id": "atk-1800-mhp-120000-msp-60-def-60-mdef-12-flee",
-                "label": "Atk +1800/mhp +120000/msp +60/def+60/mdef +12/flee"
+                "id": "def",
+                "label": "Def"
               },
               {
-                "id": "atk-2400-mhp-160000-msp-80-def-80-mdef-16-flee",
-                "label": "Atk +2400/mhp +160000/msp +80/def+80/mdef +16/flee"
+                "id": "flee",
+                "label": "Flee"
               },
               {
-                "id": "atk-3000-mhp-200000-msp-100-def-100-mdef-20-flee",
-                "label": "Atk +3000/mhp +200000/msp +100/def+100/mdef +20/flee"
+                "id": "mdef",
+                "label": "Mdef"
               },
               {
-                "id": "atk-3600-mhp-240000-msp-120-def-120-mdef-24-flee",
-                "label": "Atk +3600/mhp +240000/msp +120/def+120/mdef +24/flee"
+                "id": "mhp",
+                "label": "Mhp"
               },
               {
-                "id": "atk-4200-mhp-280000-msp-140-def-140-mdef-28-flee",
-                "label": "Atk +4200/mhp +280000/msp +140/def+140/mdef +28/flee"
-              },
-              {
-                "id": "atk-4800-mhp-320000-msp-160-def-160-mdef-32-flee",
-                "label": "Atk +4800/mhp +320000/msp +160/def+160/mdef +32/flee"
-              },
-              {
-                "id": "atk-5400-mhp-360000-msp-180-def-180-mdef-36-flee",
-                "label": "Atk +5400/mhp +360000/msp +180/def+180/mdef +36/flee"
-              },
-              {
-                "id": "atk-600-mhp-40000-msp-20-def-20-mdef-4-flee",
-                "label": "Atk +600/mhp +40000/msp +20/def+20/mdef +4/flee"
-              },
-              {
-                "id": "atk-6000-mhp-400000-msp-200-def-200-mdef-40-flee",
-                "label": "Atk +6000/mhp +400000/msp +200/def+200/mdef +40/flee"
+                "id": "msp",
+                "label": "Msp"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "atk-600-mhp-40000-msp-20-def-20-mdef-4-flee": "+10",
+                  "atk": "+600",
+                  "mhp": "+40000",
+                  "msp": "+20",
+                  "def": "+20",
+                  "mdef": "+4",
+                  "flee": "+10",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "atk-1200-mhp-80000-msp-40-def-40-mdef-8-flee": "+20",
+                  "atk": "+1200",
+                  "mhp": "+80000",
+                  "msp": "+40",
+                  "def": "+40",
+                  "mdef": "+8",
+                  "flee": "+20",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "atk-1800-mhp-120000-msp-60-def-60-mdef-12-flee": "+30",
+                  "atk": "+1800",
+                  "mhp": "+120000",
+                  "msp": "+60",
+                  "def": "+60",
+                  "mdef": "+12",
+                  "flee": "+30",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "atk-2400-mhp-160000-msp-80-def-80-mdef-16-flee": "+40",
+                  "atk": "+2400",
+                  "mhp": "+160000",
+                  "msp": "+80",
+                  "def": "+80",
+                  "mdef": "+16",
+                  "flee": "+40",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "atk-3000-mhp-200000-msp-100-def-100-mdef-20-flee": "+50",
+                  "atk": "+3000",
+                  "mhp": "+200000",
+                  "msp": "+100",
+                  "def": "+100",
+                  "mdef": "+20",
+                  "flee": "+50",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "atk-3600-mhp-240000-msp-120-def-120-mdef-24-flee": "+60",
+                  "atk": "+3600",
+                  "mhp": "+240000",
+                  "msp": "+120",
+                  "def": "+120",
+                  "mdef": "+24",
+                  "flee": "+60",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "atk-4200-mhp-280000-msp-140-def-140-mdef-28-flee": "+70",
+                  "atk": "+4200",
+                  "mhp": "+280000",
+                  "msp": "+140",
+                  "def": "+140",
+                  "mdef": "+28",
+                  "flee": "+70",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "atk-4800-mhp-320000-msp-160-def-160-mdef-32-flee": "+80",
+                  "atk": "+4800",
+                  "mhp": "+320000",
+                  "msp": "+160",
+                  "def": "+160",
+                  "mdef": "+32",
+                  "flee": "+80",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "atk-5400-mhp-360000-msp-180-def-180-mdef-36-flee": "+90",
+                  "atk": "+5400",
+                  "mhp": "+360000",
+                  "msp": "+180",
+                  "def": "+180",
+                  "mdef": "+36",
+                  "flee": "+90",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "atk-6000-mhp-400000-msp-200-def-200-mdef-40-flee": "+100",
+                  "atk": "+6000",
+                  "mhp": "+400000",
+                  "msp": "+200",
+                  "def": "+200",
+                  "mdef": "+40",
+                  "flee": "+100",
                   "sp-cost": "0"
                 }
               }

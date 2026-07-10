@@ -1,5 +1,5 @@
 export const skyEmperorData = {
-  "generatedAt": "2026-07-09T13:22:42.156Z",
+  "generatedAt": "2026-07-10T00:57:06.011Z",
   "classId": 4302,
   "classSlug": "sky-emperor",
   "className": "Sky Emperor",
@@ -427,118 +427,96 @@ export const skyEmperorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "p-atk",
+                    "label": "P.Atk"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
                   {
-                    "id": "p-atk-10-hit",
-                    "label": "P.atk+ 10/hit"
-                  },
-                  {
-                    "id": "p-atk-11-hit",
-                    "label": "P.atk+ 11/hit"
-                  },
-                  {
-                    "id": "p-atk-12-hit",
-                    "label": "P.atk+ 12/hit"
-                  },
-                  {
-                    "id": "p-atk-3-hit",
-                    "label": "P.atk+ 3/hit"
-                  },
-                  {
-                    "id": "p-atk-4-hit",
-                    "label": "P.atk+ 4/hit"
-                  },
-                  {
-                    "id": "p-atk-5-hit",
-                    "label": "P.atk+ 5/hit"
-                  },
-                  {
-                    "id": "p-atk-6-hit",
-                    "label": "P.atk+ 6/hit"
-                  },
-                  {
-                    "id": "p-atk-7-hit",
-                    "label": "P.atk+ 7/hit"
-                  },
-                  {
-                    "id": "p-atk-8-hit",
-                    "label": "P.atk+ 8/hit"
-                  },
-                  {
-                    "id": "p-atk-9-hit",
-                    "label": "P.atk+ 9/hit"
+                    "id": "hit",
+                    "label": "Hit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "p-atk-3-hit": "+ 3",
+                      "p-atk": "+ 3",
+                      "hit": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "p-atk-4-hit": "+ 6",
+                      "p-atk": "+ 4",
+                      "hit": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "p-atk-5-hit": "+ 9",
+                      "p-atk": "+ 5",
+                      "hit": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "p-atk-6-hit": "+ 12",
+                      "p-atk": "+ 6",
+                      "hit": "+ 12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "p-atk-7-hit": "+ 15",
+                      "p-atk": "+ 7",
+                      "hit": "+ 15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "p-atk-8-hit": "+ 18",
+                      "p-atk": "+ 8",
+                      "hit": "+ 18",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "p-atk-9-hit": "+ 21",
+                      "p-atk": "+ 9",
+                      "hit": "+ 21",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "p-atk-10-hit": "+ 24",
+                      "p-atk": "+ 10",
+                      "hit": "+ 24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "p-atk-11-hit": "+ 27",
+                      "p-atk": "+ 11",
+                      "hit": "+ 27",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "p-atk-12-hit": "+ 30",
+                      "p-atk": "+ 12",
+                      "hit": "+ 30",
                       "sp-cost": "0"
                     }
                   }
@@ -7126,13 +7104,18 @@ export const skyEmperorData = {
                   {
                     "id": "data-2",
                     "label": "Data 2"
+                  },
+                  {
+                    "id": "power-bonus",
+                    "label": "Power Bonus"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Power bonus +5% / Duration: 20 sec",
+                      "power-bonus": "+5%",
+                      "effect": "Duration: 20 sec",
                       "sp-cost": "40",
                       "data-1": "20000",
                       "data-2": "5"
@@ -7141,7 +7124,8 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Power bonus +10% / Duration: 30 sec",
+                      "power-bonus": "+10%",
+                      "effect": "Duration: 30 sec",
                       "sp-cost": "40",
                       "data-1": "30000",
                       "data-2": "10"
@@ -7150,7 +7134,8 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Power bonus +15% / Duration: 40 sec",
+                      "power-bonus": "+15%",
+                      "effect": "Duration: 40 sec",
                       "sp-cost": "40",
                       "data-1": "40000",
                       "data-2": "15"
@@ -7159,7 +7144,8 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Power bonus +20% / Duration: 50 sec",
+                      "power-bonus": "+20%",
+                      "effect": "Duration: 50 sec",
                       "sp-cost": "40",
                       "data-1": "50000",
                       "data-2": "20"
@@ -7168,7 +7154,8 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Power bonus +25% / Duration: 60 sec",
+                      "power-bonus": "+25%",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "25"
@@ -7346,13 +7333,18 @@ export const skyEmperorData = {
                   {
                     "id": "data-2",
                     "label": "Data 2"
+                  },
+                  {
+                    "id": "power-bonus",
+                    "label": "Power Bonus"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Power bonus +5% / Duration: 20 sec",
+                      "power-bonus": "+5%",
+                      "effect": "Duration: 20 sec",
                       "sp-cost": "40",
                       "data-1": "20000",
                       "data-2": "5"
@@ -7361,7 +7353,8 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Power bonus +10% / Duration: 30 sec",
+                      "power-bonus": "+10%",
+                      "effect": "Duration: 30 sec",
                       "sp-cost": "40",
                       "data-1": "30000",
                       "data-2": "10"
@@ -7370,7 +7363,8 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Power bonus +15% / Duration: 40 sec",
+                      "power-bonus": "+15%",
+                      "effect": "Duration: 40 sec",
                       "sp-cost": "40",
                       "data-1": "40000",
                       "data-2": "15"
@@ -7379,7 +7373,8 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Power bonus +20% / Duration: 50 sec",
+                      "power-bonus": "+20%",
+                      "effect": "Duration: 50 sec",
                       "sp-cost": "40",
                       "data-1": "50000",
                       "data-2": "20"
@@ -7388,7 +7383,8 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Power bonus +25% / Duration: 60 sec",
+                      "power-bonus": "+25%",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "25"
@@ -7566,13 +7562,18 @@ export const skyEmperorData = {
                   {
                     "id": "data-2",
                     "label": "Data 2"
+                  },
+                  {
+                    "id": "power-bonus",
+                    "label": "Power Bonus"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Power bonus +5% / Duration: 20 sec",
+                      "power-bonus": "+5%",
+                      "effect": "Duration: 20 sec",
                       "sp-cost": "40",
                       "data-1": "20000",
                       "data-2": "5"
@@ -7581,7 +7582,8 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Power bonus +10% / Duration: 30 sec",
+                      "power-bonus": "+10%",
+                      "effect": "Duration: 30 sec",
                       "sp-cost": "40",
                       "data-1": "30000",
                       "data-2": "10"
@@ -7590,7 +7592,8 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Power bonus +15% / Duration: 40 sec",
+                      "power-bonus": "+15%",
+                      "effect": "Duration: 40 sec",
                       "sp-cost": "40",
                       "data-1": "40000",
                       "data-2": "15"
@@ -7599,7 +7602,8 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Power bonus +20% / Duration: 50 sec",
+                      "power-bonus": "+20%",
+                      "effect": "Duration: 50 sec",
                       "sp-cost": "40",
                       "data-1": "50000",
                       "data-2": "20"
@@ -7608,7 +7612,8 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Power bonus +25% / Duration: 60 sec",
+                      "power-bonus": "+25%",
+                      "effect": "Duration: 60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "25"
@@ -13657,118 +13662,96 @@ export const skyEmperorData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "p-atk",
+                "label": "P.Atk"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
               {
-                "id": "p-atk-10-hit",
-                "label": "P.atk+ 10/hit"
-              },
-              {
-                "id": "p-atk-11-hit",
-                "label": "P.atk+ 11/hit"
-              },
-              {
-                "id": "p-atk-12-hit",
-                "label": "P.atk+ 12/hit"
-              },
-              {
-                "id": "p-atk-3-hit",
-                "label": "P.atk+ 3/hit"
-              },
-              {
-                "id": "p-atk-4-hit",
-                "label": "P.atk+ 4/hit"
-              },
-              {
-                "id": "p-atk-5-hit",
-                "label": "P.atk+ 5/hit"
-              },
-              {
-                "id": "p-atk-6-hit",
-                "label": "P.atk+ 6/hit"
-              },
-              {
-                "id": "p-atk-7-hit",
-                "label": "P.atk+ 7/hit"
-              },
-              {
-                "id": "p-atk-8-hit",
-                "label": "P.atk+ 8/hit"
-              },
-              {
-                "id": "p-atk-9-hit",
-                "label": "P.atk+ 9/hit"
+                "id": "hit",
+                "label": "Hit"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "p-atk-3-hit": "+ 3",
+                  "p-atk": "+ 3",
+                  "hit": "+ 3",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "p-atk-4-hit": "+ 6",
+                  "p-atk": "+ 4",
+                  "hit": "+ 6",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "p-atk-5-hit": "+ 9",
+                  "p-atk": "+ 5",
+                  "hit": "+ 9",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "p-atk-6-hit": "+ 12",
+                  "p-atk": "+ 6",
+                  "hit": "+ 12",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "p-atk-7-hit": "+ 15",
+                  "p-atk": "+ 7",
+                  "hit": "+ 15",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "p-atk-8-hit": "+ 18",
+                  "p-atk": "+ 8",
+                  "hit": "+ 18",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "p-atk-9-hit": "+ 21",
+                  "p-atk": "+ 9",
+                  "hit": "+ 21",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "p-atk-10-hit": "+ 24",
+                  "p-atk": "+ 10",
+                  "hit": "+ 24",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "p-atk-11-hit": "+ 27",
+                  "p-atk": "+ 11",
+                  "hit": "+ 27",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "p-atk-12-hit": "+ 30",
+                  "p-atk": "+ 12",
+                  "hit": "+ 30",
                   "sp-cost": "0"
                 }
               }
