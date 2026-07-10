@@ -1,5 +1,5 @@
 export const inquisitorData = {
-  "generatedAt": "2026-07-10T00:55:41.419Z",
+  "generatedAt": "2026-07-10T15:02:16.904Z",
   "classId": 4262,
   "classSlug": "inquisitor",
   "className": "Inquisitor",
@@ -72,7 +72,8 @@ export const inquisitorData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4262",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -438,6 +439,8 @@ export const inquisitorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Will_of_Faith",
           "description": "Fortify your determination to eradicate evil.\nKnuckles inflict more Physical damage on Demon and Undead monsters and decrease Physical/Magic damage from them.",
           "levelDetails": [],
           "levelExtras": [
@@ -487,8 +490,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Will of Faith ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Will_of_Faith"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5240.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5240",
           "tree": {
@@ -584,10 +594,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -603,6 +612,8 @@ export const inquisitorData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sincere_Faith",
           "description": "Strengthen your faith, increasing your ASPD and adding durability to your attacks.\nCan't be used with Powerful Faith or Firm Faith.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -636,8 +647,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level x 4)",
+          "duration": "90 + (Skill Level x 30)",
+          "translations": {
+            "pt-BR": {
+              "name": " Sincere Faith ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sincere_Faith"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5242.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5242",
           "tree": {
@@ -665,6 +685,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -683,6 +707,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "90 + (Skill Level x 30)"
               }
             ],
             "levelTables": [
@@ -730,10 +758,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -749,6 +776,8 @@ export const inquisitorData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Firm_Faith",
           "description": "Strengthen your faith, increasing your Max HP and RES.\nCan't be used with Powerful Faith or Sincere Faith.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -782,8 +811,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level x 4)",
+          "duration": "90 + (Skill Level x 30)",
+          "translations": {
+            "pt-BR": {
+              "name": " Firm Faith ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Firm_Faith"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5239.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5239",
           "tree": {
@@ -811,6 +849,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -829,6 +871,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "90 + (Skill Level x 30)"
               }
             ],
             "levelTables": [
@@ -876,10 +922,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -895,6 +940,8 @@ export const inquisitorData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Powerful_Faith",
           "description": "Strengthen your faith, increasing your ATK and P. ATK.\nCan't be used with Firm Faith or Sincere Faith.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -928,8 +975,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level x 4)",
+          "duration": "90 + (Skill Level x 30)",
+          "translations": {
+            "pt-BR": {
+              "name": " Powerful Faith ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Powerful_Faith"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5238.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5238",
           "tree": {
@@ -957,6 +1013,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -975,6 +1035,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "90 + (Skill Level x 30)"
               }
             ],
             "levelTables": [
@@ -1022,10 +1086,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1041,6 +1104,8 @@ export const inquisitorData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Deals Melee Physics damage to the target and targets within a 7x7 cell range around the target, and marks them for 5 seconds.\nDamage increases additionally based on the caster's base level and POW.",
           "levelDetails": [
             {
@@ -1095,8 +1160,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " First Brand(First Brand) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Brand(First_Brand)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5245.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5245",
           "tree": {
@@ -1189,7 +1261,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "First Brand",
@@ -1246,7 +1317,7 @@ export const inquisitorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1262,6 +1333,8 @@ export const inquisitorData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Oleum_Sanctum",
           "description": "Baptizes surrounding enemies around the user, deals long ranged physical damage,\ngives the debuff that the targets will taken more damage from long ranged physical damage for the skill duration.\nDamage is additionally increased depending on the user's base level and POW.",
           "levelDetails": [
             {
@@ -1315,6 +1388,11 @@ export const inquisitorData = {
               ]
             }
           ],
+          "spCost": "20 + (Skill Level × 10)",
+          "cooldown": "3 seconds",
+          "duration": "3~7 seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3~7 x 7",
           "translations": {
             "pt-BR": {
               "name": " Oleum Sanctum ",
@@ -1357,6 +1435,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -1367,6 +1449,14 @@ export const inquisitorData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -1384,6 +1474,10 @@ export const inquisitorData = {
                   {
                     "id": "area-of-effect",
                     "label": "Area of Effect"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
@@ -1391,6 +1485,7 @@ export const inquisitorData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "7x7",
+                      "duration": "3 seconds",
                       "sp-cost": "45"
                     }
                   },
@@ -1398,6 +1493,7 @@ export const inquisitorData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "7x7",
+                      "duration": "4 seconds",
                       "sp-cost": "55"
                     }
                   },
@@ -1405,6 +1501,7 @@ export const inquisitorData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "7x7",
+                      "duration": "5 seconds",
                       "sp-cost": "65"
                     }
                   },
@@ -1412,6 +1509,7 @@ export const inquisitorData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "9x9",
+                      "duration": "6 seconds",
                       "sp-cost": "75"
                     }
                   },
@@ -1419,6 +1517,7 @@ export const inquisitorData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "9x9",
+                      "duration": "7 seconds",
                       "sp-cost": "85"
                     }
                   }
@@ -1427,7 +1526,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Oleum Sanctum",
@@ -1553,6 +1651,8 @@ export const inquisitorData = {
           "target": "Self-Buff",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "300Accept the true belief and fight with it.\nAdditionally, while the Power of Belief state is maintained, you can use the Fallen Empire without consuming the device.",
           "levelDetails": [
             {
@@ -1606,8 +1706,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " First Faith Power(First Faith Power) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Faith_Power(First_Faith_Power)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5246.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5246",
           "tree": {
@@ -1674,35 +1781,35 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "cooldown": "180seconds",
+                      "cooldown": "180 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "cooldown": "150seconds",
+                      "cooldown": "150 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "cooldown": "120seconds",
+                      "cooldown": "120 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "cooldown": "90seconds",
+                      "cooldown": "90 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "cooldown": "60seconds",
+                      "cooldown": "60 seconds",
                       "sp-cost": "60"
                     }
                   }
@@ -1711,7 +1818,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "First Faith Power",
@@ -1727,7 +1833,7 @@ export const inquisitorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1743,6 +1849,8 @@ export const inquisitorData = {
           "target": "Self-Buff",
           "recoversAp": "",
           "consumesAp": "80/70/60/50/40",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Available in Power of Conviction state.\nYou will become God's judge for 300 seconds and be able to execute judgment on evil deeds.\nAdditionally, in judgement mode, you can use the Fallen Empire and Flash Combo without consuming any equipment.",
           "levelDetails": [
             {
@@ -1796,8 +1904,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Judge(Judge) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Judge(Judge)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5247.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5247",
           "tree": {
@@ -1862,35 +1977,35 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "cooldown": "180seconds",
+                      "cooldown": "180 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "cooldown": "150seconds",
+                      "cooldown": "150 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "cooldown": "120seconds",
+                      "cooldown": "120 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "cooldown": "90seconds",
+                      "cooldown": "90 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "cooldown": "60seconds",
+                      "cooldown": "60 seconds",
                       "sp-cost": "60"
                     }
                   }
@@ -1899,10 +2014,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1918,6 +2032,8 @@ export const inquisitorData = {
           "target": "Self-Buff",
           "recoversAp": "",
           "consumesAp": "120/105/90/75/60",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Available in Judgement status.\nEnters a powerful flame state of destruction that destroys all monsters for 300 seconds.\nAdditionally, in the Flame of Destruction state, you can use the Fallen Empire, Flash Combo, and Tiger Cannon without consuming any equipment.",
           "levelDetails": [
             {
@@ -1971,8 +2087,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Third Exor Flame(Third Exor Flame) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Third_Exor_Flame(Third_Exor_Flame)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5254.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5254",
           "tree": {
@@ -2037,35 +2160,35 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "cooldown": "180seconds",
+                      "cooldown": "180 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "cooldown": "150seconds",
+                      "cooldown": "150 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "cooldown": "120seconds",
+                      "cooldown": "120 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "cooldown": "90seconds",
+                      "cooldown": "90 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "cooldown": "60seconds",
+                      "cooldown": "60 seconds",
                       "sp-cost": "60"
                     }
                   }
@@ -2074,7 +2197,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Third Exorcism Flame",
@@ -2118,7 +2240,7 @@ export const inquisitorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2134,6 +2256,8 @@ export const inquisitorData = {
           "target": "Instant Cast",
           "recoversAp": "4",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Explosion_Blaster",
           "description": "Blows the powerful bomb to deals long ranged physical damage to surrounding enemies around the user.\nDeals additional damage to the target who is inflicted by Oleum Sanctum.\nDamage is additionally increased depending on the user's base level and POW.\nHas a chance to trigger critical, critical chance is the user's Cri,\nIn the case of critical damage, half of the total critical damage increase options are applied.",
           "levelDetails": [
             {
@@ -2188,8 +2312,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (Skill Level x 10)",
+          "castRange": "9 cells",
+          "areaOfEffect": "5 x 5 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Explosion Blaster ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Explosion_Blaster"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5244.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5244",
           "tree": {
@@ -2217,6 +2351,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -2231,6 +2369,10 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "0.7 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -2295,7 +2437,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Explosion Blaster",
@@ -2459,7 +2600,7 @@ export const inquisitorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2475,6 +2616,8 @@ export const inquisitorData = {
           "target": "Single Target",
           "recoversAp": "4",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Power of Faith, Judge, Available in Flame of Destruction state.\nDeals Melee Physics damage to the target and any targets within a 7x7 cell radius around them that have a Mark or Judgement Mark, and applies the Mark of Judgement for 5 seconds.\nIf the Mark of Judgement has already been applied, the duration of the effect is refreshed.\nDamage increases additionally based on the caster's base level and POW.",
           "levelDetails": [
             {
@@ -2529,8 +2672,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Second Faith(Second Faith) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Second_Faith(Second_Faith)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5249.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5249",
           "tree": {
@@ -2627,7 +2777,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Second Faith",
@@ -2683,7 +2832,7 @@ export const inquisitorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2699,6 +2848,8 @@ export const inquisitorData = {
           "target": "Single Target",
           "recoversAp": "4",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Judge, Available in Flame of Destruction state.\nDeals Melee Physics damage to the target and any targets within a 7x7 cell radius around them that have a Mark or Judgement Mark, and applies the Mark of Judgement for 5 seconds.\nIf the Mark of Judgement has already been applied, its duration is refreshed.\nDamage increases additionally based on the caster's base level and POW.",
           "levelDetails": [
             {
@@ -2753,8 +2904,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Second Judgement(Second Judgement) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Second_Judgement(Second_Judgement)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5250.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5250",
           "tree": {
@@ -2851,10 +3009,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2870,6 +3027,8 @@ export const inquisitorData = {
           "target": "Single Target",
           "recoversAp": "4",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Available in Flame of Destruction state.\nDeals Melee Physics damage to the target and any targets within a 7x7 cell radius around them that have a Mark or Judgement Mark, and applies the Mark of Judgement for 5 seconds.\nIf the Mark of Judgement has already been applied, its duration is refreshed.\nDamage increases additionally based on the caster's base level and POW.",
           "levelDetails": [
             {
@@ -2924,8 +3083,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Second Flame(Second Flame) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Second_Flame(Second_Flame)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5248.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5248",
           "tree": {
@@ -3022,7 +3188,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Second Flame",
@@ -3078,7 +3243,7 @@ export const inquisitorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3093,7 +3258,9 @@ export const inquisitorData = {
           "type": "Ranged Physical",
           "target": "Instant Cast",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Massive_Flame_Blaster",
           "description": "Creates the powerful explosion to deals long ranged physical damage to surrounding enemies within 9 x 9 cells around the user.\nThis skill deals additional damage against demon and brute race monsters.\nDamage is additionally increased depending on the user's base level and POW.\nWhen using, adds the ability that removes spirit sphere consumption of Lightning Ride and Rampage Blast for 150 seconds.\nHas a chance to trigger critical, critical chance is the user's Cri,\nIn the case of critical damage, half of the total critical damage increase options are applied.",
           "levelDetails": [
             {
@@ -3188,8 +3355,19 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "duration": "150 seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "9×9",
+          "translations": {
+            "pt-BR": {
+              "name": " Massive Flame Blaster ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Massive_Flame_Blaster"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5243.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5243",
           "tree": {
@@ -3229,6 +3407,10 @@ export const inquisitorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -3245,8 +3427,24 @@ export const inquisitorData = {
                 "value": "3.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9×9"
+              },
+              {
+                "label": "Duration",
+                "value": "150 seconds"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "150"
               }
             ],
             "levelTables": [
@@ -3324,7 +3522,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Massive Flame Blaster",
@@ -3434,7 +3631,7 @@ export const inquisitorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3450,6 +3647,8 @@ export const inquisitorData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Power of Faith, Judge, Available in Flame of Destruction state.\nDeals Melee Physics damage 3 times to the target and any target within a 7x7 cell area around it with the Mark of Judgement, and erases the target's Mark of Judgement.\nDamage increases additionally based on the caster's base level and POW.\nWhen cast, an additional optical axis effect is triggered.\nCritical damage is applied based on the caster's critical probability.\nIn case of critical damage, half of the total critical damage increase options is applied.",
           "levelDetails": [
             {
@@ -3504,8 +3703,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Third Punish(Third Punish) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Third_Punish(Third_Punish)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5251.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5251",
           "tree": {
@@ -3598,10 +3804,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3617,6 +3822,8 @@ export const inquisitorData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Judge, Available in Flame of Destruction state.\nDeals Melee Physics damage 5 times to the target and any target within a 7x7 cell area around it with the Mark of Judgement, and removes the target's Mark of Judgement.\nDamage increases additionally based on the caster's base level and POW.\nAdditionally, the caster receives HP and SP Recovery effects from the power of purification, and the amount of Recovery increases based on the skill level and the caster's base level.",
           "levelDetails": [
             {
@@ -3671,8 +3878,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Third Consecration(Third Consecration) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Third_Consecration(Third_Consecration)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5253.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5253",
           "tree": {
@@ -3765,7 +3979,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Third Consecration",
@@ -3824,7 +4037,7 @@ export const inquisitorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3840,6 +4053,8 @@ export const inquisitorData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Available in Flame of Destruction state.\nDeals Melee Physics damage to the target and any targets within a 7x7 cell area around it with the Mark of Judgement, and erases the target's Mark of Judgement.\nAttacks up to 3 times depending on the number of devices currently in possession. Damage increases additionally based on the caster's base level and POW.",
           "levelDetails": [
             {
@@ -3894,8 +4109,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Third Flame Bomb(Third Flame Bomb) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Third_Flame_Bomb(Third_Flame_Bomb)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5252.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5252",
           "tree": {
@@ -3988,7 +4210,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Third Flame Bomb",
@@ -4042,7 +4263,7 @@ export const inquisitorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4058,6 +4279,8 @@ export const inquisitorData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used in Fury state.\nInflicts long ranged physical damage to the target ,if the user is under Massive Flame Blaster buff, the skill will deal more damage.\nDeals additional damage depends on user's base level and POW, has a chance to trigger critical, critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -4086,8 +4309,15 @@ export const inquisitorData = {
           "castDelay": "1 second",
           "cooldown": "0.7 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Blazing Flame Blast ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blazing_Flame_Blast"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6519.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6519",
           "tree": {
@@ -4141,7 +4371,6 @@ export const inquisitorData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Blazing Flame Blast",
@@ -4157,7 +4386,7 @@ export const inquisitorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4181,9 +4410,11 @@ export const inquisitorData = {
           "prerequisiteText": "Summon Spirit Sphere 5",
           "group": "Active / Special",
           "type": "",
-          "target": "",
+          "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Power_Implantation",
           "description": "Transfers all of your Spirit Spheres to the selected target.",
           "levelDetails": [],
           "fixedCastTime": "0.5 seconds",
@@ -4210,8 +4441,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Power Implantation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Power_Implantation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2341.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2341",
           "tree": {
@@ -4239,6 +4479,10 @@ export const inquisitorData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -4253,6 +4497,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
               }
             ],
             "levelTables": [
@@ -4281,10 +4533,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4297,9 +4548,11 @@ export const inquisitorData = {
           "prerequisiteText": "Spirit Sphere 3",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lightning_Ride",
           "description": "Inflicts Ranged Physical Damage to all enemies in a set area around the targeted location by using 2 Spheres.\nDamage increases depending on caster's base level, and if the equipped weapon is a Knuckle, this skill will inflict additional damage.",
           "levelDetails": [
             {
@@ -4454,8 +4707,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 2)",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Lightning Ride ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lightning_Ride"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2518.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2518",
           "tree": {
@@ -4483,6 +4746,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4497,6 +4764,18 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -4580,10 +4859,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4596,9 +4874,11 @@ export const inquisitorData = {
           "prerequisiteText": "Raging Trifecta Blow 5",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dragon_Combo",
           "description": "Kicks twice, inflicts Melee Physical Damage to a single target. Can use with Fallen Empire as a combo.",
           "levelDetails": [
             {
@@ -4738,8 +5018,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level + 2)",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Dragon Combo ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dragon_Combo"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2326.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2326",
           "tree": {
@@ -4767,6 +5056,10 @@ export const inquisitorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level + 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4781,6 +5074,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -4872,10 +5173,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4888,9 +5188,11 @@ export const inquisitorData = {
           "prerequisiteText": "Dragon Combo 3",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sky_Blow",
           "description": "Spinning blow that kicks up a storm, dealing damage to all targets in an area. Damage increases as BaseLv and AGI increases.",
           "levelDetails": [
             {
@@ -4995,8 +5297,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "9 + (Skill Level x 2)",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Sky Blow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sky_Blow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2327.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2327",
           "tree": {
@@ -5024,6 +5335,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "9 + (Skill Level x 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5038,6 +5353,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -5103,10 +5426,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5119,9 +5441,11 @@ export const inquisitorData = {
           "prerequisiteText": "Root 2 / Gentle Touch-Silence 2",
           "group": "Active / Special",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cursed_Circle",
           "description": "While in Area of Effect, all enemies will be unable to move, attack and receive the Silence Status for the duration of the skill. If the caster uses any other skill, Cursed Circle will be cancelled. Consumes 1 spirit sphere per 1 target.",
           "levelDetails": [
             {
@@ -5251,8 +5575,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "120",
+          "duration": "(Skill Level + 2) seconds",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Cursed Circle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cursed_Circle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2334.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2334",
           "tree": {
@@ -5280,6 +5614,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "120"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5294,6 +5632,10 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "10 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -5309,8 +5651,8 @@ export const inquisitorData = {
                     "label": "Area of Effect"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -5330,7 +5672,7 @@ export const inquisitorData = {
                     "level": 1,
                     "values": {
                       "area-of-effect": "3x3",
-                      "effect": "Duration 3 sec",
+                      "duration": "3 seconds",
                       "sp-cost": "40",
                       "data-1": "1",
                       "data-2": "1",
@@ -5341,7 +5683,7 @@ export const inquisitorData = {
                     "level": 2,
                     "values": {
                       "area-of-effect": "3x3",
-                      "effect": "Duration 4 sec",
+                      "duration": "4 seconds",
                       "sp-cost": "60",
                       "data-1": "2",
                       "data-2": "1",
@@ -5352,7 +5694,7 @@ export const inquisitorData = {
                     "level": 3,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "Duration 5 sec",
+                      "duration": "5 seconds",
                       "sp-cost": "80",
                       "data-1": "3",
                       "data-2": "2",
@@ -5363,7 +5705,7 @@ export const inquisitorData = {
                     "level": 4,
                     "values": {
                       "area-of-effect": "5x5",
-                      "effect": "Duration 6 sec",
+                      "duration": "6 seconds",
                       "sp-cost": "100",
                       "data-1": "4",
                       "data-2": "2",
@@ -5374,7 +5716,7 @@ export const inquisitorData = {
                     "level": 5,
                     "values": {
                       "area-of-effect": "7x7",
-                      "effect": "Duration 7 sec",
+                      "duration": "7 seconds",
                       "sp-cost": "120",
                       "data-1": "5",
                       "data-2": "3",
@@ -5386,10 +5728,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5402,9 +5743,11 @@ export const inquisitorData = {
           "prerequisiteText": "Basic Skill",
           "group": "Active / Damage and Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gentle_Touch-Silence",
           "description": "Using the knowledge of pressure point techniques, you put the target on Silence status while dealing damage. Your Dex will greatly increase the damage.",
           "levelDetails": [
             {
@@ -5508,8 +5851,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level × 5)",
+          "cooldown": "[0.5 + (Skill Level × 0.5)] seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Gentle Touch-Silence ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gentle_Touch-Silence"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2344.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2344",
           "tree": {
@@ -5530,6 +5883,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5540,6 +5897,18 @@ export const inquisitorData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[0.5 + (Skill Level × 0.5)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -5605,10 +5974,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5621,9 +5989,11 @@ export const inquisitorData = {
           "prerequisiteText": "Spiritual Sphere Absorption 1, Power Implantation 1",
           "group": "Active / Special",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Power_Absorb",
           "description": "Absorb Spirit Spheres on all targets in a 5x5 area, recovering your SP",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -5659,8 +6029,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Power Absorb ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Power_Absorb"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2340.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2340",
           "tree": {
@@ -5694,6 +6073,10 @@ export const inquisitorData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5708,6 +6091,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -5741,10 +6132,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5757,9 +6147,11 @@ export const inquisitorData = {
           "prerequisiteText": "Power Implantation 1",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rising_Dragon",
           "description": "Places a temporary buff on the user that extends the limit of Spirit Spheres the user can have,\nincreases MaxHP and MaxSP based on skill level as a percentage, and applies all the effects of Fury..",
           "levelDetails": [
             {
@@ -5989,8 +6381,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "120",
+          "duration": "100 + (Skill Level × 20) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Rising Dragon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rising_Dragon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2338.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2338",
           "tree": {
@@ -6024,6 +6425,10 @@ export const inquisitorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "120"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6038,6 +6443,10 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "30 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -6047,6 +6456,10 @@ export const inquisitorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -6069,7 +6482,8 @@ export const inquisitorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Spheres 6 / Duration 120 sec",
+                      "duration": "120 seconds",
+                      "effect": "Spheres 6",
                       "sp-cost": "120",
                       "data-1": "30000",
                       "data-2": "1",
@@ -6079,7 +6493,8 @@ export const inquisitorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Spheres 7 / Duration 140 sec",
+                      "duration": "140 seconds",
+                      "effect": "Spheres 7",
                       "sp-cost": "120",
                       "data-1": "45000",
                       "data-2": "2",
@@ -6089,7 +6504,8 @@ export const inquisitorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Spheres 8 / Duration 160 sec",
+                      "duration": "160 seconds",
+                      "effect": "Spheres 8",
                       "sp-cost": "120",
                       "data-1": "60000",
                       "data-2": "3",
@@ -6099,7 +6515,8 @@ export const inquisitorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Spheres 9 / Duration 180 sec",
+                      "duration": "180 seconds",
+                      "effect": "Spheres 9",
                       "sp-cost": "120",
                       "data-1": "75000",
                       "data-2": "4",
@@ -6109,7 +6526,8 @@ export const inquisitorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Spheres 10 / Duration 200 sec",
+                      "duration": "200 seconds",
+                      "effect": "Spheres 10",
                       "sp-cost": "120",
                       "data-1": "90000",
                       "data-2": "5",
@@ -6119,7 +6537,8 @@ export const inquisitorData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Spheres 11 / Duration 220 sec",
+                      "duration": "220 seconds",
+                      "effect": "Spheres 11",
                       "sp-cost": "120",
                       "data-1": "105000",
                       "data-2": "6",
@@ -6129,7 +6548,8 @@ export const inquisitorData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Spheres 12 / Duration 240 sec",
+                      "duration": "240 seconds",
+                      "effect": "Spheres 12",
                       "sp-cost": "120",
                       "data-1": "120000",
                       "data-2": "7",
@@ -6139,7 +6559,8 @@ export const inquisitorData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Spheres 13 / Duration 260 sec",
+                      "duration": "260 seconds",
+                      "effect": "Spheres 13",
                       "sp-cost": "120",
                       "data-1": "135000",
                       "data-2": "8",
@@ -6149,7 +6570,8 @@ export const inquisitorData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Spheres 14 / Duration 280 sec",
+                      "duration": "280 seconds",
+                      "effect": "Spheres 14",
                       "sp-cost": "120",
                       "data-1": "150000",
                       "data-2": "9",
@@ -6159,7 +6581,8 @@ export const inquisitorData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Spheres 15 / Duration 300 sec",
+                      "duration": "300 seconds",
+                      "effect": "Spheres 15",
                       "sp-cost": "120",
                       "data-1": "165000",
                       "data-2": "10",
@@ -6171,10 +6594,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6187,9 +6609,11 @@ export const inquisitorData = {
           "prerequisiteText": "Dragon Combo 3",
           "group": "Active / Damage(Special)",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fallen_Empire",
           "description": "Use your shoulders and fists to do an upwards blow to deal large damage.\nCan be casted after Dragon Combo, and can cast Tiger Cannon / Gate of Hell after.\nDamage increases based on BaseLv and caster's STR.\nTwo Sphere is consumed when using the skill, and one Sphere is consumed from level 6.",
           "levelDetails": [
             {
@@ -6374,8 +6798,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level x 3)",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Fallen Empire ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fallen_Empire"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2329.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2329",
           "tree": {
@@ -6403,6 +6836,10 @@ export const inquisitorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level x 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6417,6 +6854,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -6522,10 +6967,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6538,9 +6982,11 @@ export const inquisitorData = {
           "prerequisiteText": "Dragon Combo 3",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Earth_Shaker",
           "description": "Sends a shockwave through the ground damaging all targets in the area of effect, targets in Hide/Cloak will be revealed and receive additional damage.\nIf the target is a monster, increase the skill damage of Rampage Blast to the target for 5 seconds. The caster's Str stat and base level increase the skill damage.",
           "levelDetails": [
             {
@@ -6670,8 +7116,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "32 + (Skill Level × 4)",
+          "areaOfEffect": "3 x 3 ~ 11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Earth Shaker ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Earth_Shaker"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2328.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2328",
           "tree": {
@@ -6699,6 +7154,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "32 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6713,6 +7172,10 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -6796,10 +7259,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6812,9 +7274,11 @@ export const inquisitorData = {
           "prerequisiteText": "Cursed Circle 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Windmill",
           "description": "A low to the ground round kick that damages targets in a 5x5 area around you and forces them to sit. Monsters in the area will be stunned. Does not work on boss or MVP type monsters.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -6841,8 +7305,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Windmill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Windmill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2337.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2337",
           "tree": {
@@ -6870,6 +7344,10 @@ export const inquisitorData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "45"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6884,6 +7362,18 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -6912,10 +7402,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6928,9 +7417,11 @@ export const inquisitorData = {
           "prerequisiteText": "Gentle Touch-Silence 1",
           "group": "Active / Recovery and Buff",
           "type": "",
-          "target": "",
+          "target": "Player or Caster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gentle_Touch-Cure",
           "description": "Using the knowledge of pressure point techniques, you cure a target's Abnormal Status and recovers the target's HP. The higher the skill level the higher the chance of success. Can recover Petrify, Frozen, Stun, Poison, Silence, Blind, Hallucination. Caster can recover from Petrify, Frozen and Stun. Consumes 1 Spirit Sphere.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -6988,8 +7479,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 10)",
+          "cooldown": "[0.5 + (Skill Level × 0.5)] seconds",
+          "castRange": "2 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Gentle Touch-Cure ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gentle_Touch-Cure"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2345.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2345",
           "tree": {
@@ -7017,6 +7518,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7027,6 +7532,18 @@ export const inquisitorData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[0.5 + (Skill Level × 0.5)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "2 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player or Caster"
               }
             ],
             "levelTables": [
@@ -7083,10 +7600,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7099,9 +7615,11 @@ export const inquisitorData = {
           "prerequisiteText": "Lightning Ride 3, Power Absorb 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lion's_Howl",
           "description": "Inflicts ranged physical damage to all enemies in a set area around the user and cancels their Maestro and Wanderer songs.\nDamage increases depending on player's base level, and consumes 3 Spheres when used.",
           "levelDetails": [
             {
@@ -7206,8 +7724,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70",
+          "areaOfEffect": "5 x 5 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Lion's Howl ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lion's_Howl"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2517.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2517",
           "tree": {
@@ -7241,6 +7768,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -7255,6 +7786,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "10 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5 ~ 9 x 9"
               }
             ],
             "levelTables": [
@@ -7320,10 +7859,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7336,9 +7874,11 @@ export const inquisitorData = {
           "prerequisiteText": "Fallen Empire 3",
           "group": "Active / Damage(Special)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tiger_Cannon",
           "description": "Deals special physical damage based on caster's MaxHP and MaxSP, to targets around the caster. Consumes 2 Spheres and it can only be used while in Critical Explosion.\nCan be used after Fallen Empire as a combo.",
           "levelDetails": [
             {
@@ -7612,8 +8152,19 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (5 × Skill Level)",
+          "variableCastTime": "[1 + (Skill Level × 0.1)] seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Tiger Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tiger_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2330.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2330",
           "tree": {
@@ -7641,8 +8192,16 @@ export const inquisitorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (5 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[1 + (Skill Level × 0.1)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -7651,6 +8210,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -7812,10 +8379,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7828,9 +8394,11 @@ export const inquisitorData = {
           "prerequisiteText": "Earth Shaker 2",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rampage_Blast",
           "description": "Deals ranged physical damage to targets within 7 x 7 cells around the caster. Consumes 3 Spheres, and can be used when Critical Explosion is active.\nDamage increases based on caster's BaseLv and skill level of Critical Explosion.",
           "levelDetails": [
             {
@@ -7910,8 +8478,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Rampage Blast ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rampage_Blast"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2332.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2332",
           "tree": {
@@ -7939,6 +8516,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7953,6 +8534,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "10 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -8016,10 +8605,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8032,9 +8620,11 @@ export const inquisitorData = {
           "prerequisiteText": "Windmill 1",
           "group": "Active Toggle / Special",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lightning_Walk",
           "description": "When targeted with a ranged or magic attack (single target), there is a chance that you will immediately jump to the attacker. Cancels when the skill activates.",
           "levelDetails": [
             {
@@ -8139,8 +8729,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "duration": "(Skill Level + 4) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Lightning Walk ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lightning_Walk"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2335.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2335",
           "tree": {
@@ -8168,6 +8767,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8182,6 +8785,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level + 4) seconds"
               }
             ],
             "levelTables": [
@@ -8256,10 +8867,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8272,9 +8882,11 @@ export const inquisitorData = {
           "prerequisiteText": "Windmill 1",
           "group": "Active / Counterattack",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Crescent_Elbow",
           "description": "Has a chance to counter an attack, deals damage and knocks back the enemy while taking part of the damage yourself when receiving physical attack. The higher the HP of the target, the more damage it deals. Consumes 2 spirit spheres. Does not work on MVP type monsters.",
           "levelDetails": [
             {
@@ -8379,8 +8991,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80",
+          "duration": "(Skill Level + 2) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Crescent Elbow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Crescent_Elbow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2333.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2333",
           "tree": {
@@ -8408,6 +9029,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "80"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8422,6 +9047,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level + 2) seconds"
               }
             ],
             "levelTables": [
@@ -8496,10 +9129,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8512,9 +9144,11 @@ export const inquisitorData = {
           "prerequisiteText": "Gentle Touch-Cure 1",
           "group": "Active / Buff (To yourself)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gentle_Touch-Energy_Gain",
           "description": "Use the knowledge of pressure point techniques, to improve your fighting spirit which allows you to the chance to gain a spirit sphere when you deal or receive physical damage.\nIncrease damage of Raging Thrust, Chain Crush Combo, Glacier Fist while consuming HP.",
           "levelDetails": [
             {
@@ -8643,8 +9277,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 10)",
+          "fixedCastTime": "[0.5 + (Skill Level × 0.5)] seconds",
+          "duration": "4 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Gentle Touch-Energy Gain ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gentle_Touch-Energy_Gain"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2346.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2346",
           "tree": {
@@ -8672,6 +9316,14 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 10)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[0.5 + (Skill Level × 0.5)] seconds"
+              },
+              {
                 "label": "Variable Cast Time",
                 "value": "1 second"
               },
@@ -8682,6 +9334,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "4 minutes"
               }
             ],
             "levelTables": [
@@ -8765,10 +9425,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8781,9 +9440,11 @@ export const inquisitorData = {
           "prerequisiteText": "Dragon Combo 3 / Fallen Empire 3 / Tiger Cannon 5 / Sky Blow 1",
           "group": "Active / Special",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Flash_Combo",
           "description": "Performs Dragon Combo, Fallen Empire and Tiger Cannon in rapid succession. Uses highest level learned of each of the skills.\nCannot consume any items or use other skills while casting.",
           "levelDetails": [
             {
@@ -8912,8 +9573,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "65",
+          "cooldown": "3 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Flash Combo ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flash_Combo"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5009.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5009",
           "tree": {
@@ -8959,6 +9630,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "65"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8969,6 +9644,18 @@ export const inquisitorData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -9052,10 +9739,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9068,9 +9754,11 @@ export const inquisitorData = {
           "prerequisiteText": "Lightning Walk 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Knuckle_Arrow",
           "description": "Instantly brings you and the target next to each other, damaging the target while knocking the target back. Deals additional damage if the target hits a wall or an obstacle during the knockback.\nThe caster's base level increase the skill damage. Deals additional knock back damage to targets that have more weight. Boss monster that cannot be nocked back get additional skill damage.\nConsumes 1 spirit spheres and no spirit sphere from level 6.",
           "levelDetails": [
             {
@@ -9300,8 +9988,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level x 2)",
+          "castRange": "8 ~ 12 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Knuckle Arrow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Knuckle_Arrow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2336.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2336",
           "tree": {
@@ -9329,6 +10026,10 @@ export const inquisitorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level x 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -9343,6 +10044,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "8 ~ 12 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -9462,10 +10171,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9478,9 +10186,11 @@ export const inquisitorData = {
           "prerequisiteText": "Gentle Touch-Energy Gain 3",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gentle_Touch-Revitalize",
           "description": "Using the knowledge of pressure point techniques, your attack speed, MaxHP and DEF increases while improving your natural and skill HP recovery. HP can be recovered while moving or attacking. This skill cannot be used in combination with Gentle Touch-Energy Gain or Gentle Touch-Convert. Consumes 1 Spirit Spheres.",
           "levelDetails": [
             {
@@ -9585,8 +10295,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 10)",
+          "duration": "4 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Gentle Touch-Revitalize ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gentle_Touch-Revitalize"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2348.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2348",
           "tree": {
@@ -9626,6 +10345,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -9640,6 +10363,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "4 minutes"
               }
             ],
             "levelTables": [
@@ -9660,23 +10391,23 @@ export const inquisitorData = {
                   },
                   {
                     "id": "maxhp-increases-by-10-def",
-                    "label": "Maxhp Increases By 10% / Def"
+                    "label": "MaxHP Increases By 10% / Def"
                   },
                   {
                     "id": "maxhp-increases-by-2-def",
-                    "label": "Maxhp Increases By 2% / Def"
+                    "label": "MaxHP Increases By 2% / Def"
                   },
                   {
                     "id": "maxhp-increases-by-4-def",
-                    "label": "Maxhp Increases By 4% / Def"
+                    "label": "MaxHP Increases By 4% / Def"
                   },
                   {
                     "id": "maxhp-increases-by-6-def",
-                    "label": "Maxhp Increases By 6% / Def"
+                    "label": "MaxHP Increases By 6% / Def"
                   },
                   {
                     "id": "maxhp-increases-by-8-def",
-                    "label": "Maxhp Increases By 8% / Def"
+                    "label": "MaxHP Increases By 8% / Def"
                   },
                   {
                     "id": "range",
@@ -9739,10 +10470,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9755,9 +10485,11 @@ export const inquisitorData = {
           "prerequisiteText": "Gentle Touch-Energy Gain 3",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gentle_Touch-Convert",
           "description": "Using the knowledge of pressure point techniques, increase attack and attack speed and skill damage of Rampage Blast and Knuckle Arrow. Consumes 1 Spirit Sphere and some HP. This skill cannot be used in combination with Gentle Touch-Revitalize.",
           "levelDetails": [
             {
@@ -9887,8 +10619,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 10)",
+          "duration": "4 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Gentle Touch-Convert ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gentle_Touch-Convert"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2347.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2347",
           "tree": {
@@ -9928,6 +10669,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -9942,6 +10687,14 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "4 minutes"
               }
             ],
             "levelTables": [
@@ -10050,10 +10803,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10066,9 +10818,11 @@ export const inquisitorData = {
           "prerequisiteText": "Rising Dragon 5 / Tiger Cannon 5",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gates_of_Hell",
           "description": "Strikes the target with countless blows. The lower your HP, the more damage it deals. Consumes 2 Spirit Spheres and 100 SP. Can be used after Fallen Empire, in that case the damage is slightly higher.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -10210,8 +10964,19 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "variableCastTime": "[0.8 + (Skill Level × 0.2)] seconds",
+          "castDelay": "(Skill Level × 0.1) seconds",
+          "castRange": "7 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Gates of Hell ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gates_of_Hell"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2343.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2343",
           "tree": {
@@ -10245,12 +11010,32 @@ export const inquisitorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
               {
+                "label": "Variable Cast Time",
+                "value": "[0.8 + (Skill Level × 0.2)] seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "(Skill Level × 0.1) seconds"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -10356,10 +11141,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10371,10 +11155,12 @@ export const inquisitorData = {
           "maxLevel": 5,
           "prerequisiteText": "3rd jobs",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Throttle",
           "description": "Exceed the limits of the body by\nsacrificing your own vitality to strengthen yourself\nfor a short time. You will become horribly\nexhausted after the skill's duration.\nFully restores HP when cast and increases\nmovement speed for the skill's duration.\nAll stats +20%.\nAfter the skill duration ends, you will be inflicted\nwith Rebound status. During rebound status,\nyour movement speed is lowered and your\nnatural HP/SP recovery is disabled.\nCannot be removed by dispel or clearance.\n50 Minute playtime cooldown",
           "levelDetails": [
             {
@@ -10479,8 +11265,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Throttle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
@@ -10493,8 +11288,16 @@ export const inquisitorData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
               },
               {
                 "label": "Fixed Cast Time",
@@ -10511,6 +11314,10 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "3000 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -10594,10 +11401,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10624,6 +11430,8 @@ export const inquisitorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Iron_Fists",
           "description": "Increases ATK (Weapon Mastery) with Knuckle class weapons or Bare Handed.",
           "levelDetails": [
             {
@@ -10714,8 +11522,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Iron Fists ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Iron_Fists"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/259.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/259",
           "tree": {
@@ -10824,10 +11639,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10843,6 +11657,8 @@ export const inquisitorData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Summon_Spirit_Sphere",
           "description": "Summons one Spirit Sphere that will orbit the user consuming SP8.\nSummoned sphere is maintained for 10 minutes. and affeccts when using the skill.\nEach sphere increases ATK by 3.",
           "levelDetails": [
             {
@@ -10893,8 +11709,19 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8",
+          "fixedCastTime": "0.5 second",
+          "variableCastTime": "0.5 second",
+          "duration": "10 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Summon Spirit Sphere ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Summon_Spirit_Sphere"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/261.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/261",
           "tree": {
@@ -10922,8 +11749,24 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "8"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.5 second"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "10 minutes"
               }
             ],
             "levelTables": [
@@ -10980,10 +11823,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10999,6 +11841,8 @@ export const inquisitorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Flee_(Skill)",
           "description": "Increases Flee Rate.",
           "levelDetails": [
             {
@@ -11089,8 +11933,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Flee (Skill) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flee_(Skill)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/265.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/265",
           "tree": {
@@ -11213,10 +12064,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11232,6 +12082,8 @@ export const inquisitorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Raging_Trifecta_Blow",
           "description": "Each cast has a 30% chance to inflict one bundle of 3 hits.\nThere's a dalay time (0.3s) for cast Raging quadruple after casting Raging Trifecta Blow.",
           "levelDetails": [
             {
@@ -11322,8 +12174,16 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "castDelay": "1.3 – ( AGI × 0.004) − ( DE x × 0.002) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Raging Trifecta Blow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Raging_Trifecta_Blow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/263.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/263",
           "tree": {
@@ -11349,6 +12209,10 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1.3 – ( AGI × 0.004) − ( DE x × 0.002) seconds"
               }
             ],
             "levelTables": [
@@ -11426,10 +12290,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11445,6 +12308,8 @@ export const inquisitorData = {
           "target": "1 Party Member",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spiritual_Bestowment",
           "description": "Transfer the caster's Spiritual\nSpheres to a targeted Party Member. Each cast\nwill transfer 1 Spiritual Sphere.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -11461,8 +12326,19 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "castDelay": "1 second",
+          "duration": "10 minutes",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Spiritual Bestowment ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spiritual_Bestowment"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1015.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1015",
           "tree": {
@@ -11483,6 +12359,10 @@ export const inquisitorData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -11491,12 +12371,24 @@ export const inquisitorData = {
                 "value": "1 second"
               },
               {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Party Member"
+              },
+              {
+                "label": "Duration",
+                "value": "10 minutes"
               }
             ],
             "levelTables": [
@@ -11520,10 +12412,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11539,6 +12430,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spiritual_Sphere_Absorption",
           "description": "Absorbs all Spirit Spheres the user/target has to regain SP consuming SP5,.\nregains 7 SP per sphere. In PvP, Guild battle, it is available to absorb the spirit sphere of another monk.\nVersus monsters, each cast has a 20% chance to regain SP equal to twice the target's level.\nThis skill does not work for boss monsters or guardians..",
           "levelDetails": [],
           "variableCastTime": "0 seconds",
@@ -11555,8 +12448,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "fixedCastTime": "0.5 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Spiritual Sphere Absorption ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spiritual_Sphere_Absorption"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/262.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/262",
           "tree": {
@@ -11584,6 +12487,14 @@ export const inquisitorData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Variable Cast Time",
                 "value": "0 seconds"
               },
@@ -11594,6 +12505,10 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -11621,10 +12536,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11640,6 +12554,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Occult_Impaction",
           "description": "Strikes inside a single target with a psychic impact.\ninflict piercing physical damage in proportion with the target's defense.\nThe higher the target's equipment defense, the more damage it has..\nDamage of skill itself is increased by 50% when using in Root status.",
           "levelDetails": [
             {
@@ -11690,8 +12606,20 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(10 + (Skill Level x 11) - (Skill Level) ^2 ) ÷ 2",
+          "fixedCastTime": "0.5 seconds",
+          "variableCastTime": "0.5 seconds",
+          "castDelay": "0.5 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Occult Impaction ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Occult_Impaction"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/266.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/266",
           "tree": {
@@ -11717,6 +12645,26 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "(10 + (Skill Level x 11) - (Skill Level) ^2 ) ÷ 2"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -11768,10 +12716,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11787,6 +12734,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Root",
           "description": "Catch the target attacking you and stop the caster and target for 10 seconds consuming SP10 and 1 summoned spirit sphere.\nWhen one of the two becomes incapable of fighting, the other one can move.\nWhen the skill level increases, some skill attacks while holding the target become possible.\nWhen used on boss monsters, the casting time is reduced.",
           "levelDetails": [
             {
@@ -11916,8 +12865,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "10 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Root ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Root"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/269.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/269",
           "tree": {
@@ -11945,6 +12904,10 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -11961,8 +12924,16 @@ export const inquisitorData = {
                 "value": "3 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "10 seconds"
               }
             ],
             "levelTables": [
@@ -12046,10 +13017,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12065,6 +13035,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Raging_Quadruple_Blow",
           "description": "This skill can only be used immediately after Raging Trifecta Blow or during Level 4 Root status and can be followed up with Raging Thrust.\nInflicts four hits while spinning the current target.\nWhen used as a knuckle weapon, it hits the enemy 6 times with double damage.",
           "levelDetails": [
             {
@@ -12115,8 +13087,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level + 10)",
+          "castDelay": "1.3 – [( AGI × 0.004) − ( DE x × 0.002)] seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Raging Quadruple Blow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Raging_Quadruple_Blow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/272.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/272",
           "tree": {
@@ -12142,6 +13124,18 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "(Skill Level + 10)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1.3 – [( AGI × 0.004) − ( DE x × 0.002)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -12193,10 +13187,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12212,6 +13205,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Raging_Palm_Strike",
           "description": "Strike an enemy using the palms,\npushing back the enemy and causing damage, which\nis determined by the skill's level, after a\n1 second delay. This skill can only be used\nduring the Fury status.",
           "levelDetails": [
             {
@@ -12262,8 +13257,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level × 2)",
+          "castDelay": "0.3 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Raging Palm Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Raging_Palm_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/370.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/370",
           "tree": {
@@ -12295,6 +13300,18 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "(Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -12346,10 +13363,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12365,6 +13381,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Excruciating_Palm",
           "description": "Focus your inner energies and attack an enemy. The targeted enemy receives 800% ATK damage, and adds a chance to push back and stun nearby monsters. Drains SP 40, HP 200 per use.",
           "levelDetails": [],
           "levelExtras": [
@@ -12378,8 +13396,19 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castDelay": "2 seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Excruciating Palm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Excruciating_Palm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1016.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1016",
           "tree": {
@@ -12400,8 +13429,24 @@ export const inquisitorData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -12425,10 +13470,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12444,6 +13488,8 @@ export const inquisitorData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fury",
           "description": "Unleashes the inner power of the user to increase Critical Hit Rate. Each cast uses five Spirit Spheres.\nIn Fury status, SP natural recovery speed is reduced by 50%.",
           "levelDetails": [
             {
@@ -12494,8 +13540,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "duration": "3 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Fury ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fury"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/270.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/270",
           "tree": {
@@ -12523,8 +13578,16 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "3 minutes"
               }
             ],
             "levelTables": [
@@ -12581,10 +13644,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12600,6 +13662,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Throw_Spirit_Sphere",
           "description": "Throws the Spirit Spheres at a single target that will inflict ranged physical damage.\nDamage of skill itself is increased by 50% when using in Root status.",
           "levelDetails": [
             {
@@ -12752,8 +13816,19 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8 + (Skill Level x 4)",
+          "castDelay": "0.5 seconds",
+          "cooldown": "1 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Throw Spirit Sphere ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Throw_Spirit_Sphere"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/267.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/267",
           "tree": {
@@ -12781,12 +13856,28 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "8 + (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
               {
                 "label": "Variable Cast Time",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -12874,10 +13965,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12893,6 +13983,8 @@ export const inquisitorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spiritual_Cadence",
           "description": "Enables to naturally recover additional HP and SP while the user is sitting.\nWhen overweight(over 70%), HP and SP is recovered every 20 seconds instead.\nBelow is the recovery amount for 10sec.",
           "levelDetails": [
             {
@@ -12943,8 +14035,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Spiritual Cadence ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spiritual_Cadence"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/260.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/260",
           "tree": {
@@ -13030,10 +14129,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13049,6 +14147,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Raging_Thrust",
           "description": "This skill can only be used immediately after Raging Quadruple Blow.\nPerforms a brutal, finishing strike at the current target. Each cast uses a Spirit Sphere.\nDamage is further increased by caster's STR.\nIf learned Guillotine Fist, there's a delay time(0.3) for casting Guillotine Fist.\nThis skill can be followed up with Chain Crush Combo, Glacier Fist or Guillotine Fist if the user is in Fury status and has 4 Spirit Spheres after this skill.",
           "levelDetails": [
             {
@@ -13099,8 +14199,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level + 2)",
+          "castDelay": "1.3 – [( AGI × 0.004) − ( DE x × 0.002)] seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Raging Thrust ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Raging_Thrust"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/273.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/273",
           "tree": {
@@ -13126,6 +14236,18 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "(Skill Level + 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1.3 – [( AGI × 0.004) − ( DE x × 0.002)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -13183,10 +14305,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13199,9 +14320,11 @@ export const inquisitorData = {
           "prerequisiteText": "Fury 5",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Zen",
           "description": "Summon 5 Spirit Spheres at one time.\nThe cast time of this skill is double the time\nof the Summon Spirit Sphere skill.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -13219,6 +14342,7 @@ export const inquisitorData = {
               ]
             }
           ],
+          "spCost": "20",
           "translations": {
             "pt-BR": {
               "name": " Zen ",
@@ -13255,6 +14379,10 @@ export const inquisitorData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -13269,6 +14397,10 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -13292,7 +14424,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -13311,6 +14442,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Guillotine_Fist",
           "description": "Requires the user to be in Fury status.\nPerforms an ultimate, devastating strike at a single/current target to inflict massive piercing physical damage at cost of all of the user's SP.\nAfter the execution of this skill, the user cannot regenerate SP naturally for 10 seconds afterwards.",
           "levelDetails": [],
           "levelExtras": [
@@ -13340,8 +14473,21 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "Remaining SP",
+          "fixedCastTime": "2.25 - (Skill Level × 0.25) seconds",
+          "variableCastTime": "2.25 - (Skill Level × 0.25) seconds",
+          "castDelay": "3.5 − (Skill Level × 0.5) seconds",
+          "cooldown": "3 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Guillotine Fist ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Guillotine_Fist"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/271.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/271",
           "tree": {
@@ -13373,6 +14519,30 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "Remaining SP"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "2.25 - (Skill Level × 0.25) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2.25 - (Skill Level × 0.25) seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "3.5 − (Skill Level × 0.5) seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -13424,10 +14594,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13443,6 +14612,8 @@ export const inquisitorData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mental_Strength",
           "description": "Strengthens the user's mind to temporarily reduce all incoming damage to 10%. Each cast uses five Spirit Spheres and SP200.\nCost of reduced Movement Speed and Attack Speed and the inability of using active and offensive skills.",
           "levelDetails": [
             {
@@ -13493,8 +14664,20 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "200",
+          "fixedCastTime": "2.5 seconds",
+          "variableCastTime": "2.5 seconds",
+          "castDelay": "(Skill Duration)",
+          "duration": "(Skill Level × 30) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Mental Strength ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mental_Strength"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/268.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/268",
           "tree": {
@@ -13522,6 +14705,22 @@ export const inquisitorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "200"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "2.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "(Skill Duration)"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
               }
@@ -13535,43 +14734,43 @@ export const inquisitorData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 30sec",
+                      "duration": "30 seconds",
                       "sp-cost": "200"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 60sec",
+                      "duration": "60 seconds",
                       "sp-cost": "200"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 90sec",
+                      "duration": "90 seconds",
                       "sp-cost": "200"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration:120sec",
+                      "duration": "120 seconds",
                       "sp-cost": "200"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration:150sec",
+                      "duration": "150 seconds",
                       "sp-cost": "200"
                     }
                   }
@@ -13580,10 +14779,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13599,6 +14797,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Glacier_Fist",
           "description": "A combo skill that can be cast\nafter using Raging Quadruple Blow. An enemy hit\nby this skill is immobilized for a short period\nof time. Each cast requires 1 Spirit Sphere.",
           "levelDetails": [
             {
@@ -13649,8 +14849,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "2 + (Skill Level × 2)",
+          "castDelay": "1.3 – [( AGI × 0.004) − ( DE x × 0.002)] seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Glacier Fist ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Glacier_Fist"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/371.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/371",
           "tree": {
@@ -13688,6 +14898,18 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "2 + (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1.3 – [( AGI × 0.004) − ( DE x × 0.002)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -13739,10 +14961,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13755,9 +14976,11 @@ export const inquisitorData = {
           "prerequisiteText": "Spiritual Cadence 2, Guillotine Fist 3, Mental Strength 3",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Snap",
           "description": "Instantly transports the user to a targeted location. Each cast uses a Spirit Sphere and SP 14.\nIf there's solid obstacle between the user and the destination, this skill is unavailable.\nIn Fury status, a Spirit Sphere is not consumed.\nThere is a Cast Delay of 2 seconds for a casted Guillotine Fist immediately after this skill.",
           "levelDetails": [],
           "levelExtras": [
@@ -13771,8 +14994,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "14",
+          "castDelay": "ASPD Based *",
+          "castRange": "18 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Snap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Snap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/264.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/264",
           "tree": {
@@ -13810,6 +15043,22 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "14"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD Based *"
+              },
+              {
+                "label": "Cast Range",
+                "value": "18 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
               }
             ],
             "levelTables": [
@@ -13833,10 +15082,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13852,6 +15100,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Chain_Crush_Combo",
           "description": "A combo skill that can be cast\nafter using Raging Thrust. Glacier Fist cannot\nbe used after this skill, although it can be\nfollowed up with Guillotine Fist.\nEach cast requires 1 Spirit Spheres.",
           "levelDetails": [
             {
@@ -13942,8 +15192,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "2 + (Skill Level × 2)",
+          "castDelay": "(1~5) 0.8 seconds; (6~10) 1 second",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Chain Crush Combo ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chain_Crush_Combo"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/372.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/372",
           "tree": {
@@ -13981,6 +15241,18 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "2 + (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "(1~5) 0.8 seconds; (6~10) 1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -14062,10 +15334,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14092,6 +15363,8 @@ export const inquisitorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -14170,8 +15443,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -14273,10 +15553,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14292,6 +15571,8 @@ export const inquisitorData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ruwach",
           "description": "Each cast consumes SP10, reveal hidden enemies within 5*5cell around it.\nIf the hidden is enemy, inflict 145% Holy property magic damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -14305,8 +15586,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "10 seconds",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Ruwach ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ruwach"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/24.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/24",
           "tree": {
@@ -14327,8 +15618,20 @@ export const inquisitorData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "10 seconds"
               }
             ],
             "levelTables": [
@@ -14352,10 +15655,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14371,6 +15673,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Heal",
           "description": "Restores HP of a single target. This skill is also affected by User's LV, total INT, MATK.\nVersus Undead property targets, inflicts Holy property damage equal to half the amount of the HP restored.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -14424,8 +15728,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 3)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Heal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Heal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/28.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/28",
           "tree": {
@@ -14446,6 +15759,10 @@ export const inquisitorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -14460,6 +15777,10 @@ export const inquisitorData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -14541,10 +15862,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14560,6 +15880,8 @@ export const inquisitorData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Aqua_Benedicta",
           "description": "Draws water under the caster to create a single Holy Water from it. Requires the player to be in shallow water and each cast consumes SP10.",
           "levelDetails": [],
           "levelExtras": [
@@ -14573,6 +15895,10 @@ export const inquisitorData = {
               ]
             }
           ],
+          "spCost": "10",
+          "fixedCastTime": "0.2 seconds",
+          "variableCastTime": "0.8 seconds",
+          "castDelay": "0.5 seconds",
           "translations": {
             "pt-BR": {
               "name": " Aqua Benedicta ",
@@ -14602,6 +15928,22 @@ export const inquisitorData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.8 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
               }
@@ -14627,7 +15969,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -14646,6 +15987,8 @@ export const inquisitorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Divine_Protection",
           "description": "Raises Soft Defense against Demon and Undead race monsters. The higher the character level, the higher the damage reduction.\nDecrease the damage received from Demon and Undead race monsters by the amount of damage reduction.",
           "levelDetails": [
             {
@@ -14736,8 +16079,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Divine Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Divine_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/22.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/22",
           "tree": {
@@ -14847,10 +16197,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14866,6 +16215,8 @@ export const inquisitorData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Holy_Light",
           "description": "Summon holy light to counter evil.",
           "levelDetails": [],
           "castDelay": "0 seconds",
@@ -14881,8 +16232,19 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "fixedCastTime": "0.2 seconds",
+          "variableCastTime": "0.8 seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Holy Light ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Holy_Light"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/156.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/156",
           "tree": {
@@ -14903,12 +16265,28 @@ export const inquisitorData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.8 seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "0 seconds"
               },
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -14936,10 +16314,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14955,6 +16332,8 @@ export const inquisitorData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -14968,8 +16347,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -14988,6 +16376,14 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -15015,10 +16411,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15034,6 +16429,8 @@ export const inquisitorData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Teleport",
           "description": "Warps the user to a different location instantly.\nThis skill is disabled within land protector effect.",
           "levelDetails": [
             {
@@ -15060,8 +16457,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "11 − Skill Level",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " Teleport ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Teleport"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/26.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/26",
           "tree": {
@@ -15087,6 +16493,14 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "2"
+              },
+              {
+                "label": "SP Cost",
+                "value": "11 − Skill Level"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -15126,10 +16540,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15145,6 +16558,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cure",
           "description": "Cures a single target from the following status effects: Silence, Chaos and Blind and consumes SP15.",
           "levelDetails": [],
           "levelExtras": [
@@ -15158,8 +16573,16 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "translations": {
+            "pt-BR": {
+              "name": " Cure ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cure"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/35.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/35",
           "tree": {
@@ -15187,6 +16610,10 @@ export const inquisitorData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -15212,10 +16639,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15231,6 +16657,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Places a temporary buff on a single target that increases AGI and Movement Speed. Each cast consumes additional HP10.\nWhen use this skill to the target leaving in [Abnormal Status : Decrease agility], the target releases the state and increases agility.",
           "levelDetails": [
             {
@@ -15325,8 +16753,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Increase agility ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Increase_agility"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/29.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/29",
           "tree": {
@@ -15381,66 +16816,108 @@ export const inquisitorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "agi",
+                    "label": "Agi"
+                  },
+                  {
+                    "id": "atk-speed",
+                    "label": "Atk Speed:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "duration": "60 seconds",
+                      "agi": "+3",
+                      "atk-speed": "+1%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "duration": "80 seconds",
+                      "agi": "+4",
+                      "atk-speed": "+2%",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "duration": "100 seconds",
+                      "agi": "+5",
+                      "atk-speed": "+3%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "duration": "120 seconds",
+                      "agi": "+6",
+                      "atk-speed": "+4%",
                       "sp-cost": "27"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "duration": "140 seconds",
+                      "agi": "+7",
+                      "atk-speed": "+5%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "duration": "160 seconds",
+                      "agi": "+8",
+                      "atk-speed": "+6%",
                       "sp-cost": "33"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "duration": "180 seconds",
+                      "agi": "+9",
+                      "atk-speed": "+7%",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "duration": "200 seconds",
+                      "agi": "+10",
+                      "atk-speed": "+8%",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "duration": "220 seconds",
+                      "agi": "+11",
+                      "atk-speed": "+9%",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "duration": "240 seconds",
+                      "agi": "+12",
+                      "atk-speed": "+10%",
                       "sp-cost": "45"
                     }
                   }
@@ -15449,10 +16926,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15468,6 +16944,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Blessing",
           "description": "Places a temporary buff on a single target that increases STR, DEX, INT and Accuracy rate. This skill also purges the target of Curse and Stone statuses.\nVersus Undead property and Demon race monsters, halves their STR, DEX and INT instead.",
           "levelDetails": [
             {
@@ -15558,8 +17036,18 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "24 + (Skill Level × 4)",
+          "duration": "40 + (Skill Level × 20) seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Blessing ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blessing"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/34.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/34",
           "tree": {
@@ -15587,6 +17075,14 @@ export const inquisitorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "24 + (Skill Level × 4)"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -15600,78 +17096,106 @@ export const inquisitorData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "hit",
+                    "label": "Hit"
+                  },
+                  {
+                    "id": "str-int-dex",
+                    "label": "Str,int,dex"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "STR,INT,DE x +1,HIT+2, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "str-int-dex": "+1",
+                      "hit": "+2",
                       "sp-cost": "28"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "STR,INT,DE x +2,HIT+4, Duration: 80sec",
+                      "duration": "80 seconds",
+                      "str-int-dex": "+2",
+                      "hit": "+4",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "STR,INT,DE x +3,HIT+6, Duration:100sec",
+                      "duration": "100 seconds",
+                      "str-int-dex": "+3",
+                      "hit": "+6",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "STR,INT,DE x +4,HIT+8, Duration:120sec",
+                      "duration": "120 seconds",
+                      "str-int-dex": "+4",
+                      "hit": "+8",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "STR,INT,DE x +5,HIT+10, Duration:140sec",
+                      "duration": "140 seconds",
+                      "str-int-dex": "+5",
+                      "hit": "+10",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "STR,INT,DE x +6,HIT+12, Duration:160sec",
+                      "duration": "160 seconds",
+                      "str-int-dex": "+6",
+                      "hit": "+12",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "STR,INT,DE x +7,HIT+14, Duration:180sec",
+                      "duration": "180 seconds",
+                      "str-int-dex": "+7",
+                      "hit": "+14",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "STR,INT,DE x +8,HIT+16, Duration:200sec",
+                      "duration": "200 seconds",
+                      "str-int-dex": "+8",
+                      "hit": "+16",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "STR,INT,DE x +9,HIT+18, Duration:220sec",
+                      "duration": "220 seconds",
+                      "str-int-dex": "+9",
+                      "hit": "+18",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "STR,INT,DE x +10,HIT+20, Duration:240sec",
+                      "duration": "240 seconds",
+                      "str-int-dex": "+10",
+                      "hit": "+20",
                       "sp-cost": "64"
                     }
                   }
@@ -15680,10 +17204,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15699,6 +17222,8 @@ export const inquisitorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Raises Physical Attack (Weapon Mastery) against Demon and Undead race monsters.\nDamage is added to the physical damage given to Demon and Undead race monsters.",
           "levelDetails": [
             {
@@ -15789,8 +17314,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Demonbane ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Demonbane"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/23.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/23",
           "tree": {
@@ -15893,10 +17425,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15912,6 +17443,8 @@ export const inquisitorData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Angelus",
           "description": "Increase physical defense and MaxHP on the user and all party members in a 14x14 area around the user.",
           "levelDetails": [
             {
@@ -16006,6 +17539,9 @@ export const inquisitorData = {
               ]
             }
           ],
+          "spCost": "20 + (Skill Level × 3)",
+          "duration": "(Skill Level × 30) seconds",
+          "areaOfEffect": "14 x 14",
           "translations": {
             "pt-BR": {
               "name": " Angelus ",
@@ -16042,6 +17578,10 @@ export const inquisitorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.15 seconds"
               },
@@ -16060,6 +17600,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "14 x 14"
               }
             ],
             "levelTables": [
@@ -16071,78 +17615,106 @@ export const inquisitorData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "hp",
+                    "label": "Hp"
+                  },
+                  {
+                    "id": "vit-defense",
+                    "label": "Vit Defense"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "VIT Defense+ 5%, HP+ 50, Duration: 30sec",
+                      "duration": "30 seconds",
+                      "vit-defense": "+ 5%",
+                      "hp": "+ 50",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "VIT Defense+10%, HP+100, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "vit-defense": "+10%",
+                      "hp": "+100",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "VIT Defense+15%, HP+150, Duration: 90sec",
+                      "duration": "90 seconds",
+                      "vit-defense": "+15%",
+                      "hp": "+150",
                       "sp-cost": "29"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "VIT Defense+20%, HP+200, Duration:120sec",
+                      "duration": "120 seconds",
+                      "vit-defense": "+20%",
+                      "hp": "+200",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "VIT Defense+25%, HP+250, Duration:150sec",
+                      "duration": "150 seconds",
+                      "vit-defense": "+25%",
+                      "hp": "+250",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "VIT Defense+30%, HP+300, Duration:180sec",
+                      "duration": "180 seconds",
+                      "vit-defense": "+30%",
+                      "hp": "+300",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "VIT Defense+35%, HP+350, Duration:210sec",
+                      "duration": "210 seconds",
+                      "vit-defense": "+35%",
+                      "hp": "+350",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "VIT Defense+40%, HP+400, Duration:240sec",
+                      "duration": "240 seconds",
+                      "vit-defense": "+40%",
+                      "hp": "+400",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "VIT Defense+45%, HP+450, Duration:270sec",
+                      "duration": "270 seconds",
+                      "vit-defense": "+45%",
+                      "hp": "+450",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "VIT Defense+50%, HP+500, Duration:300sec",
+                      "duration": "300 seconds",
+                      "vit-defense": "+50%",
+                      "hp": "+500",
                       "sp-cost": "50"
                     }
                   }
@@ -16151,7 +17723,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -16167,9 +17738,11 @@ export const inquisitorData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -16183,8 +17756,17 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -16203,6 +17785,18 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -16226,10 +17820,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16245,6 +17838,8 @@ export const inquisitorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Creates a Warp Portal that will transport those that enter to the portal's destination. Up to 8 players can be transported regardless of the skill level. Each cast consumes a Blue Gemstone.\nThis skill is disabled within land protector effect.",
           "levelDetails": [
             {
@@ -16287,8 +17882,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Warp portal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Warp_portal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/27.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/27",
           "tree": {
@@ -16363,10 +17965,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16382,6 +17983,8 @@ export const inquisitorData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Attempts to place a debuff[Abnormal Status : Decrease agility] on a single target.\nTarget's movement speed and AGI is decreased during the Duration.",
           "levelDetails": [
             {
@@ -16476,8 +18079,15 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Decrease agility ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Decrease_agility"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/30.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/30",
           "tree": {
@@ -16534,78 +18144,106 @@ export const inquisitorData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "agi",
+                    "label": "Agi"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "AGI- 3, success rate: 53%, Duration: 20sec",
+                      "duration": "20 seconds",
+                      "agi": "- 3",
+                      "effect": "success rate: 53%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "AGI- 4, success rate: 56%, Duration: 25sec",
+                      "duration": "25 seconds",
+                      "agi": "- 4",
+                      "effect": "success rate: 56%",
                       "sp-cost": "17"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "AGI- 5, success rate: 59%, Duration: 30sec",
+                      "duration": "30 seconds",
+                      "agi": "- 5",
+                      "effect": "success rate: 59%",
                       "sp-cost": "19"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "AGI- 6, success rate: 62%, Duration: 35sec",
+                      "duration": "35 seconds",
+                      "agi": "- 6",
+                      "effect": "success rate: 62%",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "AGI- 7, success rate: 65%, Duration: 40sec",
+                      "duration": "40 seconds",
+                      "agi": "- 7",
+                      "effect": "success rate: 65%",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "AGI- 8, success rate: 68%, Duration: 45sec",
+                      "duration": "45 seconds",
+                      "agi": "- 8",
+                      "effect": "success rate: 68%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "AGI- 9, success rate: 71%, Duration: 50sec",
+                      "duration": "50 seconds",
+                      "agi": "- 9",
+                      "effect": "success rate: 71%",
                       "sp-cost": "27"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "AGI-10, success rate: 74%, Duration: 55sec",
+                      "duration": "55 seconds",
+                      "agi": "-10",
+                      "effect": "success rate: 74%",
                       "sp-cost": "29"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "AGI-11, success rate: 77%, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "agi": "-11",
+                      "effect": "success rate: 77%",
                       "sp-cost": "31"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "AGI-12, success rate: 80%, Duration: 65sec",
+                      "duration": "65 seconds",
+                      "agi": "-12",
+                      "effect": "success rate: 80%",
                       "sp-cost": "33"
                     }
                   }
@@ -16614,10 +18252,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16633,6 +18270,8 @@ export const inquisitorData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Signum_Crucis",
           "description": "Decreases the hard defense of all Undead property and Demon race monsters in the caster's screen.",
           "levelDetails": [
             {
@@ -16727,6 +18366,8 @@ export const inquisitorData = {
               ]
             }
           ],
+          "spCost": "35",
+          "areaOfEffect": "Screen",
           "translations": {
             "pt-BR": {
               "name": " Signum Crucis ",
@@ -16763,6 +18404,10 @@ export const inquisitorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "35"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.15 seconds"
               },
@@ -16781,6 +18426,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "Screen"
               }
             ],
             "levelTables": [
@@ -16794,76 +18443,90 @@ export const inquisitorData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "physical-defense",
+                    "label": "Physical Defense"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Physical Defense -14%, success rate: 27%",
+                      "physical-defense": "-14%",
+                      "effect": "success rate: 27%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Physical Defense -18%, success rate: 31%",
+                      "physical-defense": "-18%",
+                      "effect": "success rate: 31%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Physical Defense -22%, success rate: 35%",
+                      "physical-defense": "-22%",
+                      "effect": "success rate: 35%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Physical Defense -26%, success rate: 39%",
+                      "physical-defense": "-26%",
+                      "effect": "success rate: 39%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Physical Defense -30%, success rate: 43%",
+                      "physical-defense": "-30%",
+                      "effect": "success rate: 43%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Physical Defense -34%, success rate: 47%",
+                      "physical-defense": "-34%",
+                      "effect": "success rate: 47%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Physical Defense -38%, success rate: 51%",
+                      "physical-defense": "-38%",
+                      "effect": "success rate: 51%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Physical Defense -42%, success rate: 55%",
+                      "physical-defense": "-42%",
+                      "effect": "success rate: 55%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Physical Defense -46%, success rate: 59%",
+                      "physical-defense": "-46%",
+                      "effect": "success rate: 59%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Physical Defense -50%, success rate: 63%",
+                      "physical-defense": "-50%",
+                      "effect": "success rate: 63%",
                       "sp-cost": "35"
                     }
                   }
@@ -16872,7 +18535,6 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -16888,9 +18550,11 @@ export const inquisitorData = {
           "prerequisiteText": "Warp portal 4",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Pneuma",
           "description": "Each cast consumes SP10, Creates a green cloud on a targeted location that blocks Ranged physical damage for ten seconds.",
           "levelDetails": [],
           "levelExtras": [
@@ -16904,8 +18568,20 @@ export const inquisitorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "ASPD",
+          "duration": "10 seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Pneuma ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pneuma"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/25.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/25",
           "tree": {
@@ -16931,6 +18607,30 @@ export const inquisitorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "10 seconds"
               }
             ],
             "levelTables": [
@@ -16954,10 +18654,9 @@ export const inquisitorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16977,6 +18676,8 @@ export const inquisitorData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Will_of_Faith",
       "description": "Fortify your determination to eradicate evil.\nKnuckles inflict more Physical damage on Demon and Undead monsters and decrease Physical/Magic damage from them.",
       "levelDetails": [],
       "levelExtras": [
@@ -17026,8 +18727,15 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Will of Faith ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Will_of_Faith"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5240.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5240",
       "tree": {
@@ -17123,10 +18831,9 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17142,6 +18849,8 @@ export const inquisitorData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Sincere_Faith",
       "description": "Strengthen your faith, increasing your ASPD and adding durability to your attacks.\nCan't be used with Powerful Faith or Firm Faith.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -17175,8 +18884,17 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "50 + (Skill Level x 4)",
+      "duration": "90 + (Skill Level x 30)",
+      "translations": {
+        "pt-BR": {
+          "name": " Sincere Faith ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Sincere_Faith"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5242.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5242",
       "tree": {
@@ -17204,6 +18922,10 @@ export const inquisitorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "50 + (Skill Level x 4)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -17222,6 +18944,10 @@ export const inquisitorData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "90 + (Skill Level x 30)"
           }
         ],
         "levelTables": [
@@ -17269,10 +18995,9 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17288,6 +19013,8 @@ export const inquisitorData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Firm_Faith",
       "description": "Strengthen your faith, increasing your Max HP and RES.\nCan't be used with Powerful Faith or Sincere Faith.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -17321,8 +19048,17 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "50 + (Skill Level x 4)",
+      "duration": "90 + (Skill Level x 30)",
+      "translations": {
+        "pt-BR": {
+          "name": " Firm Faith ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Firm_Faith"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5239.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5239",
       "tree": {
@@ -17350,6 +19086,10 @@ export const inquisitorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "50 + (Skill Level x 4)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -17368,6 +19108,10 @@ export const inquisitorData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "90 + (Skill Level x 30)"
           }
         ],
         "levelTables": [
@@ -17415,10 +19159,9 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17434,6 +19177,8 @@ export const inquisitorData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Powerful_Faith",
       "description": "Strengthen your faith, increasing your ATK and P. ATK.\nCan't be used with Firm Faith or Sincere Faith.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -17467,8 +19212,17 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "50 + (Skill Level x 4)",
+      "duration": "90 + (Skill Level x 30)",
+      "translations": {
+        "pt-BR": {
+          "name": " Powerful Faith ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Powerful_Faith"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5238.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5238",
       "tree": {
@@ -17496,6 +19250,10 @@ export const inquisitorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "50 + (Skill Level x 4)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -17514,6 +19272,10 @@ export const inquisitorData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "90 + (Skill Level x 30)"
           }
         ],
         "levelTables": [
@@ -17561,10 +19323,9 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17580,6 +19341,8 @@ export const inquisitorData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Deals Melee Physics damage to the target and targets within a 7x7 cell range around the target, and marks them for 5 seconds.\nDamage increases additionally based on the caster's base level and POW.",
       "levelDetails": [
         {
@@ -17634,8 +19397,15 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " First Brand(First Brand) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/First_Brand(First_Brand)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5245.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5245",
       "tree": {
@@ -17728,7 +19498,6 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "First Brand",
@@ -17785,7 +19554,7 @@ export const inquisitorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17801,6 +19570,8 @@ export const inquisitorData = {
       "target": "Instant Cast",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Oleum_Sanctum",
       "description": "Baptizes surrounding enemies around the user, deals long ranged physical damage,\ngives the debuff that the targets will taken more damage from long ranged physical damage for the skill duration.\nDamage is additionally increased depending on the user's base level and POW.",
       "levelDetails": [
         {
@@ -17854,6 +19625,11 @@ export const inquisitorData = {
           ]
         }
       ],
+      "spCost": "20 + (Skill Level × 10)",
+      "cooldown": "3 seconds",
+      "duration": "3~7 seconds",
+      "castRange": "9 cells",
+      "areaOfEffect": "3 x 3~7 x 7",
       "translations": {
         "pt-BR": {
           "name": " Oleum Sanctum ",
@@ -17896,6 +19672,10 @@ export const inquisitorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "20 + (Skill Level × 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -17906,6 +19686,14 @@ export const inquisitorData = {
           {
             "label": "Cast Delay",
             "value": "0 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "3 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "9 cells"
           },
           {
             "label": "Target",
@@ -17923,6 +19711,10 @@ export const inquisitorData = {
               {
                 "id": "area-of-effect",
                 "label": "Area of Effect"
+              },
+              {
+                "id": "duration",
+                "label": "Duration"
               }
             ],
             "rows": [
@@ -17930,6 +19722,7 @@ export const inquisitorData = {
                 "level": 1,
                 "values": {
                   "area-of-effect": "7x7",
+                  "duration": "3 seconds",
                   "sp-cost": "45"
                 }
               },
@@ -17937,6 +19730,7 @@ export const inquisitorData = {
                 "level": 2,
                 "values": {
                   "area-of-effect": "7x7",
+                  "duration": "4 seconds",
                   "sp-cost": "55"
                 }
               },
@@ -17944,6 +19738,7 @@ export const inquisitorData = {
                 "level": 3,
                 "values": {
                   "area-of-effect": "7x7",
+                  "duration": "5 seconds",
                   "sp-cost": "65"
                 }
               },
@@ -17951,6 +19746,7 @@ export const inquisitorData = {
                 "level": 4,
                 "values": {
                   "area-of-effect": "9x9",
+                  "duration": "6 seconds",
                   "sp-cost": "75"
                 }
               },
@@ -17958,6 +19754,7 @@ export const inquisitorData = {
                 "level": 5,
                 "values": {
                   "area-of-effect": "9x9",
+                  "duration": "7 seconds",
                   "sp-cost": "85"
                 }
               }
@@ -17966,7 +19763,6 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Oleum Sanctum",
@@ -18092,6 +19888,8 @@ export const inquisitorData = {
       "target": "Self-Buff",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "300Accept the true belief and fight with it.\nAdditionally, while the Power of Belief state is maintained, you can use the Fallen Empire without consuming the device.",
       "levelDetails": [
         {
@@ -18145,8 +19943,15 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " First Faith Power(First Faith Power) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/First_Faith_Power(First_Faith_Power)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5246.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5246",
       "tree": {
@@ -18213,35 +20018,35 @@ export const inquisitorData = {
               {
                 "level": 1,
                 "values": {
-                  "cooldown": "180seconds",
+                  "cooldown": "180 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "cooldown": "150seconds",
+                  "cooldown": "150 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "cooldown": "120seconds",
+                  "cooldown": "120 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "cooldown": "90seconds",
+                  "cooldown": "90 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "cooldown": "60seconds",
+                  "cooldown": "60 seconds",
                   "sp-cost": "60"
                 }
               }
@@ -18250,7 +20055,6 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "First Faith Power",
@@ -18266,7 +20070,7 @@ export const inquisitorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18282,6 +20086,8 @@ export const inquisitorData = {
       "target": "Self-Buff",
       "recoversAp": "",
       "consumesAp": "80/70/60/50/40",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Available in Power of Conviction state.\nYou will become God's judge for 300 seconds and be able to execute judgment on evil deeds.\nAdditionally, in judgement mode, you can use the Fallen Empire and Flash Combo without consuming any equipment.",
       "levelDetails": [
         {
@@ -18335,8 +20141,15 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Judge(Judge) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Judge(Judge)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5247.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5247",
       "tree": {
@@ -18401,35 +20214,35 @@ export const inquisitorData = {
               {
                 "level": 1,
                 "values": {
-                  "cooldown": "180seconds",
+                  "cooldown": "180 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "cooldown": "150seconds",
+                  "cooldown": "150 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "cooldown": "120seconds",
+                  "cooldown": "120 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "cooldown": "90seconds",
+                  "cooldown": "90 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "cooldown": "60seconds",
+                  "cooldown": "60 seconds",
                   "sp-cost": "60"
                 }
               }
@@ -18438,10 +20251,9 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18457,6 +20269,8 @@ export const inquisitorData = {
       "target": "Self-Buff",
       "recoversAp": "",
       "consumesAp": "120/105/90/75/60",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Available in Judgement status.\nEnters a powerful flame state of destruction that destroys all monsters for 300 seconds.\nAdditionally, in the Flame of Destruction state, you can use the Fallen Empire, Flash Combo, and Tiger Cannon without consuming any equipment.",
       "levelDetails": [
         {
@@ -18510,8 +20324,15 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Third Exor Flame(Third Exor Flame) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Third_Exor_Flame(Third_Exor_Flame)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5254.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5254",
       "tree": {
@@ -18576,35 +20397,35 @@ export const inquisitorData = {
               {
                 "level": 1,
                 "values": {
-                  "cooldown": "180seconds",
+                  "cooldown": "180 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "cooldown": "150seconds",
+                  "cooldown": "150 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "cooldown": "120seconds",
+                  "cooldown": "120 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "cooldown": "90seconds",
+                  "cooldown": "90 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "cooldown": "60seconds",
+                  "cooldown": "60 seconds",
                   "sp-cost": "60"
                 }
               }
@@ -18613,7 +20434,6 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Third Exorcism Flame",
@@ -18657,7 +20477,7 @@ export const inquisitorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18673,6 +20493,8 @@ export const inquisitorData = {
       "target": "Instant Cast",
       "recoversAp": "4",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Explosion_Blaster",
       "description": "Blows the powerful bomb to deals long ranged physical damage to surrounding enemies around the user.\nDeals additional damage to the target who is inflicted by Oleum Sanctum.\nDamage is additionally increased depending on the user's base level and POW.\nHas a chance to trigger critical, critical chance is the user's Cri,\nIn the case of critical damage, half of the total critical damage increase options are applied.",
       "levelDetails": [
         {
@@ -18727,8 +20549,18 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "70 + (Skill Level x 10)",
+      "castRange": "9 cells",
+      "areaOfEffect": "5 x 5 ~ 9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Explosion Blaster ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Explosion_Blaster"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5244.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5244",
       "tree": {
@@ -18756,6 +20588,10 @@ export const inquisitorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "70 + (Skill Level x 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -18770,6 +20606,10 @@ export const inquisitorData = {
           {
             "label": "Cooldown",
             "value": "0.7 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "9 cells"
           },
           {
             "label": "Target",
@@ -18834,7 +20674,6 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Explosion Blaster",
@@ -18998,7 +20837,7 @@ export const inquisitorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19014,6 +20853,8 @@ export const inquisitorData = {
       "target": "Single Target",
       "recoversAp": "4",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Power of Faith, Judge, Available in Flame of Destruction state.\nDeals Melee Physics damage to the target and any targets within a 7x7 cell radius around them that have a Mark or Judgement Mark, and applies the Mark of Judgement for 5 seconds.\nIf the Mark of Judgement has already been applied, the duration of the effect is refreshed.\nDamage increases additionally based on the caster's base level and POW.",
       "levelDetails": [
         {
@@ -19068,8 +20909,15 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Second Faith(Second Faith) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Second_Faith(Second_Faith)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5249.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5249",
       "tree": {
@@ -19166,7 +21014,6 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Second Faith",
@@ -19222,7 +21069,7 @@ export const inquisitorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19238,6 +21085,8 @@ export const inquisitorData = {
       "target": "Single Target",
       "recoversAp": "4",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Judge, Available in Flame of Destruction state.\nDeals Melee Physics damage to the target and any targets within a 7x7 cell radius around them that have a Mark or Judgement Mark, and applies the Mark of Judgement for 5 seconds.\nIf the Mark of Judgement has already been applied, its duration is refreshed.\nDamage increases additionally based on the caster's base level and POW.",
       "levelDetails": [
         {
@@ -19292,8 +21141,15 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Second Judgement(Second Judgement) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Second_Judgement(Second_Judgement)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5250.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5250",
       "tree": {
@@ -19390,10 +21246,9 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19409,6 +21264,8 @@ export const inquisitorData = {
       "target": "Single Target",
       "recoversAp": "4",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Available in Flame of Destruction state.\nDeals Melee Physics damage to the target and any targets within a 7x7 cell radius around them that have a Mark or Judgement Mark, and applies the Mark of Judgement for 5 seconds.\nIf the Mark of Judgement has already been applied, its duration is refreshed.\nDamage increases additionally based on the caster's base level and POW.",
       "levelDetails": [
         {
@@ -19463,8 +21320,15 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Second Flame(Second Flame) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Second_Flame(Second_Flame)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5248.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5248",
       "tree": {
@@ -19561,7 +21425,6 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Second Flame",
@@ -19617,7 +21480,7 @@ export const inquisitorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19632,7 +21495,9 @@ export const inquisitorData = {
       "type": "Ranged Physical",
       "target": "Instant Cast",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Massive_Flame_Blaster",
       "description": "Creates the powerful explosion to deals long ranged physical damage to surrounding enemies within 9 x 9 cells around the user.\nThis skill deals additional damage against demon and brute race monsters.\nDamage is additionally increased depending on the user's base level and POW.\nWhen using, adds the ability that removes spirit sphere consumption of Lightning Ride and Rampage Blast for 150 seconds.\nHas a chance to trigger critical, critical chance is the user's Cri,\nIn the case of critical damage, half of the total critical damage increase options are applied.",
       "levelDetails": [
         {
@@ -19727,8 +21592,19 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "100",
+      "duration": "150 seconds",
+      "castRange": "9 cells",
+      "areaOfEffect": "9×9",
+      "translations": {
+        "pt-BR": {
+          "name": " Massive Flame Blaster ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Massive_Flame_Blaster"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5243.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5243",
       "tree": {
@@ -19768,6 +21644,10 @@ export const inquisitorData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "100"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -19784,8 +21664,24 @@ export const inquisitorData = {
             "value": "3.5 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "9 cells"
+          },
+          {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "9×9"
+          },
+          {
+            "label": "Duration",
+            "value": "150 seconds"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "150"
           }
         ],
         "levelTables": [
@@ -19863,7 +21759,6 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Massive Flame Blaster",
@@ -19973,7 +21868,7 @@ export const inquisitorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19989,6 +21884,8 @@ export const inquisitorData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Power of Faith, Judge, Available in Flame of Destruction state.\nDeals Melee Physics damage 3 times to the target and any target within a 7x7 cell area around it with the Mark of Judgement, and erases the target's Mark of Judgement.\nDamage increases additionally based on the caster's base level and POW.\nWhen cast, an additional optical axis effect is triggered.\nCritical damage is applied based on the caster's critical probability.\nIn case of critical damage, half of the total critical damage increase options is applied.",
       "levelDetails": [
         {
@@ -20043,8 +21940,15 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Third Punish(Third Punish) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Third_Punish(Third_Punish)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5251.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5251",
       "tree": {
@@ -20137,10 +22041,9 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20156,6 +22059,8 @@ export const inquisitorData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Judge, Available in Flame of Destruction state.\nDeals Melee Physics damage 5 times to the target and any target within a 7x7 cell area around it with the Mark of Judgement, and removes the target's Mark of Judgement.\nDamage increases additionally based on the caster's base level and POW.\nAdditionally, the caster receives HP and SP Recovery effects from the power of purification, and the amount of Recovery increases based on the skill level and the caster's base level.",
       "levelDetails": [
         {
@@ -20210,8 +22115,15 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Third Consecration(Third Consecration) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Third_Consecration(Third_Consecration)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5253.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5253",
       "tree": {
@@ -20304,7 +22216,6 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Third Consecration",
@@ -20363,7 +22274,7 @@ export const inquisitorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20379,6 +22290,8 @@ export const inquisitorData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Available in Flame of Destruction state.\nDeals Melee Physics damage to the target and any targets within a 7x7 cell area around it with the Mark of Judgement, and erases the target's Mark of Judgement.\nAttacks up to 3 times depending on the number of devices currently in possession. Damage increases additionally based on the caster's base level and POW.",
       "levelDetails": [
         {
@@ -20433,8 +22346,15 @@ export const inquisitorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Third Flame Bomb(Third Flame Bomb) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Third_Flame_Bomb(Third_Flame_Bomb)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5252.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5252",
       "tree": {
@@ -20527,7 +22447,6 @@ export const inquisitorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Third Flame Bomb",
@@ -20581,7 +22500,7 @@ export const inquisitorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20597,6 +22516,8 @@ export const inquisitorData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used in Fury state.\nInflicts long ranged physical damage to the target ,if the user is under Massive Flame Blaster buff, the skill will deal more damage.\nDeals additional damage depends on user's base level and POW, has a chance to trigger critical, critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -20625,8 +22546,15 @@ export const inquisitorData = {
       "castDelay": "1 second",
       "cooldown": "0.7 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Blazing Flame Blast ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Blazing_Flame_Blast"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6519.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6519",
       "tree": {
@@ -20680,7 +22608,6 @@ export const inquisitorData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Blazing Flame Blast",
@@ -20696,7 +22623,7 @@ export const inquisitorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

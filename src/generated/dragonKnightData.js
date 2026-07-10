@@ -1,5 +1,5 @@
 export const dragonKnightData = {
-  "generatedAt": "2026-07-10T00:53:19.843Z",
+  "generatedAt": "2026-07-10T15:02:07.660Z",
   "classId": 4252,
   "classSlug": "dragon-knight",
   "className": "Dragon Knight",
@@ -72,7 +72,8 @@ export const dragonKnightData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4252",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -387,6 +388,8 @@ export const dragonKnightData = {
           "target": "Self",
           "recoversAp": "Skill Level x 6",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Servant_Weapon",
           "description": "Summon ethereal weapons. When attacking with normal Physical Melee attack, consume the weapons to inflict Melee Physical damage to target and enemies within 9x9 range twice.\nYou can control up to 5 weapons, and depending on your Skill Level, Servant Weapon will have faster weapon recovery interval and additional attack chance.\nAdditional damage increase based on the caster's base level and POW, and CRIT damage is applied based on the caster's CRIT.\nIf the hit crits, it inflicts half of the total of your CRIT Damage bonus options as damage.",
           "levelDetails": [
             {
@@ -441,8 +444,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 5)",
+          "duration": "(Skill Level × 30) seconds",
+          "areaOfEffect": "9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Servant Weapon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Servant_Weapon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5201.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5201",
           "tree": {
@@ -463,6 +476,10 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -481,6 +498,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9"
               },
               {
                 "label": "AP Generated",
@@ -541,7 +562,6 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Servant Weapon",
@@ -651,7 +671,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -667,6 +687,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Two-handed_Defense",
           "description": "Two-handed Swords, Spears, and Axes decrease Physical damage from enemies of all sizes.",
           "levelDetails": [],
           "levelExtras": [
@@ -716,8 +738,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Two-handed Defense ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Two-handed_Defense"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5207.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5207",
           "tree": {
@@ -813,10 +842,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -832,6 +860,8 @@ export const dragonKnightData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Charging_Pierce",
           "description": "A Spear and Two-handed Sword skill.\nPierce, Clashing Spiral, Hundred Spears, and Madness Crusher temporarily add Charge stacks.\nCharge stacks last for 5 seconds, and disappear if not increased within the time limit.\nYou can get up to 10 Charge stacks to significantly increase Pierce, Clashing Spiral, Hundred Spears, and Madness Crusher damage.",
           "levelDetails": [],
           "fixedCastTime": "0.4 seconds",
@@ -885,8 +915,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + ( Skill Level x 5 )",
+          "duration": "80 + ( Skill Level x 10 ) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Charging Pierce ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Charging_Pierce"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5206.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5206",
           "tree": {
@@ -914,6 +953,10 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + ( Skill Level x 5 )"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.4 seconds"
               },
@@ -932,6 +975,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "80 + ( Skill Level x 10 ) seconds"
               }
             ],
             "levelTables": [
@@ -1009,10 +1056,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1028,6 +1074,8 @@ export const dragonKnightData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Servant_Weapon_-_Sign",
           "description": "A Servant Weapon skill.\nShoot a servant Weapon at an enemy, marking it as a Servant Weapon - Phantom and Demolition target.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -1061,8 +1109,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "duration": "(Skill Level x 2) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Servant Weapon - Sign ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Servant_Weapon_-_Sign"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5203.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5203",
           "tree": {
@@ -1090,6 +1147,10 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -1108,6 +1169,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level x 2) seconds"
               }
             ],
             "levelTables": [
@@ -1155,10 +1220,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1174,6 +1238,8 @@ export const dragonKnightData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Two-handed swords and Two-handed spears only skills.\nSwing the weapon at the target and deal physical damage to the target and within the surrounding range 2 times.\nWhen used as a two-handed sword, it is applied as melee physical damage,\nWhen used as a two-handed spear, it is applied as long-distance physical damage.\nDamage is additionally increased according to the user's base level and POW, and critical damage is applied according to the user's critical probability.\nIn the case of critical damage, half of the total critical damage increase options are applied.",
           "levelDetails": [
             {
@@ -1268,8 +1334,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Hack And Slasher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hack_And_Slasher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5208.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5208",
           "tree": {
@@ -1406,7 +1479,6 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hack and Slasher",
@@ -1546,7 +1618,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1562,6 +1634,8 @@ export const dragonKnightData = {
           "target": "1 Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dragonic_Breath",
           "description": "Can only use this skill while riding dragon.\nChannels the power of the dragon into yourself, and unleash a powerful dragon's breath on your target.\nDragon's Breath deals Ranged Physical damage that ignores Physical Armor to both the target and targets in its surrounding area.\nDamage is increased or decreased based on the caster's MaxHP and MaxSP.\nAdditional Damage increase by an additional amount based on the caster's base level and POW.\nWhen using this skill under Dragonic Aura buff, increases damage rate from user's MaxHP and MaxSP.",
           "levelDetails": [
             {
@@ -1656,8 +1730,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "58 + (Skill Level × 3)",
+          "areaOfEffect": "7×7~9×9",
+          "translations": {
+            "pt-BR": {
+              "name": " Dragonic Breath ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dragonic_Breath"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6001.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6001",
           "tree": {
@@ -1689,6 +1772,10 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "58 + (Skill Level × 3)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -1804,7 +1891,6 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Dragonic Breath",
@@ -1835,7 +1921,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1851,6 +1937,8 @@ export const dragonKnightData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Servant_Weapon-Phantom",
           "description": "Servant Weapon Skill.\nInstantly strikes target, consuming all weapons to deal Melee Physical damage equal to the number of weapons consumed to all Sign targets within 7x7 cells around the target and others within 5x5 cells around them, and inflicting [Pitch Black] with a certain probability.\nAdditional damage increase based on the caster's base level and POW, and CRIT damage is applied based on the caster's CRIT.\nIf the hit crits, it inflicts half of the total of your CRIT Damage bonus options as damage.",
           "levelDetails": [
             {
@@ -1905,8 +1993,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Servant Weapon-Phantom ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Servant_Weapon-Phantom"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5204.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5204",
           "tree": {
@@ -1940,6 +2037,10 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -1958,6 +2059,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -2005,7 +2110,6 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Servant Weapon - Phantom",
@@ -2052,7 +2156,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2068,6 +2172,8 @@ export const dragonKnightData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Storm_Slash",
           "description": "Exclusive skills for two-handed swords and two-handed axes.\nSlashes the target multiple times to inflict melee physical damage. Additionally, if under the Giant Growth effect, there is a 60% chance that the damage is doubled.\nDamage is additionally increased according to the user's base level and POW, and critical damage is applied according to the user's critical probability.\nIn the case of critical damage, half of the total critical damage increase options are applied.",
           "levelDetails": [
             {
@@ -2122,8 +2228,16 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 5)",
+          "translations": {
+            "pt-BR": {
+              "name": " Storm Slash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Storm_Slash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5213.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5213",
           "tree": {
@@ -2155,6 +2269,10 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 5)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -2226,7 +2344,6 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Storm Slash",
@@ -2370,7 +2487,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2386,6 +2503,8 @@ export const dragonKnightData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Two-handed spear exclusive skill.\nInflicts long ranged physical damage to the target for 5 hits.\nIf the user is under Dragonic Aura buff, the skill will deal more damage.\nDeals additional damage depends on user's base level and POW, has a chance to trigger critical, critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -2414,8 +2533,15 @@ export const dragonKnightData = {
           "castDelay": "0.7 seconds",
           "cooldown": "0.5 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Dragonic Pierce ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dragonic_Pierce"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6502.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6502",
           "tree": {
@@ -2469,7 +2595,6 @@ export const dragonKnightData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Dragonic Pierce",
@@ -2485,7 +2610,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2501,6 +2626,8 @@ export const dragonKnightData = {
           "target": "Single Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Madness_Crusher",
           "description": "Two-handed swords and Two-handed spears only skills.\nStrikes the target and inflicts long-distance physical damage to the target and those within the surrounding range.\nDamage increases additionally depending on the user's base level and POW, and the weapon's level and weight.",
           "levelDetails": [
             {
@@ -2555,8 +2682,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 4)",
+          "castRange": "7 cells",
+          "areaOfEffect": "3 x 3~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Madness Crusher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Madness_Crusher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5211.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5211",
           "tree": {
@@ -2590,6 +2727,10 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -2604,6 +2745,10 @@ export const dragonKnightData = {
               {
                 "label": "Cooldown",
                 "value": "0.35 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
               },
               {
                 "label": "Target",
@@ -2668,7 +2813,6 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Madness Crusher",
@@ -2813,7 +2957,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2829,6 +2973,8 @@ export const dragonKnightData = {
           "target": "Area of Effect",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Servant_Weapon-Demolition",
           "description": "Servant Weapon Skill.\nUse all of your Servant Weapon and attack all Sign targets within 13 x13 cells around you, inflicting Melee Physical damage by the number of servant weapons consumed for this skill. Servant Weapons will be recharged based on the number of targets hit by this skill.\nAdditional damage increase based on the caster's base level and POW, and CRIT damage is applied based on the caster's CRIT.\nIf the hit crits, it inflicts half of the total of your CRIT Damage bonus options as damage.",
           "levelDetails": [
             {
@@ -2883,8 +3029,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level × 5)",
+          "castRange": "Melee",
+          "areaOfEffect": "13 x 13",
+          "translations": {
+            "pt-BR": {
+              "name": " Servant Weapon-Demolition ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Servant_Weapon-Demolition"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5205.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5205",
           "tree": {
@@ -2912,6 +3068,10 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -2928,8 +3088,16 @@ export const dragonKnightData = {
                 "value": "0.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Area of Effect"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "13 x 13"
               },
               {
                 "label": "AP Generated",
@@ -2981,7 +3149,6 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Servant Weapon - Demolition",
@@ -3020,7 +3187,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3035,7 +3202,9 @@ export const dragonKnightData = {
           "type": "Support",
           "target": "Self",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Vigor",
           "description": "Increases the damage of your normal Melee Physical attacks temporarily.\nEach attack costs certain amount of HP and deals additional damage to Human/Angel monsters.",
           "levelDetails": [
             {
@@ -3130,6 +3299,8 @@ export const dragonKnightData = {
               ]
             }
           ],
+          "spCost": "100",
+          "duration": "(Skill Level × 30) seconds",
           "translations": {
             "pt-BR": {
               "name": " Vigor ",
@@ -3172,6 +3343,10 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -3190,6 +3365,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "150"
               }
             ],
             "levelTables": [
@@ -3295,7 +3474,6 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Vigor",
@@ -3368,7 +3546,9 @@ export const dragonKnightData = {
           "type": "Ranged Physical",
           "target": "1 Target",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dragonic_Aura",
           "description": "Deals great amount of Ranged Physical damage to the target and increases the damage of Dragon Breath, Dragon's Water Breath, and Hundred Spears for 300 seconds.\nDamage is increased by an additional amount based on the caster's Base Level and POW.\nAlso inflicts more damage on Demi-Human and Angel monsters.\nP.ATK and POW will affect the skill damage output from Dragon Training skill.",
           "levelDetails": [
             {
@@ -3463,8 +3643,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "duration": "300 seconds",
+          "castRange": "7 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Dragonic Aura ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dragonic_Aura"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5210.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5210",
           "tree": {
@@ -3504,6 +3694,10 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -3520,8 +3714,20 @@ export const dragonKnightData = {
                 "value": "60 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "300 seconds"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "150"
               }
             ],
             "levelTables": [
@@ -3599,7 +3805,6 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Dragonic Aura",
@@ -3641,7 +3846,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3668,6 +3873,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rune_Mastery",
           "description": "Rune Knights gain the power to understand and use runes through Rune Mastery. This skill enables playes to make rune stones and it affects the success rate. There are 10 different types of runes, and number of makable runes stones increase depending on the runes mastery level.\nOne rune stone and one Elder branch are basically consumed to make a rune stone, and additional materials are required for each rune stone. At least two are produced at once, from slv 5, 2-4 are produced, and from level 10, 2-6 are produced.",
           "levelDetails": [
             {
@@ -3758,8 +3965,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Rune Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rune_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2010.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2010",
           "tree": {
@@ -3869,10 +4083,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3885,9 +4098,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Brandish Spear 2",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Phantom_Thrust",
           "description": "Attacks a distant enemy bringing\nthem close to the caster. Can be used on a\nparty member, but won't give damage. Gives\nAdditional damage with Lv 10 Spear Mastery.",
           "levelDetails": [
             {
@@ -3988,8 +4203,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skll Level × 3)",
+          "castDelay": "ASPD Based",
+          "castRange": "(Skill Level + 4) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Phantom Thrust ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Phantom_Thrust"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2020.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2020",
           "tree": {
@@ -4015,6 +4240,22 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15 + (Skll Level × 3)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD Based"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Skill Level + 4) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -4080,10 +4321,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4099,6 +4339,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dragon_Training",
           "description": "When mounted on a dragon, this skill increases Weight Limit, increase the damage of Dragon Breath.\nallows Spear class weapons to ignore the size modifiers, dealing 100% damage at all time and increases attack power..",
           "levelDetails": [
             {
@@ -4224,8 +4466,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Dragon Training ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dragon_Training"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2007.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2007",
           "tree": {
@@ -4334,10 +4583,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4353,6 +4601,8 @@ export const dragonKnightData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Enchant_Blade",
           "description": "Adds the caster's MATK to the melee physical attack for 5 minutes. Additional MATK per skill level. It's affected by the caster's BaseLv and INT.",
           "levelDetails": [
             {
@@ -4537,8 +4787,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level x 4)",
+          "duration": "5 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Enchant Blade ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enchant_Blade"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2001.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2001",
           "tree": {
@@ -4564,6 +4823,10 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level x 4)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -4689,10 +4952,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4705,9 +4967,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Phantom Thrust 3",
           "group": "Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hundred_Spears",
           "description": "Spear Weapon Skill. Deals great damage to a target, also enemies in range. Damage increases as BaseLv and slv of Spiral Pierce increase.\nRange : 7 cells.",
           "levelDetails": [
             {
@@ -4936,8 +5200,19 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "variableCastTime": "[1.1 − (Skill Level x 0.1)] seconds",
+          "castRange": "7 cells",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Hundred Spears ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hundred_Spears"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2004.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2004",
           "tree": {
@@ -4965,8 +5240,16 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "60"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[1.1 − (Skill Level x 0.1)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -4975,6 +5258,18 @@ export const dragonKnightData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -5094,7 +5389,6 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hundred Spears",
@@ -5117,7 +5411,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5130,9 +5424,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Dragon Training 2",
           "group": "Debuff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dragon_Howling",
           "description": "Commands the dragon to howl, causing Fear status at a certain chance to all enemies in range.",
           "levelDetails": [
             {
@@ -5237,8 +5533,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "areaOfEffect": "7 x 7 ~ 15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Dragon Howling ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dragon_Howling"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2009.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2009",
           "tree": {
@@ -5266,6 +5571,10 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5280,6 +5589,14 @@ export const dragonKnightData = {
               {
                 "label": "Cooldown",
                 "value": "10 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7 ~ 15 x 15"
               }
             ],
             "levelTables": [
@@ -5354,10 +5671,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5370,9 +5686,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Dragon Training 2",
           "group": "Area of EffectDamage",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dragon's_Breath",
           "description": "Uses Firebreath, causing special ranged physical damage to the speed of fire, and enemies who are damaged by the dragon's breath sometimes suffer continuous damage due to fire. The power of the dragon's breath depends on the condition of the caster who controls it.\nWhen Giant Growth Effect, attack property becomes Holy. When Lux Anima Effect, attack property becomes Shadow.\n(When Giant Growth and Anima Effect, attack property becomes Shadow)",
           "levelDetails": [],
           "fixedCastTime": "0.5 seconds",
@@ -5515,8 +5833,19 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level × 5)",
+          "variableCastTime": "0~2 seconds",
+          "castRange": "10 cells",
+          "areaOfEffect": "3 x 3 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Dragon's Breath ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dragon's_Breath"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2008.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2008",
           "tree": {
@@ -5544,8 +5873,16 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0~2 seconds"
               },
               {
                 "label": "Cast Delay",
@@ -5554,6 +5891,18 @@ export const dragonKnightData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 9 x 9"
               }
             ],
             "levelTables": [
@@ -5659,10 +6008,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5675,9 +6023,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Counter Attack 1,",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Death_Bound",
           "description": "Amplify and counters damage\nreceived towards your enemy. Some of the\namplified damage will also reflect on you.\nWhile in this stance, you cannot move for 2 seconds.\nMust wait 5 seconds before re-casting.\nCannot be used on MVP type monsters.",
           "levelDetails": [
             {
@@ -5817,8 +6167,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 5)",
+          "duration": "3 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Death Bound ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Death_Bound"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2003.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2003",
           "tree": {
@@ -5852,6 +6212,10 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5865,6 +6229,18 @@ export const dragonKnightData = {
               },
               {
                 "label": "Cooldown",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
                 "value": "3 seconds"
               }
             ],
@@ -5971,10 +6347,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5987,9 +6362,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Enchant Blade 3",
           "group": "Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sonic_Wave",
           "description": "Strikes the ground and attacks enemies at a far distance.\nHIT rate is assisted as skill level increases. Half of Critical Hit rate is applied.\nDamage increases as BaseLv increases. Half of Critical Damage option can be applied.",
           "levelDetails": [
             {
@@ -6129,8 +6506,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 3)",
+          "castRange": "7~11 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Sonic Wave ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sonic_Wave"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2002.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2002",
           "tree": {
@@ -6158,6 +6544,10 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6172,6 +6562,14 @@ export const dragonKnightData = {
               {
                 "label": "Cooldown",
                 "value": "1.75 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7~11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -6263,10 +6661,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6279,9 +6676,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Enchant Blade 5",
           "group": "Area of EffectDamage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Wind_Cutter",
           "description": "Wields a powerful weapon and damages the surrounding enemies using a wind pressure.\nWhen spear's equipped, damage becomes ranged. When two-handed sword's equipped, damages twice\nDamage increases as BaseLv increases.",
           "levelDetails": [
             {
@@ -6360,8 +6759,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 3)",
+          "cooldown": "0.55 - (Skill Level × 0.05) seconds",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Wind Cutter ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wind_Cutter"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2005.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2005",
           "tree": {
@@ -6389,6 +6798,10 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6399,6 +6812,18 @@ export const dragonKnightData = {
               {
                 "label": "Cast Delay",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.55 - (Skill Level × 0.05) seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -6461,10 +6886,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6477,9 +6901,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Dragon Training 2",
           "group": "Area of EffectDamage",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dragon_Water_Breath",
           "description": "Uses Icebreath. Enemies damaged by the dragon's breath may sometimes freeze and slow down their movement.\nWhen Fightning Spirit Effect, attack property becomes ghost. When Lux Anima effect, attack property becomes neutral.\n(When Fighting Spirit and Anima Effect, attack property becomes neutral)",
           "levelDetails": [],
           "fixedCastTime": "0.5 seconds",
@@ -6622,8 +7048,19 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level × 5)",
+          "variableCastTime": "0~2 seconds",
+          "castRange": "10 cells",
+          "areaOfEffect": "3 x 3 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Dragon Water Breath ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dragon_Water_Breath"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5004.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5004",
           "tree": {
@@ -6651,8 +7088,16 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0~2 seconds"
               },
               {
                 "label": "Cast Delay",
@@ -6661,6 +7106,18 @@ export const dragonKnightData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 9 x 9"
               }
             ],
             "levelTables": [
@@ -6766,10 +7223,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6782,9 +7238,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Sonic Wave 2, Wind Cutter 3, Death Bound 5",
           "group": "Area of EffectDamage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ignition_Break",
           "description": "The weapon hits the ground, causing a strong explosion, damaging all enemies around.\nHalf of the critical chance of the caster is applied, damage increases as BaseLv increases.\nFor Critical Damage, half of Critical Damage option is applied.",
           "levelDetails": [
             {
@@ -6914,8 +7372,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 5)",
+          "areaOfEffect": "9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Ignition Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ignition_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2006.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2006",
           "tree": {
@@ -6955,6 +7422,10 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6969,6 +7440,14 @@ export const dragonKnightData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9"
               }
             ],
             "levelTables": [
@@ -7025,10 +7504,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7040,10 +7518,12 @@ export const dragonKnightData = {
           "maxLevel": 5,
           "prerequisiteText": "3rd jobs",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Throttle",
           "description": "Exceed the limits of the body by\nsacrificing your own vitality to strengthen yourself\nfor a short time. You will become horribly\nexhausted after the skill's duration.\nFully restores HP when cast and increases\nmovement speed for the skill's duration.\nAll stats +20%.\nAfter the skill duration ends, you will be inflicted\nwith Rebound status. During rebound status,\nyour movement speed is lowered and your\nnatural HP/SP recovery is disabled.\nCannot be removed by dispel or clearance.\n50 Minute playtime cooldown",
           "levelDetails": [
             {
@@ -7148,8 +7628,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Throttle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
@@ -7162,8 +7651,16 @@ export const dragonKnightData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
               },
               {
                 "label": "Fixed Cast Time",
@@ -7180,6 +7677,10 @@ export const dragonKnightData = {
               {
                 "label": "Cooldown",
                 "value": "3000 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -7263,10 +7764,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7293,6 +7793,8 @@ export const dragonKnightData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Two-Handed Sword Skill Form.\nTemporarily boosts attack speed, critical rate and Accuracy Rate. This effect is knocked off by changing weapons except two-handed.\nThis effect is also knocked off by Decrease AGI and Quagmire.",
           "levelDetails": [
             {
@@ -7383,8 +7885,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " TwoHand Quicken ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/TwoHand_Quicken"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/60.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/60",
           "tree": {
@@ -7425,114 +7934,106 @@ export const dragonKnightData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "duration-30sec-cri-3-hit",
-                    "label": "Duration : 30sec, Cri + 3, Hit"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
-                    "id": "duration-60sec-cri-4-hit",
-                    "label": "Duration : 60sec, Cri + 4, Hit"
+                    "id": "cri",
+                    "label": ", Cri"
                   },
                   {
-                    "id": "duration-90sec-cri-5-hit",
-                    "label": "Duration : 90sec, Cri + 5, Hit"
-                  },
-                  {
-                    "id": "duration-120sec-cri-6-hit",
-                    "label": "Duration :120sec, Cri + 6, Hit"
-                  },
-                  {
-                    "id": "duration-150sec-cri-7-hit",
-                    "label": "Duration :150sec, Cri + 7, Hit"
-                  },
-                  {
-                    "id": "duration-180sec-cri-8-hit",
-                    "label": "Duration :180sec, Cri + 8, Hit"
-                  },
-                  {
-                    "id": "duration-210sec-cri-9-hit",
-                    "label": "Duration :210sec, Cri + 9, Hit"
-                  },
-                  {
-                    "id": "duration-240sec-cri-10-hit",
-                    "label": "Duration :240sec, Cri +10, Hit"
-                  },
-                  {
-                    "id": "duration-270sec-cri-11-hit",
-                    "label": "Duration :270sec, Cri +11, Hit"
-                  },
-                  {
-                    "id": "duration-300sec-cri-12-hit",
-                    "label": "Duration :300sec, Cri +12, Hit"
+                    "id": "hit",
+                    "label": "Hit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration-30sec-cri-3-hit": "+ 2",
+                      "duration": "30 seconds",
+                      "cri": "+ 3",
+                      "hit": "+ 2",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "duration-60sec-cri-4-hit": "+ 4",
+                      "duration": "60 seconds",
+                      "cri": "+ 4",
+                      "hit": "+ 4",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "duration-90sec-cri-5-hit": "+ 6",
+                      "duration": "90 seconds",
+                      "cri": "+ 5",
+                      "hit": "+ 6",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "duration-120sec-cri-6-hit": "+ 8",
+                      "duration": "120 seconds",
+                      "cri": "+ 6",
+                      "hit": "+ 8",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "duration-150sec-cri-7-hit": "+10",
+                      "duration": "150 seconds",
+                      "cri": "+ 7",
+                      "hit": "+10",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "duration-180sec-cri-8-hit": "+12",
+                      "duration": "180 seconds",
+                      "cri": "+ 8",
+                      "hit": "+12",
                       "sp-cost": "34"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "duration-210sec-cri-9-hit": "+14",
+                      "duration": "210 seconds",
+                      "cri": "+ 9",
+                      "hit": "+14",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "duration-240sec-cri-10-hit": "+16",
+                      "duration": "240 seconds",
+                      "cri": "+10",
+                      "hit": "+16",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "duration-270sec-cri-11-hit": "+18",
+                      "duration": "270 seconds",
+                      "cri": "+11",
+                      "hit": "+18",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "duration-300sec-cri-12-hit": "+20",
+                      "duration": "300 seconds",
+                      "cri": "+12",
+                      "hit": "+20",
                       "sp-cost": "50"
                     }
                   }
@@ -7541,10 +8042,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7560,6 +8060,8 @@ export const dragonKnightData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Auto_Counter",
           "description": "If an opponent physically attacks a player casting Auto Counter while facing it, the attack will be blocked and the caster will perform one critical attack on them.",
           "levelDetails": [
             {
@@ -7610,8 +8112,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "duration": "(Skill Level × 0.4) seconds; Until retaliation",
+          "translations": {
+            "pt-BR": {
+              "name": " Auto Counter ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Auto_Counter"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/61.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/61",
           "tree": {
@@ -7639,8 +8151,20 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 0.4) seconds; Until retaliation"
               }
             ],
             "levelTables": [
@@ -7697,10 +8221,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7716,6 +8239,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Peco_Peco_Ride",
           "description": "Enables Knights and Crusaders to ride a Peco Peco.",
           "levelDetails": [],
           "levelExtras": [
@@ -7729,8 +8254,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Peco Peco Ride ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Peco_Peco_Ride"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/63.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/63",
           "tree": {
@@ -7779,10 +8311,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7798,6 +8329,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spear_Mastery",
           "description": "Enhances attack (Weapon Mastery) with Spear class weapons.\nThis bonus is higher if the user is mounted.",
           "levelDetails": [
             {
@@ -7888,8 +8421,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Spear Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spear_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/55.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/55",
           "tree": {
@@ -7919,114 +8459,92 @@ export const dragonKnightData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "not-mounted-damage-4-mounted",
-                    "label": "Not Mounted, Damage + 4, Mounted,"
+                    "id": "mounted",
+                    "label": "Mounted,"
                   },
                   {
-                    "id": "not-mounted-damage-8-mounted",
-                    "label": "Not Mounted, Damage + 8, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-12-mounted",
-                    "label": "Not Mounted, Damage +12, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-16-mounted",
-                    "label": "Not Mounted, Damage +16, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-20-mounted",
-                    "label": "Not Mounted, Damage +20, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-24-mounted",
-                    "label": "Not Mounted, Damage +24, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-28-mounted",
-                    "label": "Not Mounted, Damage +28, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-32-mounted",
-                    "label": "Not Mounted, Damage +32, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-36-mounted",
-                    "label": "Not Mounted, Damage +36, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-40-mounted",
-                    "label": "Not Mounted, Damage +40, Mounted,"
+                    "id": "not-mounted-damage",
+                    "label": "Not Mounted, Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "not-mounted-damage-4-mounted": "+ 5",
+                      "not-mounted-damage": "+ 4",
+                      "mounted": "+ 5",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "not-mounted-damage-8-mounted": "+10",
+                      "not-mounted-damage": "+ 8",
+                      "mounted": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "not-mounted-damage-12-mounted": "+15",
+                      "not-mounted-damage": "+12",
+                      "mounted": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "not-mounted-damage-16-mounted": "+20",
+                      "not-mounted-damage": "+16",
+                      "mounted": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "not-mounted-damage-20-mounted": "+25",
+                      "not-mounted-damage": "+20",
+                      "mounted": "+25",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "not-mounted-damage-24-mounted": "+30",
+                      "not-mounted-damage": "+24",
+                      "mounted": "+30",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "not-mounted-damage-28-mounted": "+35",
+                      "not-mounted-damage": "+28",
+                      "mounted": "+35",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "not-mounted-damage-32-mounted": "+40",
+                      "not-mounted-damage": "+32",
+                      "mounted": "+40",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "not-mounted-damage-36-mounted": "+45",
+                      "not-mounted-damage": "+36",
+                      "mounted": "+45",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "not-mounted-damage-40-mounted": "+50",
+                      "not-mounted-damage": "+40",
+                      "mounted": "+50",
                       "sp-cost": "0"
                     }
                   }
@@ -8035,10 +8553,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8054,6 +8571,8 @@ export const dragonKnightData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Berserk",
           "description": "HP increases, moving speed and attack power increases, but the flee rate decreases and all other actions are impossible.\nItems cannot be used, and it is impossible to be treated with heel skills. In this state, HP gradually decreases over time.\nAfter use, HP and SP do not recover naturally for 5 minutes.",
           "levelDetails": [],
           "levelExtras": [
@@ -8067,8 +8586,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Until recast",
+          "translations": {
+            "pt-BR": {
+              "name": " Berserk ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Berserk"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/359.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/359",
           "tree": {
@@ -8089,8 +8617,16 @@ export const dragonKnightData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "Until recast"
               }
             ],
             "levelTables": [
@@ -8114,10 +8650,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8133,6 +8668,8 @@ export const dragonKnightData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tension_Relax",
           "description": "Sits down and relaxes to triple the HP Recovery rate.\nStanding up cancels this skill, whether the user manually stood up or was knocked out of sitting by an attack.",
           "levelDetails": [],
           "levelExtras": [
@@ -8146,8 +8683,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "duration": "Until standing up",
+          "translations": {
+            "pt-BR": {
+              "name": " Tension Relax ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tension_Relax"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/358.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/358",
           "tree": {
@@ -8187,8 +8733,16 @@ export const dragonKnightData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "Until standing up"
               }
             ],
             "levelTables": [
@@ -8212,10 +8766,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8231,6 +8784,8 @@ export const dragonKnightData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Charge_Attack",
           "description": "Consumes 40 SP. Quickly approach and attack a distant target.\nThis skill inflicts damage at 700% of ATK and knocks the target 2 cells backward. Knocks 4 cells backward in PvP. This Knockback effect is disabled in WoE.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -8248,8 +8803,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "castRange": "14 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Charge Attack ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Charge_Attack"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1001.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1001",
           "tree": {
@@ -8270,6 +8834,10 @@ export const dragonKnightData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8284,6 +8852,10 @@ export const dragonKnightData = {
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "14 cells"
               },
               {
                 "label": "Target",
@@ -8311,10 +8883,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8330,6 +8901,8 @@ export const dragonKnightData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Parrying",
           "description": "Allows the user to block physical attacks with the equipped two-handed sword by chance temporarily.\nOnly available with two handed sword.",
           "levelDetails": [
             {
@@ -8420,8 +8993,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "castDelay": "ASPD",
+          "duration": "[10 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Parrying ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Parrying"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/356.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/356",
           "tree": {
@@ -8461,8 +9044,20 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "[10 + (Skill Level × 5)] seconds"
               }
             ],
             "levelTables": [
@@ -8554,10 +9149,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8573,6 +9167,8 @@ export const dragonKnightData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bowling_Bash",
           "description": "Inflict physical attack damage twice to all enemies and push tehm backwards.\nIf attacked with two-hand sword, the number of attacks increases according to the number of enemy targets and targets surrounding them, and attacks them up to four times.\nThe player cannot change weapons temporarilty.",
           "levelDetails": [
             {
@@ -8847,8 +9443,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level + 12)",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Bowling Bash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bowling_Bash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/62.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/62",
           "tree": {
@@ -8900,6 +9506,10 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level + 12)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.35 seconds"
               },
@@ -8916,8 +9526,16 @@ export const dragonKnightData = {
                 "value": "1 second"
               },
               {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -9051,10 +9669,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9070,6 +9687,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cavalier_Mastery",
           "description": "Regains the attack speed loss when riding a Peco Peco .",
           "levelDetails": [
             {
@@ -9120,8 +9739,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Cavalier Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cavalier_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/64.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/64",
           "tree": {
@@ -9194,10 +9820,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9213,6 +9838,8 @@ export const dragonKnightData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Pierce",
           "description": "Spear Skill Form.\nThrusts the equipped spear into a single target to inflict physical damage multiple times depending on the size of the target. Small enemies will take one hit, Medium enemies will take two hits, and Large enemies will take three hits. .\nThe Accuracy Bonus is applied after the hit rate is determined.",
           "levelDetails": [
             {
@@ -9303,8 +9930,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "7",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Pierce ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pierce"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/56.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/56",
           "tree": {
@@ -9330,6 +9967,18 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "7"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -9411,10 +10060,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9430,6 +10078,8 @@ export const dragonKnightData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Aura_Blade",
           "description": "Produces a special aura around the equipped weapon to strengthen its power temporarily.\nDamage is affected by the caster's base level.",
           "levelDetails": [
             {
@@ -9480,8 +10130,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 8)",
+          "castDelay": "ASPD",
+          "duration": "[20 + (Skill Level × 20)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Aura Blade ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Aura_Blade"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/355.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/355",
           "tree": {
@@ -9515,8 +10175,20 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 8)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "[20 + (Skill Level × 20)] seconds"
               }
             ],
             "levelTables": [
@@ -9573,10 +10245,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9592,6 +10263,8 @@ export const dragonKnightData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spear_Dynamo",
           "description": "This skill also boosts attack power and Hit rate and endure effect at cost of physical defense.",
           "levelDetails": [
             {
@@ -9642,8 +10315,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castDelay": "ASPD",
+          "duration": "60 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Spear Dynamo ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spear_Dynamo"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/357.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/357",
           "tree": {
@@ -9683,8 +10366,20 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -9696,59 +10391,61 @@ export const dragonKnightData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "hit-10-atk-7-def",
-                    "label": "Hit +10, Atk + 7%, Def"
+                    "id": "atk",
+                    "label": "Atk"
                   },
                   {
-                    "id": "hit-20-atk-9-def",
-                    "label": "Hit +20, Atk + 9%, Def"
+                    "id": "def",
+                    "label": "Def"
                   },
                   {
-                    "id": "hit-30-atk-11-def",
-                    "label": "Hit +30, Atk +11%, Def"
-                  },
-                  {
-                    "id": "hit-40-atk-13-def",
-                    "label": "Hit +40, Atk +13%, Def"
-                  },
-                  {
-                    "id": "hit-50-atk-15-def",
-                    "label": "Hit +50, Atk +15%, Def"
+                    "id": "hit",
+                    "label": "Hit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "hit-10-atk-7-def": "- 7%",
+                      "hit": "+10",
+                      "atk": "+ 7%",
+                      "def": "- 7%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "hit-20-atk-9-def": "- 9%",
+                      "hit": "+20",
+                      "atk": "+ 9%",
+                      "def": "- 9%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "hit-30-atk-11-def": "-11%",
+                      "hit": "+30",
+                      "atk": "+11%",
+                      "def": "-11%",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "hit-40-atk-13-def": "-13%",
+                      "hit": "+40",
+                      "atk": "+13%",
+                      "def": "-13%",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "hit-50-atk-15-def": "-15%",
+                      "hit": "+50",
+                      "atk": "+15%",
+                      "def": "-15%",
                       "sp-cost": "30"
                     }
                   }
@@ -9757,10 +10454,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9776,6 +10472,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Increase Attack Speed when using\na One Handed Sword Class Weapon. Activating\nthis skill cancels the effect of any any potions\nthat have a similar effect, but it is possible\nto use these potions after One Hand Quicken has\nbeen cast. Unequipping Sword will cancel this\nskill's effect.",
           "levelDetails": [],
           "levelExtras": [
@@ -9825,8 +10523,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " One Hand Quicken ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/One_Hand_Quicken"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/495.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/495",
           "tree": {
@@ -9929,10 +10634,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9948,6 +10652,8 @@ export const dragonKnightData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spear_Boomerang",
           "description": "Spear Skill Form.\nConsumes SP 12 and hurls the equipped spear like a boomerang at a single target to inflict ranged physical damage.\nlevel 1 gives a physical Attack damage.",
           "levelDetails": [
             {
@@ -9998,8 +10704,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "1 second",
+          "castRange": "3 + (Skill Level × 2) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Spear Boomerang ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spear_Boomerang"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/59.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/59",
           "tree": {
@@ -10025,6 +10741,18 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 + (Skill Level × 2) cells"
               },
               {
                 "label": "Target",
@@ -10076,10 +10804,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10095,6 +10822,8 @@ export const dragonKnightData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spear_Stab",
           "description": "Spear Skill Form.\nThrusts the equipped spear into a single target to inflict physical damage to all enemies in straight line between the user and the target and push them 6 cells backwards.",
           "levelDetails": [
             {
@@ -10185,8 +10914,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "9",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Spear Stab ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spear_Stab"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/58.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/58",
           "tree": {
@@ -10212,6 +10951,18 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "9"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -10293,10 +11044,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10309,9 +11059,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Spear Mastery 9,",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Traumatic_Blow",
           "description": "Brutally strike an enemy with the\nchance of causing the Bleeding status, which\nwill make the target continuously receive extra\ndamage for a while.",
           "levelDetails": [
             {
@@ -10362,8 +11114,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "23",
+          "castDelay": "0.5 seconds",
+          "castRange": "5 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Traumatic Blow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Traumatic_Blow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/398.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/398",
           "tree": {
@@ -10395,6 +11157,22 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "23"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -10442,10 +11220,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10461,6 +11238,8 @@ export const dragonKnightData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Brandish_Spear",
           "description": "Spear Skill Form.\nThis skill can be used when the user is mounted, Swings the equipped spear forward to a single target to inflict physical damage to all enemies in front of the user..\nDamage can be increased upon the user's STR.\nThe player cannot change weapons during this time.",
           "levelDetails": [
             {
@@ -10555,8 +11334,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "24",
+          "castRange": "Melee",
+          "areaOfEffect": "Special",
+          "translations": {
+            "pt-BR": {
+              "name": " Brandish Spear ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Brandish_Spear"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/57.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/57",
           "tree": {
@@ -10590,6 +11379,10 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "24"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.35 seconds"
               },
@@ -10606,12 +11399,16 @@ export const dragonKnightData = {
                 "value": "1 second"
               },
               {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
               },
               {
                 "label": "Area of Effect",
-                "value": "Lv 1: 5 x 2 cells / Lv 2: 5 x 2 cells / Lv 3: 5 x 2 cells / Lv 4: 5 x 3 cells / Lv 5: 5 x 3 cells / Lv 6: 5 x 3 cells / Lv 7: 5 x 4 cells / Lv 8: 5 x 4 cells / Lv 9: 5 x 4 cells / Lv 10: 5 x 5 cells"
+                "value": "Special"
               }
             ],
             "levelTables": [
@@ -10689,10 +11486,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10705,9 +11501,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Spear Mastery 10,",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Clashing_Spiral",
           "description": "Hit an enemy with spiraling strikes\nthat immobilize it for a second and inflict an\namount of damage determined by the skill's\nlevel and the weight of the equipped weapon.\nThis skill's level also affects its cast time\nand delay.",
           "levelDetails": [],
           "fixedCastTime": "0.3 seconds",
@@ -10740,8 +11538,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level × 3)",
+          "variableCastTime": "0.25 seconds",
+          "castRange": "5 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Clashing Spiral ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Clashing_Spiral"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/397.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/397",
           "tree": {
@@ -10787,8 +11595,16 @@ export const dragonKnightData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.25 seconds"
               },
               {
                 "label": "Cast Delay",
@@ -10797,6 +11613,14 @@ export const dragonKnightData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -10844,10 +11668,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10860,9 +11683,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Spear Mastery 9,",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Vital_Strike",
           "description": "Strike an enemy's vital points to\ncause various abnormal statuses. This skill's\nlevel affects the Attack Power and the success\nrate of causing abnormal status effects.\nRequires Spear Class Weapon.",
           "levelDetails": [
             {
@@ -10953,8 +11778,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12~20",
+          "castDelay": "0.8/1 second",
+          "castRange": "5 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Vital Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vital_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/399.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/399",
           "tree": {
@@ -10986,6 +11821,22 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "12~20"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.8/1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -11063,10 +11914,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11093,6 +11943,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -11171,8 +12023,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -11274,10 +12133,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11293,6 +12151,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sword_Mastery",
           "description": "Increase damage with One Handed\nSword or Dagger Class Weapons.",
           "levelDetails": [
             {
@@ -11383,8 +12243,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sword Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sword_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2",
           "tree": {
@@ -11480,10 +12347,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11499,6 +12365,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Increase_HP_Recovery",
           "description": "Enhance natural HP Recovery. Max\nHP affects how much HP restoration is increased.\nHP recovery happens every 10 seconds while standing.\nBut it doesn't work while walking or HP/SP regen disabled.",
           "levelDetails": [
             {
@@ -11589,8 +12457,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Increase HP Recovery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Increase_HP_Recovery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/4.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/4",
           "tree": {
@@ -11624,6 +12499,10 @@ export const dragonKnightData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -11632,70 +12511,80 @@ export const dragonKnightData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(HP 5+0.2% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 5+0.2% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(HP 10+0.4% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 10+0.4% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(HP 15+0.6% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 15+0.6% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(HP 20+0.8% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 20+0.8% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(HP 25+1.0% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 25+1.0% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(HP 30+1.2% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 30+1.2% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(HP 35+1.4% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 35+1.4% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(HP 40+1.6% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 40+1.6% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(HP 45+1.8% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 45+1.8% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(HP 50+2.0% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 50+2.0% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   }
@@ -11704,10 +12593,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11723,6 +12611,8 @@ export const dragonKnightData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bash",
           "description": "Hit an enemy with crushing force.\nIf the Fatal Blow skill is learned, Bash will have\nan added Stun effect at levels 5 and higher.",
           "levelDetails": [
             {
@@ -11813,8 +12703,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8/15",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Bash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5",
           "tree": {
@@ -11833,6 +12733,18 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "8/15"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -11914,10 +12826,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11933,6 +12844,8 @@ export const dragonKnightData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Provoke",
           "description": "Enrage a single target to decrease player's defense\nbased on VIT or monster's physical defense\nat cost of increasing its Attack Strength.\nIneffective against the Undead and Boss monster.\nEffect of Provoke on Enemies by Skill's Level.",
           "levelDetails": [
             {
@@ -12023,8 +12936,19 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level + 3)",
+          "castDelay": "ASPD",
+          "duration": "30 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Provoke ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Provoke"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6",
           "tree": {
@@ -12045,8 +12969,24 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level + 3)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds"
               }
             ],
             "levelTables": [
@@ -12058,114 +12998,92 @@ export const dragonKnightData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "enemy-s-atk-11-enemy-s-def",
-                    "label": "Enemy's Atk +11%, Enemy's Def"
+                    "id": "enemy-s-atk",
+                    "label": "Enemy's Atk"
                   },
                   {
-                    "id": "enemy-s-atk-14-enemy-s-def",
-                    "label": "Enemy's Atk +14%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-17-enemy-s-def",
-                    "label": "Enemy's Atk +17%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-20-enemy-s-def",
-                    "label": "Enemy's Atk +20%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-23-enemy-s-def",
-                    "label": "Enemy's Atk +23%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-26-enemy-s-def",
-                    "label": "Enemy's Atk +26%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-29-enemy-s-def",
-                    "label": "Enemy's Atk +29%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-32-enemy-s-def",
-                    "label": "Enemy's Atk +32%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-5-enemy-s-def",
-                    "label": "Enemy's Atk +5%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-8-enemy-s-def",
-                    "label": "Enemy's Atk +8%, Enemy's Def"
+                    "id": "enemy-s-def",
+                    "label": "Enemy's Def"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "enemy-s-atk-5-enemy-s-def": "-10%",
+                      "enemy-s-atk": "+5%",
+                      "enemy-s-def": "-10%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "enemy-s-atk-8-enemy-s-def": "-15%",
+                      "enemy-s-atk": "+8%",
+                      "enemy-s-def": "-15%",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "enemy-s-atk-11-enemy-s-def": "-20%",
+                      "enemy-s-atk": "+11%",
+                      "enemy-s-def": "-20%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "enemy-s-atk-14-enemy-s-def": "-25%",
+                      "enemy-s-atk": "+14%",
+                      "enemy-s-def": "-25%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "enemy-s-atk-17-enemy-s-def": "-30%",
+                      "enemy-s-atk": "+17%",
+                      "enemy-s-def": "-30%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "enemy-s-atk-20-enemy-s-def": "-35%",
+                      "enemy-s-atk": "+20%",
+                      "enemy-s-def": "-35%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "enemy-s-atk-23-enemy-s-def": "-40%",
+                      "enemy-s-atk": "+23%",
+                      "enemy-s-def": "-40%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "enemy-s-atk-26-enemy-s-def": "-45%",
+                      "enemy-s-atk": "+26%",
+                      "enemy-s-def": "-45%",
                       "sp-cost": "11"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "enemy-s-atk-29-enemy-s-def": "-50%",
+                      "enemy-s-atk": "+29%",
+                      "enemy-s-def": "-50%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "enemy-s-atk-32-enemy-s-def": "-55%",
+                      "enemy-s-atk": "+32%",
+                      "enemy-s-def": "-55%",
                       "sp-cost": "13"
                     }
                   }
@@ -12174,10 +13092,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12190,9 +13107,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Finish Quest",
           "group": "Passive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Berserk",
           "description": "Empowered by rage, character\nenters condition that is equivalent to Level 10\nProvoke status when HP is reduced to less than\n25% of MaxHP. Provoked status lasts until\ncharacter HP is restored to more than 25% of\nMaxHP or if Provoke effect is nullified.",
           "levelDetails": [],
           "levelExtras": [
@@ -12206,8 +13125,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Until recast",
+          "translations": {
+            "pt-BR": {
+              "name": " Berserk ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Berserk"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/146.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/146",
           "tree": {
@@ -12226,6 +13154,18 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Until recast"
               }
             ],
             "levelTables": [
@@ -12249,10 +13189,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12268,6 +13207,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/HP_Recovery_While_Moving",
           "description": "Enable natural recovery of HP\nwhile moving. Only 25% of the HP that is\nnaturally recovered while standing is restored\nduring movement. The Increase Recovery skill\ndoes not affect HP Recovery While Moving.",
           "levelDetails": [],
           "levelExtras": [
@@ -12281,8 +13222,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " HP Recovery While Moving ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/HP_Recovery_While_Moving"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/144.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/144",
           "tree": {
@@ -12324,10 +13272,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12343,6 +13290,8 @@ export const dragonKnightData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -12356,8 +13305,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -12376,6 +13334,14 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -12403,10 +13369,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12422,6 +13387,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Two_Handed_Sword_Mastery",
           "description": "Increase damage with Two Handed Sword Class Weapons.",
           "levelDetails": [
             {
@@ -12512,8 +13479,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Two Handed Sword Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Two_Handed_Sword_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3",
           "tree": {
@@ -12616,10 +13590,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12632,9 +13605,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Bash 5",
           "group": "Active",
           "type": "Offensive, Buff",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Magnum_Break",
           "description": "Drain a small amount of the caster's\nHP to inflict Fire property area effect damage on\nenemies in the caster's vicinity and force them\nbackward. For 10 seconds after Magnum Break,\ncaster's weapon will receive a 20% Fire property\nstrength enhancement.\nDescription : SP 30 Consumption, inflict Fire property physical damage to all enemies in a 5x5 area around the user and push them 2 cells backwards.\nThis skill adds an additional 20% Fire property damage for ten seconds.",
           "levelDetails": [
             {
@@ -12729,8 +13704,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Magnum Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Magnum_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/7.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/7",
           "tree": {
@@ -12758,6 +13743,10 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -12772,6 +13761,18 @@ export const dragonKnightData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -12849,10 +13850,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12868,6 +13868,8 @@ export const dragonKnightData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Endure",
           "description": "Enables attacking and movement\nwhile receiving damage, but is automatically\ncanceled after skill duration elapses or after\ncaster is hit by 7 attacks. 10 sec cast delay.\nDisabled in War of Emperium.\nDuration and Mdef Bonus by Skill's Level\nDescription : Resist flinching from enemy melee attacks temporarily. Stiffness occurs when damage is caused by Magic and skill attacks.\nIf attacked more than seven times by an enemy in an Endure state, the Endure state will be released.",
           "levelDetails": [
             {
@@ -12958,8 +13960,18 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "cooldown": "10 seconds",
+          "duration": "[7 + (Skill Level × 3)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Endure ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Endure"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/8.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/8",
           "tree": {
@@ -12987,6 +13999,14 @@ export const dragonKnightData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cooldown",
+                "value": "10 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
               }
@@ -13000,114 +14020,92 @@ export const dragonKnightData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "duration-10-sec-mdef",
-                    "label": "Duration 10 Sec, Mdef"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
-                    "id": "duration-13-sec-mdef",
-                    "label": "Duration 13 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-16-sec-mdef",
-                    "label": "Duration 16 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-19-sec-mdef",
-                    "label": "Duration 19 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-22-sec-mdef",
-                    "label": "Duration 22 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-25-sec-mdef",
-                    "label": "Duration 25 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-28-sec-mdef",
-                    "label": "Duration 28 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-31-sec-mdef",
-                    "label": "Duration 31 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-34-sec-mdef",
-                    "label": "Duration 34 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-37-sec-mdef",
-                    "label": "Duration 37 Sec, Mdef"
+                    "id": "mdef",
+                    "label": ", Mdef"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration-10-sec-mdef": "+1",
+                      "duration": "10 seconds",
+                      "mdef": "+1",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "duration-13-sec-mdef": "+2",
+                      "duration": "13 seconds",
+                      "mdef": "+2",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "duration-16-sec-mdef": "+3",
+                      "duration": "16 seconds",
+                      "mdef": "+3",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "duration-19-sec-mdef": "+4",
+                      "duration": "19 seconds",
+                      "mdef": "+4",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "duration-22-sec-mdef": "+5",
+                      "duration": "22 seconds",
+                      "mdef": "+5",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "duration-25-sec-mdef": "+6",
+                      "duration": "25 seconds",
+                      "mdef": "+6",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "duration-28-sec-mdef": "+7",
+                      "duration": "28 seconds",
+                      "mdef": "+7",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "duration-31-sec-mdef": "+8",
+                      "duration": "31 seconds",
+                      "mdef": "+8",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "duration-34-sec-mdef": "+9",
+                      "duration": "34 seconds",
+                      "mdef": "+9",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "duration-37-sec-mdef": "+10",
+                      "duration": "37 seconds",
+                      "mdef": "+10",
                       "sp-cost": "10"
                     }
                   }
@@ -13116,10 +14114,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13135,6 +14132,8 @@ export const dragonKnightData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fatal_Blow",
           "description": "Cause the Stun effect on targeted\nenemy when using Level 5 Bash or higher.\nThe chance of inflicting Stun increases with Bash\nskill level and Base Level of the caster.",
           "levelDetails": [],
           "levelExtras": [
@@ -13148,8 +14147,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Fatal Blow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fatal_Blow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/145.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/145",
           "tree": {
@@ -13191,10 +14197,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13207,9 +14212,11 @@ export const dragonKnightData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -13223,8 +14230,17 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -13243,6 +14259,18 @@ export const dragonKnightData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -13266,10 +14294,9 @@ export const dragonKnightData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13289,6 +14316,8 @@ export const dragonKnightData = {
       "target": "Self",
       "recoversAp": "Skill Level x 6",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Servant_Weapon",
       "description": "Summon ethereal weapons. When attacking with normal Physical Melee attack, consume the weapons to inflict Melee Physical damage to target and enemies within 9x9 range twice.\nYou can control up to 5 weapons, and depending on your Skill Level, Servant Weapon will have faster weapon recovery interval and additional attack chance.\nAdditional damage increase based on the caster's base level and POW, and CRIT damage is applied based on the caster's CRIT.\nIf the hit crits, it inflicts half of the total of your CRIT Damage bonus options as damage.",
       "levelDetails": [
         {
@@ -13343,8 +14372,18 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "30 + (Skill Level × 5)",
+      "duration": "(Skill Level × 30) seconds",
+      "areaOfEffect": "9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Servant Weapon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Servant_Weapon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5201.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5201",
       "tree": {
@@ -13365,6 +14404,10 @@ export const dragonKnightData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "30 + (Skill Level × 5)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -13383,6 +14426,10 @@ export const dragonKnightData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "9 x 9"
           },
           {
             "label": "AP Generated",
@@ -13443,7 +14490,6 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Servant Weapon",
@@ -13553,7 +14599,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13569,6 +14615,8 @@ export const dragonKnightData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Two-handed_Defense",
       "description": "Two-handed Swords, Spears, and Axes decrease Physical damage from enemies of all sizes.",
       "levelDetails": [],
       "levelExtras": [
@@ -13618,8 +14666,15 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Two-handed Defense ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Two-handed_Defense"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5207.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5207",
       "tree": {
@@ -13715,10 +14770,9 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13734,6 +14788,8 @@ export const dragonKnightData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Charging_Pierce",
       "description": "A Spear and Two-handed Sword skill.\nPierce, Clashing Spiral, Hundred Spears, and Madness Crusher temporarily add Charge stacks.\nCharge stacks last for 5 seconds, and disappear if not increased within the time limit.\nYou can get up to 10 Charge stacks to significantly increase Pierce, Clashing Spiral, Hundred Spears, and Madness Crusher damage.",
       "levelDetails": [],
       "fixedCastTime": "0.4 seconds",
@@ -13787,8 +14843,17 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "20 + ( Skill Level x 5 )",
+      "duration": "80 + ( Skill Level x 10 ) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Charging Pierce ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Charging_Pierce"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5206.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5206",
       "tree": {
@@ -13816,6 +14881,10 @@ export const dragonKnightData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "20 + ( Skill Level x 5 )"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.4 seconds"
           },
@@ -13834,6 +14903,10 @@ export const dragonKnightData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "80 + ( Skill Level x 10 ) seconds"
           }
         ],
         "levelTables": [
@@ -13911,10 +14984,9 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13930,6 +15002,8 @@ export const dragonKnightData = {
       "target": "1 Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Servant_Weapon_-_Sign",
       "description": "A Servant Weapon skill.\nShoot a servant Weapon at an enemy, marking it as a Servant Weapon - Phantom and Demolition target.",
       "levelDetails": [],
       "fixedCastTime": "0 seconds",
@@ -13963,8 +15037,17 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "15",
+      "duration": "(Skill Level x 2) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Servant Weapon - Sign ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Servant_Weapon_-_Sign"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5203.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5203",
       "tree": {
@@ -13992,6 +15075,10 @@ export const dragonKnightData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "15"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -14010,6 +15097,10 @@ export const dragonKnightData = {
           {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Duration",
+            "value": "(Skill Level x 2) seconds"
           }
         ],
         "levelTables": [
@@ -14057,10 +15148,9 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14076,6 +15166,8 @@ export const dragonKnightData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Two-handed swords and Two-handed spears only skills.\nSwing the weapon at the target and deal physical damage to the target and within the surrounding range 2 times.\nWhen used as a two-handed sword, it is applied as melee physical damage,\nWhen used as a two-handed spear, it is applied as long-distance physical damage.\nDamage is additionally increased according to the user's base level and POW, and critical damage is applied according to the user's critical probability.\nIn the case of critical damage, half of the total critical damage increase options are applied.",
       "levelDetails": [
         {
@@ -14170,8 +15262,15 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Hack And Slasher ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hack_And_Slasher"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5208.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5208",
       "tree": {
@@ -14308,7 +15407,6 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Hack and Slasher",
@@ -14448,7 +15546,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14464,6 +15562,8 @@ export const dragonKnightData = {
       "target": "1 Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Dragonic_Breath",
       "description": "Can only use this skill while riding dragon.\nChannels the power of the dragon into yourself, and unleash a powerful dragon's breath on your target.\nDragon's Breath deals Ranged Physical damage that ignores Physical Armor to both the target and targets in its surrounding area.\nDamage is increased or decreased based on the caster's MaxHP and MaxSP.\nAdditional Damage increase by an additional amount based on the caster's base level and POW.\nWhen using this skill under Dragonic Aura buff, increases damage rate from user's MaxHP and MaxSP.",
       "levelDetails": [
         {
@@ -14558,8 +15658,17 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "58 + (Skill Level × 3)",
+      "areaOfEffect": "7×7~9×9",
+      "translations": {
+        "pt-BR": {
+          "name": " Dragonic Breath ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Dragonic_Breath"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6001.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6001",
       "tree": {
@@ -14591,6 +15700,10 @@ export const dragonKnightData = {
           {
             "label": "Levels",
             "value": "10"
+          },
+          {
+            "label": "SP Cost",
+            "value": "58 + (Skill Level × 3)"
           },
           {
             "label": "Fixed Cast Time",
@@ -14706,7 +15819,6 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Dragonic Breath",
@@ -14737,7 +15849,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14753,6 +15865,8 @@ export const dragonKnightData = {
       "target": "1 Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Servant_Weapon-Phantom",
       "description": "Servant Weapon Skill.\nInstantly strikes target, consuming all weapons to deal Melee Physical damage equal to the number of weapons consumed to all Sign targets within 7x7 cells around the target and others within 5x5 cells around them, and inflicting [Pitch Black] with a certain probability.\nAdditional damage increase based on the caster's base level and POW, and CRIT damage is applied based on the caster's CRIT.\nIf the hit crits, it inflicts half of the total of your CRIT Damage bonus options as damage.",
       "levelDetails": [
         {
@@ -14807,8 +15921,17 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "40",
+      "areaOfEffect": "7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Servant Weapon-Phantom ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Servant_Weapon-Phantom"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5204.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5204",
       "tree": {
@@ -14842,6 +15965,10 @@ export const dragonKnightData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "40"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -14860,6 +15987,10 @@ export const dragonKnightData = {
           {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7"
           }
         ],
         "levelTables": [
@@ -14907,7 +16038,6 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Servant Weapon - Phantom",
@@ -14954,7 +16084,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14970,6 +16100,8 @@ export const dragonKnightData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Storm_Slash",
       "description": "Exclusive skills for two-handed swords and two-handed axes.\nSlashes the target multiple times to inflict melee physical damage. Additionally, if under the Giant Growth effect, there is a 60% chance that the damage is doubled.\nDamage is additionally increased according to the user's base level and POW, and critical damage is applied according to the user's critical probability.\nIn the case of critical damage, half of the total critical damage increase options are applied.",
       "levelDetails": [
         {
@@ -15024,8 +16156,16 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "35 + (Skill Level × 5)",
+      "translations": {
+        "pt-BR": {
+          "name": " Storm Slash ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Storm_Slash"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5213.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5213",
       "tree": {
@@ -15057,6 +16197,10 @@ export const dragonKnightData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "35 + (Skill Level × 5)"
           },
           {
             "label": "Fixed Cast Time",
@@ -15128,7 +16272,6 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Storm Slash",
@@ -15272,7 +16415,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15288,6 +16431,8 @@ export const dragonKnightData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Two-handed spear exclusive skill.\nInflicts long ranged physical damage to the target for 5 hits.\nIf the user is under Dragonic Aura buff, the skill will deal more damage.\nDeals additional damage depends on user's base level and POW, has a chance to trigger critical, critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -15316,8 +16461,15 @@ export const dragonKnightData = {
       "castDelay": "0.7 seconds",
       "cooldown": "0.5 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Dragonic Pierce ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Dragonic_Pierce"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6502.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6502",
       "tree": {
@@ -15371,7 +16523,6 @@ export const dragonKnightData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Dragonic Pierce",
@@ -15387,7 +16538,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15403,6 +16554,8 @@ export const dragonKnightData = {
       "target": "Single Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Madness_Crusher",
       "description": "Two-handed swords and Two-handed spears only skills.\nStrikes the target and inflicts long-distance physical damage to the target and those within the surrounding range.\nDamage increases additionally depending on the user's base level and POW, and the weapon's level and weight.",
       "levelDetails": [
         {
@@ -15457,8 +16610,18 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "30 + (Skill Level × 4)",
+      "castRange": "7 cells",
+      "areaOfEffect": "3 x 3~7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Madness Crusher ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Madness_Crusher"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5211.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5211",
       "tree": {
@@ -15492,6 +16655,10 @@ export const dragonKnightData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "30 + (Skill Level × 4)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -15506,6 +16673,10 @@ export const dragonKnightData = {
           {
             "label": "Cooldown",
             "value": "0.35 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "7 cells"
           },
           {
             "label": "Target",
@@ -15570,7 +16741,6 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Madness Crusher",
@@ -15715,7 +16885,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15731,6 +16901,8 @@ export const dragonKnightData = {
       "target": "Area of Effect",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Servant_Weapon-Demolition",
       "description": "Servant Weapon Skill.\nUse all of your Servant Weapon and attack all Sign targets within 13 x13 cells around you, inflicting Melee Physical damage by the number of servant weapons consumed for this skill. Servant Weapons will be recharged based on the number of targets hit by this skill.\nAdditional damage increase based on the caster's base level and POW, and CRIT damage is applied based on the caster's CRIT.\nIf the hit crits, it inflicts half of the total of your CRIT Damage bonus options as damage.",
       "levelDetails": [
         {
@@ -15785,8 +16957,18 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25 + (Skill Level × 5)",
+      "castRange": "Melee",
+      "areaOfEffect": "13 x 13",
+      "translations": {
+        "pt-BR": {
+          "name": " Servant Weapon-Demolition ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Servant_Weapon-Demolition"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5205.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5205",
       "tree": {
@@ -15814,6 +16996,10 @@ export const dragonKnightData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "25 + (Skill Level × 5)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -15830,8 +17016,16 @@ export const dragonKnightData = {
             "value": "0.5 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Melee"
+          },
+          {
             "label": "Target",
             "value": "Area of Effect"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "13 x 13"
           },
           {
             "label": "AP Generated",
@@ -15883,7 +17077,6 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Servant Weapon - Demolition",
@@ -15922,7 +17115,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15937,7 +17130,9 @@ export const dragonKnightData = {
       "type": "Support",
       "target": "Self",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Vigor",
       "description": "Increases the damage of your normal Melee Physical attacks temporarily.\nEach attack costs certain amount of HP and deals additional damage to Human/Angel monsters.",
       "levelDetails": [
         {
@@ -16032,6 +17227,8 @@ export const dragonKnightData = {
           ]
         }
       ],
+      "spCost": "100",
+      "duration": "(Skill Level × 30) seconds",
       "translations": {
         "pt-BR": {
           "name": " Vigor ",
@@ -16074,6 +17271,10 @@ export const dragonKnightData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "100"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -16092,6 +17293,10 @@ export const dragonKnightData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "150"
           }
         ],
         "levelTables": [
@@ -16197,7 +17402,6 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Vigor",
@@ -16270,7 +17474,9 @@ export const dragonKnightData = {
       "type": "Ranged Physical",
       "target": "1 Target",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Dragonic_Aura",
       "description": "Deals great amount of Ranged Physical damage to the target and increases the damage of Dragon Breath, Dragon's Water Breath, and Hundred Spears for 300 seconds.\nDamage is increased by an additional amount based on the caster's Base Level and POW.\nAlso inflicts more damage on Demi-Human and Angel monsters.\nP.ATK and POW will affect the skill damage output from Dragon Training skill.",
       "levelDetails": [
         {
@@ -16365,8 +17571,18 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "100",
+      "duration": "300 seconds",
+      "castRange": "7 cells",
+      "translations": {
+        "pt-BR": {
+          "name": " Dragonic Aura ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Dragonic_Aura"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5210.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5210",
       "tree": {
@@ -16406,6 +17622,10 @@ export const dragonKnightData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "100"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -16422,8 +17642,20 @@ export const dragonKnightData = {
             "value": "60 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "7 cells"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Duration",
+            "value": "300 seconds"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "150"
           }
         ],
         "levelTables": [
@@ -16501,7 +17733,6 @@ export const dragonKnightData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Dragonic Aura",
@@ -16543,7 +17774,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

@@ -69,6 +69,11 @@ function translateCommonSpecText(value) {
     .replace(/\bcells\b/gi, 'celulas')
     .replace(/\bcell\b/gi, 'celula')
     .replace(/\bself\b/g, 'proprio usuario')
+    .replace(/\bUnavailable\b/gi, 'Indisponivel')
+    .replace(/Can be used while under (.+?) buff(?=$|\s+-)/gi, 'Pode ser usada durante o efeito de $1')
+    .replace(/Can be removed by (.+?)(?=$|\s+-)/gi, 'Pode ser removido por $1')
+    .replace(/No longer removed by (.+?)(?=$|\s+-)/gi, 'Nao pode mais ser removido por $1')
+    .replace(/\bor\b/gi, 'ou')
 }
 
 function formatPortugueseDecimal(value) {
@@ -109,6 +114,7 @@ const specLabelTranslations = {
   'All Property Damage Bonus': 'Bonus de dano de todas as propriedades',
   'Ammunition': 'Consumo',
   'Area of Effect': 'Area de efeito',
+  'Area of Effect (Commune)': 'Area de efeito (Comunhao)',
   'Base Damage (ATK)': 'Dano base (ATQ)',
   'Base Damage (ATK per Hit)': 'Dano base (ATQ por acerto)',
   'Base Damage (MATK)': 'Dano base (ATQM)',
@@ -117,6 +123,7 @@ const specLabelTranslations = {
   'Bonus Damage (Talisman + Soul Lv) Multiplier': 'Multiplicador de bonus (Nv. de Talismas + Alma)',
   'Bonus Damage (Talisman Lv) Multiplier': 'Multiplicador de bonus (Nv. de Talismas)',
   'Buff Duration': 'Duracao do efeito',
+  'Buff Removal': 'Remocao do efeito',
   'Cast Delay': 'Pos-conjuracao',
   'Cast Range': 'Alcance',
   'Cooldown': 'Recarga',
@@ -130,17 +137,23 @@ const specLabelTranslations = {
   'Levels': 'Niveis',
   'Long Range Physical Damage': 'Dano fisico a distancia',
   'Long Ranged Damage Bonus': 'Bonus de dano fisico a distancia',
+  'Long Ranged Physical Damage': 'Dano fisico a distancia',
   'Melee Damage Bonus': 'Bonus de dano fisico corpo a corpo',
   'P.Atk': 'P.Atk',
   'Property': 'Propriedade',
   'Pulse': 'Pulso',
+  'HP Recovery': 'Recuperacao de HP',
+  'Recovery Amount': 'Quantidade recuperada',
+  'Recovery Amount (Commune)': 'Quantidade recuperada (Comunhao)',
   'S.Matk': 'S.Matk',
   'SP Cost': 'Custo de SP',
+  'SP Recovery': 'Recuperacao de SP',
   'Spl': 'Spl',
   'SPL': 'SPL',
   'Skill Level Factor': 'Fator do nivel da habilidade',
   'Target': 'Alvo',
   'Type': 'Tipo',
+  'Use Condition': 'Condicao de uso',
   'Variable Cast Time': 'Conjuracao variavel',
 }
 

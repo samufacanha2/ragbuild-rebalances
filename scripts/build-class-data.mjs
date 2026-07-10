@@ -5,14 +5,18 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
 const generatedDir = path.join(rootDir, "src", "generated");
+const sourceDir = path.join(rootDir, "data", "sources");
 
 const defaultApiUrl = "https://www.divine-pride.net";
 const apiDocsUrl = `${defaultApiUrl}/api`;
 const browikiUrl = "https://browiki.org";
+const irowikiUrl = "https://irowiki.org";
 const basePointLimit = 49;
 const treeColumns = 9;
 const skillDetailsCache = new Map();
 const translationCache = new Map();
+const cliOptions = parseCliOptions(process.argv.slice(2));
+const sourceStats = { read: 0, fetched: 0, reused: 0, fallbackRead: 0 };
 let envCache = null;
 
 const classConfigs = [
@@ -43,23 +47,38 @@ function config(classId, classSlug, className, skillRanges, previousLabels) {
   return { classId, classSlug, className, skillRanges, previousLabels };
 }
 
+function parseCliOptions(args) {
+  const options = new Set(args);
+  const downloadSources = options.has("--download-sources") || options.has("--download-sources-only");
+  const writeGenerated = !options.has("--download-sources-only");
+  const refreshSources = options.has("--refresh-sources");
+
+  return {
+    downloadSources,
+    refreshSources,
+    writeGenerated
+  };
+}
+
 async function main() {
   const rebalanceManifest = await parseRebalanceManifest();
   const pointLimitTimeline = buildPointLimitTimeline(rebalanceManifest);
   const classDataSets = [];
 
-  await fs.mkdir(generatedDir, { recursive: true });
+  if (cliOptions.writeGenerated) await fs.mkdir(generatedDir, { recursive: true });
 
   for (const classConfig of classConfigs) {
     const data = await buildClassData({ classConfig, rebalanceManifest, pointLimitTimeline });
     const exportName = `${camelCase(classConfig.classSlug)}Data`;
     const fileName = `${exportName}.js`;
 
-    await fs.writeFile(
-      path.join(generatedDir, fileName),
-      `export const ${exportName} = ${JSON.stringify(data, null, 2)};\n\nexport default ${exportName};\n`,
-      "utf8"
-    );
+    if (cliOptions.writeGenerated) {
+      await fs.writeFile(
+        path.join(generatedDir, fileName),
+        `export const ${exportName} = ${JSON.stringify(data, null, 2)};\n\nexport default ${exportName};\n`,
+        "utf8"
+      );
+    }
 
     classDataSets.push({
       id: classConfig.classSlug,
@@ -70,7 +89,14 @@ async function main() {
       fileName
     });
 
-    console.log(`Built ${fileName} with ${data.skills.length} skills.`);
+    console.log(`${cliOptions.writeGenerated ? "Built" : "Cached sources for"} ${fileName} with ${data.skills.length} skills.`);
+  }
+
+  if (!cliOptions.writeGenerated) {
+    console.log(
+      `Cached source files in ${path.relative(rootDir, sourceDir)} (${sourceStats.fetched} fetched, ${sourceStats.reused} reused, ${sourceStats.fallbackRead} fallback reads).`
+    );
+    return;
   }
 
   const entries = classDataSets
@@ -87,6 +113,9 @@ async function main() {
   );
 
   console.log(`Built src/generated/classDataSets.js with ${classDataSets.length} classes.`);
+  console.log(
+    `Used source files from ${path.relative(rootDir, sourceDir)} (${sourceStats.read} read, ${sourceStats.fetched} fetched, ${sourceStats.reused} reused, ${sourceStats.fallbackRead} fallback reads).`
+  );
 }
 
 async function buildClassData({ classConfig, rebalanceManifest, pointLimitTimeline }) {
@@ -162,7 +191,8 @@ async function buildClassData({ classConfig, rebalanceManifest, pointLimitTimeli
       rebalanceManifest: "rebalances/manifest.json",
       divinePrideApiDocs: apiDocsUrl,
       divinePrideSkillTree: `${defaultApiUrl}/tools/skilltree/${classConfig.classId}`,
-      browiki: browikiUrl
+      browiki: browikiUrl,
+      irowiki: `${irowikiUrl}/wiki/`
     },
     rebalanceVersions,
     addedSkills: addedSkills.entries,
@@ -198,7 +228,7 @@ function buildTabSkills({ treeSkills, treeById, skillDetails, rebalanceByName })
         }))
       },
       details: buildSkillDetails(parsed),
-      irowikiUrl: "",
+      irowikiUrl: parsed.irowikiUrl ?? "",
       balanceNotes,
       translations: parsed.translations ?? {},
       api: {
@@ -321,7 +351,9 @@ function uniqueById(skills) {
 }
 
 async function fetchSkillTreePage(classConfig) {
-  const html = await fetchText(`${defaultApiUrl}/tools/skilltree/${classConfig.classId}`);
+  const html = await fetchText(`${defaultApiUrl}/tools/skilltree/${classConfig.classId}`, {
+    cachePath: sourceFilePath("divine-pride", "skilltree", `${classConfig.classId}.html`)
+  });
   const className =
     html.match(/<meta property="og:title" content="Skilltree:\s*([^"]+)"/)?.[1] ??
     classConfig.className;
@@ -382,7 +414,9 @@ function parseSkillTreeSegment(block, jobs) {
 async function fetchSkillDetails(treeSkill) {
   if (skillDetailsCache.has(treeSkill.id)) return skillDetailsCache.get(treeSkill.id);
 
-  const html = await fetchText(`${defaultApiUrl}/database/skill/${treeSkill.id}`);
+  const html = await fetchText(`${defaultApiUrl}/database/skill/${treeSkill.id}`, {
+    cachePath: sourceFilePath("divine-pride", "skills", `${treeSkill.id}.html`)
+  });
   const description =
     html.match(/<meta property="og:description" content="([\s\S]*?)">/)?.[1] ??
     "";
@@ -395,11 +429,14 @@ async function fetchSkillDetails(treeSkill) {
   const skill = reconcileParsedApDirection(parsed, parseResourceApHistoryDirection(html));
   const pageDetails = parseSkillPageDetails(html);
   const translations = await fetchSkillTranslations({ id: treeSkill.id, englishName: skill.name || treeSkill.name });
+  const irowiki = await fetchIrowikiSkillDetails({ id: treeSkill.id, englishName: skill.name || treeSkill.name });
 
   const result = {
     ...fallbackSkill(treeSkill),
     ...skill,
     ...pageDetails,
+    ...missingSkillDetails({ ...fallbackSkill(treeSkill), ...skill, ...pageDetails }, irowiki?.rows ?? {}),
+    irowikiUrl: irowiki?.url ?? "",
     translations,
     apiStatus: translations["pt-BR"] ? "translated" : "not-used",
     maxLevel: skill.maxLevel || treeSkill.MaxLevel
@@ -420,6 +457,8 @@ function fallbackSkill(treeSkill) {
     target: "",
     recoversAp: "",
     consumesAp: "",
+    ammunition: "",
+    irowikiUrl: "",
     description: "",
     levelDetails: []
   };
@@ -658,12 +697,12 @@ function buildSkillDetails(skill) {
   addDetail(rows, "Fixed Cast Time", skill.fixedCastTime);
   addDetail(rows, "Variable Cast Time", skill.variableCastTime);
   addDetail(rows, "Cast Delay", skill.castDelay);
-  addDetail(rows, "Cooldown", levelLabels.has("Cooldown") ? "" : skill.cooldown || levelMetric(skill, /(?:skill\s*)?cooldown\s*:\s*([^/]+?seconds?)(?=\s*\/|$)/i));
+  addDetail(rows, "Cooldown", levelLabels.has("Cooldown") ? "" : skill.cooldown || levelMetric(skill, /(?:skill\s*)?cooldown\s*:\s*([^/]+?sec(?:onds?)?)(?=\s*\/|$)/i, secondsValue));
   addDetail(rows, "Cast Range", skill.castRange);
   addDetail(rows, "Target", skill.target);
-  addDetail(rows, "Area of Effect", levelLabels.has("Area of Effect") ? "" : levelMetric(skill, /(?:range|area of effect)\s*:\s*([0-9]+\s*x\s*[0-9]+\s*cells?)/i));
-  addDetail(rows, "Duration", levelLabels.has("Duration") ? "" : levelMetric(skill, /duration\s*:?\s*([^/]+?seconds?)(?=\s*\/|$)/i));
-  addDetail(rows, "Ammunition", consumedTalisman(skill.description));
+  addDetail(rows, "Area of Effect", levelLabels.has("Area of Effect") ? "" : skill.areaOfEffect || levelMetric(skill, /(?:range|area of effect)\s*:\s*([0-9]+\s*x\s*[0-9]+\s*cells?)/i));
+  addDetail(rows, "Duration", levelLabels.has("Duration") ? "" : skill.duration || levelMetric(skill, /duration\s*:?\s*([^/]+?sec(?:onds?)?)(?=\s*\/|$)/i, secondsValue));
+  addDetail(rows, "Ammunition", consumedTalisman(skill.description) || skill.ammunition);
   addDetail(rows, "AP Generated", skill.recoversAp);
   addDetail(rows, "AP Consumed", skill.consumesAp);
   addDetail(rows, "Pulse", descriptionValue(skill.description, /every\s+([0-9.]+\s*seconds?)/i));
@@ -736,16 +775,56 @@ function parseLevelLine(rawLine, row, table, formulaRows) {
   let line = normalizeWhitespace(rawLine).replace(/\.$/, "");
   if (!line) return;
 
-  line = pullMetric(line, row, table, "Area of Effect", /(?:^|\s*\/\s*)(?:range|area of effect)\s*:?\s*([0-9]+\s*x\s*[0-9]+\s*cells?)/i, formatArea);
-  line = pullMetric(line, row, table, "Duration", /(?:^|\s*\/\s*)duration\s*:?\s*([^/]+?seconds?)(?=\s*\/|$)/i);
-  line = pullMetric(line, row, table, "Cooldown", /(?:^|\s*\/\s*)(?:skill\s*)?cooldown\s*:?\s*([^/]+?seconds?)(?=\s*\/|$)/i);
-  line = pullMetric(line, row, table, "AP", /(?:^|\s*\/\s*)AP\s*\+?\s*([0-9]+)/i);
+  const parsedRecovery = parseRecoverySegments(line, row, table);
+  line = parsedRecovery.line;
+  line = pullMetric(line, row, table, "Area of Effect", /(?:^|\s*\/\s*)(?:(?:[\w\s]+?\s+)?aoe|range|area of effect)\s*:?\s*([0-9]+\s*x\s*[0-9]+\s*cells?)/i, formatArea);
+  line = pullMetric(line, row, table, "Duration", /(?:^|\s*[,/]\s*)duration\s*:?\s*([0-9.]+\s*sec(?:onds?)?)(?=\s*[,/]|\s|$)/i, secondsValue);
+  line = pullMetric(line, row, table, "Duration", /(?:^|\s*\/\s*)([0-9.]+\s*sec(?:onds?)?)(?=\s+[A-Z][A-Z. ]*\s*[+-]|\s*$)/i, secondsValue);
+  line = pullMetric(line, row, table, "Cooldown", /(?:^|\s*[,/]\s*)(?:skill\s*)?cooldown\s*:?\s*([0-9.]+\s*sec(?:onds?)?)(?=\s*[,/]|\s|$)/i, secondsValue);
+  line = pullMetric(line, row, table, "AP", /(?:^|\s*[,/]\s*)AP\s*\+?\s*([0-9]+)/i);
 
   const parsedDamage = parseDamageSegment(line, row, table, formulaRows);
-  const parsedBonus = parseGenericBonusSegment(line, row, table);
-  if (!parsedDamage && !parsedBonus && normalizeWhitespace(line)) {
+  const parsedBonus = parseGenericBonusSegment(parsedDamage ? removeDamageSegmentsForBonus(line) : line, row, table);
+  if (!parsedRecovery.parsed && !parsedDamage && !parsedBonus && normalizeWhitespace(line)) {
     setLevelValue(row, table, "Effect", normalizeSkillValue(line));
   }
+}
+
+function parseRecoverySegments(line, row, table) {
+  const recoveryPattern = /(?:^|\s*\/\s*)((?:HP|SP)\s+recovery(?:\s+amount)?|Recovery Amount(?:\([^)]+\))?)\s*:?\s*([0-9,]+\s*\+\s*\([^)]+?\s*x\s*[0-9]+\))\s*(?:\/\s*(?:(?:[\w\s]+?\s+)?aoe|range|area of effect)\s*:?\s*([0-9]+\s*x\s*[0-9]+\s*cells?))?/gi;
+  let parsed = false;
+  const remaining = line.replace(recoveryPattern, (_match, rawLabel, rawValue, rawArea) => {
+    const label = recoveryLabel(rawLabel);
+    setLevelValue(row, table, label, formatFormulaExpression(rawValue));
+
+    if (rawArea) {
+      const qualifier = recoveryQualifier(rawLabel);
+      setLevelValue(row, table, qualifier ? `Area of Effect (${qualifier})` : "Area of Effect", formatArea(rawArea));
+    }
+
+    parsed = true;
+    return "";
+  });
+
+  return { line: remaining.trim(), parsed };
+}
+
+function recoveryLabel(label) {
+  const normalized = normalizeWhitespace(label);
+  const qualifier = recoveryQualifier(normalized);
+  if (/^HP\s+recovery/i.test(normalized)) return "HP Recovery";
+  if (/^SP\s+recovery/i.test(normalized)) return "SP Recovery";
+  return qualifier ? `Recovery Amount (${qualifier})` : "Recovery Amount";
+}
+
+function recoveryQualifier(label) {
+  return normalizeWhitespace(label).match(/\(([^)]+)\)/)?.[1] ?? "";
+}
+
+function formatFormulaExpression(value) {
+  return normalizeSkillValue(value)
+    .replace(/\s*\+\s*/g, " + ")
+    .replace(/\s*x\s*/gi, " x ");
 }
 
 function parseDamageSegment(line, row, table, formulaRows) {
@@ -770,21 +849,47 @@ function parseDamageSegment(line, row, table, formulaRows) {
 }
 
 function parseGenericBonusSegment(line, row, table) {
-  const normalized = normalizeWhitespace(line);
+  const normalized = normalizeGenericBonusInput(line);
   if (!normalized) return false;
 
-  const match = normalized.match(/^(.+?)\s*([+-]\s*[0-9][0-9,.]*(?:\s*%)?)(?:\s*\/\s*(.+))?$/i);
+  const increaseMatch = normalized.match(/^increases?\s+(.+?)\s+by\s+([0-9][0-9,.]*(?:\s*%)?)(?:\s*(?:\/|,)\s*(.+))?$/i);
+  if (increaseMatch) {
+    setGenericBonusValues(row, table, increaseMatch[1], `+${increaseMatch[2]}`);
+    if (increaseMatch[3] && !parseGenericBonusSegment(increaseMatch[3], row, table)) {
+      setLevelValue(row, table, "Effect", normalizeSkillValue(increaseMatch[3]));
+    }
+
+    return true;
+  }
+
+  const match = normalized.match(/^(.+?)\s*([+-]\s*[0-9][0-9,.]*(?:\s*%)?)(?:\s*(?:\/|,)\s*(.+))?$/i);
   if (!match) return false;
 
-  const value = normalizeSkillValue(match[2]);
-  const labels = genericMetricLabels(match[1]);
-  if (!labels.length) return false;
-
-  for (const label of labels) setLevelValue(row, table, label, value);
+  if (!setGenericBonusValues(row, table, match[1], match[2])) return false;
   if (match[3] && !parseGenericBonusSegment(match[3], row, table)) {
     setLevelValue(row, table, "Effect", normalizeSkillValue(match[3]));
   }
 
+  return true;
+}
+
+function normalizeGenericBonusInput(value) {
+  return normalizeWhitespace(value).replace(/^[/:]\s*/, "").replace(/^\+\s*/, "");
+}
+
+function removeDamageSegmentsForBonus(value) {
+  return normalizeWhitespace(value)
+    .replace(/(?:^|\s*\/\s*)\b(?:ATK|MATK)(?:\s*per\s*hit)?\s+[0-9,][^/]*%/gi, "")
+    .replace(/(?:^|\s*\/\s*)[0-9,]+%\s*(?:ATK|MATK)(?:\s*per\s*hit)?/gi, "")
+    .trim();
+}
+
+function setGenericBonusValues(row, table, rawLabels, rawValue) {
+  const value = normalizeSkillValue(rawValue);
+  const labels = genericMetricLabels(rawLabels);
+  if (!labels.length) return false;
+
+  for (const label of labels) setLevelValue(row, table, label, value);
   return true;
 }
 
@@ -795,7 +900,23 @@ function genericMetricLabels(value) {
     return ["Melee Damage Bonus", "Long Ranged Damage Bonus", "All Property Damage Bonus"];
   }
 
-  return [titleCase(normalized.replace(/\s*bonus$/i, " Bonus"))];
+  const labels = splitSharedMetricLabels(normalized.replace(/\s*bonus$/i, " Bonus"));
+  return labels.length ? labels : [titleCase(normalized.replace(/\s*bonus$/i, " Bonus"))];
+}
+
+function splitSharedMetricLabels(value) {
+  const parts = normalizeWhitespace(value)
+    .replace(/\bs\.makt\b/gi, "s.matk")
+    .split(/\s*(?:\/|,|&|\band\b)\s*/i)
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  if (parts.length < 2 || !parts.every(isShortMetricLabel)) return [];
+  return parts.map(titleCase);
+}
+
+function isShortMetricLabel(value) {
+  return /^(?:p\.atk|s\.matk|h\.plus|pow|crt|con|spl|wis|sta|atk|matk|hit|cri|def|mdef|flee|mhp|msp|maxhp|maxsp)$/i.test(value);
 }
 
 function titleCase(value) {
@@ -804,8 +925,19 @@ function titleCase(value) {
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ")
     .replace(/\bP\.atk\b/gi, "P.Atk")
+    .replace(/\bS\.makt\b/gi, "S.Matk")
     .replace(/\bS\.matk\b/gi, "S.Matk")
-    .replace(/\bSpl\b/g, "SPL");
+    .replace(/\bH\.plus\b/gi, "H.Plus")
+    .replace(/\bMaxhp\b/gi, "MaxHP")
+    .replace(/\bMaxsp\b/gi, "MaxSP")
+    .replace(/\bMhp\b/gi, "MHP")
+    .replace(/\bMsp\b/gi, "MSP")
+    .replace(/\bPow\b/gi, "POW")
+    .replace(/\bCrt\b/gi, "CRT")
+    .replace(/\bCon\b/gi, "CON")
+    .replace(/\bSpl\b/gi, "SPL")
+    .replace(/\bWis\b/gi, "WIS")
+    .replace(/\bSta\b/gi, "STA");
 }
 
 function pullMetric(line, row, table, label, regex, formatter = normalizeSkillValue) {
@@ -816,7 +948,7 @@ function pullMetric(line, row, table, label, regex, formatter = normalizeSkillVa
 }
 
 function parseFormulaValue(label, value, row, table, formulaRows) {
-  const formulaMatch = value.match(/\({1,2}\s*([0-9,]+)\s*\+\s*\({1,2}\s*([^)]+?(?:level|lv)(?:\s*\+\s*[^)]+?(?:level|lv))?)\)*\s*x\s*([0-9]+)\)?/i);
+  const formulaMatch = value.match(/\(?\s*([0-9,]+)\s*\+\s*\({1,2}\s*([^)]+?(?:level|lv)(?:\s*\+\s*[^)]+?(?:level|lv))?)\)*\s*x\s*([0-9]+)\)?/i);
   if (!formulaMatch) return false;
 
   const baseLabel = formulaBaseLabel(label, value);
@@ -920,7 +1052,7 @@ function removeDamageEffect(value) {
 function effectSegmentLooksLikeDamage(value) {
   const text = String(value ?? "").trim();
   if (!text) return false;
-  if (/\b(?:ATK|MATK)\b/i.test(text) && /[0-9][0-9,]*\s*%/.test(text)) return true;
+  if (/\b(?:ATK|MATK)\b/i.test(text) && /[0-9]/.test(text) && /%/.test(text)) return true;
   return /[0-9][0-9,]*\s*\+\s*\([^)]*(?:level|lv|mastery|count)[^)]*\)\s*%/i.test(text);
 }
 
@@ -945,13 +1077,29 @@ function orderLevelColumns(columns) {
     "Base Damage (MATK per Hit)",
     "Under Blessing of Four Directions",
     "Cursed Target Factor",
+    "POW",
+    "CRT",
+    "CON",
+    "SPL",
+    "WIS",
+    "STA",
+    "MaxHP",
+    "MaxSP",
+    "MHP",
+    "MSP",
     "P.Atk",
     "S.Matk",
-    "SPL",
+    "H.Plus",
     "Damage Bonus",
+    "Long Range Physical Damage",
+    "Long Ranged Physical Damage",
     "Melee Damage Bonus",
     "Long Ranged Damage Bonus",
     "All Property Damage Bonus",
+    "HP Recovery",
+    "SP Recovery",
+    "Recovery Amount",
+    "Recovery Amount (Commune)",
     "AP",
     "SP Cost",
     "Bonus Damage (Talisman Lv) Multiplier",
@@ -959,6 +1107,7 @@ function orderLevelColumns(columns) {
     "Bonus Damage (Talisman + Soul Lv) Multiplier",
     "Skill Level Factor",
     "Area of Effect",
+    "Area of Effect (Commune)",
     "Duration",
     "Cooldown",
     "Effect"
@@ -984,11 +1133,11 @@ function formatNumber(value) {
   return Number(digits).toLocaleString("en-US");
 }
 
-function levelMetric(skill, regex) {
+function levelMetric(skill, regex, formatter = normalizeSkillValue) {
   const values = [];
   for (const detail of skill.levelDetails) {
     const match = detail.text.match(regex);
-    if (match) values.push({ level: detail.level, value: normalizeSkillValue(match[1]) });
+    if (match) values.push({ level: detail.level, value: formatter(match[1]) });
   }
 
   if (!values.length) return "";
@@ -1013,7 +1162,7 @@ async function fetchSkillTranslations({ id, englishName }) {
 
   const translations = {};
   const divinePride = await fetchDivinePrideSkillTranslation(id);
-  const browiki = await fetchBrowikiSkillTranslation(englishName);
+  const browiki = await fetchBrowikiSkillTranslation({ id, englishName });
   const ptBr = {
     ...(divinePride ?? {}),
     ...(browiki ?? {})
@@ -1032,7 +1181,9 @@ async function fetchDivinePrideSkillTranslation(id) {
   const apiUrl = (env.DIVINE_PRIDE_API_URL || `${defaultApiUrl}/api`).replace(/\/$/, "");
 
   try {
-    const data = await fetchJson(`${apiUrl}/database/Skill/${id}?apiKey=${encodeURIComponent(apiKey)}`);
+    const data = await fetchJson(`${apiUrl}/database/Skill/${id}?apiKey=${encodeURIComponent(apiKey)}`, {
+      cachePath: sourceFilePath("divine-pride-api", "skills", `${id}.json`)
+    });
     const entry = (data.globalization ?? []).find(isPortugueseGlobalization);
     if (!entry) return null;
 
@@ -1052,14 +1203,16 @@ function isPortugueseGlobalization(entry) {
   return server.includes("bro") || server.includes("latam") || language.includes("pt") || language.includes("portugu");
 }
 
-async function fetchBrowikiSkillTranslation(englishName) {
+async function fetchBrowikiSkillTranslation({ id, englishName }) {
   const pageName = encodeURIComponent(englishName.replace(/\s+/g, "_"));
   const url = `${browikiUrl}/wiki/${pageName}`;
 
   try {
     const html = await fetchText(url, {
       accept: "text/html,application/xhtml+xml",
-      language: "pt-BR,pt;q=0.9,en;q=0.6"
+      language: "pt-BR,pt;q=0.9,en;q=0.6",
+      cacheNotFound: true,
+      cachePath: sourceFilePath("browiki", "wiki", `${id}-${slugify(englishName) || "skill"}.html`)
     });
     if (/Esta p[áa]gina n[ãa]o existe|There is currently no text in this page/i.test(html)) return null;
 
@@ -1076,6 +1229,114 @@ async function fetchBrowikiSkillTranslation(englishName) {
   } catch {
     return null;
   }
+}
+
+async function fetchIrowikiSkillDetails({ id, englishName }) {
+  const pageName = encodeURIComponent(englishName.replace(/\s+/g, "_"));
+  const url = `${irowikiUrl}/wiki/${pageName}`;
+
+  try {
+    const html = await fetchText(url, {
+      accept: "text/html,application/xhtml+xml",
+      language: "en-US,en;q=0.9",
+      cacheNotFound: true,
+      cachePath: sourceFilePath("irowiki", "wiki", `${id}-${slugify(englishName) || "skill"}.html`)
+    });
+    if (isMissingWikiPage(html)) return null;
+
+    return {
+      url,
+      rows: parseIrowikiDetailRows(html)
+    };
+  } catch {
+    return null;
+  }
+}
+
+function isMissingWikiPage(html) {
+  return /There is currently no text in this page|This page does not exist|Action unknown|Bad title/i.test(html);
+}
+
+function parseIrowikiDetailRows(html) {
+  const rows = {};
+
+  for (const rowHtml of tableRows(html)) {
+    const cells = tableCells(rowHtml);
+    if (cells.length < 2) continue;
+
+    const label = irowikiDetailLabel(cells[0]);
+    const value = cleanIrowikiValue(cells.slice(1).join(" "));
+    if (label && value) rows[label] = value;
+  }
+
+  return rows;
+}
+
+function irowikiDetailLabel(value) {
+  const key = normalizeFieldKey(value.replace(/:$/, ""));
+  const labels = {
+    type: "Type",
+    levels: "Levels",
+    maxlevel: "Levels",
+    spcost: "SP Cost",
+    fixedcasttime: "Fixed Cast Time",
+    variablecasttime: "Variable Cast Time",
+    castdelay: "Cast Delay",
+    cooldown: "Cooldown",
+    duration: "Duration",
+    target: "Target",
+    range: "Cast Range",
+    castrange: "Cast Range",
+    areaofeffect: "Area of Effect",
+    ammunition: "Ammunition",
+    apgenerated: "AP Generated",
+    apconsumed: "AP Consumed",
+    apcost: "AP Consumed"
+  };
+
+  return labels[key] ?? "";
+}
+
+function cleanIrowikiValue(value) {
+  return normalizeSkillValue(value)
+    .replace(/\bImage(?::\s*)?/gi, "")
+    .replace(/\b\d+\.png\b/gi, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function missingSkillDetails(current, rows) {
+  const details = {};
+  const fields = {
+    "SP Cost": "spCost",
+    "Fixed Cast Time": "fixedCastTime",
+    "Variable Cast Time": "variableCastTime",
+    "Cast Delay": "castDelay",
+    "Cooldown": "cooldown",
+    "Duration": "duration",
+    "Target": "target",
+    "Cast Range": "castRange",
+    "Area of Effect": "areaOfEffect",
+    "Ammunition": "ammunition"
+  };
+
+  if (rows.Type && !current.group && !current.type) details.type = rows.Type;
+  if (rows.Levels && !current.maxLevel) details.maxLevel = Number(rows.Levels) || current.maxLevel;
+
+  for (const [label, field] of Object.entries(fields)) {
+    if (!current[field] && rows[label]) details[field] = rows[label];
+  }
+
+  if (rows["AP Generated"] && !current.recoversAp) {
+    details.recoversAp = rows["AP Generated"];
+    if (current.consumesAp === rows["AP Generated"]) details.consumesAp = "";
+  }
+  if (rows["AP Consumed"] && !current.consumesAp) {
+    details.consumesAp = rows["AP Consumed"];
+    if (current.recoversAp === rows["AP Consumed"]) details.recoversAp = "";
+  }
+
+  return details;
 }
 
 function browikiDescription(html) {
@@ -1433,6 +1694,49 @@ function stripFrontmatter(markdown) {
 }
 
 async function fetchText(url, options = {}) {
+  return sourceText(url, options);
+}
+
+async function fetchJson(url, options = {}) {
+  const text = await sourceText(url, {
+    ...options,
+    accept: "application/json",
+    extension: "json"
+  });
+  return JSON.parse(text);
+}
+
+async function sourceText(url, options = {}) {
+  const cachePath = options.cachePath ?? sourceFilePath("external", `${sourceFileNameFromUrl(url)}.${options.extension ?? "html"}`);
+
+  if (!cliOptions.downloadSources) return readSourceFile(cachePath, url);
+
+  if (!cliOptions.refreshSources) {
+    const cached = await tryReadSourceFile(cachePath);
+    if (cached !== null) {
+      sourceStats.reused += 1;
+      return cached;
+    }
+  }
+
+  try {
+    const text = await fetchRemoteText(url, options);
+    await writeSourceFile(cachePath, text);
+    sourceStats.fetched += 1;
+    return text;
+  } catch (error) {
+    try {
+      const text = await readSourceFile(cachePath, url);
+      sourceStats.fallbackRead += 1;
+      console.warn(`Using cached source after fetch failed for ${url}: ${error.message}`);
+      return text;
+    } catch {
+      throw error;
+    }
+  }
+}
+
+async function fetchRemoteText(url, options = {}) {
   const response = await fetch(url, {
     headers: {
       "Accept": options.accept ?? "text/html,application/xhtml+xml",
@@ -1441,20 +1745,59 @@ async function fetchText(url, options = {}) {
     }
   });
 
-  if (!response.ok) throw new Error(`HTTP ${response.status} for ${url}`);
-  return response.text();
+  const text = await response.text();
+  if (!response.ok) {
+    if (options.cacheNotFound && response.status === 404) return text;
+    throw new Error(`HTTP ${response.status} for ${url}`);
+  }
+  return text;
 }
 
-async function fetchJson(url) {
-  const response = await fetch(url, {
-    headers: {
-      "Accept": "application/json",
-      "User-Agent": "SoulAsceticBalanceTool/1.0"
-    }
-  });
+async function readSourceFile(cachePath, url) {
+  const text = await tryReadSourceFile(cachePath);
+  if (text !== null) return text;
 
-  if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  return response.json();
+  throw new Error(
+    `Missing local source for ${url} at ${path.relative(rootDir, cachePath)}. Run npm run data:sources to download source files.`
+  );
+}
+
+async function tryReadSourceFile(cachePath) {
+  try {
+    const text = await fs.readFile(cachePath, "utf8");
+    sourceStats.read += 1;
+    return text;
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+    return null;
+  }
+}
+
+async function writeSourceFile(cachePath, text) {
+  await fs.mkdir(path.dirname(cachePath), { recursive: true });
+  await fs.writeFile(cachePath, text, "utf8");
+}
+
+function sourceFilePath(...segments) {
+  return path.join(sourceDir, ...segments.map(safeSourceSegment));
+}
+
+function sourceFileNameFromUrl(url) {
+  const parsed = new URL(url);
+  const parts = [parsed.hostname, ...parsed.pathname.split("/").filter(Boolean)];
+  return parts.map(safeSourceSegment).join("-");
+}
+
+function safeSourceSegment(value) {
+  return String(value ?? "")
+    .trim()
+    .replace(/[<>:"/\\|?*]+/g, "-")
+    .split("")
+    .map((character) => character.charCodeAt(0) < 32 ? "-" : character)
+    .join("")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "") || "source";
 }
 
 async function loadEnv() {

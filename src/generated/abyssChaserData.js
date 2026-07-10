@@ -1,5 +1,5 @@
 export const abyssChaserData = {
-  "generatedAt": "2026-07-10T00:54:31.682Z",
+  "generatedAt": "2026-07-10T15:02:12.602Z",
   "classId": 4260,
   "classSlug": "abyss-chaser",
   "className": "Abyss Chaser",
@@ -72,7 +72,8 @@ export const abyssChaserData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4260",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -429,6 +430,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dagger_Bow_Mastery",
           "description": "Daggers and Bows increase Physical damage on enemies, depending on their size.",
           "levelDetails": [],
           "levelExtras": [
@@ -478,8 +481,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Dagger Bow Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dagger_Bow_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5311.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5311",
           "tree": {
@@ -575,10 +585,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -594,6 +603,8 @@ export const abyssChaserData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Attack the target, deals melee physical damage to the target and moves the user backwards.\nIf using bow, damage type is long ranged physical damage.\nAdditionally, grants Chasing buff to the user for 60 seconds.\nDeals additional damage depends on user's base level and POW.\n[additional effect of Chasing]\nWhen Chasing buff is active, increases damage of the following skills.\n[Unlucky Rush]\n: +(Unlucky Rush Lv x2500)%\n[Chain Reaction Shot 2차 데미지]\n: +(Chain Reaction Shot Lv x700)%",
           "levelDetails": [
             {
@@ -618,8 +629,15 @@ export const abyssChaserData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Hit and Sliding ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hit_and_Sliding"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6512.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6512",
           "tree": {
@@ -657,10 +675,9 @@ export const abyssChaserData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -676,6 +693,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Magic_Sword_Mastery",
           "description": "Daggers and One-handed Swords increase Magic damage on enemies, depending on their size.",
           "levelDetails": [],
           "levelExtras": [
@@ -725,8 +744,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Magic Sword Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Magic_Sword_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5312.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5312",
           "tree": {
@@ -835,10 +861,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -852,8 +877,10 @@ export const abyssChaserData = {
           "group": "Active",
           "type": "Melee Physical",
           "target": "Instant Cast",
-          "recoversAp": "",
+          "recoversAp": "0",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Abyss_Dagger",
           "description": "Dagger and one-handed sword only skill.\nDeals 2 hits of melee physical damage to the surrounding enemies within 7 x 7 cells around the user.\nDamage is additionally increased depending on the user's base level and POW.",
           "levelDetails": [
             {
@@ -907,8 +934,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 5)",
+          "cooldown": "0.4 seconds",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Abyss Dagger ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Abyss_Dagger"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5314.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5314",
           "tree": {
@@ -942,6 +979,10 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -954,8 +995,20 @@ export const abyssChaserData = {
                 "value": "0.5 seconds"
               },
               {
+                "label": "Cooldown",
+                "value": "0.4 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
+              },
+              {
+                "label": "AP Generated",
+                "value": "0"
               }
             ],
             "levelTables": [
@@ -1003,7 +1056,6 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Abyss Dagger",
@@ -1132,7 +1184,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1148,6 +1200,8 @@ export const abyssChaserData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Chases and charges towards the target, deals melee physical damage to the target and surrounding enemies around the target for 5 hits.\nIf Chasing buff is active, the skill will deal more damage for 7 hits.\nDeals additional damage depends on user's base level and POW.",
           "levelDetails": [
             {
@@ -1172,8 +1226,15 @@ export const abyssChaserData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Chasing Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chasing_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6513.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6513",
           "tree": {
@@ -1254,10 +1315,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1273,6 +1333,8 @@ export const abyssChaserData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "7 Arrows",
+          "irowikiUrl": "https://irowiki.org/wiki/Chain_Reaction_Shot",
           "description": "Bow-only skills.\nUsing 7 equipped arrows, inflict Long-ranged Physical damage on and around a target.\n(You must have at least 8 arrows to activate this skill.)\nDamaged targets deal additional Ranged Physical damage to targets within a 7x7 range around them.\nAdditional Damage increase based on the caster's base level and CON.",
           "levelDetails": [
             {
@@ -1327,8 +1389,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 10)",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Chain Reaction Shot ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chain_Reaction_Shot"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5316.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5316",
           "tree": {
@@ -1362,6 +1434,10 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -1378,8 +1454,16 @@ export const abyssChaserData = {
                 "value": "1 second"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Ammunition",
+                "value": "7 Arrows"
               }
             ],
             "levelTables": [
@@ -1436,7 +1520,6 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Chain Reaction Shot",
@@ -1569,7 +1652,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1585,6 +1668,8 @@ export const abyssChaserData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Bow exclusive skill.\nChases and charges towards the target, deals long ranged physical damage to the target and surrounding enemies around the target for 2 hits.\nIf Chasing buff is active, the skill will deal more damage for 3 hits.\nDeals additional damage depends on user's base level and CON, as a chance to trigger critical, critical chance is the half user's Cri.\nThe effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -1613,8 +1698,15 @@ export const abyssChaserData = {
           "castDelay": "0.5 seconds",
           "cooldown": "0.75 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Chasing Shot ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chasing_Shot"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6514.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6514",
           "tree": {
@@ -1711,10 +1803,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1730,6 +1821,8 @@ export const abyssChaserData = {
           "target": "Self",
           "recoversAp": "4/8/12/16/20",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/From_the_Abyss",
           "description": "During the skill duration, you gain control of a sphere containing the power of Abyss.\nThis skill instantly creates 5 Abyss Orbs,\nNormal Physical attacks create a chance of consuming 1 Abyss Orb and inflicting 2 hits of Neutral Magic damage on a target and others in 9x9 cells.\nAbyss Orbs are regenerated at regular intervals.\nAdditional damage increase based on the caster's Base Level and SPL.",
           "levelDetails": [
             {
@@ -1784,8 +1877,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 10)",
+          "areaOfEffect": "9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " From the Abyss ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/From_the_Abyss"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5317.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5317",
           "tree": {
@@ -1813,6 +1915,10 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -1831,6 +1937,10 @@ export const abyssChaserData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9"
               },
               {
                 "label": "Duration",
@@ -1886,7 +1996,6 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "From the Abyss",
@@ -1997,7 +2106,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2011,8 +2120,10 @@ export const abyssChaserData = {
           "group": "Active",
           "type": "Debuff",
           "target": "1 Target",
-          "recoversAp": "",
+          "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Divest_Shadow",
           "description": "Remove all Shadow equipment from the target and prevent reequipping for a while.\nIn the case of monsters, this skill decreases their Physical and Magical Resistances.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2046,8 +2157,16 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level × 4)",
+          "translations": {
+            "pt-BR": {
+              "name": " Divest Shadow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Divest_Shadow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5313.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5313",
           "tree": {
@@ -2081,6 +2200,10 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2099,6 +2222,10 @@ export const abyssChaserData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "AP Generated",
+                "value": "2"
               }
             ],
             "levelTables": [
@@ -2146,10 +2273,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2165,6 +2291,8 @@ export const abyssChaserData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Misfortune_Rush",
           "description": "Instantly move to the target, inflicting Melee Physical damage with a chance of Misfortune.\nThis skill additionally increases damage, depending on your Base Level and POW.",
           "levelDetails": [
             {
@@ -2218,8 +2346,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level × 5)",
+          "cooldown": "0.25 * (6 - Skill Level) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Misfortune Rush ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Misfortune_Rush"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5315.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5315",
           "tree": {
@@ -2253,6 +2390,10 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -2263,6 +2404,10 @@ export const abyssChaserData = {
               {
                 "label": "Cast Delay",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.25 * (6 - Skill Level) seconds"
               },
               {
                 "label": "Target",
@@ -2314,10 +2459,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2333,6 +2477,8 @@ export const abyssChaserData = {
           "target": "Single Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Deft_Stab",
           "description": "Quickly attacks the target and deals melee physical damage to the target and surrounding enemies around the target for 5 hits.\nDamage is additionally increased depending on the user's base level and POW.",
           "levelDetails": [
             {
@@ -2427,8 +2573,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level x 5)",
+          "areaOfEffect": "3 x 3 ~ 5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Deft Stab ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Deft_Stab"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5320.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5320",
           "tree": {
@@ -2460,6 +2615,10 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level x 5)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -2575,7 +2734,6 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Deft Stab",
@@ -2712,7 +2870,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2728,6 +2886,8 @@ export const abyssChaserData = {
           "target": "Single Target",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Frenzy_Shot",
           "description": "Bow only skill.\nDeals 2 hits of long ranged physical damage to the target, has a chance to deal damage for 3 hits.\nDeals additional damage depends on user's base level and CON.\nConsumes 3 equipped arrows.\nHas a chance to trigger critical, critical chance is the user's Cri,\nIn the case of critical damage, half of the total critical damage increase options are applied.",
           "levelDetails": [
             {
@@ -2822,8 +2982,16 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level × 10)",
+          "translations": {
+            "pt-BR": {
+              "name": " Frenzy Shot ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Frenzy_Shot"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5322.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5322",
           "tree": {
@@ -2855,6 +3023,10 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level × 10)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -2956,7 +3128,6 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Frenzy Shot",
@@ -3117,7 +3288,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3133,6 +3304,8 @@ export const abyssChaserData = {
           "target": "1 Ground cell",
           "recoversAp": "5",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Abyss_Square",
           "description": "Awaken the Abyss and inflict Neutral Magic damage every 0.3 seconds for 3 seconds within 7x7 cells.\nIf the caster is in range of skill, each attack hits twice.\nAdditional Damage increase based on the caster's Base Level and SPL.\nIf you are under the effect of From the Abyss, creates a chance of auto-casting Abyss Square with Normal Physical attacks.\nIf triggered this way, deal damage based on current skill level, but AP will not be recovered.",
           "levelDetails": [
             {
@@ -3187,8 +3360,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "55 + (Skill Level × 10)",
+          "castRange": "Magic",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Abyss Square ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Abyss_Square"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5321.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5321",
           "tree": {
@@ -3222,6 +3405,10 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "55 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -3238,8 +3425,16 @@ export const abyssChaserData = {
                 "value": "3 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "1 Ground cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               },
               {
                 "label": "AP Generated",
@@ -3295,7 +3490,6 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Abyss Square",
@@ -3381,7 +3575,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3397,6 +3591,8 @@ export const abyssChaserData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Creates flames centered on the target, inflicts fire property magical damage to the target and surrounding enemies around the target for 5 hits.\nAt the same time, emits abyss flames centered on the user, inflicts fire property magical damage to surrounding enemies around the user for 3 hits.\nDeals additional damage depends on level of Magic Sword Mastery user learned, user's base level and SPL.",
           "levelDetails": [
             {
@@ -3425,8 +3621,15 @@ export const abyssChaserData = {
           "castDelay": "1 second",
           "cooldown": "0.7 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Abyss Flame ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Abyss_Flame"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6515.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6515",
           "tree": {
@@ -3533,7 +3736,6 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Abyss Flame",
@@ -3549,7 +3751,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3564,7 +3766,9 @@ export const abyssChaserData = {
           "type": "Buff",
           "target": "Self",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Abyss_Slayer",
           "description": "Accept the power of the Abyss into your body for 300 seconds.\nDuring this effect, significantly improve your combat abilities.",
           "levelDetails": [
             {
@@ -3659,8 +3863,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "duration": "300 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Abyss Slayer ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Abyss_Slayer"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5318.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5318",
           "tree": {
@@ -3694,6 +3907,10 @@ export const abyssChaserData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -3712,6 +3929,14 @@ export const abyssChaserData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "300 seconds"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "150"
               }
             ],
             "levelTables": [
@@ -3719,16 +3944,16 @@ export const abyssChaserData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "p-atk",
+                    "label": "P.Atk"
+                  },
+                  {
+                    "id": "s-matk",
+                    "label": "S.Matk"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "p-atk-s-makt",
-                    "label": "+ P.Atk/s.makt"
-                  },
-                  {
-                    "id": "p-atk-s-matk",
-                    "label": "+ P.Atk/S.Matk"
                   },
                   {
                     "id": "hit",
@@ -3739,7 +3964,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "p-atk-s-makt": "+ 12",
+                      "p-atk": "+ 12",
+                      "s-matk": "+ 12",
                       "hit": "+ 120",
                       "sp-cost": "100"
                     }
@@ -3747,7 +3973,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "p-atk-s-matk": "+ 14",
+                      "p-atk": "+ 14",
+                      "s-matk": "+ 14",
                       "hit": "+ 140",
                       "sp-cost": "100"
                     }
@@ -3755,7 +3982,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "p-atk-s-matk": "+ 16",
+                      "p-atk": "+ 16",
+                      "s-matk": "+ 16",
                       "hit": "+ 160",
                       "sp-cost": "100"
                     }
@@ -3763,7 +3991,8 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
-                      "p-atk-s-matk": "+ 18",
+                      "p-atk": "+ 18",
+                      "s-matk": "+ 18",
                       "hit": "+ 180",
                       "sp-cost": "100"
                     }
@@ -3771,7 +4000,8 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
-                      "p-atk-s-matk": "+ 20",
+                      "p-atk": "+ 20",
+                      "s-matk": "+ 20",
                       "hit": "+ 200",
                       "sp-cost": "100"
                     }
@@ -3779,7 +4009,8 @@ export const abyssChaserData = {
                   {
                     "level": 6,
                     "values": {
-                      "p-atk-s-matk": "+ 22",
+                      "p-atk": "+ 22",
+                      "s-matk": "+ 22",
                       "hit": "+ 220",
                       "sp-cost": "100"
                     }
@@ -3787,7 +4018,8 @@ export const abyssChaserData = {
                   {
                     "level": 7,
                     "values": {
-                      "p-atk-s-matk": "+ 24",
+                      "p-atk": "+ 24",
+                      "s-matk": "+ 24",
                       "hit": "+ 240",
                       "sp-cost": "100"
                     }
@@ -3795,7 +4027,8 @@ export const abyssChaserData = {
                   {
                     "level": 8,
                     "values": {
-                      "p-atk-s-matk": "+ 26",
+                      "p-atk": "+ 26",
+                      "s-matk": "+ 26",
                       "hit": "+ 260",
                       "sp-cost": "100"
                     }
@@ -3803,7 +4036,8 @@ export const abyssChaserData = {
                   {
                     "level": 9,
                     "values": {
-                      "p-atk-s-matk": "+ 28",
+                      "p-atk": "+ 28",
+                      "s-matk": "+ 28",
                       "hit": "+ 280",
                       "sp-cost": "100"
                     }
@@ -3811,7 +4045,8 @@ export const abyssChaserData = {
                   {
                     "level": 10,
                     "values": {
-                      "p-atk-s-matk": "+ 30",
+                      "p-atk": "+ 30",
+                      "s-matk": "+ 30",
                       "hit": "+ 300",
                       "sp-cost": "100"
                     }
@@ -3821,7 +4056,6 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Abyss Slayer",
@@ -3863,7 +4097,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3878,7 +4112,9 @@ export const abyssChaserData = {
           "type": "Magical",
           "target": "1 Ground cell",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Omega_Abyss_Strike",
           "description": "Drop a massive meteor onto the ground, inflicting Neutral Magic damage in 9 x9 cells.\nThis skill inflicts more damage to Angel and Demon enemies.\nAdditional Damage increase on your Base Level and SPL.",
           "levelDetails": [
             {
@@ -3973,8 +4209,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "150",
+          "castRange": "Magic",
+          "areaOfEffect": "9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Omega Abyss Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Omega_Abyss_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5319.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5319",
           "tree": {
@@ -4008,6 +4254,10 @@ export const abyssChaserData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "150"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -4024,8 +4274,20 @@ export const abyssChaserData = {
                 "value": "0.7 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "1 Ground cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "150"
               }
             ],
             "levelTables": [
@@ -4103,7 +4365,6 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Omega Abyss Strike",
@@ -4194,7 +4455,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4218,9 +4479,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Intimidate Lv. 5",
           "group": "Active Toggle/Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Reproduce",
           "description": "Enables you to learn enemy skills used on you. Use this skill again to cancel its effect and lock in the skill you've learned.\nOnly 1 skill can be learned, and its learning level is affected by your Reproduce level.\nSkills learned by Reproduce require 30% more SP than usual.\nThese skills, since they're not really learned with SP, can't be chained with other skills or used with special effects and items based on their learning levels.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -4319,8 +4582,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 5)",
+          "duration": "Until SP reaches 0 or recast",
+          "translations": {
+            "pt-BR": {
+              "name": " Reproduce ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Reproduce"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2285.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2285",
           "tree": {
@@ -4348,6 +4620,10 @@ export const abyssChaserData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4362,6 +4638,14 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Until SP reaches 0 or recast"
               }
             ],
             "levelTables": [
@@ -4453,10 +4737,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4469,9 +4752,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Stalk 3",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Formation",
           "description": "Hide yourself behind another player's shadow and make the front player receive damage instead of you. The skill is canceled if the front player has been attacked a certain amount of times or the distance between you and the front player gets farther. Skills and Items can't be used while in this state.",
           "levelDetails": [
             {
@@ -4626,8 +4911,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "duration": "[20 + (Skill Level * 10)] seconds",
+          "castRange": "5 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Formation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Formation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2287.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2287",
           "tree": {
@@ -4669,6 +4963,14 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
               }
             ],
             "levelTables": [
@@ -4678,6 +4980,10 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -4704,7 +5010,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Number of damage - 5 times / Consume 10 SP per sec. 10 / Duration 30 sec",
+                      "duration": "30 seconds",
+                      "effect": "Number of damage - 5 times / Consume 10 SP per sec. 10",
                       "sp-cost": "40",
                       "range": "5 cells",
                       "data-1": "10",
@@ -4715,7 +5022,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Number of damage - 6 times / Consume 9 SP per sec. / Duration 40 sec",
+                      "duration": "40 seconds",
+                      "effect": "Number of damage - 6 times / Consume 9 SP per sec.",
                       "sp-cost": "50",
                       "range": "5 cells",
                       "data-1": "9",
@@ -4726,7 +5034,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Number of damage - 7 times / Consume 8 SP per sec. / Duration 50 sec",
+                      "duration": "50 seconds",
+                      "effect": "Number of damage - 7 times / Consume 8 SP per sec.",
                       "sp-cost": "60",
                       "range": "5 cells",
                       "data-1": "8",
@@ -4737,7 +5046,8 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Number of damage - 8 times / Consume 7 SP per sec. / Duration 60 sec",
+                      "duration": "60 seconds",
+                      "effect": "Number of damage - 8 times / Consume 7 SP per sec.",
                       "sp-cost": "70",
                       "range": "5 cells",
                       "data-1": "7",
@@ -4748,7 +5058,8 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Number of damage - 9 times / Consume 6 SP per sec. / Duration 70 sec",
+                      "duration": "70 seconds",
+                      "effect": "Number of damage - 9 times / Consume 6 SP per sec.",
                       "sp-cost": "80",
                       "range": "5 cells",
                       "data-1": "6",
@@ -4761,10 +5072,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4777,9 +5087,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Intimidate 5",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fatal_Manace",
           "description": "Deals melee physical damage to a target and enemies around it.\nDamage increases based on BaseLv and AGI.\nWhen using knife, deals damage twice.",
           "levelDetails": [
             {
@@ -5054,8 +5366,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "6 + (Skill Level x 4)",
+          "castRange": "2 cells",
+          "areaOfEffect": "3 x 3 ~ 5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Fatal Manace ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fatal_Manace"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2284.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2284",
           "tree": {
@@ -5083,6 +5405,10 @@ export const abyssChaserData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "6 + (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5097,6 +5423,18 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "2 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 5 x 5"
               }
             ],
             "levelTables": [
@@ -5112,46 +5450,6 @@ export const abyssChaserData = {
                     "label": "Effect"
                   },
                   {
-                    "id": "atk-1080-hit",
-                    "label": "Atk 1080%/hit"
-                  },
-                  {
-                    "id": "atk-120-hit",
-                    "label": "Atk 120%/hit"
-                  },
-                  {
-                    "id": "atk-1200-hit",
-                    "label": "Atk 1200%/hit"
-                  },
-                  {
-                    "id": "atk-240-hit",
-                    "label": "Atk 240%/hit"
-                  },
-                  {
-                    "id": "atk-360-hit",
-                    "label": "Atk 360%/hit"
-                  },
-                  {
-                    "id": "atk-480-hit",
-                    "label": "Atk 480%/hit"
-                  },
-                  {
-                    "id": "atk-600-hit",
-                    "label": "Atk 600%/hit"
-                  },
-                  {
-                    "id": "atk-720-hit",
-                    "label": "Atk 720%/hit"
-                  },
-                  {
-                    "id": "atk-840-hit",
-                    "label": "Atk 840%/hit"
-                  },
-                  {
-                    "id": "atk-960-hit",
-                    "label": "Atk 960%/hit"
-                  },
-                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -5164,6 +5462,10 @@ export const abyssChaserData = {
                     "label": "Data 3"
                   },
                   {
+                    "id": "hit",
+                    "label": "Hit"
+                  },
+                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -5172,7 +5474,7 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "atk-120-hit": "-30",
+                      "hit": "-30",
                       "effect": "Range 3 x 3",
                       "sp-cost": "10",
                       "range": "1 cells",
@@ -5184,7 +5486,7 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "atk-240-hit": "-25",
+                      "hit": "-25",
                       "effect": "Range 3 x 3",
                       "sp-cost": "14",
                       "range": "1 cells",
@@ -5196,7 +5498,7 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "atk-360-hit": "-20",
+                      "hit": "-20",
                       "effect": "Range 3 x 3",
                       "sp-cost": "18",
                       "range": "1 cells",
@@ -5208,7 +5510,7 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
-                      "atk-480-hit": "-15",
+                      "hit": "-15",
                       "effect": "Range 3 x 3",
                       "sp-cost": "22",
                       "range": "1 cells",
@@ -5220,7 +5522,7 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
-                      "atk-600-hit": "-10",
+                      "hit": "-10",
                       "effect": "Range 3 x 3",
                       "sp-cost": "26",
                       "range": "1 cells",
@@ -5232,7 +5534,7 @@ export const abyssChaserData = {
                   {
                     "level": 6,
                     "values": {
-                      "atk-720-hit": "+ 0",
+                      "hit": "+ 0",
                       "effect": "Range 5 x 5",
                       "sp-cost": "30",
                       "range": "1 cells",
@@ -5244,7 +5546,7 @@ export const abyssChaserData = {
                   {
                     "level": 7,
                     "values": {
-                      "atk-840-hit": "+ 5",
+                      "hit": "+ 5",
                       "effect": "Range 5 x 5",
                       "sp-cost": "34",
                       "range": "1 cells",
@@ -5256,7 +5558,7 @@ export const abyssChaserData = {
                   {
                     "level": 8,
                     "values": {
-                      "atk-960-hit": "+10",
+                      "hit": "+10",
                       "effect": "Range 5 x 5",
                       "sp-cost": "38",
                       "range": "1 cells",
@@ -5268,7 +5570,7 @@ export const abyssChaserData = {
                   {
                     "level": 9,
                     "values": {
-                      "atk-1080-hit": "+15",
+                      "hit": "+15",
                       "effect": "Range 5 x 5",
                       "sp-cost": "42",
                       "range": "1 cells",
@@ -5280,7 +5582,7 @@ export const abyssChaserData = {
                   {
                     "level": 10,
                     "values": {
-                      "atk-1200-hit": "+20",
+                      "hit": "+20",
                       "effect": "Range 5 x 5",
                       "sp-cost": "46",
                       "range": "1 cells",
@@ -5294,7 +5596,6 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Fatal Menace",
@@ -5318,7 +5619,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5334,6 +5635,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Body_Painting",
           "description": "Splash paint around the caster and find hidden enemies. The target and all surroundings that have been exposed to the paint get [Blind] curse along with a chance to decrease attack speed.",
           "levelDetails": [
             {
@@ -5513,8 +5816,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5 + (Skill Level * 5)",
+          "duration": "3 + (Skill Level * 2) seccons",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Body Painting ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Body_Painting"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2289.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2289",
           "tree": {
@@ -5535,6 +5848,10 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "5 + (Skill Level * 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5549,6 +5866,10 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -5558,6 +5879,10 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -5588,7 +5913,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Chance to curse [Blind] 55% / Chance to decrease attack speed 25% / Duration 5 sec",
+                      "duration": "5 seconds",
+                      "effect": "Chance to curse [Blind] 55% / Chance to decrease attack speed 25%",
                       "sp-cost": "10",
                       "range": "1 cells",
                       "data-1": "2",
@@ -5600,7 +5926,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Chance to curse [Blind] 57% / Chance to decrease attack speed 30% / Duration 7 sec",
+                      "duration": "7 seconds",
+                      "effect": "Chance to curse [Blind] 57% / Chance to decrease attack speed 30%",
                       "sp-cost": "15",
                       "range": "1 cells",
                       "data-1": "2",
@@ -5612,7 +5939,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Chance to curse [Blind] 59% / Chance to decrease attack speed 35% / Duration 9 sec",
+                      "duration": "9 seconds",
+                      "effect": "Chance to curse [Blind] 59% / Chance to decrease attack speed 35%",
                       "sp-cost": "20",
                       "range": "1 cells",
                       "data-1": "2",
@@ -5624,7 +5952,8 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Chance to curse [Blind] 61% / Chance to decrease attack speed 40% / Duration 11 sec",
+                      "duration": "11 seconds",
+                      "effect": "Chance to curse [Blind] 61% / Chance to decrease attack speed 40%",
                       "sp-cost": "25",
                       "range": "1 cells",
                       "data-1": "2",
@@ -5636,7 +5965,8 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Chance to curse [Blind] 63% / Chance to decrease attack speed 45% / Duration 13 sec",
+                      "duration": "13 seconds",
+                      "effect": "Chance to curse [Blind] 63% / Chance to decrease attack speed 45%",
                       "sp-cost": "30",
                       "range": "1 cells",
                       "data-1": "2",
@@ -5650,10 +5980,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5666,9 +5995,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Double Strafe 7",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "3 Arrows",
+          "irowikiUrl": "https://irowiki.org/wiki/Triangle_Shot",
           "description": "Deals ranged physical damage to 1 target.\nDamage increases based on BaseLv and AGI.\nConsumes 3 arrows.",
           "levelDetails": [
             {
@@ -5898,8 +6229,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level x 2)",
+          "castRange": "7 ~ 11 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Triangle Shot ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Triangle_Shot"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2288.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2288",
           "tree": {
@@ -5927,6 +6267,10 @@ export const abyssChaserData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level x 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5941,6 +6285,18 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "0.2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 ~ 11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "3 Arrows"
               }
             ],
             "levelTables": [
@@ -6060,10 +6416,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6076,9 +6431,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Piece 1",
           "group": "Active / Ground",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Manhole",
           "description": "Draw 1 manhole on the ground and push 1 target into the hole. Trapped targets are disabled from doing anything including attacks. Must have a Paint Brush and consumes 1 Surface Paint.",
           "levelDetails": [
             {
@@ -6168,8 +6525,19 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level x 5)",
+          "duration": "(Skill Level x 5) seconds",
+          "castRange": "7 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Manhole ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Manhole"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2299.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2299",
           "tree": {
@@ -6197,6 +6565,10 @@ export const abyssChaserData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level x 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6211,6 +6583,22 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level x 5) seconds"
               }
             ],
             "levelTables": [
@@ -6274,10 +6662,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6290,9 +6677,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Divest Weapon 1",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "All Entity",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Divest_Accessory",
           "description": "Divest 2 accessories from target's body. The target is disabled to re-equip those released accessories during skill duration. To monsters, it decreases 20% of INT, DEX and LUK for a while.",
           "levelDetails": [
             {
@@ -6422,8 +6811,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12 + (Skill Level x 3)",
+          "duration": "[50 + (Skill Level x 10)] seconds (modified)",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Divest Accessory ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Divest_Accessory"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2298.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2298",
           "tree": {
@@ -6451,6 +6850,10 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "12 + (Skill Level x 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6465,6 +6868,14 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "All Entity"
               }
             ],
             "levelTables": [
@@ -6474,6 +6885,10 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -6496,7 +6911,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Chance of Success 14% / Duration 60 sec",
+                      "duration": "60 seconds",
+                      "effect": "Chance of Success 14%",
                       "sp-cost": "15",
                       "range": "3 cells",
                       "data-1": "60000",
@@ -6506,7 +6922,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Chance of Success 16% / Duration 60 sec",
+                      "duration": "60 seconds",
+                      "effect": "Chance of Success 16%",
                       "sp-cost": "18",
                       "range": "3 cells",
                       "data-1": "70000",
@@ -6516,7 +6933,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Chance of Success 18% / Duration 60 sec",
+                      "duration": "60 seconds",
+                      "effect": "Chance of Success 18%",
                       "sp-cost": "21",
                       "range": "3 cells",
                       "data-1": "80000",
@@ -6526,7 +6944,8 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Chance of Success 20% / Duration 60 sec",
+                      "duration": "60 seconds",
+                      "effect": "Chance of Success 20%",
                       "sp-cost": "24",
                       "range": "3 cells",
                       "data-1": "90000",
@@ -6536,7 +6955,8 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Chance of Success 22% / Duration 60 sec",
+                      "duration": "60 seconds",
+                      "effect": "Chance of Success 22%",
                       "sp-cost": "27",
                       "range": "3 cells",
                       "data-1": "100000",
@@ -6548,10 +6968,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6564,9 +6983,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Reproduce 5",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Spell",
           "description": "Enables the caster to use magic skills that the caster has learned through Intimidate or Reproduce.\nBasic physical attacks creates a chance of casting those magic skills for its skills duration.",
           "levelDetails": [
             {
@@ -6795,8 +7216,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (5 x Skill Level)",
+          "variableCastTime": "(4 / Skill Level) seconds",
+          "duration": "[40 + (Skill Level * 20)] seconds ~ 300 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Spell ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Spell"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2286.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2286",
           "tree": {
@@ -6824,8 +7255,16 @@ export const abyssChaserData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (5 x Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "(4 / Skill Level) seconds"
               },
               {
                 "label": "Cast Delay",
@@ -6834,6 +7273,10 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -6845,8 +7288,8 @@ export const abyssChaserData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "chance-12-7lvcast-matk",
@@ -6905,8 +7348,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "60 seconds",
                       "chance-28-3lvcast-matk": "+ 5",
-                      "effect": "60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "280",
@@ -6916,8 +7359,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "80 seconds",
                       "chance-26-3lvcast-matk": "+10",
-                      "effect": "80 sec",
                       "sp-cost": "45",
                       "data-1": "80000",
                       "data-2": "260",
@@ -6927,8 +7370,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "100 seconds",
                       "chance-24-4lvcast-matk": "+15",
-                      "effect": "100 sec",
                       "sp-cost": "50",
                       "data-1": "100000",
                       "data-2": "240",
@@ -6938,8 +7381,8 @@ export const abyssChaserData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "120 seconds",
                       "chance-22-4lvcast-matk": "+20",
-                      "effect": "120 sec",
                       "sp-cost": "55",
                       "data-1": "120000",
                       "data-2": "220",
@@ -6949,8 +7392,8 @@ export const abyssChaserData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "140 seconds",
                       "chance-20-5lvcast-matk": "+25",
-                      "effect": "140 sec",
                       "sp-cost": "60",
                       "data-1": "140000",
                       "data-2": "200",
@@ -6960,8 +7403,8 @@ export const abyssChaserData = {
                   {
                     "level": 6,
                     "values": {
+                      "duration": "160 seconds",
                       "chance-18-5lvcast-matk": "+30",
-                      "effect": "160 sec",
                       "sp-cost": "65",
                       "data-1": "160000",
                       "data-2": "180",
@@ -6971,8 +7414,8 @@ export const abyssChaserData = {
                   {
                     "level": 7,
                     "values": {
+                      "duration": "180 seconds",
                       "chance-16-6lvcast-matk": "+35",
-                      "effect": "180 sec",
                       "sp-cost": "70",
                       "data-1": "180000",
                       "data-2": "160",
@@ -6982,8 +7425,8 @@ export const abyssChaserData = {
                   {
                     "level": 8,
                     "values": {
+                      "duration": "200 seconds",
                       "chance-14-6lvcast-matk": "+40",
-                      "effect": "200 sec",
                       "sp-cost": "75",
                       "data-1": "200000",
                       "data-2": "140",
@@ -6993,8 +7436,8 @@ export const abyssChaserData = {
                   {
                     "level": 9,
                     "values": {
+                      "duration": "220 seconds",
                       "chance-12-7lvcast-matk": "+45",
-                      "effect": "220 sec",
                       "sp-cost": "80",
                       "data-1": "220000",
                       "data-2": "120",
@@ -7004,8 +7447,8 @@ export const abyssChaserData = {
                   {
                     "level": 10,
                     "values": {
+                      "duration": "300 seconds",
                       "chance-15-7lvcast-matk": "+50",
-                      "effect": "300 sec",
                       "sp-cost": "85",
                       "data-1": "300000",
                       "data-2": "150",
@@ -7017,10 +7460,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7033,9 +7475,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Body Painting 1",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Masquerade-Enervation",
           "description": "Decrease target's ATK with and strips all Spirit Spheres he/she has. Must have a Makeover Brush and consumes 1 Face Paint. The chance of success depends on the caster and target's level and stats.",
           "levelDetails": [
             {
@@ -7125,8 +7569,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "duration": "5 + (SkillLevel * 5) seconds",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Masquerade-Enervation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Masquerade-Enervation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2292.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2292",
           "tree": {
@@ -7168,6 +7621,14 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -7177,6 +7638,10 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -7195,6 +7660,7 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "10 seconds",
                       "sp-cost": "30",
                       "range": "3 cells",
                       "data-1": "10000",
@@ -7204,6 +7670,7 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "15 seconds",
                       "sp-cost": "40",
                       "range": "3 cells",
                       "data-1": "15000",
@@ -7213,6 +7680,7 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "20 seconds",
                       "sp-cost": "50",
                       "range": "3 cells",
                       "data-1": "20000",
@@ -7224,10 +7692,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7240,9 +7707,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Body Painting 1",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Masquerade-Gloomy",
           "description": "Decrease target's accuracy and attack speed. Target's animals, pets or Homunculus are stripped with this skill. Must have a Makeover Brush and consume 1 Face Paint. The chance of success depends on the caster and target's level and stats.",
           "levelDetails": [
             {
@@ -7349,8 +7818,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "duration": "5 + (Skill Level * 5) seconds",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Masquerade-Gloomy ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Masquerade-Gloomy"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2293.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2293",
           "tree": {
@@ -7392,6 +7870,14 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -7401,6 +7887,10 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -7427,7 +7917,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Attack Speed 30% Decrease / Accuracy Rate 20% Decrease / Duration 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "Attack Speed 30% Decrease / Accuracy Rate 20% Decrease",
                       "sp-cost": "30",
                       "range": "3 cells",
                       "data-1": "10000",
@@ -7438,7 +7929,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Attack Speed 40% Decrease / Accuracy Rate 40% Decrease / Duration 15 sec",
+                      "duration": "15 seconds",
+                      "effect": "Attack Speed 40% Decrease / Accuracy Rate 40% Decrease",
                       "sp-cost": "40",
                       "range": "3 cells",
                       "data-1": "15000",
@@ -7449,7 +7941,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Attack Speed 50% Decrease / Accuracy Rate 60% Decrease / Duration 20 sec",
+                      "duration": "20 seconds",
+                      "effect": "Attack Speed 50% Decrease / Accuracy Rate 60% Decrease",
                       "sp-cost": "50",
                       "range": "3 cells",
                       "data-1": "20000",
@@ -7462,10 +7955,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7478,9 +7970,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Body Painting 1",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Masquerade-Ignorance",
           "description": "Drain and receive half of target's SP. To monsters, receive a certain amount of SP depending on monster's level. Target is disabled to use magic or skill while this skill is active. Must have a Makeover Brush and consumes 1 Face Paint. The chance of success depends on the caster and target's level and stats.",
           "levelDetails": [
             {
@@ -7587,8 +8081,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "duration": "5 + (Skill Level * 5) seconds",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Masquerade-Ignorance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Masquerade-Ignorance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2294.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2294",
           "tree": {
@@ -7630,6 +8133,14 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -7639,6 +8150,10 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -7665,7 +8180,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Consume SP 100 / Duration 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "Consume SP 100",
                       "sp-cost": "30",
                       "range": "3 cells",
                       "data-1": "10000",
@@ -7676,7 +8192,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Consume SP 200 / Duration 15 sec",
+                      "duration": "15 seconds",
+                      "effect": "Consume SP 200",
                       "sp-cost": "40",
                       "range": "3 cells",
                       "data-1": "15000",
@@ -7687,7 +8204,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Consume SP 300 / Duration 20 sec",
+                      "duration": "20 seconds",
+                      "effect": "Consume SP 300",
                       "sp-cost": "50",
                       "range": "3 cells",
                       "data-1": "20000",
@@ -7700,10 +8218,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7716,9 +8233,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Manhole 1",
           "group": "Active / Ground",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Chaos_Panic",
           "description": "Draw whirling shape on the ground and trap the target into a chaos. The trapped target is in a chaos, so it loses its way and moves abnormally. To monsters, it makes the monster confused, so the monster changes its attacking target randomly. Must have a Paint Brush and consumes 2 Surface Paint.",
           "levelDetails": [
             {
@@ -7808,8 +8327,19 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "24 + (Skill Level * 6)",
+          "duration": "(Skill Level * 5) seconds",
+          "castRange": "7 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Chaos Panic ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chaos_Panic"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2301.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2301",
           "tree": {
@@ -7837,6 +8367,10 @@ export const abyssChaserData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "24 + (Skill Level * 6)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7851,6 +8385,22 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level * 5) seconds"
               }
             ],
             "levelTables": [
@@ -7914,10 +8464,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7930,9 +8479,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Manhole 1",
           "group": "Active / Ground",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dimensional_Door",
           "description": "Draw magic door on the ground and teleport the target who stepps on it to a random location. Must have a Paint Brush and consumes 1 Surface Paint.",
           "levelDetails": [
             {
@@ -8005,8 +8556,19 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "24 + (Skill Level x 6) seconds",
+          "duration": "(Skill Level x 4) seconds",
+          "castRange": "7 cells",
+          "areaOfEffect": "1 x 1",
+          "translations": {
+            "pt-BR": {
+              "name": " Dimensional Door ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dimensional_Door"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2300.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2300",
           "tree": {
@@ -8034,6 +8596,10 @@ export const abyssChaserData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "24 + (Skill Level x 6) seconds"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8048,6 +8614,22 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "1 x 1"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level x 4) seconds"
               }
             ],
             "levelTables": [
@@ -8104,10 +8686,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8123,6 +8704,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Deadly_Infection",
           "description": "Transfer abnormal status that caster holds at the moment to the target or attacking enemies. Even if the caster transferred its curse to others, the curse on caster is maintained.",
           "levelDetails": [
             {
@@ -8252,8 +8835,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "36 + (Skill Level * 4)",
+          "duration": "5 + (Skill Level * 5) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Deadly Infection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Deadly_Infection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2291.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2291",
           "tree": {
@@ -8287,6 +8879,10 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "36 + (Skill Level * 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8301,6 +8897,10 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Duration",
+                "value": "5 + (Skill Level * 5) seconds"
               }
             ],
             "levelTables": [
@@ -8384,10 +8984,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8400,9 +8999,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Masquerade-Enervation 1 / Gloomy 1 / Ignorance 1",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Masquerade-Laziness",
           "description": "Decrease target's movement, casting speed and also flee rate. The target has to consume additional SP [Laziness skill level x 10] to use any skills while target is affected by Laziness. Must have a Makeover Brush and consume 1 Face Paint. The chance of success depends on the caster and target's level and stats.",
           "levelDetails": [
             {
@@ -8526,8 +9127,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "duration": "5 + (Skill Level * 5) seconds",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Masquerade-Laziness ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Masquerade-Laziness"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2295.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2295",
           "tree": {
@@ -8581,6 +9191,14 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -8590,6 +9208,10 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -8620,7 +9242,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Flee Rate 10% Decrease / Casting Speed 20% Decrease / Duration 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "Flee Rate 10% Decrease / Casting Speed 20% Decrease",
                       "sp-cost": "30",
                       "range": "3 cells",
                       "data-1": "10000",
@@ -8632,7 +9255,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Flee Rate 20% Decrease / Casting Speed 30% Decrease / Duration 15 sec",
+                      "duration": "15 seconds",
+                      "effect": "Flee Rate 20% Decrease / Casting Speed 30% Decrease",
                       "sp-cost": "40",
                       "range": "3 cells",
                       "data-1": "15000",
@@ -8644,7 +9268,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Flee Rate 30% Decrease / Casting Speed 40% Decrease / Duration 20 sec",
+                      "duration": "20 seconds",
+                      "effect": "Flee Rate 30% Decrease / Casting Speed 40% Decrease",
                       "sp-cost": "50",
                       "range": "3 cells",
                       "data-1": "20000",
@@ -8658,10 +9283,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8674,9 +9298,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Masquerade-Enervation 1 / Gloomy 1 / Ignorance 1",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Masquerade-Weakness",
           "description": "Decrease Maximum HP and divest weapon and shield from target's body temporary. Target can not equip weapon or shield during casting duration. Required to have Makeover Brush and consume 1 Face Paint. The chance of success is changeable depending on caster and target's level and stats.",
           "levelDetails": [
             {
@@ -8766,8 +9392,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "duration": "5 + (Skill Level * 5) seconds",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Masquerade-Weakness ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Masquerade-Weakness"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2297.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2297",
           "tree": {
@@ -8821,6 +9456,14 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -8830,6 +9473,10 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -8852,7 +9499,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Ma x HP 10% Decrease / Duration 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "Ma x HP 10% Decrease",
                       "sp-cost": "30",
                       "range": "3 cells",
                       "data-1": "10000",
@@ -8862,7 +9510,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Ma x HP 20% Decrease / Duration 15 sec",
+                      "duration": "15 seconds",
+                      "effect": "Ma x HP 20% Decrease",
                       "sp-cost": "40",
                       "range": "3 cells",
                       "data-1": "15000",
@@ -8872,7 +9521,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Ma x HP 30% Decrease / Duration 20 sec",
+                      "duration": "20 seconds",
+                      "effect": "Ma x HP 30% Decrease",
                       "sp-cost": "50",
                       "range": "3 cells",
                       "data-1": "20000",
@@ -8884,10 +9534,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8900,9 +9549,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Triangle Shot 2",
           "group": "",
           "type": "Active / Sub",
-          "target": "",
+          "target": "Lif and Alchemist",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Urgent_Escape",
           "description": "Caster immediately lays down a trap on the ground and backslides. Caster cannot backslide over dead cells (walls etc).\nConsumes 1 Special Alloy Trap.",
           "levelDetails": [
             {
@@ -8981,8 +9632,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level × 5)",
+          "cooldown": "35 seconds",
+          "duration": "45 − (Skill Level × 5) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Urgent Escape ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Urgent_Escape"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5010.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5010",
           "tree": {
@@ -9010,6 +9671,10 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -9020,6 +9685,18 @@ export const abyssChaserData = {
               {
                 "label": "Cast Delay",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "35 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Lif and Alchemist"
+              },
+              {
+                "label": "Duration",
+                "value": "45 − (Skill Level × 5) seconds"
               }
             ],
             "levelTables": [
@@ -9085,10 +9762,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9101,9 +9777,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Dimensional Door 3",
           "group": "Active / Ground",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Feint_Bomb",
           "description": "Draw a fake copycat of yourself on the ground and step backwards with Backslide.\nAfter a while, the fake copycat explodes itself and gives damage to all surrounding enemies.\nMust have a Paint Brush and consumes 1 Surface Paint.\nIncrease damage as caster's BaseLV, JobLV, and DEX gets higher.",
           "levelDetails": [
             {
@@ -9333,8 +10011,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (4 x Skill Level)",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Feint Bomb ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Feint_Bomb"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2304.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2304",
           "tree": {
@@ -9362,6 +10049,10 @@ export const abyssChaserData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (4 x Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -9376,6 +10067,14 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -9509,10 +10208,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9525,9 +10223,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Dimensional Door 3",
           "group": "Active / Ground",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bloody_Lust",
           "description": "Draw a red circle on the ground and give the target who steps on it the Frenzy effect. Must have a Paint Brush and consumes 2 Surface Paint.",
           "levelDetails": [
             {
@@ -9600,8 +10300,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level * 10)",
+          "duration": "(Skill Level * 5) seconds",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Bloody Lust ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bloody_Lust"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2303.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2303",
           "tree": {
@@ -9629,6 +10339,10 @@ export const abyssChaserData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level * 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -9643,6 +10357,18 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "180 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level * 5) seconds"
               }
             ],
             "levelTables": [
@@ -9699,10 +10425,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9715,9 +10440,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Masquerade-Laziness 1 / Weakness 1",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Masquerade-Unlucky",
           "description": "Decrease target's CRI and Perfect Dodge rate. Certain amount of Zeny is consumed every time target is casting skills. Must give 1 abnormal status to the target among Poison, Blind and Silence status. Required to have Makeover Brush and consume 1 Face Paint. The chance of success is changeable depending on caster and target's level and stats.",
           "levelDetails": [
             {
@@ -9841,8 +10568,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "duration": "[5 + (Skill Level * 5)] seconds",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Masquerade-Unlucky ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Masquerade-Unlucky"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2296.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2296",
           "tree": {
@@ -9890,6 +10626,14 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -9899,6 +10643,10 @@ export const abyssChaserData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -9929,7 +10677,8 @@ export const abyssChaserData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Critical 10 Decrease / Perfect Dodge 10 Decrease / Duration 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "Critical 10 Decrease / Perfect Dodge 10 Decrease",
                       "sp-cost": "30",
                       "range": "3 cells",
                       "data-1": "10000",
@@ -9941,7 +10690,8 @@ export const abyssChaserData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Critical 20 Decrease / Perfect Dodge 20 Decrease / Duration 15 sec",
+                      "duration": "15 seconds",
+                      "effect": "Critical 20 Decrease / Perfect Dodge 20 Decrease",
                       "sp-cost": "40",
                       "range": "3 cells",
                       "data-1": "15000",
@@ -9953,7 +10703,8 @@ export const abyssChaserData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Critical 30 Decrease / Perfect Dodge 30 Decrease / Duration 20 sec",
+                      "duration": "20 seconds",
+                      "effect": "Critical 30 Decrease / Perfect Dodge 30 Decrease",
                       "sp-cost": "50",
                       "range": "3 cells",
                       "data-1": "20000",
@@ -9967,10 +10718,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9983,9 +10733,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Shadow Spell 7 / Deadly Infection 5 / Masquerade-Unlucky 3",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Invisibility",
           "description": "Make yourself invisible. You can attack enemies during invisible state but the property of attack becomes Ghost Property level 1. It keeps consuming caster's SP and also other skill or items can not be used while the skill is casted. Skill is canceled if SP becomes 0. Ignore some of detect skills.",
           "levelDetails": [
             {
@@ -10139,8 +10891,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "cooldown": "[10 + (Skill Level x 10)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Invisibility ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Invisibility"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2290.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2290",
           "tree": {
@@ -10180,6 +10941,10 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -10190,6 +10955,14 @@ export const abyssChaserData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[10 + (Skill Level x 10)] seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -10291,10 +11064,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10307,9 +11079,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Chaos Panic 3 / Masquerade-Unlucky 3",
           "group": "Active / Ground",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Maelstrom",
           "description": "Draw swirling circle on the ground and absorb other magic that is cast on the ground. Caster recovers SP depending on absorbed magic level. Must have a Paint Brush and consumes 2 Surface Paint.",
           "levelDetails": [
             {
@@ -10382,8 +11156,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "duration": "(Skil Level * 7) seconds",
+          "castRange": "7 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Maelstrom ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Maelstrom"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2302.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2302",
           "tree": {
@@ -10431,6 +11215,22 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skil Level * 7) seconds"
               }
             ],
             "levelTables": [
@@ -10487,10 +11287,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10502,10 +11301,12 @@ export const abyssChaserData = {
           "maxLevel": 5,
           "prerequisiteText": "3rd jobs",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Throttle",
           "description": "Exceed the limits of the body by\nsacrificing your own vitality to strengthen yourself\nfor a short time. You will become horribly\nexhausted after the skill's duration.\nFully restores HP when cast and increases\nmovement speed for the skill's duration.\nAll stats +20%.\nAfter the skill duration ends, you will be inflicted\nwith Rebound status. During rebound status,\nyour movement speed is lowered and your\nnatural HP/SP recovery is disabled.\nCannot be removed by dispel or clearance.\n50 Minute playtime cooldown",
           "levelDetails": [
             {
@@ -10610,8 +11411,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Throttle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
@@ -10624,8 +11434,16 @@ export const abyssChaserData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
               },
               {
                 "label": "Fixed Cast Time",
@@ -10642,6 +11460,10 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "3000 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -10725,10 +11547,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10755,6 +11576,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Vulture's_Eye",
           "description": "Enhances Attack range and Hit rate with Bow class weapons.",
           "levelDetails": [
             {
@@ -10845,8 +11668,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Vulture's Eye ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vulture's_Eye"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/44.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/44",
           "tree": {
@@ -10878,76 +11708,90 @@ export const abyssChaserData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "range-bonus",
+                    "label": "Range Bonus"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Range Bonus + 1, HIT Bonus: 1%",
+                      "range-bonus": "+ 1",
+                      "effect": "HIT Bonus: 1%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Range Bonus + 2, HIT Bonus: 2%",
+                      "range-bonus": "+ 2",
+                      "effect": "HIT Bonus: 2%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Range Bonus + 3, HIT Bonus: 3%",
+                      "range-bonus": "+ 3",
+                      "effect": "HIT Bonus: 3%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Range Bonus + 4, HIT Bonus: 4%",
+                      "range-bonus": "+ 4",
+                      "effect": "HIT Bonus: 4%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Range Bonus + 5, HIT Bonus: 5%",
+                      "range-bonus": "+ 5",
+                      "effect": "HIT Bonus: 5%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Range Bonus + 6, HIT Bonus: 6%",
+                      "range-bonus": "+ 6",
+                      "effect": "HIT Bonus: 6%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Range Bonus + 7, HIT Bonus: 7%",
+                      "range-bonus": "+ 7",
+                      "effect": "HIT Bonus: 7%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Range Bonus + 8, HIT Bonus: 8%",
+                      "range-bonus": "+ 8",
+                      "effect": "HIT Bonus: 8%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Range Bonus + 9, HIT Bonus: 9%",
+                      "range-bonus": "+ 9",
+                      "effect": "HIT Bonus: 9%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Range Bonus +10, HIT Bonus:10%",
+                      "range-bonus": "+10",
+                      "effect": "HIT Bonus:10%",
                       "sp-cost": "0"
                     }
                   }
@@ -10956,10 +11800,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10975,6 +11818,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Allows the user to move while hidden. Moving in Hiding status is slower than general moving.",
           "levelDetails": [
             {
@@ -11025,8 +11870,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Stalk (Tunnel Drive) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stalk_(Tunnel_Drive)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/213.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/213",
           "tree": {
@@ -11108,10 +11960,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11127,6 +11978,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Snatcher",
           "description": "Gives a chance to autocast Steal on the target when physically attacking, using its currently learned level.\nSkill level affects the chance of steel.",
           "levelDetails": [
             {
@@ -11262,8 +12115,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Snatcher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Snatcher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/210.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/210",
           "tree": {
@@ -11394,10 +12254,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11413,6 +12272,8 @@ export const abyssChaserData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Strip_Helm",
           "description": "Attempt to forcibly strip the equipped headgear off a single target and prevents it to equip any headgear temporarily.\nAgainst monsters, this will decrease their INT by 40% temporarily.\nit does not affect the SP of the monster.\nBoth Base Chance and Base Duration are affected by the difference between both the user's and target's DEX. (Chance, Duration).",
           "levelDetails": [
             {
@@ -11464,8 +12325,19 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "castDelay": "1 second",
+          "duration": "60 + (Skill Level × 15) seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Strip Helm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Strip_Helm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/218.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/218",
           "tree": {
@@ -11493,12 +12365,28 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 15) seconds"
               }
             ],
             "levelTables": [
@@ -11555,10 +12443,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11574,6 +12461,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sword_Mastery",
           "description": "Increase damage with One Handed\nSword or Dagger Class Weapons.",
           "levelDetails": [
             {
@@ -11664,8 +12553,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sword Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sword_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2",
           "tree": {
@@ -11761,10 +12657,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11780,6 +12675,8 @@ export const abyssChaserData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Close_Confine",
           "description": "Takes hold of the attacker for 10 sec. to disable their movement at the cost of 40 SP. You become unable to move too.\nReceives a FLEE + 50 bonus while holding the target. If you use Fly Wing, Butterfly Wing, or Teleportation, get detached from the target due to knockdown or a Knockback skill, or go into Hiding status, this skill is automatically canceled.\nYou cannot hold a Boss monster with this skill.",
           "levelDetails": [],
           "levelExtras": [
@@ -11793,8 +12690,20 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25",
+          "castDelay": "1 second",
+          "cooldown": "None",
+          "duration": "15 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Close Confine ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Close_Confine"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1005.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1005",
           "tree": {
@@ -11815,8 +12724,28 @@ export const abyssChaserData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "25"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "None"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "15 seconds"
               }
             ],
             "levelTables": [
@@ -11840,10 +12769,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11859,6 +12787,8 @@ export const abyssChaserData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Consumes SP12 and shoots a double bolt at a single target.\nDouble Strafe's basic range is 9 cells.",
           "levelDetails": [
             {
@@ -11949,8 +12879,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Double Strafe(Double strafing) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Double_Strafe(Double_strafing)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/46.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/46",
           "tree": {
@@ -12057,10 +12994,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12076,6 +13012,8 @@ export const abyssChaserData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stealth",
           "description": "Enter a special Hiding status in\nwhich caster can move without being detected by\nskills such as Improve Concentration, Sight or\nRuwach. However, the caster will leave\nfootprints and can be damaged by skills that\ntarget the ground. Ineffective against Insect,\nDevil and Boss monsters. During WoE (Guild War),\nthis skill will consume 5 times as much SP.",
           "levelDetails": [
             {
@@ -12126,8 +13064,19 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "Cast: 10 Normal: [10 + (Skill Level x 2)] per 10 seconds WoE : [50 + (Skill Level x 10)] per 10 seconds",
+          "fixedCastTime": "0.5 seconds",
+          "variableCastTime": "0.5 seconds",
+          "duration": "Sustained (Limited by SP)",
+          "translations": {
+            "pt-BR": {
+              "name": " Stealth ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stealth"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/389.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/389",
           "tree": {
@@ -12161,8 +13110,24 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "Cast: 10 Normal: [10 + (Skill Level x 2)] per 10 seconds WoE : [50 + (Skill Level x 10)] per 10 seconds"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "Sustained (Limited by SP)"
               }
             ],
             "levelTables": [
@@ -12219,10 +13184,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12238,6 +13202,8 @@ export const abyssChaserData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Steal_Coin",
           "description": "Attempts to snatch a set amount of Zeny from a targeted monster. A successful cast will draw the targeted monster's aggresion.\nSuccess Rate is affected by the user's DEX, LUK, and the level difference between the user and the target.\nCannot be used on players and Boss monsters.",
           "levelDetails": [
             {
@@ -12328,8 +13294,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castRange": "1 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Steal Coin ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Steal_Coin"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/211.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/211",
           "tree": {
@@ -12355,6 +13330,14 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Cast Range",
+                "value": "1 cells"
               },
               {
                 "label": "Target",
@@ -12450,10 +13433,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12469,6 +13451,8 @@ export const abyssChaserData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Strip_Shield",
           "description": "Attempt to forcibly strip the equipped shield off a single target and prevents it to equip any shield temporarily.\nAgainst monsters, this will decrease their Hard DEF by 15% temporarily.\nBoth Base Chance and Base Duration are affected by the difference between both the user's and target's DEX. (Chance, Duration).",
           "levelDetails": [
             {
@@ -12520,8 +13504,19 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "castDelay": "1 second",
+          "duration": "60 + (Skill Level × 15) seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Strip Shield ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Strip_Shield"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/216.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/216",
           "tree": {
@@ -12549,12 +13544,28 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 15) seconds"
               }
             ],
             "levelTables": [
@@ -12611,10 +13622,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12630,6 +13640,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "When two or more Rogues are sitting adjacent to each other and at least one of them knows this skill, monsters will not attack them.\nThis skill does not affect boss monsters.",
           "levelDetails": [],
           "levelExtras": [
@@ -12643,8 +13655,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " GangSter's Paradise ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/GangSter's_Paradise"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/223.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/223",
           "tree": {
@@ -12693,10 +13712,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12712,6 +13730,8 @@ export const abyssChaserData = {
           "target": "Installed trap",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Remove_Trap",
           "description": "Removes a trap that has been set on the ground by consuming SPS.\nWhen the trap is removed, the item is returned to the inventory.",
           "levelDetails": [],
           "levelExtras": [
@@ -12725,8 +13745,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "castRange": "1 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Remove Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Remove_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/124.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/124",
           "tree": {
@@ -12754,6 +13783,14 @@ export const abyssChaserData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
+                "label": "Cast Range",
+                "value": "1 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Installed trap"
               }
@@ -12779,10 +13816,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12798,6 +13834,8 @@ export const abyssChaserData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Back_Stab",
           "description": "Attack from the other side of the target, causing a physical attack damage.\nThe damage is reduced by half when the bow is mounted, and the damage occurs twice when the dagger is mounted.\nEnhances hit rate upon skill level.",
           "levelDetails": [
             {
@@ -12982,8 +14020,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Back Stab ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Back_Stab"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/212.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/212",
           "tree": {
@@ -13011,6 +14058,10 @@ export const abyssChaserData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -13025,6 +14076,10 @@ export const abyssChaserData = {
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -13134,10 +14189,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13153,6 +14207,8 @@ export const abyssChaserData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Strip_Armor",
           "description": "Attempt to forcibly strip the equipped armor off a single target and prevents it to equip any armor temporarily.\nAgainst monsters, this will decrease their VIT by 40% temporarily.\nit does not affect the HP of the monster.\nBoth Base Chance and Base Duration are affected by the difference between both the user's and target's DEX. (Chance, Duration).",
           "levelDetails": [
             {
@@ -13204,8 +14260,19 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level × 2)",
+          "castDelay": "1 second",
+          "duration": "60 + (Skill Level × 15) seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Strip Armor ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Strip_Armor"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/217.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/217",
           "tree": {
@@ -13233,12 +14300,28 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 15) seconds"
               }
             ],
             "levelTables": [
@@ -13295,10 +14378,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13314,6 +14396,8 @@ export const abyssChaserData = {
           "target": "Flag",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Remover",
           "description": "Cleans graffiti from the targeted Guild Flag. Each cast consumes 1 Wet Duster",
           "levelDetails": [],
           "levelExtras": [
@@ -13327,8 +14411,19 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "castDelay": "Unknown",
+          "cooldown": "Unknown",
+          "castRange": "Unknown cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Remover ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Remover"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/222.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/222",
           "tree": {
@@ -13356,6 +14451,22 @@ export const abyssChaserData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "Unknown"
+              },
+              {
+                "label": "Cooldown",
+                "value": "Unknown"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Unknown cells"
+              },
+              {
                 "label": "Target",
                 "value": "Flag"
               }
@@ -13381,10 +14492,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13400,6 +14510,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Compulsion_Discount",
           "description": "Enables to purchase items from NPC Shops at lower prices.",
           "levelDetails": [
             {
@@ -13450,8 +14562,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Compulsion Discount ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Compulsion_Discount"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/224.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/224",
           "tree": {
@@ -13533,10 +14652,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13552,6 +14670,8 @@ export const abyssChaserData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Raid",
           "description": "This skill can only be used with Hiding active.\nHiding is canceled afterwards. It has a chance of leaving them [Abnormal Status: blind] or [Abnormal Status: stunned].\nEnemies struck with this skill will take 30% more damage for 10 seconds .\nThe chance of stun/blind is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -13602,8 +14722,19 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castDelay": "ASPD Based",
+          "castRange": "Melee",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Raid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Raid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/214.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/214",
           "tree": {
@@ -13637,8 +14768,24 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD Based"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -13686,10 +14833,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13705,6 +14851,8 @@ export const abyssChaserData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Attempt to forcibly strip the equipped weapon off a single target and prevents it to equip any weapon temporarily.\nAgainst monsters, this will decrease their ATK by 25% temporarily.\nBoth Base Chance and Base Duration are affected by the difference between both the user's and target's DEX. (Chance, Duration).",
           "levelDetails": [
             {
@@ -13756,8 +14904,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Divest Weapon (Strip Weapon) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Divest_Weapon_(Strip_Weapon)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/215.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/215",
           "tree": {
@@ -13847,10 +15002,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13866,6 +15020,8 @@ export const abyssChaserData = {
           "target": "Flag",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Flag_Graffiti",
           "description": "Places a graffiti on the targeted Guild Flag to replace the guild emblem with an image of the user's making.\nAs skill levels increase, the type of graffiti increases. ì‚¬Each cast consumes 1 Giant Paint Brush",
           "levelDetails": [],
           "levelExtras": [
@@ -13895,8 +15051,19 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "Unknown",
+          "cooldown": "Unknown",
+          "castRange": "Unknown cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Flag Graffiti ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flag_Graffiti"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/221.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/221",
           "tree": {
@@ -13922,6 +15089,22 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "Unknown"
+              },
+              {
+                "label": "Cooldown",
+                "value": "Unknown"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Unknown cells"
               },
               {
                 "label": "Target",
@@ -13973,10 +15156,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13992,6 +15174,8 @@ export const abyssChaserData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Intimidate",
           "description": "Attack the target, give it a physical Attack damage, and warp to a random place within the map with the target.\nCannot be used on players and Boss monsters, The higher the caster's level, the lower the target's level/the higher the probability of success.",
           "levelDetails": [
             {
@@ -14042,8 +15226,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Intimidate ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Intimidate"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/219.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/219",
           "tree": {
@@ -14126,10 +15317,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14145,6 +15335,8 @@ export const abyssChaserData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Divestment",
           "description": "Cast all four Divest skills at the\nsame time. This skill's success rate increases\nif the caster has higher DEX than the skill's\ntarget.",
           "levelDetails": [
             {
@@ -14195,8 +15387,19 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level x 2)",
+          "castDelay": "1 second",
+          "duration": "135 seconds +/-",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Divestment ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Divestment"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/476.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/476",
           "tree": {
@@ -14224,8 +15427,24 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level x 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "135 seconds +/-"
               }
             ],
             "levelTables": [
@@ -14282,10 +15501,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14301,6 +15519,8 @@ export const abyssChaserData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Counter_Instinct",
           "description": "If an enemy is using a Sword Class\nWeapon, activating this skill can deflect\nattacks, reducing damage from Swords by half.\nA total of 3 attacks can be deflected after\nthis skill is cast. On monsters, the damage\nthat is deflected will be directed back at the\nmonster.",
           "levelDetails": [
             {
@@ -14351,8 +15571,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5 + (Skill Level x 5)",
+          "castDelay": "None",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Counter Instinct ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Counter_Instinct"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/390.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/390",
           "tree": {
@@ -14373,8 +15603,20 @@ export const abyssChaserData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "5 + (Skill Level x 5)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "None"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -14431,10 +15673,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14447,9 +15688,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Flag Graffiti 5",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Graffiti",
           "description": "Places a graffiti on the targeted location with a message. Each cast consumes 1 Red Gemstone.\nThe message is up to 20 characters.\nInstances of this skill cannot be overlapped.",
           "levelDetails": [],
           "levelExtras": [
@@ -14463,6 +15706,10 @@ export const abyssChaserData = {
               ]
             }
           ],
+          "spCost": "15",
+          "duration": "3 minutes",
+          "castRange": "1 cells",
+          "areaOfEffect": "5 x 5",
           "translations": {
             "pt-BR": {
               "name": " Graffiti ",
@@ -14497,6 +15744,26 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Cast Range",
+                "value": "1 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "3 minutes"
               }
             ],
             "levelTables": [
@@ -14520,7 +15787,6 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -14539,6 +15805,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Attack speed increases with skill level,\nEnables to use the last skill that was inflicted by the enemy, which does not need to connect in order to be plagiarized.\nSkill level affects the Maximum level of the plagiarized skill that the user can obtain.\nIt cannot exceed the Maximum level of this skill. Special effects such as items that affect the skill tree or bring the level of learning cannot be used.",
           "levelDetails": [
             {
@@ -14629,8 +15897,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Intimidate (Plagiarism) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Intimidate_(Plagiarism)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/225.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/225",
           "tree": {
@@ -14733,10 +16008,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14752,6 +16026,8 @@ export const abyssChaserData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Preserve",
           "description": "Prevent the automatic copying of\nskills through the Intimidate skill for 10\nminutes in order to preserve the last skill\ncopied through Intimidate.",
           "levelDetails": [],
           "levelExtras": [
@@ -14765,8 +16041,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "fixedCastTime": "1 second",
+          "duration": "10 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Preserve ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Preserve"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/475.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/475",
           "tree": {
@@ -14794,8 +16080,20 @@ export const abyssChaserData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "10 minutes"
               }
             ],
             "levelTables": [
@@ -14819,10 +16117,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14849,6 +16146,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -14927,8 +16226,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -15030,10 +16336,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15049,6 +16354,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Double_Attack",
           "description": "Gives the chance to inflict two hits instead of one and improves hit rate while attacking with Dagger class weapons.\nWhen using Katar type weapon, it affects off-hand damage.",
           "levelDetails": [
             {
@@ -15139,8 +16446,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Double Attack ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Double_Attack"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/48.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/48",
           "tree": {
@@ -15250,10 +16564,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15269,6 +16582,8 @@ export const abyssChaserData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Steal",
           "description": "Consumes SP10 and attempts to steal an item from a targeted monster. The higher the target's DEX than yours, the lower the chance of success.\nBoss monsters and players cannot be stolen from. After success, it is not possible to steal again from the same target.",
           "levelDetails": [
             {
@@ -15359,8 +16674,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "1 second",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Steal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Steal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/50.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/50",
           "tree": {
@@ -15379,6 +16704,18 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -15474,10 +16811,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15493,6 +16829,8 @@ export const abyssChaserData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Envenom",
           "description": "Consumes SP12 and strikes a single target to inflict Poison property physical damage. It has a chance of leaving the target [Abnormal Status : poisoned].\nPoisoned targets take damage per second, and their physical defense is reduced by 25%.\nEnvenom Skill damage is the sum of general physical damage and damage by this skill",
           "levelDetails": [
             {
@@ -15583,8 +16921,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Envenom ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Envenom"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/52.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/52",
           "tree": {
@@ -15605,6 +16953,18 @@ export const abyssChaserData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
               }
@@ -15620,76 +16980,90 @@ export const abyssChaserData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "damage",
+                    "label": "Damage:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage: + 15, Chance of Effect: 14%",
+                      "damage": "+ 15",
+                      "effect": "Chance of Effect: 14%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage: + 30, Chance of Effect: 18%",
+                      "damage": "+ 30",
+                      "effect": "Chance of Effect: 18%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage: + 45, Chance of Effect: 22%",
+                      "damage": "+ 45",
+                      "effect": "Chance of Effect: 22%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage: + 60, Chance of Effect: 26%",
+                      "damage": "+ 60",
+                      "effect": "Chance of Effect: 26%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage: + 75, Chance of Effect: 30%",
+                      "damage": "+ 75",
+                      "effect": "Chance of Effect: 30%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Damage: + 90, Chance of Effect: 34%",
+                      "damage": "+ 90",
+                      "effect": "Chance of Effect: 34%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Damage: +105, Chance of Effect: 38%",
+                      "damage": "+105",
+                      "effect": "Chance of Effect: 38%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Damage: +120, Chance of Effect: 42%",
+                      "damage": "+120",
+                      "effect": "Chance of Effect: 42%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Damage: +135, Chance of Effect: 46%",
+                      "damage": "+135",
+                      "effect": "Chance of Effect: 46%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Damage: +150, Chance of Effect: 50%",
+                      "damage": "+150",
+                      "effect": "Chance of Effect: 50%",
                       "sp-cost": "12"
                     }
                   }
@@ -15698,10 +17072,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15717,6 +17090,8 @@ export const abyssChaserData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sand_Attack",
           "description": "Kick sand into the face of an enemy\nwhich will inflict 130% of the damage of a\nnormal attack and also have the chance to\ncause the Blind or Stun status on the target.",
           "levelDetails": [],
           "levelExtras": [
@@ -15730,8 +17105,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "9",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Sand Attack ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sand_Attack"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/149.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/149",
           "tree": {
@@ -15750,6 +17134,14 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "9"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -15777,10 +17169,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15796,6 +17187,8 @@ export const abyssChaserData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stone_Fling",
           "description": "Attack an enemy with a Stone which\ninflicts 50 damage that will pierce enemy\ndefense and has a low chance of causing the\nStun or Blind status.\nEach cast requires 1 Stone.",
           "levelDetails": [],
           "levelExtras": [
@@ -15809,8 +17202,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "2",
+          "castDelay": "ASPD",
+          "castRange": "7 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Stone Fling ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stone_Fling"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/152.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/152",
           "tree": {
@@ -15829,6 +17232,18 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "2"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
               },
               {
                 "label": "Target",
@@ -15856,10 +17271,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15875,6 +17289,8 @@ export const abyssChaserData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -15888,8 +17304,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -15908,6 +17333,14 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -15935,10 +17368,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15954,6 +17386,8 @@ export const abyssChaserData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Improve_Dodge",
           "description": "Enhances flee rate. The benefits of this skill are improved upon reaching 2nd class and further.\nAlso slightly enhances the Movement Speed of the Assassin class.",
           "levelDetails": [
             {
@@ -16044,8 +17478,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Improve Dodge ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Improve_Dodge"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/49.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/49",
           "tree": {
@@ -16075,114 +17516,92 @@ export const abyssChaserData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "1st-class-flee-3-2nd-class-flee",
-                    "label": "1st Class Flee + 3, 2nd Class Flee"
+                    "id": "1st-class-flee",
+                    "label": "1st Class Flee"
                   },
                   {
-                    "id": "1st-class-flee-6-2nd-class-flee",
-                    "label": "1st Class Flee + 6, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-9-2nd-class-flee",
-                    "label": "1st Class Flee + 9, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-12-2nd-class-flee",
-                    "label": "1st Class Flee +12, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-15-2nd-class-flee",
-                    "label": "1st Class Flee +15, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-18-2nd-class-flee",
-                    "label": "1st Class Flee +18, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-21-2nd-class-flee",
-                    "label": "1st Class Flee +21, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-24-2nd-class-flee",
-                    "label": "1st Class Flee +24, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-27-2nd-class-flee",
-                    "label": "1st Class Flee +27, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-30-2nd-class-flee",
-                    "label": "1st Class Flee +30, 2nd Class Flee"
+                    "id": "2nd-class-flee",
+                    "label": "2nd Class Flee"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "1st-class-flee-3-2nd-class-flee": "+ 4",
+                      "1st-class-flee": "+ 3",
+                      "2nd-class-flee": "+ 4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "1st-class-flee-6-2nd-class-flee": "+ 8",
+                      "1st-class-flee": "+ 6",
+                      "2nd-class-flee": "+ 8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "1st-class-flee-9-2nd-class-flee": "+12",
+                      "1st-class-flee": "+ 9",
+                      "2nd-class-flee": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "1st-class-flee-12-2nd-class-flee": "+16",
+                      "1st-class-flee": "+12",
+                      "2nd-class-flee": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "1st-class-flee-15-2nd-class-flee": "+20",
+                      "1st-class-flee": "+15",
+                      "2nd-class-flee": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "1st-class-flee-18-2nd-class-flee": "+24",
+                      "1st-class-flee": "+18",
+                      "2nd-class-flee": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "1st-class-flee-21-2nd-class-flee": "+28",
+                      "1st-class-flee": "+21",
+                      "2nd-class-flee": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "1st-class-flee-24-2nd-class-flee": "+32",
+                      "1st-class-flee": "+24",
+                      "2nd-class-flee": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "1st-class-flee-27-2nd-class-flee": "+36",
+                      "1st-class-flee": "+27",
+                      "2nd-class-flee": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "1st-class-flee-30-2nd-class-flee": "+40",
+                      "1st-class-flee": "+30",
+                      "2nd-class-flee": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -16191,10 +17610,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16210,6 +17628,8 @@ export const abyssChaserData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hiding",
           "description": "Consumes SP10 and conceals oneself to avoid enemies. The skills Sight and Ruwach can be used to reveal hidden players.\nInsect, Demon and Boss Protocol monsters can detect hidden players. Reveals oneself when using the skill again.",
           "levelDetails": [
             {
@@ -16300,8 +17720,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "(Skill Level × 30) seconds; Until recast or SP reaches zero",
+          "translations": {
+            "pt-BR": {
+              "name": " Hiding ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hiding"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/51.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/51",
           "tree": {
@@ -16329,8 +17758,16 @@ export const abyssChaserData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 30) seconds; Until recast or SP reaches zero"
               }
             ],
             "levelTables": [
@@ -16422,10 +17859,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16441,6 +17877,8 @@ export const abyssChaserData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Detoxify",
           "description": "Consumes SP 10 and cures a single target from Poison status effect.",
           "levelDetails": [],
           "levelExtras": [
@@ -16454,8 +17892,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "ASPD",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Detoxify ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Detoxify"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/53.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/53",
           "tree": {
@@ -16483,6 +17931,18 @@ export const abyssChaserData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -16508,10 +17968,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16524,9 +17983,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Finish Quest",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Back_Slide",
           "description": "Quickly move backwards to position\nyourself safely away from threats.",
           "levelDetails": [],
           "levelExtras": [
@@ -16540,8 +18001,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "7",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " Back Slide ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Back_Slide"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/150.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/150",
           "tree": {
@@ -16560,6 +18030,18 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "7"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -16583,10 +18065,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16602,6 +18083,8 @@ export const abyssChaserData = {
           "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Find_Stone",
           "description": "Pick up a Stone from the ground.",
           "levelDetails": [],
           "levelExtras": [
@@ -16615,8 +18098,18 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "2",
+          "fixedCastTime": "0.5 seconds",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " Find Stone ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Find_Stone"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/151.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/151",
           "tree": {
@@ -16635,6 +18128,18 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "2"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -16662,10 +18167,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16678,9 +18182,11 @@ export const abyssChaserData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -16694,8 +18200,17 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -16714,6 +18229,18 @@ export const abyssChaserData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -16737,10 +18264,9 @@ export const abyssChaserData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16760,6 +18286,8 @@ export const abyssChaserData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Dagger_Bow_Mastery",
       "description": "Daggers and Bows increase Physical damage on enemies, depending on their size.",
       "levelDetails": [],
       "levelExtras": [
@@ -16809,8 +18337,15 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Dagger Bow Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Dagger_Bow_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5311.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5311",
       "tree": {
@@ -16906,10 +18441,9 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16925,6 +18459,8 @@ export const abyssChaserData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Attack the target, deals melee physical damage to the target and moves the user backwards.\nIf using bow, damage type is long ranged physical damage.\nAdditionally, grants Chasing buff to the user for 60 seconds.\nDeals additional damage depends on user's base level and POW.\n[additional effect of Chasing]\nWhen Chasing buff is active, increases damage of the following skills.\n[Unlucky Rush]\n: +(Unlucky Rush Lv x2500)%\n[Chain Reaction Shot 2차 데미지]\n: +(Chain Reaction Shot Lv x700)%",
       "levelDetails": [
         {
@@ -16949,8 +18485,15 @@ export const abyssChaserData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Hit and Sliding ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hit_and_Sliding"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6512.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6512",
       "tree": {
@@ -16988,10 +18531,9 @@ export const abyssChaserData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17007,6 +18549,8 @@ export const abyssChaserData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Magic_Sword_Mastery",
       "description": "Daggers and One-handed Swords increase Magic damage on enemies, depending on their size.",
       "levelDetails": [],
       "levelExtras": [
@@ -17056,8 +18600,15 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Magic Sword Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Magic_Sword_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5312.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5312",
       "tree": {
@@ -17166,10 +18717,9 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17183,8 +18733,10 @@ export const abyssChaserData = {
       "group": "Active",
       "type": "Melee Physical",
       "target": "Instant Cast",
-      "recoversAp": "",
+      "recoversAp": "0",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Abyss_Dagger",
       "description": "Dagger and one-handed sword only skill.\nDeals 2 hits of melee physical damage to the surrounding enemies within 7 x 7 cells around the user.\nDamage is additionally increased depending on the user's base level and POW.",
       "levelDetails": [
         {
@@ -17238,8 +18790,18 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "35 + (Skill Level × 5)",
+      "cooldown": "0.4 seconds",
+      "areaOfEffect": "7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Abyss Dagger ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Abyss_Dagger"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5314.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5314",
       "tree": {
@@ -17273,6 +18835,10 @@ export const abyssChaserData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "35 + (Skill Level × 5)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -17285,8 +18851,20 @@ export const abyssChaserData = {
             "value": "0.5 seconds"
           },
           {
+            "label": "Cooldown",
+            "value": "0.4 seconds"
+          },
+          {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7"
+          },
+          {
+            "label": "AP Generated",
+            "value": "0"
           }
         ],
         "levelTables": [
@@ -17334,7 +18912,6 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Abyss Dagger",
@@ -17463,7 +19040,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17479,6 +19056,8 @@ export const abyssChaserData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Chases and charges towards the target, deals melee physical damage to the target and surrounding enemies around the target for 5 hits.\nIf Chasing buff is active, the skill will deal more damage for 7 hits.\nDeals additional damage depends on user's base level and POW.",
       "levelDetails": [
         {
@@ -17503,8 +19082,15 @@ export const abyssChaserData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Chasing Break ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Chasing_Break"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6513.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6513",
       "tree": {
@@ -17585,10 +19171,9 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17604,6 +19189,8 @@ export const abyssChaserData = {
       "target": "1 Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "7 Arrows",
+      "irowikiUrl": "https://irowiki.org/wiki/Chain_Reaction_Shot",
       "description": "Bow-only skills.\nUsing 7 equipped arrows, inflict Long-ranged Physical damage on and around a target.\n(You must have at least 8 arrows to activate this skill.)\nDamaged targets deal additional Ranged Physical damage to targets within a 7x7 range around them.\nAdditional Damage increase based on the caster's base level and CON.",
       "levelDetails": [
         {
@@ -17658,8 +19245,18 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "30 + (Skill Level × 10)",
+      "castRange": "9 cells",
+      "areaOfEffect": "3 x 3 ~ 7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Chain Reaction Shot ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Chain_Reaction_Shot"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5316.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5316",
       "tree": {
@@ -17693,6 +19290,10 @@ export const abyssChaserData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "30 + (Skill Level × 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -17709,8 +19310,16 @@ export const abyssChaserData = {
             "value": "1 second"
           },
           {
+            "label": "Cast Range",
+            "value": "9 cells"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Ammunition",
+            "value": "7 Arrows"
           }
         ],
         "levelTables": [
@@ -17767,7 +19376,6 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Chain Reaction Shot",
@@ -17900,7 +19508,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17916,6 +19524,8 @@ export const abyssChaserData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Bow exclusive skill.\nChases and charges towards the target, deals long ranged physical damage to the target and surrounding enemies around the target for 2 hits.\nIf Chasing buff is active, the skill will deal more damage for 3 hits.\nDeals additional damage depends on user's base level and CON, as a chance to trigger critical, critical chance is the half user's Cri.\nThe effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -17944,8 +19554,15 @@ export const abyssChaserData = {
       "castDelay": "0.5 seconds",
       "cooldown": "0.75 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Chasing Shot ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Chasing_Shot"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6514.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6514",
       "tree": {
@@ -18042,10 +19659,9 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18061,6 +19677,8 @@ export const abyssChaserData = {
       "target": "Self",
       "recoversAp": "4/8/12/16/20",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/From_the_Abyss",
       "description": "During the skill duration, you gain control of a sphere containing the power of Abyss.\nThis skill instantly creates 5 Abyss Orbs,\nNormal Physical attacks create a chance of consuming 1 Abyss Orb and inflicting 2 hits of Neutral Magic damage on a target and others in 9x9 cells.\nAbyss Orbs are regenerated at regular intervals.\nAdditional damage increase based on the caster's Base Level and SPL.",
       "levelDetails": [
         {
@@ -18115,8 +19733,17 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "30 + (Skill Level × 10)",
+      "areaOfEffect": "9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " From the Abyss ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/From_the_Abyss"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5317.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5317",
       "tree": {
@@ -18144,6 +19771,10 @@ export const abyssChaserData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "30 + (Skill Level × 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -18162,6 +19793,10 @@ export const abyssChaserData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "9 x 9"
           },
           {
             "label": "Duration",
@@ -18217,7 +19852,6 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "From the Abyss",
@@ -18328,7 +19962,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18342,8 +19976,10 @@ export const abyssChaserData = {
       "group": "Active",
       "type": "Debuff",
       "target": "1 Target",
-      "recoversAp": "",
+      "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Divest_Shadow",
       "description": "Remove all Shadow equipment from the target and prevent reequipping for a while.\nIn the case of monsters, this skill decreases their Physical and Magical Resistances.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -18377,8 +20013,16 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25 + (Skill Level × 4)",
+      "translations": {
+        "pt-BR": {
+          "name": " Divest Shadow ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Divest_Shadow"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5313.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5313",
       "tree": {
@@ -18412,6 +20056,10 @@ export const abyssChaserData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "25 + (Skill Level × 4)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -18430,6 +20078,10 @@ export const abyssChaserData = {
           {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "AP Generated",
+            "value": "2"
           }
         ],
         "levelTables": [
@@ -18477,10 +20129,9 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18496,6 +20147,8 @@ export const abyssChaserData = {
       "target": "1 Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Misfortune_Rush",
       "description": "Instantly move to the target, inflicting Melee Physical damage with a chance of Misfortune.\nThis skill additionally increases damage, depending on your Base Level and POW.",
       "levelDetails": [
         {
@@ -18549,8 +20202,17 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25 + (Skill Level × 5)",
+      "cooldown": "0.25 * (6 - Skill Level) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Misfortune Rush ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Misfortune_Rush"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5315.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5315",
       "tree": {
@@ -18584,6 +20246,10 @@ export const abyssChaserData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "25 + (Skill Level × 5)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -18594,6 +20260,10 @@ export const abyssChaserData = {
           {
             "label": "Cast Delay",
             "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.25 * (6 - Skill Level) seconds"
           },
           {
             "label": "Target",
@@ -18645,10 +20315,9 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18664,6 +20333,8 @@ export const abyssChaserData = {
       "target": "Single Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Deft_Stab",
       "description": "Quickly attacks the target and deals melee physical damage to the target and surrounding enemies around the target for 5 hits.\nDamage is additionally increased depending on the user's base level and POW.",
       "levelDetails": [
         {
@@ -18758,8 +20429,17 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "35 + (Skill Level x 5)",
+      "areaOfEffect": "3 x 3 ~ 5 x 5",
+      "translations": {
+        "pt-BR": {
+          "name": " Deft Stab ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Deft_Stab"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5320.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5320",
       "tree": {
@@ -18791,6 +20471,10 @@ export const abyssChaserData = {
           {
             "label": "Levels",
             "value": "10"
+          },
+          {
+            "label": "SP Cost",
+            "value": "35 + (Skill Level x 5)"
           },
           {
             "label": "Fixed Cast Time",
@@ -18906,7 +20590,6 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Deft Stab",
@@ -19043,7 +20726,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19059,6 +20742,8 @@ export const abyssChaserData = {
       "target": "Single Target",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Frenzy_Shot",
       "description": "Bow only skill.\nDeals 2 hits of long ranged physical damage to the target, has a chance to deal damage for 3 hits.\nDeals additional damage depends on user's base level and CON.\nConsumes 3 equipped arrows.\nHas a chance to trigger critical, critical chance is the user's Cri,\nIn the case of critical damage, half of the total critical damage increase options are applied.",
       "levelDetails": [
         {
@@ -19153,8 +20838,16 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25 + (Skill Level × 10)",
+      "translations": {
+        "pt-BR": {
+          "name": " Frenzy Shot ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Frenzy_Shot"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5322.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5322",
       "tree": {
@@ -19186,6 +20879,10 @@ export const abyssChaserData = {
           {
             "label": "Levels",
             "value": "10"
+          },
+          {
+            "label": "SP Cost",
+            "value": "25 + (Skill Level × 10)"
           },
           {
             "label": "Fixed Cast Time",
@@ -19287,7 +20984,6 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Frenzy Shot",
@@ -19448,7 +21144,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19464,6 +21160,8 @@ export const abyssChaserData = {
       "target": "1 Ground cell",
       "recoversAp": "5",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Abyss_Square",
       "description": "Awaken the Abyss and inflict Neutral Magic damage every 0.3 seconds for 3 seconds within 7x7 cells.\nIf the caster is in range of skill, each attack hits twice.\nAdditional Damage increase based on the caster's Base Level and SPL.\nIf you are under the effect of From the Abyss, creates a chance of auto-casting Abyss Square with Normal Physical attacks.\nIf triggered this way, deal damage based on current skill level, but AP will not be recovered.",
       "levelDetails": [
         {
@@ -19518,8 +21216,18 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "55 + (Skill Level × 10)",
+      "castRange": "Magic",
+      "areaOfEffect": "7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Abyss Square ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Abyss_Square"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5321.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5321",
       "tree": {
@@ -19553,6 +21261,10 @@ export const abyssChaserData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "55 + (Skill Level × 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -19569,8 +21281,16 @@ export const abyssChaserData = {
             "value": "3 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "1 Ground cell"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7"
           },
           {
             "label": "AP Generated",
@@ -19626,7 +21346,6 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Abyss Square",
@@ -19712,7 +21431,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19728,6 +21447,8 @@ export const abyssChaserData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Creates flames centered on the target, inflicts fire property magical damage to the target and surrounding enemies around the target for 5 hits.\nAt the same time, emits abyss flames centered on the user, inflicts fire property magical damage to surrounding enemies around the user for 3 hits.\nDeals additional damage depends on level of Magic Sword Mastery user learned, user's base level and SPL.",
       "levelDetails": [
         {
@@ -19756,8 +21477,15 @@ export const abyssChaserData = {
       "castDelay": "1 second",
       "cooldown": "0.7 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Abyss Flame ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Abyss_Flame"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6515.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6515",
       "tree": {
@@ -19864,7 +21592,6 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Abyss Flame",
@@ -19880,7 +21607,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19895,7 +21622,9 @@ export const abyssChaserData = {
       "type": "Buff",
       "target": "Self",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Abyss_Slayer",
       "description": "Accept the power of the Abyss into your body for 300 seconds.\nDuring this effect, significantly improve your combat abilities.",
       "levelDetails": [
         {
@@ -19990,8 +21719,17 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "100",
+      "duration": "300 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Abyss Slayer ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Abyss_Slayer"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5318.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5318",
       "tree": {
@@ -20025,6 +21763,10 @@ export const abyssChaserData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "100"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -20043,6 +21785,14 @@ export const abyssChaserData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "300 seconds"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "150"
           }
         ],
         "levelTables": [
@@ -20050,16 +21800,16 @@ export const abyssChaserData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "p-atk",
+                "label": "P.Atk"
+              },
+              {
+                "id": "s-matk",
+                "label": "S.Matk"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "p-atk-s-makt",
-                "label": "+ P.Atk/s.makt"
-              },
-              {
-                "id": "p-atk-s-matk",
-                "label": "+ P.Atk/S.Matk"
               },
               {
                 "id": "hit",
@@ -20070,7 +21820,8 @@ export const abyssChaserData = {
               {
                 "level": 1,
                 "values": {
-                  "p-atk-s-makt": "+ 12",
+                  "p-atk": "+ 12",
+                  "s-matk": "+ 12",
                   "hit": "+ 120",
                   "sp-cost": "100"
                 }
@@ -20078,7 +21829,8 @@ export const abyssChaserData = {
               {
                 "level": 2,
                 "values": {
-                  "p-atk-s-matk": "+ 14",
+                  "p-atk": "+ 14",
+                  "s-matk": "+ 14",
                   "hit": "+ 140",
                   "sp-cost": "100"
                 }
@@ -20086,7 +21838,8 @@ export const abyssChaserData = {
               {
                 "level": 3,
                 "values": {
-                  "p-atk-s-matk": "+ 16",
+                  "p-atk": "+ 16",
+                  "s-matk": "+ 16",
                   "hit": "+ 160",
                   "sp-cost": "100"
                 }
@@ -20094,7 +21847,8 @@ export const abyssChaserData = {
               {
                 "level": 4,
                 "values": {
-                  "p-atk-s-matk": "+ 18",
+                  "p-atk": "+ 18",
+                  "s-matk": "+ 18",
                   "hit": "+ 180",
                   "sp-cost": "100"
                 }
@@ -20102,7 +21856,8 @@ export const abyssChaserData = {
               {
                 "level": 5,
                 "values": {
-                  "p-atk-s-matk": "+ 20",
+                  "p-atk": "+ 20",
+                  "s-matk": "+ 20",
                   "hit": "+ 200",
                   "sp-cost": "100"
                 }
@@ -20110,7 +21865,8 @@ export const abyssChaserData = {
               {
                 "level": 6,
                 "values": {
-                  "p-atk-s-matk": "+ 22",
+                  "p-atk": "+ 22",
+                  "s-matk": "+ 22",
                   "hit": "+ 220",
                   "sp-cost": "100"
                 }
@@ -20118,7 +21874,8 @@ export const abyssChaserData = {
               {
                 "level": 7,
                 "values": {
-                  "p-atk-s-matk": "+ 24",
+                  "p-atk": "+ 24",
+                  "s-matk": "+ 24",
                   "hit": "+ 240",
                   "sp-cost": "100"
                 }
@@ -20126,7 +21883,8 @@ export const abyssChaserData = {
               {
                 "level": 8,
                 "values": {
-                  "p-atk-s-matk": "+ 26",
+                  "p-atk": "+ 26",
+                  "s-matk": "+ 26",
                   "hit": "+ 260",
                   "sp-cost": "100"
                 }
@@ -20134,7 +21892,8 @@ export const abyssChaserData = {
               {
                 "level": 9,
                 "values": {
-                  "p-atk-s-matk": "+ 28",
+                  "p-atk": "+ 28",
+                  "s-matk": "+ 28",
                   "hit": "+ 280",
                   "sp-cost": "100"
                 }
@@ -20142,7 +21901,8 @@ export const abyssChaserData = {
               {
                 "level": 10,
                 "values": {
-                  "p-atk-s-matk": "+ 30",
+                  "p-atk": "+ 30",
+                  "s-matk": "+ 30",
                   "hit": "+ 300",
                   "sp-cost": "100"
                 }
@@ -20152,7 +21912,6 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Abyss Slayer",
@@ -20194,7 +21953,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20209,7 +21968,9 @@ export const abyssChaserData = {
       "type": "Magical",
       "target": "1 Ground cell",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Omega_Abyss_Strike",
       "description": "Drop a massive meteor onto the ground, inflicting Neutral Magic damage in 9 x9 cells.\nThis skill inflicts more damage to Angel and Demon enemies.\nAdditional Damage increase on your Base Level and SPL.",
       "levelDetails": [
         {
@@ -20304,8 +22065,18 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "150",
+      "castRange": "Magic",
+      "areaOfEffect": "9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Omega Abyss Strike ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Omega_Abyss_Strike"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5319.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5319",
       "tree": {
@@ -20339,6 +22110,10 @@ export const abyssChaserData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "150"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -20355,8 +22130,20 @@ export const abyssChaserData = {
             "value": "0.7 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "1 Ground cell"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "9 x 9"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "150"
           }
         ],
         "levelTables": [
@@ -20434,7 +22221,6 @@ export const abyssChaserData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Omega Abyss Strike",
@@ -20525,7 +22311,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

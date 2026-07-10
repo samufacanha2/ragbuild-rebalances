@@ -1,5 +1,5 @@
 export const shiranuiData = {
-  "generatedAt": "2026-07-10T00:56:46.459Z",
+  "generatedAt": "2026-07-10T15:02:22.207Z",
   "classId": 4305,
   "classSlug": "shiranui",
   "className": "Shiranui",
@@ -70,7 +70,8 @@ export const shiranuiData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4305",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -449,6 +450,8 @@ export const shiranuiData = {
           "target": "1 Cell Ground Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mirage",
           "description": "Summons a Mirage clone of yourself at the designated location.\nThe Mirage clone lasts for 20 seconds, and up to 3 clones can be summoned.\nThe Mirage clone reacts to the skills used by the main body, using those skills with approximately 30% of the main body's power.",
           "levelDetails": [],
           "levelExtras": [
@@ -462,8 +465,21 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25",
+          "fixedCastTime": "0.7 seconds",
+          "variableCastTime": "2 seconds",
+          "cooldown": "3 seconds",
+          "duration": "20 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Mirage ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mirage"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5479.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5479",
           "tree": {
@@ -484,8 +500,32 @@ export const shiranuiData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "25"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.7 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Cell Ground Target"
+              },
+              {
+                "label": "Duration",
+                "value": "20 seconds"
               }
             ],
             "levelTables": [
@@ -509,10 +549,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -528,6 +567,8 @@ export const shiranuiData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Red_Flame_Cannon",
           "description": "Using the haze of red flames, spews powerful flames, inflicting fire attribute magic damage to targets within the forward range.\nDeals additional damage depends on level of Darkening Cannon user learned, user's base level and SPL.\nConsumes 1 Haze of Prominence.",
           "levelDetails": [
             {
@@ -618,8 +659,22 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "42 + (2 × Skill Level)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "2 seconds",
+          "castDelay": "None",
+          "cooldown": "0.7 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Red Flame Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Red_Flame_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5488.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5488",
           "tree": {
@@ -640,8 +695,36 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "42 + (2 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "None"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.7 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5~7 x 7"
               }
             ],
             "levelTables": [
@@ -651,80 +734,66 @@ export const shiranuiData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "71"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "74"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "77"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "80"
                     }
                   }
@@ -733,7 +802,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Red Flame Cannon",
@@ -852,7 +920,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -868,6 +936,8 @@ export const shiranuiData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Infiltrate",
           "description": "Instantly seeps into the target's shadow and inflicts melee physical damage to the target.\nWhen cast, moves to the other side of the target and enters shadow cloaking state for 2 seconds.\nIf there are mirage clones of oneself within the 31x31 cell range around the target, the clones are brought to the area around the caster.\nIf the location across from the target is not moveable, the skill cannot be used.\nDamage is additionally increased depending on the caster's base level and CON.",
           "levelDetails": [
             {
@@ -918,8 +988,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "cooldown": "0.5 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Infiltrate ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Infiltrate"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5477.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5477",
           "tree": {
@@ -945,6 +1025,18 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -996,10 +1088,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1015,6 +1106,8 @@ export const shiranuiData = {
           "target": "1 cell ground target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "2 Kunai",
+          "irowikiUrl": "https://irowiki.org/wiki/Kunai_-_Distortion",
           "description": "Throw a kunai at 1 cell ground target, dealing Ranged physical damage to enemies within a 5x5 cell range and inflicting the Nightmare effect for 5 seconds. Additionally, install a [Distortion Zone] at that location for 5 seconds.\nDeals additional damage depends on level of Kunai - Refraction user learned, user's base level and POW.\nThe attack attribute depends on the attribute of the equipped kunai, and consumes 2 equipped kunai.",
           "levelDetails": [
             {
@@ -1105,8 +1198,21 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "26 + (2 × Skill Level)",
+          "variableCastTime": "0.2 seconds",
+          "castDelay": "0.5 seconds",
+          "cooldown": "0.3 seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Kunai - Distortion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Kunai_-_Distortion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5485.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5485",
           "tree": {
@@ -1134,8 +1240,36 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "26 + (2 × Skill Level)"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.2 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 cell ground target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Ammunition",
+                "value": "2 Kunai"
               },
               {
                 "label": "AP Generated",
@@ -1217,7 +1351,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Kunai - Distortion",
@@ -1264,7 +1397,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1280,6 +1413,8 @@ export const shiranuiData = {
           "target": "1 Cell Ground Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Hunting",
           "description": "Swing the shadow sword at the location, inflicting melee physical damage to targets within a 5x5 range and applying a nightmare effect for 5 seconds.\nDamage is additionally increased depending on Shadow Flash skill level, caster's base level, and POW.",
           "levelDetails": [
             {
@@ -1370,8 +1505,20 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "28 + (2 × Skill Level)",
+          "castDelay": "0.15 seconds",
+          "cooldown": "0.3 seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Hunting ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Hunting"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5480.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5480",
           "tree": {
@@ -1399,8 +1546,28 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "28 + (2 × Skill Level)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.15 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Cell Ground Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               },
               {
                 "label": "AP Generated",
@@ -1482,7 +1649,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Shadow Hunting",
@@ -1532,7 +1698,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1548,6 +1714,8 @@ export const shiranuiData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "20",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used when 10 spirits of the same property are summoned.\nThe charm that strengthens the skills linked to the property of the summoned spirit.\nIncreases Red Flame Cannon / Thundering Cannon / Cold Blooded cannon / Golden Dragon cannon damage.\nThe buffs from different property can be overlapped.\n[Fire Charm (spirit of fire)]\n: [Four Colors Charm: Fire] - Red Flame Cannon Damage +8500%\n[Ice Charm (spirit of water)]\n: [Four Colors Charm: Water] - Cold Blooded cannon damage +7000%\n[Wind Charm (spirit of the wind)]\n: [Four Colors Charm: Wind] - Thundering Cannon damage +8500%\n[Earth Charm (spirit of the earth)]\n: [Four Colors Charm: Earth] - Golden Dragon Cannon damage +5500%",
           "levelDetails": [
             {
@@ -1556,8 +1724,15 @@ export const shiranuiData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Four Colors Charm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Four_Colors_Charm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5499.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5499",
           "tree": {
@@ -1620,10 +1795,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1639,6 +1813,8 @@ export const shiranuiData = {
           "target": "1 Cell Ground Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cold_Blooded_Cannon",
           "description": "Throws a haze of ice and snow and summons cold-blooded spheres that explode in the area, inflicting water magic damage to targets within the range.\nDeals additional damage depends on level of Darkening Cannon user learned, user's base level and SPL.\nConsumes 1 Haze of Icy Snow.",
           "levelDetails": [
             {
@@ -1729,8 +1905,22 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "31 + (3 × Skill Level)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "3 seconds",
+          "castDelay": "None",
+          "cooldown": "0.5 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Cold Blooded Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cold_Blooded_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5489.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5489",
           "tree": {
@@ -1749,6 +1939,30 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "31 + (3 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "None"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -1844,7 +2058,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Cold Blooded Cannon",
@@ -1945,7 +2158,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1961,6 +2174,8 @@ export const shiranuiData = {
           "target": "1 cell ground target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Melt_Away",
           "description": "Melts your own shadow and scatters it forward, inflicting shadow property magic damage to targets within the range.\nAs soon as you use the skill, you move backwards 3 cells and enter shadow cloaking for 2 seconds.\nDamage is additionally increased depending on the caster's base level and CON.",
           "levelDetails": [
             {
@@ -2011,8 +2226,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35",
+          "cooldown": "2 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Melt Away ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Melt_Away"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5476.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5476",
           "tree": {
@@ -2038,6 +2262,14 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "35"
+              },
+              {
+                "label": "Cooldown",
+                "value": "2 seconds"
               },
               {
                 "label": "Target",
@@ -2089,10 +2321,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2108,6 +2339,8 @@ export const shiranuiData = {
           "target": "Instant cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "5 Kunai",
+          "irowikiUrl": "https://irowiki.org/wiki/Kunai_-_Rotation",
           "description": "Scatter kunai around yourself, dealing Ranged physical damage every 0.5 seconds for 2 seconds to targets within range, and putting yourself in a shadowy state. Additionally, install a [Distortion Zone] at your location for 5 seconds.\nDeals additional damage depends on level of Kunai - Distortion user learned, user's base level and POW.\nThe attack attribute depends on the attribute of the equipped kunai, and consumes 5 equipped kunai.",
           "levelDetails": [
             {
@@ -2158,8 +2391,21 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "55",
+          "castDelay": "0.5 seconds",
+          "cooldown": "2 seconds",
+          "duration": "2 seconds",
+          "castRange": "8 cells",
+          "areaOfEffect": "5 x 5 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Kunai - Rotation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Kunai_-_Rotation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5486.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5486",
           "tree": {
@@ -2187,8 +2433,32 @@ export const shiranuiData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "55"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "8 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Instant cast"
+              },
+              {
+                "label": "Duration",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Ammunition",
+                "value": "5 Kunai"
               },
               {
                 "label": "Pulse",
@@ -2249,7 +2519,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Kunai - Rotation",
@@ -2307,7 +2576,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2323,6 +2592,8 @@ export const shiranuiData = {
           "target": "1 Cell Ground Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Huuma_Shuriken_-_Grasp",
           "description": "Throws a Huuma Shuriken to install a powerful [Hidden Weapon Zone] at a 1 Cell Ground Target, dealing Range Physical damage every 0.25 seconds to enemies within the surrounding range for 5 seconds and applying the Nightmare effect for 5 seconds.\nUp to two [Hidden Weapon Zone] can be installed.\nDeals additional damage depends on level of Huuma Shuriken - Construct user learned, user's base level and POW. Attack properties depend on the properties of the equipped kunai.",
           "levelDetails": [
             {
@@ -2413,8 +2684,22 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "36 + (2 × Skill Level)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "1.2 seconds",
+          "cooldown": "1 second",
+          "duration": "5 seconds",
+          "castRange": "10 cells",
+          "areaOfEffect": "5 x 5 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Huuma Shuriken - Grasp ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Huuma_Shuriken_-_Grasp"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5483.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5483",
           "tree": {
@@ -2442,8 +2727,36 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "36 + (2 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.2 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Cell Ground Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5 ~ 9 x 9"
+              },
+              {
+                "label": "Duration",
+                "value": "5 seconds"
               },
               {
                 "label": "AP Generated",
@@ -2543,7 +2856,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Huuma Shuriken - Grasp",
@@ -2601,7 +2913,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2617,6 +2929,8 @@ export const shiranuiData = {
           "target": "Instant Cast",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Dance",
           "description": "Swings a shadow and inflicts melee physical damage to enemies within the surrounding range.\nDamage increases additionally depending on Shadow Hunting skill level, caster's base level, and POW.",
           "levelDetails": [
             {
@@ -2707,8 +3021,21 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "27 + (3 × Skill Level)",
+          "fixedCastTime": "0.3 seconds",
+          "castDelay": "0.25 second",
+          "cooldown": "0.4 seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "5×5~7×7",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Dance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Dance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5481.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5481",
           "tree": {
@@ -2736,8 +3063,32 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "27 + (3 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.25 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.4 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5×5~7×7"
               },
               {
                 "label": "AP Generated",
@@ -2833,7 +3184,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Shadow Dance",
@@ -2958,7 +3308,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2974,6 +3324,8 @@ export const shiranuiData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Thundering_Cannon",
           "description": "Throws Haze of North Wind on the ground to summon the powerful wind, inflicts wind property magical damage to the target and surrounding enemies around the target.\nDeals additional damage depends on level of Darkening Cannon user learned, user's base level and SPL.\nConsumes 1 Haze of North Wind.",
           "levelDetails": [
             {
@@ -3064,8 +3416,22 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "42 + (2 x Skill Level)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "2 seconds",
+          "castDelay": "None",
+          "cooldown": "0.7 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Thundering Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Thundering_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5490.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5490",
           "tree": {
@@ -3086,8 +3452,36 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "42 + (2 x Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "None"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.7 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5~7 x 7"
               },
               {
                 "label": "Property",
@@ -3101,80 +3495,66 @@ export const shiranuiData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "71"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "74"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "77"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "80"
                     }
                   }
@@ -3183,7 +3563,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Thundering Cannon",
@@ -3302,7 +3681,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3318,6 +3697,8 @@ export const shiranuiData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Nightmare_Erasion",
           "description": "Removes the nightmare effect granted to targets within a 15x15 range around you.",
           "levelDetails": [],
           "fixedCastTime": "0.2 seconds",
@@ -3335,8 +3716,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "areaOfEffect": "15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Nightmare Erasion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nightmare_Erasion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5478.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5478",
           "tree": {
@@ -3357,6 +3747,10 @@ export const shiranuiData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.2 seconds"
               },
@@ -3375,6 +3769,10 @@ export const shiranuiData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15"
               }
             ],
             "levelTables": [
@@ -3398,10 +3796,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3417,6 +3814,8 @@ export const shiranuiData = {
           "target": "Instant cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "5 Kunai",
+          "irowikiUrl": "https://irowiki.org/wiki/Kunai_-_Refraction",
           "description": "It explodes all [Distortion Zones] installed within a 15x15 range around you, inflicting Ranged physical damage to enemies within a 5x5 Cell range every 0.25 seconds for 2 seconds.\nDamage is additionally increased depending on Kunai-Rotation skill level, caster's base level, and POW.\nThe attack attribute depends on the attribute of the equipped kunai.",
           "levelDetails": [
             {
@@ -3511,8 +3910,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "duration": "2 seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Kunai - Refraction ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Kunai_-_Refraction"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5487.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5487",
           "tree": {
@@ -3540,6 +3950,10 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -3556,8 +3970,24 @@ export const shiranuiData = {
                 "value": "2 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Instant cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15"
+              },
+              {
+                "label": "Duration",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Ammunition",
+                "value": "5 Kunai"
               },
               {
                 "label": "Pulse",
@@ -3639,7 +4069,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Kunai - Refraction",
@@ -3689,7 +4118,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3705,6 +4134,8 @@ export const shiranuiData = {
           "target": "1 Cell Ground Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Huuma_Shuriken_-_Construct",
           "description": "Throws a H.Shuriken imbued with powerful energy, dealing Range Physical damage to enemies within a 9x9 range around the targeted cell.\nIf a [Hidden Weapon Zone] exists within the effect range, it will explode, dealing additional Range Physical damage in a 9x9 range centered on that location.\nDeals additional damage depends on level of H.S. - Grasp learned, base level and POW. Attack properties depend on the properties of the equipped kunai.",
           "levelDetails": [
             {
@@ -3795,8 +4226,21 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "31 + (3 × Skill Level)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "1.2 seconds",
+          "cooldown": "0.7 seconds",
+          "castRange": "10 cells",
+          "areaOfEffect": "5 x 13",
+          "translations": {
+            "pt-BR": {
+              "name": " Huuma Shuriken - Construct ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Huuma_Shuriken_-_Construct"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5484.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5484",
           "tree": {
@@ -3824,8 +4268,32 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "31 + (3 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.2 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.7 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Cell Ground Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 13"
               }
             ],
             "levelTables": [
@@ -3903,7 +4371,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Huuma Shuriken - Construct",
@@ -3981,7 +4448,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3997,6 +4464,8 @@ export const shiranuiData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Flash",
           "description": "Fires a powerful shadow sword slash toward the target, dealing Melee Physical damage to all targets within range around the target.\nDamage is additionally increased depending on Shadow Dance skill level, caster's base level, and POW.\nCritical damage is applied based on the user's critical rate,\nThe effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -4087,8 +4556,21 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "33 + (3 x Skill Level)",
+          "fixedCastTime": "1 second",
+          "variableCastTime": "0.3 seconds",
+          "castDelay": "0.25 seconds",
+          "cooldown": "0.5 seconds",
+          "areaOfEffect": "3 x 10",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Flash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Flash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5482.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5482",
           "tree": {
@@ -4116,8 +4598,32 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "33 + (3 x Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.25 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 10"
               }
             ],
             "levelTables": [
@@ -4209,7 +4715,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Shadow Flash",
@@ -4314,7 +4819,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4330,6 +4835,8 @@ export const shiranuiData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Golden_Dragon_Cannon",
           "description": "Blows a haze of earth and inflicts earth magic damage to surrounding enemies.\nDeals additional damage depends on level of Darkening Cannon user learned, user's base level and SPL.\nConsumes 1 Haze of The Earth.",
           "levelDetails": [
             {
@@ -4420,8 +4927,21 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "28 + (2 x Skill Level)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "3 seconds",
+          "cooldown": "0.3 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "3 x 3~5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Golden Dragon Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Golden_Dragon_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5491.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5491",
           "tree": {
@@ -4442,8 +4962,32 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "28 + (2 x Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3~5 x 5"
               }
             ],
             "levelTables": [
@@ -4453,80 +4997,66 @@ export const shiranuiData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Range: 3 x 3",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Range: 3 x 3",
                       "sp-cost": "49"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Range: 3 x 3",
                       "sp-cost": "51"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Range: 3 x 3",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Range: 3 x 3",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "61"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "63"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Range: 5 x 5",
                       "sp-cost": "65"
                     }
                   }
@@ -4535,7 +5065,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Golden Dragon Cannon",
@@ -4646,7 +5175,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4662,6 +5191,8 @@ export const shiranuiData = {
           "target": "Instant cast",
           "recoversAp": "",
           "consumesAp": "20",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kunai_-_Nightmare",
           "description": "Disperses numerous hidden weapons to all enemies within a 13x13 cell range, inflicting powerful long range physical damage.\nDeals 1.5x damage to targets affected by the nightmare effect (the nightmare effect is removed).\nDamage increases additionally based on the caster's base level and POW.",
           "levelDetails": [
             {
@@ -4684,8 +5215,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70",
+          "castRange": "12 cells",
+          "areaOfEffect": "13 x 13",
+          "translations": {
+            "pt-BR": {
+              "name": " Kunai - Nightmare ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Kunai_-_Nightmare"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5494.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5494",
           "tree": {
@@ -4731,6 +5272,10 @@ export const shiranuiData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "70"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -4747,8 +5292,16 @@ export const shiranuiData = {
                 "value": "1 second"
               },
               {
+                "label": "Cast Range",
+                "value": "12 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Instant cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "13 x 13"
               },
               {
                 "label": "AP Consumed",
@@ -4776,7 +5329,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Kunai - Nightmare",
@@ -4815,7 +5367,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4831,6 +5383,8 @@ export const shiranuiData = {
           "target": "Instant cast",
           "recoversAp": "",
           "consumesAp": "20",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_-_Nightmare",
           "description": "Inflicts powerful Melee Physics damage to all enemies within a 13x13Cell range by casting shadows on them.\nDeals 1.5x damage to targets affected by the nightmare effect (the nightmare effect is removed).\nDamage increases additionally based on the caster's base level and POW.",
           "levelDetails": [
             {
@@ -4853,8 +5407,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70",
+          "castRange": "Melee",
+          "areaOfEffect": "13 x 13",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow - Nightmare ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_-_Nightmare"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5493.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5493",
           "tree": {
@@ -4888,6 +5452,10 @@ export const shiranuiData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "70"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -4904,8 +5472,16 @@ export const shiranuiData = {
                 "value": "1 second"
               },
               {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Instant cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "13 x 13"
               },
               {
                 "label": "AP Consumed",
@@ -4933,7 +5509,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Shadow - Nightmare",
@@ -4972,7 +5547,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4988,6 +5563,8 @@ export const shiranuiData = {
           "target": "Instant cast",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Darkening_Cannon",
           "description": "Connects his own shadow to a pitch-black haze and swings it around, dealing dark attribute Magic damage to all enemies within a surrounding range and inflicting the Nightmare effect for 5 seconds.\nDamage increases further based on the caster's base level and SPL.\nConsumes 1 Haze of Pitch Darkness.",
           "levelDetails": [
             {
@@ -5078,8 +5655,21 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "38 + (2 × Skill Level)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "3 seconds",
+          "cooldown": "0.5 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Darkening Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Darkening_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5492.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5492",
           "tree": {
@@ -5098,6 +5688,26 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "38 + (2 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -5197,7 +5807,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Darkening Cannon",
@@ -5244,7 +5853,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5260,6 +5869,8 @@ export const shiranuiData = {
           "target": "Instant cast",
           "recoversAp": "",
           "consumesAp": "20",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dark_Dragon_-_Nightmare",
           "description": "Summons a shadow dragon in an 11x11 cell range around you, dealing powerful dark attribute Magic damage.\nDeals additional fire attribute Magic damage of the same power to targets affected by the Nightmare effect (the Nightmare effect is removed).\nDamage increases further based on the caster's base level and SPL.",
           "levelDetails": [
             {
@@ -5282,8 +5893,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "120",
+          "castRange": "Magic",
+          "areaOfEffect": "11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Dark Dragon - Nightmare ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dark_Dragon_-_Nightmare"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5495.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5495",
           "tree": {
@@ -5341,6 +5962,10 @@ export const shiranuiData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "120"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -5357,8 +5982,16 @@ export const shiranuiData = {
                 "value": "1 second"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "Instant cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11"
               },
               {
                 "label": "AP Consumed",
@@ -5386,7 +6019,6 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Dark Dragon - Nightmare",
@@ -5433,7 +6065,7 @@ export const shiranuiData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5456,10 +6088,12 @@ export const shiranuiData = {
           "maxLevel": 1,
           "prerequisiteText": "Shadow Slash Lv. 5",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Hiding",
           "description": "Enables you to hide yourself. Basically the same as Thief's Hiding skill.\nThe skill is canceled if your SP reaches 0 or if you cast it again. Shadow Hiding continuously consumes\nSP for its duration.",
           "levelDetails": [],
           "levelExtras": [
@@ -5473,8 +6107,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + 3 per second",
+          "duration": "200 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Hiding ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Hiding"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3001.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3001",
           "tree": {
@@ -5494,8 +6137,24 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10 + 3 per second"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "200 seconds"
               }
             ],
             "levelTables": [
@@ -5519,10 +6178,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5534,10 +6192,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "Cicada Skin Shed Lv. 1",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Illusion_-_Shadow",
           "description": "Create a likeness of you using illusion. This clone has a certain amount of HP and disappears if its HP reaches 0.\nThe higher your MaxSP, the more your clone's HP.",
           "levelDetails": [
             {
@@ -5616,8 +6276,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "36 + (Skill Level x 4)",
+          "cooldown": "[33 - (Skill Level x 3)] seconds",
+          "duration": "[30 - (Skill Level x 3)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Illusion - Shadow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Illusion_-_Shadow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3012.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3012",
           "tree": {
@@ -5637,8 +6307,16 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "36 + (Skill Level x 4)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -5651,6 +6329,18 @@ export const shiranuiData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[33 - (Skill Level x 3)] seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "[30 - (Skill Level x 3)] seconds"
               }
             ],
             "levelTables": [
@@ -5716,10 +6406,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5735,6 +6424,8 @@ export const shiranuiData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Switch places with a target. This skill creates a chance of [Confusing] you and your target.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -5817,8 +6508,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Illusion - Bewitch ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Illusion_-_Bewitch"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3021.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3021",
           "tree": {
@@ -5917,10 +6615,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5932,10 +6629,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "Illusion - Bewitch Lv. 2",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Illusion_-_Shock",
           "description": "Cast Illusion on 1 target, turning it into a monster with decreased stats.\nDuring this skill's effect, the target can't switch or remove equipment. Not applicable to allies or monsters.\nFor WoE only",
           "levelDetails": [
             {
@@ -6064,8 +6763,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "36 + (Skill Level x 4)",
+          "variableCastTime": "[3.5 - (Skill Level x 0.5)] seconds",
+          "duration": "[10 + (Skill Level x 2)] seconds",
+          "castRange": "5 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Illusion - Shock ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Illusion_-_Shock"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3013.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3013",
           "tree": {
@@ -6085,12 +6795,24 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "36 + (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[3.5 - (Skill Level x 0.5)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -6099,6 +6821,18 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "10 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "[10 + (Skill Level x 2)] seconds"
               }
             ],
             "levelTables": [
@@ -6182,10 +6916,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6201,6 +6934,8 @@ export const shiranuiData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Cast Illusion on 1 target, Cursing and decreasing its HP.\nAlso, create a low chance of [Coma]. [Coma] is only applied to enemies at the same Level as you\nor lower. Not applicable to monsters.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -6308,8 +7043,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Illusion - Death ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Illusion_-_Death"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3014",
           "tree": {
@@ -6417,10 +7159,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6432,10 +7173,12 @@ export const shiranuiData = {
           "maxLevel": 10,
           "prerequisiteText": "Shadow Hiding Lv. 1",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Offensive Skill",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cross_Slash",
           "description": "A Kagerou and Oboro Co-op skill. Deliver a Cross Slash, causing Cross Wound on enemies for 3 seconds.\nCross Wound intensifies Cross Slash damage on the enemies.\nThe higher your Base Level, the greater the additional damage.",
           "levelDetails": [
             {
@@ -6554,8 +7297,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8 + (Skill Level x 2)",
+          "cooldown": "5.5 − (Skill Level × 0.5) seconds",
+          "castRange": "4~7 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Cross Slash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cross_Slash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3004.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3004",
           "tree": {
@@ -6575,8 +7328,16 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Offensive Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "8 + (Skill Level x 2)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -6589,6 +7350,18 @@ export const shiranuiData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "5.5 − (Skill Level × 0.5) seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "4~7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -6689,10 +7462,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6704,10 +7476,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "Illusion - Bewitch 1",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Any Entity",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Distorted_Crescent",
           "description": "Changes a target's ATK or MATK based on its HP or SP.",
           "levelDetails": [
             {
@@ -6811,8 +7585,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level x 10)",
+          "variableCastTime": "[0.5 + (Skill Level x 0.5)] seconds",
+          "duration": "45 + (Skill Level x 15) seconds",
+          "castRange": "7 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Distorted Crescent ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Distorted_Crescent"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3026.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3026",
           "tree": {
@@ -6832,12 +7617,24 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[0.5 + (Skill Level x 0.5)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -6846,6 +7643,14 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "30 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Any Entity"
               }
             ],
             "levelTables": [
@@ -6857,8 +7662,8 @@ export const shiranuiData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -6873,7 +7678,7 @@ export const shiranuiData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 60 sec",
+                      "duration": "60 seconds",
                       "sp-cost": "60",
                       "range": "7 cells",
                       "data-1": "60000"
@@ -6882,7 +7687,7 @@ export const shiranuiData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 75 sec",
+                      "duration": "75 seconds",
                       "sp-cost": "70",
                       "range": "7 cells",
                       "data-1": "75000"
@@ -6891,7 +7696,7 @@ export const shiranuiData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 90 sec",
+                      "duration": "90 seconds",
                       "sp-cost": "80",
                       "range": "7 cells",
                       "data-1": "90000"
@@ -6900,7 +7705,7 @@ export const shiranuiData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 105 sec",
+                      "duration": "105 seconds",
                       "sp-cost": "90",
                       "range": "7 cells",
                       "data-1": "105000"
@@ -6909,7 +7714,7 @@ export const shiranuiData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 120 sec",
+                      "duration": "120 seconds",
                       "sp-cost": "100",
                       "range": "7 cells",
                       "data-1": "120000"
@@ -6920,10 +7725,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6939,6 +7743,8 @@ export const shiranuiData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Summon a Fire Spirit by using a Fire Charm to increase the damage of Fire Property skills.\nCan summon up to 10 spirits. If 10 spirits are summoned, Weapon Property changes to Fire.\nConsumes 1 Fire Charm per use.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -6956,8 +7762,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Fire Charm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fire_Charm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3015.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3015",
           "tree": {
@@ -7011,10 +7824,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7030,6 +7842,8 @@ export const shiranuiData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Summon an Ice Spirit by using an Ice Charm to increase the damage of Ice Property skills.\nCan summon up to 10 spirits. If 10 spirits are summoned, Weapon Property changes to Water.\nConsumes 1 Ice Charm per use.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -7047,8 +7861,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Ice Charm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ice_Charm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3016.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3016",
           "tree": {
@@ -7102,10 +7923,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7121,6 +7941,8 @@ export const shiranuiData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Summon a Wind Spirit by using a Wind Charm to increase the damage of Wind Property skills.\nCan summon up to 10 spirits. If 10 spirits are summoned, Weapon Property changes to Wind.\nConsumes 1 Wind Charm per use.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -7138,8 +7960,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Wind Charm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wind_Charm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3017.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3017",
           "tree": {
@@ -7193,10 +8022,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7212,6 +8040,8 @@ export const shiranuiData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Summon an Earth Spirit by using an Earth Charm to increase the damage of Earth Property skills.\nCan summon up to 10 spirits. If 10 spirits are summoned, Weapon Property changes to Earth.\nConsumes 1 Earth Charm per use.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -7229,8 +8059,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Earth Charm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Earth_Charm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3018.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3018",
           "tree": {
@@ -7284,10 +8121,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7299,10 +8135,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "Cross Slash Lv. 2",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Offensive Skill",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Cutter",
           "description": "Inflicts additional damage on targets with the Soul Linker's Soul buffs on them.\nAlso, force-cancels the Soul skills. The higher the Soul skill level, the greater this skill's additional damage.",
           "levelDetails": [
             {
@@ -7382,8 +8220,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8 + (Skill Level x 4)",
+          "castRange": "2 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Cutter ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Cutter"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3005.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3005",
           "tree": {
@@ -7403,8 +8250,16 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Offensive Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "8 + (Skill Level x 4)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -7421,6 +8276,14 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "2 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -7477,10 +8340,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7492,10 +8354,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "Distorted Crescent Lv. 2",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ominous_Moonlight",
           "description": "Makes certain HP-healing skills inflict damage on their targets instead of restoring their HP.\nThis skill can't be used on players outside PvP. Not Applicable to allies or Boss monsters.",
           "levelDetails": [
             {
@@ -7599,8 +8463,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 30 40 50 60",
+          "duration": "10 sec 15 sec 20 sec 25 sec 30 sec",
+          "castRange": "7 cells cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Ominous Moonlight ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ominous_Moonlight"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3029.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3029",
           "tree": {
@@ -7620,8 +8494,16 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20 30 40 50 60"
               },
               {
                 "label": "Fixed Cast Time",
@@ -7634,6 +8516,14 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "30 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -7645,8 +8535,8 @@ export const shiranuiData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -7661,7 +8551,7 @@ export const shiranuiData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 10 sec",
+                      "duration": "10 seconds",
                       "sp-cost": "20",
                       "range": "7 cells",
                       "data-1": "10000"
@@ -7670,7 +8560,7 @@ export const shiranuiData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 15 sec",
+                      "duration": "15 seconds",
                       "sp-cost": "30",
                       "range": "7 cells",
                       "data-1": "15000"
@@ -7679,7 +8569,7 @@ export const shiranuiData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 20 sec",
+                      "duration": "20 seconds",
                       "sp-cost": "40",
                       "range": "7 cells",
                       "data-1": "20000"
@@ -7688,7 +8578,7 @@ export const shiranuiData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 25 sec",
+                      "duration": "25 seconds",
                       "sp-cost": "50",
                       "range": "7 cells",
                       "data-1": "25000"
@@ -7697,7 +8587,7 @@ export const shiranuiData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 30 sec",
+                      "duration": "30 seconds",
                       "sp-cost": "60",
                       "range": "7 cells",
                       "data-1": "30000"
@@ -7708,10 +8598,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7723,10 +8612,12 @@ export const shiranuiData = {
           "maxLevel": 1,
           "prerequisiteText": "Fire/Ice/Wind/Earth Charm Lv. 1",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Offensive Skill",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Release_Ninja_Spell",
           "description": "Discharge the power of your Charms, attacking 1 target. The inflicted damage is of the same property as your summoned Charms.",
           "levelDetails": [],
           "levelExtras": [
@@ -7749,8 +8640,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castRange": "11 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Release Ninja Spell ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Release_Ninja_Spell"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3019.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3019",
           "tree": {
@@ -7788,8 +8688,24 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Offensive Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Range",
+                "value": "11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -7818,10 +8734,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7833,10 +8748,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "Throw Kunai Lv. 5",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Offensive Skill",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 E x plosive Kunai",
+          "irowikiUrl": "https://irowiki.org/wiki/Kunai_Explosion",
           "description": "Throw an explosive kunai at a target and inflict damage on and around the target.\nThis skill consumes 1 Explosive Kunai per use. Explosive Kunais are consumed directly from your inventory. (Can't be equipped)",
           "levelDetails": [
             {
@@ -7940,8 +8857,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level + 4)",
+          "variableCastTime": "[0.6 + (Skill Level x 0.4)] seconds",
+          "castRange": "(Skill Level + 6) cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Kunai Explosion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Kunai_Explosion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3006.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3006",
           "tree": {
@@ -7961,12 +8889,24 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Offensive Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level + 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[0.6 + (Skill Level x 0.4)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -7977,8 +8917,20 @@ export const shiranuiData = {
                 "value": "3 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "(Skill Level + 6) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
                 "label": "Area of Effect",
-                "value": "5 x 5 cells"
+                "value": "5 x 5"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 E x plosive Kunai"
               }
             ],
             "levelTables": [
@@ -8053,10 +9005,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8068,10 +9019,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "Ominous Moonlight Lv. 3",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Any Entity",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Moonlight_Fantasy",
           "description": "Randomly increases or decreases a target's HP and SP, depending on its current HP and SP.\nAlso, makes the target give off splash damage when attacked. Not applicable to monsters.",
           "levelDetails": [
             {
@@ -8201,8 +9154,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "55 60 65 70 75",
+          "duration": "10 sec 15 sec 20 sec 25 sec 30 sec",
+          "castRange": "7 cells cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Moonlight Fantasy ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Moonlight_Fantasy"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3027.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3027",
           "tree": {
@@ -8222,8 +9185,16 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "55 60 65 70 75"
               },
               {
                 "label": "Fixed Cast Time",
@@ -8240,6 +9211,14 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "15 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells cells"
+              },
+              {
+                "label": "Target",
+                "value": "Any Entity"
               }
             ],
             "levelTables": [
@@ -8251,8 +9230,8 @@ export const shiranuiData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -8271,7 +9250,7 @@ export const shiranuiData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 10 sec",
+                      "duration": "10 seconds",
                       "sp-cost": "55",
                       "range": "7 cells",
                       "data-1": "10000",
@@ -8281,7 +9260,7 @@ export const shiranuiData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 15 sec",
+                      "duration": "15 seconds",
                       "sp-cost": "60",
                       "range": "7 cells",
                       "data-1": "15000",
@@ -8291,7 +9270,7 @@ export const shiranuiData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 20 sec",
+                      "duration": "20 seconds",
                       "sp-cost": "65",
                       "range": "7 cells",
                       "data-1": "20000",
@@ -8301,7 +9280,7 @@ export const shiranuiData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 25 sec",
+                      "duration": "25 seconds",
                       "sp-cost": "70",
                       "range": "7 cells",
                       "data-1": "25000",
@@ -8311,7 +9290,7 @@ export const shiranuiData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 30 sec",
+                      "duration": "30 seconds",
                       "sp-cost": "75",
                       "range": "7 cells",
                       "data-1": "30000",
@@ -8323,10 +9302,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8338,10 +9316,12 @@ export const shiranuiData = {
           "maxLevel": 1,
           "prerequisiteText": "Release Ninja Spell 1,",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cast_Ninja_Spell",
           "description": "Release the power of your Charms onto the ground, summoning a circle that creates various effects.\nFire Charm: Causes Ignition to all enemies within range. Also, increases your weapon's ATK if it's of Fire Property.\nWater Charm: Causes Frozen, Crystallization, or Freezing to all enemies within range. Also, increases your weapon's ATK if it's of Water Property.\nWind Charm: Causes Silence, Sleep, or Deep Sleep to all enemies within range. Also, increases your weapon's ATK if it's of Wind Property.\nEarth Charm: Causes Petrification or Poison to all enemies within range. Also, increases your weapon's ATK if it's of Earth Property.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -8368,8 +9348,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "duration": "(6 * Number of Active Charms) seconds",
+          "castRange": "7 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Cast Ninja Spell ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cast_Ninja_Spell"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3020.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3020",
           "tree": {
@@ -8395,8 +9386,16 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30"
               },
               {
                 "label": "Fixed Cast Time",
@@ -8413,6 +9412,22 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "(6 * Number of Active Charms) seconds"
               }
             ],
             "levelTables": [
@@ -8441,10 +9456,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8456,10 +9470,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "Ninja Mastery Lv. 5",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/16th_Night",
           "description": "Removes Fixed Cast Time from all Ninja skills, halves Variable Cast Time, and increases MATK.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -8518,8 +9534,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "65 + (Skill Level x 5)",
+          "duration": "[15 + (15 x Skill Level)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " 16th Night ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/16th_Night"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3022.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3022",
           "tree": {
@@ -8539,8 +9564,16 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "65 + (Skill Level x 5)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -8557,6 +9590,14 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "60 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "[15 + (15 x Skill Level)] seconds"
               }
             ],
             "levelTables": [
@@ -8613,10 +9654,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8628,10 +9668,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "Ninja Mastery Lv. 10",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Pure_Soul",
           "description": "Concentrate your mind for 10 seconds to restore HP and SP rapidly. You can't move while using this skill.\nCreates a chance of ignoring incoming damage for its duration.",
           "levelDetails": [
             {
@@ -8711,8 +9753,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "duration": "10 Seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Pure Soul ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pure_Soul"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3011.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3011",
           "tree": {
@@ -8732,8 +9783,16 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "100"
               },
               {
                 "label": "Fixed Cast Time",
@@ -8750,6 +9809,14 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "10 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "10 Seconds"
               }
             ],
             "levelTables": [
@@ -8815,10 +9882,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8830,10 +9896,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "Kunai Explosion Lv. 1",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Offensive Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "2 Kunai",
+          "irowikiUrl": "https://irowiki.org/wiki/Kunai_Splash",
           "description": "Attack all surrounding enemies within range with kunais.\nThis skill consumes 2 kunais per use.",
           "levelDetails": [
             {
@@ -8938,8 +10006,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "areaOfEffect": "9 x 9 ~ 11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Kunai Splash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Kunai_Splash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3007.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3007",
           "tree": {
@@ -8959,8 +10036,16 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Offensive Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -8977,6 +10062,14 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Ammunition",
+                "value": "2 Kunai"
               }
             ],
             "levelTables": [
@@ -9051,10 +10144,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9070,6 +10162,8 @@ export const shiranuiData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Scatter diamond-shaped metal spikes to temporarily Immobilize or Stun enemies around you.\nThe higher this skill's level, the more Makibishis you can scatter. You can also use this skill while moving.",
           "levelDetails": [
             {
@@ -9199,8 +10293,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Makibishi (Caltrop Scatter) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Makibishi_(Caltrop_Scatter)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3010.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3010",
           "tree": {
@@ -9321,10 +10422,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9336,10 +10436,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "basic skill",
           "group": "",
-          "type": "",
+          "type": "Passive Skill",
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Righthand_Mastery",
           "description": "Restores your right-hand ATK, which decreases when you're equipped with two weapons.\nAt Levels 4 and 5, it also increases your ATK past the single-wield limit.",
           "levelDetails": [
             {
@@ -9390,8 +10492,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Righthand Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Righthand_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3002.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3002",
           "tree": {
@@ -9403,6 +10512,10 @@ export const shiranuiData = {
           },
           "details": {
             "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
               {
                 "label": "Levels",
                 "value": "5"
@@ -9453,10 +10566,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9468,10 +10580,12 @@ export const shiranuiData = {
           "maxLevel": 5,
           "prerequisiteText": "basic skill",
           "group": "",
-          "type": "",
+          "type": "Passive Skill",
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lefthand_Mastery",
           "description": "Restores your left-hand ATK, which decreases when you're equipped with two weapons.",
           "levelDetails": [
             {
@@ -9522,8 +10636,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Lefthand Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lefthand_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3003.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3003",
           "tree": {
@@ -9535,6 +10656,10 @@ export const shiranuiData = {
           },
           "details": {
             "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
               {
                 "label": "Levels",
                 "value": "5"
@@ -9585,10 +10710,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9600,10 +10724,12 @@ export const shiranuiData = {
           "maxLevel": 10,
           "prerequisiteText": "Throw Huuma Shuriken Lv. 5",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Offensive Skill",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Swirling_Petal",
           "description": "Throw a Huuma Shuriken at a target and inflict damage on and around the target.\nYour Base Level affects your [Throw Huuma Shuriken] Level and your STR affects this skill's ATK.",
           "levelDetails": [
             {
@@ -9723,8 +10849,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level x 4)",
+          "castRange": "11 cells",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Swirling Petal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Swirling_Petal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3009.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3009",
           "tree": {
@@ -9744,8 +10880,16 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Offensive Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level x 4)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -9762,6 +10906,18 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -9862,10 +11018,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9877,10 +11032,12 @@ export const shiranuiData = {
           "maxLevel": 10,
           "prerequisiteText": "Makibishi Lv. 3",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Offensive Skill",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rapid_Throw",
           "description": "A souped-up version of Ninja's [Coin Throw]. Throw up to 100,000 Zeny at all enemies within range, inflicting random, DEF-ignoring splashed damage. This skill's damage is halved against Boss monsters.",
           "levelDetails": [
             {
@@ -10110,8 +11267,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "castRange": "11 cells",
+          "areaOfEffect": "3 x 3 ~ 5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Rapid Throw ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rapid_Throw"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3008.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3008",
           "tree": {
@@ -10131,8 +11298,16 @@ export const shiranuiData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Offensive Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50"
               },
               {
                 "label": "Fixed Cast Time",
@@ -10149,6 +11324,18 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "10 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 5 x 5"
               }
             ],
             "levelTables": [
@@ -10162,6 +11349,46 @@ export const shiranuiData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "costs-10-000-zeny-and-randomly-inflicts-5-000",
+                    "label": "Costs 10,000 Zeny And Randomly Inflicts 5,000"
+                  },
+                  {
+                    "id": "costs-100-000-zeny-and-randomly-inflicts-50-000",
+                    "label": "Costs 100,000 Zeny And Randomly Inflicts 50,000"
+                  },
+                  {
+                    "id": "costs-20-000-zeny-and-randomly-inflicts-10-000",
+                    "label": "Costs 20,000 Zeny And Randomly Inflicts 10,000"
+                  },
+                  {
+                    "id": "costs-30-000-zeny-and-randomly-inflicts-15-000",
+                    "label": "Costs 30,000 Zeny And Randomly Inflicts 15,000"
+                  },
+                  {
+                    "id": "costs-40-000-zeny-and-randomly-inflicts-20-000",
+                    "label": "Costs 40,000 Zeny And Randomly Inflicts 20,000"
+                  },
+                  {
+                    "id": "costs-50-000-zeny-and-randomly-inflicts-25-000",
+                    "label": "Costs 50,000 Zeny And Randomly Inflicts 25,000"
+                  },
+                  {
+                    "id": "costs-60-000-zeny-and-randomly-inflicts-30-000",
+                    "label": "Costs 60,000 Zeny And Randomly Inflicts 30,000"
+                  },
+                  {
+                    "id": "costs-70-000-zeny-and-randomly-inflicts-35-000",
+                    "label": "Costs 70,000 Zeny And Randomly Inflicts 35,000"
+                  },
+                  {
+                    "id": "costs-80-000-zeny-and-randomly-inflicts-40-000",
+                    "label": "Costs 80,000 Zeny And Randomly Inflicts 40,000"
+                  },
+                  {
+                    "id": "costs-90-000-zeny-and-randomly-inflicts-45-000",
+                    "label": "Costs 90,000 Zeny And Randomly Inflicts 45,000"
                   },
                   {
                     "id": "data-1",
@@ -10180,7 +11407,8 @@ export const shiranuiData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Costs 10,000 Zeny and randomly inflicts 5,000 - 10,000 damage",
+                      "costs-10-000-zeny-and-randomly-inflicts-5-000": "- 10",
+                      "effect": "000 damage",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "10000",
@@ -10190,7 +11418,8 @@ export const shiranuiData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Costs 20,000 Zeny and randomly inflicts 10,000 - 20,000 damage",
+                      "costs-20-000-zeny-and-randomly-inflicts-10-000": "- 20",
+                      "effect": "000 damage",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "20000",
@@ -10200,7 +11429,8 @@ export const shiranuiData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Costs 30,000 Zeny and randomly inflicts 15,000 - 30,000 damage",
+                      "costs-30-000-zeny-and-randomly-inflicts-15-000": "- 30",
+                      "effect": "000 damage",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "30000",
@@ -10210,7 +11440,8 @@ export const shiranuiData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Costs 40,000 Zeny and randomly inflicts 20,000 - 40,000 damage",
+                      "costs-40-000-zeny-and-randomly-inflicts-20-000": "- 40",
+                      "effect": "000 damage",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "40000",
@@ -10220,7 +11451,8 @@ export const shiranuiData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Costs 50,000 Zeny and randomly inflicts 25,000 - 50,000 damage",
+                      "costs-50-000-zeny-and-randomly-inflicts-25-000": "- 50",
+                      "effect": "000 damage",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "50000",
@@ -10230,7 +11462,8 @@ export const shiranuiData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Costs 60,000 Zeny and randomly inflicts 30,000 - 60,000 damage",
+                      "costs-60-000-zeny-and-randomly-inflicts-30-000": "- 60",
+                      "effect": "000 damage",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "60000",
@@ -10240,7 +11473,8 @@ export const shiranuiData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Costs 70,000 Zeny and randomly inflicts 35,000 - 70,000 damage",
+                      "costs-70-000-zeny-and-randomly-inflicts-35-000": "- 70",
+                      "effect": "000 damage",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "70000",
@@ -10250,7 +11484,8 @@ export const shiranuiData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Costs 80,000 Zeny and randomly inflicts 40,000 - 80,000 damage",
+                      "costs-80-000-zeny-and-randomly-inflicts-40-000": "- 80",
+                      "effect": "000 damage",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "80000",
@@ -10260,7 +11495,8 @@ export const shiranuiData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Costs 90,000 Zeny and randomly inflicts 45,000 - 90,000 damage",
+                      "costs-90-000-zeny-and-randomly-inflicts-45-000": "- 90",
+                      "effect": "000 damage",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "90000",
@@ -10270,7 +11506,8 @@ export const shiranuiData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Costs 100,000 Zeny and randomly inflicts 50,000 - 100,000 damage",
+                      "costs-100-000-zeny-and-randomly-inflicts-50-000": "- 100",
+                      "effect": "000 damage",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "100000",
@@ -10282,10 +11519,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10312,6 +11548,8 @@ export const shiranuiData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -10390,8 +11628,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -10493,10 +11738,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10512,6 +11756,8 @@ export const shiranuiData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "Shuriken or Kunai",
+          "irowikiUrl": "https://irowiki.org/wiki/Dagger_Throwing_Practice",
           "description": "Increase Shuriken damage.",
           "levelDetails": [
             {
@@ -10602,8 +11848,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Dagger Throwing Practice ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dagger_Throwing_Practice"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/522.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/522",
           "tree": {
@@ -10622,6 +11875,10 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "Ammunition",
+                "value": "Shuriken or Kunai"
               }
             ],
             "levelTables": [
@@ -10713,10 +11970,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10729,9 +11985,11 @@ export const shiranuiData = {
           "prerequisiteText": "basic skill",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Flip_Tatami",
           "description": "Flip tatami to cause the 4*4 area\naround the caster to ignore long range physical\ndamage for 3 seconds. Each cast is followed by\na 3 second cast delay, and has the chance to\ndamage and push enemies 3 cells backward if\nthey are within the skill's attack range.\nAttack Range & Damage by Skill Level",
           "levelDetails": [
             {
@@ -10782,8 +12040,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castDelay": "3 seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "Cross-shaped",
+          "translations": {
+            "pt-BR": {
+              "name": " Flip Tatami ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flip_Tatami"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/527.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/527",
           "tree": {
@@ -10802,6 +12071,26 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "Cross-shaped"
               }
             ],
             "levelTables": [
@@ -10849,10 +12138,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10868,6 +12156,8 @@ export const shiranuiData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ninja_Mastery",
           "description": "Increase SP Restoration Speed by\ntraining in the Ninja Arts. The amount of SP\nrestored by this skill is affected by the\ncharacter's MaxSP.",
           "levelDetails": [
             {
@@ -10958,8 +12248,15 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Ninja Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ninja_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/533.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/533",
           "tree": {
@@ -10989,6 +12286,10 @@ export const shiranuiData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -10997,70 +12298,80 @@ export const shiranuiData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "+3 SP / 10 Sec",
+                      "duration": "10 seconds",
+                      "effect": "+3 SP",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "+6 SP / 10 Sec",
+                      "duration": "10 seconds",
+                      "effect": "+6 SP",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "+9 SP / 10 Sec",
+                      "duration": "10 seconds",
+                      "effect": "+9 SP",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "+12 SP / 10 Sec",
+                      "duration": "10 seconds",
+                      "effect": "+12 SP",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "+15 SP / 10 Sec",
+                      "duration": "10 seconds",
+                      "effect": "+15 SP",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "+18 SP / 10 Sec",
+                      "duration": "10 seconds",
+                      "effect": "+18 SP",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "+21 SP / 10 Sec",
+                      "duration": "10 seconds",
+                      "effect": "+21 SP",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "+24 SP / 10 Sec",
+                      "duration": "10 seconds",
+                      "effect": "+24 SP",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "+27 SP / 10 Sec",
+                      "duration": "10 seconds",
+                      "effect": "+27 SP",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "+30 SP / 10 Sec",
+                      "duration": "10 seconds",
+                      "effect": "+30 SP",
                       "sp-cost": "0"
                     }
                   }
@@ -11069,10 +12380,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11088,6 +12398,8 @@ export const shiranuiData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -11101,8 +12413,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -11121,6 +12442,14 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -11148,10 +12477,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11164,9 +12492,11 @@ export const shiranuiData = {
           "prerequisiteText": "Dagger Throwing Practice 1",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Shuriken",
+          "irowikiUrl": "https://irowiki.org/wiki/Throw_Shuriken",
           "description": "Throw a Shuriken at a target\nfrom a distance of up to 9 cells away from the\ncaster. Each cast consumes 1 Shuriken.",
           "levelDetails": [
             {
@@ -11261,8 +12591,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Throw Shuriken ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Throw_Shuriken"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/523.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/523",
           "tree": {
@@ -11290,6 +12629,10 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -11304,6 +12647,18 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Shuriken"
               }
             ],
             "levelTables": [
@@ -11381,10 +12736,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11397,9 +12751,11 @@ export const shiranuiData = {
           "prerequisiteText": "Flip Tatami 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Leap",
           "description": "Shadow Leap can only be performed\nwhen the caster is in Hiding status\n(attainable through the Haze Slasher skill).\nThis skill instantly moves the caster to a\ntargeted cell, ignoring obstacles in the\ncaster's way.\nLeap Range by Skill Level",
           "levelDetails": [
             {
@@ -11450,8 +12806,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "1 second",
+          "castRange": "(Skill Level + 4) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Leap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Leap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/529.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/529",
           "tree": {
@@ -11477,6 +12843,22 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Skill Level + 4) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
               }
             ],
             "levelTables": [
@@ -11533,10 +12915,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11549,9 +12930,11 @@ export const shiranuiData = {
           "prerequisiteText": "Ninja Mastery 5",
           "group": "Supportive(Psychokinesis)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ninja_Aura",
           "description": "Focus spritual energy to enter\nNinja Aura status, which endows the caster with\nINT and STR bonuses. Ninja Aura status enables\nthe use of the Mirror Image and Killing Strike\nskills, although using those skills will cancel\nNinja Aura.\nSTR, INT Bonuses & Duration by Skill Level",
           "levelDetails": [
             {
@@ -11602,8 +12985,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 10)",
+          "fixedCastTime": "(1.2 − (Skill Level x 0.2)) seconds",
+          "variableCastTime": "(4.8 − (Skill Level x 0.8)) seconds",
+          "duration": "15 + (Skill Level × 15) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Ninja Aura ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ninja_Aura"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/543.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/543",
           "tree": {
@@ -11629,6 +13023,26 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 10)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "(1.2 − (Skill Level x 0.2)) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "(4.8 − (Skill Level x 0.8)) seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "15 + (Skill Level × 15) seconds"
               }
             ],
             "levelTables": [
@@ -11642,41 +13056,50 @@ export const shiranuiData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "str-int",
+                    "label": "Str, Int"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "STR, INT +1, 30 Sec",
+                      "str-int": "+1",
+                      "effect": "30 Sec",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "STR, INT +2, 45 Sec",
+                      "str-int": "+2",
+                      "effect": "45 Sec",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "STR, INT +3, 60 Sec",
+                      "str-int": "+3",
+                      "effect": "60 Sec",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "STR, INT +4, 75 Sec",
+                      "str-int": "+4",
+                      "effect": "75 Sec",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "STR, INT +5, 90 Sec",
+                      "str-int": "+5",
+                      "effect": "90 Sec",
                       "sp-cost": "60"
                     }
                   }
@@ -11685,10 +13108,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11701,9 +13123,11 @@ export const shiranuiData = {
           "prerequisiteText": "Ninja Mastery 1",
           "group": "Offensive(Fire)",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Flaming_Petals",
           "description": "Inflict Fire property damage at a\ntarget by shooting flaming petals. This skill's\nlevel affects the number of strikes, and each\nstrike causes an amount of damage equal to 90%\nof the caster's Matk.",
           "levelDetails": [],
           "levelExtras": [
@@ -11753,8 +13177,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 + (Skill Level × 2)",
+          "fixedCastTime": "(Skill Level × 0.14) seconds",
+          "variableCastTime": "(Skill Level × 0.56) seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Flaming Petals ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flaming_Petals"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/534.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/534",
           "tree": {
@@ -11780,6 +13215,26 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "16 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "(Skill Level × 0.14) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "(Skill Level × 0.56) seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -11857,10 +13312,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11873,9 +13327,11 @@ export const shiranuiData = {
           "prerequisiteText": "Ninja Mastery 1",
           "group": "Offensive(Ice)",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Freezing_Spear",
           "description": "Summon spears of ice that will\nstrike a targeted enemy multiple times. Each\nstrike inflicts an amount of damage that is\nequal to 70% of the caster's Matk.",
           "levelDetails": [
             {
@@ -11966,8 +13422,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12 + (Skill Level * 3)",
+          "fixedCastTime": "(Skill Level × 0.14) seconds",
+          "variableCastTime": "(Skill Level × 0.56) seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Freezing Spear ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Freezing_Spear"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/537.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/537",
           "tree": {
@@ -11993,6 +13460,26 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "12 + (Skill Level * 3)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "(Skill Level × 0.14) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "(Skill Level × 0.56) seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -12084,10 +13571,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12100,9 +13586,11 @@ export const shiranuiData = {
           "prerequisiteText": "Ninja Mastery 1",
           "group": "Offensive(Lightning)",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Wind_Blade",
           "description": "Shoot a shearing blade of\nair that will inflict Wind property damage\nto a targeted enemy.",
           "levelDetails": [
             {
@@ -12195,8 +13683,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "fixedCastTime": "[0.1 + (Skill Level x 0.1)] seconds",
+          "variableCastTime": "[0.4 + (Skill Level x 0.4)] seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Wind Blade ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wind_Blade"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/540.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/540",
           "tree": {
@@ -12224,12 +13723,32 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[0.1 + (Skill Level x 0.1)] seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[0.4 + (Skill Level x 0.4)] seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "0 seconds"
               },
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -12321,10 +13840,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12337,9 +13855,11 @@ export const shiranuiData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -12353,8 +13873,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -12373,6 +13902,18 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -12396,10 +13937,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12412,9 +13952,11 @@ export const shiranuiData = {
           "prerequisiteText": "Throw Shuriken 5",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Kunai",
+          "irowikiUrl": "https://irowiki.org/wiki/Throw_Kunai",
           "description": "Throw a Kunai that will strike its\ntarget 3 times in one attack. Each cast consumes\n1 Kunai, and the attack's property is affected\nby the type of Kunai thrown.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -12448,8 +13990,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Throw Kunai ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Throw_Kunai"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/524.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/524",
           "tree": {
@@ -12477,6 +14028,10 @@ export const shiranuiData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -12491,6 +14046,18 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "0.2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Kunai"
               }
             ],
             "levelTables": [
@@ -12538,10 +14105,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12554,9 +14120,11 @@ export const shiranuiData = {
           "prerequisiteText": "Shadow Leap 1",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Haze_Slasher",
           "description": "Strike an enemy, and then\nimmediately enter the Hiding status; can be\nfollowed by the Shadow Leap or Shadow Slash\nskill.",
           "levelDetails": [
             {
@@ -12651,8 +14219,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Haze Slasher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Haze_Slasher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/528.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/528",
           "tree": {
@@ -12680,6 +14257,10 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "8"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -12694,6 +14275,14 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -12771,10 +14360,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12787,9 +14375,11 @@ export const shiranuiData = {
           "prerequisiteText": "Shadow Leap 5",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cicada_Skin_Shed",
           "description": "Enable Cicada Skin Shed status,\nwhich enables caster to automatically dodge a\nset number of attacks. Each special dodge is\nfollowed by a backward movement of 7 cells.\nWhen the number of attacks reaches the skill's\nlimit, Cicada Skin Shed status is cancelled.\nDuration and Number of Cicada Dodges by Level",
           "levelDetails": [
             {
@@ -12840,8 +14430,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "9 + (Skill Level × 3)",
+          "duration": "(Skill Level × 10) seconds Until dodging all hits",
+          "translations": {
+            "pt-BR": {
+              "name": " Cicada Skin Shed ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cicada_Skin_Shed"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/531.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/531",
           "tree": {
@@ -12867,6 +14466,18 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "9 + (Skill Level × 3)"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 10) seconds Until dodging all hits"
               }
             ],
             "levelTables": [
@@ -12923,10 +14534,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12939,9 +14549,11 @@ export const shiranuiData = {
           "prerequisiteText": "Flaming Petals 5",
           "group": "Offensive(Fire)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Blaze_Shield",
           "description": "Summon a blazing storm in a 5*5\ncell area around the caster that will deliver\nmultiple strikes to enemies within its range.\nThe Blaze Shield lasts for 20 seconds, but is\nautomatically canceled after inflicting its\nMaximum number of strikes. Each cast consumes\n1 Flame Stone.",
           "levelDetails": [
             {
@@ -13034,8 +14646,20 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25",
+          "fixedCastTime": "[1.3 − (Skill Level × 0.1)] seconds",
+          "variableCastTime": "[5.2 − (Skill Level × 0.4)] seconds",
+          "duration": "20 seconds Until using all hits",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Blaze Shield ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blaze_Shield"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/535.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/535",
           "tree": {
@@ -13063,12 +14687,36 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "25"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[1.3 − (Skill Level × 0.1)] seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[5.2 − (Skill Level × 0.4)] seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1 second"
               },
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "20 seconds Until using all hits"
               }
             ],
             "levelTables": [
@@ -13160,10 +14808,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13176,9 +14823,11 @@ export const shiranuiData = {
           "prerequisiteText": "Freezing Spear 5",
           "group": "Supportive(Ice)",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Watery_Evasion",
           "description": "Create a water pool that will\naffect enemies within range by decreasing their\nAGI and reducing Movement Speed by 50%. All\nNinja Class characters, including the caster,\nare immune to these AGI and Movement Speed\npenalties. The area targeted by Watery Evasion\nwill increase the damage of the Freezing Spear\nskill, and enable the use of Water Ball and Aqua\nBenedicta for other players.\nEach cast consumes 1 Ice Stone.\nRange, Duration & AGI Reduction by Skill Level",
           "levelDetails": [
             {
@@ -13273,8 +14922,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12 + (Skill Level x 3)",
+          "duration": "[10 + (Skill Level x 5)] seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Watery Evasion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Watery_Evasion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/538.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/538",
           "tree": {
@@ -13302,6 +14962,10 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "12 + (Skill Level x 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.6 seconds"
               },
@@ -13316,6 +14980,22 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 9 x 9"
+              },
+              {
+                "label": "Duration",
+                "value": "[10 + (Skill Level x 5)] seconds"
               }
             ],
             "levelTables": [
@@ -13443,10 +15123,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13459,9 +15138,11 @@ export const shiranuiData = {
           "prerequisiteText": "Wind Blade",
           "group": "Offensive(Lightning)",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lightning_Jolt",
           "description": "Summon lightning bolts around the\ncaster to damage enemies within the skill's\nrange. Each cast consumes 1 Wind Stone.\nDamage & Range by Skill Level",
           "levelDetails": [
             {
@@ -13516,8 +15197,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12 + (Skill Level × 4)",
+          "castRange": "Magic",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Lightning Jolt ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lightning_Jolt"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/541.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/541",
           "tree": {
@@ -13545,6 +15236,10 @@ export const shiranuiData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "12 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -13559,6 +15254,18 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -13606,10 +15313,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13622,9 +15328,11 @@ export const shiranuiData = {
           "prerequisiteText": "Dagger Throwing Practice 5,",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Throw_Huuma_Shuriken",
           "description": "Requires a Huuma Class Weapon.\nThrow a Huuma Shuriken that will damage its\ntarget and any nearby enemies. The total amount\nof damage is divided among the enemies damaged\nby this skill. Raising this skill's level\nincreases its number of strikes.\nTotal Amount of Damage by Skill Level",
           "levelDetails": [
             {
@@ -13679,8 +15387,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 5)",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3 ~ 5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Throw Huuma Shuriken ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Throw_Huuma_Shuriken"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/525.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/525",
           "tree": {
@@ -13714,6 +15432,10 @@ export const shiranuiData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -13728,6 +15450,18 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 5 x 5"
               }
             ],
             "levelTables": [
@@ -13775,10 +15509,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13794,6 +15527,8 @@ export const shiranuiData = {
           "target": "1 target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Slash",
           "description": "Requires Hiding Status.\nLeaps from the shadows toward a single target and performs a slicing move to inflict physical damage.\nHiding is removed upon using this skill, and Critical Damage can be applied depending on its skill level.\nFor Critical Damage, only the half of total Critical Damage Options will be applied.",
           "levelDetails": [
             {
@@ -13844,8 +15579,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "9 + Skill Level",
+          "castRange": "( Shadow Leap Lv.) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Slash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Slash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/530.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/530",
           "tree": {
@@ -13871,6 +15615,14 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "9 + Skill Level"
+              },
+              {
+                "label": "Cast Range",
+                "value": "( Shadow Leap Lv.) cells"
               },
               {
                 "label": "Target",
@@ -13922,10 +15674,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13938,9 +15689,11 @@ export const shiranuiData = {
           "prerequisiteText": "Ninja Mastery 10,",
           "group": "Offensive(Fire)",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Exploding_Dragon",
           "description": "Summon a flaming dragon that will\ninflict 3 strikes on all enemies in a 5*5 cell\narea around the cell targeted by this skill.\nEach cast consumes 1 Flame Stone.",
           "levelDetails": [
             {
@@ -13995,8 +15748,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level × 5)",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Exploding Dragon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Exploding_Dragon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/536.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/536",
           "tree": {
@@ -14030,6 +15793,10 @@ export const shiranuiData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.8 seconds"
               },
@@ -14044,6 +15811,18 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -14091,10 +15870,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14107,9 +15885,11 @@ export const shiranuiData = {
           "prerequisiteText": "Ninja Mastery 10, Watery Evasion 7",
           "group": "Offensive(Ice)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Snow_Flake_Draft",
           "description": "Summon a meteor of ice that will\ndamage enemies in a 7*7 cell area around the\ncaster. Each cast consumes 1 Ice Stone.",
           "levelDetails": [
             {
@@ -14163,8 +15943,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 5)",
+          "variableCastTime": "2.5 seconds",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Snow Flake Draft ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Snow_Flake_Draft"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/539.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/539",
           "tree": {
@@ -14198,8 +15988,16 @@ export const shiranuiData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.8 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2.5 seconds"
               },
               {
                 "label": "Cast Delay",
@@ -14208,6 +16006,14 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -14255,10 +16061,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14271,9 +16076,11 @@ export const shiranuiData = {
           "prerequisiteText": "Ninja Mastery 10,",
           "group": "Offensive(Lightning)",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Wind",
           "description": "Shoot a blade of sharp wind that\nwill slash all enemies between the caster and\nthe skill's target.\nEach cast consumes 1 Wind Stone.\nDamage & Range by Skill Level",
           "levelDetails": [
             {
@@ -14328,8 +16135,17 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 4)",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " First Wind ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Wind"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/542.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/542",
           "tree": {
@@ -14363,6 +16179,10 @@ export const shiranuiData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -14377,6 +16197,14 @@ export const shiranuiData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -14424,10 +16252,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14440,9 +16267,11 @@ export const shiranuiData = {
           "prerequisiteText": "Dagger Throwing Practice 10,",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Throw_Coins",
           "description": "Throw money at a target to inflict\nan amount of Defense piercing damage equal to\nthe amount of zeny spent in the attack. This\nskill is followed by a 5 second Cast Delay, and\nits damage is reduced against Boss monsters and\nin PvP.\nZeny Consumption by Skill Level",
           "levelDetails": [
             {
@@ -14533,8 +16362,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "castDelay": "5 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Throw Coins ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Throw_Coins"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/526.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/526",
           "tree": {
@@ -14566,6 +16405,22 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -14657,10 +16512,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14673,9 +16527,11 @@ export const shiranuiData = {
           "prerequisiteText": "Shadow Slash 3,",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mirror_Image",
           "description": "Mirror Image can only be cast\nduring Ninja Aura status, and consumes 1 Shadow\nOrb. Create a mirror image that will enable the\ncaster to dodge a set number of long and short\nrange physical attacks. This skill cannot be\nused to block or evade magic based attacks.\nDuration and Number of Dodges by Skill Level",
           "levelDetails": [
             {
@@ -14768,8 +16624,19 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "28 + (Skill Level × 2)",
+          "fixedCastTime": "3.2 ~ 0.8 seconds",
+          "variableCastTime": "0.8 ~ 0.2 seconds",
+          "duration": "40 + (Skill Level × 20) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Mirror Image ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mirror_Image"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/532.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/532",
           "tree": {
@@ -14809,12 +16676,32 @@ export const shiranuiData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "28 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "3.2 ~ 0.8 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.8 ~ 0.2 seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1 second"
               },
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "40 + (Skill Level × 20) seconds"
               }
             ],
             "levelTables": [
@@ -14906,10 +16793,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14922,9 +16808,11 @@ export const shiranuiData = {
           "prerequisiteText": "Dagger Throwing Practice 7,",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Killing_Strike",
           "description": "Sacrifice the caster's remaining HP\nto inflict devastating damage to the targeted\nenemy. The amount of remaining HP affects the\ndamage inflicted, and each cast of this skill\nwill always reduce the caster's HP to 1.",
           "levelDetails": [],
           "levelExtras": [
@@ -14974,8 +16862,18 @@ export const shiranuiData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 5)",
+          "castDelay": "3 seconds",
+          "castRange": "5 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Killing Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Killing_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/544.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/544",
           "tree": {
@@ -15013,6 +16911,22 @@ export const shiranuiData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 5)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -15090,10 +17004,9 @@ export const shiranuiData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15113,6 +17026,8 @@ export const shiranuiData = {
       "target": "1 Cell Ground Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Mirage",
       "description": "Summons a Mirage clone of yourself at the designated location.\nThe Mirage clone lasts for 20 seconds, and up to 3 clones can be summoned.\nThe Mirage clone reacts to the skills used by the main body, using those skills with approximately 30% of the main body's power.",
       "levelDetails": [],
       "levelExtras": [
@@ -15126,8 +17041,21 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25",
+      "fixedCastTime": "0.7 seconds",
+      "variableCastTime": "2 seconds",
+      "cooldown": "3 seconds",
+      "duration": "20 seconds",
+      "castRange": "Melee",
+      "translations": {
+        "pt-BR": {
+          "name": " Mirage ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Mirage"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5479.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5479",
       "tree": {
@@ -15148,8 +17076,32 @@ export const shiranuiData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "25"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "0.7 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "2 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "3 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
+          },
+          {
             "label": "Target",
             "value": "1 Cell Ground Target"
+          },
+          {
+            "label": "Duration",
+            "value": "20 seconds"
           }
         ],
         "levelTables": [
@@ -15173,10 +17125,9 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15192,6 +17143,8 @@ export const shiranuiData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Red_Flame_Cannon",
       "description": "Using the haze of red flames, spews powerful flames, inflicting fire attribute magic damage to targets within the forward range.\nDeals additional damage depends on level of Darkening Cannon user learned, user's base level and SPL.\nConsumes 1 Haze of Prominence.",
       "levelDetails": [
         {
@@ -15282,8 +17235,22 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "42 + (2 × Skill Level)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "2 seconds",
+      "castDelay": "None",
+      "cooldown": "0.7 seconds",
+      "castRange": "Magic",
+      "areaOfEffect": "5 x 5~7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Red Flame Cannon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Red_Flame_Cannon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5488.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5488",
       "tree": {
@@ -15304,8 +17271,36 @@ export const shiranuiData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "42 + (2 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "2 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "None"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.7 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5~7 x 7"
           }
         ],
         "levelTables": [
@@ -15315,80 +17310,66 @@ export const shiranuiData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "68"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "71"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "74"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "77"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "80"
                 }
               }
@@ -15397,7 +17378,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Red Flame Cannon",
@@ -15516,7 +17496,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15532,6 +17512,8 @@ export const shiranuiData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Infiltrate",
       "description": "Instantly seeps into the target's shadow and inflicts melee physical damage to the target.\nWhen cast, moves to the other side of the target and enters shadow cloaking state for 2 seconds.\nIf there are mirage clones of oneself within the 31x31 cell range around the target, the clones are brought to the area around the caster.\nIf the location across from the target is not moveable, the skill cannot be used.\nDamage is additionally increased depending on the caster's base level and CON.",
       "levelDetails": [
         {
@@ -15582,8 +17564,18 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "40",
+      "cooldown": "0.5 seconds",
+      "castRange": "Melee",
+      "translations": {
+        "pt-BR": {
+          "name": " Infiltrate ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Infiltrate"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5477.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5477",
       "tree": {
@@ -15609,6 +17601,18 @@ export const shiranuiData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "40"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
           },
           {
             "label": "Target",
@@ -15660,10 +17664,9 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15679,6 +17682,8 @@ export const shiranuiData = {
       "target": "1 cell ground target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "2 Kunai",
+      "irowikiUrl": "https://irowiki.org/wiki/Kunai_-_Distortion",
       "description": "Throw a kunai at 1 cell ground target, dealing Ranged physical damage to enemies within a 5x5 cell range and inflicting the Nightmare effect for 5 seconds. Additionally, install a [Distortion Zone] at that location for 5 seconds.\nDeals additional damage depends on level of Kunai - Refraction user learned, user's base level and POW.\nThe attack attribute depends on the attribute of the equipped kunai, and consumes 2 equipped kunai.",
       "levelDetails": [
         {
@@ -15769,8 +17774,21 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "26 + (2 × Skill Level)",
+      "variableCastTime": "0.2 seconds",
+      "castDelay": "0.5 seconds",
+      "cooldown": "0.3 seconds",
+      "castRange": "9 cells",
+      "areaOfEffect": "5 x 5",
+      "translations": {
+        "pt-BR": {
+          "name": " Kunai - Distortion ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Kunai_-_Distortion"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5485.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5485",
       "tree": {
@@ -15798,8 +17816,36 @@ export const shiranuiData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "26 + (2 × Skill Level)"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "0.2 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.3 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "9 cells"
+          },
+          {
             "label": "Target",
             "value": "1 cell ground target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5"
+          },
+          {
+            "label": "Ammunition",
+            "value": "2 Kunai"
           },
           {
             "label": "AP Generated",
@@ -15881,7 +17927,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Kunai - Distortion",
@@ -15928,7 +17973,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15944,6 +17989,8 @@ export const shiranuiData = {
       "target": "1 Cell Ground Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Shadow_Hunting",
       "description": "Swing the shadow sword at the location, inflicting melee physical damage to targets within a 5x5 range and applying a nightmare effect for 5 seconds.\nDamage is additionally increased depending on Shadow Flash skill level, caster's base level, and POW.",
       "levelDetails": [
         {
@@ -16034,8 +18081,20 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "28 + (2 × Skill Level)",
+      "castDelay": "0.15 seconds",
+      "cooldown": "0.3 seconds",
+      "castRange": "Melee",
+      "areaOfEffect": "5 x 5",
+      "translations": {
+        "pt-BR": {
+          "name": " Shadow Hunting ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Shadow_Hunting"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5480.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5480",
       "tree": {
@@ -16063,8 +18122,28 @@ export const shiranuiData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "28 + (2 × Skill Level)"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.15 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.3 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
+          },
+          {
             "label": "Target",
             "value": "1 Cell Ground Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5"
           },
           {
             "label": "AP Generated",
@@ -16146,7 +18225,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Shadow Hunting",
@@ -16196,7 +18274,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16212,6 +18290,8 @@ export const shiranuiData = {
       "target": "Instant Casting",
       "recoversAp": "",
       "consumesAp": "20",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used when 10 spirits of the same property are summoned.\nThe charm that strengthens the skills linked to the property of the summoned spirit.\nIncreases Red Flame Cannon / Thundering Cannon / Cold Blooded cannon / Golden Dragon cannon damage.\nThe buffs from different property can be overlapped.\n[Fire Charm (spirit of fire)]\n: [Four Colors Charm: Fire] - Red Flame Cannon Damage +8500%\n[Ice Charm (spirit of water)]\n: [Four Colors Charm: Water] - Cold Blooded cannon damage +7000%\n[Wind Charm (spirit of the wind)]\n: [Four Colors Charm: Wind] - Thundering Cannon damage +8500%\n[Earth Charm (spirit of the earth)]\n: [Four Colors Charm: Earth] - Golden Dragon Cannon damage +5500%",
       "levelDetails": [
         {
@@ -16220,8 +18300,15 @@ export const shiranuiData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Four Colors Charm ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Four_Colors_Charm"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5499.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5499",
       "tree": {
@@ -16284,10 +18371,9 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16303,6 +18389,8 @@ export const shiranuiData = {
       "target": "1 Cell Ground Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Cold_Blooded_Cannon",
       "description": "Throws a haze of ice and snow and summons cold-blooded spheres that explode in the area, inflicting water magic damage to targets within the range.\nDeals additional damage depends on level of Darkening Cannon user learned, user's base level and SPL.\nConsumes 1 Haze of Icy Snow.",
       "levelDetails": [
         {
@@ -16393,8 +18481,22 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "31 + (3 × Skill Level)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "3 seconds",
+      "castDelay": "None",
+      "cooldown": "0.5 seconds",
+      "castRange": "Magic",
+      "areaOfEffect": "5 x 5~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Cold Blooded Cannon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Cold_Blooded_Cannon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5489.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5489",
       "tree": {
@@ -16413,6 +18515,30 @@ export const shiranuiData = {
           {
             "label": "Levels",
             "value": "10"
+          },
+          {
+            "label": "SP Cost",
+            "value": "31 + (3 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "3 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "None"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
           },
           {
             "label": "Target",
@@ -16508,7 +18634,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Cold Blooded Cannon",
@@ -16609,7 +18734,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16625,6 +18750,8 @@ export const shiranuiData = {
       "target": "1 cell ground target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Melt_Away",
       "description": "Melts your own shadow and scatters it forward, inflicting shadow property magic damage to targets within the range.\nAs soon as you use the skill, you move backwards 3 cells and enter shadow cloaking for 2 seconds.\nDamage is additionally increased depending on the caster's base level and CON.",
       "levelDetails": [
         {
@@ -16675,8 +18802,17 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "35",
+      "cooldown": "2 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Melt Away ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Melt_Away"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5476.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5476",
       "tree": {
@@ -16702,6 +18838,14 @@ export const shiranuiData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "35"
+          },
+          {
+            "label": "Cooldown",
+            "value": "2 seconds"
           },
           {
             "label": "Target",
@@ -16753,10 +18897,9 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16772,6 +18915,8 @@ export const shiranuiData = {
       "target": "Instant cast",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "5 Kunai",
+      "irowikiUrl": "https://irowiki.org/wiki/Kunai_-_Rotation",
       "description": "Scatter kunai around yourself, dealing Ranged physical damage every 0.5 seconds for 2 seconds to targets within range, and putting yourself in a shadowy state. Additionally, install a [Distortion Zone] at your location for 5 seconds.\nDeals additional damage depends on level of Kunai - Distortion user learned, user's base level and POW.\nThe attack attribute depends on the attribute of the equipped kunai, and consumes 5 equipped kunai.",
       "levelDetails": [
         {
@@ -16822,8 +18967,21 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "55",
+      "castDelay": "0.5 seconds",
+      "cooldown": "2 seconds",
+      "duration": "2 seconds",
+      "castRange": "8 cells",
+      "areaOfEffect": "5 x 5 ~ 9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Kunai - Rotation ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Kunai_-_Rotation"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5486.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5486",
       "tree": {
@@ -16851,8 +19009,32 @@ export const shiranuiData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "55"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "2 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "8 cells"
+          },
+          {
             "label": "Target",
             "value": "Instant cast"
+          },
+          {
+            "label": "Duration",
+            "value": "2 seconds"
+          },
+          {
+            "label": "Ammunition",
+            "value": "5 Kunai"
           },
           {
             "label": "Pulse",
@@ -16913,7 +19095,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Kunai - Rotation",
@@ -16971,7 +19152,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16987,6 +19168,8 @@ export const shiranuiData = {
       "target": "1 Cell Ground Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Huuma_Shuriken_-_Grasp",
       "description": "Throws a Huuma Shuriken to install a powerful [Hidden Weapon Zone] at a 1 Cell Ground Target, dealing Range Physical damage every 0.25 seconds to enemies within the surrounding range for 5 seconds and applying the Nightmare effect for 5 seconds.\nUp to two [Hidden Weapon Zone] can be installed.\nDeals additional damage depends on level of Huuma Shuriken - Construct user learned, user's base level and POW. Attack properties depend on the properties of the equipped kunai.",
       "levelDetails": [
         {
@@ -17077,8 +19260,22 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "36 + (2 × Skill Level)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "1.2 seconds",
+      "cooldown": "1 second",
+      "duration": "5 seconds",
+      "castRange": "10 cells",
+      "areaOfEffect": "5 x 5 ~ 9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Huuma Shuriken - Grasp ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Huuma_Shuriken_-_Grasp"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5483.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5483",
       "tree": {
@@ -17106,8 +19303,36 @@ export const shiranuiData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "36 + (2 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1.2 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "1 second"
+          },
+          {
+            "label": "Cast Range",
+            "value": "10 cells"
+          },
+          {
             "label": "Target",
             "value": "1 Cell Ground Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5 ~ 9 x 9"
+          },
+          {
+            "label": "Duration",
+            "value": "5 seconds"
           },
           {
             "label": "AP Generated",
@@ -17207,7 +19432,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Huuma Shuriken - Grasp",
@@ -17265,7 +19489,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17281,6 +19505,8 @@ export const shiranuiData = {
       "target": "Instant Cast",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Shadow_Dance",
       "description": "Swings a shadow and inflicts melee physical damage to enemies within the surrounding range.\nDamage increases additionally depending on Shadow Hunting skill level, caster's base level, and POW.",
       "levelDetails": [
         {
@@ -17371,8 +19597,21 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "27 + (3 × Skill Level)",
+      "fixedCastTime": "0.3 seconds",
+      "castDelay": "0.25 second",
+      "cooldown": "0.4 seconds",
+      "castRange": "Melee",
+      "areaOfEffect": "5×5~7×7",
+      "translations": {
+        "pt-BR": {
+          "name": " Shadow Dance ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Shadow_Dance"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5481.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5481",
       "tree": {
@@ -17400,8 +19639,32 @@ export const shiranuiData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "27 + (3 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "0.3 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.25 second"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.4 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
+          },
+          {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5×5~7×7"
           },
           {
             "label": "AP Generated",
@@ -17497,7 +19760,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Shadow Dance",
@@ -17622,7 +19884,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17638,6 +19900,8 @@ export const shiranuiData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Thundering_Cannon",
       "description": "Throws Haze of North Wind on the ground to summon the powerful wind, inflicts wind property magical damage to the target and surrounding enemies around the target.\nDeals additional damage depends on level of Darkening Cannon user learned, user's base level and SPL.\nConsumes 1 Haze of North Wind.",
       "levelDetails": [
         {
@@ -17728,8 +19992,22 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "42 + (2 x Skill Level)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "2 seconds",
+      "castDelay": "None",
+      "cooldown": "0.7 seconds",
+      "castRange": "Magic",
+      "areaOfEffect": "5 x 5~7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Thundering Cannon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Thundering_Cannon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5490.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5490",
       "tree": {
@@ -17750,8 +20028,36 @@ export const shiranuiData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "42 + (2 x Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "2 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "None"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.7 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5~7 x 7"
           },
           {
             "label": "Property",
@@ -17765,80 +20071,66 @@ export const shiranuiData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "68"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "71"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "74"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "77"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "80"
                 }
               }
@@ -17847,7 +20139,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Thundering Cannon",
@@ -17966,7 +20257,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17982,6 +20273,8 @@ export const shiranuiData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Nightmare_Erasion",
       "description": "Removes the nightmare effect granted to targets within a 15x15 range around you.",
       "levelDetails": [],
       "fixedCastTime": "0.2 seconds",
@@ -17999,8 +20292,17 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "10",
+      "areaOfEffect": "15 x 15",
+      "translations": {
+        "pt-BR": {
+          "name": " Nightmare Erasion ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Nightmare_Erasion"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5478.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5478",
       "tree": {
@@ -18021,6 +20323,10 @@ export const shiranuiData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "10"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.2 seconds"
           },
@@ -18039,6 +20345,10 @@ export const shiranuiData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "15 x 15"
           }
         ],
         "levelTables": [
@@ -18062,10 +20372,9 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18081,6 +20390,8 @@ export const shiranuiData = {
       "target": "Instant cast",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "5 Kunai",
+      "irowikiUrl": "https://irowiki.org/wiki/Kunai_-_Refraction",
       "description": "It explodes all [Distortion Zones] installed within a 15x15 range around you, inflicting Ranged physical damage to enemies within a 5x5 Cell range every 0.25 seconds for 2 seconds.\nDamage is additionally increased depending on Kunai-Rotation skill level, caster's base level, and POW.\nThe attack attribute depends on the attribute of the equipped kunai.",
       "levelDetails": [
         {
@@ -18175,8 +20486,19 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "50",
+      "duration": "2 seconds",
+      "castRange": "9 cells",
+      "areaOfEffect": "15 x 15",
+      "translations": {
+        "pt-BR": {
+          "name": " Kunai - Refraction ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Kunai_-_Refraction"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5487.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5487",
       "tree": {
@@ -18204,6 +20526,10 @@ export const shiranuiData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "50"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -18220,8 +20546,24 @@ export const shiranuiData = {
             "value": "2 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "9 cells"
+          },
+          {
             "label": "Target",
             "value": "Instant cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "15 x 15"
+          },
+          {
+            "label": "Duration",
+            "value": "2 seconds"
+          },
+          {
+            "label": "Ammunition",
+            "value": "5 Kunai"
           },
           {
             "label": "Pulse",
@@ -18303,7 +20645,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Kunai - Refraction",
@@ -18353,7 +20694,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18369,6 +20710,8 @@ export const shiranuiData = {
       "target": "1 Cell Ground Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Huuma_Shuriken_-_Construct",
       "description": "Throws a H.Shuriken imbued with powerful energy, dealing Range Physical damage to enemies within a 9x9 range around the targeted cell.\nIf a [Hidden Weapon Zone] exists within the effect range, it will explode, dealing additional Range Physical damage in a 9x9 range centered on that location.\nDeals additional damage depends on level of H.S. - Grasp learned, base level and POW. Attack properties depend on the properties of the equipped kunai.",
       "levelDetails": [
         {
@@ -18459,8 +20802,21 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "31 + (3 × Skill Level)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "1.2 seconds",
+      "cooldown": "0.7 seconds",
+      "castRange": "10 cells",
+      "areaOfEffect": "5 x 13",
+      "translations": {
+        "pt-BR": {
+          "name": " Huuma Shuriken - Construct ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Huuma_Shuriken_-_Construct"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5484.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5484",
       "tree": {
@@ -18488,8 +20844,32 @@ export const shiranuiData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "31 + (3 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1.2 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.7 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "10 cells"
+          },
+          {
             "label": "Target",
             "value": "1 Cell Ground Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 13"
           }
         ],
         "levelTables": [
@@ -18567,7 +20947,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Huuma Shuriken - Construct",
@@ -18645,7 +21024,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18661,6 +21040,8 @@ export const shiranuiData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Shadow_Flash",
       "description": "Fires a powerful shadow sword slash toward the target, dealing Melee Physical damage to all targets within range around the target.\nDamage is additionally increased depending on Shadow Dance skill level, caster's base level, and POW.\nCritical damage is applied based on the user's critical rate,\nThe effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -18751,8 +21132,21 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "33 + (3 x Skill Level)",
+      "fixedCastTime": "1 second",
+      "variableCastTime": "0.3 seconds",
+      "castDelay": "0.25 seconds",
+      "cooldown": "0.5 seconds",
+      "areaOfEffect": "3 x 10",
+      "translations": {
+        "pt-BR": {
+          "name": " Shadow Flash ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Shadow_Flash"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5482.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5482",
       "tree": {
@@ -18780,8 +21174,32 @@ export const shiranuiData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "33 + (3 x Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 second"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "0.3 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.25 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "3 x 10"
           }
         ],
         "levelTables": [
@@ -18873,7 +21291,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Shadow Flash",
@@ -18978,7 +21395,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18994,6 +21411,8 @@ export const shiranuiData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Golden_Dragon_Cannon",
       "description": "Blows a haze of earth and inflicts earth magic damage to surrounding enemies.\nDeals additional damage depends on level of Darkening Cannon user learned, user's base level and SPL.\nConsumes 1 Haze of The Earth.",
       "levelDetails": [
         {
@@ -19084,8 +21503,21 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "28 + (2 x Skill Level)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "3 seconds",
+      "cooldown": "0.3 seconds",
+      "castRange": "Magic",
+      "areaOfEffect": "3 x 3~5 x 5",
+      "translations": {
+        "pt-BR": {
+          "name": " Golden Dragon Cannon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Golden_Dragon_Cannon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5491.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5491",
       "tree": {
@@ -19106,8 +21538,32 @@ export const shiranuiData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "28 + (2 x Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "3 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.3 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "3 x 3~5 x 5"
           }
         ],
         "levelTables": [
@@ -19117,80 +21573,66 @@ export const shiranuiData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Range: 3 x 3",
                   "sp-cost": "47"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Range: 3 x 3",
                   "sp-cost": "49"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Range: 3 x 3",
                   "sp-cost": "51"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Range: 3 x 3",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Range: 3 x 3",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "59"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "61"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "63"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "Range: 5 x 5",
                   "sp-cost": "65"
                 }
               }
@@ -19199,7 +21641,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Golden Dragon Cannon",
@@ -19310,7 +21751,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19326,6 +21767,8 @@ export const shiranuiData = {
       "target": "Instant cast",
       "recoversAp": "",
       "consumesAp": "20",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Kunai_-_Nightmare",
       "description": "Disperses numerous hidden weapons to all enemies within a 13x13 cell range, inflicting powerful long range physical damage.\nDeals 1.5x damage to targets affected by the nightmare effect (the nightmare effect is removed).\nDamage increases additionally based on the caster's base level and POW.",
       "levelDetails": [
         {
@@ -19348,8 +21791,18 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "70",
+      "castRange": "12 cells",
+      "areaOfEffect": "13 x 13",
+      "translations": {
+        "pt-BR": {
+          "name": " Kunai - Nightmare ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Kunai_-_Nightmare"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5494.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5494",
       "tree": {
@@ -19395,6 +21848,10 @@ export const shiranuiData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "70"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -19411,8 +21868,16 @@ export const shiranuiData = {
             "value": "1 second"
           },
           {
+            "label": "Cast Range",
+            "value": "12 cells"
+          },
+          {
             "label": "Target",
             "value": "Instant cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "13 x 13"
           },
           {
             "label": "AP Consumed",
@@ -19440,7 +21905,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Kunai - Nightmare",
@@ -19479,7 +21943,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19495,6 +21959,8 @@ export const shiranuiData = {
       "target": "Instant cast",
       "recoversAp": "",
       "consumesAp": "20",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Shadow_-_Nightmare",
       "description": "Inflicts powerful Melee Physics damage to all enemies within a 13x13Cell range by casting shadows on them.\nDeals 1.5x damage to targets affected by the nightmare effect (the nightmare effect is removed).\nDamage increases additionally based on the caster's base level and POW.",
       "levelDetails": [
         {
@@ -19517,8 +21983,18 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "70",
+      "castRange": "Melee",
+      "areaOfEffect": "13 x 13",
+      "translations": {
+        "pt-BR": {
+          "name": " Shadow - Nightmare ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Shadow_-_Nightmare"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5493.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5493",
       "tree": {
@@ -19552,6 +22028,10 @@ export const shiranuiData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "70"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -19568,8 +22048,16 @@ export const shiranuiData = {
             "value": "1 second"
           },
           {
+            "label": "Cast Range",
+            "value": "Melee"
+          },
+          {
             "label": "Target",
             "value": "Instant cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "13 x 13"
           },
           {
             "label": "AP Consumed",
@@ -19597,7 +22085,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Shadow - Nightmare",
@@ -19636,7 +22123,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19652,6 +22139,8 @@ export const shiranuiData = {
       "target": "Instant cast",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Darkening_Cannon",
       "description": "Connects his own shadow to a pitch-black haze and swings it around, dealing dark attribute Magic damage to all enemies within a surrounding range and inflicting the Nightmare effect for 5 seconds.\nDamage increases further based on the caster's base level and SPL.\nConsumes 1 Haze of Pitch Darkness.",
       "levelDetails": [
         {
@@ -19742,8 +22231,21 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "38 + (2 × Skill Level)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "3 seconds",
+      "cooldown": "0.5 seconds",
+      "castRange": "Magic",
+      "areaOfEffect": "5 x 5~7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Darkening Cannon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Darkening_Cannon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5492.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5492",
       "tree": {
@@ -19762,6 +22264,26 @@ export const shiranuiData = {
           {
             "label": "Levels",
             "value": "10"
+          },
+          {
+            "label": "SP Cost",
+            "value": "38 + (2 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "3 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
           },
           {
             "label": "Target",
@@ -19861,7 +22383,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Darkening Cannon",
@@ -19908,7 +22429,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19924,6 +22445,8 @@ export const shiranuiData = {
       "target": "Instant cast",
       "recoversAp": "",
       "consumesAp": "20",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Dark_Dragon_-_Nightmare",
       "description": "Summons a shadow dragon in an 11x11 cell range around you, dealing powerful dark attribute Magic damage.\nDeals additional fire attribute Magic damage of the same power to targets affected by the Nightmare effect (the Nightmare effect is removed).\nDamage increases further based on the caster's base level and SPL.",
       "levelDetails": [
         {
@@ -19946,8 +22469,18 @@ export const shiranuiData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "120",
+      "castRange": "Magic",
+      "areaOfEffect": "11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Dark Dragon - Nightmare ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Dark_Dragon_-_Nightmare"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5495.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5495",
       "tree": {
@@ -20005,6 +22538,10 @@ export const shiranuiData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "120"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -20021,8 +22558,16 @@ export const shiranuiData = {
             "value": "1 second"
           },
           {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "Instant cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "11 x 11"
           },
           {
             "label": "AP Consumed",
@@ -20050,7 +22595,6 @@ export const shiranuiData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Dark Dragon - Nightmare",
@@ -20097,7 +22641,7 @@ export const shiranuiData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

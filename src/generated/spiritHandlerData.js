@@ -1,5 +1,5 @@
 export const spiritHandlerData = {
-  "generatedAt": "2026-07-10T00:57:30.805Z",
+  "generatedAt": "2026-07-10T15:02:24.926Z",
   "classId": 4308,
   "classSlug": "spirit-handler",
   "className": "Spirit Handler",
@@ -71,7 +71,8 @@ export const spiritHandlerData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4308",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -284,6 +285,8 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mystical_Creature_Mastery",
           "description": "Develops the ability to communicate with spirits.\nIt affects mystical creatures skills and increases P.ATK and S.MATK.",
           "levelDetails": [
             {
@@ -374,8 +377,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Mystical Creature Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mystical_Creature_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5433.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5433",
           "tree": {
@@ -401,82 +411,96 @@ export const spiritHandlerData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
+                    "id": "p-atk",
+                    "label": "P.Atk"
                   },
                   {
-                    "id": "p-atk-s-matk",
-                    "label": "P.Atk/S.Matk"
+                    "id": "s-matk",
+                    "label": "S.Matk"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "p-atk-s-matk": "+1",
+                      "p-atk": "+1",
+                      "s-matk": "+1",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "p-atk-s-matk": "+3",
+                      "p-atk": "+3",
+                      "s-matk": "+3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "p-atk-s-matk": "+4",
+                      "p-atk": "+4",
+                      "s-matk": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "p-atk-s-matk": "+6",
+                      "p-atk": "+6",
+                      "s-matk": "+6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "p-atk-s-matk": "+7",
+                      "p-atk": "+7",
+                      "s-matk": "+7",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "p-atk-s-matk": "+9",
+                      "p-atk": "+9",
+                      "s-matk": "+9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "p-atk-s-matk": "+10",
+                      "p-atk": "+10",
+                      "s-matk": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "p-atk-s-matk": "+12",
+                      "p-atk": "+12",
+                      "s-matk": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "p-atk-s-matk": "+13",
+                      "p-atk": "+13",
+                      "s-matk": "+13",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "p-atk-s-matk": "+15",
+                      "p-atk": "+15",
+                      "s-matk": "+15",
                       "sp-cost": "0"
                     }
                   }
@@ -485,10 +509,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -504,6 +527,8 @@ export const spiritHandlerData = {
           "target": "Single Target",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Chulho_Sonic_Claw",
           "description": "Borrows the sharp claws of Chulho to slash at the air toward the target, dealing Range Physical damage.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and POW.\nIf the user learned Commune With Chulho, increases skill damage and applies critical damage, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -570,8 +595,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "21 + (Skill Level x 3)",
+          "castDelay": "0.5 second",
+          "cooldown": "0.25 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Chulho Sonic Claw ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chulho_Sonic_Claw"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5435.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5435",
           "tree": {
@@ -597,6 +632,18 @@ export const spiritHandlerData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "21 + (Skill Level x 3)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.25 seconds"
               },
               {
                 "label": "Target",
@@ -664,7 +711,6 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Chulho Sonic Claw",
@@ -749,7 +795,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -765,6 +811,8 @@ export const spiritHandlerData = {
           "target": "Instant Cast",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kisul_Water_Spraying",
           "description": "Shoots a water cannon filled with the healing power of ghosts, recovering the HP of yourself and party members around you.\nRecovers additional amount depends on level of Mystical Creature Mastery user learned, user's base level and CRT.\nIf the user learned Commune with Kisul, increases area of effect and healing amount.",
           "levelDetails": [
             {
@@ -835,8 +883,17 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "57 + (Skill Level x 4)",
+          "areaOfEffect": "7 x 7 ~ 13 x 13 11 x 11 ~ 17 x 17 (with Commune with Kisul )",
+          "translations": {
+            "pt-BR": {
+              "name": " Kisul Water Spraying ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Kisul_Water_Spraying"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5439.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5439",
           "tree": {
@@ -862,6 +919,10 @@ export const spiritHandlerData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "57 + (Skill Level x 4)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -893,6 +954,14 @@ export const spiritHandlerData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "recovery-amount",
+                    "label": "Recovery Amount"
+                  },
+                  {
+                    "id": "recovery-amount-commune",
+                    "label": "Recovery Amount (Commune)"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -901,64 +970,78 @@ export const spiritHandlerData = {
                     "label": "Area of Effect"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "area-of-effect-commune",
+                    "label": "Area of Effect (Commune)"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "recovery-amount": "500 + (Mystical Creature Mastery Lv x 100)",
                       "area-of-effect": "7x7",
-                      "effect": "Recovery Amount 500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 750+(Mystical Creature Mastery Lv x 150) / Range: 11 x 11 cells",
+                      "recovery-amount-commune": "750 + (Mystical Creature Mastery Lv x 150)",
+                      "area-of-effect-commune": "11x11",
                       "sp-cost": "61"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "recovery-amount": "1000 + (Mystical Creature Mastery Lv x 100)",
                       "area-of-effect": "7x7",
-                      "effect": "Recovery Amount 1000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 1500+(Mystical Creature Mastery Lv x 150) / Range: 11 x 11 cells",
+                      "recovery-amount-commune": "1500 + (Mystical Creature Mastery Lv x 150)",
+                      "area-of-effect-commune": "11x11",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "recovery-amount": "1500 + (Mystical Creature Mastery Lv x 100)",
                       "area-of-effect": "9x9",
-                      "effect": "Recovery Amount 1500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 2250+(Mystical Creature Mastery Lv x 150) / Range: 13 x 13 cells",
+                      "recovery-amount-commune": "2250 + (Mystical Creature Mastery Lv x 150)",
+                      "area-of-effect-commune": "13x13",
                       "sp-cost": "69"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "recovery-amount": "2000 + (Mystical Creature Mastery Lv x 100)",
                       "area-of-effect": "9x9",
-                      "effect": "Recovery Amount 2000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3000+(Mystical Creature Mastery Lv x 150) / Range: 13 x 13 cells",
+                      "recovery-amount-commune": "3000 + (Mystical Creature Mastery Lv x 150)",
+                      "area-of-effect-commune": "13x13",
                       "sp-cost": "73"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "recovery-amount": "2500 + (Mystical Creature Mastery Lv x 100)",
                       "area-of-effect": "11x11",
-                      "effect": "Recovery Amount 2500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3750+(Mystical Creature Mastery Lv x 150) / Range: 15 x 15 cells",
+                      "recovery-amount-commune": "3750 + (Mystical Creature Mastery Lv x 150)",
+                      "area-of-effect-commune": "15x15",
                       "sp-cost": "77"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "recovery-amount": "3000 + (Mystical Creature Mastery Lv x 100)",
                       "area-of-effect": "11x11",
-                      "effect": "Recovery Amount 3000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 4500+(Mystical Creature Mastery Lv x 150) / Range: 15 x 15 cells",
+                      "recovery-amount-commune": "4500 + (Mystical Creature Mastery Lv x 150)",
+                      "area-of-effect-commune": "15x15",
                       "sp-cost": "81"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "recovery-amount": "3500 + (Mystical Creature Mastery Lv x 100)",
                       "area-of-effect": "13x13",
-                      "effect": "Recovery Amount 3500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 5250+(Mystical Creature Mastery Lv x 150) / Range: 17 x 17 cells",
+                      "recovery-amount-commune": "5250 + (Mystical Creature Mastery Lv x 150)",
+                      "area-of-effect-commune": "17x17",
                       "sp-cost": "85"
                     }
                   }
@@ -967,10 +1050,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -986,6 +1068,8 @@ export const spiritHandlerData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Colors_of_Hyunrok",
           "description": "With the mysterious magical power of Hyunrok, endows elemental property to CN Meteor Hyunrok Breeze and Hyunrok Cannon for 300 seconds.\nIf the user learned Commune with Hyunrok, using this skill also increases CN Meteor damage by 50%.\nWhen using skill level 7, the endowment is canceled.",
           "levelDetails": [
             {
@@ -1052,8 +1136,19 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "90",
+          "fixedCastTime": "1 seconds",
+          "variableCastTime": "1.7 seconds",
+          "duration": "300 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Colors of Hyunrok ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Colors_of_Hyunrok"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5444.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5444",
           "tree": {
@@ -1081,8 +1176,24 @@ export const spiritHandlerData = {
                 "value": "7"
               },
               {
+                "label": "SP Cost",
+                "value": "90"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.7 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Duration",
+                "value": "300 seconds"
               }
             ],
             "levelTables": [
@@ -1153,10 +1264,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1172,6 +1282,8 @@ export const spiritHandlerData = {
           "target": "Single target",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Sharp claws of Chulho slash the target, inflicts long ranged physical damage to the target and surrounding enemies around the target for 5 hits.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and POW.\nHas a chance to trigger critical, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -1204,8 +1316,15 @@ export const spiritHandlerData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Chulho Battering ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chulho_Battering"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5506.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5506",
           "tree": {
@@ -1249,7 +1368,6 @@ export const spiritHandlerData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Chulho Battering",
@@ -1265,7 +1383,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1281,6 +1399,8 @@ export const spiritHandlerData = {
           "target": "Instant Cast",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Howling_of_Chulho",
           "description": "Use the power of the Iron Tiger to roar with all your might, dealing long-range physical DMG to enemies within a surrounding range.\nWhen cast, grants [Hogogong effect] to enemies within the surrounding area for 12 seconds.\nDMG increases additionally based on the Spiritual Communication skill level, caster's base level, and POW.\nIf you acquire [Commune With Chulho], the effect range and DMG increase.",
           "levelDetails": [
             {
@@ -1347,8 +1467,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "27 + (Skill Level x 5)",
+          "fixedCastTime": "1 second",
+          "cooldown": "1 second",
+          "translations": {
+            "pt-BR": {
+              "name": " Howling of Chulho ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Howling_of_Chulho"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5436.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5436",
           "tree": {
@@ -1382,6 +1512,18 @@ export const spiritHandlerData = {
                 "value": "7"
               },
               {
+                "label": "SP Cost",
+                "value": "27 + (Skill Level x 5)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "1 second"
+              },
+              {
                 "label": "Target",
                 "value": "Instant Cast"
               },
@@ -1411,8 +1553,8 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Range(Commune): 7 x 7 cells",
                       "area-of-effect": "5x5",
+                      "effect": "Range(Commune): 7 x 7 cells",
                       "sp-cost": "72"
                     }
                   },
@@ -1426,40 +1568,40 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Range(Commune): 7 x 7 cells",
                       "area-of-effect": "5x5",
+                      "effect": "Range(Commune): 7 x 7 cells",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Range(Commune): 9 x 9 cells",
                       "area-of-effect": "7x7",
+                      "effect": "Range(Commune): 9 x 9 cells",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Range(Commune): 9 x 9 cells",
                       "area-of-effect": "7x7",
+                      "effect": "Range(Commune): 9 x 9 cells",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Range(Commune): 9 x 9 cells",
                       "area-of-effect": "7x7",
+                      "effect": "Range(Commune): 9 x 9 cells",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Range(Commune): 11 x 11 cells",
                       "area-of-effect": "9x9",
+                      "effect": "Range(Commune): 11 x 11 cells",
                       "sp-cost": "72"
                     }
                   }
@@ -1468,7 +1610,6 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Howling of Chulho",
@@ -1526,7 +1667,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1542,6 +1683,8 @@ export const spiritHandlerData = {
           "target": "Instant Cast",
           "recoversAp": "4",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Marine_Festival_of_Kisul",
           "description": "Using the power of the sea that Gwisul possesses, it temporarily increases the POW, CRT, and CON of yourself and the party members around you.\nWhen you acquire [Commune With Kisul], the range of effect increases and the duration is doubled.\nDoes not stack with Cardinal's [Benedictum] effect.",
           "levelDetails": [
             {
@@ -1596,8 +1739,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "57 + (Skill Level x 4)",
+          "duration": "60 ~ 120 seconds",
+          "areaOfEffect": "5 x 5 ~ 13 x 13 9 x 9 ~ 17 x 17 (with Commune with Kisul )",
+          "translations": {
+            "pt-BR": {
+              "name": " Marine Festival of Kisul ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Marine_Festival_of_Kisul"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5440.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5440",
           "tree": {
@@ -1631,6 +1784,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "57 + (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -1660,6 +1817,18 @@ export const spiritHandlerData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "pow",
+                    "label": "POW"
+                  },
+                  {
+                    "id": "crt",
+                    "label": "CRT"
+                  },
+                  {
+                    "id": "con",
+                    "label": "CON"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1668,57 +1837,72 @@ export const spiritHandlerData = {
                     "label": "Area of Effect"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
-                    "id": "pow-crt-con",
-                    "label": "Pow,crt,con"
+                    "id": "effect",
+                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "pow-crt-con": "+2",
-                      "effect": "Duration: 60 sec\nRange(Commune): 9 x 9 cells",
+                      "duration": "60 seconds",
+                      "pow": "+2",
+                      "crt": "+2",
+                      "con": "+2",
                       "area-of-effect": "5x5",
+                      "effect": "Range(Commune): 9 x 9 cells",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "pow-crt-con": "+4",
-                      "effect": "Duration: 75 sec\nRange(Commune): 11 x 11 cells",
+                      "duration": "75 seconds",
+                      "pow": "+4",
+                      "crt": "+4",
+                      "con": "+4",
                       "area-of-effect": "7x7",
+                      "effect": "Range(Commune): 11 x 11 cells",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "pow-crt-con": "+6",
-                      "effect": "Duration: 90 sec\nRange(Commune): 13 x 13 cells",
+                      "duration": "90 seconds",
+                      "pow": "+6",
+                      "crt": "+6",
+                      "con": "+6",
                       "area-of-effect": "9x9",
+                      "effect": "Range(Commune): 13 x 13 cells",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "pow-crt-con": "+8",
-                      "effect": "Duration: 105 sec\nRange(Commune): 15 x 15 cells",
+                      "duration": "105 seconds",
+                      "pow": "+8",
+                      "crt": "+8",
+                      "con": "+8",
                       "area-of-effect": "11x11",
+                      "effect": "Range(Commune): 15 x 15 cells",
                       "sp-cost": "110"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "pow-crt-con": "+10",
-                      "effect": "Duration: 120 sec\nRange(Commune): 17 x 17 cells",
+                      "duration": "120 seconds",
+                      "pow": "+10",
+                      "crt": "+10",
+                      "con": "+10",
                       "area-of-effect": "13x13",
+                      "effect": "Range(Commune): 17 x 17 cells",
                       "sp-cost": "120"
                     }
                   }
@@ -1727,7 +1911,6 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Marine Festival of Kisul",
@@ -1750,7 +1933,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1766,6 +1949,8 @@ export const spiritHandlerData = {
           "target": "Instant Cast",
           "recoversAp": "4",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sandy_Festival_of_Kisul",
           "description": "Using the power of the sea that Gwiseol possesses, he increases the SPL, WIS, and STA of himself and the party members around him for a certain period of time.\nWhen you acquire [Commune With Kisul], the range of effect increases and the duration is doubled.\nDoes not stack with Cardinal's [Religio] effect.",
           "levelDetails": [
             {
@@ -1820,8 +2005,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (Skill Level x 10)",
+          "duration": "60 ~ 120 seconds",
+          "areaOfEffect": "5 x 5 ~ 13 x 13 9 x 9 ~ 17 x 17 (with Commune with Kisul )",
+          "translations": {
+            "pt-BR": {
+              "name": " Sandy Festival of Kisul ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sandy_Festival_of_Kisul"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5441.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5441",
           "tree": {
@@ -1855,6 +2050,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -1884,6 +2083,18 @@ export const spiritHandlerData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "spl",
+                    "label": "SPL"
+                  },
+                  {
+                    "id": "wis",
+                    "label": "WIS"
+                  },
+                  {
+                    "id": "sta",
+                    "label": "STA"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -1892,57 +2103,72 @@ export const spiritHandlerData = {
                     "label": "Area of Effect"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
-                    "id": "spl-wis-sta",
-                    "label": "SPL,wis,sta"
+                    "id": "effect",
+                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "spl-wis-sta": "+2",
-                      "effect": "Duration: 60 sec\nRange(Commune): 9 x 9 cells",
+                      "duration": "60 seconds",
+                      "spl": "+2",
+                      "wis": "+2",
+                      "sta": "+2",
                       "area-of-effect": "5x5",
+                      "effect": "Range(Commune): 9 x 9 cells",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "spl-wis-sta": "+4",
-                      "effect": "Duration: 75 sec\nRange(Commune): 11 x 11 cells",
+                      "duration": "75 seconds",
+                      "spl": "+4",
+                      "wis": "+4",
+                      "sta": "+4",
                       "area-of-effect": "7x7",
+                      "effect": "Range(Commune): 11 x 11 cells",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "spl-wis-sta": "+6",
-                      "effect": "Duration: 90 sec\nRange(Commune): 13 x 13 cells",
+                      "duration": "90 seconds",
+                      "spl": "+6",
+                      "wis": "+6",
+                      "sta": "+6",
                       "area-of-effect": "9x9",
+                      "effect": "Range(Commune): 13 x 13 cells",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "spl-wis-sta": "+8",
-                      "effect": "Duration: 105 sec\nRange(Commune): 15 x 15 cells",
+                      "duration": "105 seconds",
+                      "spl": "+8",
+                      "wis": "+8",
+                      "sta": "+8",
                       "area-of-effect": "11x11",
+                      "effect": "Range(Commune): 15 x 15 cells",
                       "sp-cost": "110"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "spl-wis-sta": "+10",
-                      "effect": "Duration: 120 sec\nRange(Commune): 17 x 17 cells",
+                      "duration": "120 seconds",
+                      "spl": "+10",
+                      "wis": "+10",
+                      "sta": "+10",
                       "area-of-effect": "13x13",
+                      "effect": "Range(Commune): 17 x 17 cells",
                       "sp-cost": "120"
                     }
                   }
@@ -1951,7 +2177,6 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Sandy Festival of Kisul",
@@ -1974,7 +2199,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1990,6 +2215,8 @@ export const spiritHandlerData = {
           "target": "1 Cell Ground Target",
           "recoversAp": "4",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hyunrok_Breeze",
           "description": "Using the mysterious power of Hyeonrok, creates wind on the ground and inflicts neutral magic damage every 0.3 seconds for 4.5 seconds to targets within the range.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and SPL.\nIf the user learned Commune With Hyunrok, increases skill damage.\nDamage property can be changed according to Colors of Hyunrok.",
           "levelDetails": [
             {
@@ -2060,8 +2287,17 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 6)",
+          "areaOfEffect": "5 x 5 ~ 11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Hyunrok Breeze ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hyunrok_Breeze"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5445.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5445",
           "tree": {
@@ -2093,6 +2329,10 @@ export const spiritHandlerData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 6)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -2191,7 +2431,6 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hyunrok Breeze",
@@ -2249,7 +2488,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2265,6 +2504,8 @@ export const spiritHandlerData = {
           "target": "Instant Cast",
           "recoversAp": "1, 2(if Commune With Chulho is learned)",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hogogong_Strike",
           "description": "[Hogogong effect] Attacks surrounding targets with the Iron Tiger's front leg punch, inflicting long-range physical DMG 3 times.\nDMG increases further based on the level of the Spirit Understanding skill, the caster's base level, and POW, and critical DMG is applied based on the caster's critical probability.\nIn case of critical DMG, half of the total critical DMG increase options is applied.\nIf you acquire [Commune With Chulho], AP recovery amount and DMG increase.",
           "levelDetails": [
             {
@@ -2331,8 +2572,19 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "47 + (Skill Level x 3)",
+          "fixedCastTime": "1 second",
+          "cooldown": "0.35 seconds",
+          "castRange": "7 x 7 ~ 11 x 11 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Hogogong Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hogogong_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5437.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5437",
           "tree": {
@@ -2364,6 +2616,22 @@ export const spiritHandlerData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "47 + (Skill Level x 3)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.35 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 x 7 ~ 11 x 11 cells"
               },
               {
                 "label": "Target",
@@ -2442,7 +2710,6 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hogogong Strike",
@@ -2500,7 +2767,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2516,6 +2783,8 @@ export const spiritHandlerData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kisul_Rampage",
           "description": "Using the powerful healing effect of Kisul.\nRecovers 2 AP every 1 second to all party members, excluding the caster, with 7 x 7 cells around the caster.\nThe caster cannot use other skills while the effect is active, and the effect is canceled if the caster moves from their current cell due to movement or knockback effects.\nIf Commune with Kisul is learned, the area of effect increases to 11x11 cells, and the AP recovery amount increases to 4.",
           "levelDetails": [
             {
@@ -2586,8 +2855,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 + (Skill Level x 10)",
+          "duration": "(3 + Skill Level) seconds",
+          "areaOfEffect": "7 x 7 11 x 11 (with Commune with Kisul )",
+          "translations": {
+            "pt-BR": {
+              "name": " Kisul Rampage ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Kisul_Rampage"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5442.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5442",
           "tree": {
@@ -2627,6 +2906,10 @@ export const spiritHandlerData = {
                 "value": "7"
               },
               {
+                "label": "SP Cost",
+                "value": "80 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -2645,6 +2928,10 @@ export const spiritHandlerData = {
               {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7 11 x 11 (with Commune with Kisul )"
               },
               {
                 "label": "Pulse",
@@ -2719,7 +3006,6 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Kisul Rampage",
@@ -2742,7 +3028,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2758,6 +3044,8 @@ export const spiritHandlerData = {
           "target": "Single Target",
           "recoversAp": "1, 2(if Commune With Hyunrok is learned)",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hyunrok_Cannon",
           "description": "Using the mysterious power of Hyunrok, fires a powerful magic cannon at the target.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and SPL.\nIf the user learned Commune With Hyunrok, increases skill damage and increases AP recovery amount.\nDamage property can be changed according to Colors of Hyunrok.",
           "levelDetails": [
             {
@@ -2824,8 +3112,19 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "41 + (Skill Level × 3)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "2 seconds",
+          "cooldown": "0.3 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Hyunrok Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hyunrok_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5446.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5446",
           "tree": {
@@ -2857,6 +3156,22 @@ export const spiritHandlerData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "41 + (Skill Level × 3)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.3 seconds"
               },
               {
                 "label": "Target",
@@ -2924,7 +3239,6 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hyunrok Cannon",
@@ -3017,7 +3331,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3033,6 +3347,8 @@ export const spiritHandlerData = {
           "target": "Single target",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Unleashes the powerful spirit power of Hyunrok to inflicts neutral property magical damage to the target and surrounding enemies around the target for 7 hits.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Colors of Hyunrok.",
           "levelDetails": [
             {
@@ -3069,8 +3385,15 @@ export const spiritHandlerData = {
           "castDelay": "0.7 seconds",
           "cooldown": "1 second",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Hyunrok Spirit Power ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hyunrok_Spirit_Power"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5507.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5507",
           "tree": {
@@ -3134,7 +3457,6 @@ export const spiritHandlerData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hyunrok Spirit Power",
@@ -3150,7 +3472,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3166,11 +3488,20 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Commune_with_Chulho",
           "description": "Empowers the skills that borrow the power from Chulho through perfect communion with the mystical creature Chulho.",
           "levelDetails": [],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Commune with Chulho ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Commune_with_Chulho"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5434.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5434",
           "tree": {
@@ -3206,10 +3537,9 @@ export const spiritHandlerData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3225,11 +3555,20 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Commune_with_Kisul",
           "description": "Empowers the skills that borrow the power from Kisul through perfect communion with the mystical creature Kisul.",
           "levelDetails": [],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Commune with Kisul ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Commune_with_Kisul"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5438.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5438",
           "tree": {
@@ -3265,10 +3604,9 @@ export const spiritHandlerData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3284,11 +3622,20 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Commune_with_Hyunrok",
           "description": "Empowers the skills that borrow the power from Hyunrok through perfect communion with the mystical creature Hyunrok.",
           "levelDetails": [],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Commune with Hyunrok ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Commune_with_Hyunrok"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5443.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5443",
           "tree": {
@@ -3324,10 +3671,9 @@ export const spiritHandlerData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3343,6 +3689,8 @@ export const spiritHandlerData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Temporary_Communion",
           "description": "Can be used if you have acquired at least one spirit communication skill for Chulho, Kisul, and Hyunrok.\nThrough the temporary communion with Chulho, Kisul and Hyunrok, the user is in the state of communion of all three mystical creatures for the certain duration.\nIncreases P.Atk, S.Matk and H.Plus for the duration.",
           "levelDetails": [
             {
@@ -3397,8 +3745,17 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "duration": "30 ~ 150 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Temporary Communion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Temporary_Communion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5447.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5447",
           "tree": {
@@ -3424,6 +3781,10 @@ export const spiritHandlerData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "100"
               },
               {
                 "label": "Fixed Cast Time",
@@ -3455,63 +3816,74 @@ export const spiritHandlerData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "p-atk",
+                    "label": "P.Atk"
+                  },
+                  {
+                    "id": "s-matk",
+                    "label": "S.Matk"
+                  },
+                  {
+                    "id": "h-plus",
+                    "label": "H.Plus"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
                   {
-                    "id": "duration-120sec-p-atk-s-matk-h-plus",
-                    "label": "Duration: 120sec/P.Atk/S.Matk/h.plus"
-                  },
-                  {
-                    "id": "duration-150sec-p-atk-s-matk-h-plus",
-                    "label": "Duration: 150sec/P.Atk/S.Matk/h.plus"
-                  },
-                  {
-                    "id": "duration-30sec-p-atk-s-matk-h-plus",
-                    "label": "Duration: 30sec/P.Atk/S.Matk/h.plus"
-                  },
-                  {
-                    "id": "duration-60sec-p-atk-s-matk-h-plus",
-                    "label": "Duration: 60sec/P.Atk/S.Matk/h.plus"
-                  },
-                  {
-                    "id": "duration-90sec-p-atk-s-matk-h-plus",
-                    "label": "Duration: 90sec/P.Atk/S.Matk/h.plus"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration-30sec-p-atk-s-matk-h-plus": "+3",
+                      "duration": "30 seconds",
+                      "p-atk": "+3",
+                      "s-matk": "+3",
+                      "h-plus": "+3",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "duration-60sec-p-atk-s-matk-h-plus": "+6",
+                      "duration": "60 seconds",
+                      "p-atk": "+6",
+                      "s-matk": "+6",
+                      "h-plus": "+6",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "duration-90sec-p-atk-s-matk-h-plus": "+9",
+                      "duration": "90 seconds",
+                      "p-atk": "+9",
+                      "s-matk": "+9",
+                      "h-plus": "+9",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "duration-120sec-p-atk-s-matk-h-plus": "+12",
+                      "duration": "120 seconds",
+                      "p-atk": "+12",
+                      "s-matk": "+12",
+                      "h-plus": "+12",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "duration-150sec-p-atk-s-matk-h-plus": "+15",
+                      "duration": "150 seconds",
+                      "p-atk": "+15",
+                      "s-matk": "+15",
+                      "h-plus": "+15",
                       "sp-cost": "100"
                     }
                   }
@@ -3520,10 +3892,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3539,6 +3910,8 @@ export const spiritHandlerData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "100",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Blessing_of_Mystical_Creatures",
           "description": "Gives the blessing of spiritual creatures to the Doram tribe and one party member other than yourself. Sets the target's AP to 200 and increases P.ATK and S.MATK for 10 seconds.\nWhen the effect time ends, AP becomes 0 and you cannot receive the blessings of spirits again for 1 minute.",
           "levelDetails": [
             {
@@ -3593,8 +3966,17 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "duration": "10 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Blessing of Mystical Creatures ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blessing_of_Mystical_Creatures"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5448.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5448",
           "tree": {
@@ -3628,6 +4010,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -3648,6 +4034,10 @@ export const spiritHandlerData = {
                 "value": "Single Target"
               },
               {
+                "label": "Duration",
+                "value": "10 seconds"
+              },
+              {
                 "label": "AP Consumed",
                 "value": "100"
               }
@@ -3657,47 +4047,56 @@ export const spiritHandlerData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
+                    "id": "p-atk",
+                    "label": "P.Atk"
                   },
                   {
-                    "id": "p-atk-s-matk",
-                    "label": "P.Atk/S.Matk"
+                    "id": "s-matk",
+                    "label": "S.Matk"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "p-atk-s-matk": "+10",
+                      "p-atk": "+10",
+                      "s-matk": "+10",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "p-atk-s-matk": "+20",
+                      "p-atk": "+20",
+                      "s-matk": "+20",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "p-atk-s-matk": "+30",
+                      "p-atk": "+30",
+                      "s-matk": "+30",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "p-atk-s-matk": "+40",
+                      "p-atk": "+40",
+                      "s-matk": "+40",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "p-atk-s-matk": "+50",
+                      "p-atk": "+50",
+                      "s-matk": "+50",
                       "sp-cost": "100"
                     }
                   }
@@ -3706,10 +4105,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3736,6 +4134,8 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Enables the Basic Interface skills.\nTrade with other players, use emotes, Sit, create Chat rooms, create/join parties, and use the Kafra Storage.",
           "levelDetails": [],
           "levelExtras": [
@@ -3749,8 +4149,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " New Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/New_Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5018.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5018",
           "tree": {
@@ -3792,10 +4199,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3811,6 +4217,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bite",
           "description": "Bite at enemies. Inflicts more damage on weakened enemies.\nThis skill creates a chance of being activated twice at Base Level 30 or above. This chance increases every 30 Base levels.",
           "levelDetails": [
             {
@@ -3860,8 +4268,17 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Bite ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bite"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5019.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5019",
           "tree": {
@@ -3889,6 +4306,10 @@ export const spiritHandlerData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -3903,6 +4324,10 @@ export const spiritHandlerData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -3945,10 +4370,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3961,9 +4385,11 @@ export const spiritHandlerData = {
           "prerequisiteText": "Bite Lv. 1",
           "group": "Support",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hide",
           "description": "Hide in a bush to avoid attacks from enemies. Can be found by enemies' Detection skills.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -3990,8 +4416,16 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "translations": {
+            "pt-BR": {
+              "name": " Hide ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hide"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5020.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5020",
           "tree": {
@@ -4019,6 +4453,10 @@ export const spiritHandlerData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4033,6 +4471,10 @@ export const spiritHandlerData = {
               {
                 "label": "Cooldown",
                 "value": "15 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -4061,10 +4503,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4080,6 +4521,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Scratch",
           "description": "Claw at the selected enemy, wounding it. (This skill deals a small area of splash damage to surrounding enemies and creates a chance of Bleeding.)\nThis skill creates a chance of being activated twice at Base Level 30 or above. This chance increases every 30 Base levels.",
           "levelDetails": [
             {
@@ -4185,8 +4628,17 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level x 5)",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Scratch ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Scratch"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5021.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5021",
           "tree": {
@@ -4214,6 +4666,10 @@ export const spiritHandlerData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level x 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4224,6 +4680,10 @@ export const spiritHandlerData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -4291,10 +4751,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4307,9 +4766,11 @@ export const spiritHandlerData = {
           "prerequisiteText": "Scratch Lv. 3",
           "group": "Support",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stoop",
           "description": "Decreases incoming damage by 90% for 6 seconds. Knockback force-cancels this skill.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -4336,8 +4797,17 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "6 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Stoop ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stoop"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5022.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5022",
           "tree": {
@@ -4365,6 +4835,10 @@ export const spiritHandlerData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4379,6 +4853,14 @@ export const spiritHandlerData = {
               {
                 "label": "Cooldown",
                 "value": "15 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "6 seconds"
               }
             ],
             "levelTables": [
@@ -4407,10 +4889,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4423,9 +4904,11 @@ export const spiritHandlerData = {
           "prerequisiteText": "Stoop Lv. 1",
           "group": "Move",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lope",
           "description": "Leap over to a targeted location.\nIf the targeted coordinates are not accessible, then you'll jump where you stand.\nCan't be used where Fly Wings can't be used.\nLearning Lope doubles the cast time of the Guild skill, Emergency Call. It also cools down twice longer than usual in the WoE area.",
           "levelDetails": [
             {
@@ -4514,8 +4997,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "Skill Level × 10",
+          "cooldown": "(Skill Level × 2) seconds",
+          "castRange": "[2 + (Skill Level × 4)] cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Lope ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lope"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5023.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5023",
           "tree": {
@@ -4543,6 +5036,10 @@ export const spiritHandlerData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "Skill Level × 10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4553,6 +5050,18 @@ export const spiritHandlerData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "(Skill Level × 2) seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "[2 + (Skill Level × 4)] cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
               }
             ],
             "levelTables": [
@@ -4616,10 +5125,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4635,6 +5143,8 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sprite_Marble",
           "description": "Employ sprites.\nMaxHP +1,000, MaxSP +100\nEmploy Sea, Earth, and Life Sprites.",
           "levelDetails": [],
           "levelExtras": [
@@ -4666,8 +5176,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sprite Marble ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sprite_Marble"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5024.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5024",
           "tree": {
@@ -4726,10 +5243,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4745,6 +5261,8 @@ export const spiritHandlerData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fresh_Shrimp",
           "description": "Absorb the spirits of small fresh shrimps for 2 minutes, recovering a small amount of HP every time.\nThis skill restores HP by 50% of the amounts restored at Level 5 Heal every time.\nHeal bonus effects are also applied to the restored HP.",
           "levelDetails": [
             {
@@ -4873,8 +5391,19 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 2)",
+          "cooldown": "(6 - Skill Level) seconds",
+          "duration": "2 minutes",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Fresh Shrimp ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fresh_Shrimp"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5041.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5041",
           "tree": {
@@ -4902,6 +5431,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4914,8 +5447,20 @@ export const spiritHandlerData = {
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "(6 - Skill Level) seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Player"
+              },
+              {
+                "label": "Duration",
+                "value": "2 minutes"
               }
             ],
             "levelTables": [
@@ -4999,10 +5544,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5018,6 +5562,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Silvervine_Stem_Spear",
           "description": "Penetrate enemies with the spirit of a silvervine stem.\nThis skill creates a chance of being activated twice at Base Level 30 or above. This chance increases every 30 Base levels.",
           "levelDetails": [
             {
@@ -5197,8 +5743,17 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Silvervine Stem Spear ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Silvervine_Stem_Spear"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5026.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5026",
           "tree": {
@@ -5226,6 +5781,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -5240,6 +5799,10 @@ export const spiritHandlerData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -5345,10 +5908,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5364,6 +5926,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Picky_Peck",
           "description": "Shoot the spirit of an angry picky at enemies. Inflicts double damage on enemies with less than 50% of HP.\nThis skill creates a chance of being activated twice at Base Level 30 or above. This chance increases every 30 Base levels.",
           "levelDetails": [
             {
@@ -5518,8 +6082,17 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8 + (Skill Level x 2)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Picky Peck ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Picky_Peck"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5033.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5033",
           "tree": {
@@ -5547,6 +6120,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "8 + (Skill Level x 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5561,6 +6138,10 @@ export const spiritHandlerData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -5657,10 +6238,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5676,6 +6256,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Attack",
           "description": "Basic attacks become Long-ranged attacks, throwing heavy souls at enemies.",
           "levelDetails": [],
           "levelExtras": [
@@ -5698,8 +6280,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Attack ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Attack"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5044.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5044",
           "tree": {
@@ -5757,10 +6346,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5776,6 +6364,8 @@ export const spiritHandlerData = {
           "target": "All party members in one screen",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bunch_of_Shrimp",
           "description": "Instantly restore a small amount of HP. The bunch of shrimps also temporarily increases ATK and MATK by 10%.\nRequires 1 Shrimp.",
           "levelDetails": [
             {
@@ -5979,8 +6569,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40 + (Skill Level x 4)",
+          "variableCastTime": "[6 - (Skill Level)] seconds",
+          "duration": "[30 + (Skill Level x 30)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Bunch of Shrimp ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bunch_of_Shrimp"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5040.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5040",
           "tree": {
@@ -6008,8 +6608,16 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[6 - (Skill Level)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -6022,6 +6630,10 @@ export const spiritHandlerData = {
               {
                 "label": "Target",
                 "value": "All party members in one screen"
+              },
+              {
+                "label": "Duration",
+                "value": "[30 + (Skill Level x 30)] seconds"
               }
             ],
             "levelTables": [
@@ -6132,10 +6744,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6151,6 +6762,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Silvervine_Root_Twist",
           "description": "Bind enemies with the spirit of silvervine roots. The bound enemies receive Neutral damage.\nCan be canceled by Heaven's Drive and Trample. Can't be used on Boss monsters.",
           "levelDetails": [
             {
@@ -6279,8 +6892,19 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10~18",
+          "cooldown": "3~1 second(s)",
+          "duration": "7~15 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Silvervine Root Twist ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Silvervine_Root_Twist"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5029.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5029",
           "tree": {
@@ -6308,6 +6932,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10~18"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6320,8 +6948,20 @@ export const spiritHandlerData = {
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "3~1 second(s)"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "7~15 seconds"
               }
             ],
             "levelTables": [
@@ -6405,10 +7045,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6424,6 +7063,8 @@ export const spiritHandlerData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Arclouse_Dash",
           "description": "Absorb the spirit of an Arclouse and temporarily become agile. This skill also increases Long-ranged Physical damage by 10% if its target is a Doram (you included).",
           "levelDetails": [
             {
@@ -6603,8 +7244,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level x 2)",
+          "duration": "[50 + (Skill Level x 10)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Arclouse Dash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Arclouse_Dash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5035.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5035",
           "tree": {
@@ -6632,6 +7283,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level x 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6648,8 +7303,16 @@ export const spiritHandlerData = {
                 "value": "6 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Player"
+              },
+              {
+                "label": "Duration",
+                "value": "[50 + (Skill Level x 10)] seconds"
               }
             ],
             "levelTables": [
@@ -6751,10 +7414,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6770,6 +7432,8 @@ export const spiritHandlerData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tuna_Belly",
           "description": "Absorb the spirit of delicious tuna belly meat, healing a target by a certain amount of MaxHP.",
           "levelDetails": [
             {
@@ -6873,8 +7537,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 10)",
+          "cooldown": "[(Skill Level x 3) - 1] second",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Tuna Belly ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tuna_Belly"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5038.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5038",
           "tree": {
@@ -6902,6 +7576,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -6912,6 +7590,14 @@ export const spiritHandlerData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[(Skill Level x 3) - 1] second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -6990,10 +7676,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7009,6 +7694,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/CN_Meteor",
           "description": "Summons the spirit of a giant catnip from a very high place and makes it fall. The number of catnip that falls increases with the level.\nEach catnip has a range of 5x5.\nIf the caster's base level is 100 or higher, damage is additionally increased according to the caster's base level and INT.\nWhen 1 catnip fruit is consumed, the chance of applying Curse is added.",
           "levelDetails": [
             {
@@ -7238,8 +7925,19 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5 + (Skill Level × 15)",
+          "duration": "5 seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " CN Meteor ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/CN_Meteor"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5028.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5028",
           "tree": {
@@ -7267,6 +7965,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "5 + (Skill Level × 15)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -7283,8 +7985,20 @@ export const spiritHandlerData = {
                 "value": "5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3~7 x 7"
+              },
+              {
+                "label": "Duration",
+                "value": "5 seconds"
               }
             ],
             "levelTables": [
@@ -7395,10 +8109,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7414,6 +8127,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Scar_of_Tarou",
           "description": "The wounded spirit of a country mouse inflicts the same wounds on enemies.\nThe bite wounds remove a certain amount of MaxHP, depending on the skill level and your DEX.\nCan be canceled by Heal, Cure, Clearance, High Heal, or Coluseo Heal. This skill can't debuff Boss monsters, but inflicts double damage on them.\nThis skill creates a chance of being activated twice at Base Level 30 or above. This chance increases every 30 Base levels.",
           "levelDetails": [
             {
@@ -7618,8 +8333,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level x 2)",
+          "duration": "9 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Scar of Tarou ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Scar_of_Tarou"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5032.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5032",
           "tree": {
@@ -7647,6 +8372,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level x 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -7663,8 +8392,16 @@ export const spiritHandlerData = {
                 "value": "12 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "9 seconds"
               }
             ],
             "levelTables": [
@@ -7775,10 +8512,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7794,6 +8530,8 @@ export const spiritHandlerData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tuna_Party",
           "description": "The spirit of a delicious tuna protects a target for 30 seconds.",
           "levelDetails": [
             {
@@ -7872,8 +8610,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 10)",
+          "cooldown": "[10 + (Skill Level × 4)]",
+          "duration": "30 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Tuna Party ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tuna_Party"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5039.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5039",
           "tree": {
@@ -7901,6 +8649,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7913,8 +8665,16 @@ export const spiritHandlerData = {
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "[10 + (Skill Level × 4)]"
+              },
+              {
                 "label": "Target",
                 "value": "Player"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds"
               }
             ],
             "levelTables": [
@@ -7980,10 +8740,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7999,6 +8758,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Catnip_Powdering",
           "description": "Scatter catnip powder, temporarily decreasing ATK and MATK by 50% within range. MSPD is also decreased within the area.\nThis skill also significantly increases natural HP and SP Recovery.\nRequires 1 Catnip Fruit.",
           "levelDetails": [
             {
@@ -8228,8 +8989,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40~24",
+          "duration": "3~7 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Catnip Powdering ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Catnip_Powdering"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5027.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5027",
           "tree": {
@@ -8257,6 +9028,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40~24"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -8273,8 +9048,16 @@ export const spiritHandlerData = {
                 "value": "10 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "3~7 seconds"
               }
             ],
             "levelTables": [
@@ -8394,10 +9177,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8413,6 +9195,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lunatic_Carrot_Beat",
           "description": "The wrath of a Lunatic spirit rains carrots on enemies.\nUse 1 Carrot to create a chance of Stun.",
           "levelDetails": [
             {
@@ -8567,8 +9351,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 5)",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Lunatic Carrot Beat ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lunatic_Carrot_Beat"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5036.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5036",
           "tree": {
@@ -8596,6 +9390,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -8612,8 +9410,16 @@ export const spiritHandlerData = {
                 "value": "6 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -8706,10 +9512,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8725,6 +9530,8 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Power_of_Sea",
           "description": "You've acquired the power of the sea, though partially, through the spirits you command.\nMaxHP +1,000, MaxSP +100, healing amounts +10%. Invest 20 or more SP in Seafood skills to additionally get MaxHP +3,000, MaxSP +300, and healing amounts +20%.",
           "levelDetails": [],
           "levelExtras": [
@@ -8756,8 +9563,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Power of Sea ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Power_of_Sea"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5037.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5037",
           "tree": {
@@ -8816,10 +9630,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8835,6 +9648,8 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Power_of_Land",
           "description": "You've acquired the power of earth, though partially, through the spirits you command.\nINT +20. Invest 20 or more SP in Plant skills to get MATK +20%.",
           "levelDetails": [],
           "levelExtras": [
@@ -8866,8 +9681,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Power of Land ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Power_of_Land"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5025.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5025",
           "tree": {
@@ -8926,10 +9748,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8945,6 +9766,8 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Power_of_Life",
           "description": "You've acquired the power of life, though partially, through the spirits you command.\nFLEE, HIT, and CRI +20. Invest in 20 or more SP in Animal skills to get Long-ranged Physical ATK +20%.",
           "levelDetails": [],
           "levelExtras": [
@@ -8994,8 +9817,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Power of Life ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Power_of_Life"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5031.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5031",
           "tree": {
@@ -9064,10 +9894,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9083,6 +9912,8 @@ export const spiritHandlerData = {
           "target": "Yourself",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Grooming",
           "description": "Groom your hair, treating yourself.\nRemoves the following Status effects: Stun, Frozen, Petrification, Sleep, Silence, Bleeding, Poison, Fear, Mandragora Howling, Crystallization, Freezing, and Deep Sleep.\nTemporarily increases Dodge.\nCan't be used if you're not in the condition to use skills (Frozen, Petrified, Silent, etc.).",
           "levelDetails": [
             {
@@ -9186,8 +10017,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "cooldown": "[70 - (Skill Level x 10)] seconds",
+          "duration": "(Skill Level + 2) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Grooming ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Grooming"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5049.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5049",
           "tree": {
@@ -9215,6 +10056,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -9227,8 +10072,16 @@ export const spiritHandlerData = {
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "[70 - (Skill Level x 10)] seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Yourself"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level + 2) seconds"
               }
             ],
             "levelTables": [
@@ -9250,13 +10103,18 @@ export const spiritHandlerData = {
                   {
                     "id": "data-2",
                     "label": "Data 2"
+                  },
+                  {
+                    "id": "flee",
+                    "label": "Flee"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "FLEE +100, Lasts for 3 sec",
+                      "flee": "+100",
+                      "effect": "Lasts for 3 sec",
                       "sp-cost": "15",
                       "data-1": "3000",
                       "data-2": "100"
@@ -9265,7 +10123,8 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "FLEE +100, Lasts for 4 sec",
+                      "flee": "+100",
+                      "effect": "Lasts for 4 sec",
                       "sp-cost": "15",
                       "data-1": "4000",
                       "data-2": "100"
@@ -9274,7 +10133,8 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "FLEE +100, Lasts for 5 sec",
+                      "flee": "+100",
+                      "effect": "Lasts for 5 sec",
                       "sp-cost": "15",
                       "data-1": "5000",
                       "data-2": "100"
@@ -9283,7 +10143,8 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "FLEE +100, Lasts for 6 sec",
+                      "flee": "+100",
+                      "effect": "Lasts for 6 sec",
                       "sp-cost": "15",
                       "data-1": "6000",
                       "data-2": "100"
@@ -9292,7 +10153,8 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "FLEE +100, Lasts for 7 sec",
+                      "flee": "+100",
+                      "effect": "Lasts for 7 sec",
                       "sp-cost": "15",
                       "data-1": "7000",
                       "data-2": "100"
@@ -9303,10 +10165,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9322,6 +10183,8 @@ export const spiritHandlerData = {
           "target": "Yourself",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Chattering",
           "description": "Awakens you to your hunting instinct, along with the thrill of the hunt.\nATK/MATK + 100 for 5 sec. Increased MSPD for 10 sec.",
           "levelDetails": [
             {
@@ -9475,8 +10338,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "55 − (Skill Level x 5)",
+          "cooldown": "[160 - (Skill Level x 20)] seconds",
+          "duration": "5 seconds (ATK and MATK) 10 seconds (Movement Speed)",
+          "translations": {
+            "pt-BR": {
+              "name": " Chattering ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chattering"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5055.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5055",
           "tree": {
@@ -9504,6 +10377,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "55 − (Skill Level x 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -9516,8 +10393,16 @@ export const spiritHandlerData = {
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "[160 - (Skill Level x 20)] seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Yourself"
+              },
+              {
+                "label": "Duration",
+                "value": "5 seconds (ATK and MATK) 10 seconds (Movement Speed)"
               }
             ],
             "levelTables": [
@@ -9610,10 +10495,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9629,6 +10513,8 @@ export const spiritHandlerData = {
           "target": "Entire Party",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hiss",
           "description": "Stay alert for possible danger.\nTemporarily increase Perfect Dodge and MSPD for you and all party members in one screen.",
           "levelDetails": [
             {
@@ -9807,8 +10693,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "54 - (Skill Level x 4)",
+          "cooldown": "[210 - (Skill Level x 30)] seconds",
+          "duration": "3 seconds (Perfect Dodge) 3 ~ 5 seconds (Movement Speed)",
+          "translations": {
+            "pt-BR": {
+              "name": " Hiss ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hiss"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5047.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5047",
           "tree": {
@@ -9836,6 +10732,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "54 - (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -9848,8 +10748,16 @@ export const spiritHandlerData = {
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "[210 - (Skill Level x 30)] seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Entire Party"
+              },
+              {
+                "label": "Duration",
+                "value": "3 seconds (Perfect Dodge) 3 ~ 5 seconds (Movement Speed)"
               }
             ],
             "levelTables": [
@@ -9951,10 +10859,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9970,6 +10877,8 @@ export const spiritHandlerData = {
           "target": "Entire Party",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Purring",
           "description": "Purr happily, treating everyone.\nTemporarily cast the skill, [Grooming], on you and all party members in one screen.\nCan't be used if you're not in the condition to use skills (Frozen, Petrified, Silent, etc.).",
           "levelDetails": [
             {
@@ -10073,8 +10982,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "75 − (Skill Level × 5)",
+          "cooldown": "[65 - (Skill Level x 5)] second",
+          "duration": "[5 + (Skill Level × 2)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Purring ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Purring"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5050.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5050",
           "tree": {
@@ -10102,6 +11021,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "75 − (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -10114,8 +11037,16 @@ export const spiritHandlerData = {
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "[65 - (Skill Level x 5)] second"
+              },
+              {
                 "label": "Target",
                 "value": "Entire Party"
+              },
+              {
+                "label": "Duration",
+                "value": "[5 + (Skill Level × 2)] seconds"
               }
             ],
             "levelTables": [
@@ -10135,6 +11066,10 @@ export const spiritHandlerData = {
                     "label": "Data 1"
                   },
                   {
+                    "id": "flee",
+                    "label": "Flee"
+                  },
+                  {
                     "id": "range",
                     "label": "Range"
                   }
@@ -10143,7 +11078,8 @@ export const spiritHandlerData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "FLEE +100, Lasts for 7 sec",
+                      "flee": "+100",
+                      "effect": "Lasts for 7 sec",
                       "sp-cost": "70",
                       "range": "15 cells",
                       "data-1": "7000"
@@ -10152,7 +11088,8 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "FLEE +100, Lasts for 9 sec",
+                      "flee": "+100",
+                      "effect": "Lasts for 9 sec",
                       "sp-cost": "65",
                       "range": "15 cells",
                       "data-1": "9000"
@@ -10161,7 +11098,8 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "FLEE +100, Lasts for 11 sec",
+                      "flee": "+100",
+                      "effect": "Lasts for 11 sec",
                       "sp-cost": "60",
                       "range": "15 cells",
                       "data-1": "11000"
@@ -10170,7 +11108,8 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "FLEE +100, Lasts for 13 sec",
+                      "flee": "+100",
+                      "effect": "Lasts for 13 sec",
                       "sp-cost": "55",
                       "range": "15 cells",
                       "data-1": "13000"
@@ -10179,7 +11118,8 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "FLEE +100, Lasts for 15 sec",
+                      "flee": "+100",
+                      "effect": "Lasts for 15 sec",
                       "sp-cost": "50",
                       "range": "15 cells",
                       "data-1": "15000"
@@ -10190,10 +11130,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10209,6 +11148,8 @@ export const spiritHandlerData = {
           "target": "Entire Party",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Meow_Meow",
           "description": "Awaken your comrades' hunting instinct through Chattering.\nTemporarily increase ATK/MATK by 100 and MSPD by a certain amount for you and all your party members in one screen.",
           "levelDetails": [
             {
@@ -10387,8 +11328,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "110 − (Skill Level × 10)",
+          "cooldown": "[200 - (Skill Level x 20)] seconds",
+          "duration": "8/10/12 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Meow Meow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Meow_Meow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5053.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5053",
           "tree": {
@@ -10416,6 +11367,10 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "110 − (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -10428,8 +11383,16 @@ export const spiritHandlerData = {
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "[200 - (Skill Level x 20)] seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Entire Party"
+              },
+              {
+                "label": "Duration",
+                "value": "8/10/12 seconds"
               }
             ],
             "levelTables": [
@@ -10531,10 +11494,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10550,6 +11512,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Power_of_Flock",
           "description": "Your powerful presence strikes terror into everyone around you.\nCast Fear and Frozen on all enemies within range.",
           "levelDetails": [
             {
@@ -10628,8 +11592,18 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "variableCastTime": "[5 - (Skill Level)] seconds",
+          "areaOfEffect": "7 x 7 ~ 31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Power of Flock ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Power_of_Flock"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5045.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5045",
           "tree": {
@@ -10657,8 +11631,16 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[5 - (Skill Level)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -10671,6 +11653,10 @@ export const spiritHandlerData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7 ~ 31 x 31"
               }
             ],
             "levelTables": [
@@ -10736,10 +11722,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10755,6 +11740,8 @@ export const spiritHandlerData = {
           "target": "Entire Party",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tasty_Shrimp_Party",
           "description": "Cast the skill, [Fresh Shrimp], on you and all party members in one screen. (Duration affected by the skill level)\nThis skill additionally casts [Blessing of Shrimp], the skill that increases SP Recovery by 150%, on you.",
           "levelDetails": [
             {
@@ -10857,8 +11844,19 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "110 − (Skill Level x 10)",
+          "variableCastTime": "[6 - (Skill Level)] seconds",
+          "cooldown": "[65 - (Skill Level x 5)] seconds",
+          "duration": "[10 + (Skill Level x 2)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Tasty Shrimp Party ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tasty_Shrimp_Party"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5051.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5051",
           "tree": {
@@ -10886,16 +11884,32 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "110 − (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[6 - (Skill Level)] seconds"
               },
               {
                 "label": "Cast Delay",
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "[65 - (Skill Level x 5)] seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Entire Party"
+              },
+              {
+                "label": "Duration",
+                "value": "[10 + (Skill Level x 2)] seconds"
               }
             ],
             "levelTables": [
@@ -10970,10 +11984,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10989,6 +12002,8 @@ export const spiritHandlerData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Nyang_Grass",
           "description": "Neutralizes enemy DEF within range. (Instantly canceled out of range)\nIn the case of Player-type enemies, sets Equipment's DEF/MDEF to 0.\nIn the case of Monster-type enemies, sets DEF/MDEF to 50%.",
           "levelDetails": [
             {
@@ -11117,8 +12132,20 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "52 − (Skill Level × 2)",
+          "variableCastTime": "[6 - (Skill Level)] seconds",
+          "duration": "(Skill Level + 5) seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "5 x 5 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Nyang Grass ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nyang_Grass"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5048.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5048",
           "tree": {
@@ -11146,8 +12173,16 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "52 − (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[6 - (Skill Level)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -11158,8 +12193,20 @@ export const spiritHandlerData = {
                 "value": "60 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5 ~ 9 x 9"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level + 5) seconds"
               }
             ],
             "levelTables": [
@@ -11243,10 +12290,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11259,9 +12305,11 @@ export const spiritHandlerData = {
           "prerequisiteText": "Power of Flock Lv. 5",
           "group": "Animal (Attack)",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spirit_of_Savage",
           "description": "Summon the spirit of a Savage that charges at the selected target.\nThe Savage travels to its destination in a straight line, attacking all enemies in its path.",
           "levelDetails": [
             {
@@ -11363,8 +12411,20 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "fixedCastTime": "2.5 ~ 0 seconds",
+          "variableCastTime": "1 ~ 0 seconds",
+          "cooldown": "[32 - (Skill Level x 2)] second",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Spirit of Savage ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spirit_of_Savage"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5046.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5046",
           "tree": {
@@ -11392,8 +12452,32 @@ export const spiritHandlerData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "60"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "2.5 ~ 0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1 ~ 0 seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[32 - (Skill Level x 2)] second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -11459,10 +12543,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11478,6 +12561,8 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spirit_of_Sea",
           "description": "The spirit of the sea lends you its great power, improving your Seafood skills.\n* Fresh Shrimp: HP healing amounts x2 times\n* Bunch of Shrimp: ATK/MATK bonus duration +120 sec.\n* Tuna Belly: Skill cooldown -5 sec.\n* Tuna Party: Increased tuna DEF\n* Shrimp Party: Increased HP healing amounts for you and your party",
           "levelDetails": [],
           "levelExtras": [
@@ -11518,8 +12603,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Spirit of Sea ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spirit_of_Sea"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5056.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5056",
           "tree": {
@@ -11583,10 +12675,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11602,6 +12693,8 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spirit_of_Land",
           "description": "The spirit of earth lends you its great power, improving your Plant skills.\n* Silvervine Stem Spear: Significantly increases MSPD for 3 seconds.\n* Silvervine Root Twist: Increases MATK by Base Level for 3 seconds.\n* Catnip Powdering: Increases Perfect Dodge by Base Level/12 for 3 seconds.\n* Catnip Meteor: For 3 seconds, when hit with a melee attack, there is a chance to auto cast Silvervine Stem Spear against the attacker.\n* Nyang Grass: Increases MATK by Base Level for 3 seconds.",
           "levelDetails": [],
           "levelExtras": [
@@ -11660,8 +12753,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Spirit of Land ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spirit_of_Land"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5054.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5054",
           "tree": {
@@ -11735,10 +12835,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11754,6 +12853,8 @@ export const spiritHandlerData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spirit_of_Life",
           "description": "The spirit of life lends you its great power, improving your Animal skills.\nThe following skills increase ATK based on your remaining HP (%).\n* Picky Peck\n* Scar of Tarou\n* Lunatic Carrot Beat\n* Spirit of Savage",
           "levelDetails": [],
           "levelExtras": [
@@ -11794,8 +12895,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Spirit of Life ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spirit_of_Life"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5052.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5052",
           "tree": {
@@ -11859,10 +12967,9 @@ export const spiritHandlerData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11882,6 +12989,8 @@ export const spiritHandlerData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Mystical_Creature_Mastery",
       "description": "Develops the ability to communicate with spirits.\nIt affects mystical creatures skills and increases P.ATK and S.MATK.",
       "levelDetails": [
         {
@@ -11972,8 +13081,15 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Mystical Creature Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Mystical_Creature_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5433.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5433",
       "tree": {
@@ -11999,82 +13115,96 @@ export const spiritHandlerData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "sp-cost",
-                "label": "SP Cost"
+                "id": "p-atk",
+                "label": "P.Atk"
               },
               {
-                "id": "p-atk-s-matk",
-                "label": "P.Atk/S.Matk"
+                "id": "s-matk",
+                "label": "S.Matk"
+              },
+              {
+                "id": "sp-cost",
+                "label": "SP Cost"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "p-atk-s-matk": "+1",
+                  "p-atk": "+1",
+                  "s-matk": "+1",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "p-atk-s-matk": "+3",
+                  "p-atk": "+3",
+                  "s-matk": "+3",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "p-atk-s-matk": "+4",
+                  "p-atk": "+4",
+                  "s-matk": "+4",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "p-atk-s-matk": "+6",
+                  "p-atk": "+6",
+                  "s-matk": "+6",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "p-atk-s-matk": "+7",
+                  "p-atk": "+7",
+                  "s-matk": "+7",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "p-atk-s-matk": "+9",
+                  "p-atk": "+9",
+                  "s-matk": "+9",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "p-atk-s-matk": "+10",
+                  "p-atk": "+10",
+                  "s-matk": "+10",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "p-atk-s-matk": "+12",
+                  "p-atk": "+12",
+                  "s-matk": "+12",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "p-atk-s-matk": "+13",
+                  "p-atk": "+13",
+                  "s-matk": "+13",
                   "sp-cost": "0"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "p-atk-s-matk": "+15",
+                  "p-atk": "+15",
+                  "s-matk": "+15",
                   "sp-cost": "0"
                 }
               }
@@ -12083,10 +13213,9 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12102,6 +13231,8 @@ export const spiritHandlerData = {
       "target": "Single Target",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Chulho_Sonic_Claw",
       "description": "Borrows the sharp claws of Chulho to slash at the air toward the target, dealing Range Physical damage.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and POW.\nIf the user learned Commune With Chulho, increases skill damage and applies critical damage, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -12168,8 +13299,18 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "21 + (Skill Level x 3)",
+      "castDelay": "0.5 second",
+      "cooldown": "0.25 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Chulho Sonic Claw ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Chulho_Sonic_Claw"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5435.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5435",
       "tree": {
@@ -12195,6 +13336,18 @@ export const spiritHandlerData = {
           {
             "label": "Levels",
             "value": "7"
+          },
+          {
+            "label": "SP Cost",
+            "value": "21 + (Skill Level x 3)"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 second"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.25 seconds"
           },
           {
             "label": "Target",
@@ -12262,7 +13415,6 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Chulho Sonic Claw",
@@ -12347,7 +13499,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12363,6 +13515,8 @@ export const spiritHandlerData = {
       "target": "Instant Cast",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Kisul_Water_Spraying",
       "description": "Shoots a water cannon filled with the healing power of ghosts, recovering the HP of yourself and party members around you.\nRecovers additional amount depends on level of Mystical Creature Mastery user learned, user's base level and CRT.\nIf the user learned Commune with Kisul, increases area of effect and healing amount.",
       "levelDetails": [
         {
@@ -12433,8 +13587,17 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "57 + (Skill Level x 4)",
+      "areaOfEffect": "7 x 7 ~ 13 x 13 11 x 11 ~ 17 x 17 (with Commune with Kisul )",
+      "translations": {
+        "pt-BR": {
+          "name": " Kisul Water Spraying ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Kisul_Water_Spraying"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5439.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5439",
       "tree": {
@@ -12460,6 +13623,10 @@ export const spiritHandlerData = {
           {
             "label": "Levels",
             "value": "7"
+          },
+          {
+            "label": "SP Cost",
+            "value": "57 + (Skill Level x 4)"
           },
           {
             "label": "Fixed Cast Time",
@@ -12491,6 +13658,14 @@ export const spiritHandlerData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "recovery-amount",
+                "label": "Recovery Amount"
+              },
+              {
+                "id": "recovery-amount-commune",
+                "label": "Recovery Amount (Commune)"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -12499,64 +13674,78 @@ export const spiritHandlerData = {
                 "label": "Area of Effect"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "area-of-effect-commune",
+                "label": "Area of Effect (Commune)"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
+                  "recovery-amount": "500 + (Mystical Creature Mastery Lv x 100)",
                   "area-of-effect": "7x7",
-                  "effect": "Recovery Amount 500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 750+(Mystical Creature Mastery Lv x 150) / Range: 11 x 11 cells",
+                  "recovery-amount-commune": "750 + (Mystical Creature Mastery Lv x 150)",
+                  "area-of-effect-commune": "11x11",
                   "sp-cost": "61"
                 }
               },
               {
                 "level": 2,
                 "values": {
+                  "recovery-amount": "1000 + (Mystical Creature Mastery Lv x 100)",
                   "area-of-effect": "7x7",
-                  "effect": "Recovery Amount 1000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 1500+(Mystical Creature Mastery Lv x 150) / Range: 11 x 11 cells",
+                  "recovery-amount-commune": "1500 + (Mystical Creature Mastery Lv x 150)",
+                  "area-of-effect-commune": "11x11",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 3,
                 "values": {
+                  "recovery-amount": "1500 + (Mystical Creature Mastery Lv x 100)",
                   "area-of-effect": "9x9",
-                  "effect": "Recovery Amount 1500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 2250+(Mystical Creature Mastery Lv x 150) / Range: 13 x 13 cells",
+                  "recovery-amount-commune": "2250 + (Mystical Creature Mastery Lv x 150)",
+                  "area-of-effect-commune": "13x13",
                   "sp-cost": "69"
                 }
               },
               {
                 "level": 4,
                 "values": {
+                  "recovery-amount": "2000 + (Mystical Creature Mastery Lv x 100)",
                   "area-of-effect": "9x9",
-                  "effect": "Recovery Amount 2000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3000+(Mystical Creature Mastery Lv x 150) / Range: 13 x 13 cells",
+                  "recovery-amount-commune": "3000 + (Mystical Creature Mastery Lv x 150)",
+                  "area-of-effect-commune": "13x13",
                   "sp-cost": "73"
                 }
               },
               {
                 "level": 5,
                 "values": {
+                  "recovery-amount": "2500 + (Mystical Creature Mastery Lv x 100)",
                   "area-of-effect": "11x11",
-                  "effect": "Recovery Amount 2500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 3750+(Mystical Creature Mastery Lv x 150) / Range: 15 x 15 cells",
+                  "recovery-amount-commune": "3750 + (Mystical Creature Mastery Lv x 150)",
+                  "area-of-effect-commune": "15x15",
                   "sp-cost": "77"
                 }
               },
               {
                 "level": 6,
                 "values": {
+                  "recovery-amount": "3000 + (Mystical Creature Mastery Lv x 100)",
                   "area-of-effect": "11x11",
-                  "effect": "Recovery Amount 3000+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 4500+(Mystical Creature Mastery Lv x 150) / Range: 15 x 15 cells",
+                  "recovery-amount-commune": "4500 + (Mystical Creature Mastery Lv x 150)",
+                  "area-of-effect-commune": "15x15",
                   "sp-cost": "81"
                 }
               },
               {
                 "level": 7,
                 "values": {
+                  "recovery-amount": "3500 + (Mystical Creature Mastery Lv x 100)",
                   "area-of-effect": "13x13",
-                  "effect": "Recovery Amount 3500+(Mystical Creature Mastery Lv x 100) / Recovery Amount(Commune) 5250+(Mystical Creature Mastery Lv x 150) / Range: 17 x 17 cells",
+                  "recovery-amount-commune": "5250 + (Mystical Creature Mastery Lv x 150)",
+                  "area-of-effect-commune": "17x17",
                   "sp-cost": "85"
                 }
               }
@@ -12565,10 +13754,9 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12584,6 +13772,8 @@ export const spiritHandlerData = {
       "target": "Instant Cast",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Colors_of_Hyunrok",
       "description": "With the mysterious magical power of Hyunrok, endows elemental property to CN Meteor Hyunrok Breeze and Hyunrok Cannon for 300 seconds.\nIf the user learned Commune with Hyunrok, using this skill also increases CN Meteor damage by 50%.\nWhen using skill level 7, the endowment is canceled.",
       "levelDetails": [
         {
@@ -12650,8 +13840,19 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "90",
+      "fixedCastTime": "1 seconds",
+      "variableCastTime": "1.7 seconds",
+      "duration": "300 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Colors of Hyunrok ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Colors_of_Hyunrok"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5444.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5444",
       "tree": {
@@ -12679,8 +13880,24 @@ export const spiritHandlerData = {
             "value": "7"
           },
           {
+            "label": "SP Cost",
+            "value": "90"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1.7 seconds"
+          },
+          {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Duration",
+            "value": "300 seconds"
           }
         ],
         "levelTables": [
@@ -12751,10 +13968,9 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12770,6 +13986,8 @@ export const spiritHandlerData = {
       "target": "Single target",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Sharp claws of Chulho slash the target, inflicts long ranged physical damage to the target and surrounding enemies around the target for 5 hits.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and POW.\nHas a chance to trigger critical, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -12802,8 +14020,15 @@ export const spiritHandlerData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Chulho Battering ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Chulho_Battering"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5506.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5506",
       "tree": {
@@ -12847,7 +14072,6 @@ export const spiritHandlerData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Chulho Battering",
@@ -12863,7 +14087,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12879,6 +14103,8 @@ export const spiritHandlerData = {
       "target": "Instant Cast",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Howling_of_Chulho",
       "description": "Use the power of the Iron Tiger to roar with all your might, dealing long-range physical DMG to enemies within a surrounding range.\nWhen cast, grants [Hogogong effect] to enemies within the surrounding area for 12 seconds.\nDMG increases additionally based on the Spiritual Communication skill level, caster's base level, and POW.\nIf you acquire [Commune With Chulho], the effect range and DMG increase.",
       "levelDetails": [
         {
@@ -12945,8 +14171,18 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "27 + (Skill Level x 5)",
+      "fixedCastTime": "1 second",
+      "cooldown": "1 second",
+      "translations": {
+        "pt-BR": {
+          "name": " Howling of Chulho ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Howling_of_Chulho"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5436.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5436",
       "tree": {
@@ -12980,6 +14216,18 @@ export const spiritHandlerData = {
             "value": "7"
           },
           {
+            "label": "SP Cost",
+            "value": "27 + (Skill Level x 5)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 second"
+          },
+          {
+            "label": "Cooldown",
+            "value": "1 second"
+          },
+          {
             "label": "Target",
             "value": "Instant Cast"
           },
@@ -13009,8 +14257,8 @@ export const spiritHandlerData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "Range(Commune): 7 x 7 cells",
                   "area-of-effect": "5x5",
+                  "effect": "Range(Commune): 7 x 7 cells",
                   "sp-cost": "72"
                 }
               },
@@ -13024,40 +14272,40 @@ export const spiritHandlerData = {
               {
                 "level": 3,
                 "values": {
-                  "effect": "Range(Commune): 7 x 7 cells",
                   "area-of-effect": "5x5",
+                  "effect": "Range(Commune): 7 x 7 cells",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Range(Commune): 9 x 9 cells",
                   "area-of-effect": "7x7",
+                  "effect": "Range(Commune): 9 x 9 cells",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Range(Commune): 9 x 9 cells",
                   "area-of-effect": "7x7",
+                  "effect": "Range(Commune): 9 x 9 cells",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "Range(Commune): 9 x 9 cells",
                   "area-of-effect": "7x7",
+                  "effect": "Range(Commune): 9 x 9 cells",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "Range(Commune): 11 x 11 cells",
                   "area-of-effect": "9x9",
+                  "effect": "Range(Commune): 11 x 11 cells",
                   "sp-cost": "72"
                 }
               }
@@ -13066,7 +14314,6 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Howling of Chulho",
@@ -13124,7 +14371,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13140,6 +14387,8 @@ export const spiritHandlerData = {
       "target": "Instant Cast",
       "recoversAp": "4",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Marine_Festival_of_Kisul",
       "description": "Using the power of the sea that Gwisul possesses, it temporarily increases the POW, CRT, and CON of yourself and the party members around you.\nWhen you acquire [Commune With Kisul], the range of effect increases and the duration is doubled.\nDoes not stack with Cardinal's [Benedictum] effect.",
       "levelDetails": [
         {
@@ -13194,8 +14443,18 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "57 + (Skill Level x 4)",
+      "duration": "60 ~ 120 seconds",
+      "areaOfEffect": "5 x 5 ~ 13 x 13 9 x 9 ~ 17 x 17 (with Commune with Kisul )",
+      "translations": {
+        "pt-BR": {
+          "name": " Marine Festival of Kisul ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Marine_Festival_of_Kisul"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5440.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5440",
       "tree": {
@@ -13229,6 +14488,10 @@ export const spiritHandlerData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "57 + (Skill Level x 4)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -13258,6 +14521,18 @@ export const spiritHandlerData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "pow",
+                "label": "POW"
+              },
+              {
+                "id": "crt",
+                "label": "CRT"
+              },
+              {
+                "id": "con",
+                "label": "CON"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -13266,57 +14541,72 @@ export const spiritHandlerData = {
                 "label": "Area of Effect"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "duration",
+                "label": "Duration"
               },
               {
-                "id": "pow-crt-con",
-                "label": "Pow,crt,con"
+                "id": "effect",
+                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "pow-crt-con": "+2",
-                  "effect": "Duration: 60 sec\nRange(Commune): 9 x 9 cells",
+                  "duration": "60 seconds",
+                  "pow": "+2",
+                  "crt": "+2",
+                  "con": "+2",
                   "area-of-effect": "5x5",
+                  "effect": "Range(Commune): 9 x 9 cells",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "pow-crt-con": "+4",
-                  "effect": "Duration: 75 sec\nRange(Commune): 11 x 11 cells",
+                  "duration": "75 seconds",
+                  "pow": "+4",
+                  "crt": "+4",
+                  "con": "+4",
                   "area-of-effect": "7x7",
+                  "effect": "Range(Commune): 11 x 11 cells",
                   "sp-cost": "90"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "pow-crt-con": "+6",
-                  "effect": "Duration: 90 sec\nRange(Commune): 13 x 13 cells",
+                  "duration": "90 seconds",
+                  "pow": "+6",
+                  "crt": "+6",
+                  "con": "+6",
                   "area-of-effect": "9x9",
+                  "effect": "Range(Commune): 13 x 13 cells",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "pow-crt-con": "+8",
-                  "effect": "Duration: 105 sec\nRange(Commune): 15 x 15 cells",
+                  "duration": "105 seconds",
+                  "pow": "+8",
+                  "crt": "+8",
+                  "con": "+8",
                   "area-of-effect": "11x11",
+                  "effect": "Range(Commune): 15 x 15 cells",
                   "sp-cost": "110"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "pow-crt-con": "+10",
-                  "effect": "Duration: 120 sec\nRange(Commune): 17 x 17 cells",
+                  "duration": "120 seconds",
+                  "pow": "+10",
+                  "crt": "+10",
+                  "con": "+10",
                   "area-of-effect": "13x13",
+                  "effect": "Range(Commune): 17 x 17 cells",
                   "sp-cost": "120"
                 }
               }
@@ -13325,7 +14615,6 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Marine Festival of Kisul",
@@ -13348,7 +14637,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13364,6 +14653,8 @@ export const spiritHandlerData = {
       "target": "Instant Cast",
       "recoversAp": "4",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Sandy_Festival_of_Kisul",
       "description": "Using the power of the sea that Gwiseol possesses, he increases the SPL, WIS, and STA of himself and the party members around him for a certain period of time.\nWhen you acquire [Commune With Kisul], the range of effect increases and the duration is doubled.\nDoes not stack with Cardinal's [Religio] effect.",
       "levelDetails": [
         {
@@ -13418,8 +14709,18 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "70 + (Skill Level x 10)",
+      "duration": "60 ~ 120 seconds",
+      "areaOfEffect": "5 x 5 ~ 13 x 13 9 x 9 ~ 17 x 17 (with Commune with Kisul )",
+      "translations": {
+        "pt-BR": {
+          "name": " Sandy Festival of Kisul ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Sandy_Festival_of_Kisul"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5441.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5441",
       "tree": {
@@ -13453,6 +14754,10 @@ export const spiritHandlerData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "70 + (Skill Level x 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -13482,6 +14787,18 @@ export const spiritHandlerData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "spl",
+                "label": "SPL"
+              },
+              {
+                "id": "wis",
+                "label": "WIS"
+              },
+              {
+                "id": "sta",
+                "label": "STA"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -13490,57 +14807,72 @@ export const spiritHandlerData = {
                 "label": "Area of Effect"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "duration",
+                "label": "Duration"
               },
               {
-                "id": "spl-wis-sta",
-                "label": "SPL,wis,sta"
+                "id": "effect",
+                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "spl-wis-sta": "+2",
-                  "effect": "Duration: 60 sec\nRange(Commune): 9 x 9 cells",
+                  "duration": "60 seconds",
+                  "spl": "+2",
+                  "wis": "+2",
+                  "sta": "+2",
                   "area-of-effect": "5x5",
+                  "effect": "Range(Commune): 9 x 9 cells",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "spl-wis-sta": "+4",
-                  "effect": "Duration: 75 sec\nRange(Commune): 11 x 11 cells",
+                  "duration": "75 seconds",
+                  "spl": "+4",
+                  "wis": "+4",
+                  "sta": "+4",
                   "area-of-effect": "7x7",
+                  "effect": "Range(Commune): 11 x 11 cells",
                   "sp-cost": "90"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "spl-wis-sta": "+6",
-                  "effect": "Duration: 90 sec\nRange(Commune): 13 x 13 cells",
+                  "duration": "90 seconds",
+                  "spl": "+6",
+                  "wis": "+6",
+                  "sta": "+6",
                   "area-of-effect": "9x9",
+                  "effect": "Range(Commune): 13 x 13 cells",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "spl-wis-sta": "+8",
-                  "effect": "Duration: 105 sec\nRange(Commune): 15 x 15 cells",
+                  "duration": "105 seconds",
+                  "spl": "+8",
+                  "wis": "+8",
+                  "sta": "+8",
                   "area-of-effect": "11x11",
+                  "effect": "Range(Commune): 15 x 15 cells",
                   "sp-cost": "110"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "spl-wis-sta": "+10",
-                  "effect": "Duration: 120 sec\nRange(Commune): 17 x 17 cells",
+                  "duration": "120 seconds",
+                  "spl": "+10",
+                  "wis": "+10",
+                  "sta": "+10",
                   "area-of-effect": "13x13",
+                  "effect": "Range(Commune): 17 x 17 cells",
                   "sp-cost": "120"
                 }
               }
@@ -13549,7 +14881,6 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Sandy Festival of Kisul",
@@ -13572,7 +14903,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13588,6 +14919,8 @@ export const spiritHandlerData = {
       "target": "1 Cell Ground Target",
       "recoversAp": "4",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Hyunrok_Breeze",
       "description": "Using the mysterious power of Hyeonrok, creates wind on the ground and inflicts neutral magic damage every 0.3 seconds for 4.5 seconds to targets within the range.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and SPL.\nIf the user learned Commune With Hyunrok, increases skill damage.\nDamage property can be changed according to Colors of Hyunrok.",
       "levelDetails": [
         {
@@ -13658,8 +14991,17 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "50 + (Skill Level × 6)",
+      "areaOfEffect": "5 x 5 ~ 11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Hyunrok Breeze ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hyunrok_Breeze"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5445.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5445",
       "tree": {
@@ -13691,6 +15033,10 @@ export const spiritHandlerData = {
           {
             "label": "Levels",
             "value": "7"
+          },
+          {
+            "label": "SP Cost",
+            "value": "50 + (Skill Level × 6)"
           },
           {
             "label": "Fixed Cast Time",
@@ -13789,7 +15135,6 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Hyunrok Breeze",
@@ -13847,7 +15192,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13863,6 +15208,8 @@ export const spiritHandlerData = {
       "target": "Instant Cast",
       "recoversAp": "1, 2(if Commune With Chulho is learned)",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Hogogong_Strike",
       "description": "[Hogogong effect] Attacks surrounding targets with the Iron Tiger's front leg punch, inflicting long-range physical DMG 3 times.\nDMG increases further based on the level of the Spirit Understanding skill, the caster's base level, and POW, and critical DMG is applied based on the caster's critical probability.\nIn case of critical DMG, half of the total critical DMG increase options is applied.\nIf you acquire [Commune With Chulho], AP recovery amount and DMG increase.",
       "levelDetails": [
         {
@@ -13929,8 +15276,19 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "47 + (Skill Level x 3)",
+      "fixedCastTime": "1 second",
+      "cooldown": "0.35 seconds",
+      "castRange": "7 x 7 ~ 11 x 11 cells",
+      "translations": {
+        "pt-BR": {
+          "name": " Hogogong Strike ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hogogong_Strike"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5437.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5437",
       "tree": {
@@ -13962,6 +15320,22 @@ export const spiritHandlerData = {
           {
             "label": "Levels",
             "value": "7"
+          },
+          {
+            "label": "SP Cost",
+            "value": "47 + (Skill Level x 3)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 second"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.35 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "7 x 7 ~ 11 x 11 cells"
           },
           {
             "label": "Target",
@@ -14040,7 +15414,6 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Hogogong Strike",
@@ -14098,7 +15471,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14114,6 +15487,8 @@ export const spiritHandlerData = {
       "target": "Instant Cast",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Kisul_Rampage",
       "description": "Using the powerful healing effect of Kisul.\nRecovers 2 AP every 1 second to all party members, excluding the caster, with 7 x 7 cells around the caster.\nThe caster cannot use other skills while the effect is active, and the effect is canceled if the caster moves from their current cell due to movement or knockback effects.\nIf Commune with Kisul is learned, the area of effect increases to 11x11 cells, and the AP recovery amount increases to 4.",
       "levelDetails": [
         {
@@ -14184,8 +15559,18 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "80 + (Skill Level x 10)",
+      "duration": "(3 + Skill Level) seconds",
+      "areaOfEffect": "7 x 7 11 x 11 (with Commune with Kisul )",
+      "translations": {
+        "pt-BR": {
+          "name": " Kisul Rampage ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Kisul_Rampage"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5442.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5442",
       "tree": {
@@ -14225,6 +15610,10 @@ export const spiritHandlerData = {
             "value": "7"
           },
           {
+            "label": "SP Cost",
+            "value": "80 + (Skill Level x 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -14243,6 +15632,10 @@ export const spiritHandlerData = {
           {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7 11 x 11 (with Commune with Kisul )"
           },
           {
             "label": "Pulse",
@@ -14317,7 +15710,6 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Kisul Rampage",
@@ -14340,7 +15732,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14356,6 +15748,8 @@ export const spiritHandlerData = {
       "target": "Single Target",
       "recoversAp": "1, 2(if Commune With Hyunrok is learned)",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Hyunrok_Cannon",
       "description": "Using the mysterious power of Hyunrok, fires a powerful magic cannon at the target.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and SPL.\nIf the user learned Commune With Hyunrok, increases skill damage and increases AP recovery amount.\nDamage property can be changed according to Colors of Hyunrok.",
       "levelDetails": [
         {
@@ -14422,8 +15816,19 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "41 + (Skill Level × 3)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "2 seconds",
+      "cooldown": "0.3 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Hyunrok Cannon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hyunrok_Cannon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5446.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5446",
       "tree": {
@@ -14455,6 +15860,22 @@ export const spiritHandlerData = {
           {
             "label": "Levels",
             "value": "7"
+          },
+          {
+            "label": "SP Cost",
+            "value": "41 + (Skill Level × 3)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "2 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.3 seconds"
           },
           {
             "label": "Target",
@@ -14522,7 +15943,6 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Hyunrok Cannon",
@@ -14615,7 +16035,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14631,6 +16051,8 @@ export const spiritHandlerData = {
       "target": "Single target",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Unleashes the powerful spirit power of Hyunrok to inflicts neutral property magical damage to the target and surrounding enemies around the target for 7 hits.\nDeals additional damage depends on level of Mystical Creature Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Colors of Hyunrok.",
       "levelDetails": [
         {
@@ -14667,8 +16089,15 @@ export const spiritHandlerData = {
       "castDelay": "0.7 seconds",
       "cooldown": "1 second",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Hyunrok Spirit Power ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hyunrok_Spirit_Power"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5507.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5507",
       "tree": {
@@ -14732,7 +16161,6 @@ export const spiritHandlerData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Hyunrok Spirit Power",
@@ -14748,7 +16176,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14764,11 +16192,20 @@ export const spiritHandlerData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Commune_with_Chulho",
       "description": "Empowers the skills that borrow the power from Chulho through perfect communion with the mystical creature Chulho.",
       "levelDetails": [],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Commune with Chulho ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Commune_with_Chulho"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5434.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5434",
       "tree": {
@@ -14804,10 +16241,9 @@ export const spiritHandlerData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14823,11 +16259,20 @@ export const spiritHandlerData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Commune_with_Kisul",
       "description": "Empowers the skills that borrow the power from Kisul through perfect communion with the mystical creature Kisul.",
       "levelDetails": [],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Commune with Kisul ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Commune_with_Kisul"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5438.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5438",
       "tree": {
@@ -14863,10 +16308,9 @@ export const spiritHandlerData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14882,11 +16326,20 @@ export const spiritHandlerData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Commune_with_Hyunrok",
       "description": "Empowers the skills that borrow the power from Hyunrok through perfect communion with the mystical creature Hyunrok.",
       "levelDetails": [],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Commune with Hyunrok ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Commune_with_Hyunrok"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5443.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5443",
       "tree": {
@@ -14922,10 +16375,9 @@ export const spiritHandlerData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14941,6 +16393,8 @@ export const spiritHandlerData = {
       "target": "Instant Cast",
       "recoversAp": "",
       "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Temporary_Communion",
       "description": "Can be used if you have acquired at least one spirit communication skill for Chulho, Kisul, and Hyunrok.\nThrough the temporary communion with Chulho, Kisul and Hyunrok, the user is in the state of communion of all three mystical creatures for the certain duration.\nIncreases P.Atk, S.Matk and H.Plus for the duration.",
       "levelDetails": [
         {
@@ -14995,8 +16449,17 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "100",
+      "duration": "30 ~ 150 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Temporary Communion ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Temporary_Communion"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5447.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5447",
       "tree": {
@@ -15022,6 +16485,10 @@ export const spiritHandlerData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "100"
           },
           {
             "label": "Fixed Cast Time",
@@ -15053,63 +16520,74 @@ export const spiritHandlerData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "p-atk",
+                "label": "P.Atk"
+              },
+              {
+                "id": "s-matk",
+                "label": "S.Matk"
+              },
+              {
+                "id": "h-plus",
+                "label": "H.Plus"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
               {
-                "id": "duration-120sec-p-atk-s-matk-h-plus",
-                "label": "Duration: 120sec/P.Atk/S.Matk/h.plus"
-              },
-              {
-                "id": "duration-150sec-p-atk-s-matk-h-plus",
-                "label": "Duration: 150sec/P.Atk/S.Matk/h.plus"
-              },
-              {
-                "id": "duration-30sec-p-atk-s-matk-h-plus",
-                "label": "Duration: 30sec/P.Atk/S.Matk/h.plus"
-              },
-              {
-                "id": "duration-60sec-p-atk-s-matk-h-plus",
-                "label": "Duration: 60sec/P.Atk/S.Matk/h.plus"
-              },
-              {
-                "id": "duration-90sec-p-atk-s-matk-h-plus",
-                "label": "Duration: 90sec/P.Atk/S.Matk/h.plus"
+                "id": "duration",
+                "label": "Duration"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "duration-30sec-p-atk-s-matk-h-plus": "+3",
+                  "duration": "30 seconds",
+                  "p-atk": "+3",
+                  "s-matk": "+3",
+                  "h-plus": "+3",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "duration-60sec-p-atk-s-matk-h-plus": "+6",
+                  "duration": "60 seconds",
+                  "p-atk": "+6",
+                  "s-matk": "+6",
+                  "h-plus": "+6",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "duration-90sec-p-atk-s-matk-h-plus": "+9",
+                  "duration": "90 seconds",
+                  "p-atk": "+9",
+                  "s-matk": "+9",
+                  "h-plus": "+9",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "duration-120sec-p-atk-s-matk-h-plus": "+12",
+                  "duration": "120 seconds",
+                  "p-atk": "+12",
+                  "s-matk": "+12",
+                  "h-plus": "+12",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "duration-150sec-p-atk-s-matk-h-plus": "+15",
+                  "duration": "150 seconds",
+                  "p-atk": "+15",
+                  "s-matk": "+15",
+                  "h-plus": "+15",
                   "sp-cost": "100"
                 }
               }
@@ -15118,10 +16596,9 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15137,6 +16614,8 @@ export const spiritHandlerData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "100",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Blessing_of_Mystical_Creatures",
       "description": "Gives the blessing of spiritual creatures to the Doram tribe and one party member other than yourself. Sets the target's AP to 200 and increases P.ATK and S.MATK for 10 seconds.\nWhen the effect time ends, AP becomes 0 and you cannot receive the blessings of spirits again for 1 minute.",
       "levelDetails": [
         {
@@ -15191,8 +16670,17 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "100",
+      "duration": "10 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Blessing of Mystical Creatures ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Blessing_of_Mystical_Creatures"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5448.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5448",
       "tree": {
@@ -15226,6 +16714,10 @@ export const spiritHandlerData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "100"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -15246,6 +16738,10 @@ export const spiritHandlerData = {
             "value": "Single Target"
           },
           {
+            "label": "Duration",
+            "value": "10 seconds"
+          },
+          {
             "label": "AP Consumed",
             "value": "100"
           }
@@ -15255,47 +16751,56 @@ export const spiritHandlerData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "sp-cost",
-                "label": "SP Cost"
+                "id": "p-atk",
+                "label": "P.Atk"
               },
               {
-                "id": "p-atk-s-matk",
-                "label": "P.Atk/S.Matk"
+                "id": "s-matk",
+                "label": "S.Matk"
+              },
+              {
+                "id": "sp-cost",
+                "label": "SP Cost"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "p-atk-s-matk": "+10",
+                  "p-atk": "+10",
+                  "s-matk": "+10",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "p-atk-s-matk": "+20",
+                  "p-atk": "+20",
+                  "s-matk": "+20",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "p-atk-s-matk": "+30",
+                  "p-atk": "+30",
+                  "s-matk": "+30",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "p-atk-s-matk": "+40",
+                  "p-atk": "+40",
+                  "s-matk": "+40",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "p-atk-s-matk": "+50",
+                  "p-atk": "+50",
+                  "s-matk": "+50",
                   "sp-cost": "100"
                 }
               }
@@ -15304,10 +16809,9 @@ export const spiritHandlerData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

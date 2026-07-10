@@ -1,5 +1,5 @@
 export const meisterData = {
-  "generatedAt": "2026-07-10T00:53:50.722Z",
+  "generatedAt": "2026-07-10T15:02:09.815Z",
   "classId": 4253,
   "classSlug": "meister",
   "className": "Meister",
@@ -71,7 +71,8 @@ export const meisterData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4253",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -330,6 +331,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Two-handed_Axe_Defense",
           "description": "Two-handed Axes decrease Physical damage from enemies of all sizes.",
           "levelDetails": [],
           "levelExtras": [
@@ -379,8 +382,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Two-handed Axe Defense ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Two-handed_Axe_Defense"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5300.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5300",
           "tree": {
@@ -476,10 +486,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -495,6 +504,8 @@ export const meisterData = {
           "target": "You and party members",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Manufacture_Machine",
           "description": "Create various devices for your skills.\nRequires a Machine Creation Guide.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -528,8 +539,16 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level x 10)",
+          "translations": {
+            "pt-BR": {
+              "name": " Manufacture Machine ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Manufacture_Machine"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5297.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5297",
           "tree": {
@@ -548,6 +567,10 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level x 10)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -615,10 +638,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -634,6 +656,8 @@ export const meisterData = {
           "target": "Target in range",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Axe_Stomp",
           "description": "Axe-only skill.\nStrike the ground with an Axe and inflict melee physical damage to targets within the range around you.\nThe caster is granted Axe Stomp for a short period of time, increasing the damage of the Axe Tornado skill and dealing 3 attacks when used with a two-handed axe.\nDamage is additionally increased depending on the user's base level and POW.",
           "levelDetails": [
             {
@@ -688,8 +712,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 ~ 85",
+          "duration": "10 ~ 30 seconds",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Axe Stomp ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Axe_Stomp"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5295.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5295",
           "tree": {
@@ -717,6 +751,10 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45 ~ 85"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -737,6 +775,10 @@ export const meisterData = {
                 "value": "Target in range"
               },
               {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
+              },
+              {
                 "label": "AP Generated",
                 "value": "3"
               }
@@ -748,36 +790,45 @@ export const meisterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "duration": "10 seconds",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "duration": "15 seconds",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "duration": "20 seconds",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "duration": "25 seconds",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "duration": "30 seconds",
                       "sp-cost": "85"
                     }
                   }
@@ -786,7 +837,6 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Axe Stomp",
@@ -939,7 +989,7 @@ export const meisterData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -955,6 +1005,8 @@ export const meisterData = {
           "target": "You and party members",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Activate_Attack_Device",
           "description": "Consumes 1 Device Capsule. Add a device to an ally that temporarily attacks enemies around them.\nThis device inflicts Melee Physical damage every second.",
           "levelDetails": [],
           "fixedCastTime": "0.5 seconds",
@@ -988,8 +1040,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40 + (Skill Level × 3)",
+          "duration": "40 + (Skill Level × 40) seconds",
+          "areaOfEffect": "3×3~7×7",
+          "translations": {
+            "pt-BR": {
+              "name": " Activate Attack Device ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Activate_Attack_Device"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5298.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5298",
           "tree": {
@@ -1023,6 +1085,10 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -1041,6 +1107,14 @@ export const meisterData = {
               {
                 "label": "Target",
                 "value": "You and party members"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3×3~7×7"
+              },
+              {
+                "label": "Duration",
+                "value": "40 + (Skill Level × 40) seconds"
               }
             ],
             "levelTables": [
@@ -1088,10 +1162,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1107,6 +1180,8 @@ export const meisterData = {
           "target": "You and party members",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Activate_Defense_Device",
           "description": "Consumes 1 Device Capsule. Add a device to an ally that temporarily increases their DEF and Physical Resistance.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -1140,8 +1215,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40 + (Skill Level × 3)",
+          "duration": "40 + (Skill Level × 40) seconds",
+          "areaOfEffect": "3×3~7×7",
+          "translations": {
+            "pt-BR": {
+              "name": " Activate Defense Device ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Activate_Defense_Device"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5299.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5299",
           "tree": {
@@ -1169,6 +1254,10 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -1187,6 +1276,14 @@ export const meisterData = {
               {
                 "label": "Target",
                 "value": "You and party members"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3×3~7×7"
+              },
+              {
+                "label": "Duration",
+                "value": "40 + (Skill Level × 40) seconds"
               }
             ],
             "levelTables": [
@@ -1234,10 +1331,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1253,6 +1349,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/ABR_Mastery",
           "description": "Improve your summoned ABR (Automatic Battle Robot).",
           "levelDetails": [
             {
@@ -1343,8 +1441,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " ABR Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/ABR_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5301.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5301",
           "tree": {
@@ -1461,7 +1566,6 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "ABR Mastery",
@@ -1492,7 +1596,7 @@ export const meisterData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1508,6 +1612,8 @@ export const meisterData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spark_Blaster",
           "description": "Available while riding in a madoogear.\nCauses a self-destruct, dealing 2 ranged physical damage to the target and an area around it.\nIgnores the target's physical defense, Damage is additionally increased depending on the user's base level and POW.",
           "levelDetails": [
             {
@@ -1602,8 +1708,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "44 + (Skill Level × 4)",
+          "duration": "60 + (Skill Level × 60) seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "7 x 7~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Spark Blaster ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spark_Blaster"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6002.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6002",
           "tree": {
@@ -1631,6 +1748,10 @@ export const meisterData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "44 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -1647,8 +1768,16 @@ export const meisterData = {
                 "value": "0.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 60) seconds"
               },
               {
                 "label": "AP Generated",
@@ -1744,7 +1873,6 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Spark Blaster",
@@ -1794,7 +1922,7 @@ export const meisterData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1810,6 +1938,8 @@ export const meisterData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mighty_Smash",
           "description": "Axe-only skill.\nSwing your axe wildly, dealing 5 melee physical damage to targets in an area around you.\nIf Axe Stomp is active, inflicts stronger melee physical damage 7 times.\nDamage is additionally increased depending on the user's base level and POW.",
           "levelDetails": [
             {
@@ -1900,8 +2030,20 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "65 + (Skill Level × 3)",
+          "castDelay": "0.7 seconds",
+          "cooldown": "0.5 seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "3 x 3~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Mighty Smash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mighty_Smash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6004.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6004",
           "tree": {
@@ -1927,6 +2069,22 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "65 + (Skill Level × 3)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.7 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -2022,7 +2180,6 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Mighty Smash",
@@ -2098,7 +2255,7 @@ export const meisterData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2113,7 +2270,9 @@ export const meisterData = {
           "type": "Melee Physical",
           "target": "1 Target",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rush_Quake",
           "description": "Approaches the target within 9 cells, dealing Melee Physical damage to nearby enemies including the target and inflicting Quake effect on them for 30 seconds\nDeals more damage to Formless and Insect monsters.\nDamage increases additionally based on the Base Lv and POW.\nIn addition, grants Rush effect for (30 X Skill Level) seconds.\nRush Effect: Increases Melee and Ranged Physical Damage by (5 X Skill Level)%.\nQuake Effect: 50% increased Melee and Ranged Physical Damage taken by the target",
           "levelDetails": [
             {
@@ -2208,8 +2367,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "150",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Rush Quake ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rush_Quake"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5296.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5296",
           "tree": {
@@ -2237,6 +2406,10 @@ export const meisterData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "150"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -2253,8 +2426,20 @@ export const meisterData = {
                 "value": "30 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "150"
               }
             ],
             "levelTables": [
@@ -2346,7 +2531,6 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Rush Quake",
@@ -2402,7 +2586,7 @@ export const meisterData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2416,8 +2600,10 @@ export const meisterData = {
           "group": "Active",
           "type": "Summon",
           "target": "Self",
-          "recoversAp": "",
+          "recoversAp": "20",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/ABR%3A_Battle_Warrior",
           "description": "Consumes 1 ABR Capsule. Summon the combat support ABR, Battle Warrior.\nBattle Warrior's stats increase, depending on your stats and ABR Mastery level.\nWhile Battle Warrior is summoned, Power Swing damage increases. (It inflicts damage once, but displays the damage in 2 parts.)",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2447,8 +2633,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level x 10)",
+          "duration": "60 + (Skill Level × 60) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " ABR: Battle Warrior ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/ABR%3A_Battle_Warrior"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5302.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5302",
           "tree": {
@@ -2476,6 +2671,10 @@ export const meisterData = {
                 "value": "4"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2494,6 +2693,14 @@ export const meisterData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 60) seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "20"
               }
             ],
             "levelTables": [
@@ -2535,10 +2742,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2552,8 +2758,10 @@ export const meisterData = {
           "group": "Active",
           "type": "Summon",
           "target": "Self",
-          "recoversAp": "",
+          "recoversAp": "20",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/ABR%3A_Dual_Cannon",
           "description": "Consumes 1 ABR Capsule. Summon the support ABR, Dual Cannon.\nDual Cannon's stats increase, depending on your stats and ABR Mastery level.\nWhile Dual Cannon is summoned, Knuckle Boost, Vulcan Arm, and Arm Cannon attack twice.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2583,8 +2791,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level x 10)",
+          "duration": "60 + (Skill Level × 60) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " ABR: Dual Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/ABR%3A_Dual_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5303.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5303",
           "tree": {
@@ -2618,6 +2835,10 @@ export const meisterData = {
                 "value": "4"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2636,6 +2857,14 @@ export const meisterData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 60) seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "20"
               }
             ],
             "levelTables": [
@@ -2677,10 +2906,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2696,6 +2924,8 @@ export const meisterData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Triple_Laser",
           "description": "Available while riding in a madoogear.\nFires three beam attacks at the target, inflicting long-distance physical damage three times.\nDamage is additionally increased according to the user's base level and POW, and critical damage is applied according to the user's critical probability.\nIn the case of critical damage, half of the total critical damage increase options are applied.",
           "levelDetails": [
             {
@@ -2750,8 +2980,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 5)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Triple Laser ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Triple_Laser"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6003.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6003",
           "tree": {
@@ -2779,6 +3018,10 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -2793,6 +3036,10 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0.35 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -2844,7 +3091,6 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Triple Laser",
@@ -2903,7 +3149,7 @@ export const meisterData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2919,6 +3165,8 @@ export const meisterData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Two-handed axe exclusive skill.\nRush towards the target and strike it down with the axe, deals melee physical damage to the target and surrounding enemies around the target.\nDeals additional damage depends on user's base level and POW.\nHowever, this skill cannot be used when equipping Madogear.",
           "levelDetails": [
             {
@@ -2943,8 +3191,15 @@ export const meisterData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Rush Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rush_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6506.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6506",
           "tree": {
@@ -3025,10 +3280,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3044,6 +3298,8 @@ export const meisterData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Two-handed axe exclusive skill.\nStrikes the target with all your might with an axe, deals melee physical damage to the target and surrounding enemies around the target for 5 hits.\nIf Axe Stomp buff is active, the skill will deal more damage.\nDeals additional damage depends on user's base level and POW.\nHowever, this skill cannot be used when equipping Madogear.",
           "levelDetails": [
             {
@@ -3068,8 +3324,15 @@ export const meisterData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Powerful Swing ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Powerful_Swing"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6507.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6507",
           "tree": {
@@ -3150,10 +3413,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3167,8 +3429,10 @@ export const meisterData = {
           "group": "Active",
           "type": "Summon",
           "target": "Self",
-          "recoversAp": "",
+          "recoversAp": "20",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/ABR%3A_Mother_Net",
           "description": "Consumes 1 ABR Capsule. Summon the support ABR, Mother Net.\nMother Net's stats increase, depending on your stats and ABR Mastery level.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -3198,8 +3462,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level x 10)",
+          "duration": "60 + (Skill Level × 60) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " ABR: Mother Net ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/ABR%3A_Mother_Net"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5304.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5304",
           "tree": {
@@ -3239,6 +3512,10 @@ export const meisterData = {
                 "value": "4"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -3257,6 +3534,14 @@ export const meisterData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 60) seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "20"
               }
             ],
             "levelTables": [
@@ -3298,10 +3583,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3317,6 +3601,8 @@ export const meisterData = {
           "target": "Single target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used when equipping Madogear.\nFires the energy sphere to the target, deals long ranged physical damage to the target and surrounding enemies around the target for 7 hits.\nSkill damage ignores the target's physical defense, deals additional damage depends on user's base level and POW.",
           "levelDetails": [
             {
@@ -3345,8 +3631,15 @@ export const meisterData = {
           "castDelay": "0.5 seconds",
           "cooldown": "1.25 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Energy Cannonade ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Energy_Cannonade"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6508.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6508",
           "tree": {
@@ -3443,10 +3736,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3461,7 +3753,9 @@ export const meisterData = {
           "type": "Summon",
           "target": "Self",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "200",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/ABR%3A_Infinity",
           "description": "Consumes 5 ABR Capsules. Summon the combat support ABR, Infinity.\nInfinity's stats increase, depending on your stats and ABR Mastery level.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -3491,8 +3785,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 10)",
+          "duration": "60 + (Skill Level × 60) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " ABR: Infinity ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/ABR%3A_Infinity"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5305.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5305",
           "tree": {
@@ -3538,6 +3841,10 @@ export const meisterData = {
                 "value": "4"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -3556,6 +3863,14 @@ export const meisterData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 60) seconds"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "200"
               }
             ],
             "levelTables": [
@@ -3597,10 +3912,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3627,6 +3941,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Madogear_License",
           "description": "Allows the Mechanic to use Mado Gear. Higher Level Increases ATK and decreases the movement penalty in Mado Gear.",
           "levelDetails": [
             {
@@ -3727,8 +4043,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Madogear License ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Madogear_License"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2255.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2255",
           "tree": {
@@ -3834,10 +4157,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3853,6 +4175,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Axe_Mastery",
           "description": "Increase ATK and Accuracy rate when caster equips an axe (passive), Maces also receive a small percentage of this skill.",
           "levelDetails": [
             {
@@ -4123,8 +4447,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Axe Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Axe_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2276.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2276",
           "tree": {
@@ -4304,10 +4635,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4323,6 +4653,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fire_Earth_Research",
           "description": "After researching Fire and Earth Element monsters, Mechanic gains further understanding of them, increasing damage and resistance against these monsters.",
           "levelDetails": [
             {
@@ -4423,8 +4755,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Fire Earth Research ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fire_Earth_Research"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2277.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2277",
           "tree": {
@@ -4526,10 +4865,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4542,9 +4880,11 @@ export const meisterData = {
           "prerequisiteText": "Madogear License 2",
           "group": "Active / Recovery",
           "type": "",
-          "target": "",
+          "target": "Player or Caster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Repair",
           "description": "Enable to repair (recover) Madogear or other Madogears. Requires a <Repair Kit> and consumes 1 Magic Gear Fuel.",
           "levelDetails": [
             {
@@ -4673,8 +5013,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 5)",
+          "castRange": "5 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Repair ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Repair"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2275.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2275",
           "tree": {
@@ -4702,6 +5051,10 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4712,6 +5065,14 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player or Caster"
               }
             ],
             "levelTables": [
@@ -4795,10 +5156,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4811,9 +5171,11 @@ export const meisterData = {
           "prerequisiteText": "Madogear License 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Knuckle_Boost",
           "description": "Inflicts Ranged Physical Damage to a single target.\nDamage increases based on BaseLv and DEX.\nRange: 11 Cells.",
           "levelDetails": [
             {
@@ -4918,8 +5280,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "Skill Level × 5",
+          "castRange": "11 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Knuckle Boost ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Knuckle_Boost"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2256.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2256",
           "tree": {
@@ -4947,6 +5318,10 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "Skill Level × 5"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4961,6 +5336,14 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -5026,7 +5409,6 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Knuckle Boost",
@@ -5057,7 +5439,7 @@ export const meisterData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5070,9 +5452,11 @@ export const meisterData = {
           "prerequisiteText": "Madogear License 1",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Acceleration",
           "description": "Increase Madogear's movement speed. An Accelerator must be equipped to cast and consumes 1 Magic Gear Fuel.",
           "levelDetails": [
             {
@@ -5128,8 +5512,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "Skill Level × 20",
+          "duration": "30 + (Skill Level × 30) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Acceleration ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Acceleration"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2262.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2262",
           "tree": {
@@ -5157,6 +5550,10 @@ export const meisterData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "Skill Level × 20"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5171,6 +5568,14 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "30 + (Skill Level × 30) seconds"
               }
             ],
             "levelTables": [
@@ -5220,10 +5625,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5239,6 +5643,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Remodel_Mainframe",
           "description": "Remodel Magic Gear's main frame\nto increase defense and overheat limit.\nIf Magic Gear receives damage, it will\ncontinue to receive damage.",
           "levelDetails": [
             {
@@ -5344,8 +5750,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Remodel Mainframe ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Remodel_Mainframe"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2266.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2266",
           "tree": {
@@ -5452,10 +5865,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5468,9 +5880,11 @@ export const meisterData = {
           "prerequisiteText": "Axe Training 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Axe_Tornado",
           "description": "Deals melee physical damage by spining axes.\nDamage increases based on BaseLv and VIT.",
           "levelDetails": [
             {
@@ -5599,8 +6013,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45",
+          "cooldown": "[4.5 − (Skill Level × 0.5)] seconds",
+          "areaOfEffect": "5 x 5 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Axe Tornado ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Axe_Tornado"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2280.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2280",
           "tree": {
@@ -5628,6 +6052,10 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5638,6 +6066,18 @@ export const meisterData = {
               {
                 "label": "Cast Delay",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[4.5 − (Skill Level × 0.5)] seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -5712,7 +6152,6 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Axe Tornado",
@@ -5735,7 +6174,7 @@ export const meisterData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5748,9 +6187,11 @@ export const meisterData = {
           "prerequisiteText": "Axe Mastery 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Axe_Boomerang",
           "description": "Axe exclusive skill (One-handed and Two-handed) Throws axe like a boomerang at a target, causing damage and knocking it back. The weight of the axe increases damage done by the skill.",
           "levelDetails": [
             {
@@ -5879,8 +6320,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "18 + (Skill Level × 2)",
+          "cooldown": "[5.5 − (Skill Level × 0.5)] seconds",
+          "castRange": "(Skill Level + 3) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Axe Boomerang ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Axe_Boomerang"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2278.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2278",
           "tree": {
@@ -5908,6 +6359,10 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "18 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5918,6 +6373,18 @@ export const meisterData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[5.5 − (Skill Level × 0.5)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Skill Level + 3) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -6001,10 +6468,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6017,9 +6483,11 @@ export const meisterData = {
           "prerequisiteText": "Fire Earth Research 2",
           "group": "Active / FAW Set",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/FAW_Silver_Sniper",
           "description": "Set FAW (Fixed Automatic Weapon) on the ground that executes long distance attacks. Maximum of 2 FAWs can be set. Consumes 2 Steel and 1 Iron. Requires an Oridecon Hammer and Mini Furnace.",
           "levelDetails": [
             {
@@ -6148,8 +6616,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 5)",
+          "fixedCastTime": "[2 − (Skill Level × 0.2)] seconds",
+          "duration": "[10 + (Skill Level × 10)] seconds",
+          "castRange": "2 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " FAW Silver Sniper ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/FAW_Silver_Sniper"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2281.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2281",
           "tree": {
@@ -6177,6 +6656,14 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 5)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[2 − (Skill Level × 0.2)] seconds"
+              },
+              {
                 "label": "Variable Cast Time",
                 "value": "0 seconds"
               },
@@ -6187,6 +6674,14 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "2 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
               }
             ],
             "levelTables": [
@@ -6198,8 +6693,8 @@ export const meisterData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "atk",
@@ -6222,8 +6717,8 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "20 seconds",
                       "atk": "+0",
-                      "effect": "Duration 20sec",
                       "sp-cost": "25",
                       "range": "2 cells",
                       "data-1": "0",
@@ -6233,8 +6728,8 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "30 seconds",
                       "atk": "+200",
-                      "effect": "Duration 30sec",
                       "sp-cost": "30",
                       "range": "2 cells",
                       "data-1": "200",
@@ -6244,8 +6739,8 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "40 seconds",
                       "atk": "+400",
-                      "effect": "Duration 40sec",
                       "sp-cost": "35",
                       "range": "2 cells",
                       "data-1": "400",
@@ -6255,8 +6750,8 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "50 seconds",
                       "atk": "+800",
-                      "effect": "Duration 50sec",
                       "sp-cost": "40",
                       "range": "2 cells",
                       "data-1": "800",
@@ -6266,8 +6761,8 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "60 seconds",
                       "atk": "+1000",
-                      "effect": "Duration 60sec",
                       "sp-cost": "45",
                       "range": "2 cells",
                       "data-1": "1000",
@@ -6279,10 +6774,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6295,9 +6789,11 @@ export const meisterData = {
           "prerequisiteText": "Knuckle Boost 2",
           "group": "Active / Damage(Special)",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Pile_Bunker",
           "description": "Pull out deadly drills from the Madogear to inflict damage and nullify Defensive magic skills cast on the target. Nullifies [Kyrie Eleison, Assumptio, Mental Strength, Gentle Touch-Change, Gentle Touch-Revitalize, Auto Guard, Reflect Shield, Defending Aura, Reflect Damage, Prestige, and Banding]. Requires a Pile Bunker to cast.",
           "levelDetails": [
             {
@@ -6387,8 +6883,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "castRange": "[2 + (Skill Level × 1)] cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Pile Bunker ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pile_Bunker"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2257.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2257",
           "tree": {
@@ -6416,6 +6921,10 @@ export const meisterData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6430,6 +6939,14 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "[2 + (Skill Level × 1)] cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -6493,10 +7010,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6509,9 +7025,11 @@ export const meisterData = {
           "prerequisiteText": "Knuckle Boost 2",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Vulcan Bullet",
+          "irowikiUrl": "https://irowiki.org/wiki/Vulcan_Arm",
           "description": "Shoots a target, dealing ranged physical damage to the surrounding targets.\nConsumes one Vulcan Bullet. Damage increases based on BaseLv and DEX.\nRange: 13 Cells.",
           "levelDetails": [
             {
@@ -6584,8 +7102,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "6 + Skill Level x 3",
+          "castRange": "13 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Vulcan Arm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vulcan_Arm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2258.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2258",
           "tree": {
@@ -6613,6 +7141,10 @@ export const meisterData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "6 + Skill Level x 3"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6627,6 +7159,22 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "13 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Vulcan Bullet"
               }
             ],
             "levelTables": [
@@ -6676,7 +7224,6 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Vulcan Arm",
@@ -6699,7 +7246,7 @@ export const meisterData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6712,9 +7259,11 @@ export const meisterData = {
           "prerequisiteText": "Acceleration 1",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hover",
           "description": "Make Madogear hover over the ground to escape traps and any other magic attacks. A Hovering Booster must be equiped to cast and consumes 1 Magic Gear Fuel.",
           "levelDetails": [
             {
@@ -6742,8 +7291,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25",
+          "castDelay": "None",
+          "cooldown": "None",
+          "duration": "90 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Hover ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hover"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2263.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2263",
           "tree": {
@@ -6769,6 +7329,26 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "25"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "None"
+              },
+              {
+                "label": "Cooldown",
+                "value": "None"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "90 seconds"
               }
             ],
             "levelTables": [
@@ -6802,10 +7382,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6818,9 +7397,11 @@ export const meisterData = {
           "prerequisiteText": "Remodel Mainframe 2",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Elemental_Shift",
           "description": "Change Madogear's property. Must have a <Shape Shifter> equipped and consumes 2 Magic Gear Fuel and 1 Enchanted Stone.",
           "levelDetails": [
             {
@@ -6930,8 +7511,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "duration": "5 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Elemental Shift ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Elemental_Shift"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2268.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2268",
           "tree": {
@@ -6959,6 +7549,10 @@ export const meisterData = {
                 "value": "4"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
               },
@@ -6973,6 +7567,14 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "5 minutes"
               }
             ],
             "levelTables": [
@@ -7046,10 +7648,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7062,9 +7663,11 @@ export const meisterData = {
           "prerequisiteText": "Remodel Mainframe 2",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Suicidal_Destruction",
           "description": "Make Magic Gear self-destruct\ncausing huge damage in an area around it.\nCaster will lose Magic Gear and all SP will\nbe drained. [Suicide Device] is required to\nuse this skill. Consumes 3 Magic Gear Fuel.",
           "levelDetails": [
             {
@@ -7119,8 +7722,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "variableCastTime": "[2.5 − (Skill Level × 0.5)] seconds",
+          "areaOfEffect": "5 x 5 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Suicidal Destruction ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Suicidal_Destruction"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2267.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2267",
           "tree": {
@@ -7148,8 +7761,16 @@ export const meisterData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[2.5 − (Skill Level × 0.5)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -7158,6 +7779,10 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "300 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -7207,10 +7832,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7223,9 +7847,11 @@ export const meisterData = {
           "prerequisiteText": "Axe Boomerang 3",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Power_Swing",
           "description": "Deals melee physical damage, and stuns the target.\nDamage increases based on BaseLv, STR and Dex.",
           "levelDetails": [
             {
@@ -7364,8 +7990,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "18 + (Skill Level × 2)",
+          "castDelay": "1 second",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Power Swing ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Power_Swing"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2279.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2279",
           "tree": {
@@ -7393,6 +8029,10 @@ export const meisterData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "18 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7401,8 +8041,20 @@ export const meisterData = {
                 "value": "0 seconds"
               },
               {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -7494,10 +8146,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7510,9 +8161,11 @@ export const meisterData = {
           "prerequisiteText": "FAW Silver Sniper 2",
           "group": "Active / FAW Set",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/FAW_Magic_Decoy",
           "description": "Set FAW (Fixed Automatic Weapon) on the ground that executes magic attacks. Maximum of 2 FAWs can be set. Consumes 2 Iron, 1 Brigan and 2 item among Scarlet Point, Yellow Wish Point, or Lime Green Point, or Indigo Point. Requires an Oridecon Hammer and Portable Furnace.",
           "levelDetails": [
             {
@@ -7641,8 +8294,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 5)",
+          "fixedCastTime": "[2 − (Skill Level × 0.2)] seconds",
+          "duration": "10 + (Skill Level × 10) seconds",
+          "castRange": "2 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " FAW Magic Decoy ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/FAW_Magic_Decoy"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2282.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2282",
           "tree": {
@@ -7670,6 +8334,14 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 5)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[2 − (Skill Level × 0.2)] seconds"
+              },
+              {
                 "label": "Variable Cast Time",
                 "value": "0 seconds"
               },
@@ -7680,6 +8352,14 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "2 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
               }
             ],
             "levelTables": [
@@ -7689,6 +8369,10 @@ export const meisterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -7711,7 +8395,8 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 300 / Duration 20sec",
+                      "duration": "20 seconds",
+                      "effect": "MATK 300",
                       "sp-cost": "40",
                       "range": "2 cells",
                       "data-1": "20000",
@@ -7721,7 +8406,8 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 350 / Duration 30sec",
+                      "duration": "30 seconds",
+                      "effect": "MATK 350",
                       "sp-cost": "45",
                       "range": "2 cells",
                       "data-1": "30000",
@@ -7731,7 +8417,8 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 400 / Duration 40sec",
+                      "duration": "40 seconds",
+                      "effect": "MATK 400",
                       "sp-cost": "50",
                       "range": "2 cells",
                       "data-1": "40000",
@@ -7741,7 +8428,8 @@ export const meisterData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 450 / Duration 50sec",
+                      "duration": "50 seconds",
+                      "effect": "MATK 450",
                       "sp-cost": "55",
                       "range": "2 cells",
                       "data-1": "50000",
@@ -7751,7 +8439,8 @@ export const meisterData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 500 / Duration 60sec",
+                      "duration": "60 seconds",
+                      "effect": "MATK 500",
                       "sp-cost": "60",
                       "range": "2 cells",
                       "data-1": "60000",
@@ -7763,10 +8452,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7779,9 +8467,11 @@ export const meisterData = {
           "prerequisiteText": "Vulcan Arm 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Flame_Launcher",
           "description": "Set flames on the ground with a Flame Thrower to damage and inflict [Ignition] status to all targets that are inside of the range. Must have a Flame Thrower equipped. Consumes 1 Magic Gear Fuel and 20 SP.",
           "levelDetails": [
             {
@@ -7903,8 +8593,20 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "variableCastTime": "(Skill Level × 0.5) seconds",
+          "castDelay": "[2.0 − (Skill Level × 0.5)] seconds",
+          "castRange": "5 cells",
+          "areaOfEffect": "5 x 5 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Flame Launcher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flame_Launcher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2259.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2259",
           "tree": {
@@ -7932,12 +8634,36 @@ export const meisterData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
               {
+                "label": "Variable Cast Time",
+                "value": "(Skill Level × 0.5) seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "[2.0 − (Skill Level × 0.5)] seconds"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5 ~ 9 x 9"
               }
             ],
             "levelTables": [
@@ -8015,10 +8741,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8031,9 +8756,11 @@ export const meisterData = {
           "prerequisiteText": "Vulcan Arm 3",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ice_Launcher",
           "description": "Use a quick freezer to give damage inflict [Freezing] / [Freeze] status to all targets that are inside of the range. Consumes 1 Liquid Condensed Bullet and 1 Magic Gear Fuel.",
           "levelDetails": [
             {
@@ -8156,8 +8883,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castDelay": "(Skill Level) seconds",
+          "castRange": "7 cells",
+          "areaOfEffect": "5 x 5 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Ice Launcher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ice_Launcher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2260.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2260",
           "tree": {
@@ -8185,6 +8923,10 @@ export const meisterData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8193,8 +8935,24 @@ export const meisterData = {
                 "value": "1 second"
               },
               {
+                "label": "Cast Delay",
+                "value": "(Skill Level) seconds"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5 ~ 9 x 9"
               }
             ],
             "levelTables": [
@@ -8272,10 +9030,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8288,9 +9045,11 @@ export const meisterData = {
           "prerequisiteText": "Hover 1",
           "group": "Active / Movement",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Front_Slide",
           "description": "Madogear rushes forward 7 cells and consumes 1 Magic Gear Fuel.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -8308,8 +9067,16 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "translations": {
+            "pt-BR": {
+              "name": " Front Slide ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Front_Slide"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2264.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2264",
           "tree": {
@@ -8337,6 +9104,10 @@ export const meisterData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8351,6 +9122,10 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -8374,10 +9149,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8390,9 +9164,11 @@ export const meisterData = {
           "prerequisiteText": "Elemental Shift 2",
           "group": "Active / Detect / Debuff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Infrared_Scan",
           "description": "Scan 15 x 15 cells around caster with a infrared scanner and find hidden enemies. Decreases all enemies' flee rate by 30% if they are inside of the skill range. (Chance of success is 100%.)",
           "levelDetails": [
             {
@@ -8415,8 +9191,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45",
+          "duration": "3 seconds",
+          "areaOfEffect": "15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Infrared Scan ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Infrared_Scan"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2270.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2270",
           "tree": {
@@ -8444,6 +9230,10 @@ export const meisterData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "45"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8457,6 +9247,18 @@ export const meisterData = {
               },
               {
                 "label": "Cooldown",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15"
+              },
+              {
+                "label": "Duration",
                 "value": "3 seconds"
               }
             ],
@@ -8486,10 +9288,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8502,9 +9303,11 @@ export const meisterData = {
           "prerequisiteText": "Suicidal Destruction 2",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cooldown",
           "description": "Cools down Madogear, resetting\nthe overheat counter and prevents overheating\nfrom occuring.\nMust have the [Cooling Device] accessory\nand consumes 2 Magic Gear Fuel.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -8522,8 +9325,16 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "translations": {
+            "pt-BR": {
+              "name": " Cooldown ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cooldown"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2269.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2269",
           "tree": {
@@ -8551,6 +9362,10 @@ export const meisterData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8565,6 +9380,10 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -8588,10 +9407,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8604,9 +9422,11 @@ export const meisterData = {
           "prerequisiteText": "FAW Silver Sniper 1",
           "group": "Active / Divest FAW",
           "type": "",
-          "target": "",
+          "target": "FAW",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Divest_FAW",
           "description": "Disarms 1 active FAW from the ground. Also enables a chance to disarm other player's FAWs. Consumes 1 <Wrench>",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -8633,8 +9453,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castRange": "2 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Divest FAW ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Divest_FAW"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2283.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2283",
           "tree": {
@@ -8662,6 +9491,10 @@ export const meisterData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8676,6 +9509,14 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "2 cells"
+              },
+              {
+                "label": "Target",
+                "value": "FAW"
               }
             ],
             "levelTables": [
@@ -8704,10 +9545,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8720,9 +9560,11 @@ export const meisterData = {
           "prerequisiteText": "Fire Earth Research 1",
           "group": "",
           "type": "Active",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lava_Flow",
           "description": "Cause Lava to erupt from the ground in the targeted cell for 5 seconds in a 7x7 area, dealing damage and inflicting stun and burning status. You cannot create more than 3 eruptions at a time.",
           "levelDetails": [
             {
@@ -8876,8 +9718,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 10)",
+          "cooldown": "(11 − Skill Level) seconds",
+          "duration": "5 seconds",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Lava Flow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lava_Flow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5006.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5006",
           "tree": {
@@ -8905,6 +9758,10 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8915,6 +9772,22 @@ export const meisterData = {
               {
                 "label": "Cast Delay",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "(11 − Skill Level) seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
+              },
+              {
+                "label": "Duration",
+                "value": "5 seconds"
               }
             ],
             "levelTables": [
@@ -9007,10 +9880,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9023,9 +9895,11 @@ export const meisterData = {
           "prerequisiteText": "Flame Launcher 2 / Ice Launcher 2",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Cannon Ball",
+          "irowikiUrl": "https://irowiki.org/wiki/Arm_Cannon",
           "description": "Inflicts Ranged Physical Damage to all enemies in a set area around the targeted location.\nDamage increases based on BaseLv.\nEach cast consumes 1 Magic Gear Fuel and 1 Cannon Ball, the property of which depends the property of this skill.\nRange: 9 Cells.",
           "levelDetails": [
             {
@@ -9202,8 +10076,21 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level × 15)",
+          "fixedCastTime": "[0.6 − (Skill Level × 0.1)] seconds",
+          "variableCastTime": "[1 + (Skill Level × 0.2)] seconds",
+          "cooldown": "0.15 seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3 ~ 5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Arm Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Arm_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2261.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2261",
           "tree": {
@@ -9237,8 +10124,40 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level × 15)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[0.6 − (Skill Level × 0.1)] seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[1 + (Skill Level × 0.2)] seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.15 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 5 x 5"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Cannon Ball"
               }
             ],
             "levelTables": [
@@ -9331,7 +10250,6 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Arm Cannon",
@@ -9378,7 +10296,7 @@ export const meisterData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9391,9 +10309,11 @@ export const meisterData = {
           "prerequisiteText": "Hover 1",
           "group": "Active / Movement",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Back_Slide",
           "description": "Madogear moves backward 7 cells and consumes 1 Magic Gear Fuel.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -9411,8 +10331,16 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "7",
+          "translations": {
+            "pt-BR": {
+              "name": " Back Slide ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Back_Slide"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2265.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2265",
           "tree": {
@@ -9440,6 +10368,10 @@ export const meisterData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "7"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -9454,6 +10386,10 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -9477,10 +10413,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9493,9 +10428,11 @@ export const meisterData = {
           "prerequisiteText": "Infrared Scan 1",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Analyze",
           "description": "Analyze a target's status and decreases physical/magic defensive strength of the target. Skill range is 9 cells. Duration is 20 seconds and consumes 1 Magic Gear Fuel.",
           "levelDetails": [
             {
@@ -9602,8 +10539,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "duration": "20 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Analyze ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Analyze"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2271.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2271",
           "tree": {
@@ -9631,6 +10578,10 @@ export const meisterData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -9645,6 +10596,18 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "20 seconds"
               }
             ],
             "levelTables": [
@@ -9715,10 +10678,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9731,9 +10693,11 @@ export const meisterData = {
           "prerequisiteText": "Cooldown 1",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Magnetic_Field",
           "description": "Immobilize all enemies that are inside of skill range with electro-magnetic waves. If caster or targets are in hovering state, they don't get skill effect. Also the magnetic field from the skill decreases target's SP continuously. Requires a <Magnetic Field Generator> and consumes 3 Magic Gear Fuel.",
           "levelDetails": [
             {
@@ -9822,8 +10786,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "90",
+          "cooldown": "[25 − (Skill Level × 5)] seconds",
+          "duration": "15 seconds",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Magnetic Field ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Magnetic_Field"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2272.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2272",
           "tree": {
@@ -9851,6 +10826,10 @@ export const meisterData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "90"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -9861,6 +10840,22 @@ export const meisterData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[25 − (Skill Level × 5)] seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "15 seconds"
               }
             ],
             "levelTables": [
@@ -9924,10 +10919,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9940,9 +10934,11 @@ export const meisterData = {
           "prerequisiteText": "Magnetic Field 2",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Neutral_Barrier",
           "description": "Creates an energy field around the Caster, increasing DEF and MDEF of all targets in range and preventing all Long-range attacks from damaging the targets. Requires a <Barrier Builder> and consumes 1 Magic Gear Fuel.",
           "levelDetails": [
             {
@@ -10014,8 +11010,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "90",
+          "cooldown": "[25 − (Skill Level × 5)] seconds",
+          "duration": "[15 + (Skill Level × 15)] seconds",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Neutral Barrier ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Neutral_Barrier"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2273.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2273",
           "tree": {
@@ -10043,6 +11050,10 @@ export const meisterData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "90"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -10053,6 +11064,18 @@ export const meisterData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[25 − (Skill Level × 5)] seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -10064,8 +11087,8 @@ export const meisterData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -10084,8 +11107,8 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "30 seconds",
                       "physical-and-magic-defense": "+15%",
-                      "effect": "Duration 30 sec",
                       "sp-cost": "80",
                       "data-1": "15",
                       "data-2": "30000"
@@ -10094,8 +11117,8 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "45 seconds",
                       "physical-and-magic-defense": "+20%",
-                      "effect": "Duration 45 sec",
                       "sp-cost": "90",
                       "data-1": "20",
                       "data-2": "45000"
@@ -10104,8 +11127,8 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "60 seconds",
                       "physical-and-magic-defense": "+25%",
-                      "effect": "Duration 60 sec",
                       "sp-cost": "100",
                       "data-1": "25",
                       "data-2": "60000"
@@ -10116,10 +11139,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10132,9 +11154,11 @@ export const meisterData = {
           "prerequisiteText": "Analyze 3 / Neutral Barrier 2",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stealth_Field",
           "description": "Creates a 5x5 cell stealth barrier around the Caster, cloaking all targets within range. All targets cloaked by Stealth Field will be semi-visible, and they cannot be targeted by skills. Continually consumes caster's SP while the skill is active and decreases 20% of caster's movement speed. It can be canceled if Stealth Field is cast twice. Requires a <Camouflage Generator>and consume 2 Magic Gear Fuel.",
           "levelDetails": [
             {
@@ -10206,8 +11230,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 50)",
+          "cooldown": "[25 − (Skill Level × 5)] seconds",
+          "duration": "[10 + (Skill Level × 5)] seconds; Until recast or SP reaches 0",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Stealth Field ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stealth_Field"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2274.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2274",
           "tree": {
@@ -10241,6 +11276,10 @@ export const meisterData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 50)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -10251,6 +11290,18 @@ export const meisterData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[25 − (Skill Level × 5)] seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -10260,6 +11311,10 @@ export const meisterData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -10278,7 +11333,8 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "80 SP / Duration 15 sec. / 1% SP / 3 sec",
+                      "duration": "3 seconds",
+                      "effect": "80 SP / Duration 15 sec. / 1% SP",
                       "sp-cost": "80",
                       "data-1": "15000",
                       "data-2": "3000"
@@ -10287,7 +11343,8 @@ export const meisterData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "100 SP / Duration 20 sec. / 1% SP / 4 sec",
+                      "duration": "4 seconds",
+                      "effect": "100 SP / Duration 20 sec. / 1% SP",
                       "sp-cost": "100",
                       "data-1": "20000",
                       "data-2": "4000"
@@ -10296,7 +11353,8 @@ export const meisterData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "120 SP / Duration 25 sec. / 1% SP / 5 sec",
+                      "duration": "5 seconds",
+                      "effect": "120 SP / Duration 25 sec. / 1% SP",
                       "sp-cost": "120",
                       "data-1": "25000",
                       "data-2": "5000"
@@ -10307,10 +11365,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10322,10 +11379,12 @@ export const meisterData = {
           "maxLevel": 5,
           "prerequisiteText": "3rd jobs",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Throttle",
           "description": "Exceed the limits of the body by\nsacrificing your own vitality to strengthen yourself\nfor a short time. You will become horribly\nexhausted after the skill's duration.\nFully restores HP when cast and increases\nmovement speed for the skill's duration.\nAll stats +20%.\nAfter the skill duration ends, you will be inflicted\nwith Rebound status. During rebound status,\nyour movement speed is lowered and your\nnatural HP/SP recovery is disabled.\nCannot be removed by dispel or clearance.\n50 Minute playtime cooldown",
           "levelDetails": [
             {
@@ -10430,8 +11489,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Throttle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
@@ -10444,8 +11512,16 @@ export const meisterData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
               },
               {
                 "label": "Fixed Cast Time",
@@ -10462,6 +11538,10 @@ export const meisterData = {
               {
                 "label": "Cooldown",
                 "value": "3000 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -10545,10 +11625,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10575,6 +11654,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Iron_Tempering",
           "description": "Enables to create 1 refined Iron , 1 Iron ore by consuming a Mini Furnace.\nSkill level affects success rate.\nDEX and LUK additionally affect success rate.",
           "levelDetails": [
             {
@@ -10625,8 +11706,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Iron Tempering ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Iron_Tempering"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/94.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/94",
           "tree": {
@@ -10701,10 +11789,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10720,6 +11807,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hilt_Binding",
           "description": "Enhances STR and attack by 1 and 4, respectively.\nThis skill also extends the duration of Adrenaline Rush, Power-Thrust and Weapon Perfection skills by 10%.",
           "levelDetails": [],
           "levelExtras": [
@@ -10733,8 +11822,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Hilt Binding ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hilt_Binding"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/105.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/105",
           "tree": {
@@ -10776,10 +11872,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10795,6 +11890,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Skin_Tempering",
           "description": "Enhances resistance to Fire and Neutral property damage.",
           "levelDetails": [
             {
@@ -10845,8 +11942,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Skin Tempering ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Skin_Tempering"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/109.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/109",
           "tree": {
@@ -10876,59 +11980,52 @@ export const meisterData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "fire-res-4-neutral-res",
-                    "label": "Fire Res + 4%, Neutral Res"
+                    "id": "fire-res",
+                    "label": "Fire Res"
                   },
                   {
-                    "id": "fire-res-8-neutral-res",
-                    "label": "Fire Res + 8%, Neutral Res"
-                  },
-                  {
-                    "id": "fire-res-12-neutral-res",
-                    "label": "Fire Res +12%, Neutral Res"
-                  },
-                  {
-                    "id": "fire-res-16-neutral-res",
-                    "label": "Fire Res +16%, Neutral Res"
-                  },
-                  {
-                    "id": "fire-res-20-neutral-res",
-                    "label": "Fire Res +20%, Neutral Res"
+                    "id": "neutral-res",
+                    "label": "Neutral Res"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "fire-res-4-neutral-res": "+ 1%",
+                      "fire-res": "+ 4%",
+                      "neutral-res": "+ 1%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "fire-res-8-neutral-res": "+ 2%",
+                      "fire-res": "+ 8%",
+                      "neutral-res": "+ 2%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "fire-res-12-neutral-res": "+ 3%",
+                      "fire-res": "+12%",
+                      "neutral-res": "+ 3%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "fire-res-16-neutral-res": "+ 4%",
+                      "fire-res": "+16%",
+                      "neutral-res": "+ 4%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "fire-res-20-neutral-res": "+ 5%",
+                      "fire-res": "+20%",
+                      "neutral-res": "+ 5%",
                       "sp-cost": "0"
                     }
                   }
@@ -10937,10 +12034,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10956,6 +12052,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Slams a targeted location with the equipped weapon.\nhas a chance of leaving all enemies within the area of effect stunned.\nEnemy's VIT lowers the chance of stun and duration.",
           "levelDetails": [
             {
@@ -11006,8 +12104,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Hammerfall ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hammerfall"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/110.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/110",
           "tree": {
@@ -11082,10 +12187,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11101,6 +12205,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Smith_Dagger",
           "description": "Enables to forge various Dagger class weapons by consuming a forging hammer and all required items(steel, gold, oridecon hammer).\nRequired to possess of materials and items required for production.\nSkill level affects success rate.\nDEX and LUK additionally affect success rate.",
           "levelDetails": [
             {
@@ -11135,8 +12241,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Smith Dagger ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Smith_Dagger"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/98.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/98",
           "tree": {
@@ -11197,10 +12310,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11216,6 +12328,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Steel_Tempering",
           "description": "Enables to create 1 steel , 5 Iron and 1 Coal by consuming a Mini Furnace.\nSkill level affects success rate.\nDEX and LUK additionally affect success rate.",
           "levelDetails": [
             {
@@ -11266,8 +12380,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Steel Tempering ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Steel_Tempering"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/95.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/95",
           "tree": {
@@ -11349,10 +12470,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11368,6 +12488,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Enables to create elemental stones by consuming a Mini Furnace and 10 elemental ores.\nSkill level affects success rate.\nDEX and LUK additionally affect success rate.",
           "levelDetails": [
             {
@@ -11418,8 +12540,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Enchanted Stone Craft ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enchanted_Stone_Craft"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/96.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/96",
           "tree": {
@@ -11501,10 +12630,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11520,6 +12648,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Weaponry_Research",
           "description": "Raises the success rate of forging.\nThis skill also raises Physical Attack (Weapon Mastery) and the accuracy with any weapon.",
           "levelDetails": [
             {
@@ -11610,8 +12740,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Weaponry Research ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Weaponry_Research"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/107.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/107",
           "tree": {
@@ -11764,10 +12901,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11783,6 +12919,8 @@ export const meisterData = {
           "target": "the user and all party members",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Adrenaline_Rush",
           "description": "Axe, Mace Skill Form.\nPlaces a temporary buff on the user and all party members that increases Attack Speed by 30% with Axe and Mace class weapon.\nThe attack speed of Blacksmiths is increased by 30% while the attack speed of other job classes is increased by 25%.",
           "levelDetails": [
             {
@@ -11833,8 +12971,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "17 + (Skill Level × 3)",
+          "castDelay": "None",
+          "cooldown": "None",
+          "duration": "(Skill Level × 30) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Adrenaline Rush ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Adrenaline_Rush"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/111.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/111",
           "tree": {
@@ -11862,6 +13011,18 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "17 + (Skill Level × 3)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "None"
+              },
+              {
+                "label": "Cooldown",
+                "value": "None"
+              },
+              {
                 "label": "Target",
                 "value": "the user and all party members"
               }
@@ -11875,59 +13036,52 @@ export const meisterData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "duration-30sec-hit",
-                    "label": "Duration : 30sec, Hit"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
-                    "id": "duration-60sec-hit",
-                    "label": "Duration : 60sec, Hit"
-                  },
-                  {
-                    "id": "duration-90sec-hit",
-                    "label": "Duration : 90sec, Hit"
-                  },
-                  {
-                    "id": "duration-120sec-hit",
-                    "label": "Duration :120sec, Hit"
-                  },
-                  {
-                    "id": "duration-150sec-hit",
-                    "label": "Duration :150sec, Hit"
+                    "id": "hit",
+                    "label": ", Hit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration-30sec-hit": "+ 8",
+                      "duration": "30 seconds",
+                      "hit": "+ 8",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "duration-60sec-hit": "+11",
+                      "duration": "60 seconds",
+                      "hit": "+11",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "duration-90sec-hit": "+14",
+                      "duration": "90 seconds",
+                      "hit": "+14",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "duration-120sec-hit": "+17",
+                      "duration": "120 seconds",
+                      "hit": "+17",
                       "sp-cost": "29"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "duration-150sec-hit": "+20",
+                      "duration": "150 seconds",
+                      "hit": "+20",
                       "sp-cost": "32"
                     }
                   }
@@ -11936,10 +13090,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11955,6 +13108,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Smith_Spear",
           "description": "Enables to forge various Spear class weapons by consuming a forging hammer and all required items(steel, gold, oridecon hammer).\nRequired to possess of materials and items required for production.\nSkill level affects success rate.\nDEX and LUK additionally affect success rate.",
           "levelDetails": [
             {
@@ -11989,8 +13144,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Smith Spear ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Smith_Spear"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/104.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/104",
           "tree": {
@@ -12058,10 +13220,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12077,6 +13238,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Smith_Sword",
           "description": "Enables to forge various One-handed swords by consuming a forging hammer and all required items(steel, gold, oridecon hammer).\nRequired to possess of materials and items required for production.\nSkill level affects success rate.\nDEX and LUK additionally affect success rate.",
           "levelDetails": [
             {
@@ -12111,8 +13274,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Smith Sword ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Smith_Sword"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/99.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/99",
           "tree": {
@@ -12180,10 +13350,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12199,6 +13368,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Smith_Brass_Knuckle",
           "description": "Enables to forge various Knuckle class weapons by consuming a forging hammer and all required items(steel, gold, oridecon hammer).\nRequired to possess of materials and items required for production.\nSkill level affects success rate.\nDEX and LUK additionally affect success rate.",
           "levelDetails": [
             {
@@ -12233,8 +13404,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Smith Brass Knuckle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Smith_Brass_Knuckle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/103.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/103",
           "tree": {
@@ -12302,10 +13480,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12321,6 +13498,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Finding_Ore",
           "description": "Gives a very low chance of monsters dropping an ore item when defeated by the player.",
           "levelDetails": [],
           "levelExtras": [
@@ -12334,8 +13513,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Finding Ore ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Finding_Ore"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/106.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/106",
           "tree": {
@@ -12390,10 +13576,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12409,6 +13594,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Oridecon_Research",
           "description": "Enhances the success rate of forging weapons with Oridecon.",
           "levelDetails": [],
           "levelExtras": [
@@ -12438,8 +13625,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Oridecon Research ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Oridecon_Research"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/97.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/97",
           "tree": {
@@ -12512,10 +13706,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12531,6 +13724,8 @@ export const meisterData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Repair_Weapon",
           "description": "Consumes SPS and repairs the damaged equipment of a single target, allowing it to be usable again.\nThe materials required for repair vary depending on the type of equipment.",
           "levelDetails": [],
           "levelExtras": [
@@ -12544,8 +13739,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "fixedCastTime": "2.5 seconds",
+          "variableCastTime": "2.5 seconds",
+          "castRange": "2 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Repair Weapon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Repair_Weapon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/108.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/108",
           "tree": {
@@ -12573,6 +13779,22 @@ export const meisterData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "2.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "2 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -12598,10 +13820,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12617,6 +13838,8 @@ export const meisterData = {
           "target": "the user and all party members",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Weapon_Perfection",
           "description": "Removes the size penalty associated with the equipped weapon temporarily.",
           "levelDetails": [
             {
@@ -12667,8 +13890,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 − (Skill Level × 2)",
+          "duration": "(Skill Level × 10) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Weapon Perfection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Weapon_Perfection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/112.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/112",
           "tree": {
@@ -12702,6 +13934,10 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 − (Skill Level × 2)"
+              },
+              {
                 "label": "Target",
                 "value": "the user and all party members"
               }
@@ -12715,6 +13951,10 @@ export const meisterData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -12723,35 +13963,40 @@ export const meisterData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration : 10sec, SP Consumption:18",
+                      "duration": "10 seconds",
+                      "effect": ", SP Consumption:18",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration : 20sec, SP Consumption:16",
+                      "duration": "20 seconds",
+                      "effect": ", SP Consumption:16",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration : 30sec, SP Consumption:14",
+                      "duration": "30 seconds",
+                      "effect": ", SP Consumption:14",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration : 40sec, SP Consumption:12",
+                      "duration": "40 seconds",
+                      "effect": ", SP Consumption:12",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration : 50sec, SP Consumption:10",
+                      "duration": "50 seconds",
+                      "effect": ", SP Consumption:10",
                       "sp-cost": "10"
                     }
                   }
@@ -12760,10 +14005,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12779,6 +14023,8 @@ export const meisterData = {
           "target": "the user and all party members",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Boosts attack of the user and party members temporarily.\nthe increase in itself and the party members is different.",
           "levelDetails": [
             {
@@ -12829,8 +14075,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Power Thrust(Over Thrust) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Power_Thrust(Over_Thrust)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/113.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/113",
           "tree": {
@@ -12871,59 +14124,52 @@ export const meisterData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "asset-growth-5-party-member-increase",
-                    "label": "Asset Growth + 5%, Party Member Increase:"
+                    "id": "asset-growth",
+                    "label": "Asset Growth"
                   },
                   {
-                    "id": "asset-growth-10-party-member-increase",
-                    "label": "Asset Growth +10%, Party Member Increase:"
-                  },
-                  {
-                    "id": "asset-growth-15-party-member-increase",
-                    "label": "Asset Growth +15%, Party Member Increase:"
-                  },
-                  {
-                    "id": "asset-growth-20-party-member-increase",
-                    "label": "Asset Growth +20%, Party Member Increase:"
-                  },
-                  {
-                    "id": "asset-growth-25-party-member-increase",
-                    "label": "Asset Growth +25%, Party Member Increase:"
+                    "id": "party-member-increase",
+                    "label": "Party Member Increase:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "asset-growth-5-party-member-increase": "+ 5%",
+                      "asset-growth": "+ 5%",
+                      "party-member-increase": "+ 5%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "asset-growth-10-party-member-increase": "+ 5%",
+                      "asset-growth": "+10%",
+                      "party-member-increase": "+ 5%",
                       "sp-cost": "16"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "asset-growth-15-party-member-increase": "+10%",
+                      "asset-growth": "+15%",
+                      "party-member-increase": "+10%",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "asset-growth-20-party-member-increase": "+10%",
+                      "asset-growth": "+20%",
+                      "party-member-increase": "+10%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "asset-growth-25-party-member-increase": "+15%",
+                      "asset-growth": "+25%",
+                      "party-member-increase": "+15%",
                       "sp-cost": "10"
                     }
                   }
@@ -12932,10 +14178,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12951,6 +14196,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Smith_Two-handed_Sword",
           "description": "Enables to forge various two-handed swords class weapons by consuming a forging hammer and all required items(steel, gold, oridecon hammer).\nRequired to possess of materials and items required for production.\nSkill level affects success rate.\nDEX and LUK additionally affect success rate.",
           "levelDetails": [
             {
@@ -12985,8 +14232,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Smith Two-handed Sword ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Smith_Two-handed_Sword"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/100.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/100",
           "tree": {
@@ -13054,10 +14308,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13073,6 +14326,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Smith_Mace",
           "description": "Enables to forge various Mace class weapons by consuming a forging hammer and all required items(steel, gold, oridecon hammer).\nRequired to possess of materials and items required for production.\nSkill level affects success rate.\nDEX and LUK additionally affect success rate.",
           "levelDetails": [
             {
@@ -13107,8 +14362,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Smith Mace ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Smith_Mace"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/102.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/102",
           "tree": {
@@ -13176,10 +14438,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13195,6 +14456,8 @@ export const meisterData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cart_Boost",
           "description": "Increase Movement Speed when\na Pushcart is equipped. Effects which decrease\nMovement Speed cannot interfere with this skill.",
           "levelDetails": [],
           "levelExtras": [
@@ -13208,8 +14471,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castDelay": "ASPD Based",
+          "duration": "60 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Cart Boost ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cart_Boost"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/387.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/387",
           "tree": {
@@ -13255,8 +14528,20 @@ export const meisterData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD Based"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -13280,10 +14565,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13299,6 +14583,8 @@ export const meisterData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shattering_Strike",
           "description": "This skill has the chance of\ndestroying an equipped weapon or armor when\nused in PvP zones on other players, or to\ndecrease Attack Power or Defense when used on\nmonsters. This skill's level affects its\nduration and rate of success.",
           "levelDetails": [
             {
@@ -13389,8 +14675,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50~90",
+          "duration": "10 + (Skill Level × 5) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Shattering Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shattering_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/384.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/384",
           "tree": {
@@ -13436,6 +14731,10 @@ export const meisterData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "50~90"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
               }
@@ -13449,78 +14748,78 @@ export const meisterData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration 15 sec",
+                      "duration": "15 seconds",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration 20 sec",
+                      "duration": "20 seconds",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration 25 sec",
+                      "duration": "25 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration 30 sec",
+                      "duration": "30 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration 35 sec",
+                      "duration": "35 seconds",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Duration 40 sec",
+                      "duration": "40 seconds",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Duration 45 sec",
+                      "duration": "45 seconds",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Duration 50 sec",
+                      "duration": "50 seconds",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Duration 55 sec",
+                      "duration": "55 seconds",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Duration 60 sec",
+                      "duration": "60 seconds",
                       "sp-cost": "90"
                     }
                   }
@@ -13529,10 +14828,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13548,6 +14846,8 @@ export const meisterData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Upgrade_Weapon",
           "description": "Refine weapons to increase their\ngrade. Unlike weapon smithing, which is affected\nby DEX or LUK, this skill's success rate is\naffected by the caster's Job Level. Master\nSmiths have about the same rate of success as\nItem Upgrade NPCs at Job Level 50, have a 5%\ngreater chance of success than Item Upgrade\nNPCs at Job Level 60, and have a 10% greater\nchance of success at Job Level 70. If upgrade\nattempt fails, the weapon will be destroyed.\nLvl 1 Weapon Upgrade requires 1 Phracon. Lvl 2\nWeapon Upgrade requires 1 Emveretarcon. Lvl 3-4\nWeapon Upgrade requires 1 Oridecon.\nMaximum Possible Upgrade Limit By Level",
           "levelDetails": [
             {
@@ -13638,8 +14938,16 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "translations": {
+            "pt-BR": {
+              "name": " Upgrade Weapon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Upgrade_Weapon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/477.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/477",
           "tree": {
@@ -13665,6 +14973,10 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30"
               },
               {
                 "label": "Target",
@@ -13760,10 +15072,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13779,6 +15090,8 @@ export const meisterData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Maximize_Power",
           "description": "Alters the damage variance of the equipped weapon to inflict the Maximum of its damage by consuming SP10.\nMaintaining this skill active will drain SP. need to use this skill again in order to release this status.",
           "levelDetails": [
             {
@@ -13829,8 +15142,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "ASPD",
+          "duration": "Until SP reaches 0 or recast",
+          "translations": {
+            "pt-BR": {
+              "name": " Maximize Power ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Maximize_Power"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/114.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/114",
           "tree": {
@@ -13864,8 +15187,20 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "Until SP reaches 0 or recast"
               }
             ],
             "levelTables": [
@@ -13922,10 +15257,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13941,6 +15275,8 @@ export const meisterData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Maximum_Power-Thrust",
           "description": "Increase caster's weapon damage by\nspending a certain amount of zeny. Cannot be\nactivated to anyone beside the caster.",
           "levelDetails": [
             {
@@ -13991,8 +15327,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "duration": "3 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Maximum Power-Thrust ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Maximum_Power-Thrust"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/486.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/486",
           "tree": {
@@ -14020,8 +15365,16 @@ export const meisterData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "3 minutes"
               }
             ],
             "levelTables": [
@@ -14078,10 +15431,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14097,6 +15449,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Smith_Axe",
           "description": "Enables to forge various Axe class weapons by consuming a forging hammer and all required items(steel, gold, oridecon hammer).\nRequired to possess of materials and items required for production.\nSkill level affects success rate.\nDEX and LUK additionally affect success rate.",
           "levelDetails": [
             {
@@ -14131,8 +15485,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Smith Axe ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Smith_Axe"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/101.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/101",
           "tree": {
@@ -14200,10 +15561,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14219,6 +15579,8 @@ export const meisterData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/High_Speed_Cart_Ram",
           "description": "This skill is only enabled during\nCart Boost status. Spend a certain amount of\nzeny to smash a Pushcart into an enemy with a\nchance of inflicting the Stun status. The amount\nof this skill's damage is affected by the\nskill's level and the weight of items carried\nin the Pushcart.",
           "levelDetails": [
             {
@@ -14309,8 +15671,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " High Speed Cart Ram ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/High_Speed_Cart_Ram"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/485.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/485",
           "tree": {
@@ -14348,6 +15720,18 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -14443,10 +15827,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14459,9 +15842,11 @@ export const meisterData = {
           "prerequisiteText": "Adrenaline Rush 5,",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Advanced_Adrenaline_Rush",
           "description": "Increase the Attack Speed of every\nweapon class except for Bows. Cannot be used in\nconjunction with skills that have similar\neffects such as Adrenaline Rush, One Hand\nQuicken, Two Hand Quicken, Spear Quicken,\nImpressive Riff, and Solar, Lunar and Stellar\nShadow or Protection. Consumes 64 SP and has\na duration of 150 seconds.",
           "levelDetails": [],
           "levelExtras": [
@@ -14475,8 +15860,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "64",
+          "castDelay": "None",
+          "cooldown": "None",
+          "duration": "150 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Advanced Adrenaline Rush ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Advanced_Adrenaline_Rush"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/459.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/459",
           "tree": {
@@ -14502,6 +15898,26 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "64"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "None"
+              },
+              {
+                "label": "Cooldown",
+                "value": "None"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "150 seconds"
               }
             ],
             "levelTables": [
@@ -14525,10 +15941,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14544,6 +15959,8 @@ export const meisterData = {
           "target": "2 cells around the Caster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Greed",
           "description": "Automatically pick up every item\nwithin 2 cells of the caster. This skill cannot\nbe used within towns, PvP maps, or in WoE.",
           "levelDetails": [],
           "levelExtras": [
@@ -14557,8 +15974,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Greed ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Greed"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1013.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1013",
           "tree": {
@@ -14579,8 +16005,16 @@ export const meisterData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Target",
                 "value": "2 cells around the Caster"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -14604,10 +16038,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14623,6 +16056,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dubious_Salesmanship",
           "description": "Reduces the Zeny cost for Mammonite and Cart Termination by 20%.",
           "levelDetails": [],
           "levelExtras": [
@@ -14636,8 +16071,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Dubious Salesmanship ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dubious_Salesmanship"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1012.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1012",
           "tree": {
@@ -14679,10 +16121,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14709,6 +16150,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -14787,8 +16230,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -14890,10 +16340,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14909,6 +16358,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Enhances Weight Limit.",
           "levelDetails": [
             {
@@ -14999,8 +16450,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Enlarge Weight limit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enlarge_Weight_limit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/36.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/36",
           "tree": {
@@ -15110,10 +16568,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15129,6 +16586,8 @@ export const meisterData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mammonite",
           "description": "Consumes SP5 and strike a single target with a strong blow, inflicting high physical damage.\nEach use consumes some Zeny.",
           "levelDetails": [
             {
@@ -15219,8 +16678,18 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Mammonite ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mammonite"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/42.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/42",
           "tree": {
@@ -15239,6 +16708,18 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -15320,10 +16801,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15339,6 +16819,8 @@ export const meisterData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Item_Appraisal",
           "description": "Identifies unknown items using SP10.",
           "levelDetails": [],
           "levelExtras": [
@@ -15352,8 +16834,16 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Item Appraisal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Item_Appraisal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/40.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/40",
           "tree": {
@@ -15372,6 +16862,10 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
               },
               {
                 "label": "Target",
@@ -15399,10 +16893,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15418,6 +16911,8 @@ export const meisterData = {
           "target": "Caster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Crazy_Uproar",
           "description": "Scream with battle vigor to add\n+4 STR for 5 minutes.",
           "levelDetails": [],
           "levelExtras": [
@@ -15431,8 +16926,20 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8",
+          "fixedCastTime": "0.5 seconds",
+          "variableCastTime": "1 second",
+          "cooldown": "30 seconds",
+          "duration": "5 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Crazy Uproar ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Crazy_Uproar"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/155.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/155",
           "tree": {
@@ -15453,8 +16960,28 @@ export const meisterData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "8"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "30 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Caster"
+              },
+              {
+                "label": "Duration",
+                "value": "5 minutes"
               }
             ],
             "levelTables": [
@@ -15478,10 +17005,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15497,6 +17023,8 @@ export const meisterData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -15510,8 +17038,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -15530,6 +17067,14 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -15557,10 +17102,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15576,6 +17120,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Discount",
           "description": "Allows to purchase items from NPC shops at lower prices.",
           "levelDetails": [
             {
@@ -15666,8 +17212,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Discount ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Discount"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/37.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/37",
           "tree": {
@@ -15784,10 +17337,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15803,6 +17355,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Able to use pushcart that carries a lot of items.\nEnables to rent a Pushcart from most Kafra employees, using [Alt-W]key.\ncan't use the items in pushcart directly.",
           "levelDetails": [
             {
@@ -15893,8 +17447,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Push Cart(Pushcart) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Push_Cart(Pushcart)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/39.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/39",
           "tree": {
@@ -16011,10 +17572,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16027,9 +17587,11 @@ export const meisterData = {
           "prerequisiteText": "Finish Quest",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Change_Cart",
           "description": "Change Pushcart appearance.\nThere are five different Pushcart styles that\nare chosen according to the character's\nBase Level.",
           "levelDetails": [],
           "levelExtras": [
@@ -16043,8 +17605,16 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "translations": {
+            "pt-BR": {
+              "name": " Change Cart ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Change_Cart"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/154.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/154",
           "tree": {
@@ -16063,6 +17633,14 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -16086,10 +17664,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16102,9 +17679,11 @@ export const meisterData = {
           "prerequisiteText": "Finish Quest",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cart_Decoration",
           "description": "Change Pushcart appearance.",
           "levelDetails": [],
           "levelExtras": [
@@ -16127,8 +17706,16 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "translations": {
+            "pt-BR": {
+              "name": " Cart Decoration ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cart_Decoration"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2544.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2544",
           "tree": {
@@ -16147,6 +17734,14 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -16175,10 +17770,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16191,9 +17785,11 @@ export const meisterData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -16207,8 +17803,17 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -16227,6 +17832,18 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -16250,10 +17867,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16269,6 +17885,8 @@ export const meisterData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Overcharge",
           "description": "Allows to sell items to NPC shops at higher prices..",
           "levelDetails": [
             {
@@ -16359,8 +17977,15 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Overcharge ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Overcharge"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/38.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/38",
           "tree": {
@@ -16477,10 +18102,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16496,6 +18120,8 @@ export const meisterData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Vending",
           "description": "Requires the user to have a pushcart equipped. Consumes SP 30 and opens a custom shop from which items can be sold to other players.\nOnly items stored in the Pushcart can be sold, The number of items available for sale increases with each level.",
           "levelDetails": [
             {
@@ -16586,8 +18212,16 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "translations": {
+            "pt-BR": {
+              "name": " Vending ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vending"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/41.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/41",
           "tree": {
@@ -16613,6 +18247,10 @@ export const meisterData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30"
               },
               {
                 "label": "Target",
@@ -16708,10 +18346,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16727,6 +18364,8 @@ export const meisterData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cart_Revolution",
           "description": "A splashed damage attack in which\na Pushcart is smashed into a target.\nInflicts 150% of the damage of a normal attack\nin addition to extra damage from the weight of\nitems in Pushcart.",
           "levelDetails": [],
           "levelExtras": [
@@ -16740,8 +18379,19 @@ export const meisterData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Cart Revolution ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cart_Revolution"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/153.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/153",
           "tree": {
@@ -16762,8 +18412,24 @@ export const meisterData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -16787,10 +18453,9 @@ export const meisterData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16810,6 +18475,8 @@ export const meisterData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Two-handed_Axe_Defense",
       "description": "Two-handed Axes decrease Physical damage from enemies of all sizes.",
       "levelDetails": [],
       "levelExtras": [
@@ -16859,8 +18526,15 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Two-handed Axe Defense ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Two-handed_Axe_Defense"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5300.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5300",
       "tree": {
@@ -16956,10 +18630,9 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16975,6 +18648,8 @@ export const meisterData = {
       "target": "You and party members",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Manufacture_Machine",
       "description": "Create various devices for your skills.\nRequires a Machine Creation Guide.",
       "levelDetails": [],
       "fixedCastTime": "0 seconds",
@@ -17008,8 +18683,16 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "20 + (Skill Level x 10)",
+      "translations": {
+        "pt-BR": {
+          "name": " Manufacture Machine ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Manufacture_Machine"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5297.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5297",
       "tree": {
@@ -17028,6 +18711,10 @@ export const meisterData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "20 + (Skill Level x 10)"
           },
           {
             "label": "Fixed Cast Time",
@@ -17095,10 +18782,9 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17114,6 +18800,8 @@ export const meisterData = {
       "target": "Target in range",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Axe_Stomp",
       "description": "Axe-only skill.\nStrike the ground with an Axe and inflict melee physical damage to targets within the range around you.\nThe caster is granted Axe Stomp for a short period of time, increasing the damage of the Axe Tornado skill and dealing 3 attacks when used with a two-handed axe.\nDamage is additionally increased depending on the user's base level and POW.",
       "levelDetails": [
         {
@@ -17168,8 +18856,18 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "45 ~ 85",
+      "duration": "10 ~ 30 seconds",
+      "areaOfEffect": "3 x 3 ~ 7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Axe Stomp ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Axe_Stomp"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5295.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5295",
       "tree": {
@@ -17197,6 +18895,10 @@ export const meisterData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "45 ~ 85"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -17217,6 +18919,10 @@ export const meisterData = {
             "value": "Target in range"
           },
           {
+            "label": "Area of Effect",
+            "value": "3 x 3 ~ 7 x 7"
+          },
+          {
             "label": "AP Generated",
             "value": "3"
           }
@@ -17228,36 +18934,45 @@ export const meisterData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
+              },
+              {
+                "id": "duration",
+                "label": "Duration"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
+                  "duration": "10 seconds",
                   "sp-cost": "45"
                 }
               },
               {
                 "level": 2,
                 "values": {
+                  "duration": "15 seconds",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
+                  "duration": "20 seconds",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 4,
                 "values": {
+                  "duration": "25 seconds",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 5,
                 "values": {
+                  "duration": "30 seconds",
                   "sp-cost": "85"
                 }
               }
@@ -17266,7 +18981,6 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Axe Stomp",
@@ -17419,7 +19133,7 @@ export const meisterData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17435,6 +19149,8 @@ export const meisterData = {
       "target": "You and party members",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Activate_Attack_Device",
       "description": "Consumes 1 Device Capsule. Add a device to an ally that temporarily attacks enemies around them.\nThis device inflicts Melee Physical damage every second.",
       "levelDetails": [],
       "fixedCastTime": "0.5 seconds",
@@ -17468,8 +19184,18 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "40 + (Skill Level × 3)",
+      "duration": "40 + (Skill Level × 40) seconds",
+      "areaOfEffect": "3×3~7×7",
+      "translations": {
+        "pt-BR": {
+          "name": " Activate Attack Device ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Activate_Attack_Device"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5298.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5298",
       "tree": {
@@ -17503,6 +19229,10 @@ export const meisterData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "40 + (Skill Level × 3)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -17521,6 +19251,14 @@ export const meisterData = {
           {
             "label": "Target",
             "value": "You and party members"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "3×3~7×7"
+          },
+          {
+            "label": "Duration",
+            "value": "40 + (Skill Level × 40) seconds"
           }
         ],
         "levelTables": [
@@ -17568,10 +19306,9 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17587,6 +19324,8 @@ export const meisterData = {
       "target": "You and party members",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Activate_Defense_Device",
       "description": "Consumes 1 Device Capsule. Add a device to an ally that temporarily increases their DEF and Physical Resistance.",
       "levelDetails": [],
       "fixedCastTime": "0 seconds",
@@ -17620,8 +19359,18 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "40 + (Skill Level × 3)",
+      "duration": "40 + (Skill Level × 40) seconds",
+      "areaOfEffect": "3×3~7×7",
+      "translations": {
+        "pt-BR": {
+          "name": " Activate Defense Device ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Activate_Defense_Device"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5299.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5299",
       "tree": {
@@ -17649,6 +19398,10 @@ export const meisterData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "40 + (Skill Level × 3)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -17667,6 +19420,14 @@ export const meisterData = {
           {
             "label": "Target",
             "value": "You and party members"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "3×3~7×7"
+          },
+          {
+            "label": "Duration",
+            "value": "40 + (Skill Level × 40) seconds"
           }
         ],
         "levelTables": [
@@ -17714,10 +19475,9 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17733,6 +19493,8 @@ export const meisterData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/ABR_Mastery",
       "description": "Improve your summoned ABR (Automatic Battle Robot).",
       "levelDetails": [
         {
@@ -17823,8 +19585,15 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " ABR Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/ABR_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5301.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5301",
       "tree": {
@@ -17941,7 +19710,6 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "ABR Mastery",
@@ -17972,7 +19740,7 @@ export const meisterData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17988,6 +19756,8 @@ export const meisterData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Spark_Blaster",
       "description": "Available while riding in a madoogear.\nCauses a self-destruct, dealing 2 ranged physical damage to the target and an area around it.\nIgnores the target's physical defense, Damage is additionally increased depending on the user's base level and POW.",
       "levelDetails": [
         {
@@ -18082,8 +19852,19 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "44 + (Skill Level × 4)",
+      "duration": "60 + (Skill Level × 60) seconds",
+      "castRange": "9 cells",
+      "areaOfEffect": "7 x 7~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Spark Blaster ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Spark_Blaster"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6002.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6002",
       "tree": {
@@ -18111,6 +19892,10 @@ export const meisterData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "44 + (Skill Level × 4)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -18127,8 +19912,16 @@ export const meisterData = {
             "value": "0.5 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "9 cells"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Duration",
+            "value": "60 + (Skill Level × 60) seconds"
           },
           {
             "label": "AP Generated",
@@ -18224,7 +20017,6 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Spark Blaster",
@@ -18274,7 +20066,7 @@ export const meisterData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18290,6 +20082,8 @@ export const meisterData = {
       "target": "Instant Cast",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Mighty_Smash",
       "description": "Axe-only skill.\nSwing your axe wildly, dealing 5 melee physical damage to targets in an area around you.\nIf Axe Stomp is active, inflicts stronger melee physical damage 7 times.\nDamage is additionally increased depending on the user's base level and POW.",
       "levelDetails": [
         {
@@ -18380,8 +20174,20 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "65 + (Skill Level × 3)",
+      "castDelay": "0.7 seconds",
+      "cooldown": "0.5 seconds",
+      "castRange": "Melee",
+      "areaOfEffect": "3 x 3~7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Mighty Smash ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Mighty_Smash"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6004.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6004",
       "tree": {
@@ -18407,6 +20213,22 @@ export const meisterData = {
           {
             "label": "Levels",
             "value": "10"
+          },
+          {
+            "label": "SP Cost",
+            "value": "65 + (Skill Level × 3)"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.7 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
           },
           {
             "label": "Target",
@@ -18502,7 +20324,6 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Mighty Smash",
@@ -18578,7 +20399,7 @@ export const meisterData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18593,7 +20414,9 @@ export const meisterData = {
       "type": "Melee Physical",
       "target": "1 Target",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Rush_Quake",
       "description": "Approaches the target within 9 cells, dealing Melee Physical damage to nearby enemies including the target and inflicting Quake effect on them for 30 seconds\nDeals more damage to Formless and Insect monsters.\nDamage increases additionally based on the Base Lv and POW.\nIn addition, grants Rush effect for (30 X Skill Level) seconds.\nRush Effect: Increases Melee and Ranged Physical Damage by (5 X Skill Level)%.\nQuake Effect: 50% increased Melee and Ranged Physical Damage taken by the target",
       "levelDetails": [
         {
@@ -18688,8 +20511,18 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "150",
+      "castRange": "9 cells",
+      "areaOfEffect": "3 x 3 ~ 7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Rush Quake ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Rush_Quake"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5296.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5296",
       "tree": {
@@ -18717,6 +20550,10 @@ export const meisterData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "150"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -18733,8 +20570,20 @@ export const meisterData = {
             "value": "30 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "9 cells"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "3 x 3 ~ 7 x 7"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "150"
           }
         ],
         "levelTables": [
@@ -18826,7 +20675,6 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Rush Quake",
@@ -18882,7 +20730,7 @@ export const meisterData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18896,8 +20744,10 @@ export const meisterData = {
       "group": "Active",
       "type": "Summon",
       "target": "Self",
-      "recoversAp": "",
+      "recoversAp": "20",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/ABR%3A_Battle_Warrior",
       "description": "Consumes 1 ABR Capsule. Summon the combat support ABR, Battle Warrior.\nBattle Warrior's stats increase, depending on your stats and ABR Mastery level.\nWhile Battle Warrior is summoned, Power Swing damage increases. (It inflicts damage once, but displays the damage in 2 parts.)",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -18927,8 +20777,17 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "20 + (Skill Level x 10)",
+      "duration": "60 + (Skill Level × 60) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " ABR: Battle Warrior ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/ABR%3A_Battle_Warrior"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5302.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5302",
       "tree": {
@@ -18956,6 +20815,10 @@ export const meisterData = {
             "value": "4"
           },
           {
+            "label": "SP Cost",
+            "value": "20 + (Skill Level x 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -18974,6 +20837,14 @@ export const meisterData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "60 + (Skill Level × 60) seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "20"
           }
         ],
         "levelTables": [
@@ -19015,10 +20886,9 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19032,8 +20902,10 @@ export const meisterData = {
       "group": "Active",
       "type": "Summon",
       "target": "Self",
-      "recoversAp": "",
+      "recoversAp": "20",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/ABR%3A_Dual_Cannon",
       "description": "Consumes 1 ABR Capsule. Summon the support ABR, Dual Cannon.\nDual Cannon's stats increase, depending on your stats and ABR Mastery level.\nWhile Dual Cannon is summoned, Knuckle Boost, Vulcan Arm, and Arm Cannon attack twice.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -19063,8 +20935,17 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "20 + (Skill Level x 10)",
+      "duration": "60 + (Skill Level × 60) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " ABR: Dual Cannon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/ABR%3A_Dual_Cannon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5303.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5303",
       "tree": {
@@ -19098,6 +20979,10 @@ export const meisterData = {
             "value": "4"
           },
           {
+            "label": "SP Cost",
+            "value": "20 + (Skill Level x 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -19116,6 +21001,14 @@ export const meisterData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "60 + (Skill Level × 60) seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "20"
           }
         ],
         "levelTables": [
@@ -19157,10 +21050,9 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19176,6 +21068,8 @@ export const meisterData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Triple_Laser",
       "description": "Available while riding in a madoogear.\nFires three beam attacks at the target, inflicting long-distance physical damage three times.\nDamage is additionally increased according to the user's base level and POW, and critical damage is applied according to the user's critical probability.\nIn the case of critical damage, half of the total critical damage increase options are applied.",
       "levelDetails": [
         {
@@ -19230,8 +21124,17 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "35 + (Skill Level × 5)",
+      "castRange": "9 cells",
+      "translations": {
+        "pt-BR": {
+          "name": " Triple Laser ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Triple_Laser"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6003.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6003",
       "tree": {
@@ -19259,6 +21162,10 @@ export const meisterData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "35 + (Skill Level × 5)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -19273,6 +21180,10 @@ export const meisterData = {
           {
             "label": "Cooldown",
             "value": "0.35 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "9 cells"
           },
           {
             "label": "Target",
@@ -19324,7 +21235,6 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Triple Laser",
@@ -19383,7 +21293,7 @@ export const meisterData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19399,6 +21309,8 @@ export const meisterData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Two-handed axe exclusive skill.\nRush towards the target and strike it down with the axe, deals melee physical damage to the target and surrounding enemies around the target.\nDeals additional damage depends on user's base level and POW.\nHowever, this skill cannot be used when equipping Madogear.",
       "levelDetails": [
         {
@@ -19423,8 +21335,15 @@ export const meisterData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Rush Strike ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Rush_Strike"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6506.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6506",
       "tree": {
@@ -19505,10 +21424,9 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19524,6 +21442,8 @@ export const meisterData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Two-handed axe exclusive skill.\nStrikes the target with all your might with an axe, deals melee physical damage to the target and surrounding enemies around the target for 5 hits.\nIf Axe Stomp buff is active, the skill will deal more damage.\nDeals additional damage depends on user's base level and POW.\nHowever, this skill cannot be used when equipping Madogear.",
       "levelDetails": [
         {
@@ -19548,8 +21468,15 @@ export const meisterData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Powerful Swing ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Powerful_Swing"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6507.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6507",
       "tree": {
@@ -19630,10 +21557,9 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19647,8 +21573,10 @@ export const meisterData = {
       "group": "Active",
       "type": "Summon",
       "target": "Self",
-      "recoversAp": "",
+      "recoversAp": "20",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/ABR%3A_Mother_Net",
       "description": "Consumes 1 ABR Capsule. Summon the support ABR, Mother Net.\nMother Net's stats increase, depending on your stats and ABR Mastery level.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -19678,8 +21606,17 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "20 + (Skill Level x 10)",
+      "duration": "60 + (Skill Level × 60) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " ABR: Mother Net ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/ABR%3A_Mother_Net"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5304.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5304",
       "tree": {
@@ -19719,6 +21656,10 @@ export const meisterData = {
             "value": "4"
           },
           {
+            "label": "SP Cost",
+            "value": "20 + (Skill Level x 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -19737,6 +21678,14 @@ export const meisterData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "60 + (Skill Level × 60) seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "20"
           }
         ],
         "levelTables": [
@@ -19778,10 +21727,9 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19797,6 +21745,8 @@ export const meisterData = {
       "target": "Single target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used when equipping Madogear.\nFires the energy sphere to the target, deals long ranged physical damage to the target and surrounding enemies around the target for 7 hits.\nSkill damage ignores the target's physical defense, deals additional damage depends on user's base level and POW.",
       "levelDetails": [
         {
@@ -19825,8 +21775,15 @@ export const meisterData = {
       "castDelay": "0.5 seconds",
       "cooldown": "1.25 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Energy Cannonade ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Energy_Cannonade"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6508.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6508",
       "tree": {
@@ -19923,10 +21880,9 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19941,7 +21897,9 @@ export const meisterData = {
       "type": "Summon",
       "target": "Self",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "200",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/ABR%3A_Infinity",
       "description": "Consumes 5 ABR Capsules. Summon the combat support ABR, Infinity.\nInfinity's stats increase, depending on your stats and ABR Mastery level.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -19971,8 +21929,17 @@ export const meisterData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "20 + (Skill Level × 10)",
+      "duration": "60 + (Skill Level × 60) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " ABR: Infinity ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/ABR%3A_Infinity"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5305.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5305",
       "tree": {
@@ -20018,6 +21985,10 @@ export const meisterData = {
             "value": "4"
           },
           {
+            "label": "SP Cost",
+            "value": "20 + (Skill Level × 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -20036,6 +22007,14 @@ export const meisterData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "60 + (Skill Level × 60) seconds"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "200"
           }
         ],
         "levelTables": [
@@ -20077,10 +22056,9 @@ export const meisterData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

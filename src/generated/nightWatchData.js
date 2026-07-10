@@ -1,5 +1,5 @@
 export const nightWatchData = {
-  "generatedAt": "2026-07-10T00:56:27.092Z",
+  "generatedAt": "2026-07-10T15:02:20.478Z",
   "classId": 4306,
   "classSlug": "night-watch",
   "className": "Night Watch",
@@ -70,7 +70,8 @@ export const nightWatchData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4306",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -313,6 +314,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/P.F.I",
           "description": "When equipped with a firearm-type weapon, P.ATK increases.",
           "levelDetails": [
             {
@@ -403,8 +406,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " P.F.I ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/P.F.I"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5401.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5401",
           "tree": {
@@ -514,10 +524,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -533,6 +542,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Grenade_Mastery",
           "description": "Con is increased through understanding grenades and the damage of grenade-type skills is increased.",
           "levelDetails": [
             {
@@ -623,8 +634,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Grenade Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Grenade_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5402.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5402",
           "tree": {
@@ -650,12 +668,12 @@ export const nightWatchData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
+                    "id": "con",
+                    "label": "CON"
                   },
                   {
-                    "id": "con",
-                    "label": "Con"
+                    "id": "sp-cost",
+                    "label": "SP Cost"
                   }
                 ],
                 "rows": [
@@ -734,10 +752,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -753,6 +770,8 @@ export const nightWatchData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Intensive_Aim",
           "description": "When using skill, switches to focused aiming mode.\nMovement is impossible while focused aiming, and the aiming count accumulates by 1 every 0.5 seconds.\nThe aiming count accumulates up to 10, and if you leave the current cell due to an effect such as knockback or cancel the aiming state, the aiming count is reset.\nAtk/Hit/Cri increases in focused aiming mode.",
           "levelDetails": [
             {
@@ -771,8 +790,16 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Intensive Aim ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Intensive_Aim"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5403.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5403",
           "tree": {
@@ -798,6 +825,10 @@ export const nightWatchData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
               },
               {
                 "label": "Target",
@@ -844,10 +875,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -863,6 +893,8 @@ export const nightWatchData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hidden_Card",
           "description": "Take an elixir that maximizes the Night's Watch's shooting ability.\nWhen using the skill, long range physical damage and P.ATK are increased for 300 seconds.",
           "levelDetails": [
             {
@@ -953,8 +985,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "150",
+          "duration": "300 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Hidden Card ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hidden_Card"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5414.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5414",
           "tree": {
@@ -988,8 +1029,16 @@ export const nightWatchData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "150"
+              },
+              {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "300 seconds"
               },
               {
                 "label": "AP Consumed",
@@ -1005,12 +1054,12 @@ export const nightWatchData = {
                     "label": "P.Atk"
                   },
                   {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
-                  },
-                  {
                     "id": "long-range-physical-damage",
                     "label": "Long Range Physical Damage"
+                  },
+                  {
+                    "id": "sp-cost",
+                    "label": "SP Cost"
                   }
                 ],
                 "rows": [
@@ -1099,7 +1148,6 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hidden Card",
@@ -1114,7 +1162,7 @@ export const nightWatchData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1130,6 +1178,8 @@ export const nightWatchData = {
           "target": "1 Cell Ground Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "1 Throwing Grenade",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Grenade",
           "description": "Throws a grenade toward the ground, inflicting long range physical damage to all targets within the range.\nDamage is additionally increased depending on the Grenade Mastery skill level, caster's base level, and CON.\nConsumes 1 Throwing Grenade, and damage properties change depending on the Grenade fragment.",
           "levelDetails": [
             {
@@ -1180,8 +1230,19 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (6 × Skill Level)",
+          "fixedCastTime": "1 seconds",
+          "cooldown": "0.3 seconds",
+          "areaOfEffect": "3 x 3~5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Grenade ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Grenade"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5410.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5410",
           "tree": {
@@ -1209,8 +1270,24 @@ export const nightWatchData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (6 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.3 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "1 Cell Ground Target"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Throwing Grenade"
               },
               {
                 "label": "AP Generated",
@@ -1271,7 +1348,6 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Basic Grenade",
@@ -1329,7 +1405,7 @@ export const nightWatchData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1345,6 +1421,8 @@ export const nightWatchData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Grenade_Fragment",
           "description": "Applies elemental powder on the surface of throwing grenade, endows elemental property to it.\nWhen using skill level 7, the endowment is canceled.",
           "levelDetails": [
             {
@@ -1411,8 +1489,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "cooldown": "2 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Grenade Fragment ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Grenade_Fragment"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5404.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5404",
           "tree": {
@@ -1438,6 +1525,14 @@ export const nightWatchData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
+                "label": "Cooldown",
+                "value": "2 seconds"
               },
               {
                 "label": "Target",
@@ -1512,10 +1607,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1531,6 +1625,8 @@ export const nightWatchData = {
           "target": "Instant Cast",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Gatling gun and shotgun exclusive skill.\nFires around the user without mercy, inflicts long ranged physical damage to the surrounding enemies around the user.\nWhen using the skill with gatling gun, ignores physical defense of targets and deals damage for 7 hits, when using the skill with shotgun, deals damage for 4 hits.\nIf there is an aiming count, the skill consumes all aiming count and skill damage is increased according to number of aiming count consumed. Deals additional damage depends on user's base level and CON.\nConsumes 10 equipped bullets",
           "levelDetails": [
             {
@@ -1581,8 +1677,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Vigilante at Night ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vigilante_at_Night"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5405.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5405",
           "tree": {
@@ -1678,7 +1781,6 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "The Vigilante at Night",
@@ -1747,7 +1849,7 @@ export const nightWatchData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1763,6 +1865,8 @@ export const nightWatchData = {
           "target": "Single Target",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "1 Bullets",
+          "irowikiUrl": "https://irowiki.org/wiki/Only_One_Bullet",
           "description": "Rifle and pistol only skill.\nFires a single shot to the target, inflicts long ranged physical damage.\nWhen using the skill with pistol, Ignores the target's physical defense, when using the skill with rifle, applies critical damage, the critical chance is the user's Cri.\nIn the case of critical damage, half of the total critical damage increase options are applied.\nIf there is an aiming count, the skill consumes all aiming count and skill damage is increased according to number of aiming count consumed.\nDeals additional damage depends on user's base level and CON.\nConsumes 1 equipped bullet.",
           "levelDetails": [
             {
@@ -1813,8 +1917,19 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (2 × Skill Level)",
+          "fixedCastTime": "1 seconds",
+          "castDelay": "0.5 seconds",
+          "cooldown": "0.35 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Only One Bullet ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Only_One_Bullet"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5406.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5406",
           "tree": {
@@ -1848,8 +1963,28 @@ export const nightWatchData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (2 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.35 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Bullets"
               },
               {
                 "label": "AP Generated",
@@ -1901,7 +2036,6 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Only One Bullet",
@@ -1979,7 +2113,7 @@ export const nightWatchData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1995,6 +2129,8 @@ export const nightWatchData = {
           "target": "Single Target",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "6 Bullets",
+          "irowikiUrl": "https://irowiki.org/wiki/Spiral_Shooting",
           "description": "Grenade Launcher and Rifle exclusive skills.\nFires a bullet with added rotational force at one target, inflicting long range physical damage to the target and enemies arround the target.\nWhen cast with a Grenade launcher, it attacks twice. When cast with a Rifle, critical damage is applied according to the caster's critical probability.\nThe effectiveness of critical modifier is applied by half.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed. Damage is additionally increased depending on the caster's base level and CON.\nConsumes 6 equipped bullets.",
           "levelDetails": [
             {
@@ -2045,8 +2181,20 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "43 + (5 × Skill Level)",
+          "fixedCastTime": "1.5 seconds",
+          "castDelay": "1 seconds",
+          "cooldown": "0.5 seconds",
+          "areaOfEffect": "Rifle : 5 x 5~7 x 7 Grenade Launcher : 9 x 9~11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Spiral Shooting ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spiral_Shooting"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5407.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5407",
           "tree": {
@@ -2080,8 +2228,28 @@ export const nightWatchData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "43 + (5 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Ammunition",
+                "value": "6 Bullets"
               },
               {
                 "label": "AP Generated",
@@ -2142,7 +2310,6 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Spiral Shooting",
@@ -2211,7 +2378,7 @@ export const nightWatchData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2227,6 +2394,8 @@ export const nightWatchData = {
           "target": "Single Target",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "Pistol : 6 Bullets Gatling Gun : 10 Bullets",
+          "irowikiUrl": "https://irowiki.org/wiki/Magazine_for_One",
           "description": "Gatling gun and Revolver exclusive skills.\nFires multiple bullets at one target, inflicting long range physical damage to the target.\nWhen cast with a Gatling gun, it attacks 10 times and consumes 10 equipped bullets.\nWhen cast with a Revolver, it attacks 6 times, critical damage is applied according to the caster's critical probability, and 6 equipped bullets are consumed.\nThe effectiveness of critical modifier is applied by half.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed. Damage is additionally increased depending on the caster's base level and CON.",
           "levelDetails": [
             {
@@ -2277,8 +2446,19 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "27 + (3 × Skill Level)",
+          "fixedCastTime": "1 seconds",
+          "castDelay": "1 seconds",
+          "cooldown": "0.5 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Magazine for One ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Magazine_for_One"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5408.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5408",
           "tree": {
@@ -2312,8 +2492,28 @@ export const nightWatchData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "27 + (3 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Ammunition",
+                "value": "Pistol : 6 Bullets Gatling Gun : 10 Bullets"
               },
               {
                 "label": "AP Generated",
@@ -2365,7 +2565,6 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Magazine for One",
@@ -2459,7 +2658,7 @@ export const nightWatchData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2475,6 +2674,8 @@ export const nightWatchData = {
           "target": "1 Cell Ground Target",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "5 Bullets",
+          "irowikiUrl": "https://irowiki.org/wiki/Wild_Fire",
           "description": "Shotgun and Grenade Launcher exclusive skills.\nFires a bullet toward the ground, inflicting long range physical damage to all targets within the range.\nWhen cast with a Shotgun, it inflicts greater damage in a narrower range than the grenade launcher.\nWhen cast with a Grenade launcher, it inflicts damage over a wider range than a shotgun.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed.\nDamage is additionally increased depending on the caster's base level and CON. Consumes 5 equipped bullets.",
           "levelDetails": [
             {
@@ -2525,8 +2726,20 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "47 + (4 × Skill Level)",
+          "fixedCastTime": "1 seconds",
+          "castDelay": "1 seconds",
+          "cooldown": "0.5 seconds",
+          "areaOfEffect": "Shotgun : 5 x 5~7 x 7 Grenade Launcher : 9 x 9~11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Wild Fire ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wild_Fire"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5409.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5409",
           "tree": {
@@ -2560,8 +2773,32 @@ export const nightWatchData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "47 + (4 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "1 Cell Ground Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "Shotgun : 5 x 5~7 x 7 Grenade Launcher : 9 x 9~11 x 11"
+              },
+              {
+                "label": "Ammunition",
+                "value": "5 Bullets"
               },
               {
                 "label": "AP Generated",
@@ -2622,7 +2859,6 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Wild Fire",
@@ -2683,7 +2919,7 @@ export const nightWatchData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2699,6 +2935,8 @@ export const nightWatchData = {
           "target": "1 Cell Ground Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "3 Throwing Grenade",
+          "irowikiUrl": "https://irowiki.org/wiki/Hasty_Fire_in_the_Hole",
           "description": "Throws 3 grenades toward the ground in succession, inflicting long range physical damage to all targets within the range.\nThe thrown grenade explodes three times at intervals of 0.3 seconds, and the first explosion has an effect area of 5x5 cells, the second explosion has an effect area of 7x7 cells, and the third explosion has an effect area of 9x9 cells.\nDamage is additionally increased depending on the Grenade Mastery skill level, caster's base level, and CON.\nConsumes 3 Throwing Grenades, and damage properties change depending on the Grenade fragment.",
           "levelDetails": [
             {
@@ -2749,8 +2987,20 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "47 + (3 × Skill Level)",
+          "fixedCastTime": "1 seconds",
+          "castDelay": "1.5 seconds",
+          "cooldown": "1 seconds",
+          "areaOfEffect": "5 x 5~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Hasty Fire in the Hole ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hasty_Fire_in_the_Hole"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5411.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5411",
           "tree": {
@@ -2778,8 +3028,32 @@ export const nightWatchData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "47 + (3 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "1 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "1 Cell Ground Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5~9 x 9"
+              },
+              {
+                "label": "Ammunition",
+                "value": "3 Throwing Grenade"
               },
               {
                 "label": "AP Generated",
@@ -2831,7 +3105,6 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hasty Fire in the Hole",
@@ -2881,7 +3154,7 @@ export const nightWatchData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2897,6 +3170,8 @@ export const nightWatchData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Rifle and pistol exclusive skill.\nFires mercilessly around the target, inflicts long ranged physical damage to the target and surrounding enemies around the target for 7 hits.\nIf Hidden Card buff is active, the skill will deal more damage.\nDeals additional damage depends on user's base level and CON, has a chance to trigger critical, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.\nConsumes 5 equipped bullets.",
           "levelDetails": [
             {
@@ -2921,8 +3196,15 @@ export const nightWatchData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Wild Shot ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wild_Shot"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5500.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5500",
           "tree": {
@@ -2972,10 +3254,9 @@ export const nightWatchData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2991,6 +3272,8 @@ export const nightWatchData = {
           "target": "1 cell ground target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Shotgun, gatling gun and grenade launcher exclusive skill.\nBombs a designated area, inflicts long ranged physical damage to all targets within range for 3 hits.\nIf Hidden Card buff is active, the skill will deal more damage.\nSkill damage ignores the target's physical defense, deals additional damage depends on user's base level and CON.\nConsumes 5 equipped bullets.",
           "levelDetails": [
             {
@@ -3015,8 +3298,15 @@ export const nightWatchData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Midnight Fallen ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Midnight_Fallen"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5501.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5501",
           "tree": {
@@ -3066,10 +3356,9 @@ export const nightWatchData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3085,6 +3374,8 @@ export const nightWatchData = {
           "target": "Ground 1 cell",
           "recoversAp": "5",
           "consumesAp": "",
+          "ammunition": "15 Throwing Grenade",
+          "irowikiUrl": "https://irowiki.org/wiki/Grenades_Dropping",
           "description": "Throws a bunch of grenades into the sky, dropping grenades every 0.25 seconds at random locations around the ground for 4 seconds, dealing ranged physical DMG 3 times to targets within range.\nDMG is further increased based on the Grenade Mastery skill level, the caster's base level, and CON.\nConsumes 15 grenades for throwing.",
           "levelDetails": [
             {
@@ -3135,8 +3426,19 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "48 + (6 × Skill Level)",
+          "fixedCastTime": "1 seconds",
+          "cooldown": "4.5 seconds",
+          "areaOfEffect": "3 x 3~5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Grenades Dropping ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Grenades_Dropping"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5412.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5412",
           "tree": {
@@ -3164,12 +3466,28 @@ export const nightWatchData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "48 + (6 × Skill Level)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "4.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Ground 1 cell"
               },
               {
                 "label": "Area of Effect",
-                "value": "Lv 1: 11 x 11 cells / Lv 2: 11 x 11 cells / Lv 3: 11 x 11 cells / Lv 4: 9 x 9 cells / Lv 5: 9 x 9 cells"
+                "value": "3 x 3~5 x 5"
+              },
+              {
+                "label": "Ammunition",
+                "value": "15 Throwing Grenade"
               },
               {
                 "label": "AP Generated",
@@ -3197,35 +3515,35 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                      "effect": "E x plosion range: 3 x 3 cells",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                      "effect": "E x plosion range: 3 x 3 cells",
                       "sp-cost": "66"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                      "effect": "E x plosion range: 3 x 3 cells",
                       "sp-cost": "72"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
+                      "effect": "E x plosion range: 5 x 5 cells",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
+                      "effect": "E x plosion range: 5 x 5 cells",
                       "sp-cost": "84"
                     }
                   }
@@ -3234,10 +3552,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3253,6 +3570,8 @@ export const nightWatchData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Auto_Firing_Launcher",
           "description": "Activates the automatic grenade launcher.\nWhen performing a normal physical attack, Has a chance to auto-cast Basic Grenade, Hasty Fire in the Hole and Grenades Dropping, will be activated according to the acquired level.\nThe skill and activation probability are different depending on the skill level.",
           "levelDetails": [
             {
@@ -3303,8 +3622,18 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 + (Skill Level x 10)",
+          "fixedCastTime": "3 seconds",
+          "cooldown": "30 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Auto Firing Launcher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Auto_Firing_Launcher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5413.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5413",
           "tree": {
@@ -3332,6 +3661,18 @@ export const nightWatchData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "80 + (Skill Level x 10)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "30 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Self"
               }
@@ -3345,6 +3686,10 @@ export const nightWatchData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -3353,35 +3698,40 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Basic Grenade(6%) / Duration: 120 sec",
+                      "duration": "120 seconds",
+                      "effect": "Basic Grenade(6%)",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Basic Grenade(7%) / Duration: 150 sec",
+                      "duration": "150 seconds",
+                      "effect": "Basic Grenade(7%)",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Basic Grenade(8%), Hasty Fire in the Hole(3%) / Duration: 180 sec",
+                      "duration": "180 seconds",
+                      "effect": "Basic Grenade(8%), Hasty Fire in the Hole(3%)",
                       "sp-cost": "110"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Basic Grenade(9%), Hasty Fire in the Hole(5%) / Duration : 210 sec",
+                      "duration": "210 seconds",
+                      "effect": "Basic Grenade(9%), Hasty Fire in the Hole(5%)",
                       "sp-cost": "120"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Basic Grenade(10%), Hasty Fire in the Hole(7%), Grenade Dropping(3%) / Duration: 240 sec",
+                      "duration": "240 seconds",
+                      "effect": "Basic Grenade(10%), Hasty Fire in the Hole(7%), Grenade Dropping(3%)",
                       "sp-cost": "130"
                     }
                   }
@@ -3390,10 +3740,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3409,6 +3758,8 @@ export const nightWatchData = {
           "target": "Ground 1 cell",
           "recoversAp": "",
           "consumesAp": "35",
+          "ammunition": "40 Throwing Grenade ?",
+          "irowikiUrl": "https://irowiki.org/wiki/Mission_Bombard",
           "description": "Drops a large bomb with explosive power in a 9x9 cell range on the ground 1 cell, and continuously drops small bombs with explosive power in a 5x5 cell range within that range once every 0.25 seconds for 10 seconds, dealing long-range physical DMG. DMG increases additionally based on the Grenade Mastery skill level, the caster's base level, and CON.",
           "levelDetails": [
             {
@@ -3499,8 +3850,19 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "150",
+          "fixedCastTime": "1 seconds",
+          "cooldown": "10 seconds",
+          "areaOfEffect": "9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Mission Bombard ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mission_Bombard"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5415.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5415",
           "tree": {
@@ -3534,8 +3896,28 @@ export const nightWatchData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "150"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "10 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Ground 1 cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9"
+              },
+              {
+                "label": "Ammunition",
+                "value": "40 Throwing Grenade ?"
               },
               {
                 "label": "AP Consumed",
@@ -3621,7 +4003,6 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Mission Bombard",
@@ -3668,7 +4049,7 @@ export const nightWatchData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3695,6 +4076,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Creates 10 Coins at once at the cost of 100 Zeny.\nThis skill negates possible Coin losses by [Coin Flip] once learned.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -3730,8 +4113,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Rich's Coin (Fortune of the Rich) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rich's_Coin_(Fortune_of_the_Rich)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2552.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2552",
           "tree": {
@@ -3806,10 +4196,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3825,6 +4214,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Activates and detonates your [Howling Mines] and [Binding Traps] in one screen. Only applicable to your own traps.\nConsumes 1 Coin for use.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -3860,8 +4251,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Flicker (Flashing Signal) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flicker_(Flashing_Signal)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2556.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2556",
           "tree": {
@@ -3936,10 +4334,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3955,6 +4352,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Shotgun skill.\nAttack a target and all surrounding enemies within range and destroy their helms.\nThis skill's helm destruction chance increases, the higher your DEX and its level and the lower the target's Level and AGI.\nCoated or Indestructible helms can't be destroyed.\nConsumes 1 bullet for use.",
           "levelDetails": [
             {
@@ -4083,8 +4482,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Shattering Storm (Grinding Storm) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shattering_Storm_(Grinding_Storm)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2557.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2557",
           "tree": {
@@ -4215,10 +4621,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4234,6 +4639,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Rifle skill.\nFire a piercing bullet that increases ATK according to its target's DEF.\nCreates a high chance of Bleeding the target on hit.\nThis skill consumes 1 Full Metal Jacket Bullet in your inventory upon use.",
           "levelDetails": [
             {
@@ -4363,8 +4770,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Mass Spiral (Absolute Penetration) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mass_Spiral_(Absolute_Penetration)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2553.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2553",
           "tree": {
@@ -4489,10 +4903,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4508,6 +4921,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Revolver (Pistol) skill.\nMove to the location you want. Use Desperado in 2 seconds after the move to increase Desperado damage.\nThe skill automatically fails if there's a wall or another obstacle in your way.\nConsumes 1 Coin for use.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -4552,8 +4967,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Fallen Angel (Nephilim) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fallen_Angel_(Nephilim)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2564.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2564",
           "tree": {
@@ -4633,10 +5055,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4652,6 +5073,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Grenade Launcher skill.\nFire a sticky bomb at a target, inflicting damage. Up to 5 Howling Mines can be fired at the same time.\nUse [Flicker] to detonate Howling Mines and inflict additional Fire damage on and around the targets.\nHowling Mines can only be detonated by [Flicker]. They fall off their targets and disappear if not detonated in 50 seconds.\nConsumes 1 Projectile Mine for use.",
           "levelDetails": [
             {
@@ -4805,8 +5228,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Howling Mine (Destructive Cry) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Howling_Mine_(Destructive_Cry)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2562.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2562",
           "tree": {
@@ -4855,6 +5285,26 @@ export const nightWatchData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "effect",
+                    "label": "Effect"
+                  },
+                  {
+                    "id": "1-000-of-atk",
+                    "label": "1,000% Of Atk"
+                  },
+                  {
+                    "id": "1-200-of-atk",
+                    "label": "1,200% Of Atk"
+                  },
+                  {
+                    "id": "600-of-atk",
+                    "label": "600% Of Atk"
+                  },
+                  {
+                    "id": "800-of-atk",
+                    "label": "800% Of Atk"
+                  },
+                  {
                     "id": "atk",
                     "label": "Atk %"
                   },
@@ -4885,6 +5335,8 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
+                      "600-of-atk": "+ 1",
+                      "effect": "100% E x plosion Damage",
                       "sp-cost": "50",
                       "range": "8 cells",
                       "atk": "600",
@@ -4895,6 +5347,8 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
+                      "800-of-atk": "+ 1",
+                      "effect": "400% E x plosion Damage",
                       "sp-cost": "55",
                       "range": "9 cells",
                       "atk": "800",
@@ -4905,6 +5359,8 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
+                      "1-000-of-atk": "+ 1",
+                      "effect": "700% E x plosion Damage",
                       "sp-cost": "60",
                       "range": "10 cells",
                       "atk": "1000",
@@ -4915,6 +5371,8 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
+                      "1-200-of-atk": "+ 2",
+                      "effect": "000% E x plosion Damage",
                       "sp-cost": "65",
                       "range": "11 cells",
                       "atk": "1200",
@@ -4927,10 +5385,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4946,6 +5403,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Gatling Gun skill.\nAttack 3 x10 cells in front of you in sequential order.\nCreates a chance of removing Ground skills cast within range.\nConsumes 10 bullets for use. (At least 11 bullets required for activation)",
           "levelDetails": [
             {
@@ -5075,8 +5534,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Fire Rain (Fire Deluge) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fire_Rain_(Fire_Deluge)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2567.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2567",
           "tree": {
@@ -5201,10 +5667,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5220,6 +5685,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Requires Holy bullets.\nConsumes all your Coins and increases your ATK, depending on its skill level and the number of Coins consumed.\nAlso, casts a barrier around you for its duration, protecting you for a set number of times per skill level. Holy Light instantly cancels this barrier.\nPlatinum Altar is canceled if you change your weapon or bullet before it expires. The barrier is retained.\nThis skill can't used with [Last Stand] or [Hit Barrel].",
           "levelDetails": [
             {
@@ -5349,8 +5816,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Platinum Altar (White Gold Altar) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Platinum_Altar_(White_Gold_Altar)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2563.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2563",
           "tree": {
@@ -5403,6 +5877,10 @@ export const nightWatchData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   },
@@ -5423,7 +5901,8 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Barrier HP: 5% of Ma x HP, 4 Blocks, Duration: 30 sec",
+                      "duration": "30 seconds",
+                      "effect": "Barrier HP: 5% of Ma x HP, 4 Blocks",
                       "sp-cost": "20",
                       "data-1": "30000",
                       "data-2": "5",
@@ -5433,7 +5912,8 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Barrier HP: 10% of Ma x HP, 5 Blocks, Duration: 45 sec",
+                      "duration": "45 seconds",
+                      "effect": "Barrier HP: 10% of Ma x HP, 5 Blocks",
                       "sp-cost": "24",
                       "data-1": "45000",
                       "data-2": "10",
@@ -5443,7 +5923,8 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Barrier HP: 15% of Ma x HP, 6 Blocks, Duration: 60 sec",
+                      "duration": "60 seconds",
+                      "effect": "Barrier HP: 15% of Ma x HP, 6 Blocks",
                       "sp-cost": "28",
                       "data-1": "60000",
                       "data-2": "15",
@@ -5453,7 +5934,8 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Barrier HP: 20% of Ma x HP, 7 Blocks, Duration: 75 sec",
+                      "duration": "75 seconds",
+                      "effect": "Barrier HP: 20% of Ma x HP, 7 Blocks",
                       "sp-cost": "32",
                       "data-1": "75000",
                       "data-2": "20",
@@ -5463,7 +5945,8 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Barrier HP: 25% of Ma x HP, 8 Blocks, Duration: 90 sec",
+                      "duration": "90 seconds",
+                      "effect": "Barrier HP: 25% of Ma x HP, 8 Blocks",
                       "sp-cost": "36",
                       "data-1": "90000",
                       "data-2": "25",
@@ -5475,10 +5958,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5494,6 +5976,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Set up a special trap underneath you that significantly decreases Movement Speed.\nThis trap significantly decreases Movement Speed for all targets that enter its range. Its duration decreases, depending on the target's STR.\nOnly 1 Binding Trap can be set up at the same time. [Flicker] can be used to detonate Bind Trap and inflict additional damage on all enemies within the trap's range.\nThis skill's damage increases, depending on your DEX, the target's HP, and its skill level.\nIts duration decreases depending, on the target's STR, but can't fall below 4 seconds.\nConsumes 1 Special Alloy Trap for use.",
           "levelDetails": [
             {
@@ -5596,8 +6080,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Binding Trap (Dark Pit) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Binding_Trap_(Dark_Pit)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2555.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2555",
           "tree": {
@@ -5709,10 +6200,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5728,6 +6218,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Shotgun skill.\nAttack a target and remove its buff effects.\nThis skill's damage additionally increases, depending on your Base Level.\nConsumes 1 bullet for use.",
           "levelDetails": [
             {
@@ -5897,8 +6389,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Vanishing Buster (Exile) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vanishing_Buster_(Exile)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2554.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2554",
           "tree": {
@@ -6058,10 +6557,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6077,6 +6575,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Rifle skill.\nInflict damage and decrease the target's Player Damage [Resistance].\nThis skill creates a higher chance of the Anti-material effect at a higher level.\nConsumes 1 bullet for use.",
           "levelDetails": [
             {
@@ -6256,8 +6756,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Anti Material Blast (Obliterator) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Anti_Material_Blast_(Obliterator)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2569.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2569",
           "tree": {
@@ -6416,10 +6923,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6435,6 +6941,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Revolver (Pistol) skill.\nAttack all enemies in 7 x7 cells around you.\nThis skill's damage increases, depending on your Desperado level and Base Level.\nConsumes 3 bullets for use.",
           "levelDetails": [
             {
@@ -6629,8 +7137,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Fire Dance (Dance of Massacre) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fire_Dance_(Dance_of_Massacre)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2561.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2561",
           "tree": {
@@ -6785,10 +7300,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6804,6 +7318,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Grenade Launcher skill.\nFire missiles at a target and all surrounding enemies within range.\nThis skill inflicts more damage on targets affected by Crimson Marker.\nThis skill's damage additionally increases, depending on your Base Level.\nConsumes 1 Dragon Tail Missile per use.",
           "levelDetails": [
             {
@@ -6947,8 +7463,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Dragon Tail (Magic Beast Tail) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dragon_Tail_(Magic_Beast_Tail)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2566.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2566",
           "tree": {
@@ -7101,10 +7624,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7120,6 +7642,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Gatling Gun skill.\nAttack all surrounding enemies with a Gatling gun.\nThis skill also knocks all enemies 3 cells backward, outside its range.\nThe knocked enemies can hit a wall and receive additional damage.\nThis skill's damage additionally increases, depending on your Base Level.\nConsumes 5 bullets per use. (At least 6 bullets required for activation)",
           "levelDetails": [
             {
@@ -7288,8 +7812,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Round Trip (Circle Dance) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Round_Trip_(Circle_Dance)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2565.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2565",
           "tree": {
@@ -7449,10 +7980,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7468,6 +7998,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Consumes all your Coins when used. Decreases Fixed Cast Time and increases ASPD and ATK, but decreases HIT.\nThe ATK and Fixed Cast Time effects improve as you use more Coins.\nThis skill's effect disappears immediately if you change your equipment midway.\nThis skill can't be used with [Last Stand] or [Platinum Altar].",
           "levelDetails": [
             {
@@ -7596,8 +8128,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Hit Barrel (Acceleration Bullet) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hit_Barrel_(Acceleration_Bullet)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2568.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2568",
           "tree": {
@@ -7646,8 +8185,8 @@ export const nightWatchData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "aspd",
@@ -7674,9 +8213,9 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "60 seconds",
                       "aspd": "+1",
                       "hit": "-30",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "30",
                       "data-2": "8",
@@ -7686,9 +8225,9 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "60 seconds",
                       "aspd": "+2",
                       "hit": "-35",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "35",
                       "data-2": "10",
@@ -7698,9 +8237,9 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "60 seconds",
                       "aspd": "+3",
                       "hit": "-40",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "40",
                       "data-2": "12",
@@ -7710,9 +8249,9 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "60 seconds",
                       "aspd": "+4",
                       "hit": "-45",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "45",
                       "data-2": "14",
@@ -7722,9 +8261,9 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "60 seconds",
                       "aspd": "+5",
                       "hit": "-50",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "30",
                       "data-1": "50",
                       "data-2": "16",
@@ -7736,10 +8275,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7755,6 +8293,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Shotgun skill.\nSlug bullets are so heavy that they decrease your HIT when you're 3 or more cells away from your target.\nThis skill knocks its target 6 cells backward.\nConsumes 1 Slug Bullet in your inventory upon use.",
           "levelDetails": [
             {
@@ -7908,8 +8448,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Slug Shot (Fundamental Destruction) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Slug_Shot_(Fundamental_Destruction)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2570.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2570",
           "tree": {
@@ -8039,10 +8586,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8058,6 +8604,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "A Rifle skill.\nLaunches an attack that falls upon enemies from the sky.\nInflict damage upon the targeted enemies along with the surrounding targets.\nThis skill inflicts more damage on targets affected by Crimson Marker.\nConsumes all of your Coins when used. Your ATK is increased depending on your Base Level and the amount of Coins consumed.",
           "levelDetails": [
             {
@@ -8302,8 +8850,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " God's Hammer (God's Wrath) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/God's_Hammer_(God's_Wrath)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2571.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2571",
           "tree": {
@@ -8496,10 +9051,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8515,6 +9069,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Brands 1 target with a crimson sign, decreasing its Evasion by 10 and marking its location on the mini-map.\nUp to 3 enemies can be marked. This skill also affects [Quick Draw Shot], [Dragon Tail], and [God's Hammer].\nConsumes 1 Coin for use.",
           "levelDetails": [
             {
@@ -8573,8 +9129,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Crimson Marker (Blood Brand) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Crimson_Marker_(Blood_Brand)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2560.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2560",
           "tree": {
@@ -8627,8 +9190,8 @@ export const nightWatchData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -8651,7 +9214,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 50 sec",
+                      "duration": "50 seconds",
                       "sp-cost": "10",
                       "range": "11 cells",
                       "data-1": "1",
@@ -8664,10 +9227,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8683,6 +9245,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Enables Quick Draw Shot during Chain Action for additional attacks.\nThis skill can be used in the middle of Chain Action. The higher your Job Level, the more additional attacks you can deliver.\nIf there are [Crimson Marker] targets in 21 x21 cells around you, the additional Quick Draw Shots will be delivered to all of them.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -8709,8 +9273,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Quick Draw Shot (Tailwind Shot) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Quick_Draw_Shot_(Tailwind_Shot)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2559.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2559",
           "tree": {
@@ -8780,10 +9351,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8799,6 +9369,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "[Eternal Chain] always activates [Chain Action], regardless of your equipment.\nThe activated [Chain Action] is at the same level as [Eternal Chain].\nConsumes 1 Coin for use.",
           "levelDetails": [
             {
@@ -8983,8 +9555,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Eternal Chain (Infinite Chain) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Eternal_Chain_(Infinite_Chain)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2558.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2558",
           "tree": {
@@ -9043,8 +9622,8 @@ export const nightWatchData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -9059,7 +9638,7 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 45 sec",
+                      "duration": "45 seconds",
                       "sp-cost": "45",
                       "data-1": "45000",
                       "data-2": "1"
@@ -9068,7 +9647,7 @@ export const nightWatchData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 60 sec",
+                      "duration": "60 seconds",
                       "sp-cost": "45",
                       "data-1": "60000",
                       "data-2": "1"
@@ -9077,7 +9656,7 @@ export const nightWatchData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 75 sec",
+                      "duration": "75 seconds",
                       "sp-cost": "45",
                       "data-1": "75000",
                       "data-2": "1"
@@ -9086,7 +9665,7 @@ export const nightWatchData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 90 sec",
+                      "duration": "90 seconds",
                       "sp-cost": "45",
                       "data-1": "90000",
                       "data-2": "1"
@@ -9095,7 +9674,7 @@ export const nightWatchData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 105 sec",
+                      "duration": "105 seconds",
                       "sp-cost": "45",
                       "data-1": "105000",
                       "data-2": "1"
@@ -9104,7 +9683,7 @@ export const nightWatchData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Duration: 120 sec",
+                      "duration": "120 seconds",
                       "sp-cost": "45",
                       "data-1": "120000",
                       "data-2": "1"
@@ -9113,7 +9692,7 @@ export const nightWatchData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Duration: 135 sec",
+                      "duration": "135 seconds",
                       "sp-cost": "45",
                       "data-1": "135000",
                       "data-2": "1"
@@ -9122,7 +9701,7 @@ export const nightWatchData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Duration: 150 sec",
+                      "duration": "150 seconds",
                       "sp-cost": "45",
                       "data-1": "150000",
                       "data-2": "1"
@@ -9131,7 +9710,7 @@ export const nightWatchData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Duration: 165 sec",
+                      "duration": "165 seconds",
                       "sp-cost": "45",
                       "data-1": "165000",
                       "data-2": "1"
@@ -9140,7 +9719,7 @@ export const nightWatchData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Duration: 180 sec",
+                      "duration": "180 seconds",
                       "sp-cost": "45",
                       "data-1": "180000",
                       "data-2": "1"
@@ -9151,10 +9730,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9181,6 +9759,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -9259,8 +9839,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -9362,10 +9949,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9378,9 +9964,11 @@ export const nightWatchData = {
           "prerequisiteText": "basic skill",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Coin_Flip",
           "description": "Consume 1 zeny to flip a coin.\nIf it lands showing heads, the caster will gain\n1 coin, but if it shows tails, the caster will\nlose 1 coin. The caster can have a Maximum of\n10 coins, and increasing this skill's level\nraises the success rate of flipping a coin that\nwill show heads.",
           "levelDetails": [],
           "levelExtras": [
@@ -9410,8 +9998,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Coin Flip ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Coin_Flip"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/500.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/500",
           "tree": {
@@ -9430,6 +10025,10 @@ export const nightWatchData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -9477,10 +10076,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9496,6 +10094,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Single_Action",
           "description": "Essential Gunslinger skill that\nenables Gunslingers to fire their weapons more\nquickly and accurately. Raising this skill's\nlevel will increase accuracy and attack speed.",
           "levelDetails": [
             {
@@ -9586,8 +10186,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Single Action ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Single_Action"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/509.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/509",
           "tree": {
@@ -9617,114 +10224,92 @@ export const nightWatchData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "accuracy-10-aspd",
-                    "label": "Accuracy +10, Aspd"
+                    "id": "accuracy",
+                    "label": "Accuracy"
                   },
                   {
-                    "id": "accuracy-12-aspd",
-                    "label": "Accuracy +12, Aspd"
-                  },
-                  {
-                    "id": "accuracy-14-aspd",
-                    "label": "Accuracy +14, Aspd"
-                  },
-                  {
-                    "id": "accuracy-16-aspd",
-                    "label": "Accuracy +16, Aspd"
-                  },
-                  {
-                    "id": "accuracy-18-aspd",
-                    "label": "Accuracy +18, Aspd"
-                  },
-                  {
-                    "id": "accuracy-2-aspd",
-                    "label": "Accuracy +2, Aspd"
-                  },
-                  {
-                    "id": "accuracy-20-aspd",
-                    "label": "Accuracy +20, Aspd"
-                  },
-                  {
-                    "id": "accuracy-4-aspd",
-                    "label": "Accuracy +4, Aspd"
-                  },
-                  {
-                    "id": "accuracy-6-aspd",
-                    "label": "Accuracy +6, Aspd"
-                  },
-                  {
-                    "id": "accuracy-8-aspd",
-                    "label": "Accuracy +8, Aspd"
+                    "id": "aspd",
+                    "label": "Aspd"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "accuracy-2-aspd": "+ 1%",
+                      "accuracy": "+2",
+                      "aspd": "+ 1%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "accuracy-4-aspd": "+ 1%",
+                      "accuracy": "+4",
+                      "aspd": "+ 1%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "accuracy-6-aspd": "+ 2%",
+                      "accuracy": "+6",
+                      "aspd": "+ 2%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "accuracy-8-aspd": "+ 2%",
+                      "accuracy": "+8",
+                      "aspd": "+ 2%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "accuracy-10-aspd": "+ 3%",
+                      "accuracy": "+10",
+                      "aspd": "+ 3%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "accuracy-12-aspd": "+ 3%",
+                      "accuracy": "+12",
+                      "aspd": "+ 3%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "accuracy-14-aspd": "+ 4%",
+                      "accuracy": "+14",
+                      "aspd": "+ 4%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "accuracy-16-aspd": "+ 4%",
+                      "accuracy": "+16",
+                      "aspd": "+ 4%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "accuracy-18-aspd": "+ 5%",
+                      "accuracy": "+18",
+                      "aspd": "+ 5%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "accuracy-20-aspd": "+ 5%",
+                      "accuracy": "+20",
+                      "aspd": "+ 5%",
                       "sp-cost": "0"
                     }
                   }
@@ -9733,10 +10318,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9752,6 +10336,8 @@ export const nightWatchData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -9765,8 +10351,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -9785,6 +10380,14 @@ export const nightWatchData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -9812,10 +10415,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9828,9 +10430,11 @@ export const nightWatchData = {
           "prerequisiteText": "Coin Flip 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cracker",
           "description": "Consume 1 coin to fire a bullet\nthat will shock an enemy, causing the Stun\nstatus. The nearer the target is to the caster,\nthe greater the chance of inflicting the Stun\nstatus.",
           "levelDetails": [],
           "levelExtras": [
@@ -9844,8 +10448,16 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "castRange": "(Wpn. Range) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Cracker ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cracker"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/508.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/508",
           "tree": {
@@ -9871,6 +10483,14 @@ export const nightWatchData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Wpn. Range) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -9894,10 +10514,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9913,6 +10532,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Consume 1 coin to fire a magic shot, which add Magic damage for 30 seconds, this does not effect skills.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -9948,8 +10569,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Magicial Bullet ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Magicial_Bullet"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/507.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/507",
           "tree": {
@@ -10024,10 +10652,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10043,6 +10670,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Chain_Action",
           "description": "Enables the chance of firing two\nshots in a single attack while fighting enemies\nwhen equipped with a Pistol Class Weapon.\nRaising this skill's level increases the chance\nof firing these double shots.",
           "levelDetails": [],
           "levelExtras": [
@@ -10137,8 +10766,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Chain Action ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chain_Action"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/511.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/511",
           "tree": {
@@ -10255,10 +10891,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10271,9 +10906,11 @@ export const nightWatchData = {
           "prerequisiteText": "Single Action 5",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Bullet",
+          "irowikiUrl": "https://irowiki.org/wiki/Tracking",
           "description": "Carefully aim at a target to\ninflict devastating damage. Raising this skill's\nlevel increases Cast Time and damage. Pistol or\nRifle Class weapon required to use Tracking.\nSkill Damage and Cast Time by Level",
           "levelDetails": [
             {
@@ -10457,8 +11094,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 5)",
+          "castRange": "10 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Tracking ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tracking"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/512.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/512",
           "tree": {
@@ -10486,6 +11132,10 @@ export const nightWatchData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -10496,6 +11146,18 @@ export const nightWatchData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Bullet"
               }
             ],
             "levelTables": [
@@ -10615,10 +11277,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10631,9 +11292,11 @@ export const nightWatchData = {
           "prerequisiteText": "Single Action 5",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Bullet",
+          "irowikiUrl": "https://irowiki.org/wiki/Crowd_Control_Shot",
           "description": "Fire a close range shot that will\npush an enemy 5 cells backward.\nRequires a Shotgun Class Weapon.",
           "levelDetails": [
             {
@@ -10863,8 +11526,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "Skill Level × 3",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Crowd Control Shot ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Crowd_Control_Shot"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/518.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/518",
           "tree": {
@@ -10892,6 +11564,10 @@ export const nightWatchData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "Skill Level × 3"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -10906,6 +11582,18 @@ export const nightWatchData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Bullet"
               }
             ],
             "levelTables": [
@@ -11039,10 +11727,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11055,9 +11742,11 @@ export const nightWatchData = {
           "prerequisiteText": "Single Action 5",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "5 Bullets",
+          "irowikiUrl": "https://irowiki.org/wiki/Spread_Shot",
           "description": "Consume 5 bullets to spread damage\nover a large area.\nRequires a Shotgun or a Grenade Launcher.",
           "levelDetails": [
             {
@@ -11287,8 +11976,18 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 5)",
+          "castRange": "(Wpn. Range + Snake Eyes ) cells",
+          "areaOfEffect": "3 x 3 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Spread Shot ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spread_Shot"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/520.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/520",
           "tree": {
@@ -11316,6 +12015,10 @@ export const nightWatchData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -11330,6 +12033,22 @@ export const nightWatchData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Wpn. Range + Snake Eyes ) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 9 x 9"
+              },
+              {
+                "label": "Ammunition",
+                "value": "5 Bullets"
               }
             ],
             "levelTables": [
@@ -11463,10 +12182,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11479,9 +12197,11 @@ export const nightWatchData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -11495,8 +12215,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -11515,6 +12244,18 @@ export const nightWatchData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -11538,10 +12279,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11554,9 +12294,11 @@ export const nightWatchData = {
           "prerequisiteText": "Coin Flip 2",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Increase_Accuracy",
           "description": "Consume 4 coins to add +20\nAccuracy, +4 DEX, and +4 AGI for a 1 minute\nduration.",
           "levelDetails": [],
           "levelExtras": [
@@ -11570,8 +12312,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "duration": "1 minute",
+          "translations": {
+            "pt-BR": {
+              "name": " Increase Accuracy ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Increase_Accuracy"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/506.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/506",
           "tree": {
@@ -11597,6 +12348,18 @@ export const nightWatchData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "1 minute"
               }
             ],
             "levelTables": [
@@ -11620,10 +12383,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11636,9 +12398,11 @@ export const nightWatchData = {
           "prerequisiteText": "Coin Flip 1",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Coin_Fling",
           "description": "Spend coins to fling them at an\nenemy to inflict damage and reduce its Defense.\nCoin Fling can consume up to 5 coins in a single\ncast, and will reduce more of an enemy's Defense\nif more coins are spent.",
           "levelDetails": [],
           "levelExtras": [
@@ -11652,8 +12416,16 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Coin Fling ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Coin_Fling"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/501.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/501",
           "tree": {
@@ -11679,6 +12451,14 @@ export const nightWatchData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -11702,10 +12482,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11718,9 +12497,11 @@ export const nightWatchData = {
           "prerequisiteText": "Chain Action 3",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "5 Bullets",
+          "irowikiUrl": "https://irowiki.org/wiki/Trigger_Happy_Shot",
           "description": "Consume 1 bullet to perform a\nrapidfire 5 shot attack.\nRequires a Pistol Class Weapon.",
           "levelDetails": [
             {
@@ -11905,8 +12686,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 2)",
+          "castRange": "(Wpn. Range + Snake Eyes ) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Trigger Happy Shot ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Trigger_Happy_Shot"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/515.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/515",
           "tree": {
@@ -11934,6 +12724,10 @@ export const nightWatchData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -11948,6 +12742,18 @@ export const nightWatchData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Wpn. Range + Snake Eyes ) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "5 Bullets"
               }
             ],
             "levelTables": [
@@ -12053,10 +12859,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12069,9 +12874,11 @@ export const nightWatchData = {
           "prerequisiteText": "Tracking 5",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Bullet",
+          "irowikiUrl": "https://irowiki.org/wiki/Wounding_Shot",
           "description": "Inflict Defense piercing damage\nthat has the chance of causing the Bleeding\neffect on its target. Requires a Pistol or\nRifle Class Weapon.\nDamage, Bleeding Chance by Level\nThe damage done is create when using a Rifle Class Weapon",
           "levelDetails": [
             {
@@ -12226,8 +13033,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level + 10)",
+          "castRange": "(Wpn. Range + Snake Eyes ) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Wounding Shot ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wounding_Shot"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/514.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/514",
           "tree": {
@@ -12255,6 +13071,10 @@ export const nightWatchData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level + 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -12269,6 +13089,18 @@ export const nightWatchData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Wpn. Range + Snake Eyes ) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Bullet"
               }
             ],
             "levelTables": [
@@ -12352,10 +13184,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12368,9 +13199,11 @@ export const nightWatchData = {
           "prerequisiteText": "Crowd Control Shot 3",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "2~10 Bullets",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Blast",
           "description": "Inflict devastating damage to an\nenemy by firing multiple bullets at once. This\nskill has a small chance of causing the Blind\nstatus to the caster, and consumes\n2 bullets per cast.\nRequires a Shotgun Class Weapon.",
           "levelDetails": [
             {
@@ -12599,8 +13432,18 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level × 5)",
+          "castDelay": "[1 + (Skill Level × 0.2)] seconds",
+          "castRange": "(Wpn. Range + Snake Eyes ) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Blast ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Blast"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/519.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/519",
           "tree": {
@@ -12628,6 +13471,10 @@ export const nightWatchData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.2 seconds"
               },
@@ -12636,8 +13483,24 @@ export const nightWatchData = {
                 "value": "0.8 seconds"
               },
               {
+                "label": "Cast Delay",
+                "value": "[1 + (Skill Level × 0.2)] seconds"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Wpn. Range + Snake Eyes ) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "2~10 Bullets"
               }
             ],
             "levelTables": [
@@ -12771,10 +13634,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12787,9 +13649,11 @@ export const nightWatchData = {
           "prerequisiteText": "Spread Shot 7",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Bullets",
+          "irowikiUrl": "https://irowiki.org/wiki/Gunslinger_Mine",
           "description": "Plant Bullet Spheres into the\nground that will explode upon enemy approach.\nThe explosion's effect varies according to the\ntype of bullet planted. Requires a Grenade\nLauncher Class Weapon.\nAttack Bonus & Mine Duration by Skill Level",
           "levelDetails": [
             {
@@ -13064,8 +13928,18 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level × 4)",
+          "duration": "(Skill Level × 3) seconds",
+          "castRange": "(Wpn. Range + Snake Eyes ) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Gunslinger Mine ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gunslinger_Mine"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/521.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/521",
           "tree": {
@@ -13093,6 +13967,10 @@ export const nightWatchData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.2 seconds"
               },
@@ -13107,6 +13985,18 @@ export const nightWatchData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Wpn. Range + Snake Eyes ) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Bullets"
               }
             ],
             "levelTables": [
@@ -13142,110 +14032,110 @@ export const nightWatchData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage 220%, Duration 3 sec",
+                      "duration": "3 seconds\n3 sec",
+                      "effect": "Damage 220%",
                       "sp-cost": "3",
                       "range": "9 cells",
                       "atk": "220",
-                      "duration": "3 sec",
                       "data-2": "1"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage 240%, Duration 6 sec",
+                      "duration": "6 seconds\n6 sec",
+                      "effect": "Damage 240%",
                       "sp-cost": "6",
                       "range": "9 cells",
                       "atk": "240",
-                      "duration": "6 sec",
                       "data-2": "1"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage 260%, Duration 9 sec",
+                      "duration": "9 seconds\n9 sec",
+                      "effect": "Damage 260%",
                       "sp-cost": "9",
                       "range": "9 cells",
                       "atk": "260",
-                      "duration": "9 sec",
                       "data-2": "1"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage 280%, Duration 12 sec",
+                      "duration": "12 seconds\n12 sec",
+                      "effect": "Damage 280%",
                       "sp-cost": "12",
                       "range": "9 cells",
                       "atk": "280",
-                      "duration": "12 sec",
                       "data-2": "1"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage 300%, Duration 15 sec",
+                      "duration": "15 seconds\n15 sec",
+                      "effect": "Damage 300%",
                       "sp-cost": "15",
                       "range": "9 cells",
                       "atk": "300",
-                      "duration": "15 sec",
                       "data-2": "1"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Damage 320%, Duration 18 sec",
+                      "duration": "18 seconds\n18 sec",
+                      "effect": "Damage 320%",
                       "sp-cost": "18",
                       "range": "9 cells",
                       "atk": "320",
-                      "duration": "18 sec",
                       "data-2": "1"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Damage 340%, Duration 21 sec",
+                      "duration": "21 seconds\n21 sec",
+                      "effect": "Damage 340%",
                       "sp-cost": "21",
                       "range": "9 cells",
                       "atk": "340",
-                      "duration": "21 sec",
                       "data-2": "1"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Damage 360%, Duration 24 sec",
+                      "duration": "24 seconds\n24 sec",
+                      "effect": "Damage 360%",
                       "sp-cost": "24",
                       "range": "9 cells",
                       "atk": "360",
-                      "duration": "24 sec",
                       "data-2": "1"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Damage 380%, Duration 27 sec",
+                      "duration": "27 seconds\n27 sec",
+                      "effect": "Damage 380%",
                       "sp-cost": "27",
                       "range": "9 cells",
                       "atk": "380",
-                      "duration": "27 sec",
                       "data-2": "1"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Damage 400%, Duration 30 sec",
+                      "duration": "30 seconds\n30 sec",
+                      "effect": "Damage 400%",
                       "sp-cost": "30",
                       "range": "9 cells",
                       "atk": "400",
-                      "duration": "30 sec",
                       "data-2": "1"
                     }
                   }
@@ -13254,10 +14144,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13270,9 +14159,11 @@ export const nightWatchData = {
           "prerequisiteText": "Coin Flip 4",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Last_Stand",
           "description": "Consume 1 coin to activate Last\nStand status in which the caster is immobilized,\nbut has +100 Atk and +20% Aspd. Last Stand has\na 15 second duration, and cannot be used with\nGunslinger's Panic, Hit Barrel and Platinum Altar.",
           "levelDetails": [],
           "fixedCastTime": "0.4 seconds",
@@ -13326,8 +14217,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "duration": "15 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Last Stand ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Last_Stand"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/504.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/504",
           "tree": {
@@ -13355,6 +14255,10 @@ export const nightWatchData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.4 seconds"
               },
@@ -13369,6 +14273,10 @@ export const nightWatchData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -13412,10 +14320,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13428,9 +14335,11 @@ export const nightWatchData = {
           "prerequisiteText": "Coin Flip 1",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Triple_Action",
           "description": "Spend 1 coin to shoot an enemy 3 times in one attack.",
           "levelDetails": [],
           "levelExtras": [
@@ -13444,8 +14353,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castRange": "(Wpn. Range) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Triple Action ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Triple_Action"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/502.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/502",
           "tree": {
@@ -13471,6 +14389,18 @@ export const nightWatchData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Wpn. Range) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -13494,10 +14424,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13510,9 +14439,11 @@ export const nightWatchData = {
           "prerequisiteText": "Trigger Happy Shot 5",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "10 Bullets",
+          "irowikiUrl": "https://irowiki.org/wiki/Desperado",
           "description": "Consume 10 bullets to perform a\nhaphazard attack that may damage enemies within\na 7 cell radius around the caster. Each cast has\na Maximum of 10 strikes, and requires a Pistol\nClass Weapon.",
           "levelDetails": [
             {
@@ -13603,6 +14534,9 @@ export const nightWatchData = {
               ]
             }
           ],
+          "spCost": "30 + (Skill Level × 2)",
+          "castDelay": "1 second",
+          "areaOfEffect": "7 x 7",
           "translations": {
             "pt-BR": {
               "name": " Desperado ",
@@ -13637,6 +14571,26 @@ export const nightWatchData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
+              },
+              {
+                "label": "Ammunition",
+                "value": "10 Bullets"
               }
             ],
             "levelTables": [
@@ -13714,7 +14668,6 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -13729,10 +14682,12 @@ export const nightWatchData = {
           "maxLevel": 5,
           "prerequisiteText": "Tracking 7",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Bullet",
+          "irowikiUrl": "https://irowiki.org/wiki/Disarm",
           "description": "Shoot an enemy's appendages to\nrender it incapable of attacking. This skill's\nsuccess rate increases as its level is raised.\nWhen used on monsters, this skill will reduce\nAtk by 25%, but has no effect on Boss monsters.\nDisarm has a range of 9 cells, and requires\na Pistol or Rifle Class Weapon.",
           "levelDetails": [],
           "fixedCastTime": "0.4 seconds",
@@ -13765,8 +14720,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 5)",
+          "castRange": "7 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Disarm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Disarm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/513.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/513",
           "tree": {
@@ -13786,8 +14750,16 @@ export const nightWatchData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 5)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -13800,6 +14772,18 @@ export const nightWatchData = {
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Bullet"
               }
             ],
             "levelTables": [
@@ -13847,10 +14831,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13863,9 +14846,11 @@ export const nightWatchData = {
           "prerequisiteText": "Coin Flip 4",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gunslinger's_Panic",
           "description": "Consume 2 coins to activate the\nGunslinger's Panic status in which caster has\n+30 Flee Rate and receives 20% less damage from\nlong range physical attacks, but has -30\nAccuracy. This skill has a 20 second duration,\nand cannot be used together with the Last Stand\nskill.",
           "levelDetails": [],
           "fixedCastTime": "0.2 seconds",
@@ -13882,8 +14867,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "duration": "30 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Gunslinger's Panic ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gunslinger's_Panic"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/505.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/505",
           "tree": {
@@ -13911,6 +14905,10 @@ export const nightWatchData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.2 seconds"
               },
@@ -13921,6 +14919,14 @@ export const nightWatchData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds"
               }
             ],
             "levelTables": [
@@ -13944,10 +14950,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13960,9 +14965,11 @@ export const nightWatchData = {
           "prerequisiteText": "Trigger Happy Shot 7,",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gatling_Fever",
           "description": "Temporarily increase Attack Speed\nand damage at the cost of reducing Flee Rate\nand Movement Speed. Gatling Fever status is\ncancelled when this skill is double cast.\nRequires Gatling Gun Class Weapon.",
           "levelDetails": [
             {
@@ -14057,8 +15064,17 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "28 + (Skill Level × 2)",
+          "duration": "[15 + (Skill Level × 15)] seconds; Until recast",
+          "translations": {
+            "pt-BR": {
+              "name": " Gatling Fever ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gatling_Fever"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/517.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/517",
           "tree": {
@@ -14092,6 +15108,10 @@ export const nightWatchData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "28 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.2 seconds"
               },
@@ -14106,6 +15126,10 @@ export const nightWatchData = {
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -14117,78 +15141,106 @@ export const nightWatchData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "aspd",
+                    "label": "Aspd"
+                  },
+                  {
+                    "id": "flee",
+                    "label": "Flee"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage +30, Aspd +1%, Flee -5, Duration 30 sec",
+                      "duration": "30 seconds",
+                      "aspd": "+1%",
+                      "flee": "-5",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage +40, Aspd +2%, Flee -10, Duration 45 sec",
+                      "duration": "45 seconds",
+                      "aspd": "+2%",
+                      "flee": "-10",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage +50, Aspd +3%, Flee -15, Duration 60 sec",
+                      "duration": "60 seconds",
+                      "aspd": "+3%",
+                      "flee": "-15",
                       "sp-cost": "34"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage +60, Aspd +4%, Flee -20, Duration 75 sec",
+                      "duration": "75 seconds",
+                      "aspd": "+4%",
+                      "flee": "-20",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage +70, Aspd +5%, Flee -25, Duration 90 sec",
+                      "duration": "90 seconds",
+                      "aspd": "+5%",
+                      "flee": "-25",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Damage +80, Aspd +6%, Flee -30, Duration 105 sec",
+                      "duration": "105 seconds",
+                      "aspd": "+6%",
+                      "flee": "-30",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Damage +90, Aspd +7%, Flee -35, Duration 120 sec",
+                      "duration": "120 seconds",
+                      "aspd": "+7%",
+                      "flee": "-35",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Damage +100, Aspd +8%, Flee -40, Duration 135 sec",
+                      "duration": "135 seconds",
+                      "aspd": "+8%",
+                      "flee": "-40",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Damage +110, Aspd +9%, Flee -45, Duration 150 sec",
+                      "duration": "150 seconds",
+                      "aspd": "+9%",
+                      "flee": "-45",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Damage +120, Aspd +10%, Flee -50, Duration 165 sec",
+                      "duration": "165 seconds",
+                      "aspd": "+10%",
+                      "flee": "-50",
                       "sp-cost": "48"
                     }
                   }
@@ -14197,10 +15249,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14216,6 +15267,8 @@ export const nightWatchData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Snake_Eyes",
           "description": "Increase attack range and accuracy\nwhen equipped with a Pistol Class Weapon.",
           "levelDetails": [
             {
@@ -14306,8 +15359,15 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Snake Eyes ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Snake_Eyes"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/510.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/510",
           "tree": {
@@ -14337,114 +15397,92 @@ export const nightWatchData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "accuracy-1-range",
-                    "label": "Accuracy +1, Range"
+                    "id": "accuracy",
+                    "label": "Accuracy"
                   },
                   {
-                    "id": "accuracy-10-range",
-                    "label": "Accuracy +10, Range"
-                  },
-                  {
-                    "id": "accuracy-2-range",
-                    "label": "Accuracy +2, Range"
-                  },
-                  {
-                    "id": "accuracy-3-range",
-                    "label": "Accuracy +3, Range"
-                  },
-                  {
-                    "id": "accuracy-4-range",
-                    "label": "Accuracy +4, Range"
-                  },
-                  {
-                    "id": "accuracy-5-range",
-                    "label": "Accuracy +5, Range"
-                  },
-                  {
-                    "id": "accuracy-6-range",
-                    "label": "Accuracy +6, Range"
-                  },
-                  {
-                    "id": "accuracy-7-range",
-                    "label": "Accuracy +7, Range"
-                  },
-                  {
-                    "id": "accuracy-8-range",
-                    "label": "Accuracy +8, Range"
-                  },
-                  {
-                    "id": "accuracy-9-range",
-                    "label": "Accuracy +9, Range"
+                    "id": "range",
+                    "label": "Range"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "accuracy-1-range": "+1",
+                      "accuracy": "+1",
+                      "range": "+1",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "accuracy-2-range": "+2",
+                      "accuracy": "+2",
+                      "range": "+2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "accuracy-3-range": "+3",
+                      "accuracy": "+3",
+                      "range": "+3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "accuracy-4-range": "+4",
+                      "accuracy": "+4",
+                      "range": "+4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "accuracy-5-range": "+5",
+                      "accuracy": "+5",
+                      "range": "+5",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "accuracy-6-range": "+6",
+                      "accuracy": "+6",
+                      "range": "+6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "accuracy-7-range": "+7",
+                      "accuracy": "+7",
+                      "range": "+7",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "accuracy-8-range": "+8",
+                      "accuracy": "+8",
+                      "range": "+8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "accuracy-9-range": "+9",
+                      "accuracy": "+9",
+                      "range": "+9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "accuracy-10-range": "+10",
+                      "accuracy": "+10",
+                      "range": "+10",
                       "sp-cost": "0"
                     }
                   }
@@ -14453,10 +15491,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14469,9 +15506,11 @@ export const nightWatchData = {
           "prerequisiteText": "Coin Flip 5",
           "group": "Offensive",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bull's_Eye",
           "description": "Consume 1 coin to inflict 500%\ndamage to Demihuman and Brute monsters. Bull's\nEye has a 0.1% chance to inflict the Coma effect\nComa will have no effect on Boss Type Monsters.",
           "levelDetails": [],
           "fixedCastTime": "0.2 seconds",
@@ -14488,8 +15527,16 @@ export const nightWatchData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "castRange": "(Wpn. Range) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Bull's Eye ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bull's_Eye"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/503.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/503",
           "tree": {
@@ -14527,6 +15574,14 @@ export const nightWatchData = {
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Wpn. Range) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -14550,10 +15605,9 @@ export const nightWatchData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14573,6 +15627,8 @@ export const nightWatchData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/P.F.I",
       "description": "When equipped with a firearm-type weapon, P.ATK increases.",
       "levelDetails": [
         {
@@ -14663,8 +15719,15 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " P.F.I ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/P.F.I"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5401.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5401",
       "tree": {
@@ -14774,10 +15837,9 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14793,6 +15855,8 @@ export const nightWatchData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Grenade_Mastery",
       "description": "Con is increased through understanding grenades and the damage of grenade-type skills is increased.",
       "levelDetails": [
         {
@@ -14883,8 +15947,15 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Grenade Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Grenade_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5402.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5402",
       "tree": {
@@ -14910,12 +15981,12 @@ export const nightWatchData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "sp-cost",
-                "label": "SP Cost"
+                "id": "con",
+                "label": "CON"
               },
               {
-                "id": "con",
-                "label": "Con"
+                "id": "sp-cost",
+                "label": "SP Cost"
               }
             ],
             "rows": [
@@ -14994,10 +16065,9 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15013,6 +16083,8 @@ export const nightWatchData = {
       "target": "Instant Cast",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Intensive_Aim",
       "description": "When using skill, switches to focused aiming mode.\nMovement is impossible while focused aiming, and the aiming count accumulates by 1 every 0.5 seconds.\nThe aiming count accumulates up to 10, and if you leave the current cell due to an effect such as knockback or cancel the aiming state, the aiming count is reset.\nAtk/Hit/Cri increases in focused aiming mode.",
       "levelDetails": [
         {
@@ -15031,8 +16103,16 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "10",
+      "translations": {
+        "pt-BR": {
+          "name": " Intensive Aim ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Intensive_Aim"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5403.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5403",
       "tree": {
@@ -15058,6 +16138,10 @@ export const nightWatchData = {
           {
             "label": "Levels",
             "value": "1"
+          },
+          {
+            "label": "SP Cost",
+            "value": "10"
           },
           {
             "label": "Target",
@@ -15104,10 +16188,9 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15123,6 +16206,8 @@ export const nightWatchData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Hidden_Card",
       "description": "Take an elixir that maximizes the Night's Watch's shooting ability.\nWhen using the skill, long range physical damage and P.ATK are increased for 300 seconds.",
       "levelDetails": [
         {
@@ -15213,8 +16298,17 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "150",
+      "duration": "300 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Hidden Card ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hidden_Card"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5414.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5414",
       "tree": {
@@ -15248,8 +16342,16 @@ export const nightWatchData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "150"
+          },
+          {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "300 seconds"
           },
           {
             "label": "AP Consumed",
@@ -15265,12 +16367,12 @@ export const nightWatchData = {
                 "label": "P.Atk"
               },
               {
-                "id": "sp-cost",
-                "label": "SP Cost"
-              },
-              {
                 "id": "long-range-physical-damage",
                 "label": "Long Range Physical Damage"
+              },
+              {
+                "id": "sp-cost",
+                "label": "SP Cost"
               }
             ],
             "rows": [
@@ -15359,7 +16461,6 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Hidden Card",
@@ -15374,7 +16475,7 @@ export const nightWatchData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15390,6 +16491,8 @@ export const nightWatchData = {
       "target": "1 Cell Ground Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "1 Throwing Grenade",
+      "irowikiUrl": "https://irowiki.org/wiki/Basic_Grenade",
       "description": "Throws a grenade toward the ground, inflicting long range physical damage to all targets within the range.\nDamage is additionally increased depending on the Grenade Mastery skill level, caster's base level, and CON.\nConsumes 1 Throwing Grenade, and damage properties change depending on the Grenade fragment.",
       "levelDetails": [
         {
@@ -15440,8 +16543,19 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25 + (6 × Skill Level)",
+      "fixedCastTime": "1 seconds",
+      "cooldown": "0.3 seconds",
+      "areaOfEffect": "3 x 3~5 x 5",
+      "translations": {
+        "pt-BR": {
+          "name": " Basic Grenade ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Basic_Grenade"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5410.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5410",
       "tree": {
@@ -15469,8 +16583,24 @@ export const nightWatchData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "25 + (6 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.3 seconds"
+          },
+          {
             "label": "Target",
             "value": "1 Cell Ground Target"
+          },
+          {
+            "label": "Ammunition",
+            "value": "1 Throwing Grenade"
           },
           {
             "label": "AP Generated",
@@ -15531,7 +16661,6 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Basic Grenade",
@@ -15589,7 +16718,7 @@ export const nightWatchData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15605,6 +16734,8 @@ export const nightWatchData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Grenade_Fragment",
       "description": "Applies elemental powder on the surface of throwing grenade, endows elemental property to it.\nWhen using skill level 7, the endowment is canceled.",
       "levelDetails": [
         {
@@ -15671,8 +16802,17 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "50",
+      "cooldown": "2 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Grenade Fragment ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Grenade_Fragment"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5404.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5404",
       "tree": {
@@ -15698,6 +16838,14 @@ export const nightWatchData = {
           {
             "label": "Levels",
             "value": "7"
+          },
+          {
+            "label": "SP Cost",
+            "value": "50"
+          },
+          {
+            "label": "Cooldown",
+            "value": "2 seconds"
           },
           {
             "label": "Target",
@@ -15772,10 +16920,9 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15791,6 +16938,8 @@ export const nightWatchData = {
       "target": "Instant Cast",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Gatling gun and shotgun exclusive skill.\nFires around the user without mercy, inflicts long ranged physical damage to the surrounding enemies around the user.\nWhen using the skill with gatling gun, ignores physical defense of targets and deals damage for 7 hits, when using the skill with shotgun, deals damage for 4 hits.\nIf there is an aiming count, the skill consumes all aiming count and skill damage is increased according to number of aiming count consumed. Deals additional damage depends on user's base level and CON.\nConsumes 10 equipped bullets",
       "levelDetails": [
         {
@@ -15841,8 +16990,15 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Vigilante at Night ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Vigilante_at_Night"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5405.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5405",
       "tree": {
@@ -15938,7 +17094,6 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "The Vigilante at Night",
@@ -16007,7 +17162,7 @@ export const nightWatchData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16023,6 +17178,8 @@ export const nightWatchData = {
       "target": "Single Target",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "1 Bullets",
+      "irowikiUrl": "https://irowiki.org/wiki/Only_One_Bullet",
       "description": "Rifle and pistol only skill.\nFires a single shot to the target, inflicts long ranged physical damage.\nWhen using the skill with pistol, Ignores the target's physical defense, when using the skill with rifle, applies critical damage, the critical chance is the user's Cri.\nIn the case of critical damage, half of the total critical damage increase options are applied.\nIf there is an aiming count, the skill consumes all aiming count and skill damage is increased according to number of aiming count consumed.\nDeals additional damage depends on user's base level and CON.\nConsumes 1 equipped bullet.",
       "levelDetails": [
         {
@@ -16073,8 +17230,19 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "30 + (2 × Skill Level)",
+      "fixedCastTime": "1 seconds",
+      "castDelay": "0.5 seconds",
+      "cooldown": "0.35 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Only One Bullet ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Only_One_Bullet"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5406.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5406",
       "tree": {
@@ -16108,8 +17276,28 @@ export const nightWatchData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "30 + (2 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.35 seconds"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Ammunition",
+            "value": "1 Bullets"
           },
           {
             "label": "AP Generated",
@@ -16161,7 +17349,6 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Only One Bullet",
@@ -16239,7 +17426,7 @@ export const nightWatchData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16255,6 +17442,8 @@ export const nightWatchData = {
       "target": "Single Target",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "6 Bullets",
+      "irowikiUrl": "https://irowiki.org/wiki/Spiral_Shooting",
       "description": "Grenade Launcher and Rifle exclusive skills.\nFires a bullet with added rotational force at one target, inflicting long range physical damage to the target and enemies arround the target.\nWhen cast with a Grenade launcher, it attacks twice. When cast with a Rifle, critical damage is applied according to the caster's critical probability.\nThe effectiveness of critical modifier is applied by half.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed. Damage is additionally increased depending on the caster's base level and CON.\nConsumes 6 equipped bullets.",
       "levelDetails": [
         {
@@ -16305,8 +17494,20 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "43 + (5 × Skill Level)",
+      "fixedCastTime": "1.5 seconds",
+      "castDelay": "1 seconds",
+      "cooldown": "0.5 seconds",
+      "areaOfEffect": "Rifle : 5 x 5~7 x 7 Grenade Launcher : 9 x 9~11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Spiral Shooting ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Spiral_Shooting"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5407.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5407",
       "tree": {
@@ -16340,8 +17541,28 @@ export const nightWatchData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "43 + (5 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Ammunition",
+            "value": "6 Bullets"
           },
           {
             "label": "AP Generated",
@@ -16402,7 +17623,6 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Spiral Shooting",
@@ -16471,7 +17691,7 @@ export const nightWatchData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16487,6 +17707,8 @@ export const nightWatchData = {
       "target": "Single Target",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "Pistol : 6 Bullets Gatling Gun : 10 Bullets",
+      "irowikiUrl": "https://irowiki.org/wiki/Magazine_for_One",
       "description": "Gatling gun and Revolver exclusive skills.\nFires multiple bullets at one target, inflicting long range physical damage to the target.\nWhen cast with a Gatling gun, it attacks 10 times and consumes 10 equipped bullets.\nWhen cast with a Revolver, it attacks 6 times, critical damage is applied according to the caster's critical probability, and 6 equipped bullets are consumed.\nThe effectiveness of critical modifier is applied by half.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed. Damage is additionally increased depending on the caster's base level and CON.",
       "levelDetails": [
         {
@@ -16537,8 +17759,19 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "27 + (3 × Skill Level)",
+      "fixedCastTime": "1 seconds",
+      "castDelay": "1 seconds",
+      "cooldown": "0.5 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Magazine for One ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Magazine_for_One"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5408.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5408",
       "tree": {
@@ -16572,8 +17805,28 @@ export const nightWatchData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "27 + (3 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Ammunition",
+            "value": "Pistol : 6 Bullets Gatling Gun : 10 Bullets"
           },
           {
             "label": "AP Generated",
@@ -16625,7 +17878,6 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Magazine for One",
@@ -16719,7 +17971,7 @@ export const nightWatchData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16735,6 +17987,8 @@ export const nightWatchData = {
       "target": "1 Cell Ground Target",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "5 Bullets",
+      "irowikiUrl": "https://irowiki.org/wiki/Wild_Fire",
       "description": "Shotgun and Grenade Launcher exclusive skills.\nFires a bullet toward the ground, inflicting long range physical damage to all targets within the range.\nWhen cast with a Shotgun, it inflicts greater damage in a narrower range than the grenade launcher.\nWhen cast with a Grenade launcher, it inflicts damage over a wider range than a shotgun.\nIf there is an aiming count, the aiming count is consumed and the damage increases according to the number of aiming counts consumed.\nDamage is additionally increased depending on the caster's base level and CON. Consumes 5 equipped bullets.",
       "levelDetails": [
         {
@@ -16785,8 +18039,20 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "47 + (4 × Skill Level)",
+      "fixedCastTime": "1 seconds",
+      "castDelay": "1 seconds",
+      "cooldown": "0.5 seconds",
+      "areaOfEffect": "Shotgun : 5 x 5~7 x 7 Grenade Launcher : 9 x 9~11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Wild Fire ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Wild_Fire"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5409.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5409",
       "tree": {
@@ -16820,8 +18086,32 @@ export const nightWatchData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "47 + (4 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "1 Cell Ground Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "Shotgun : 5 x 5~7 x 7 Grenade Launcher : 9 x 9~11 x 11"
+          },
+          {
+            "label": "Ammunition",
+            "value": "5 Bullets"
           },
           {
             "label": "AP Generated",
@@ -16882,7 +18172,6 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Wild Fire",
@@ -16943,7 +18232,7 @@ export const nightWatchData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16959,6 +18248,8 @@ export const nightWatchData = {
       "target": "1 Cell Ground Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "3 Throwing Grenade",
+      "irowikiUrl": "https://irowiki.org/wiki/Hasty_Fire_in_the_Hole",
       "description": "Throws 3 grenades toward the ground in succession, inflicting long range physical damage to all targets within the range.\nThe thrown grenade explodes three times at intervals of 0.3 seconds, and the first explosion has an effect area of 5x5 cells, the second explosion has an effect area of 7x7 cells, and the third explosion has an effect area of 9x9 cells.\nDamage is additionally increased depending on the Grenade Mastery skill level, caster's base level, and CON.\nConsumes 3 Throwing Grenades, and damage properties change depending on the Grenade fragment.",
       "levelDetails": [
         {
@@ -17009,8 +18300,20 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "47 + (3 × Skill Level)",
+      "fixedCastTime": "1 seconds",
+      "castDelay": "1.5 seconds",
+      "cooldown": "1 seconds",
+      "areaOfEffect": "5 x 5~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Hasty Fire in the Hole ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hasty_Fire_in_the_Hole"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5411.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5411",
       "tree": {
@@ -17038,8 +18341,32 @@ export const nightWatchData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "47 + (3 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "1 seconds"
+          },
+          {
             "label": "Target",
             "value": "1 Cell Ground Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5~9 x 9"
+          },
+          {
+            "label": "Ammunition",
+            "value": "3 Throwing Grenade"
           },
           {
             "label": "AP Generated",
@@ -17091,7 +18418,6 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Hasty Fire in the Hole",
@@ -17141,7 +18467,7 @@ export const nightWatchData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17157,6 +18483,8 @@ export const nightWatchData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Rifle and pistol exclusive skill.\nFires mercilessly around the target, inflicts long ranged physical damage to the target and surrounding enemies around the target for 7 hits.\nIf Hidden Card buff is active, the skill will deal more damage.\nDeals additional damage depends on user's base level and CON, has a chance to trigger critical, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.\nConsumes 5 equipped bullets.",
       "levelDetails": [
         {
@@ -17181,8 +18509,15 @@ export const nightWatchData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Wild Shot ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Wild_Shot"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5500.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5500",
       "tree": {
@@ -17232,10 +18567,9 @@ export const nightWatchData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17251,6 +18585,8 @@ export const nightWatchData = {
       "target": "1 cell ground target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Shotgun, gatling gun and grenade launcher exclusive skill.\nBombs a designated area, inflicts long ranged physical damage to all targets within range for 3 hits.\nIf Hidden Card buff is active, the skill will deal more damage.\nSkill damage ignores the target's physical defense, deals additional damage depends on user's base level and CON.\nConsumes 5 equipped bullets.",
       "levelDetails": [
         {
@@ -17275,8 +18611,15 @@ export const nightWatchData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Midnight Fallen ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Midnight_Fallen"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5501.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5501",
       "tree": {
@@ -17326,10 +18669,9 @@ export const nightWatchData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17345,6 +18687,8 @@ export const nightWatchData = {
       "target": "Ground 1 cell",
       "recoversAp": "5",
       "consumesAp": "",
+      "ammunition": "15 Throwing Grenade",
+      "irowikiUrl": "https://irowiki.org/wiki/Grenades_Dropping",
       "description": "Throws a bunch of grenades into the sky, dropping grenades every 0.25 seconds at random locations around the ground for 4 seconds, dealing ranged physical DMG 3 times to targets within range.\nDMG is further increased based on the Grenade Mastery skill level, the caster's base level, and CON.\nConsumes 15 grenades for throwing.",
       "levelDetails": [
         {
@@ -17395,8 +18739,19 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "48 + (6 × Skill Level)",
+      "fixedCastTime": "1 seconds",
+      "cooldown": "4.5 seconds",
+      "areaOfEffect": "3 x 3~5 x 5",
+      "translations": {
+        "pt-BR": {
+          "name": " Grenades Dropping ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Grenades_Dropping"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5412.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5412",
       "tree": {
@@ -17424,12 +18779,28 @@ export const nightWatchData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "48 + (6 × Skill Level)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "4.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "Ground 1 cell"
           },
           {
             "label": "Area of Effect",
-            "value": "Lv 1: 11 x 11 cells / Lv 2: 11 x 11 cells / Lv 3: 11 x 11 cells / Lv 4: 9 x 9 cells / Lv 5: 9 x 9 cells"
+            "value": "3 x 3~5 x 5"
+          },
+          {
+            "label": "Ammunition",
+            "value": "15 Throwing Grenade"
           },
           {
             "label": "AP Generated",
@@ -17457,35 +18828,35 @@ export const nightWatchData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                  "effect": "E x plosion range: 3 x 3 cells",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                  "effect": "E x plosion range: 3 x 3 cells",
                   "sp-cost": "66"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Fall range: 11 x 11 cells\nE x plosion range: 3 x 3 cells",
+                  "effect": "E x plosion range: 3 x 3 cells",
                   "sp-cost": "72"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
+                  "effect": "E x plosion range: 5 x 5 cells",
                   "sp-cost": "78"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Fall range: 9 x 9 cells\nE x plosion range: 5 x 5 cells",
+                  "effect": "E x plosion range: 5 x 5 cells",
                   "sp-cost": "84"
                 }
               }
@@ -17494,10 +18865,9 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17513,6 +18883,8 @@ export const nightWatchData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Auto_Firing_Launcher",
       "description": "Activates the automatic grenade launcher.\nWhen performing a normal physical attack, Has a chance to auto-cast Basic Grenade, Hasty Fire in the Hole and Grenades Dropping, will be activated according to the acquired level.\nThe skill and activation probability are different depending on the skill level.",
       "levelDetails": [
         {
@@ -17563,8 +18935,18 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "80 + (Skill Level x 10)",
+      "fixedCastTime": "3 seconds",
+      "cooldown": "30 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Auto Firing Launcher ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Auto_Firing_Launcher"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5413.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5413",
       "tree": {
@@ -17592,6 +18974,18 @@ export const nightWatchData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "80 + (Skill Level x 10)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "3 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "30 seconds"
+          },
+          {
             "label": "Target",
             "value": "Self"
           }
@@ -17605,6 +18999,10 @@ export const nightWatchData = {
                 "label": "SP Cost"
               },
               {
+                "id": "duration",
+                "label": "Duration"
+              },
+              {
                 "id": "effect",
                 "label": "Effect"
               }
@@ -17613,35 +19011,40 @@ export const nightWatchData = {
               {
                 "level": 1,
                 "values": {
-                  "effect": "Basic Grenade(6%) / Duration: 120 sec",
+                  "duration": "120 seconds",
+                  "effect": "Basic Grenade(6%)",
                   "sp-cost": "90"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Basic Grenade(7%) / Duration: 150 sec",
+                  "duration": "150 seconds",
+                  "effect": "Basic Grenade(7%)",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Basic Grenade(8%), Hasty Fire in the Hole(3%) / Duration: 180 sec",
+                  "duration": "180 seconds",
+                  "effect": "Basic Grenade(8%), Hasty Fire in the Hole(3%)",
                   "sp-cost": "110"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Basic Grenade(9%), Hasty Fire in the Hole(5%) / Duration : 210 sec",
+                  "duration": "210 seconds",
+                  "effect": "Basic Grenade(9%), Hasty Fire in the Hole(5%)",
                   "sp-cost": "120"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Basic Grenade(10%), Hasty Fire in the Hole(7%), Grenade Dropping(3%) / Duration: 240 sec",
+                  "duration": "240 seconds",
+                  "effect": "Basic Grenade(10%), Hasty Fire in the Hole(7%), Grenade Dropping(3%)",
                   "sp-cost": "130"
                 }
               }
@@ -17650,10 +19053,9 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17669,6 +19071,8 @@ export const nightWatchData = {
       "target": "Ground 1 cell",
       "recoversAp": "",
       "consumesAp": "35",
+      "ammunition": "40 Throwing Grenade ?",
+      "irowikiUrl": "https://irowiki.org/wiki/Mission_Bombard",
       "description": "Drops a large bomb with explosive power in a 9x9 cell range on the ground 1 cell, and continuously drops small bombs with explosive power in a 5x5 cell range within that range once every 0.25 seconds for 10 seconds, dealing long-range physical DMG. DMG increases additionally based on the Grenade Mastery skill level, the caster's base level, and CON.",
       "levelDetails": [
         {
@@ -17759,8 +19163,19 @@ export const nightWatchData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "150",
+      "fixedCastTime": "1 seconds",
+      "cooldown": "10 seconds",
+      "areaOfEffect": "9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Mission Bombard ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Mission_Bombard"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5415.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5415",
       "tree": {
@@ -17794,8 +19209,28 @@ export const nightWatchData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "150"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "10 seconds"
+          },
+          {
             "label": "Target",
             "value": "Ground 1 cell"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "9 x 9"
+          },
+          {
+            "label": "Ammunition",
+            "value": "40 Throwing Grenade ?"
           },
           {
             "label": "AP Consumed",
@@ -17881,7 +19316,6 @@ export const nightWatchData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Mission Bombard",
@@ -17928,7 +19362,7 @@ export const nightWatchData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

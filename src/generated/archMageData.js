@@ -1,5 +1,5 @@
 export const archMageData = {
-  "generatedAt": "2026-07-10T00:54:49.439Z",
+  "generatedAt": "2026-07-10T15:02:13.663Z",
   "classId": 4255,
   "classSlug": "arch-mage",
   "className": "Arch Mage",
@@ -72,7 +72,8 @@ export const archMageData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4255",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -564,6 +565,8 @@ export const archMageData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Two-handed_Staff_Mastery",
           "description": "Two-handed Staves increase your MATK.",
           "levelDetails": [],
           "levelExtras": [
@@ -613,8 +616,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Two-handed Staff Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Two-handed_Staff_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5228.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5228",
           "tree": {
@@ -710,10 +720,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -729,6 +738,8 @@ export const archMageData = {
           "target": "1 Ground cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Floral_Flare_Road",
           "description": "Temporarily summon blazing flower petals from the ground in your facing direction, inflicting Fire Magic damage within range.\nIt additionally increases damage, depending on your Base Level and SPL.",
           "levelDetails": [
             {
@@ -783,8 +794,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (10 × Skill Level)",
+          "duration": "5 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "3 x 3~11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Floral Flare Road ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Floral_Flare_Road"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5229.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5229",
           "tree": {
@@ -812,6 +834,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -828,12 +854,20 @@ export const archMageData = {
                 "value": "5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "1 Ground cell"
               },
               {
                 "label": "Area of Effect",
-                "value": "Lv 1: 3 x 3 cells / Lv 2: 5 x 5 cells / Lv 3: 7 x 7 cells / Lv 4: 9 x 9 cells / Lv 5: 11 x 11 cells"
+                "value": "3 x 3~11 x 11"
+              },
+              {
+                "label": "Duration",
+                "value": "5 seconds"
               }
             ],
             "levelTables": [
@@ -881,7 +915,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Floral Flare Road",
@@ -939,7 +972,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -955,6 +988,8 @@ export const archMageData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Causes a rain of ice picks to fall around you, dealing water-based magic damage to targets in an area.\nDamage is additionally increased depending on the user's base level and SPL..",
           "levelDetails": [
             {
@@ -1009,8 +1044,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Rain Of Crystal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rain_Of_Crystal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5216.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5216",
           "tree": {
@@ -1112,7 +1154,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Rain of Crystal",
@@ -1197,7 +1238,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1213,6 +1254,8 @@ export const archMageData = {
           "target": "1 Ground cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tornado_Storm",
           "description": "Summon a lightning-charged tornado on the selected spot, inflicting Wind Magic damage on targets within range.\nIt additionally increases damage, depending on your Base Level and SPL.",
           "levelDetails": [
             {
@@ -1267,8 +1310,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (10 × Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Tornado Storm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tornado_Storm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5227.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5227",
           "tree": {
@@ -1296,6 +1349,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -1312,12 +1369,16 @@ export const archMageData = {
                 "value": "5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "1 Ground cell"
               },
               {
                 "label": "Area of Effect",
-                "value": "Lv 1: 5 x 5 cells / Lv 2: 5 x 5 cells / Lv 3: 7 x 7 cells / Lv 4: 7 x 7 cells / Lv 5: 9 x 9 cells"
+                "value": "5 x 5~9 x 9"
               }
             ],
             "levelTables": [
@@ -1365,7 +1426,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Tornado Storm",
@@ -1423,7 +1483,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1439,6 +1499,8 @@ export const archMageData = {
           "target": "1 Ground cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Shake the ground, inflicting Earth Magic damage on targets within range.\nIt additionally increases damage, depending on your Base Level and SPL.",
           "levelDetails": [
             {
@@ -1493,8 +1555,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Strantum Tremor ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Strantum_Tremor"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5221.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5221",
           "tree": {
@@ -1591,7 +1660,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Stratum Tremor",
@@ -1649,7 +1717,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1665,6 +1733,8 @@ export const archMageData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Vulcan_Strike",
           "description": "Repeatedly cast a powerful Soul Strike at a target and others around it.\nIt additionally increases damage, depending on your Base Level and SPL.",
           "levelDetails": [
             {
@@ -1719,8 +1789,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (10 x Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "3 x 3 ~ 11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Vulcan Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Vulcan_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5220.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5220",
           "tree": {
@@ -1754,6 +1834,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (10 x Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -1770,12 +1854,16 @@ export const archMageData = {
                 "value": "0.7 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               },
               {
                 "label": "Area of Effect",
-                "value": "Lv 1: 3 x 3 cells / Lv 2: 5 x 5 cells / Lv 3: 7 x 7 cells / Lv 4: 9 x 9 cells / Lv 5: 11 x 11 cells"
+                "value": "3 x 3 ~ 11 x 11"
               }
             ],
             "levelTables": [
@@ -1823,7 +1911,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Soul Vulcan Strike",
@@ -1873,7 +1960,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1888,7 +1975,9 @@ export const archMageData = {
           "type": "Magic",
           "target": "Self",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Climax",
           "description": "Create special effects with certain magic you use for 300 seconds.\nDifferent effects are added, depending on the skill level.",
           "levelDetails": [],
           "variableCastTime": "0 seconds",
@@ -1919,8 +2008,21 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "fixedCastTime": "4 seconds",
+          "castDelay": "0.3 seconds",
+          "cooldown": "300 seconds",
+          "duration": "300 seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Climax ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Climax"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5232.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5232",
           "tree": {
@@ -1954,12 +2056,40 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "60"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "4 seconds"
+              },
+              {
                 "label": "Variable Cast Time",
                 "value": "0 seconds"
               },
               {
+                "label": "Cast Delay",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "300 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "300 seconds"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "150"
               }
             ],
             "levelTables": [
@@ -2007,7 +2137,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Climax",
@@ -2057,7 +2186,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2073,6 +2202,8 @@ export const archMageData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Crimson_Arrow",
           "description": "Shoots a flame arrow at the target, inflicting fire attribute magic damage in a straight line from the caster to the target, and the flame arrow hitting the target explodes, inflicting fire attribute magic damage to surrounding targets.\nDamage is additionally increased depending on the user's base level and SPL.\nIf there is a climax effect, the fire attribute magic damage from the explosion of the flame arrow is divided into two attacks, but is applied as two attacks (regardless of the climax level).",
           "levelDetails": [
             {
@@ -2127,8 +2258,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "55 + (10 x Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Crimson Arrow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Crimson_Arrow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5235.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5235",
           "tree": {
@@ -2156,6 +2297,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "55 + (10 x Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -2170,6 +2315,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -2234,7 +2383,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Crimson Arrow",
@@ -2364,7 +2512,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2380,6 +2528,8 @@ export const archMageData = {
           "target": "Instant Cast",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Frozen_Slash",
           "description": "Inflicts water magic damage to targets within the range around the caster with sharp ice.\nDamage is additionally increased depending on the user's base level and SPL.\nIf a climax effect active, greater damage is inflicted (regardless of the climax level).",
           "levelDetails": [
             {
@@ -2434,8 +2584,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (10 x Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "9 x 9 ~ 13 x 13",
+          "translations": {
+            "pt-BR": {
+              "name": " Frozen Slash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Frozen_Slash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5237.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5237",
           "tree": {
@@ -2463,6 +2623,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (10 x Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -2477,6 +2641,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0.45 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -2541,7 +2709,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Frozen Slash",
@@ -2686,7 +2853,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2702,6 +2869,8 @@ export const archMageData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Storm_Cannon",
           "description": "Shoots a vortex of wind in a straight line to the target, inflicting wind attribute magic damage to the target within the range.\nDamage is additionally increased depending on the user's base level and SPL.\nIf a climax effect active, greater damage is inflicted (regardless of the climax level).",
           "levelDetails": [
             {
@@ -2756,8 +2925,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (10 × Skill Level)",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Storm Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Storm_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5234.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5234",
           "tree": {
@@ -2785,6 +2963,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -2799,6 +2981,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -2854,7 +3040,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Storm Cannon",
@@ -2975,7 +3160,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2991,6 +3176,8 @@ export const archMageData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rock_Down",
           "description": "Drops a large rock on the target and Inflict Earth magical damage to the target and surrounding enemies.\nDamage is additionally increased depending on the user's base level and SPL.\nIf a climax effect active, greater damage is inflicted (regardless of the climax level).",
           "levelDetails": [
             {
@@ -3045,8 +3232,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "55 + (10 × Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Rock Down ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rock_Down"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5233.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5233",
           "tree": {
@@ -3074,6 +3271,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "55 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -3088,6 +3289,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -3152,7 +3357,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Rock Down",
@@ -3289,7 +3493,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3305,6 +3509,8 @@ export const archMageData = {
           "target": "1 Ground cell",
           "recoversAp": "5",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mystery_Illusion",
           "description": "Cast mysterious magic on the selected ground spot.\nThis magic inflicts Shadow Magic damage on targets within range for its duration.\nIt additionally increases damage, depending on your Base Level and SPL.",
           "levelDetails": [
             {
@@ -3359,8 +3565,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (10 × Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "9 x 9~13 x 13",
+          "translations": {
+            "pt-BR": {
+              "name": " Mystery Illusion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mystery_Illusion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5217.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5217",
           "tree": {
@@ -3394,6 +3610,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -3410,12 +3630,16 @@ export const archMageData = {
                 "value": "4 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "1 Ground cell"
               },
               {
                 "label": "Area of Effect",
-                "value": "Lv 1: 9 x 9 cells / Lv 2: 9 x 9 cells / Lv 3: 11 x 11 cells / Lv 4: 11 x 11 cells / Lv 5: 13 x 13 cells"
+                "value": "9 x 9~13 x 13"
               },
               {
                 "label": "AP Generated",
@@ -3467,7 +3691,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Mystery Illusion",
@@ -3553,7 +3776,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3569,6 +3792,8 @@ export const archMageData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Deadly_Projection",
           "description": "Sends a projection that causes the target's body to rot.\nNegates the target's Magical immunity for a period of time and deals Undead Magical damage.\nIt additionally increases damage, depending on your Base Level and SPL.",
           "levelDetails": [
             {
@@ -3623,8 +3848,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (10 × Skill Level)",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Deadly Projection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Deadly_Projection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5214.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5214",
           "tree": {
@@ -3652,6 +3886,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -3666,6 +3904,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -3721,7 +3963,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Deadly Projection",
@@ -3752,7 +3993,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3768,6 +4009,8 @@ export const archMageData = {
           "target": "1 Ground cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/All_Bloom",
           "description": "Create a flower garden on the ground. Blazing flower petals randomly appear and explode.\ninflicting Fire Magic damage on targets in 7x7 cells around them.\nThis skill additionally increases damage, depending on your Base Level and SPL.\nClimax mode changes its effect, depending on its stage.\nClimax (Stage 1)\nFlower petals appear chance doubled.\nClimax (Stage 2)\nDecreases damage, but summons 2 flower petals at a time.\nClimax (Stage 3)\nAll Bloom damage +300% Increase.\nClimax (Stage 4)\nNo Petals are generated, and targets in skill range have 100% reduced Fire Resistance for 30 seconds.\nClimax (Stage 5)\nAdditional Fire Magic damage at 85,000% of MATK after all the flower petals explode.",
           "levelDetails": [
             {
@@ -3822,8 +4065,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (10 × Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "7 x 7~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " All Bloom ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/All_Bloom"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5222.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5222",
           "tree": {
@@ -3851,6 +4104,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -3867,8 +4124,16 @@ export const archMageData = {
                 "value": "6 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "1 Ground cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7~9 x 9"
               }
             ],
             "levelTables": [
@@ -3916,7 +4181,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "All Bloom",
@@ -3984,7 +4248,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4000,6 +4264,8 @@ export const archMageData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Crystal_Impact",
           "description": "Creates a powerful water elemental wave in the surrounding area starting from the ground beneath one's feet, inflicting water elemental magic damage to targets within the range.\nTargets damaged by this wave will receive additional water magic damage after a certain period of time.\nDamage is additionally increased depending on the user's base level and SPL.\nIn the climax state, the effect changes depending on the level.\nClimax (Stage 1)\nApply a buff to caster and surrounding party member For 900 sec, DEF+ 300, MDEF+ 100, increase Water magic damage and resistance to Water by 30%.\nClimax (Stage 2)\nDamage dealt by Ice Waves increased to 2x.\nClimax (Stage 3)\nIce wave damage increases by 50%.\nClimax (Stage 4)\nReduce the damage of the ice wave, but increase delayed damage by 150%\nClimax (Stage 5)\nIncrease Ice Wave's area of effect to 15x15 cells, delayed damage now deal damage to 5x5 area surrounding the target.",
           "levelDetails": [
             {
@@ -4054,8 +4320,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (10 × Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "7 x 7~15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Crystal Impact ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Crystal_Impact"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5225.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5225",
           "tree": {
@@ -4083,6 +4359,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -4097,6 +4377,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -4157,7 +4441,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Crystal Impact",
@@ -4239,7 +4522,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4255,6 +4538,8 @@ export const archMageData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Destructive_Hurricane",
           "description": "Creates a strong wind around you, inflicting wind attribute magic damage to targets within the range.\nDamage is additionally increased depending on the user's base level and SPL.\nIn the climax state, the effect changes depending on the level.\nClimax (Stage 1)\nMATK 12500% Additional damage from wind attribute magic.\nClimax (Stage 2)\nAdd 2 cells knockback effect.\nClimax (Stage 3)\nDestructive Hurricane Damage 150% increase.\nClimax (Stage 4)\nSkill no longer does damage but triggers a buff. For 900 sec, MATK+ 100 and increase Wind property magic damage by 30%\nClimax (Stage 5)\nArea of Effect change to 19x19, Reduced Destructive Hurricane Damage by 20% .",
           "levelDetails": [
             {
@@ -4309,8 +4594,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (10 × Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "7 x 7~11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Destructive Hurricane ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Destructive_Hurricane"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5215.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5215",
           "tree": {
@@ -4338,6 +4633,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -4352,6 +4651,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "2.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -4412,7 +4715,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Destructive Hurricane",
@@ -4513,7 +4815,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4529,6 +4831,8 @@ export const archMageData = {
           "target": "1 Ground cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Violent_Quake",
           "description": "Temporarily shake the ground and shoot rocks out of it, randomly attacking targets within range.\nRocks inflict Earth Magic damage on their target and others in 7 x7 cells around it.\nThis skill additionally increases damage, depending on your Base Level and SPL.\nClimax mode changes its effect, depending on its stage.\nClimax (Stage 1)\nDecreases damage, but summons 2 rocks at a time.\nClimax (Stage 2)\nRocks attack 9x9 cells.\nClimax (Stage 3)\nViolent Quake damage +200%.\nClimax (Stage 4)\nInstead of summoning rocks, adds Earth Resistance -100% to targets within range for 30 seconds.\nClimax (Stage 5)\nEffective range set to 7x7 cells.",
           "levelDetails": [
             {
@@ -4583,8 +4887,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (10 × Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "7 x 7~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Violent Quake ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Violent_Quake"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5218.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5218",
           "tree": {
@@ -4612,6 +4926,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -4628,8 +4946,16 @@ export const archMageData = {
                 "value": "6 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "1 Ground cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7~9 x 9"
               }
             ],
             "levelTables": [
@@ -4677,7 +5003,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Violent Quake",
@@ -4743,7 +5068,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4758,7 +5083,9 @@ export const archMageData = {
           "type": "Magical",
           "target": "1 Ground cell",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Astral_Strike",
           "description": "Drops a powerful meteorite on the ground, dealing Neutral Magical damage to targets in range and dealing multiple additional Neutral Magical damage over 6 seconds.\nThe meteor inflicts more damage on Undead and Dragon monsters.\nIt additionally increases damage, depending on your Base Level and SPL.",
           "levelDetails": [
             {
@@ -4853,8 +5180,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "150",
+          "duration": "6 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5 ~ 11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Astral Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Astral_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5230.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5230",
           "tree": {
@@ -4894,6 +5232,10 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "150"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -4910,12 +5252,24 @@ export const archMageData = {
                 "value": "6 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "1 Ground cell"
               },
               {
                 "label": "Area of Effect",
-                "value": "Lv 1: 5 x 5 cells / Lv 2: 5 x 5 cells / Lv 3: 5 x 5 cells / Lv 4: 7 x 7 cells / Lv 5: 7 x 7 cells / Lv 6: 7 x 7 cells / Lv 7: 9 x 9 cells / Lv 8: 9 x 9 cells / Lv 9: 9 x 9 cells / Lv 10: 11 x 11 cells"
+                "value": "5 x 5 ~ 11 x 11"
+              },
+              {
+                "label": "Duration",
+                "value": "6 seconds"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "150"
               }
             ],
             "levelTables": [
@@ -4993,7 +5347,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Astral Strike",
@@ -5075,7 +5428,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5091,6 +5444,8 @@ export const archMageData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "22 ~ 10",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Converts some of the user's AP into SP through energy exchange.",
           "levelDetails": [
             {
@@ -5118,8 +5473,15 @@ export const archMageData = {
           "variableCastTime": "1 second",
           "castDelay": "0.5 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Energy Conversion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Energy_Conversion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6516.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6516",
           "tree": {
@@ -5218,7 +5580,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Energy Conversion",
@@ -5234,7 +5595,7 @@ export const archMageData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5258,9 +5619,11 @@ export const archMageData = {
           "prerequisiteText": "Quagmire 1",
           "group": "Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Marsh_Of_Abyss",
           "description": "Curses a target, slowing its movement speed, AGI and DEX.",
           "levelDetails": [
             {
@@ -5414,8 +5777,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "38 + (Skill Level × 2)",
+          "duration": "5~30 seconds",
+          "castRange": "11 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Marsh Of Abyss ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Marsh_Of_Abyss"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2205.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2205",
           "tree": {
@@ -5443,6 +5816,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "38 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -5453,6 +5830,18 @@ export const archMageData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "5~30 seconds"
               }
             ],
             "levelTables": [
@@ -5570,10 +5959,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5589,6 +5977,8 @@ export const archMageData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Radius",
           "description": "Increases the range of\nWarlock magic skills and decreases their\nfixed casting time. Base level, caster INT and\nskill level increase the reduction of cast.",
           "levelDetails": [
             {
@@ -5740,7 +6130,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -5756,9 +6145,11 @@ export const archMageData = {
           "prerequisiteText": "Warlock Base Skill",
           "group": "Active / Special",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Release",
           "description": "Release spells memorized with Reading Spell Book. Releases summoned orbs from Summon skill (Fire Ball, Water Ball, Lightning Ball, Stone) and inflicts Magic Damage to a single target one or multiple times.",
           "levelDetails": [
             {
@@ -5798,8 +6189,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "Variable",
+          "castDelay": "ASPD Based* ; Same as the released spell",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Release ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Release"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2230.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2230",
           "tree": {
@@ -5818,6 +6219,22 @@ export const archMageData = {
               {
                 "label": "Levels",
                 "value": "2"
+              },
+              {
+                "label": "SP Cost",
+                "value": "Variable"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD Based* ; Same as the released spell"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -5859,10 +6276,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5875,9 +6291,11 @@ export const archMageData = {
           "prerequisiteText": "Meteor Storm 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Summon_Fire_Ball",
           "description": "Summon Maximum 5 Fireballs around the caster. Continuously consumes SP while fireball is active.\nWhen level 2, removes all active Summon Balls, and summons 5 Fireballs.\nWhen released, each fireball inflicts fire property magic damage, and damage increases based on caster's BaseLv.",
           "levelDetails": [
             {
@@ -5957,8 +6375,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level × 40) - 30",
+          "duration": "280",
+          "translations": {
+            "pt-BR": {
+              "name": " Summon Fire Ball ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Summon_Fire_Ball"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2222.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2222",
           "tree": {
@@ -5986,6 +6413,10 @@ export const archMageData = {
                 "value": "2"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level × 40) - 30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5996,6 +6427,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -6005,6 +6440,10 @@ export const archMageData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -6023,7 +6462,8 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Summons 1 Fireball / Duration: 280 sec",
+                      "duration": "280 seconds",
+                      "effect": "Summons 1 Fireball",
                       "sp-cost": "10",
                       "data-1": "1",
                       "data-2": "120000"
@@ -6032,7 +6472,8 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Summons 5 Fireballs / Duration: 280 sec",
+                      "duration": "280 seconds",
+                      "effect": "Summons 5 Fireballs",
                       "sp-cost": "50",
                       "data-1": "1",
                       "data-2": "160000"
@@ -6064,10 +6505,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6080,9 +6520,11 @@ export const archMageData = {
           "prerequisiteText": "Storm Gust 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Summon_Water_Ball",
           "description": "Summon Maximum 5 Waterballs around the caster. Continuously consumes SP while fireball is active.\nWhen level 2, removes all active Summon Balls, and summons 5 Waterballs.\nWhen released, each waterball inflicts water property magic damage, and damage increases based on caster's BaseLv.",
           "levelDetails": [
             {
@@ -6162,8 +6604,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level × 40) - 30",
+          "duration": "280",
+          "translations": {
+            "pt-BR": {
+              "name": " Summon Water Ball ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Summon_Water_Ball"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2224.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2224",
           "tree": {
@@ -6191,6 +6642,10 @@ export const archMageData = {
                 "value": "2"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level × 40) - 30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6201,6 +6656,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -6210,6 +6669,10 @@ export const archMageData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -6228,7 +6691,8 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Summons 1 Waterball / Duration: 280 sec",
+                      "duration": "280 seconds",
+                      "effect": "Summons 1 Waterball",
                       "sp-cost": "10",
                       "data-1": "1",
                       "data-2": "120000"
@@ -6237,7 +6701,8 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Summons 5 Waterballs / Duration: 280 sec",
+                      "duration": "280 seconds",
+                      "effect": "Summons 5 Waterballs",
                       "sp-cost": "50",
                       "data-1": "1",
                       "data-2": "160000"
@@ -6269,10 +6734,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6285,9 +6749,11 @@ export const archMageData = {
           "prerequisiteText": "Lord of Vermilion 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Summon_Lightning_Ball",
           "description": "Summon Maximum 5 Lightningballs around the caster. Continuously consumes SP while fireball is active.\nWhen level 2, removes all active Summon Balls, and summons 5 Lightningballs.\nWhen released, each lightningball inflicts wind property magic damage, and damage increases based on caster's BaseLv.",
           "levelDetails": [
             {
@@ -6367,8 +6833,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level × 40) - 30",
+          "duration": "280",
+          "translations": {
+            "pt-BR": {
+              "name": " Summon Lightning Ball ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Summon_Lightning_Ball"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2223.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2223",
           "tree": {
@@ -6396,6 +6871,10 @@ export const archMageData = {
                 "value": "2"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level × 40) - 30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6406,6 +6885,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -6415,6 +6898,10 @@ export const archMageData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -6433,7 +6920,8 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Summons 1 Lightningball / Duration: 280 sec",
+                      "duration": "280 seconds",
+                      "effect": "Summons 1 Lightningball",
                       "sp-cost": "10",
                       "data-1": "1",
                       "data-2": "120000"
@@ -6442,7 +6930,8 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Summons 5 Lightningballs / Duration: 280 sec",
+                      "duration": "280 seconds",
+                      "effect": "Summons 5 Lightningballs",
                       "sp-cost": "50",
                       "data-1": "1",
                       "data-2": "160000"
@@ -6474,10 +6963,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6490,9 +6978,11 @@ export const archMageData = {
           "prerequisiteText": "Heaven's Drive 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Summon_Stone",
           "description": "Summon Maximum 5 Stoneballs around the caster. Continuously consumes SP while fireball is active.\nWhen level 2, removes all active Summon Balls, and summons 5 Stoneballs.\nWhen released, each stoneball inflicts earth property magic damage, and damage increases based on caster's BaseLv.",
           "levelDetails": [
             {
@@ -6572,8 +7062,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level × 40) - 30",
+          "duration": "280",
+          "translations": {
+            "pt-BR": {
+              "name": " Summon Stone ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Summon_Stone"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2229.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2229",
           "tree": {
@@ -6601,6 +7100,10 @@ export const archMageData = {
                 "value": "2"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level × 40) - 30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6611,6 +7114,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -6620,6 +7127,10 @@ export const archMageData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -6638,7 +7149,8 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Summons 1 Stoneball / Duration: 280 sec",
+                      "duration": "280 seconds",
+                      "effect": "Summons 1 Stoneball",
                       "sp-cost": "10",
                       "data-1": "1",
                       "data-2": "120000"
@@ -6647,7 +7159,8 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Summons 5 Stoneballs / Duration: 280 sec",
+                      "duration": "280 seconds",
+                      "effect": "Summons 5 Stoneballs",
                       "sp-cost": "50",
                       "data-1": "1",
                       "data-2": "160000"
@@ -6679,10 +7192,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6698,6 +7210,8 @@ export const archMageData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Freezing_Spell",
           "description": "Raises the amount of Mind Slots available for Reading Spell Book. Number of spells increases based on level and INT. When spells are sealed up, slowly drains SP depending on the number of spells..",
           "levelDetails": [],
           "levelExtras": [
@@ -6792,8 +7306,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Freezing Spell ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Freezing_Spell"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2232.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2232",
           "tree": {
@@ -6903,10 +7424,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6919,9 +7439,11 @@ export const archMageData = {
           "prerequisiteText": "Radius 1",
           "group": "Damage / Recover",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Drain_Life",
           "description": "Strikes a single target with\nmagical damage, and absorb some of that\ndamage as HP. Damage and HP recovered is\ninfluenced by the caster's INT and base level.\nThe success rate varies according to the\nskill level.",
           "levelDetails": [
             {
@@ -7026,8 +7548,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 + (Skill Level × 4)",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Drain Life ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Drain_Life"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2210.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2210",
           "tree": {
@@ -7055,6 +7586,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "16 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -7069,6 +7604,14 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -7143,10 +7686,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7162,6 +7704,8 @@ export const archMageData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Reading_Spellbook",
           "description": "Reads a spell inscribed in the selected Spell Book and seals it up. This skill can be used in conjunction with the Release skill in order to let out the sealed spells.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -7179,8 +7723,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Reading Spellbook ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Reading_Spellbook"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2231.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2231",
           "tree": {
@@ -7238,10 +7789,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7254,9 +7804,11 @@ export const archMageData = {
           "prerequisiteText": "Summon Fire Ball 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Crimson_Rock",
           "description": "Summons a meteor, inflicts Fire property Magic Damage to all enemies around the target.\nAll enemies inflicted by damage will get knocked back.\nDamage increases based on caster's BaseLv.",
           "levelDetails": [
             {
@@ -7361,8 +7913,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 10)",
+          "castRange": "Magic",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Crimson Rock ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Crimson_Rock"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2211.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2211",
           "tree": {
@@ -7390,6 +7952,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -7404,6 +7970,18 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -7469,10 +8047,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7485,9 +8062,11 @@ export const archMageData = {
           "prerequisiteText": "Summon Water Ball 1",
           "group": "Damage / Status Effect",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Frost_Misty",
           "description": "Releases freezing mist around an area, dealing damage and inflicting Freezing status on all enemies. Enemies on Freezing status will have reduced movement speed, attack speed, and armor, and increased fixed cast time and damage received from Jack Frost.\nDamage increases based on caster's BaseLv.",
           "levelDetails": [
             {
@@ -7641,8 +8220,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "32 + (Skill Level × 8)",
+          "variableCastTime": "1.5 + (Skill Level × 0.5) seconds",
+          "areaOfEffect": "7 x 7~11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Frost Misty ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Frost_Misty"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2203.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2203",
           "tree": {
@@ -7670,8 +8259,16 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "32 + (Skill Level × 8)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.5 + (Skill Level × 0.5) seconds"
               },
               {
                 "label": "Cast Delay",
@@ -7680,6 +8277,14 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "8 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7~11 x 11"
               }
             ],
             "levelTables": [
@@ -7763,10 +8368,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7779,9 +8383,11 @@ export const archMageData = {
           "prerequisiteText": "Summon Ball Lightning 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Chain_Lightning",
           "description": "Summons lightning to deal multiple (Wind Element) damage to a target and enemies around it.",
           "levelDetails": [
             {
@@ -7910,8 +8516,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (Skill Level × 10)",
+          "variableCastTime": "[3 + (Skill Level × 0.5)] seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Chain Lightning ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chain_Lightning"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2214.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2214",
           "tree": {
@@ -7939,8 +8556,16 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[3 + (Skill Level × 0.5)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -7949,6 +8574,18 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -8032,10 +8669,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8048,9 +8684,11 @@ export const archMageData = {
           "prerequisiteText": "Summon Stone 1",
           "group": "Curse",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sienna_Execrate",
           "description": "All targets in range will be Petrified at a certain chance.",
           "levelDetails": [
             {
@@ -8180,8 +8818,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 2)",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Sienna Execrate ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sienna_Execrate"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2207.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2207",
           "tree": {
@@ -8209,6 +8857,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8223,6 +8875,18 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -8306,10 +8970,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8322,9 +8985,11 @@ export const archMageData = {
           "prerequisiteText": "Drain Life 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Expansion",
           "description": "Deals Ghost magic damage to a target and enemies in AoE. Deals twice damage when target is in White Imprison.\nDamage increases based on BaseLv and INT.",
           "levelDetails": [
             {
@@ -8454,8 +9119,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level x 5)",
+          "castRange": "Magic",
+          "areaOfEffect": "3 x 3 ~ 5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Expansion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Expansion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2202.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2202",
           "tree": {
@@ -8483,6 +9158,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level x 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8497,6 +9176,18 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 5 x 5"
               }
             ],
             "levelTables": [
@@ -8571,10 +9262,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8587,9 +9277,11 @@ export const archMageData = {
           "prerequisiteText": "Drain Life 1",
           "group": "Curse",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stasis",
           "description": "Stops the air\naround the Caster, preventing any spells\nfrom being cast.",
           "levelDetails": [
             {
@@ -8718,6 +9410,9 @@ export const archMageData = {
               ]
             }
           ],
+          "spCost": "40 + (Skill Level × 10)",
+          "cooldown": "5 minutes",
+          "areaOfEffect": "19 x 19 ~ 27 x 27",
           "translations": {
             "pt-BR": {
               "name": " Stasis ",
@@ -8754,6 +9449,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -8764,6 +9463,18 @@ export const archMageData = {
               {
                 "label": "Cast Delay",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "5 minutes"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "19 x 19 ~ 27 x 27"
               }
             ],
             "levelTables": [
@@ -8847,7 +9558,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -8863,9 +9573,11 @@ export const archMageData = {
           "prerequisiteText": "Crimson Rock 2",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hell_Inferno",
           "description": "Inflicts Fire and Shadow property Magic Damage to all enemies around the target.\nDamage increases based on caster's BaseLv.",
           "levelDetails": [
             {
@@ -8995,8 +9707,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "58 + (Skill Level × 6)",
+          "castRange": "Magic",
+          "areaOfEffect": "3 x 3 ~ 5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Hell Inferno ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hell_Inferno"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2212.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2212",
           "tree": {
@@ -9024,6 +9746,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "58 + (Skill Level × 6)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -9038,6 +9764,18 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 5 x 5"
               }
             ],
             "levelTables": [
@@ -9121,10 +9859,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9137,9 +9874,11 @@ export const archMageData = {
           "prerequisiteText": "Frost Misty 2",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Jack_Frost",
           "description": "Inflicts Water property magic damage to all anemies around the target. Deals more damage to Frozen status.\nDamage increases based on caster's BaseLv.",
           "levelDetails": [
             {
@@ -9293,8 +10032,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40 + (Skill Level × 10)",
+          "variableCastTime": "[1.5 + (Skill Level × 0.5)] seconds",
+          "areaOfEffect": "7 x 7 ~ 11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Jack Frost ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Jack_Frost"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2204.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2204",
           "tree": {
@@ -9322,8 +10071,16 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[1.5 + (Skill Level × 0.5)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -9332,6 +10089,14 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "4 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7 ~ 11 x 11"
               }
             ],
             "levelTables": [
@@ -9415,10 +10180,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9431,9 +10195,11 @@ export const archMageData = {
           "prerequisiteText": "Sienna Execrate 2",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Earth_Strain",
           "description": "Uplift the land and attack enemies within range.",
           "levelDetails": [
             {
@@ -9587,8 +10353,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "62 + (Skill Level × 8)",
+          "variableCastTime": "(Skill Level + 1) seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "15 x 5 ~ 15 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Earth Strain ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Earth_Strain"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2216.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2216",
           "tree": {
@@ -9616,8 +10393,16 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "62 + (Skill Level × 8)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "(Skill Level + 1) seconds"
               },
               {
                 "label": "Cast Delay",
@@ -9626,6 +10411,18 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "7 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 5 ~ 15 x 9"
               }
             ],
             "levelTables": [
@@ -9709,10 +10506,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9725,9 +10521,11 @@ export const archMageData = {
           "prerequisiteText": "Soul Expansion 3",
           "group": "Curse",
           "type": "",
-          "target": "",
+          "target": "Caster, Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/White_Imprison",
           "description": "Locks a target in a transparent\nbox that prevents damage except from Ghost\nproperty damage. Can cast on oneself lasting\nfor 5 sec. When the duration is finished, the\ncaster loses HP of Skill Level x400. Success\nRate increases according to the caster's Job\nLevel. Not effective on Boss monsters.",
           "levelDetails": [
             {
@@ -9832,8 +10630,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 + (Skill Level × 5)",
+          "duration": "Varies",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " White Imprison ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/White_Imprison"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2201.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2201",
           "tree": {
@@ -9861,6 +10669,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -9875,6 +10687,18 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "4 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Caster, Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "Varies"
               }
             ],
             "levelTables": [
@@ -9949,10 +10773,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9965,9 +10788,11 @@ export const archMageData = {
           "prerequisiteText": "Hell Inferno 3",
           "group": "Damage / Special",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Comet",
           "description": "Inflicts Neutral property Magic Damage to all enemies in a 13x13 area around the targeted location, leaving them magic poisoned that reduces resistance to all property by 50%.\nDamage increases based on BaseLv.",
           "levelDetails": [
             {
@@ -10146,8 +10971,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 20)",
+          "variableCastTime": "(5 + Skill Level) seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "13 x 13",
+          "translations": {
+            "pt-BR": {
+              "name": " Comet ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Comet"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2213.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2213",
           "tree": {
@@ -10175,8 +11011,16 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 20)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "(5 + Skill Level) seconds"
               },
               {
                 "label": "Cast Delay",
@@ -10185,6 +11029,18 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "20 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "13 x 13"
               }
             ],
             "levelTables": [
@@ -10277,10 +11133,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10293,9 +11148,11 @@ export const archMageData = {
           "prerequisiteText": "Soul Expansion 5",
           "group": "",
           "type": "Active / Buff",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Intensification",
           "description": "Ghost magic enters caster's circulatory system, increasing Ghost-type magic damage and reducing cast time and mana cost of spells.\nThis skill cannot be removed by clearance or dispel.",
           "levelDetails": [
             {
@@ -10450,8 +11307,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 50)",
+          "duration": "1 minute",
+          "translations": {
+            "pt-BR": {
+              "name": " Intensification ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Intensification"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5012.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5012",
           "tree": {
@@ -10479,6 +11345,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 50)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -10493,6 +11363,14 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "300 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "1 minute"
               }
             ],
             "levelTables": [
@@ -10594,10 +11472,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10610,9 +11487,11 @@ export const archMageData = {
           "prerequisiteText": "Release 2 , Stasis 1, White Imprison 1",
           "group": "Buff(Self)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Recognized_Spell",
           "description": "Maximizes one's own magical potential, dealing Maximum damage with magical attacks for the skill duration.",
           "levelDetails": [
             {
@@ -10716,8 +11595,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40 + (Skill Level × 10)",
+          "cooldown": "[20 + (Skill Level × 30)] seconds",
+          "duration": "[30 + (Skill Level × 30)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Recognized Spell ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Recognized_Spell"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2206.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2206",
           "tree": {
@@ -10757,6 +11646,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -10767,6 +11660,18 @@ export const archMageData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[20 + (Skill Level × 30)] seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "[30 + (Skill Level × 30)] seconds"
               }
             ],
             "levelTables": [
@@ -10841,10 +11746,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10857,9 +11761,11 @@ export const archMageData = {
           "prerequisiteText": "Jack Frost 5, Chain Lightning 5, Earth Strain 5, Hell Inferno 5",
           "group": "Damage / Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tetra_Vortex",
           "description": "Summons 4 property ethers, deals fire, water, earth, wind magic property damage.\nRequires at least 4 of Fireball, Lightningball, Waterball, Stoneball summoned.\nDamage property depends on the Summoned skill (Fire Ball, Water Ball, Lightning Ball, Stone) used. Requires at least 4 spheres to use.\nWhen skill level is 6 or higher, deals damage to a target and enemies in AOE around it.\nAdds a high chance to Blaze, Freeze, Stun, or Bleed when damaging.",
           "levelDetails": [
             {
@@ -11043,6 +11949,9 @@ export const archMageData = {
               ]
             }
           ],
+          "spCost": "120 ~ 360",
+          "variableCastTime": "5~9 seconds",
+          "castRange": "Magic",
           "translations": {
             "pt-BR": {
               "name": " Tetra Vortex ",
@@ -11097,8 +12006,16 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "120 ~ 360"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "5~9 seconds"
               },
               {
                 "label": "Cast Delay",
@@ -11107,6 +12024,14 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "15 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -11212,7 +12137,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -11227,10 +12151,12 @@ export const archMageData = {
           "maxLevel": 5,
           "prerequisiteText": "3rd jobs",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Throttle",
           "description": "Exceed the limits of the body by\nsacrificing your own vitality to strengthen yourself\nfor a short time. You will become horribly\nexhausted after the skill's duration.\nFully restores HP when cast and increases\nmovement speed for the skill's duration.\nAll stats +20%.\nAfter the skill duration ends, you will be inflicted\nwith Rebound status. During rebound status,\nyour movement speed is lowered and your\nnatural HP/SP recovery is disabled.\nCannot be removed by dispel or clearance.\n50 Minute playtime cooldown",
           "levelDetails": [
             {
@@ -11335,8 +12261,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Throttle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
@@ -11349,8 +12284,16 @@ export const archMageData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
               },
               {
                 "label": "Fixed Cast Time",
@@ -11367,6 +12310,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "3000 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -11450,10 +12397,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11480,6 +12426,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Monster_Property",
           "description": "Analyzes a single target, revealing information.If the user is in a party, all party members can see the target's information.",
           "levelDetails": [],
           "levelExtras": [
@@ -11493,8 +12441,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Monster Property ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Monster_Property"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/93.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/93",
           "tree": {
@@ -11513,6 +12470,14 @@ export const archMageData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -11540,10 +12505,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11559,6 +12523,8 @@ export const archMageData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Creates a wall of ice in a targeted location to impede movement.\ncan't go through this ice wall, but can do long-range attacks such as arrow attacks.\nDepending on the skill level, durability exists, and when installed, durability is reduced by 50 per second\nWhen the durability reaches zero, it disappears.",
           "levelDetails": [
             {
@@ -11649,8 +12615,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Icewall ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Icewall"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/87.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/87",
           "tree": {
@@ -11773,10 +12746,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11792,6 +12764,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Jupitel_Thunder",
           "description": "Fires a ball of crackling lightning at a single target that inflicts 100% Wind property magic damage each shock and pushes it backwards.\nSkill level increases the number of hits inflicted.",
           "levelDetails": [
             {
@@ -11885,8 +12859,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "17 + (Skill Level × 3)",
+          "variableCastTime": "[1.8 + (Skill Level × 0.2)] seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Jupitel Thunder ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Jupitel_Thunder"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/84.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/84",
           "tree": {
@@ -11920,8 +12904,16 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "17 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[1.8 + (Skill Level × 0.2)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -11930,6 +12922,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -12025,10 +13021,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12044,6 +13039,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Earth_Spike",
           "description": "Commands the ground beneath a single target to rise into spikes, where each spike will inflict 200% Earth property magic damage.\nThe number of consecutive hits increases with skill level.",
           "levelDetails": [
             {
@@ -12096,8 +13093,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "fixedCastTime": "0.2 + (Skill Level × 0.2) seconds",
+          "variableCastTime": "0.7 + (Skill Level × 0.5) seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Earth Spike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Earth_Spike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/90.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/90",
           "tree": {
@@ -12125,12 +13133,28 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 + (Skill Level × 0.2) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.7 + (Skill Level × 0.5) seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1.4 seconds"
               },
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -12191,10 +13215,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12210,6 +13233,8 @@ export const archMageData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sightrasher",
           "description": "Projects the fireball summoned from the Sight skill in 8 directions around the caster to inflict Fire property magic damage to all enemies around the caster and push them 2 cells backwards.\nAfter use, the fireball summoned to the Sight disappear..",
           "levelDetails": [
             {
@@ -12304,8 +13329,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "33 + (Skill Level × 2)",
+          "areaOfEffect": "15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Sightrasher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sightrasher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/81.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/81",
           "tree": {
@@ -12339,6 +13373,10 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "33 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.08 seconds"
               },
@@ -12357,6 +13395,10 @@ export const archMageData = {
               {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15"
               }
             ],
             "levelTables": [
@@ -12434,10 +13476,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12450,9 +13491,11 @@ export const archMageData = {
           "prerequisiteText": "Fire Wall 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fire_Pillar",
           "description": "Summons a pillar of flame on a targeted location that flares when triggered, inflicting piercing Fire property magic damage each hit to all enemies within its area of effect.\nIt will vanish itself if they were not used for 30s.\nUp to 5 can be installed, each cast consumes a Blue Gemstone if Level 6 or higher is cast.\nIt can't be installed if there are enemies or allies in 3*3 cells.",
           "levelDetails": [
             {
@@ -12545,8 +13588,21 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "75",
+          "fixedCastTime": "[0.528 − (Skill Level × 0.048)] seconds",
+          "variableCastTime": "[2.112 − (Skill Level × 0.192)] seconds",
+          "duration": "30 seconds; Until triggered",
+          "castRange": "Magic",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Fire Pillar ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fire_Pillar"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/80.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/80",
           "tree": {
@@ -12574,6 +13630,18 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "75"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[0.528 − (Skill Level × 0.048)] seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[2.112 − (Skill Level × 0.192)] seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1 second"
               },
@@ -12582,8 +13650,20 @@ export const archMageData = {
                 "value": "0.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
                 "label": "Area of Effect",
-                "value": "Lv 1: 3 x 3 cells / Lv 2: 3 x 3 cells / Lv 3: 3 x 3 cells / Lv 4: 3 x 3 cells / Lv 5: 3 x 3 cells / Lv 6: 7 x 7 cells / Lv 7: 7 x 7 cells / Lv 8: 7 x 7 cells / Lv 9: 7 x 7 cells / Lv 10: 7 x 7 cells"
+                "value": "3 x 3 ~ 7 x 7"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds; Until triggered"
               }
             ],
             "levelTables": [
@@ -12675,10 +13755,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12694,6 +13773,8 @@ export const archMageData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sight_Blaster",
           "description": "Summons Sight's flame that roams around and protects you for 15 min. at the cost of 80 SP.\nIf an enemy steps into 3 x3 range around you, inflicts Fire damage of 600% of MATK and knocks them back by 3 cells.\nThe flame vanishes after inflicting damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -12707,8 +13788,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "fixedCastTime": "0.32 seconds",
+          "variableCastTime": "1.28 seconds",
+          "duration": "2 minutes; Until triggered",
+          "translations": {
+            "pt-BR": {
+              "name": " Sight Blaster ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sight_Blaster"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1006.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1006",
           "tree": {
@@ -12729,8 +13821,24 @@ export const archMageData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.32 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.28 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "2 minutes; Until triggered"
               }
             ],
             "levelTables": [
@@ -12754,10 +13862,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12769,10 +13876,12 @@ export const archMageData = {
           "maxLevel": 1,
           "prerequisiteText": "Sense 1, Icewall 1",
           "group": "",
-          "type": "",
+          "type": "Active Skill",
           "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ganbantein",
           "description": "Enable the chance of canceling any\nground targeting magic spell cast on a 3*3 cell\narea around the targeted spot. This skill will\ncancel Magnetic Earth on areas that have been\nenchanted by that skill. This skill is\nunaffected by items or skills that remove\nGemstone requirements. Each cast requires\n1 Blue Gemstone and Yellow Gemstone.\n5 second Cast Delay.",
           "levelDetails": [],
           "variableCastTime": "0 seconds",
@@ -12788,6 +13897,10 @@ export const archMageData = {
               ]
             }
           ],
+          "spCost": "40",
+          "castDelay": "5 seconds",
+          "castRange": "? cells",
+          "areaOfEffect": "3 x 3",
           "translations": {
             "pt-BR": {
               "name": " Ganbantein ",
@@ -12822,20 +13935,40 @@ export const archMageData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
               },
               {
                 "label": "Variable Cast Time",
                 "value": "0 seconds"
               },
               {
+                "label": "Cast Delay",
+                "value": "5 seconds"
+              },
+              {
                 "label": "Cooldown",
                 "value": "2.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "? cells"
+              },
+              {
                 "label": "Target",
                 "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -12859,7 +13992,6 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -12878,6 +14010,8 @@ export const archMageData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Frost_Nova",
           "description": "Raises ice spikes around the user that will inflict Water property magic damage to all enemies around the user. It has a chance of leaving enemies frozen.\nThe chance of effect and cast time increases upon skill level.",
           "levelDetails": [
             {
@@ -12968,8 +14102,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "47 − (Skill Level × 2)",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Frost Nova ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Frost_Nova"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/88.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/88",
           "tree": {
@@ -12997,8 +14140,16 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "47 − (Skill Level × 2)"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -13090,10 +14241,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13106,9 +14256,11 @@ export const archMageData = {
           "prerequisiteText": "Thunder Storm 1, Jupitel Thunder 5",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lord_of_Vermilion",
           "description": "Calls forth destructive bolts from the skies upon a targeted location that will inflict Wind property magic damage every second to all enemies within its area of effect. It has a chance of leaving enemies blind.\nThe chance of effect is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -13202,8 +14354,20 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "56 + (Skill Level × 4)",
+          "variableCastTime": "[6.5 - (Skill Level × 0.2)] seconds",
+          "duration": "4 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Lord of Vermilion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lord_of_Vermilion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/85.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/85",
           "tree": {
@@ -13237,8 +14401,16 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "56 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[6.5 - (Skill Level × 0.2)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -13247,6 +14419,22 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11"
+              },
+              {
+                "label": "Duration",
+                "value": "4 seconds"
               }
             ],
             "levelTables": [
@@ -13324,10 +14512,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13340,9 +14527,11 @@ export const archMageData = {
           "prerequisiteText": "basic skill",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Heaven's_Drive",
           "description": "Commands the ground in a targeted location to rise into spikes, where each series of spikes will inflict Earth property magic damage to all enemies within its area of effect.\nThis skill is capable of hitting hidden enemies.",
           "levelDetails": [
             {
@@ -13396,8 +14585,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "24 + (Skill Level × 2)",
+          "variableCastTime": "0.9 + (Skill Level × 0.2) seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Heaven's Drive ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Heaven's_Drive"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/91.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/91",
           "tree": {
@@ -13425,8 +14625,16 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "24 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.8 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.9 + (Skill Level × 0.2) seconds"
               },
               {
                 "label": "Cast Delay",
@@ -13435,6 +14643,18 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -13482,10 +14702,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13498,9 +14717,11 @@ export const archMageData = {
           "prerequisiteText": "Thunder Storm 1, Sightrasher 2",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Meteor_Storm",
           "description": "Each meteor will inflict 125% Fire property magic damage each hit to all enemies, and it has a chance of leaving enemies [Abnormal Status : Stun].\nEach meteor has a 7*7 area. Skill level affects hits per meteor and the number of meteors.",
           "levelDetails": [
             {
@@ -13594,8 +14815,20 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 ~ 64",
+          "cooldown": "[2 + (Skill Level x 0.5)] seconds",
+          "duration": "2 ~ 7 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Meteor Storm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Meteor_Storm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/83.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/83",
           "tree": {
@@ -13629,6 +14862,10 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 ~ 64"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -13639,6 +14876,26 @@ export const archMageData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[2 + (Skill Level x 0.5)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
+              },
+              {
+                "label": "Duration",
+                "value": "2 ~ 7 seconds"
               }
             ],
             "levelTables": [
@@ -13730,10 +14987,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13749,6 +15005,8 @@ export const archMageData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Combines attack and magic to strike a single target from distance and inflict ranged physical damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -13762,8 +15020,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Stave Crasher (Magic Crasher) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stave_Crasher_(Magic_Crasher)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/365.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/365",
           "tree": {
@@ -13816,10 +15081,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13835,6 +15099,8 @@ export const archMageData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Drain",
           "description": "Enhances Max HSP, allows to absorb SP based on monster's level when they're killed with single target spells.\n(The effect is determined based on the skill used just before the effect of the soul drain is activated)",
           "levelDetails": [
             {
@@ -13925,8 +15191,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Drain ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Drain"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/364.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/364",
           "tree": {
@@ -13965,12 +15238,12 @@ export const archMageData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "sp-cost",
-                    "label": "SP Cost"
+                    "id": "maxsp",
+                    "label": "MaxSP"
                   },
                   {
-                    "id": "maxsp",
-                    "label": "Maxsp"
+                    "id": "sp-cost",
+                    "label": "SP Cost"
                   }
                 ],
                 "rows": [
@@ -14049,10 +15322,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14068,6 +15340,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Waterball",
           "description": "Requires to be in shallow water.\nInflicts Water property Magic Damage to a single target multiple times in rapid succession.\nThe range increases upon skill level, and can also be used above skill effects such as Deluge.",
           "levelDetails": [
             {
@@ -14118,8 +15392,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15/20/25",
+          "castDelay": "None",
+          "cooldown": "None",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Waterball ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Waterball"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/86.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/86",
           "tree": {
@@ -14151,6 +15436,22 @@ export const archMageData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15/20/25"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "None"
+              },
+              {
+                "label": "Cooldown",
+                "value": "None"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -14202,10 +15503,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14218,9 +15518,11 @@ export const archMageData = {
           "prerequisiteText": "Heaven's Drive 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Quagmire",
           "description": "Turns a targeted location into a marshland that reduces Movement Speed, AGI and DEX of all enemies within its area of effect.\nThis skill cannot reduce the affected stats of monsters by more than 50%, and those of players by more than 25%.\nAlso removes certain skill effects, such as Increase AGI, Twohand Quicken, Wind Walker and Adrenaline Rush.\nA Maximum of three quagmires can be placed before the first one expires.",
           "levelDetails": [
             {
@@ -14271,8 +15573,20 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level × 5)",
+          "castDelay": "1 second",
+          "duration": "(Skill Level × 5) seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Quagmire ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Quagmire"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/92.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/92",
           "tree": {
@@ -14298,6 +15612,26 @@ export const archMageData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "(Skill Level × 5)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -14309,6 +15643,10 @@ export const archMageData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -14317,35 +15655,40 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 5sec, AGI / DE x Reduction: 10%",
+                      "duration": "5 seconds",
+                      "effect": ", AGI / DE x Reduction: 10%",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration:10sec, AGI / DE x Reduction: 20%",
+                      "duration": "10 seconds",
+                      "effect": ", AGI / DE x Reduction: 20%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration:15sec, AGI / DE x Reduction: 30%",
+                      "duration": "15 seconds",
+                      "effect": ", AGI / DE x Reduction: 30%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration:20sec, AGI / DE x Reduction: 40%",
+                      "duration": "20 seconds",
+                      "effect": ", AGI / DE x Reduction: 40%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration:25sec, AGI / DE x Reduction: 50%",
+                      "duration": "25 seconds",
+                      "effect": ", AGI / DE x Reduction: 50%",
                       "sp-cost": "25"
                     }
                   }
@@ -14354,10 +15697,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14373,6 +15715,8 @@ export const archMageData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Napalm_Vulcan",
           "description": "Deliver multiple psychokinetic\nblows at an enemy with a low chance of causing\nan abnormal status. This skill's level affects\nthe number of strikes from Napalm Vulcan.",
           "levelDetails": [],
           "fixedCastTime": "0.2 seconds",
@@ -14406,8 +15750,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level × 15) − 5",
+          "castRange": "Magic",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Napalm Vulcan ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Napalm_Vulcan"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/400.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/400",
           "tree": {
@@ -14435,6 +15789,10 @@ export const archMageData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level × 15) − 5"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.2 seconds"
               },
@@ -14451,8 +15809,16 @@ export const archMageData = {
                 "value": "1 second"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -14500,10 +15866,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14519,6 +15884,8 @@ export const archMageData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mystical_Amplification",
           "description": "Increases base MATK for 60 sec.",
           "levelDetails": [
             {
@@ -14609,8 +15976,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 5)",
+          "fixedCastTime": "0.75 seconds",
+          "duration": "60 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Mystical Amplification ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mystical_Amplification"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/366.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/366",
           "tree": {
@@ -14631,8 +16008,20 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 5)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.75 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -14724,10 +16113,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14740,9 +16128,11 @@ export const archMageData = {
           "prerequisiteText": "Frost Diver 1, Jupitel 3",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Storm_Gust",
           "description": "Summons a vicious blizzard upon a targeted location that will inflict Water property magic damage every half a second to all enemies within its area of effect.\nIt lasts for 4.5s, hits every 0.45s and push them 2 cells.\nIt has a chance of leaving enemies frozen,and frozen enemies will not take further damage from this skill.",
           "levelDetails": [
             {
@@ -14836,8 +16226,20 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "78",
+          "variableCastTime": "[4.3 + (Skill Level × 0.2)] seconds",
+          "duration": "4.5 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Storm Gust ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Storm_Gust"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/89.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/89",
           "tree": {
@@ -14871,8 +16273,16 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "78"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[4.3 + (Skill Level × 0.2)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -14881,6 +16291,22 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "6 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11"
+              },
+              {
+                "label": "Duration",
+                "value": "4.5 seconds"
               }
             ],
             "levelTables": [
@@ -14958,10 +16384,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14973,10 +16398,12 @@ export const archMageData = {
           "maxLevel": 5,
           "prerequisiteText": "Quagmire 1,",
           "group": "",
-          "type": "",
+          "type": "Offensive Skill",
           "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gravitational_Field",
           "description": "Increase the gravity in a 5*5 cell\narea around a targeted spot which will decrease\nthe Movement and ASPD of enemies within\nrange, as well as cause continuous damage that\nwill pierce Defense. This skill's effect on\nMovement and ASPD does not apply to\nBoss monsters.",
           "levelDetails": [
             {
@@ -15031,8 +16458,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 10)",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Gravitational Field ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gravitational_Field"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/484.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/484",
           "tree": {
@@ -15064,8 +16501,16 @@ export const archMageData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Offensive Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 10)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -15084,8 +16529,16 @@ export const archMageData = {
                 "value": "5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -15097,35 +16550,24 @@ export const archMageData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   },
                   {
-                    "id": "5-sec-duration-enemy-speed",
-                    "label": "5 Sec Duration Enemy Speed"
-                  },
-                  {
-                    "id": "6-sec-duration-enemy-speed",
-                    "label": "6 Sec Duration Enemy Speed"
-                  },
-                  {
-                    "id": "7-sec-duration-enemy-speed",
-                    "label": "7 Sec Duration Enemy Speed"
-                  },
-                  {
-                    "id": "8-sec-duration-enemy-speed",
-                    "label": "8 Sec Duration Enemy Speed"
-                  },
-                  {
-                    "id": "9-sec-duration-enemy-speed",
-                    "label": "9 Sec Duration Enemy Speed"
+                    "id": "duration-enemy-speed",
+                    "label": "Duration Enemy Speed"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "5-sec-duration-enemy-speed": "-5%",
+                      "duration": "5 seconds",
+                      "duration-enemy-speed": "-5%",
                       "effect": "400 Damage / Sec",
                       "sp-cost": "60"
                     }
@@ -15133,7 +16575,8 @@ export const archMageData = {
                   {
                     "level": 2,
                     "values": {
-                      "6-sec-duration-enemy-speed": "-10%",
+                      "duration": "6 seconds",
+                      "duration-enemy-speed": "-10%",
                       "effect": "600 Damage / Sec",
                       "sp-cost": "70"
                     }
@@ -15141,7 +16584,8 @@ export const archMageData = {
                   {
                     "level": 3,
                     "values": {
-                      "7-sec-duration-enemy-speed": "-15%",
+                      "duration": "7 seconds",
+                      "duration-enemy-speed": "-15%",
                       "effect": "800 Damage / Sec",
                       "sp-cost": "80"
                     }
@@ -15149,7 +16593,8 @@ export const archMageData = {
                   {
                     "level": 4,
                     "values": {
-                      "8-sec-duration-enemy-speed": "-20%",
+                      "duration": "8 seconds",
+                      "duration-enemy-speed": "-20%",
                       "effect": "1,000 Damage / Sec",
                       "sp-cost": "90"
                     }
@@ -15157,7 +16602,8 @@ export const archMageData = {
                   {
                     "level": 5,
                     "values": {
-                      "9-sec-duration-enemy-speed": "-25%",
+                      "duration": "9 seconds",
+                      "duration-enemy-speed": "-25%",
                       "effect": "1,200 Damage / Sec",
                       "sp-cost": "100"
                     }
@@ -15167,10 +16613,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15197,6 +16642,8 @@ export const archMageData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -15275,8 +16722,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -15378,10 +16832,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15397,6 +16850,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stone_Curse",
           "description": "Attempt to [Abnormal Status : petrify] a single target. Each cast consumes a Red Gemstone.\nAt Levels 6 to 10, only successful casts consume the Red Gemstone.\nThe Duration is affected by target's Level, LUK and magic defense.",
           "levelDetails": [
             {
@@ -15483,8 +16938,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(26 − Skill Level)",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " Stone Curse ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stone_Curse"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/16.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/16",
           "tree": {
@@ -15503,6 +16967,14 @@ export const archMageData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "(26 − Skill Level)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -15597,10 +17069,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15616,6 +17087,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cold_Bolt",
           "description": "Summon bolts of frigid ice to\nstrike at an enemy. Barring changes in damage\ndue to elemental properties, each bolt inflicts\nan amount of damage equal to the caster's Matk.\nDescription : Attack enemies with bolts of frigid ice\nInflict 100% Water property magic damage.",
           "levelDetails": [
             {
@@ -15708,8 +17181,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "fixedCastTime": "0.2 + (Skill Level × 0.1) seconds",
+          "variableCastTime": "0.2 + (Skill Level × 0.3) seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Cold Bolt ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cold_Bolt"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/14.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/14",
           "tree": {
@@ -15730,12 +17214,28 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 + (Skill Level × 0.1) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.2 + (Skill Level × 0.3) seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1.4 seconds"
               },
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -15831,10 +17331,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15850,6 +17349,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lightening_Bolt",
           "description": "Drop lightning to give the enemy a 100% wind property magic damage.",
           "levelDetails": [
             {
@@ -15942,8 +17443,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "fixedCastTime": "0.2 + (Skill Level × 0.1) seconds",
+          "variableCastTime": "0.2 + (Skill Level × 0.3) seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Lightening Bolt ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lightening_Bolt"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/20.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/20",
           "tree": {
@@ -15964,12 +17476,28 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 + (Skill Level × 0.1) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.2 + (Skill Level × 0.3) seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1.4 seconds"
               },
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -16065,10 +17593,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16084,6 +17611,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Attack an enemy from a distance\nthrough the use of psychokinetic energy.\nDescription : Strikes at a single target with psychokinetic energy to inflict Ghost property magic damage to all enemies within the area of effect.\nThe more targets, the more scattered the damage.",
           "levelDetails": [
             {
@@ -16178,8 +17707,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Napalm beat ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Napalm_beat"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/11.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/11",
           "tree": {
@@ -16295,10 +17831,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16314,6 +17849,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Firebolt",
           "description": "Attack enemies with fire bolt\ninflict 100% Fire property magic damage.",
           "levelDetails": [
             {
@@ -16406,8 +17943,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "fixedCastTime": "0.2 + (Skill Level × 0.1) seconds",
+          "variableCastTime": "0.2 + (Skill Level × 0.3) seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Firebolt ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Firebolt"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/19.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/19",
           "tree": {
@@ -16428,12 +17976,28 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 + (Skill Level × 0.1) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.2 + (Skill Level × 0.3) seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1.4 seconds"
               },
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -16529,10 +18093,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16548,6 +18111,8 @@ export const archMageData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sight",
           "description": "7Summon a fire ball that will detect\nall hidden enemies in 7x7 cells as of the caster by consuming SP 10.",
           "levelDetails": [],
           "levelExtras": [
@@ -16561,8 +18126,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "10 seconds",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Sight ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sight"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/10.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/10",
           "tree": {
@@ -16583,8 +18158,20 @@ export const archMageData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
+              },
+              {
+                "label": "Duration",
+                "value": "10 seconds"
               }
             ],
             "levelTables": [
@@ -16608,10 +18195,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16627,6 +18213,8 @@ export const archMageData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -16640,8 +18228,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -16660,6 +18257,14 @@ export const archMageData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -16687,10 +18292,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16706,6 +18310,8 @@ export const archMageData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Increase_SP_Recovery",
           "description": "Enhance natural SP Recovery.\nMaxSP affects how much SP restoration is\nincreased by this skill. Increases the efficiency\nof SP recovering items for 2% per skill level.\nDescription : Additional SP every 10 seconds while the character is not moving.\nNo SP is restored if normal SP/HP regeneration is not permitted or the character is moving.",
           "levelDetails": [
             {
@@ -16796,8 +18402,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Increase SP Recovery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Increase_SP_Recovery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/9.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/9",
           "tree": {
@@ -16831,6 +18444,10 @@ export const archMageData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -16839,70 +18456,80 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(3 + 0.2% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(3 + 0.2% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(6 + 0.4% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(6 + 0.4% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(9 + 0.6% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(9 + 0.6% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(12 + 0.8% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(12 + 0.8% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(15 + 1.0% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(15 + 1.0% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(18 + 1.2% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(18 + 1.2% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(21 + 1.4% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(21 + 1.4% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(24 + 1.6% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(24 + 1.6% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(27 + 1.8% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(27 + 1.8% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(30 + 2.0% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(30 + 2.0% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   }
@@ -16911,10 +18538,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16930,6 +18556,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Inflicts water damage and has\na chance of freezing it's target.\nDescription : inflict Water property magic damage, It has a chance of leaving the target [Abnormal Status : Frozen].\nThe Chance and Duration are affected by target's magic defense and LUK.",
           "levelDetails": [
             {
@@ -17024,8 +18652,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Frost diver ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Frost_diver"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/15.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/15",
           "tree": {
@@ -17148,10 +18783,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17167,6 +18801,8 @@ export const archMageData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Each bolt will inflict 100% Wind property magic damage to 5*5cell.",
           "levelDetails": [
             {
@@ -17260,8 +18896,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Thunder storm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Thunder_storm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/21.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/21",
           "tree": {
@@ -17390,10 +19033,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17409,6 +19051,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Strike",
           "description": "Summon holy ghosts to inflict\nGhost property attacks on a target. At level 10,\nthese ghosts will inflict 5 consecutive strikes.\nThis skill has a 0.5 second Cast Delay.\nDescription : Summoning the Ancient Holy Spirit and attacking the enemy directly\nInflict 100% Ghost property magic damage.\nThis skill inflicts additional damage against Undead property entities.",
           "levelDetails": [
             {
@@ -17503,8 +19147,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "18 ~ 42",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/13.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/13",
           "tree": {
@@ -17532,6 +19185,10 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "18 ~ 42"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.1 seconds"
               },
@@ -17546,6 +19203,10 @@ export const archMageData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -17627,10 +19288,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17646,6 +19306,8 @@ export const archMageData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fireball",
           "description": "Shoots a fire ball to inflict Fire property magic damage to all enemies within its area of effect. Damage to Center(3X3cell) and Edge(5X5cell) is different.",
           "levelDetails": [
             {
@@ -17740,8 +19402,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Fireball ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fireball"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/17.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/17",
           "tree": {
@@ -17769,6 +19441,10 @@ export const archMageData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "25"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.2 seconds"
               },
@@ -17785,8 +19461,16 @@ export const archMageData = {
                 "value": "0 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -17864,10 +19548,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17880,9 +19563,11 @@ export const archMageData = {
           "prerequisiteText": "Finish Quest",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Energy_Coat",
           "description": "Create a barrier of spiritual\nenergy that will buffer attacks at the caster.\nThe caster's remaining SP affects the amount\nof damage reduced by the barrier.\nMore SP is drained as attacks buffered\nby the barrier accumulate.",
           "levelDetails": [],
           "levelExtras": [
@@ -17896,8 +19581,18 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "fixedCastTime": "5 seconds",
+          "duration": "5 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Energy Coat ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Energy_Coat"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/157.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/157",
           "tree": {
@@ -17916,6 +19611,22 @@ export const archMageData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "5 minutes"
               }
             ],
             "levelTables": [
@@ -17939,10 +19650,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17955,9 +19665,11 @@ export const archMageData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -17971,8 +19683,17 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -17991,6 +19712,18 @@ export const archMageData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -18014,10 +19747,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -18033,6 +19765,8 @@ export const archMageData = {
           "target": "cell on ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Create a magic barrier on\na targeted spot that will block short range melee\nattacks for the duration of the Safety Wall.\nEach cast requires 1 Blue Gemstone.\nDescription : Creates a wall on a targeted location that blocks every form of close range physical damage until its durability wears off or expires. Each cast consumes a Blue Gemstone.\nINT, Base Level, MaxSP affects durability of defence\nOnly the first time can prevent damage beyond the total durability.",
           "levelDetails": [
             {
@@ -18123,8 +19857,15 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Safety wall ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Safety_wall"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/12.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/12",
           "tree": {
@@ -18251,10 +19992,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -18267,9 +20007,11 @@ export const archMageData = {
           "prerequisiteText": "Sight 1, Fireball 5",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Firewall",
           "description": "Each cast consumes SP40, Creates a wall of flame on a targeted location that will inflict 50% Fire property magic damage and push enemies two cells backwards upon contact.\nUp to three can be installed.",
           "levelDetails": [
             {
@@ -18360,8 +20102,19 @@ export const archMageData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "duration": "(Skill Level + 4) seconds (Skill Level + 2) hits",
+          "castRange": "Magic",
+          "areaOfEffect": "1 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Firewall ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Firewall"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/18.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/18",
           "tree": {
@@ -18393,6 +20146,22 @@ export const archMageData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "1 x 3"
               }
             ],
             "levelTables": [
@@ -18404,6 +20173,10 @@ export const archMageData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -18412,70 +20185,80 @@ export const archMageData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "per wall: Attack 3times, Duration: 5sec",
+                      "duration": "5 seconds",
+                      "effect": "per wall: Attack 3times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "per wall: Attack 4times, Duration: 6sec",
+                      "duration": "6 seconds",
+                      "effect": "per wall: Attack 4times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "per wall: Attack 5times, Duration: 7sec",
+                      "duration": "7 seconds",
+                      "effect": "per wall: Attack 5times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "per wall: Attack 6times, Duration: 8sec",
+                      "duration": "8 seconds",
+                      "effect": "per wall: Attack 6times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "per wall: Attack 7times, Duration: 9sec",
+                      "duration": "9 seconds",
+                      "effect": "per wall: Attack 7times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "per wall: Attack 8times, Duration:10sec",
+                      "duration": "10 seconds",
+                      "effect": "per wall: Attack 8times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "per wall: Attack 9times, Duration:11sec",
+                      "duration": "11 seconds",
+                      "effect": "per wall: Attack 9times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "per wall:Attack 10times, Duration:12sec",
+                      "duration": "12 seconds",
+                      "effect": "per wall:Attack 10times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "per wall:Attack 11times, Duration:13sec",
+                      "duration": "13 seconds",
+                      "effect": "per wall:Attack 11times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "per wall:Attack 12times, Duration:14sec",
+                      "duration": "14 seconds",
+                      "effect": "per wall:Attack 12times",
                       "sp-cost": "40"
                     }
                   }
@@ -18484,10 +20267,9 @@ export const archMageData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -18507,6 +20289,8 @@ export const archMageData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Two-handed_Staff_Mastery",
       "description": "Two-handed Staves increase your MATK.",
       "levelDetails": [],
       "levelExtras": [
@@ -18556,8 +20340,15 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Two-handed Staff Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Two-handed_Staff_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5228.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5228",
       "tree": {
@@ -18653,10 +20444,9 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18672,6 +20462,8 @@ export const archMageData = {
       "target": "1 Ground cell",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Floral_Flare_Road",
       "description": "Temporarily summon blazing flower petals from the ground in your facing direction, inflicting Fire Magic damage within range.\nIt additionally increases damage, depending on your Base Level and SPL.",
       "levelDetails": [
         {
@@ -18726,8 +20518,19 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "20 + (10 × Skill Level)",
+      "duration": "5 seconds",
+      "castRange": "Magic",
+      "areaOfEffect": "3 x 3~11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Floral Flare Road ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Floral_Flare_Road"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5229.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5229",
       "tree": {
@@ -18755,6 +20558,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "20 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -18771,12 +20578,20 @@ export const archMageData = {
             "value": "5 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "1 Ground cell"
           },
           {
             "label": "Area of Effect",
-            "value": "Lv 1: 3 x 3 cells / Lv 2: 5 x 5 cells / Lv 3: 7 x 7 cells / Lv 4: 9 x 9 cells / Lv 5: 11 x 11 cells"
+            "value": "3 x 3~11 x 11"
+          },
+          {
+            "label": "Duration",
+            "value": "5 seconds"
           }
         ],
         "levelTables": [
@@ -18824,7 +20639,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Floral Flare Road",
@@ -18882,7 +20696,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18898,6 +20712,8 @@ export const archMageData = {
       "target": "Instant Cast",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Causes a rain of ice picks to fall around you, dealing water-based magic damage to targets in an area.\nDamage is additionally increased depending on the user's base level and SPL..",
       "levelDetails": [
         {
@@ -18952,8 +20768,15 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Rain Of Crystal ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Rain_Of_Crystal"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5216.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5216",
       "tree": {
@@ -19055,7 +20878,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Rain of Crystal",
@@ -19140,7 +20962,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19156,6 +20978,8 @@ export const archMageData = {
       "target": "1 Ground cell",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Tornado_Storm",
       "description": "Summon a lightning-charged tornado on the selected spot, inflicting Wind Magic damage on targets within range.\nIt additionally increases damage, depending on your Base Level and SPL.",
       "levelDetails": [
         {
@@ -19210,8 +21034,18 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "35 + (10 × Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "5 x 5~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Tornado Storm ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Tornado_Storm"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5227.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5227",
       "tree": {
@@ -19239,6 +21073,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "35 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -19255,12 +21093,16 @@ export const archMageData = {
             "value": "5 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "1 Ground cell"
           },
           {
             "label": "Area of Effect",
-            "value": "Lv 1: 5 x 5 cells / Lv 2: 5 x 5 cells / Lv 3: 7 x 7 cells / Lv 4: 7 x 7 cells / Lv 5: 9 x 9 cells"
+            "value": "5 x 5~9 x 9"
           }
         ],
         "levelTables": [
@@ -19308,7 +21150,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Tornado Storm",
@@ -19366,7 +21207,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19382,6 +21223,8 @@ export const archMageData = {
       "target": "1 Ground cell",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Shake the ground, inflicting Earth Magic damage on targets within range.\nIt additionally increases damage, depending on your Base Level and SPL.",
       "levelDetails": [
         {
@@ -19436,8 +21279,15 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Strantum Tremor ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Strantum_Tremor"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5221.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5221",
       "tree": {
@@ -19534,7 +21384,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Stratum Tremor",
@@ -19592,7 +21441,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19608,6 +21457,8 @@ export const archMageData = {
       "target": "1 Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Soul_Vulcan_Strike",
       "description": "Repeatedly cast a powerful Soul Strike at a target and others around it.\nIt additionally increases damage, depending on your Base Level and SPL.",
       "levelDetails": [
         {
@@ -19662,8 +21513,18 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "70 + (10 x Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "3 x 3 ~ 11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Soul Vulcan Strike ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Soul_Vulcan_Strike"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5220.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5220",
       "tree": {
@@ -19697,6 +21558,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "70 + (10 x Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -19713,12 +21578,16 @@ export const archMageData = {
             "value": "0.7 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
           },
           {
             "label": "Area of Effect",
-            "value": "Lv 1: 3 x 3 cells / Lv 2: 5 x 5 cells / Lv 3: 7 x 7 cells / Lv 4: 9 x 9 cells / Lv 5: 11 x 11 cells"
+            "value": "3 x 3 ~ 11 x 11"
           }
         ],
         "levelTables": [
@@ -19766,7 +21635,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Soul Vulcan Strike",
@@ -19816,7 +21684,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19831,7 +21699,9 @@ export const archMageData = {
       "type": "Magic",
       "target": "Self",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Climax",
       "description": "Create special effects with certain magic you use for 300 seconds.\nDifferent effects are added, depending on the skill level.",
       "levelDetails": [],
       "variableCastTime": "0 seconds",
@@ -19862,8 +21732,21 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "60",
+      "fixedCastTime": "4 seconds",
+      "castDelay": "0.3 seconds",
+      "cooldown": "300 seconds",
+      "duration": "300 seconds",
+      "castRange": "Magic",
+      "translations": {
+        "pt-BR": {
+          "name": " Climax ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Climax"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5232.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5232",
       "tree": {
@@ -19897,12 +21780,40 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "60"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "4 seconds"
+          },
+          {
             "label": "Variable Cast Time",
             "value": "0 seconds"
           },
           {
+            "label": "Cast Delay",
+            "value": "0.3 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "300 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "300 seconds"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "150"
           }
         ],
         "levelTables": [
@@ -19950,7 +21861,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Climax",
@@ -20000,7 +21910,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20016,6 +21926,8 @@ export const archMageData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Crimson_Arrow",
       "description": "Shoots a flame arrow at the target, inflicting fire attribute magic damage in a straight line from the caster to the target, and the flame arrow hitting the target explodes, inflicting fire attribute magic damage to surrounding targets.\nDamage is additionally increased depending on the user's base level and SPL.\nIf there is a climax effect, the fire attribute magic damage from the explosion of the flame arrow is divided into two attacks, but is applied as two attacks (regardless of the climax level).",
       "levelDetails": [
         {
@@ -20070,8 +21982,18 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "55 + (10 x Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "5 x 5 ~ 7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Crimson Arrow ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Crimson_Arrow"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5235.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5235",
       "tree": {
@@ -20099,6 +22021,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "55 + (10 x Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -20113,6 +22039,10 @@ export const archMageData = {
           {
             "label": "Cooldown",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
           },
           {
             "label": "Target",
@@ -20177,7 +22107,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Crimson Arrow",
@@ -20307,7 +22236,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20323,6 +22252,8 @@ export const archMageData = {
       "target": "Instant Cast",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Frozen_Slash",
       "description": "Inflicts water magic damage to targets within the range around the caster with sharp ice.\nDamage is additionally increased depending on the user's base level and SPL.\nIf a climax effect active, greater damage is inflicted (regardless of the climax level).",
       "levelDetails": [
         {
@@ -20377,8 +22308,18 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "35 + (10 x Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "9 x 9 ~ 13 x 13",
+      "translations": {
+        "pt-BR": {
+          "name": " Frozen Slash ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Frozen_Slash"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5237.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5237",
       "tree": {
@@ -20406,6 +22347,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "35 + (10 x Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -20420,6 +22365,10 @@ export const archMageData = {
           {
             "label": "Cooldown",
             "value": "0.45 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
           },
           {
             "label": "Target",
@@ -20484,7 +22433,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Frozen Slash",
@@ -20629,7 +22577,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20645,6 +22593,8 @@ export const archMageData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Storm_Cannon",
       "description": "Shoots a vortex of wind in a straight line to the target, inflicting wind attribute magic damage to the target within the range.\nDamage is additionally increased depending on the user's base level and SPL.\nIf a climax effect active, greater damage is inflicted (regardless of the climax level).",
       "levelDetails": [
         {
@@ -20699,8 +22649,17 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "50 + (10 × Skill Level)",
+      "castRange": "Magic",
+      "translations": {
+        "pt-BR": {
+          "name": " Storm Cannon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Storm_Cannon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5234.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5234",
       "tree": {
@@ -20728,6 +22687,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "50 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -20742,6 +22705,10 @@ export const archMageData = {
           {
             "label": "Cooldown",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
           },
           {
             "label": "Target",
@@ -20797,7 +22764,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Storm Cannon",
@@ -20918,7 +22884,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20934,6 +22900,8 @@ export const archMageData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Rock_Down",
       "description": "Drops a large rock on the target and Inflict Earth magical damage to the target and surrounding enemies.\nDamage is additionally increased depending on the user's base level and SPL.\nIf a climax effect active, greater damage is inflicted (regardless of the climax level).",
       "levelDetails": [
         {
@@ -20988,8 +22956,18 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "55 + (10 × Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "5 x 5~7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Rock Down ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Rock_Down"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5233.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5233",
       "tree": {
@@ -21017,6 +22995,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "55 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -21031,6 +23013,10 @@ export const archMageData = {
           {
             "label": "Cooldown",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
           },
           {
             "label": "Target",
@@ -21095,7 +23081,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Rock Down",
@@ -21232,7 +23217,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -21248,6 +23233,8 @@ export const archMageData = {
       "target": "1 Ground cell",
       "recoversAp": "5",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Mystery_Illusion",
       "description": "Cast mysterious magic on the selected ground spot.\nThis magic inflicts Shadow Magic damage on targets within range for its duration.\nIt additionally increases damage, depending on your Base Level and SPL.",
       "levelDetails": [
         {
@@ -21302,8 +23289,18 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "70 + (10 × Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "9 x 9~13 x 13",
+      "translations": {
+        "pt-BR": {
+          "name": " Mystery Illusion ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Mystery_Illusion"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5217.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5217",
       "tree": {
@@ -21337,6 +23334,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "70 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -21353,12 +23354,16 @@ export const archMageData = {
             "value": "4 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "1 Ground cell"
           },
           {
             "label": "Area of Effect",
-            "value": "Lv 1: 9 x 9 cells / Lv 2: 9 x 9 cells / Lv 3: 11 x 11 cells / Lv 4: 11 x 11 cells / Lv 5: 13 x 13 cells"
+            "value": "9 x 9~13 x 13"
           },
           {
             "label": "AP Generated",
@@ -21410,7 +23415,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Mystery Illusion",
@@ -21496,7 +23500,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -21512,6 +23516,8 @@ export const archMageData = {
       "target": "1 Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Deadly_Projection",
       "description": "Sends a projection that causes the target's body to rot.\nNegates the target's Magical immunity for a period of time and deals Undead Magical damage.\nIt additionally increases damage, depending on your Base Level and SPL.",
       "levelDetails": [
         {
@@ -21566,8 +23572,17 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "70 + (10 × Skill Level)",
+      "castRange": "Magic",
+      "translations": {
+        "pt-BR": {
+          "name": " Deadly Projection ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Deadly_Projection"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5214.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5214",
       "tree": {
@@ -21595,6 +23610,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "70 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -21609,6 +23628,10 @@ export const archMageData = {
           {
             "label": "Cooldown",
             "value": "2 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
           },
           {
             "label": "Target",
@@ -21664,7 +23687,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Deadly Projection",
@@ -21695,7 +23717,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -21711,6 +23733,8 @@ export const archMageData = {
       "target": "1 Ground cell",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/All_Bloom",
       "description": "Create a flower garden on the ground. Blazing flower petals randomly appear and explode.\ninflicting Fire Magic damage on targets in 7x7 cells around them.\nThis skill additionally increases damage, depending on your Base Level and SPL.\nClimax mode changes its effect, depending on its stage.\nClimax (Stage 1)\nFlower petals appear chance doubled.\nClimax (Stage 2)\nDecreases damage, but summons 2 flower petals at a time.\nClimax (Stage 3)\nAll Bloom damage +300% Increase.\nClimax (Stage 4)\nNo Petals are generated, and targets in skill range have 100% reduced Fire Resistance for 30 seconds.\nClimax (Stage 5)\nAdditional Fire Magic damage at 85,000% of MATK after all the flower petals explode.",
       "levelDetails": [
         {
@@ -21765,8 +23789,18 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "70 + (10 × Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "7 x 7~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " All Bloom ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/All_Bloom"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5222.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5222",
       "tree": {
@@ -21794,6 +23828,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "70 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -21810,8 +23848,16 @@ export const archMageData = {
             "value": "6 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "1 Ground cell"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7~9 x 9"
           }
         ],
         "levelTables": [
@@ -21859,7 +23905,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "All Bloom",
@@ -21927,7 +23972,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -21943,6 +23988,8 @@ export const archMageData = {
       "target": "Instant Cast",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Crystal_Impact",
       "description": "Creates a powerful water elemental wave in the surrounding area starting from the ground beneath one's feet, inflicting water elemental magic damage to targets within the range.\nTargets damaged by this wave will receive additional water magic damage after a certain period of time.\nDamage is additionally increased depending on the user's base level and SPL.\nIn the climax state, the effect changes depending on the level.\nClimax (Stage 1)\nApply a buff to caster and surrounding party member For 900 sec, DEF+ 300, MDEF+ 100, increase Water magic damage and resistance to Water by 30%.\nClimax (Stage 2)\nDamage dealt by Ice Waves increased to 2x.\nClimax (Stage 3)\nIce wave damage increases by 50%.\nClimax (Stage 4)\nReduce the damage of the ice wave, but increase delayed damage by 150%\nClimax (Stage 5)\nIncrease Ice Wave's area of effect to 15x15 cells, delayed damage now deal damage to 5x5 area surrounding the target.",
       "levelDetails": [
         {
@@ -21997,8 +24044,18 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "70 + (10 × Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "7 x 7~15 x 15",
+      "translations": {
+        "pt-BR": {
+          "name": " Crystal Impact ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Crystal_Impact"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5225.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5225",
       "tree": {
@@ -22026,6 +24083,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "70 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -22040,6 +24101,10 @@ export const archMageData = {
           {
             "label": "Cooldown",
             "value": "2 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
           },
           {
             "label": "Target",
@@ -22100,7 +24165,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Crystal Impact",
@@ -22182,7 +24246,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -22198,6 +24262,8 @@ export const archMageData = {
       "target": "Instant Cast",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Destructive_Hurricane",
       "description": "Creates a strong wind around you, inflicting wind attribute magic damage to targets within the range.\nDamage is additionally increased depending on the user's base level and SPL.\nIn the climax state, the effect changes depending on the level.\nClimax (Stage 1)\nMATK 12500% Additional damage from wind attribute magic.\nClimax (Stage 2)\nAdd 2 cells knockback effect.\nClimax (Stage 3)\nDestructive Hurricane Damage 150% increase.\nClimax (Stage 4)\nSkill no longer does damage but triggers a buff. For 900 sec, MATK+ 100 and increase Wind property magic damage by 30%\nClimax (Stage 5)\nArea of Effect change to 19x19, Reduced Destructive Hurricane Damage by 20% .",
       "levelDetails": [
         {
@@ -22252,8 +24318,18 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "70 + (10 × Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "7 x 7~11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Destructive Hurricane ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Destructive_Hurricane"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5215.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5215",
       "tree": {
@@ -22281,6 +24357,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "70 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -22295,6 +24375,10 @@ export const archMageData = {
           {
             "label": "Cooldown",
             "value": "2.5 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
           },
           {
             "label": "Target",
@@ -22355,7 +24439,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Destructive Hurricane",
@@ -22456,7 +24539,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -22472,6 +24555,8 @@ export const archMageData = {
       "target": "1 Ground cell",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Violent_Quake",
       "description": "Temporarily shake the ground and shoot rocks out of it, randomly attacking targets within range.\nRocks inflict Earth Magic damage on their target and others in 7 x7 cells around it.\nThis skill additionally increases damage, depending on your Base Level and SPL.\nClimax mode changes its effect, depending on its stage.\nClimax (Stage 1)\nDecreases damage, but summons 2 rocks at a time.\nClimax (Stage 2)\nRocks attack 9x9 cells.\nClimax (Stage 3)\nViolent Quake damage +200%.\nClimax (Stage 4)\nInstead of summoning rocks, adds Earth Resistance -100% to targets within range for 30 seconds.\nClimax (Stage 5)\nEffective range set to 7x7 cells.",
       "levelDetails": [
         {
@@ -22526,8 +24611,18 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "70 + (10 × Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "7 x 7~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Violent Quake ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Violent_Quake"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5218.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5218",
       "tree": {
@@ -22555,6 +24650,10 @@ export const archMageData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "70 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -22571,8 +24670,16 @@ export const archMageData = {
             "value": "6 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "1 Ground cell"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7~9 x 9"
           }
         ],
         "levelTables": [
@@ -22620,7 +24727,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Violent Quake",
@@ -22686,7 +24792,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -22701,7 +24807,9 @@ export const archMageData = {
       "type": "Magical",
       "target": "1 Ground cell",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Astral_Strike",
       "description": "Drops a powerful meteorite on the ground, dealing Neutral Magical damage to targets in range and dealing multiple additional Neutral Magical damage over 6 seconds.\nThe meteor inflicts more damage on Undead and Dragon monsters.\nIt additionally increases damage, depending on your Base Level and SPL.",
       "levelDetails": [
         {
@@ -22796,8 +24904,19 @@ export const archMageData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "150",
+      "duration": "6 seconds",
+      "castRange": "Magic",
+      "areaOfEffect": "5 x 5 ~ 11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Astral Strike ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Astral_Strike"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5230.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5230",
       "tree": {
@@ -22837,6 +24956,10 @@ export const archMageData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "150"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -22853,12 +24976,24 @@ export const archMageData = {
             "value": "6 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "1 Ground cell"
           },
           {
             "label": "Area of Effect",
-            "value": "Lv 1: 5 x 5 cells / Lv 2: 5 x 5 cells / Lv 3: 5 x 5 cells / Lv 4: 7 x 7 cells / Lv 5: 7 x 7 cells / Lv 6: 7 x 7 cells / Lv 7: 9 x 9 cells / Lv 8: 9 x 9 cells / Lv 9: 9 x 9 cells / Lv 10: 11 x 11 cells"
+            "value": "5 x 5 ~ 11 x 11"
+          },
+          {
+            "label": "Duration",
+            "value": "6 seconds"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "150"
           }
         ],
         "levelTables": [
@@ -22936,7 +25071,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Astral Strike",
@@ -23018,7 +25152,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -23034,6 +25168,8 @@ export const archMageData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "22 ~ 10",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Converts some of the user's AP into SP through energy exchange.",
       "levelDetails": [
         {
@@ -23061,8 +25197,15 @@ export const archMageData = {
       "variableCastTime": "1 second",
       "castDelay": "0.5 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Energy Conversion ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Energy_Conversion"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6516.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6516",
       "tree": {
@@ -23161,7 +25304,6 @@ export const archMageData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Energy Conversion",
@@ -23177,7 +25319,7 @@ export const archMageData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

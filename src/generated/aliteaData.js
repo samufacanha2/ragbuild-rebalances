@@ -1,5 +1,5 @@
 export const aliteaData = {
-  "generatedAt": "2026-07-10T00:57:56.172Z",
+  "generatedAt": "2026-07-10T15:02:27.338Z",
   "classId": 4355,
   "classSlug": "alitea",
   "className": "Alitea",
@@ -66,7 +66,8 @@ export const aliteaData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4355",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [],
   "addedSkills": [],
@@ -91,6 +92,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nThe pulse of madness pulses violently, during the skill duration, using Wolf attack-type skills has a chance to gain 1 stack of Madness.\nMadness can be stacked up to 3 times. Wolf attack-type skills are enhanced according to the level of stack, and the effects of each level are accumulative.",
           "levelDetails": [
             {
@@ -115,8 +118,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Pulse of Madness ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pulse_of_Madness"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6576.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6576",
           "tree": {
@@ -193,10 +203,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -212,6 +221,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nReorganizes the user's formation with a powerful flap, increasing long ranged physical damage and critical hit chance for the duration.",
           "levelDetails": [
             {
@@ -236,8 +247,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Flip Flap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flip_Flap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6583.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6583",
           "tree": {
@@ -274,28 +292,16 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "long-ranged-physical-damage",
+                    "label": "Long Ranged Physical Damage"
+                  },
+                  {
                     "id": "duration",
                     "label": "Duration"
                   },
                   {
-                    "id": "increases-long-ranged-physical-damage-by-12-cri",
-                    "label": ": Increases Long Ranged Physical Damage By 12% / Cri"
-                  },
-                  {
-                    "id": "increases-long-ranged-physical-damage-by-18-cri",
-                    "label": ": Increases Long Ranged Physical Damage By 18% / Cri"
-                  },
-                  {
-                    "id": "increases-long-ranged-physical-damage-by-24-cri",
-                    "label": ": Increases Long Ranged Physical Damage By 24% / Cri"
-                  },
-                  {
-                    "id": "increases-long-ranged-physical-damage-by-30-cri",
-                    "label": ": Increases Long Ranged Physical Damage By 30% / Cri"
-                  },
-                  {
-                    "id": "increases-long-ranged-physical-damage-by-6-cri",
-                    "label": ": Increases Long Ranged Physical Damage By 6% / Cri"
+                    "id": "cri",
+                    "label": "Cri"
                   }
                 ],
                 "rows": [
@@ -303,35 +309,40 @@ export const aliteaData = {
                     "level": 1,
                     "values": {
                       "duration": "60 seconds",
-                      "increases-long-ranged-physical-damage-by-6-cri": "+ 3"
+                      "long-ranged-physical-damage": "+6%",
+                      "cri": "+ 3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
                       "duration": "120 seconds",
-                      "increases-long-ranged-physical-damage-by-12-cri": "+ 6"
+                      "long-ranged-physical-damage": "+12%",
+                      "cri": "+ 6"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
                       "duration": "180 seconds",
-                      "increases-long-ranged-physical-damage-by-18-cri": "+ 9"
+                      "long-ranged-physical-damage": "+18%",
+                      "cri": "+ 9"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
                       "duration": "240 seconds",
-                      "increases-long-ranged-physical-damage-by-24-cri": "+ 12"
+                      "long-ranged-physical-damage": "+24%",
+                      "cri": "+ 12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
                       "duration": "300 seconds",
-                      "increases-long-ranged-physical-damage-by-30-cri": "+ 15"
+                      "long-ranged-physical-damage": "+30%",
+                      "cri": "+ 15"
                     }
                   }
                 ],
@@ -339,10 +350,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -358,6 +368,8 @@ export const aliteaData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Maximizes the sixth sense, increasing combat ability.",
           "levelDetails": [
             {
@@ -382,8 +394,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sixth Sense ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sixth_Sense"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6575.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6575",
           "tree": {
@@ -458,10 +477,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -477,6 +495,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Summons the monolith at the target location, dealing water property magical damage and granting Glacial Monolith effect to a 15 x 15 cells area around the designated point.\nWhile the monolith is present, using certain skills within its range triggers Glacial Nova skill, dealing water property magical damage to enemies around the monolith.\nIf under Truth of Ice state, deals additional damage depending on the user's base level and SPL.\nCast range: 7 cells.\nGlacial Nova\nThis skill activates when Glacial skills are used near the Glacial Monolith.\nDeals water property magical damage to the enemies near the Glacial Monolith.",
           "levelDetails": [
             {
@@ -529,8 +549,15 @@ export const aliteaData = {
           "castDelay": "0.2 seconds",
           "cooldown": "3 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Glacial Monolith ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Glacial_Monolith"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6592.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6592",
           "tree": {
@@ -670,10 +697,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -689,6 +715,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "1~5, +5 (enhanced)",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Calls down lightning on the user, dealing wind property magical damage to enemies within a surrounding area for 2 hits and gaining multiple stacks of Charge effect.\nIf the skill is used while Overcharged, an enhanced version is used, increasing the number of hit to 3 hits and recovering an additional 5 AP.\nIf under Truth of Wind state, deals additional damage depending on the user's base level and SPL.",
           "levelDetails": [
             {
@@ -716,8 +744,15 @@ export const aliteaData = {
           "variableCastTime": "1.4 seconds",
           "castDelay": "0.4 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Roaring Charge ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Roaring_Charge"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6599.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6599",
           "tree": {
@@ -810,10 +845,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -829,6 +863,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Blooms the target with earth flower, dealing earth property magical damage to enemies within a range and gaining 2 stacks of Growth effect.\nIf the skill is used while Growth effect is complete, Ground Bloom skill will be activated.\nIf under Truth of Earth state, deals additional damage depending on the user's base level and SPL.\nCast range: 7 cells.",
           "levelDetails": [
             {
@@ -877,8 +913,15 @@ export const aliteaData = {
           "castDelay": "0.2 seconds",
           "cooldown": "0.5 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Terra Harvest ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Terra_Harvest"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6603.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6603",
           "tree": {
@@ -1005,10 +1048,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1024,6 +1066,8 @@ export const aliteaData = {
           "target": "Single Target",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "an only be used while in [Werewolf] state.\nThe first claw, imbued with primal rage, opens the path to hunting.\nInstantly dashes to the enemy within 5 cells range, dealing melee physical damage to all enemies within surrounding range.\nAfter using Primal Claw, Feral Claw can be used for 5 seconds.\nDeals additional damage depending on the user's base level and POW.\nIf in Madness state, the effect is enhanced according to the level.\nMadness (level 1)\nPrimal Claw ATK + 800%.\nMadness (level 2)\nChanges area of effect to 7 x 7 cells.\nMadness (level 3)\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
           "levelDetails": [
             {
@@ -1048,8 +1092,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Primal Claw ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Primal_Claw"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6578.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6578",
           "tree": {
@@ -1130,10 +1181,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1149,6 +1199,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nSwiftly subdues the prey with sharp feather.\nDeals long ranged physical damage to the target enemy.\nWhen the skill is used, gains 1 stack of [Gale Charge] state and can be accumulated up to 5 stacks.\nWhen using the skill after gaining maximum stack, grants [Gale Acceleration] to the party members within a 9 x 9 cells area around the user.\n[Gale Acceleration]: Increases melee and long ranged physical damage by 15% / Increases all property magical damage by 15%.\nDeals additional damage depending on the user's base level and CON.\nThe skill's effect is enhanced during Apex Phase.\nApex Phase\nIncreases Pinion Shot damage by 30%.\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
           "levelDetails": [
             {
@@ -1197,8 +1249,15 @@ export const aliteaData = {
           "castDelay": "0.5 seconds",
           "cooldown": "0.35 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Pinion Shot ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pinion_Shot"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6586.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6586",
           "tree": {
@@ -1252,10 +1311,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1271,6 +1329,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "130",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nThe seething instinct of alpha dominates the user's entire body.\nDuring the duration, the user can use the maximum effect of Madness level 3.",
           "levelDetails": [
             {
@@ -1295,8 +1355,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Alpha Phase ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Alpha_Phase"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6577.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6577",
           "tree": {
@@ -1377,10 +1444,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1396,6 +1462,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Creates a glacier and shatters it, dealing water property magical damage to the target and surrounding enemies for 3 hits.\nIf under Truth of Ice state, deals additional damage depending on the user's base level and SPL.\nCast range: 7 cells.",
           "levelDetails": [
             {
@@ -1444,8 +1512,15 @@ export const aliteaData = {
           "castDelay": "0.2 seconds",
           "cooldown": "0.5 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Glacial Shard ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Glacial_Shard"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6594.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6594",
           "tree": {
@@ -1499,10 +1574,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1518,6 +1592,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Throws a sharp spear of lightning at the designated target, dealing wind property magical damage to the target and enemies within the surrounding area for 2 hits and gaining 1 stacks of Charge effect.\nIf the skill is used while Overcharged, an enhanced version is used, increasing the number of hit to 3 hits.\nIf under Truth of Wind state, deals additional damage depending on the user's base level and INT.\nCast range: 8 cells.",
           "levelDetails": [
             {
@@ -1566,8 +1642,15 @@ export const aliteaData = {
           "castDelay": "0.4 seconds",
           "cooldown": "0.5 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Roaring Piercer ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Roaring_Piercer"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6597.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6597",
           "tree": {
@@ -1694,10 +1777,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1713,6 +1795,8 @@ export const aliteaData = {
           "target": "1 cell ground target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Sends an earth wave to the designated ground target, dealing earth property magical damage to enemies within 3 x 12 area of effect and gaining 2 stacks of Growth effect.\nCancels a certain ground-targeting spell placed within the area of effect.\nIf there are immobile cells around the designated location, the effect will not activate.\nIf the skill is used while Growth effect is complete, Ground Bloom skill will be activated.\nIf under Truth of Earth state, deals additional damage depending on the user's base level and SPL.\nCast range: 2 cells.",
           "levelDetails": [
             {
@@ -1757,8 +1841,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Terra Wave ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Terra_Wave"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6602.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6602",
           "tree": {
@@ -1869,10 +1960,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1888,6 +1978,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nCan be used within 5 seconds after using [Primal Claw].\nRampaging wild claw continuously strike the prey.\nDeals melee physical damage to all enemies within range around the user.\nAfter using Feral Claw, Alpha Claw can be used for 5 seconds.\nDeals additional damage depending on the user's base level and POW.\nIf in Madness state, the effect is enhanced according to the level.\nMadness (level 1)\nFeral Claw ATK + 800%.\nMadness (level 2)\nChanges area of effect to 9 x 9 cells.\nMadness (level 3)\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
           "levelDetails": [
             {
@@ -1912,8 +2004,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Feral Claw ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Feral_Claw"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6579.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6579",
           "tree": {
@@ -1994,10 +2093,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2013,6 +2111,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nA wind-infused spear pierces the prey, dealing long ranged physical damage to the target and all enemies within a 3x7 cells around the target.\nDeals additional damage depending on the user's base level and CON.\nThe skill's effect is enhanced during Apex Phase.\nApex Phase\nIncreases Quill Spear damage by 30%.\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).\nChangess area of effect to 5 x 7 cells.",
           "levelDetails": [
             {
@@ -2061,8 +2161,15 @@ export const aliteaData = {
           "castDelay": "0.35 seconds",
           "cooldown": "0.7 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Quill Spear ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Quill_Spear"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6588.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6588",
           "tree": {
@@ -2116,10 +2223,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2135,6 +2241,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "130",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nThe instinct of sky predator envelop the user's wings.\nThis state grants buffs to Raptor attack-type skills for the duration.",
           "levelDetails": [
             {
@@ -2159,8 +2267,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Apex Phase ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Apex_Phase"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6585.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6585",
           "tree": {
@@ -2241,10 +2356,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2260,6 +2374,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Teleports to the Glacial Monolith, dealing water property magical damage to nearby enemies for 2 hits.\nThe skill cannot be used outside the Glacial Monolith's range.\nIf under Truth of Ice state, deals additional damage depending on the user's base level and SPL.",
           "levelDetails": [
             {
@@ -2287,8 +2403,15 @@ export const aliteaData = {
           "variableCastTime": "0.3 seconds",
           "castDelay": "0.2 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Glacial Stomp ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Glacial_Stomp"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6595.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6595",
           "tree": {
@@ -2381,10 +2504,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2400,6 +2522,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "20~15",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Summons a lightning storm to deal wind property magical damage to the enemies within its special range.\nDeals additional damage depending on the user's base level and SPL.\n*Activates while holding down the skill shortcut key.",
           "levelDetails": [
             {
@@ -2424,8 +2548,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Furious Storm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Furious_Storm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6601.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6601",
           "tree": {
@@ -2475,10 +2606,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2494,6 +2624,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "20/19/18/17/15",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Sends a powerful shockwave through the ground, dealing earth property magical damage to nearby enemies and gaining 4 stacks of Growth effect.\nRecovers certain percentage of MaxHP to the user, and grants a buff to the user that reduces melee / long ranged physical damage taken by certain percentage and increases earth property magical damage by 15% for 10 seconds.\nDeals additional damage depending on the user's base level and SPL.",
           "levelDetails": [
             {
@@ -2522,8 +2654,15 @@ export const aliteaData = {
           "castDelay": "0.2 seconds",
           "cooldown": "5 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Solid Stomp ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solid_Stomp"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6604.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6604",
           "tree": {
@@ -2626,10 +2765,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2645,6 +2783,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nCan be used within 5 seconds after using [Feral Claw].\nThe alpha's final claw suffocates the prey.\nDeals melee physical damage to all enemies within range around the user for 2 hits.\nDeals additional damage depending on the user's base level and POW.\nIf in Madness state, the effect is enhanced according to the level.\nMadness (level 1)\nAlpha Claw ATK + 800%.\nMadness (level 2)\nChanges area of effect to 9 x 9 cells.\nMadness (level 3)\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
           "levelDetails": [
             {
@@ -2669,8 +2809,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Alpha Claw ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Alpha_Claw"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6580.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6580",
           "tree": {
@@ -2751,10 +2898,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2770,6 +2916,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "20",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nCreates a storm with a violent flap of wings, dealing long ranged physical damage to the target and all enemies within range.\nDeals additional damage depending on the user's base level and CON.\nThe skill's effect is enhanced during Apex Phase.\nApex Phase\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).\nIncreases Tempest Flap damage by 30%.\nIncreases number of hit to 3 hits.",
           "levelDetails": [
             {
@@ -2814,8 +2962,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Tempest Flap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tempest_Flap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6590.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6590",
           "tree": {
@@ -2853,10 +3008,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2872,6 +3026,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "15/14/13/12/10",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Emits an extremely cold air around the user, dealing water property magical damage to nearby enemies.\nDeals additional damage depending on the user's base level and SPL.",
           "levelDetails": [
             {
@@ -2900,8 +3056,15 @@ export const aliteaData = {
           "castDelay": "0.2 seconds",
           "cooldown": "0.3 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Chilling Blast ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chilling_Blast"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6596.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6596",
           "tree": {
@@ -3004,10 +3167,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3023,6 +3185,8 @@ export const aliteaData = {
           "target": "Single Target",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nContinuously bites a target with enraged fangs, dealing melee physical damage for 2 hits.\nDeals additional damage depending on the user's base level and POW.\nIf in Madness state, the effect is enhanced according to the level.\nMadness (level 1)\nIncreases number of hit to 3 hits.\nFrenzy Fang ATK + 750%.\nMadness (level 2)\nIncreases number of hit to 5 hits.\nMadness (level 3)\nIncreases number of hit to 7 hits.\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
           "levelDetails": [
             {
@@ -3047,8 +3211,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Frenzy Fang ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Frenzy_Fang"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6582.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6582",
           "tree": {
@@ -3086,10 +3257,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3105,6 +3275,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "30",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] and [Flip Flap] state.\nRiding the flow of the sky, the user instantly dashes toward a party member within 7 cells range, granting them with the [Flip Flap] effect.\nThe [Flip Flap] effect is granted at the maximum level user learned.\nCannot be used if the user has been granted the [Flip Flap] effect by another player.",
           "levelDetails": [
             {
@@ -3129,8 +3301,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Aero Sync ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Aero_Sync"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6591.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6591",
           "tree": {
@@ -3211,10 +3390,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3230,6 +3408,8 @@ export const aliteaData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Increases S.MATK with the help of nature.",
           "levelDetails": [
             {
@@ -3254,8 +3434,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Nature Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nature_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6606.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6606",
           "tree": {
@@ -3321,10 +3508,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3340,6 +3526,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "40",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Transcends the truth and temporarily becomes one with nature, increasing water, wind and earth property magical damage and increasing damage taken from water, wind and earth property.",
           "levelDetails": [
             {
@@ -3364,8 +3552,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Nature Harmony ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nature_Harmony"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6607.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6607",
           "tree": {
@@ -3422,8 +3617,12 @@ export const aliteaData = {
                     "label": "Duration"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "damage-taken-from-water-wind-and-earth-property",
+                    "label": "Damage Taken From Water, Wind And Earth Property"
+                  },
+                  {
+                    "id": "water-wind-and-earth-property-magical-damage",
+                    "label": "Water, Wind And Earth Property Magical Damage"
                   }
                 ],
                 "rows": [
@@ -3431,35 +3630,40 @@ export const aliteaData = {
                     "level": 1,
                     "values": {
                       "duration": "30 seconds",
-                      "effect": ": Increases water, wind and earth property magical damage by 30% / increases damage taken from water, wind and earth property by 30%"
+                      "water-wind-and-earth-property-magical-damage": "+30%",
+                      "damage-taken-from-water-wind-and-earth-property": "+30%"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
                       "duration": "30 seconds",
-                      "effect": ": Increases water, wind and earth property magical damage by 60% / increases damage taken from water, wind and earth property by 30%"
+                      "water-wind-and-earth-property-magical-damage": "+60%",
+                      "damage-taken-from-water-wind-and-earth-property": "+30%"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
                       "duration": "30 seconds",
-                      "effect": ": Increases water, wind and earth property magical damage by 90% / increases damage taken from water, wind and earth property by 30%"
+                      "water-wind-and-earth-property-magical-damage": "+90%",
+                      "damage-taken-from-water-wind-and-earth-property": "+30%"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
                       "duration": "30 seconds",
-                      "effect": ": Increases water, wind and earth property magical damage by 120% / increases damage taken from water, wind and earth property by 30%"
+                      "water-wind-and-earth-property-magical-damage": "+120%",
+                      "damage-taken-from-water-wind-and-earth-property": "+30%"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
                       "duration": "30 seconds",
-                      "effect": ": Increases water, wind and earth property magical damage by 150% / increases damage taken from water, wind and earth property by 30%"
+                      "water-wind-and-earth-property-magical-damage": "+150%",
+                      "damage-taken-from-water-wind-and-earth-property": "+30%"
                     }
                   }
                 ],
@@ -3467,10 +3671,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3486,6 +3689,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "40/38/36/33/30",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Distorts the dimension around the user, dealing neutral property magical damage to nearby enemies and pulling only the hit enemies to the user's area, binding them for 1 second.\nDeals additional damage depending on the user's base level and SPL.",
           "levelDetails": [
             {
@@ -3514,8 +3719,15 @@ export const aliteaData = {
           "castDelay": "0.2 seconds",
           "cooldown": "20 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Gravity Hole ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gravity_Hole"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6605.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6605",
           "tree": {
@@ -3612,10 +3824,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3631,6 +3842,8 @@ export const aliteaData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "15",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nLunges ferociously at the prey with a loud roar.\nInstantly dashes to the enemy within 7 cells range, dealing melee physical damage.\nDeals additional damage depending on the user's base level and POW.\nIf in Madness state, the effect is enhanced according to the level.\nMadness (level 1)\nIncreases Savage Lunge damage.\nMadness (level 2)\nApplies 7 x 7 cells area of effect around the target.\nMadness (level 3)\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
           "levelDetails": [
             {
@@ -3675,8 +3888,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Savage Lunge ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Savage_Lunge"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6581.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6581",
           "tree": {
@@ -3714,10 +3934,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3744,6 +3963,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nDeals melee physical damage to the target and surrounding enemies for 2 hits with powerful cross-cutting strikes.\nDeals additional damage when in [Enrage: Wolf] state.\nDeals additional damage depending on the user's base level and STR.\nCast range: 3 cells.",
           "levelDetails": [
             {
@@ -3788,8 +4009,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Double Slash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Double_Slash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6550.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6550",
           "tree": {
@@ -3889,10 +4117,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3908,6 +4135,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nBlows a sharp gust of wind and feathers at the target, dealing long ranged physical damage to all enemies within the path for 2 hits.\nDeals additional damage when in [Enrage: Raptor] state.\nDeals additional damage depending on the user's base level and DEX.\nCast range: 6 cells.",
           "levelDetails": [
             {
@@ -3956,8 +4185,15 @@ export const aliteaData = {
           "castDelay": "0.3 seconds",
           "cooldown": "0.3 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sharpen Gust ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sharpen_Gust"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6555.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6555",
           "tree": {
@@ -4073,10 +4309,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4092,6 +4327,8 @@ export const aliteaData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Effect only applies when in [Werewolf] state.\nBrings out the user's inner instinct to increase damage to enemies based on their size.",
           "levelDetails": [
             {
@@ -4136,8 +4373,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Wolf Instinct ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wolf_Instinct"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6554.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6554",
           "tree": {
@@ -4246,10 +4490,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4265,6 +4508,8 @@ export const aliteaData = {
           "target": "1 cell ground target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Drops a massive ice pillar at the target location, dealing water property magical damage for 2 hits and scattering ice fog.\nThe ice pillar lasts for 7 seconds, scattering ice fog every second to deal water property magical damage to enemies within range and granting the user a water magic buff.\nIf under Truth of Ice state, deals additional damage depending on the user's base level and INT.\nCast range: 7 cells.",
           "levelDetails": [
             {
@@ -4309,8 +4554,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Ice Pillar ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ice_Pillar"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6561.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6561",
           "tree": {
@@ -4417,10 +4669,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4436,6 +4687,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Releases lightning around the user, dealing wind property magical damage for 2 time and gaining 1 stack of Charge effect.\nIf the skill is used while Overcharged, an enhanced version is used, increasing the number of hit to 3 hits.\nIf under Truth of Wind state, deals additional damage depending on the user's base level and INT.",
           "levelDetails": [
             {
@@ -4484,8 +4737,15 @@ export const aliteaData = {
           "castDelay": "0.4 seconds",
           "cooldown": "0.3 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Thundering Focus ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Thundering_Focus"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6563.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6563",
           "tree": {
@@ -4601,10 +4861,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4620,6 +4879,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Effect only applies when not transformed.\nBy awakening the flow of the earth, increasing MaxHP of the user and ability of gaining Growth stack.\nGround Bloom skill is enhanced based on Earth Bud skill level.\nGround Bloom\nThis skill is activated when additional Growth stack is acquired while Growth effect is completed.\nDeals earth property magical damage to enemies within range for 3 hits and recovers a portion of HP.\nIf Ground Bloom is used, the accumulated Growth effect is removed.\nIf under Truth of Earth state, deals additional damage depending on the user's base level and INT.",
           "levelDetails": [
             {
@@ -4664,8 +4925,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Earth Bud ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Earth_Bud"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6571.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6571",
           "tree": {
@@ -4742,10 +5010,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4761,6 +5028,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nDeals melee physical damage to the target and surrounding enemies for 2 hits with a vicious blow.\nAfter using the skill, the user is moved 5 cells backward.\nDeals additional damage when in [Enrage : Wolf] state.\nDeals additional damage depending on the user's base level and STR.\nCast range: 3 cells.",
           "levelDetails": [
             {
@@ -4785,8 +5054,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Nasty Slash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nasty_Slash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6549.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6549",
           "tree": {
@@ -4863,10 +5139,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4882,6 +5157,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nCalls down a hail of sharp feathers on the target and all surrounding enemies, dealing long ranged physical damage for 5 hits.\nDeals additional damage when in [Enrage : Raptor] state.\nDeals additional damage depending on the user's base level and DEX.\nCast range: 7 cells.",
           "levelDetails": [
             {
@@ -4930,8 +5207,15 @@ export const aliteaData = {
           "castDelay": "0.3 seconds",
           "cooldown": "3 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sharpen Hail ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sharpen_Hail"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6556.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6556",
           "tree": {
@@ -5054,10 +5338,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5073,6 +5356,8 @@ export const aliteaData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Effect only applies when in [Wereraptor] state.\nBrings out the user's inner instinct to increase damage to enemies based on their size.",
           "levelDetails": [
             {
@@ -5117,8 +5402,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Raptorial Instinct ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Raptorial_Instinct"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6560.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6560",
           "tree": {
@@ -5227,10 +5519,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5246,6 +5537,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Creates a sharp blade of ice from beneath the target, dealing water property magical damage to the target and surrounding enemies for 3 hits.\nIf under Truth of Ice state, deals additional damage depending on the user's base level and INT.\nCast range: 7 cells.",
           "levelDetails": [
             {
@@ -5290,8 +5583,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Ice Splash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ice_Splash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6562.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6562",
           "tree": {
@@ -5398,10 +5698,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5417,6 +5716,8 @@ export const aliteaData = {
           "target": "1 cell ground target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Throws a spherical lightning bolt at a target location, dealing wind property magical damage to the target and surrounding enemies for 3 hits and gaining 1 stack of Charge effect.\nIf the skill is used while Overcharged, an enhanced version is used, increasing the number of hit to 4 hits.\nIf under Truth of Wind state, deals additional damage depending on the user's base level and INT.\nCast range: 7 cells.",
           "levelDetails": [
             {
@@ -5465,8 +5766,15 @@ export const aliteaData = {
           "castDelay": "0.4 seconds",
           "cooldown": "0.3 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Thundering Orb ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Thundering_Orb"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6565.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6565",
           "tree": {
@@ -5595,10 +5903,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5614,6 +5921,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Causes sharp thorn to sprout from the feet of the target, dealing earth property magical damage and gaining 1 stack of Growth effect.\nIf the skill is used while Growth effect is complete, Ground Bloom skill will be activated.\nIf under Truth of Earth state, deals additional damage depending on the user's base level and INT.\nCast range: 7 cells.",
           "levelDetails": [
             {
@@ -5662,8 +5971,15 @@ export const aliteaData = {
           "castDelay": "0.2 seconds",
           "cooldown": "0.3 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Earth Drill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Earth_Drill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6569.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6569",
           "tree": {
@@ -5713,10 +6029,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5732,6 +6047,8 @@ export const aliteaData = {
           "target": "1 cell ground target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nCreates a sharp wave at the target location, dealing melee physical damage to enemies within range for 3 hits.\nDeals additional damage when in [Enrage : Wolf] state.\nDeals additional damage depending on the user's base level and STR.\nCast range: 7 cells.",
           "levelDetails": [
             {
@@ -5780,8 +6097,15 @@ export const aliteaData = {
           "castDelay": "0.5 seconds",
           "cooldown": "3 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Claw Wave ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Claw_Wave"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6551.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6551",
           "tree": {
@@ -5904,10 +6228,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5923,6 +6246,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nShoots countless feathers around, dealing long ranged physical damage to all enemies within range for 3 hits.\nDeals additional damage when in [Enrage : Raptor] state.\nDeals additional damage depending on the user's base level and DEX.",
           "levelDetails": [
             {
@@ -5947,8 +6272,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Feather Sprinkle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Feather_Sprinkle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6558.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6558",
           "tree": {
@@ -6031,10 +6363,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6050,6 +6381,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Calls down a powerful lightning bolt on the target, dealing wind property magical damage to the target and surrounding enemies for 3 hits and gaining 1 stack of Charge effect.\nIf the skill is used while Overcharged, an enhanced version is used.\nIf under Truth of Wind state, deals additional damage depending on the user's base level and INT.\nCast range: 7 cells.",
           "levelDetails": [
             {
@@ -6098,8 +6431,15 @@ export const aliteaData = {
           "castDelay": "0.4 seconds",
           "cooldown": "3 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Thundering Call ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Thundering_Call"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6567.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6567",
           "tree": {
@@ -6228,10 +6568,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6247,6 +6586,8 @@ export const aliteaData = {
           "target": "1 cell ground target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Overturns the ground in the target location, inflicting earth property magical damage to the target and surrounding enemies for 3 hits and gaining 1 stack of Growth effect.\nIf the skill is used while Growth effect is complete, Ground Bloom skill will be activated.\nIf under Truth of Earth state, deals additional damage depending on the user's base level and INT.\nCast range: 7 cells.",
           "levelDetails": [
             {
@@ -6295,8 +6636,15 @@ export const aliteaData = {
           "castDelay": "0.2 seconds",
           "cooldown": "0.3 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Earth Stamp ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Earth_Stamp"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6570.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6570",
           "tree": {
@@ -6419,10 +6767,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6438,6 +6785,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nSpins and slashes the surrounding area, dealing melee physical damage to all enemies around the user.\nDeals additional damage when in [Enrage : Wolf] state.\nDeals additional damage depending on the user's base level and STR.\n*Activates while holding down the skill shortcut key.",
           "levelDetails": [
             {
@@ -6482,8 +6831,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Chop Chop ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chop_Chop"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6552.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6552",
           "tree": {
@@ -6523,10 +6879,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6542,6 +6897,8 @@ export const aliteaData = {
           "target": "1 cell ground target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nCreates a small typhoon at the target location, dealing long ranged physical damage to the enemies within range for 3 hits and knocking them back.\nDeals additional damage when in [Enrage : Raptor] state.\nDeals additional damage depending on the user's base level and DEX.",
           "levelDetails": [
             {
@@ -6586,8 +6943,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Typhoon Wing ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Typhoon_Wing"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6557.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6557",
           "tree": {
@@ -6687,10 +7051,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6706,6 +7069,8 @@ export const aliteaData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Gains vitality from nature, increasing MaxSP and SP natural recovery.",
           "levelDetails": [
             {
@@ -6730,8 +7095,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Nature Vigour ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nature_Vigour"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6572.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6572",
           "tree": {
@@ -6757,12 +7129,12 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "maxsp",
+                    "label": "MaxSP"
                   },
                   {
-                    "id": "maxsp",
-                    "label": "Maxsp"
+                    "id": "sp-natural-recovery",
+                    "label": "Sp Natural Recovery"
                   }
                 ],
                 "rows": [
@@ -6770,35 +7142,35 @@ export const aliteaData = {
                     "level": 1,
                     "values": {
                       "maxsp": "+ 2%",
-                      "effect": "increases SP natural recovery by 10%"
+                      "sp-natural-recovery": "+10%"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
                       "maxsp": "+ 4%",
-                      "effect": "increases SP natural recovery by 20%"
+                      "sp-natural-recovery": "+20%"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
                       "maxsp": "+ 6%",
-                      "effect": "increases SP natural recovery by 30%"
+                      "sp-natural-recovery": "+30%"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
                       "maxsp": "+ 8%",
-                      "effect": "increases SP natural recovery by 40%"
+                      "sp-natural-recovery": "+40%"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
                       "maxsp": "+ 10%",
-                      "effect": "increases SP natural recovery by 50%"
+                      "sp-natural-recovery": "+50%"
                     }
                   }
                 ],
@@ -6806,10 +7178,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6825,6 +7196,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Transforms the user into a small World Tree, reducing all damage taken and recovering HP and SP.",
           "levelDetails": [
             {
@@ -6849,8 +7222,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Nature Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nature_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6573.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6573",
           "tree": {
@@ -6948,10 +7328,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6967,6 +7346,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nHowls, reducing all damage taken for a short time.",
           "levelDetails": [
             {
@@ -6991,8 +7372,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Iron Howling ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Iron_Howling"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6553.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6553",
           "tree": {
@@ -7041,7 +7429,7 @@ export const aliteaData = {
                   {
                     "level": 1,
                     "values": {
-                      "duration": "2 second",
+                      "duration": "2 seconds",
                       "effect": ": Reduces physical / magical damage taken from enemies by 10%"
                     }
                   },
@@ -7078,10 +7466,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7097,6 +7484,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nSurrounds the user with wind, reducing all damage taken and increasing movement speed for a short time.",
           "levelDetails": [
             {
@@ -7121,8 +7510,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Wind Veil ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wind_Veil"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6559.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6559",
           "tree": {
@@ -7164,30 +7560,30 @@ export const aliteaData = {
                   },
                   {
                     "id": "reduces-physical-magical-damage-taken-from-enemies-by-12-movement-speed",
-                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 12% / Movement Speed"
+                    "label": "Reduces Physical / Magical Damage Taken From Enemies By 12% / Movement Speed"
                   },
                   {
                     "id": "reduces-physical-magical-damage-taken-from-enemies-by-15-movement-speed",
-                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 15% / Movement Speed"
+                    "label": "Reduces Physical / Magical Damage Taken From Enemies By 15% / Movement Speed"
                   },
                   {
                     "id": "reduces-physical-magical-damage-taken-from-enemies-by-5-movement-speed",
-                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 5% / Movement Speed"
+                    "label": "Reduces Physical / Magical Damage Taken From Enemies By 5% / Movement Speed"
                   },
                   {
                     "id": "reduces-physical-magical-damage-taken-from-enemies-by-7-movement-speed",
-                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 7% / Movement Speed"
+                    "label": "Reduces Physical / Magical Damage Taken From Enemies By 7% / Movement Speed"
                   },
                   {
                     "id": "reduces-physical-magical-damage-taken-from-enemies-by-9-movement-speed",
-                    "label": ": Reduces Physical / Magical Damage Taken From Enemies By 9% / Movement Speed"
+                    "label": "Reduces Physical / Magical Damage Taken From Enemies By 9% / Movement Speed"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration": "1.5 second",
+                      "duration": "1.5 seconds",
                       "reduces-physical-magical-damage-taken-from-enemies-by-5-movement-speed": "+ 50%"
                     }
                   },
@@ -7224,10 +7620,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7254,6 +7649,8 @@ export const aliteaData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Shed the user's human form, awakening the powerful wolf spirit.\nAfter transformation, the user can use Wolf skills.\nCannot be used while in Wereraptor, Truth of Ice, Truth of Wind, or Truth of Earth state.",
           "levelDetails": [
             {
@@ -7262,8 +7659,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Transformation: Werewolf ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Transformation%3A_Werewolf"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6524.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6524",
           "tree": {
@@ -7294,7 +7698,7 @@ export const aliteaData = {
                 "columns": [
                   {
                     "id": "enables-to-use-wolf-skills-maxhp",
-                    "label": "Enables To Use Wolf Skills / Maxhp"
+                    "label": "Enables To Use Wolf Skills / MaxHP"
                   }
                 ],
                 "rows": [
@@ -7309,10 +7713,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7328,6 +7731,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Shed the user's human form, awakening the raptor spirit that soars the sky.\nAfter transformation, the user can use Raptor skills.\nCannot be used while in Werewolf, Truth of Ice, Truth of Wind, or Truth of Earth state.",
           "levelDetails": [
             {
@@ -7336,8 +7741,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Wereraptor ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wereraptor"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6531.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6531",
           "tree": {
@@ -7383,10 +7795,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7402,6 +7813,8 @@ export const aliteaData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Effect only applies when in [Werewolf] state.\nDetects the enemies with a heightened sense of smell, increasing attack speed.",
           "levelDetails": [
             {
@@ -7446,8 +7859,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Beasty Nose ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Beasty_Nose"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6530.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6530",
           "tree": {
@@ -7543,10 +7963,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7562,11 +7981,20 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Masters the truth of ice, increases water property magical damage and increases damage of water property skills.",
           "levelDetails": [],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Truth of Ice ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Truth_of_Ice"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6538.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6538",
           "tree": {
@@ -7600,10 +8028,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7619,11 +8046,20 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Masters the truth of wind, increases wind property magical damage and increases damage of wind property skills.",
           "levelDetails": [],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Truth of Wind ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Truth_of_Wind"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6541.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6541",
           "tree": {
@@ -7657,10 +8093,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7676,11 +8111,20 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Masters the truth of earth, increases earth property magical damage and increases damage of earth property skills.",
           "levelDetails": [],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Truth of Earth ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Truth_of_Earth"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6544.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6544",
           "tree": {
@@ -7714,10 +8158,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7733,6 +8176,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nHowls, temporarily awakening the user's sense of battle.",
           "levelDetails": [
             {
@@ -7757,8 +8202,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Blood Howling ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blood_Howling"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6529.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6529",
           "tree": {
@@ -7853,10 +8305,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7872,6 +8323,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nPreens the feathers, temporarily becoming more agile.",
           "levelDetails": [
             {
@@ -7896,8 +8349,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Preening ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Preening"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6536.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6536",
           "tree": {
@@ -7992,10 +8452,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8011,6 +8470,8 @@ export const aliteaData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Effect only applies when in [Wereraptor] state.\nDetects weak point through sharp vision, increasing accuracy.",
           "levelDetails": [
             {
@@ -8055,8 +8516,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sharp Eyes ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sharp_Eyes"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6537.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6537",
           "tree": {
@@ -8152,10 +8620,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8171,6 +8638,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Drops an ice totem on the target, dealing water property magical damage for 2 hits.\nIf under Truth of Ice state, deals additional damage depending on the user's base level and INT.",
           "levelDetails": [
             {
@@ -8219,8 +8688,15 @@ export const aliteaData = {
           "castDelay": "0.5 seconds",
           "cooldown": "0.5 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Ice Totem ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ice_Totem"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6539.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6539",
           "tree": {
@@ -8263,10 +8739,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8282,6 +8757,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Blows a sharp wind at the target, dealing wind property magical damage for 2 hits.\nIf under Truth of Wind state, increases number of hit to 4 hits, and deals additional damage depending on the user's base level and INT.",
           "levelDetails": [
             {
@@ -8330,8 +8807,15 @@ export const aliteaData = {
           "castDelay": "0.5 seconds",
           "cooldown": "0.5 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Cutting Wind ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cutting_Wind"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6542.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6542",
           "tree": {
@@ -8374,10 +8858,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8393,6 +8876,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Blooms flower on the target, dealing earth property magical damage.\nIf under Truth of Earth state, deals additional damage depending on the user's base level and INT.",
           "levelDetails": [
             {
@@ -8441,8 +8926,15 @@ export const aliteaData = {
           "castDelay": "0.2 seconds",
           "cooldown": "0.2 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Earth Flower ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Earth_Flower"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6545.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6545",
           "tree": {
@@ -8485,10 +8977,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8504,6 +8995,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nThe wildness of Wolf is enraged, reborn as the predator.\nIncreases damage of Wolf skills and increases melee physical damage for 300 seconds.",
           "levelDetails": [
             {
@@ -8528,8 +9021,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Enrage Wolf ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enrage_Wolf"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6525.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6525",
           "tree": {
@@ -8566,39 +9066,39 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "melee-physical-damage",
+                    "label": "Melee Physical Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Increases melee physical damage by 2%"
+                      "melee-physical-damage": "+2%"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Increases melee physical damage by 4%"
+                      "melee-physical-damage": "+4%"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Increases melee physical damage by 6%"
+                      "melee-physical-damage": "+6%"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Increases melee physical damage by 8%"
+                      "melee-physical-damage": "+8%"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Increases melee physical damage by 10%"
+                      "melee-physical-damage": "+10%"
                     }
                   }
                 ],
@@ -8606,10 +9106,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8625,6 +9124,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nThe wildness of the Raptor is enraged, reborn as the hunter of the sky.\nIncreases damage of Raptor skills and increases long ranged physical damage for 300 seconds.",
           "levelDetails": [
             {
@@ -8649,8 +9150,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Enrage Raptor ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enrage_Raptor"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6532.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6532",
           "tree": {
@@ -8687,39 +9195,39 @@ export const aliteaData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "long-ranged-physical-damage",
+                    "label": "Long Ranged Physical Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Increases long ranged physical damage by 2%"
+                      "long-ranged-physical-damage": "+2%"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Increases long ranged physical damage by 4%"
+                      "long-ranged-physical-damage": "+4%"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Increases long ranged physical damage by 6%"
+                      "long-ranged-physical-damage": "+6%"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Increases long ranged physical damage by 8%"
+                      "long-ranged-physical-damage": "+8%"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Increases long ranged physical damage by 10%"
+                      "long-ranged-physical-damage": "+10%"
                     }
                   }
                 ],
@@ -8727,10 +9235,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8746,6 +9253,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Creates an ice cloud around the target, dealing water property magical damage to the target and surrounding enemies for 4 hits.\nIf under Truth of Ice state, deals additional damage depending on the user's base level and INT.",
           "levelDetails": [
             {
@@ -8794,8 +9303,15 @@ export const aliteaData = {
           "castDelay": "0.5 seconds",
           "cooldown": "1 second",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Ice Cloud ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ice_Cloud"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6540.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6540",
           "tree": {
@@ -8918,10 +9434,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8937,6 +9452,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Launches a wind ball at the target, dealing wind property magical damage to the target and surrounding enemies for 4 hits.\nIf under Truth of Wind state, increases number of hit to 6 hits, and deals additional damage depending on the user's base level and INT.",
           "levelDetails": [
             {
@@ -8985,8 +9502,15 @@ export const aliteaData = {
           "castDelay": "0.5 seconds",
           "cooldown": "1.5 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Wind Bomb ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wind_Bomb"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6543.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6543",
           "tree": {
@@ -9109,10 +9633,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9128,6 +9651,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Blooms flower around the user, dealing earth property magical damage to the enemies.\nIf under Truth of Earth state, deals additional damage depending on the user's base level and INT.",
           "levelDetails": [
             {
@@ -9176,8 +9701,15 @@ export const aliteaData = {
           "castDelay": "0.5 seconds",
           "cooldown": "0.5 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Around Flower ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Around_Flower"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6546.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6546",
           "tree": {
@@ -9300,10 +9832,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9319,6 +9850,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nDeals melee physical damage to all enemies within range for 2 hits with merciless claws.\nDeals additional damage when in [Enrage: Wolf] state.\nDeals additional damage depending on the user's base level and STR.",
           "levelDetails": [
             {
@@ -9363,8 +9896,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " No Mercy Claw ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/No_Mercy_Claw"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6526.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6526",
           "tree": {
@@ -9471,10 +10011,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9490,6 +10029,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nShoots the target with enhanced feathers, dealing long ranged physical damage for 2 hits.\nDeals additional damage when in [Enrage : Raptor] state.\nDeals additional damage depending on the user's base level and DEX.",
           "levelDetails": [
             {
@@ -9534,8 +10075,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Shooting Feather ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shooting_Feather"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6533.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6533",
           "tree": {
@@ -9569,10 +10117,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9588,6 +10135,8 @@ export const aliteaData = {
           "target": "Instant Casting",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Temporarily increases INT, VIT, DEF, and MDEF.",
           "levelDetails": [
             {
@@ -9632,8 +10181,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Nature Shield ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nature_Shield"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6547.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6547",
           "tree": {
@@ -9747,10 +10303,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9766,6 +10321,8 @@ export const aliteaData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Understands the laws of nature and increase the user's MATK.",
           "levelDetails": [
             {
@@ -9810,8 +10367,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Nature Logic ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nature_Logic"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6548.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6548",
           "tree": {
@@ -9907,10 +10471,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9926,6 +10489,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nInstantly dashes to the enemy within 5 cells range, dealing melee physical damage for 2 hits.\nDeals additional damage when in [Enrage: Wolf] state.\nDeals additional damage depending on the user's base level and STR.",
           "levelDetails": [
             {
@@ -9970,8 +10535,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Cruel Bite ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cruel_Bite"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6527.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6527",
           "tree": {
@@ -10005,10 +10577,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10024,6 +10595,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nFlies at low altitude with high speed, instantly dashes to the target and deals long ranged physical damage to the target and surrounding enemies for 3 hits.\nDeals additional damage when in [Enrage : Raptor] state.\nDeals additional damage depending on the user's base level and DEX.",
           "levelDetails": [
             {
@@ -10068,8 +10641,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Low Flight ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Low_Flight"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6535.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6535",
           "tree": {
@@ -10176,10 +10756,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10195,6 +10774,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Werewolf] state.\nConsumes 10% of SP to deal melee physical damage to the single target and absorbs a portion of damage as HP.\nHP absorbed cannot exceed 100,000.\nDeals additional damage when in [Enrage: Wolf] state.\nDeals additional damage depending on the user's base level and STR.\n(Not affected by SP consumption reduction effects.)",
           "levelDetails": [
             {
@@ -10239,8 +10820,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Hunger ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hunger"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6528.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6528",
           "tree": {
@@ -10274,10 +10862,9 @@ export const aliteaData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10293,6 +10880,8 @@ export const aliteaData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while in [Wereraptor] state.\nLeaves a powerful tornado on the target, dealing long ranged physical damage to all enemies within a radius around the target.\nAfter using the skill, the user is moved backward.\nDeals additional damage when in [Enrage : Raptor] state.\nDeals additional damage depending on the user's base level and DEX.",
           "levelDetails": [
             {
@@ -10337,8 +10926,15 @@ export const aliteaData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Flicking Tornado ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flicking_Tornado"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6534.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6534",
           "tree": {
@@ -10445,10 +11041,9 @@ export const aliteaData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10468,6 +11063,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Werewolf] state.\nThe pulse of madness pulses violently, during the skill duration, using Wolf attack-type skills has a chance to gain 1 stack of Madness.\nMadness can be stacked up to 3 times. Wolf attack-type skills are enhanced according to the level of stack, and the effects of each level are accumulative.",
       "levelDetails": [
         {
@@ -10492,8 +11089,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Pulse of Madness ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Pulse_of_Madness"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6576.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6576",
       "tree": {
@@ -10570,10 +11174,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -10589,6 +11192,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Wereraptor] state.\nReorganizes the user's formation with a powerful flap, increasing long ranged physical damage and critical hit chance for the duration.",
       "levelDetails": [
         {
@@ -10613,8 +11218,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Flip Flap ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Flip_Flap"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6583.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6583",
       "tree": {
@@ -10651,28 +11263,16 @@ export const aliteaData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "long-ranged-physical-damage",
+                "label": "Long Ranged Physical Damage"
+              },
+              {
                 "id": "duration",
                 "label": "Duration"
               },
               {
-                "id": "increases-long-ranged-physical-damage-by-12-cri",
-                "label": ": Increases Long Ranged Physical Damage By 12% / Cri"
-              },
-              {
-                "id": "increases-long-ranged-physical-damage-by-18-cri",
-                "label": ": Increases Long Ranged Physical Damage By 18% / Cri"
-              },
-              {
-                "id": "increases-long-ranged-physical-damage-by-24-cri",
-                "label": ": Increases Long Ranged Physical Damage By 24% / Cri"
-              },
-              {
-                "id": "increases-long-ranged-physical-damage-by-30-cri",
-                "label": ": Increases Long Ranged Physical Damage By 30% / Cri"
-              },
-              {
-                "id": "increases-long-ranged-physical-damage-by-6-cri",
-                "label": ": Increases Long Ranged Physical Damage By 6% / Cri"
+                "id": "cri",
+                "label": "Cri"
               }
             ],
             "rows": [
@@ -10680,35 +11280,40 @@ export const aliteaData = {
                 "level": 1,
                 "values": {
                   "duration": "60 seconds",
-                  "increases-long-ranged-physical-damage-by-6-cri": "+ 3"
+                  "long-ranged-physical-damage": "+6%",
+                  "cri": "+ 3"
                 }
               },
               {
                 "level": 2,
                 "values": {
                   "duration": "120 seconds",
-                  "increases-long-ranged-physical-damage-by-12-cri": "+ 6"
+                  "long-ranged-physical-damage": "+12%",
+                  "cri": "+ 6"
                 }
               },
               {
                 "level": 3,
                 "values": {
                   "duration": "180 seconds",
-                  "increases-long-ranged-physical-damage-by-18-cri": "+ 9"
+                  "long-ranged-physical-damage": "+18%",
+                  "cri": "+ 9"
                 }
               },
               {
                 "level": 4,
                 "values": {
                   "duration": "240 seconds",
-                  "increases-long-ranged-physical-damage-by-24-cri": "+ 12"
+                  "long-ranged-physical-damage": "+24%",
+                  "cri": "+ 12"
                 }
               },
               {
                 "level": 5,
                 "values": {
                   "duration": "300 seconds",
-                  "increases-long-ranged-physical-damage-by-30-cri": "+ 15"
+                  "long-ranged-physical-damage": "+30%",
+                  "cri": "+ 15"
                 }
               }
             ],
@@ -10716,10 +11321,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -10735,6 +11339,8 @@ export const aliteaData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Maximizes the sixth sense, increasing combat ability.",
       "levelDetails": [
         {
@@ -10759,8 +11365,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Sixth Sense ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Sixth_Sense"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6575.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6575",
       "tree": {
@@ -10835,10 +11448,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -10854,6 +11466,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Summons the monolith at the target location, dealing water property magical damage and granting Glacial Monolith effect to a 15 x 15 cells area around the designated point.\nWhile the monolith is present, using certain skills within its range triggers Glacial Nova skill, dealing water property magical damage to enemies around the monolith.\nIf under Truth of Ice state, deals additional damage depending on the user's base level and SPL.\nCast range: 7 cells.\nGlacial Nova\nThis skill activates when Glacial skills are used near the Glacial Monolith.\nDeals water property magical damage to the enemies near the Glacial Monolith.",
       "levelDetails": [
         {
@@ -10906,8 +11520,15 @@ export const aliteaData = {
       "castDelay": "0.2 seconds",
       "cooldown": "3 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Glacial Monolith ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Glacial_Monolith"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6592.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6592",
       "tree": {
@@ -11047,10 +11668,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -11066,6 +11686,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "1~5, +5 (enhanced)",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Calls down lightning on the user, dealing wind property magical damage to enemies within a surrounding area for 2 hits and gaining multiple stacks of Charge effect.\nIf the skill is used while Overcharged, an enhanced version is used, increasing the number of hit to 3 hits and recovering an additional 5 AP.\nIf under Truth of Wind state, deals additional damage depending on the user's base level and SPL.",
       "levelDetails": [
         {
@@ -11093,8 +11715,15 @@ export const aliteaData = {
       "variableCastTime": "1.4 seconds",
       "castDelay": "0.4 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Roaring Charge ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Roaring_Charge"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6599.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6599",
       "tree": {
@@ -11187,10 +11816,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -11206,6 +11834,8 @@ export const aliteaData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Blooms the target with earth flower, dealing earth property magical damage to enemies within a range and gaining 2 stacks of Growth effect.\nIf the skill is used while Growth effect is complete, Ground Bloom skill will be activated.\nIf under Truth of Earth state, deals additional damage depending on the user's base level and SPL.\nCast range: 7 cells.",
       "levelDetails": [
         {
@@ -11254,8 +11884,15 @@ export const aliteaData = {
       "castDelay": "0.2 seconds",
       "cooldown": "0.5 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Terra Harvest ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Terra_Harvest"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6603.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6603",
       "tree": {
@@ -11382,10 +12019,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -11401,6 +12037,8 @@ export const aliteaData = {
       "target": "Single Target",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "an only be used while in [Werewolf] state.\nThe first claw, imbued with primal rage, opens the path to hunting.\nInstantly dashes to the enemy within 5 cells range, dealing melee physical damage to all enemies within surrounding range.\nAfter using Primal Claw, Feral Claw can be used for 5 seconds.\nDeals additional damage depending on the user's base level and POW.\nIf in Madness state, the effect is enhanced according to the level.\nMadness (level 1)\nPrimal Claw ATK + 800%.\nMadness (level 2)\nChanges area of effect to 7 x 7 cells.\nMadness (level 3)\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
       "levelDetails": [
         {
@@ -11425,8 +12063,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Primal Claw ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Primal_Claw"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6578.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6578",
       "tree": {
@@ -11507,10 +12152,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -11526,6 +12170,8 @@ export const aliteaData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Wereraptor] state.\nSwiftly subdues the prey with sharp feather.\nDeals long ranged physical damage to the target enemy.\nWhen the skill is used, gains 1 stack of [Gale Charge] state and can be accumulated up to 5 stacks.\nWhen using the skill after gaining maximum stack, grants [Gale Acceleration] to the party members within a 9 x 9 cells area around the user.\n[Gale Acceleration]: Increases melee and long ranged physical damage by 15% / Increases all property magical damage by 15%.\nDeals additional damage depending on the user's base level and CON.\nThe skill's effect is enhanced during Apex Phase.\nApex Phase\nIncreases Pinion Shot damage by 30%.\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
       "levelDetails": [
         {
@@ -11574,8 +12220,15 @@ export const aliteaData = {
       "castDelay": "0.5 seconds",
       "cooldown": "0.35 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Pinion Shot ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Pinion_Shot"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6586.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6586",
       "tree": {
@@ -11629,10 +12282,9 @@ export const aliteaData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -11648,6 +12300,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "",
       "consumesAp": "130",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Werewolf] state.\nThe seething instinct of alpha dominates the user's entire body.\nDuring the duration, the user can use the maximum effect of Madness level 3.",
       "levelDetails": [
         {
@@ -11672,8 +12326,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Alpha Phase ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Alpha_Phase"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6577.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6577",
       "tree": {
@@ -11754,10 +12415,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -11773,6 +12433,8 @@ export const aliteaData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Creates a glacier and shatters it, dealing water property magical damage to the target and surrounding enemies for 3 hits.\nIf under Truth of Ice state, deals additional damage depending on the user's base level and SPL.\nCast range: 7 cells.",
       "levelDetails": [
         {
@@ -11821,8 +12483,15 @@ export const aliteaData = {
       "castDelay": "0.2 seconds",
       "cooldown": "0.5 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Glacial Shard ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Glacial_Shard"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6594.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6594",
       "tree": {
@@ -11876,10 +12545,9 @@ export const aliteaData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -11895,6 +12563,8 @@ export const aliteaData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Throws a sharp spear of lightning at the designated target, dealing wind property magical damage to the target and enemies within the surrounding area for 2 hits and gaining 1 stacks of Charge effect.\nIf the skill is used while Overcharged, an enhanced version is used, increasing the number of hit to 3 hits.\nIf under Truth of Wind state, deals additional damage depending on the user's base level and INT.\nCast range: 8 cells.",
       "levelDetails": [
         {
@@ -11943,8 +12613,15 @@ export const aliteaData = {
       "castDelay": "0.4 seconds",
       "cooldown": "0.5 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Roaring Piercer ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Roaring_Piercer"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6597.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6597",
       "tree": {
@@ -12071,10 +12748,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12090,6 +12766,8 @@ export const aliteaData = {
       "target": "1 cell ground target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Sends an earth wave to the designated ground target, dealing earth property magical damage to enemies within 3 x 12 area of effect and gaining 2 stacks of Growth effect.\nCancels a certain ground-targeting spell placed within the area of effect.\nIf there are immobile cells around the designated location, the effect will not activate.\nIf the skill is used while Growth effect is complete, Ground Bloom skill will be activated.\nIf under Truth of Earth state, deals additional damage depending on the user's base level and SPL.\nCast range: 2 cells.",
       "levelDetails": [
         {
@@ -12134,8 +12812,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Terra Wave ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Terra_Wave"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6602.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6602",
       "tree": {
@@ -12246,10 +12931,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12265,6 +12949,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Werewolf] state.\nCan be used within 5 seconds after using [Primal Claw].\nRampaging wild claw continuously strike the prey.\nDeals melee physical damage to all enemies within range around the user.\nAfter using Feral Claw, Alpha Claw can be used for 5 seconds.\nDeals additional damage depending on the user's base level and POW.\nIf in Madness state, the effect is enhanced according to the level.\nMadness (level 1)\nFeral Claw ATK + 800%.\nMadness (level 2)\nChanges area of effect to 9 x 9 cells.\nMadness (level 3)\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
       "levelDetails": [
         {
@@ -12289,8 +12975,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Feral Claw ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Feral_Claw"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6579.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6579",
       "tree": {
@@ -12371,10 +13064,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12390,6 +13082,8 @@ export const aliteaData = {
       "target": "Single target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Wereraptor] state.\nA wind-infused spear pierces the prey, dealing long ranged physical damage to the target and all enemies within a 3x7 cells around the target.\nDeals additional damage depending on the user's base level and CON.\nThe skill's effect is enhanced during Apex Phase.\nApex Phase\nIncreases Quill Spear damage by 30%.\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).\nChangess area of effect to 5 x 7 cells.",
       "levelDetails": [
         {
@@ -12438,8 +13132,15 @@ export const aliteaData = {
       "castDelay": "0.35 seconds",
       "cooldown": "0.7 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Quill Spear ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Quill_Spear"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6588.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6588",
       "tree": {
@@ -12493,10 +13194,9 @@ export const aliteaData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12512,6 +13212,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "",
       "consumesAp": "130",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Wereraptor] state.\nThe instinct of sky predator envelop the user's wings.\nThis state grants buffs to Raptor attack-type skills for the duration.",
       "levelDetails": [
         {
@@ -12536,8 +13238,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Apex Phase ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Apex_Phase"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6585.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6585",
       "tree": {
@@ -12618,10 +13327,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12637,6 +13345,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Teleports to the Glacial Monolith, dealing water property magical damage to nearby enemies for 2 hits.\nThe skill cannot be used outside the Glacial Monolith's range.\nIf under Truth of Ice state, deals additional damage depending on the user's base level and SPL.",
       "levelDetails": [
         {
@@ -12664,8 +13374,15 @@ export const aliteaData = {
       "variableCastTime": "0.3 seconds",
       "castDelay": "0.2 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Glacial Stomp ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Glacial_Stomp"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6595.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6595",
       "tree": {
@@ -12758,10 +13475,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12777,6 +13493,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "",
       "consumesAp": "20~15",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Summons a lightning storm to deal wind property magical damage to the enemies within its special range.\nDeals additional damage depending on the user's base level and SPL.\n*Activates while holding down the skill shortcut key.",
       "levelDetails": [
         {
@@ -12801,8 +13519,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Furious Storm ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Furious_Storm"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6601.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6601",
       "tree": {
@@ -12852,10 +13577,9 @@ export const aliteaData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12871,6 +13595,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "",
       "consumesAp": "20/19/18/17/15",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Sends a powerful shockwave through the ground, dealing earth property magical damage to nearby enemies and gaining 4 stacks of Growth effect.\nRecovers certain percentage of MaxHP to the user, and grants a buff to the user that reduces melee / long ranged physical damage taken by certain percentage and increases earth property magical damage by 15% for 10 seconds.\nDeals additional damage depending on the user's base level and SPL.",
       "levelDetails": [
         {
@@ -12899,8 +13625,15 @@ export const aliteaData = {
       "castDelay": "0.2 seconds",
       "cooldown": "5 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Solid Stomp ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Solid_Stomp"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6604.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6604",
       "tree": {
@@ -13003,10 +13736,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13022,6 +13754,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Werewolf] state.\nCan be used within 5 seconds after using [Feral Claw].\nThe alpha's final claw suffocates the prey.\nDeals melee physical damage to all enemies within range around the user for 2 hits.\nDeals additional damage depending on the user's base level and POW.\nIf in Madness state, the effect is enhanced according to the level.\nMadness (level 1)\nAlpha Claw ATK + 800%.\nMadness (level 2)\nChanges area of effect to 9 x 9 cells.\nMadness (level 3)\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
       "levelDetails": [
         {
@@ -13046,8 +13780,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Alpha Claw ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Alpha_Claw"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6580.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6580",
       "tree": {
@@ -13128,10 +13869,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13147,6 +13887,8 @@ export const aliteaData = {
       "target": "Single target",
       "recoversAp": "",
       "consumesAp": "20",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Wereraptor] state.\nCreates a storm with a violent flap of wings, dealing long ranged physical damage to the target and all enemies within range.\nDeals additional damage depending on the user's base level and CON.\nThe skill's effect is enhanced during Apex Phase.\nApex Phase\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).\nIncreases Tempest Flap damage by 30%.\nIncreases number of hit to 3 hits.",
       "levelDetails": [
         {
@@ -13191,8 +13933,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Tempest Flap ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Tempest_Flap"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6590.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6590",
       "tree": {
@@ -13230,10 +13979,9 @@ export const aliteaData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13249,6 +13997,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "",
       "consumesAp": "15/14/13/12/10",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Emits an extremely cold air around the user, dealing water property magical damage to nearby enemies.\nDeals additional damage depending on the user's base level and SPL.",
       "levelDetails": [
         {
@@ -13277,8 +14027,15 @@ export const aliteaData = {
       "castDelay": "0.2 seconds",
       "cooldown": "0.3 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Chilling Blast ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Chilling_Blast"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6596.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6596",
       "tree": {
@@ -13381,10 +14138,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13400,6 +14156,8 @@ export const aliteaData = {
       "target": "Single Target",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Werewolf] state.\nContinuously bites a target with enraged fangs, dealing melee physical damage for 2 hits.\nDeals additional damage depending on the user's base level and POW.\nIf in Madness state, the effect is enhanced according to the level.\nMadness (level 1)\nIncreases number of hit to 3 hits.\nFrenzy Fang ATK + 750%.\nMadness (level 2)\nIncreases number of hit to 5 hits.\nMadness (level 3)\nIncreases number of hit to 7 hits.\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
       "levelDetails": [
         {
@@ -13424,8 +14182,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Frenzy Fang ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Frenzy_Fang"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6582.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6582",
       "tree": {
@@ -13463,10 +14228,9 @@ export const aliteaData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13482,6 +14246,8 @@ export const aliteaData = {
       "target": "Single target",
       "recoversAp": "",
       "consumesAp": "30",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Wereraptor] and [Flip Flap] state.\nRiding the flow of the sky, the user instantly dashes toward a party member within 7 cells range, granting them with the [Flip Flap] effect.\nThe [Flip Flap] effect is granted at the maximum level user learned.\nCannot be used if the user has been granted the [Flip Flap] effect by another player.",
       "levelDetails": [
         {
@@ -13506,8 +14272,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Aero Sync ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Aero_Sync"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6591.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6591",
       "tree": {
@@ -13588,10 +14361,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13607,6 +14379,8 @@ export const aliteaData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Increases S.MATK with the help of nature.",
       "levelDetails": [
         {
@@ -13631,8 +14405,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Nature Aid ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Nature_Aid"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6606.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6606",
       "tree": {
@@ -13698,10 +14479,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13717,6 +14497,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "",
       "consumesAp": "40",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Transcends the truth and temporarily becomes one with nature, increasing water, wind and earth property magical damage and increasing damage taken from water, wind and earth property.",
       "levelDetails": [
         {
@@ -13741,8 +14523,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Nature Harmony ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Nature_Harmony"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6607.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6607",
       "tree": {
@@ -13799,8 +14588,12 @@ export const aliteaData = {
                 "label": "Duration"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "damage-taken-from-water-wind-and-earth-property",
+                "label": "Damage Taken From Water, Wind And Earth Property"
+              },
+              {
+                "id": "water-wind-and-earth-property-magical-damage",
+                "label": "Water, Wind And Earth Property Magical Damage"
               }
             ],
             "rows": [
@@ -13808,35 +14601,40 @@ export const aliteaData = {
                 "level": 1,
                 "values": {
                   "duration": "30 seconds",
-                  "effect": ": Increases water, wind and earth property magical damage by 30% / increases damage taken from water, wind and earth property by 30%"
+                  "water-wind-and-earth-property-magical-damage": "+30%",
+                  "damage-taken-from-water-wind-and-earth-property": "+30%"
                 }
               },
               {
                 "level": 2,
                 "values": {
                   "duration": "30 seconds",
-                  "effect": ": Increases water, wind and earth property magical damage by 60% / increases damage taken from water, wind and earth property by 30%"
+                  "water-wind-and-earth-property-magical-damage": "+60%",
+                  "damage-taken-from-water-wind-and-earth-property": "+30%"
                 }
               },
               {
                 "level": 3,
                 "values": {
                   "duration": "30 seconds",
-                  "effect": ": Increases water, wind and earth property magical damage by 90% / increases damage taken from water, wind and earth property by 30%"
+                  "water-wind-and-earth-property-magical-damage": "+90%",
+                  "damage-taken-from-water-wind-and-earth-property": "+30%"
                 }
               },
               {
                 "level": 4,
                 "values": {
                   "duration": "30 seconds",
-                  "effect": ": Increases water, wind and earth property magical damage by 120% / increases damage taken from water, wind and earth property by 30%"
+                  "water-wind-and-earth-property-magical-damage": "+120%",
+                  "damage-taken-from-water-wind-and-earth-property": "+30%"
                 }
               },
               {
                 "level": 5,
                 "values": {
                   "duration": "30 seconds",
-                  "effect": ": Increases water, wind and earth property magical damage by 150% / increases damage taken from water, wind and earth property by 30%"
+                  "water-wind-and-earth-property-magical-damage": "+150%",
+                  "damage-taken-from-water-wind-and-earth-property": "+30%"
                 }
               }
             ],
@@ -13844,10 +14642,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13863,6 +14660,8 @@ export const aliteaData = {
       "target": "Instant Casting",
       "recoversAp": "",
       "consumesAp": "40/38/36/33/30",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Distorts the dimension around the user, dealing neutral property magical damage to nearby enemies and pulling only the hit enemies to the user's area, binding them for 1 second.\nDeals additional damage depending on the user's base level and SPL.",
       "levelDetails": [
         {
@@ -13891,8 +14690,15 @@ export const aliteaData = {
       "castDelay": "0.2 seconds",
       "cooldown": "20 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Gravity Hole ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Gravity_Hole"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6605.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6605",
       "tree": {
@@ -13989,10 +14795,9 @@ export const aliteaData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14008,6 +14813,8 @@ export const aliteaData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "15",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while in [Werewolf] state.\nLunges ferociously at the prey with a loud roar.\nInstantly dashes to the enemy within 7 cells range, dealing melee physical damage.\nDeals additional damage depending on the user's base level and POW.\nIf in Madness state, the effect is enhanced according to the level.\nMadness (level 1)\nIncreases Savage Lunge damage.\nMadness (level 2)\nApplies 7 x 7 cells area of effect around the target.\nMadness (level 3)\nApplies critical damage, the critical chance is the user's CRI (however, the effectiveness of critical modifier is applied by half).",
       "levelDetails": [
         {
@@ -14052,8 +14859,15 @@ export const aliteaData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Savage Lunge ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Savage_Lunge"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6581.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6581",
       "tree": {
@@ -14091,10 +14905,9 @@ export const aliteaData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

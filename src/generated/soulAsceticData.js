@@ -1,5 +1,5 @@
 export const soulAsceticData = {
-  "generatedAt": "2026-07-10T00:57:18.148Z",
+  "generatedAt": "2026-07-10T15:02:24.233Z",
   "classId": 4303,
   "classSlug": "soul-ascetic",
   "className": "Soul Ascetic",
@@ -70,7 +70,8 @@ export const soulAsceticData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4303",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -275,6 +276,8 @@ export const soulAsceticData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Mastery",
           "description": "Increase your SPL by practicing the art of guiding souls.",
           "levelDetails": [
             {
@@ -365,8 +368,15 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5417.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5417",
           "tree": {
@@ -476,10 +486,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -495,6 +504,8 @@ export const soulAsceticData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Talisman_Mastery",
           "description": "Increases your understanding of Talisman, increases your S.MATK and affects the effectiveness of skills using talisman.",
           "levelDetails": [
             {
@@ -585,8 +596,15 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Talisman Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talisman_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5416.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5416",
           "tree": {
@@ -696,10 +714,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -715,6 +732,8 @@ export const soulAsceticData = {
           "target": "self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Gathering",
           "description": "Can be used when Soul Accumulation is activated.\nInstantly gathers spirits floating around and instantly fills up the maximum amount of soul energy that can be accumulated.",
           "levelDetails": [
             {
@@ -765,8 +784,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "75 + (Skill Level × 5)",
+          "fixedCastTime": "1 seconds",
+          "variableCastTime": "1.5 seconds",
+          "cooldown": "5~1 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Gathering ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Gathering"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5421.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5421",
           "tree": {
@@ -800,6 +830,18 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "75 + (Skill Level × 5)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "self"
               }
@@ -813,43 +855,43 @@ export const soulAsceticData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "cooldown",
+                    "label": "Cooldown"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Skill cooldown: 5 sec",
+                      "cooldown": "5 seconds",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Skill cooldown: 4 sec",
+                      "cooldown": "4 seconds",
                       "sp-cost": "75"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Skill cooldown: 3 sec",
+                      "cooldown": "3 seconds",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Skill cooldown: 2 sec",
+                      "cooldown": "2 seconds",
                       "sp-cost": "85"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Skill cooldown: 1 sec",
+                      "cooldown": "1 second",
                       "sp-cost": "90"
                     }
                   }
@@ -858,7 +900,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Soul Gathering",
@@ -889,7 +930,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -905,6 +946,8 @@ export const soulAsceticData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "1 Soul Talisman",
+          "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Protection",
           "description": "Consumes 1 Soul Talisman.\nAttaches the talisman of protection to self or 1 party member to recover HP every 3 seconds.\nRecovers additional amount depends on level of Talisman Mastery user learned, user's base level and CRT.",
           "levelDetails": [
             {
@@ -955,8 +998,20 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 + (Skill Level × 5)",
+          "fixedCastTime": "1 seconds",
+          "variableCastTime": "1.5 seconds",
+          "castDelay": "0.5 seconds",
+          "duration": "150 + (30 × Skill Level) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Talisman of Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5418.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5418",
           "tree": {
@@ -984,6 +1039,22 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45 + (Skill Level × 5)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
               },
@@ -1009,43 +1080,43 @@ export const soulAsceticData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Healing amount: 500+(Talisman Mastery Lv x 50) / Duration: 180 sec",
+                      "duration": "180 seconds",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Healing amount: 1000+(Talisman Mastery Lv x 100) / Duration: 210 sec",
+                      "duration": "210 seconds",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Healing amount: 1500+(Talisman Mastery Lv x 150) / Duration: 240 sec",
+                      "duration": "240 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Healing amount: 2000+(Talisman Mastery Lv x 200) / Duration: 270 sec",
+                      "duration": "270 seconds",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Healing amount: 2500+(Talisman Mastery Lv x 250) / Duration: 300 sec",
+                      "duration": "300 seconds",
                       "sp-cost": "70"
                     }
                   }
@@ -1054,10 +1125,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1073,6 +1143,8 @@ export const soulAsceticData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "1 Soul Talisman",
+          "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Warrior",
           "description": "Consumes 1 Soul Talisman.\nAttaches the talisman of warrior to self or 1 party member to increases P.Atk.\nCan only be used on target who equips weapon.",
           "levelDetails": [
             {
@@ -1123,8 +1195,20 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 + (Skill Level × 5)",
+          "fixedCastTime": "1 seconds",
+          "variableCastTime": "1.5 seconds",
+          "castDelay": "0.5 seconds",
+          "duration": "150 + (30 × Skill Level) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Talisman of Warrior ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Warrior"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5419.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5419",
           "tree": {
@@ -1152,6 +1236,22 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45 + (Skill Level × 5)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
               },
@@ -1177,48 +1277,48 @@ export const soulAsceticData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "duration": "180 seconds",
                       "p-atk": "+2",
-                      "effect": "Duration: 180 sec",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "duration": "210 seconds",
                       "p-atk": "+4",
-                      "effect": "Duration: 210 sec",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "duration": "240 seconds",
                       "p-atk": "+6",
-                      "effect": "Duration: 240 sec",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "duration": "270 seconds",
                       "p-atk": "+8",
-                      "effect": "Duration: 270 sec",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "duration": "300 seconds",
                       "p-atk": "+10",
-                      "effect": "Duration: 300 sec",
                       "sp-cost": "70"
                     }
                   }
@@ -1227,10 +1327,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1246,6 +1345,8 @@ export const soulAsceticData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "1 Soul Talisman",
+          "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Magician",
           "description": "Consumes 1 Soul Talisman.\nAttaches the talisman of magician to self or 1 party member to increases S.Matk.\nCan only be used on target who equips weapon.",
           "levelDetails": [
             {
@@ -1296,8 +1397,20 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 + (Skill Level × 5)",
+          "fixedCastTime": "1 seconds",
+          "variableCastTime": "1.5 seconds",
+          "castDelay": "0.5 seconds",
+          "duration": "150 + (30 × Skill Level) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Talisman of Magician ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Magician"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5420.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5420",
           "tree": {
@@ -1325,6 +1438,22 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45 + (Skill Level × 5)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
               },
@@ -1350,48 +1479,48 @@ export const soulAsceticData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "duration": "180 seconds",
                       "s-matk": "+2",
-                      "effect": "Duration: 180 sec",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "duration": "210 seconds",
                       "s-matk": "+4",
-                      "effect": "Duration: 210 sec",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "duration": "240 seconds",
                       "s-matk": "+6",
-                      "effect": "Duration: 240 sec",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "duration": "270 seconds",
                       "s-matk": "+8",
-                      "effect": "Duration: 270 sec",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "duration": "300 seconds",
                       "s-matk": "+10",
-                      "effect": "Duration: 300 sec",
                       "sp-cost": "70"
                     }
                   }
@@ -1400,10 +1529,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1419,6 +1547,8 @@ export const soulAsceticData = {
           "target": "Instant Cast",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Exorcism_of_Malicious_Soul",
           "description": "Consumes all soul energy on enemies within a surrounding range, inflicting attributeless magic DMG based on the amount of soul energy consumed.\nDeals greater DMG if the target is under the effect of [Dead Spirit's Curse] or if the caster casts within the range of the effect of [Totem of Tutelary].\nDMG increases based on the amount of soul energy consumed, the level of the Guidance Skill, and the caster's base level and SPL.\nDMG properties change depending on the Mild Wind.",
           "levelDetails": [
             {
@@ -1469,8 +1599,20 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 + (Skill Level × 15)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "2.2 seconds",
+          "cooldown": "1 seconds",
+          "areaOfEffect": "11 x 11~13 x 13",
+          "translations": {
+            "pt-BR": {
+              "name": " Exorcism of Malicious Soul ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Exorcism_of_Malicious_Soul"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5425.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5425",
           "tree": {
@@ -1502,6 +1644,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "45 + (Skill Level × 15)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2.2 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "1 seconds"
               },
               {
                 "label": "Target",
@@ -1566,7 +1724,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Exorcism of Malicious Soul",
@@ -1589,7 +1746,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1605,6 +1762,8 @@ export const soulAsceticData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Soul Talisman",
+          "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Soul_Stealing",
           "description": "Consumes 1 Soul Talisman.\nThrows a talisman at the target, dealing non-attribute magic DMG and restoring the caster's SP.\nDMG increases based on the acquired Talisman Polishing and Guidance Polishing skill levels, the caster's base level, and SPL.\nThe amount of SP recovered is additionally increased based on the caster's base level.\nDMG properties change depending on the Mild Wind.",
           "levelDetails": [
             {
@@ -1655,8 +1814,18 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "2.2 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Talisman of Soul Stealing ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Soul_Stealing"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5424.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5424",
           "tree": {
@@ -1690,6 +1859,18 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2.2 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               },
@@ -1705,45 +1886,36 @@ export const soulAsceticData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK 1750+((Talisman Mastery Lv+Soul Mastery Lv) x 7)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK 3000+((Talisman Mastery Lv+Soul Mastery Lv) x 14)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK 4250+((Talisman Mastery Lv+Soul Mastery Lv) x 21)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK 5500+((Talisman Mastery Lv+Soul Mastery Lv) x 28)%",
                       "sp-cost": "84"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK 6750+((Talisman Mastery Lv+Soul Mastery Lv) x 35)%",
                       "sp-cost": "84"
                     }
                   }
@@ -1752,7 +1924,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Talisman of Soul Stealing",
@@ -1791,7 +1962,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1807,6 +1978,8 @@ export const soulAsceticData = {
           "target": "1 cell ground target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "10 Soul Talisman",
+          "irowikiUrl": "https://irowiki.org/wiki/Totem_of_Tutelary",
           "description": "Consumes 10 Soul Talismans.\nSummons the Totem of Tutelary which worships the guardian deity on ground to recover HP and SP of nearby party members including the user at certain interval.\nRecovers additional amount depends on level of Talisman Mastery user learned, user's base level and CRT.",
           "levelDetails": [
             {
@@ -1857,8 +2030,20 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60 + (Skill Level × 16)",
+          "fixedCastTime": "1 seconds",
+          "variableCastTime": "3.5 seconds",
+          "cooldown": "15 seconds",
+          "areaOfEffect": "5 x 5~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Totem of Tutelary ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Totem_of_Tutelary"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5422.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5422",
           "tree": {
@@ -1892,6 +2077,22 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "60 + (Skill Level × 16)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "3.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "15 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "1 cell ground target"
               },
@@ -1905,47 +2106,65 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "hp-recovery",
+                    "label": "HP Recovery"
+                  },
+                  {
+                    "id": "sp-recovery",
+                    "label": "SP Recovery"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "area-of-effect",
+                    "label": "Area of Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "HP recovery amount :1000+(Talisman Mastery Lv x 50)\nSP recovery : 50+(Talisman Mastery Lv x 5) / AOE: 5 x 5 cells",
+                      "hp-recovery": "1000 + (Talisman Mastery Lv x 50)",
+                      "sp-recovery": "50 + (Talisman Mastery Lv x 5)",
+                      "area-of-effect": "5x5",
                       "sp-cost": "76"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "HP recovery amount :1500+(Talisman Mastery Lv x 100)\nSP recovery : 100+(Talisman Mastery Lv x 10) / AOE: 5 x 5 cells",
+                      "hp-recovery": "1500 + (Talisman Mastery Lv x 100)",
+                      "sp-recovery": "100 + (Talisman Mastery Lv x 10)",
+                      "area-of-effect": "5x5",
                       "sp-cost": "92"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "HP recovery amount :2000+(Talisman Mastery Lv x 150)\nSP recovery : 150+(Talisman Mastery Lv x 15) / AOE: 7 x 7 cells",
+                      "hp-recovery": "2000 + (Talisman Mastery Lv x 150)",
+                      "sp-recovery": "150 + (Talisman Mastery Lv x 15)",
+                      "area-of-effect": "7x7",
                       "sp-cost": "108"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "HP recovery amount :2500+(Talisman Mastery Lv x 200)\nSP recovery : 200+(Talisman Mastery Lv x 20) / AOE: 7 x 7 cells",
+                      "hp-recovery": "2500 + (Talisman Mastery Lv x 200)",
+                      "sp-recovery": "200 + (Talisman Mastery Lv x 20)",
+                      "area-of-effect": "7x7",
                       "sp-cost": "124"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "HP recovery amount :3000+(Talisman Mastery Lv x 250)\nSP recovery : 250+(Talisman Mastery Lv x 25) / AOE: 9 x 9 cells",
+                      "hp-recovery": "3000 + (Talisman Mastery Lv x 250)",
+                      "sp-recovery": "250 + (Talisman Mastery Lv x 25)",
+                      "area-of-effect": "9x9",
                       "sp-cost": "140"
                     }
                   }
@@ -1954,10 +2173,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1971,8 +2189,10 @@ export const soulAsceticData = {
           "group": "Active",
           "type": "Buff",
           "target": "Single Target",
-          "recoversAp": "",
+          "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "5 Soul Talisman",
+          "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Five_Elements",
           "description": "Consumes 5 Soul Talismans.\nAttaches the talisman of five elements to self or 1 party member to increases physical and magical damage against water, wind, earth, fire and neutral property enemies.\nCan only be used on target who equips weapon.",
           "levelDetails": [
             {
@@ -2023,8 +2243,20 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 + (Skill Level × 5)",
+          "fixedCastTime": "1 seconds",
+          "variableCastTime": "1.5 seconds",
+          "castDelay": "0.5 seconds",
+          "duration": "150 + (30 × Skill Level) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Talisman of Five Elements ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Five_Elements"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5423.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5423",
           "tree": {
@@ -2052,12 +2284,32 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45 + (Skill Level × 5)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
               },
               {
                 "label": "Ammunition",
                 "value": "5 Soul Talismans"
+              },
+              {
+                "label": "AP Generated",
+                "value": "2"
               }
             ],
             "levelTables": [
@@ -2073,48 +2325,48 @@ export const soulAsceticData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "duration": "180 seconds",
                       "damage-bonus": "+4%",
-                      "effect": "Duration: 180 sec",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "duration": "210 seconds",
                       "damage-bonus": "+8%",
-                      "effect": "Duration: 210 sec",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "duration": "240 seconds",
                       "damage-bonus": "+12%",
-                      "effect": "Duration: 240 sec",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "duration": "270 seconds",
                       "damage-bonus": "+16%",
-                      "effect": "Duration: 270 sec",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "duration": "300 seconds",
                       "damage-bonus": "+20%",
-                      "effect": "Duration: 300 sec",
                       "sp-cost": "70"
                     }
                   }
@@ -2123,10 +2375,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2142,6 +2393,8 @@ export const soulAsceticData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "1 Soul Talisman",
+          "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Blue_Dragon",
           "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Qinglong, guardian deity of the East, to the target, inflicts neutral property magical damage to the target and grants the user [Blessing of the East].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
           "levelDetails": [
             {
@@ -2192,8 +2445,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "37 + (Skill Level x 5)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "1 seconds",
+          "cooldown": "0.3 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Talisman of Blue Dragon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Blue_Dragon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5426.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5426",
           "tree": {
@@ -2219,6 +2483,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "37 + (Skill Level x 5)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.3 seconds"
               },
               {
                 "label": "Target",
@@ -2282,7 +2562,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Talisman of Blue Dragon",
@@ -2367,7 +2646,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2383,6 +2662,8 @@ export const soulAsceticData = {
           "target": "Instant Cast",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "1 Soul Talisman",
+          "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_White_Tiger",
           "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Baihu, guardian deity of the West, to the target, inflicts neutral property magical damage to all targets around the user.\nIf the user has [Blessing of the East] buff, The buff will be changed to [Blessing of the West].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
           "levelDetails": [
             {
@@ -2433,8 +2714,20 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "63 + (Skill Level x 3)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "1 seconds",
+          "cooldown": "0.4 seconds",
+          "areaOfEffect": "11 x 11~15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Talisman of White Tiger ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talisman_of_White_Tiger"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5427.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5427",
           "tree": {
@@ -2460,6 +2753,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "63 + (Skill Level x 3)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.4 seconds"
               },
               {
                 "label": "Target",
@@ -2532,7 +2841,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Talisman of White Tiger",
@@ -2606,7 +2914,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2622,6 +2930,8 @@ export const soulAsceticData = {
           "target": "Single Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "1 Soul Talisman",
+          "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Red_Phoenix",
           "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Zhuque, guardian deity of the South, to the target, inflicts neutral property magical damage to the target and surrounding enemies around the target.\nIf the [Blessing of the West] effect is applied to you when casting a skill, the effect is changed to [Blessing of the South].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
           "levelDetails": [
             {
@@ -2672,8 +2982,20 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "55 + (Skill Level x 10)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "1 seconds",
+          "cooldown": "0.45 seconds",
+          "areaOfEffect": "3 x 3~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Talisman of Red Phoenix ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Red_Phoenix"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5428.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5428",
           "tree": {
@@ -2699,6 +3021,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "55 + (Skill Level x 10)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.45 seconds"
               },
               {
                 "label": "Target",
@@ -2771,7 +3109,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Talisman of Red Phoenix",
@@ -2848,7 +3185,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2864,6 +3201,8 @@ export const soulAsceticData = {
           "target": "1 Cell Ground Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "1 Soul Talisman",
+          "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Black_Tortoise",
           "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Xuanwu, guardian deity of the North, to the target cell, inflicts neutral property magical damage to all target within range.\nIf the user has [Blessing of the South] buff, The buff will be changed to [Blessing of the North].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
           "levelDetails": [
             {
@@ -2914,8 +3253,20 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "55 + (Skill Level x 12)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "1 seconds",
+          "cooldown": "0.7 seconds",
+          "areaOfEffect": "7 x 7~11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Talisman of Black Tortoise ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Black_Tortoise"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5429.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5429",
           "tree": {
@@ -2941,6 +3292,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "55 + (Skill Level x 12)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.7 seconds"
               },
               {
                 "label": "Target",
@@ -3013,7 +3380,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Talisman of Black Tortoise",
@@ -3071,7 +3437,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3087,6 +3453,8 @@ export const soulAsceticData = {
           "target": "1 Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "3 Soul Talisman",
+          "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Four_Bearing_God",
           "description": "Consumes 3 Soul Talisman.\nThrows a talisman at a target, inflicting attribute-less magic DMG to the target and enemies within the surrounding area.\nBasically, it attacks once, but if there is [Blessing of the East], it attacks twice, if there is [Blessing of the West], it attacks three times, if there is [Blessing of the South], it attacks four times, and if there is [Blessing of the North], it attacks five times.\nWhen under the effect of [Blessing of the Four Elements], attack 7 times.\nDMG increases based on the Talisman Polish skill level, the caster's base level, and SPL.\nDMG properties change depending on the Mild Wind.",
           "levelDetails": [
             {
@@ -3137,8 +3505,20 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "54 + (Skill Level x 16)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "1.5 seconds",
+          "cooldown": "1 seconds",
+          "areaOfEffect": "7 x 7~11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Talisman of Four Bearing God ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Four_Bearing_God"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5430.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5430",
           "tree": {
@@ -3182,6 +3562,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "54 + (Skill Level x 16)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "1 seconds"
               },
               {
                 "label": "Target",
@@ -3250,7 +3646,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Talisman of Four Bearing God",
@@ -3289,7 +3684,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3305,6 +3700,8 @@ export const soulAsceticData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "35",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Circle_of_Directions_and_Elementals",
           "description": "Can be used when up to [Blessing of the North] has been granted.\nBy fusing the power of the four directions and the power of the five cycles, it inflicts powerful neutral magic damage to the target and enemies within the surrounding range 5 times.\nAdditionally, [Blessing of the North] is converted into [Blessing of the Four Elements], and the caster's S and MATK are increased for a certain duration.\n(If [Blessing of the Four Elements] is already active, its effect is refreshed.)\nDamage increases based on the Talisman Mastery and Soul Mastery skill levels, the caster's base level, and SPL.\nDamage property can be changed according to Mild Wind.",
           "levelDetails": [
             {
@@ -3355,8 +3752,22 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "75 + (Skill Level × 15)",
+          "fixedCastTime": "1.5 seconds",
+          "variableCastTime": "1.5 seconds",
+          "castDelay": "0.5 seconds",
+          "cooldown": "5 seconds",
+          "duration": "(Skill Level x 30) seconds",
+          "areaOfEffect": "7 x 7~11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Circle of Directions and Elementals ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Circle_of_Directions_and_Elementals"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5431.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5431",
           "tree": {
@@ -3396,6 +3807,26 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "75 + (Skill Level × 15)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
               },
@@ -3409,6 +3840,10 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "s-matk",
+                    "label": "S.Matk"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -3417,73 +3852,53 @@ export const soulAsceticData = {
                     "label": "Area of Effect"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
-                  },
-                  {
-                    "id": "120-seconds-s-matk",
-                    "label": "/120 Seconds S.Matk"
-                  },
-                  {
-                    "id": "150-seconds-s-matk",
-                    "label": "/150 Seconds S.Matk"
-                  },
-                  {
-                    "id": "30-seconds-s-matk",
-                    "label": "/30 Seconds S.Matk"
-                  },
-                  {
-                    "id": "60-seconds-s-matk",
-                    "label": "/60 Seconds S.Matk"
-                  },
-                  {
-                    "id": "90-seconds-s-matk",
-                    "label": "/90 Seconds S.Matk"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "MATK per hit 2500+((Talisman Mastery Lv+Soul MasteryLv) x 15)%",
                       "area-of-effect": "7x7",
-                      "30-seconds-s-matk": "+5",
+                      "duration": "30 seconds",
+                      "s-matk": "+5",
                       "sp-cost": "120"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "MATK per hit 4500+((Talisman Mastery Lv+Soul MasteryLv) x 30)%",
                       "area-of-effect": "7x7",
-                      "60-seconds-s-matk": "+10",
+                      "duration": "60 seconds",
+                      "s-matk": "+10",
                       "sp-cost": "140"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "MATK per hit 6500+((Talisman Mastery Lv+Soul MasteryLv) x 45)%",
                       "area-of-effect": "9x9",
-                      "90-seconds-s-matk": "+15",
+                      "duration": "90 seconds",
+                      "s-matk": "+15",
                       "sp-cost": "160"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "MATK per hit 8500+((Talisman Mastery Lv+Soul MasteryLv) x 60)%",
                       "area-of-effect": "9x9",
-                      "120-seconds-s-matk": "+20",
+                      "duration": "120 seconds",
+                      "s-matk": "+20",
                       "sp-cost": "180"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "MATK per hit 10500+((Talisman Mastery Lv+Soul MasteryLv) x 75)%",
                       "area-of-effect": "11x11",
-                      "150-seconds-s-matk": "+25",
+                      "duration": "150 seconds",
+                      "s-matk": "+25",
                       "sp-cost": "200"
                     }
                   }
@@ -3492,7 +3907,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Circle of Directions and Elementals",
@@ -3582,7 +3996,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3598,6 +4012,8 @@ export const soulAsceticData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "180",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_of_Heaven_and_Earth",
           "description": "Transmits the power of the sacred spirit from Heaven to Earth, completely recovering the SP of party members within a 23 x 23 cell range around the self.\nIncreases party members' melee/long range physical damage and all attribute magic damage for 300 seconds.\nUsing this skill while the user is under the effect of Totem of Tutelary also recovers AP to the party members.",
           "levelDetails": [
             {
@@ -3692,8 +4108,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 + (Skill Level × 10)",
+          "duration": "300 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul of Heaven and Earth ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_of_Heaven_and_Earth"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5432.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5432",
           "tree": {
@@ -3739,6 +4164,10 @@ export const soulAsceticData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "80 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
               },
@@ -3757,6 +4186,10 @@ export const soulAsceticData = {
               {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Duration",
+                "value": "300 seconds"
               },
               {
                 "label": "AP Consumed",
@@ -3894,10 +4327,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3921,9 +4353,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Provided by default",
           "group": "Buff/Toggle",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Collection",
           "description": "Periodically collects the Soul Energy required for the Soul Reaper skills.\nInitially, you can have up to 5 Soul Energy. Once you reach the Maximum limit, you can no longer collect it.",
           "levelDetails": [
             {
@@ -3999,8 +4433,16 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Collection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Collection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2609.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2609",
           "tree": {
@@ -4019,6 +4461,14 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -4084,10 +4534,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4100,9 +4549,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Soul Collection Lv. 1",
           "group": "Buff/Special",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Harvest",
           "description": "Requires 2 Soul Energy.\nAll your attacks harvests souls from their targets.\nAttacking enemies for this skill's duration creates a chance of gaining 1 Soul Energy.",
           "levelDetails": [
             {
@@ -4231,8 +4682,18 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40 + (Skill Level × 2)",
+          "cooldown": "60 + (Skill Level × 30) seconds",
+          "duration": "60 + (Skill Level × 30) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Harvest ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Harvest"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2607.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2607",
           "tree": {
@@ -4260,6 +4721,10 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -4270,6 +4735,14 @@ export const soulAsceticData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "60 + (Skill Level × 30) seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -4279,6 +4752,10 @@ export const soulAsceticData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -4301,7 +4778,8 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Harvest Chance: 15% / Duration: 90 sec",
+                      "duration": "90 seconds",
+                      "effect": "Harvest Chance: 15%",
                       "sp-cost": "42",
                       "data-1": "2",
                       "data-2": "90000",
@@ -4311,7 +4789,8 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Harvest Chance: 20% / Duration: 120 sec",
+                      "duration": "120 seconds",
+                      "effect": "Harvest Chance: 20%",
                       "sp-cost": "44",
                       "data-1": "2",
                       "data-2": "120000",
@@ -4321,7 +4800,8 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Harvest Chance: 25% / Duration: 150 sec",
+                      "duration": "150 seconds",
+                      "effect": "Harvest Chance: 25%",
                       "sp-cost": "46",
                       "data-1": "2",
                       "data-2": "150000",
@@ -4331,7 +4811,8 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Harvest Chance: 30% / Duration: 180 sec",
+                      "duration": "180 seconds",
+                      "effect": "Harvest Chance: 30%",
                       "sp-cost": "48",
                       "data-1": "2",
                       "data-2": "180000",
@@ -4341,7 +4822,8 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Harvest Chance: 35% / Duration: 210 sec",
+                      "duration": "210 seconds",
+                      "effect": "Harvest Chance: 35%",
                       "sp-cost": "50",
                       "data-1": "2",
                       "data-2": "210000",
@@ -4353,10 +4835,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4369,9 +4850,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Soul Harvest Lv. 3",
           "group": "Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Evil_Soul_Curse",
           "description": "Requires 3 Soul Energy.\nCommands evil souls and cast [Evil Curse] on and around a target.\nEvil Curse decreases Shadow Resistance by 100%. (20% for Boss monsters and players)",
           "levelDetails": [
             {
@@ -4526,8 +5009,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Evil Soul Curse ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Evil_Soul_Curse"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2601.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2601",
           "tree": {
@@ -4555,6 +5047,10 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -4569,6 +5065,10 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -4670,10 +5170,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4689,6 +5188,8 @@ export const soulAsceticData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Energy_Research",
           "description": "Study the special energy released from souls and increase the amount of energy you can collect to use your Soul Reaper skills.",
           "levelDetails": [
             {
@@ -4739,8 +5240,15 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Energy Research ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Energy_Research"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2611.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2611",
           "tree": {
@@ -4822,10 +5330,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4838,9 +5345,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Soul Energy Research Lv. 1",
           "group": "Buff/Special",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kaute",
           "description": "Requires 5 Soul Energy.\nUse Soul Energy and convert your HP into a target's SP.\nThis skill can be used on you, the Soul Linker classes, and your Family members, and Soul-bound targets.\nAlso, requires at least 30% of remaining HP for use.",
           "levelDetails": [
             {
@@ -4970,6 +5479,8 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "?",
+          "castRange": "7 cells",
           "translations": {
             "pt-BR": {
               "name": " Kaute ",
@@ -5006,6 +5517,10 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "?"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5020,12 +5535,24 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
               {
                 "title": "Level Scaling",
                 "columns": [
+                  {
+                    "id": "mhp",
+                    "label": "MHP"
+                  },
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
@@ -5037,10 +5564,6 @@ export const soulAsceticData = {
                   {
                     "id": "data-2",
                     "label": "Data 2"
-                  },
-                  {
-                    "id": "mhp",
-                    "label": "Mhp"
                   },
                   {
                     "id": "range",
@@ -5112,7 +5635,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -5128,9 +5650,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Soul Harvest Lv. 3",
           "group": "Attack/Special",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Esha",
           "description": "Requires 1 Soul Energy.\nInflicts Magic damage on and around your target and halves their MSPD.\nEnables Esma for 5 seconds after use.\nCan't be used on players or affect them.",
           "levelDetails": [
             {
@@ -5310,6 +5834,9 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "16 + (2 × Skill Level)",
+          "castRange": "9 cells",
+          "areaOfEffect": "? x ?",
           "translations": {
             "pt-BR": {
               "name": " Esha ",
@@ -5346,6 +5873,10 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "16 + (2 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -5360,6 +5891,18 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "? x ?"
               }
             ],
             "levelTables": [
@@ -5461,7 +6004,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -5477,9 +6019,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Evil Soul Curse Lv. 3",
           "group": "Attack/Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Curse_Explosion",
           "description": "Inflict Shadow Magic damage on your target and other enemies within 7 x7 cells around it.\nThis skill inflicts more damage on Evil Curse targets.",
           "levelDetails": [
             {
@@ -5674,8 +6218,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50~95",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Curse Explosion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Curse_Explosion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2600.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2600",
           "tree": {
@@ -5703,6 +6256,10 @@ export const soulAsceticData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "50~95"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -5717,6 +6274,14 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -5844,10 +6409,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5860,9 +6424,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Soul Energy Research Lv. 3",
           "group": "Buff/Special",
           "type": "",
-          "target": "",
+          "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Bind",
           "description": "Requires 10 Soul Energy.\nBinds your and nearby party members' souls together.\nYou can restore some HP for the Soul-bound every 3 seconds and use Kaute on them.\nThis skill's effect is canceled if you become Silenced or Cursed.",
           "levelDetails": [
             {
@@ -6031,8 +6597,18 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "42 + (2 × Skill Level)",
+          "cooldown": "? seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Bind ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Bind"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2605.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2605",
           "tree": {
@@ -6060,6 +6636,10 @@ export const soulAsceticData = {
                 "value": "7"
               },
               {
+                "label": "SP Cost",
+                "value": "42 + (2 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "4 seconds"
               },
@@ -6070,6 +6650,18 @@ export const soulAsceticData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "? seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
               },
               {
                 "label": "Pulse",
@@ -6188,10 +6780,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6204,9 +6795,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Soul Energy Research Lv. 3 and Kaute Lv. 3",
           "group": "Buff/Special",
           "type": "",
-          "target": "",
+          "target": "Self and Party",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Circulation",
           "description": "Can be used on Soul-bestowed targets.\nConverts a Soul bestowed on you or your party member to restore your SP.\nThe Soul disappears upon SP recovery.",
           "levelDetails": [
             {
@@ -6279,8 +6872,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level x 50)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Circulation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Circulation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2608.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2608",
           "tree": {
@@ -6314,6 +6916,10 @@ export const soulAsceticData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level x 50)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -6328,6 +6934,14 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Self and Party"
               }
             ],
             "levelTables": [
@@ -6384,10 +6998,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6400,9 +7013,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Esha Lv. 1",
           "group": "Attack/Special",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Espa",
           "description": "Requires 1 Soul Energy.\nInflicts Magic damage on your target.\nIncreases ATK, depending on your Base Level. Also, enables Eswoo for 5 seconds after use.\nConsumes 1 Soul Energy for use. This skill doesn't consume Soul Energy at Level 10.\nCan't be used on players or affect them.",
           "levelDetails": [
             {
@@ -6547,6 +7162,7 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "48~78",
           "translations": {
             "pt-BR": {
               "name": " Espa ",
@@ -6583,6 +7199,10 @@ export const soulAsceticData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "48~78"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -6597,6 +7217,10 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -6706,7 +7330,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -6722,9 +7345,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Soul Bind Lv. 5",
           "group": "Buff/Special",
           "type": "",
-          "target": "",
+          "target": "?",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Soul",
           "description": "Requires 1 Soul Energy.\nShapes your Soul Energy into a shadowy soul and bestows it upon you or a target (player).\nThis soul increases Critical Hit Rate and ASPD for its duration.\nCan't be used on a target with a different soul already bestowed on it.",
           "levelDetails": [
             {
@@ -6904,8 +7529,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "300 - (50 x Skill Level)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Soul ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Soul"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2597.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2597",
           "tree": {
@@ -6933,6 +7567,10 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "300 - (50 x Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6947,6 +7585,14 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "?"
               }
             ],
             "levelTables": [
@@ -6958,8 +7604,8 @@ export const soulAsceticData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "aspd",
@@ -6994,9 +7640,9 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "60 seconds",
                       "cri": "+12",
                       "aspd": "+1",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -7008,9 +7654,9 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "120 seconds",
                       "cri": "+14",
                       "aspd": "+1",
-                      "effect": "Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -7022,9 +7668,9 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "180 seconds",
                       "cri": "+16",
                       "aspd": "+2",
-                      "effect": "Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -7036,9 +7682,9 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "240 seconds",
                       "cri": "+18",
                       "aspd": "+2",
-                      "effect": "Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -7050,9 +7696,9 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "300 seconds",
                       "cri": "+20",
                       "aspd": "+3",
-                      "effect": "Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -7066,10 +7712,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7082,9 +7727,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Soul Bind Lv. 5",
           "group": "Buff/Special",
           "type": "",
-          "target": "",
+          "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fairy_Soul",
           "description": "Requires 1 Soul Energy.\nShapes your Soul Energy into a fairy soul and bestows it upon you or a target (player).\nThis soul increases MATK and decreases Variable Cast Time for its duration.\nCan't be used on a target with a different soul already bestowed on it.",
           "levelDetails": [
             {
@@ -7264,8 +7911,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "?",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Fairy Soul ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fairy_Soul"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2599.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2599",
           "tree": {
@@ -7293,6 +7949,10 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "?"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7307,6 +7967,14 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
               }
             ],
             "levelTables": [
@@ -7318,8 +7986,8 @@ export const soulAsceticData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -7354,9 +8022,9 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "60 seconds",
                       "matk": "+10",
                       "variable-cast-time": "-5%",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -7368,9 +8036,9 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "120 seconds",
                       "matk": "+20",
                       "variable-cast-time": "-5%",
-                      "effect": "Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -7382,9 +8050,9 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "180 seconds",
                       "matk": "+30",
                       "variable-cast-time": "-7%",
-                      "effect": "Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -7396,9 +8064,9 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "240 seconds",
                       "matk": "+40",
                       "variable-cast-time": "-7%",
-                      "effect": "Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -7410,9 +8078,9 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "300 seconds",
                       "matk": "+50",
                       "variable-cast-time": "-10%",
-                      "effect": "Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -7426,10 +8094,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7442,9 +8109,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Soul Circulation Lv. 2",
           "group": "Buff/Special",
           "type": "",
-          "target": "",
+          "target": "?",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Falcon_Soul",
           "description": "Requires 1 Soul Energy.\nShapes your Soul Energy into a Falcon Soul and bestows it upon you or a target (player).\nThis soul increases Physical ATK and Hit Rate for its duration.\nCan't be used on a target with a different soul already bestowed on it.",
           "levelDetails": [
             {
@@ -7624,8 +8293,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "?",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Falcon Soul ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Falcon_Soul"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2598.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2598",
           "tree": {
@@ -7653,6 +8331,10 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "?"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7667,6 +8349,14 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "?"
               }
             ],
             "levelTables": [
@@ -7678,8 +8368,8 @@ export const soulAsceticData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "atk",
@@ -7714,9 +8404,9 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "60 seconds",
                       "atk": "+10",
                       "hit": "+10",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -7728,9 +8418,9 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "120 seconds",
                       "atk": "+20",
                       "hit": "+10",
-                      "effect": "Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -7742,9 +8432,9 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "180 seconds",
                       "atk": "+30",
                       "hit": "+13",
-                      "effect": "Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -7756,9 +8446,9 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "240 seconds",
                       "atk": "+40",
                       "hit": "+13",
-                      "effect": "Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -7770,9 +8460,9 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "300 seconds",
                       "atk": "+50",
                       "hit": "+15",
-                      "effect": "Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -7786,10 +8476,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7802,9 +8491,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Soul Circulation Lv. 2",
           "group": "Buff/Special",
           "type": "",
-          "target": "",
+          "target": "Self and Party",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Golem_Soul",
           "description": "Requires 1 Soul Energy.\nShapes your Soul Energy into a Golem Soul and bestows it upon you or a target (player).\nThis soul increases Physical and Magic DEF for its duration.\nCan't be used on a target with a different soul already bestowed on it.",
           "levelDetails": [
             {
@@ -7984,8 +8675,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "?",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Golem Soul ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Golem_Soul"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2596.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2596",
           "tree": {
@@ -8013,6 +8713,10 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "?"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8027,6 +8731,14 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Self and Party"
               }
             ],
             "levelTables": [
@@ -8038,8 +8750,8 @@ export const soulAsceticData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -8074,9 +8786,9 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "60 seconds",
                       "def": "+60",
                       "mdef": "+20",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "250",
                       "range": "9 cells",
                       "data-1": "60000",
@@ -8088,9 +8800,9 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "120 seconds",
                       "def": "+120",
                       "mdef": "+25",
-                      "effect": "Duration: 120 sec",
                       "sp-cost": "200",
                       "range": "9 cells",
                       "data-1": "120000",
@@ -8102,9 +8814,9 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "180 seconds",
                       "def": "+180",
                       "mdef": "+30",
-                      "effect": "Duration: 180 sec",
                       "sp-cost": "150",
                       "range": "9 cells",
                       "data-1": "180000",
@@ -8116,9 +8828,9 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "240 seconds",
                       "def": "+240",
                       "mdef": "+35",
-                      "effect": "Duration: 240 sec",
                       "sp-cost": "100",
                       "range": "9 cells",
                       "data-1": "240000",
@@ -8130,9 +8842,9 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "300 seconds",
                       "def": "+300",
                       "mdef": "+40",
-                      "effect": "Duration: 300 sec",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "300000",
@@ -8146,10 +8858,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8165,6 +8876,8 @@ export const soulAsceticData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Requires 2 Soul Energy.\nInflicts Magic damage on and around your target.\nIncreases ATK, depending on your Base Level. Also, enables Esma for 5 seconds after use.\nConsumes 2 Soul Energy for use. This skill only consumes 1 Soul Energy at Level 10.\nCan't be used on players or affect them.",
           "levelDetails": [
             {
@@ -8590,7 +9303,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -8606,9 +9318,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Esha Lv. 5 and Espa Lv. 5",
           "group": "Special",
           "type": "",
-          "target": "",
+          "target": "?",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Division",
           "description": "Requires 1 Soul Energy.\nCan be used in WoE and PvP.\nTemporarily separates your target's soul from the body, disrupting its reasonable thought process.\nIncreases the target's post-skill delay for 5 seconds.",
           "levelDetails": [
             {
@@ -8763,8 +9477,16 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "34 + (Skill Level x 2)",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Division ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Division"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2606.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2606",
           "tree": {
@@ -8798,6 +9520,10 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "34 + (Skill Level x 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -8812,6 +9538,10 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "?"
               }
             ],
             "levelTables": [
@@ -8904,10 +9634,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8920,9 +9649,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Curse Explosion Lv. 2, Shadow Soul Lv. 1, Fairy Soul Lv. 1, Falcon Soul Lv. 1, and Golem Soul Lv. 1",
           "group": "Special",
           "type": "",
-          "target": "",
+          "target": "?",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Explosion",
           "description": "Requires 10 Soul Energy.\nCan be used in WoE and PvP.\nDetonates the Soul bestowed on your target, inflicting damage based on its current HP.\nRequires a soul-bestowed target and it must have at least 10 remaining HP.",
           "levelDetails": [
             {
@@ -9052,8 +9783,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level x 30)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Explosion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Explosion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2610.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2610",
           "tree": {
@@ -9105,6 +9845,10 @@ export const soulAsceticData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level x 30)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -9119,6 +9863,14 @@ export const soulAsceticData = {
               {
                 "label": "Cooldown",
                 "value": "60 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "?"
               }
             ],
             "levelTables": [
@@ -9202,10 +9954,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9229,9 +9980,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Alchemist",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Alchemist_Spirit",
           "description": "Summon the spirit of history's\ngreatest Alchemist and temporarily endow its\npowers upon a targeted Alchemist, enhancing\nthat Alchemist's Aid Potion skill, which is\naffected by Base Level, and enabling the use\nof the Aid Berserk Potion and the Spiritual\nPotion Creation skills.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -9282,8 +10035,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Alchemist Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Alchemist_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/445.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/445",
           "tree": {
@@ -9302,6 +10066,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Alchemist"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -9358,10 +10142,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9374,9 +10157,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "TaeKwon Master",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Taekwon_Master_Spirit",
           "description": "Summon the spirit of history's\ngreatest Taekwon Master and temporarily endow\nits power upon a targeted Taekwon Master,\nenabling Taekwon Master to use Solar, Lunar\nand Stellar Union skill.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -9427,8 +10212,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Taekwon Master Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Taekwon_Master_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/448.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/448",
           "tree": {
@@ -9447,6 +10243,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "TaeKwon Master"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -9503,10 +10319,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9519,9 +10334,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Assassin",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Assassin_Spirit",
           "description": "Summon the spirit of history's most\nmysterious Assassin and endow its abilities upon\na targeted Assassin. For the skill's duration,\nSonic Blow will have a 100% increase in damage\nand reduced cast delay.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -9572,8 +10389,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Assassin Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Assassin_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/457.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/457",
           "tree": {
@@ -9592,6 +10420,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Assassin"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -9648,10 +10496,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9664,9 +10511,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Crusader",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Crusader_Spirit",
           "description": "Summon the spirit of history's\nbravest Crusader and temporarily endow its\nabilities on a targeted Crusader. For the\nskill's duration, the Crusader skill, Shield\nBoomerang, will have double damage and never\nmiss its target.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -9717,8 +10566,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Crusader Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Crusader_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/450.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/450",
           "tree": {
@@ -9737,6 +10597,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Crusader"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -9793,10 +10673,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9809,9 +10688,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Bard / Dancer",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bard_and_Dancer_Spirits",
           "description": "Summon the spirit of history's most\nartistic performer and endow its abilities upon\nthe Bard or Dancer targeted by this skill. For\nthe skill's duration, Bards and Dancers have\nincreased Movement Speed, receive the same\neffect as Party Members when performing Play or\nDance skills, and are able to combo skills with\nPerfect Tablature, Focus Ballet, Impressive\nRiff, Slow Grace, Magic Strings, Lady Luck,\nSong of Lutie and Gypsy's Kiss.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -9862,8 +10743,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Bard and Dancer Spirits ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bard_and_Dancer_Spirits"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/455.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/455",
           "tree": {
@@ -9882,6 +10774,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Bard / Dancer"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -9938,10 +10850,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9954,9 +10865,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Taekwon Master Spirit 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Super Novice",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Super_Novice_Spirit",
           "description": "Summon the spirit of history's\nawesomest Super Novice and temporarily endow\nits abilities on the Super Novice targeted by\nthis skill. For the skill's duration, Super\nNovices have a low chance of summoning a\nGuardian Angel that will erase their previous\ndeath record. Super Novices at Base Level 90\nand above can any headgear regardless of\nlocation, and at Base Level 96 and above, they\ncan equip certain Level 4 Weapons, such as One\nHanded Swords, Maces Axes, Staffs and Daggers.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -10007,8 +10920,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Super Novice Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Super_Novice_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/451.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/451",
           "tree": {
@@ -10034,6 +10958,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Super Novice"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -10090,10 +11034,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10106,9 +11049,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Alchemist Spirit 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Blacksmith",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Blacksmith_Spirit",
           "description": "Summon the spirit of history's most\nproficient Blacksmith and endow its abilities\nupon a targeted Blacksmith. For the skill's\nduration, the use of Advanced Adrenaline Rush\nis enabled if the Blacksmith has mastered the\nAdrenaline Rush skill. Advanced Adrenaline Rush\ncan be used on all weapons, except Bow Class\nWeapons, and cannot be used with skills with\nsimilar effects such as Two Hand Quicken,\nAdrenaline Rush, One Hand Quicken, Solar, Lunar\nand Stellar Shadow or Protection, Spear Quicken\nor Impressive Riff.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -10159,8 +11104,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Blacksmith Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blacksmith_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/458.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/458",
           "tree": {
@@ -10186,6 +11142,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Blacksmith"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -10242,10 +11218,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10258,9 +11233,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Taekwon Master Spirit 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Soul Linker",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Linker_Spirit",
           "description": "Summon the spirit of history's most\nskilled Soul Linker and endow its abilities on\na targeted Soul Linker, temporarily allowing\nthe use of [Ka-] category skills on any\ncharacter.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -10311,8 +11288,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Linker Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Linker_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/461.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/461",
           "tree": {
@@ -10338,6 +11326,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Soul Linker"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -10394,10 +11402,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10410,9 +11417,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Assassin Spirit 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Rogue",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rogue_Spirit",
           "description": "Summon the\nspirit of history's sneakiest Rogue and endow its abilities\nupon the Rogue targeted by this skill, enhancing\nStealth status's Movement Speed and STR\nincrease. For this skill's duration, this Rogue\nwill be unaffected by dispell skills and will\nreceive more HP and SP from potions created by\na Top Ten Ranking Alchemist.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -10463,8 +11472,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Rogue Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rogue_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/456.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/456",
           "tree": {
@@ -10490,6 +11510,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Rogue"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -10546,10 +11586,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10562,9 +11601,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Crusader Spirit 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Knight",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Knight_Spirit",
           "description": "Summon the spirit of history's most\nchivalrous Knight and endow its abilities upon\nthe Knight targeted by this skill. For the\nskill's duration, the use of One Hand Quicken\nwill be enabled if the Two Hand Quicken skill\nis mastered.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -10615,8 +11656,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Knight Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Knight_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/452.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/452",
           "tree": {
@@ -10642,6 +11694,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Knight"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -10698,10 +11770,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10714,9 +11785,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Bard and Dancer Spirit 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Hunter",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hunter_Spirit",
           "description": "Summon the spirit of history's most\npopular Hunter and endow its abilities on a\ntargeted Hunter, temporarily enhancing that\nHunter's Beast Bane skill according to the\nHunter's STR.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -10767,8 +11840,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Hunter Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hunter_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/460.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/460",
           "tree": {
@@ -10794,6 +11878,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Hunter"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -10850,10 +11954,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10866,9 +11969,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Super Novice Spirit 5",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "High First Class",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/1st_Transcendent_Spirit",
           "description": "Call upon the spirits of the most\npowerful 1st Transcendent Class warriors ever\nso that they can lend their powers to their\nsuccessors. This skill will increase every Stat\nfor friendly 1st Transcendent characters based\non their Base Level, but each Stat bonus will\nnot exceed +50.",
           "levelDetails": [
             {
@@ -10919,8 +12024,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " 1st Transcendent Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/1st_Transcendent_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/494.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/494",
           "tree": {
@@ -10946,6 +12062,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "High First Class"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -11002,10 +12138,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11018,9 +12153,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Monk",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Monk_Spirit",
           "description": "Summon the spirit of history's\ntoughest Monk and temporarily endow its powers\nupon a targeted Monk, enhancing that Monk's\nRaging Thrust skill so that it inflicts\nsplashed damage on enemies within a 5*5 cell\narea. Monk Spirit also enables Monks to use\ncombo skills with reduced SP consumption and to\nrestore SP during Fury status.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -11071,8 +12208,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Monk Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Monk_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/447.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/447",
           "tree": {
@@ -11091,6 +12239,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Monk"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -11147,10 +12315,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11163,9 +12330,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Assassin Spirit 1,",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kaupe",
           "description": "Kaupe status enables the chance of\ndodging a physical attack from an enemy and\nlasts until the 10 minute duration elapses or\nuntil character successfully dodges an attack.\nSP Consumption & Dodge Chance By Level",
           "levelDetails": [
             {
@@ -11200,6 +12369,11 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "10 + (Skill Level × 10)",
+          "fixedCastTime": "0.1 seconds",
+          "variableCastTime": "0.4 seconds",
+          "duration": "10 minutes Until dodging an attack",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Kaupe ",
@@ -11240,6 +12414,30 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 10)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.1 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.4 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              },
+              {
+                "label": "Duration",
+                "value": "10 minutes Until dodging an attack"
               }
             ],
             "levelTables": [
@@ -11290,7 +12488,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -11306,9 +12503,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Knight Spirit 1",
           "group": "Status Magic",
           "type": "",
-          "target": "",
+          "target": "Monster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Eske",
           "description": "Increase targeted monster's Attack\nPower, multiplying it by 4, but reduce its\nDefense by half. This skill is followed by a\n3 second delay in which the Esmaskill\ncan be cast.",
           "levelDetails": [
             {
@@ -11343,6 +12542,10 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "60 − (Skill Level × 15)",
+          "castDelay": "0.5 seconds",
+          "duration": "(Skill Level × 10) seconds",
+          "castRange": "Magic",
           "translations": {
             "pt-BR": {
               "name": " Eske ",
@@ -11377,6 +12580,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "60 − (Skill Level × 15)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Monster"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 10) seconds"
               }
             ],
             "levelTables": [
@@ -11419,7 +12642,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -11435,9 +12657,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Sage",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sage_Spirit",
           "description": "Summon the spirit of history's\ngreatest Sage and temporarily endow its\nabilities upon a targeted Sage, enhancing that\nSage's Hindsight skill so that it casts the\nhighest level Bolt skills.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -11488,8 +12712,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Sage Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sage_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/449.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/449",
           "tree": {
@@ -11508,6 +12743,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Sage"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -11564,10 +12819,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11583,6 +12837,8 @@ export const soulAsceticData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kaina",
           "description": "Increase MaxSP and enhance the\nefficiency of the Happy Break skill. At Base\nLevel 70, this skill reduces the SP consumption\nof the Estin, Estun and Esma skills by 3% in\nproportion to the skill level of Kaina. At Base\nLevel 80, this SP consumption is reduced by 5%\nand at Level 90, it is reduced by 7%.\nHappy Break Efficiency & MaxSP Increase By Level",
           "levelDetails": [
             {
@@ -11690,85 +12946,72 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "maxsp",
+                    "label": "MaxSP"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
                   {
-                    "id": "h-b-100-maxsp",
-                    "label": "H.b. +100% , Maxsp"
-                  },
-                  {
-                    "id": "h-b-40-maxsp",
-                    "label": "H.b. +40% , Maxsp"
-                  },
-                  {
-                    "id": "h-b-50-maxsp",
-                    "label": "H.b. +50% , Maxsp"
-                  },
-                  {
-                    "id": "h-b-60-maxsp",
-                    "label": "H.b. +60% , Maxsp"
-                  },
-                  {
-                    "id": "h-b-70-maxsp",
-                    "label": "H.b. +70% , Maxsp"
-                  },
-                  {
-                    "id": "h-b-80-maxsp",
-                    "label": "H.b. +80% , Maxsp"
-                  },
-                  {
-                    "id": "h-b-90-maxsp",
-                    "label": "H.b. +90% , Maxsp"
+                    "id": "h-b",
+                    "label": "H.b."
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "h-b-40-maxsp": "+30",
+                      "h-b": "+40%",
+                      "maxsp": "+30",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "h-b-50-maxsp": "+60",
+                      "h-b": "+50%",
+                      "maxsp": "+60",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "h-b-60-maxsp": "+90",
+                      "h-b": "+60%",
+                      "maxsp": "+90",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "h-b-70-maxsp": "+120",
+                      "h-b": "+70%",
+                      "maxsp": "+120",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "h-b-80-maxsp": "+150",
+                      "h-b": "+80%",
+                      "maxsp": "+150",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "h-b-90-maxsp": "+180",
+                      "h-b": "+90%",
+                      "maxsp": "+180",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "h-b-100-maxsp": "+210",
+                      "h-b": "+100%",
+                      "maxsp": "+210",
                       "sp-cost": "0"
                     }
                   }
@@ -11777,7 +13020,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -11793,9 +13035,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Monk Spirit 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Priest",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Priest_Spirit",
           "description": "Summon the spirit of history's most\npious Priest and endow its abilities upon the\nPriest targeted by this skill. For the skill's\nduration, the targeted Priest's Holy Light skill\nwill have its Attack Power and SP cost\nmultiplied by five.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -11846,8 +13090,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Priest Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Priest_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/454.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/454",
           "tree": {
@@ -11873,6 +13128,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Priest"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -11929,10 +13204,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11945,9 +13219,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Monk Spirit 1",
           "group": "Status Magic",
           "type": "",
-          "target": "",
+          "target": "Monster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Eska",
           "description": "Force a monster into a status\nsimilar to Monk's Mental Strength, in which\nMovement and Attack Speed is reduced, but\nDefense and Magic Defense will be temporarily\nenhanced.",
           "levelDetails": [
             {
@@ -11982,6 +13258,10 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "120 − (Skill Level × 20)",
+          "castDelay": "0.5 seconds",
+          "duration": "(Skill Level × 10) seconds",
+          "castRange": "Magic",
           "translations": {
             "pt-BR": {
               "name": " Eska ",
@@ -12016,6 +13296,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "120 − (Skill Level × 20)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Monster"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 10) seconds"
               }
             ],
             "levelTables": [
@@ -12058,7 +13358,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -12074,9 +13373,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Sage Spirit 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Wizard",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Wizard_Spirit",
           "description": "Summon the spirit of history's most\npowerful Wizard and endow its abilities upon the\nWizard targeted by this skill. For the skill's\nduration, the targeted Wizard can use certain\nskills without consuming Gemstones.\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -12127,8 +13428,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "560 − (Skill Level × 100)",
+          "fixedCastTime": "1 second",
+          "duration": "[100 + (Skill Level × 50)] seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Wizard Spirit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wizard_Spirit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/453.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/453",
           "tree": {
@@ -12154,6 +13466,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "560 − (Skill Level × 100)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Wizard"
+              },
+              {
+                "label": "Duration",
+                "value": "[100 + (Skill Level × 50)] seconds"
               }
             ],
             "levelTables": [
@@ -12210,10 +13542,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12226,9 +13557,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Wizard Spirit 1,",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kaite",
           "description": "Reflect most magic spells back at\nthe original caster. Reflected Healing spells\nwill not heal the original caster. The magic\nspells of high level monsters cannot be\nreflected, Player have chance to block/reflect\nincoming single target magic damage\nfrom other players regardless of level.\nDoes not stack with Asumptio and takes 400%\nmore physical damage while on Kaite state.",
           "levelDetails": [
             {
@@ -12295,6 +13628,9 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "70",
+          "duration": "1~10 minutes",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Kaite ",
@@ -12335,6 +13671,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "70"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              },
+              {
+                "label": "Duration",
+                "value": "1~10 minutes"
               }
             ],
             "levelTables": [
@@ -12405,7 +13757,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -12421,9 +13772,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Priest Spirit 1,",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kaahi",
           "description": "Consume a certain amount of SP to\nrestore HP each time an enemy uses a normal\nattack.\nSP Cost per attack: 5~35\nHP Regained: 200~1,400",
           "levelDetails": [],
           "levelExtras": [
@@ -12461,6 +13814,9 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "30",
+          "duration": "350 seconds",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Kaahi ",
@@ -12507,6 +13863,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              },
+              {
+                "label": "Duration",
+                "value": "350 seconds"
               }
             ],
             "levelTables": [
@@ -12566,7 +13938,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -12582,9 +13953,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Priest Spirit 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kaizel",
           "description": "Instantly revive a fallen character\nthat will be in Kyrie Eleison status for\n3 seconds upon revival. This revival lasts for\n30 minutes and is cancelled by resurrecting the\ntarget. This skill is disabled during WoE.\nCast Time & HP Restored Upon Revival",
           "levelDetails": [
             {
@@ -12651,6 +14024,9 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "120 − (Skill Level × 10)",
+          "duration": "30 minutes Until revival",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Kaizel ",
@@ -12685,6 +14061,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "120 − (Skill Level × 10)"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              },
+              {
+                "label": "Duration",
+                "value": "30 minutes Until revival"
               }
             ],
             "levelTables": [
@@ -12755,7 +14147,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -12771,9 +14162,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Priest Spirit 1",
           "group": "Status Magic",
           "type": "",
-          "target": "",
+          "target": "Monster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Eswoo",
           "description": "Temporarily shrink a monster to\nreduce its Movement Speed. Boss monsters will\nonly be shrunk for 1/5th of the normal skill\nduration. If this skill is cast on a monster\nthat is already shrunken, the caster will be\ninflicted by the Stun status and the targeted\nmonster will recover from Shrunken status more\nquickly.\nSP Consumption & Skill Duration By Level",
           "levelDetails": [
             {
@@ -12840,6 +14233,12 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "85 − (Skill Level × 10)",
+          "fixedCastTime": "0.2 seconds",
+          "variableCastTime": "0.8 seconds",
+          "castDelay": "0.5 seconds",
+          "duration": "(Skill Level) seconds",
+          "castRange": "Magic",
           "translations": {
             "pt-BR": {
               "name": " Eswoo ",
@@ -12874,6 +14273,34 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "85 − (Skill Level × 10)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.8 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Monster"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level) seconds"
               }
             ],
             "levelTables": [
@@ -12944,7 +14371,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -12960,9 +14386,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Wizard Spirit 1",
           "group": "Magic Attack",
           "type": "",
-          "target": "",
+          "target": "Monster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Estin",
           "description": "Push back a targeted monster\n2 cells away. Only Small sized monsters are\ndamaged by this skill, which takes the elemental\nproperty of the Mild Wind skill if it is cast.\nAt skill level 7, Estin will have a 3 second\ndelay that will allow the casting of the\nEsma skill.",
           "levelDetails": [
             {
@@ -13029,6 +14457,11 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "16 + (Skill Level × 2)",
+          "fixedCastTime": "0.02 seconds",
+          "variableCastTime": "0.08 seconds",
+          "castDelay": "0.5 seconds",
+          "castRange": "Magic",
           "translations": {
             "pt-BR": {
               "name": " Estin ",
@@ -13063,6 +14496,30 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "16 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.02 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.08 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Monster"
               }
             ],
             "levelTables": [
@@ -13133,7 +14590,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -13149,9 +14605,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Wizard Spirit 1",
           "group": "Magic Attack",
           "type": "",
-          "target": "",
+          "target": "Monster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Estun",
           "description": "Push back a targeted monster\n2 cells away. Only Medium sized monsters are\ndamaged by this skill, which takes the elemental\nproperty of the Mild Wind skill if it is cast.\nAt skill level 7, Estun will have a 3 second\ndelay that will allow the casting of the\nEsma skill.",
           "levelDetails": [
             {
@@ -13218,6 +14676,11 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "16 + (Skill Level × 2)",
+          "fixedCastTime": "0.02 seconds",
+          "variableCastTime": "0.08 seconds",
+          "castDelay": "0.5 seconds",
+          "castRange": "Magic",
           "translations": {
             "pt-BR": {
               "name": " Estun ",
@@ -13252,6 +14715,30 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "16 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.02 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.08 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Monster"
               }
             ],
             "levelTables": [
@@ -13322,7 +14809,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -13338,9 +14824,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Estin 7, Estun 7",
           "group": "Magic Attack",
           "type": "",
-          "target": "",
+          "target": "Monster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Esma",
           "description": "This skill can be activated only\nwhen the Esma casting requirement is satisfied.\nOne blast inflicts an amount of damage that is\ncalculated as (40 + Base Level)% of a Magic\nAttack, that will take on the elemental\nproperty applied by the Mild Wind skill.\nSP Consumption and Number of Fired Blasts",
           "levelDetails": [
             {
@@ -13431,6 +14919,9 @@ export const soulAsceticData = {
               ]
             }
           ],
+          "spCost": "(Skill Level × 8)",
+          "castDelay": "0.5 seconds",
+          "castRange": "Magic",
           "translations": {
             "pt-BR": {
               "name": " Esma ",
@@ -13471,6 +14962,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "(Skill Level × 8)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Monster"
               }
             ],
             "levelTables": [
@@ -13562,7 +15069,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -13592,6 +15098,8 @@ export const soulAsceticData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -13670,8 +15178,15 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -13773,10 +15288,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13789,9 +15303,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Movement",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sprint",
           "description": "Enable the caster to run with\nincredible speed. At levels 7 and above, this\nskill endows the caster with the Spurt status,\nwhich will temporarily increase STR for 150\nseconds, if the caster stops running and is\nbarehanded. Spurt status is canceled if the\ncaster equips a weapon. Each level of the\nSprint skill increases its user's barehanded\ndamage by +10.",
           "levelDetails": [
             {
@@ -13882,8 +15398,20 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "110 − (Skill Level × 10)",
+          "fixedCastTime": "3~0 seconds",
+          "variableCastTime": "3~0 seconds",
+          "castDelay": "0.3 seconds",
+          "duration": "150 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Sprint ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sprint"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/411.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/411",
           "tree": {
@@ -13902,6 +15430,30 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "110 − (Skill Level × 10)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "3~0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "3~0 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "150 seconds"
               }
             ],
             "levelTables": [
@@ -13993,10 +15545,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14009,9 +15560,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tornado_Kick",
           "description": "Caster must be in Tornado Stanceto\nperform this skill which will attack all enemies\nwithin a 5*5 cell area around the caster.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -14078,8 +15631,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 − (Skill Level × 2)",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Tornado Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tornado_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/413.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/413",
           "tree": {
@@ -14098,6 +15662,26 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "16 − (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -14157,10 +15741,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14173,9 +15756,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Heel_Drop",
           "description": "Caster must be in Heel Drop Stanceto\nperform this skill which will inflict damage\nand cause the Stun effect for 3 seconds on the\ntargeted enemy.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -14242,8 +15827,18 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 − (Skill Level × 2)",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Heel Drop ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Heel_Drop"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/415.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/415",
           "tree": {
@@ -14262,6 +15857,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "16 − (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -14321,10 +15932,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14337,9 +15947,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Roundhouse",
           "description": "Caster must be in Roundhouse Stanceto\nperform this skill which will damage its target\nand and push back enemies around the target.\nEnemies that are pushed do not receive any\ndamage.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -14406,8 +16018,18 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 − (Skill Level × 2)",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Roundhouse ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Roundhouse"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/417.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/417",
           "tree": {
@@ -14426,6 +16048,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "16 − (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -14485,10 +16123,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14501,9 +16138,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Counter_Kick",
           "description": "Caster must be in Counter Kick\nStance to perform this skill which will always\nhit its target.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -14570,8 +16209,18 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 − (Skill Level × 2)",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Counter Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Counter_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/419.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/419",
           "tree": {
@@ -14590,6 +16239,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "16 − (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -14649,10 +16314,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14665,9 +16329,11 @@ export const soulAsceticData = {
           "prerequisiteText": "basic skill",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Enemy, Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Flying_Kick",
           "description": "Attack a distant enemy with a kick\nthat instantly close the gap between the target\nand the player. When in Tumbling status, the\ncaster's Base Level affects the amount of\ninflicted damage. Flying Kick will have\nincreased damage affected by Base Level during\nSprint status. If Spurt and Sprint statuses are\nboth active, Flying Kick will inflict enhanced\ndamage. Flying Kick will also cancel most\npositive statuses on the target, which include\nSpirit statuses endowed by Soul Linkers, One\nHand Quicken, Kaahi, Kaite, and the Berserk\nPotion effect. However, Stalkers can protect\nthemselves from this positive status removal\neffect with their Preserve skill.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -14734,8 +16400,18 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 − (Skill Level × 10)",
+          "castDelay": "ASPD",
+          "castRange": "10 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Flying Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flying_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/421.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/421",
           "tree": {
@@ -14754,6 +16430,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "80 − (Skill Level × 10)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy, Self"
               }
             ],
             "levelTables": [
@@ -14813,10 +16505,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14832,6 +16523,8 @@ export const soulAsceticData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -14845,8 +16538,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -14865,6 +16567,14 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -14892,10 +16602,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14911,6 +16620,8 @@ export const soulAsceticData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Leap",
           "description": "Leap to a targeted cell within the\nskill's range. So long as the targeted cell is\nnot dead or inaccesibble, the caster can leap\nover walls and obstacles. Leap cannot be used\nin areas where Fly Wings are disabled, except\nfor WoE (Guild War) maps.\nCast Time & Skill Range by Level",
           "levelDetails": [
             {
@@ -14961,8 +16672,19 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "fixedCastTime": "[3 − (Skill Level / 2)] seconds",
+          "variableCastTime": "[3 − (Skill Level / 2)] seconds",
+          "castRange": "(Skill Level × 2) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Leap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Leap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/426.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/426",
           "tree": {
@@ -14981,6 +16703,22 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[3 − (Skill Level / 2)] seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[3 − (Skill Level / 2)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Skill Level × 2) cells"
               }
             ],
             "levelTables": [
@@ -15037,10 +16775,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15053,9 +16790,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Tornado Kick 1",
           "group": "Stance",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tornado_Stance",
           "description": "Enable a 15% chance of automatically\nentering Tornado Stance when the caster\nsuccessfully hits a target.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -15074,8 +16813,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Until reuse",
+          "translations": {
+            "pt-BR": {
+              "name": " Tornado Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tornado_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/412.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/412",
           "tree": {
@@ -15101,6 +16849,18 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Until reuse"
               }
             ],
             "levelTables": [
@@ -15129,10 +16889,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15145,9 +16904,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Heel Drop 1",
           "group": "Stance",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Heel_Drop_Stance",
           "description": "Enable a 15% chance of automatically\nentering Heel Drop Stance when the caster\nsuccessfully hits a target.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -15166,8 +16927,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Until reuse",
+          "translations": {
+            "pt-BR": {
+              "name": " Heel Drop Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Heel_Drop_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/414.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/414",
           "tree": {
@@ -15193,6 +16963,18 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Until reuse"
               }
             ],
             "levelTables": [
@@ -15221,10 +17003,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15237,9 +17018,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Roundhouse 1",
           "group": "Stance",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Roundhouse_Stance",
           "description": "Enable a 15% chance of automatically\nentering Roundhouse Stance when the caster\nsuccessfully hits a target.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -15258,8 +17041,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Until reuse",
+          "translations": {
+            "pt-BR": {
+              "name": " Roundhouse Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Roundhouse_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/416.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/416",
           "tree": {
@@ -15285,6 +17077,18 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Until reuse"
               }
             ],
             "levelTables": [
@@ -15313,10 +17117,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15329,9 +17132,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Counter Kick 1",
           "group": "Stance",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Counter_Kick_Stance",
           "description": "Enable a 20% chance of automatically\nentering Counter Kick Stancewhen the caster\nsuccessfully hits a target.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -15350,8 +17155,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Until reuse",
+          "translations": {
+            "pt-BR": {
+              "name": " Counter Kick Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Counter_Kick_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/418.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/418",
           "tree": {
@@ -15377,6 +17191,18 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Until reuse"
               }
             ],
             "levelTables": [
@@ -15405,10 +17231,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15421,9 +17246,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Flying Kick 7",
           "group": "Stance",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tumbling",
           "description": "Enable a 20% chance of blocking\nlong ranged physical attacks. When caster is in\nSpurt status (after performing Lv 7 Sprint or\nhigher), Tumbling will also block other kinds\nof attacks.",
           "levelDetails": [
             {
@@ -15442,8 +17269,16 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "translations": {
+            "pt-BR": {
+              "name": " Tumbling ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tumbling"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/420.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/420",
           "tree": {
@@ -15469,6 +17304,14 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -15497,10 +17340,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15513,9 +17355,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -15529,8 +17373,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -15549,6 +17402,18 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -15572,10 +17437,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15591,6 +17455,8 @@ export const soulAsceticData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Peaceful_Break",
           "description": "When two or more Taekwon Class\ncharacters sit next to each other, HP will be\nrestored for both characters. This HP\nrestoration is affected by VIT and enhanced by\nan additional 30 HP with the /doridori command.",
           "levelDetails": [
             {
@@ -15681,8 +17547,15 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Peaceful Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Peaceful_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/422.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/422",
           "tree": {
@@ -15792,10 +17665,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15811,6 +17683,8 @@ export const soulAsceticData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Happy_Break",
           "description": "When two or more Taekwon Class\ncharacters sit next to each other, SP will be\nrestored for both characters. This SP\nrestoration is affected by MaxSP and enhanced\nby an additional 3 SP with the /doridori command.\nUsing the /doridori command while in Happy Break\nstatus will make it last for 30 minutes. During\nthis status, the caster will have a low chance\nof using the Earth Spike spell scroll, with a\n10% chance at Skill Level 1, and a 1% chance at\nSkill Level 10. Using the Earth Spike scroll\nduring this status will consume 10 SP.",
           "levelDetails": [
             {
@@ -15901,8 +17775,16 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "duration": "30 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Happy Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Happy_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/423.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/423",
           "tree": {
@@ -15921,6 +17803,10 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "Duration",
+                "value": "30 minutes"
               }
             ],
             "levelTables": [
@@ -16012,10 +17898,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16031,6 +17916,8 @@ export const soulAsceticData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kihop",
           "description": "Increases your physical attack power.",
           "levelDetails": [
             {
@@ -16164,7 +18051,6 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -16180,9 +18066,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Peaceful Break 5,",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mild_Wind",
           "description": "Summon a wind that will enchant\nthe caster's attacks for 5 minutes with an\nelemental property based on the level of the\ncast skill.\nSP Consumption and Property by Skill Level",
           "levelDetails": [
             {
@@ -16249,8 +18137,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20/50",
+          "duration": "5 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Mild Wind ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mild_Wind"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/425.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/425",
           "tree": {
@@ -16288,6 +18185,18 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20/50"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "5 minutes"
               }
             ],
             "levelTables": [
@@ -16358,10 +18267,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16374,9 +18282,11 @@ export const soulAsceticData = {
           "prerequisiteText": "Kihop 5",
           "group": "Ranking (/taekwon)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Taekwon_Mission",
           "description": "This skill is disabled once a\ncharacter changes to an advanced job, such as\nTaekwon Master or Soul Linker. Activating this\nskill will display the current monster target\nfor the Taekwon Mission. Taekwon Boys and Girls\nwill earn 1 Taekwon Mission Point by defeating\n100 target monsters. Fulfilling the 100 target\nmonster quota will begin a new Taekwon Mission\nwith a randomly chosen target. Mini Boss and\nBoss monsters will never be chosen as targets.\nTaekwon characters that achieve the Top 10\nTaekwon Ranking by earning the most Taekwon\nMission Points can string combos with the\nTornado Kick, Roundhouse, Heel Drop, and Counter\nKick skills. Taekwon Rankers at Base Level 90\nand above with have tripled MaxHP and SP, and\nwill be able to use all Taekwon Boy and Girl\nskills.",
           "levelDetails": [],
           "levelExtras": [
@@ -16390,8 +18300,17 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "fixedCastTime": "1 second",
+          "translations": {
+            "pt-BR": {
+              "name": " Taekwon Mission ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Taekwon_Mission"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/493.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/493",
           "tree": {
@@ -16417,6 +18336,18 @@ export const soulAsceticData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -16440,10 +18371,9 @@ export const soulAsceticData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16463,6 +18393,8 @@ export const soulAsceticData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Soul_Mastery",
       "description": "Increase your SPL by practicing the art of guiding souls.",
       "levelDetails": [
         {
@@ -16553,8 +18485,15 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Soul Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Soul_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5417.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5417",
       "tree": {
@@ -16664,10 +18603,9 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16683,6 +18621,8 @@ export const soulAsceticData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Talisman_Mastery",
       "description": "Increases your understanding of Talisman, increases your S.MATK and affects the effectiveness of skills using talisman.",
       "levelDetails": [
         {
@@ -16773,8 +18713,15 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Talisman Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Talisman_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5416.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5416",
       "tree": {
@@ -16884,10 +18831,9 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16903,6 +18849,8 @@ export const soulAsceticData = {
       "target": "self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Soul_Gathering",
       "description": "Can be used when Soul Accumulation is activated.\nInstantly gathers spirits floating around and instantly fills up the maximum amount of soul energy that can be accumulated.",
       "levelDetails": [
         {
@@ -16953,8 +18901,19 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "75 + (Skill Level × 5)",
+      "fixedCastTime": "1 seconds",
+      "variableCastTime": "1.5 seconds",
+      "cooldown": "5~1 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Soul Gathering ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Soul_Gathering"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5421.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5421",
       "tree": {
@@ -16988,6 +18947,18 @@ export const soulAsceticData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "75 + (Skill Level × 5)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "self"
           }
@@ -17001,43 +18972,43 @@ export const soulAsceticData = {
                 "label": "SP Cost"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "cooldown",
+                "label": "Cooldown"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Skill cooldown: 5 sec",
+                  "cooldown": "5 seconds",
                   "sp-cost": "70"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Skill cooldown: 4 sec",
+                  "cooldown": "4 seconds",
                   "sp-cost": "75"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Skill cooldown: 3 sec",
+                  "cooldown": "3 seconds",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Skill cooldown: 2 sec",
+                  "cooldown": "2 seconds",
                   "sp-cost": "85"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Skill cooldown: 1 sec",
+                  "cooldown": "1 second",
                   "sp-cost": "90"
                 }
               }
@@ -17046,7 +19017,6 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Soul Gathering",
@@ -17077,7 +19047,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17093,6 +19063,8 @@ export const soulAsceticData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "1 Soul Talisman",
+      "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Protection",
       "description": "Consumes 1 Soul Talisman.\nAttaches the talisman of protection to self or 1 party member to recover HP every 3 seconds.\nRecovers additional amount depends on level of Talisman Mastery user learned, user's base level and CRT.",
       "levelDetails": [
         {
@@ -17143,8 +19115,20 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "45 + (Skill Level × 5)",
+      "fixedCastTime": "1 seconds",
+      "variableCastTime": "1.5 seconds",
+      "castDelay": "0.5 seconds",
+      "duration": "150 + (30 × Skill Level) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Talisman of Protection ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Protection"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5418.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5418",
       "tree": {
@@ -17172,6 +19156,22 @@ export const soulAsceticData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "45 + (Skill Level × 5)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
           },
@@ -17197,43 +19197,43 @@ export const soulAsceticData = {
                 "label": "SP Cost"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "duration",
+                "label": "Duration"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Healing amount: 500+(Talisman Mastery Lv x 50) / Duration: 180 sec",
+                  "duration": "180 seconds",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Healing amount: 1000+(Talisman Mastery Lv x 100) / Duration: 210 sec",
+                  "duration": "210 seconds",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Healing amount: 1500+(Talisman Mastery Lv x 150) / Duration: 240 sec",
+                  "duration": "240 seconds",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Healing amount: 2000+(Talisman Mastery Lv x 200) / Duration: 270 sec",
+                  "duration": "270 seconds",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Healing amount: 2500+(Talisman Mastery Lv x 250) / Duration: 300 sec",
+                  "duration": "300 seconds",
                   "sp-cost": "70"
                 }
               }
@@ -17242,10 +19242,9 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17261,6 +19260,8 @@ export const soulAsceticData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "1 Soul Talisman",
+      "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Warrior",
       "description": "Consumes 1 Soul Talisman.\nAttaches the talisman of warrior to self or 1 party member to increases P.Atk.\nCan only be used on target who equips weapon.",
       "levelDetails": [
         {
@@ -17311,8 +19312,20 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "45 + (Skill Level × 5)",
+      "fixedCastTime": "1 seconds",
+      "variableCastTime": "1.5 seconds",
+      "castDelay": "0.5 seconds",
+      "duration": "150 + (30 × Skill Level) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Talisman of Warrior ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Warrior"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5419.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5419",
       "tree": {
@@ -17340,6 +19353,22 @@ export const soulAsceticData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "45 + (Skill Level × 5)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
           },
@@ -17365,48 +19394,48 @@ export const soulAsceticData = {
                 "label": "SP Cost"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "duration",
+                "label": "Duration"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
+                  "duration": "180 seconds",
                   "p-atk": "+2",
-                  "effect": "Duration: 180 sec",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
+                  "duration": "210 seconds",
                   "p-atk": "+4",
-                  "effect": "Duration: 210 sec",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
+                  "duration": "240 seconds",
                   "p-atk": "+6",
-                  "effect": "Duration: 240 sec",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
+                  "duration": "270 seconds",
                   "p-atk": "+8",
-                  "effect": "Duration: 270 sec",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 5,
                 "values": {
+                  "duration": "300 seconds",
                   "p-atk": "+10",
-                  "effect": "Duration: 300 sec",
                   "sp-cost": "70"
                 }
               }
@@ -17415,10 +19444,9 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17434,6 +19462,8 @@ export const soulAsceticData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "1 Soul Talisman",
+      "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Magician",
       "description": "Consumes 1 Soul Talisman.\nAttaches the talisman of magician to self or 1 party member to increases S.Matk.\nCan only be used on target who equips weapon.",
       "levelDetails": [
         {
@@ -17484,8 +19514,20 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "45 + (Skill Level × 5)",
+      "fixedCastTime": "1 seconds",
+      "variableCastTime": "1.5 seconds",
+      "castDelay": "0.5 seconds",
+      "duration": "150 + (30 × Skill Level) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Talisman of Magician ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Magician"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5420.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5420",
       "tree": {
@@ -17513,6 +19555,22 @@ export const soulAsceticData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "45 + (Skill Level × 5)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
           },
@@ -17538,48 +19596,48 @@ export const soulAsceticData = {
                 "label": "SP Cost"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "duration",
+                "label": "Duration"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
+                  "duration": "180 seconds",
                   "s-matk": "+2",
-                  "effect": "Duration: 180 sec",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
+                  "duration": "210 seconds",
                   "s-matk": "+4",
-                  "effect": "Duration: 210 sec",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
+                  "duration": "240 seconds",
                   "s-matk": "+6",
-                  "effect": "Duration: 240 sec",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
+                  "duration": "270 seconds",
                   "s-matk": "+8",
-                  "effect": "Duration: 270 sec",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 5,
                 "values": {
+                  "duration": "300 seconds",
                   "s-matk": "+10",
-                  "effect": "Duration: 300 sec",
                   "sp-cost": "70"
                 }
               }
@@ -17588,10 +19646,9 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17607,6 +19664,8 @@ export const soulAsceticData = {
       "target": "Instant Cast",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Exorcism_of_Malicious_Soul",
       "description": "Consumes all soul energy on enemies within a surrounding range, inflicting attributeless magic DMG based on the amount of soul energy consumed.\nDeals greater DMG if the target is under the effect of [Dead Spirit's Curse] or if the caster casts within the range of the effect of [Totem of Tutelary].\nDMG increases based on the amount of soul energy consumed, the level of the Guidance Skill, and the caster's base level and SPL.\nDMG properties change depending on the Mild Wind.",
       "levelDetails": [
         {
@@ -17657,8 +19716,20 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "45 + (Skill Level × 15)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "2.2 seconds",
+      "cooldown": "1 seconds",
+      "areaOfEffect": "11 x 11~13 x 13",
+      "translations": {
+        "pt-BR": {
+          "name": " Exorcism of Malicious Soul ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Exorcism_of_Malicious_Soul"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5425.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5425",
       "tree": {
@@ -17690,6 +19761,22 @@ export const soulAsceticData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "45 + (Skill Level × 15)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "2.2 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "1 seconds"
           },
           {
             "label": "Target",
@@ -17754,7 +19841,6 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Exorcism of Malicious Soul",
@@ -17777,7 +19863,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17793,6 +19879,8 @@ export const soulAsceticData = {
       "target": "1 Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "1 Soul Talisman",
+      "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Soul_Stealing",
       "description": "Consumes 1 Soul Talisman.\nThrows a talisman at the target, dealing non-attribute magic DMG and restoring the caster's SP.\nDMG increases based on the acquired Talisman Polishing and Guidance Polishing skill levels, the caster's base level, and SPL.\nThe amount of SP recovered is additionally increased based on the caster's base level.\nDMG properties change depending on the Mild Wind.",
       "levelDetails": [
         {
@@ -17843,8 +19931,18 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "30",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "2.2 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Talisman of Soul Stealing ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Soul_Stealing"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5424.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5424",
       "tree": {
@@ -17878,6 +19976,18 @@ export const soulAsceticData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "30"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "2.2 seconds"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
           },
@@ -17893,45 +20003,36 @@ export const soulAsceticData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK 1750+((Talisman Mastery Lv+Soul Mastery Lv) x 7)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK 3000+((Talisman Mastery Lv+Soul Mastery Lv) x 14)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK 4250+((Talisman Mastery Lv+Soul Mastery Lv) x 21)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK 5500+((Talisman Mastery Lv+Soul Mastery Lv) x 28)%",
                   "sp-cost": "84"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK 6750+((Talisman Mastery Lv+Soul Mastery Lv) x 35)%",
                   "sp-cost": "84"
                 }
               }
@@ -17940,7 +20041,6 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Talisman of Soul Stealing",
@@ -17979,7 +20079,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17995,6 +20095,8 @@ export const soulAsceticData = {
       "target": "1 cell ground target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "10 Soul Talisman",
+      "irowikiUrl": "https://irowiki.org/wiki/Totem_of_Tutelary",
       "description": "Consumes 10 Soul Talismans.\nSummons the Totem of Tutelary which worships the guardian deity on ground to recover HP and SP of nearby party members including the user at certain interval.\nRecovers additional amount depends on level of Talisman Mastery user learned, user's base level and CRT.",
       "levelDetails": [
         {
@@ -18045,8 +20147,20 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "60 + (Skill Level × 16)",
+      "fixedCastTime": "1 seconds",
+      "variableCastTime": "3.5 seconds",
+      "cooldown": "15 seconds",
+      "areaOfEffect": "5 x 5~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Totem of Tutelary ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Totem_of_Tutelary"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5422.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5422",
       "tree": {
@@ -18080,6 +20194,22 @@ export const soulAsceticData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "60 + (Skill Level × 16)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "3.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "15 seconds"
+          },
+          {
             "label": "Target",
             "value": "1 cell ground target"
           },
@@ -18093,47 +20223,65 @@ export const soulAsceticData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "hp-recovery",
+                "label": "HP Recovery"
+              },
+              {
+                "id": "sp-recovery",
+                "label": "SP Recovery"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "area-of-effect",
+                "label": "Area of Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "HP recovery amount :1000+(Talisman Mastery Lv x 50)\nSP recovery : 50+(Talisman Mastery Lv x 5) / AOE: 5 x 5 cells",
+                  "hp-recovery": "1000 + (Talisman Mastery Lv x 50)",
+                  "sp-recovery": "50 + (Talisman Mastery Lv x 5)",
+                  "area-of-effect": "5x5",
                   "sp-cost": "76"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "HP recovery amount :1500+(Talisman Mastery Lv x 100)\nSP recovery : 100+(Talisman Mastery Lv x 10) / AOE: 5 x 5 cells",
+                  "hp-recovery": "1500 + (Talisman Mastery Lv x 100)",
+                  "sp-recovery": "100 + (Talisman Mastery Lv x 10)",
+                  "area-of-effect": "5x5",
                   "sp-cost": "92"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "HP recovery amount :2000+(Talisman Mastery Lv x 150)\nSP recovery : 150+(Talisman Mastery Lv x 15) / AOE: 7 x 7 cells",
+                  "hp-recovery": "2000 + (Talisman Mastery Lv x 150)",
+                  "sp-recovery": "150 + (Talisman Mastery Lv x 15)",
+                  "area-of-effect": "7x7",
                   "sp-cost": "108"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "HP recovery amount :2500+(Talisman Mastery Lv x 200)\nSP recovery : 200+(Talisman Mastery Lv x 20) / AOE: 7 x 7 cells",
+                  "hp-recovery": "2500 + (Talisman Mastery Lv x 200)",
+                  "sp-recovery": "200 + (Talisman Mastery Lv x 20)",
+                  "area-of-effect": "7x7",
                   "sp-cost": "124"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "HP recovery amount :3000+(Talisman Mastery Lv x 250)\nSP recovery : 250+(Talisman Mastery Lv x 25) / AOE: 9 x 9 cells",
+                  "hp-recovery": "3000 + (Talisman Mastery Lv x 250)",
+                  "sp-recovery": "250 + (Talisman Mastery Lv x 25)",
+                  "area-of-effect": "9x9",
                   "sp-cost": "140"
                 }
               }
@@ -18142,10 +20290,9 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18159,8 +20306,10 @@ export const soulAsceticData = {
       "group": "Active",
       "type": "Buff",
       "target": "Single Target",
-      "recoversAp": "",
+      "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "5 Soul Talisman",
+      "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Five_Elements",
       "description": "Consumes 5 Soul Talismans.\nAttaches the talisman of five elements to self or 1 party member to increases physical and magical damage against water, wind, earth, fire and neutral property enemies.\nCan only be used on target who equips weapon.",
       "levelDetails": [
         {
@@ -18211,8 +20360,20 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "45 + (Skill Level × 5)",
+      "fixedCastTime": "1 seconds",
+      "variableCastTime": "1.5 seconds",
+      "castDelay": "0.5 seconds",
+      "duration": "150 + (30 × Skill Level) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Talisman of Five Elements ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Five_Elements"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5423.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5423",
       "tree": {
@@ -18240,12 +20401,32 @@ export const soulAsceticData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "45 + (Skill Level × 5)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
           },
           {
             "label": "Ammunition",
             "value": "5 Soul Talismans"
+          },
+          {
+            "label": "AP Generated",
+            "value": "2"
           }
         ],
         "levelTables": [
@@ -18261,48 +20442,48 @@ export const soulAsceticData = {
                 "label": "SP Cost"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "duration",
+                "label": "Duration"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
+                  "duration": "180 seconds",
                   "damage-bonus": "+4%",
-                  "effect": "Duration: 180 sec",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 2,
                 "values": {
+                  "duration": "210 seconds",
                   "damage-bonus": "+8%",
-                  "effect": "Duration: 210 sec",
                   "sp-cost": "55"
                 }
               },
               {
                 "level": 3,
                 "values": {
+                  "duration": "240 seconds",
                   "damage-bonus": "+12%",
-                  "effect": "Duration: 240 sec",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
+                  "duration": "270 seconds",
                   "damage-bonus": "+16%",
-                  "effect": "Duration: 270 sec",
                   "sp-cost": "65"
                 }
               },
               {
                 "level": 5,
                 "values": {
+                  "duration": "300 seconds",
                   "damage-bonus": "+20%",
-                  "effect": "Duration: 300 sec",
                   "sp-cost": "70"
                 }
               }
@@ -18311,10 +20492,9 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18330,6 +20510,8 @@ export const soulAsceticData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "1 Soul Talisman",
+      "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Blue_Dragon",
       "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Qinglong, guardian deity of the East, to the target, inflicts neutral property magical damage to the target and grants the user [Blessing of the East].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
       "levelDetails": [
         {
@@ -18380,8 +20562,19 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "37 + (Skill Level x 5)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "1 seconds",
+      "cooldown": "0.3 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Talisman of Blue Dragon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Blue_Dragon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5426.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5426",
       "tree": {
@@ -18407,6 +20600,22 @@ export const soulAsceticData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "37 + (Skill Level x 5)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.3 seconds"
           },
           {
             "label": "Target",
@@ -18470,7 +20679,6 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Talisman of Blue Dragon",
@@ -18555,7 +20763,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18571,6 +20779,8 @@ export const soulAsceticData = {
       "target": "Instant Cast",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "1 Soul Talisman",
+      "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_White_Tiger",
       "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Baihu, guardian deity of the West, to the target, inflicts neutral property magical damage to all targets around the user.\nIf the user has [Blessing of the East] buff, The buff will be changed to [Blessing of the West].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
       "levelDetails": [
         {
@@ -18621,8 +20831,20 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "63 + (Skill Level x 3)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "1 seconds",
+      "cooldown": "0.4 seconds",
+      "areaOfEffect": "11 x 11~15 x 15",
+      "translations": {
+        "pt-BR": {
+          "name": " Talisman of White Tiger ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Talisman_of_White_Tiger"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5427.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5427",
       "tree": {
@@ -18648,6 +20870,22 @@ export const soulAsceticData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "63 + (Skill Level x 3)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.4 seconds"
           },
           {
             "label": "Target",
@@ -18720,7 +20958,6 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Talisman of White Tiger",
@@ -18794,7 +21031,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18810,6 +21047,8 @@ export const soulAsceticData = {
       "target": "Single Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "1 Soul Talisman",
+      "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Red_Phoenix",
       "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Zhuque, guardian deity of the South, to the target, inflicts neutral property magical damage to the target and surrounding enemies around the target.\nIf the [Blessing of the West] effect is applied to you when casting a skill, the effect is changed to [Blessing of the South].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
       "levelDetails": [
         {
@@ -18860,8 +21099,20 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "55 + (Skill Level x 10)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "1 seconds",
+      "cooldown": "0.45 seconds",
+      "areaOfEffect": "3 x 3~7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Talisman of Red Phoenix ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Red_Phoenix"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5428.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5428",
       "tree": {
@@ -18887,6 +21138,22 @@ export const soulAsceticData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "55 + (Skill Level x 10)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.45 seconds"
           },
           {
             "label": "Target",
@@ -18959,7 +21226,6 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Talisman of Red Phoenix",
@@ -19036,7 +21302,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19052,6 +21318,8 @@ export const soulAsceticData = {
       "target": "1 Cell Ground Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "1 Soul Talisman",
+      "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Black_Tortoise",
       "description": "Consumes 1 Soul Talisman.\nThrows the talisman imbued with the power of Xuanwu, guardian deity of the North, to the target cell, inflicts neutral property magical damage to all target within range.\nIf the user has [Blessing of the South] buff, The buff will be changed to [Blessing of the North].\nInflicts greater damage when the caster is under the effect of [Blessing of the Four Elements].\nDeals additional damage depends on level of Talisman Mastery user learned, user's base level and SPL.\nDamage property can be changed according to Mild Wind.",
       "levelDetails": [
         {
@@ -19102,8 +21370,20 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "55 + (Skill Level x 12)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "1 seconds",
+      "cooldown": "0.7 seconds",
+      "areaOfEffect": "7 x 7~11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Talisman of Black Tortoise ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Black_Tortoise"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5429.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5429",
       "tree": {
@@ -19129,6 +21409,22 @@ export const soulAsceticData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "55 + (Skill Level x 12)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.7 seconds"
           },
           {
             "label": "Target",
@@ -19201,7 +21497,6 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Talisman of Black Tortoise",
@@ -19259,7 +21554,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19275,6 +21570,8 @@ export const soulAsceticData = {
       "target": "1 Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "3 Soul Talisman",
+      "irowikiUrl": "https://irowiki.org/wiki/Talisman_of_Four_Bearing_God",
       "description": "Consumes 3 Soul Talisman.\nThrows a talisman at a target, inflicting attribute-less magic DMG to the target and enemies within the surrounding area.\nBasically, it attacks once, but if there is [Blessing of the East], it attacks twice, if there is [Blessing of the West], it attacks three times, if there is [Blessing of the South], it attacks four times, and if there is [Blessing of the North], it attacks five times.\nWhen under the effect of [Blessing of the Four Elements], attack 7 times.\nDMG increases based on the Talisman Polish skill level, the caster's base level, and SPL.\nDMG properties change depending on the Mild Wind.",
       "levelDetails": [
         {
@@ -19325,8 +21622,20 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "54 + (Skill Level x 16)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "1.5 seconds",
+      "cooldown": "1 seconds",
+      "areaOfEffect": "7 x 7~11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Talisman of Four Bearing God ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Four_Bearing_God"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5430.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5430",
       "tree": {
@@ -19370,6 +21679,22 @@ export const soulAsceticData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "54 + (Skill Level x 16)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "1 seconds"
           },
           {
             "label": "Target",
@@ -19438,7 +21763,6 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Talisman of Four Bearing God",
@@ -19477,7 +21801,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19493,6 +21817,8 @@ export const soulAsceticData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "35",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Circle_of_Directions_and_Elementals",
       "description": "Can be used when up to [Blessing of the North] has been granted.\nBy fusing the power of the four directions and the power of the five cycles, it inflicts powerful neutral magic damage to the target and enemies within the surrounding range 5 times.\nAdditionally, [Blessing of the North] is converted into [Blessing of the Four Elements], and the caster's S and MATK are increased for a certain duration.\n(If [Blessing of the Four Elements] is already active, its effect is refreshed.)\nDamage increases based on the Talisman Mastery and Soul Mastery skill levels, the caster's base level, and SPL.\nDamage property can be changed according to Mild Wind.",
       "levelDetails": [
         {
@@ -19543,8 +21869,22 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "75 + (Skill Level × 15)",
+      "fixedCastTime": "1.5 seconds",
+      "variableCastTime": "1.5 seconds",
+      "castDelay": "0.5 seconds",
+      "cooldown": "5 seconds",
+      "duration": "(Skill Level x 30) seconds",
+      "areaOfEffect": "7 x 7~11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Circle of Directions and Elementals ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Circle_of_Directions_and_Elementals"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5431.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5431",
       "tree": {
@@ -19584,6 +21924,26 @@ export const soulAsceticData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "75 + (Skill Level × 15)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1.5 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "5 seconds"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
           },
@@ -19597,6 +21957,10 @@ export const soulAsceticData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "s-matk",
+                "label": "S.Matk"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -19605,73 +21969,53 @@ export const soulAsceticData = {
                 "label": "Area of Effect"
               },
               {
-                "id": "effect",
-                "label": "Effect"
-              },
-              {
-                "id": "120-seconds-s-matk",
-                "label": "/120 Seconds S.Matk"
-              },
-              {
-                "id": "150-seconds-s-matk",
-                "label": "/150 Seconds S.Matk"
-              },
-              {
-                "id": "30-seconds-s-matk",
-                "label": "/30 Seconds S.Matk"
-              },
-              {
-                "id": "60-seconds-s-matk",
-                "label": "/60 Seconds S.Matk"
-              },
-              {
-                "id": "90-seconds-s-matk",
-                "label": "/90 Seconds S.Matk"
+                "id": "duration",
+                "label": "Duration"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "MATK per hit 2500+((Talisman Mastery Lv+Soul MasteryLv) x 15)%",
                   "area-of-effect": "7x7",
-                  "30-seconds-s-matk": "+5",
+                  "duration": "30 seconds",
+                  "s-matk": "+5",
                   "sp-cost": "120"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "MATK per hit 4500+((Talisman Mastery Lv+Soul MasteryLv) x 30)%",
                   "area-of-effect": "7x7",
-                  "60-seconds-s-matk": "+10",
+                  "duration": "60 seconds",
+                  "s-matk": "+10",
                   "sp-cost": "140"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "MATK per hit 6500+((Talisman Mastery Lv+Soul MasteryLv) x 45)%",
                   "area-of-effect": "9x9",
-                  "90-seconds-s-matk": "+15",
+                  "duration": "90 seconds",
+                  "s-matk": "+15",
                   "sp-cost": "160"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "MATK per hit 8500+((Talisman Mastery Lv+Soul MasteryLv) x 60)%",
                   "area-of-effect": "9x9",
-                  "120-seconds-s-matk": "+20",
+                  "duration": "120 seconds",
+                  "s-matk": "+20",
                   "sp-cost": "180"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "MATK per hit 10500+((Talisman Mastery Lv+Soul MasteryLv) x 75)%",
                   "area-of-effect": "11x11",
-                  "150-seconds-s-matk": "+25",
+                  "duration": "150 seconds",
+                  "s-matk": "+25",
                   "sp-cost": "200"
                 }
               }
@@ -19680,7 +22024,6 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Circle of Directions and Elementals",
@@ -19770,7 +22113,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19786,6 +22129,8 @@ export const soulAsceticData = {
       "target": "Instant Cast",
       "recoversAp": "",
       "consumesAp": "180",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Soul_of_Heaven_and_Earth",
       "description": "Transmits the power of the sacred spirit from Heaven to Earth, completely recovering the SP of party members within a 23 x 23 cell range around the self.\nIncreases party members' melee/long range physical damage and all attribute magic damage for 300 seconds.\nUsing this skill while the user is under the effect of Totem of Tutelary also recovers AP to the party members.",
       "levelDetails": [
         {
@@ -19880,8 +22225,17 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "80 + (Skill Level × 10)",
+      "duration": "300 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Soul of Heaven and Earth ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Soul_of_Heaven_and_Earth"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5432.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5432",
       "tree": {
@@ -19927,6 +22281,10 @@ export const soulAsceticData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "80 + (Skill Level × 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "2 seconds"
           },
@@ -19945,6 +22303,10 @@ export const soulAsceticData = {
           {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Duration",
+            "value": "300 seconds"
           },
           {
             "label": "AP Consumed",
@@ -20082,10 +22444,9 @@ export const soulAsceticData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

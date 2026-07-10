@@ -1,5 +1,5 @@
 export const shadowCrossData = {
-  "generatedAt": "2026-07-10T00:54:15.749Z",
+  "generatedAt": "2026-07-10T15:02:11.629Z",
   "classId": 4254,
   "classSlug": "shadow-cross",
   "className": "Shadow Cross",
@@ -71,7 +71,8 @@ export const shadowCrossData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4254",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -297,6 +298,8 @@ export const shadowCrossData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Sense",
           "description": "Increase your FLEE. Katars and Daggers also increase CRIT.",
           "levelDetails": [],
           "levelExtras": [
@@ -346,8 +349,15 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Sense ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Sense"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5288.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5288",
           "tree": {
@@ -443,10 +453,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -462,6 +471,8 @@ export const shadowCrossData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dancing_Knife",
           "description": "A Dagger skill.\nSummon small spinning blades around you to attack surrounding enemies in 5 x5 cells.\nThis skill's effect is canceled immediately if you change to a different, non-Dagger Weapon for its duration.\nThis skill additionally increases damage, depending on your Base Level and POW.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -495,8 +506,19 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 5)",
+          "duration": "20 + (Skill Level x 20) seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Dancing Knife ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dancing_Knife"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5286.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5286",
           "tree": {
@@ -524,6 +546,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -540,8 +566,20 @@ export const shadowCrossData = {
                 "value": "30 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "20 + (Skill Level x 20) seconds"
               }
             ],
             "levelTables": [
@@ -589,10 +627,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -608,6 +645,8 @@ export const shadowCrossData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Savage_Impact",
           "description": "Katar-only skills,\nQuickly approaches the target and inflicts melee physical damage 3 times to the target and enemies within the surrounding range.\n(When cast in Cloaking Exceed state, deals melee physical damage 5 times.)\nDamage increases additionally depending on the user's base level and POW, and causes greater damage in Shadow Exceed state.\nCritical damage is applied with a probability of half the user's critical probability.\nIn the case of critical damage, half of the total critical damage increase options are applied.",
           "levelDetails": [
             {
@@ -702,8 +741,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level x 3)",
+          "castRange": "Melee",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Savage Impact ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Savage_Impact"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5287.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5287",
           "tree": {
@@ -737,6 +786,10 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level x 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -751,6 +804,10 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0.7 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -850,7 +907,6 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Savage Impact",
@@ -975,7 +1031,7 @@ export const shadowCrossData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -991,6 +1047,8 @@ export const shadowCrossData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Enchanting_Shadow",
           "description": "Imbue your Weapon with the power of shadows.\nAttacks create a chance of leaving Shadow Wounds on enemies, increasing their damage, depending on the number of Shadow Wounds on them.",
           "levelDetails": [],
           "fixedCastTime": "1.5 seconds",
@@ -1023,8 +1081,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 10)",
+          "cooldown": "(Skill Level × 30) seconds",
+          "duration": "30 + (Skill Level × 30) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Enchanting Shadow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enchanting_Shadow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5293.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5293",
           "tree": {
@@ -1058,6 +1126,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -1070,8 +1142,16 @@ export const shadowCrossData = {
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "(Skill Level × 30) seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "30 + (Skill Level × 30) seconds"
               }
             ],
             "levelTables": [
@@ -1119,10 +1199,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1138,6 +1217,8 @@ export const shadowCrossData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Eternal_Slash",
           "description": "Can be used during Weapon Blocking.\nCritically inflict Melee Physical damage on a target.\nEach time it is used again within 3 seconds, the number of attacks is increased by 1 (up to a maximum of 5).\nAdditional damage increase based on the caster's base level and POW.\nand uses 50% of your CRIT to inflict Critical damage,\nIf the hit crits, half-total of the Critical Damage Bonus option is applied.",
           "levelDetails": [
             {
@@ -1192,8 +1273,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Eternal Slash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Eternal_Slash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5289.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5289",
           "tree": {
@@ -1233,6 +1323,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -1247,6 +1341,10 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -1298,7 +1396,6 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Eternal Slash",
@@ -1400,7 +1497,7 @@ export const shadowCrossData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1416,6 +1513,8 @@ export const shadowCrossData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cross_Slash",
           "description": "Deals melee physical damage to the target and surrounding enemies around the target for 3 hits.\nGains successful blocking state for 10 seconds when using this skill.\nDeals additional damage depends on user's base level and POW, deals more damage while under Shadow Exceed buff.\nHas a chance to trigger critical, critical chance is the half user's Cri.\nThe effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -1440,8 +1539,19 @@ export const shadowCrossData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8 + (Skill Level x 2)",
+          "castDelay": "0.5 seconds",
+          "cooldown": "5.5 − (Skill Level × 0.5) seconds",
+          "castRange": "4~7 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Cross Slash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cross_Slash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6511.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6511",
           "tree": {
@@ -1473,6 +1583,22 @@ export const shadowCrossData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "8 + (Skill Level x 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "5.5 − (Skill Level × 0.5) seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "4~7 cells"
               },
               {
                 "label": "Target",
@@ -1528,10 +1654,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1547,6 +1672,8 @@ export const shadowCrossData = {
           "target": "Area of Effect",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Impact_Crater",
           "description": "Katar-only skill.\nInflict Melee Physical damage on surrounding target that can crit, depending on your Spin stacks.\n(You can't use the skill without Spin stack)\nThis skill also casts Weapon Blocking Success mode for 10 seconds.\nAdditional Damage increase based on the caster's base level and POW.\nand uses 50% of your CRIT to inflict Critical damage,\nIf it crits, it inflicts half of the total of your Critical Damage Bonus options as damage.",
           "levelDetails": [
             {
@@ -1600,8 +1727,19 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40 + (Skill Level × 3)",
+          "cooldown": "5 seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Impact Crater ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Impact_Crater"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5292.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5292",
           "tree": {
@@ -1647,6 +1785,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -1659,12 +1801,20 @@ export const shadowCrossData = {
                 "value": "0.3 seconds"
               },
               {
+                "label": "Cooldown",
+                "value": "5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Area of Effect"
               },
               {
                 "label": "Area of Effect",
-                "value": "Lv 1: 3 x 3 cells / Lv 2: 3 x 3 cells / Lv 3: 5 x 5 cells / Lv 4: 5 x 5 cells / Lv 5: 7 x 7 cells"
+                "value": "3 x 3 ~ 7 x 7"
               },
               {
                 "label": "AP Generated",
@@ -1716,7 +1866,6 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Impact Crater",
@@ -1771,7 +1920,7 @@ export const shadowCrossData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1787,6 +1936,8 @@ export const shadowCrossData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Potent_Venom",
           "description": "Requires a Weapon with Deadly Poison applied on it.\nGive yourself an effect to ignore the target's Physical Resistance (RES).\nWhen Deadly Poison is dispelled, the effect of Potent Venom is also dispelled.",
           "levelDetails": [
             {
@@ -1881,8 +2032,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 5)",
+          "duration": "20 + (Skill Level × 10) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Potent Venom ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Potent_Venom"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5290.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5290",
           "tree": {
@@ -1916,6 +2076,10 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -1937,7 +2101,7 @@ export const shadowCrossData = {
               },
               {
                 "label": "Duration",
-                "value": "Lv 1: 75 seconds / Lv 2: 100 seconds / Lv 3: 125 seconds / Lv 4: 150 seconds / Lv 5: 175 seconds / Lv 6: 200 seconds / Lv 7: 225 seconds / Lv 8: 250 seconds / Lv 9: 275 seconds / Lv 10: 300 seconds"
+                "value": "20 + (Skill Level × 10) seconds"
               }
             ],
             "levelTables": [
@@ -2029,7 +2193,6 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Potent Venom",
@@ -2060,7 +2223,7 @@ export const shadowCrossData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2076,6 +2239,8 @@ export const shadowCrossData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Stab",
           "description": "Dagger-only skill.\nDeals melee physical damage to the target twice, ignoring the target's physical defense.\nWhen used in Cloaking Exceed state, attacks 3 times with higher attack power.\nDamage is additionally increased depending on the user's base level and POW.",
           "levelDetails": [
             {
@@ -2130,8 +2295,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 5)",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Stab ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Stab"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5291.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5291",
           "tree": {
@@ -2177,6 +2351,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -2191,6 +2369,10 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0.35 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -2246,7 +2428,6 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Shadow Stab",
@@ -2377,7 +2558,7 @@ export const shadowCrossData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2392,7 +2573,9 @@ export const shadowCrossData = {
           "type": "Buff",
           "target": "Self",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shadow_Exceed",
           "description": "Maximizes your abilities to increase the power of Savage Impact and Eternal Slash temporarily.",
           "levelDetails": [
             {
@@ -2487,8 +2670,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "duration": "[40 + (Skill Level × 20)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Shadow Exceed ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shadow_Exceed"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5285.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5285",
           "tree": {
@@ -2528,6 +2720,10 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2546,6 +2742,10 @@ export const shadowCrossData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "150"
               }
             ],
             "levelTables": [
@@ -2651,7 +2851,6 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Shadow Exceed",
@@ -2690,7 +2889,7 @@ export const shadowCrossData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2705,7 +2904,9 @@ export const shadowCrossData = {
           "type": "Melee Physical",
           "target": "1 Target",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fatal_Shadow_Claw",
           "description": "Quickly approach target, cast Dark Claw on it and others around it, and Critically inflict Melee Physical damage.\nHowever, this effect follows your Dark Claw level.\nInflicts more damage to Demi-Human and Dragon monsters.\nAdditional damage increase based on the caster's Base Level and POW, and for the Critical Damage bonus option, only a fraction of the total is applied.",
           "levelDetails": [
             {
@@ -2800,8 +3001,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "150",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Fatal Shadow Claw ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fatal_Shadow_Claw"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5294.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5294",
           "tree": {
@@ -2835,6 +3045,10 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "150"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -2851,8 +3065,16 @@ export const shadowCrossData = {
                 "value": "60 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "150"
               }
             ],
             "levelTables": [
@@ -2944,7 +3166,6 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Fatal Shadow Claw",
@@ -2991,7 +3212,7 @@ export const shadowCrossData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3015,9 +3236,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Sonic Blow 10",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cross_Impact",
           "description": "Leaps to a target and deals melee physical damage.\nOnly the half of critical chance applies, damage increases based on BaseLv.\nOnly the half of Critical Damage option applies. Range 7Cell.",
           "levelDetails": [
             {
@@ -3096,8 +3319,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25",
+          "castDelay": "[3 − (Skill Level x 0.5)] seconds",
+          "castRange": "7 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Cross Impact ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cross_Impact"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2022.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2022",
           "tree": {
@@ -3125,6 +3358,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -3133,8 +3370,20 @@ export const shadowCrossData = {
                 "value": "0 seconds"
               },
               {
+                "label": "Cast Delay",
+                "value": "[3 − (Skill Level x 0.5)] seconds"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0.35 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -3200,10 +3449,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3216,9 +3464,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Cloaking 3",
           "group": "Active / Special",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cloaking_Exceed",
           "description": "Cannot be found by Insect and\nDemon type monsters. Not released until the\ncaster is hit 3 times. Increase Movement\nSpeed according to Skill Level.",
           "levelDetails": [
             {
@@ -3348,8 +3598,16 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45",
+          "translations": {
+            "pt-BR": {
+              "name": " Cloaking Exceed ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cloaking_Exceed"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2033.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2033",
           "tree": {
@@ -3377,6 +3635,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -3391,6 +3653,10 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -3456,10 +3722,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3472,9 +3737,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Sonic Blow 10",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rolling_Cutter",
           "description": "Katar Weapon Skill, spins and inflicts damage to all enemies around.\nSpin Count increases as using the skill, and damage of Cross Ripper Slasher increases based on Spin Counts.\nSpin Counter continues for 10 sec, and the effect is removed when you move.",
           "levelDetails": [
             {
@@ -3579,8 +3846,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Rolling Cutter ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rolling_Cutter"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2036.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2036",
           "tree": {
@@ -3608,6 +3884,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -3622,6 +3902,14 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -3696,10 +3984,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3712,9 +3999,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Lefthand Mastery 5",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Weapon_Blocking",
           "description": "Has a chance to cancel an enemy's\nmelee physical attack and can use Weapon Crush when skill is active.\nWhen attack block success, get into the counter stance for 10 secods.\nDuring the counter stance, you can use Counter Slash.\nContinuously consumes SP while\nthis skill is activated. If skill is recast,\nWeapon Blocking is canceled.",
           "levelDetails": [
             {
@@ -3819,8 +4108,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "44 − (Skill Level × 4)",
+          "duration": "3 minutes; Until used again",
+          "translations": {
+            "pt-BR": {
+              "name": " Weapon Blocking ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Weapon_Blocking"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2028.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2028",
           "tree": {
@@ -3848,6 +4146,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "44 − (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -3862,6 +4164,10 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -3889,46 +4195,46 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Defense Rate 12% / Duration 180 sec",
+                      "duration": "180 seconds\n3 min",
+                      "effect": "Defense Rate 12%",
                       "sp-cost": "40",
-                      "def": "12%",
-                      "duration": "3 min"
+                      "def": "12%"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Defense Rate 14% / Duration 180 sec",
+                      "duration": "180 seconds\n3 min",
+                      "effect": "Defense Rate 14%",
                       "sp-cost": "36",
-                      "def": "14%",
-                      "duration": "3 min"
+                      "def": "14%"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Defense Rate 16% / Duration 180 sec",
+                      "duration": "180 seconds\n3 min",
+                      "effect": "Defense Rate 16%",
                       "sp-cost": "32",
-                      "def": "16%",
-                      "duration": "3 min"
+                      "def": "16%"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Defense Rate 18% / Duration 180 sec",
+                      "duration": "180 seconds\n3 min",
+                      "effect": "Defense Rate 18%",
                       "sp-cost": "28",
-                      "def": "18%",
-                      "duration": "3 min"
+                      "def": "18%"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Defense Rate 20% / Duration 180 sec",
+                      "duration": "180 seconds\n3 min",
+                      "effect": "Defense Rate 20%",
                       "sp-cost": "24",
-                      "def": "20%",
-                      "duration": "3 min"
+                      "def": "20%"
                     }
                   }
                 ],
@@ -3936,10 +4242,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3952,9 +4257,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Enchant Poison 3",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Venom_Impression",
           "description": "Weaken the enemy's resistance\nagainst Venom type attacks in a 10x10 range.",
           "levelDetails": [
             {
@@ -4083,8 +4390,19 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8 + (Skill Level × 4)",
+          "castDelay": "3.5 − (Skill Level × 0.5) seconds",
+          "duration": "Skill Level × 10 seconds",
+          "castRange": "10 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Venom Impression ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Venom_Impression"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2021.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2021",
           "tree": {
@@ -4105,6 +4423,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "8 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4113,8 +4435,20 @@ export const shadowCrossData = {
                 "value": "0 seconds"
               },
               {
+                "label": "Cast Delay",
+                "value": "3.5 − (Skill Level × 0.5) seconds"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -4198,10 +4532,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4217,6 +4550,8 @@ export const shadowCrossData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/New_Poison_Research",
           "description": "Learns to create a new poison. Depending on the skill level, the number of poisons and manufacturing that can be made increases, and the probability of success rate increases.\nRequires a medicine bowl and a poison kit, and each poison must have the necessary materials.\nAdditionally, the lethal poison grant time is increased by 15 seconds per level from 45 sec",
           "levelDetails": [
             {
@@ -4307,8 +4642,15 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " New Poison Research ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/New_Poison_Research"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2024.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2024",
           "tree": {
@@ -4418,10 +4760,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4434,9 +4775,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Cross Impact 3",
           "group": "Active / Damage - Special",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dark_Illusion",
           "description": "Quickly reach and attack an enemy. Has a low chance of activating Cross Impact.",
           "levelDetails": [
             {
@@ -4541,8 +4884,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level × 5)",
+          "castRange": "(Skill Level + 4) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Dark Illusion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dark_Illusion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2023.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2023",
           "tree": {
@@ -4570,6 +4922,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4584,6 +4940,14 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Skill Level + 4) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -4658,10 +5022,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4674,9 +5037,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Rolling Cutter 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cross_Ripper_Slasher",
           "description": "Can be used when player has Spin Counts.\nInflicts a strong damage to a target far away.\nDamage increases based on BaseLv, AGI, and number of Spin Counts.\nSkill range increases 1 cell per skill level, starting from 9 cell.",
           "levelDetails": [
             {
@@ -4805,8 +5170,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 + (Skill Level × 4)",
+          "castDelay": "0.3 second",
+          "castRange": "(Skill Level + 8) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Cross Ripper Slasher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cross_Ripper_Slasher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2037.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2037",
           "tree": {
@@ -4834,6 +5209,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "16 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4842,8 +5221,20 @@ export const shadowCrossData = {
                 "value": "0 seconds"
               },
               {
+                "label": "Cast Delay",
+                "value": "0.3 second"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0.2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Skill Level + 8) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -4927,10 +5318,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4943,9 +5333,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Weapon Blocking 1",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Enemy (auto)",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Weapon_Crush",
           "description": "If Weapon Blocking skill\nis successful, you can attack the enemy\nsuccessively with Weapon Crush. Able to\ndivest the target's weapon. Increases the\nduration and success rate according to the\ncaster's Skill Level.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -4979,8 +5371,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "duration": "60 + (Skill Level × 30 / 15 ) seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Weapon Crush ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Weapon_Crush"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2030.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2030",
           "tree": {
@@ -5008,6 +5410,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5022,6 +5428,18 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy (auto)"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 30 / 15 ) seconds"
               }
             ],
             "levelTables": [
@@ -5069,10 +5487,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5085,9 +5502,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Weapon Blocking 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Counter_Slash",
           "description": "Can be used while in Counter by Weapon Blocking. Deals damage to enemies around.\nDamage ignores targets' physical defense, and damage ignorance increases based on BaseLv, JobLv and AGI.",
           "levelDetails": [
             {
@@ -5181,8 +5600,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5 ~ 27",
+          "castDelay": "2 seconds",
+          "areaOfEffect": "3 x 3 ~ 5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Counter Slash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Counter_Slash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2029.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2029",
           "tree": {
@@ -5210,6 +5639,10 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "5 ~ 27"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5218,8 +5651,20 @@ export const shadowCrossData = {
                 "value": "0 seconds"
               },
               {
+                "label": "Cast Delay",
+                "value": "2 seconds"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 5 x 5"
               }
             ],
             "levelTables": [
@@ -5311,10 +5756,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5327,9 +5771,11 @@ export const shadowCrossData = {
           "prerequisiteText": "New Poison Research 1",
           "group": "Active",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/New_Poison_Creation",
           "description": "Create new poison from\nthe list of possible poisons shown according\nto the level of New Poison Research and the\nmaterials you have.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -5347,8 +5793,16 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " New Poison Creation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/New_Poison_Creation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2025.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2025",
           "tree": {
@@ -5376,6 +5830,10 @@ export const shadowCrossData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5390,6 +5848,10 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -5413,10 +5875,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5429,9 +5890,11 @@ export const shadowCrossData = {
           "prerequisiteText": "New Poison Research 5",
           "group": "Active / Detoxification",
           "type": "",
-          "target": "",
+          "target": "Any entity",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Antidote",
           "description": "Can detoxify Guillotine Cross's\npoison status and 1 target consuming 1 Antidote.",
           "levelDetails": [],
           "levelExtras": [
@@ -5454,8 +5917,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castRange": "5 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Antidote ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Antidote"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2026.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2026",
           "tree": {
@@ -5481,6 +5953,18 @@ export const shadowCrossData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Any entity"
               }
             ],
             "levelTables": [
@@ -5509,10 +5993,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5525,9 +6008,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Dark Illusion 5",
           "group": "Active / Damage(Debuff)",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dark_Claw",
           "description": "Inflicts a wound that deals melee physical damge, and removes target's damage reflection effect.\nWound continues for 20 sec, and target cannot use damage reflection effect, receives more damage from melee physical attack.\nOnly the half of damage amplification applies to Boss monsters.",
           "levelDetails": [
             {
@@ -5632,8 +6117,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (12 x Skill Level)",
+          "duration": "20 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Dark Claw ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dark_Claw"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5001.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5001",
           "tree": {
@@ -5661,6 +6156,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (12 x Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5675,6 +6174,18 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "60 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "20 seconds"
               }
             ],
             "levelTables": [
@@ -5749,10 +6260,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5765,9 +6275,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Dark Illusion 5,",
           "group": "Active / Detecting",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Phantom_Menace",
           "description": "Guillotine Cross attacks all\nhidden enemies within a 7x7 range for 300%\ndamage. The enemies hit by this can be seen.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -5794,8 +6306,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Phantom Menace ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Phantom_Menace"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2034.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2034",
           "tree": {
@@ -5829,6 +6350,10 @@ export const shadowCrossData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5843,6 +6368,14 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -5871,10 +6404,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5887,9 +6419,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Research New Poison 1",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Poisonous_Weapon",
           "description": "Make the caster's weapon coated by Guillotine Cross's new poison. During duration, caster's melee physical damage increases, provides special effect based on what's coated.\nHas a change to poison the target by attacking.",
           "levelDetails": [
             {
@@ -5994,8 +6528,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 + (Skill Level × 4)",
+          "duration": "(Skill Level) minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Poisonous Weapon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Poisonous_Weapon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2027.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2027",
           "tree": {
@@ -6023,6 +6566,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "16 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6037,6 +6584,10 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -6064,46 +6615,46 @@ export const shadowCrossData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Chance 4% / Duration 60 sec",
+                      "duration": "60 seconds\n1 min",
+                      "effect": "Chance 4%",
                       "sp-cost": "20",
-                      "chance": "4%",
-                      "duration": "1 min"
+                      "chance": "4%"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Chance 6% / Duration 120 sec",
+                      "duration": "120 seconds\n2 min",
+                      "effect": "Chance 6%",
                       "sp-cost": "24",
-                      "chance": "6%",
-                      "duration": "2 min"
+                      "chance": "6%"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Chance 8% / Duration 180 sec",
+                      "duration": "180 seconds\n3 min",
+                      "effect": "Chance 8%",
                       "sp-cost": "28",
-                      "chance": "8%",
-                      "duration": "3 min"
+                      "chance": "8%"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Chance 10% / Duration 240 sec",
+                      "duration": "240 seconds\n4 min",
+                      "effect": "Chance 10%",
                       "sp-cost": "32",
-                      "chance": "10%",
-                      "duration": "4 min"
+                      "chance": "10%"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Chance 12% / Duration 300 sec\n[Paralysis] : Increase movement speed\n[Pyre x ia] : Increase critical damage, increase base physical damage\n[Death Hurt] : Recovers Ma x HP 1% per 1 sec\n[Leech End] : Increase resistance to dark and stun status by 100%\n[Venom Bleed] : Reduce melee reflection damage by 30%\n[Magic Mushroom] : Reduce delay after skill by 10%\n[To x in] : Recovers Ma x SP 1% per 1 sec\n[Oblivion Curse] : Increase resistance to silence and curse by 100%",
+                      "duration": "300 seconds\n5 min",
+                      "effect": "Chance 12%\n[Paralysis] : Increase movement speed\n[Pyre x ia] : Increase critical damage, increase base physical damage\n[Death Hurt] : Recovers Ma x HP 1% per 1 sec\n[Leech End] : Increase resistance to dark and stun status by 100%\n[Venom Bleed] : Reduce melee reflection damage by 30%\n[Magic Mushroom] : Reduce delay after skill by 10%\n[To x in] : Recovers Ma x SP 1% per 1 sec\n[Oblivion Curse] : Increase resistance to silence and curse by 100%",
                       "sp-cost": "36",
-                      "chance": "12%",
-                      "duration": "5 min"
+                      "chance": "12%"
                     }
                   }
                 ],
@@ -6111,10 +6662,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6127,9 +6677,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Phantom Menace 1",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hallucination_Walk",
           "description": "Increase the caster's speed to the Maximum, increases Flee rate and certain chance to ignore MATK. Consumes HP when casting, decreases Movement Speed and ASPD by half for 25 secondsafter using the skill.",
           "levelDetails": [
             {
@@ -6284,8 +6836,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "44 − (Skill Level × 4)",
+          "duration": "25 + (Skill Level × 5) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Hallucination Walk ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hallucination_Walk"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2035.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2035",
           "tree": {
@@ -6313,6 +6874,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "44 − (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6327,6 +6892,14 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "300 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "25 + (Skill Level × 5) seconds"
               }
             ],
             "levelTables": [
@@ -6428,10 +7001,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6444,9 +7016,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Weapon Blocking 1,",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Venom_Pressure",
           "description": "Gives damage to the enemy nearby\nand poisons the enemy with the poisoned\nweapon. After casting the skill, the effect\nof Poisoning Weapon is canceled.",
           "levelDetails": [
             {
@@ -6576,8 +7150,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 10)",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Venom Pressure ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Venom_Pressure"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2031.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2031",
           "tree": {
@@ -6611,6 +7194,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6625,6 +7212,14 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -6724,10 +7319,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6740,9 +7334,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Venom Pressure 5, Poisoning Weapon 5",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Poisonous_Smoke",
           "description": "With Poisoning Weapon activated, spread a poisonous smoke around 5x5 cells. Enemy in the range have a 20% chance of getting poisoned every 2 seconds. When casting, Poisoning Weapon effect gets removed.",
           "levelDetails": [
             {
@@ -6847,8 +7443,19 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "duration": "8 + (Skill Level × 2) seconds",
+          "castRange": "5 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Poisonous Smoke ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Poisonous_Smoke"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2032.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2032",
           "tree": {
@@ -6882,6 +7489,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
               },
@@ -6896,6 +7507,18 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               },
               {
                 "label": "Pulse",
@@ -6974,10 +7597,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6989,10 +7611,12 @@ export const shadowCrossData = {
           "maxLevel": 5,
           "prerequisiteText": "3rd jobs",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Throttle",
           "description": "Exceed the limits of the body by\nsacrificing your own vitality to strengthen yourself\nfor a short time. You will become horribly\nexhausted after the skill's duration.\nFully restores HP when cast and increases\nmovement speed for the skill's duration.\nAll stats +20%.\nAfter the skill duration ends, you will be inflicted\nwith Rebound status. During rebound status,\nyour movement speed is lowered and your\nnatural HP/SP recovery is disabled.\nCannot be removed by dispel or clearance.\n50 Minute playtime cooldown",
           "levelDetails": [
             {
@@ -7097,8 +7721,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Throttle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
@@ -7111,8 +7744,16 @@ export const shadowCrossData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
               },
               {
                 "label": "Fixed Cast Time",
@@ -7129,6 +7770,10 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "3000 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -7212,10 +7857,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7242,6 +7886,8 @@ export const shadowCrossData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Restores right-hand damage that is reduced when using two-hand weapons.",
           "levelDetails": [
             {
@@ -7292,8 +7938,15 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Right hand Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Right_hand_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/132.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/132",
           "tree": {
@@ -7368,10 +8021,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7387,6 +8039,8 @@ export const shadowCrossData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Enhances attack (Weapon Mastery) with Katar class weapons.",
           "levelDetails": [
             {
@@ -7477,8 +8131,15 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Katar Matery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Katar_Matery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/134.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/134",
           "tree": {
@@ -7588,10 +8249,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7607,6 +8267,8 @@ export const shadowCrossData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cloaking",
           "description": "Conceals oneself and allows movement in this state.\nIt can move quickly when it is attached to the wall, but it slows down when it is not attached.\nFor levels 1 and 2, this skill can only be used if the user is adjacent to a wall.\nMaintaining this skill active will drain SP.\nDemon, Insect race monsters and boss monsters can find.\nAfter the effect is released, the item cannot be picked up for 3 seconds.",
           "levelDetails": [
             {
@@ -7697,8 +8359,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "duration": "Until recast or SP reaches zero",
+          "translations": {
+            "pt-BR": {
+              "name": " Cloaking ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cloaking"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/135.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/135",
           "tree": {
@@ -7726,8 +8397,16 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "Until recast or SP reaches zero"
               }
             ],
             "levelTables": [
@@ -7819,10 +8498,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7838,6 +8516,8 @@ export const shadowCrossData = {
           "target": "the user and 1 party member",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Enchant_Poison",
           "description": "Endows a single target's equipped weapon with the Poison property temporarily.\nThis skill also gives the chance of leaving enemies poisoned while physically attacking.\nSwitching to a different weapon will cancel this effect.",
           "levelDetails": [
             {
@@ -7928,8 +8608,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castDelay": "1 second",
+          "duration": "15 + (Skill Level × 15) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Enchant Poison ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enchant_Poison"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/138.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/138",
           "tree": {
@@ -7957,6 +8647,14 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
                 "label": "Target",
                 "value": "the user and 1 party member"
               }
@@ -7970,78 +8668,78 @@ export const shadowCrossData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 30sec",
+                      "duration": "30 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 45sec",
+                      "duration": "45 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 60sec",
+                      "duration": "60 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 75sec",
+                      "duration": "75 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 90sec",
+                      "duration": "90 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Duration:105sec",
+                      "duration": "105 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Duration:120sec",
+                      "duration": "120 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Duration:135sec",
+                      "duration": "135 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Duration:150sec",
+                      "duration": "150 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Duration:165sec",
+                      "duration": "165 seconds",
                       "sp-cost": "20"
                     }
                   }
@@ -8050,10 +8748,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8069,6 +8766,8 @@ export const shadowCrossData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Venom Knife",
+          "irowikiUrl": "https://irowiki.org/wiki/Venom_Knife",
           "description": "Throws 1 Venom Knife you're equipping to the target to inflict Long-ranged Physical damage of 500% of ATK at the cost of 35 SP.\nCreates a high chance of Poisoning the target.",
           "levelDetails": [],
           "levelExtras": [
@@ -8082,8 +8781,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35",
+          "castDelay": "ASPD",
+          "castRange": "10 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Venom Knife ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Venom_Knife"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1004.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1004",
           "tree": {
@@ -8104,8 +8813,24 @@ export const shadowCrossData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "35"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Venom Knife"
               }
             ],
             "levelTables": [
@@ -8129,10 +8854,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8148,6 +8872,8 @@ export const shadowCrossData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Restores right-hand damage that is reduced when using two-hand weapons.",
           "levelDetails": [
             {
@@ -8198,8 +8924,15 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Left hand Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Left_hand_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/133.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/133",
           "tree": {
@@ -8281,10 +9014,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8300,6 +9032,8 @@ export const shadowCrossData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sonic_Blow",
           "description": "Only for Katar.\nDirects a flurry of rapid slices with the equipped katar at a single target while spinning it to inflict physical damage.\nIt has a chance of leaving the target stunned.\nThe chance of stun is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -8394,8 +9128,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "14 + (Skill Level × 2)",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Sonic Blow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sonic_Blow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/136.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/136",
           "tree": {
@@ -8423,6 +9166,10 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "14 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8437,6 +9184,10 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -8525,10 +9276,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8544,6 +9294,8 @@ export const shadowCrossData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Advanced_Katar_Mastery",
           "description": "Enhance the damage that is\ninflicted with Katar Class Weapons.",
           "levelDetails": [
             {
@@ -8594,8 +9346,15 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Advanced Katar Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Advanced_Katar_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/376.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/376",
           "tree": {
@@ -8674,10 +9433,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8690,9 +9448,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Enchant Poison 5",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Venom_Dust",
           "description": "Contaminates a targeted location with a toxin that will leave all enemies within the area of effect poisoned. Each cast consumes a Red Gemstone. .\nIt has a chance of leaving the target [Abnormal Status: Poisoned].\nThe chance of poisoned is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -8783,8 +9543,19 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "duration": "(Skill Level × 5) seconds",
+          "castRange": "2 cells",
+          "areaOfEffect": "2 x 2",
+          "translations": {
+            "pt-BR": {
+              "name": " Venom Dust ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Venom_Dust"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/140.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/140",
           "tree": {
@@ -8810,6 +9581,22 @@ export const shadowCrossData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Range",
+                "value": "2 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "2 x 2"
               }
             ],
             "levelTables": [
@@ -8821,78 +9608,78 @@ export const shadowCrossData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration : 5sec",
+                      "duration": "5 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration : 10sec",
+                      "duration": "10 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration : 15sec",
+                      "duration": "15 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration : 20sec",
+                      "duration": "20 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration : 25sec",
+                      "duration": "25 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Duration : 30sec",
+                      "duration": "30 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Duration : 35sec",
+                      "duration": "35 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Duration : 40sec",
+                      "duration": "40 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Duration : 45sec",
+                      "duration": "45 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Duration : 50sec",
+                      "duration": "50 seconds",
                       "sp-cost": "20"
                     }
                   }
@@ -8901,10 +9688,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8920,6 +9706,8 @@ export const shadowCrossData = {
           "target": "the user",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Poison_React",
           "description": "Retaliates with a stronger physical attack against poison property attack for 1 time.\nIf the caster have learned Double Attack, the chance of Double Attack is applied when counterattacking.\nGives a level 5 Envenom when the user or monster which is not poison property attack.",
           "levelDetails": [
             {
@@ -9010,8 +9798,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25~60",
+          "duration": "20~60 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Poison React ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Poison_React"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/139.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/139",
           "tree": {
@@ -9039,8 +9836,16 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "25~60"
+              },
+              {
                 "label": "Target",
                 "value": "the user"
+              },
+              {
+                "label": "Duration",
+                "value": "20~60 seconds"
               }
             ],
             "levelTables": [
@@ -9118,10 +9923,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9134,9 +9938,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Envenom 10, Detoxify 1,",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Create_Deadly_Poison",
           "description": "Create a bottle of Deadly Poison\nthat will increase the Attack Speed of Assassin\nCrosses with the risk of being inflicted with\nthe Poison status, but will instantly kill\ncharacters in any other job if they drink it.\nCaster's DEX and LUK affect this skill's\nsuccess rate. If this skill fails, the caster\nloses an amount of HP equal to 25% of\nhis MaxHP.\nItems Required to create Deadly Poison:\n1 Empty Bottle\n1 Poison Spore\n1 Venom Canine\n1 Bee Sting\n1 Cactus Needle\n1 Berserk Potion\n1 Karvodailnirol",
           "levelDetails": [],
           "levelExtras": [
@@ -9150,8 +9956,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "castDelay": "5 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Create Deadly Poison ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Create_Deadly_Poison"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/407.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/407",
           "tree": {
@@ -9189,6 +10004,18 @@ export const shadowCrossData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -9212,10 +10039,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9231,6 +10057,8 @@ export const shadowCrossData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sonic_Acceleration",
           "description": "Adjusts Sonic Blow HIT Rate by 90% and increases its damage by 90%.",
           "levelDetails": [],
           "levelExtras": [
@@ -9244,8 +10072,15 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sonic Acceleration ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sonic_Acceleration"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1003.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1003",
           "tree": {
@@ -9287,10 +10122,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9306,6 +10140,8 @@ export const shadowCrossData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Grimtooth",
           "description": "Only for Katar.\nStrikes a single target with the equipped katar while hidden at a distance to inflict physical damage to all enemies within the area of effect by consuming SP3.\nLevels 1 and 2 inflict close range damage while Levels 3 and above inflict ranged damage .\nFor normal monsters, movement speed of targets that take damage are reduced by 50% for 1 second.",
           "levelDetails": [
             {
@@ -9356,8 +10192,19 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "castRange": "(Skill Level + 2) cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Grimtooth ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Grimtooth"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/137.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/137",
           "tree": {
@@ -9391,8 +10238,24 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Skill Level + 2) cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -9440,10 +10303,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9459,6 +10321,8 @@ export const shadowCrossData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Venom_Splasher",
           "description": "Attaches a dangerous toxin onto a single target which causes a venomous explosion afterwards.\ninflicting physical damage to all enemies around the target and leaves the target [Abnormal Status: Poisoned].\nThe chance of poisoned is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -9552,8 +10416,19 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill level × 2)",
+          "cooldown": "[12 - (Skill Level)] seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Venom Splasher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Venom_Splasher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/141.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/141",
           "tree": {
@@ -9587,6 +10462,10 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -9599,8 +10478,20 @@ export const shadowCrossData = {
                 "value": "0 seconds"
               },
               {
+                "label": "Cooldown",
+                "value": "[12 - (Skill Level)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -9687,10 +10578,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9706,6 +10596,8 @@ export const shadowCrossData = {
           "target": "1 target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Destroyer",
           "description": "Deals strong ranged physical damage to a target.\nOnly the half of Critical Chance is applied. Damage increases based on BaseLv, STR and INT.\nOnly the half of Critical Damage option applies.",
           "levelDetails": [
             {
@@ -9800,8 +10692,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "castRange": "4 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Destroyer ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Destroyer"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/379.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/379",
           "tree": {
@@ -9847,6 +10748,10 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "60"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.25 seconds"
               },
@@ -9861,6 +10766,10 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0.25 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "4 cells"
               },
               {
                 "label": "Target",
@@ -9942,10 +10851,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9961,6 +10869,8 @@ export const shadowCrossData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Enchant_Deadly_Poison",
           "description": "Enchant a weapon with deadly\npoison to enhance its damage and poison\ntargets by chance, causing the target's HP to\ndramatically decrease for the poison's duration.\nEach cast requires 1 Poison Bottle.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -9994,8 +10904,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 10)",
+          "duration": "[20 + (Skill Level × 20)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Enchant Deadly Poison ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enchant_Deadly_Poison"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/378.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/378",
           "tree": {
@@ -10023,6 +10942,10 @@ export const shadowCrossData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -10041,6 +10964,10 @@ export const shadowCrossData = {
               {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "[20 + (Skill Level × 20)] seconds"
               }
             ],
             "levelTables": [
@@ -10088,10 +11015,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10104,9 +11030,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Katar Mastery 5,",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Meteor_Assault",
           "description": "Damage all enemies in a 5*5 cell\narea around the caster with the chance of\ncausing statuses such as Stun, Blind or Bleed.",
           "levelDetails": [
             {
@@ -10201,8 +11129,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 3)",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Meteor Assault ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Meteor_Assault"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/406.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/406",
           "tree": {
@@ -10248,6 +11185,10 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.25 seconds"
               },
@@ -10262,6 +11203,14 @@ export const shadowCrossData = {
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -10339,10 +11288,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10369,6 +11317,8 @@ export const shadowCrossData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -10447,8 +11397,15 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -10550,10 +11507,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10569,6 +11525,8 @@ export const shadowCrossData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Double_Attack",
           "description": "Gives the chance to inflict two hits instead of one and improves hit rate while attacking with Dagger class weapons.\nWhen using Katar type weapon, it affects off-hand damage.",
           "levelDetails": [
             {
@@ -10659,8 +11617,15 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Double Attack ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Double_Attack"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/48.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/48",
           "tree": {
@@ -10770,10 +11735,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10789,6 +11753,8 @@ export const shadowCrossData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Steal",
           "description": "Consumes SP10 and attempts to steal an item from a targeted monster. The higher the target's DEX than yours, the lower the chance of success.\nBoss monsters and players cannot be stolen from. After success, it is not possible to steal again from the same target.",
           "levelDetails": [
             {
@@ -10879,8 +11845,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "1 second",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Steal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Steal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/50.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/50",
           "tree": {
@@ -10899,6 +11875,18 @@ export const shadowCrossData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -10994,10 +11982,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11013,6 +12000,8 @@ export const shadowCrossData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Envenom",
           "description": "Consumes SP12 and strikes a single target to inflict Poison property physical damage. It has a chance of leaving the target [Abnormal Status : poisoned].\nPoisoned targets take damage per second, and their physical defense is reduced by 25%.\nEnvenom Skill damage is the sum of general physical damage and damage by this skill",
           "levelDetails": [
             {
@@ -11103,8 +12092,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Envenom ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Envenom"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/52.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/52",
           "tree": {
@@ -11125,6 +12124,18 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
               }
@@ -11140,76 +12151,90 @@ export const shadowCrossData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "damage",
+                    "label": "Damage:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage: + 15, Chance of Effect: 14%",
+                      "damage": "+ 15",
+                      "effect": "Chance of Effect: 14%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage: + 30, Chance of Effect: 18%",
+                      "damage": "+ 30",
+                      "effect": "Chance of Effect: 18%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage: + 45, Chance of Effect: 22%",
+                      "damage": "+ 45",
+                      "effect": "Chance of Effect: 22%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage: + 60, Chance of Effect: 26%",
+                      "damage": "+ 60",
+                      "effect": "Chance of Effect: 26%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage: + 75, Chance of Effect: 30%",
+                      "damage": "+ 75",
+                      "effect": "Chance of Effect: 30%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Damage: + 90, Chance of Effect: 34%",
+                      "damage": "+ 90",
+                      "effect": "Chance of Effect: 34%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Damage: +105, Chance of Effect: 38%",
+                      "damage": "+105",
+                      "effect": "Chance of Effect: 38%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Damage: +120, Chance of Effect: 42%",
+                      "damage": "+120",
+                      "effect": "Chance of Effect: 42%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Damage: +135, Chance of Effect: 46%",
+                      "damage": "+135",
+                      "effect": "Chance of Effect: 46%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Damage: +150, Chance of Effect: 50%",
+                      "damage": "+150",
+                      "effect": "Chance of Effect: 50%",
                       "sp-cost": "12"
                     }
                   }
@@ -11218,10 +12243,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11237,6 +12261,8 @@ export const shadowCrossData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sand_Attack",
           "description": "Kick sand into the face of an enemy\nwhich will inflict 130% of the damage of a\nnormal attack and also have the chance to\ncause the Blind or Stun status on the target.",
           "levelDetails": [],
           "levelExtras": [
@@ -11250,8 +12276,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "9",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Sand Attack ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sand_Attack"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/149.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/149",
           "tree": {
@@ -11270,6 +12305,14 @@ export const shadowCrossData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "9"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -11297,10 +12340,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11316,6 +12358,8 @@ export const shadowCrossData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stone_Fling",
           "description": "Attack an enemy with a Stone which\ninflicts 50 damage that will pierce enemy\ndefense and has a low chance of causing the\nStun or Blind status.\nEach cast requires 1 Stone.",
           "levelDetails": [],
           "levelExtras": [
@@ -11329,8 +12373,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "2",
+          "castDelay": "ASPD",
+          "castRange": "7 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Stone Fling ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stone_Fling"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/152.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/152",
           "tree": {
@@ -11349,6 +12403,18 @@ export const shadowCrossData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "2"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
               },
               {
                 "label": "Target",
@@ -11376,10 +12442,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11395,6 +12460,8 @@ export const shadowCrossData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -11408,8 +12475,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -11428,6 +12504,14 @@ export const shadowCrossData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -11455,10 +12539,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11474,6 +12557,8 @@ export const shadowCrossData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Improve_Dodge",
           "description": "Enhances flee rate. The benefits of this skill are improved upon reaching 2nd class and further.\nAlso slightly enhances the Movement Speed of the Assassin class.",
           "levelDetails": [
             {
@@ -11564,8 +12649,15 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Improve Dodge ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Improve_Dodge"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/49.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/49",
           "tree": {
@@ -11595,114 +12687,92 @@ export const shadowCrossData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "1st-class-flee-3-2nd-class-flee",
-                    "label": "1st Class Flee + 3, 2nd Class Flee"
+                    "id": "1st-class-flee",
+                    "label": "1st Class Flee"
                   },
                   {
-                    "id": "1st-class-flee-6-2nd-class-flee",
-                    "label": "1st Class Flee + 6, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-9-2nd-class-flee",
-                    "label": "1st Class Flee + 9, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-12-2nd-class-flee",
-                    "label": "1st Class Flee +12, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-15-2nd-class-flee",
-                    "label": "1st Class Flee +15, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-18-2nd-class-flee",
-                    "label": "1st Class Flee +18, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-21-2nd-class-flee",
-                    "label": "1st Class Flee +21, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-24-2nd-class-flee",
-                    "label": "1st Class Flee +24, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-27-2nd-class-flee",
-                    "label": "1st Class Flee +27, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-30-2nd-class-flee",
-                    "label": "1st Class Flee +30, 2nd Class Flee"
+                    "id": "2nd-class-flee",
+                    "label": "2nd Class Flee"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "1st-class-flee-3-2nd-class-flee": "+ 4",
+                      "1st-class-flee": "+ 3",
+                      "2nd-class-flee": "+ 4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "1st-class-flee-6-2nd-class-flee": "+ 8",
+                      "1st-class-flee": "+ 6",
+                      "2nd-class-flee": "+ 8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "1st-class-flee-9-2nd-class-flee": "+12",
+                      "1st-class-flee": "+ 9",
+                      "2nd-class-flee": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "1st-class-flee-12-2nd-class-flee": "+16",
+                      "1st-class-flee": "+12",
+                      "2nd-class-flee": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "1st-class-flee-15-2nd-class-flee": "+20",
+                      "1st-class-flee": "+15",
+                      "2nd-class-flee": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "1st-class-flee-18-2nd-class-flee": "+24",
+                      "1st-class-flee": "+18",
+                      "2nd-class-flee": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "1st-class-flee-21-2nd-class-flee": "+28",
+                      "1st-class-flee": "+21",
+                      "2nd-class-flee": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "1st-class-flee-24-2nd-class-flee": "+32",
+                      "1st-class-flee": "+24",
+                      "2nd-class-flee": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "1st-class-flee-27-2nd-class-flee": "+36",
+                      "1st-class-flee": "+27",
+                      "2nd-class-flee": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "1st-class-flee-30-2nd-class-flee": "+40",
+                      "1st-class-flee": "+30",
+                      "2nd-class-flee": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -11711,10 +12781,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11730,6 +12799,8 @@ export const shadowCrossData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hiding",
           "description": "Consumes SP10 and conceals oneself to avoid enemies. The skills Sight and Ruwach can be used to reveal hidden players.\nInsect, Demon and Boss Protocol monsters can detect hidden players. Reveals oneself when using the skill again.",
           "levelDetails": [
             {
@@ -11820,8 +12891,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "(Skill Level × 30) seconds; Until recast or SP reaches zero",
+          "translations": {
+            "pt-BR": {
+              "name": " Hiding ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hiding"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/51.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/51",
           "tree": {
@@ -11849,8 +12929,16 @@ export const shadowCrossData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 30) seconds; Until recast or SP reaches zero"
               }
             ],
             "levelTables": [
@@ -11942,10 +13030,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11961,6 +13048,8 @@ export const shadowCrossData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Detoxify",
           "description": "Consumes SP 10 and cures a single target from Poison status effect.",
           "levelDetails": [],
           "levelExtras": [
@@ -11974,8 +13063,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "ASPD",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Detoxify ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Detoxify"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/53.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/53",
           "tree": {
@@ -12003,6 +13102,18 @@ export const shadowCrossData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -12028,10 +13139,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12044,9 +13154,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Finish Quest",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Back_Slide",
           "description": "Quickly move backwards to position\nyourself safely away from threats.",
           "levelDetails": [],
           "levelExtras": [
@@ -12060,8 +13172,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "7",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " Back Slide ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Back_Slide"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/150.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/150",
           "tree": {
@@ -12080,6 +13201,18 @@ export const shadowCrossData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "7"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -12103,10 +13236,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12122,6 +13254,8 @@ export const shadowCrossData = {
           "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Find_Stone",
           "description": "Pick up a Stone from the ground.",
           "levelDetails": [],
           "levelExtras": [
@@ -12135,8 +13269,18 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "2",
+          "fixedCastTime": "0.5 seconds",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " Find Stone ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Find_Stone"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/151.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/151",
           "tree": {
@@ -12155,6 +13299,18 @@ export const shadowCrossData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "2"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -12182,10 +13338,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12198,9 +13353,11 @@ export const shadowCrossData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -12214,8 +13371,17 @@ export const shadowCrossData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -12234,6 +13400,18 @@ export const shadowCrossData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -12257,10 +13435,9 @@ export const shadowCrossData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12280,6 +13457,8 @@ export const shadowCrossData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Shadow_Sense",
       "description": "Increase your FLEE. Katars and Daggers also increase CRIT.",
       "levelDetails": [],
       "levelExtras": [
@@ -12329,8 +13508,15 @@ export const shadowCrossData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Shadow Sense ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Shadow_Sense"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5288.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5288",
       "tree": {
@@ -12426,10 +13612,9 @@ export const shadowCrossData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12445,6 +13630,8 @@ export const shadowCrossData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Dancing_Knife",
       "description": "A Dagger skill.\nSummon small spinning blades around you to attack surrounding enemies in 5 x5 cells.\nThis skill's effect is canceled immediately if you change to a different, non-Dagger Weapon for its duration.\nThis skill additionally increases damage, depending on your Base Level and POW.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -12478,8 +13665,19 @@ export const shadowCrossData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "35 + (Skill Level × 5)",
+      "duration": "20 + (Skill Level x 20) seconds",
+      "castRange": "Melee",
+      "areaOfEffect": "5 x 5",
+      "translations": {
+        "pt-BR": {
+          "name": " Dancing Knife ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Dancing_Knife"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5286.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5286",
       "tree": {
@@ -12507,6 +13705,10 @@ export const shadowCrossData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "35 + (Skill Level × 5)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -12523,8 +13725,20 @@ export const shadowCrossData = {
             "value": "30 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Melee"
+          },
+          {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5"
+          },
+          {
+            "label": "Duration",
+            "value": "20 + (Skill Level x 20) seconds"
           }
         ],
         "levelTables": [
@@ -12572,10 +13786,9 @@ export const shadowCrossData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12591,6 +13804,8 @@ export const shadowCrossData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Savage_Impact",
       "description": "Katar-only skills,\nQuickly approaches the target and inflicts melee physical damage 3 times to the target and enemies within the surrounding range.\n(When cast in Cloaking Exceed state, deals melee physical damage 5 times.)\nDamage increases additionally depending on the user's base level and POW, and causes greater damage in Shadow Exceed state.\nCritical damage is applied with a probability of half the user's critical probability.\nIn the case of critical damage, half of the total critical damage increase options are applied.",
       "levelDetails": [
         {
@@ -12685,8 +13900,18 @@ export const shadowCrossData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25 + (Skill Level x 3)",
+      "castRange": "Melee",
+      "areaOfEffect": "3 x 3",
+      "translations": {
+        "pt-BR": {
+          "name": " Savage Impact ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Savage_Impact"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5287.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5287",
       "tree": {
@@ -12720,6 +13945,10 @@ export const shadowCrossData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "25 + (Skill Level x 3)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -12734,6 +13963,10 @@ export const shadowCrossData = {
           {
             "label": "Cooldown",
             "value": "0.7 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
           },
           {
             "label": "Target",
@@ -12833,7 +14066,6 @@ export const shadowCrossData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Savage Impact",
@@ -12958,7 +14190,7 @@ export const shadowCrossData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -12974,6 +14206,8 @@ export const shadowCrossData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Enchanting_Shadow",
       "description": "Imbue your Weapon with the power of shadows.\nAttacks create a chance of leaving Shadow Wounds on enemies, increasing their damage, depending on the number of Shadow Wounds on them.",
       "levelDetails": [],
       "fixedCastTime": "1.5 seconds",
@@ -13006,8 +14240,18 @@ export const shadowCrossData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "20 + (Skill Level × 10)",
+      "cooldown": "(Skill Level × 30) seconds",
+      "duration": "30 + (Skill Level × 30) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Enchanting Shadow ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Enchanting_Shadow"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5293.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5293",
       "tree": {
@@ -13041,6 +14285,10 @@ export const shadowCrossData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "20 + (Skill Level × 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -13053,8 +14301,16 @@ export const shadowCrossData = {
             "value": "1 second"
           },
           {
+            "label": "Cooldown",
+            "value": "(Skill Level × 30) seconds"
+          },
+          {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "30 + (Skill Level × 30) seconds"
           }
         ],
         "levelTables": [
@@ -13102,10 +14358,9 @@ export const shadowCrossData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13121,6 +14376,8 @@ export const shadowCrossData = {
       "target": "1 Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Eternal_Slash",
       "description": "Can be used during Weapon Blocking.\nCritically inflict Melee Physical damage on a target.\nEach time it is used again within 3 seconds, the number of attacks is increased by 1 (up to a maximum of 5).\nAdditional damage increase based on the caster's base level and POW.\nand uses 50% of your CRIT to inflict Critical damage,\nIf the hit crits, half-total of the Critical Damage Bonus option is applied.",
       "levelDetails": [
         {
@@ -13175,8 +14432,17 @@ export const shadowCrossData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "40",
+      "castRange": "Melee",
+      "translations": {
+        "pt-BR": {
+          "name": " Eternal Slash ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Eternal_Slash"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5289.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5289",
       "tree": {
@@ -13216,6 +14482,10 @@ export const shadowCrossData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "40"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -13230,6 +14500,10 @@ export const shadowCrossData = {
           {
             "label": "Cooldown",
             "value": "0.5 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
           },
           {
             "label": "Target",
@@ -13281,7 +14555,6 @@ export const shadowCrossData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Eternal Slash",
@@ -13383,7 +14656,7 @@ export const shadowCrossData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13399,6 +14672,8 @@ export const shadowCrossData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Cross_Slash",
       "description": "Deals melee physical damage to the target and surrounding enemies around the target for 3 hits.\nGains successful blocking state for 10 seconds when using this skill.\nDeals additional damage depends on user's base level and POW, deals more damage while under Shadow Exceed buff.\nHas a chance to trigger critical, critical chance is the half user's Cri.\nThe effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -13423,8 +14698,19 @@ export const shadowCrossData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "8 + (Skill Level x 2)",
+      "castDelay": "0.5 seconds",
+      "cooldown": "5.5 − (Skill Level × 0.5) seconds",
+      "castRange": "4~7 cells",
+      "translations": {
+        "pt-BR": {
+          "name": " Cross Slash ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Cross_Slash"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6511.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6511",
       "tree": {
@@ -13456,6 +14742,22 @@ export const shadowCrossData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "8 + (Skill Level x 2)"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "5.5 − (Skill Level × 0.5) seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "4~7 cells"
           },
           {
             "label": "Target",
@@ -13511,10 +14813,9 @@ export const shadowCrossData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13530,6 +14831,8 @@ export const shadowCrossData = {
       "target": "Area of Effect",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Impact_Crater",
       "description": "Katar-only skill.\nInflict Melee Physical damage on surrounding target that can crit, depending on your Spin stacks.\n(You can't use the skill without Spin stack)\nThis skill also casts Weapon Blocking Success mode for 10 seconds.\nAdditional Damage increase based on the caster's base level and POW.\nand uses 50% of your CRIT to inflict Critical damage,\nIf it crits, it inflicts half of the total of your Critical Damage Bonus options as damage.",
       "levelDetails": [
         {
@@ -13583,8 +14886,19 @@ export const shadowCrossData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "40 + (Skill Level × 3)",
+      "cooldown": "5 seconds",
+      "castRange": "Melee",
+      "areaOfEffect": "3 x 3 ~ 7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Impact Crater ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Impact_Crater"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5292.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5292",
       "tree": {
@@ -13630,6 +14944,10 @@ export const shadowCrossData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "40 + (Skill Level × 3)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -13642,12 +14960,20 @@ export const shadowCrossData = {
             "value": "0.3 seconds"
           },
           {
+            "label": "Cooldown",
+            "value": "5 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
+          },
+          {
             "label": "Target",
             "value": "Area of Effect"
           },
           {
             "label": "Area of Effect",
-            "value": "Lv 1: 3 x 3 cells / Lv 2: 3 x 3 cells / Lv 3: 5 x 5 cells / Lv 4: 5 x 5 cells / Lv 5: 7 x 7 cells"
+            "value": "3 x 3 ~ 7 x 7"
           },
           {
             "label": "AP Generated",
@@ -13699,7 +15025,6 @@ export const shadowCrossData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Impact Crater",
@@ -13754,7 +15079,7 @@ export const shadowCrossData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13770,6 +15095,8 @@ export const shadowCrossData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Potent_Venom",
       "description": "Requires a Weapon with Deadly Poison applied on it.\nGive yourself an effect to ignore the target's Physical Resistance (RES).\nWhen Deadly Poison is dispelled, the effect of Potent Venom is also dispelled.",
       "levelDetails": [
         {
@@ -13864,8 +15191,17 @@ export const shadowCrossData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "10 + (Skill Level × 5)",
+      "duration": "20 + (Skill Level × 10) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Potent Venom ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Potent_Venom"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5290.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5290",
       "tree": {
@@ -13899,6 +15235,10 @@ export const shadowCrossData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "10 + (Skill Level × 5)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -13920,7 +15260,7 @@ export const shadowCrossData = {
           },
           {
             "label": "Duration",
-            "value": "Lv 1: 75 seconds / Lv 2: 100 seconds / Lv 3: 125 seconds / Lv 4: 150 seconds / Lv 5: 175 seconds / Lv 6: 200 seconds / Lv 7: 225 seconds / Lv 8: 250 seconds / Lv 9: 275 seconds / Lv 10: 300 seconds"
+            "value": "20 + (Skill Level × 10) seconds"
           }
         ],
         "levelTables": [
@@ -14012,7 +15352,6 @@ export const shadowCrossData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Potent Venom",
@@ -14043,7 +15382,7 @@ export const shadowCrossData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14059,6 +15398,8 @@ export const shadowCrossData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Shadow_Stab",
       "description": "Dagger-only skill.\nDeals melee physical damage to the target twice, ignoring the target's physical defense.\nWhen used in Cloaking Exceed state, attacks 3 times with higher attack power.\nDamage is additionally increased depending on the user's base level and POW.",
       "levelDetails": [
         {
@@ -14113,8 +15454,17 @@ export const shadowCrossData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "35 + (Skill Level × 5)",
+      "castRange": "Melee",
+      "translations": {
+        "pt-BR": {
+          "name": " Shadow Stab ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Shadow_Stab"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5291.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5291",
       "tree": {
@@ -14160,6 +15510,10 @@ export const shadowCrossData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "35 + (Skill Level × 5)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -14174,6 +15528,10 @@ export const shadowCrossData = {
           {
             "label": "Cooldown",
             "value": "0.35 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
           },
           {
             "label": "Target",
@@ -14229,7 +15587,6 @@ export const shadowCrossData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Shadow Stab",
@@ -14360,7 +15717,7 @@ export const shadowCrossData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14375,7 +15732,9 @@ export const shadowCrossData = {
       "type": "Buff",
       "target": "Self",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Shadow_Exceed",
       "description": "Maximizes your abilities to increase the power of Savage Impact and Eternal Slash temporarily.",
       "levelDetails": [
         {
@@ -14470,8 +15829,17 @@ export const shadowCrossData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "100",
+      "duration": "[40 + (Skill Level × 20)] seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Shadow Exceed ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Shadow_Exceed"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5285.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5285",
       "tree": {
@@ -14511,6 +15879,10 @@ export const shadowCrossData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "100"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -14529,6 +15901,10 @@ export const shadowCrossData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "150"
           }
         ],
         "levelTables": [
@@ -14634,7 +16010,6 @@ export const shadowCrossData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Shadow Exceed",
@@ -14673,7 +16048,7 @@ export const shadowCrossData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14688,7 +16063,9 @@ export const shadowCrossData = {
       "type": "Melee Physical",
       "target": "1 Target",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Fatal_Shadow_Claw",
       "description": "Quickly approach target, cast Dark Claw on it and others around it, and Critically inflict Melee Physical damage.\nHowever, this effect follows your Dark Claw level.\nInflicts more damage to Demi-Human and Dragon monsters.\nAdditional damage increase based on the caster's Base Level and POW, and for the Critical Damage bonus option, only a fraction of the total is applied.",
       "levelDetails": [
         {
@@ -14783,8 +16160,17 @@ export const shadowCrossData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "150",
+      "castRange": "9 cells",
+      "translations": {
+        "pt-BR": {
+          "name": " Fatal Shadow Claw ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Fatal_Shadow_Claw"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5294.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5294",
       "tree": {
@@ -14818,6 +16204,10 @@ export const shadowCrossData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "150"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -14834,8 +16224,16 @@ export const shadowCrossData = {
             "value": "60 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "9 cells"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "150"
           }
         ],
         "levelTables": [
@@ -14927,7 +16325,6 @@ export const shadowCrossData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Fatal Shadow Claw",
@@ -14974,7 +16371,7 @@ export const shadowCrossData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

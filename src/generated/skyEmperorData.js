@@ -1,5 +1,5 @@
 export const skyEmperorData = {
-  "generatedAt": "2026-07-10T00:57:06.011Z",
+  "generatedAt": "2026-07-10T15:02:23.177Z",
   "classId": 4302,
   "classSlug": "sky-emperor",
   "className": "Sky Emperor",
@@ -71,7 +71,8 @@ export const skyEmperorData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4302",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -310,6 +311,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/War_Book_Mastery",
           "description": "Improves one's combat ability through the art of war.\nWhen equipped with a book-type weapon, P.ATK and HIT increase.",
           "levelDetails": [
             {
@@ -400,8 +403,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " War Book Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/War_Book_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5464.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5464",
           "tree": {
@@ -525,10 +535,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -544,6 +553,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sky_Mastery",
           "description": "Understand the principles of celestial body and Increases effectiveness of celestial body techniques.\nIncreases Rising Sun, Noon Blast, Sunset Blast, Rising Moon, Midnight Kick, Dawn Break, Twinkling Galaxy, Star Burst and Star Cannon damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -593,8 +604,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sky Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sky_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5463.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5463",
           "tree": {
@@ -690,10 +708,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -707,8 +724,10 @@ export const skyEmperorData = {
           "group": "Active",
           "type": "Melee Physical",
           "target": "1 Target",
-          "recoversAp": "",
+          "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rising_Sun",
           "description": "Uses the energy of the sun that brightens the day, dealing melee physical DMG to the target.\nWhen using a skill, the effects of [Sunrise]/[Noon]/[Sunset] are applied sequentially.\n(However, after sunset, only the energy of the moon can travel through the heaven, earth, sun, and moon.)\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.",
           "levelDetails": [
             {
@@ -759,8 +778,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25",
+          "castDelay": "0.5 seconds",
+          "cooldown": "0.5 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Rising Sun ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rising_Sun"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5465.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5465",
           "tree": {
@@ -788,8 +817,24 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "AP Generated",
+                "value": "2"
               }
             ],
             "levelTables": [
@@ -837,7 +882,6 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Rising Sun",
@@ -868,7 +912,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -882,8 +926,10 @@ export const skyEmperorData = {
           "group": "Active",
           "type": "Melee Physical",
           "target": "Instant Cast",
-          "recoversAp": "",
+          "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rising_Moon",
           "description": "Uses the energy of the moon that illuminates the night, dealing melee physical DMG to enemies around you.\nWhen using a skill, the effects of [Moonrise]/[Midnight]/[Moonset] are applied sequentially.\n(However, after moonrise, only the sun's energy can travel through the heaven, earth, and sun.)\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.",
           "levelDetails": [
             {
@@ -934,8 +980,19 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25",
+          "castDelay": "0.5 seconds",
+          "cooldown": "0.5 seconds",
+          "areaOfEffect": "5 x 5~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Rising Moon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rising_Moon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5468.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5468",
           "tree": {
@@ -963,8 +1020,28 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5~9 x 9"
+              },
+              {
+                "label": "AP Generated",
+                "value": "2"
               }
             ],
             "levelTables": [
@@ -974,45 +1051,36 @@ export const skyEmperorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "5 x 5 cells",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "5 x 5 cells",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "7 x 7 cells",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "7 x 7 cells",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "9 x 9 cells",
                       "sp-cost": "64"
                     }
                   }
@@ -1021,7 +1089,6 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Rising Moon",
@@ -1052,7 +1119,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1066,8 +1133,10 @@ export const skyEmperorData = {
           "group": "Active",
           "type": "Melee Physical",
           "target": "Instant Cast",
-          "recoversAp": "",
+          "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Twinkling_Galaxy",
           "description": "Uses the movement of constellation to drop the shooting star once every 0.5 seconds for 3.5 seconds within range.\nEach shooting star inflicts melee physical damage the all targets within 5 x 5 cells.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.",
           "levelDetails": [
             {
@@ -1118,8 +1187,20 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25",
+          "fixedCastTime": "0.5 seconds",
+          "variableCastTime": "1 seconds",
+          "cooldown": "5 seconds",
+          "areaOfEffect": "13 x 13~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Twinkling Galaxy ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Twinkling_Galaxy"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5471.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5471",
           "tree": {
@@ -1147,8 +1228,28 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "AP Generated",
+                "value": "2"
               },
               {
                 "label": "Pulse",
@@ -1164,43 +1265,43 @@ export const skyEmperorData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "area-of-effect",
+                    "label": "Area of Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Twinkling Gala x y AOE: 13 x 13 cells",
+                      "area-of-effect": "13x13",
                       "sp-cost": "124"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Twinkling Gala x y AOE: 13 x 13 cells",
+                      "area-of-effect": "13x13",
                       "sp-cost": "124"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Twinkling Gala x y AOE: 11 x 11 cells",
+                      "area-of-effect": "11x11",
                       "sp-cost": "124"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Twinkling Gala x y AOE: 11 x 11 cells",
+                      "area-of-effect": "11x11",
                       "sp-cost": "124"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Twinkling Gala x y AOE: 9 x 9 cells",
+                      "area-of-effect": "9x9",
                       "sp-cost": "124"
                     }
                   }
@@ -1209,7 +1310,6 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Twinkling Galaxy",
@@ -1275,7 +1375,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1291,6 +1391,8 @@ export const skyEmperorData = {
           "target": "1 Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Noon_Blast",
           "description": "Can be used when sunrise or noon is in effect.\nShines sunlight on the target, inflicting melee physical DMG to the target and enemies within range.\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.\nIf the current weather movement is under [Noon] effect, critical DMG is applied according to the caster's critical probability.\nIn case of critical DMG, half of the total critical DMG increase options is applied.",
           "levelDetails": [
             {
@@ -1341,8 +1443,19 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (4 × Skill Level)",
+          "castDelay": "0.5 seconds",
+          "cooldown": "0.7 seconds",
+          "areaOfEffect": "3 x 3~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Noon Blast ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Noon_Blast"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5466.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5466",
           "tree": {
@@ -1376,8 +1489,24 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (4 × Skill Level)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.7 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3~7 x 7"
               },
               {
                 "label": "AP Generated",
@@ -1391,45 +1520,36 @@ export const skyEmperorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "3 x 3 cells",
                       "sp-cost": "49"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "3 x 3 cells",
                       "sp-cost": "53"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "5 x 5 cells",
                       "sp-cost": "57"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "5 x 5 cells",
                       "sp-cost": "61"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "7 x 7 cells",
                       "sp-cost": "65"
                     }
                   }
@@ -1438,7 +1558,6 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Noon Blast",
@@ -1477,7 +1596,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1493,6 +1612,8 @@ export const skyEmperorData = {
           "target": "Instant Cast",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Midnight_Kick",
           "description": "Can be used during the moonrise or midnight effect.\nCharge your feet with the energy of the moon, dealing melee physical DMG to enemies within range.\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.\nIf the current weather is under the effect of [Midnight], it deals more DMG.",
           "levelDetails": [
             {
@@ -1543,8 +1664,20 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "32 + (Skill Level × 4)",
+          "fixedCastTime": "0.5 seconds",
+          "variableCastTime": "1 seconds",
+          "cooldown": "0.7 seconds",
+          "areaOfEffect": "5 x 5~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Midnight Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Midnight_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5469.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5469",
           "tree": {
@@ -1578,8 +1711,28 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "32 + (Skill Level × 4)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.7 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5~9 x 9"
               },
               {
                 "label": "AP Generated",
@@ -1593,45 +1746,36 @@ export const skyEmperorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "5 x 5 cells",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "5 x 5 cells",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "7 x 7 cells",
                       "sp-cost": "64"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "7 x 7 cells",
                       "sp-cost": "66"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "9 x 9 cells",
                       "sp-cost": "68"
                     }
                   }
@@ -1640,7 +1784,6 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Midnight Kick",
@@ -1698,7 +1841,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1714,6 +1857,8 @@ export const skyEmperorData = {
           "target": "1 Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Star_Burst",
           "description": "Can only be used within the range of the universe you are operating.\nIt stops the current shooting star and focuses shooting stars towards the target.\nDeals melee physical DMG to the target and surrounding targets in a 5x5 cell range once every 0.3 seconds for 4.5 seconds.\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.",
           "levelDetails": [
             {
@@ -1764,8 +1909,19 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "37 + (Skill Level * 4)",
+          "fixedCastTime": "0.5 seconds",
+          "cooldown": "1 second",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Star Burst ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Star_Burst"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5472.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5472",
           "tree": {
@@ -1799,8 +1955,24 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "37 + (Skill Level * 4)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "1 second"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               },
               {
                 "label": "AP Generated",
@@ -1856,7 +2028,6 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Star Burst",
@@ -1879,7 +2050,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1895,6 +2066,8 @@ export const skyEmperorData = {
           "target": "1 Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sunset_Blast",
           "description": "Can be used during noon or sunset effects.\nCharge your feet with the power of the blazing sun and kick the target with all your might, inflicting melee physical DMG to the target and enemies within the surrounding range.\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.\nIf the current weather run is under the effect of [Sunset], critical DMG is applied according to the caster's critical probability.\nIn case of critical DMG, half of the total critical DMG increase options is applied.",
           "levelDetails": [
             {
@@ -1945,8 +2118,19 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (4 × Skill Level)",
+          "castDelay": "0.5 seconds",
+          "cooldown": "0.3 seconds",
+          "areaOfEffect": "3 x 3~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Sunset Blast ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sunset_Blast"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5467.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5467",
           "tree": {
@@ -1980,8 +2164,24 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (4 × Skill Level)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.3 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3~7 x 7"
               },
               {
                 "label": "AP Generated",
@@ -1995,45 +2195,36 @@ export const skyEmperorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "3 x 3 cells",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "3 x 3 cells",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "5 x 5 cells",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "5 x 5 cells",
                       "sp-cost": "58"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "7 x 7 cells",
                       "sp-cost": "62"
                     }
                   }
@@ -2042,7 +2233,6 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Sunset Blast",
@@ -2081,7 +2271,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2097,6 +2287,8 @@ export const skyEmperorData = {
           "target": "Instant Cast",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dawn_Break",
           "description": "Can be used during midnight or moonset.\nEmits moonlight, dealing melee P.DMG to enemies in the area around you, the target, and the surrounding area.\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.\nIf the current weather is under the effect of [Moonset], it gives more DMG.",
           "levelDetails": [
             {
@@ -2147,8 +2339,20 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "32 + (Skill Level × 4)",
+          "fixedCastTime": "0.5 seconds",
+          "variableCastTime": "1 seconds",
+          "cooldown": "0.3 seconds",
+          "areaOfEffect": "5 x 5~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Dawn Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dawn_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5470.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5470",
           "tree": {
@@ -2182,8 +2386,28 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "32 + (Skill Level × 4)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.3 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5~9 x 9"
               },
               {
                 "label": "AP Generated",
@@ -2197,45 +2421,36 @@ export const skyEmperorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "5 x 5 cells",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "5 x 5 cells",
                       "sp-cost": "58"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "7 x 7 cells",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "7 x 7 cells",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "9 x 9 cells",
                       "sp-cost": "64"
                     }
                   }
@@ -2244,7 +2459,6 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Dawn Break",
@@ -2302,7 +2516,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2318,6 +2532,8 @@ export const skyEmperorData = {
           "target": "Single Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Star_Cannon",
           "description": "Can only be used within the ranged of the user's Twinkling Galaxy.\nStops Twinkling Galaxy and changes it to the more powerful Star Cannon.\nDrops multiple shooting stars up to 2 stars once every 0.5 seconds for 2.5 seconds within range. Star Cannon's shooting star inflicts melee physical damage to the target and surrounding enemies within 5x5 cells.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.",
           "levelDetails": [
             {
@@ -2368,8 +2584,19 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level * 4)",
+          "fixedCastTime": "0.5 seconds",
+          "cooldown": "5 second",
+          "areaOfEffect": "13 x 13~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Star Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Star_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5473.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5473",
           "tree": {
@@ -2403,12 +2630,24 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level * 4)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "5 second"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
               },
               {
                 "label": "Area of Effect",
-                "value": "Lv 1: 13 x 13 cells / Lv 2: 13 x 13 cells / Lv 3: 11 x 11 cells / Lv 4: 11 x 11 cells / Lv 5: 9 x 9 cells"
+                "value": "13 x 13~9 x 9"
               },
               {
                 "label": "AP Generated",
@@ -2473,7 +2712,6 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Star Cannon",
@@ -2563,7 +2801,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2579,6 +2817,8 @@ export const skyEmperorData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "70",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/All_in_the_Sky",
           "description": "Harnesses the energy of all celestial bodies into your feet, dashes toward the target, and delivers a powerful spin kick that deals Melee Physical damage.\nIf the target is player. Drains its AP to 0, if the target is demihuman or demon race monster, the skill deals damage for 3 hits.\nDeals additional damage depends on user's base level and POW.\nCritical damage is applied based on the user's critical rate.\nThe effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -2669,8 +2909,19 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "fixedCastTime": "1 seconds",
+          "cooldown": "2 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " All in the Sky ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/All_in_the_Sky"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5474.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5474",
           "tree": {
@@ -2708,6 +2959,22 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -2793,7 +3060,6 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "All in the Sky",
@@ -2848,7 +3114,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2864,6 +3130,8 @@ export const skyEmperorData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Enchanting_Sky",
           "description": "Enters the state of celestial unity by drawing the celestial energy into the user's body.\nIn the state of celestial unity, the effect of either Sunrise, Noon, Sunset, Moonrise, Midnight or Moonset is canceled.\nNoon Blast, Sunset Blast, Midnight Kick and Dawn Break can be used freely with the maximum potency of the skills.",
           "levelDetails": [
             {
@@ -2954,8 +3222,19 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "fixedCastTime": "1 seconds",
+          "variableCastTime": "0.3 seconds",
+          "duration": "(Skill Level × 90) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Enchanting Sky ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enchanting_Sky"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5475.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5475",
           "tree": {
@@ -2983,6 +3262,18 @@ export const skyEmperorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.3 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Instant Cast"
               },
@@ -3000,78 +3291,78 @@ export const skyEmperorData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration : 90 sec",
+                      "duration": "90 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration : 180 sec",
+                      "duration": "180 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration : 270 sec",
+                      "duration": "270 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration : 360 sec",
+                      "duration": "360 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration : 450 sec",
+                      "duration": "450 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Duration : 540 sec",
+                      "duration": "540 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Duration : 630 sec",
+                      "duration": "630 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Duration : 720 sec",
+                      "duration": "720 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Duration : 810 sec",
+                      "duration": "810 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Duration : 900 sec",
+                      "duration": "900 seconds",
                       "sp-cost": "100"
                     }
                   }
@@ -3080,10 +3371,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3099,6 +3389,8 @@ export const skyEmperorData = {
           "target": "Instant Casting",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while under the effect of Celestial Unity.\nInstantly releases the power of blazing sun, inflicts melee physical damage to surrounding enemies around the user.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.\nHas a chance to trigger critical, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -3123,8 +3415,15 @@ export const skyEmperorData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sky Sun ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sky_Sun"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5502.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5502",
           "tree": {
@@ -3174,7 +3473,6 @@ export const skyEmperorData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Sky Sun",
@@ -3190,7 +3488,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3206,6 +3504,8 @@ export const skyEmperorData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while under the effect of Celestial Unity.\nEmits the moonlight to inflicts melee physical damage to the target and surrounding enemies around the target for 3 hits.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.",
           "levelDetails": [
             {
@@ -3234,8 +3534,15 @@ export const skyEmperorData = {
           "castDelay": "0.3 seconds",
           "cooldown": "1 second",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sky Moon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sky_Moon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5503.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5503",
           "tree": {
@@ -3301,7 +3608,6 @@ export const skyEmperorData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Sky Moon",
@@ -3317,7 +3623,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3333,6 +3639,8 @@ export const skyEmperorData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used while under the effect of Celestial Unity.\nInstantly dashes to the target and inflicts melee physical damage to the target and surrounding enemies around the target for 7 hits.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.",
           "levelDetails": [
             {
@@ -3357,8 +3665,15 @@ export const skyEmperorData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Star Light Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Star_Light_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5504.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5504",
           "tree": {
@@ -3408,7 +3723,6 @@ export const skyEmperorData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Star Light Kick",
@@ -3424,7 +3738,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3448,9 +3762,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar, Lunar, and Stellar Perception Lv. 3/Solar, Lunar, and Stellar Opposition Lv. 3",
           "group": "Support",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar%2C_Lunar%2C_and_Stellar_Record",
           "description": "Resets set effects.\nResets the maps and monsters selected for Solar, Lunar, and Stellar Perception/Opposition.\n[Level.1]: Resets the selected maps /Skill cooldown: 60 sec.",
           "levelDetails": [
             {
@@ -3485,8 +3801,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar, Lunar, and Stellar Record ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar%2C_and_Stellar_Record"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2588.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2588",
           "tree": {
@@ -3520,6 +3844,10 @@ export const skyEmperorData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "60"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -3532,8 +3860,8 @@ export const skyEmperorData = {
                 "value": "0 seconds"
               },
               {
-                "label": "Cooldown",
-                "value": "60 seconds"
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -3543,6 +3871,10 @@ export const skyEmperorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "cooldown",
+                    "label": "Cooldown"
                   },
                   {
                     "id": "effect",
@@ -3559,14 +3891,16 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Resets the selected monsters / Skill cooldown: 60 sec",
+                      "cooldown": "60 seconds",
+                      "effect": "Resets the selected monsters",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Resets everything / Skill cooldown: 60 sec",
+                      "cooldown": "60 seconds",
+                      "effect": "Resets everything",
                       "sp-cost": "60"
                     }
                   }
@@ -3575,10 +3909,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3594,6 +3927,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar%2C_Lunar%2C_and_Stellar_Purification",
           "description": "Decreases Solar, Lunar, and Stellar Shadow's penalty.\nHalves Solar, Lunar, and Stellar Shadow's vision penalty.",
           "levelDetails": [],
           "levelExtras": [
@@ -3607,8 +3942,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar, Lunar, and Stellar Purification ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar%2C_and_Stellar_Purification"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2589.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2589",
           "tree": {
@@ -3634,6 +3977,10 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "60"
               }
             ],
             "levelTables": [
@@ -3657,10 +4004,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3673,9 +4019,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar, Lunar, and Stellar Record Lv. 1",
           "group": "Support/Toggle",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar_Stance",
           "description": "A Stance skill.\nTake the stance to employ the power of the sun.\nThis skill activates the Solar skills and increases ATK for its duration.",
           "levelDetails": [
             {
@@ -3727,8 +4075,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2591.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2591",
           "tree": {
@@ -3754,6 +4110,14 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -3803,10 +4167,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3819,9 +4182,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar, Lunar, and Stellar Record Lv. 1",
           "group": "Support/Toggle",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lunar_Stance",
           "description": "A Stance skill.\nTake the stance to employ the power of the moon.\nThis skill activates the Lunar skills and increases Max HP for its duration.",
           "levelDetails": [
             {
@@ -3873,8 +4238,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Lunar Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lunar_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2575.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2575",
           "tree": {
@@ -3900,6 +4273,14 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -3907,16 +4288,16 @@ export const skyEmperorData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "mhp",
+                    "label": "MHP"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
                   {
                     "id": "data-1",
                     "label": "Data 1"
-                  },
-                  {
-                    "id": "mhp",
-                    "label": "Mhp"
                   }
                 ],
                 "rows": [
@@ -3949,10 +4330,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3965,9 +4345,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar, Lunar, and Stellar Record Lv. 1",
           "group": "Support/Toggle",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stellar_Stance",
           "description": "A Stance skill.\nTake the stance to employ the power of the stars.\nThis skill activates the Stellar skills and increases ASPD for its duration.",
           "levelDetails": [
             {
@@ -4019,8 +4401,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Stellar Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stellar_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2578.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2578",
           "tree": {
@@ -4046,6 +4436,14 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -4095,10 +4493,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4111,9 +4508,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar Stance Lv. 3/Lunar Stance Lv. 3/Stellar Stance Lv. 3",
           "group": "Support/Toggle",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Universal_Stance",
           "description": "A Stance skill.\nTake the stance to draw upon and wield the power of the universe.\nThis skill activates all your skills, including the Universal type, and increases all your stats for its duration.",
           "levelDetails": [
             {
@@ -4165,8 +4564,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Universal Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Universal_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2583.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2583",
           "tree": {
@@ -4204,6 +4611,14 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -4253,10 +4668,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4269,9 +4683,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar Stance Lv. 1",
           "group": "Attack",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Blaze_Kick",
           "description": "A Solar skill.\nDeliver a crimson, blazing kick to a target and surrounding enemies.\nThis skill additionally inflicts damage at 100% of Physical Attack in 3 x3 range around you.\nCan be chained with Solar Explosion.",
           "levelDetails": [
             {
@@ -4470,8 +4886,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castRange": "Melee",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Blaze Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blaze_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2593.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2593",
           "tree": {
@@ -4497,6 +4923,22 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -4600,10 +5042,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4616,9 +5057,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Lunar Stance Lv. 1",
           "group": "Attack/Special",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/New_Moon_Kick",
           "description": "A Lunar skill.\nEnter [New Moon] mode in which you can attack surrounding enemies while hiding from their detection.\n[New Moon] Mode: Enables you to move while invisible for 15 seconds.\nThis mode can't even be detected by Demon or Insect monsters, and persists through a Maximum of 7 incoming attacks.\nNew Moon Kick consumes 1 SP every second for its duration, and it's immediately canceled if you use a skill or become Detected.",
           "levelDetails": [
             {
@@ -4755,8 +5198,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (5 × Skill Level)",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " New Moon Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/New_Moon_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2579.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2579",
           "tree": {
@@ -4784,6 +5236,10 @@ export const skyEmperorData = {
                 "value": "7"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (5 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -4798,6 +5254,10 @@ export const skyEmperorData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -4890,10 +5350,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4906,9 +5365,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Stellar Stance Lv. 1",
           "group": "Attack/Special",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Flash_Kick",
           "description": "A Stellar skill.\nDeliver a Stellar energy-charged kick that leaves a Star Mark on the target.\nUp to 5 Star Marks can be left at the same time.",
           "levelDetails": [
             {
@@ -5041,8 +5502,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 - (5 × Skill Level)",
+          "castDelay": "?",
+          "translations": {
+            "pt-BR": {
+              "name": " Flash Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flash_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2580.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2580",
           "tree": {
@@ -5068,6 +5538,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50 - (5 × Skill Level)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "?"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -5160,10 +5642,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5176,9 +5657,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Universal Stance Lv. 1",
           "group": "Attack/Special",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Nova_Explosion",
           "description": "A Universal skill.\nCan be used in WoE and PvP.\nInflicts fixed Melee Neutral damage that can't be decreased by any effects.\nThis skill requires all your Universal energy and disables other skills for 2 seconds after its use.",
           "levelDetails": [
             {
@@ -5333,8 +5816,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "55 + (Skill Level x 5)",
+          "duration": "60 seconds",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Nova Explosion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nova_Explosion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2582.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2582",
           "tree": {
@@ -5362,6 +5855,10 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "55 + (Skill Level x 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -5374,8 +5871,16 @@ export const skyEmperorData = {
                 "value": "1 second"
               },
               {
-                "label": "Cooldown",
-                "value": "20 seconds"
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -5387,8 +5892,8 @@ export const skyEmperorData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "cooldown",
+                    "label": "Cooldown"
                   },
                   {
                     "id": "atk",
@@ -5411,7 +5916,7 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Skill cooldown: 20 sec",
+                      "cooldown": "20 seconds",
                       "sp-cost": "60",
                       "range": "3 cells",
                       "atk": "300",
@@ -5422,7 +5927,7 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Skill cooldown: 20 sec",
+                      "cooldown": "20 seconds",
                       "sp-cost": "65",
                       "range": "3 cells",
                       "atk": "400",
@@ -5433,7 +5938,7 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Skill cooldown: 20 sec",
+                      "cooldown": "20 seconds",
                       "sp-cost": "70",
                       "range": "3 cells",
                       "atk": "500",
@@ -5444,7 +5949,7 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Skill cooldown: 20 sec",
+                      "cooldown": "20 seconds",
                       "sp-cost": "75",
                       "range": "3 cells",
                       "atk": "600",
@@ -5455,7 +5960,7 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Skill cooldown: 20 sec",
+                      "cooldown": "20 seconds",
                       "sp-cost": "80",
                       "range": "3 cells",
                       "atk": "700",
@@ -5468,10 +5973,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5487,6 +5991,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gravity_Control",
           "description": "A Universal skill.\nCan be used in WoE and PvP.\nControls gravity, lifting enemies in the air.\nLifted enemies can't attack or move, and receive Neutral falling damage after this skill's effect.\nThe falling damage is affected by your Physical ATK and the target's carrying weight.\nUse this skill on the lifted targets to cancel its effect.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -5522,8 +6028,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80",
+          "translations": {
+            "pt-BR": {
+              "name": " Gravity Control ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gravity_Control"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2585.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2585",
           "tree": {
@@ -5549,6 +6063,10 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "80"
               },
               {
                 "label": "Fixed Cast Time",
@@ -5598,10 +6116,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5614,9 +6131,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Blaze Kick Lv. 7",
           "group": "Attack",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar_Explosion",
           "description": "A Solar skill.\nCan be chained with Blaze Kick.\nExplode your inner Solar energy, attacking surrounding enemies.\nThis skill's ATK increases, depending on your Base Level.",
           "levelDetails": [
             {
@@ -5744,8 +6263,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "31 + (3 × Skill Level)",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar Explosion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar_Explosion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2592.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2592",
           "tree": {
@@ -5773,6 +6301,10 @@ export const skyEmperorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "31 + (3 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5787,6 +6319,10 @@ export const skyEmperorData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -5889,10 +6425,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5905,9 +6440,11 @@ export const skyEmperorData = {
           "prerequisiteText": "New Moon Kick Lv. 7",
           "group": "Attack/Special",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Moon_Kick",
           "description": "A Lunar skill.\nRequires the [New Moon] mode.\nImmediately cancels your [New Moon] mode and attacks surrounding enemies with a chance of Blinding them.\nThis skill's ATK increases, depending on your Base Level.",
           "levelDetails": [
             {
@@ -6101,8 +6638,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (5 × Skill Level)",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Moon Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Moon_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2576.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2576",
           "tree": {
@@ -6130,6 +6676,10 @@ export const skyEmperorData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (5 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6144,6 +6694,10 @@ export const skyEmperorData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -6268,10 +6822,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6287,6 +6840,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Falling_Stars",
           "description": "A stellar skill.\nWhen dealing a basic physical attack, adds a chance to drop the falling stars to the targets marked by Stellar Mark in 5 X 5 around the caster. Stellar Mark inflicts damage on the marked target and surrounding enemeies in 3 X 3.\nDamage increases as base level increases.",
           "levelDetails": [
             {
@@ -6447,8 +7002,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (5 × Skill Level)",
+          "translations": {
+            "pt-BR": {
+              "name": " Falling Stars ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Falling_Stars"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2584.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2584",
           "tree": {
@@ -6474,6 +7037,10 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "25 + (5 × Skill Level)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -6589,10 +7156,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6605,9 +7171,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Universal Stance Lv. 3 and Nova Explosion Lv. 5",
           "group": "Attack/Special",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Star_Emperor's_Descent",
           "description": "A Universal skill.\nCan be used in WoE and PvP.\nThe Star Emperor has learned the laws of the universe. Enables you to discharge energy, attacking and Silencing surrounding enemies.",
           "levelDetails": [
             {
@@ -6787,8 +7355,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "65 + (Skill Level x 5)",
+          "duration": "60 seconds",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Star Emperor's Descent ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Star_Emperor's_Descent"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2581.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2581",
           "tree": {
@@ -6822,6 +7400,10 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "65 + (Skill Level x 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -6836,6 +7418,14 @@ export const skyEmperorData = {
               {
                 "label": "Cooldown",
                 "value": "10 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -6937,10 +7527,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6953,9 +7542,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar Explosion Lv. 3",
           "group": "Support",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar_Luminance",
           "description": "A Solar skill.\nGathers sunlight, intensifying the power of Solar Explosion.\nThis effect doesn't stack with Lunar or Stellar Luminance.",
           "levelDetails": [
             {
@@ -7056,8 +7647,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar Luminance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar_Luminance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2590.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2590",
           "tree": {
@@ -7083,6 +7682,14 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -7094,8 +7701,8 @@ export const skyEmperorData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -7114,8 +7721,8 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "20 seconds",
                       "power-bonus": "+5%",
-                      "effect": "Duration: 20 sec",
                       "sp-cost": "40",
                       "data-1": "20000",
                       "data-2": "5"
@@ -7124,8 +7731,8 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "30 seconds",
                       "power-bonus": "+10%",
-                      "effect": "Duration: 30 sec",
                       "sp-cost": "40",
                       "data-1": "30000",
                       "data-2": "10"
@@ -7134,8 +7741,8 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "40 seconds",
                       "power-bonus": "+15%",
-                      "effect": "Duration: 40 sec",
                       "sp-cost": "40",
                       "data-1": "40000",
                       "data-2": "15"
@@ -7144,8 +7751,8 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "50 seconds",
                       "power-bonus": "+20%",
-                      "effect": "Duration: 50 sec",
                       "sp-cost": "40",
                       "data-1": "50000",
                       "data-2": "20"
@@ -7154,8 +7761,8 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "60 seconds",
                       "power-bonus": "+25%",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "25"
@@ -7166,10 +7773,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7182,9 +7788,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Full Moon Kick Lv. 3",
           "group": "Support",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lunar_Luminance",
           "description": "A Lunar skill.\nGathers moonlight, intensifying the power of Full Moon Kick.\nThis effect doesn't stack with Solar or Stellar Luminance.",
           "levelDetails": [
             {
@@ -7285,8 +7893,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "translations": {
+            "pt-BR": {
+              "name": " Lunar Luminance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lunar_Luminance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2574.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2574",
           "tree": {
@@ -7312,6 +7928,14 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -7323,8 +7947,8 @@ export const skyEmperorData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -7343,8 +7967,8 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "20 seconds",
                       "power-bonus": "+5%",
-                      "effect": "Duration: 20 sec",
                       "sp-cost": "40",
                       "data-1": "20000",
                       "data-2": "5"
@@ -7353,8 +7977,8 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "30 seconds",
                       "power-bonus": "+10%",
-                      "effect": "Duration: 30 sec",
                       "sp-cost": "40",
                       "data-1": "30000",
                       "data-2": "10"
@@ -7363,8 +7987,8 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "40 seconds",
                       "power-bonus": "+15%",
-                      "effect": "Duration: 40 sec",
                       "sp-cost": "40",
                       "data-1": "40000",
                       "data-2": "15"
@@ -7373,8 +7997,8 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "50 seconds",
                       "power-bonus": "+20%",
-                      "effect": "Duration: 50 sec",
                       "sp-cost": "40",
                       "data-1": "50000",
                       "data-2": "20"
@@ -7383,8 +8007,8 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "60 seconds",
                       "power-bonus": "+25%",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "25"
@@ -7395,10 +8019,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7411,9 +8034,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Falling Stars Lv. 3",
           "group": "Support",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stellar_Luminance",
           "description": "A Stellar skill.\nGathers starlight, intensifying the power of Falling Stars.\nThis effect doesn't stack with Solar or Lunar Luminance.",
           "levelDetails": [
             {
@@ -7514,8 +8139,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "translations": {
+            "pt-BR": {
+              "name": " Stellar Luminance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stellar_Luminance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2577.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2577",
           "tree": {
@@ -7541,6 +8174,14 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -7552,8 +8193,8 @@ export const skyEmperorData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -7572,8 +8213,8 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "20 seconds",
                       "power-bonus": "+5%",
-                      "effect": "Duration: 20 sec",
                       "sp-cost": "40",
                       "data-1": "20000",
                       "data-2": "5"
@@ -7582,8 +8223,8 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "30 seconds",
                       "power-bonus": "+10%",
-                      "effect": "Duration: 30 sec",
                       "sp-cost": "40",
                       "data-1": "30000",
                       "data-2": "10"
@@ -7592,8 +8233,8 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "40 seconds",
                       "power-bonus": "+15%",
-                      "effect": "Duration: 40 sec",
                       "sp-cost": "40",
                       "data-1": "40000",
                       "data-2": "15"
@@ -7602,8 +8243,8 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "50 seconds",
                       "power-bonus": "+20%",
-                      "effect": "Duration: 50 sec",
                       "sp-cost": "40",
                       "data-1": "50000",
                       "data-2": "20"
@@ -7612,8 +8253,8 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "60 seconds",
                       "power-bonus": "+25%",
-                      "effect": "Duration: 60 sec",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "25"
@@ -7624,10 +8265,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7640,9 +8280,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar, Lunar, and Stellar Record Lv. 3/Star Emperor's Descent Lv. 3",
           "group": "Attack/Special",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Star_Creator's_Book",
           "description": "A Universal skill.\nCan be used in WoE and PvP.\nShape the power of the universe into an imaginary star surrounded by a high-level gravitational field.\nThis gravitational field decreases MSPD by 90% for all targets within range, and attacks enemies at regular intervals.",
           "levelDetails": [
             {
@@ -7797,8 +8439,19 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 + (Skill Level x 5)",
+          "duration": "5 + (Skill Level x 1) seconds",
+          "castRange": "7 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Star Creator's Book ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Star_Creator's_Book"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2587.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2587",
           "tree": {
@@ -7832,6 +8485,10 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45 + (Skill Level x 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -7846,6 +8503,22 @@ export const skyEmperorData = {
               {
                 "label": "Cooldown",
                 "value": "15 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "5 + (Skill Level x 1) seconds"
               }
             ],
             "levelTables": [
@@ -7938,10 +8611,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7954,9 +8626,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar, Lunar, and Stellar Record Lv. 3/Star Emperor's Descent Lv. 3",
           "group": "Buff/Special",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Book_of_Dimensions",
           "description": "A Universal skill.\nCan be used in WoE and PvP.\nTemporarily lends you the power of a different dimension, helping you use the power of the universe to the fullest.\nNova Explosion and Star Emperor's Descent create the following effects for this skill's duration.\nNova Explosion: Waives cooldown and skill use restriction for 5 sec.\nStar Emperor's Descent: Creates 2 defensive orbs by your Max SP for 30 seconds.",
           "levelDetails": [
             {
@@ -8035,8 +8709,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "cooldown": "180 - (Skill Level x 30) seconds",
+          "duration": "60 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Book of Dimensions ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Book_of_Dimensions"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2586.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2586",
           "tree": {
@@ -8070,6 +8754,10 @@ export const skyEmperorData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8080,6 +8768,14 @@ export const skyEmperorData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -8089,6 +8785,10 @@ export const skyEmperorData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "cooldown",
+                    "label": "Cooldown"
                   },
                   {
                     "id": "effect",
@@ -8103,7 +8803,8 @@ export const skyEmperorData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 60 sec. / Skill cooldown: 150 sec",
+                      "cooldown": "150 seconds",
+                      "effect": "Duration: 60 sec.",
                       "sp-cost": "40",
                       "data-1": "60000"
                     }
@@ -8111,7 +8812,8 @@ export const skyEmperorData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 60 sec. / Skill cooldown: 120 sec",
+                      "cooldown": "120 seconds",
+                      "effect": "Duration: 60 sec.",
                       "sp-cost": "40",
                       "data-1": "60000"
                     }
@@ -8119,7 +8821,8 @@ export const skyEmperorData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 60 sec. / Skill cooldown: 90 sec",
+                      "cooldown": "90 seconds",
+                      "effect": "Duration: 60 sec.",
                       "sp-cost": "40",
                       "data-1": "60000"
                     }
@@ -8127,7 +8830,8 @@ export const skyEmperorData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 60 sec. / Skill cooldown: 60 sec",
+                      "cooldown": "60 seconds",
+                      "effect": "Duration: 60 sec.",
                       "sp-cost": "40",
                       "data-1": "60000"
                     }
@@ -8135,7 +8839,8 @@ export const skyEmperorData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 60 sec. / Skill cooldown: 30 sec",
+                      "cooldown": "30 seconds",
+                      "effect": "Duration: 60 sec.",
                       "sp-cost": "40",
                       "data-1": "60000"
                     }
@@ -8145,10 +8850,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8175,6 +8879,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar%2C_Lunar_and_Stellar_Perception",
           "description": "Designate the current map with one\nof the cosmic alignments, Solar, Lunar or\nStellar, for the use of certain skills. It is\nimpossible to change a map's cosmic alignment\nonce it is designated. Using this skill on a\ncosmically aligned map will display a list of\nmap designations.\nOnly 1 map may be designated for each cosmic\nalignment.",
           "levelDetails": [
             {
@@ -8209,8 +8915,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar, Lunar and Stellar Perception ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Perception"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/427.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/427",
           "tree": {
@@ -8229,6 +8943,10 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "100"
               }
             ],
             "levelTables": [
@@ -8271,10 +8989,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8287,9 +9004,11 @@ export const skyEmperorData = {
           "prerequisiteText": "basic skill",
           "group": "Designation",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar%2C_Lunar_and_Stellar_Opposition",
           "description": "Designate the targeted monster with\none of the cosmic alignments, Solar, Lunar or\nStellar, for the use of certain skills. It is\nimpossible to change a monster's cosmic\nalignment once it is designated. Using this\nskill on a cosmically aligned monster will\ndisplay a list of monster designations.\nOnly 1 monster can be designated for each\ncosmic alignment.",
           "levelDetails": [
             {
@@ -8324,8 +9043,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar, Lunar and Stellar Opposition ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Opposition"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/434.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/434",
           "tree": {
@@ -8344,6 +9071,14 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -8386,10 +9121,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8405,6 +9139,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar%2C_Lunar_and_Stellar_Shadow",
           "description": "This skill's effects will only\nactivate for Job Level 50 characters. Increasing\nthis skills' level will permanently increase\nAttack Speed and reduce character's vision,\nsimilarly to the Blind effect. increase Attack\nSpeed; at Job Level 50, this skill will\npermanently reduce sight, similarly to the\nBlind effect.",
           "levelDetails": [
             {
@@ -8495,8 +9231,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar, Lunar and Stellar Shadow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Shadow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/441.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/441",
           "tree": {
@@ -8606,10 +9349,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8625,6 +9367,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar%2C_Lunar_and_Stellar_Courier",
           "description": "Increase Maximum Weight Limit when\nin Solar, Lunar and Stellar areas. The effect\nof this skill is canceled when\nits user leaves the Solar, Lunar or Stellar\ndesignated area.",
           "levelDetails": [
             {
@@ -8715,8 +9459,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar, Lunar and Stellar Courier ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Courier"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/443.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/443",
           "tree": {
@@ -8826,10 +9577,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8842,9 +9592,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar,",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar_Heat",
           "description": "This skill is only enabled in Solar\nareas. Inflict damage, drain 2 SP and push back\nmonsters around the caster. On other players,\nthis skill will only have the push back effect\nand continuously drain SP.\nSP Consumption & Duration By Level",
           "levelDetails": [
             {
@@ -8879,8 +9631,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "duration": "10 ~ 60 seconds; Until SP reaches zero",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar Heat ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar_Heat"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/428.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/428",
           "tree": {
@@ -8906,6 +9668,22 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "10 ~ 60 seconds; Until SP reaches zero"
               }
             ],
             "levelTables": [
@@ -8948,10 +9726,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8964,9 +9741,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar, Lunar and",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar_Protection",
           "description": "This skill is only enabled on Solar\n(even numbered) daysin a Solar aligned map.\nReduces damage from enemies by a set amount\ncalculated by this formula:\n(Base Level + DEX + LUK)/2\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -9009,8 +9788,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 − (Skill Level × 10)",
+          "duration": "(Skill Level × 80) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/431.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/431",
           "tree": {
@@ -9036,6 +9824,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "4"
+              },
+              {
+                "label": "SP Cost",
+                "value": "80 − (Skill Level × 10)"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 80) seconds"
               }
             ],
             "levelTables": [
@@ -9085,10 +9885,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9104,6 +9903,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar_Wrath",
           "description": "Increase Attack Power against Solar aligned monsters.\nThe amplification amount is affected by the user's Base Level, DEX, LUK, and skill level.\nHowever, the amplification cannot exceed the maximum limit determined by the skill level.",
           "levelDetails": [
             {
@@ -9138,8 +9939,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar Wrath ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar_Wrath"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/435.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/435",
           "tree": {
@@ -9207,10 +10015,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9226,6 +10033,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar_Blessings",
           "description": "Increase the EXP reward from\ndefeating Solar aligned monsters on Solar\n(even numbered) days.",
           "levelDetails": [
             {
@@ -9276,8 +10085,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar Blessings ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar_Blessings"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/438.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/438",
           "tree": {
@@ -9365,10 +10181,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9384,6 +10199,8 @@ export const skyEmperorData = {
           "target": "Monk Class Party Member",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Increase a Monk class character's\nchance of casting Raging Trifecta when using\nCounter Kick, while Monk's Raging Thrust will\nincrease the Taekwon Master's chance of casting\nCounter Kick.",
           "levelDetails": [
             {
@@ -9418,8 +10235,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar, Lunar and Stellar Team-Up ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Team-Up"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/442.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/442",
           "tree": {
@@ -9484,10 +10308,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9500,9 +10323,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar, Lunar, and",
           "group": "Awakening",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Solar%2C_Lunar_and_Stellar_Union",
           "description": "Awaken the caster's hidden\npotential for 10 minutes while in a spirit\nstatus, endowing the caster with attacks that\nhave 100% Accuracy and will ignore enemy's\nDefense, and increased Movement Speed. However,\n2% of caster's HP will be drained with each\nattack on monsters and 8% will be drained with\neach attack on other players. In this status,\nattacking when the caster's remaining HP is\nless that 20% of MaxHP will instantly kill the\ncaster. Caster's remaining HP is less that\n20% of MaxHP instantly kill the caster.",
           "levelDetails": [],
           "levelExtras": [
@@ -9516,8 +10341,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "duration": "10 minutes; Until recast",
+          "translations": {
+            "pt-BR": {
+              "name": " Solar, Lunar and Stellar Union ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Union"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/444.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/444",
           "tree": {
@@ -9543,6 +10377,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "10 minutes; Until recast"
               }
             ],
             "levelTables": [
@@ -9566,10 +10412,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9582,9 +10427,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar,",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lunar_Heat",
           "description": "This skill is only enabled in Lunar\nareas. Inflict damage, drain 2 SP and push back\nmonsters around the caster. On other players,\nthis skill will only have the push back effect\nand continuously drain SP.\nSP Consumption & Cast Time By Level",
           "levelDetails": [
             {
@@ -9619,8 +10466,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "duration": "10 ~ 60 seconds; Until SP reaches zero",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Lunar Heat ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lunar_Heat"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/429.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/429",
           "tree": {
@@ -9646,6 +10503,22 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "10 ~ 60 seconds; Until SP reaches zero"
               }
             ],
             "levelTables": [
@@ -9688,10 +10561,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9704,9 +10576,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar, Lunar and",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lunar_Protection",
           "description": "This skill is only enabled on Lunar\n(odd numbered) daysin a Lunar aligned map.\nIncreases Flee Rate by a set amount that can be\ncalculated by this formula:\n(Base Level + DEX + LUK)/10%\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -9749,8 +10623,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 − (Skill Level × 10)",
+          "duration": "(Skill Level × 80) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Lunar Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lunar_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/432.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/432",
           "tree": {
@@ -9776,6 +10659,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "4"
+              },
+              {
+                "label": "SP Cost",
+                "value": "80 − (Skill Level × 10)"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 80) seconds"
               }
             ],
             "levelTables": [
@@ -9825,10 +10720,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9844,6 +10738,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lunar_Wrath",
           "description": "Increase Attack Power against Lunar aligned monsters.\nThe amplification amount is affected by the user's Base Level, DEX, LUK, and skill level.\nHowever, the amplification cannot exceed the maximum limit determined by the skill level.",
           "levelDetails": [
             {
@@ -9878,8 +10774,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Lunar Wrath ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lunar_Wrath"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/436.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/436",
           "tree": {
@@ -9947,10 +10850,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9966,6 +10868,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lunar_Blessings",
           "description": "Increase the EXP reward from\ndefeating Lunar aligned monsters on Lunar\n(odd numbered) days.",
           "levelDetails": [
             {
@@ -10016,8 +10920,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Lunar Blessings ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lunar_Blessings"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/439.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/439",
           "tree": {
@@ -10105,10 +11016,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10121,9 +11031,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar,",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stellar_Heat",
           "description": "This skill is only enabled in\nStellar areas. Inflict damage, drain 2 SP and\npush back monsters around the caster. On other\nplayers, this skill will only have the push\nback effect and continuously drain SP.\nSP Consumption & Cast Time By Level",
           "levelDetails": [
             {
@@ -10158,8 +11070,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "10 ~ 60 seconds; Until SP reaches 0",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Stellar Heat ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stellar_Heat"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/430.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/430",
           "tree": {
@@ -10185,6 +11107,22 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "10 ~ 60 seconds; Until SP reaches 0"
               }
             ],
             "levelTables": [
@@ -10227,10 +11165,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10243,9 +11180,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Solar, Lunar and",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stellar_Protection",
           "description": "This skill is only enabled on\nStellar (multiple of five) daysin a\nStellar aligned map.\nIncreases Attack Speed by a set amount that can\nbe calculated by this formula:\n(Base Level + DEX + LUK)/10%\nSP Consumption & Duration by Level",
           "levelDetails": [
             {
@@ -10288,8 +11227,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 − (Skill Level × 10)",
+          "duration": "(Skill Level × 80) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Stellar Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stellar_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/433.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/433",
           "tree": {
@@ -10315,6 +11263,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "4"
+              },
+              {
+                "label": "SP Cost",
+                "value": "80 − (Skill Level × 10)"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 80) seconds"
               }
             ],
             "levelTables": [
@@ -10364,10 +11324,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10383,6 +11342,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stellar_Wrath",
           "description": "Increase Attack Power against Lunar aligned monsters.\nThe amplification amount is affected by the user's Base Level, STR, DEX, LUK, and skill level.\nHowever, the amplification cannot exceed the maximum limit determined by the skill level.",
           "levelDetails": [
             {
@@ -10417,8 +11378,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Stellar Wrath ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stellar_Wrath"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/437.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/437",
           "tree": {
@@ -10486,10 +11454,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10505,6 +11472,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stellar_Blessings",
           "description": "Increase the EXP reward from\ndefeating Stellar aligned monsters on Stellar\n(multiple of five) days.",
           "levelDetails": [
             {
@@ -10555,8 +11524,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Stellar Blessings ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stellar_Blessings"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/440.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/440",
           "tree": {
@@ -10644,10 +11620,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10674,6 +11649,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -10752,8 +11729,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -10855,10 +11839,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10871,9 +11854,11 @@ export const skyEmperorData = {
           "prerequisiteText": "basic skill",
           "group": "Movement",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sprint",
           "description": "Enable the caster to run with\nincredible speed. At levels 7 and above, this\nskill endows the caster with the Spurt status,\nwhich will temporarily increase STR for 150\nseconds, if the caster stops running and is\nbarehanded. Spurt status is canceled if the\ncaster equips a weapon. Each level of the\nSprint skill increases its user's barehanded\ndamage by +10.",
           "levelDetails": [
             {
@@ -10964,8 +11949,20 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "110 − (Skill Level × 10)",
+          "fixedCastTime": "3~0 seconds",
+          "variableCastTime": "3~0 seconds",
+          "castDelay": "0.3 seconds",
+          "duration": "150 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Sprint ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sprint"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/411.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/411",
           "tree": {
@@ -10984,6 +11981,30 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "110 − (Skill Level × 10)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "3~0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "3~0 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "150 seconds"
               }
             ],
             "levelTables": [
@@ -11075,10 +12096,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11091,9 +12111,11 @@ export const skyEmperorData = {
           "prerequisiteText": "basic skill",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tornado_Kick",
           "description": "Caster must be in Tornado Stanceto\nperform this skill which will attack all enemies\nwithin a 5*5 cell area around the caster.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -11160,8 +12182,19 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 − (Skill Level × 2)",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Tornado Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tornado_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/413.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/413",
           "tree": {
@@ -11180,6 +12213,26 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "16 − (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -11239,10 +12292,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11255,9 +12307,11 @@ export const skyEmperorData = {
           "prerequisiteText": "basic skill",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Heel_Drop",
           "description": "Caster must be in Heel Drop Stanceto\nperform this skill which will inflict damage\nand cause the Stun effect for 3 seconds on the\ntargeted enemy.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -11324,8 +12378,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 − (Skill Level × 2)",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Heel Drop ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Heel_Drop"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/415.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/415",
           "tree": {
@@ -11344,6 +12408,22 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "16 − (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -11403,10 +12483,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11419,9 +12498,11 @@ export const skyEmperorData = {
           "prerequisiteText": "basic skill",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Roundhouse",
           "description": "Caster must be in Roundhouse Stanceto\nperform this skill which will damage its target\nand and push back enemies around the target.\nEnemies that are pushed do not receive any\ndamage.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -11488,8 +12569,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 − (Skill Level × 2)",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Roundhouse ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Roundhouse"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/417.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/417",
           "tree": {
@@ -11508,6 +12599,22 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "16 − (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -11567,10 +12674,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11583,9 +12689,11 @@ export const skyEmperorData = {
           "prerequisiteText": "basic skill",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Counter_Kick",
           "description": "Caster must be in Counter Kick\nStance to perform this skill which will always\nhit its target.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -11652,8 +12760,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 − (Skill Level × 2)",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Counter Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Counter_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/419.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/419",
           "tree": {
@@ -11672,6 +12790,22 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "16 − (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -11731,10 +12865,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11747,9 +12880,11 @@ export const skyEmperorData = {
           "prerequisiteText": "basic skill",
           "group": "Aggressive",
           "type": "",
-          "target": "",
+          "target": "Enemy, Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Flying_Kick",
           "description": "Attack a distant enemy with a kick\nthat instantly close the gap between the target\nand the player. When in Tumbling status, the\ncaster's Base Level affects the amount of\ninflicted damage. Flying Kick will have\nincreased damage affected by Base Level during\nSprint status. If Spurt and Sprint statuses are\nboth active, Flying Kick will inflict enhanced\ndamage. Flying Kick will also cancel most\npositive statuses on the target, which include\nSpirit statuses endowed by Soul Linkers, One\nHand Quicken, Kaahi, Kaite, and the Berserk\nPotion effect. However, Stalkers can protect\nthemselves from this positive status removal\neffect with their Preserve skill.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -11816,8 +12951,18 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 − (Skill Level × 10)",
+          "castDelay": "ASPD",
+          "castRange": "10 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Flying Kick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flying_Kick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/421.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/421",
           "tree": {
@@ -11836,6 +12981,22 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "80 − (Skill Level × 10)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy, Self"
               }
             ],
             "levelTables": [
@@ -11895,10 +13056,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11914,6 +13074,8 @@ export const skyEmperorData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -11927,8 +13089,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -11947,6 +13118,14 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -11974,10 +13153,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11993,6 +13171,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Leap",
           "description": "Leap to a targeted cell within the\nskill's range. So long as the targeted cell is\nnot dead or inaccesibble, the caster can leap\nover walls and obstacles. Leap cannot be used\nin areas where Fly Wings are disabled, except\nfor WoE (Guild War) maps.\nCast Time & Skill Range by Level",
           "levelDetails": [
             {
@@ -12043,8 +13223,19 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "fixedCastTime": "[3 − (Skill Level / 2)] seconds",
+          "variableCastTime": "[3 − (Skill Level / 2)] seconds",
+          "castRange": "(Skill Level × 2) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Leap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Leap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/426.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/426",
           "tree": {
@@ -12063,6 +13254,22 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[3 − (Skill Level / 2)] seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[3 − (Skill Level / 2)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Skill Level × 2) cells"
               }
             ],
             "levelTables": [
@@ -12119,10 +13326,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12135,9 +13341,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Tornado Kick 1",
           "group": "Stance",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tornado_Stance",
           "description": "Enable a 15% chance of automatically\nentering Tornado Stance when the caster\nsuccessfully hits a target.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -12156,8 +13364,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Until reuse",
+          "translations": {
+            "pt-BR": {
+              "name": " Tornado Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tornado_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/412.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/412",
           "tree": {
@@ -12183,6 +13400,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Until reuse"
               }
             ],
             "levelTables": [
@@ -12211,10 +13440,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12227,9 +13455,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Heel Drop 1",
           "group": "Stance",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Heel_Drop_Stance",
           "description": "Enable a 15% chance of automatically\nentering Heel Drop Stance when the caster\nsuccessfully hits a target.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -12248,8 +13478,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Until reuse",
+          "translations": {
+            "pt-BR": {
+              "name": " Heel Drop Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Heel_Drop_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/414.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/414",
           "tree": {
@@ -12275,6 +13514,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Until reuse"
               }
             ],
             "levelTables": [
@@ -12303,10 +13554,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12319,9 +13569,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Roundhouse 1",
           "group": "Stance",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Roundhouse_Stance",
           "description": "Enable a 15% chance of automatically\nentering Roundhouse Stance when the caster\nsuccessfully hits a target.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -12340,8 +13592,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Until reuse",
+          "translations": {
+            "pt-BR": {
+              "name": " Roundhouse Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Roundhouse_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/416.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/416",
           "tree": {
@@ -12367,6 +13628,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Until reuse"
               }
             ],
             "levelTables": [
@@ -12395,10 +13668,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12411,9 +13683,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Counter Kick 1",
           "group": "Stance",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Counter_Kick_Stance",
           "description": "Enable a 20% chance of automatically\nentering Counter Kick Stancewhen the caster\nsuccessfully hits a target.\nSoul Linkers cannot perform this skill.",
           "levelDetails": [
             {
@@ -12432,8 +13706,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Until reuse",
+          "translations": {
+            "pt-BR": {
+              "name": " Counter Kick Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Counter_Kick_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/418.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/418",
           "tree": {
@@ -12459,6 +13742,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Until reuse"
               }
             ],
             "levelTables": [
@@ -12487,10 +13782,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12503,9 +13797,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Flying Kick 7",
           "group": "Stance",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tumbling",
           "description": "Enable a 20% chance of blocking\nlong ranged physical attacks. When caster is in\nSpurt status (after performing Lv 7 Sprint or\nhigher), Tumbling will also block other kinds\nof attacks.",
           "levelDetails": [
             {
@@ -12524,8 +13820,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "translations": {
+            "pt-BR": {
+              "name": " Tumbling ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tumbling"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/420.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/420",
           "tree": {
@@ -12551,6 +13855,14 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -12579,10 +13891,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12595,9 +13906,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -12611,8 +13924,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -12631,6 +13953,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -12654,10 +13988,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12673,6 +14006,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Peaceful_Break",
           "description": "When two or more Taekwon Class\ncharacters sit next to each other, HP will be\nrestored for both characters. This HP\nrestoration is affected by VIT and enhanced by\nan additional 30 HP with the /doridori command.",
           "levelDetails": [
             {
@@ -12763,8 +14098,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Peaceful Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Peaceful_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/422.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/422",
           "tree": {
@@ -12874,10 +14216,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12893,6 +14234,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Happy_Break",
           "description": "When two or more Taekwon Class\ncharacters sit next to each other, SP will be\nrestored for both characters. This SP\nrestoration is affected by MaxSP and enhanced\nby an additional 3 SP with the /doridori command.\nUsing the /doridori command while in Happy Break\nstatus will make it last for 30 minutes. During\nthis status, the caster will have a low chance\nof using the Earth Spike spell scroll, with a\n10% chance at Skill Level 1, and a 1% chance at\nSkill Level 10. Using the Earth Spike scroll\nduring this status will consume 10 SP.",
           "levelDetails": [
             {
@@ -12983,8 +14326,16 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "duration": "30 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Happy Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Happy_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/423.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/423",
           "tree": {
@@ -13003,6 +14354,10 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "Duration",
+                "value": "30 minutes"
               }
             ],
             "levelTables": [
@@ -13094,10 +14449,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13113,6 +14467,8 @@ export const skyEmperorData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kihop",
           "description": "Increases your physical attack power.",
           "levelDetails": [
             {
@@ -13246,7 +14602,6 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -13262,9 +14617,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Peaceful Break 5,",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mild_Wind",
           "description": "Summon a wind that will enchant\nthe caster's attacks for 5 minutes with an\nelemental property based on the level of the\ncast skill.\nSP Consumption and Property by Skill Level",
           "levelDetails": [
             {
@@ -13331,8 +14688,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20/50",
+          "duration": "5 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Mild Wind ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mild_Wind"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/425.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/425",
           "tree": {
@@ -13370,6 +14736,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "7"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20/50"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "5 minutes"
               }
             ],
             "levelTables": [
@@ -13440,10 +14818,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13456,9 +14833,11 @@ export const skyEmperorData = {
           "prerequisiteText": "Kihop 5",
           "group": "Ranking (/taekwon)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Taekwon_Mission",
           "description": "This skill is disabled once a\ncharacter changes to an advanced job, such as\nTaekwon Master or Soul Linker. Activating this\nskill will display the current monster target\nfor the Taekwon Mission. Taekwon Boys and Girls\nwill earn 1 Taekwon Mission Point by defeating\n100 target monsters. Fulfilling the 100 target\nmonster quota will begin a new Taekwon Mission\nwith a randomly chosen target. Mini Boss and\nBoss monsters will never be chosen as targets.\nTaekwon characters that achieve the Top 10\nTaekwon Ranking by earning the most Taekwon\nMission Points can string combos with the\nTornado Kick, Roundhouse, Heel Drop, and Counter\nKick skills. Taekwon Rankers at Base Level 90\nand above with have tripled MaxHP and SP, and\nwill be able to use all Taekwon Boy and Girl\nskills.",
           "levelDetails": [],
           "levelExtras": [
@@ -13472,8 +14851,17 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "fixedCastTime": "1 second",
+          "translations": {
+            "pt-BR": {
+              "name": " Taekwon Mission ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Taekwon_Mission"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/493.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/493",
           "tree": {
@@ -13499,6 +14887,18 @@ export const skyEmperorData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -13522,10 +14922,9 @@ export const skyEmperorData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13545,6 +14944,8 @@ export const skyEmperorData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/War_Book_Mastery",
       "description": "Improves one's combat ability through the art of war.\nWhen equipped with a book-type weapon, P.ATK and HIT increase.",
       "levelDetails": [
         {
@@ -13635,8 +15036,15 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " War Book Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/War_Book_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5464.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5464",
       "tree": {
@@ -13760,10 +15168,9 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13779,6 +15186,8 @@ export const skyEmperorData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Sky_Mastery",
       "description": "Understand the principles of celestial body and Increases effectiveness of celestial body techniques.\nIncreases Rising Sun, Noon Blast, Sunset Blast, Rising Moon, Midnight Kick, Dawn Break, Twinkling Galaxy, Star Burst and Star Cannon damage.",
       "levelDetails": [],
       "levelExtras": [
@@ -13828,8 +15237,15 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Sky Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Sky_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5463.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5463",
       "tree": {
@@ -13925,10 +15341,9 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -13942,8 +15357,10 @@ export const skyEmperorData = {
       "group": "Active",
       "type": "Melee Physical",
       "target": "1 Target",
-      "recoversAp": "",
+      "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Rising_Sun",
       "description": "Uses the energy of the sun that brightens the day, dealing melee physical DMG to the target.\nWhen using a skill, the effects of [Sunrise]/[Noon]/[Sunset] are applied sequentially.\n(However, after sunset, only the energy of the moon can travel through the heaven, earth, sun, and moon.)\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.",
       "levelDetails": [
         {
@@ -13994,8 +15411,18 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25",
+      "castDelay": "0.5 seconds",
+      "cooldown": "0.5 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Rising Sun ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Rising_Sun"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5465.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5465",
       "tree": {
@@ -14023,8 +15450,24 @@ export const skyEmperorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "25"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "AP Generated",
+            "value": "2"
           }
         ],
         "levelTables": [
@@ -14072,7 +15515,6 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Rising Sun",
@@ -14103,7 +15545,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14117,8 +15559,10 @@ export const skyEmperorData = {
       "group": "Active",
       "type": "Melee Physical",
       "target": "Instant Cast",
-      "recoversAp": "",
+      "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Rising_Moon",
       "description": "Uses the energy of the moon that illuminates the night, dealing melee physical DMG to enemies around you.\nWhen using a skill, the effects of [Moonrise]/[Midnight]/[Moonset] are applied sequentially.\n(However, after moonrise, only the sun's energy can travel through the heaven, earth, and sun.)\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.",
       "levelDetails": [
         {
@@ -14169,8 +15613,19 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25",
+      "castDelay": "0.5 seconds",
+      "cooldown": "0.5 seconds",
+      "areaOfEffect": "5 x 5~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Rising Moon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Rising_Moon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5468.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5468",
       "tree": {
@@ -14198,8 +15653,28 @@ export const skyEmperorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "25"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.5 seconds"
+          },
+          {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5~9 x 9"
+          },
+          {
+            "label": "AP Generated",
+            "value": "2"
           }
         ],
         "levelTables": [
@@ -14209,45 +15684,36 @@ export const skyEmperorData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "5 x 5 cells",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "5 x 5 cells",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "7 x 7 cells",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "7 x 7 cells",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "9 x 9 cells",
                   "sp-cost": "64"
                 }
               }
@@ -14256,7 +15722,6 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Rising Moon",
@@ -14287,7 +15752,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14301,8 +15766,10 @@ export const skyEmperorData = {
       "group": "Active",
       "type": "Melee Physical",
       "target": "Instant Cast",
-      "recoversAp": "",
+      "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Twinkling_Galaxy",
       "description": "Uses the movement of constellation to drop the shooting star once every 0.5 seconds for 3.5 seconds within range.\nEach shooting star inflicts melee physical damage the all targets within 5 x 5 cells.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.",
       "levelDetails": [
         {
@@ -14353,8 +15820,20 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25",
+      "fixedCastTime": "0.5 seconds",
+      "variableCastTime": "1 seconds",
+      "cooldown": "5 seconds",
+      "areaOfEffect": "13 x 13~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Twinkling Galaxy ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Twinkling_Galaxy"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5471.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5471",
       "tree": {
@@ -14382,8 +15861,28 @@ export const skyEmperorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "25"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "5 seconds"
+          },
+          {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "AP Generated",
+            "value": "2"
           },
           {
             "label": "Pulse",
@@ -14399,43 +15898,43 @@ export const skyEmperorData = {
                 "label": "SP Cost"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "area-of-effect",
+                "label": "Area of Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Twinkling Gala x y AOE: 13 x 13 cells",
+                  "area-of-effect": "13x13",
                   "sp-cost": "124"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Twinkling Gala x y AOE: 13 x 13 cells",
+                  "area-of-effect": "13x13",
                   "sp-cost": "124"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Twinkling Gala x y AOE: 11 x 11 cells",
+                  "area-of-effect": "11x11",
                   "sp-cost": "124"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Twinkling Gala x y AOE: 11 x 11 cells",
+                  "area-of-effect": "11x11",
                   "sp-cost": "124"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Twinkling Gala x y AOE: 9 x 9 cells",
+                  "area-of-effect": "9x9",
                   "sp-cost": "124"
                 }
               }
@@ -14444,7 +15943,6 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Twinkling Galaxy",
@@ -14510,7 +16008,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14526,6 +16024,8 @@ export const skyEmperorData = {
       "target": "1 Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Noon_Blast",
       "description": "Can be used when sunrise or noon is in effect.\nShines sunlight on the target, inflicting melee physical DMG to the target and enemies within range.\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.\nIf the current weather movement is under [Noon] effect, critical DMG is applied according to the caster's critical probability.\nIn case of critical DMG, half of the total critical DMG increase options is applied.",
       "levelDetails": [
         {
@@ -14576,8 +16076,19 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "20 + (4 × Skill Level)",
+      "castDelay": "0.5 seconds",
+      "cooldown": "0.7 seconds",
+      "areaOfEffect": "3 x 3~7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Noon Blast ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Noon_Blast"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5466.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5466",
       "tree": {
@@ -14611,8 +16122,24 @@ export const skyEmperorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "20 + (4 × Skill Level)"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.7 seconds"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "3 x 3~7 x 7"
           },
           {
             "label": "AP Generated",
@@ -14626,45 +16153,36 @@ export const skyEmperorData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "3 x 3 cells",
                   "sp-cost": "49"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "3 x 3 cells",
                   "sp-cost": "53"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "5 x 5 cells",
                   "sp-cost": "57"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "5 x 5 cells",
                   "sp-cost": "61"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "7 x 7 cells",
                   "sp-cost": "65"
                 }
               }
@@ -14673,7 +16191,6 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Noon Blast",
@@ -14712,7 +16229,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14728,6 +16245,8 @@ export const skyEmperorData = {
       "target": "Instant Cast",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Midnight_Kick",
       "description": "Can be used during the moonrise or midnight effect.\nCharge your feet with the energy of the moon, dealing melee physical DMG to enemies within range.\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.\nIf the current weather is under the effect of [Midnight], it deals more DMG.",
       "levelDetails": [
         {
@@ -14778,8 +16297,20 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "32 + (Skill Level × 4)",
+      "fixedCastTime": "0.5 seconds",
+      "variableCastTime": "1 seconds",
+      "cooldown": "0.7 seconds",
+      "areaOfEffect": "5 x 5~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Midnight Kick ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Midnight_Kick"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5469.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5469",
       "tree": {
@@ -14813,8 +16344,28 @@ export const skyEmperorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "32 + (Skill Level × 4)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.7 seconds"
+          },
+          {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5~9 x 9"
           },
           {
             "label": "AP Generated",
@@ -14828,45 +16379,36 @@ export const skyEmperorData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "5 x 5 cells",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "5 x 5 cells",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "7 x 7 cells",
                   "sp-cost": "64"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "7 x 7 cells",
                   "sp-cost": "66"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "9 x 9 cells",
                   "sp-cost": "68"
                 }
               }
@@ -14875,7 +16417,6 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Midnight Kick",
@@ -14933,7 +16474,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14949,6 +16490,8 @@ export const skyEmperorData = {
       "target": "1 Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Star_Burst",
       "description": "Can only be used within the range of the universe you are operating.\nIt stops the current shooting star and focuses shooting stars towards the target.\nDeals melee physical DMG to the target and surrounding targets in a 5x5 cell range once every 0.3 seconds for 4.5 seconds.\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.",
       "levelDetails": [
         {
@@ -14999,8 +16542,19 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "37 + (Skill Level * 4)",
+      "fixedCastTime": "0.5 seconds",
+      "cooldown": "1 second",
+      "areaOfEffect": "5 x 5",
+      "translations": {
+        "pt-BR": {
+          "name": " Star Burst ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Star_Burst"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5472.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5472",
       "tree": {
@@ -15034,8 +16588,24 @@ export const skyEmperorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "37 + (Skill Level * 4)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "1 second"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5"
           },
           {
             "label": "AP Generated",
@@ -15091,7 +16661,6 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Star Burst",
@@ -15114,7 +16683,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15130,6 +16699,8 @@ export const skyEmperorData = {
       "target": "1 Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Sunset_Blast",
       "description": "Can be used during noon or sunset effects.\nCharge your feet with the power of the blazing sun and kick the target with all your might, inflicting melee physical DMG to the target and enemies within the surrounding range.\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.\nIf the current weather run is under the effect of [Sunset], critical DMG is applied according to the caster's critical probability.\nIn case of critical DMG, half of the total critical DMG increase options is applied.",
       "levelDetails": [
         {
@@ -15180,8 +16751,19 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "20 + (4 × Skill Level)",
+      "castDelay": "0.5 seconds",
+      "cooldown": "0.3 seconds",
+      "areaOfEffect": "3 x 3~7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Sunset Blast ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Sunset_Blast"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5467.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5467",
       "tree": {
@@ -15215,8 +16797,24 @@ export const skyEmperorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "20 + (4 × Skill Level)"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.3 seconds"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "3 x 3~7 x 7"
           },
           {
             "label": "AP Generated",
@@ -15230,45 +16828,36 @@ export const skyEmperorData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "3 x 3 cells",
                   "sp-cost": "46"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "3 x 3 cells",
                   "sp-cost": "50"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "5 x 5 cells",
                   "sp-cost": "54"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "5 x 5 cells",
                   "sp-cost": "58"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "7 x 7 cells",
                   "sp-cost": "62"
                 }
               }
@@ -15277,7 +16866,6 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Sunset Blast",
@@ -15316,7 +16904,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15332,6 +16920,8 @@ export const skyEmperorData = {
       "target": "Instant Cast",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Dawn_Break",
       "description": "Can be used during midnight or moonset.\nEmits moonlight, dealing melee P.DMG to enemies in the area around you, the target, and the surrounding area.\nDMG increases additionally based on the skill acquisition level, caster's base level, and POW.\nIf the current weather is under the effect of [Moonset], it gives more DMG.",
       "levelDetails": [
         {
@@ -15382,8 +16972,20 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "32 + (Skill Level × 4)",
+      "fixedCastTime": "0.5 seconds",
+      "variableCastTime": "1 seconds",
+      "cooldown": "0.3 seconds",
+      "areaOfEffect": "5 x 5~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Dawn Break ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Dawn_Break"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5470.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5470",
       "tree": {
@@ -15417,8 +17019,28 @@ export const skyEmperorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "32 + (Skill Level × 4)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.3 seconds"
+          },
+          {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5~9 x 9"
           },
           {
             "label": "AP Generated",
@@ -15432,45 +17054,36 @@ export const skyEmperorData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "5 x 5 cells",
                   "sp-cost": "56"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "5 x 5 cells",
                   "sp-cost": "58"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "7 x 7 cells",
                   "sp-cost": "60"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "7 x 7 cells",
                   "sp-cost": "62"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "9 x 9 cells",
                   "sp-cost": "64"
                 }
               }
@@ -15479,7 +17092,6 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Dawn Break",
@@ -15537,7 +17149,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15553,6 +17165,8 @@ export const skyEmperorData = {
       "target": "Single Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Star_Cannon",
       "description": "Can only be used within the ranged of the user's Twinkling Galaxy.\nStops Twinkling Galaxy and changes it to the more powerful Star Cannon.\nDrops multiple shooting stars up to 2 stars once every 0.5 seconds for 2.5 seconds within range. Star Cannon's shooting star inflicts melee physical damage to the target and surrounding enemies within 5x5 cells.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.",
       "levelDetails": [
         {
@@ -15603,8 +17217,19 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25 + (Skill Level * 4)",
+      "fixedCastTime": "0.5 seconds",
+      "cooldown": "5 second",
+      "areaOfEffect": "13 x 13~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Star Cannon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Star_Cannon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5473.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5473",
       "tree": {
@@ -15638,12 +17263,24 @@ export const skyEmperorData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "25 + (Skill Level * 4)"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "5 second"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
           },
           {
             "label": "Area of Effect",
-            "value": "Lv 1: 13 x 13 cells / Lv 2: 13 x 13 cells / Lv 3: 11 x 11 cells / Lv 4: 11 x 11 cells / Lv 5: 9 x 9 cells"
+            "value": "13 x 13~9 x 9"
           },
           {
             "label": "AP Generated",
@@ -15708,7 +17345,6 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Star Cannon",
@@ -15798,7 +17434,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15814,6 +17450,8 @@ export const skyEmperorData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "70",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/All_in_the_Sky",
       "description": "Harnesses the energy of all celestial bodies into your feet, dashes toward the target, and delivers a powerful spin kick that deals Melee Physical damage.\nIf the target is player. Drains its AP to 0, if the target is demihuman or demon race monster, the skill deals damage for 3 hits.\nDeals additional damage depends on user's base level and POW.\nCritical damage is applied based on the user's critical rate.\nThe effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -15904,8 +17542,19 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "100",
+      "fixedCastTime": "1 seconds",
+      "cooldown": "2 seconds",
+      "castRange": "Melee",
+      "translations": {
+        "pt-BR": {
+          "name": " All in the Sky ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/All_in_the_Sky"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5474.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5474",
       "tree": {
@@ -15943,6 +17592,22 @@ export const skyEmperorData = {
           {
             "label": "Levels",
             "value": "10"
+          },
+          {
+            "label": "SP Cost",
+            "value": "100"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "2 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
           },
           {
             "label": "Target",
@@ -16028,7 +17693,6 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "All in the Sky",
@@ -16083,7 +17747,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16099,6 +17763,8 @@ export const skyEmperorData = {
       "target": "Instant Cast",
       "recoversAp": "",
       "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Enchanting_Sky",
       "description": "Enters the state of celestial unity by drawing the celestial energy into the user's body.\nIn the state of celestial unity, the effect of either Sunrise, Noon, Sunset, Moonrise, Midnight or Moonset is canceled.\nNoon Blast, Sunset Blast, Midnight Kick and Dawn Break can be used freely with the maximum potency of the skills.",
       "levelDetails": [
         {
@@ -16189,8 +17855,19 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "100",
+      "fixedCastTime": "1 seconds",
+      "variableCastTime": "0.3 seconds",
+      "duration": "(Skill Level × 90) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Enchanting Sky ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Enchanting_Sky"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5475.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5475",
       "tree": {
@@ -16218,6 +17895,18 @@ export const skyEmperorData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "100"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "0.3 seconds"
+          },
+          {
             "label": "Target",
             "value": "Instant Cast"
           },
@@ -16235,78 +17924,78 @@ export const skyEmperorData = {
                 "label": "SP Cost"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "duration",
+                "label": "Duration"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Duration : 90 sec",
+                  "duration": "90 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Duration : 180 sec",
+                  "duration": "180 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Duration : 270 sec",
+                  "duration": "270 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Duration : 360 sec",
+                  "duration": "360 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Duration : 450 sec",
+                  "duration": "450 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "Duration : 540 sec",
+                  "duration": "540 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "Duration : 630 sec",
+                  "duration": "630 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "Duration : 720 sec",
+                  "duration": "720 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "Duration : 810 sec",
+                  "duration": "810 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "Duration : 900 sec",
+                  "duration": "900 seconds",
                   "sp-cost": "100"
                 }
               }
@@ -16315,10 +18004,9 @@ export const skyEmperorData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16334,6 +18022,8 @@ export const skyEmperorData = {
       "target": "Instant Casting",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while under the effect of Celestial Unity.\nInstantly releases the power of blazing sun, inflicts melee physical damage to surrounding enemies around the user.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.\nHas a chance to trigger critical, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -16358,8 +18048,15 @@ export const skyEmperorData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Sky Sun ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Sky_Sun"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5502.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5502",
       "tree": {
@@ -16409,7 +18106,6 @@ export const skyEmperorData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Sky Sun",
@@ -16425,7 +18121,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16441,6 +18137,8 @@ export const skyEmperorData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while under the effect of Celestial Unity.\nEmits the moonlight to inflicts melee physical damage to the target and surrounding enemies around the target for 3 hits.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.",
       "levelDetails": [
         {
@@ -16469,8 +18167,15 @@ export const skyEmperorData = {
       "castDelay": "0.3 seconds",
       "cooldown": "1 second",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Sky Moon ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Sky_Moon"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5503.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5503",
       "tree": {
@@ -16536,7 +18241,6 @@ export const skyEmperorData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Sky Moon",
@@ -16552,7 +18256,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16568,6 +18272,8 @@ export const skyEmperorData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used while under the effect of Celestial Unity.\nInstantly dashes to the target and inflicts melee physical damage to the target and surrounding enemies around the target for 7 hits.\nDeals additional damage depends on level of Sky Mastery user learned, user's base level and POW.",
       "levelDetails": [
         {
@@ -16592,8 +18298,15 @@ export const skyEmperorData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Star Light Kick ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Star_Light_Kick"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5504.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5504",
       "tree": {
@@ -16643,7 +18356,6 @@ export const skyEmperorData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Star Light Kick",
@@ -16659,7 +18371,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

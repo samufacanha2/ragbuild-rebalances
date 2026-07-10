@@ -1,5 +1,5 @@
 export const imperialGuardData = {
-  "generatedAt": "2026-07-10T00:53:33.291Z",
+  "generatedAt": "2026-07-10T15:02:08.666Z",
   "classId": 4258,
   "classSlug": "imperial-guard",
   "className": "Imperial Guard",
@@ -72,7 +72,8 @@ export const imperialGuardData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4258",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -450,6 +451,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spear_Sword_Mastery",
           "description": "One-handed Swords, One-handed Spears, and Two-handed Spears increase HIT and Imperial Guard skill damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -499,8 +502,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Spear Sword Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spear_Sword_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5259.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5259",
           "tree": {
@@ -596,10 +606,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -615,6 +624,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shield_Mastery",
           "description": "Shields increase Physical Resistance and Imperial Guard skill damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -664,8 +675,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Shield Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shield_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5258.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5258",
           "tree": {
@@ -761,10 +779,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -780,6 +797,8 @@ export const imperialGuardData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Attack_Stance",
           "description": "Increase your P.ATK and S.MATK at the cost of your DEF.",
           "levelDetails": [
             {
@@ -834,8 +853,16 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "translations": {
+            "pt-BR": {
+              "name": " Attack Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Attack_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5260.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5260",
           "tree": {
@@ -863,6 +890,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -888,16 +919,20 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "p-atk",
+                    "label": "P.Atk"
+                  },
+                  {
+                    "id": "s-matk",
+                    "label": "S.Matk"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
                   {
                     "id": "def",
                     "label": "Def"
-                  },
-                  {
-                    "id": "p-atk-s-matk",
-                    "label": "P.Atk,S.Matk"
                   }
                 ],
                 "rows": [
@@ -905,7 +940,8 @@ export const imperialGuardData = {
                     "level": 1,
                     "values": {
                       "def": "- 40",
-                      "p-atk-s-matk": "+ 3",
+                      "p-atk": "+ 3",
+                      "s-matk": "+ 3",
                       "sp-cost": "50"
                     }
                   },
@@ -913,7 +949,8 @@ export const imperialGuardData = {
                     "level": 2,
                     "values": {
                       "def": "- 80",
-                      "p-atk-s-matk": "+ 6",
+                      "p-atk": "+ 6",
+                      "s-matk": "+ 6",
                       "sp-cost": "50"
                     }
                   },
@@ -921,7 +958,8 @@ export const imperialGuardData = {
                     "level": 3,
                     "values": {
                       "def": "- 120",
-                      "p-atk-s-matk": "+ 9",
+                      "p-atk": "+ 9",
+                      "s-matk": "+ 9",
                       "sp-cost": "50"
                     }
                   },
@@ -929,7 +967,8 @@ export const imperialGuardData = {
                     "level": 4,
                     "values": {
                       "def": "- 160",
-                      "p-atk-s-matk": "+ 12",
+                      "p-atk": "+ 12",
+                      "s-matk": "+ 12",
                       "sp-cost": "50"
                     }
                   },
@@ -937,7 +976,8 @@ export const imperialGuardData = {
                     "level": 5,
                     "values": {
                       "def": "- 200",
-                      "p-atk-s-matk": "+ 15",
+                      "p-atk": "+ 15",
+                      "s-matk": "+ 15",
                       "sp-cost": "50"
                     }
                   }
@@ -946,7 +986,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Attack Stance",
@@ -997,7 +1036,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1013,6 +1052,8 @@ export const imperialGuardData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Imperial_Pressure",
           "description": "Crushes the target with the power of sincere faith.\nInflicts neutral property magical damage to the target and surrounding enemies around the target.\nIf Guard Stance is active, change the skill property to holy.\nDeals additional damage depends on user's base level, SPL and level of Spear & Sword Mastery user learned.",
           "levelDetails": [
             {
@@ -1041,8 +1082,17 @@ export const imperialGuardData = {
           "castDelay": "1 second",
           "cooldown": "0.45 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "85 + (4 × Skill Level)",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Imperial Pressure ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Imperial_Pressure"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6505.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6505",
           "tree": {
@@ -1076,6 +1126,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "85 + (4 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -1090,6 +1144,10 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "0.45 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -1149,7 +1207,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Imperial Pressure",
@@ -1165,7 +1222,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1181,6 +1238,8 @@ export const imperialGuardData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Guard_Stance",
           "description": "A Shield skill.\nIncrease your equipment's DEF at the cost of its ATK.",
           "levelDetails": [],
           "fixedCastTime": "0.5 seconds",
@@ -1214,8 +1273,16 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "translations": {
+            "pt-BR": {
+              "name": " Guard Stance ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Guard_Stance"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5255.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5255",
           "tree": {
@@ -1241,6 +1308,10 @@ export const imperialGuardData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50"
               },
               {
                 "label": "Fixed Cast Time",
@@ -1308,7 +1379,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Guard Stance",
@@ -1340,7 +1410,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1356,6 +1426,8 @@ export const imperialGuardData = {
           "target": "1 cell ground target",
           "recoversAp": "4",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cross_Rain",
           "description": "Summons the sacred area on the ground to deals holy property magical damage every 0.3 seconds for 2.4 seconds.\nIncreases skill damage if the user uses Holy Shield.\nDeals additional damage depends on user's base level, SPL and level of Spear & Sword Mastery the user learned.",
           "levelDetails": [
             {
@@ -1450,8 +1522,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "46 + (4 x Skill Level)",
+          "areaOfEffect": "3 x 3 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Cross Rain ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cross_Rain"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5267.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5267",
           "tree": {
@@ -1477,6 +1558,10 @@ export const imperialGuardData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "46 + (4 x Skill Level)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -1596,7 +1681,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Cross Rain",
@@ -1764,7 +1848,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1780,6 +1864,8 @@ export const imperialGuardData = {
           "target": "Single Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Overslash",
           "description": "Can only be used while using Attack Stance.\nDeals melee physical damage to the target and surrounding enemies within 7 x 7 cells around the target.\nThe number of attack is increased according to the number of surrounding enemies with range.\n(1 enemy: 3 hits / 2-3 enemies: 5 hits / 4 enemies or more: 7 hits)\nDamage is additionally increased depending on the user's base level and POW.",
           "levelDetails": [
             {
@@ -1874,8 +1960,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "38 + (3 × Skill Level)",
+          "castRange": "Melee",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Overslash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Overslash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5266.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5266",
           "tree": {
@@ -1903,6 +1999,10 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "38 + (3 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -1919,8 +2019,16 @@ export const imperialGuardData = {
                 "value": "0.7 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               },
               {
                 "label": "AP Generated",
@@ -2016,7 +2124,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Overslash",
@@ -2184,7 +2291,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2200,6 +2307,8 @@ export const imperialGuardData = {
           "target": "Single Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shield_Shooting",
           "description": "Shield exclusive skill, Can only be used while using Attack Stance.\nThrows the shield to deals long ranged physical damage to the target and surrounding enemies around the target,\nthe user gains bonus that increases Rapid Smiting, Shield Press and Earth Drive damage for 10 seconds.\nDamage is additionally increased depending on the user's base level and POW.\nshield weight and shield refine rate.",
           "levelDetails": [
             {
@@ -2254,8 +2363,16 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "castRange": "? cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Shield Shooting ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shield_Shooting"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5265.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5265",
           "tree": {
@@ -2303,6 +2420,10 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "0.7 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "? cells"
               },
               {
                 "label": "Target",
@@ -2367,7 +2488,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Shield Shooting",
@@ -2529,7 +2649,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2543,8 +2663,10 @@ export const imperialGuardData = {
           "group": "Active",
           "type": "Buff",
           "target": "Self",
-          "recoversAp": "",
+          "recoversAp": "15",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rebound_Shield",
           "description": "Can only be used while using Sacrifice in Guard Stance mode.\nDecrease Sacrifice-directed damage on you for 60 seconds.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2578,8 +2700,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "duration": "60 seconds",
+          "areaOfEffect": "21 x 21",
+          "translations": {
+            "pt-BR": {
+              "name": " Rebound Shield ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rebound_Shield"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5257.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5257",
           "tree": {
@@ -2607,6 +2739,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "60"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2625,6 +2761,18 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "21 x 21"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "15"
               }
             ],
             "levelTables": [
@@ -2672,10 +2820,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2689,8 +2836,10 @@ export const imperialGuardData = {
           "group": "Active",
           "type": "Buff",
           "target": "Self and Party Members",
-          "recoversAp": "",
+          "recoversAp": "15",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Guardian_Shield",
           "description": "Requires Guard Stance.\nGrants a physical shield to yourself and party members within 21 x 21 cells for 60 seconds.\nThe durability of the shield is determined by the caster's MHP, base level, and STA.",
           "levelDetails": [
             {
@@ -2745,8 +2894,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "duration": "60 seconds",
+          "areaOfEffect": "21 x 21",
+          "translations": {
+            "pt-BR": {
+              "name": " Guardian Shield ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Guardian_Shield"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5256.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5256",
           "tree": {
@@ -2774,6 +2933,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "60"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2792,6 +2955,18 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "Self and Party Members"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "21 x 21"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "15"
               }
             ],
             "levelTables": [
@@ -2848,7 +3023,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Guardian Shield",
@@ -2917,7 +3091,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2933,6 +3107,8 @@ export const imperialGuardData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Holy_Shield",
           "description": "A Shield skill.\nImprove your Shadow and Undead Resistances and cast a Holy Magic Damage buff on you.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2965,8 +3141,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "cooldown": "40 seconds",
+          "duration": "40 ~ 120 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Holy Shield ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Holy_Shield"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5262.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5262",
           "tree": {
@@ -3000,6 +3186,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "60"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -3012,8 +3202,16 @@ export const imperialGuardData = {
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "40 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "40 ~ 120 seconds"
               }
             ],
             "levelTables": [
@@ -3061,7 +3259,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Holy Shield",
@@ -3076,7 +3273,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3092,6 +3289,8 @@ export const imperialGuardData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Imperial_Cross",
           "description": "Can only be used while using Attack Stance.\nDeals melee physical damage to the single target for 3 hits.\nIf Grand Judgement buff is active, the skill will deal more damage.\nDeals additional damage depends on level of Spear & Sword Mastery the user has learned, user's base level and POW.",
           "levelDetails": [
             {
@@ -3116,8 +3315,19 @@ export const imperialGuardData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 + (4 × Skill Level)",
+          "castDelay": "0.5 seconds",
+          "cooldown": "0.35 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Imperial Cross ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Imperial_Cross"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6504.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6504",
           "tree": {
@@ -3145,6 +3355,22 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45 + (4 × Skill Level)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.35 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Single target"
               },
@@ -3155,10 +3381,9 @@ export const imperialGuardData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3173,7 +3398,9 @@ export const imperialGuardData = {
           "type": "Ranged Physical",
           "target": "1 Target",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Grand_Judgement",
           "description": "A Spear-only skill. Can only be used while in Attack Stance.\nInflict Long Physical damage on a target and others in 7x7 cells around it\nIncreased damage from Vanishing Point/Cannon Spear for 150 seconds.\nInflicts more damage on Plant and Insect enemies.\nAdditional Damage increase based on the caster's Base Level and POW.",
           "levelDetails": [
             {
@@ -3268,8 +3495,16 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Grand Judgement ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Grand_Judgement"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5263.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5263",
           "tree": {
@@ -3321,6 +3556,14 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "150"
               }
             ],
             "levelTables": [
@@ -3398,7 +3641,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Grand Judgement",
@@ -3461,7 +3703,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3477,6 +3719,8 @@ export const imperialGuardData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "One-handed spear exclusive skill, Can only be used while using Attack Stance.\nDeals long ranged physical damage to the target and surrounding enemies around the target.\nIf Grand Judgement buff is active, the skill will deal more damage.\nDeals additional damage depends on level of Spear & Sword Mastery the user has learned, user's base level and POW, has a chance to trigger critical, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -3525,8 +3769,15 @@ export const imperialGuardData = {
           "castDelay": "1 second",
           "cooldown": "0.7 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Radiant Spear ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Radiant_Spear"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6503.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6503",
           "tree": {
@@ -3659,10 +3910,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3678,6 +3928,8 @@ export const imperialGuardData = {
           "target": "You and Party Members",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ultimate_Sacrifice",
           "description": "Requires Guard Stance.\nUse all your remaining HP except 1 to give Resurrection Crystals to surrounding party members.\nThe Resurrection Crystal immediately resurrects its target on their current spot with full HP and SP.",
           "levelDetails": [],
           "fixedCastTime": "2 seconds",
@@ -3710,8 +3962,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "120",
+          "cooldown": "20 ~ 100 seconds",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Ultimate Sacrifice ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ultimate_Sacrifice"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5261.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5261",
           "tree": {
@@ -3745,6 +4007,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "120"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
               },
@@ -3757,8 +4023,16 @@ export const imperialGuardData = {
                 "value": "1 second"
               },
               {
+                "label": "Cooldown",
+                "value": "20 ~ 100 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "You and Party Members"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -3806,10 +4080,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3824,7 +4097,9 @@ export const imperialGuardData = {
           "type": "Magical",
           "target": "1 Target",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "10",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Judgement_Cross",
           "description": "Inflict Holy Magic damage on a target\nDeals more damage if the target is a Plant/Insect type monster.\nAdditional Damage increase based on the caster's Base Level and SPL.",
           "levelDetails": [
             {
@@ -3919,8 +4194,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Judgement Cross ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Judgement_Cross"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5264.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5264",
           "tree": {
@@ -3972,6 +4254,10 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "10"
               }
             ],
             "levelTables": [
@@ -4049,7 +4335,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Judgement Cross",
@@ -4123,7 +4408,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4150,6 +4435,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Inflicts melee physical damages to all enemies around the caster(7x7 Cell).\nDamage increases based on BaseLv and skill level of Overbrand.\nWhen casted, it amplifies Overbrand.",
           "levelDetails": [
             {
@@ -4253,8 +4540,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Moonslasher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Moonslasher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2320.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2320",
           "tree": {
@@ -4303,6 +4597,10 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "data-1",
                     "label": "Data 1"
                   },
@@ -4315,6 +4613,7 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "2 seconds",
                       "sp-cost": "20",
                       "data-1": "3",
                       "data-2": "40"
@@ -4323,6 +4622,7 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "4 seconds",
                       "sp-cost": "24",
                       "data-1": "3",
                       "data-2": "48"
@@ -4331,6 +4631,7 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "6 seconds",
                       "sp-cost": "28",
                       "data-1": "3",
                       "data-2": "56"
@@ -4339,6 +4640,7 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "8 seconds",
                       "sp-cost": "32",
                       "data-1": "3",
                       "data-2": "64"
@@ -4347,6 +4649,7 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "10 seconds",
                       "sp-cost": "36",
                       "data-1": "3",
                       "data-2": "72"
@@ -4357,10 +4660,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4373,9 +4675,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Spear Mastery 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Vanishing_Point",
           "description": "Spear Weapon Skill. Deals ranged physical damage to 1 target.\nHit increases as skill level increases, Damage increases based on BaseLv and Bash skill level.\nRange 7 Cells.",
           "levelDetails": [
             {
@@ -4556,8 +4860,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20/25",
+          "castRange": "7 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Vanishing Point ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vanishing_Point"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2308.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2308",
           "tree": {
@@ -4583,6 +4896,18 @@ export const imperialGuardData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20/25"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -4688,7 +5013,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Vanishing Point",
@@ -4728,7 +5052,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4741,9 +5065,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Royal Guard Basic",
           "group": "Active / Buff (To yourself)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Vanguard_Force",
           "description": "Increase your rage counter when you receive physical attack. The rage counters can be used for the skill Burst Attack. Vanguard Force will cancel when you cast Rage Burst. This skill consumes some SP at regular time interval to stay active.",
           "levelDetails": [
             {
@@ -4873,8 +5199,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "duration": "5 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Vanguard Force ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vanguard_Force"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2313.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2313",
           "tree": {
@@ -4895,6 +5230,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -4909,6 +5248,14 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "5 minutes"
               }
             ],
             "levelTables": [
@@ -4992,10 +5339,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5008,9 +5354,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Royal Guard Basic",
           "group": "Active / Special",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Trample",
           "description": "Tramples a 5x5 area around the caster, destroying all traps. Explosive type traps will activate with this skill.",
           "levelDetails": [
             {
@@ -5066,8 +5414,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15 + (Skill Level × 15)",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Trample ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Trample"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2309.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2309",
           "tree": {
@@ -5088,6 +5445,10 @@ export const imperialGuardData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (Skill Level × 15)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5102,6 +5463,14 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -5151,10 +5520,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5167,9 +5535,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Faith 3",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Ally or Caster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Piety",
           "description": "Endows you or a party member and nearby party member's armors with Holy element. Consumes 2 Holy Waters.",
           "levelDetails": [
             {
@@ -5248,8 +5618,19 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 5)",
+          "duration": "[40 + (Skill Level × 20)] seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Piety ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Piety"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2322.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2322",
           "tree": {
@@ -5277,6 +5658,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5287,6 +5672,22 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ally or Caster"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "[40 + (Skill Level × 20)] seconds"
               }
             ],
             "levelTables": [
@@ -5352,10 +5753,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5368,9 +5768,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Reflect Shield 5",
           "group": "Active / Self Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Reflect_Damage",
           "description": "Shield Skill.\nReduce incoming reflection damage during the duration.",
           "levelDetails": [
             {
@@ -5550,8 +5952,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 10)",
+          "duration": "5 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Reflect Damage ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Reflect_Damage"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2311.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2311",
           "tree": {
@@ -5579,6 +5990,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5593,6 +6008,14 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "60 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "5 minutes"
               }
             ],
             "levelTables": [
@@ -5694,10 +6117,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5710,9 +6132,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Smite 3",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shield_Press",
           "description": "Can be used when equipped with a shield. Strikes one enemy with the shield to inflict physical damage.\nThe damage is influenced by shield weight, refine rate, and the caster's Base LV, STR, and VIT.",
           "levelDetails": [
             {
@@ -5807,8 +6231,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8 + (Skill Level x 2)",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Shield Press ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shield_Press"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2310.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2310",
           "tree": {
@@ -5836,6 +6269,10 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "8 + (Skill Level x 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5850,6 +6287,14 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -5927,7 +6372,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Shield press",
@@ -5950,7 +6394,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5963,9 +6407,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Vanishing Point 3",
           "group": "Active / Buff (To yourself)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Exceed_Break",
           "description": "Gather your strength to cause greater damage on your next attack. A short range physical attack on your body will cancel the skill. Your skill damage is not affected by this skill. Movement speed reduces while this skill is active.",
           "levelDetails": [
             {
@@ -6069,8 +6515,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 4)",
+          "variableCastTime": "[4.5 + (Skill Level × 0.5)] seconds",
+          "duration": "1 normal attack",
+          "translations": {
+            "pt-BR": {
+              "name": " Exceed Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Exceed_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2316.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2316",
           "tree": {
@@ -6098,8 +6554,16 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[4.5 + (Skill Level × 0.5)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -6108,6 +6572,14 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "1 normal attack"
               }
             ],
             "levelTables": [
@@ -6182,10 +6654,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6198,9 +6669,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Vanishing Point 5",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Pinpoint_Attack",
           "description": "Spear skill. Leaps toward a single target and inflicts Critical Damage.\nIt has a chance of either leaving them bleeding or breaking a piece of their equipment, depending on the skill level. Damage increases depending on the player's BaseLv and AGI.\nFor Critical Damage, only the half of total Critical Damage Options will be applied.",
           "levelDetails": [
             {
@@ -6280,8 +6753,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "castRange": "5 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Pinpoint Attack ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pinpoint_Attack"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2312.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2312",
           "tree": {
@@ -6309,6 +6791,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6323,6 +6809,14 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -6379,10 +6873,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6395,9 +6888,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Vanguard Force 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Burst_Attack",
           "description": "Release all Rage Counters from Vanguard Force to deal great damage to an enemy.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -6415,8 +6910,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "150",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Burst Attack ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Burst_Attack"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2314.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2314",
           "tree": {
@@ -6444,6 +6948,10 @@ export const imperialGuardData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "150"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6458,6 +6966,14 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -6481,10 +6997,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6497,9 +7012,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Trample 3",
           "group": "Active / Self Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Prestige",
           "description": "Places a temporary buff on the user that increases Physical Defense and gives a chance of dodging magic damage. Dodging magic damage increases based on caster's stats, defense increases based on Defending Aura. Caster does not receive magic damage when dodged.\nIt does not overlap with Banding effect.",
           "levelDetails": [
             {
@@ -6579,8 +7096,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (Skill Level × 5)",
+          "duration": "[15 + (Skill Level × 15)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Prestige ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Prestige"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2318.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2318",
           "tree": {
@@ -6608,6 +7134,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
               },
@@ -6622,6 +7152,10 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "60 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -6633,8 +7167,8 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -6645,7 +7179,7 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration 30 sec",
+                      "duration": "30 seconds",
                       "sp-cost": "75",
                       "data-1": "30000"
                     }
@@ -6653,7 +7187,7 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration 45 sec",
+                      "duration": "45 seconds",
                       "sp-cost": "80",
                       "data-1": "45000"
                     }
@@ -6661,7 +7195,7 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration 60 sec",
+                      "duration": "60 seconds",
                       "sp-cost": "85",
                       "data-1": "60000"
                     }
@@ -6669,7 +7203,7 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration 75 sec",
+                      "duration": "75 seconds",
                       "sp-cost": "90",
                       "data-1": "75000"
                     }
@@ -6677,7 +7211,7 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration 90 sec",
+                      "duration": "90 seconds",
                       "sp-cost": "95",
                       "data-1": "90000"
                     }
@@ -6687,10 +7221,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6703,9 +7236,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Grand Cross 5",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Genesis_Ray",
           "description": "Inflicts Holy property Magic damage to all enemies in a 11x11 area around the Caster. Versus Undead property and Demon race monsters, it has a 50% chance of leaving them blind.\nDamage increases based on BaseLv and INT. During Inpiration, attack becomes Neutral property.",
           "levelDetails": [
             {
@@ -6889,8 +7424,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (Skill Level x 5)",
+          "variableCastTime": "[1.5 + (Skill Level × 0.5)] seconds",
+          "areaOfEffect": "11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Genesis Ray ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Genesis_Ray"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2321.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2321",
           "tree": {
@@ -6918,8 +7463,16 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (Skill Level x 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[1.5 + (Skill Level × 0.5)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -6928,6 +7481,14 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11"
               }
             ],
             "levelTables": [
@@ -7033,7 +7594,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Genesis Ray",
@@ -7057,7 +7617,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7070,9 +7630,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Reflect Damage Reduction 3",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Earth_Drive",
           "description": "Shield Skill. Deals melee physical damge to targets around.\nCan remove some earth related magics. Can deal damage to enemies in Hiding.\nDamage increases based on BaseLv, STR and VIT.",
           "levelDetails": [
             {
@@ -7226,8 +7788,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "44 + (Skill Level × 8)",
+          "cooldown": "(7 − Skill Level) seconds",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Earth Drive ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Earth_Drive"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2323.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2323",
           "tree": {
@@ -7255,6 +7827,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "44 + (Skill Level × 8)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7265,6 +7841,18 @@ export const imperialGuardData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "(7 − Skill Level) seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -7348,7 +7936,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Earth Drive",
@@ -7379,7 +7966,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7392,9 +7979,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Reflect Damage Reduction 5",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/King's_Grace",
           "description": "Protects and recovers nearby allies from all status effects and damage, recovers them as well.\nCannot control while being protected. During PVP, only party members can be affected.\nCurable status : Poison, Frozen, Freezing, Sleep, Deep Sleep, Stone, Stun, BLeeding, Curse, Confusion, Hallucination, Petrification, Silence, Burning, Fear, Mandragora howling.",
           "levelDetails": [
             {
@@ -7473,8 +8062,19 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "220 − (Skill Level × 20)",
+          "cooldown": "[110 − (Skill Level × 10)] seconds",
+          "duration": "5 seconds",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " King's Grace ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/King's_Grace"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5013.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5013",
           "tree": {
@@ -7502,6 +8102,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "220 − (Skill Level × 20)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7512,6 +8116,22 @@ export const imperialGuardData = {
               {
                 "label": "Cast Delay",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[110 − (Skill Level × 10)] seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
+              },
+              {
+                "label": "Duration",
+                "value": "5 seconds"
               }
             ],
             "levelTables": [
@@ -7577,10 +8197,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7593,9 +8212,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Pinpoint Attack 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cannon_Spear",
           "description": "Spear Weapon Skill. Deals ranged physical damage to one target and all enemies within the AoE around it.\nDamage increases based on BaseLv and STR.\nCritical rate is applied equal to the player's critical rate.\nHalf of Critical Damage option is applied.",
           "levelDetails": [
             {
@@ -7675,8 +8296,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level × 5)",
+          "castRange": "7 cells",
+          "areaOfEffect": "3 x 3~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Cannon Spear ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cannon_Spear"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2307.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2307",
           "tree": {
@@ -7704,6 +8335,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7718,6 +8353,18 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "1.7 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "7 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3~7 x 7"
               }
             ],
             "levelTables": [
@@ -7741,7 +8388,7 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK 120 +(STR x 1)% / Range : 3 x 3",
+                      "effect": "Range : 3 x 3",
                       "sp-cost": "30",
                       "range": "11 cells"
                     }
@@ -7749,7 +8396,7 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK 240 +(STR x 2)% / Range : 3 x 3",
+                      "effect": "Range : 3 x 3",
                       "sp-cost": "35",
                       "range": "11 cells"
                     }
@@ -7757,7 +8404,7 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK 360 +(STR x 3)% / Range : 5 x 5",
+                      "effect": "Range : 5 x 5",
                       "sp-cost": "40",
                       "range": "11 cells"
                     }
@@ -7765,7 +8412,7 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK 480 +(STR x 4)% / Range : 5 x 5",
+                      "effect": "Range : 5 x 5",
                       "sp-cost": "45",
                       "range": "11 cells"
                     }
@@ -7773,7 +8420,7 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK 600 +(STR x 5)% / Range : 7 x 7",
+                      "effect": "Range : 7 x 7",
                       "sp-cost": "50",
                       "range": "11 cells"
                     }
@@ -7783,7 +8430,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Cannon Spear",
@@ -7831,7 +8477,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7844,9 +8490,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Moon Slasher 3 / Pinpoint Attack 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Overbrand",
           "description": "Spear Weapon Skill. Inflicts Melee Physical Damage to all enemies within 7 x 7 area.\nWhile in Moon Slasher effect, it deals more damage. Damage increases based on BaseLv, STR and DEX.",
           "levelDetails": [
             {
@@ -7926,8 +8574,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level x 10)",
+          "castRange": "Melee",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Overbrand ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Overbrand"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2317.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2317",
           "tree": {
@@ -7961,6 +8619,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -7975,6 +8637,18 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -8031,7 +8705,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Overbrand",
@@ -8055,7 +8728,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8068,9 +8741,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Pinpoint Attack 3 / Rage Burst Attack 1",
           "group": "Active / Self Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Banding",
           "description": "Can be used when caster's in party.\nWhen casted, increase caster's physical armor based on number of players in 11x11 Area around the caster.\nIt does not overlap with Prestige effect.",
           "levelDetails": [
             {
@@ -8200,8 +8875,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "24 + (Skill Level × 6)",
+          "areaOfEffect": "11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Banding ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Banding"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2319.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2319",
           "tree": {
@@ -8235,6 +8919,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "24 + (Skill Level × 6)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -8249,6 +8937,14 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11"
               }
             ],
             "levelTables": [
@@ -8260,8 +8956,8 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -8284,8 +8980,8 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "60 seconds",
                       "per-1-party-member-def": "+ 18",
-                      "effect": "Duration : 60 sec",
                       "sp-cost": "30",
                       "data-1": "6",
                       "data-2": "20",
@@ -8295,8 +8991,8 @@ export const imperialGuardData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "90 seconds",
                       "per-1-party-member-def": "+ 21",
-                      "effect": "Duration : 90 sec",
                       "sp-cost": "36",
                       "data-1": "5",
                       "data-2": "30",
@@ -8306,8 +9002,8 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "120 seconds",
                       "per-1-party-member-def": "+ 24",
-                      "effect": "Duration : 120 sec",
                       "sp-cost": "42",
                       "data-1": "4",
                       "data-2": "40",
@@ -8317,8 +9013,8 @@ export const imperialGuardData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "150 seconds",
                       "per-1-party-member-def": "+ 27",
-                      "effect": "Duration : 150 sec",
                       "sp-cost": "48",
                       "data-1": "3",
                       "data-2": "50",
@@ -8328,8 +9024,8 @@ export const imperialGuardData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "180 seconds",
                       "per-1-party-member-def": "+ 30",
-                      "effect": "Duration : 180 sec",
                       "sp-cost": "54",
                       "data-1": "2",
                       "data-2": "60",
@@ -8341,10 +9037,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8357,9 +9052,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Shield Press 3 / Earth Drive 2",
           "group": "Active / Special",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shield_Spell",
           "description": "Shield Weapon Skill.\nPut your will on the shield and give yourself an effect for 90 seconds.\nEffect cannot be overlapped.",
           "levelDetails": [
             {
@@ -8398,8 +9095,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "duration": "90 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Shield Spell ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shield_Spell"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2315.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2315",
           "tree": {
@@ -8433,6 +9139,10 @@ export const imperialGuardData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8447,6 +9157,14 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "90 seconds"
               }
             ],
             "levelTables": [
@@ -8462,8 +9180,12 @@ export const imperialGuardData = {
                     "label": "Effect"
                   },
                   {
-                    "id": "atk-150-matk",
-                    "label": "Atk +150, Matk"
+                    "id": "atk",
+                    "label": "Atk"
+                  },
+                  {
+                    "id": "matk",
+                    "label": "Matk"
                   }
                 ],
                 "rows": [
@@ -8484,7 +9206,8 @@ export const imperialGuardData = {
                   {
                     "level": 3,
                     "values": {
-                      "atk-150-matk": "+150",
+                      "atk": "+150",
+                      "matk": "+150",
                       "sp-cost": "50"
                     }
                   }
@@ -8493,10 +9216,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8509,9 +9231,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Prestige 3 / Banding 3",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hesperus_Lit",
           "description": "Deals melee physical damage to 1 target.\nDamage increases based on BaseLv and VIT, deals more damage when Inspiration is active.",
           "levelDetails": [
             {
@@ -8591,8 +9315,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20+(17×SkillLevel)",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Hesperus Lit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hesperus_Lit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2324.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2324",
           "tree": {
@@ -8626,6 +9359,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20+(17×SkillLevel)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8640,6 +9377,14 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "0.2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -8696,7 +9441,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hesperus Lit",
@@ -8735,7 +9479,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8748,9 +9492,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Shield Spell 3 / Ray of Genesis 4 / Piety 5",
           "group": "Active / Self Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Inspiration",
           "description": "Inspired by holy spirit. Temporarily increase HIT, State, ATK, MATK, and MaxHP.\nDuring the duration, character is immune to some buffs or status effects. Consumes HP and SP per 5 sec.\nSkill goes off when Duration is over or HP or SP becomes 0.\nProtected buff and Status Effect : Poison, Dark, Stun, Silence, Confusion, Stone, Sleep, Bleeding, Curse, Blazing, Freezing, Frozen, Fear, Toxin, Paralysis, Venom Bleed, Magic Mushroom, Death heart, Pyrexia, Oblivion, Deel Sleep, Frenzy, Masquerade (Body Painting, Innovation, Groomy, Ignorance, Laziness, Unlucky, Weakness)",
           "levelDetails": [
             {
@@ -8879,8 +9625,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "cooldown": "3 minutes",
+          "duration": "[30 + (Skill Level × 30)] seconds Until SP reaches 0",
+          "translations": {
+            "pt-BR": {
+              "name": " Inspiration ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Inspiration"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2325.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2325",
           "tree": {
@@ -8920,6 +9676,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -8930,6 +9690,14 @@ export const imperialGuardData = {
               {
                 "label": "Cast Delay",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "3 minutes"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -8937,20 +9705,28 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "maxhp",
+                    "label": "MaxHP"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
                     "label": "Effect"
                   },
                   {
-                    "id": "atk",
-                    "label": "/ Atk"
-                  },
-                  {
                     "id": "all-state",
                     "label": "All State"
+                  },
+                  {
+                    "id": "atk",
+                    "label": "Atk"
                   },
                   {
                     "id": "data-1",
@@ -8971,10 +9747,6 @@ export const imperialGuardData = {
                   {
                     "id": "matk",
                     "label": "Matk"
-                  },
-                  {
-                    "id": "maxhp",
-                    "label": "Maxhp"
                   }
                 ],
                 "rows": [
@@ -8984,9 +9756,10 @@ export const imperialGuardData = {
                       "hit": "+12",
                       "all-state": "+6",
                       "maxhp": "+4%",
+                      "duration": "60 seconds",
                       "atk": "+40",
                       "matk": "+40",
-                      "effect": "Duration 60 sec\nConsumes HP 3%, SP 4% per 5 sec",
+                      "effect": "Consumes HP 3%, SP 4% per 5 sec",
                       "sp-cost": "80",
                       "data-1": "30",
                       "data-2": "40",
@@ -8999,9 +9772,10 @@ export const imperialGuardData = {
                       "hit": "+24",
                       "all-state": "+12",
                       "maxhp": "+8%",
+                      "duration": "90 seconds",
                       "atk": "+80",
                       "matk": "+80",
-                      "effect": "Duration 90 sec\nConsumes HP 2.5%, SP 3.5% per 5 sec",
+                      "effect": "Consumes HP 2.5%, SP 3.5% per 5 sec",
                       "sp-cost": "90",
                       "data-1": "25",
                       "data-2": "35",
@@ -9014,9 +9788,10 @@ export const imperialGuardData = {
                       "hit": "+36",
                       "all-state": "+18",
                       "maxhp": "+12%",
+                      "duration": "120 seconds",
                       "atk": "+120",
                       "matk": "+120",
-                      "effect": "Duration 120 sec\nConsumes HP 2%, SP 3% per 5 sec",
+                      "effect": "Consumes HP 2%, SP 3% per 5 sec",
                       "sp-cost": "100",
                       "data-1": "20",
                       "data-2": "30",
@@ -9029,9 +9804,10 @@ export const imperialGuardData = {
                       "hit": "+48",
                       "all-state": "+24",
                       "maxhp": "+16%",
+                      "duration": "150 seconds",
                       "atk": "+160",
                       "matk": "+160",
-                      "effect": "Duration 150 sec\nConsumes HP 1.5%, SP 2.5% per 5 sec",
+                      "effect": "Consumes HP 1.5%, SP 2.5% per 5 sec",
                       "sp-cost": "110",
                       "data-1": "15",
                       "data-2": "25",
@@ -9044,9 +9820,10 @@ export const imperialGuardData = {
                       "hit": "+60",
                       "all-state": "+30",
                       "maxhp": "+20%",
+                      "duration": "180 seconds",
                       "atk": "+200",
                       "matk": "+200",
-                      "effect": "Duration 180 sec\nConsumes HP 1%, SP 2% per 5 sec",
+                      "effect": "Consumes HP 1%, SP 2% per 5 sec",
                       "sp-cost": "120",
                       "data-1": "10",
                       "data-2": "20",
@@ -9058,10 +9835,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9073,10 +9849,12 @@ export const imperialGuardData = {
           "maxLevel": 5,
           "prerequisiteText": "3rd jobs",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Throttle",
           "description": "Exceed the limits of the body by\nsacrificing your own vitality to strengthen yourself\nfor a short time. You will become horribly\nexhausted after the skill's duration.\nFully restores HP when cast and increases\nmovement speed for the skill's duration.\nAll stats +20%.\nAfter the skill duration ends, you will be inflicted\nwith Rebound status. During rebound status,\nyour movement speed is lowered and your\nnatural HP/SP recovery is disabled.\nCannot be removed by dispel or clearance.\n50 Minute playtime cooldown",
           "levelDetails": [
             {
@@ -9181,8 +9959,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Throttle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
@@ -9195,8 +9982,16 @@ export const imperialGuardData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
               },
               {
                 "label": "Fixed Cast Time",
@@ -9213,6 +10008,10 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "3000 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -9296,10 +10095,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9326,6 +10124,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Enhances MaxHP and resistance to Holy property damage.",
           "levelDetails": [
             {
@@ -9416,8 +10216,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Faith (Faith) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Faith_(Faith)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/248.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/248",
           "tree": {
@@ -9443,118 +10250,96 @@ export const imperialGuardData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "maxhp",
+                    "label": "MaxHP"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
                   {
-                    "id": "maxhp-200-resistance-to-sacred-property",
-                    "label": "Maxhp + 200, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-400-resistance-to-sacred-property",
-                    "label": "Maxhp + 400, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-600-resistance-to-sacred-property",
-                    "label": "Maxhp + 600, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-800-resistance-to-sacred-property",
-                    "label": "Maxhp + 800, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-1000-resistance-to-sacred-property",
-                    "label": "Maxhp +1000, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-1200-resistance-to-sacred-property",
-                    "label": "Maxhp +1200, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-1400-resistance-to-sacred-property",
-                    "label": "Maxhp +1400, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-1600-resistance-to-sacred-property",
-                    "label": "Maxhp +1600, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-1800-resistance-to-sacred-property",
-                    "label": "Maxhp +1800, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-2000-resistance-to-sacred-property",
-                    "label": "Maxhp +2000, Resistance To Sacred Property:"
+                    "id": "resistance-to-sacred-property",
+                    "label": "Resistance To Sacred Property:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "maxhp-200-resistance-to-sacred-property": "+ 5%",
+                      "maxhp": "+ 200",
+                      "resistance-to-sacred-property": "+ 5%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "maxhp-400-resistance-to-sacred-property": "+10%",
+                      "maxhp": "+ 400",
+                      "resistance-to-sacred-property": "+10%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "maxhp-600-resistance-to-sacred-property": "+15%",
+                      "maxhp": "+ 600",
+                      "resistance-to-sacred-property": "+15%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "maxhp-800-resistance-to-sacred-property": "+20%",
+                      "maxhp": "+ 800",
+                      "resistance-to-sacred-property": "+20%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "maxhp-1000-resistance-to-sacred-property": "+25%",
+                      "maxhp": "+1000",
+                      "resistance-to-sacred-property": "+25%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "maxhp-1200-resistance-to-sacred-property": "+30%",
+                      "maxhp": "+1200",
+                      "resistance-to-sacred-property": "+30%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "maxhp-1400-resistance-to-sacred-property": "+35%",
+                      "maxhp": "+1400",
+                      "resistance-to-sacred-property": "+35%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "maxhp-1600-resistance-to-sacred-property": "+40%",
+                      "maxhp": "+1600",
+                      "resistance-to-sacred-property": "+40%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "maxhp-1800-resistance-to-sacred-property": "+45%",
+                      "maxhp": "+1800",
+                      "resistance-to-sacred-property": "+45%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "maxhp-2000-resistance-to-sacred-property": "+50%",
+                      "maxhp": "+2000",
+                      "resistance-to-sacred-property": "+50%",
                       "sp-cost": "0"
                     }
                   }
@@ -9563,10 +10348,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9582,6 +10366,8 @@ export const imperialGuardData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Auto_Guard",
           "description": "Requires the user to have a shield equipped.\nAllows the user to block physical attacks with the equipped shield by chance in duration.\nThe player will be forced to pause momentarily whenever this skill blocks damage.\nThis skill can be switched on and off.",
           "levelDetails": [
             {
@@ -9672,8 +10458,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "duration": "5 minutes; Until recast",
+          "translations": {
+            "pt-BR": {
+              "name": " Auto Guard ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Auto_Guard"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/249.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/249",
           "tree": {
@@ -9694,8 +10489,16 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Duration",
+                "value": "5 minutes; Until recast"
               }
             ],
             "levelTables": [
@@ -9787,10 +10590,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9806,6 +10608,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spear_Mastery",
           "description": "Enhances attack (Weapon Mastery) with Spear class weapons.\nThis bonus is higher if the user is mounted.",
           "levelDetails": [
             {
@@ -9896,8 +10700,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Spear Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spear_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/55.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/55",
           "tree": {
@@ -9927,114 +10738,92 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "not-mounted-damage-4-mounted",
-                    "label": "Not Mounted, Damage + 4, Mounted,"
+                    "id": "mounted",
+                    "label": "Mounted,"
                   },
                   {
-                    "id": "not-mounted-damage-8-mounted",
-                    "label": "Not Mounted, Damage + 8, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-12-mounted",
-                    "label": "Not Mounted, Damage +12, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-16-mounted",
-                    "label": "Not Mounted, Damage +16, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-20-mounted",
-                    "label": "Not Mounted, Damage +20, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-24-mounted",
-                    "label": "Not Mounted, Damage +24, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-28-mounted",
-                    "label": "Not Mounted, Damage +28, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-32-mounted",
-                    "label": "Not Mounted, Damage +32, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-36-mounted",
-                    "label": "Not Mounted, Damage +36, Mounted,"
-                  },
-                  {
-                    "id": "not-mounted-damage-40-mounted",
-                    "label": "Not Mounted, Damage +40, Mounted,"
+                    "id": "not-mounted-damage",
+                    "label": "Not Mounted, Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "not-mounted-damage-4-mounted": "+ 5",
+                      "not-mounted-damage": "+ 4",
+                      "mounted": "+ 5",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "not-mounted-damage-8-mounted": "+10",
+                      "not-mounted-damage": "+ 8",
+                      "mounted": "+10",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "not-mounted-damage-12-mounted": "+15",
+                      "not-mounted-damage": "+12",
+                      "mounted": "+15",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "not-mounted-damage-16-mounted": "+20",
+                      "not-mounted-damage": "+16",
+                      "mounted": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "not-mounted-damage-20-mounted": "+25",
+                      "not-mounted-damage": "+20",
+                      "mounted": "+25",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "not-mounted-damage-24-mounted": "+30",
+                      "not-mounted-damage": "+24",
+                      "mounted": "+30",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "not-mounted-damage-28-mounted": "+35",
+                      "not-mounted-damage": "+28",
+                      "mounted": "+35",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "not-mounted-damage-32-mounted": "+40",
+                      "not-mounted-damage": "+32",
+                      "mounted": "+40",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "not-mounted-damage-36-mounted": "+45",
+                      "not-mounted-damage": "+36",
+                      "mounted": "+45",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "not-mounted-damage-40-mounted": "+50",
+                      "not-mounted-damage": "+40",
+                      "mounted": "+50",
                       "sp-cost": "0"
                     }
                   }
@@ -10043,10 +10832,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10062,6 +10850,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Peco_Peco_Ride",
           "description": "Enables Knights and Crusaders to ride a Peco Peco.",
           "levelDetails": [],
           "levelExtras": [
@@ -10075,8 +10865,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Peco Peco Ride ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Peco_Peco_Ride"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/63.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/63",
           "tree": {
@@ -10125,10 +10922,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10144,6 +10940,8 @@ export const imperialGuardData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shrink",
           "description": "Consumes 100 SP. Creates a high chance of Stunning enemies with a successful Guard within 15 minutes.\nUse this skill again for its duration to cancel its effect.",
           "levelDetails": [],
           "levelExtras": [
@@ -10157,8 +10955,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "duration": "15 minutes; Until recast",
+          "translations": {
+            "pt-BR": {
+              "name": " Shrink ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shrink"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1002.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1002",
           "tree": {
@@ -10179,8 +10986,16 @@ export const imperialGuardData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "15 minutes; Until recast"
               }
             ],
             "levelTables": [
@@ -10204,10 +11019,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10223,6 +11037,8 @@ export const imperialGuardData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cure",
           "description": "Cures a single target from the following status effects: Silence, Chaos and Blind and consumes SP15.",
           "levelDetails": [],
           "levelExtras": [
@@ -10236,8 +11052,16 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "translations": {
+            "pt-BR": {
+              "name": " Cure ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cure"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/35.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/35",
           "tree": {
@@ -10265,6 +11089,10 @@ export const imperialGuardData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -10290,10 +11118,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10309,6 +11136,8 @@ export const imperialGuardData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Holy_Cross",
           "description": "Slices a single target with a cross shaped attack to inflict Holy property physical damage. It has a chance of leaving the target [Abnormal Status: blind].\nThe chance of blind is reduced by the target's resistance to abnormal status.\nThe damage is doubled with a two-handed Spear.",
           "levelDetails": [
             {
@@ -10399,8 +11228,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level + 10)",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Holy Cross ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Holy_Cross"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/253.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/253",
           "tree": {
@@ -10426,6 +11265,18 @@ export const imperialGuardData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "(Skill Level + 10)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -10507,10 +11358,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10526,6 +11376,8 @@ export const imperialGuardData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Requires the user to have a shield equipped.\nSmashes the equipped shield into a single target to inflict physical damage and push it backwards. It has a chance of leaving the target [Abnormal Status: stunned].\nThe chance of stun is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -10576,8 +11428,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Smite (Shield Charge) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Smite_(Shield_Charge)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/250.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/250",
           "tree": {
@@ -10654,10 +11513,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10673,6 +11531,8 @@ export const imperialGuardData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spear_Quicken",
           "description": "Requires the user to have a Spear class weapons equipped.\nTemporarily increases attack speed, critical hit rate and flee rate with Spear class weapons.\nDuration, the chance of critical, and flee rate increase depending on skill level.\nSwitching to a different weapon or dismounting a spear will cancel this effect.",
           "levelDetails": [
             {
@@ -10763,8 +11623,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 4)",
+          "duration": "(Skill Level × 30) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Spear Quicken ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spear_Quicken"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/258.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/258",
           "tree": {
@@ -10792,6 +11661,10 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 4)"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
               }
@@ -10805,114 +11678,106 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "duration-30sec-cri-3-flee",
-                    "label": "Duration: 30sec, Cri+ 3, Flee"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
-                    "id": "duration-60sec-cri-6-flee",
-                    "label": "Duration: 60sec, Cri+ 6, Flee"
+                    "id": "cri",
+                    "label": ", Cri"
                   },
                   {
-                    "id": "duration-90sec-cri-9-flee",
-                    "label": "Duration: 90sec, Cri+ 9, Flee"
-                  },
-                  {
-                    "id": "duration-120sec-cri-12-flee",
-                    "label": "Duration:120sec, Cri+12, Flee"
-                  },
-                  {
-                    "id": "duration-150sec-cri-15-flee",
-                    "label": "Duration:150sec, Cri+15, Flee"
-                  },
-                  {
-                    "id": "duration-180sec-cri-18-flee",
-                    "label": "Duration:180sec, Cri+18, Flee"
-                  },
-                  {
-                    "id": "duration-210sec-cri-21-flee",
-                    "label": "Duration:210sec, Cri+21, Flee"
-                  },
-                  {
-                    "id": "duration-240sec-cri-24-flee",
-                    "label": "Duration:240sec, Cri+24, Flee"
-                  },
-                  {
-                    "id": "duration-270sec-cri-27-flee",
-                    "label": "Duration:270sec, Cri+27, Flee"
-                  },
-                  {
-                    "id": "duration-300sec-cri-30-flee",
-                    "label": "Duration:300sec, Cri+30, Flee"
+                    "id": "flee",
+                    "label": "Flee"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration-30sec-cri-3-flee": "+ 2",
+                      "duration": "30 seconds",
+                      "cri": "+ 3",
+                      "flee": "+ 2",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "duration-60sec-cri-6-flee": "+ 4",
+                      "duration": "60 seconds",
+                      "cri": "+ 6",
+                      "flee": "+ 4",
                       "sp-cost": "28"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "duration-90sec-cri-9-flee": "+ 6",
+                      "duration": "90 seconds",
+                      "cri": "+ 9",
+                      "flee": "+ 6",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "duration-120sec-cri-12-flee": "+ 8",
+                      "duration": "120 seconds",
+                      "cri": "+12",
+                      "flee": "+ 8",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "duration-150sec-cri-15-flee": "+10",
+                      "duration": "150 seconds",
+                      "cri": "+15",
+                      "flee": "+10",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "duration-180sec-cri-18-flee": "+12",
+                      "duration": "180 seconds",
+                      "cri": "+18",
+                      "flee": "+12",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "duration-210sec-cri-21-flee": "+14",
+                      "duration": "210 seconds",
+                      "cri": "+21",
+                      "flee": "+14",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "duration-240sec-cri-24-flee": "+16",
+                      "duration": "240 seconds",
+                      "cri": "+24",
+                      "flee": "+16",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "duration-270sec-cri-27-flee": "+18",
+                      "duration": "270 seconds",
+                      "cri": "+27",
+                      "flee": "+18",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "duration-300sec-cri-30-flee": "+20",
+                      "duration": "300 seconds",
+                      "cri": "+30",
+                      "flee": "+20",
                       "sp-cost": "60"
                     }
                   }
@@ -10921,10 +11786,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10940,6 +11804,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cavalier_Mastery",
           "description": "Regains the attack speed loss when riding a Peco Peco .",
           "levelDetails": [
             {
@@ -10990,8 +11856,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Cavalier Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cavalier_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/64.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/64",
           "tree": {
@@ -11064,10 +11937,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11083,6 +11955,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Divine_Protection",
           "description": "Raises Soft Defense against Demon and Undead race monsters. The higher the character level, the higher the damage reduction.\nDecrease the damage received from Demon and Undead race monsters by the amount of damage reduction.",
           "levelDetails": [
             {
@@ -11173,8 +12047,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Divine Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Divine_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/22.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/22",
           "tree": {
@@ -11291,10 +12172,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11310,6 +12190,8 @@ export const imperialGuardData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Grand_Cross",
           "description": "Inflicts Holy property Hybrid Damage 1 to 3 times to all enemies in a cross-shaped area around the user.\neach cast drains 20% of MaxHP and inflicts a third of the damage to the user.\nCast Time cannot be interrupted.\nAll demon, undead race monsters becomes [Abnormal Status: Blind] except boss monster.",
           "levelDetails": [
             {
@@ -11404,8 +12286,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 7)",
+          "duration": "0.9 seconds",
+          "areaOfEffect": "Cross-shaped",
+          "translations": {
+            "pt-BR": {
+              "name": " Grand Cross ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Grand_Cross"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/254.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/254",
           "tree": {
@@ -11439,6 +12331,10 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 7)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -11457,6 +12353,14 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "Cross-shaped"
+              },
+              {
+                "label": "Duration",
+                "value": "0.9 seconds"
               }
             ],
             "levelTables": [
@@ -11534,10 +12438,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11553,6 +12456,8 @@ export const imperialGuardData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shield_Boomerang",
           "description": "Requires the user to have a shield equipped.\nHurls the equipped shield like a boomerang at a single target to inflict ranged physical damage.\nThe damage is affected by the equiped shield's weight and upgrade level.",
           "levelDetails": [
             {
@@ -11603,8 +12508,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castDelay": "0.7 seconds",
+          "castRange": "[1 + (Skill Level × 2)] cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Shield Boomerang ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shield_Boomerang"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/251.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/251",
           "tree": {
@@ -11630,6 +12545,18 @@ export const imperialGuardData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.7 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "[1 + (Skill Level × 2)] cells"
               },
               {
                 "label": "Target",
@@ -11681,10 +12608,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11700,6 +12626,8 @@ export const imperialGuardData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gloria_Domini",
           "description": "Summon a massive crucifix to magical attack\nenemies with Holy property.",
           "levelDetails": [
             {
@@ -11754,6 +12682,8 @@ export const imperialGuardData = {
               ]
             }
           ],
+          "spCost": "25 + (Skill Level × 5)",
+          "castRange": "Magic",
           "translations": {
             "pt-BR": {
               "name": " Gloria Domini ",
@@ -11802,6 +12732,10 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.4 seconds"
               },
@@ -11816,6 +12750,10 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -11867,7 +12805,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -11886,6 +12823,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Raises Physical Attack (Weapon Mastery) against Demon and Undead race monsters.\nDamage is added to the physical damage given to Demon and Undead race monsters.",
           "levelDetails": [
             {
@@ -11976,8 +12915,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Demonbane ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Demonbane"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/23.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/23",
           "tree": {
@@ -12080,10 +13026,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12099,6 +13044,8 @@ export const imperialGuardData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Reflect_Shield",
           "description": "Requires the user to have a shield equipped.\nProduces an aura of retaliation to reflect a portion of the close range physical damage taken back at the attacker for five minutes.\nThis skill is deactivated when the shield is released in duration.",
           "levelDetails": [
             {
@@ -12189,8 +13136,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 5)",
+          "castDelay": "1 second",
+          "duration": "5 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Reflect Shield ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Reflect_Shield"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/252.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/252",
           "tree": {
@@ -12218,8 +13175,20 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 5)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Duration",
+                "value": "5 minutes"
               }
             ],
             "levelTables": [
@@ -12311,10 +13280,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12330,6 +13298,8 @@ export const imperialGuardData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Defender",
           "description": "Requires the user to have a shield equipped.\nProduces an aura of protection to buffer all incoming ranged physical damage at cost of attack speed and movement speed.\nSkill level affects damage reduction and ATK speed.\nThis skill can be switched on and off.",
           "levelDetails": [
             {
@@ -12380,8 +13350,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "castDelay": "1 second",
+          "duration": "3 minutes; Until recast",
+          "translations": {
+            "pt-BR": {
+              "name": " Defender ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Defender"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/257.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/257",
           "tree": {
@@ -12409,8 +13389,20 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "3 minutes; Until recast"
               }
             ],
             "levelTables": [
@@ -12458,10 +13450,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12477,6 +13468,8 @@ export const imperialGuardData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rapid_Smiting",
           "description": "Enable the chance of striking an\nenemy 5 times with a Shield while in battle.\nAccuracy Rate affects chance of success and the\nShield's weight and Upgrade status and caster's level affects the\namount of damage. Rapid Smiting requires Shield.",
           "levelDetails": [
             {
@@ -12528,8 +13521,20 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level × 3)",
+          "fixedCastTime": "0.2 seconds",
+          "variableCastTime": "0.8 seconds",
+          "castDelay": "1 second",
+          "castRange": "varies cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Rapid Smiting ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rapid_Smiting"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/480.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/480",
           "tree": {
@@ -12557,8 +13562,28 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level × 3)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.8 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "varies cells"
               },
               {
                 "label": "Target",
@@ -12574,59 +13599,43 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "atk-1100-accuracy-rate",
-                    "label": "Atk 1100%, Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-1300-accuracy-rate",
-                    "label": "Atk 1300% , Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-500-accuracy-rate",
-                    "label": "Atk 500% , Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-700-accuracy-rate",
-                    "label": "Atk 700% , Accuracy Rate"
-                  },
-                  {
-                    "id": "atk-900-accuracy-rate",
-                    "label": "Atk 900% , Accuracy Rate"
+                    "id": "accuracy-rate",
+                    "label": ", Accuracy Rate"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "atk-500-accuracy-rate": "+20",
+                      "accuracy-rate": "+20",
                       "sp-cost": "28"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "atk-700-accuracy-rate": "+20",
+                      "accuracy-rate": "+20",
                       "sp-cost": "31"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "atk-900-accuracy-rate": "+20",
+                      "accuracy-rate": "+20",
                       "sp-cost": "34"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "atk-1100-accuracy-rate": "+20",
+                      "accuracy-rate": "+20",
                       "sp-cost": "37"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "atk-1300-accuracy-rate": "+20",
+                      "accuracy-rate": "+20",
                       "sp-cost": "40"
                     }
                   }
@@ -12635,7 +13644,6 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Rapid Smiting",
@@ -12658,7 +13666,7 @@ export const imperialGuardData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12674,6 +13682,8 @@ export const imperialGuardData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Heal",
           "description": "Restores HP of a single target. This skill is also affected by User's LV, total INT, MATK.\nVersus Undead property targets, inflicts Holy property damage equal to half the amount of the HP restored.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -12727,8 +13737,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 3)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Heal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Heal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/28.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/28",
           "tree": {
@@ -12762,6 +13781,10 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -12776,6 +13799,10 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -12857,10 +13884,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12876,6 +13902,8 @@ export const imperialGuardData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Links to a single target to take all of the damage in its place.\nThe level of the target and the caster's level must not differ by more than 10. This skill does not deactivate until a player takes damage when out of range of the skill, or the duration of the skill expires.\nSince it takes damage instead, the cast does not break even if the connected target is attacked during casting.\nCrusaders cannot be targeted by this skill.",
           "levelDetails": [
             {
@@ -12926,8 +13954,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sacrifice (Devotion) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sacrifice_(Devotion)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/255.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/255",
           "tree": {
@@ -12974,6 +14009,10 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -12982,35 +14021,40 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration : 30sec, Ma x imum Connections: 1person",
+                      "duration": "30 seconds",
+                      "effect": ", Ma x imum Connections: 1person",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration : 45sec, Ma x imum Connections: 2people",
+                      "duration": "45 seconds",
+                      "effect": ", Ma x imum Connections: 2people",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration : 60sec, Ma x imum Connections: 3people",
+                      "duration": "60 seconds",
+                      "effect": ", Ma x imum Connections: 3people",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration : 75sec, Ma x imum Connections: 4people",
+                      "duration": "75 seconds",
+                      "effect": ", Ma x imum Connections: 4people",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration : 90sec, Ma x imum Connections: 5people",
+                      "duration": "90 seconds",
+                      "effect": ", Ma x imum Connections: 5people",
                       "sp-cost": "25"
                     }
                   }
@@ -13019,10 +14063,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13038,6 +14081,8 @@ export const imperialGuardData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Battle_Chant",
           "description": "Sing a hymn that will cause one\nout of 10 different negative status effects to\nenemies and will endow one out of 10 positive\nstatuses upon Party Members within this skill's\nrange. This skill is cancelled if the caster is\nmuted during the casting of Battle Chant.",
           "levelDetails": [],
           "levelExtras": [
@@ -13087,8 +14132,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80/100",
+          "duration": "60 seconds; Until recast",
+          "areaOfEffect": "Cross-shaped",
+          "translations": {
+            "pt-BR": {
+              "name": " Battle Chant ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Battle_Chant"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/369.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/369",
           "tree": {
@@ -13128,8 +14183,20 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "80/100"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "Cross-shaped"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds; Until recast"
               }
             ],
             "levelTables": [
@@ -13207,10 +14274,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13226,6 +14292,8 @@ export const imperialGuardData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Providence",
           "description": "Boosts resistance against Demon race monsters and Holy property damage.\nCrusaders cannot be targeted by this skill, including the player itself.",
           "levelDetails": [
             {
@@ -13276,8 +14344,19 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "castDelay": "3 seconds",
+          "duration": "3 minutes",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Providence ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Providence"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/256.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/256",
           "tree": {
@@ -13311,8 +14390,24 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "3 minutes"
               }
             ],
             "levelTables": [
@@ -13324,59 +14419,52 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "resistance-against-demon-race-5-resistance-to-sacred-property",
-                    "label": "Resistance Against Demon Race: + 5%, Resistance To Sacred Property:"
+                    "id": "resistance-against-demon-race",
+                    "label": "Resistance Against Demon Race:"
                   },
                   {
-                    "id": "resistance-against-demon-race-10-resistance-to-sacred-property",
-                    "label": "Resistance Against Demon Race: +10%, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "resistance-against-demon-race-15-resistance-to-sacred-property",
-                    "label": "Resistance Against Demon Race: +15%, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "resistance-against-demon-race-20-resistance-to-sacred-property",
-                    "label": "Resistance Against Demon Race: +20%, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "resistance-against-demon-race-25-resistance-to-sacred-property",
-                    "label": "Resistance Against Demon Race: +25%, Resistance To Sacred Property:"
+                    "id": "resistance-to-sacred-property",
+                    "label": "Resistance To Sacred Property:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "resistance-against-demon-race-5-resistance-to-sacred-property": "+ 5%",
+                      "resistance-against-demon-race": "+ 5%",
+                      "resistance-to-sacred-property": "+ 5%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "resistance-against-demon-race-10-resistance-to-sacred-property": "+10%",
+                      "resistance-against-demon-race": "+10%",
+                      "resistance-to-sacred-property": "+10%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "resistance-against-demon-race-15-resistance-to-sacred-property": "+15%",
+                      "resistance-against-demon-race": "+15%",
+                      "resistance-to-sacred-property": "+15%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "resistance-against-demon-race-20-resistance-to-sacred-property": "+20%",
+                      "resistance-against-demon-race": "+20%",
+                      "resistance-to-sacred-property": "+20%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "resistance-against-demon-race-25-resistance-to-sacred-property": "+25%",
+                      "resistance-against-demon-race": "+25%",
+                      "resistance-to-sacred-property": "+25%",
                       "sp-cost": "30"
                     }
                   }
@@ -13385,10 +14473,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13404,6 +14491,8 @@ export const imperialGuardData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Martyr's_Reckoning",
           "description": "Change 5 physical attacks\nafter activating this skill into special attack.\nEach attack enhanced by Martyr's Reckoning will drain an\namount of HP equal to 9% of character's MaxHP.\nThis skill can make the caster killed.",
           "levelDetails": [
             {
@@ -13454,8 +14543,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "castDelay": "ASPD",
+          "duration": "Until ne x t 5 attacks",
+          "translations": {
+            "pt-BR": {
+              "name": " Martyr's Reckoning ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Martyr's_Reckoning"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/368.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/368",
           "tree": {
@@ -13489,8 +14588,20 @@ export const imperialGuardData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "Until ne x t 5 attacks"
               }
             ],
             "levelTables": [
@@ -13547,10 +14658,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13577,6 +14687,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -13655,8 +14767,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -13758,10 +14877,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13777,6 +14895,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sword_Mastery",
           "description": "Increase damage with One Handed\nSword or Dagger Class Weapons.",
           "levelDetails": [
             {
@@ -13867,8 +14987,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sword Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sword_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2",
           "tree": {
@@ -13964,10 +15091,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13983,6 +15109,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Increase_HP_Recovery",
           "description": "Enhance natural HP Recovery. Max\nHP affects how much HP restoration is increased.\nHP recovery happens every 10 seconds while standing.\nBut it doesn't work while walking or HP/SP regen disabled.",
           "levelDetails": [
             {
@@ -14073,8 +15201,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Increase HP Recovery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Increase_HP_Recovery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/4.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/4",
           "tree": {
@@ -14108,6 +15243,10 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -14116,70 +15255,80 @@ export const imperialGuardData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(HP 5+0.2% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 5+0.2% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(HP 10+0.4% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 10+0.4% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(HP 15+0.6% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 15+0.6% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(HP 20+0.8% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 20+0.8% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(HP 25+1.0% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 25+1.0% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(HP 30+1.2% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 30+1.2% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(HP 35+1.4% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 35+1.4% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(HP 40+1.6% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 40+1.6% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(HP 45+1.8% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 45+1.8% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(HP 50+2.0% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 50+2.0% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   }
@@ -14188,10 +15337,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14207,6 +15355,8 @@ export const imperialGuardData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bash",
           "description": "Hit an enemy with crushing force.\nIf the Fatal Blow skill is learned, Bash will have\nan added Stun effect at levels 5 and higher.",
           "levelDetails": [
             {
@@ -14297,8 +15447,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8/15",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Bash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5",
           "tree": {
@@ -14317,6 +15477,18 @@ export const imperialGuardData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "8/15"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -14398,10 +15570,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14417,6 +15588,8 @@ export const imperialGuardData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Provoke",
           "description": "Enrage a single target to decrease player's defense\nbased on VIT or monster's physical defense\nat cost of increasing its Attack Strength.\nIneffective against the Undead and Boss monster.\nEffect of Provoke on Enemies by Skill's Level.",
           "levelDetails": [
             {
@@ -14507,8 +15680,19 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level + 3)",
+          "castDelay": "ASPD",
+          "duration": "30 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Provoke ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Provoke"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6",
           "tree": {
@@ -14529,8 +15713,24 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level + 3)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds"
               }
             ],
             "levelTables": [
@@ -14542,114 +15742,92 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "enemy-s-atk-11-enemy-s-def",
-                    "label": "Enemy's Atk +11%, Enemy's Def"
+                    "id": "enemy-s-atk",
+                    "label": "Enemy's Atk"
                   },
                   {
-                    "id": "enemy-s-atk-14-enemy-s-def",
-                    "label": "Enemy's Atk +14%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-17-enemy-s-def",
-                    "label": "Enemy's Atk +17%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-20-enemy-s-def",
-                    "label": "Enemy's Atk +20%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-23-enemy-s-def",
-                    "label": "Enemy's Atk +23%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-26-enemy-s-def",
-                    "label": "Enemy's Atk +26%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-29-enemy-s-def",
-                    "label": "Enemy's Atk +29%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-32-enemy-s-def",
-                    "label": "Enemy's Atk +32%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-5-enemy-s-def",
-                    "label": "Enemy's Atk +5%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-8-enemy-s-def",
-                    "label": "Enemy's Atk +8%, Enemy's Def"
+                    "id": "enemy-s-def",
+                    "label": "Enemy's Def"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "enemy-s-atk-5-enemy-s-def": "-10%",
+                      "enemy-s-atk": "+5%",
+                      "enemy-s-def": "-10%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "enemy-s-atk-8-enemy-s-def": "-15%",
+                      "enemy-s-atk": "+8%",
+                      "enemy-s-def": "-15%",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "enemy-s-atk-11-enemy-s-def": "-20%",
+                      "enemy-s-atk": "+11%",
+                      "enemy-s-def": "-20%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "enemy-s-atk-14-enemy-s-def": "-25%",
+                      "enemy-s-atk": "+14%",
+                      "enemy-s-def": "-25%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "enemy-s-atk-17-enemy-s-def": "-30%",
+                      "enemy-s-atk": "+17%",
+                      "enemy-s-def": "-30%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "enemy-s-atk-20-enemy-s-def": "-35%",
+                      "enemy-s-atk": "+20%",
+                      "enemy-s-def": "-35%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "enemy-s-atk-23-enemy-s-def": "-40%",
+                      "enemy-s-atk": "+23%",
+                      "enemy-s-def": "-40%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "enemy-s-atk-26-enemy-s-def": "-45%",
+                      "enemy-s-atk": "+26%",
+                      "enemy-s-def": "-45%",
                       "sp-cost": "11"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "enemy-s-atk-29-enemy-s-def": "-50%",
+                      "enemy-s-atk": "+29%",
+                      "enemy-s-def": "-50%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "enemy-s-atk-32-enemy-s-def": "-55%",
+                      "enemy-s-atk": "+32%",
+                      "enemy-s-def": "-55%",
                       "sp-cost": "13"
                     }
                   }
@@ -14658,10 +15836,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14674,9 +15851,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Finish Quest",
           "group": "Passive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Berserk",
           "description": "Empowered by rage, character\nenters condition that is equivalent to Level 10\nProvoke status when HP is reduced to less than\n25% of MaxHP. Provoked status lasts until\ncharacter HP is restored to more than 25% of\nMaxHP or if Provoke effect is nullified.",
           "levelDetails": [],
           "levelExtras": [
@@ -14690,8 +15869,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Until recast",
+          "translations": {
+            "pt-BR": {
+              "name": " Berserk ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Berserk"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/146.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/146",
           "tree": {
@@ -14710,6 +15898,18 @@ export const imperialGuardData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Until recast"
               }
             ],
             "levelTables": [
@@ -14733,10 +15933,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14752,6 +15951,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/HP_Recovery_While_Moving",
           "description": "Enable natural recovery of HP\nwhile moving. Only 25% of the HP that is\nnaturally recovered while standing is restored\nduring movement. The Increase Recovery skill\ndoes not affect HP Recovery While Moving.",
           "levelDetails": [],
           "levelExtras": [
@@ -14765,8 +15966,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " HP Recovery While Moving ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/HP_Recovery_While_Moving"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/144.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/144",
           "tree": {
@@ -14808,10 +16016,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14827,6 +16034,8 @@ export const imperialGuardData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -14840,8 +16049,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -14860,6 +16078,14 @@ export const imperialGuardData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -14887,10 +16113,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14906,6 +16131,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Two_Handed_Sword_Mastery",
           "description": "Increase damage with Two Handed Sword Class Weapons.",
           "levelDetails": [
             {
@@ -14996,8 +16223,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Two Handed Sword Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Two_Handed_Sword_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/3.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3",
           "tree": {
@@ -15100,10 +16334,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15116,9 +16349,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Bash 5",
           "group": "Active",
           "type": "Offensive, Buff",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Magnum_Break",
           "description": "Drain a small amount of the caster's\nHP to inflict Fire property area effect damage on\nenemies in the caster's vicinity and force them\nbackward. For 10 seconds after Magnum Break,\ncaster's weapon will receive a 20% Fire property\nstrength enhancement.\nDescription : SP 30 Consumption, inflict Fire property physical damage to all enemies in a 5x5 area around the user and push them 2 cells backwards.\nThis skill adds an additional 20% Fire property damage for ten seconds.",
           "levelDetails": [
             {
@@ -15213,8 +16448,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Magnum Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Magnum_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/7.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/7",
           "tree": {
@@ -15242,6 +16487,10 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -15256,6 +16505,18 @@ export const imperialGuardData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -15333,10 +16594,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15352,6 +16612,8 @@ export const imperialGuardData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Endure",
           "description": "Enables attacking and movement\nwhile receiving damage, but is automatically\ncanceled after skill duration elapses or after\ncaster is hit by 7 attacks. 10 sec cast delay.\nDisabled in War of Emperium.\nDuration and Mdef Bonus by Skill's Level\nDescription : Resist flinching from enemy melee attacks temporarily. Stiffness occurs when damage is caused by Magic and skill attacks.\nIf attacked more than seven times by an enemy in an Endure state, the Endure state will be released.",
           "levelDetails": [
             {
@@ -15442,8 +16704,18 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "cooldown": "10 seconds",
+          "duration": "[7 + (Skill Level × 3)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Endure ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Endure"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/8.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/8",
           "tree": {
@@ -15471,6 +16743,14 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cooldown",
+                "value": "10 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
               }
@@ -15484,114 +16764,92 @@ export const imperialGuardData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "duration-10-sec-mdef",
-                    "label": "Duration 10 Sec, Mdef"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
-                    "id": "duration-13-sec-mdef",
-                    "label": "Duration 13 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-16-sec-mdef",
-                    "label": "Duration 16 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-19-sec-mdef",
-                    "label": "Duration 19 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-22-sec-mdef",
-                    "label": "Duration 22 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-25-sec-mdef",
-                    "label": "Duration 25 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-28-sec-mdef",
-                    "label": "Duration 28 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-31-sec-mdef",
-                    "label": "Duration 31 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-34-sec-mdef",
-                    "label": "Duration 34 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-37-sec-mdef",
-                    "label": "Duration 37 Sec, Mdef"
+                    "id": "mdef",
+                    "label": ", Mdef"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration-10-sec-mdef": "+1",
+                      "duration": "10 seconds",
+                      "mdef": "+1",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "duration-13-sec-mdef": "+2",
+                      "duration": "13 seconds",
+                      "mdef": "+2",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "duration-16-sec-mdef": "+3",
+                      "duration": "16 seconds",
+                      "mdef": "+3",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "duration-19-sec-mdef": "+4",
+                      "duration": "19 seconds",
+                      "mdef": "+4",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "duration-22-sec-mdef": "+5",
+                      "duration": "22 seconds",
+                      "mdef": "+5",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "duration-25-sec-mdef": "+6",
+                      "duration": "25 seconds",
+                      "mdef": "+6",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "duration-28-sec-mdef": "+7",
+                      "duration": "28 seconds",
+                      "mdef": "+7",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "duration-31-sec-mdef": "+8",
+                      "duration": "31 seconds",
+                      "mdef": "+8",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "duration-34-sec-mdef": "+9",
+                      "duration": "34 seconds",
+                      "mdef": "+9",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "duration-37-sec-mdef": "+10",
+                      "duration": "37 seconds",
+                      "mdef": "+10",
                       "sp-cost": "10"
                     }
                   }
@@ -15600,10 +16858,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15619,6 +16876,8 @@ export const imperialGuardData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fatal_Blow",
           "description": "Cause the Stun effect on targeted\nenemy when using Level 5 Bash or higher.\nThe chance of inflicting Stun increases with Bash\nskill level and Base Level of the caster.",
           "levelDetails": [],
           "levelExtras": [
@@ -15632,8 +16891,15 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Fatal Blow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fatal_Blow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/145.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/145",
           "tree": {
@@ -15675,10 +16941,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15691,9 +16956,11 @@ export const imperialGuardData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -15707,8 +16974,17 @@ export const imperialGuardData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -15727,6 +17003,18 @@ export const imperialGuardData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -15750,10 +17038,9 @@ export const imperialGuardData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15773,6 +17060,8 @@ export const imperialGuardData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Spear_Sword_Mastery",
       "description": "One-handed Swords, One-handed Spears, and Two-handed Spears increase HIT and Imperial Guard skill damage.",
       "levelDetails": [],
       "levelExtras": [
@@ -15822,8 +17111,15 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Spear Sword Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Spear_Sword_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5259.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5259",
       "tree": {
@@ -15919,10 +17215,9 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15938,6 +17233,8 @@ export const imperialGuardData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Shield_Mastery",
       "description": "Shields increase Physical Resistance and Imperial Guard skill damage.",
       "levelDetails": [],
       "levelExtras": [
@@ -15987,8 +17284,15 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Shield Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Shield_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5258.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5258",
       "tree": {
@@ -16084,10 +17388,9 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16103,6 +17406,8 @@ export const imperialGuardData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Attack_Stance",
       "description": "Increase your P.ATK and S.MATK at the cost of your DEF.",
       "levelDetails": [
         {
@@ -16157,8 +17462,16 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "50",
+      "translations": {
+        "pt-BR": {
+          "name": " Attack Stance ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Attack_Stance"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5260.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5260",
       "tree": {
@@ -16186,6 +17499,10 @@ export const imperialGuardData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "50"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -16211,16 +17528,20 @@ export const imperialGuardData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "p-atk",
+                "label": "P.Atk"
+              },
+              {
+                "id": "s-matk",
+                "label": "S.Matk"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
               {
                 "id": "def",
                 "label": "Def"
-              },
-              {
-                "id": "p-atk-s-matk",
-                "label": "P.Atk,S.Matk"
               }
             ],
             "rows": [
@@ -16228,7 +17549,8 @@ export const imperialGuardData = {
                 "level": 1,
                 "values": {
                   "def": "- 40",
-                  "p-atk-s-matk": "+ 3",
+                  "p-atk": "+ 3",
+                  "s-matk": "+ 3",
                   "sp-cost": "50"
                 }
               },
@@ -16236,7 +17558,8 @@ export const imperialGuardData = {
                 "level": 2,
                 "values": {
                   "def": "- 80",
-                  "p-atk-s-matk": "+ 6",
+                  "p-atk": "+ 6",
+                  "s-matk": "+ 6",
                   "sp-cost": "50"
                 }
               },
@@ -16244,7 +17567,8 @@ export const imperialGuardData = {
                 "level": 3,
                 "values": {
                   "def": "- 120",
-                  "p-atk-s-matk": "+ 9",
+                  "p-atk": "+ 9",
+                  "s-matk": "+ 9",
                   "sp-cost": "50"
                 }
               },
@@ -16252,7 +17576,8 @@ export const imperialGuardData = {
                 "level": 4,
                 "values": {
                   "def": "- 160",
-                  "p-atk-s-matk": "+ 12",
+                  "p-atk": "+ 12",
+                  "s-matk": "+ 12",
                   "sp-cost": "50"
                 }
               },
@@ -16260,7 +17585,8 @@ export const imperialGuardData = {
                 "level": 5,
                 "values": {
                   "def": "- 200",
-                  "p-atk-s-matk": "+ 15",
+                  "p-atk": "+ 15",
+                  "s-matk": "+ 15",
                   "sp-cost": "50"
                 }
               }
@@ -16269,7 +17595,6 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Attack Stance",
@@ -16320,7 +17645,7 @@ export const imperialGuardData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16336,6 +17661,8 @@ export const imperialGuardData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Imperial_Pressure",
       "description": "Crushes the target with the power of sincere faith.\nInflicts neutral property magical damage to the target and surrounding enemies around the target.\nIf Guard Stance is active, change the skill property to holy.\nDeals additional damage depends on user's base level, SPL and level of Spear & Sword Mastery user learned.",
       "levelDetails": [
         {
@@ -16364,8 +17691,17 @@ export const imperialGuardData = {
       "castDelay": "1 second",
       "cooldown": "0.45 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "85 + (4 × Skill Level)",
+      "castRange": "Magic",
+      "translations": {
+        "pt-BR": {
+          "name": " Imperial Pressure ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Imperial_Pressure"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6505.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6505",
       "tree": {
@@ -16399,6 +17735,10 @@ export const imperialGuardData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "85 + (4 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -16413,6 +17753,10 @@ export const imperialGuardData = {
           {
             "label": "Cooldown",
             "value": "0.45 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
           },
           {
             "label": "Target",
@@ -16472,7 +17816,6 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Imperial Pressure",
@@ -16488,7 +17831,7 @@ export const imperialGuardData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16504,6 +17847,8 @@ export const imperialGuardData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Guard_Stance",
       "description": "A Shield skill.\nIncrease your equipment's DEF at the cost of its ATK.",
       "levelDetails": [],
       "fixedCastTime": "0.5 seconds",
@@ -16537,8 +17882,16 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "50",
+      "translations": {
+        "pt-BR": {
+          "name": " Guard Stance ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Guard_Stance"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5255.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5255",
       "tree": {
@@ -16564,6 +17917,10 @@ export const imperialGuardData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "50"
           },
           {
             "label": "Fixed Cast Time",
@@ -16631,7 +17988,6 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Guard Stance",
@@ -16663,7 +18019,7 @@ export const imperialGuardData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16679,6 +18035,8 @@ export const imperialGuardData = {
       "target": "1 cell ground target",
       "recoversAp": "4",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Cross_Rain",
       "description": "Summons the sacred area on the ground to deals holy property magical damage every 0.3 seconds for 2.4 seconds.\nIncreases skill damage if the user uses Holy Shield.\nDeals additional damage depends on user's base level, SPL and level of Spear & Sword Mastery the user learned.",
       "levelDetails": [
         {
@@ -16773,8 +18131,17 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "46 + (4 x Skill Level)",
+      "areaOfEffect": "3 x 3 ~ 9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Cross Rain ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Cross_Rain"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5267.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5267",
       "tree": {
@@ -16800,6 +18167,10 @@ export const imperialGuardData = {
           {
             "label": "Levels",
             "value": "10"
+          },
+          {
+            "label": "SP Cost",
+            "value": "46 + (4 x Skill Level)"
           },
           {
             "label": "Fixed Cast Time",
@@ -16919,7 +18290,6 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Cross Rain",
@@ -17087,7 +18457,7 @@ export const imperialGuardData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17103,6 +18473,8 @@ export const imperialGuardData = {
       "target": "Single Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Overslash",
       "description": "Can only be used while using Attack Stance.\nDeals melee physical damage to the target and surrounding enemies within 7 x 7 cells around the target.\nThe number of attack is increased according to the number of surrounding enemies with range.\n(1 enemy: 3 hits / 2-3 enemies: 5 hits / 4 enemies or more: 7 hits)\nDamage is additionally increased depending on the user's base level and POW.",
       "levelDetails": [
         {
@@ -17197,8 +18569,18 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "38 + (3 × Skill Level)",
+      "castRange": "Melee",
+      "areaOfEffect": "7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Overslash ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Overslash"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5266.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5266",
       "tree": {
@@ -17226,6 +18608,10 @@ export const imperialGuardData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "38 + (3 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -17242,8 +18628,16 @@ export const imperialGuardData = {
             "value": "0.7 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Melee"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7"
           },
           {
             "label": "AP Generated",
@@ -17339,7 +18733,6 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Overslash",
@@ -17507,7 +18900,7 @@ export const imperialGuardData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17523,6 +18916,8 @@ export const imperialGuardData = {
       "target": "Single Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Shield_Shooting",
       "description": "Shield exclusive skill, Can only be used while using Attack Stance.\nThrows the shield to deals long ranged physical damage to the target and surrounding enemies around the target,\nthe user gains bonus that increases Rapid Smiting, Shield Press and Earth Drive damage for 10 seconds.\nDamage is additionally increased depending on the user's base level and POW.\nshield weight and shield refine rate.",
       "levelDetails": [
         {
@@ -17577,8 +18972,16 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "castRange": "? cells",
+      "translations": {
+        "pt-BR": {
+          "name": " Shield Shooting ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Shield_Shooting"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5265.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5265",
       "tree": {
@@ -17626,6 +19029,10 @@ export const imperialGuardData = {
           {
             "label": "Cooldown",
             "value": "0.7 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "? cells"
           },
           {
             "label": "Target",
@@ -17690,7 +19097,6 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Shield Shooting",
@@ -17852,7 +19258,7 @@ export const imperialGuardData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17866,8 +19272,10 @@ export const imperialGuardData = {
       "group": "Active",
       "type": "Buff",
       "target": "Self",
-      "recoversAp": "",
+      "recoversAp": "15",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Rebound_Shield",
       "description": "Can only be used while using Sacrifice in Guard Stance mode.\nDecrease Sacrifice-directed damage on you for 60 seconds.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -17901,8 +19309,18 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "60",
+      "duration": "60 seconds",
+      "areaOfEffect": "21 x 21",
+      "translations": {
+        "pt-BR": {
+          "name": " Rebound Shield ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Rebound_Shield"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5257.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5257",
       "tree": {
@@ -17930,6 +19348,10 @@ export const imperialGuardData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "60"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -17948,6 +19370,18 @@ export const imperialGuardData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "21 x 21"
+          },
+          {
+            "label": "Duration",
+            "value": "60 seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "15"
           }
         ],
         "levelTables": [
@@ -17995,10 +19429,9 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18012,8 +19445,10 @@ export const imperialGuardData = {
       "group": "Active",
       "type": "Buff",
       "target": "Self and Party Members",
-      "recoversAp": "",
+      "recoversAp": "15",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Guardian_Shield",
       "description": "Requires Guard Stance.\nGrants a physical shield to yourself and party members within 21 x 21 cells for 60 seconds.\nThe durability of the shield is determined by the caster's MHP, base level, and STA.",
       "levelDetails": [
         {
@@ -18068,8 +19503,18 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "60",
+      "duration": "60 seconds",
+      "areaOfEffect": "21 x 21",
+      "translations": {
+        "pt-BR": {
+          "name": " Guardian Shield ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Guardian_Shield"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5256.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5256",
       "tree": {
@@ -18097,6 +19542,10 @@ export const imperialGuardData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "60"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -18115,6 +19564,18 @@ export const imperialGuardData = {
           {
             "label": "Target",
             "value": "Self and Party Members"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "21 x 21"
+          },
+          {
+            "label": "Duration",
+            "value": "60 seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "15"
           }
         ],
         "levelTables": [
@@ -18171,7 +19632,6 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Guardian Shield",
@@ -18240,7 +19700,7 @@ export const imperialGuardData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18256,6 +19716,8 @@ export const imperialGuardData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Holy_Shield",
       "description": "A Shield skill.\nImprove your Shadow and Undead Resistances and cast a Holy Magic Damage buff on you.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -18288,8 +19750,18 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "60",
+      "cooldown": "40 seconds",
+      "duration": "40 ~ 120 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Holy Shield ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Holy_Shield"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5262.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5262",
       "tree": {
@@ -18323,6 +19795,10 @@ export const imperialGuardData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "60"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -18335,8 +19811,16 @@ export const imperialGuardData = {
             "value": "1 second"
           },
           {
+            "label": "Cooldown",
+            "value": "40 seconds"
+          },
+          {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "40 ~ 120 seconds"
           }
         ],
         "levelTables": [
@@ -18384,7 +19868,6 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Holy Shield",
@@ -18399,7 +19882,7 @@ export const imperialGuardData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18415,6 +19898,8 @@ export const imperialGuardData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Imperial_Cross",
       "description": "Can only be used while using Attack Stance.\nDeals melee physical damage to the single target for 3 hits.\nIf Grand Judgement buff is active, the skill will deal more damage.\nDeals additional damage depends on level of Spear & Sword Mastery the user has learned, user's base level and POW.",
       "levelDetails": [
         {
@@ -18439,8 +19924,19 @@ export const imperialGuardData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "45 + (4 × Skill Level)",
+      "castDelay": "0.5 seconds",
+      "cooldown": "0.35 seconds",
+      "castRange": "Melee",
+      "translations": {
+        "pt-BR": {
+          "name": " Imperial Cross ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Imperial_Cross"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6504.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6504",
       "tree": {
@@ -18468,6 +19964,22 @@ export const imperialGuardData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "45 + (4 × Skill Level)"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.35 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
+          },
+          {
             "label": "Target",
             "value": "Single target"
           },
@@ -18478,10 +19990,9 @@ export const imperialGuardData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18496,7 +20007,9 @@ export const imperialGuardData = {
       "type": "Ranged Physical",
       "target": "1 Target",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Grand_Judgement",
       "description": "A Spear-only skill. Can only be used while in Attack Stance.\nInflict Long Physical damage on a target and others in 7x7 cells around it\nIncreased damage from Vanishing Point/Cannon Spear for 150 seconds.\nInflicts more damage on Plant and Insect enemies.\nAdditional Damage increase based on the caster's Base Level and POW.",
       "levelDetails": [
         {
@@ -18591,8 +20104,16 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "areaOfEffect": "7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Grand Judgement ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Grand_Judgement"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5263.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5263",
       "tree": {
@@ -18644,6 +20165,14 @@ export const imperialGuardData = {
           {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "150"
           }
         ],
         "levelTables": [
@@ -18721,7 +20250,6 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Grand Judgement",
@@ -18784,7 +20312,7 @@ export const imperialGuardData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18800,6 +20328,8 @@ export const imperialGuardData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "One-handed spear exclusive skill, Can only be used while using Attack Stance.\nDeals long ranged physical damage to the target and surrounding enemies around the target.\nIf Grand Judgement buff is active, the skill will deal more damage.\nDeals additional damage depends on level of Spear & Sword Mastery the user has learned, user's base level and POW, has a chance to trigger critical, the critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -18848,8 +20378,15 @@ export const imperialGuardData = {
       "castDelay": "1 second",
       "cooldown": "0.7 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Radiant Spear ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Radiant_Spear"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6503.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6503",
       "tree": {
@@ -18982,10 +20519,9 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19001,6 +20537,8 @@ export const imperialGuardData = {
       "target": "You and Party Members",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Ultimate_Sacrifice",
       "description": "Requires Guard Stance.\nUse all your remaining HP except 1 to give Resurrection Crystals to surrounding party members.\nThe Resurrection Crystal immediately resurrects its target on their current spot with full HP and SP.",
       "levelDetails": [],
       "fixedCastTime": "2 seconds",
@@ -19033,8 +20571,18 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "120",
+      "cooldown": "20 ~ 100 seconds",
+      "areaOfEffect": "3 x 3 ~ 7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Ultimate Sacrifice ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Ultimate_Sacrifice"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5261.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5261",
       "tree": {
@@ -19068,6 +20616,10 @@ export const imperialGuardData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "120"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "2 seconds"
           },
@@ -19080,8 +20632,16 @@ export const imperialGuardData = {
             "value": "1 second"
           },
           {
+            "label": "Cooldown",
+            "value": "20 ~ 100 seconds"
+          },
+          {
             "label": "Target",
             "value": "You and Party Members"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "3 x 3 ~ 7 x 7"
           }
         ],
         "levelTables": [
@@ -19129,10 +20689,9 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19147,7 +20706,9 @@ export const imperialGuardData = {
       "type": "Magical",
       "target": "1 Target",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "10",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Judgement_Cross",
       "description": "Inflict Holy Magic damage on a target\nDeals more damage if the target is a Plant/Insect type monster.\nAdditional Damage increase based on the caster's Base Level and SPL.",
       "levelDetails": [
         {
@@ -19242,8 +20803,15 @@ export const imperialGuardData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Judgement Cross ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Judgement_Cross"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5264.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5264",
       "tree": {
@@ -19295,6 +20863,10 @@ export const imperialGuardData = {
           {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "10"
           }
         ],
         "levelTables": [
@@ -19372,7 +20944,6 @@ export const imperialGuardData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Judgement Cross",
@@ -19446,7 +21017,7 @@ export const imperialGuardData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

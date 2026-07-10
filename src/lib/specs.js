@@ -34,7 +34,7 @@ export function effectiveSpecRows(model, skill, versionId, levelTable) {
     ...coreSpecLabels,
     ...[...deltasByLabel.keys()].filter((label) => !coreSpecLabels.includes(label)),
     ...[...baseByLabel.keys()].filter((label) => !coreSpecLabels.includes(label) && !deltasByLabel.has(label)),
-  ].filter((label) => !hiddenLabels.has(label))
+  ].filter((label) => !hiddenLabels.has(label) || deltasByLabel.has(label))
 
   return labels
     .map((label) => {
@@ -45,6 +45,7 @@ export function effectiveSpecRows(model, skill, versionId, levelTable) {
       const baseValue = baseByLabel.get(label)
       if (label === 'Damage') return effectiveDamageSpecRow(labelDeltas, selectedIndex, baseValue)
       const value = appliedDelta?.after || (!appliedDelta && firstDelta?.before) || baseValue || ''
+      if (shouldHideFuturePlaceholderSpec(label, appliedDelta, baseValue, firstDelta)) return null
 
       return {
         label,
@@ -69,17 +70,19 @@ export function effectiveLevelTable(model, skill, versionId) {
     })),
   }
   const selectedIndex = selectedVersionIndex(model, versionId)
+  const deltas = specDeltas(model, skill)
 
-  for (const entry of effectiveLevelDeltas(model, skill, selectedIndex)) applyLevelDelta(table, entry.delta, entry.value)
+  for (const entry of effectiveLevelDeltas(deltas, selectedIndex)) applyLevelDelta(table, entry.delta, entry.value)
+  stripTimelineControlledLevelColumns(table, deltas)
   stripDamageFromLevelTable(table)
 
   return table.columns.length ? table : null
 }
 
-function effectiveLevelDeltas(model, skill, selectedIndex) {
+function effectiveLevelDeltas(deltas, selectedIndex) {
   const byKey = new Map()
 
-  for (const delta of specDeltas(model, skill)) {
+  for (const delta of deltas) {
     const key = levelDeltaKey(delta)
     const entry = byKey.get(key) ?? { applied: null, future: null }
 
@@ -113,6 +116,28 @@ function applyLevelDelta(table, delta, value) {
   targetRow.values[column.id] = formatLevelDeltaValue(label, value)
 }
 
+function stripTimelineControlledLevelColumns(table, deltas) {
+  const controlledLabels = new Set(
+    deltas
+      .map((delta) => delta.label)
+      .filter((label) => label === 'Duration'),
+  )
+  if (!controlledLabels.size) return
+
+  const controlledColumnIds = new Set(
+    table.columns
+      .filter((column) => controlledLabels.has(normalizeSpecLabel(column.label)))
+      .map((column) => column.id),
+  )
+  if (!controlledColumnIds.size) return
+
+  for (const row of table.rows) {
+    for (const id of controlledColumnIds) delete row.values[id]
+  }
+
+  table.columns = table.columns.filter((column) => !controlledColumnIds.has(column.id))
+}
+
 function rowForDelta(table, delta) {
   const level = delta.scope?.match(/Lv\s+(\d+)/i)?.[1]
   if (!level) return null
@@ -136,7 +161,7 @@ function removeDamageEffect(value) {
 function effectSegmentLooksLikeDamage(value) {
   const text = String(value ?? '').trim()
   if (!text) return false
-  if (/\b(?:ATK|MATK)\b/i.test(text) && /[0-9][0-9,]*\s*%/.test(text)) return true
+  if (/\b(?:ATK|MATK)\b/i.test(text) && /[0-9]/.test(text) && /%/.test(text)) return true
   return /[0-9][0-9,]*\s*\+\s*\([^)]*(?:level|lv|mastery|count)[^)]*\)\s*%/i.test(text)
 }
 
@@ -283,6 +308,11 @@ function mergeSpecRows(rows) {
   }
 
   return merged
+}
+
+function shouldHideFuturePlaceholderSpec(label, appliedDelta, baseValue, firstDelta) {
+  if (appliedDelta || baseValue) return false
+  return label === 'Use Condition' && /^Unavailable$/i.test(firstDelta?.before ?? '')
 }
 
 function joinSpecValues(left, right) {
@@ -481,6 +511,7 @@ function futureChangeNote(delta) {
 function normalizeSpecLabel(label) {
   if (label === 'AP Cost') return 'AP Consumed'
   if (label === 'After Cast Delay') return 'Cast Delay'
+  if (label === 'Buff Duration') return 'Duration'
   if (/^(?:base\s+)?damage\b/i.test(label)) return 'Damage'
   return label
 }

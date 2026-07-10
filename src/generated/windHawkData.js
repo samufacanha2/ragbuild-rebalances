@@ -1,5 +1,5 @@
 export const windHawkData = {
-  "generatedAt": "2026-07-10T00:55:55.231Z",
+  "generatedAt": "2026-07-10T15:02:17.770Z",
   "classId": 4257,
   "classSlug": "wind-hawk",
   "className": "Wind Hawk",
@@ -72,7 +72,8 @@ export const windHawkData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4257",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -315,6 +316,8 @@ export const windHawkData = {
           "target": "Single Target",
           "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Crescive_Bolt",
           "description": "Fires 1 shot of long ranged physical damage to the single target.\nIncreases damage and SP consumption of the next cast of this skill each time the user uses this skill while stand still (stacks up to 3 times).\nWhen reaching the maximum stack count, increases AP recovery rate to 3.\nThe stack is reset if the user move out from standing cell or changing position with skill.\nDeals additional damage depends on user's base level and CON.\nConsumes 1 equipped arrow.\nHas a chance to trigger critical, critical chance is the user's Cri,\nIn the case of critical damage, half of the total critical damage increase options are applied.",
           "levelDetails": [
             {
@@ -409,8 +412,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "47 ~ 65",
+          "castRange": "11 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Crescive Bolt ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Crescive_Bolt"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5334.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5334",
           "tree": {
@@ -438,6 +450,10 @@ export const windHawkData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "47 ~ 65"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -452,6 +468,10 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0.35 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "11 cells"
               },
               {
                 "label": "Target",
@@ -537,7 +557,6 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Crescive Bolt",
@@ -633,7 +652,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -649,6 +668,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Nature's_Friend",
           "description": "Improve your wild animal training skills,\nso you can command hawks more easily.",
           "levelDetails": [],
           "levelExtras": [
@@ -678,8 +699,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Nature's Friend ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nature's_Friend"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5325.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5325",
           "tree": {
@@ -745,10 +773,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -764,6 +791,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Increases the effectiveness of Wind Hawk's Traps.\nDeep Blind Trap/Swift Trap/ Solid Trap/ Increased effectiveness of Flame Traps.",
           "levelDetails": [
             {
@@ -814,8 +843,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Advanced Traps(Advanced Trap) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Advanced_Traps(Advanced_Trap)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5323.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5323",
           "tree": {
@@ -840,7 +876,7 @@ export const windHawkData = {
               },
               {
                 "label": "Duration",
-                "value": "Lv 1: 1 seconds / Lv 2: 2 seconds / Lv 3: 3 seconds / Lv 4: 4 seconds / Lv 5: 5 seconds"
+                "value": "Lv 1: 1 second / Lv 2: 2 seconds / Lv 3: 3 seconds / Lv 4: 4 seconds / Lv 5: 5 seconds"
               }
             ],
             "levelTables": [
@@ -897,10 +933,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -916,6 +951,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hawk_Mastery",
           "description": "Train a hawk.\nYou can train your hawk with your warg. Summoning both of them, however, decreases your Warg Strike chance by 1/3.\nRequires a Hawk Pipe.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -933,8 +970,16 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "translations": {
+            "pt-BR": {
+              "name": " Hawk Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hawk_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5327.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5327",
           "tree": {
@@ -960,6 +1005,10 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "5"
               },
               {
                 "label": "Fixed Cast Time",
@@ -999,10 +1048,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1018,6 +1066,8 @@ export const windHawkData = {
           "target": "Single Target",
           "recoversAp": "when hits 3 or more targets",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gale_Storm",
           "description": "Deals long ranged physical damage to the target and surrounding enemies around the target.\nRecovers AP if the skill hits 3 targets or more.\nDeals additional damage depends on user's base level and CON.\nConsumes 5 equipped arrows.",
           "levelDetails": [
             {
@@ -1112,8 +1162,18 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "93 ~ 120",
+          "castRange": "15 cells",
+          "areaOfEffect": "5 x 5 ~ 11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Gale Storm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gale_Storm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5330.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5330",
           "tree": {
@@ -1141,6 +1201,10 @@ export const windHawkData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "93 ~ 120"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -1155,6 +1219,10 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0.7 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "15 cells"
               },
               {
                 "label": "Target",
@@ -1254,7 +1322,6 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Gale Storm",
@@ -1382,7 +1449,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1398,6 +1465,8 @@ export const windHawkData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Wind_Sign",
           "description": "Temporarily leave a Wind Sign on the target.\nNormal Long-ranged Physical attacks on this target creates a chance of restoring your AP.\nWind Signs persist even if their targets use Hiding, Cloaking, and Cloaking Exceed.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -1431,8 +1500,16 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "110 - (Skill Level × 10)",
+          "translations": {
+            "pt-BR": {
+              "name": " Wind Sign ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wind_Sign"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5324.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5324",
           "tree": {
@@ -1458,6 +1535,10 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "110 - (Skill Level × 10)"
               },
               {
                 "label": "Fixed Cast Time",
@@ -1525,10 +1606,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1544,6 +1624,8 @@ export const windHawkData = {
           "target": "1 cell ground target",
           "recoversAp": "1/1/2/2/3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Places Traps in a 1 cell ground target that periodically inflict continuous Melee Physics damage to targets within a nearby radius.\nAttack range and Traps duration increase depending on skill level.\nConsumes 2 special alloy Traps when casting.\n(Special alloy Traps consumed by Remove Traps, etc. cannot be recovered.)\nDamage increases additionally based on the caster's base level and CON.",
           "levelDetails": [
             {
@@ -1598,8 +1680,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Solid Trap(Solid Trap) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Solid_Trap(Solid_Trap)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5332.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5332",
           "tree": {
@@ -1705,10 +1794,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1724,6 +1812,8 @@ export const windHawkData = {
           "target": "1 cell ground target",
           "recoversAp": "1/1/2/2/3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "1 Places Traps on the ground that periodically inflict dark Melee Physics damage to targets within a nearby radius.\nAttack range and Traps duration increase depending on skill level.\nConsumes 2 special alloy Traps when casting.\n(Special alloy Traps consumed by Remove Traps, etc. cannot be recovered.)\nDamage increases additionally based on the caster's base level and CON.",
           "levelDetails": [
             {
@@ -1778,8 +1868,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Deep Blind Trap(Deep Blind Trap) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Deep_Blind_Trap(Deep_Blind_Trap)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5331.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5331",
           "tree": {
@@ -1885,10 +1982,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1904,6 +2000,8 @@ export const windHawkData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Deals ranged physical damage to a designated Single Target twice using a sword.\nCritical damage occurs based on the caster's critical probability.\nIf you have acquired this skill, Hawk Rush will be automatically activated with a 1% chance per 3 of the caster's CON when making a ranged normal attack.\nDamage increases additionally based on the caster's base level and CON.\nIn case of critical damage, half of the total critical damage increase options is applied.\nThis skill can only be activated and used when equipped with a bow.",
           "levelDetails": [
             {
@@ -1958,8 +2056,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Hawk Rush(Hawk Rush) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hawk_Rush(Hawk_Rush)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5326.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5326",
           "tree": {
@@ -2052,7 +2157,6 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hawk Rush",
@@ -2094,7 +2198,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2110,6 +2214,8 @@ export const windHawkData = {
           "target": "1 cell ground target",
           "recoversAp": "1/1/2/2/3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Installs Traps in a 1 cell ground target that periodically inflict fire-attribute Melee Physics damage to targets within a nearby radius.\nAttack range and Traps duration increase depending on skill level.\nConsumes 2 special alloy Traps when casting.\n(Special alloy Traps consumed by Remove Traps, etc. cannot be recovered.)\nDamage increases additionally based on the caster's base level and CON.",
           "levelDetails": [
             {
@@ -2164,8 +2270,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Flame Traps(Flame Trap) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flame_Traps(Flame_Trap)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5335.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5335",
           "tree": {
@@ -2271,10 +2384,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2290,6 +2402,8 @@ export const windHawkData = {
           "target": "1 cell ground target",
           "recoversAp": "1/1/2/2/3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Installs Traps in a 1 cell ground target that periodically inflict wind-attribute Melee Physics damage to targets within a nearby radius.\nAttack range and Traps duration increase depending on skill level.\nConsumes 2 special alloy Traps when casting.\n(Special alloy Traps consumed by Remove Traps, etc. cannot be recovered.)\nDamage increases additionally based on the caster's base level and CON.",
           "levelDetails": [
             {
@@ -2344,8 +2458,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Swift Trap(Swift Trap) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Swift_Trap(Swift_Trap)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5333.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5333",
           "tree": {
@@ -2451,10 +2572,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2470,6 +2590,8 @@ export const windHawkData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "5",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Used hawk to inflicts long ranged physical damage to the target for 3 hits.\nUsing the gust of wind created by hawk, increase the user's evasion rate and movement speed for the certain duration.\nDeals additional damage depends on level of Steel Crow and Nature Friendly user learned, user's base level and CON, has a chance to trigger critical, critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.\nThe skill can be used while riding Warg.",
           "levelDetails": [
             {
@@ -2498,8 +2620,15 @@ export const windHawkData = {
           "castDelay": "0.5 seconds",
           "cooldown": "20 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Wild Walk ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wild_Walk"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6520.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6520",
           "tree": {
@@ -2557,9 +2686,69 @@ export const windHawkData = {
                 "value": "5"
               }
             ],
-            "levelTables": []
+            "levelTables": [
+              {
+                "title": "Level Scaling",
+                "columns": [
+                  {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "flee",
+                    "label": "Flee"
+                  },
+                  {
+                    "id": "movement-speed",
+                    "label": "Movement Speed"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": 1,
+                    "values": {
+                      "duration": "6 seconds",
+                      "flee": "+ 100",
+                      "movement-speed": "+ 25%"
+                    }
+                  },
+                  {
+                    "level": 2,
+                    "values": {
+                      "duration": "9 seconds",
+                      "flee": "+ 150",
+                      "movement-speed": "+ 25%"
+                    }
+                  },
+                  {
+                    "level": 3,
+                    "values": {
+                      "duration": "12 seconds",
+                      "flee": "+ 200",
+                      "movement-speed": "+ 50%"
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "values": {
+                      "duration": "15 seconds",
+                      "flee": "+ 250",
+                      "movement-speed": "+ 50%"
+                    }
+                  },
+                  {
+                    "level": 5,
+                    "values": {
+                      "duration": "18 seconds",
+                      "flee": "+ 300",
+                      "movement-speed": "+ 75%"
+                    }
+                  }
+                ],
+                "formulaRows": []
+              }
+            ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Wild Walk",
@@ -2575,7 +2764,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2590,7 +2779,9 @@ export const windHawkData = {
           "type": "Buff",
           "target": "Self",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "200",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Calamity_Gale",
           "description": "Endows the user's body with the rage of windblast.\nThe user gains No Limits level 5 buff and grants the user Calamity Gale buff for 180 seconds\nHowever, the duration of No Limits is the same as existing No Limits\n[Calamity gale effect]\nIncreases Crescive Bolt damage by 20%, Gale Storm has a chance to trigger critical(However, In the case of critical damage, half of the total critical damage increase options are applied.).\nincreases Crescive Bolt and Gale Storm damage against brute and fish race monsters by 50%.",
           "levelDetails": [
             {
@@ -2613,8 +2804,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "300",
+          "duration": "180 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Calamity Gale ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Calamity_Gale"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5328.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5328",
           "tree": {
@@ -2648,6 +2848,10 @@ export const windHawkData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "300"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2666,6 +2870,14 @@ export const windHawkData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "200"
               }
             ],
             "levelTables": [
@@ -2694,7 +2906,6 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Calamity Gale",
@@ -2753,7 +2964,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2769,6 +2980,8 @@ export const windHawkData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "12",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Deals 1 ranged physical critical damage to a designated Single Target based on the caster's critical chance using a sword.\nDamage to Brute/Fish type monsters increases by 50%.\nThe level of the acquired nature affinity skill. Damage increases based on the caster's base level and CON.\nIn case of critical damage, half of the total critical damage increase options is applied.\nThis skill can only be used when equipped with a bow.",
           "levelDetails": [
             {
@@ -2823,8 +3036,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Hawk Boomerang(Hawk Boomerang) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hawk_Boomerang(Hawk_Boomerang)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5329.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5329",
           "tree": {
@@ -2921,7 +3141,6 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hawk Boomerang",
@@ -2988,7 +3207,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3012,9 +3231,11 @@ export const windHawkData = {
           "prerequisiteText": "Ankle Snare 5",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "3 arrows",
+          "irowikiUrl": "https://irowiki.org/wiki/Aimed_Bolt",
           "description": "Shoots a focused arrow, and deals huge ranged physical damage to a target.\nConsumes 3 arrows, deals damage 5 times.\nDamage increases based on BaseLv.\nWhile in Fear Breeze effect, deals more damage.",
           "levelDetails": [
             {
@@ -3228,8 +3449,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "castRange": "(10 + Vulture's Eye Level) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Aimed Bolt ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Aimed_Bolt"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2236.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2236",
           "tree": {
@@ -3257,6 +3487,10 @@ export const windHawkData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -3271,6 +3505,18 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(10 + Vulture's Eye Level) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "3 arrows"
               }
             ],
             "levelTables": [
@@ -3386,10 +3632,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3405,6 +3650,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Trap_Research_(RESEARCH_TRAP_%2F_Trap_Research)",
           "description": "Increase trap damage and trap set range of Hunters and Rangers, also increases INT and MaxSP",
           "levelDetails": [
             {
@@ -3630,8 +3877,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Trap Research (RESEARCH TRAP / Trap Research) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Trap_Research_(RESEARCH_TRAP_%2F_Trap_Research)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2248.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2248",
           "tree": {
@@ -3670,6 +3924,10 @@ export const windHawkData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "maxsp",
+                    "label": "MaxSP"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -3692,10 +3950,6 @@ export const windHawkData = {
                   {
                     "id": "int",
                     "label": "Int"
-                  },
-                  {
-                    "id": "maxsp",
-                    "label": "Maxsp"
                   },
                   {
                     "id": "skill-range",
@@ -3838,10 +4092,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3857,6 +4110,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Main_Ranger",
           "description": "Increase Atk to Animal, Plant and Fish type monsters and decrease damage from those monsters.",
           "levelDetails": [
             {
@@ -4037,8 +4292,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Main Ranger ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Main_Ranger"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2235.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2235",
           "tree": {
@@ -4176,10 +4438,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4192,9 +4453,11 @@ export const windHawkData = {
           "prerequisiteText": "Shockwave Trap 5",
           "group": "Active / Trap",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Electric_Shock",
           "description": "Immobilizes a target and drains a certain amount of SP per second from the target. Electric Shocker cannot be removed with the Hunter skill Remove Trap. Requires 1 Special Alloy Trap. Maximum 3 traps are allowed to be set.",
           "levelDetails": [
             {
@@ -4320,8 +4583,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35",
+          "duration": "15 seconds",
+          "castRange": "3 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Electric Shock ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Electric_Shock"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2238.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2238",
           "tree": {
@@ -4347,6 +4621,22 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "35"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -4356,6 +4646,10 @@ export const windHawkData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -4378,7 +4672,8 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Consuming SP by a sec. 5% / Duration 20 sec",
+                      "duration": "20 seconds",
+                      "effect": "Consuming SP by a sec. 5%",
                       "sp-cost": "35",
                       "range": "3 cells",
                       "data-1": "20000",
@@ -4388,7 +4683,8 @@ export const windHawkData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Consuming SP by a sec. 10% / Duration 22 sec",
+                      "duration": "22 seconds",
+                      "effect": "Consuming SP by a sec. 10%",
                       "sp-cost": "35",
                       "range": "3 cells",
                       "data-1": "22000",
@@ -4398,7 +4694,8 @@ export const windHawkData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Consuming SP by a sec. 15% / Duration 24 sec",
+                      "duration": "24 seconds",
+                      "effect": "Consuming SP by a sec. 15%",
                       "sp-cost": "35",
                       "range": "3 cells",
                       "data-1": "24000",
@@ -4408,7 +4705,8 @@ export const windHawkData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Consuming SP by a sec. 20% / Duration 26 sec",
+                      "duration": "26 seconds",
+                      "effect": "Consuming SP by a sec. 20%",
                       "sp-cost": "35",
                       "range": "3 cells",
                       "data-1": "26000",
@@ -4418,7 +4716,8 @@ export const windHawkData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Consuming SP by a sec. 25% / Duration 28 sec",
+                      "duration": "28 seconds",
+                      "effect": "Consuming SP by a sec. 25%",
                       "sp-cost": "35",
                       "range": "3 cells",
                       "data-1": "28000",
@@ -4430,10 +4729,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4449,6 +4747,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Warg_Mastery",
           "description": "Summon a Warg with a Wolf Flute. Re-using the skill returns the Warg to the wild.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -4466,8 +4766,16 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "translations": {
+            "pt-BR": {
+              "name": " Warg Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Warg_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2240.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2240",
           "tree": {
@@ -4486,6 +4794,10 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "5"
               },
               {
                 "label": "Fixed Cast Time",
@@ -4525,10 +4837,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4541,9 +4852,11 @@ export const windHawkData = {
           "prerequisiteText": "Aimed Bolt 5",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "5 Arrows",
+          "irowikiUrl": "https://irowiki.org/wiki/Arrow_Storm",
           "description": "Shoots a storm of arrows at a single target for ranged physical damage to all enemies around the target.\nConsumes 5 arrows, damage increases based on BaseLv.\nInflicts more damage while in Fear Breeze.",
           "levelDetails": [
             {
@@ -4773,8 +5086,18 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 4)",
+          "castRange": "(10 + Vulture's Eye Level) cells",
+          "areaOfEffect": "5 x 5 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Arrow Storm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Arrow_Storm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2233.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2233",
           "tree": {
@@ -4802,6 +5125,10 @@ export const windHawkData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -4816,6 +5143,22 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "3.2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(10 + Vulture's Eye Level) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5 ~ 9 x 9"
+              },
+              {
+                "label": "Ammunition",
+                "value": "5 Arrows"
               }
             ],
             "levelTables": [
@@ -4949,10 +5292,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4965,9 +5307,11 @@ export const windHawkData = {
           "prerequisiteText": "Trap Research 3",
           "group": "Active / Trap",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bomb_Cluster",
           "description": "Maximum 3 traps are allowed to be set at once and damage range is 3 cells wide and 5 cells deep. Can be combined with Detonator Skill. Bomb Cluster cannot be removed by [Remove Trap] from Hunter. Requires 1 Special Alloy Trap.",
           "levelDetails": [
             {
@@ -5068,8 +5412,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "duration": "15 seconds",
+          "castRange": "3 cells + Trap Research Bonus cells",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Bomb Cluster ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bomb_Cluster"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2239.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2239",
           "tree": {
@@ -5095,6 +5450,22 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells + Trap Research Bonus cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -5104,6 +5475,10 @@ export const windHawkData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -5122,7 +5497,8 @@ export const windHawkData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage 300% + Additional Trap Damage / Duration 15 sec",
+                      "duration": "15 seconds",
+                      "effect": "Damage 300% + Additional Trap Damage",
                       "sp-cost": "20",
                       "range": "3 cells",
                       "atk": "300"
@@ -5131,7 +5507,8 @@ export const windHawkData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage 400% + Additional Trap Damage / Duration 15 sec",
+                      "duration": "15 seconds",
+                      "effect": "Damage 400% + Additional Trap Damage",
                       "sp-cost": "20",
                       "range": "3 cells",
                       "atk": "400"
@@ -5140,7 +5517,8 @@ export const windHawkData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage 500% + Additional Trap Damage / Duration 15 sec",
+                      "duration": "15 seconds",
+                      "effect": "Damage 500% + Additional Trap Damage",
                       "sp-cost": "20",
                       "range": "3 cells",
                       "atk": "500"
@@ -5149,7 +5527,8 @@ export const windHawkData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage 600% + Additional Trap Damage / Duration 15 sec",
+                      "duration": "15 seconds",
+                      "effect": "Damage 600% + Additional Trap Damage",
                       "sp-cost": "20",
                       "range": "3 cells",
                       "atk": "600"
@@ -5158,7 +5537,8 @@ export const windHawkData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage 700% + Additional Trap Damage / Duration 15 sec",
+                      "duration": "15 seconds",
+                      "effect": "Damage 700% + Additional Trap Damage",
                       "sp-cost": "20",
                       "range": "3 cells",
                       "atk": "700"
@@ -5169,10 +5549,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5185,9 +5564,11 @@ export const windHawkData = {
           "prerequisiteText": "Bomb Cluster 3",
           "group": "Active / Special",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Detonator",
           "description": "Immediately activates traps on the ground. Skills range is 7x7 cells around the targeted area. It can also activate Hunter's traps. This skill will not detonate traps of another player.\nCan activate the following traps: Cluster Bomb, Blast Mine, Claymore Trap, Sandman, Talkie Box, Fire Trap, and Ice Trap.",
           "levelDetails": [],
           "levelExtras": [
@@ -5210,8 +5591,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castDelay": "ASPD",
+          "castRange": "9 cells",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Detonator ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Detonator"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2237.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2237",
           "tree": {
@@ -5237,6 +5629,26 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -5265,10 +5677,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5281,9 +5692,11 @@ export const windHawkData = {
           "prerequisiteText": "Main Ranger 1",
           "group": "Active / Buff (To yourself)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Camouflage",
           "description": "Hide yourself behind walls or any\nobstacles for 10 seconds so other monsters\ncan't notice the you (Except Boss/Demon/Insect\nmonsters). You appear translucent while\nCamouflaged. Increases Critical rate and ATK,\nbut decrease DEF while casting the skill.\nThe skill is cancelled when you attack or\nif the 10 duration ends. Can be re-cast\nto refresh the duration of the effect.\nIt can be used without any obstacles if the\nskill level gets higher.",
           "levelDetails": [
             {
@@ -5384,8 +5797,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "duration": "SP depletion or player is revealed",
+          "translations": {
+            "pt-BR": {
+              "name": " Camouflage ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Camouflage"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2247.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2247",
           "tree": {
@@ -5411,6 +5833,18 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "SP depletion or player is revealed"
               }
             ],
             "levelTables": [
@@ -5485,10 +5919,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5504,6 +5937,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Warg_Teeth",
           "description": "Increases the damage done by Warg-skills. Increase damage as skill level gets higher.",
           "levelDetails": [
             {
@@ -5639,8 +6074,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Warg Teeth ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Warg_Teeth"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2245.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2245",
           "tree": {
@@ -5771,10 +6213,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5790,6 +6231,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Warg_Ride",
           "description": "Allows a Ranger to mount their summoned Warg. Skill level increases movement speed. While mounted on a Warg, you can't use any bow attacks or skills that are not Warg exclusive other than trap skills.\nCan use the following traps while on a warg: Cobalt Trap, Magenta Trap, Verdure Trap, Maze Trap, Electric Shocker.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -5815,8 +6258,16 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "translations": {
+            "pt-BR": {
+              "name": " Warg Ride ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Warg_Ride"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2241.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2241",
           "tree": {
@@ -5842,6 +6293,10 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "3"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20"
               },
               {
                 "label": "Fixed Cast Time",
@@ -5893,10 +6348,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5912,6 +6366,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "(1 + E x tra Hit) Arrow",
+          "irowikiUrl": "https://irowiki.org/wiki/Fear_Breeze",
           "description": "During duration, Hit Count increases when Normal attack using a bow. Consumes extra bows as hit counts.",
           "levelDetails": [
             {
@@ -6066,8 +6522,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "32 + (Skill Level × 4)",
+          "duration": "30 + (Skill Level × 30) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Fear Breeze ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fear_Breeze"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2234.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2234",
           "tree": {
@@ -6101,6 +6566,10 @@ export const windHawkData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "32 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
               },
@@ -6115,6 +6584,14 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Duration",
+                "value": "30 + (Skill Level × 30) seconds"
+              },
+              {
+                "label": "Ammunition",
+                "value": "(1 + E x tra Hit) Arrow"
               }
             ],
             "levelTables": [
@@ -6213,10 +6690,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6229,9 +6705,11 @@ export const windHawkData = {
           "prerequisiteText": "Trap Research 1",
           "group": "Active / Trap",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Magenta_Trap",
           "description": "Monsters that step on this trap has its attribute changed to Fire property. Does not affect boss type monsters or players and consumes 1 Scarlett Point and 1 Special Alloy Trap.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -6258,8 +6736,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "15 seconds",
+          "castRange": "3 cells cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Magenta Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Magenta_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2249.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2249",
           "tree": {
@@ -6287,6 +6776,10 @@ export const windHawkData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6301,6 +6794,22 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "15 seconds"
               }
             ],
             "levelTables": [
@@ -6329,10 +6838,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6345,9 +6853,11 @@ export const windHawkData = {
           "prerequisiteText": "Detonator 1",
           "group": "Active / Trap",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fire_Trap",
           "description": "When this trap activates, it deals damage in a 5x5 area and causes Burning status. Level increases success rate of inflicting Burning status. Consumes 1 Special Alloy Trap.",
           "levelDetails": [
             {
@@ -6448,8 +6958,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "15 seconds",
+          "castRange": "3 cells + Trap Research Bonus cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Fire Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fire_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2253.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2253",
           "tree": {
@@ -6475,6 +6996,26 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells + Trap Research Bonus cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "15 seconds"
               }
             ],
             "levelTables": [
@@ -6549,10 +7090,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6565,9 +7105,11 @@ export const windHawkData = {
           "prerequisiteText": "Detonator 1",
           "group": "Active / Trap",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ice_Trap",
           "description": "When this trap activates, it deals damage in a 3x3 area and inflicts [Burning Freeze] status. Consumes 1 Special Alloy Trap.",
           "levelDetails": [
             {
@@ -6668,8 +7210,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "20 seconds",
+          "castRange": "3 cells + Trap Research Bonus cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Ice Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ice_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2254.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2254",
           "tree": {
@@ -6695,6 +7248,26 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells + Trap Research Bonus cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "20 seconds"
               }
             ],
             "levelTables": [
@@ -6769,10 +7342,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6785,9 +7357,11 @@ export const windHawkData = {
           "prerequisiteText": "Warg Teeth 3",
           "group": "Active / Detect",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Keen_Nose",
           "description": "Use the Warg's senses to reveal hidden traps and enemies. Has a chance to attack enemies with Warg Bite.",
           "levelDetails": [
             {
@@ -6917,8 +7491,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Keen Nose ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Keen_Nose"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2246.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2246",
           "tree": {
@@ -6946,6 +7529,10 @@ export const windHawkData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6960,6 +7547,14 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
               }
             ],
             "levelTables": [
@@ -7043,10 +7638,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7059,9 +7653,11 @@ export const windHawkData = {
           "prerequisiteText": "Warg Teeth 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Warg_Strike",
           "description": "Make your Warg run into 1 target and give damage. Damage increases as skill level gets higher.",
           "levelDetails": [
             {
@@ -7162,8 +7758,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "28 + (Skill Level x 2)",
+          "castRange": "10 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Warg Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Warg_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2243.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2243",
           "tree": {
@@ -7189,6 +7794,18 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "28 + (Skill Level x 2)"
+              },
+              {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -7263,10 +7880,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7282,6 +7898,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Warg_Dash",
           "description": "Usable only when mounted on your Warg. Makes your Warg scamper in a straight direction, and re-using the skill stops. You will automatically stop when hitting a wall or an enemy. If the Ranger has already learned Warg Strike, it gives damage to the crashed enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -7304,8 +7922,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "castDelay": "2 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Warg Dash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Warg_Dash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2242.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2242",
           "tree": {
@@ -7331,6 +7958,14 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "2 seconds"
               }
             ],
             "levelTables": [
@@ -7359,10 +7994,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7375,9 +8009,11 @@ export const windHawkData = {
           "prerequisiteText": "Fear Breeze 5",
           "group": "Active / Buff (Self)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/No_Limits",
           "description": "Borrows power from God of Archery, and gains great power for 150 sec.",
           "levelDetails": [
             {
@@ -7457,8 +8093,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 + (Skill Level × 20)",
+          "duration": "150 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " No Limits ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/No_Limits"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5002.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5002",
           "tree": {
@@ -7486,6 +8131,10 @@ export const windHawkData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "80 + (Skill Level × 20)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -7500,6 +8149,14 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "300 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "150 seconds"
               }
             ],
             "levelTables": [
@@ -7565,10 +8222,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7581,9 +8237,11 @@ export const windHawkData = {
           "prerequisiteText": "Trap Research 1",
           "group": "Active / Trap",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cobalt_Trap",
           "description": "Monsters that step on this trap has its attribute changed to Water property. Does not affect boss type monsters or players and consumes 1 Indigo Point and 1 Special Alloy Trap.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -7610,8 +8268,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "15 seconds",
+          "castRange": "3 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Cobalt Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cobalt_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2250.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2250",
           "tree": {
@@ -7639,6 +8308,10 @@ export const windHawkData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7653,6 +8326,22 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "15 seconds"
               }
             ],
             "levelTables": [
@@ -7681,10 +8370,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7697,9 +8385,11 @@ export const windHawkData = {
           "prerequisiteText": "Warg Strike 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Warg_Bite",
           "description": "Make your Warg leap at a target, dealing damage and temporarily causing immobile status. Damage increases if Warg Teeth level is increased. Can't be used while mounted on a Warg.",
           "levelDetails": [
             {
@@ -7853,8 +8543,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "cooldown": "[2 + (Skill Level x 2)] seconds",
+          "castRange": "? cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Warg Bite ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Warg_Bite"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2244.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2244",
           "tree": {
@@ -7892,6 +8591,18 @@ export const windHawkData = {
               {
                 "label": "Cast Delay",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[2 + (Skill Level x 2)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "? cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -7984,10 +8695,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8000,9 +8710,11 @@ export const windHawkData = {
           "prerequisiteText": "Trap Research 1",
           "group": "Active / Trap",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Maze_Trap",
           "description": "Monsters that step on this trap has its attribute changed to Earth property. Does not affect boss type monsters or players and consumes 1 Lime Green Point and 1 Special Alloy Trap.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -8029,8 +8741,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "15 seconds",
+          "castRange": "3 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Maze Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Maze_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2251.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2251",
           "tree": {
@@ -8058,6 +8781,10 @@ export const windHawkData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8072,6 +8799,22 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "15 seconds"
               }
             ],
             "levelTables": [
@@ -8100,10 +8843,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8116,9 +8858,11 @@ export const windHawkData = {
           "prerequisiteText": "Trap Research 1",
           "group": "Active / Trap",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Verdure_Trap",
           "description": "Monsters that step on this trap has its attribute changed to Wind property. Does not affect boss type monsters or players and consumes 1 Yellow Wish Point and 1 Special Alloy Trap.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -8145,8 +8889,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "15 seconds",
+          "castRange": "3 cells cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Verdure Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Verdure_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2252.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2252",
           "tree": {
@@ -8174,6 +8929,10 @@ export const windHawkData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8188,6 +8947,22 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "15 seconds"
               }
             ],
             "levelTables": [
@@ -8216,10 +8991,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8231,10 +9005,12 @@ export const windHawkData = {
           "maxLevel": 5,
           "prerequisiteText": "3rd jobs",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Throttle",
           "description": "Exceed the limits of the body by\nsacrificing your own vitality to strengthen yourself\nfor a short time. You will become horribly\nexhausted after the skill's duration.\nFully restores HP when cast and increases\nmovement speed for the skill's duration.\nAll stats +20%.\nAfter the skill duration ends, you will be inflicted\nwith Rebound status. During rebound status,\nyour movement speed is lowered and your\nnatural HP/SP recovery is disabled.\nCannot be removed by dispel or clearance.\n50 Minute playtime cooldown",
           "levelDetails": [
             {
@@ -8339,8 +9115,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Throttle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
@@ -8353,8 +9138,16 @@ export const windHawkData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
               },
               {
                 "label": "Fixed Cast Time",
@@ -8371,6 +9164,10 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "3000 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -8454,10 +9251,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8484,6 +9280,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Enhances attack (Weapon Mastery) against Brute and Insect race monsters.",
           "levelDetails": [
             {
@@ -8574,8 +9372,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Beastbane ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Beastbane"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/126.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/126",
           "tree": {
@@ -8685,10 +9490,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8701,9 +9505,11 @@ export const windHawkData = {
           "prerequisiteText": "basic skill",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Skid_Trap",
           "description": "Sets a trap that causes any enemy that steps on it to slip and slide in a certain direction.\nAfter the slide, the enemy will be immobilized for 3 seconds.\nThe untapped trap is uninstalled and returned to the inventory after the operating time.",
           "levelDetails": [
             {
@@ -8754,8 +9560,18 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "castDelay": "ASPD",
+          "duration": "(6 − Skill Level) minutes",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Skid Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Skid_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/115.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/115",
           "tree": {
@@ -8774,6 +9590,22 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Duration",
+                "value": "(6 − Skill Level) minutes"
               }
             ],
             "levelTables": [
@@ -8830,10 +9662,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8846,9 +9677,11 @@ export const windHawkData = {
           "prerequisiteText": "basic skill",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Land_Mine",
           "description": "Sets a trap that triggers an explosion from below when an enemy steps on it\ninflicting piercing Earth property damage to all enemies within its area of effect. Damage increases upon skill level, user's base level, DEX and INT.\nThe untapped trap is uninstalled and returned to the inventory after the operating time.",
           "levelDetails": [
             {
@@ -8903,8 +9736,18 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "[240 − (Skill Level × 40)] seconds",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Land Mine ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Land_Mine"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/116.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/116",
           "tree": {
@@ -8925,6 +9768,10 @@ export const windHawkData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -8939,6 +9786,18 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Duration",
+                "value": "[240 − (Skill Level × 40)] seconds"
               }
             ],
             "levelTables": [
@@ -8995,10 +9854,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9014,6 +9872,8 @@ export const windHawkData = {
           "target": "Target 1",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Arrow",
+          "irowikiUrl": "https://irowiki.org/wiki/Focused_Arrow_Strike",
           "description": "Inflicts ranged physical damage to all enemies within the Area of Effect of 5x5 cell.\nHalf of Critical chance is applied.\nHalf of Critical damage option is applied.\nRange of Sharp Shooting is fixed at 11cell.",
           "levelDetails": [
             {
@@ -9068,8 +9928,18 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "14 + (Skill Level × 2)",
+          "castRange": "11 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Focused Arrow Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Focused_Arrow_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/382.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/382",
           "tree": {
@@ -9103,6 +9973,10 @@ export const windHawkData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "14 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -9119,8 +9993,20 @@ export const windHawkData = {
                 "value": "0.15 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "11 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Target 1"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Arrow"
               }
             ],
             "levelTables": [
@@ -9168,10 +10054,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9187,6 +10072,8 @@ export const windHawkData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Arrow",
+          "irowikiUrl": "https://irowiki.org/wiki/Beast_Charge",
           "description": "Attack by using a modified form of\nDouble Strafe that was developed to cause extra\ndamage to Brute monsters. Caster's STR affects\nthe amount of inflicted damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -9200,8 +10087,18 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castDelay": "ASPD",
+          "castRange": "? cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Beast Charge ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Beast_Charge"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/499.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/499",
           "tree": {
@@ -9229,8 +10126,24 @@ export const windHawkData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "? cells"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Arrow"
               }
             ],
             "levelTables": [
@@ -9254,10 +10167,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9273,6 +10185,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Falconry_Mastery",
           "description": "Enables Hunters to command a Falcon.\nAdditionally, the falcon flutes can be used to load falcons.",
           "levelDetails": [],
           "levelExtras": [
@@ -9286,8 +10200,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Falconry Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Falconry_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/127.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/127",
           "tree": {
@@ -9336,10 +10257,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9352,9 +10272,11 @@ export const windHawkData = {
           "prerequisiteText": "Skid Trap 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Flasher",
           "description": "Sets 2 traps on a targeted location that loose a blinding flash when an enemy steps on it, which has a chance of leaving all enemies within the area of effect blind.\nThe chance of effect is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -9405,8 +10327,20 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castDelay": "ASPD",
+          "duration": "[180 − (Skill Level × 30)] seconds",
+          "castRange": "3 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Flasher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Flasher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/120.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/120",
           "tree": {
@@ -9432,6 +10366,30 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "[180 − (Skill Level × 30)] seconds"
               }
             ],
             "levelTables": [
@@ -9488,10 +10446,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9507,6 +10464,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Sets a trap on a targeted location that will catch and immobilize any enemy that steps on it.\nThe untapped trap is uninstalled and returned to the inventory after the operating time.",
           "levelDetails": [
             {
@@ -9557,8 +10516,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Anklesnare ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Anklesnare"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/117.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/117",
           "tree": {
@@ -9640,10 +10606,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9659,6 +10624,8 @@ export const windHawkData = {
           "target": "Installed trap",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Remove_Trap",
           "description": "Removes a trap that has been set on the ground by consuming SPS.\nWhen the trap is removed, the item is returned to the inventory.",
           "levelDetails": [],
           "levelExtras": [
@@ -9672,8 +10639,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "castRange": "1 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Remove Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Remove_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/124.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/124",
           "tree": {
@@ -9701,6 +10677,14 @@ export const windHawkData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
+                "label": "Cast Range",
+                "value": "1 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Installed trap"
               }
@@ -9726,10 +10710,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9745,6 +10728,8 @@ export const windHawkData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Wind_Walker",
           "description": "Increase the Movement Speed and\nFlee Rate of the caster and Party Members.\nHowever, Movement Speed will not be increased\nif a similar effect, such as Increase AGI, has\nalready been cast. Skills which decrease\nMovement Speed, such as Quagmire, cancel the\nMovement Speed increase from Wind Walker.",
           "levelDetails": [],
           "castDelay": "2 seconds",
@@ -9796,8 +10781,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40 + (Skill Level × 6)",
+          "fixedCastTime": "0.4 + (Skill Level × 0.1) seconds",
+          "variableCastTime": "1.2 + (Skill Level × 0.3) seconds",
+          "duration": "100 + (Skill Level × 30) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Wind Walker ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Wind_Walker"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/383.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/383",
           "tree": {
@@ -9825,6 +10821,18 @@ export const windHawkData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level × 6)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.4 + (Skill Level × 0.1) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.2 + (Skill Level × 0.3) seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "2 seconds"
               },
@@ -9835,6 +10843,10 @@ export const windHawkData = {
               {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "100 + (Skill Level × 30) seconds"
               }
             ],
             "levelTables": [
@@ -9912,10 +10924,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9931,6 +10942,8 @@ export const windHawkData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Phantasmic_Arrow",
           "description": "Fires a phantasmic arrow at the target to inflict Long-ranged Physical damage at the cost of 50 SP. You don't need to equip arrows to use this skill.\nInflicts Wind damage of 500% of ATK and knocks the target back by 3 cells upon hit.",
           "levelDetails": [],
           "levelExtras": [
@@ -9944,8 +10957,18 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "ASPD",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Phantasmic Arrow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Phantasmic_Arrow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1009.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1009",
           "tree": {
@@ -9964,6 +10987,18 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -9991,10 +11026,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10010,6 +11044,8 @@ export const windHawkData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Blitz_Beat",
           "description": "Commands the Falcon to dive at a single target and strike repeatedly to inflict piercing ranged damage to all enemies in a 3x3 area around the target.\nFalcon damage increases with owner's AGI and DEX.\nFor every 3 points of LUK the chance of auto-cast is increased by 1%.\nFalcon has a range equal to 3 cells added to the range of Vulture's Eye skill learned by the caster.",
           "levelDetails": [
             {
@@ -10061,8 +11097,21 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "7 + (Skill Level × 3)",
+          "fixedCastTime": "0.3 seconds",
+          "variableCastTime": "1.2 seconds",
+          "castDelay": "1 second",
+          "castRange": "(5 + Vulture's Eye ) cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Blitz Beat ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blitz_Beat"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/129.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/129",
           "tree": {
@@ -10090,12 +11139,36 @@ export const windHawkData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "7 + (Skill Level × 3)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.2 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "(5 + Vulture's Eye ) cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -10152,10 +11225,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10168,9 +11240,11 @@ export const windHawkData = {
           "prerequisiteText": "Flasher 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sandman",
           "description": "Sets a trap that releases sedative when an enemy steps on it, which has a chance of leaving all enemies within its area of effect sleeping.\nThe untapped trap is uninstalled and returned to the inventory after the operating time.\nThe chance of effect is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -10221,8 +11295,20 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castDelay": "ASPD",
+          "duration": "[180 − (Skill Level × 30)] seconds",
+          "castRange": "3 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Sandman ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sandman"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/119.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/119",
           "tree": {
@@ -10248,6 +11334,30 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "[180 − (Skill Level × 30)] seconds"
               }
             ],
             "levelTables": [
@@ -10304,10 +11414,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10320,9 +11429,11 @@ export const windHawkData = {
           "prerequisiteText": "Flasher 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Freezing_Trap",
           "description": "Sets 2 traps that release an icy blast when an enemy steps on it, inflicting piercing Water property physical damage to all enemies within its area of effect.\nThe chance of effect is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -10373,8 +11484,20 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "ASPD",
+          "duration": "[180 − (Skill Level × 30)] seconds",
+          "castRange": "3 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Freezing Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Freezing_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/121.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/121",
           "tree": {
@@ -10400,6 +11523,30 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "[180 − (Skill Level × 30)] seconds"
               }
             ],
             "levelTables": [
@@ -10456,10 +11603,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10472,9 +11618,11 @@ export const windHawkData = {
           "prerequisiteText": "Anklesnare 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shockwave_Trap",
           "description": "Sets a trap that releases a shockwave when an enemy steps on it, draining the SP of all enemies within the area of effect.\nThe untapped trap is uninstalled and returned to the inventory after the operating time.",
           "levelDetails": [
             {
@@ -10525,8 +11673,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45",
+          "castDelay": "ASPD",
+          "duration": "[240 − (Skill Level × 40)] seconds",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Shockwave Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shockwave_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/118.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/118",
           "tree": {
@@ -10552,6 +11711,26 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "45"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Duration",
+                "value": "[240 − (Skill Level × 40)] seconds"
               }
             ],
             "levelTables": [
@@ -10608,10 +11787,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10624,9 +11802,11 @@ export const windHawkData = {
           "prerequisiteText": "Remove Trap 1, Falconly Mastery",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Trap",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spring_Trap",
           "description": "Commands the Falcon to remove a set trap from a distance by consuming SP10.",
           "levelDetails": [
             {
@@ -10677,8 +11857,18 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "ASPD",
+          "castRange": "(Skill Level + 3) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Spring Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spring_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/131.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/131",
           "tree": {
@@ -10710,6 +11900,22 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(Skill Level + 3) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Trap"
               }
             ],
             "levelTables": [
@@ -10766,10 +11972,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10782,9 +11987,11 @@ export const windHawkData = {
           "prerequisiteText": "Improve Concentration 1, Falconly Mastery 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Detecting",
           "description": "Commands the Falcon to scout a targeted location to reveal all hidden enemies in a 7x7 area by consuming SP8.\nDepending on skill level, the range that can send Falcon increases.",
           "levelDetails": [
             {
@@ -10827,8 +12034,18 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8",
+          "castRange": "1 + (Skill Level x 2) cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Detecting ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Detecting"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/130.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/130",
           "tree": {
@@ -10860,6 +12077,22 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "4"
+              },
+              {
+                "label": "SP Cost",
+                "value": "8"
+              },
+              {
+                "label": "Cast Range",
+                "value": "1 + (Skill Level x 2) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -10909,10 +12142,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10928,6 +12160,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Steel_Crow",
           "description": "Enhances damage inflicted with Blitz Beat and Falcon Assault.",
           "levelDetails": [
             {
@@ -11018,8 +12252,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Steel Crow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Steel_Crow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/128.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/128",
           "tree": {
@@ -11136,10 +12377,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11152,9 +12392,11 @@ export const windHawkData = {
           "prerequisiteText": "Sandman 1, Land Mine 1, Freezing Trap 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Blast_Mine",
           "description": "Set 2 traps that will explode after the trap duration expires or when an enemy steps on it\ninflicting piercing Wind property damage to all enemies within its area of effect.\nBlast Mine can be moved by arbitrary attack before the end of the operating time.",
           "levelDetails": [
             {
@@ -11209,8 +12451,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "[30 − (Skill Level × 5)] seconds",
+          "castRange": "3 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Blast Mine ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blast_Mine"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/122.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/122",
           "tree": {
@@ -11250,6 +12503,10 @@ export const windHawkData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -11264,6 +12521,22 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "[30 − (Skill Level × 5)] seconds"
               }
             ],
             "levelTables": [
@@ -11320,10 +12593,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11336,9 +12608,11 @@ export const windHawkData = {
           "prerequisiteText": "Remove Trap 1, Shockwave Trap 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Talkie_Box",
           "description": "Sets a trap on a targeted location that displays a prerecorded text message to any player that steps on it.\nA message is printed on the head of the target who stepped on the trap, and the trap disappears.",
           "levelDetails": [
             {
@@ -11357,8 +12631,18 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "10 minutes",
+          "castRange": "1 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Talkie Box ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Talkie_Box"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/125.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/125",
           "tree": {
@@ -11390,6 +12674,22 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Range",
+                "value": "1 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Duration",
+                "value": "10 minutes"
               }
             ],
             "levelTables": [
@@ -11418,10 +12718,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11437,6 +12736,8 @@ export const windHawkData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Falcon_Eyes",
           "description": "Add +5 to all Stats, as well as\nincrease Attack Accuracy (Hit), Weapon Damage\nand Critical Attack Rate.",
           "levelDetails": [
             {
@@ -11527,8 +12828,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20~40",
+          "duration": "30 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Falcon Eyes ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Falcon_Eyes"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/380.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/380",
           "tree": {
@@ -11574,8 +12884,16 @@ export const windHawkData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20~40"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds"
               }
             ],
             "levelTables": [
@@ -11587,114 +12905,92 @@ export const windHawkData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "hit-12-damage-8-crit",
-                    "label": "Hit +12%, Damage +8%, Crit"
+                    "id": "crit",
+                    "label": "Crit"
                   },
                   {
-                    "id": "hit-15-damage-10-crit",
-                    "label": "Hit +15%, Damage +10%, Crit"
-                  },
-                  {
-                    "id": "hit-18-damage-12-crit",
-                    "label": "Hit +18%, Damage +12%, Crit"
-                  },
-                  {
-                    "id": "hit-21-damage-14-crit",
-                    "label": "Hit +21%, Damage +14%, Crit"
-                  },
-                  {
-                    "id": "hit-24-damage-16-crit",
-                    "label": "Hit +24%, Damage +16%, Crit"
-                  },
-                  {
-                    "id": "hit-27-damage-18-crit",
-                    "label": "Hit +27%, Damage +18%, Crit"
-                  },
-                  {
-                    "id": "hit-3-damage-2-crit",
-                    "label": "Hit +3%, Damage +2%, Crit"
-                  },
-                  {
-                    "id": "hit-30-damage-20-crit",
-                    "label": "Hit +30%, Damage +20%, Crit"
-                  },
-                  {
-                    "id": "hit-6-damage-4-crit",
-                    "label": "Hit +6%, Damage +4%, Crit"
-                  },
-                  {
-                    "id": "hit-9-damage-6-crit",
-                    "label": "Hit +9%, Damage +6%, Crit"
+                    "id": "hit",
+                    "label": "Hit"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "hit-3-damage-2-crit": "+1",
+                      "hit": "+3%",
+                      "crit": "+1",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "hit-6-damage-4-crit": "+2",
+                      "hit": "+6%",
+                      "crit": "+2",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "hit-9-damage-6-crit": "+3",
+                      "hit": "+9%",
+                      "crit": "+3",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "hit-12-damage-8-crit": "+4",
+                      "hit": "+12%",
+                      "crit": "+4",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "hit-15-damage-10-crit": "+5",
+                      "hit": "+15%",
+                      "crit": "+5",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "hit-18-damage-12-crit": "+6",
+                      "hit": "+18%",
+                      "crit": "+6",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "hit-21-damage-14-crit": "+7",
+                      "hit": "+21%",
+                      "crit": "+7",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "hit-24-damage-16-crit": "+8",
+                      "hit": "+24%",
+                      "crit": "+8",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "hit-27-damage-18-crit": "+9",
+                      "hit": "+27%",
+                      "crit": "+9",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "hit-30-damage-20-crit": "+10",
+                      "hit": "+30%",
+                      "crit": "+10",
                       "sp-cost": "40"
                     }
                   }
@@ -11703,10 +12999,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11722,6 +13017,8 @@ export const windHawkData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Falcon_Assault",
           "description": "Command Falcon to attack an\nenemy with numerous strikes.\nDamage is increased by Skill level and the caster's base level.",
           "levelDetails": [],
           "fixedCastTime": "0.5 seconds",
@@ -11755,8 +13052,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "26 + (Skill Level x 4)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Falcon Assault ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Falcon_Assault"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/381.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/381",
           "tree": {
@@ -11802,6 +13108,10 @@ export const windHawkData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "26 + (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -11816,6 +13126,10 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -11867,10 +13181,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11883,9 +13196,11 @@ export const windHawkData = {
           "prerequisiteText": "Blast Mine 1, Shockwave Trap 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Claymore_Trap",
           "description": "Sets 2 traps that will explode when an enemy steps on it, inflicting piercing Fire property damage to all enemies within its area of effect.\nCremore traps can be directly attacked and blown up.",
           "levelDetails": [
             {
@@ -11940,8 +13255,19 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "duration": "(Skill Level × 20) seconds",
+          "castRange": "3 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Claymore Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Claymore_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/123.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/123",
           "tree": {
@@ -11975,6 +13301,10 @@ export const windHawkData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -11989,6 +13319,22 @@ export const windHawkData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 20) seconds"
               }
             ],
             "levelTables": [
@@ -12045,10 +13391,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12075,6 +13420,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -12153,8 +13500,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -12256,10 +13610,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12275,6 +13628,8 @@ export const windHawkData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Consumes SP12 and shoots a double bolt at a single target.\nDouble Strafe's basic range is 9 cells.",
           "levelDetails": [
             {
@@ -12365,8 +13720,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Double Strafe(Double strafing) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Double_Strafe(Double_strafing)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/46.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/46",
           "tree": {
@@ -12466,10 +13828,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12485,6 +13846,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Owl's_Eye",
           "description": "Boosts DEX",
           "levelDetails": [
             {
@@ -12575,8 +13938,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Owl's Eye ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Owl's_Eye"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/43.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/43",
           "tree": {
@@ -12686,10 +14056,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12705,6 +14074,8 @@ export const windHawkData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Arrow",
+          "irowikiUrl": "https://irowiki.org/wiki/Arrow_Repel",
           "description": "Draw the bowstring to its\nlimit to fire a volley of arrows with enough\nforce to push the target 4 cells back.\nConsumes 15 SP regardless of skill level.",
           "levelDetails": [
             {
@@ -12763,8 +14134,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castRange": "(10 + Vulture's Eye Level) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Arrow Repel ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Arrow_Repel"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/148.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/148",
           "tree": {
@@ -12785,6 +14165,10 @@ export const windHawkData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.8 seconds"
               },
@@ -12801,8 +14185,16 @@ export const windHawkData = {
                 "value": "0 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "(10 + Vulture's Eye Level) cells"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Arrow"
               }
             ],
             "levelTables": [
@@ -12862,10 +14254,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12881,6 +14272,8 @@ export const windHawkData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -12894,8 +14287,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -12914,6 +14316,14 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -12941,10 +14351,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12957,9 +14366,11 @@ export const windHawkData = {
           "prerequisiteText": "Double Strafe 5",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Arrow",
+          "irowikiUrl": "https://irowiki.org/wiki/Arrow_Shower",
           "description": "Consumes SP 15 and shoots an arrow that spreads over a targeted location to inflict ranged physical damage to all enemies in 3*3 cells.\nAnd push all enemies 2 cells backward within the area of effect.\nArrow Shower's area of effect is 9 cells.",
           "levelDetails": [
             {
@@ -13050,8 +14461,20 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castDelay": "0.1 seconds",
+          "cooldown": "0.3 seconds",
+          "castRange": "(10 + Vulture's Eye Level) cells",
+          "areaOfEffect": "3 x 3 ~ 5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Arrow Shower ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Arrow_Shower"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/47.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/47",
           "tree": {
@@ -13077,6 +14500,34 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(10 + Vulture's Eye Level) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 5 x 5"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Arrow"
               }
             ],
             "levelTables": [
@@ -13154,10 +14605,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13173,6 +14623,8 @@ export const windHawkData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Vulture's_Eye",
           "description": "Enhances Attack range and Hit rate with Bow class weapons.",
           "levelDetails": [
             {
@@ -13263,8 +14715,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Vulture's Eye ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vulture's_Eye"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/44.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/44",
           "tree": {
@@ -13303,76 +14762,90 @@ export const windHawkData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "range-bonus",
+                    "label": "Range Bonus"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Range Bonus + 1, HIT Bonus: 1%",
+                      "range-bonus": "+ 1",
+                      "effect": "HIT Bonus: 1%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Range Bonus + 2, HIT Bonus: 2%",
+                      "range-bonus": "+ 2",
+                      "effect": "HIT Bonus: 2%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Range Bonus + 3, HIT Bonus: 3%",
+                      "range-bonus": "+ 3",
+                      "effect": "HIT Bonus: 3%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Range Bonus + 4, HIT Bonus: 4%",
+                      "range-bonus": "+ 4",
+                      "effect": "HIT Bonus: 4%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Range Bonus + 5, HIT Bonus: 5%",
+                      "range-bonus": "+ 5",
+                      "effect": "HIT Bonus: 5%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Range Bonus + 6, HIT Bonus: 6%",
+                      "range-bonus": "+ 6",
+                      "effect": "HIT Bonus: 6%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Range Bonus + 7, HIT Bonus: 7%",
+                      "range-bonus": "+ 7",
+                      "effect": "HIT Bonus: 7%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Range Bonus + 8, HIT Bonus: 8%",
+                      "range-bonus": "+ 8",
+                      "effect": "HIT Bonus: 8%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Range Bonus + 9, HIT Bonus: 9%",
+                      "range-bonus": "+ 9",
+                      "effect": "HIT Bonus: 9%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Range Bonus +10, HIT Bonus:10%",
+                      "range-bonus": "+10",
+                      "effect": "HIT Bonus:10%",
                       "sp-cost": "0"
                     }
                   }
@@ -13381,10 +14854,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13400,6 +14872,8 @@ export const windHawkData = {
           "target": "Item",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Arrow_Crafting",
           "description": "Create arrows out of specific items.\nThe kind of arrow produced, as well as the\namount, is determined by the items used.",
           "levelDetails": [],
           "levelExtras": [
@@ -13413,8 +14887,16 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Arrow Crafting ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Arrow_Crafting"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/147.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/147",
           "tree": {
@@ -13433,6 +14915,10 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
               },
               {
                 "label": "Target",
@@ -13460,10 +14946,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13476,9 +14961,11 @@ export const windHawkData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -13492,8 +14979,17 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -13512,6 +15008,18 @@ export const windHawkData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -13535,10 +15043,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13554,6 +15061,8 @@ export const windHawkData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Boosts AGI and DEX temporarily.\nAdditionally, when using Improve Concentration,\nThis skill will also reveal any hidden enemies in a 3x3 area around the user.",
           "levelDetails": [
             {
@@ -13644,8 +15153,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Improve Concentration(Attention concentrate) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Improve_Concentration(Attention_concentrate)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/45.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/45",
           "tree": {
@@ -13686,78 +15202,92 @@ export const windHawkData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "dex-agi",
+                    "label": "Dex, Agi"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "DE x , AGI + 3%, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "dex-agi": "+ 3%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "DE x , AGI + 4%, Duration: 80sec",
+                      "duration": "80 seconds",
+                      "dex-agi": "+ 4%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "DE x , AGI + 5%, Duration: 100sec",
+                      "duration": "100 seconds",
+                      "dex-agi": "+ 5%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "DE x , AGI + 6%, Duration: 120sec",
+                      "duration": "120 seconds",
+                      "dex-agi": "+ 6%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "DE x , AGI + 7%, Duration: 140sec",
+                      "duration": "140 seconds",
+                      "dex-agi": "+ 7%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "DE x , AGI + 8%, Duration: 160sec",
+                      "duration": "160 seconds",
+                      "dex-agi": "+ 8%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "DE x , AGI + 9%, Duration: 180sec",
+                      "duration": "180 seconds",
+                      "dex-agi": "+ 9%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "DE x , AGI +10%, Duration: 200sec",
+                      "duration": "200 seconds",
+                      "dex-agi": "+10%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "DE x , AGI +11%, Duration: 220sec",
+                      "duration": "220 seconds",
+                      "dex-agi": "+11%",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "DE x , AGI +12%, Duration: 240sec",
+                      "duration": "240 seconds",
+                      "dex-agi": "+12%",
                       "sp-cost": "70"
                     }
                   }
@@ -13766,10 +15296,9 @@ export const windHawkData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13789,6 +15318,8 @@ export const windHawkData = {
       "target": "Single Target",
       "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Crescive_Bolt",
       "description": "Fires 1 shot of long ranged physical damage to the single target.\nIncreases damage and SP consumption of the next cast of this skill each time the user uses this skill while stand still (stacks up to 3 times).\nWhen reaching the maximum stack count, increases AP recovery rate to 3.\nThe stack is reset if the user move out from standing cell or changing position with skill.\nDeals additional damage depends on user's base level and CON.\nConsumes 1 equipped arrow.\nHas a chance to trigger critical, critical chance is the user's Cri,\nIn the case of critical damage, half of the total critical damage increase options are applied.",
       "levelDetails": [
         {
@@ -13883,8 +15414,17 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "47 ~ 65",
+      "castRange": "11 cells",
+      "translations": {
+        "pt-BR": {
+          "name": " Crescive Bolt ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Crescive_Bolt"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5334.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5334",
       "tree": {
@@ -13912,6 +15452,10 @@ export const windHawkData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "47 ~ 65"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -13926,6 +15470,10 @@ export const windHawkData = {
           {
             "label": "Cooldown",
             "value": "0.35 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "11 cells"
           },
           {
             "label": "Target",
@@ -14011,7 +15559,6 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Crescive Bolt",
@@ -14107,7 +15654,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14123,6 +15670,8 @@ export const windHawkData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Nature's_Friend",
       "description": "Improve your wild animal training skills,\nso you can command hawks more easily.",
       "levelDetails": [],
       "levelExtras": [
@@ -14152,8 +15701,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Nature's Friend ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Nature's_Friend"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5325.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5325",
       "tree": {
@@ -14219,10 +15775,9 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14238,6 +15793,8 @@ export const windHawkData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Increases the effectiveness of Wind Hawk's Traps.\nDeep Blind Trap/Swift Trap/ Solid Trap/ Increased effectiveness of Flame Traps.",
       "levelDetails": [
         {
@@ -14288,8 +15845,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Advanced Traps(Advanced Trap) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Advanced_Traps(Advanced_Trap)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5323.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5323",
       "tree": {
@@ -14314,7 +15878,7 @@ export const windHawkData = {
           },
           {
             "label": "Duration",
-            "value": "Lv 1: 1 seconds / Lv 2: 2 seconds / Lv 3: 3 seconds / Lv 4: 4 seconds / Lv 5: 5 seconds"
+            "value": "Lv 1: 1 second / Lv 2: 2 seconds / Lv 3: 3 seconds / Lv 4: 4 seconds / Lv 5: 5 seconds"
           }
         ],
         "levelTables": [
@@ -14371,10 +15935,9 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14390,6 +15953,8 @@ export const windHawkData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Hawk_Mastery",
       "description": "Train a hawk.\nYou can train your hawk with your warg. Summoning both of them, however, decreases your Warg Strike chance by 1/3.\nRequires a Hawk Pipe.",
       "levelDetails": [],
       "fixedCastTime": "0 seconds",
@@ -14407,8 +15972,16 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "5",
+      "translations": {
+        "pt-BR": {
+          "name": " Hawk Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hawk_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5327.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5327",
       "tree": {
@@ -14434,6 +16007,10 @@ export const windHawkData = {
           {
             "label": "Levels",
             "value": "1"
+          },
+          {
+            "label": "SP Cost",
+            "value": "5"
           },
           {
             "label": "Fixed Cast Time",
@@ -14473,10 +16050,9 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14492,6 +16068,8 @@ export const windHawkData = {
       "target": "Single Target",
       "recoversAp": "when hits 3 or more targets",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Gale_Storm",
       "description": "Deals long ranged physical damage to the target and surrounding enemies around the target.\nRecovers AP if the skill hits 3 targets or more.\nDeals additional damage depends on user's base level and CON.\nConsumes 5 equipped arrows.",
       "levelDetails": [
         {
@@ -14586,8 +16164,18 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "93 ~ 120",
+      "castRange": "15 cells",
+      "areaOfEffect": "5 x 5 ~ 11 x 11",
+      "translations": {
+        "pt-BR": {
+          "name": " Gale Storm ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Gale_Storm"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5330.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5330",
       "tree": {
@@ -14615,6 +16203,10 @@ export const windHawkData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "93 ~ 120"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -14629,6 +16221,10 @@ export const windHawkData = {
           {
             "label": "Cooldown",
             "value": "0.7 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "15 cells"
           },
           {
             "label": "Target",
@@ -14728,7 +16324,6 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Gale Storm",
@@ -14856,7 +16451,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14872,6 +16467,8 @@ export const windHawkData = {
       "target": "1 Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Wind_Sign",
       "description": "Temporarily leave a Wind Sign on the target.\nNormal Long-ranged Physical attacks on this target creates a chance of restoring your AP.\nWind Signs persist even if their targets use Hiding, Cloaking, and Cloaking Exceed.",
       "levelDetails": [],
       "fixedCastTime": "0 seconds",
@@ -14905,8 +16502,16 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "110 - (Skill Level × 10)",
+      "translations": {
+        "pt-BR": {
+          "name": " Wind Sign ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Wind_Sign"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5324.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5324",
       "tree": {
@@ -14932,6 +16537,10 @@ export const windHawkData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "110 - (Skill Level × 10)"
           },
           {
             "label": "Fixed Cast Time",
@@ -14999,10 +16608,9 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15018,6 +16626,8 @@ export const windHawkData = {
       "target": "1 cell ground target",
       "recoversAp": "1/1/2/2/3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Places Traps in a 1 cell ground target that periodically inflict continuous Melee Physics damage to targets within a nearby radius.\nAttack range and Traps duration increase depending on skill level.\nConsumes 2 special alloy Traps when casting.\n(Special alloy Traps consumed by Remove Traps, etc. cannot be recovered.)\nDamage increases additionally based on the caster's base level and CON.",
       "levelDetails": [
         {
@@ -15072,8 +16682,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Solid Trap(Solid Trap) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Solid_Trap(Solid_Trap)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5332.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5332",
       "tree": {
@@ -15179,10 +16796,9 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15198,6 +16814,8 @@ export const windHawkData = {
       "target": "1 cell ground target",
       "recoversAp": "1/1/2/2/3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "1 Places Traps on the ground that periodically inflict dark Melee Physics damage to targets within a nearby radius.\nAttack range and Traps duration increase depending on skill level.\nConsumes 2 special alloy Traps when casting.\n(Special alloy Traps consumed by Remove Traps, etc. cannot be recovered.)\nDamage increases additionally based on the caster's base level and CON.",
       "levelDetails": [
         {
@@ -15252,8 +16870,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Deep Blind Trap(Deep Blind Trap) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Deep_Blind_Trap(Deep_Blind_Trap)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5331.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5331",
       "tree": {
@@ -15359,10 +16984,9 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15378,6 +17002,8 @@ export const windHawkData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Deals ranged physical damage to a designated Single Target twice using a sword.\nCritical damage occurs based on the caster's critical probability.\nIf you have acquired this skill, Hawk Rush will be automatically activated with a 1% chance per 3 of the caster's CON when making a ranged normal attack.\nDamage increases additionally based on the caster's base level and CON.\nIn case of critical damage, half of the total critical damage increase options is applied.\nThis skill can only be activated and used when equipped with a bow.",
       "levelDetails": [
         {
@@ -15432,8 +17058,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Hawk Rush(Hawk Rush) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hawk_Rush(Hawk_Rush)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5326.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5326",
       "tree": {
@@ -15526,7 +17159,6 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Hawk Rush",
@@ -15568,7 +17200,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15584,6 +17216,8 @@ export const windHawkData = {
       "target": "1 cell ground target",
       "recoversAp": "1/1/2/2/3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Installs Traps in a 1 cell ground target that periodically inflict fire-attribute Melee Physics damage to targets within a nearby radius.\nAttack range and Traps duration increase depending on skill level.\nConsumes 2 special alloy Traps when casting.\n(Special alloy Traps consumed by Remove Traps, etc. cannot be recovered.)\nDamage increases additionally based on the caster's base level and CON.",
       "levelDetails": [
         {
@@ -15638,8 +17272,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Flame Traps(Flame Trap) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Flame_Traps(Flame_Trap)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5335.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5335",
       "tree": {
@@ -15745,10 +17386,9 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15764,6 +17404,8 @@ export const windHawkData = {
       "target": "1 cell ground target",
       "recoversAp": "1/1/2/2/3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Installs Traps in a 1 cell ground target that periodically inflict wind-attribute Melee Physics damage to targets within a nearby radius.\nAttack range and Traps duration increase depending on skill level.\nConsumes 2 special alloy Traps when casting.\n(Special alloy Traps consumed by Remove Traps, etc. cannot be recovered.)\nDamage increases additionally based on the caster's base level and CON.",
       "levelDetails": [
         {
@@ -15818,8 +17460,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Swift Trap(Swift Trap) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Swift_Trap(Swift_Trap)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5333.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5333",
       "tree": {
@@ -15925,10 +17574,9 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15944,6 +17592,8 @@ export const windHawkData = {
       "target": "Single target",
       "recoversAp": "",
       "consumesAp": "5",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Used hawk to inflicts long ranged physical damage to the target for 3 hits.\nUsing the gust of wind created by hawk, increase the user's evasion rate and movement speed for the certain duration.\nDeals additional damage depends on level of Steel Crow and Nature Friendly user learned, user's base level and CON, has a chance to trigger critical, critical chance is the user's Cri.\nThe effectiveness of critical modifier is applied by half.\nThe skill can be used while riding Warg.",
       "levelDetails": [
         {
@@ -15972,8 +17622,15 @@ export const windHawkData = {
       "castDelay": "0.5 seconds",
       "cooldown": "20 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Wild Walk ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Wild_Walk"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6520.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6520",
       "tree": {
@@ -16031,9 +17688,69 @@ export const windHawkData = {
             "value": "5"
           }
         ],
-        "levelTables": []
+        "levelTables": [
+          {
+            "title": "Level Scaling",
+            "columns": [
+              {
+                "id": "duration",
+                "label": "Duration"
+              },
+              {
+                "id": "flee",
+                "label": "Flee"
+              },
+              {
+                "id": "movement-speed",
+                "label": "Movement Speed"
+              }
+            ],
+            "rows": [
+              {
+                "level": 1,
+                "values": {
+                  "duration": "6 seconds",
+                  "flee": "+ 100",
+                  "movement-speed": "+ 25%"
+                }
+              },
+              {
+                "level": 2,
+                "values": {
+                  "duration": "9 seconds",
+                  "flee": "+ 150",
+                  "movement-speed": "+ 25%"
+                }
+              },
+              {
+                "level": 3,
+                "values": {
+                  "duration": "12 seconds",
+                  "flee": "+ 200",
+                  "movement-speed": "+ 50%"
+                }
+              },
+              {
+                "level": 4,
+                "values": {
+                  "duration": "15 seconds",
+                  "flee": "+ 250",
+                  "movement-speed": "+ 50%"
+                }
+              },
+              {
+                "level": 5,
+                "values": {
+                  "duration": "18 seconds",
+                  "flee": "+ 300",
+                  "movement-speed": "+ 75%"
+                }
+              }
+            ],
+            "formulaRows": []
+          }
+        ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Wild Walk",
@@ -16049,7 +17766,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16064,7 +17781,9 @@ export const windHawkData = {
       "type": "Buff",
       "target": "Self",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "200",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Calamity_Gale",
       "description": "Endows the user's body with the rage of windblast.\nThe user gains No Limits level 5 buff and grants the user Calamity Gale buff for 180 seconds\nHowever, the duration of No Limits is the same as existing No Limits\n[Calamity gale effect]\nIncreases Crescive Bolt damage by 20%, Gale Storm has a chance to trigger critical(However, In the case of critical damage, half of the total critical damage increase options are applied.).\nincreases Crescive Bolt and Gale Storm damage against brute and fish race monsters by 50%.",
       "levelDetails": [
         {
@@ -16087,8 +17806,17 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "300",
+      "duration": "180 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Calamity Gale ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Calamity_Gale"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5328.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5328",
       "tree": {
@@ -16122,6 +17850,10 @@ export const windHawkData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "300"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -16140,6 +17872,14 @@ export const windHawkData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "180 seconds"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "200"
           }
         ],
         "levelTables": [
@@ -16168,7 +17908,6 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Calamity Gale",
@@ -16227,7 +17966,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16243,6 +17982,8 @@ export const windHawkData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "12",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Deals 1 ranged physical critical damage to a designated Single Target based on the caster's critical chance using a sword.\nDamage to Brute/Fish type monsters increases by 50%.\nThe level of the acquired nature affinity skill. Damage increases based on the caster's base level and CON.\nIn case of critical damage, half of the total critical damage increase options is applied.\nThis skill can only be used when equipped with a bow.",
       "levelDetails": [
         {
@@ -16297,8 +18038,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Hawk Boomerang(Hawk Boomerang) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hawk_Boomerang(Hawk_Boomerang)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5329.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5329",
       "tree": {
@@ -16395,7 +18143,6 @@ export const windHawkData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Hawk Boomerang",
@@ -16462,7 +18209,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

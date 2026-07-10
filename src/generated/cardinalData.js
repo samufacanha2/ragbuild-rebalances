@@ -1,5 +1,5 @@
 export const cardinalData = {
-  "generatedAt": "2026-07-10T00:55:26.789Z",
+  "generatedAt": "2026-07-10T15:02:15.806Z",
   "classId": 4256,
   "classSlug": "cardinal",
   "className": "Cardinal",
@@ -72,7 +72,8 @@ export const cardinalData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4256",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -307,8 +308,10 @@ export const cardinalData = {
           "group": "Active",
           "type": "Healing",
           "target": "You and Your Party",
-          "recoversAp": "",
+          "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dilectio_Heal",
           "description": "Restore HP for you and one or more surrounding party members.",
           "levelDetails": [],
           "fixedCastTime": "1.5 seconds",
@@ -342,8 +345,17 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 + (5 × Skill Level)",
+          "areaOfEffect": "3 x 3~7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Dilectio Heal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dilectio_Heal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5280.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5280",
           "tree": {
@@ -377,6 +389,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45 + (5 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -395,6 +411,14 @@ export const cardinalData = {
               {
                 "label": "Target",
                 "value": "You and Your Party"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3~7 x 7"
+              },
+              {
+                "label": "AP Generated",
+                "value": "1"
               }
             ],
             "levelTables": [
@@ -442,10 +466,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -461,6 +484,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fidus_Animus",
           "description": "Increase your Holy Magic damage.\nThis skill also affects Flamen, Arbitrium, and Pneumaticus Procella damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -614,7 +639,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -633,6 +657,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Maces and Books increase Physical damage on enemies, depending on their size.\nThis skill also affects Petitio and Effligo damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -682,8 +708,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Mace Book Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mace_Book_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5270.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5270",
           "tree": {
@@ -779,10 +812,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -798,6 +830,8 @@ export const cardinalData = {
           "target": "You and Your Party",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mediale_Votum",
           "description": "Bless 1 party member.\nThis skill restores HP for its target and surrounding party members in 9 x9 cells every 2 seconds, by a portion of the target's HP.",
           "levelDetails": [],
           "fixedCastTime": "1.5 seconds",
@@ -831,6 +865,10 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "20 + (10 × Skill Level)",
+          "duration": "20 + (20 × Skill Level) seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "9 x 9",
           "translations": {
             "pt-BR": {
               "name": " Mediale Votum ",
@@ -867,6 +905,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -883,8 +925,20 @@ export const cardinalData = {
                 "value": "60 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "You and Your Party"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9"
+              },
+              {
+                "label": "Duration",
+                "value": "20 + (20 × Skill Level) seconds"
               },
               {
                 "label": "Pulse",
@@ -936,7 +990,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -953,8 +1006,10 @@ export const cardinalData = {
           "group": "Active",
           "type": "Buff",
           "target": "1 Target",
-          "recoversAp": "",
+          "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Benedictum",
           "description": "Bless a target, temporarily increasing their POW, CRT, and CON.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -988,6 +1043,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "65 + (5 × Skill Level)",
+          "duration": "90 + (30 × Skill Level) seconds",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Benedictum ",
@@ -1030,6 +1088,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "65 + (5 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -1046,8 +1108,20 @@ export const cardinalData = {
                 "value": "0.25 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "90 + (30 × Skill Level) seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "1"
               }
             ],
             "levelTables": [
@@ -1095,7 +1169,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -1112,8 +1185,10 @@ export const cardinalData = {
           "group": "Active",
           "type": "Buff",
           "target": "1 Target",
-          "recoversAp": "",
+          "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Religio",
           "description": "Maximize the target's faith, temporarily increasing their SPL, WIS, and STA.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -1147,6 +1222,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "65 + (5 × Skill Level)",
+          "duration": "90 + (30 × Skill Level) seconds",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Religio ",
@@ -1189,6 +1267,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "65 + (5 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -1205,8 +1287,20 @@ export const cardinalData = {
                 "value": "0.25 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "90 + (30 × Skill Level) seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "1"
               }
             ],
             "levelTables": [
@@ -1254,7 +1348,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -1273,6 +1366,8 @@ export const cardinalData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Framen",
           "description": "Inflict Holy magical damage to the target and surrounding enemies.\nDamage is increased if target is Demon or Undead race.\nDamage is additionally increased depending on the user's base level and SPL.",
           "levelDetails": [
             {
@@ -1327,8 +1422,18 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (5 x Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Framen ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Framen"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5284.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5284",
           "tree": {
@@ -1362,6 +1467,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (5 x Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -1376,6 +1485,10 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -1440,7 +1553,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Framen",
@@ -1552,7 +1664,7 @@ export const cardinalData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1568,6 +1680,8 @@ export const cardinalData = {
           "target": "Single Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Petitio",
           "description": "Mace and book only skill.\nDeals physical damage to the target and surrounding enemies around the target.\nIf using mace, damage type is long ranged physical damage. If using book, damage type is melee physical damage.\nDamage is additionally increased depending on the user's base level and POW.\nIn addition, Critical Damage is applied at the user's Critical Chance.\nHowever, In the case of critical damage, half of the total critical damage increase options are applied.\nWhen Duple Light is active, has a chance to auto-cast Petitio when dealing normal physical damage.\nMaximum level of Petitio that the user learned will be auto-cast and the skill won't recover AP from auto-casting.",
           "levelDetails": [
             {
@@ -1662,6 +1776,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "28 + (2 x Skill Level)",
+          "castRange": "2 cells",
+          "areaOfEffect": "3 x 3~9 x 9",
           "translations": {
             "pt-BR": {
               "name": " Petitio ",
@@ -1704,6 +1821,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "28 + (2 x Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -1718,6 +1839,10 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "2 cells"
               },
               {
                 "label": "Target",
@@ -1817,7 +1942,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Petitio",
@@ -1927,6 +2051,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Repatatio",
           "description": "Fully restore the target's HP.\nCan't be used on monsters, Mercenaries, Spirits, or Humunculi.",
           "levelDetails": [],
           "fixedCastTime": "2 seconds",
@@ -1959,8 +2085,18 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "120",
+          "cooldown": "150~10 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Repatatio ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Repatatio"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5268.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5268",
           "tree": {
@@ -1988,6 +2124,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "120"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
               },
@@ -1998,6 +2138,14 @@ export const cardinalData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "150~10 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -2049,10 +2197,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2068,6 +2215,8 @@ export const cardinalData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Arbitrium",
           "description": "Calls the light judgement to deals primary holy property magical damage to the target, with a chance to inflict [Ailment: Quiet].\nThen the light explodes on the target, deals secondary holy property magical damage to surrounding enemies within 9 x 9 cells around the target.\nDamage is additionally increased depending on the user's base level and SPL.",
           "levelDetails": [
             {
@@ -2162,6 +2311,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "40 + (10 × Skill Level)",
+          "castRange": "Magic",
+          "areaOfEffect": "9×9",
           "translations": {
             "pt-BR": {
               "name": " Arbitrium ",
@@ -2204,6 +2356,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (10 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -2220,8 +2376,16 @@ export const cardinalData = {
                 "value": "0.75 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9×9"
               },
               {
                 "label": "AP Generated",
@@ -2235,80 +2399,66 @@ export const cardinalData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Quiet inflicting chance: 25%",
                       "sp-cost": "107"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Quiet inflicting chance: 30%",
                       "sp-cost": "109"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Quiet inflicting chance: 35%",
                       "sp-cost": "111"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Quiet inflicting chance: 40%",
                       "sp-cost": "113"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Quiet inflicting chance: 45%",
                       "sp-cost": "115"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Quiet inflicting chance: 50%",
                       "sp-cost": "117"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Quiet inflicting chance: 55%",
                       "sp-cost": "119"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Quiet inflicting chance: 60%",
                       "sp-cost": "121"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Quiet inflicting chance: 65%",
                       "sp-cost": "123"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Quiet inflicting chance: 70%",
                       "sp-cost": "125"
                     }
                   }
@@ -2317,7 +2467,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Arbitrium",
@@ -2452,6 +2601,8 @@ export const cardinalData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Blooms a sacred flower that inflicts holy property magical damage to the target and surrounding enemies within 7 x 7 cells around the target.\nIf the user is under Ancilla buff, change the skill property to neutral.\nDeals additional damage depends on user's base level, SPL and level of Fidus Animus user learned.",
           "levelDetails": [
             {
@@ -2480,8 +2631,15 @@ export const cardinalData = {
           "castDelay": "0.85 seconds",
           "cooldown": "0.7 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Divinus Flos ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Divinus_Flos"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6518.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6518",
           "tree": {
@@ -2545,7 +2703,6 @@ export const cardinalData = {
             ],
             "levelTables": []
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Divinus Flos",
@@ -2561,7 +2718,7 @@ export const cardinalData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2577,6 +2734,8 @@ export const cardinalData = {
           "target": "Single Target",
           "recoversAp": "",
           "consumesAp": "12",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Blunt and book-only skills.\nDeals powerful Melee Physics damage to the target.\nDeals even more damage if the target is a demon/undead monster.\nDamage increases additionally based on the caster's base level and POW.\nCritical damage is applied based on the caster's critical probability.\nIn case of critical damage, half of the total critical damage increase options is applied.",
           "levelDetails": [
             {
@@ -2671,8 +2830,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Effligo(Effligo) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Effligo(Effligo)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5277.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5277",
           "tree": {
@@ -2805,7 +2971,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Effligo",
@@ -2868,7 +3033,7 @@ export const cardinalData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2884,6 +3049,8 @@ export const cardinalData = {
           "target": "You and party members",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Presens_Acies",
           "description": "Increase Critical damage rate for you or 1 party member.",
           "levelDetails": [],
           "fixedCastTime": "1.5 seconds",
@@ -2917,6 +3084,8 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "15 + (15 × Skill Level)",
+          "duration": "90 + (30 × Skill Level) seconds",
           "translations": {
             "pt-BR": {
               "name": " Presens Acies ",
@@ -2959,6 +3128,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (15 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -2977,6 +3150,10 @@ export const cardinalData = {
               {
                 "label": "Target",
                 "value": "You and party members"
+              },
+              {
+                "label": "Duration",
+                "value": "90 + (30 × Skill Level) seconds"
               }
             ],
             "levelTables": [
@@ -3024,7 +3201,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -3043,6 +3219,8 @@ export const cardinalData = {
           "target": "You and Your Party",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Argutus_Telum",
           "description": "Enable you and 1 party member to ignore Physical Resistance.",
           "levelDetails": [],
           "fixedCastTime": "1.5 seconds",
@@ -3076,6 +3254,8 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "15 + (15 × Skill Level)",
+          "duration": "90 + (30 × Skill Level) seconds",
           "translations": {
             "pt-BR": {
               "name": " Argutus Telum ",
@@ -3118,6 +3298,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (15 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -3136,6 +3320,10 @@ export const cardinalData = {
               {
                 "label": "Target",
                 "value": "You and Your Party"
+              },
+              {
+                "label": "Duration",
+                "value": "90 + (30 × Skill Level) seconds"
               }
             ],
             "levelTables": [
@@ -3183,7 +3371,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -3202,6 +3389,8 @@ export const cardinalData = {
           "target": "You and Your Party",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Argutus_Vita",
           "description": "Enable you and 1 party member to ignore Magic Resistance.",
           "levelDetails": [],
           "fixedCastTime": "1.5 seconds",
@@ -3235,6 +3424,8 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "15 + (15 × Skill Level)",
+          "duration": "90 + (30 × Skill Level) seconds",
           "translations": {
             "pt-BR": {
               "name": " Argutus Vita ",
@@ -3277,6 +3468,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15 + (15 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -3295,6 +3490,10 @@ export const cardinalData = {
               {
                 "label": "Target",
                 "value": "You and Your Party"
+              },
+              {
+                "label": "Duration",
+                "value": "90 + (30 × Skill Level) seconds"
               }
             ],
             "levelTables": [
@@ -3342,7 +3541,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -3361,6 +3559,8 @@ export const cardinalData = {
           "target": "1 cell ground target",
           "recoversAp": "",
           "consumesAp": "30",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Creates a storm of the Holy Spirit in the target area, inflicting Holy Magic damage to targets within the range every 3 seconds for 12 seconds.\nDeals even more damage if the target is a demon/undead monster.\nDamage increases further based on the caster's base level and SPL.",
           "levelDetails": [
             {
@@ -3455,8 +3655,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Pneumaticus Procella(Pneumaticus Procella) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pneumaticus_Procella(Pneumaticus_Procella)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5279.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5279",
           "tree": {
@@ -3607,7 +3814,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Pneumaticus Procella",
@@ -3683,7 +3889,7 @@ export const cardinalData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3699,6 +3905,8 @@ export const cardinalData = {
           "target": "Yourself and your party members",
           "recoversAp": "",
           "consumesAp": "200/190/180/170/160",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Recovers HP/SP of yourself and party members within range, and increases the target's characteristic physical attack power (P.ATK) and characteristic magic attack power (S.MATK) for a certain period of time.",
           "levelDetails": [
             {
@@ -3753,8 +3961,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Competentia(Competentia) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Competentia(Competentia)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5278.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5278",
           "tree": {
@@ -3823,6 +4038,14 @@ export const cardinalData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "p-atk",
+                    "label": "P.Atk"
+                  },
+                  {
+                    "id": "s-matk",
+                    "label": "S.Matk"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -3833,10 +4056,6 @@ export const cardinalData = {
                   {
                     "id": "effect",
                     "label": "Effect"
-                  },
-                  {
-                    "id": "p-atk-and-s-matk",
-                    "label": "P.Atk And S.Matk"
                   }
                 ],
                 "rows": [
@@ -3845,7 +4064,8 @@ export const cardinalData = {
                     "values": {
                       "effect": "HP / SP 20% Recovery",
                       "duration": "180 seconds",
-                      "p-atk-and-s-matk": "+ 10",
+                      "p-atk": "+ 10",
+                      "s-matk": "+ 10",
                       "sp-cost": "60"
                     }
                   },
@@ -3854,7 +4074,8 @@ export const cardinalData = {
                     "values": {
                       "effect": "HP / SP 40% Recovery",
                       "duration": "210 seconds",
-                      "p-atk-and-s-matk": "+ 20",
+                      "p-atk": "+ 20",
+                      "s-matk": "+ 20",
                       "sp-cost": "60"
                     }
                   },
@@ -3863,7 +4084,8 @@ export const cardinalData = {
                     "values": {
                       "effect": "HP / SP 60% Recovery",
                       "duration": "240 seconds",
-                      "p-atk-and-s-matk": "+ 30",
+                      "p-atk": "+ 30",
+                      "s-matk": "+ 30",
                       "sp-cost": "60"
                     }
                   },
@@ -3872,7 +4094,8 @@ export const cardinalData = {
                     "values": {
                       "effect": "HP / SP 80% Recovery",
                       "duration": "270 seconds",
-                      "p-atk-and-s-matk": "+ 40",
+                      "p-atk": "+ 40",
+                      "s-matk": "+ 40",
                       "sp-cost": "60"
                     }
                   },
@@ -3881,7 +4104,8 @@ export const cardinalData = {
                     "values": {
                       "effect": "HP / SP 100% Recovery",
                       "duration": "300 seconds",
-                      "p-atk-and-s-matk": "+ 50",
+                      "p-atk": "+ 50",
+                      "s-matk": "+ 50",
                       "sp-cost": "60"
                     }
                   }
@@ -3890,7 +4114,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Competentia",
@@ -3921,7 +4144,7 @@ export const cardinalData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3945,9 +4168,11 @@ export const cardinalData = {
           "prerequisiteText": "Turn Undead 1",
           "group": "Holy Magic",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Judex",
           "description": "Deals holy damage to a targets within 3 cells around the target.\nDamage increases as caster's BaseLv increases",
           "levelDetails": [
             {
@@ -4087,6 +4312,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "20 ~ 42",
+          "castRange": "Magic",
+          "areaOfEffect": "3 x 3",
           "translations": {
             "pt-BR": {
               "name": " Judex ",
@@ -4123,6 +4351,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 ~ 42"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -4137,6 +4369,18 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -4228,7 +4472,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -4244,9 +4487,11 @@ export const cardinalData = {
           "prerequisiteText": "Heal 1",
           "group": "Heal",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Coluseo_Heal",
           "description": "Recover HP of all party members around the caster. Additional heal given based on party member number.",
           "levelDetails": [
             {
@@ -4318,8 +4563,18 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "115 + (Skill Level × 15)",
+          "fixedCastTime": "[1.5 − (Skill Level × 0.5)] seconds",
+          "areaOfEffect": "7 x 7 ~ 31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Coluseo Heal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Coluseo_Heal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2043.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2043",
           "tree": {
@@ -4347,6 +4602,14 @@ export const cardinalData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "115 + (Skill Level × 15)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[1.5 − (Skill Level × 0.5)] seconds"
+              },
+              {
                 "label": "Variable Cast Time",
                 "value": "3 seconds"
               },
@@ -4357,6 +4620,14 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7 ~ 31 x 31"
               }
             ],
             "levelTables": [
@@ -4413,10 +4684,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4429,9 +4699,11 @@ export const cardinalData = {
           "prerequisiteText": "Blessing 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Clementia",
           "description": "Casts 'Blessing' on the caster and any party members within it's range. Blessing effect goes up based on caster's JobLevel.",
           "levelDetails": [
             {
@@ -4521,6 +4793,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "180 + (Skill Level × 20)",
+          "duration": "(Skill Level + 1) minutes",
+          "areaOfEffect": "7 x 7~31 x 31",
           "translations": {
             "pt-BR": {
               "name": " Clementia ",
@@ -4557,6 +4832,10 @@ export const cardinalData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "180 + (Skill Level × 20)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -4571,6 +4850,18 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7~31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level + 1) minutes"
               }
             ],
             "levelTables": [
@@ -4634,7 +4925,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -4650,9 +4940,11 @@ export const cardinalData = {
           "prerequisiteText": "Kyrie Eleison 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Praefatio",
           "description": "Casts 'Kyrie Eleison' on all party members. Def effect goes up when more party member joins.",
           "levelDetails": [
             {
@@ -4926,6 +5218,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "50 + (Skill Level × 10)",
+          "cooldown": "[10 + (Skill Level × 3)] sec",
+          "duration": "2 minutes",
           "translations": {
             "pt-BR": {
               "name": " Praefatio ",
@@ -4962,6 +5257,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -4972,6 +5271,18 @@ export const cardinalData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[10 + (Skill Level × 3)] sec"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "2 minutes"
               }
             ],
             "levelTables": [
@@ -5119,7 +5430,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -5138,6 +5448,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Duple_Light_%2F_Two_Lights",
           "description": "Summons two holy lights, deals extra damage when melee attacking.",
           "levelDetails": [
             {
@@ -5322,8 +5634,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Duple Light / Two Lights ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Duple_Light_%2F_Two_Lights"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2054.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2054",
           "tree": {
@@ -5534,10 +5853,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5550,9 +5868,11 @@ export const cardinalData = {
           "prerequisiteText": "Recovery 1",
           "group": "Recover",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lauda_Agnus",
           "description": "Recover Freezing, Stone Curse, Dark Curse, Frozen, Crystallization, and Burning of all party members. MaxHP bonus when casting on normal condition party member.",
           "levelDetails": [
             {
@@ -5683,6 +6003,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "40 + (Skill Level × 10)",
+          "duration": "1 minute",
+          "areaOfEffect": "31 x 31",
           "translations": {
             "pt-BR": {
               "name": " Lauda Agnus ",
@@ -5719,6 +6042,10 @@ export const cardinalData = {
                 "value": "4"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5733,6 +6060,18 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "1 minute"
               }
             ],
             "levelTables": [
@@ -5761,19 +6100,19 @@ export const cardinalData = {
                   },
                   {
                     "id": "success-rate-100-maxhp",
-                    "label": "Success Rate 100% / Maxhp"
+                    "label": "Success Rate 100% / MaxHP"
                   },
                   {
                     "id": "success-rate-70-maxhp",
-                    "label": "Success Rate 70% / Maxhp"
+                    "label": "Success Rate 70% / MaxHP"
                   },
                   {
                     "id": "success-rate-80-maxhp",
-                    "label": "Success Rate 80% / Maxhp"
+                    "label": "Success Rate 80% / MaxHP"
                   },
                   {
                     "id": "success-rate-90-maxhp",
-                    "label": "Success Rate 90% / Maxhp"
+                    "label": "Success Rate 90% / MaxHP"
                   }
                 ],
                 "rows": [
@@ -5826,7 +6165,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -5842,9 +6180,11 @@ export const cardinalData = {
           "prerequisiteText": "Increase AGI 1",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cantocandidus",
           "description": "Casts 'Increase AGI' on the caster and any party members within range. AGI effect goes up based on caster's JobLevel.",
           "levelDetails": [
             {
@@ -5934,8 +6274,18 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "130 + (Skill Level × 15)",
+          "duration": "(Skill Level + 1) minutes",
+          "areaOfEffect": "7 x 7 ~ 31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Cantocandidus ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cantocandidus"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2042.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2042",
           "tree": {
@@ -5963,6 +6313,10 @@ export const cardinalData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "130 + (Skill Level × 15)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -5977,6 +6331,18 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7 ~ 31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level + 1) minutes"
               }
             ],
             "levelTables": [
@@ -6040,10 +6406,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6056,9 +6421,11 @@ export const cardinalData = {
           "prerequisiteText": "Coluseo Heal 3",
           "group": "Heal",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Renovatio",
           "description": "Restores a certain amount of HP per 5 seconds to caster and party members on the screen.",
           "levelDetails": [
             {
@@ -6168,6 +6535,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "200 + (Skill Level × 40)",
+          "duration": "60 + (Skill Level × 30) seconds",
+          "areaOfEffect": "31 x 31",
           "translations": {
             "pt-BR": {
               "name": " Renovatio ",
@@ -6204,6 +6574,10 @@ export const cardinalData = {
                 "value": "4"
               },
               {
+                "label": "SP Cost",
+                "value": "200 + (Skill Level × 40)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
               },
@@ -6218,6 +6592,18 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 30) seconds"
               }
             ],
             "levelTables": [
@@ -6291,7 +6677,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -6307,9 +6692,11 @@ export const cardinalData = {
           "prerequisiteText": "Clementia 3",
           "group": "Ancilla",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ancilla",
           "description": "Creates magic stone called Ancilla.\nWhen used, consumes SP 10% and 1 Blue Gemstone. When using Ancilla,\nincrease healing by 15% for 60 sec, SP recovery by 30%, property of Adoramus becomes neutral.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -6327,8 +6714,16 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10%",
+          "translations": {
+            "pt-BR": {
+              "name": " Ancilla ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ancilla"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2039.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2039",
           "tree": {
@@ -6356,6 +6751,10 @@ export const cardinalData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10%"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6370,6 +6769,10 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -6393,10 +6796,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6409,9 +6811,11 @@ export const cardinalData = {
           "prerequisiteText": "Praefatio 5",
           "group": "Debuff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Oratio",
           "description": "Decreases the Holy resistance\nof all enemies on screen for 30 seconds.",
           "levelDetails": [
             {
@@ -6686,6 +7090,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "32 + (Skill Level × 3)",
+          "duration": "~30 seconds",
+          "areaOfEffect": "31 x 31",
           "translations": {
             "pt-BR": {
               "name": " Oratio ",
@@ -6722,6 +7129,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "32 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -6736,6 +7147,18 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "~30 seconds"
               }
             ],
             "levelTables": [
@@ -6919,7 +7342,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -6935,9 +7357,11 @@ export const cardinalData = {
           "prerequisiteText": "Lauda Agnus 2",
           "group": "Recovery",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lauda_Ramus",
           "description": "Cures status effects Silence, Sleep, Stun Curse, Howling, and Deep Sleep from all party members. Critical damage bonus when casting on normal condition party member.",
           "levelDetails": [
             {
@@ -7068,6 +7492,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "40 + (Skill Level × 10)",
+          "duration": "1 minute",
+          "areaOfEffect": "31 x 31",
           "translations": {
             "pt-BR": {
               "name": " Lauda Ramus ",
@@ -7104,6 +7531,10 @@ export const cardinalData = {
                 "value": "4"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7118,6 +7549,18 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "1 minute"
               }
             ],
             "levelTables": [
@@ -7211,7 +7654,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -7227,9 +7669,11 @@ export const cardinalData = {
           "prerequisiteText": "Judex 5, Ancilla 1, Magnus Exorcismus 1",
           "group": "Holy Magic",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Adoramus",
           "description": "Deals holy magic damage in AoE, lowering AGI and Shadow.\nDamage increases based on BaseLv, consumes 1 Blue Gemstone when used.\nWhile in Ancilla effect, attack property becomes neutral.\nWhen Cleric is around, skill no longer consumes Blue Gemstone, Cleric's partial SP is consumed, caster's Adoramus SP consumption is reduced.\nCannot damage targets on Land Protector.",
           "levelDetails": [
             {
@@ -7549,6 +7993,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "24 + (Skill Level × 6)",
+          "castRange": "Magic",
+          "areaOfEffect": "7 x 7 ~ 11 x 11",
           "translations": {
             "pt-BR": {
               "name": " Adoramus ",
@@ -7597,6 +8044,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "24 + (Skill Level × 6)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -7611,6 +8062,14 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "2.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -7772,7 +8231,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -7791,6 +8249,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/HIGHNESSHEAL_%2F_High_Priest's_Healing",
           "description": "Restores a lot more HP than acolyte's heal.",
           "levelDetails": [
             {
@@ -7895,8 +8355,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " HIGHNESSHEAL / High Priest's Healing ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/HIGHNESSHEAL_%2F_High_Priest's_Healing"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2051.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2051",
           "tree": {
@@ -8012,10 +8479,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8031,6 +8497,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/CONVENIO_%2F_Gather",
           "description": "Summons party members on the same map to the caster's location.\nThe skill cannot be used on PVP areas or maps where Teleport is disabled.\nThe skill can be used only when caster is a party leader, cannot be used if not in a party.",
           "levelDetails": [],
           "fixedCastTime": "2 seconds",
@@ -8048,8 +8516,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " CONVENIO / Gather ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/CONVENIO_%2F_Gather"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5073.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5073",
           "tree": {
@@ -8120,10 +8595,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8139,6 +8613,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/EXPIATIO_%2F_Expiation",
           "description": "Grants divine power to one's weapon to penetrate armors when physical/magical attacks.",
           "levelDetails": [
             {
@@ -8293,8 +8769,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " EXPIATIO / Expiation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/EXPIATIO_%2F_Expiation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2053.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2053",
           "tree": {
@@ -8434,10 +8917,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8453,6 +8935,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/CLEARANCE_%2F_Removal",
           "description": "Remove all party members and monsters' buffs, debuffs, and status effects.",
           "levelDetails": [
             {
@@ -8557,8 +9041,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " CLEARANCE / Removal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/CLEARANCE_%2F_Removal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2052.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2052",
           "tree": {
@@ -8674,10 +9165,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8690,9 +9180,11 @@ export const cardinalData = {
           "prerequisiteText": "Highness Heal 2",
           "group": "",
           "type": "Active / Buff",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Offertorium",
           "description": "Increases the efficiency of High Heal, Coluseo Heal, Sanctuary, and Heal. This skill cannot be used in conjunction with Magnificat.\nCures status : Darkness, Curse, Poison, Delusion, Chaos, Bleeding, fire, Ice, Mandragora Howling, Guillotine Cross poison",
           "levelDetails": [
             {
@@ -8821,6 +9313,8 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "(Skill Level × 30)",
+          "duration": "90 seconds",
           "translations": {
             "pt-BR": {
               "name": " Offertorium ",
@@ -8857,6 +9351,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level × 30)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -8867,6 +9365,14 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "90 seconds"
               }
             ],
             "levelTables": [
@@ -8959,7 +9465,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -8975,9 +9480,11 @@ export const cardinalData = {
           "prerequisiteText": "Ancilla 1,",
           "group": "Summon",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Epiclesis",
           "description": "Summon the Tree of Life that\nrevives any dead characters within 5x5 cell range of the tree, while increasing MaxHP and recovering HP and SP. Consumes 1 Ancilla and 1 Holy Water.",
           "levelDetails": [
             {
@@ -9181,6 +9688,11 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "300",
+          "variableCastTime": "[1.5 + (Skill Level x 0.5)] seconds",
+          "duration": "[15 + (Skill Level × 3)] seconds",
+          "castRange": "11 cells",
+          "areaOfEffect": "5 x 5",
           "translations": {
             "pt-BR": {
               "name": " Epiclesis ",
@@ -9223,8 +9735,16 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "300"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[1.5 + (Skill Level x 0.5)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -9233,6 +9753,22 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "60 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "[15 + (Skill Level × 3)] seconds"
               }
             ],
             "levelTables": [
@@ -9343,7 +9879,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -9359,9 +9894,11 @@ export const cardinalData = {
           "prerequisiteText": "Clearance 1",
           "group": "Debuff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Silentium",
           "description": "Cast Lex Divina to the target\nwithin the certain range from the caster.",
           "levelDetails": [
             {
@@ -9466,6 +10003,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "20 + (Skill Level × 4)",
+          "duration": "[10 + (Skill Level × 10)] seconds",
+          "areaOfEffect": "9 x 9 ~ 17 x 17",
           "translations": {
             "pt-BR": {
               "name": " Silentium ",
@@ -9502,6 +10042,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -9516,6 +10060,18 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "15 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9 ~ 17 x 17"
+              },
+              {
+                "label": "Duration",
+                "value": "[10 + (Skill Level × 10)] seconds"
               }
             ],
             "levelTables": [
@@ -9590,7 +10146,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -9609,6 +10164,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/VITUPERATUM_%2F_Criticism",
           "description": "Doubles the damage of the next incoming attack on everyone around the target. Consumes 1 Blue Gemstone.\nThe cast time and SP consumption decrease per skill level.",
           "levelDetails": [
             {
@@ -9712,8 +10269,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " VITUPERATUM / Criticism ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/VITUPERATUM_%2F_Criticism"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5072.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5072",
           "tree": {
@@ -9831,10 +10395,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9847,9 +10410,11 @@ export const cardinalData = {
           "prerequisiteText": "Epiclesis 1 / Expiatio 1",
           "group": "Buff",
           "type": "",
-          "target": "",
+          "target": "Self and Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sacrament",
           "description": "Reduces a target's fixed cast time by performing a holy ceremony.",
           "levelDetails": [
             {
@@ -9979,8 +10544,18 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 + (Skill Level × 20)",
+          "duration": "[30 + (Skill Level × 30)] seconds",
+          "castRange": "11 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Sacrament ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sacrament"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2515.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2515",
           "tree": {
@@ -10014,6 +10589,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "80 + (Skill Level × 20)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -10028,6 +10607,14 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Self and Player"
               }
             ],
             "levelTables": [
@@ -10037,6 +10624,10 @@ export const cardinalData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -10059,7 +10650,8 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Decrease fi x ed cast by 10% / Duration 60 sec",
+                      "duration": "60 seconds",
+                      "effect": "Decrease fi x ed cast by 10%",
                       "sp-cost": "100",
                       "range": "11 cells",
                       "data-1": "60000",
@@ -10069,7 +10661,8 @@ export const cardinalData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Decrease fi x ed cast by 20% / Duration 90 sec",
+                      "duration": "90 seconds",
+                      "effect": "Decrease fi x ed cast by 20%",
                       "sp-cost": "120",
                       "range": "11 cells",
                       "data-1": "90000",
@@ -10079,7 +10672,8 @@ export const cardinalData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Decrease fi x ed cast by 30% / Duration 120 sec",
+                      "duration": "120 seconds",
+                      "effect": "Decrease fi x ed cast by 30%",
                       "sp-cost": "140",
                       "range": "11 cells",
                       "data-1": "120000",
@@ -10089,7 +10683,8 @@ export const cardinalData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Decrease fi x ed cast by 40% / Duration 150 sec",
+                      "duration": "150 seconds",
+                      "effect": "Decrease fi x ed cast by 40%",
                       "sp-cost": "160",
                       "range": "11 cells",
                       "data-1": "150000",
@@ -10099,7 +10694,8 @@ export const cardinalData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Decrease fi x ed cast by 50% / Duration 180 sec",
+                      "duration": "180 seconds",
+                      "effect": "Decrease fi x ed cast by 50%",
                       "sp-cost": "180",
                       "range": "11 cells",
                       "data-1": "180000",
@@ -10111,10 +10707,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10126,10 +10721,12 @@ export const cardinalData = {
           "maxLevel": 5,
           "prerequisiteText": "3rd jobs",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Throttle",
           "description": "Exceed the limits of the body by\nsacrificing your own vitality to strengthen yourself\nfor a short time. You will become horribly\nexhausted after the skill's duration.\nFully restores HP when cast and increases\nmovement speed for the skill's duration.\nAll stats +20%.\nAfter the skill duration ends, you will be inflicted\nwith Rebound status. During rebound status,\nyour movement speed is lowered and your\nnatural HP/SP recovery is disabled.\nCannot be removed by dispel or clearance.\n50 Minute playtime cooldown",
           "levelDetails": [
             {
@@ -10234,8 +10831,17 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Throttle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
@@ -10248,8 +10854,16 @@ export const cardinalData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
               },
               {
                 "label": "Fixed Cast Time",
@@ -10266,6 +10880,10 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "3000 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -10349,10 +10967,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10379,6 +10996,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kyrie_Eleison",
           "description": "Creates a protective barrier on a single target that blocks every form of physical damage until its durability wears off or expires. Its durability is a portion of the target's MaxHP.\nlevel of this skill Maximize the number of hits blocked per skill point used\nHoly Light will immediately cancel the barrier on the targeted player.",
           "levelDetails": [
             {
@@ -10473,6 +11092,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "20~35",
+          "duration": "2 minutes",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Kyrie Eleison ",
@@ -10509,6 +11131,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20~35"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.4 seconds"
               },
@@ -10525,8 +11151,16 @@ export const cardinalData = {
                 "value": "1 second"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "2 minutes"
               }
             ],
             "levelTables": [
@@ -10618,7 +11252,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -10637,6 +11270,8 @@ export const cardinalData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Magnificat",
           "description": "Consumes SP40 and temporarily doubles the SP Recovery rate of the user and party members.",
           "levelDetails": [
             {
@@ -10688,6 +11323,11 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "40",
+          "fixedCastTime": "0.8 seconds",
+          "variableCastTime": "3.2 seconds",
+          "castDelay": "2 seconds",
+          "duration": "15 + (Skill Level × 15) seconds",
           "translations": {
             "pt-BR": {
               "name": " Magnificat ",
@@ -10717,6 +11357,22 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.8 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "3.2 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "2 seconds"
+              },
+              {
                 "label": "Cooldown",
                 "value": "1 second"
               },
@@ -10734,43 +11390,43 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 30sec",
+                      "duration": "30 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 45sec",
+                      "duration": "45 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 60sec",
+                      "duration": "60 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 75sec",
+                      "duration": "75 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 90sec",
+                      "duration": "90 seconds",
                       "sp-cost": "40"
                     }
                   }
@@ -10779,7 +11435,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -10798,6 +11453,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Recovery",
           "description": "Consumes SP 5 and cures a single target from the following status effects: Frozen, Stone and Stun.\nAgainst Undead property monsters, this skill will leave it [Abnormal Status : blind].",
           "levelDetails": [],
           "levelExtras": [
@@ -10811,8 +11468,17 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "castDelay": "2 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Recovery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Recovery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/72.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/72",
           "tree": {
@@ -10831,6 +11497,14 @@ export const cardinalData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "2 seconds"
               },
               {
                 "label": "Target",
@@ -10858,10 +11532,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10877,6 +11550,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Increase_SP_Recovery",
           "description": "Enhance natural SP Recovery.\nMaxSP affects how much SP restoration is\nincreased by this skill. Increases the efficiency\nof SP recovering items for 2% per skill level.\nDescription : Additional SP every 10 seconds while the character is not moving.\nNo SP is restored if normal SP/HP regeneration is not permitted or the character is moving.",
           "levelDetails": [
             {
@@ -10967,8 +11642,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Increase SP Recovery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Increase_SP_Recovery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/9.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/9",
           "tree": {
@@ -11002,6 +11684,10 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -11010,70 +11696,80 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(3 + 0.2% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(3 + 0.2% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(6 + 0.4% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(6 + 0.4% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(9 + 0.6% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(9 + 0.6% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(12 + 0.8% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(12 + 0.8% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(15 + 1.0% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(15 + 1.0% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(18 + 1.2% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(18 + 1.2% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(21 + 1.4% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(21 + 1.4% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(24 + 1.6% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(24 + 1.6% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(27 + 1.8% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(27 + 1.8% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(30 + 2.0% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(30 + 2.0% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   }
@@ -11082,10 +11778,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11101,6 +11796,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lex_Divina",
           "description": "Attempts to [Abnormal Status : silence] a single target.\nDuration can be decreased upon status of the target.\nIf the target is already silenced, this skill will cure it from the forementioned effect.",
           "levelDetails": [
             {
@@ -11191,6 +11888,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "20~10",
+          "castDelay": "3 seconds",
+          "duration": "30~60 seconds",
           "translations": {
             "pt-BR": {
               "name": " Lex Divina ",
@@ -11227,8 +11927,20 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20~10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "3 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "30~60 seconds"
               }
             ],
             "levelTables": [
@@ -11320,7 +12032,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -11339,6 +12050,8 @@ export const cardinalData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Impositio_Manus",
           "description": "Blesses a single target's weapon to increase its attack power for one minute.\nIncrease ATK, MATK on the user and all party members around the user for 120s.",
           "levelDetails": [
             {
@@ -11393,6 +12106,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "56 + (Skill Level × 3)",
+          "duration": "120 seconds",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Impositio Manus ",
@@ -11422,6 +12138,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "56 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -11438,8 +12158,16 @@ export const cardinalData = {
                 "value": "30 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "120 seconds"
               }
             ],
             "levelTables": [
@@ -11451,43 +12179,52 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "atk-matk",
-                    "label": "Atk/matk"
+                    "id": "atk",
+                    "label": "Atk"
+                  },
+                  {
+                    "id": "matk",
+                    "label": "Matk"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "atk-matk": "+ 5",
+                      "atk": "+ 5",
+                      "matk": "+ 5",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "atk-matk": "+10",
+                      "atk": "+10",
+                      "matk": "+10",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "atk-matk": "+15",
+                      "atk": "+15",
+                      "matk": "+15",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "atk-matk": "+20",
+                      "atk": "+20",
+                      "matk": "+20",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "atk-matk": "+25",
+                      "atk": "+25",
+                      "matk": "+25",
                       "sp-cost": "71"
                     }
                   }
@@ -11496,7 +12233,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -11512,9 +12248,11 @@ export const cardinalData = {
           "prerequisiteText": "Heal 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sanctuary",
           "description": "Each cast consumes a Blue Gemstone.\nCreates a soothing area on a targeted location that will restore HP of all entities within the area of effect every second. SKill level affects healing Value and Target Limit.\nAgainst Undead property and Demon race monsters, this skill will inflict Holy property damage equal to half of the healing value and push them 2 cells backwards.",
           "levelDetails": [
             {
@@ -11605,8 +12343,21 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12 + (Skill Level × 3)",
+          "fixedCastTime": "1 second",
+          "variableCastTime": "4 seconds",
+          "duration": "[1 + (Skill Level × 3)] seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Sanctuary ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sanctuary"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/70.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/70",
           "tree": {
@@ -11632,6 +12383,30 @@ export const cardinalData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "12 + (Skill Level × 3)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "4 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -11643,6 +12418,10 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -11651,70 +12430,80 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Target Limit: 4, Healing Value:100, Duration: 4sec",
+                      "duration": "4 seconds",
+                      "effect": "Target Limit: 4, Healing Value:100",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Target Limit: 5, Healing Value:200, Duration: 7sec",
+                      "duration": "7 seconds",
+                      "effect": "Target Limit: 5, Healing Value:200",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Target Limit: 6, Healing Value:300, Duration:10sec",
+                      "duration": "10 seconds",
+                      "effect": "Target Limit: 6, Healing Value:300",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Target Limit: 7, Healing Value:400, Duration:13sec",
+                      "duration": "13 seconds",
+                      "effect": "Target Limit: 7, Healing Value:400",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Target Limit: 8, Healing Value:500, Duration:16sec",
+                      "duration": "16 seconds",
+                      "effect": "Target Limit: 8, Healing Value:500",
                       "sp-cost": "27"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Target Limit: 9, Healing Value:600, Duration:19sec",
+                      "duration": "19 seconds",
+                      "effect": "Target Limit: 9, Healing Value:600",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Target Limit:10, Healing Value:777, Duration:22sec",
+                      "duration": "22 seconds",
+                      "effect": "Target Limit:10, Healing Value:777",
                       "sp-cost": "33"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Target Limit:11, Healing Value:777, Duration:25sec",
+                      "duration": "25 seconds",
+                      "effect": "Target Limit:11, Healing Value:777",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Target Limit:12, Healing Value:777, Duration:28sec",
+                      "duration": "28 seconds",
+                      "effect": "Target Limit:12, Healing Value:777",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Target Limit:13, Healing Value:777, Duration:31sec",
+                      "duration": "31 seconds",
+                      "effect": "Target Limit:13, Healing Value:777",
                       "sp-cost": "42"
                     }
                   }
@@ -11723,10 +12512,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11742,6 +12530,8 @@ export const cardinalData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gloria",
           "description": "Consumes SP20 and temporarily boosts LUK by 30 to the user and party members.",
           "levelDetails": [
             {
@@ -11792,8 +12582,18 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castDelay": "2 seconds",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Gloria ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gloria"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/75.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/75",
           "tree": {
@@ -11827,6 +12627,14 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "2 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
               }
@@ -11840,43 +12648,43 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 10sec",
+                      "duration": "10 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 15sec",
+                      "duration": "15 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 20sec",
+                      "duration": "20 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 25sec",
+                      "duration": "25 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 30sec",
+                      "duration": "30 seconds",
                       "sp-cost": "20"
                     }
                   }
@@ -11885,10 +12693,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11904,6 +12711,8 @@ export const cardinalData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Slow_Poison",
           "description": "Stops the HP drain from the Poison status effect that affects a single target.",
           "levelDetails": [],
           "levelExtras": [
@@ -11929,8 +12738,18 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "4 + (Skill Level × 2)",
+          "duration": "(Skill Level × 10) seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Slow Poison ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Slow_Poison"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/71.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/71",
           "tree": {
@@ -11951,8 +12770,20 @@ export const cardinalData = {
                 "value": "4"
               },
               {
+                "label": "SP Cost",
+                "value": "4 + (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Player"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 10) seconds"
               }
             ],
             "levelTables": [
@@ -11994,10 +12825,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12013,6 +12843,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Resurrection",
           "description": "Each cast consumes a Blue Gemstone. Returns a single dead player to life.",
           "levelDetails": [
             {
@@ -12055,8 +12887,20 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "fixedCastTime": "[1.6 − (Skill Level × 0.4)] seconds",
+          "variableCastTime": "[6.4 − (Skill Level × 1.6)] seconds",
+          "castDelay": "(Skill Level − 1) seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Resurrection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Resurrection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/54.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/54",
           "tree": {
@@ -12088,6 +12932,26 @@ export const cardinalData = {
               {
                 "label": "Levels",
                 "value": "4"
+              },
+              {
+                "label": "SP Cost",
+                "value": "60"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[1.6 − (Skill Level × 0.4)] seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[6.4 − (Skill Level × 1.6)] seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "(Skill Level − 1) seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -12141,10 +13005,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12160,6 +13023,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Assumptio",
           "description": "Places a temporary buff on a single target that doubles their Hard Defense and Hard Magic Defense.",
           "levelDetails": [
             {
@@ -12211,6 +13076,12 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "10 + (Skill Level × 10)",
+          "fixedCastTime": "[0.1 + (Skill Level × 0.1)] seconds",
+          "variableCastTime": "[0.4 + (Skill Level × 0.4)] seconds",
+          "castDelay": "0.5 seconds",
+          "duration": "(Skill Level × 20) seconds",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Assumptio ",
@@ -12259,8 +13130,28 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 10)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[0.1 + (Skill Level × 0.1)] seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[0.4 + (Skill Level × 0.4)] seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -12276,43 +13167,61 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "def",
+                    "label": "Def"
+                  },
+                  {
+                    "id": "received-heal-amount",
+                    "label": "Received Heal Amount"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "DEF + 50, Received heal amount + 2%, Duration 20sec",
+                      "duration": "20 seconds",
+                      "def": "+ 50",
+                      "received-heal-amount": "+ 2%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "DEF +100, Received heal amount + 4%, Duration 40sec",
+                      "duration": "40 seconds",
+                      "def": "+100",
+                      "received-heal-amount": "+ 4%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "DEF +150, Received heal amount + 6%, Duration 60sec",
+                      "duration": "60 seconds",
+                      "def": "+150",
+                      "received-heal-amount": "+ 6%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "DEF +200, Received heal amount + 8%, Duration 80sec",
+                      "duration": "80 seconds",
+                      "def": "+200",
+                      "received-heal-amount": "+ 8%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "DEF +250, Received heal amount +10%, Duration 100sec",
+                      "duration": "100 seconds",
+                      "def": "+250",
+                      "received-heal-amount": "+10%",
                       "sp-cost": "60"
                     }
                   }
@@ -12321,7 +13230,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -12340,6 +13248,8 @@ export const cardinalData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lex_Aeterna",
           "description": "Consumes SP10 and weakens a single target so it can take double damage from the next incoming attack.\nCan not be cast on a frozen or petrified target.",
           "levelDetails": [],
           "levelExtras": [
@@ -12353,6 +13263,10 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "10",
+          "castDelay": "3 seconds",
+          "duration": "Until ne x t damage taken",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Lex Aeterna ",
@@ -12389,8 +13303,24 @@ export const cardinalData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "Until ne x t damage taken"
               }
             ],
             "levelTables": [
@@ -12414,7 +13344,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -12433,6 +13362,8 @@ export const cardinalData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Suffragium",
           "description": "Blesses for another person.\nDecrease variable casting on the user and all party members around the user for 60s.",
           "levelDetails": [
             {
@@ -12471,6 +13402,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "33 + (Skill Level x 12)",
+          "duration": "60 seconds",
+          "areaOfEffect": "14 x 14",
           "translations": {
             "pt-BR": {
               "name": " Suffragium ",
@@ -12507,6 +13441,10 @@ export const cardinalData = {
                 "value": "3"
               },
               {
+                "label": "SP Cost",
+                "value": "33 + (Skill Level x 12)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -12525,6 +13463,14 @@ export const cardinalData = {
               {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "14 x 14"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -12567,7 +13513,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -12586,6 +13531,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Aspersio",
           "description": "Consumes 1 Holy Water.\nEndows a single target's weapon with the Holy property temporarily.",
           "levelDetails": [
             {
@@ -12636,6 +13583,10 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "10 + (Skill Level × 2)",
+          "castDelay": "2 seconds",
+          "duration": "[30 + (Skill Level × 30)] seconds",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Aspersio ",
@@ -12678,6 +13629,18 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -12691,43 +13654,43 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 60sec",
+                      "duration": "60 seconds",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 90sec",
+                      "duration": "90 seconds",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration:120sec",
+                      "duration": "120 seconds",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration:150sec",
+                      "duration": "150 seconds",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration:180sec",
+                      "duration": "180 seconds",
                       "sp-cost": "30"
                     }
                   }
@@ -12736,7 +13699,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -12752,9 +13714,11 @@ export const cardinalData = {
           "prerequisiteText": "Aspersio 5, Gloria 3",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Benedictio_Sanctissimi_Sacramenti",
           "description": "Blesses a targeted location to endow the armor of all players within the area of effect with the Holy property.\nRequires the user to have two Acolyte class players horizontally adjacent to the user.\nActs as Offensive Endowment when used against Undead property and Demon race monsters",
           "levelDetails": [
             {
@@ -12805,6 +13769,10 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "20",
+          "duration": "(Skill Level × 40) seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3",
           "translations": {
             "pt-BR": {
               "name": " Benedictio Sanctissimi Sacramenti ",
@@ -12845,6 +13813,22 @@ export const cardinalData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -12856,43 +13840,43 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 40sec",
+                      "duration": "40 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 80sec",
+                      "duration": "80 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration:120sec",
+                      "duration": "120 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration:160sec",
+                      "duration": "160 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration:200sec",
+                      "duration": "200 seconds",
                       "sp-cost": "20"
                     }
                   }
@@ -12901,7 +13885,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -12920,6 +13903,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mace_Mastery",
           "description": "Enhances attack (Weapon Mastery) with Mace class weapons, and dmages per skill level are added to the physical damage.",
           "levelDetails": [
             {
@@ -13010,8 +13995,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Mace Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mace_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/65.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/65",
           "tree": {
@@ -13041,114 +14033,78 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "damage-12-cri",
-                    "label": "Damage +12, Cri"
-                  },
-                  {
-                    "id": "damage-15-cri",
-                    "label": "Damage +15, Cri"
-                  },
-                  {
-                    "id": "damage-18-cri",
-                    "label": "Damage +18, Cri"
-                  },
-                  {
-                    "id": "damage-21-cri",
-                    "label": "Damage +21, Cri"
-                  },
-                  {
-                    "id": "damage-24-cri",
-                    "label": "Damage +24, Cri"
-                  },
-                  {
-                    "id": "damage-27-cri",
-                    "label": "Damage +27, Cri"
-                  },
-                  {
-                    "id": "damage-3-cri",
-                    "label": "Damage +3, Cri"
-                  },
-                  {
-                    "id": "damage-30-cri",
-                    "label": "Damage +30, Cri"
-                  },
-                  {
-                    "id": "damage-6-cri",
-                    "label": "Damage +6, Cri"
-                  },
-                  {
-                    "id": "damage-9-cri",
-                    "label": "Damage +9, Cri"
+                    "id": "cri",
+                    "label": "Cri"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "damage-3-cri": "+ 1",
+                      "cri": "+ 1",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "damage-6-cri": "+ 2",
+                      "cri": "+ 2",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "damage-9-cri": "+ 3",
+                      "cri": "+ 3",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "damage-12-cri": "+ 4",
+                      "cri": "+ 4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "damage-15-cri": "+ 5",
+                      "cri": "+ 5",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "damage-18-cri": "+ 6",
+                      "cri": "+ 6",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "damage-21-cri": "+ 7",
+                      "cri": "+ 7",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "damage-24-cri": "+ 8",
+                      "cri": "+ 8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "damage-27-cri": "+ 9",
+                      "cri": "+ 9",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "damage-30-cri": "+10",
+                      "cri": "+10",
                       "sp-cost": "0"
                     }
                   }
@@ -13157,10 +14113,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13176,6 +14131,8 @@ export const cardinalData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Turn_Undead",
           "description": "Consumes SP20 and exorcizes a single target to inflict Holy property piercing damage.\nIf the skill fails, inflicts 30% of MATK damage.",
           "levelDetails": [
             {
@@ -13270,8 +14227,17 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castRange": "5 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Turn Undead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Turn_Undead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/77.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/77",
           "tree": {
@@ -13305,6 +14271,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.2 seconds"
               },
@@ -13319,6 +14289,10 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "1.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "5 cells"
               },
               {
                 "label": "Target",
@@ -13414,10 +14388,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13433,6 +14406,8 @@ export const cardinalData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basilica",
           "description": "Enhances itself by accepting the power of sanctuary temporarily.",
           "levelDetails": [
             {
@@ -13487,8 +14462,17 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level x 10)",
+          "duration": "30 + (Skill Level x 30) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Basilica ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basilica"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/362.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/362",
           "tree": {
@@ -13528,6 +14512,10 @@ export const cardinalData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -13546,6 +14534,10 @@ export const cardinalData = {
               {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Duration",
+                "value": "30 + (Skill Level x 30) seconds"
               }
             ],
             "levelTables": [
@@ -13557,59 +14549,52 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "magic-damage-3-physical-damage",
-                    "label": "Magic Damage + 3%, Physical Damage"
+                    "id": "magic-damage",
+                    "label": "Magic Damage"
                   },
                   {
-                    "id": "magic-damage-6-physical-damage",
-                    "label": "Magic Damage + 6%, Physical Damage"
-                  },
-                  {
-                    "id": "magic-damage-9-physical-damage",
-                    "label": "Magic Damage + 9%, Physical Damage"
-                  },
-                  {
-                    "id": "magic-damage-12-physical-damage",
-                    "label": "Magic Damage +12%, Physical Damage"
-                  },
-                  {
-                    "id": "magic-damage-15-physical-damage",
-                    "label": "Magic Damage +15%, Physical Damage"
+                    "id": "physical-damage",
+                    "label": "Physical Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "magic-damage-3-physical-damage": "+ 5%",
+                      "magic-damage": "+ 3%",
+                      "physical-damage": "+ 5%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "magic-damage-6-physical-damage": "+10%",
+                      "magic-damage": "+ 6%",
+                      "physical-damage": "+10%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "magic-damage-9-physical-damage": "+15%",
+                      "magic-damage": "+ 9%",
+                      "physical-damage": "+15%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "magic-damage-12-physical-damage": "+20%",
+                      "magic-damage": "+12%",
+                      "physical-damage": "+20%",
                       "sp-cost": "70"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "magic-damage-15-physical-damage": "+25%",
+                      "magic-damage": "+15%",
+                      "physical-damage": "+25%",
                       "sp-cost": "80"
                     }
                   }
@@ -13618,10 +14603,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13637,6 +14621,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Meditatio",
           "description": "Increases the player's Maximum SP and SP regeneration rate.\nIt also increases the amount of HP that is restored using the Heal skill.",
           "levelDetails": [
             {
@@ -13780,6 +14766,10 @@ export const cardinalData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "maxsp",
+                    "label": "MaxSP"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -13792,70 +14782,80 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Ma x SP +1%, SP Regeneration 3% increase",
+                      "maxsp": "+1%",
+                      "effect": "SP Regeneration 3% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Ma x SP +2%, SP Regeneration 6% increase",
+                      "maxsp": "+2%",
+                      "effect": "SP Regeneration 6% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Ma x SP +3%, SP Regeneration 9% increase",
+                      "maxsp": "+3%",
+                      "effect": "SP Regeneration 9% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Ma x SP +4%, SP Regeneration 12% increase",
+                      "maxsp": "+4%",
+                      "effect": "SP Regeneration 12% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Ma x SP +5%, SP Regeneration 15% increase",
+                      "maxsp": "+5%",
+                      "effect": "SP Regeneration 15% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Ma x SP +6%, SP Regeneration 18% increase",
+                      "maxsp": "+6%",
+                      "effect": "SP Regeneration 18% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Ma x SP +7%, SP Regeneration 21% increase",
+                      "maxsp": "+7%",
+                      "effect": "SP Regeneration 21% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Ma x SP +8%, SP Regeneration 24% increase",
+                      "maxsp": "+8%",
+                      "effect": "SP Regeneration 24% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Ma x SP +9%, SP Regeneration 27% increase",
+                      "maxsp": "+9%",
+                      "effect": "SP Regeneration 27% increase",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Ma x SP +10%, SP Regeneration 30% increase",
+                      "maxsp": "+10%",
+                      "effect": "SP Regeneration 30% increase",
                       "sp-cost": "0"
                     }
                   }
@@ -13864,7 +14864,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -13883,6 +14882,8 @@ export const cardinalData = {
           "target": "cell on ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Create a magic barrier on\na targeted spot that will block short range melee\nattacks for the duration of the Safety Wall.\nEach cast requires 1 Blue Gemstone.\nDescription : Creates a wall on a targeted location that blocks every form of close range physical damage until its durability wears off or expires. Each cast consumes a Blue Gemstone.\nINT, Base Level, MaxSP affects durability of defence\nOnly the first time can prevent damage beyond the total durability.",
           "levelDetails": [
             {
@@ -13973,8 +14974,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Safety wall ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Safety_wall"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/12.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/12",
           "tree": {
@@ -14101,10 +15109,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14116,10 +15123,12 @@ export const cardinalData = {
           "maxLevel": 5,
           "prerequisiteText": "Mace Mastery 10,",
           "group": "",
-          "type": "",
+          "type": "Passive Skill",
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spiritual_Thrift",
           "description": "Reduce the amount of SP that is\nconsumed by skills.\nReduction of SP Consumption By Level",
           "levelDetails": [
             {
@@ -14170,8 +15179,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Spiritual Thrift ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spiritual_Thrift"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/481.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/481",
           "tree": {
@@ -14196,6 +15212,10 @@ export const cardinalData = {
           },
           "details": {
             "rows": [
+              {
+                "label": "Type",
+                "value": "Passive Skill"
+              },
               {
                 "label": "Levels",
                 "value": "5"
@@ -14255,10 +15275,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14271,9 +15290,11 @@ export const cardinalData = {
           "prerequisiteText": "Turn Undead 3, Lex Aeterna 1, Safety Wall 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Magnus_Exorcismus",
           "description": "Consumping 1 blue gemstone, makes a big cross.\nEach wave will inflict several hits of 100% Holy property magic damage.",
           "levelDetails": [
             {
@@ -14368,6 +15389,10 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "38 + (Skill Level × 2)",
+          "duration": "(Skill Level + 4) seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "7 x 7",
           "translations": {
             "pt-BR": {
               "name": " Magnus Exorcismus ",
@@ -14416,6 +15441,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "38 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -14430,6 +15459,18 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "6 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -14441,6 +15482,10 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -14449,70 +15494,80 @@ export const cardinalData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Number of consecutive hits: 1time, Duration: 4sec",
+                      "duration": "4 seconds",
+                      "effect": "Number of consecutive hits: 1time",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Number of consecutive hits: 2times, Duration: 5sec",
+                      "duration": "5 seconds",
+                      "effect": "Number of consecutive hits: 2times",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Number of consecutive hits: 3times, Duration: 6sec",
+                      "duration": "6 seconds",
+                      "effect": "Number of consecutive hits: 3times",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Number of consecutive hits: 4times, Duration: 7sec",
+                      "duration": "7 seconds",
+                      "effect": "Number of consecutive hits: 4times",
                       "sp-cost": "46"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Number of consecutive hits: 5times, Duration: 8sec",
+                      "duration": "8 seconds",
+                      "effect": "Number of consecutive hits: 5times",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Number of consecutive hits: 6times, Duration: 9sec",
+                      "duration": "9 seconds",
+                      "effect": "Number of consecutive hits: 6times",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Number of consecutive hits: 7times, Duration:10sec",
+                      "duration": "10 seconds",
+                      "effect": "Number of consecutive hits: 7times",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Number of consecutive hits: 8times, Duration:11sec",
+                      "duration": "11 seconds",
+                      "effect": "Number of consecutive hits: 8times",
                       "sp-cost": "54"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Number of consecutive hits: 9times, Duration:12sec",
+                      "duration": "12 seconds",
+                      "effect": "Number of consecutive hits: 9times",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Number of consecutive hits:10times, Duration:13sec",
+                      "duration": "13 seconds",
+                      "effect": "Number of consecutive hits:10times",
                       "sp-cost": "58"
                     }
                   }
@@ -14521,7 +15576,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -14540,6 +15594,8 @@ export const cardinalData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Redemptio",
           "description": "Reduces your HP to 1 and revives all the party members on the screen at the cost of 800 SP. Heals the HP of every revived player by 50%.",
           "levelDetails": [],
           "levelExtras": [
@@ -14553,8 +15609,19 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "400",
+          "fixedCastTime": "0.8 seconds",
+          "variableCastTime": "3.2 seconds",
+          "areaOfEffect": "15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Redemptio ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Redemptio"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1014",
           "tree": {
@@ -14575,8 +15642,24 @@ export const cardinalData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "400"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.8 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "3.2 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15"
               }
             ],
             "levelTables": [
@@ -14600,10 +15683,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14630,6 +15712,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -14708,8 +15792,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -14811,10 +15902,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14830,6 +15920,8 @@ export const cardinalData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ruwach",
           "description": "Each cast consumes SP10, reveal hidden enemies within 5*5cell around it.\nIf the hidden is enemy, inflict 145% Holy property magic damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -14843,8 +15935,18 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "10 seconds",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Ruwach ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ruwach"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/24.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/24",
           "tree": {
@@ -14865,8 +15967,20 @@ export const cardinalData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "10 seconds"
               }
             ],
             "levelTables": [
@@ -14890,10 +16004,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14909,6 +16022,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Heal",
           "description": "Restores HP of a single target. This skill is also affected by User's LV, total INT, MATK.\nVersus Undead property targets, inflicts Holy property damage equal to half the amount of the HP restored.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -14962,8 +16077,17 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 3)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Heal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Heal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/28.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/28",
           "tree": {
@@ -14984,6 +16108,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -14998,6 +16126,10 @@ export const cardinalData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -15079,10 +16211,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15098,6 +16229,8 @@ export const cardinalData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Aqua_Benedicta",
           "description": "Draws water under the caster to create a single Holy Water from it. Requires the player to be in shallow water and each cast consumes SP10.",
           "levelDetails": [],
           "levelExtras": [
@@ -15111,6 +16244,10 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "10",
+          "fixedCastTime": "0.2 seconds",
+          "variableCastTime": "0.8 seconds",
+          "castDelay": "0.5 seconds",
           "translations": {
             "pt-BR": {
               "name": " Aqua Benedicta ",
@@ -15140,6 +16277,22 @@ export const cardinalData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.8 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
               }
@@ -15165,7 +16318,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -15184,6 +16336,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Divine_Protection",
           "description": "Raises Soft Defense against Demon and Undead race monsters. The higher the character level, the higher the damage reduction.\nDecrease the damage received from Demon and Undead race monsters by the amount of damage reduction.",
           "levelDetails": [
             {
@@ -15274,8 +16428,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Divine Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Divine_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/22.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/22",
           "tree": {
@@ -15385,10 +16546,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15404,6 +16564,8 @@ export const cardinalData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Holy_Light",
           "description": "Summon holy light to counter evil.",
           "levelDetails": [],
           "castDelay": "0 seconds",
@@ -15419,8 +16581,19 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "fixedCastTime": "0.2 seconds",
+          "variableCastTime": "0.8 seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Holy Light ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Holy_Light"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/156.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/156",
           "tree": {
@@ -15441,12 +16614,28 @@ export const cardinalData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.8 seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "0 seconds"
               },
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -15474,10 +16663,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15493,6 +16681,8 @@ export const cardinalData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -15506,8 +16696,17 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -15526,6 +16725,14 @@ export const cardinalData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -15553,10 +16760,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15572,6 +16778,8 @@ export const cardinalData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Teleport",
           "description": "Warps the user to a different location instantly.\nThis skill is disabled within land protector effect.",
           "levelDetails": [
             {
@@ -15598,8 +16806,17 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "11 − Skill Level",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " Teleport ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Teleport"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/26.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/26",
           "tree": {
@@ -15625,6 +16842,14 @@ export const cardinalData = {
               {
                 "label": "Levels",
                 "value": "2"
+              },
+              {
+                "label": "SP Cost",
+                "value": "11 − Skill Level"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -15664,10 +16889,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15683,6 +16907,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cure",
           "description": "Cures a single target from the following status effects: Silence, Chaos and Blind and consumes SP15.",
           "levelDetails": [],
           "levelExtras": [
@@ -15696,8 +16922,16 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "translations": {
+            "pt-BR": {
+              "name": " Cure ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cure"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/35.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/35",
           "tree": {
@@ -15725,6 +16959,10 @@ export const cardinalData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -15750,10 +16988,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15769,6 +17006,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Places a temporary buff on a single target that increases AGI and Movement Speed. Each cast consumes additional HP10.\nWhen use this skill to the target leaving in [Abnormal Status : Decrease agility], the target releases the state and increases agility.",
           "levelDetails": [
             {
@@ -15863,8 +17102,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Increase agility ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Increase_agility"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/29.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/29",
           "tree": {
@@ -15919,66 +17165,108 @@ export const cardinalData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "agi",
+                    "label": "Agi"
+                  },
+                  {
+                    "id": "atk-speed",
+                    "label": "Atk Speed:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "duration": "60 seconds",
+                      "agi": "+3",
+                      "atk-speed": "+1%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "duration": "80 seconds",
+                      "agi": "+4",
+                      "atk-speed": "+2%",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "duration": "100 seconds",
+                      "agi": "+5",
+                      "atk-speed": "+3%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "duration": "120 seconds",
+                      "agi": "+6",
+                      "atk-speed": "+4%",
                       "sp-cost": "27"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "duration": "140 seconds",
+                      "agi": "+7",
+                      "atk-speed": "+5%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "duration": "160 seconds",
+                      "agi": "+8",
+                      "atk-speed": "+6%",
                       "sp-cost": "33"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "duration": "180 seconds",
+                      "agi": "+9",
+                      "atk-speed": "+7%",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "duration": "200 seconds",
+                      "agi": "+10",
+                      "atk-speed": "+8%",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "duration": "220 seconds",
+                      "agi": "+11",
+                      "atk-speed": "+9%",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "duration": "240 seconds",
+                      "agi": "+12",
+                      "atk-speed": "+10%",
                       "sp-cost": "45"
                     }
                   }
@@ -15987,10 +17275,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16006,6 +17293,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Blessing",
           "description": "Places a temporary buff on a single target that increases STR, DEX, INT and Accuracy rate. This skill also purges the target of Curse and Stone statuses.\nVersus Undead property and Demon race monsters, halves their STR, DEX and INT instead.",
           "levelDetails": [
             {
@@ -16096,8 +17385,18 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "24 + (Skill Level × 4)",
+          "duration": "40 + (Skill Level × 20) seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Blessing ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blessing"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/34.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/34",
           "tree": {
@@ -16125,6 +17424,14 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "24 + (Skill Level × 4)"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -16138,78 +17445,106 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "hit",
+                    "label": "Hit"
+                  },
+                  {
+                    "id": "str-int-dex",
+                    "label": "Str,int,dex"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "STR,INT,DE x +1,HIT+2, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "str-int-dex": "+1",
+                      "hit": "+2",
                       "sp-cost": "28"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "STR,INT,DE x +2,HIT+4, Duration: 80sec",
+                      "duration": "80 seconds",
+                      "str-int-dex": "+2",
+                      "hit": "+4",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "STR,INT,DE x +3,HIT+6, Duration:100sec",
+                      "duration": "100 seconds",
+                      "str-int-dex": "+3",
+                      "hit": "+6",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "STR,INT,DE x +4,HIT+8, Duration:120sec",
+                      "duration": "120 seconds",
+                      "str-int-dex": "+4",
+                      "hit": "+8",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "STR,INT,DE x +5,HIT+10, Duration:140sec",
+                      "duration": "140 seconds",
+                      "str-int-dex": "+5",
+                      "hit": "+10",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "STR,INT,DE x +6,HIT+12, Duration:160sec",
+                      "duration": "160 seconds",
+                      "str-int-dex": "+6",
+                      "hit": "+12",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "STR,INT,DE x +7,HIT+14, Duration:180sec",
+                      "duration": "180 seconds",
+                      "str-int-dex": "+7",
+                      "hit": "+14",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "STR,INT,DE x +8,HIT+16, Duration:200sec",
+                      "duration": "200 seconds",
+                      "str-int-dex": "+8",
+                      "hit": "+16",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "STR,INT,DE x +9,HIT+18, Duration:220sec",
+                      "duration": "220 seconds",
+                      "str-int-dex": "+9",
+                      "hit": "+18",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "STR,INT,DE x +10,HIT+20, Duration:240sec",
+                      "duration": "240 seconds",
+                      "str-int-dex": "+10",
+                      "hit": "+20",
                       "sp-cost": "64"
                     }
                   }
@@ -16218,10 +17553,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16237,6 +17571,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Raises Physical Attack (Weapon Mastery) against Demon and Undead race monsters.\nDamage is added to the physical damage given to Demon and Undead race monsters.",
           "levelDetails": [
             {
@@ -16327,8 +17663,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Demonbane ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Demonbane"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/23.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/23",
           "tree": {
@@ -16431,10 +17774,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16450,6 +17792,8 @@ export const cardinalData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Angelus",
           "description": "Increase physical defense and MaxHP on the user and all party members in a 14x14 area around the user.",
           "levelDetails": [
             {
@@ -16544,6 +17888,9 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "20 + (Skill Level × 3)",
+          "duration": "(Skill Level × 30) seconds",
+          "areaOfEffect": "14 x 14",
           "translations": {
             "pt-BR": {
               "name": " Angelus ",
@@ -16580,6 +17927,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.15 seconds"
               },
@@ -16598,6 +17949,10 @@ export const cardinalData = {
               {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "14 x 14"
               }
             ],
             "levelTables": [
@@ -16609,78 +17964,106 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "hp",
+                    "label": "Hp"
+                  },
+                  {
+                    "id": "vit-defense",
+                    "label": "Vit Defense"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "VIT Defense+ 5%, HP+ 50, Duration: 30sec",
+                      "duration": "30 seconds",
+                      "vit-defense": "+ 5%",
+                      "hp": "+ 50",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "VIT Defense+10%, HP+100, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "vit-defense": "+10%",
+                      "hp": "+100",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "VIT Defense+15%, HP+150, Duration: 90sec",
+                      "duration": "90 seconds",
+                      "vit-defense": "+15%",
+                      "hp": "+150",
                       "sp-cost": "29"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "VIT Defense+20%, HP+200, Duration:120sec",
+                      "duration": "120 seconds",
+                      "vit-defense": "+20%",
+                      "hp": "+200",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "VIT Defense+25%, HP+250, Duration:150sec",
+                      "duration": "150 seconds",
+                      "vit-defense": "+25%",
+                      "hp": "+250",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "VIT Defense+30%, HP+300, Duration:180sec",
+                      "duration": "180 seconds",
+                      "vit-defense": "+30%",
+                      "hp": "+300",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "VIT Defense+35%, HP+350, Duration:210sec",
+                      "duration": "210 seconds",
+                      "vit-defense": "+35%",
+                      "hp": "+350",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "VIT Defense+40%, HP+400, Duration:240sec",
+                      "duration": "240 seconds",
+                      "vit-defense": "+40%",
+                      "hp": "+400",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "VIT Defense+45%, HP+450, Duration:270sec",
+                      "duration": "270 seconds",
+                      "vit-defense": "+45%",
+                      "hp": "+450",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "VIT Defense+50%, HP+500, Duration:300sec",
+                      "duration": "300 seconds",
+                      "vit-defense": "+50%",
+                      "hp": "+500",
                       "sp-cost": "50"
                     }
                   }
@@ -16689,7 +18072,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -16705,9 +18087,11 @@ export const cardinalData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -16721,8 +18105,17 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -16741,6 +18134,18 @@ export const cardinalData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -16764,10 +18169,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16783,6 +18187,8 @@ export const cardinalData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Creates a Warp Portal that will transport those that enter to the portal's destination. Up to 8 players can be transported regardless of the skill level. Each cast consumes a Blue Gemstone.\nThis skill is disabled within land protector effect.",
           "levelDetails": [
             {
@@ -16825,8 +18231,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Warp portal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Warp_portal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/27.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/27",
           "tree": {
@@ -16901,10 +18314,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16920,6 +18332,8 @@ export const cardinalData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Attempts to place a debuff[Abnormal Status : Decrease agility] on a single target.\nTarget's movement speed and AGI is decreased during the Duration.",
           "levelDetails": [
             {
@@ -17014,8 +18428,15 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Decrease agility ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Decrease_agility"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/30.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/30",
           "tree": {
@@ -17072,78 +18493,106 @@ export const cardinalData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "agi",
+                    "label": "Agi"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "AGI- 3, success rate: 53%, Duration: 20sec",
+                      "duration": "20 seconds",
+                      "agi": "- 3",
+                      "effect": "success rate: 53%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "AGI- 4, success rate: 56%, Duration: 25sec",
+                      "duration": "25 seconds",
+                      "agi": "- 4",
+                      "effect": "success rate: 56%",
                       "sp-cost": "17"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "AGI- 5, success rate: 59%, Duration: 30sec",
+                      "duration": "30 seconds",
+                      "agi": "- 5",
+                      "effect": "success rate: 59%",
                       "sp-cost": "19"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "AGI- 6, success rate: 62%, Duration: 35sec",
+                      "duration": "35 seconds",
+                      "agi": "- 6",
+                      "effect": "success rate: 62%",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "AGI- 7, success rate: 65%, Duration: 40sec",
+                      "duration": "40 seconds",
+                      "agi": "- 7",
+                      "effect": "success rate: 65%",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "AGI- 8, success rate: 68%, Duration: 45sec",
+                      "duration": "45 seconds",
+                      "agi": "- 8",
+                      "effect": "success rate: 68%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "AGI- 9, success rate: 71%, Duration: 50sec",
+                      "duration": "50 seconds",
+                      "agi": "- 9",
+                      "effect": "success rate: 71%",
                       "sp-cost": "27"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "AGI-10, success rate: 74%, Duration: 55sec",
+                      "duration": "55 seconds",
+                      "agi": "-10",
+                      "effect": "success rate: 74%",
                       "sp-cost": "29"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "AGI-11, success rate: 77%, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "agi": "-11",
+                      "effect": "success rate: 77%",
                       "sp-cost": "31"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "AGI-12, success rate: 80%, Duration: 65sec",
+                      "duration": "65 seconds",
+                      "agi": "-12",
+                      "effect": "success rate: 80%",
                       "sp-cost": "33"
                     }
                   }
@@ -17152,10 +18601,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17171,6 +18619,8 @@ export const cardinalData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Signum_Crucis",
           "description": "Decreases the hard defense of all Undead property and Demon race monsters in the caster's screen.",
           "levelDetails": [
             {
@@ -17265,6 +18715,8 @@ export const cardinalData = {
               ]
             }
           ],
+          "spCost": "35",
+          "areaOfEffect": "Screen",
           "translations": {
             "pt-BR": {
               "name": " Signum Crucis ",
@@ -17301,6 +18753,10 @@ export const cardinalData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "35"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.15 seconds"
               },
@@ -17319,6 +18775,10 @@ export const cardinalData = {
               {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "Screen"
               }
             ],
             "levelTables": [
@@ -17332,76 +18792,90 @@ export const cardinalData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "physical-defense",
+                    "label": "Physical Defense"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Physical Defense -14%, success rate: 27%",
+                      "physical-defense": "-14%",
+                      "effect": "success rate: 27%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Physical Defense -18%, success rate: 31%",
+                      "physical-defense": "-18%",
+                      "effect": "success rate: 31%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Physical Defense -22%, success rate: 35%",
+                      "physical-defense": "-22%",
+                      "effect": "success rate: 35%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Physical Defense -26%, success rate: 39%",
+                      "physical-defense": "-26%",
+                      "effect": "success rate: 39%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Physical Defense -30%, success rate: 43%",
+                      "physical-defense": "-30%",
+                      "effect": "success rate: 43%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Physical Defense -34%, success rate: 47%",
+                      "physical-defense": "-34%",
+                      "effect": "success rate: 47%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Physical Defense -38%, success rate: 51%",
+                      "physical-defense": "-38%",
+                      "effect": "success rate: 51%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Physical Defense -42%, success rate: 55%",
+                      "physical-defense": "-42%",
+                      "effect": "success rate: 55%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Physical Defense -46%, success rate: 59%",
+                      "physical-defense": "-46%",
+                      "effect": "success rate: 59%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Physical Defense -50%, success rate: 63%",
+                      "physical-defense": "-50%",
+                      "effect": "success rate: 63%",
                       "sp-cost": "35"
                     }
                   }
@@ -17410,7 +18884,6 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -17426,9 +18899,11 @@ export const cardinalData = {
           "prerequisiteText": "Warp portal 4",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Pneuma",
           "description": "Each cast consumes SP10, Creates a green cloud on a targeted location that blocks Ranged physical damage for ten seconds.",
           "levelDetails": [],
           "levelExtras": [
@@ -17442,8 +18917,20 @@ export const cardinalData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "ASPD",
+          "duration": "10 seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Pneuma ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pneuma"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/25.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/25",
           "tree": {
@@ -17469,6 +18956,30 @@ export const cardinalData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "10 seconds"
               }
             ],
             "levelTables": [
@@ -17492,10 +19003,9 @@ export const cardinalData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17513,8 +19023,10 @@ export const cardinalData = {
       "group": "Active",
       "type": "Healing",
       "target": "You and Your Party",
-      "recoversAp": "",
+      "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Dilectio_Heal",
       "description": "Restore HP for you and one or more surrounding party members.",
       "levelDetails": [],
       "fixedCastTime": "1.5 seconds",
@@ -17548,8 +19060,17 @@ export const cardinalData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "45 + (5 × Skill Level)",
+      "areaOfEffect": "3 x 3~7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Dilectio Heal ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Dilectio_Heal"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5280.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5280",
       "tree": {
@@ -17583,6 +19104,10 @@ export const cardinalData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "45 + (5 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -17601,6 +19126,14 @@ export const cardinalData = {
           {
             "label": "Target",
             "value": "You and Your Party"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "3 x 3~7 x 7"
+          },
+          {
+            "label": "AP Generated",
+            "value": "1"
           }
         ],
         "levelTables": [
@@ -17648,10 +19181,9 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -17667,6 +19199,8 @@ export const cardinalData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Fidus_Animus",
       "description": "Increase your Holy Magic damage.\nThis skill also affects Flamen, Arbitrium, and Pneumaticus Procella damage.",
       "levelDetails": [],
       "levelExtras": [
@@ -17820,7 +19354,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
         "status": "translated",
@@ -17839,6 +19372,8 @@ export const cardinalData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Maces and Books increase Physical damage on enemies, depending on their size.\nThis skill also affects Petitio and Effligo damage.",
       "levelDetails": [],
       "levelExtras": [
@@ -17888,8 +19423,15 @@ export const cardinalData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Mace Book Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Mace_Book_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5270.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5270",
       "tree": {
@@ -17985,10 +19527,9 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18004,6 +19545,8 @@ export const cardinalData = {
       "target": "You and Your Party",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Mediale_Votum",
       "description": "Bless 1 party member.\nThis skill restores HP for its target and surrounding party members in 9 x9 cells every 2 seconds, by a portion of the target's HP.",
       "levelDetails": [],
       "fixedCastTime": "1.5 seconds",
@@ -18037,6 +19580,10 @@ export const cardinalData = {
           ]
         }
       ],
+      "spCost": "20 + (10 × Skill Level)",
+      "duration": "20 + (20 × Skill Level) seconds",
+      "castRange": "9 cells",
+      "areaOfEffect": "9 x 9",
       "translations": {
         "pt-BR": {
           "name": " Mediale Votum ",
@@ -18073,6 +19620,10 @@ export const cardinalData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "20 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -18089,8 +19640,20 @@ export const cardinalData = {
             "value": "60 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "9 cells"
+          },
+          {
             "label": "Target",
             "value": "You and Your Party"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "9 x 9"
+          },
+          {
+            "label": "Duration",
+            "value": "20 + (20 × Skill Level) seconds"
           },
           {
             "label": "Pulse",
@@ -18142,7 +19705,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
         "status": "translated",
@@ -18159,8 +19721,10 @@ export const cardinalData = {
       "group": "Active",
       "type": "Buff",
       "target": "1 Target",
-      "recoversAp": "",
+      "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Benedictum",
       "description": "Bless a target, temporarily increasing their POW, CRT, and CON.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -18194,6 +19758,9 @@ export const cardinalData = {
           ]
         }
       ],
+      "spCost": "65 + (5 × Skill Level)",
+      "duration": "90 + (30 × Skill Level) seconds",
+      "castRange": "9 cells",
       "translations": {
         "pt-BR": {
           "name": " Benedictum ",
@@ -18236,6 +19803,10 @@ export const cardinalData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "65 + (5 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -18252,8 +19823,20 @@ export const cardinalData = {
             "value": "0.25 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "9 cells"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Duration",
+            "value": "90 + (30 × Skill Level) seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "1"
           }
         ],
         "levelTables": [
@@ -18301,7 +19884,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
         "status": "translated",
@@ -18318,8 +19900,10 @@ export const cardinalData = {
       "group": "Active",
       "type": "Buff",
       "target": "1 Target",
-      "recoversAp": "",
+      "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Religio",
       "description": "Maximize the target's faith, temporarily increasing their SPL, WIS, and STA.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -18353,6 +19937,9 @@ export const cardinalData = {
           ]
         }
       ],
+      "spCost": "65 + (5 × Skill Level)",
+      "duration": "90 + (30 × Skill Level) seconds",
+      "castRange": "9 cells",
       "translations": {
         "pt-BR": {
           "name": " Religio ",
@@ -18395,6 +19982,10 @@ export const cardinalData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "65 + (5 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -18411,8 +20002,20 @@ export const cardinalData = {
             "value": "0.25 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "9 cells"
+          },
+          {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Duration",
+            "value": "90 + (30 × Skill Level) seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "1"
           }
         ],
         "levelTables": [
@@ -18460,7 +20063,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
         "status": "translated",
@@ -18479,6 +20081,8 @@ export const cardinalData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Framen",
       "description": "Inflict Holy magical damage to the target and surrounding enemies.\nDamage is increased if target is Demon or Undead race.\nDamage is additionally increased depending on the user's base level and SPL.",
       "levelDetails": [
         {
@@ -18533,8 +20137,18 @@ export const cardinalData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "35 + (5 x Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "5 x 5 ~ 7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Framen ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Framen"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5284.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5284",
       "tree": {
@@ -18568,6 +20182,10 @@ export const cardinalData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "35 + (5 x Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -18582,6 +20200,10 @@ export const cardinalData = {
           {
             "label": "Cooldown",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Magic"
           },
           {
             "label": "Target",
@@ -18646,7 +20268,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Framen",
@@ -18758,7 +20379,7 @@ export const cardinalData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18774,6 +20395,8 @@ export const cardinalData = {
       "target": "Single Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Petitio",
       "description": "Mace and book only skill.\nDeals physical damage to the target and surrounding enemies around the target.\nIf using mace, damage type is long ranged physical damage. If using book, damage type is melee physical damage.\nDamage is additionally increased depending on the user's base level and POW.\nIn addition, Critical Damage is applied at the user's Critical Chance.\nHowever, In the case of critical damage, half of the total critical damage increase options are applied.\nWhen Duple Light is active, has a chance to auto-cast Petitio when dealing normal physical damage.\nMaximum level of Petitio that the user learned will be auto-cast and the skill won't recover AP from auto-casting.",
       "levelDetails": [
         {
@@ -18868,6 +20491,9 @@ export const cardinalData = {
           ]
         }
       ],
+      "spCost": "28 + (2 x Skill Level)",
+      "castRange": "2 cells",
+      "areaOfEffect": "3 x 3~9 x 9",
       "translations": {
         "pt-BR": {
           "name": " Petitio ",
@@ -18910,6 +20536,10 @@ export const cardinalData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "28 + (2 x Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -18924,6 +20554,10 @@ export const cardinalData = {
           {
             "label": "Cooldown",
             "value": "0.5 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "2 cells"
           },
           {
             "label": "Target",
@@ -19023,7 +20657,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Petitio",
@@ -19133,6 +20766,8 @@ export const cardinalData = {
       "target": "1 Target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Repatatio",
       "description": "Fully restore the target's HP.\nCan't be used on monsters, Mercenaries, Spirits, or Humunculi.",
       "levelDetails": [],
       "fixedCastTime": "2 seconds",
@@ -19165,8 +20800,18 @@ export const cardinalData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "120",
+      "cooldown": "150~10 seconds",
+      "castRange": "9 cells",
+      "translations": {
+        "pt-BR": {
+          "name": " Repatatio ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Repatatio"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5268.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5268",
       "tree": {
@@ -19194,6 +20839,10 @@ export const cardinalData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "120"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "2 seconds"
           },
@@ -19204,6 +20853,14 @@ export const cardinalData = {
           {
             "label": "Cast Delay",
             "value": "0 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "150~10 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "9 cells"
           },
           {
             "label": "Target",
@@ -19255,10 +20912,9 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19274,6 +20930,8 @@ export const cardinalData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Arbitrium",
       "description": "Calls the light judgement to deals primary holy property magical damage to the target, with a chance to inflict [Ailment: Quiet].\nThen the light explodes on the target, deals secondary holy property magical damage to surrounding enemies within 9 x 9 cells around the target.\nDamage is additionally increased depending on the user's base level and SPL.",
       "levelDetails": [
         {
@@ -19368,6 +21026,9 @@ export const cardinalData = {
           ]
         }
       ],
+      "spCost": "40 + (10 × Skill Level)",
+      "castRange": "Magic",
+      "areaOfEffect": "9×9",
       "translations": {
         "pt-BR": {
           "name": " Arbitrium ",
@@ -19410,6 +21071,10 @@ export const cardinalData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "40 + (10 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -19426,8 +21091,16 @@ export const cardinalData = {
             "value": "0.75 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "Magic"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "9×9"
           },
           {
             "label": "AP Generated",
@@ -19441,80 +21114,66 @@ export const cardinalData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Quiet inflicting chance: 25%",
                   "sp-cost": "107"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Quiet inflicting chance: 30%",
                   "sp-cost": "109"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Quiet inflicting chance: 35%",
                   "sp-cost": "111"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Quiet inflicting chance: 40%",
                   "sp-cost": "113"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Quiet inflicting chance: 45%",
                   "sp-cost": "115"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "Quiet inflicting chance: 50%",
                   "sp-cost": "117"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "Quiet inflicting chance: 55%",
                   "sp-cost": "119"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "Quiet inflicting chance: 60%",
                   "sp-cost": "121"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "Quiet inflicting chance: 65%",
                   "sp-cost": "123"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "Quiet inflicting chance: 70%",
                   "sp-cost": "125"
                 }
               }
@@ -19523,7 +21182,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Arbitrium",
@@ -19658,6 +21316,8 @@ export const cardinalData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Blooms a sacred flower that inflicts holy property magical damage to the target and surrounding enemies within 7 x 7 cells around the target.\nIf the user is under Ancilla buff, change the skill property to neutral.\nDeals additional damage depends on user's base level, SPL and level of Fidus Animus user learned.",
       "levelDetails": [
         {
@@ -19686,8 +21346,15 @@ export const cardinalData = {
       "castDelay": "0.85 seconds",
       "cooldown": "0.7 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Divinus Flos ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Divinus_Flos"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6518.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6518",
       "tree": {
@@ -19751,7 +21418,6 @@ export const cardinalData = {
         ],
         "levelTables": []
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Divinus Flos",
@@ -19767,7 +21433,7 @@ export const cardinalData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19783,6 +21449,8 @@ export const cardinalData = {
       "target": "Single Target",
       "recoversAp": "",
       "consumesAp": "12",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Blunt and book-only skills.\nDeals powerful Melee Physics damage to the target.\nDeals even more damage if the target is a demon/undead monster.\nDamage increases additionally based on the caster's base level and POW.\nCritical damage is applied based on the caster's critical probability.\nIn case of critical damage, half of the total critical damage increase options is applied.",
       "levelDetails": [
         {
@@ -19877,8 +21545,15 @@ export const cardinalData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Effligo(Effligo) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Effligo(Effligo)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5277.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5277",
       "tree": {
@@ -20011,7 +21686,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Effligo",
@@ -20074,7 +21748,7 @@ export const cardinalData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20090,6 +21764,8 @@ export const cardinalData = {
       "target": "You and party members",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Presens_Acies",
       "description": "Increase Critical damage rate for you or 1 party member.",
       "levelDetails": [],
       "fixedCastTime": "1.5 seconds",
@@ -20123,6 +21799,8 @@ export const cardinalData = {
           ]
         }
       ],
+      "spCost": "15 + (15 × Skill Level)",
+      "duration": "90 + (30 × Skill Level) seconds",
       "translations": {
         "pt-BR": {
           "name": " Presens Acies ",
@@ -20165,6 +21843,10 @@ export const cardinalData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "15 + (15 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -20183,6 +21865,10 @@ export const cardinalData = {
           {
             "label": "Target",
             "value": "You and party members"
+          },
+          {
+            "label": "Duration",
+            "value": "90 + (30 × Skill Level) seconds"
           }
         ],
         "levelTables": [
@@ -20230,7 +21916,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
         "status": "translated",
@@ -20249,6 +21934,8 @@ export const cardinalData = {
       "target": "You and Your Party",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Argutus_Telum",
       "description": "Enable you and 1 party member to ignore Physical Resistance.",
       "levelDetails": [],
       "fixedCastTime": "1.5 seconds",
@@ -20282,6 +21969,8 @@ export const cardinalData = {
           ]
         }
       ],
+      "spCost": "15 + (15 × Skill Level)",
+      "duration": "90 + (30 × Skill Level) seconds",
       "translations": {
         "pt-BR": {
           "name": " Argutus Telum ",
@@ -20324,6 +22013,10 @@ export const cardinalData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "15 + (15 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -20342,6 +22035,10 @@ export const cardinalData = {
           {
             "label": "Target",
             "value": "You and Your Party"
+          },
+          {
+            "label": "Duration",
+            "value": "90 + (30 × Skill Level) seconds"
           }
         ],
         "levelTables": [
@@ -20389,7 +22086,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
         "status": "translated",
@@ -20408,6 +22104,8 @@ export const cardinalData = {
       "target": "You and Your Party",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Argutus_Vita",
       "description": "Enable you and 1 party member to ignore Magic Resistance.",
       "levelDetails": [],
       "fixedCastTime": "1.5 seconds",
@@ -20441,6 +22139,8 @@ export const cardinalData = {
           ]
         }
       ],
+      "spCost": "15 + (15 × Skill Level)",
+      "duration": "90 + (30 × Skill Level) seconds",
       "translations": {
         "pt-BR": {
           "name": " Argutus Vita ",
@@ -20483,6 +22183,10 @@ export const cardinalData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "15 + (15 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -20501,6 +22205,10 @@ export const cardinalData = {
           {
             "label": "Target",
             "value": "You and Your Party"
+          },
+          {
+            "label": "Duration",
+            "value": "90 + (30 × Skill Level) seconds"
           }
         ],
         "levelTables": [
@@ -20548,7 +22256,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
         "status": "translated",
@@ -20567,6 +22274,8 @@ export const cardinalData = {
       "target": "1 cell ground target",
       "recoversAp": "",
       "consumesAp": "30",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Creates a storm of the Holy Spirit in the target area, inflicting Holy Magic damage to targets within the range every 3 seconds for 12 seconds.\nDeals even more damage if the target is a demon/undead monster.\nDamage increases further based on the caster's base level and SPL.",
       "levelDetails": [
         {
@@ -20661,8 +22370,15 @@ export const cardinalData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Pneumaticus Procella(Pneumaticus Procella) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Pneumaticus_Procella(Pneumaticus_Procella)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5279.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5279",
       "tree": {
@@ -20813,7 +22529,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Pneumaticus Procella",
@@ -20889,7 +22604,7 @@ export const cardinalData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20905,6 +22620,8 @@ export const cardinalData = {
       "target": "Yourself and your party members",
       "recoversAp": "",
       "consumesAp": "200/190/180/170/160",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Recovers HP/SP of yourself and party members within range, and increases the target's characteristic physical attack power (P.ATK) and characteristic magic attack power (S.MATK) for a certain period of time.",
       "levelDetails": [
         {
@@ -20959,8 +22676,15 @@ export const cardinalData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Competentia(Competentia) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Competentia(Competentia)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5278.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5278",
       "tree": {
@@ -21029,6 +22753,14 @@ export const cardinalData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "p-atk",
+                "label": "P.Atk"
+              },
+              {
+                "id": "s-matk",
+                "label": "S.Matk"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -21039,10 +22771,6 @@ export const cardinalData = {
               {
                 "id": "effect",
                 "label": "Effect"
-              },
-              {
-                "id": "p-atk-and-s-matk",
-                "label": "P.Atk And S.Matk"
               }
             ],
             "rows": [
@@ -21051,7 +22779,8 @@ export const cardinalData = {
                 "values": {
                   "effect": "HP / SP 20% Recovery",
                   "duration": "180 seconds",
-                  "p-atk-and-s-matk": "+ 10",
+                  "p-atk": "+ 10",
+                  "s-matk": "+ 10",
                   "sp-cost": "60"
                 }
               },
@@ -21060,7 +22789,8 @@ export const cardinalData = {
                 "values": {
                   "effect": "HP / SP 40% Recovery",
                   "duration": "210 seconds",
-                  "p-atk-and-s-matk": "+ 20",
+                  "p-atk": "+ 20",
+                  "s-matk": "+ 20",
                   "sp-cost": "60"
                 }
               },
@@ -21069,7 +22799,8 @@ export const cardinalData = {
                 "values": {
                   "effect": "HP / SP 60% Recovery",
                   "duration": "240 seconds",
-                  "p-atk-and-s-matk": "+ 30",
+                  "p-atk": "+ 30",
+                  "s-matk": "+ 30",
                   "sp-cost": "60"
                 }
               },
@@ -21078,7 +22809,8 @@ export const cardinalData = {
                 "values": {
                   "effect": "HP / SP 80% Recovery",
                   "duration": "270 seconds",
-                  "p-atk-and-s-matk": "+ 40",
+                  "p-atk": "+ 40",
+                  "s-matk": "+ 40",
                   "sp-cost": "60"
                 }
               },
@@ -21087,7 +22819,8 @@ export const cardinalData = {
                 "values": {
                   "effect": "HP / SP 100% Recovery",
                   "duration": "300 seconds",
-                  "p-atk-and-s-matk": "+ 50",
+                  "p-atk": "+ 50",
+                  "s-matk": "+ 50",
                   "sp-cost": "60"
                 }
               }
@@ -21096,7 +22829,6 @@ export const cardinalData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Competentia",
@@ -21127,7 +22859,7 @@ export const cardinalData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

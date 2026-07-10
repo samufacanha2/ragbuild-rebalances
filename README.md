@@ -12,19 +12,35 @@ npm run assets:download
 
 ## Build data
 
-Configure `.env` with the values shown in `.env.example`, then run:
+Download missing external source files:
+
+```sh
+npm run data:sources
+```
+
+Configure `.env` with the values shown in `.env.example` before downloading sources if you want Divine Pride API translations included. The source downloader saves Divine Pride, bROWiki, and iRO Wiki HTML/JSON under `data/sources/`.
+
+To force-refresh every saved external source file when upstream data changes, run:
+
+```sh
+npm run data:sources:refresh
+```
+
+After that, rebuild generated data from the local source files:
 
 ```sh
 npm run build:data
 ```
 
-The builder parses `current_skills.md`, reads `rebalance_*.md`, and calls the Divine Pride skill endpoint:
+The builder parses `rebalances/`, reads the saved source files, and writes public generated datasets to `src/generated/`. It does not call the network during `npm run build:data`.
 
-```text
-/api/database/Skill/:id?apiKey=:apiKey
+To download missing source files and rebuild in one step, run:
+
+```sh
+npm run build:data:fetch
 ```
 
-It writes sanitized public data to `src/generated/soulAsceticData.js`.
+Use `npm run build:data:refresh` when you need to force-refresh sources and rebuild in one command.
 
 ## Run the app
 

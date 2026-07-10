@@ -1,5 +1,5 @@
 export const bioloData = {
-  "generatedAt": "2026-07-10T00:54:04.339Z",
+  "generatedAt": "2026-07-10T15:02:10.807Z",
   "classId": 4259,
   "classSlug": "biolo",
   "className": "Biolo",
@@ -71,7 +71,8 @@ export const bioloData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4259",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -247,6 +248,8 @@ export const bioloData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bionic_Pharmacy",
           "description": "Create a chemical at the cost of 30 SP.\nConsumes 1 Beaker along with other ingredients, depending on the chemical you create.\nIcicle Acid Bottle: 1 Bottle Grenade, 1 Acid Bottle, and 2 Indigo Points\nEarth Acid Bottle: 1 Bottle Grenade, 1 Acid Bottle, and 2 Lime Green Points\nGale Acid Bottle: 1 Bottle Grenade, 1 Acid Bottle, and 2 Yellow Wish Points\nFlame Acid Bottle: 1 Bottle Grenade, 1 Acid Bottle, and 2 Scarlet Points\nAdvanced Glistening Coat: 10 Glistening Coats and 5 Empty Bottles\nAdvanced Plant Bottle: 10 Plant Bottles, 5 Mandragora Pots, 2 Thorn Plant Seeds, and 2 Bloodsuck Plant Seeds\nEye Cleaner (Sightless Remover): 10 Empty Bottles, 5 Holy Waters, 3 White Herbs, and 3 Green Herbs\nEar Cleaner (Quiet Remover): 10 Empty Bottles, 5 Holy Waters, 2 Blue Herbs, and 3 Green Herbs\nEnergy Tonic (Lethargy Remover): 10 Empty Bottles, 5 Holy Waters, 2 Yggdrasilberries, 3 Royal Jellies\nMini Extinguisher (Arson Remover): 10 Empty Bottles, 5 Holy Waters, 5 Crystal Blues, and 3 Irons\nLucky Water (Misfortune Remover): 10 Empty Bottles, 5 Holy Waters, 10 Clovers, and 3 Green Herbs\nStrong Antidote (Strong Poison Remover): 10 Empty Bottles, 5 Holy Waters, 3 Poison Bottles, and 10 Green Herbs\nHigh Calorie Chocolate (Depression Remover): Empty Bottle 10, Cacao 3, Royal Jelly 3, Yggdrasil Seed 5\nRefined Holy Water (Holy Fire Remover): 10 Empty Bottles, 10 Holy Waters, and 3 Royal Jellies",
           "levelDetails": [
             {
@@ -301,8 +304,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "translations": {
+            "pt-BR": {
+              "name": " Bionic Pharmacy ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bionic_Pharmacy"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5336.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5336",
           "tree": {
@@ -328,6 +339,10 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30"
               },
               {
                 "label": "Fixed Cast Time",
@@ -404,7 +419,6 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Bionic Pharmacy",
@@ -419,7 +433,7 @@ export const bioloData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -435,6 +449,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bionics_Mastery",
           "description": "Improve Plant minion stats.",
           "levelDetails": [
             {
@@ -525,8 +541,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Bionics Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bionics_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5337.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5337",
           "tree": {
@@ -552,6 +575,14 @@ export const bioloData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "mhp",
+                    "label": "MHP"
+                  },
+                  {
+                    "id": "msp",
+                    "label": "MSP"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -570,14 +601,6 @@ export const bioloData = {
                   {
                     "id": "mdef",
                     "label": "Mdef"
-                  },
-                  {
-                    "id": "mhp",
-                    "label": "Mhp"
-                  },
-                  {
-                    "id": "msp",
-                    "label": "Msp"
                   }
                 ],
                 "rows": [
@@ -706,10 +729,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -723,8 +745,10 @@ export const bioloData = {
           "group": "Active",
           "type": "Buff",
           "target": "You and party members",
-          "recoversAp": "",
+          "recoversAp": "20",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Group_Protection",
           "description": "Coat equipment for you and your party members.\nConsumes 3 Advanced Glistening Coats.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -758,8 +782,18 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "180 + (Skill Level × 40)",
+          "duration": "30 + (Skill Level × 30) seconds",
+          "areaOfEffect": "15 x 15~31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Group Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Group_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5338.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5338",
           "tree": {
@@ -787,6 +821,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "180 + (Skill Level × 40)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -805,6 +843,18 @@ export const bioloData = {
               {
                 "label": "Target",
                 "value": "You and party members"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15~31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "30 + (Skill Level × 30) seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "20"
               }
             ],
             "levelTables": [
@@ -852,10 +902,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -871,6 +920,8 @@ export const bioloData = {
           "target": "Instant Cast",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Explosive_Powder",
           "description": "Scatters the volatile explosive powder, deals melee physical damage to surrounding enemies around the user for 3 hits.\nDeals higher damage for 5 hits when using under Research Report buff.\nDamage is additionally increased depending on the user's base level and POW.",
           "levelDetails": [
             {
@@ -921,8 +972,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "69 ~ 97?",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Explosive Powder ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Explosive_Powder"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6005.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6005",
           "tree": {
@@ -948,6 +1008,10 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "69 ~ 97?"
               },
               {
                 "label": "Target",
@@ -1012,7 +1076,6 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Explosive Powder",
@@ -1062,7 +1125,7 @@ export const bioloData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1078,6 +1141,8 @@ export const bioloData = {
           "target": "1 Target",
           "recoversAp": "4(1~3Lv), 5(4~5Lv)",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Consume 2 Earth Acid Bottles, dealing 7 hits of Earth Ranged Physical damage to the target and surrounding area.\nAdditional Damage increase based on the caster's base level and POW.\nIf the attack target is a player, there is a very low chance to create acidic AoE zone 1 cell on the target's location.",
           "levelDetails": [
             {
@@ -1131,8 +1196,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Acidified Zone (Earth) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Acidified_Zone_(Earth)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5341.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5341",
           "tree": {
@@ -1231,10 +1303,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1250,6 +1321,8 @@ export const bioloData = {
           "target": "1 Target",
           "recoversAp": "4(1~3Lv), 5(4~5Lv)",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Consume 2 Gale Acid Bottles, dealing 7 hits of Wind Ranged Physical damage to the target and surrounding area.\nAdditional Damage increase based on the caster's base level and POW.\nIf the attack target is a player, there is a very low chance to create acidic AoE zone 1 cell on the target's location.",
           "levelDetails": [
             {
@@ -1303,8 +1376,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Acidified Zone (Wind) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Acidified_Zone_(Wind)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5342.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5342",
           "tree": {
@@ -1403,10 +1483,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1420,8 +1499,10 @@ export const bioloData = {
           "group": "Active",
           "type": "Summon",
           "target": "Self",
-          "recoversAp": "",
+          "recoversAp": "10",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Create_Creeper",
           "description": "Summon a tough vine monster.\nUp to 1 creeper can be summoned at the same time.\nConsumes 1 Advanced Plant Bottle.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -1455,8 +1536,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "64 + (Skill Level × 16)",
+          "duration": "60 + (Skill Level × 60) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Create Creeper ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Create_Creeper"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5346.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5346",
           "tree": {
@@ -1484,6 +1574,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "64 + (Skill Level × 16)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -1502,6 +1596,14 @@ export const bioloData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 60) seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "10"
               }
             ],
             "levelTables": [
@@ -1549,10 +1651,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1568,6 +1669,8 @@ export const bioloData = {
           "target": "You and Allies",
           "recoversAp": "2(1~2Lv), 3(3~4Lv)",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Shadow_Protection",
           "description": "Coat the Shadow Equipment of 1 target to protect it from being stripped.\nConsumes 1 Advanced Glistening Coat.",
           "levelDetails": [
             {
@@ -1614,8 +1717,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "110 + (Skill Level x 10)",
+          "duration": "30 + (Skill Level × 10) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Shadow Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Shadow_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5339.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5339",
           "tree": {
@@ -1643,6 +1755,10 @@ export const bioloData = {
                 "value": "4"
               },
               {
+                "label": "SP Cost",
+                "value": "110 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -1664,7 +1780,7 @@ export const bioloData = {
               },
               {
                 "label": "Duration",
-                "value": "Lv 1: 90 seconds / Lv 2: 120 seconds / Lv 3: 150 seconds / Lv 4: 180 seconds"
+                "value": "30 + (Skill Level × 10) seconds"
               },
               {
                 "label": "AP Generated",
@@ -1718,7 +1834,6 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Full Shadow Protection",
@@ -1741,7 +1856,7 @@ export const bioloData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1757,6 +1872,8 @@ export const bioloData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mayhemic_Thorns",
           "description": "Summons the giant thorn plant to the target and stike the surrounding area, deals long ranged physical damage to target and surrounding enemies around the target with the range for 3 hits.\nDeals higher damage for 4 hits when using under Research Report buff.\nDamage is additionally increased according to the user's base level and POW, and critical damage is applied according to the user's critical probability.\nIn the case of critical damage, half of the total critical damage increase options are applied.",
           "levelDetails": [
             {
@@ -1851,8 +1968,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "68 ~ 86",
+          "translations": {
+            "pt-BR": {
+              "name": " Mayhemic Thorns ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mayhemic_Thorns"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6006.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6006",
           "tree": {
@@ -1884,6 +2009,10 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "68 ~ 86"
               },
               {
                 "label": "Fixed Cast Time",
@@ -1999,7 +2128,6 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Mayhemic Thorns",
@@ -2030,7 +2158,7 @@ export const bioloData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2046,6 +2174,8 @@ export const bioloData = {
           "target": "1 Target",
           "recoversAp": "4(1~3Lv), 5(4~5Lv)",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Consume 2 Flame Acid Bottles, dealing 7 hits of Fire Ranged Physical damage to the target and surrounding area.\nAdditional Damage increase based on the caster's base level and POW.\nIf the attack target is a player, there is a very low chance to create acidic AoE zone 1 cell on the target's location.",
           "levelDetails": [
             {
@@ -2099,8 +2229,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Acidified Zone (Fire) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Acidified_Zone_(Fire)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5343.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5343",
           "tree": {
@@ -2193,10 +2330,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2212,6 +2348,8 @@ export const bioloData = {
           "target": "1 Target",
           "recoversAp": "4(1~3Lv), 5(4~5Lv)",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Consume 2 Icicle Acid Bottles, dealing 7 hits of Water Ranged Physical damage to the target and surrounding area.\nAdditional Damage increase based on the caster's base level and POW.\nIf the attack target is a player, there is a very low chance to create acidic AoE zone 1 cell on the target's location.",
           "levelDetails": [
             {
@@ -2265,8 +2403,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Acidified Zone (Water) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Acidified_Zone_(Water)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5340.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5340",
           "tree": {
@@ -2359,10 +2504,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2376,8 +2520,10 @@ export const bioloData = {
           "group": "Active",
           "type": "Summon",
           "target": "Self",
-          "recoversAp": "",
+          "recoversAp": "20",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Create_Wooden_Warrior",
           "description": "Summon a wooden warrior.\nUp to 1 wooden warrior can be summoned.\nThis warrior increases Cart Tornado and Cart Cannon damage for its duration.\nConsumes 2 Advanced Plant Bottles.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2411,8 +2557,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 + (Skill Level × 20)",
+          "duration": "60 + (Skill Level × 60) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Create Wooden Warrior ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Create_Wooden_Warrior"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5344.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5344",
           "tree": {
@@ -2440,6 +2595,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "80 + (Skill Level × 20)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2458,6 +2617,14 @@ export const bioloData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 60) seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "20"
               }
             ],
             "levelTables": [
@@ -2505,10 +2672,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2522,8 +2688,10 @@ export const bioloData = {
           "group": "Active",
           "type": "Summon",
           "target": "Self",
-          "recoversAp": "",
+          "recoversAp": "20",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Create_Wooden_Fairy",
           "description": "Summon a wooden fairy.\nUp to 1 wooden fairy can be summoned.\nThis fairy increases Spore Explosion damage for its duration.\nConsumes 2 Advanced Plant Bottles.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2557,8 +2725,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "Lv. 1 : 120 Lv. 2 onwards : 130 + (Skill Level × 25)",
+          "duration": "60 + (Skill Level × 60) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Create Wooden Fairy ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Create_Wooden_Fairy"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5345.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5345",
           "tree": {
@@ -2586,6 +2763,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "Lv. 1 : 120 Lv. 2 onwards : 130 + (Skill Level × 25)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2604,6 +2785,14 @@ export const bioloData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "60 + (Skill Level × 60) seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "20"
               }
             ],
             "levelTables": [
@@ -2651,10 +2840,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2670,6 +2858,8 @@ export const bioloData = {
           "target": "Single target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Scatters very small fine powder to the target, deals melee physical damage to the target and surrounding enemies around the target.\nAdditionally, grants Mystery Powder buff to the user, allowing them to use Dust Explosion for 60 seconds.\nDeals additional damage depends on user's base level and POW.",
           "levelDetails": [
             {
@@ -2694,8 +2884,15 @@ export const bioloData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Mystery Powder ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mystery_Powder"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6509.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6509",
           "tree": {
@@ -2772,10 +2969,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2791,6 +2987,8 @@ export const bioloData = {
           "target": "Single target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Can only be used when Mystery Powder buff is active.\nCauses a dust explosion to the target, deals melee physical damage to the target and surrounding enemies around the target for 5 hits.\nIf Research Report buff is active, the skill will deal more damage.\nDeals additional damage depends on user's base level and POW.",
           "levelDetails": [
             {
@@ -2815,8 +3013,15 @@ export const bioloData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Dust Explosion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dust_Explosion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6510.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6510",
           "tree": {
@@ -2897,10 +3102,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2915,7 +3119,9 @@ export const bioloData = {
           "type": "Buff",
           "target": "Self",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "100",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Research_Report",
           "description": "Report the findings of your study.\nIncreases the damage of the Acidified Zone skills for 150 seconds and reduces the cost of bottles to use the skill from 2 to 1.\nIn addition, the Acidified Zone skills increases the damage dealt to Formless and Plant monsters.",
           "levelDetails": [
             {
@@ -2938,8 +3144,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "duration": "150 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Research Report ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Research_Report"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5347.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5347",
           "tree": {
@@ -2973,6 +3188,10 @@ export const bioloData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "60"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -2991,6 +3210,14 @@ export const bioloData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "150 seconds"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "100"
               }
             ],
             "levelTables": [
@@ -3019,7 +3246,6 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Research Report",
@@ -3058,7 +3284,7 @@ export const bioloData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3073,7 +3299,9 @@ export const bioloData = {
           "type": "Summon",
           "target": "Self",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "110 - (Skill Level × 10)",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Create_Hell_Tree",
           "description": "Summon a hellish tree.\nUp to 1 hellish tree can be summoned at the same time.\nConsumes 3 Advanced Plant Bottles.",
           "levelDetails": [
             {
@@ -3128,8 +3356,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "duration": "[30 + (Skill Level × 30)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Create Hell Tree ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Create_Hell_Tree"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5348.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5348",
           "tree": {
@@ -3163,6 +3400,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -3181,6 +3422,10 @@ export const bioloData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "110 - (Skill Level × 10)"
               }
             ],
             "levelTables": [
@@ -3192,43 +3437,43 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration : 60 sec",
+                      "duration": "60 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration : 90 sec",
+                      "duration": "90 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration : 120 sec",
+                      "duration": "120 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration : 150 sec",
+                      "duration": "150 seconds",
                       "sp-cost": "100"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration : 180 sec",
+                      "duration": "180 seconds",
                       "sp-cost": "100"
                     }
                   }
@@ -3237,10 +3482,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3267,6 +3511,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Change_Material",
           "description": "Learn the ability to create new items by combining various items. Items can't be made by combining random items. You have to combine the correct items with exact quantities. To get more details about combining items, please travel around Rune Midgard.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -3284,8 +3530,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Change Material ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Change_Material"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2494.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2494",
           "tree": {
@@ -3304,6 +3558,10 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
               },
               {
                 "label": "Fixed Cast Time",
@@ -3343,10 +3601,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3362,6 +3619,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sword_Mastery",
           "description": "Increase ATK and Accuracy rate of One Handed Sword or Dagger Class Weapons.",
           "levelDetails": [
             {
@@ -3462,8 +3721,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sword Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sword_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2474.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2474",
           "tree": {
@@ -3565,10 +3831,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3581,9 +3846,11 @@ export const bioloData = {
           "prerequisiteText": "Geneticist Basic",
           "group": "Active",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Special_Pharmacy",
           "description": "Geneticist can create more potions or liquid medicine. The number of liquid medicine that can be created increases based on the Geneticist's INT and skill level learned. To make liquid medicine, you need a specific Potion Making Manual.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -3727,8 +3994,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "translations": {
+            "pt-BR": {
+              "name": " Special Pharmacy ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Special_Pharmacy"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2497.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2497",
           "tree": {
@@ -3749,6 +4024,10 @@ export const bioloData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -3763,6 +4042,10 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -3868,10 +4151,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3887,6 +4169,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cart_Remodeling",
           "description": "Increase Accuracy rate of Cart Revolution, Cart Tornado and Cart Cannon by remodeling the cart. Extend Maximum loading space of the cart.",
           "levelDetails": [
             {
@@ -3987,8 +4271,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Cart Remodeling ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cart_Remodeling"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2475.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2475",
           "tree": {
@@ -4090,10 +4381,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4106,9 +4396,11 @@ export const bioloData = {
           "prerequisiteText": "Special Pharmacy 1",
           "group": "Active",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mixed_Cooking",
           "description": "Cook delicious dishes by mixing various ingredients. You can make 10 dishes at once with level 2 Mixed Cooking. Need a 'Cook Recipe (Cook Book)' to make specific food.",
           "levelDetails": [
             {
@@ -4152,8 +4444,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5/40",
+          "translations": {
+            "pt-BR": {
+              "name": " Mixed Cooking ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mixed_Cooking"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2495.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2495",
           "tree": {
@@ -4181,6 +4481,10 @@ export const bioloData = {
                 "value": "2"
               },
               {
+                "label": "SP Cost",
+                "value": "5/40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4195,6 +4499,10 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -4236,10 +4544,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4252,9 +4559,11 @@ export const bioloData = {
           "prerequisiteText": "Special Pharmacy 2",
           "group": "Special / Damage",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Thorn_Trap",
           "description": "Set Thorn Trap on the ground in a 1 cell range and trap enemies on it. Target receives damage continuously while trapped on the ground. If the trapped target gets fire attack, it burns the thorn trap and the target can be released. Consumes 1 Thorny Plant Seed.",
           "levelDetails": [
             {
@@ -4409,8 +4718,19 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "?",
+          "duration": "[8 + (Skill Level × 2)] seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Thorn Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Thorn_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2479.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2479",
           "tree": {
@@ -4438,6 +4758,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "?"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4452,6 +4776,22 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "[8 + (Skill Level × 2)] seconds"
               }
             ],
             "levelTables": [
@@ -4544,10 +4884,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4560,9 +4899,11 @@ export const bioloData = {
           "prerequisiteText": "Special Pharmacy 3",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Blood_Sucker",
           "description": "Gives the party member a chance to drain HP when dealing physical attack.\nDrain amount and chance increases based on skill level.\nConsumes 5 Blood Sucker Plant Seeds when used.",
           "levelDetails": [
             {
@@ -4717,8 +5058,18 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 + (Skill Level x 5)",
+          "duration": "[-20 + (Skill Level × 60)] seconds",
+          "castRange": "11 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Blood Sucker ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blood_Sucker"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2480.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2480",
           "tree": {
@@ -4746,6 +5097,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45 + (Skill Level x 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -4760,6 +5115,14 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
               }
             ],
             "levelTables": [
@@ -4769,6 +5132,10 @@ export const bioloData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "effect",
@@ -4795,7 +5162,8 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Chance 1% / Drain amount 1% / Duration 40 sec",
+                      "duration": "40 seconds",
+                      "effect": "Chance 1% / Drain amount 1%",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "20000",
@@ -4806,7 +5174,8 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Chance 3% / Drain amount 2% / Duration 100 sec",
+                      "duration": "100 seconds",
+                      "effect": "Chance 3% / Drain amount 2%",
                       "sp-cost": "55",
                       "range": "11 cells",
                       "data-1": "22000",
@@ -4817,7 +5186,8 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Chance 5% / Drain amount 3% / Duration 160 sec",
+                      "duration": "160 seconds",
+                      "effect": "Chance 5% / Drain amount 3%",
                       "sp-cost": "60",
                       "range": "11 cells",
                       "data-1": "24000",
@@ -4828,7 +5198,8 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Chance 7% / Drain amount 4% / Duration 220 sec",
+                      "duration": "220 seconds",
+                      "effect": "Chance 7% / Drain amount 4%",
                       "sp-cost": "65",
                       "range": "11 cells",
                       "data-1": "26000",
@@ -4839,7 +5210,8 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Chance 9% / Drain amount 5% / Duration 280 sec",
+                      "duration": "280 seconds",
+                      "effect": "Chance 9% / Drain amount 5%",
                       "sp-cost": "70",
                       "range": "11 cells",
                       "data-1": "28000",
@@ -4852,10 +5224,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4868,9 +5239,11 @@ export const bioloData = {
           "prerequisiteText": "Special Pharmacy 4",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spore_Explosion",
           "description": "Throws an expolosive spore, deals ranged physical damage to a target and enemies in AoE.\nDamage increases based on BaseLv and INT.\nAdditionally, it gives the target within the Area of Effect receive increased long-distance physical damage for 5 seconds.\n(Normal enemy : increase 10% / Boss monsters : increase 5%)\nConsumes 1 Bomb Mushroom Spore when used.",
           "levelDetails": [
             {
@@ -5100,8 +5473,18 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "44 + (Skill Level x 4)",
+          "castRange": "11 cells",
+          "areaOfEffect": "3 x 3 ~ 11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Spore Explosion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spore_Explosion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2481.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2481",
           "tree": {
@@ -5129,6 +5512,10 @@ export const bioloData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "44 + (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5143,6 +5530,14 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
               }
             ],
             "levelTables": [
@@ -5276,10 +5671,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5292,9 +5686,11 @@ export const bioloData = {
           "prerequisiteText": "Cart Remodeling 1",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cart_Tornado",
           "description": "Spins the pushcart like a tornado to inflict physical damage to all enemies in 2 cells around the user. Cannot be used without cart.\nDamage increases based on STR, weight of the cart, skill level of Cart Remodeling.",
           "levelDetails": [
             {
@@ -5434,8 +5830,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Cart Tornado ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cart_Tornado"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2476.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2476",
           "tree": {
@@ -5463,6 +5868,10 @@ export const bioloData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5477,6 +5886,14 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -5568,10 +5985,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5584,9 +6000,11 @@ export const bioloData = {
           "prerequisiteText": "Thorn Trap 3",
           "group": "Special / Wall",
           "type": "",
-          "target": "",
+          "target": "Self or Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Thorn_Wall",
           "description": "Build a thorn wall around 1 target to deal damage and pushes it back. It can be destroyed by attacks and damages. If the Thorn Wall gets fire property damage, it burns out and turns into Fire Wall. Only 1 Thorn Wall can be cast and consumes 1 Thorn Plant Seed.",
           "levelDetails": [
             {
@@ -5716,8 +6134,19 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30 + (Skill Level × 10)",
+          "duration": "[9 + (Skill Level)] seconds;Until is destroyed",
+          "castRange": "11 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Thorn Wall ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Thorn_Wall"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2482.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2482",
           "tree": {
@@ -5745,6 +6174,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "30 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5759,6 +6192,22 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "11 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Self or Player"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "[9 + (Skill Level)] seconds;Until is destroyed"
               }
             ],
             "levelTables": [
@@ -5842,10 +6291,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5858,9 +6306,11 @@ export const bioloData = {
           "prerequisiteText": "Blood Sucker 3",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hell_Plant",
           "description": "Attach cannibals summoned from hell to his body, bite and damage when Target approaches the 5x5 Cell Area around a target. Damage is further increased based on the BaseLv, INT and the skill level of Biocannabis.\nConsumes 1 MenEater Plant Bottle.",
           "levelDetails": [
             {
@@ -6014,8 +6464,18 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "45 + (Skill Level × 5)",
+          "duration": "[60 × Skill Level] seconds",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Hell Plant ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hell_Plant"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2490.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2490",
           "tree": {
@@ -6043,6 +6503,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "45 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6053,6 +6517,14 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -6062,6 +6534,10 @@ export const bioloData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
                     "id": "data-1",
@@ -6084,6 +6560,7 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
+                      "duration": "60 seconds",
                       "sp-cost": "40",
                       "range": "9 cells",
                       "data-1": "2",
@@ -6094,6 +6571,7 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
+                      "duration": "90 seconds",
                       "sp-cost": "45",
                       "range": "9 cells",
                       "data-1": "3",
@@ -6104,6 +6582,7 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
+                      "duration": "120 seconds",
                       "sp-cost": "50",
                       "range": "9 cells",
                       "data-1": "4",
@@ -6114,6 +6593,7 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
+                      "duration": "150 seconds",
                       "sp-cost": "55",
                       "range": "9 cells",
                       "data-1": "5",
@@ -6124,6 +6604,7 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
+                      "duration": "180 seconds",
                       "sp-cost": "60",
                       "range": "9 cells",
                       "data-1": "6",
@@ -6136,10 +6617,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6152,9 +6632,11 @@ export const bioloData = {
           "prerequisiteText": "Spore Explosion 3",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Demonic_Fire",
           "description": "Throw a fire bottle on the ground and set flames. All targets within the skill range keep receiving damages and also get [Ignition] status. Consume 1 Fire Bottle.",
           "levelDetails": [
             {
@@ -6308,8 +6790,19 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 4)",
+          "duration": "[8 + (Skill Level × 2)] seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Demonic Fire ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Demonic_Fire"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2485.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2485",
           "tree": {
@@ -6337,6 +6830,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6347,6 +6844,22 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "[8 + (Skill Level × 2)] seconds"
               }
             ],
             "levelTables": [
@@ -6439,10 +6952,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6455,9 +6967,11 @@ export const bioloData = {
           "prerequisiteText": "Cart Remodeling 2",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Cannon Ball",
+          "irowikiUrl": "https://irowiki.org/wiki/Cart_Cannon",
           "description": "Deals special ranged physical damage to a target and enemies around it.\nCannot be used without a cart. Damage increases based on skill level of Cart Remodeling.\nDamage increases based on BaseLv and INT.\nConsumes 1 Cannon Ball when used.",
           "levelDetails": [
             {
@@ -6561,8 +7075,19 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40 ~ 50",
+          "variableCastTime": "0.5 + (Skill Level × 0.5) seconds",
+          "castRange": "(7 + Skill Level) cells",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Cart Cannon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cart_Cannon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2477.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2477",
           "tree": {
@@ -6590,8 +7115,16 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40 ~ 50"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.5 + (Skill Level × 0.5) seconds"
               },
               {
                 "label": "Cast Delay",
@@ -6600,6 +7133,22 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(7 + Skill Level) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 7 x 7"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Cannon Ball"
               }
             ],
             "levelTables": [
@@ -6609,10 +7158,6 @@ export const bioloData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   },
                   {
                     "id": "data-1",
@@ -6627,7 +7172,6 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK (250+Cart Remodeling sLv x 20)%",
                       "sp-cost": "40",
                       "range": "7 cells",
                       "data-1": "1"
@@ -6636,7 +7180,6 @@ export const bioloData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK (500+Cart Remodeling sLv x 40)%",
                       "sp-cost": "42",
                       "range": "8 cells",
                       "data-1": "1"
@@ -6645,7 +7188,6 @@ export const bioloData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK (750+Cart Remodeling sLv x 60)%",
                       "sp-cost": "46",
                       "range": "9 cells",
                       "data-1": "2"
@@ -6654,7 +7196,6 @@ export const bioloData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK (1000+Cart Remodeling sLv x 80)%",
                       "sp-cost": "48",
                       "range": "10 cells",
                       "data-1": "2"
@@ -6663,7 +7204,6 @@ export const bioloData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK (1250+Cart Remodeling sLv x 100)%",
                       "sp-cost": "50",
                       "range": "11 cells",
                       "data-1": "3"
@@ -6674,10 +7214,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6690,9 +7229,11 @@ export const bioloData = {
           "prerequisiteText": "Wall of Thorns 3",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Crazy_Vines",
           "description": "Consuming one Seed of Thorns, summoning and dropping a huge block of plants, inflicting ranged physical damage on all targets in the area. It eliminates traps and effects laid on the ground.\nAs the skill level increases, the number of plant lumps summoned increases, and the damage is further increased based on BaseLv.",
           "levelDetails": [
             {
@@ -6921,8 +7462,18 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 4)",
+          "variableCastTime": "[2.5 + (Skill Level × 0.5)] seconds",
+          "areaOfEffect": "9 x 9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Crazy Vines ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Crazy_Vines"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2483.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2483",
           "tree": {
@@ -6950,8 +7501,16 @@ export const bioloData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[2.5 + (Skill Level × 0.5)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -6960,6 +7519,14 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9 cells"
               }
             ],
             "levelTables": [
@@ -7091,10 +7658,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7107,9 +7673,11 @@ export const bioloData = {
           "prerequisiteText": "Hell Plant 3",
           "group": "Active / Special / Damage",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mandragora_Howl",
           "description": "Pull out a noisy MANDRAGORA from its pot and let it howl at surrounding enemies. Decrease all targets' INT and SP. Increase all skill's casting delay. Decrease success rate of the skill depending on target's VIT and LUK.",
           "levelDetails": [
             {
@@ -7264,8 +7832,18 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "?",
+          "duration": "[5 × (Skill Level + 1)] seconds",
+          "areaOfEffect": "11 x 11 ~ 15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Mandragora Howl ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mandragora_Howl"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2492.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2492",
           "tree": {
@@ -7293,6 +7871,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "?"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7307,6 +7889,18 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "10 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11 ~ 15 x 15"
+              },
+              {
+                "label": "Duration",
+                "value": "[5 × (Skill Level + 1)] seconds"
               }
             ],
             "levelTables": [
@@ -7416,10 +8010,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7432,9 +8025,11 @@ export const bioloData = {
           "prerequisiteText": "Demonic Fire 3",
           "group": "Active / Special / Damage",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fire_Expansion",
           "description": "When Demonic Fire and Fire Expansion are cast in the same range, it gives several effects depending on the items consumed.",
           "levelDetails": [
             {
@@ -7514,8 +8109,19 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (Skill Level × 5)",
+          "duration": "See Table",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Fire Expansion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fire_Expansion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2486.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2486",
           "tree": {
@@ -7543,6 +8149,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "25 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7557,6 +8167,22 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "See Table"
               }
             ],
             "levelTables": [
@@ -7622,10 +8248,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7638,9 +8263,11 @@ export const bioloData = {
           "prerequisiteText": "Cart Remodeling 3",
           "group": "Buff (To yourself)",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Geneticist_Cart_Boost",
           "description": "Increase caster's movement speed and ATK for 90 seconds. Must have a cart in order to cast.",
           "levelDetails": [
             {
@@ -7770,8 +8397,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "16 + (Skill Level x 4)",
+          "duration": "90 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Geneticist Cart Boost ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Geneticist_Cart_Boost"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2478.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2478",
           "tree": {
@@ -7799,6 +8435,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "16 + (Skill Level x 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7813,6 +8453,14 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "90 seconds"
               }
             ],
             "levelTables": [
@@ -7896,10 +8544,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7912,9 +8559,11 @@ export const bioloData = {
           "prerequisiteText": "Special Pharmacy 1",
           "group": "",
           "type": "Special / Debuff",
-          "target": "",
+          "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hallucination_Drug",
           "description": "Throw a concentrated alcohol mix\nto cause hallucinations and decreased accuracy\nwith a high probability. Consumes 1 alcohol.",
           "levelDetails": [
             {
@@ -8017,8 +8666,20 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 10)",
+          "fixedCastTime": "Level 1~4 = 1 second Level 5 = 0 seconds",
+          "cooldown": "(6 − Skill Level) seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "9 x 9 ~ 29 x 29",
+          "translations": {
+            "pt-BR": {
+              "name": " Hallucination Drug ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hallucination_Drug"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5003.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5003",
           "tree": {
@@ -8046,12 +8707,36 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 10)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "Level 1~4 = 1 second Level 5 = 0 seconds"
+              },
+              {
                 "label": "Variable Cast Time",
                 "value": "0 seconds"
               },
               {
                 "label": "Cast Delay",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "(6 − Skill Level) seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9 ~ 29 x 29"
               }
             ],
             "levelTables": [
@@ -8126,10 +8811,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8141,10 +8825,12 @@ export const bioloData = {
           "maxLevel": 5,
           "prerequisiteText": "3rd jobs",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Throttle",
           "description": "Exceed the limits of the body by\nsacrificing your own vitality to strengthen yourself\nfor a short time. You will become horribly\nexhausted after the skill's duration.\nFully restores HP when cast and increases\nmovement speed for the skill's duration.\nAll stats +20%.\nAfter the skill duration ends, you will be inflicted\nwith Rebound status. During rebound status,\nyour movement speed is lowered and your\nnatural HP/SP recovery is disabled.\nCannot be removed by dispel or clearance.\n50 Minute playtime cooldown",
           "levelDetails": [
             {
@@ -8249,8 +8935,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Throttle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
@@ -8263,8 +8958,16 @@ export const bioloData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
               },
               {
                 "label": "Fixed Cast Time",
@@ -8281,6 +8984,10 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "3000 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -8364,10 +9071,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8394,6 +9100,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Learning_Potion",
           "description": "Enhances the success rate for brewing. This skill also increases the effectiveness of healing potions.",
           "levelDetails": [
             {
@@ -8484,8 +9192,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Learning Potion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Learning_Potion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/227.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/227",
           "tree": {
@@ -8595,10 +9310,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8614,6 +9328,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Summons a Marine Sphere on a targeted location, which will cast Self Destruction upon receiving damage. Each cast consumes a Marine Sphere Bottle.\nWhen the Marine Spear is attacked, it moves in the opposite direction of the attacked target and casts a self-destructing skill.\nA Maximum of three Marine Spheres can be summoned before the first one expires, In PvP environment, an exploding Marine Sphere will damage allies, enemies, and the user itself.",
           "levelDetails": [
             {
@@ -8664,8 +9380,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Marine Sphere ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Marine_Sphere"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/233.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/233",
           "tree": {
@@ -8747,10 +9470,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8766,6 +9488,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Axe_Mastery",
           "description": "Enhances attack (Weapon Mastery) with Axe and Sword class weapons.",
           "levelDetails": [
             {
@@ -8856,8 +9580,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Axe Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Axe_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/226.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/226",
           "tree": {
@@ -8953,10 +9684,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8972,6 +9702,8 @@ export const bioloData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Protect the equipped headgear of a single target from damage and removal temporarily. Each cast consumes a Glistening Coat.\nAs skill levels increase, duration becomes longer.",
           "levelDetails": [
             {
@@ -9022,8 +9754,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Chemical Protection(Helm) (Chemical Protection Helm) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chemical_Protection(Helm)_(Chemical_Protection_Helm)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/237.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/237",
           "tree": {
@@ -9064,43 +9803,43 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 120sec",
+                      "duration": "120 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 240sec",
+                      "duration": "240 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 360sec",
+                      "duration": "360 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 480sec",
+                      "duration": "480 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 600sec",
+                      "duration": "600 seconds",
                       "sp-cost": "20"
                     }
                   }
@@ -9109,10 +9848,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9128,6 +9866,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bioethics",
           "description": "A skill that is fundamental in enabling the creation of Homunculi.",
           "levelDetails": [],
           "levelExtras": [
@@ -9141,8 +9881,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Bioethics ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bioethics"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/238.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/238",
           "tree": {
@@ -9184,10 +9931,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9203,6 +9949,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Consume 200 SP in order to make\n200 attempts to create a White Potion every\n0.005 seconds. This skill has the same success\nrate as the Prepare Potion skill and has a\n3 second cast time that is unaffected by DEX.\nEach cast requires enough materials to craft\n200 White Potions.",
           "levelDetails": [],
           "levelExtras": [
@@ -9216,8 +9964,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Spiritual Potion Creation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spiritual_Potion_Creation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/496.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/496",
           "tree": {
@@ -9270,10 +10025,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9289,6 +10043,8 @@ export const bioloData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Pharmacy",
           "description": "Brews an item, available from the Creation Guides the user is carrying. Each cast consumes a Medicine Bowl.",
           "levelDetails": [],
           "levelExtras": [
@@ -9338,8 +10094,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "translations": {
+            "pt-BR": {
+              "name": " Pharmacy ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pharmacy"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/228.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/228",
           "tree": {
@@ -9365,6 +10129,10 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "5"
               },
               {
                 "label": "Target",
@@ -9446,10 +10214,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9465,6 +10232,8 @@ export const bioloData = {
           "target": "Target 1",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Potion_Pitcher",
           "description": "Throws a potion and recovers party member/guild member/ humunculus.\nThe effectiveness of the thrown potion increases based on the skill level, and when the skill level rises, the number of potions you can throw increases.\nCan throw normal potions, ranking effect does not apply.\nHP recovery hugely increases when used on Homunculus.",
           "levelDetails": [
             {
@@ -9515,8 +10284,18 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "castDelay": "0.5 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Potion Pitcher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Potion_Pitcher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/231.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/231",
           "tree": {
@@ -9542,6 +10321,18 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -9602,10 +10393,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9618,9 +10408,11 @@ export const bioloData = {
           "prerequisiteText": "Aid Potion 5",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Aid_Condensed_Potion",
           "description": "Consume one Condensed Potion to\nheal all Party Members within a 7*7 cell area\naround the targeted spot.\nOnly normal type Condensed Potion can be consumed.\nThis skill doesn't get affected by ranker effect.\nPotion Efficiency & Required Condensed Potion",
           "levelDetails": [
             {
@@ -9711,8 +10503,19 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "castDelay": "1 second",
+          "castRange": "? cells",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Aid Condensed Potion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Aid_Condensed_Potion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/478.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/478",
           "tree": {
@@ -9738,6 +10541,26 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "? cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -9829,10 +10652,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9848,6 +10670,8 @@ export const bioloData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Protect the equipped shield of a single target from damage and removal temporarily. Each cast consumes a Glistening Coat.\nAs skill levels increase, duration becomes longer.",
           "levelDetails": [
             {
@@ -9898,8 +10722,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Chemical Protection(Shield) (Chemical Protection Shield) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chemical_Protection(Shield)_(Chemical_Protection_Shield)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/235.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/235",
           "tree": {
@@ -9940,43 +10771,43 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 120sec",
+                      "duration": "120 seconds",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 240sec",
+                      "duration": "240 seconds",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 360sec",
+                      "duration": "360 seconds",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 480sec",
+                      "duration": "480 seconds",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 600sec",
+                      "duration": "600 seconds",
                       "sp-cost": "25"
                     }
                   }
@@ -9985,10 +10816,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10004,6 +10834,8 @@ export const bioloData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rest",
           "description": "Puts homunculus in rest.\nThis skill is only usable if Homunculus has at least 80% of it's MaxHP.\nRested Homunculus can be restored with the Call.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -10021,8 +10853,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "translations": {
+            "pt-BR": {
+              "name": " Rest ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rest"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/244.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/244",
           "tree": {
@@ -10048,6 +10888,10 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "50"
               },
               {
                 "label": "Fixed Cast Time",
@@ -10091,10 +10935,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10107,9 +10950,11 @@ export const bioloData = {
           "prerequisiteText": "Spirit State",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Aid_Berserk_Potion",
           "description": "Force the imbibing of Berserk\nPotions upon any job class. However, the\nduration of the increase in Attack Speed from\nthis skill lasts only half as long as the\nBerserk Potion item.\nEach cast requires 2 Berserk Potions.",
           "levelDetails": [],
           "levelExtras": [
@@ -10123,8 +10968,19 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "fixedCastTime": "1 second",
+          "duration": "15 minutes",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Aid Berserk Potion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Aid_Berserk_Potion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/446.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/446",
           "tree": {
@@ -10143,6 +10999,26 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Player"
+              },
+              {
+                "label": "Duration",
+                "value": "15 minutes"
               }
             ],
             "levelTables": [
@@ -10166,10 +11042,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10185,6 +11060,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "This skill is only enabled through\nthe power of the Super Novice Guardian Angel.\nConsume 200 SP in order to make 200 attempts to\ncreate a White Potion every 0.005 seconds. This\nskill can earn Alchemist Ranking Points and has\nthe same success rate as the Prepare Potion\nskill, as well as a 3 second cast time that\nis unaffected by DEX. Each cast requires enough\nmaterials to craft 200 White Potions.",
           "levelDetails": [],
           "levelExtras": [
@@ -10198,8 +11075,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Spiritual Potion Creation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spiritual_Potion_Creation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/497.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/497",
           "tree": {
@@ -10252,10 +11136,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10268,9 +11151,11 @@ export const bioloData = {
           "prerequisiteText": "Pharmacy 4",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Demonstration",
           "description": "Throws a bottle of flammable liquid at a targeted location that will inflict Fire property hybrid damage every half a second to all enemies within its area of effect.\nIt has a chance of breaking enemies' equipped weapon.\nDamage per attack is increased according to skill level of the learning potion.",
           "levelDetails": [
             {
@@ -10321,8 +11206,22 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "fixedCastTime": "0.2 seconds",
+          "variableCastTime": "0.8 seconds",
+          "castDelay": "0.5 seconds",
+          "duration": "35 + (Skill Level × 5) seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Demonstration ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Demonstration"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/229.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/229",
           "tree": {
@@ -10348,6 +11247,34 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.8 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -10359,6 +11286,10 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -10367,35 +11298,40 @@ export const bioloData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 40sec, Destruction Chance : 3%",
+                      "duration": "40 seconds",
+                      "effect": ", Destruction Chance : 3%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 45sec, Destruction Chance : 6%",
+                      "duration": "45 seconds",
+                      "effect": ", Destruction Chance : 6%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 50sec, Destruction Chance : 9%",
+                      "duration": "50 seconds",
+                      "effect": ", Destruction Chance : 9%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 55sec, Destruction Chance :12%",
+                      "duration": "55 seconds",
+                      "effect": ", Destruction Chance :12%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 60sec, Destruction Chance :15%",
+                      "duration": "60 seconds",
+                      "effect": ", Destruction Chance :15%",
                       "sp-cost": "10"
                     }
                   }
@@ -10404,10 +11340,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10423,6 +11358,8 @@ export const bioloData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Protect the equipped armor of a single target from damage and removal temporarily. Each cast consumes a Glistening Coat.\nAs skill levels increase, duration becomes longer.",
           "levelDetails": [
             {
@@ -10473,8 +11410,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Chemical Protection(Armor) (Chemical Protection Armor) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chemical_Protection(Armor)_(Chemical_Protection_Armor)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/236.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/236",
           "tree": {
@@ -10515,43 +11459,43 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 120sec",
+                      "duration": "120 seconds",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 240sec",
+                      "duration": "240 seconds",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 360sec",
+                      "duration": "360 seconds",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 480sec",
+                      "duration": "480 seconds",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 600sec",
+                      "duration": "600 seconds",
                       "sp-cost": "25"
                     }
                   }
@@ -10560,10 +11504,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10579,6 +11522,8 @@ export const bioloData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Call_Homunculus",
           "description": "Calls out an existing homunculus that is in resting with the Vaporize skill or creates a new homunculus with an embryo.",
           "levelDetails": [],
           "levelExtras": [
@@ -10592,8 +11537,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Call Homunculus ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Call_Homunculus"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/243.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/243",
           "tree": {
@@ -10621,6 +11574,10 @@ export const bioloData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Target",
                 "value": "Instant Cast"
               }
@@ -10646,10 +11603,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10665,6 +11621,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "This skill is only enabled through\nthe power of the Taekwon-Do Guardian Angel.\nConsume 200 SP in order to create 100 Alcohol,\n50 Acid Bottle and 50 Bottle Grenade. Each cast\nrequires 50 Fabric, 50 Empty Bottle and enough\nmaterials to craft the produced items.",
           "levelDetails": [],
           "levelExtras": [
@@ -10678,8 +11636,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Spiritual Potion Creation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spiritual_Potion_Creation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/498.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/498",
           "tree": {
@@ -10728,10 +11693,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10747,6 +11711,8 @@ export const bioloData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Acid_Terror",
           "description": "Throws a bottle of corrosive acid at a single target that will inflict hybrid damage. It has a chance of leaving the target [Abnormal Status: bleeding] or breaking its equipped armor\nAs skill levels increase, chances of damaging armor or causing bleeding increase.\nDamage is increased according to skill level of the learning potion. The chance of bleeding is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -10797,8 +11763,20 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "fixedCastTime": "0.5 seconds",
+          "variableCastTime": "0.5 seconds",
+          "castDelay": "0.5 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Acid Terror ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Acid_Terror"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/230.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/230",
           "tree": {
@@ -10824,6 +11802,26 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -10875,10 +11873,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10894,6 +11891,8 @@ export const bioloData = {
           "target": "Target 1",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Acid_Bomb",
           "description": "Ranged Physical Damage to a target, consumes 1 Fire and Acid Bottle.\nDamage increases based on BaseLv, INT, and target's VIT.\nDeals half of the damage to players\nand adds a chance to break target's weapon and armors based on skill level.",
           "levelDetails": [
             {
@@ -10988,8 +11987,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Acid Bomb ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Acid_Bomb"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/490.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/490",
           "tree": {
@@ -11023,6 +12031,10 @@ export const bioloData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "50"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -11037,6 +12049,10 @@ export const bioloData = {
               {
                 "label": "Cooldown",
                 "value": "0.15 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -11118,10 +12134,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11137,6 +12152,8 @@ export const bioloData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Protects the equipped weapon of a single target from damage and removal temporarily. Each cast consumes a Glistening Coat.\nAs skill levels increase, duration becomes longer.",
           "levelDetails": [
             {
@@ -11187,8 +12204,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Chemical Protection(Weapon) (Chemical Protection Weapon) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Chemical_Protection(Weapon)_(Chemical_Protection_Weapon)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/234.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/234",
           "tree": {
@@ -11229,43 +12253,43 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 120sec",
+                      "duration": "120 seconds",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 240sec",
+                      "duration": "240 seconds",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 360sec",
+                      "duration": "360 seconds",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 480sec",
+                      "duration": "480 seconds",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 600sec",
+                      "duration": "600 seconds",
                       "sp-cost": "30"
                     }
                   }
@@ -11274,10 +12298,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11293,6 +12316,8 @@ export const bioloData = {
           "target": "Instant Cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Resurrect_Homunculus",
           "description": "Restores Homunculus from rested status or resurrects a dead homunculus.",
           "levelDetails": [
             {
@@ -11346,8 +12371,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 - (SkillLevel x 6)",
+          "cooldown": "170 - (SkillLevel x 30) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Resurrect Homunculus ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Resurrect_Homunculus"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/247.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/247",
           "tree": {
@@ -11375,6 +12409,10 @@ export const bioloData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "80 - (SkillLevel x 6)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -11385,6 +12423,10 @@ export const bioloData = {
               {
                 "label": "Cast Delay",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "170 - (SkillLevel x 30) seconds"
               },
               {
                 "label": "Target",
@@ -11445,10 +12487,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11461,9 +12502,11 @@ export const bioloData = {
           "prerequisiteText": "Pharmacy 6",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bio_Cannibalize",
           "description": "Summons a plant monster on a targeted location. Each cast consumes a Plant Bottle.\nInstalled monsters automatically disappear after a certain period of time\nMonster MaxHP depends on skill level.\nDifferent monsters are installed for each skill level, and only one type of monster can be installed..\nThe lower the skill level, the more monsters can be installed. At level 5, only one monster can be installed.",
           "levelDetails": [
             {
@@ -11514,8 +12557,21 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "fixedCastTime": "0.4 seconds",
+          "variableCastTime": "1.6 seconds",
+          "castDelay": "0.5 seconds",
+          "duration": "(6 − Skill Level) minutes; Until is killed",
+          "castRange": "4 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Bio Cannibalize ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bio_Cannibalize"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/232.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/232",
           "tree": {
@@ -11541,6 +12597,34 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.4 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1.6 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "4 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Duration",
+                "value": "(6 − Skill Level) minutes; Until is killed"
               }
             ],
             "levelTables": [
@@ -11597,10 +12681,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11613,9 +12696,11 @@ export const bioloData = {
           "prerequisiteText": "Chemical Protection(Helm, Shield, Armor, and Weapon) 5",
           "group": "Active",
           "type": "Supportive",
-          "target": "",
+          "target": "Self or Ally",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Chemical_Protection",
           "description": "Protect the targeted character with\nall four kinds of chemical protection.\nEach cast requires 1 Glistening Coat.",
           "levelDetails": [
             {
@@ -11666,8 +12751,20 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "fixedCastTime": "1 second",
+          "castDelay": "ASPD",
+          "duration": "(Skill Level × 2) minutes",
+          "castRange": "1 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Chemical Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Chemical_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/479.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/479",
           "tree": {
@@ -11711,6 +12808,26 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "1 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Self or Ally"
               }
             ],
             "levelTables": [
@@ -11722,43 +12839,43 @@ export const bioloData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration 120 sec",
+                      "duration": "120 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration 240 sec",
+                      "duration": "240 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration 360 sec",
+                      "duration": "360 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration 480 sec",
+                      "duration": "480 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration 600 sec",
+                      "duration": "600 seconds",
                       "sp-cost": "40"
                     }
                   }
@@ -11767,10 +12884,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11797,6 +12913,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -11875,8 +12993,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -11978,10 +13103,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11997,6 +13121,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Enhances Weight Limit.",
           "levelDetails": [
             {
@@ -12087,8 +13213,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Enlarge Weight limit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enlarge_Weight_limit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/36.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/36",
           "tree": {
@@ -12198,10 +13331,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12217,6 +13349,8 @@ export const bioloData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mammonite",
           "description": "Consumes SP5 and strike a single target with a strong blow, inflicting high physical damage.\nEach use consumes some Zeny.",
           "levelDetails": [
             {
@@ -12307,8 +13441,18 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Mammonite ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mammonite"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/42.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/42",
           "tree": {
@@ -12327,6 +13471,18 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -12408,10 +13564,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12427,6 +13582,8 @@ export const bioloData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Item_Appraisal",
           "description": "Identifies unknown items using SP10.",
           "levelDetails": [],
           "levelExtras": [
@@ -12440,8 +13597,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Item Appraisal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Item_Appraisal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/40.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/40",
           "tree": {
@@ -12460,6 +13625,10 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
               },
               {
                 "label": "Target",
@@ -12487,10 +13656,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12506,6 +13674,8 @@ export const bioloData = {
           "target": "Caster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Crazy_Uproar",
           "description": "Scream with battle vigor to add\n+4 STR for 5 minutes.",
           "levelDetails": [],
           "levelExtras": [
@@ -12519,8 +13689,20 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8",
+          "fixedCastTime": "0.5 seconds",
+          "variableCastTime": "1 second",
+          "cooldown": "30 seconds",
+          "duration": "5 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Crazy Uproar ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Crazy_Uproar"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/155.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/155",
           "tree": {
@@ -12541,8 +13723,28 @@ export const bioloData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "8"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "30 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Caster"
+              },
+              {
+                "label": "Duration",
+                "value": "5 minutes"
               }
             ],
             "levelTables": [
@@ -12566,10 +13768,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12585,6 +13786,8 @@ export const bioloData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -12598,8 +13801,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -12618,6 +13830,14 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -12645,10 +13865,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12664,6 +13883,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Discount",
           "description": "Allows to purchase items from NPC shops at lower prices.",
           "levelDetails": [
             {
@@ -12754,8 +13975,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Discount ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Discount"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/37.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/37",
           "tree": {
@@ -12872,10 +14100,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12891,6 +14118,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Able to use pushcart that carries a lot of items.\nEnables to rent a Pushcart from most Kafra employees, using [Alt-W]key.\ncan't use the items in pushcart directly.",
           "levelDetails": [
             {
@@ -12981,8 +14210,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Push Cart(Pushcart) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Push_Cart(Pushcart)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/39.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/39",
           "tree": {
@@ -13099,10 +14335,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13115,9 +14350,11 @@ export const bioloData = {
           "prerequisiteText": "Finish Quest",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Change_Cart",
           "description": "Change Pushcart appearance.\nThere are five different Pushcart styles that\nare chosen according to the character's\nBase Level.",
           "levelDetails": [],
           "levelExtras": [
@@ -13131,8 +14368,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "translations": {
+            "pt-BR": {
+              "name": " Change Cart ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Change_Cart"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/154.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/154",
           "tree": {
@@ -13151,6 +14396,14 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -13174,10 +14427,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13190,9 +14442,11 @@ export const bioloData = {
           "prerequisiteText": "Finish Quest",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cart_Decoration",
           "description": "Change Pushcart appearance.",
           "levelDetails": [],
           "levelExtras": [
@@ -13215,8 +14469,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "translations": {
+            "pt-BR": {
+              "name": " Cart Decoration ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cart_Decoration"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2544.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2544",
           "tree": {
@@ -13235,6 +14497,14 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -13263,10 +14533,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13279,9 +14548,11 @@ export const bioloData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -13295,8 +14566,17 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -13315,6 +14595,18 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -13338,10 +14630,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13357,6 +14648,8 @@ export const bioloData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Overcharge",
           "description": "Allows to sell items to NPC shops at higher prices..",
           "levelDetails": [
             {
@@ -13447,8 +14740,15 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Overcharge ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Overcharge"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/38.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/38",
           "tree": {
@@ -13565,10 +14865,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13584,6 +14883,8 @@ export const bioloData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Vending",
           "description": "Requires the user to have a pushcart equipped. Consumes SP 30 and opens a custom shop from which items can be sold to other players.\nOnly items stored in the Pushcart can be sold, The number of items available for sale increases with each level.",
           "levelDetails": [
             {
@@ -13674,8 +14975,16 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "translations": {
+            "pt-BR": {
+              "name": " Vending ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vending"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/41.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/41",
           "tree": {
@@ -13701,6 +15010,10 @@ export const bioloData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30"
               },
               {
                 "label": "Target",
@@ -13796,10 +15109,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13815,6 +15127,8 @@ export const bioloData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cart_Revolution",
           "description": "A splashed damage attack in which\na Pushcart is smashed into a target.\nInflicts 150% of the damage of a normal attack\nin addition to extra damage from the weight of\nitems in Pushcart.",
           "levelDetails": [],
           "levelExtras": [
@@ -13828,8 +15142,19 @@ export const bioloData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Cart Revolution ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cart_Revolution"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/153.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/153",
           "tree": {
@@ -13850,8 +15175,24 @@ export const bioloData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -13875,10 +15216,9 @@ export const bioloData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13898,6 +15238,8 @@ export const bioloData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Bionic_Pharmacy",
       "description": "Create a chemical at the cost of 30 SP.\nConsumes 1 Beaker along with other ingredients, depending on the chemical you create.\nIcicle Acid Bottle: 1 Bottle Grenade, 1 Acid Bottle, and 2 Indigo Points\nEarth Acid Bottle: 1 Bottle Grenade, 1 Acid Bottle, and 2 Lime Green Points\nGale Acid Bottle: 1 Bottle Grenade, 1 Acid Bottle, and 2 Yellow Wish Points\nFlame Acid Bottle: 1 Bottle Grenade, 1 Acid Bottle, and 2 Scarlet Points\nAdvanced Glistening Coat: 10 Glistening Coats and 5 Empty Bottles\nAdvanced Plant Bottle: 10 Plant Bottles, 5 Mandragora Pots, 2 Thorn Plant Seeds, and 2 Bloodsuck Plant Seeds\nEye Cleaner (Sightless Remover): 10 Empty Bottles, 5 Holy Waters, 3 White Herbs, and 3 Green Herbs\nEar Cleaner (Quiet Remover): 10 Empty Bottles, 5 Holy Waters, 2 Blue Herbs, and 3 Green Herbs\nEnergy Tonic (Lethargy Remover): 10 Empty Bottles, 5 Holy Waters, 2 Yggdrasilberries, 3 Royal Jellies\nMini Extinguisher (Arson Remover): 10 Empty Bottles, 5 Holy Waters, 5 Crystal Blues, and 3 Irons\nLucky Water (Misfortune Remover): 10 Empty Bottles, 5 Holy Waters, 10 Clovers, and 3 Green Herbs\nStrong Antidote (Strong Poison Remover): 10 Empty Bottles, 5 Holy Waters, 3 Poison Bottles, and 10 Green Herbs\nHigh Calorie Chocolate (Depression Remover): Empty Bottle 10, Cacao 3, Royal Jelly 3, Yggdrasil Seed 5\nRefined Holy Water (Holy Fire Remover): 10 Empty Bottles, 10 Holy Waters, and 3 Royal Jellies",
       "levelDetails": [
         {
@@ -13952,8 +15294,16 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "30",
+      "translations": {
+        "pt-BR": {
+          "name": " Bionic Pharmacy ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Bionic_Pharmacy"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5336.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5336",
       "tree": {
@@ -13979,6 +15329,10 @@ export const bioloData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "30"
           },
           {
             "label": "Fixed Cast Time",
@@ -14055,7 +15409,6 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Bionic Pharmacy",
@@ -14070,7 +15423,7 @@ export const bioloData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14086,6 +15439,8 @@ export const bioloData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Bionics_Mastery",
       "description": "Improve Plant minion stats.",
       "levelDetails": [
         {
@@ -14176,8 +15531,15 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Bionics Mastery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Bionics_Mastery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5337.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5337",
       "tree": {
@@ -14203,6 +15565,14 @@ export const bioloData = {
             "title": "Level Scaling",
             "columns": [
               {
+                "id": "mhp",
+                "label": "MHP"
+              },
+              {
+                "id": "msp",
+                "label": "MSP"
+              },
+              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -14221,14 +15591,6 @@ export const bioloData = {
               {
                 "id": "mdef",
                 "label": "Mdef"
-              },
-              {
-                "id": "mhp",
-                "label": "Mhp"
-              },
-              {
-                "id": "msp",
-                "label": "Msp"
               }
             ],
             "rows": [
@@ -14357,10 +15719,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14374,8 +15735,10 @@ export const bioloData = {
       "group": "Active",
       "type": "Buff",
       "target": "You and party members",
-      "recoversAp": "",
+      "recoversAp": "20",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Group_Protection",
       "description": "Coat equipment for you and your party members.\nConsumes 3 Advanced Glistening Coats.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -14409,8 +15772,18 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "180 + (Skill Level × 40)",
+      "duration": "30 + (Skill Level × 30) seconds",
+      "areaOfEffect": "15 x 15~31 x 31",
+      "translations": {
+        "pt-BR": {
+          "name": " Group Protection ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Group_Protection"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5338.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5338",
       "tree": {
@@ -14438,6 +15811,10 @@ export const bioloData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "180 + (Skill Level × 40)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -14456,6 +15833,18 @@ export const bioloData = {
           {
             "label": "Target",
             "value": "You and party members"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "15 x 15~31 x 31"
+          },
+          {
+            "label": "Duration",
+            "value": "30 + (Skill Level × 30) seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "20"
           }
         ],
         "levelTables": [
@@ -14503,10 +15892,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14522,6 +15910,8 @@ export const bioloData = {
       "target": "Instant Cast",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Explosive_Powder",
       "description": "Scatters the volatile explosive powder, deals melee physical damage to surrounding enemies around the user for 3 hits.\nDeals higher damage for 5 hits when using under Research Report buff.\nDamage is additionally increased depending on the user's base level and POW.",
       "levelDetails": [
         {
@@ -14572,8 +15962,17 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "69 ~ 97?",
+      "areaOfEffect": "7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Explosive Powder ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Explosive_Powder"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6005.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6005",
       "tree": {
@@ -14599,6 +15998,10 @@ export const bioloData = {
           {
             "label": "Levels",
             "value": "5"
+          },
+          {
+            "label": "SP Cost",
+            "value": "69 ~ 97?"
           },
           {
             "label": "Target",
@@ -14663,7 +16066,6 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Explosive Powder",
@@ -14713,7 +16115,7 @@ export const bioloData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14729,6 +16131,8 @@ export const bioloData = {
       "target": "1 Target",
       "recoversAp": "4(1~3Lv), 5(4~5Lv)",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Consume 2 Earth Acid Bottles, dealing 7 hits of Earth Ranged Physical damage to the target and surrounding area.\nAdditional Damage increase based on the caster's base level and POW.\nIf the attack target is a player, there is a very low chance to create acidic AoE zone 1 cell on the target's location.",
       "levelDetails": [
         {
@@ -14782,8 +16186,15 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Acidified Zone (Earth) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Acidified_Zone_(Earth)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5341.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5341",
       "tree": {
@@ -14882,10 +16293,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -14901,6 +16311,8 @@ export const bioloData = {
       "target": "1 Target",
       "recoversAp": "4(1~3Lv), 5(4~5Lv)",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Consume 2 Gale Acid Bottles, dealing 7 hits of Wind Ranged Physical damage to the target and surrounding area.\nAdditional Damage increase based on the caster's base level and POW.\nIf the attack target is a player, there is a very low chance to create acidic AoE zone 1 cell on the target's location.",
       "levelDetails": [
         {
@@ -14954,8 +16366,15 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Acidified Zone (Wind) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Acidified_Zone_(Wind)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5342.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5342",
       "tree": {
@@ -15054,10 +16473,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15071,8 +16489,10 @@ export const bioloData = {
       "group": "Active",
       "type": "Summon",
       "target": "Self",
-      "recoversAp": "",
+      "recoversAp": "10",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Create_Creeper",
       "description": "Summon a tough vine monster.\nUp to 1 creeper can be summoned at the same time.\nConsumes 1 Advanced Plant Bottle.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -15106,8 +16526,17 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "64 + (Skill Level × 16)",
+      "duration": "60 + (Skill Level × 60) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Create Creeper ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Create_Creeper"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5346.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5346",
       "tree": {
@@ -15135,6 +16564,10 @@ export const bioloData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "64 + (Skill Level × 16)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -15153,6 +16586,14 @@ export const bioloData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "60 + (Skill Level × 60) seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "10"
           }
         ],
         "levelTables": [
@@ -15200,10 +16641,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15219,6 +16659,8 @@ export const bioloData = {
       "target": "You and Allies",
       "recoversAp": "2(1~2Lv), 3(3~4Lv)",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Full_Shadow_Protection",
       "description": "Coat the Shadow Equipment of 1 target to protect it from being stripped.\nConsumes 1 Advanced Glistening Coat.",
       "levelDetails": [
         {
@@ -15265,8 +16707,17 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "110 + (Skill Level x 10)",
+      "duration": "30 + (Skill Level × 10) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Full Shadow Protection ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Full_Shadow_Protection"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5339.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5339",
       "tree": {
@@ -15294,6 +16745,10 @@ export const bioloData = {
             "value": "4"
           },
           {
+            "label": "SP Cost",
+            "value": "110 + (Skill Level x 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -15315,7 +16770,7 @@ export const bioloData = {
           },
           {
             "label": "Duration",
-            "value": "Lv 1: 90 seconds / Lv 2: 120 seconds / Lv 3: 150 seconds / Lv 4: 180 seconds"
+            "value": "30 + (Skill Level × 10) seconds"
           },
           {
             "label": "AP Generated",
@@ -15369,7 +16824,6 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Full Shadow Protection",
@@ -15392,7 +16846,7 @@ export const bioloData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15408,6 +16862,8 @@ export const bioloData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Mayhemic_Thorns",
       "description": "Summons the giant thorn plant to the target and stike the surrounding area, deals long ranged physical damage to target and surrounding enemies around the target with the range for 3 hits.\nDeals higher damage for 4 hits when using under Research Report buff.\nDamage is additionally increased according to the user's base level and POW, and critical damage is applied according to the user's critical probability.\nIn the case of critical damage, half of the total critical damage increase options are applied.",
       "levelDetails": [
         {
@@ -15502,8 +16958,16 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "68 ~ 86",
+      "translations": {
+        "pt-BR": {
+          "name": " Mayhemic Thorns ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Mayhemic_Thorns"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6006.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6006",
       "tree": {
@@ -15535,6 +16999,10 @@ export const bioloData = {
           {
             "label": "Levels",
             "value": "10"
+          },
+          {
+            "label": "SP Cost",
+            "value": "68 ~ 86"
           },
           {
             "label": "Fixed Cast Time",
@@ -15650,7 +17118,6 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Mayhemic Thorns",
@@ -15681,7 +17148,7 @@ export const bioloData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15697,6 +17164,8 @@ export const bioloData = {
       "target": "1 Target",
       "recoversAp": "4(1~3Lv), 5(4~5Lv)",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Consume 2 Flame Acid Bottles, dealing 7 hits of Fire Ranged Physical damage to the target and surrounding area.\nAdditional Damage increase based on the caster's base level and POW.\nIf the attack target is a player, there is a very low chance to create acidic AoE zone 1 cell on the target's location.",
       "levelDetails": [
         {
@@ -15750,8 +17219,15 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Acidified Zone (Fire) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Acidified_Zone_(Fire)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5343.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5343",
       "tree": {
@@ -15844,10 +17320,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -15863,6 +17338,8 @@ export const bioloData = {
       "target": "1 Target",
       "recoversAp": "4(1~3Lv), 5(4~5Lv)",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Consume 2 Icicle Acid Bottles, dealing 7 hits of Water Ranged Physical damage to the target and surrounding area.\nAdditional Damage increase based on the caster's base level and POW.\nIf the attack target is a player, there is a very low chance to create acidic AoE zone 1 cell on the target's location.",
       "levelDetails": [
         {
@@ -15916,8 +17393,15 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Acidified Zone (Water) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Acidified_Zone_(Water)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5340.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5340",
       "tree": {
@@ -16010,10 +17494,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16027,8 +17510,10 @@ export const bioloData = {
       "group": "Active",
       "type": "Summon",
       "target": "Self",
-      "recoversAp": "",
+      "recoversAp": "20",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Create_Wooden_Warrior",
       "description": "Summon a wooden warrior.\nUp to 1 wooden warrior can be summoned.\nThis warrior increases Cart Tornado and Cart Cannon damage for its duration.\nConsumes 2 Advanced Plant Bottles.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -16062,8 +17547,17 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "80 + (Skill Level × 20)",
+      "duration": "60 + (Skill Level × 60) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Create Wooden Warrior ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Create_Wooden_Warrior"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5344.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5344",
       "tree": {
@@ -16091,6 +17585,10 @@ export const bioloData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "80 + (Skill Level × 20)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -16109,6 +17607,14 @@ export const bioloData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "60 + (Skill Level × 60) seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "20"
           }
         ],
         "levelTables": [
@@ -16156,10 +17662,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16173,8 +17678,10 @@ export const bioloData = {
       "group": "Active",
       "type": "Summon",
       "target": "Self",
-      "recoversAp": "",
+      "recoversAp": "20",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Create_Wooden_Fairy",
       "description": "Summon a wooden fairy.\nUp to 1 wooden fairy can be summoned.\nThis fairy increases Spore Explosion damage for its duration.\nConsumes 2 Advanced Plant Bottles.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -16208,8 +17715,17 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "Lv. 1 : 120 Lv. 2 onwards : 130 + (Skill Level × 25)",
+      "duration": "60 + (Skill Level × 60) seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Create Wooden Fairy ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Create_Wooden_Fairy"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5345.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5345",
       "tree": {
@@ -16237,6 +17753,10 @@ export const bioloData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "Lv. 1 : 120 Lv. 2 onwards : 130 + (Skill Level × 25)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -16255,6 +17775,14 @@ export const bioloData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "60 + (Skill Level × 60) seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "20"
           }
         ],
         "levelTables": [
@@ -16302,10 +17830,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16321,6 +17848,8 @@ export const bioloData = {
       "target": "Single target",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Scatters very small fine powder to the target, deals melee physical damage to the target and surrounding enemies around the target.\nAdditionally, grants Mystery Powder buff to the user, allowing them to use Dust Explosion for 60 seconds.\nDeals additional damage depends on user's base level and POW.",
       "levelDetails": [
         {
@@ -16345,8 +17874,15 @@ export const bioloData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Mystery Powder ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Mystery_Powder"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6509.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6509",
       "tree": {
@@ -16423,10 +17959,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16442,6 +17977,8 @@ export const bioloData = {
       "target": "Single target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Can only be used when Mystery Powder buff is active.\nCauses a dust explosion to the target, deals melee physical damage to the target and surrounding enemies around the target for 5 hits.\nIf Research Report buff is active, the skill will deal more damage.\nDeals additional damage depends on user's base level and POW.",
       "levelDetails": [
         {
@@ -16466,8 +18003,15 @@ export const bioloData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Dust Explosion ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Dust_Explosion"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6510.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6510",
       "tree": {
@@ -16548,10 +18092,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16566,7 +18109,9 @@ export const bioloData = {
       "type": "Buff",
       "target": "Self",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "100",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Research_Report",
       "description": "Report the findings of your study.\nIncreases the damage of the Acidified Zone skills for 150 seconds and reduces the cost of bottles to use the skill from 2 to 1.\nIn addition, the Acidified Zone skills increases the damage dealt to Formless and Plant monsters.",
       "levelDetails": [
         {
@@ -16589,8 +18134,17 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "60",
+      "duration": "150 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Research Report ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Research_Report"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5347.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5347",
       "tree": {
@@ -16624,6 +18178,10 @@ export const bioloData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "60"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.5 seconds"
           },
@@ -16642,6 +18200,14 @@ export const bioloData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "150 seconds"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "100"
           }
         ],
         "levelTables": [
@@ -16670,7 +18236,6 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Research Report",
@@ -16709,7 +18274,7 @@ export const bioloData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -16724,7 +18289,9 @@ export const bioloData = {
       "type": "Summon",
       "target": "Self",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "110 - (Skill Level × 10)",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Create_Hell_Tree",
       "description": "Summon a hellish tree.\nUp to 1 hellish tree can be summoned at the same time.\nConsumes 3 Advanced Plant Bottles.",
       "levelDetails": [
         {
@@ -16779,8 +18346,17 @@ export const bioloData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "100",
+      "duration": "[30 + (Skill Level × 30)] seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Create Hell Tree ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Create_Hell_Tree"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5348.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5348",
       "tree": {
@@ -16814,6 +18390,10 @@ export const bioloData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "100"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -16832,6 +18412,10 @@ export const bioloData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "110 - (Skill Level × 10)"
           }
         ],
         "levelTables": [
@@ -16843,43 +18427,43 @@ export const bioloData = {
                 "label": "SP Cost"
               },
               {
-                "id": "effect",
-                "label": "Effect"
+                "id": "duration",
+                "label": "Duration"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Duration : 60 sec",
+                  "duration": "60 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Duration : 90 sec",
+                  "duration": "90 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Duration : 120 sec",
+                  "duration": "120 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Duration : 150 sec",
+                  "duration": "150 seconds",
                   "sp-cost": "100"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Duration : 180 sec",
+                  "duration": "180 seconds",
                   "sp-cost": "100"
                 }
               }
@@ -16888,10 +18472,9 @@ export const bioloData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

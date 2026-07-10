@@ -1,5 +1,5 @@
 export const hyperNoviceData = {
-  "generatedAt": "2026-07-10T00:57:39.146Z",
+  "generatedAt": "2026-07-10T15:02:26.362Z",
   "classId": 4307,
   "classSlug": "hyper-novice",
   "className": "Hyper Novice",
@@ -71,7 +71,8 @@ export const hyperNoviceData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4307",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -366,6 +367,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Self_Study_Tactics",
           "description": "Increases your knowledge of body-using techniques, increasing your P.ATK and amplifying the DMG of various physical skills.\nIncreases the skill DMG of Double Bowling Bash/Mega Sonic Blow/Spiral Pierce Max by (skill level + 5)%.\nShield Chain Rush DMG is amplified by (Skill Level x 2 + 10)%.",
           "levelDetails": [
             {
@@ -456,8 +459,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Self Study Tactics ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Self_Study_Tactics"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5449.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5449",
           "tree": {
@@ -567,7 +577,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Self Study Tactics",
@@ -598,7 +607,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -614,6 +623,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Self_Study_Sorcery",
           "description": "Increases your knowledge of techniques using magic power, increasing your S.MATK and amplifying the DMG of various magic skills.\nIncreases the skill DMG of Meteor Storm Buster (fall damage)/Jupiter Thunder Storm/Jack Frost Nova (explosion damage)/Hell Drive/Ground Gravity (gravity field damage) by (skill level)%.\nNapalm Vulcan Strike DMG is increased by (Skill Level X 2)%.",
           "levelDetails": [
             {
@@ -704,8 +715,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Self Study Sorcery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Self_Study_Sorcery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5450.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5450",
           "tree": {
@@ -815,10 +833,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -834,6 +851,8 @@ export const hyperNoviceData = {
           "target": "Single Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Double_Bowling_Bash",
           "description": "Inflicts melee physical damage to the target and targets within a 9x9 cell range around it and knocks them back.\nThe number of attacks increases depending on the number of enemies in the range, and attacks up to 5 times.\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW. After casting, the weapon cannot be replaced for 1 second.",
           "levelDetails": [
             {
@@ -924,8 +943,20 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "52 + (2 × Skill Level)",
+          "castDelay": "0.7 seconds",
+          "cooldown": "1 seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Double Bowling Bash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Double_Bowling_Bash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5451.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5451",
           "tree": {
@@ -953,8 +984,28 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "52 + (2 × Skill Level)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.7 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               },
               {
                 "label": "AP Generated",
@@ -1036,7 +1087,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Double Bowling Bash",
@@ -1137,7 +1187,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1153,6 +1203,8 @@ export const hyperNoviceData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shield_Chain_Rush",
           "description": "Available when wearing a shield.\nThrows a shield at the target, inflicting long range physical damage to the target and enemies within 9x9 cells around it.\nFor 5 seconds, hit enemies' movement speed is reduced by 20% and damage taken increases by 10% (does not apply to boss-type monsters).\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.\nAfter casting, the weapon cannot be replaced for 1.2 seconds.",
           "levelDetails": [
             {
@@ -1247,8 +1299,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (3 x Skill Level)",
+          "areaOfEffect": "9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Shield Chain Rush ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shield_Chain_Rush"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5453.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5453",
           "tree": {
@@ -1276,6 +1337,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (3 x Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -1294,6 +1359,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9"
               },
               {
                 "label": "AP Generated",
@@ -1375,7 +1444,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Shield Chain Rush",
@@ -1469,7 +1537,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1485,6 +1553,8 @@ export const hyperNoviceData = {
           "target": "Ground 1 cell",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Meteor_Storm_Buster",
           "description": "Drops meteors at random locations within a 9x9 cell range around 1 cell on the ground, dealing fire attribute magic DMG to enemies within a 5x5 cell range and inflicting [Abnormal Status: Stun] with a certain probability.\nAfterwards, it explodes and deals secondary fire attribute magic DMG. The probability of being stunned and the duration are affected by the target's status resistance. The DMG increases further based on the Self Study Tactics-Magic skill level, the caster's base level, and SPL.\nThe number of meteors is from a minimum of 3 to a maximum of 6, depending on skill level.",
           "levelDetails": [
             {
@@ -1578,8 +1648,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "52 + (Skill Level x 3)",
+          "cooldown": "3 seconds",
+          "areaOfEffect": "7 x 7~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Meteor Storm Buster ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Meteor_Storm_Buster"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5455.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5455",
           "tree": {
@@ -1607,6 +1687,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "52 + (Skill Level x 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -1619,8 +1703,16 @@ export const hyperNoviceData = {
                 "value": "0.3 seconds"
               },
               {
+                "label": "Cooldown",
+                "value": "3 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Ground 1 cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7~9 x 9"
               },
               {
                 "label": "AP Generated",
@@ -1634,80 +1726,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "74"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "78"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "82"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "86"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "90"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "94"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "E x plosion range: 7 x 7",
                       "sp-cost": "98"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "E x plosion range: 9 x 9",
                       "sp-cost": "102"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "E x plosion range: 9 x 9",
                       "sp-cost": "106"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "E x plosion range: 9 x 9",
                       "sp-cost": "110"
                     }
                   }
@@ -1716,7 +1794,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Meteor Storm Buster",
@@ -1747,7 +1824,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1763,6 +1840,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Jupitel_Thunderstorm",
           "description": "Fires a highly concentrated lightning ball at a target, dealing wind magic DMG to the target and enemies within the surrounding area.\nSelf Study Tactics - DMG increases additionally based on the Magical Arts skill level, the caster's base level, and SPL.",
           "levelDetails": [
             {
@@ -1856,8 +1935,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "48 + (Skill Level x 2)",
+          "variableCastTime": "2 seconds",
+          "areaOfEffect": "5 x 5~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Jupitel Thunderstorm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Jupitel_Thunderstorm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5456.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5456",
           "tree": {
@@ -1885,8 +1974,16 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "48 + (Skill Level x 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2 seconds"
               },
               {
                 "label": "Cast Delay",
@@ -1994,7 +2091,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Jupitel Thunderstorm",
@@ -2017,7 +2113,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2033,6 +2129,8 @@ export const hyperNoviceData = {
           "target": "Ground 1 cell",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Jack_Frost_Nova",
           "description": "Creates an ice sphere on the ground, dealing water magic DMG to enemies within the surrounding area. The ice sphere created causes a strong cold explosion, dealing additional water magic DMG to enemies within the surrounding area every 0.3 seconds, and granting the [Cold] effect for 5 seconds.\n[Bitter Cold] Effect: Reduces resistance to water-attribute attacks by 15%. (Does not apply to boss monsters)\nSelf Study Tactics - DMG increases additionally based on the Magical Arts skill level, the caster's base level, and SPL.",
           "levelDetails": [
             {
@@ -2126,8 +2224,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "55 + (Skill Level x 3)",
+          "variableCastTime": "2.5 seconds",
+          "areaOfEffect": "7 x 7~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Jack Frost Nova ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Jack_Frost_Nova"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5457.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5457",
           "tree": {
@@ -2155,8 +2263,16 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "55 + (Skill Level x 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2.5 seconds"
               },
               {
                 "label": "Cast Delay",
@@ -2169,6 +2285,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "Ground 1 cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7~9 x 9"
               },
               {
                 "label": "AP Generated",
@@ -2186,80 +2306,66 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
-                  },
-                  {
-                    "id": "effect",
-                    "label": "Effect"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "71"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "74"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "77"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Range: 7 x 7",
                       "sp-cost": "80"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Range: 9 x 9",
                       "sp-cost": "83"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Range: 9 x 9",
                       "sp-cost": "86"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Range: 9 x 9",
                       "sp-cost": "89"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Range: 9 x 9",
                       "sp-cost": "92"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Range: 9 x 9",
                       "sp-cost": "95"
                     }
                   }
@@ -2268,7 +2374,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Jack Frost Nova",
@@ -2299,7 +2404,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2315,6 +2420,8 @@ export const hyperNoviceData = {
           "target": "Instant Cast",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hell's_Drive",
           "description": "Twists the ground around you and inflicts earth magic damage to enemies within the range.\nDamage increases additionally based on the Self Study Sorcery skill level, the caster's base level, and SPL stat.",
           "levelDetails": [
             {
@@ -2408,8 +2515,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40 + (Skill Level x 3)",
+          "cooldown": "0.7 seconds",
+          "areaOfEffect": "3 x 3~9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Hell's Drive ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hell's_Drive"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5458.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5458",
           "tree": {
@@ -2437,6 +2554,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level x 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2447,6 +2568,10 @@ export const hyperNoviceData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.7 seconds"
               },
               {
                 "label": "Target",
@@ -2546,7 +2671,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Hell's Drive",
@@ -2623,7 +2747,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2639,6 +2763,8 @@ export const hyperNoviceData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mega_Sonic_Blow",
           "description": "Inflicts powerful melee physical damage to one target and has a chance to inflicts Stun.\nThe probability and duration of being stun are affected by the target's resistance to status ailments.\nWhen cast on a target whose current HP is less than 50%, double damage is applied.\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.\nCritical damage is applied based on the user's critical rate, The effectiveness of critical modifier is applied by half.",
           "levelDetails": [
             {
@@ -2729,8 +2855,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25 + (2 × Skill Level)",
+          "castDelay": "0.5 seconds",
+          "cooldown": "0.35 seconds",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Mega Sonic Blow ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mega_Sonic_Blow"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5452.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5452",
           "tree": {
@@ -2756,6 +2893,22 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "25 + (2 × Skill Level)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.35 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -2841,7 +2994,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Mega Sonic Blow",
@@ -2907,7 +3059,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2923,6 +3075,8 @@ export const hyperNoviceData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spiral_Pierce_Max",
           "description": "Inflicts long-distance physical damage to one target with a powerful stab with added rotational force.\nEnemies hit are unable to move for 2 seconds. (does not apply to boss-type monsters)\nThere is a damage factor depending on the size of the target.\n(Small: 1.5 times/Medium: 1.3 times/Large: 1.2 times)\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.",
           "levelDetails": [
             {
@@ -3017,8 +3171,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "17 + (3 × Skill Level)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Spiral Pierce Max ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spiral_Pierce_Max"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5454.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5454",
           "tree": {
@@ -3046,6 +3209,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "17 + (3 × Skill Level)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -3060,6 +3227,10 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "0.35 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -3145,7 +3316,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Spiral Pierce Max",
@@ -3230,7 +3400,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3246,6 +3416,8 @@ export const hyperNoviceData = {
           "target": "Instant Cast",
           "recoversAp": "5",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ground_Gravitation",
           "description": "Unleashes a powerful gravitational field around the caster, dealing Neutral-element Magic damage to enemies within range through a strong shock.\nThe gravitational field lasts for 5 seconds, dealing additional Neutral-element Magic damage to enemies within the range every 0.5 seconds, and applying the [Gravitational Field] effect while they remain inside.\n[Gravitational Field] Effect: Reduces movement speed and increases received Physical and Magic damage (does not apply to boss-type monsters). Damage increases additionally based on the Self Study Sorcery skill level, the caster's base level, and SPL stat.",
           "levelDetails": [
             {
@@ -3338,8 +3510,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "68 + (Skill Level x 2)",
+          "variableCastTime": "5 seconds",
+          "castDelay": "1 seconds",
+          "areaOfEffect": "5 x 5 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Ground Gravitation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ground_Gravitation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5459.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5459",
           "tree": {
@@ -3367,8 +3550,20 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "68 + (Skill Level x 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "5 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 seconds"
               },
               {
                 "label": "Cooldown",
@@ -3377,6 +3572,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5 ~ 9 x 9"
               },
               {
                 "label": "AP Generated",
@@ -3476,7 +3675,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Ground Gravitation",
@@ -3526,7 +3724,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3542,6 +3740,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Napalm_Vulcan_Strike",
           "description": "Target 1 body and enemies within a 7x7 cell range around it are attacked with a powerful wave of psychokinesis, dealing psychokinesis magic DMG and inflicting [Curse] with a certain probability.\nThe probability of being cursed and its duration are affected by the target's status resistance.\nSelf Study Tactics - DMG increases additionally based on the Magical Arts skill level, the caster's base level, and SPL.",
           "levelDetails": [
             {
@@ -3636,8 +3836,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "38 + (Skill Level x 2)",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Napalm Vulcan Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Napalm_Vulcan_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5460.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5460",
           "tree": {
@@ -3665,6 +3874,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "38 + (Skill Level x 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -3683,6 +3896,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               },
               {
                 "label": "AP Generated",
@@ -3764,7 +3981,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Napalm Vulcan Strike",
@@ -3811,7 +4027,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3827,6 +4043,8 @@ export const hyperNoviceData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Breaking_Limit",
           "description": "Break through one's physical limitations and demonstrate powerful strength.\nDamage of Double Bowling Bash/Mega Sonic Blow/Shield Chain Rush/Spiral Pierce Max is amplified for 300 seconds.",
           "levelDetails": [],
           "levelExtras": [
@@ -3840,8 +4058,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "150",
+          "fixedCastTime": "1 seconds",
+          "cooldown": "60 seconds",
+          "duration": "300 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Breaking Limit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Breaking_Limit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5461.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5461",
           "tree": {
@@ -3887,8 +4116,24 @@ export const hyperNoviceData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "150"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "60 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "300 seconds"
               },
               {
                 "label": "AP Consumed",
@@ -3916,7 +4161,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Breaking Limit",
@@ -3978,7 +4222,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3994,6 +4238,8 @@ export const hyperNoviceData = {
           "target": "self",
           "recoversAp": "",
           "consumesAp": "150",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Rule_Break",
           "description": "Break the magic rules with yourself to unleash even more powerful magic.\nIncreases the DMG of Meteor Storm Buster/Jupiter Thunder Storm/Jack Frost Nova/Hell Drive/Ground Gravity/Napalm Vulcan Strike for 300 seconds.",
           "levelDetails": [],
           "levelExtras": [
@@ -4007,8 +4253,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "150",
+          "fixedCastTime": "1 seconds",
+          "cooldown": "60 seconds",
+          "duration": "300 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Rule Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rule_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5462.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5462",
           "tree": {
@@ -4066,8 +4323,24 @@ export const hyperNoviceData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "150"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "60 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "self"
+              },
+              {
+                "label": "Duration",
+                "value": "300 seconds"
               },
               {
                 "label": "AP Consumed",
@@ -4095,7 +4368,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Rule Break",
@@ -4118,7 +4390,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4134,6 +4406,8 @@ export const hyperNoviceData = {
           "target": "Self",
           "recoversAp": "",
           "consumesAp": "50",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Increases the user's MaxHP for 300 seconds.\nWhen using, fully recovers the user's HP and increases P.Atk and S.Matk for the skill duration.",
           "levelDetails": [
             {
@@ -4158,8 +4432,15 @@ export const hyperNoviceData = {
             }
           ],
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Overcoming Crisis ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Overcoming_Crisis"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5505.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5505",
           "tree": {
@@ -4206,55 +4487,57 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "maxhp-15000-p-atk-s-matk",
-                    "label": "Maxhp +15000, P.Atk & S.Matk"
+                    "id": "maxhp",
+                    "label": "MaxHP"
                   },
                   {
-                    "id": "maxhp-30000-p-atk-s-matk",
-                    "label": "Maxhp +30000, P.Atk & S.Matk"
+                    "id": "p-atk",
+                    "label": "P.Atk"
                   },
                   {
-                    "id": "maxhp-45000-p-atk-s-matk",
-                    "label": "Maxhp +45000, P.Atk & S.Matk"
-                  },
-                  {
-                    "id": "maxhp-60000-p-atk-s-matk",
-                    "label": "Maxhp +60000, P.Atk & S.Matk"
-                  },
-                  {
-                    "id": "maxhp-75000-p-atk-s-matk",
-                    "label": "Maxhp +75000, P.Atk & S.Matk"
+                    "id": "s-matk",
+                    "label": "S.Matk"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "maxhp-15000-p-atk-s-matk": "+3"
+                      "maxhp": "+15000",
+                      "p-atk": "+3",
+                      "s-matk": "+3"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "maxhp-30000-p-atk-s-matk": "+6"
+                      "maxhp": "+30000",
+                      "p-atk": "+6",
+                      "s-matk": "+6"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "maxhp-45000-p-atk-s-matk": "+9"
+                      "maxhp": "+45000",
+                      "p-atk": "+9",
+                      "s-matk": "+9"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "maxhp-60000-p-atk-s-matk": "+12"
+                      "maxhp": "+60000",
+                      "p-atk": "+12",
+                      "s-matk": "+12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "maxhp-75000-p-atk-s-matk": "+15"
+                      "maxhp": "+75000",
+                      "p-atk": "+15",
+                      "s-matk": "+15"
                     }
                   }
                 ],
@@ -4262,7 +4545,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Overcoming Crisis",
@@ -4278,7 +4560,7 @@ export const hyperNoviceData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4305,6 +4587,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Iron_Fists",
           "description": "Increases ATK (Weapon Mastery) with Knuckle class weapons or Bare Handed.",
           "levelDetails": [
             {
@@ -4395,8 +4679,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Iron Fists ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Iron_Fists"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/259.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/259",
           "tree": {
@@ -4505,10 +4796,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4524,6 +4814,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Enhances MaxHP and resistance to Holy property damage.",
           "levelDetails": [
             {
@@ -4614,8 +4906,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Faith (Faith) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Faith_(Faith)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/248.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/248",
           "tree": {
@@ -4641,118 +4940,96 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "maxhp",
+                    "label": "MaxHP"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
                   {
-                    "id": "maxhp-200-resistance-to-sacred-property",
-                    "label": "Maxhp + 200, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-400-resistance-to-sacred-property",
-                    "label": "Maxhp + 400, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-600-resistance-to-sacred-property",
-                    "label": "Maxhp + 600, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-800-resistance-to-sacred-property",
-                    "label": "Maxhp + 800, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-1000-resistance-to-sacred-property",
-                    "label": "Maxhp +1000, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-1200-resistance-to-sacred-property",
-                    "label": "Maxhp +1200, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-1400-resistance-to-sacred-property",
-                    "label": "Maxhp +1400, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-1600-resistance-to-sacred-property",
-                    "label": "Maxhp +1600, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-1800-resistance-to-sacred-property",
-                    "label": "Maxhp +1800, Resistance To Sacred Property:"
-                  },
-                  {
-                    "id": "maxhp-2000-resistance-to-sacred-property",
-                    "label": "Maxhp +2000, Resistance To Sacred Property:"
+                    "id": "resistance-to-sacred-property",
+                    "label": "Resistance To Sacred Property:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "maxhp-200-resistance-to-sacred-property": "+ 5%",
+                      "maxhp": "+ 200",
+                      "resistance-to-sacred-property": "+ 5%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "maxhp-400-resistance-to-sacred-property": "+10%",
+                      "maxhp": "+ 400",
+                      "resistance-to-sacred-property": "+10%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "maxhp-600-resistance-to-sacred-property": "+15%",
+                      "maxhp": "+ 600",
+                      "resistance-to-sacred-property": "+15%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "maxhp-800-resistance-to-sacred-property": "+20%",
+                      "maxhp": "+ 800",
+                      "resistance-to-sacred-property": "+20%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "maxhp-1000-resistance-to-sacred-property": "+25%",
+                      "maxhp": "+1000",
+                      "resistance-to-sacred-property": "+25%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "maxhp-1200-resistance-to-sacred-property": "+30%",
+                      "maxhp": "+1200",
+                      "resistance-to-sacred-property": "+30%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "maxhp-1400-resistance-to-sacred-property": "+35%",
+                      "maxhp": "+1400",
+                      "resistance-to-sacred-property": "+35%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "maxhp-1600-resistance-to-sacred-property": "+40%",
+                      "maxhp": "+1600",
+                      "resistance-to-sacred-property": "+40%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "maxhp-1800-resistance-to-sacred-property": "+45%",
+                      "maxhp": "+1800",
+                      "resistance-to-sacred-property": "+45%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "maxhp-2000-resistance-to-sacred-property": "+50%",
+                      "maxhp": "+2000",
+                      "resistance-to-sacred-property": "+50%",
                       "sp-cost": "0"
                     }
                   }
@@ -4761,10 +5038,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4780,6 +5056,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Holy_Cross",
           "description": "Slices a single target with a cross shaped attack to inflict Holy property physical damage. It has a chance of leaving the target [Abnormal Status: blind].\nThe chance of blind is reduced by the target's resistance to abnormal status.\nThe damage is doubled with a two-handed Spear.",
           "levelDetails": [
             {
@@ -4870,8 +5148,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level + 10)",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Holy Cross ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Holy_Cross"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/253.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/253",
           "tree": {
@@ -4897,6 +5185,18 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "(Skill Level + 10)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -4978,10 +5278,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4997,6 +5296,8 @@ export const hyperNoviceData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Impositio_Manus",
           "description": "Blesses a single target's weapon to increase its attack power for one minute.\nIncrease ATK, MATK on the user and all party members around the user for 120s.",
           "levelDetails": [
             {
@@ -5051,6 +5352,9 @@ export const hyperNoviceData = {
               ]
             }
           ],
+          "spCost": "56 + (Skill Level × 3)",
+          "duration": "120 seconds",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Impositio Manus ",
@@ -5080,6 +5384,10 @@ export const hyperNoviceData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "56 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -5096,8 +5404,16 @@ export const hyperNoviceData = {
                 "value": "30 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "120 seconds"
               }
             ],
             "levelTables": [
@@ -5109,43 +5425,52 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "atk-matk",
-                    "label": "Atk/matk"
+                    "id": "atk",
+                    "label": "Atk"
+                  },
+                  {
+                    "id": "matk",
+                    "label": "Matk"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "atk-matk": "+ 5",
+                      "atk": "+ 5",
+                      "matk": "+ 5",
                       "sp-cost": "59"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "atk-matk": "+10",
+                      "atk": "+10",
+                      "matk": "+10",
                       "sp-cost": "62"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "atk-matk": "+15",
+                      "atk": "+15",
+                      "matk": "+15",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "atk-matk": "+20",
+                      "atk": "+20",
+                      "matk": "+20",
                       "sp-cost": "68"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "atk-matk": "+25",
+                      "atk": "+25",
+                      "matk": "+25",
                       "sp-cost": "71"
                     }
                   }
@@ -5154,7 +5479,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -5173,6 +5497,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Allows the user to move while hidden. Moving in Hiding status is slower than general moving.",
           "levelDetails": [
             {
@@ -5223,8 +5549,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Stalk (Tunnel Drive) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stalk_(Tunnel_Drive)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/213.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/213",
           "tree": {
@@ -5306,10 +5639,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5325,6 +5657,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Snatcher",
           "description": "Gives a chance to autocast Steal on the target when physically attacking, using its currently learned level.\nSkill level affects the chance of steel.",
           "levelDetails": [
             {
@@ -5460,8 +5794,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Snatcher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Snatcher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/210.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/210",
           "tree": {
@@ -5592,10 +5933,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5611,6 +5951,8 @@ export const hyperNoviceData = {
           "target": "the user and 1 party member",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Enchant_Poison",
           "description": "Endows a single target's equipped weapon with the Poison property temporarily.\nThis skill also gives the chance of leaving enemies poisoned while physically attacking.\nSwitching to a different weapon will cancel this effect.",
           "levelDetails": [
             {
@@ -5701,8 +6043,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castDelay": "1 second",
+          "duration": "15 + (Skill Level × 15) seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Enchant Poison ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enchant_Poison"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/138.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/138",
           "tree": {
@@ -5730,6 +6082,14 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
                 "label": "Target",
                 "value": "the user and 1 party member"
               }
@@ -5743,78 +6103,78 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 30sec",
+                      "duration": "30 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 45sec",
+                      "duration": "45 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 60sec",
+                      "duration": "60 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 75sec",
+                      "duration": "75 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 90sec",
+                      "duration": "90 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Duration:105sec",
+                      "duration": "105 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Duration:120sec",
+                      "duration": "120 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Duration:135sec",
+                      "duration": "135 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Duration:150sec",
+                      "duration": "150 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Duration:165sec",
+                      "duration": "165 seconds",
                       "sp-cost": "20"
                     }
                   }
@@ -5823,10 +6183,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5842,6 +6201,8 @@ export const hyperNoviceData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Summon_Spirit_Sphere",
           "description": "Summons one Spirit Sphere that will orbit the user consuming SP8.\nSummoned sphere is maintained for 10 minutes. and affeccts when using the skill.\nEach sphere increases ATK by 3.",
           "levelDetails": [
             {
@@ -5892,8 +6253,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8",
+          "fixedCastTime": "0.5 second",
+          "variableCastTime": "0.5 second",
+          "duration": "10 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Summon Spirit Sphere ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Summon_Spirit_Sphere"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/261.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/261",
           "tree": {
@@ -5921,8 +6293,24 @@ export const hyperNoviceData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "8"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.5 second"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "10 minutes"
               }
             ],
             "levelTables": [
@@ -5979,10 +6367,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5998,6 +6385,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Auto_Guard",
           "description": "Requires the user to have a shield equipped.\nAllows the user to block physical attacks with the equipped shield by chance in duration.\nThe player will be forced to pause momentarily whenever this skill blocks damage.\nThis skill can be switched on and off.",
           "levelDetails": [
             {
@@ -6088,8 +6477,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "duration": "5 minutes; Until recast",
+          "translations": {
+            "pt-BR": {
+              "name": " Auto Guard ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Auto_Guard"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/249.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/249",
           "tree": {
@@ -6110,8 +6508,16 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Duration",
+                "value": "5 minutes; Until recast"
               }
             ],
             "levelTables": [
@@ -6203,10 +6609,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6219,9 +6624,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Heal 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sanctuary",
           "description": "Each cast consumes a Blue Gemstone.\nCreates a soothing area on a targeted location that will restore HP of all entities within the area of effect every second. SKill level affects healing Value and Target Limit.\nAgainst Undead property and Demon race monsters, this skill will inflict Holy property damage equal to half of the healing value and push them 2 cells backwards.",
           "levelDetails": [
             {
@@ -6312,8 +6719,21 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12 + (Skill Level × 3)",
+          "fixedCastTime": "1 second",
+          "variableCastTime": "4 seconds",
+          "duration": "[1 + (Skill Level × 3)] seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Sanctuary ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sanctuary"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/70.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/70",
           "tree": {
@@ -6339,6 +6759,30 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "12 + (Skill Level × 3)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "4 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -6350,6 +6794,10 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -6358,70 +6806,80 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Target Limit: 4, Healing Value:100, Duration: 4sec",
+                      "duration": "4 seconds",
+                      "effect": "Target Limit: 4, Healing Value:100",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Target Limit: 5, Healing Value:200, Duration: 7sec",
+                      "duration": "7 seconds",
+                      "effect": "Target Limit: 5, Healing Value:200",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Target Limit: 6, Healing Value:300, Duration:10sec",
+                      "duration": "10 seconds",
+                      "effect": "Target Limit: 6, Healing Value:300",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Target Limit: 7, Healing Value:400, Duration:13sec",
+                      "duration": "13 seconds",
+                      "effect": "Target Limit: 7, Healing Value:400",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Target Limit: 8, Healing Value:500, Duration:16sec",
+                      "duration": "16 seconds",
+                      "effect": "Target Limit: 8, Healing Value:500",
                       "sp-cost": "27"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Target Limit: 9, Healing Value:600, Duration:19sec",
+                      "duration": "19 seconds",
+                      "effect": "Target Limit: 9, Healing Value:600",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Target Limit:10, Healing Value:777, Duration:22sec",
+                      "duration": "22 seconds",
+                      "effect": "Target Limit:10, Healing Value:777",
                       "sp-cost": "33"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Target Limit:11, Healing Value:777, Duration:25sec",
+                      "duration": "25 seconds",
+                      "effect": "Target Limit:11, Healing Value:777",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Target Limit:12, Healing Value:777, Duration:28sec",
+                      "duration": "28 seconds",
+                      "effect": "Target Limit:12, Healing Value:777",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Target Limit:13, Healing Value:777, Duration:31sec",
+                      "duration": "31 seconds",
+                      "effect": "Target Limit:13, Healing Value:777",
                       "sp-cost": "42"
                     }
                   }
@@ -6430,10 +6888,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6449,6 +6906,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Recovery",
           "description": "Consumes SP 5 and cures a single target from the following status effects: Frozen, Stone and Stun.\nAgainst Undead property monsters, this skill will leave it [Abnormal Status : blind].",
           "levelDetails": [],
           "levelExtras": [
@@ -6462,8 +6921,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "castDelay": "2 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Recovery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Recovery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/72.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/72",
           "tree": {
@@ -6482,6 +6950,14 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "2 seconds"
               },
               {
                 "label": "Target",
@@ -6509,10 +6985,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6528,6 +7003,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Back_Stab",
           "description": "Attack from the other side of the target, causing a physical attack damage.\nThe damage is reduced by half when the bow is mounted, and the damage occurs twice when the dagger is mounted.\nEnhances hit rate upon skill level.",
           "levelDetails": [
             {
@@ -6712,8 +7189,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Back Stab ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Back_Stab"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/212.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/212",
           "tree": {
@@ -6741,6 +7227,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6755,6 +7245,10 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -6864,10 +7358,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6883,6 +7376,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Steal_Coin",
           "description": "Attempts to snatch a set amount of Zeny from a targeted monster. A successful cast will draw the targeted monster's aggresion.\nSuccess Rate is affected by the user's DEX, LUK, and the level difference between the user and the target.\nCannot be used on players and Boss monsters.",
           "levelDetails": [
             {
@@ -6973,8 +7468,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castRange": "1 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Steal Coin ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Steal_Coin"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/211.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/211",
           "tree": {
@@ -7000,6 +7504,14 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Cast Range",
+                "value": "1 cells"
               },
               {
                 "label": "Target",
@@ -7095,10 +7607,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7114,6 +7625,8 @@ export const hyperNoviceData = {
           "target": "the user",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Poison_React",
           "description": "Retaliates with a stronger physical attack against poison property attack for 1 time.\nIf the caster have learned Double Attack, the chance of Double Attack is applied when counterattacking.\nGives a level 5 Envenom when the user or monster which is not poison property attack.",
           "levelDetails": [
             {
@@ -7204,8 +7717,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25~60",
+          "duration": "20~60 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Poison React ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Poison_React"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/139.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/139",
           "tree": {
@@ -7233,8 +7755,16 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "25~60"
+              },
+              {
                 "label": "Target",
                 "value": "the user"
+              },
+              {
+                "label": "Duration",
+                "value": "20~60 seconds"
               }
             ],
             "levelTables": [
@@ -7312,10 +7842,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7331,6 +7860,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Spiritual_Sphere_Absorption",
           "description": "Absorbs all Spirit Spheres the user/target has to regain SP consuming SP5,.\nregains 7 SP per sphere. In PvP, Guild battle, it is available to absorb the spirit sphere of another monk.\nVersus monsters, each cast has a 20% chance to regain SP equal to twice the target's level.\nThis skill does not work for boss monsters or guardians..",
           "levelDetails": [],
           "variableCastTime": "0 seconds",
@@ -7347,8 +7878,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "fixedCastTime": "0.5 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Spiritual Sphere Absorption ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Spiritual_Sphere_Absorption"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/262.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/262",
           "tree": {
@@ -7376,6 +7917,14 @@ export const hyperNoviceData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Variable Cast Time",
                 "value": "0 seconds"
               },
@@ -7386,6 +7935,10 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -7413,10 +7966,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7432,6 +7984,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Requires the user to have a shield equipped.\nSmashes the equipped shield into a single target to inflict physical damage and push it backwards. It has a chance of leaving the target [Abnormal Status: stunned].\nThe chance of stun is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -7482,8 +8036,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Smite (Shield Charge) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Smite_(Shield_Charge)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/250.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/250",
           "tree": {
@@ -7560,10 +8121,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7579,6 +8139,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gloria",
           "description": "Consumes SP20 and temporarily boosts LUK by 30 to the user and party members.",
           "levelDetails": [
             {
@@ -7629,8 +8191,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castDelay": "2 seconds",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Gloria ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gloria"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/75.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/75",
           "tree": {
@@ -7658,6 +8230,14 @@ export const hyperNoviceData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "2 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
               }
@@ -7671,43 +8251,43 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 10sec",
+                      "duration": "10 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 15sec",
+                      "duration": "15 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 20sec",
+                      "duration": "20 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 25sec",
+                      "duration": "25 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 30sec",
+                      "duration": "30 seconds",
                       "sp-cost": "20"
                     }
                   }
@@ -7716,10 +8296,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7735,6 +8314,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Aspersio",
           "description": "Consumes 1 Holy Water.\nEndows a single target's weapon with the Holy property temporarily.",
           "levelDetails": [
             {
@@ -7785,6 +8366,10 @@ export const hyperNoviceData = {
               ]
             }
           ],
+          "spCost": "10 + (Skill Level × 2)",
+          "castDelay": "2 seconds",
+          "duration": "[30 + (Skill Level × 30)] seconds",
+          "castRange": "9 cells",
           "translations": {
             "pt-BR": {
               "name": " Aspersio ",
@@ -7827,6 +8412,18 @@ export const hyperNoviceData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -7840,43 +8437,43 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 60sec",
+                      "duration": "60 seconds",
                       "sp-cost": "14"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 90sec",
+                      "duration": "90 seconds",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration:120sec",
+                      "duration": "120 seconds",
                       "sp-cost": "22"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration:150sec",
+                      "duration": "150 seconds",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration:180sec",
+                      "duration": "180 seconds",
                       "sp-cost": "30"
                     }
                   }
@@ -7885,7 +8482,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -7904,6 +8500,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Raid",
           "description": "This skill can only be used with Hiding active.\nHiding is canceled afterwards. It has a chance of leaving them [Abnormal Status: blind] or [Abnormal Status: stunned].\nEnemies struck with this skill will take 30% more damage for 10 seconds .\nThe chance of stun/blind is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -7954,8 +8552,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castDelay": "ASPD Based",
+          "castRange": "Melee",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Raid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Raid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/214.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/214",
           "tree": {
@@ -7989,8 +8598,24 @@ export const hyperNoviceData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD Based"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
               }
             ],
             "levelTables": [
@@ -8038,10 +8663,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8057,6 +8681,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Combines attack and magic to strike a single target from distance and inflict ranged physical damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -8070,8 +8696,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Stave Crasher (Magic Crasher) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stave_Crasher_(Magic_Crasher)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/365.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/365",
           "tree": {
@@ -8124,10 +8757,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8140,9 +8772,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Enchant Poison 5",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Venom_Dust",
           "description": "Contaminates a targeted location with a toxin that will leave all enemies within the area of effect poisoned. Each cast consumes a Red Gemstone. .\nIt has a chance of leaving the target [Abnormal Status: Poisoned].\nThe chance of poisoned is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -8233,8 +8867,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "duration": "(Skill Level × 5) seconds",
+          "castRange": "2 cells",
+          "areaOfEffect": "2 x 2",
+          "translations": {
+            "pt-BR": {
+              "name": " Venom Dust ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Venom_Dust"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/140.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/140",
           "tree": {
@@ -8260,6 +8905,22 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
+                "label": "Cast Range",
+                "value": "2 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "2 x 2"
               }
             ],
             "levelTables": [
@@ -8271,78 +8932,78 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration : 5sec",
+                      "duration": "5 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration : 10sec",
+                      "duration": "10 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration : 15sec",
+                      "duration": "15 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration : 20sec",
+                      "duration": "20 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration : 25sec",
+                      "duration": "25 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Duration : 30sec",
+                      "duration": "30 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Duration : 35sec",
+                      "duration": "35 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Duration : 40sec",
+                      "duration": "40 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Duration : 45sec",
+                      "duration": "45 seconds",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Duration : 50sec",
+                      "duration": "50 seconds",
                       "sp-cost": "20"
                     }
                   }
@@ -8351,10 +9012,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8370,6 +9030,8 @@ export const hyperNoviceData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fury",
           "description": "Unleashes the inner power of the user to increase Critical Hit Rate. Each cast uses five Spirit Spheres.\nIn Fury status, SP natural recovery speed is reduced by 50%.",
           "levelDetails": [
             {
@@ -8420,8 +9082,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "duration": "3 minutes",
+          "translations": {
+            "pt-BR": {
+              "name": " Fury ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fury"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/270.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/270",
           "tree": {
@@ -8449,8 +9120,16 @@ export const hyperNoviceData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "3 minutes"
               }
             ],
             "levelTables": [
@@ -8507,10 +9186,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8526,6 +9204,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Shield_Boomerang",
           "description": "Requires the user to have a shield equipped.\nHurls the equipped shield like a boomerang at a single target to inflict ranged physical damage.\nThe damage is affected by the equiped shield's weight and upgrade level.",
           "levelDetails": [
             {
@@ -8576,8 +9256,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castDelay": "0.7 seconds",
+          "castRange": "[1 + (Skill Level × 2)] cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Shield Boomerang ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Shield_Boomerang"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/251.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/251",
           "tree": {
@@ -8603,6 +9293,18 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.7 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "[1 + (Skill Level × 2)] cells"
               },
               {
                 "label": "Target",
@@ -8654,10 +9356,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8673,6 +9374,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Magnificat",
           "description": "Consumes SP40 and temporarily doubles the SP Recovery rate of the user and party members.",
           "levelDetails": [
             {
@@ -8724,6 +9427,11 @@ export const hyperNoviceData = {
               ]
             }
           ],
+          "spCost": "40",
+          "fixedCastTime": "0.8 seconds",
+          "variableCastTime": "3.2 seconds",
+          "castDelay": "2 seconds",
+          "duration": "15 + (Skill Level × 15) seconds",
           "translations": {
             "pt-BR": {
               "name": " Magnificat ",
@@ -8753,6 +9461,22 @@ export const hyperNoviceData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.8 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "3.2 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "2 seconds"
+              },
+              {
                 "label": "Cooldown",
                 "value": "1 second"
               },
@@ -8770,43 +9494,43 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 30sec",
+                      "duration": "30 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration: 45sec",
+                      "duration": "45 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration: 60sec",
+                      "duration": "60 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration: 75sec",
+                      "duration": "75 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration: 90sec",
+                      "duration": "90 seconds",
                       "sp-cost": "40"
                     }
                   }
@@ -8815,7 +9539,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -8834,6 +9557,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Venom_Splasher",
           "description": "Attaches a dangerous toxin onto a single target which causes a venomous explosion afterwards.\ninflicting physical damage to all enemies around the target and leaves the target [Abnormal Status: Poisoned].\nThe chance of poisoned is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -8927,8 +9652,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill level × 2)",
+          "cooldown": "[12 - (Skill Level)] seconds",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Venom Splasher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Venom_Splasher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/141.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/141",
           "tree": {
@@ -8962,6 +9698,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -8974,8 +9714,20 @@ export const hyperNoviceData = {
                 "value": "0 seconds"
               },
               {
+                "label": "Cooldown",
+                "value": "[12 - (Skill Level)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -9062,10 +9814,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9078,9 +9829,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Fury 5",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Zen",
           "description": "Summon 5 Spirit Spheres at one time.\nThe cast time of this skill is double the time\nof the Summon Spirit Sphere skill.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -9098,6 +9851,7 @@ export const hyperNoviceData = {
               ]
             }
           ],
+          "spCost": "20",
           "translations": {
             "pt-BR": {
               "name": " Zen ",
@@ -9134,6 +9888,10 @@ export const hyperNoviceData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -9148,6 +9906,10 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -9171,7 +9933,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -9190,6 +9951,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Waterball",
           "description": "Requires to be in shallow water.\nInflicts Water property Magic Damage to a single target multiple times in rapid succession.\nThe range increases upon skill level, and can also be used above skill effects such as Deluge.",
           "levelDetails": [
             {
@@ -9240,8 +10003,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15/20/25",
+          "castDelay": "None",
+          "cooldown": "None",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Waterball ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Waterball"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/86.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/86",
           "tree": {
@@ -9273,6 +10047,22 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15/20/25"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "None"
+              },
+              {
+                "label": "Cooldown",
+                "value": "None"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -9324,10 +10114,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9343,6 +10132,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Jupitel_Thunder",
           "description": "Fires a ball of crackling lightning at a single target that inflicts 100% Wind property magic damage each shock and pushes it backwards.\nSkill level increases the number of hits inflicted.",
           "levelDetails": [
             {
@@ -9436,8 +10227,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "17 + (Skill Level × 3)",
+          "variableCastTime": "[1.8 + (Skill Level × 0.2)] seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Jupitel Thunder ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Jupitel_Thunder"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/84.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/84",
           "tree": {
@@ -9471,8 +10272,16 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "17 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[1.8 + (Skill Level × 0.2)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -9481,6 +10290,10 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -9576,10 +10389,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9595,6 +10407,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Earth_Spike",
           "description": "Commands the ground beneath a single target to rise into spikes, where each spike will inflict 200% Earth property magic damage.\nThe number of consecutive hits increases with skill level.",
           "levelDetails": [
             {
@@ -9647,8 +10461,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "fixedCastTime": "0.2 + (Skill Level × 0.2) seconds",
+          "variableCastTime": "0.7 + (Skill Level × 0.5) seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Earth Spike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Earth_Spike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/90.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/90",
           "tree": {
@@ -9676,12 +10501,28 @@ export const hyperNoviceData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 + (Skill Level × 0.2) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.7 + (Skill Level × 0.5) seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1.4 seconds"
               },
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -9742,10 +10583,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9761,6 +10601,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sightrasher",
           "description": "Projects the fireball summoned from the Sight skill in 8 directions around the caster to inflict Fire property magic damage to all enemies around the caster and push them 2 cells backwards.\nAfter use, the fireball summoned to the Sight disappear..",
           "levelDetails": [
             {
@@ -9855,8 +10697,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "33 + (Skill Level × 2)",
+          "areaOfEffect": "15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Sightrasher ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sightrasher"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/81.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/81",
           "tree": {
@@ -9890,6 +10741,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "33 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.08 seconds"
               },
@@ -9908,6 +10763,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15"
               }
             ],
             "levelTables": [
@@ -9985,10 +10844,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10001,9 +10859,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "basic skill",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Skid_Trap",
           "description": "Sets a trap that causes any enemy that steps on it to slip and slide in a certain direction.\nAfter the slide, the enemy will be immobilized for 3 seconds.\nThe untapped trap is uninstalled and returned to the inventory after the operating time.",
           "levelDetails": [
             {
@@ -10054,8 +10914,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "castDelay": "ASPD",
+          "duration": "(6 − Skill Level) minutes",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Skid Trap ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Skid_Trap"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/115.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/115",
           "tree": {
@@ -10074,6 +10944,22 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Duration",
+                "value": "(6 − Skill Level) minutes"
               }
             ],
             "levelTables": [
@@ -10130,10 +11016,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10149,6 +11034,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Axe_Mastery",
           "description": "Enhances attack (Weapon Mastery) with Axe and Sword class weapons.",
           "levelDetails": [
             {
@@ -10239,8 +11126,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Axe Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Axe_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/226.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/226",
           "tree": {
@@ -10336,10 +11230,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10355,6 +11248,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Creates a wall of ice in a targeted location to impede movement.\ncan't go through this ice wall, but can do long-range attacks such as arrow attacks.\nDepending on the skill level, durability exists, and when installed, durability is reduced by 50 per second\nWhen the durability reaches zero, it disappears.",
           "levelDetails": [
             {
@@ -10445,8 +11340,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Icewall ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Icewall"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/87.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/87",
           "tree": {
@@ -10569,10 +11471,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10585,9 +11486,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Thunder Storm 1, Jupitel Thunder 5",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lord_of_Vermilion",
           "description": "Calls forth destructive bolts from the skies upon a targeted location that will inflict Wind property magic damage every second to all enemies within its area of effect. It has a chance of leaving enemies blind.\nThe chance of effect is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -10681,8 +11584,20 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "56 + (Skill Level × 4)",
+          "variableCastTime": "[6.5 - (Skill Level × 0.2)] seconds",
+          "duration": "4 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Lord of Vermilion ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lord_of_Vermilion"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/85.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/85",
           "tree": {
@@ -10716,8 +11631,16 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "56 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[6.5 - (Skill Level × 0.2)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -10726,6 +11649,22 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11"
+              },
+              {
+                "label": "Duration",
+                "value": "4 seconds"
               }
             ],
             "levelTables": [
@@ -10803,10 +11742,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10819,9 +11757,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "basic skill",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Heaven's_Drive",
           "description": "Commands the ground in a targeted location to rise into spikes, where each series of spikes will inflict Earth property magic damage to all enemies within its area of effect.\nThis skill is capable of hitting hidden enemies.",
           "levelDetails": [
             {
@@ -10875,8 +11815,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "24 + (Skill Level × 2)",
+          "variableCastTime": "0.9 + (Skill Level × 0.2) seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Heaven's Drive ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Heaven's_Drive"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/91.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/91",
           "tree": {
@@ -10904,8 +11855,16 @@ export const hyperNoviceData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "24 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.8 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.9 + (Skill Level × 0.2) seconds"
               },
               {
                 "label": "Cast Delay",
@@ -10914,6 +11873,18 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -10961,10 +11932,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10977,9 +11947,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Fire Wall 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fire_Pillar",
           "description": "Summons a pillar of flame on a targeted location that flares when triggered, inflicting piercing Fire property magic damage each hit to all enemies within its area of effect.\nIt will vanish itself if they were not used for 30s.\nUp to 5 can be installed, each cast consumes a Blue Gemstone if Level 6 or higher is cast.\nIt can't be installed if there are enemies or allies in 3*3 cells.",
           "levelDetails": [
             {
@@ -11072,8 +12044,21 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "75",
+          "fixedCastTime": "[0.528 − (Skill Level × 0.048)] seconds",
+          "variableCastTime": "[2.112 − (Skill Level × 0.192)] seconds",
+          "duration": "30 seconds; Until triggered",
+          "castRange": "Magic",
+          "areaOfEffect": "3 x 3 ~ 7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Fire Pillar ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fire_Pillar"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/80.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/80",
           "tree": {
@@ -11101,6 +12086,18 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "75"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "[0.528 − (Skill Level × 0.048)] seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[2.112 − (Skill Level × 0.192)] seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1 second"
               },
@@ -11109,8 +12106,20 @@ export const hyperNoviceData = {
                 "value": "0.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
                 "label": "Area of Effect",
-                "value": "Lv 1: 3 x 3 cells / Lv 2: 3 x 3 cells / Lv 3: 3 x 3 cells / Lv 4: 3 x 3 cells / Lv 5: 3 x 3 cells / Lv 6: 7 x 7 cells / Lv 7: 7 x 7 cells / Lv 8: 7 x 7 cells / Lv 9: 7 x 7 cells / Lv 10: 7 x 7 cells"
+                "value": "3 x 3 ~ 7 x 7"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds; Until triggered"
               }
             ],
             "levelTables": [
@@ -11202,10 +12211,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11218,9 +12226,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "basic skill",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Land_Mine",
           "description": "Sets a trap that triggers an explosion from below when an enemy steps on it\ninflicting piercing Earth property damage to all enemies within its area of effect. Damage increases upon skill level, user's base level, DEX and INT.\nThe untapped trap is uninstalled and returned to the inventory after the operating time.",
           "levelDetails": [
             {
@@ -11275,8 +12285,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "[240 − (Skill Level × 40)] seconds",
+          "castRange": "3 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Land Mine ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Land_Mine"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/116.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/116",
           "tree": {
@@ -11297,6 +12317,10 @@ export const hyperNoviceData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -11311,6 +12335,18 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "3 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Duration",
+                "value": "[240 − (Skill Level × 40)] seconds"
               }
             ],
             "levelTables": [
@@ -11367,10 +12403,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11386,6 +12421,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hilt_Binding",
           "description": "Enhances STR and attack by 1 and 4, respectively.\nThis skill also extends the duration of Adrenaline Rush, Power-Thrust and Weapon Perfection skills by 10%.",
           "levelDetails": [],
           "levelExtras": [
@@ -11399,8 +12436,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Hilt Binding ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hilt_Binding"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/105.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/105",
           "tree": {
@@ -11442,10 +12486,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11461,6 +12504,8 @@ export const hyperNoviceData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Frost_Nova",
           "description": "Raises ice spikes around the user that will inflict Water property magic damage to all enemies around the user. It has a chance of leaving enemies frozen.\nThe chance of effect and cast time increases upon skill level.",
           "levelDetails": [
             {
@@ -11551,8 +12596,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "47 − (Skill Level × 2)",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Frost Nova ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Frost_Nova"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/88.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/88",
           "tree": {
@@ -11580,8 +12634,16 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "47 − (Skill Level × 2)"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -11673,10 +12735,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11689,9 +12750,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Frost Diver 1, Jupitel 3",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Storm_Gust",
           "description": "Summons a vicious blizzard upon a targeted location that will inflict Water property magic damage every half a second to all enemies within its area of effect.\nIt lasts for 4.5s, hits every 0.45s and push them 2 cells.\nIt has a chance of leaving enemies frozen,and frozen enemies will not take further damage from this skill.",
           "levelDetails": [
             {
@@ -11785,8 +12848,20 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "78",
+          "variableCastTime": "[4.3 + (Skill Level × 0.2)] seconds",
+          "duration": "4.5 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Storm Gust ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Storm_Gust"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/89.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/89",
           "tree": {
@@ -11820,8 +12895,16 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "78"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[4.3 + (Skill Level × 0.2)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -11830,6 +12913,22 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "6 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11"
+              },
+              {
+                "label": "Duration",
+                "value": "4.5 seconds"
               }
             ],
             "levelTables": [
@@ -11907,10 +13006,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11923,9 +13021,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Heaven's Drive 1",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Quagmire",
           "description": "Turns a targeted location into a marshland that reduces Movement Speed, AGI and DEX of all enemies within its area of effect.\nThis skill cannot reduce the affected stats of monsters by more than 50%, and those of players by more than 25%.\nAlso removes certain skill effects, such as Increase AGI, Twohand Quicken, Wind Walker and Adrenaline Rush.\nA Maximum of three quagmires can be placed before the first one expires.",
           "levelDetails": [
             {
@@ -11976,8 +13076,20 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level × 5)",
+          "castDelay": "1 second",
+          "duration": "(Skill Level × 5) seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Quagmire ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Quagmire"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/92.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/92",
           "tree": {
@@ -12003,6 +13115,26 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "(Skill Level × 5)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -12014,6 +13146,10 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -12022,35 +13158,40 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration: 5sec, AGI / DE x Reduction: 10%",
+                      "duration": "5 seconds",
+                      "effect": ", AGI / DE x Reduction: 10%",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration:10sec, AGI / DE x Reduction: 20%",
+                      "duration": "10 seconds",
+                      "effect": ", AGI / DE x Reduction: 20%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration:15sec, AGI / DE x Reduction: 30%",
+                      "duration": "15 seconds",
+                      "effect": ", AGI / DE x Reduction: 30%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration:20sec, AGI / DE x Reduction: 40%",
+                      "duration": "20 seconds",
+                      "effect": ", AGI / DE x Reduction: 40%",
                       "sp-cost": "20"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration:25sec, AGI / DE x Reduction: 50%",
+                      "duration": "25 seconds",
+                      "effect": ", AGI / DE x Reduction: 50%",
                       "sp-cost": "25"
                     }
                   }
@@ -12059,10 +13200,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12075,9 +13215,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Thunder Storm 1, Sightrasher 2",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Meteor_Storm",
           "description": "Each meteor will inflict 125% Fire property magic damage each hit to all enemies, and it has a chance of leaving enemies [Abnormal Status : Stun].\nEach meteor has a 7*7 area. Skill level affects hits per meteor and the number of meteors.",
           "levelDetails": [
             {
@@ -12171,8 +13313,20 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 ~ 64",
+          "cooldown": "[2 + (Skill Level x 0.5)] seconds",
+          "duration": "2 ~ 7 seconds",
+          "castRange": "Magic",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Meteor Storm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Meteor_Storm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/83.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/83",
           "tree": {
@@ -12206,6 +13360,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 ~ 64"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1.5 seconds"
               },
@@ -12216,6 +13374,26 @@ export const hyperNoviceData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "[2 + (Skill Level x 0.5)] seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
+              },
+              {
+                "label": "Duration",
+                "value": "2 ~ 7 seconds"
               }
             ],
             "levelTables": [
@@ -12307,10 +13485,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12326,6 +13503,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Enhances attack (Weapon Mastery) against Brute and Insect race monsters.",
           "levelDetails": [
             {
@@ -12416,8 +13595,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Beastbane ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Beastbane"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/126.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/126",
           "tree": {
@@ -12527,10 +13713,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12546,6 +13731,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Weaponry_Research",
           "description": "Raises the success rate of forging.\nThis skill also raises Physical Attack (Weapon Mastery) and the accuracy with any weapon.",
           "levelDetails": [
             {
@@ -12636,8 +13823,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Weaponry Research ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Weaponry_Research"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/107.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/107",
           "tree": {
@@ -12790,10 +13984,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12809,6 +14002,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Monster_Property",
           "description": "Analyzes a single target, revealing information.If the user is in a party, all party members can see the target's information.",
           "levelDetails": [],
           "levelExtras": [
@@ -12822,8 +14017,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Monster Property ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Monster_Property"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/93.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/93",
           "tree": {
@@ -12842,6 +14046,14 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -12869,10 +14081,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12888,6 +14099,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Repair_Weapon",
           "description": "Consumes SPS and repairs the damaged equipment of a single target, allowing it to be usable again.\nThe materials required for repair vary depending on the type of equipment.",
           "levelDetails": [],
           "levelExtras": [
@@ -12901,8 +14114,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "fixedCastTime": "2.5 seconds",
+          "variableCastTime": "2.5 seconds",
+          "castRange": "2 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Repair Weapon ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Repair_Weapon"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/108.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/108",
           "tree": {
@@ -12930,6 +14154,22 @@ export const hyperNoviceData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "2.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "2.5 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "2 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -12955,10 +14195,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12974,6 +14213,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Breakthrough",
           "description": "The ultimate physical training skill achieved by constant training.\nIncreases your MaxHP, MaxSP, ATK, and incoming healing amounts.",
           "levelDetails": [
             {
@@ -13024,8 +14265,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Breakthrough ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Breakthrough"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5075.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5075",
           "tree": {
@@ -13051,63 +14299,78 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "maxhp",
+                    "label": "MaxHP"
+                  },
+                  {
+                    "id": "maxsp",
+                    "label": "MaxSP"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
                   {
-                    "id": "atk-100-maxhp-2-000-maxsp-200-and-incoming-healing-amounts",
-                    "label": "Atk +100, Maxhp +2,000, Maxsp +200, And Incoming Healing Amounts"
+                    "id": "and-incoming-healing-amounts",
+                    "label": "And Incoming Healing Amounts"
                   },
                   {
-                    "id": "atk-15-maxhp-350-maxsp-30-and-incoming-healing-amounts",
-                    "label": "Atk +15, Maxhp +350, Maxsp +30, And Incoming Healing Amounts"
+                    "id": "atk",
+                    "label": "Atk"
                   },
                   {
-                    "id": "atk-30-maxhp-700-maxsp-60-incoming-healing-amounts",
-                    "label": "Atk +30, Maxhp +700, Maxsp +60, Incoming Healing Amounts"
-                  },
-                  {
-                    "id": "atk-45-maxhp-1-050-maxsp-90-and-incoming-healing-amounts",
-                    "label": "Atk +45, Maxhp +1,050, Maxsp +90, And Incoming Healing Amounts"
-                  },
-                  {
-                    "id": "atk-60-maxhp-1-400-maxsp-120-and-incoming-healing-amounts",
-                    "label": "Atk +60, Maxhp +1,400, Maxsp +120, And Incoming Healing Amounts"
+                    "id": "incoming-healing-amounts",
+                    "label": "Incoming Healing Amounts"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "atk-15-maxhp-350-maxsp-30-and-incoming-healing-amounts": "+2%",
+                      "atk": "+15",
+                      "maxhp": "+350",
+                      "maxsp": "+30",
+                      "and-incoming-healing-amounts": "+2%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "atk-30-maxhp-700-maxsp-60-incoming-healing-amounts": "+4%",
+                      "atk": "+30",
+                      "maxhp": "+700",
+                      "maxsp": "+60",
+                      "incoming-healing-amounts": "+4%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "atk-45-maxhp-1-050-maxsp-90-and-incoming-healing-amounts": "+6%",
+                      "atk": "+45",
+                      "maxhp": "+1,050",
+                      "maxsp": "+90",
+                      "and-incoming-healing-amounts": "+6%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "atk-60-maxhp-1-400-maxsp-120-and-incoming-healing-amounts": "+8%",
+                      "atk": "+60",
+                      "maxhp": "+1,400",
+                      "maxsp": "+120",
+                      "and-incoming-healing-amounts": "+8%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "atk-100-maxhp-2-000-maxsp-200-and-incoming-healing-amounts": "+10%",
+                      "atk": "+100",
+                      "maxhp": "+2,000",
+                      "maxsp": "+200",
+                      "and-incoming-healing-amounts": "+10%",
                       "sp-cost": "0"
                     }
                   }
@@ -13116,10 +14379,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13135,6 +14397,8 @@ export const hyperNoviceData = {
           "target": "Instant cast",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Help%2C_Angel!",
           "description": "Divine intervention for a Novice in a dangerous situation.\nRestores HP and SP for you and your party members in 15 x15 cells around you.",
           "levelDetails": [],
           "levelExtras": [
@@ -13148,8 +14412,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "cooldown": "300 seconds",
+          "duration": "20 seconds",
+          "areaOfEffect": "15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Help, Angel! ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Help%2C_Angel!"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5076.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5076",
           "tree": {
@@ -13170,8 +14444,20 @@ export const hyperNoviceData = {
                 "value": "1"
               },
               {
+                "label": "Cooldown",
+                "value": "300 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Instant cast"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15"
+              },
+              {
+                "label": "Duration",
+                "value": "20 seconds"
               }
             ],
             "levelTables": [
@@ -13195,10 +14481,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13214,6 +14499,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Transcendence",
           "description": "The ultimate mental training skill achieved by constant training.\nIncreases your MaxHP, MaxSP, MATK, and healing amounts.",
           "levelDetails": [
             {
@@ -13264,8 +14551,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Transcendence ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Transcendence"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5077.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5077",
           "tree": {
@@ -13291,63 +14585,74 @@ export const hyperNoviceData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "maxhp",
+                    "label": "MaxHP"
+                  },
+                  {
+                    "id": "maxsp",
+                    "label": "MaxSP"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
                   {
-                    "id": "matk-100-maxhp-2-000-maxsp-200-and-healing-amounts",
-                    "label": "Matk +100, Maxhp +2,000, Maxsp +200, And Healing Amounts"
+                    "id": "and-healing-amounts",
+                    "label": "And Healing Amounts"
                   },
                   {
-                    "id": "matk-15-maxhp-350-maxsp-30-and-healing-amounts",
-                    "label": "Matk +15, Maxhp +350, Maxsp +30, And Healing Amounts"
-                  },
-                  {
-                    "id": "matk-30-maxhp-700-maxsp-60-and-healing-amounts",
-                    "label": "Matk +30, Maxhp +700, Maxsp +60, And Healing Amounts"
-                  },
-                  {
-                    "id": "matk-45-maxhp-1-050-maxsp-90-and-healing-amounts",
-                    "label": "Matk +45, Maxhp +1,050, Maxsp +90, And Healing Amounts"
-                  },
-                  {
-                    "id": "matk-60-maxhp-1-400-maxsp-120-and-healing-amounts",
-                    "label": "Matk +60, Maxhp +1,400, Maxsp +120, And Healing Amounts"
+                    "id": "matk",
+                    "label": "Matk"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "matk-15-maxhp-350-maxsp-30-and-healing-amounts": "+3%",
+                      "matk": "+15",
+                      "maxhp": "+350",
+                      "maxsp": "+30",
+                      "and-healing-amounts": "+3%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "matk-30-maxhp-700-maxsp-60-and-healing-amounts": "+6%",
+                      "matk": "+30",
+                      "maxhp": "+700",
+                      "maxsp": "+60",
+                      "and-healing-amounts": "+6%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "matk-45-maxhp-1-050-maxsp-90-and-healing-amounts": "+9%",
+                      "matk": "+45",
+                      "maxhp": "+1,050",
+                      "maxsp": "+90",
+                      "and-healing-amounts": "+9%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "matk-60-maxhp-1-400-maxsp-120-and-healing-amounts": "+12%",
+                      "matk": "+60",
+                      "maxhp": "+1,400",
+                      "maxsp": "+120",
+                      "and-healing-amounts": "+12%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "matk-100-maxhp-2-000-maxsp-200-and-healing-amounts": "+15%",
+                      "matk": "+100",
+                      "maxhp": "+2,000",
+                      "maxsp": "+200",
+                      "and-healing-amounts": "+15%",
                       "sp-cost": "0"
                     }
                   }
@@ -13356,10 +14661,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13386,6 +14690,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -13464,8 +14770,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -13567,10 +14880,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13586,6 +14898,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sword_Mastery",
           "description": "Increase damage with One Handed\nSword or Dagger Class Weapons.",
           "levelDetails": [
             {
@@ -13676,8 +14990,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sword Mastery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sword_Mastery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2",
           "tree": {
@@ -13773,10 +15094,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13792,6 +15112,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Bash",
           "description": "Hit an enemy with crushing force.\nIf the Fatal Blow skill is learned, Bash will have\nan added Stun effect at levels 5 and higher.",
           "levelDetails": [
             {
@@ -13882,8 +15204,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "8/15",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Bash ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Bash"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5",
           "tree": {
@@ -13902,6 +15234,18 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "8/15"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -13983,10 +15327,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14002,6 +15345,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Provoke",
           "description": "Enrage a single target to decrease player's defense\nbased on VIT or monster's physical defense\nat cost of increasing its Attack Strength.\nIneffective against the Undead and Boss monster.\nEffect of Provoke on Enemies by Skill's Level.",
           "levelDetails": [
             {
@@ -14092,8 +15437,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill Level + 3)",
+          "castDelay": "ASPD",
+          "duration": "30 seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Provoke ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Provoke"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6",
           "tree": {
@@ -14114,8 +15470,24 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill Level + 3)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds"
               }
             ],
             "levelTables": [
@@ -14127,114 +15499,92 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "enemy-s-atk-11-enemy-s-def",
-                    "label": "Enemy's Atk +11%, Enemy's Def"
+                    "id": "enemy-s-atk",
+                    "label": "Enemy's Atk"
                   },
                   {
-                    "id": "enemy-s-atk-14-enemy-s-def",
-                    "label": "Enemy's Atk +14%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-17-enemy-s-def",
-                    "label": "Enemy's Atk +17%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-20-enemy-s-def",
-                    "label": "Enemy's Atk +20%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-23-enemy-s-def",
-                    "label": "Enemy's Atk +23%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-26-enemy-s-def",
-                    "label": "Enemy's Atk +26%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-29-enemy-s-def",
-                    "label": "Enemy's Atk +29%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-32-enemy-s-def",
-                    "label": "Enemy's Atk +32%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-5-enemy-s-def",
-                    "label": "Enemy's Atk +5%, Enemy's Def"
-                  },
-                  {
-                    "id": "enemy-s-atk-8-enemy-s-def",
-                    "label": "Enemy's Atk +8%, Enemy's Def"
+                    "id": "enemy-s-def",
+                    "label": "Enemy's Def"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "enemy-s-atk-5-enemy-s-def": "-10%",
+                      "enemy-s-atk": "+5%",
+                      "enemy-s-def": "-10%",
                       "sp-cost": "4"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "enemy-s-atk-8-enemy-s-def": "-15%",
+                      "enemy-s-atk": "+8%",
+                      "enemy-s-def": "-15%",
                       "sp-cost": "5"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "enemy-s-atk-11-enemy-s-def": "-20%",
+                      "enemy-s-atk": "+11%",
+                      "enemy-s-def": "-20%",
                       "sp-cost": "6"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "enemy-s-atk-14-enemy-s-def": "-25%",
+                      "enemy-s-atk": "+14%",
+                      "enemy-s-def": "-25%",
                       "sp-cost": "7"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "enemy-s-atk-17-enemy-s-def": "-30%",
+                      "enemy-s-atk": "+17%",
+                      "enemy-s-def": "-30%",
                       "sp-cost": "8"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "enemy-s-atk-20-enemy-s-def": "-35%",
+                      "enemy-s-atk": "+20%",
+                      "enemy-s-def": "-35%",
                       "sp-cost": "9"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "enemy-s-atk-23-enemy-s-def": "-40%",
+                      "enemy-s-atk": "+23%",
+                      "enemy-s-def": "-40%",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "enemy-s-atk-26-enemy-s-def": "-45%",
+                      "enemy-s-atk": "+26%",
+                      "enemy-s-def": "-45%",
                       "sp-cost": "11"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "enemy-s-atk-29-enemy-s-def": "-50%",
+                      "enemy-s-atk": "+29%",
+                      "enemy-s-def": "-50%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "enemy-s-atk-32-enemy-s-def": "-55%",
+                      "enemy-s-atk": "+32%",
+                      "enemy-s-def": "-55%",
                       "sp-cost": "13"
                     }
                   }
@@ -14243,10 +15593,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14262,6 +15611,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Double_Attack",
           "description": "Gives the chance to inflict two hits instead of one and improves hit rate while attacking with Dagger class weapons.\nWhen using Katar type weapon, it affects off-hand damage.",
           "levelDetails": [
             {
@@ -14352,8 +15703,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Double Attack ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Double_Attack"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/48.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/48",
           "tree": {
@@ -14463,10 +15821,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14482,6 +15839,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Steal",
           "description": "Consumes SP10 and attempts to steal an item from a targeted monster. The higher the target's DEX than yours, the lower the chance of success.\nBoss monsters and players cannot be stolen from. After success, it is not possible to steal again from the same target.",
           "levelDetails": [
             {
@@ -14572,8 +15931,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "1 second",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Steal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Steal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/50.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/50",
           "tree": {
@@ -14592,6 +15961,18 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -14687,10 +16068,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14706,6 +16086,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Envenom",
           "description": "Consumes SP12 and strikes a single target to inflict Poison property physical damage. It has a chance of leaving the target [Abnormal Status : poisoned].\nPoisoned targets take damage per second, and their physical defense is reduced by 25%.\nEnvenom Skill damage is the sum of general physical damage and damage by this skill",
           "levelDetails": [
             {
@@ -14796,8 +16178,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Envenom ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Envenom"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/52.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/52",
           "tree": {
@@ -14818,6 +16210,18 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
               }
@@ -14833,76 +16237,90 @@ export const hyperNoviceData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "damage",
+                    "label": "Damage:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Damage: + 15, Chance of Effect: 14%",
+                      "damage": "+ 15",
+                      "effect": "Chance of Effect: 14%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Damage: + 30, Chance of Effect: 18%",
+                      "damage": "+ 30",
+                      "effect": "Chance of Effect: 18%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Damage: + 45, Chance of Effect: 22%",
+                      "damage": "+ 45",
+                      "effect": "Chance of Effect: 22%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Damage: + 60, Chance of Effect: 26%",
+                      "damage": "+ 60",
+                      "effect": "Chance of Effect: 26%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Damage: + 75, Chance of Effect: 30%",
+                      "damage": "+ 75",
+                      "effect": "Chance of Effect: 30%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Damage: + 90, Chance of Effect: 34%",
+                      "damage": "+ 90",
+                      "effect": "Chance of Effect: 34%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Damage: +105, Chance of Effect: 38%",
+                      "damage": "+105",
+                      "effect": "Chance of Effect: 38%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Damage: +120, Chance of Effect: 42%",
+                      "damage": "+120",
+                      "effect": "Chance of Effect: 42%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Damage: +135, Chance of Effect: 46%",
+                      "damage": "+135",
+                      "effect": "Chance of Effect: 46%",
                       "sp-cost": "12"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Damage: +150, Chance of Effect: 50%",
+                      "damage": "+150",
+                      "effect": "Chance of Effect: 50%",
                       "sp-cost": "12"
                     }
                   }
@@ -14911,10 +16329,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14930,6 +16347,8 @@ export const hyperNoviceData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -14943,8 +16362,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -14963,6 +16391,14 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -14990,10 +16426,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15009,6 +16444,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Increase_HP_Recovery",
           "description": "Enhance natural HP Recovery. Max\nHP affects how much HP restoration is increased.\nHP recovery happens every 10 seconds while standing.\nBut it doesn't work while walking or HP/SP regen disabled.",
           "levelDetails": [
             {
@@ -15099,8 +16536,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Increase HP Recovery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Increase_HP_Recovery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/4.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/4",
           "tree": {
@@ -15134,6 +16578,10 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -15142,70 +16590,80 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(HP 5+0.2% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 5+0.2% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(HP 10+0.4% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 10+0.4% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(HP 15+0.6% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 15+0.6% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(HP 20+0.8% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 20+0.8% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(HP 25+1.0% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 25+1.0% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(HP 30+1.2% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 30+1.2% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(HP 35+1.4% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 35+1.4% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(HP 40+1.6% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 40+1.6% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(HP 45+1.8% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 45+1.8% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(HP 50+2.0% of Ma x HP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(HP 50+2.0% of Ma x HP)",
                       "sp-cost": "0"
                     }
                   }
@@ -15214,10 +16672,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15230,9 +16687,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Bash 5",
           "group": "Active",
           "type": "Offensive, Buff",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Magnum_Break",
           "description": "Drain a small amount of the caster's\nHP to inflict Fire property area effect damage on\nenemies in the caster's vicinity and force them\nbackward. For 10 seconds after Magnum Break,\ncaster's weapon will receive a 20% Fire property\nstrength enhancement.\nDescription : SP 30 Consumption, inflict Fire property physical damage to all enemies in a 5x5 area around the user and push them 2 cells backwards.\nThis skill adds an additional 20% Fire property damage for ten seconds.",
           "levelDetails": [
             {
@@ -15327,8 +16786,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "castRange": "Melee",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Magnum Break ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Magnum_Break"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/7.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/7",
           "tree": {
@@ -15356,6 +16825,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "30"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -15370,6 +16843,18 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "2 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -15447,10 +16932,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15466,6 +16950,8 @@ export const hyperNoviceData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Endure",
           "description": "Enables attacking and movement\nwhile receiving damage, but is automatically\ncanceled after skill duration elapses or after\ncaster is hit by 7 attacks. 10 sec cast delay.\nDisabled in War of Emperium.\nDuration and Mdef Bonus by Skill's Level\nDescription : Resist flinching from enemy melee attacks temporarily. Stiffness occurs when damage is caused by Magic and skill attacks.\nIf attacked more than seven times by an enemy in an Endure state, the Endure state will be released.",
           "levelDetails": [
             {
@@ -15556,8 +17042,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "cooldown": "10 seconds",
+          "duration": "[7 + (Skill Level × 3)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Endure ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Endure"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/8.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/8",
           "tree": {
@@ -15585,6 +17081,14 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cooldown",
+                "value": "10 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Caster Only"
               }
@@ -15598,114 +17102,92 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "duration-10-sec-mdef",
-                    "label": "Duration 10 Sec, Mdef"
+                    "id": "duration",
+                    "label": "Duration"
                   },
                   {
-                    "id": "duration-13-sec-mdef",
-                    "label": "Duration 13 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-16-sec-mdef",
-                    "label": "Duration 16 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-19-sec-mdef",
-                    "label": "Duration 19 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-22-sec-mdef",
-                    "label": "Duration 22 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-25-sec-mdef",
-                    "label": "Duration 25 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-28-sec-mdef",
-                    "label": "Duration 28 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-31-sec-mdef",
-                    "label": "Duration 31 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-34-sec-mdef",
-                    "label": "Duration 34 Sec, Mdef"
-                  },
-                  {
-                    "id": "duration-37-sec-mdef",
-                    "label": "Duration 37 Sec, Mdef"
+                    "id": "mdef",
+                    "label": ", Mdef"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "duration-10-sec-mdef": "+1",
+                      "duration": "10 seconds",
+                      "mdef": "+1",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "duration-13-sec-mdef": "+2",
+                      "duration": "13 seconds",
+                      "mdef": "+2",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "duration-16-sec-mdef": "+3",
+                      "duration": "16 seconds",
+                      "mdef": "+3",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "duration-19-sec-mdef": "+4",
+                      "duration": "19 seconds",
+                      "mdef": "+4",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "duration-22-sec-mdef": "+5",
+                      "duration": "22 seconds",
+                      "mdef": "+5",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "duration-25-sec-mdef": "+6",
+                      "duration": "25 seconds",
+                      "mdef": "+6",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "duration-28-sec-mdef": "+7",
+                      "duration": "28 seconds",
+                      "mdef": "+7",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "duration-31-sec-mdef": "+8",
+                      "duration": "31 seconds",
+                      "mdef": "+8",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "duration-34-sec-mdef": "+9",
+                      "duration": "34 seconds",
+                      "mdef": "+9",
                       "sp-cost": "10"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "duration-37-sec-mdef": "+10",
+                      "duration": "37 seconds",
+                      "mdef": "+10",
                       "sp-cost": "10"
                     }
                   }
@@ -15714,10 +17196,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15733,6 +17214,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Improve_Dodge",
           "description": "Enhances flee rate. The benefits of this skill are improved upon reaching 2nd class and further.\nAlso slightly enhances the Movement Speed of the Assassin class.",
           "levelDetails": [
             {
@@ -15823,8 +17306,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Improve Dodge ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Improve_Dodge"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/49.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/49",
           "tree": {
@@ -15854,114 +17344,92 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "1st-class-flee-3-2nd-class-flee",
-                    "label": "1st Class Flee + 3, 2nd Class Flee"
+                    "id": "1st-class-flee",
+                    "label": "1st Class Flee"
                   },
                   {
-                    "id": "1st-class-flee-6-2nd-class-flee",
-                    "label": "1st Class Flee + 6, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-9-2nd-class-flee",
-                    "label": "1st Class Flee + 9, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-12-2nd-class-flee",
-                    "label": "1st Class Flee +12, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-15-2nd-class-flee",
-                    "label": "1st Class Flee +15, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-18-2nd-class-flee",
-                    "label": "1st Class Flee +18, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-21-2nd-class-flee",
-                    "label": "1st Class Flee +21, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-24-2nd-class-flee",
-                    "label": "1st Class Flee +24, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-27-2nd-class-flee",
-                    "label": "1st Class Flee +27, 2nd Class Flee"
-                  },
-                  {
-                    "id": "1st-class-flee-30-2nd-class-flee",
-                    "label": "1st Class Flee +30, 2nd Class Flee"
+                    "id": "2nd-class-flee",
+                    "label": "2nd Class Flee"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "1st-class-flee-3-2nd-class-flee": "+ 4",
+                      "1st-class-flee": "+ 3",
+                      "2nd-class-flee": "+ 4",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "1st-class-flee-6-2nd-class-flee": "+ 8",
+                      "1st-class-flee": "+ 6",
+                      "2nd-class-flee": "+ 8",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "1st-class-flee-9-2nd-class-flee": "+12",
+                      "1st-class-flee": "+ 9",
+                      "2nd-class-flee": "+12",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "1st-class-flee-12-2nd-class-flee": "+16",
+                      "1st-class-flee": "+12",
+                      "2nd-class-flee": "+16",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "1st-class-flee-15-2nd-class-flee": "+20",
+                      "1st-class-flee": "+15",
+                      "2nd-class-flee": "+20",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "1st-class-flee-18-2nd-class-flee": "+24",
+                      "1st-class-flee": "+18",
+                      "2nd-class-flee": "+24",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "1st-class-flee-21-2nd-class-flee": "+28",
+                      "1st-class-flee": "+21",
+                      "2nd-class-flee": "+28",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "1st-class-flee-24-2nd-class-flee": "+32",
+                      "1st-class-flee": "+24",
+                      "2nd-class-flee": "+32",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "1st-class-flee-27-2nd-class-flee": "+36",
+                      "1st-class-flee": "+27",
+                      "2nd-class-flee": "+36",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "1st-class-flee-30-2nd-class-flee": "+40",
+                      "1st-class-flee": "+30",
+                      "2nd-class-flee": "+40",
                       "sp-cost": "0"
                     }
                   }
@@ -15970,10 +17438,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15989,6 +17456,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hiding",
           "description": "Consumes SP10 and conceals oneself to avoid enemies. The skills Sight and Ruwach can be used to reveal hidden players.\nInsect, Demon and Boss Protocol monsters can detect hidden players. Reveals oneself when using the skill again.",
           "levelDetails": [
             {
@@ -16079,8 +17548,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "(Skill Level × 30) seconds; Until recast or SP reaches zero",
+          "translations": {
+            "pt-BR": {
+              "name": " Hiding ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hiding"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/51.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/51",
           "tree": {
@@ -16108,8 +17586,16 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 30) seconds; Until recast or SP reaches zero"
               }
             ],
             "levelTables": [
@@ -16201,10 +17687,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16220,6 +17705,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Detoxify",
           "description": "Consumes SP 10 and cures a single target from Poison status effect.",
           "levelDetails": [],
           "levelExtras": [
@@ -16233,8 +17720,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "ASPD",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Detoxify ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Detoxify"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/53.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/53",
           "tree": {
@@ -16262,6 +17759,18 @@ export const hyperNoviceData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -16287,10 +17796,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16303,9 +17811,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -16319,8 +17829,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -16339,6 +17858,18 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -16362,10 +17893,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16381,6 +17911,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Increase_SP_Recovery",
           "description": "Enhance natural SP Recovery.\nMaxSP affects how much SP restoration is\nincreased by this skill. Increases the efficiency\nof SP recovering items for 2% per skill level.\nDescription : Additional SP every 10 seconds while the character is not moving.\nNo SP is restored if normal SP/HP regeneration is not permitted or the character is moving.",
           "levelDetails": [
             {
@@ -16471,8 +18003,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Increase SP Recovery ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Increase_SP_Recovery"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/9.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/9",
           "tree": {
@@ -16506,6 +18045,10 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -16514,70 +18057,80 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "(3 + 0.2% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(3 + 0.2% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "(6 + 0.4% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(6 + 0.4% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "(9 + 0.6% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(9 + 0.6% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "(12 + 0.8% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(12 + 0.8% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "(15 + 1.0% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(15 + 1.0% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "(18 + 1.2% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(18 + 1.2% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "(21 + 1.4% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(21 + 1.4% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "(24 + 1.6% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(24 + 1.6% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "(27 + 1.8% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(27 + 1.8% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "(30 + 2.0% of Ma x SP) / 10 sec",
+                      "duration": "10 seconds",
+                      "effect": "(30 + 2.0% of Ma x SP)",
                       "sp-cost": "0"
                     }
                   }
@@ -16586,10 +18139,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16605,6 +18157,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Aqua_Benedicta",
           "description": "Draws water under the caster to create a single Holy Water from it. Requires the player to be in shallow water and each cast consumes SP10.",
           "levelDetails": [],
           "levelExtras": [
@@ -16618,6 +18172,10 @@ export const hyperNoviceData = {
               ]
             }
           ],
+          "spCost": "10",
+          "fixedCastTime": "0.2 seconds",
+          "variableCastTime": "0.8 seconds",
+          "castDelay": "0.5 seconds",
           "translations": {
             "pt-BR": {
               "name": " Aqua Benedicta ",
@@ -16647,6 +18205,22 @@ export const hyperNoviceData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.8 seconds"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.5 seconds"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
               }
@@ -16672,7 +18246,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -16691,6 +18264,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Enhances Weight Limit.",
           "levelDetails": [
             {
@@ -16781,8 +18356,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Enlarge Weight limit ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Enlarge_Weight_limit"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/36.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/36",
           "tree": {
@@ -16892,10 +18474,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16911,6 +18492,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cold_Bolt",
           "description": "Summon bolts of frigid ice to\nstrike at an enemy. Barring changes in damage\ndue to elemental properties, each bolt inflicts\nan amount of damage equal to the caster's Matk.\nDescription : Attack enemies with bolts of frigid ice\nInflict 100% Water property magic damage.",
           "levelDetails": [
             {
@@ -17003,8 +18586,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "fixedCastTime": "0.2 + (Skill Level × 0.1) seconds",
+          "variableCastTime": "0.2 + (Skill Level × 0.3) seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Cold Bolt ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cold_Bolt"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/14.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/14",
           "tree": {
@@ -17025,12 +18619,28 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 + (Skill Level × 0.1) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.2 + (Skill Level × 0.3) seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1.4 seconds"
               },
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -17126,10 +18736,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17145,6 +18754,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lightening_Bolt",
           "description": "Drop lightning to give the enemy a 100% wind property magic damage.",
           "levelDetails": [
             {
@@ -17237,8 +18848,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "fixedCastTime": "0.2 + (Skill Level × 0.1) seconds",
+          "variableCastTime": "0.2 + (Skill Level × 0.3) seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Lightening Bolt ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lightening_Bolt"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/20.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/20",
           "tree": {
@@ -17259,12 +18881,28 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 + (Skill Level × 0.1) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.2 + (Skill Level × 0.3) seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1.4 seconds"
               },
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -17360,10 +18998,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17379,6 +19016,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Firebolt",
           "description": "Attack enemies with fire bolt\ninflict 100% Fire property magic damage.",
           "levelDetails": [
             {
@@ -17471,8 +19110,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "fixedCastTime": "0.2 + (Skill Level × 0.1) seconds",
+          "variableCastTime": "0.2 + (Skill Level × 0.3) seconds",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Firebolt ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Firebolt"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/19.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/19",
           "tree": {
@@ -17493,12 +19143,28 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
+                "label": "Fixed Cast Time",
+                "value": "0.2 + (Skill Level × 0.1) seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "0.2 + (Skill Level × 0.3) seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1.4 seconds"
               },
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -17594,10 +19260,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17613,6 +19278,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Attack an enemy from a distance\nthrough the use of psychokinetic energy.\nDescription : Strikes at a single target with psychokinetic energy to inflict Ghost property magic damage to all enemies within the area of effect.\nThe more targets, the more scattered the damage.",
           "levelDetails": [
             {
@@ -17707,8 +19374,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Napalm beat ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Napalm_beat"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/11.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/11",
           "tree": {
@@ -17824,10 +19498,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17843,6 +19516,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Divine_Protection",
           "description": "Raises Soft Defense against Demon and Undead race monsters. The higher the character level, the higher the damage reduction.\nDecrease the damage received from Demon and Undead race monsters by the amount of damage reduction.",
           "levelDetails": [
             {
@@ -17933,8 +19608,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Divine Protection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Divine_Protection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/22.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/22",
           "tree": {
@@ -18044,10 +19726,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -18063,6 +19744,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stone_Curse",
           "description": "Attempt to [Abnormal Status : petrify] a single target. Each cast consumes a Red Gemstone.\nAt Levels 6 to 10, only successful casts consume the Red Gemstone.\nThe Duration is affected by target's Level, LUK and magic defense.",
           "levelDetails": [
             {
@@ -18149,8 +19832,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(26 − Skill Level)",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " Stone Curse ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stone_Curse"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/16.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/16",
           "tree": {
@@ -18169,6 +19861,14 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "(26 − Skill Level)"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -18263,10 +19963,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -18282,6 +19981,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Discount",
           "description": "Allows to purchase items from NPC shops at lower prices.",
           "levelDetails": [
             {
@@ -18372,8 +20073,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Discount ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Discount"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/37.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/37",
           "tree": {
@@ -18490,10 +20198,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -18509,6 +20216,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Inflicts water damage and has\na chance of freezing it's target.\nDescription : inflict Water property magic damage, It has a chance of leaving the target [Abnormal Status : Frozen].\nThe Chance and Duration are affected by target's magic defense and LUK.",
           "levelDetails": [
             {
@@ -18603,8 +20312,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Frost diver ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Frost_diver"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/15.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/15",
           "tree": {
@@ -18727,10 +20443,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -18746,6 +20461,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Each bolt will inflict 100% Wind property magic damage to 5*5cell.",
           "levelDetails": [
             {
@@ -18839,8 +20556,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Thunder storm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Thunder_storm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/21.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/21",
           "tree": {
@@ -18969,10 +20693,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -18988,6 +20711,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Fireball",
           "description": "Shoots a fire ball to inflict Fire property magic damage to all enemies within its area of effect. Damage to Center(3X3cell) and Edge(5X5cell) is different.",
           "levelDetails": [
             {
@@ -19082,8 +20807,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "25",
+          "castRange": "Magic",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Fireball ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Fireball"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/17.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/17",
           "tree": {
@@ -19111,6 +20846,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "25"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.2 seconds"
               },
@@ -19127,8 +20866,16 @@ export const hyperNoviceData = {
                 "value": "0 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
               }
             ],
             "levelTables": [
@@ -19206,10 +20953,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -19225,6 +20971,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Soul_Strike",
           "description": "Summon holy ghosts to inflict\nGhost property attacks on a target. At level 10,\nthese ghosts will inflict 5 consecutive strikes.\nThis skill has a 0.5 second Cast Delay.\nDescription : Summoning the Ancient Holy Spirit and attacking the enemy directly\nInflict 100% Ghost property magic damage.\nThis skill inflicts additional damage against Undead property entities.",
           "levelDetails": [
             {
@@ -19319,8 +21067,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "18 ~ 42",
+          "castRange": "Magic",
+          "translations": {
+            "pt-BR": {
+              "name": " Soul Strike ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Soul_Strike"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/13.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/13",
           "tree": {
@@ -19348,6 +21105,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "18 ~ 42"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.1 seconds"
               },
@@ -19362,6 +21123,10 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
               },
               {
                 "label": "Target",
@@ -19443,10 +21208,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -19462,6 +21226,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Raises Physical Attack (Weapon Mastery) against Demon and Undead race monsters.\nDamage is added to the physical damage given to Demon and Undead race monsters.",
           "levelDetails": [
             {
@@ -19552,8 +21318,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Demonbane ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Demonbane"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/23.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/23",
           "tree": {
@@ -19656,10 +21429,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -19675,6 +21447,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Overcharge",
           "description": "Allows to sell items to NPC shops at higher prices..",
           "levelDetails": [
             {
@@ -19765,8 +21539,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Overcharge ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Overcharge"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/38.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/38",
           "tree": {
@@ -19883,10 +21664,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -19902,6 +21682,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Ruwach",
           "description": "Each cast consumes SP10, reveal hidden enemies within 5*5cell around it.\nIf the hidden is enemy, inflict 145% Holy property magic damage.",
           "levelDetails": [],
           "levelExtras": [
@@ -19915,8 +21697,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "10 seconds",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Ruwach ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Ruwach"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/24.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/24",
           "tree": {
@@ -19937,8 +21729,20 @@ export const hyperNoviceData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "10 seconds"
               }
             ],
             "levelTables": [
@@ -19962,10 +21766,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -19981,6 +21784,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Heal",
           "description": "Restores HP of a single target. This skill is also affected by User's LV, total INT, MATK.\nVersus Undead property targets, inflicts Holy property damage equal to half the amount of the HP restored.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -20034,8 +21839,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 3)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Heal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Heal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/28.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/28",
           "tree": {
@@ -20056,6 +21870,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -20070,6 +21888,10 @@ export const hyperNoviceData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -20151,10 +21973,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -20170,6 +21991,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sight",
           "description": "7Summon a fire ball that will detect\nall hidden enemies in 7x7 cells as of the caster by consuming SP 10.",
           "levelDetails": [],
           "levelExtras": [
@@ -20183,8 +22006,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "10 seconds",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Sight ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sight"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/10.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/10",
           "tree": {
@@ -20205,8 +22038,20 @@ export const hyperNoviceData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
+              },
+              {
+                "label": "Duration",
+                "value": "10 seconds"
               }
             ],
             "levelTables": [
@@ -20230,10 +22075,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -20249,6 +22093,8 @@ export const hyperNoviceData = {
           "target": "cell on ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Create a magic barrier on\na targeted spot that will block short range melee\nattacks for the duration of the Safety Wall.\nEach cast requires 1 Blue Gemstone.\nDescription : Creates a wall on a targeted location that blocks every form of close range physical damage until its durability wears off or expires. Each cast consumes a Blue Gemstone.\nINT, Base Level, MaxSP affects durability of defence\nOnly the first time can prevent damage beyond the total durability.",
           "levelDetails": [
             {
@@ -20339,8 +22185,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Safety wall ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Safety_wall"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/12.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/12",
           "tree": {
@@ -20467,10 +22320,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -20486,6 +22338,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Signum_Crucis",
           "description": "Decreases the hard defense of all Undead property and Demon race monsters in the caster's screen.",
           "levelDetails": [
             {
@@ -20580,6 +22434,8 @@ export const hyperNoviceData = {
               ]
             }
           ],
+          "spCost": "35",
+          "areaOfEffect": "Screen",
           "translations": {
             "pt-BR": {
               "name": " Signum Crucis ",
@@ -20616,6 +22472,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "35"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.15 seconds"
               },
@@ -20634,6 +22494,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "Screen"
               }
             ],
             "levelTables": [
@@ -20647,76 +22511,90 @@ export const hyperNoviceData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "physical-defense",
+                    "label": "Physical Defense"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Physical Defense -14%, success rate: 27%",
+                      "physical-defense": "-14%",
+                      "effect": "success rate: 27%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Physical Defense -18%, success rate: 31%",
+                      "physical-defense": "-18%",
+                      "effect": "success rate: 31%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Physical Defense -22%, success rate: 35%",
+                      "physical-defense": "-22%",
+                      "effect": "success rate: 35%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Physical Defense -26%, success rate: 39%",
+                      "physical-defense": "-26%",
+                      "effect": "success rate: 39%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Physical Defense -30%, success rate: 43%",
+                      "physical-defense": "-30%",
+                      "effect": "success rate: 43%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Physical Defense -34%, success rate: 47%",
+                      "physical-defense": "-34%",
+                      "effect": "success rate: 47%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Physical Defense -38%, success rate: 51%",
+                      "physical-defense": "-38%",
+                      "effect": "success rate: 51%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Physical Defense -42%, success rate: 55%",
+                      "physical-defense": "-42%",
+                      "effect": "success rate: 55%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Physical Defense -46%, success rate: 59%",
+                      "physical-defense": "-46%",
+                      "effect": "success rate: 59%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Physical Defense -50%, success rate: 63%",
+                      "physical-defense": "-50%",
+                      "effect": "success rate: 63%",
                       "sp-cost": "35"
                     }
                   }
@@ -20725,7 +22603,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -20744,6 +22621,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Owl's_Eye",
           "description": "Boosts DEX",
           "levelDetails": [
             {
@@ -20834,8 +22713,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Owl's Eye ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Owl's_Eye"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/43.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/43",
           "tree": {
@@ -20945,10 +22831,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -20964,6 +22849,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Able to use pushcart that carries a lot of items.\nEnables to rent a Pushcart from most Kafra employees, using [Alt-W]key.\ncan't use the items in pushcart directly.",
           "levelDetails": [
             {
@@ -21054,8 +22941,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Push Cart(Pushcart) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Push_Cart(Pushcart)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/39.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/39",
           "tree": {
@@ -21172,10 +23066,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -21191,6 +23084,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Teleport",
           "description": "Warps the user to a different location instantly.\nThis skill is disabled within land protector effect.",
           "levelDetails": [
             {
@@ -21217,8 +23112,17 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "11 − Skill Level",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " Teleport ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Teleport"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/26.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/26",
           "tree": {
@@ -21244,6 +23148,14 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "2"
+              },
+              {
+                "label": "SP Cost",
+                "value": "11 − Skill Level"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -21283,10 +23195,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -21302,6 +23213,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Cure",
           "description": "Cures a single target from the following status effects: Silence, Chaos and Blind and consumes SP15.",
           "levelDetails": [],
           "levelExtras": [
@@ -21315,8 +23228,16 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "translations": {
+            "pt-BR": {
+              "name": " Cure ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Cure"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/35.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/35",
           "tree": {
@@ -21344,6 +23265,10 @@ export const hyperNoviceData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -21369,10 +23294,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -21385,9 +23309,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Sight 1, Fireball 5",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Firewall",
           "description": "Each cast consumes SP40, Creates a wall of flame on a targeted location that will inflict 50% Fire property magic damage and push enemies two cells backwards upon contact.\nUp to three can be installed.",
           "levelDetails": [
             {
@@ -21478,8 +23404,19 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "duration": "(Skill Level + 4) seconds (Skill Level + 2) hits",
+          "castRange": "Magic",
+          "areaOfEffect": "1 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Firewall ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Firewall"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/18.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/18",
           "tree": {
@@ -21511,6 +23448,22 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Magic"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "1 x 3"
               }
             ],
             "levelTables": [
@@ -21522,6 +23475,10 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
                   }
@@ -21530,70 +23487,80 @@ export const hyperNoviceData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "per wall: Attack 3times, Duration: 5sec",
+                      "duration": "5 seconds",
+                      "effect": "per wall: Attack 3times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "per wall: Attack 4times, Duration: 6sec",
+                      "duration": "6 seconds",
+                      "effect": "per wall: Attack 4times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "per wall: Attack 5times, Duration: 7sec",
+                      "duration": "7 seconds",
+                      "effect": "per wall: Attack 5times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "per wall: Attack 6times, Duration: 8sec",
+                      "duration": "8 seconds",
+                      "effect": "per wall: Attack 6times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "per wall: Attack 7times, Duration: 9sec",
+                      "duration": "9 seconds",
+                      "effect": "per wall: Attack 7times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "per wall: Attack 8times, Duration:10sec",
+                      "duration": "10 seconds",
+                      "effect": "per wall: Attack 8times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "per wall: Attack 9times, Duration:11sec",
+                      "duration": "11 seconds",
+                      "effect": "per wall: Attack 9times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "per wall:Attack 10times, Duration:12sec",
+                      "duration": "12 seconds",
+                      "effect": "per wall:Attack 10times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "per wall:Attack 11times, Duration:13sec",
+                      "duration": "13 seconds",
+                      "effect": "per wall:Attack 11times",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "per wall:Attack 12times, Duration:14sec",
+                      "duration": "14 seconds",
+                      "effect": "per wall:Attack 12times",
                       "sp-cost": "40"
                     }
                   }
@@ -21602,10 +23569,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -21621,6 +23587,8 @@ export const hyperNoviceData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Angelus",
           "description": "Increase physical defense and MaxHP on the user and all party members in a 14x14 area around the user.",
           "levelDetails": [
             {
@@ -21715,6 +23683,9 @@ export const hyperNoviceData = {
               ]
             }
           ],
+          "spCost": "20 + (Skill Level × 3)",
+          "duration": "(Skill Level × 30) seconds",
+          "areaOfEffect": "14 x 14",
           "translations": {
             "pt-BR": {
               "name": " Angelus ",
@@ -21751,6 +23722,10 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.15 seconds"
               },
@@ -21769,6 +23744,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "14 x 14"
               }
             ],
             "levelTables": [
@@ -21780,78 +23759,106 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "hp",
+                    "label": "Hp"
+                  },
+                  {
+                    "id": "vit-defense",
+                    "label": "Vit Defense"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "VIT Defense+ 5%, HP+ 50, Duration: 30sec",
+                      "duration": "30 seconds",
+                      "vit-defense": "+ 5%",
+                      "hp": "+ 50",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "VIT Defense+10%, HP+100, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "vit-defense": "+10%",
+                      "hp": "+100",
                       "sp-cost": "26"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "VIT Defense+15%, HP+150, Duration: 90sec",
+                      "duration": "90 seconds",
+                      "vit-defense": "+15%",
+                      "hp": "+150",
                       "sp-cost": "29"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "VIT Defense+20%, HP+200, Duration:120sec",
+                      "duration": "120 seconds",
+                      "vit-defense": "+20%",
+                      "hp": "+200",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "VIT Defense+25%, HP+250, Duration:150sec",
+                      "duration": "150 seconds",
+                      "vit-defense": "+25%",
+                      "hp": "+250",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "VIT Defense+30%, HP+300, Duration:180sec",
+                      "duration": "180 seconds",
+                      "vit-defense": "+30%",
+                      "hp": "+300",
                       "sp-cost": "38"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "VIT Defense+35%, HP+350, Duration:210sec",
+                      "duration": "210 seconds",
+                      "vit-defense": "+35%",
+                      "hp": "+350",
                       "sp-cost": "41"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "VIT Defense+40%, HP+400, Duration:240sec",
+                      "duration": "240 seconds",
+                      "vit-defense": "+40%",
+                      "hp": "+400",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "VIT Defense+45%, HP+450, Duration:270sec",
+                      "duration": "270 seconds",
+                      "vit-defense": "+45%",
+                      "hp": "+450",
                       "sp-cost": "47"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "VIT Defense+50%, HP+500, Duration:300sec",
+                      "duration": "300 seconds",
+                      "vit-defense": "+50%",
+                      "hp": "+500",
                       "sp-cost": "50"
                     }
                   }
@@ -21860,7 +23867,6 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
             "status": "translated",
@@ -21879,6 +23885,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Vulture's_Eye",
           "description": "Enhances Attack range and Hit rate with Bow class weapons.",
           "levelDetails": [
             {
@@ -21969,8 +23977,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Vulture's Eye ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vulture's_Eye"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/44.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/44",
           "tree": {
@@ -22009,76 +24024,90 @@ export const hyperNoviceData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "range-bonus",
+                    "label": "Range Bonus"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Range Bonus + 1, HIT Bonus: 1%",
+                      "range-bonus": "+ 1",
+                      "effect": "HIT Bonus: 1%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Range Bonus + 2, HIT Bonus: 2%",
+                      "range-bonus": "+ 2",
+                      "effect": "HIT Bonus: 2%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Range Bonus + 3, HIT Bonus: 3%",
+                      "range-bonus": "+ 3",
+                      "effect": "HIT Bonus: 3%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Range Bonus + 4, HIT Bonus: 4%",
+                      "range-bonus": "+ 4",
+                      "effect": "HIT Bonus: 4%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Range Bonus + 5, HIT Bonus: 5%",
+                      "range-bonus": "+ 5",
+                      "effect": "HIT Bonus: 5%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Range Bonus + 6, HIT Bonus: 6%",
+                      "range-bonus": "+ 6",
+                      "effect": "HIT Bonus: 6%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Range Bonus + 7, HIT Bonus: 7%",
+                      "range-bonus": "+ 7",
+                      "effect": "HIT Bonus: 7%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Range Bonus + 8, HIT Bonus: 8%",
+                      "range-bonus": "+ 8",
+                      "effect": "HIT Bonus: 8%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Range Bonus + 9, HIT Bonus: 9%",
+                      "range-bonus": "+ 9",
+                      "effect": "HIT Bonus: 9%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Range Bonus +10, HIT Bonus:10%",
+                      "range-bonus": "+10",
+                      "effect": "HIT Bonus:10%",
                       "sp-cost": "0"
                     }
                   }
@@ -22087,10 +24116,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -22106,6 +24134,8 @@ export const hyperNoviceData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Vending",
           "description": "Requires the user to have a pushcart equipped. Consumes SP 30 and opens a custom shop from which items can be sold to other players.\nOnly items stored in the Pushcart can be sold, The number of items available for sale increases with each level.",
           "levelDetails": [
             {
@@ -22196,8 +24226,16 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "30",
+          "translations": {
+            "pt-BR": {
+              "name": " Vending ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vending"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/41.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/41",
           "tree": {
@@ -22223,6 +24261,10 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "30"
               },
               {
                 "label": "Target",
@@ -22318,10 +24360,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -22337,6 +24378,8 @@ export const hyperNoviceData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Creates a Warp Portal that will transport those that enter to the portal's destination. Up to 8 players can be transported regardless of the skill level. Each cast consumes a Blue Gemstone.\nThis skill is disabled within land protector effect.",
           "levelDetails": [
             {
@@ -22379,8 +24422,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Warp portal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Warp_portal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/27.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/27",
           "tree": {
@@ -22455,10 +24505,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -22474,6 +24523,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Places a temporary buff on a single target that increases AGI and Movement Speed. Each cast consumes additional HP10.\nWhen use this skill to the target leaving in [Abnormal Status : Decrease agility], the target releases the state and increases agility.",
           "levelDetails": [
             {
@@ -22568,8 +24619,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Increase agility ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Increase_agility"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/29.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/29",
           "tree": {
@@ -22624,66 +24682,108 @@ export const hyperNoviceData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "agi",
+                    "label": "Agi"
+                  },
+                  {
+                    "id": "atk-speed",
+                    "label": "Atk Speed:"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
+                      "duration": "60 seconds",
+                      "agi": "+3",
+                      "atk-speed": "+1%",
                       "sp-cost": "18"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
+                      "duration": "80 seconds",
+                      "agi": "+4",
+                      "atk-speed": "+2%",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
+                      "duration": "100 seconds",
+                      "agi": "+5",
+                      "atk-speed": "+3%",
                       "sp-cost": "24"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
+                      "duration": "120 seconds",
+                      "agi": "+6",
+                      "atk-speed": "+4%",
                       "sp-cost": "27"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
+                      "duration": "140 seconds",
+                      "agi": "+7",
+                      "atk-speed": "+5%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
+                      "duration": "160 seconds",
+                      "agi": "+8",
+                      "atk-speed": "+6%",
                       "sp-cost": "33"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
+                      "duration": "180 seconds",
+                      "agi": "+9",
+                      "atk-speed": "+7%",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
+                      "duration": "200 seconds",
+                      "agi": "+10",
+                      "atk-speed": "+8%",
                       "sp-cost": "39"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
+                      "duration": "220 seconds",
+                      "agi": "+11",
+                      "atk-speed": "+9%",
                       "sp-cost": "42"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
+                      "duration": "240 seconds",
+                      "agi": "+12",
+                      "atk-speed": "+10%",
                       "sp-cost": "45"
                     }
                   }
@@ -22692,10 +24792,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -22711,6 +24810,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Blessing",
           "description": "Places a temporary buff on a single target that increases STR, DEX, INT and Accuracy rate. This skill also purges the target of Curse and Stone statuses.\nVersus Undead property and Demon race monsters, halves their STR, DEX and INT instead.",
           "levelDetails": [
             {
@@ -22801,8 +24902,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "24 + (Skill Level × 4)",
+          "duration": "40 + (Skill Level × 20) seconds",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Blessing ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Blessing"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/34.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/34",
           "tree": {
@@ -22830,6 +24941,14 @@ export const hyperNoviceData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "24 + (Skill Level × 4)"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
               }
@@ -22843,78 +24962,106 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "hit",
+                    "label": "Hit"
+                  },
+                  {
+                    "id": "str-int-dex",
+                    "label": "Str,int,dex"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "STR,INT,DE x +1,HIT+2, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "str-int-dex": "+1",
+                      "hit": "+2",
                       "sp-cost": "28"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "STR,INT,DE x +2,HIT+4, Duration: 80sec",
+                      "duration": "80 seconds",
+                      "str-int-dex": "+2",
+                      "hit": "+4",
                       "sp-cost": "32"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "STR,INT,DE x +3,HIT+6, Duration:100sec",
+                      "duration": "100 seconds",
+                      "str-int-dex": "+3",
+                      "hit": "+6",
                       "sp-cost": "36"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "STR,INT,DE x +4,HIT+8, Duration:120sec",
+                      "duration": "120 seconds",
+                      "str-int-dex": "+4",
+                      "hit": "+8",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "STR,INT,DE x +5,HIT+10, Duration:140sec",
+                      "duration": "140 seconds",
+                      "str-int-dex": "+5",
+                      "hit": "+10",
                       "sp-cost": "44"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "STR,INT,DE x +6,HIT+12, Duration:160sec",
+                      "duration": "160 seconds",
+                      "str-int-dex": "+6",
+                      "hit": "+12",
                       "sp-cost": "48"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "STR,INT,DE x +7,HIT+14, Duration:180sec",
+                      "duration": "180 seconds",
+                      "str-int-dex": "+7",
+                      "hit": "+14",
                       "sp-cost": "52"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "STR,INT,DE x +8,HIT+16, Duration:200sec",
+                      "duration": "200 seconds",
+                      "str-int-dex": "+8",
+                      "hit": "+16",
                       "sp-cost": "56"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "STR,INT,DE x +9,HIT+18, Duration:220sec",
+                      "duration": "220 seconds",
+                      "str-int-dex": "+9",
+                      "hit": "+18",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "STR,INT,DE x +10,HIT+20, Duration:240sec",
+                      "duration": "240 seconds",
+                      "str-int-dex": "+10",
+                      "hit": "+20",
                       "sp-cost": "64"
                     }
                   }
@@ -22923,10 +25070,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -22942,6 +25088,8 @@ export const hyperNoviceData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Boosts AGI and DEX temporarily.\nAdditionally, when using Improve Concentration,\nThis skill will also reveal any hidden enemies in a 3x3 area around the user.",
           "levelDetails": [
             {
@@ -23032,8 +25180,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Improve Concentration(Attention concentrate) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Improve_Concentration(Attention_concentrate)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/45.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/45",
           "tree": {
@@ -23074,78 +25229,92 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "dex-agi",
+                    "label": "Dex, Agi"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "DE x , AGI + 3%, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "dex-agi": "+ 3%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "DE x , AGI + 4%, Duration: 80sec",
+                      "duration": "80 seconds",
+                      "dex-agi": "+ 4%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "DE x , AGI + 5%, Duration: 100sec",
+                      "duration": "100 seconds",
+                      "dex-agi": "+ 5%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "DE x , AGI + 6%, Duration: 120sec",
+                      "duration": "120 seconds",
+                      "dex-agi": "+ 6%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "DE x , AGI + 7%, Duration: 140sec",
+                      "duration": "140 seconds",
+                      "dex-agi": "+ 7%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "DE x , AGI + 8%, Duration: 160sec",
+                      "duration": "160 seconds",
+                      "dex-agi": "+ 8%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "DE x , AGI + 9%, Duration: 180sec",
+                      "duration": "180 seconds",
+                      "dex-agi": "+ 9%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "DE x , AGI +10%, Duration: 200sec",
+                      "duration": "200 seconds",
+                      "dex-agi": "+10%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "DE x , AGI +11%, Duration: 220sec",
+                      "duration": "220 seconds",
+                      "dex-agi": "+11%",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "DE x , AGI +12%, Duration: 240sec",
+                      "duration": "240 seconds",
+                      "dex-agi": "+12%",
                       "sp-cost": "70"
                     }
                   }
@@ -23154,10 +25323,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -23173,6 +25341,8 @@ export const hyperNoviceData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mammonite",
           "description": "Consumes SP5 and strike a single target with a strong blow, inflicting high physical damage.\nEach use consumes some Zeny.",
           "levelDetails": [
             {
@@ -23263,8 +25433,18 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "5",
+          "castDelay": "ASPD",
+          "castRange": "Melee",
+          "translations": {
+            "pt-BR": {
+              "name": " Mammonite ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mammonite"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/42.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/42",
           "tree": {
@@ -23283,6 +25463,18 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "5"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "Melee"
               },
               {
                 "label": "Target",
@@ -23364,10 +25556,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -23380,9 +25571,11 @@ export const hyperNoviceData = {
           "prerequisiteText": "Warp portal 4",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Pneuma",
           "description": "Each cast consumes SP10, Creates a green cloud on a targeted location that blocks Ranged physical damage for ten seconds.",
           "levelDetails": [],
           "levelExtras": [
@@ -23396,8 +25589,20 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "castDelay": "ASPD",
+          "duration": "10 seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Pneuma ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pneuma"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/25.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/25",
           "tree": {
@@ -23423,6 +25628,30 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
+              },
+              {
+                "label": "Duration",
+                "value": "10 seconds"
               }
             ],
             "levelTables": [
@@ -23446,10 +25675,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -23465,6 +25693,8 @@ export const hyperNoviceData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Attempts to place a debuff[Abnormal Status : Decrease agility] on a single target.\nTarget's movement speed and AGI is decreased during the Duration.",
           "levelDetails": [
             {
@@ -23559,8 +25789,15 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Decrease agility ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Decrease_agility"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/30.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/30",
           "tree": {
@@ -23617,78 +25854,106 @@ export const hyperNoviceData = {
                     "label": "SP Cost"
                   },
                   {
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "agi",
+                    "label": "Agi"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "AGI- 3, success rate: 53%, Duration: 20sec",
+                      "duration": "20 seconds",
+                      "agi": "- 3",
+                      "effect": "success rate: 53%",
                       "sp-cost": "15"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "AGI- 4, success rate: 56%, Duration: 25sec",
+                      "duration": "25 seconds",
+                      "agi": "- 4",
+                      "effect": "success rate: 56%",
                       "sp-cost": "17"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "AGI- 5, success rate: 59%, Duration: 30sec",
+                      "duration": "30 seconds",
+                      "agi": "- 5",
+                      "effect": "success rate: 59%",
                       "sp-cost": "19"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "AGI- 6, success rate: 62%, Duration: 35sec",
+                      "duration": "35 seconds",
+                      "agi": "- 6",
+                      "effect": "success rate: 62%",
                       "sp-cost": "21"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "AGI- 7, success rate: 65%, Duration: 40sec",
+                      "duration": "40 seconds",
+                      "agi": "- 7",
+                      "effect": "success rate: 65%",
                       "sp-cost": "23"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "AGI- 8, success rate: 68%, Duration: 45sec",
+                      "duration": "45 seconds",
+                      "agi": "- 8",
+                      "effect": "success rate: 68%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "AGI- 9, success rate: 71%, Duration: 50sec",
+                      "duration": "50 seconds",
+                      "agi": "- 9",
+                      "effect": "success rate: 71%",
                       "sp-cost": "27"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "AGI-10, success rate: 74%, Duration: 55sec",
+                      "duration": "55 seconds",
+                      "agi": "-10",
+                      "effect": "success rate: 74%",
                       "sp-cost": "29"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "AGI-11, success rate: 77%, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "agi": "-11",
+                      "effect": "success rate: 77%",
                       "sp-cost": "31"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "AGI-12, success rate: 80%, Duration: 65sec",
+                      "duration": "65 seconds",
+                      "agi": "-12",
+                      "effect": "success rate: 80%",
                       "sp-cost": "33"
                     }
                   }
@@ -23697,10 +25962,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -23716,6 +25980,8 @@ export const hyperNoviceData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Item_Appraisal",
           "description": "Identifies unknown items using SP10.",
           "levelDetails": [],
           "levelExtras": [
@@ -23729,8 +25995,16 @@ export const hyperNoviceData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Item Appraisal ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Item_Appraisal"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/40.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/40",
           "tree": {
@@ -23749,6 +26023,10 @@ export const hyperNoviceData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
               },
               {
                 "label": "Target",
@@ -23776,10 +26054,9 @@ export const hyperNoviceData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -23799,6 +26076,8 @@ export const hyperNoviceData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Self_Study_Tactics",
       "description": "Increases your knowledge of body-using techniques, increasing your P.ATK and amplifying the DMG of various physical skills.\nIncreases the skill DMG of Double Bowling Bash/Mega Sonic Blow/Spiral Pierce Max by (skill level + 5)%.\nShield Chain Rush DMG is amplified by (Skill Level x 2 + 10)%.",
       "levelDetails": [
         {
@@ -23889,8 +26168,15 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Self Study Tactics ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Self_Study_Tactics"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5449.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5449",
       "tree": {
@@ -24000,7 +26286,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Self Study Tactics",
@@ -24031,7 +26316,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -24047,6 +26332,8 @@ export const hyperNoviceData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Self_Study_Sorcery",
       "description": "Increases your knowledge of techniques using magic power, increasing your S.MATK and amplifying the DMG of various magic skills.\nIncreases the skill DMG of Meteor Storm Buster (fall damage)/Jupiter Thunder Storm/Jack Frost Nova (explosion damage)/Hell Drive/Ground Gravity (gravity field damage) by (skill level)%.\nNapalm Vulcan Strike DMG is increased by (Skill Level X 2)%.",
       "levelDetails": [
         {
@@ -24137,8 +26424,15 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Self Study Sorcery ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Self_Study_Sorcery"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5450.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5450",
       "tree": {
@@ -24248,10 +26542,9 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -24267,6 +26560,8 @@ export const hyperNoviceData = {
       "target": "Single Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Double_Bowling_Bash",
       "description": "Inflicts melee physical damage to the target and targets within a 9x9 cell range around it and knocks them back.\nThe number of attacks increases depending on the number of enemies in the range, and attacks up to 5 times.\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW. After casting, the weapon cannot be replaced for 1 second.",
       "levelDetails": [
         {
@@ -24357,8 +26652,20 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "52 + (2 × Skill Level)",
+      "castDelay": "0.7 seconds",
+      "cooldown": "1 seconds",
+      "castRange": "Melee",
+      "areaOfEffect": "7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Double Bowling Bash ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Double_Bowling_Bash"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5451.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5451",
       "tree": {
@@ -24386,8 +26693,28 @@ export const hyperNoviceData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "52 + (2 × Skill Level)"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.7 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7"
           },
           {
             "label": "AP Generated",
@@ -24469,7 +26796,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Double Bowling Bash",
@@ -24570,7 +26896,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -24586,6 +26912,8 @@ export const hyperNoviceData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Shield_Chain_Rush",
       "description": "Available when wearing a shield.\nThrows a shield at the target, inflicting long range physical damage to the target and enemies within 9x9 cells around it.\nFor 5 seconds, hit enemies' movement speed is reduced by 20% and damage taken increases by 10% (does not apply to boss-type monsters).\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.\nAfter casting, the weapon cannot be replaced for 1.2 seconds.",
       "levelDetails": [
         {
@@ -24680,8 +27008,17 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "35 + (3 x Skill Level)",
+      "areaOfEffect": "9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Shield Chain Rush ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Shield_Chain_Rush"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5453.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5453",
       "tree": {
@@ -24709,6 +27046,10 @@ export const hyperNoviceData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "35 + (3 x Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.3 seconds"
           },
@@ -24727,6 +27068,10 @@ export const hyperNoviceData = {
           {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "9 x 9"
           },
           {
             "label": "AP Generated",
@@ -24808,7 +27153,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Shield Chain Rush",
@@ -24902,7 +27246,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -24918,6 +27262,8 @@ export const hyperNoviceData = {
       "target": "Ground 1 cell",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Meteor_Storm_Buster",
       "description": "Drops meteors at random locations within a 9x9 cell range around 1 cell on the ground, dealing fire attribute magic DMG to enemies within a 5x5 cell range and inflicting [Abnormal Status: Stun] with a certain probability.\nAfterwards, it explodes and deals secondary fire attribute magic DMG. The probability of being stunned and the duration are affected by the target's status resistance. The DMG increases further based on the Self Study Tactics-Magic skill level, the caster's base level, and SPL.\nThe number of meteors is from a minimum of 3 to a maximum of 6, depending on skill level.",
       "levelDetails": [
         {
@@ -25011,8 +27357,18 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "52 + (Skill Level x 3)",
+      "cooldown": "3 seconds",
+      "areaOfEffect": "7 x 7~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Meteor Storm Buster ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Meteor_Storm_Buster"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5455.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5455",
       "tree": {
@@ -25040,6 +27396,10 @@ export const hyperNoviceData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "52 + (Skill Level x 3)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
           },
@@ -25052,8 +27412,16 @@ export const hyperNoviceData = {
             "value": "0.3 seconds"
           },
           {
+            "label": "Cooldown",
+            "value": "3 seconds"
+          },
+          {
             "label": "Target",
             "value": "Ground 1 cell"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7~9 x 9"
           },
           {
             "label": "AP Generated",
@@ -25067,80 +27435,66 @@ export const hyperNoviceData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "74"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "78"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "82"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "86"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "90"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "94"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "E x plosion range: 7 x 7",
                   "sp-cost": "98"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "E x plosion range: 9 x 9",
                   "sp-cost": "102"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "E x plosion range: 9 x 9",
                   "sp-cost": "106"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "E x plosion range: 9 x 9",
                   "sp-cost": "110"
                 }
               }
@@ -25149,7 +27503,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Meteor Storm Buster",
@@ -25180,7 +27533,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -25196,6 +27549,8 @@ export const hyperNoviceData = {
       "target": "1 Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Jupitel_Thunderstorm",
       "description": "Fires a highly concentrated lightning ball at a target, dealing wind magic DMG to the target and enemies within the surrounding area.\nSelf Study Tactics - DMG increases additionally based on the Magical Arts skill level, the caster's base level, and SPL.",
       "levelDetails": [
         {
@@ -25289,8 +27644,18 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "48 + (Skill Level x 2)",
+      "variableCastTime": "2 seconds",
+      "areaOfEffect": "5 x 5~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Jupitel Thunderstorm ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Jupitel_Thunderstorm"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5456.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5456",
       "tree": {
@@ -25318,8 +27683,16 @@ export const hyperNoviceData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "48 + (Skill Level x 2)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "2 seconds"
           },
           {
             "label": "Cast Delay",
@@ -25427,7 +27800,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Jupitel Thunderstorm",
@@ -25450,7 +27822,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -25466,6 +27838,8 @@ export const hyperNoviceData = {
       "target": "Ground 1 cell",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Jack_Frost_Nova",
       "description": "Creates an ice sphere on the ground, dealing water magic DMG to enemies within the surrounding area. The ice sphere created causes a strong cold explosion, dealing additional water magic DMG to enemies within the surrounding area every 0.3 seconds, and granting the [Cold] effect for 5 seconds.\n[Bitter Cold] Effect: Reduces resistance to water-attribute attacks by 15%. (Does not apply to boss monsters)\nSelf Study Tactics - DMG increases additionally based on the Magical Arts skill level, the caster's base level, and SPL.",
       "levelDetails": [
         {
@@ -25559,8 +27933,18 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "55 + (Skill Level x 3)",
+      "variableCastTime": "2.5 seconds",
+      "areaOfEffect": "7 x 7~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Jack Frost Nova ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Jack_Frost_Nova"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5457.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5457",
       "tree": {
@@ -25588,8 +27972,16 @@ export const hyperNoviceData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "55 + (Skill Level x 3)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "2.5 seconds"
           },
           {
             "label": "Cast Delay",
@@ -25602,6 +27994,10 @@ export const hyperNoviceData = {
           {
             "label": "Target",
             "value": "Ground 1 cell"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7~9 x 9"
           },
           {
             "label": "AP Generated",
@@ -25619,80 +28015,66 @@ export const hyperNoviceData = {
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
-              },
-              {
-                "id": "effect",
-                "label": "Effect"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "68"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "71"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "74"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "77"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "effect": "Range: 7 x 7",
                   "sp-cost": "80"
                 }
               },
               {
                 "level": 6,
                 "values": {
-                  "effect": "Range: 9 x 9",
                   "sp-cost": "83"
                 }
               },
               {
                 "level": 7,
                 "values": {
-                  "effect": "Range: 9 x 9",
                   "sp-cost": "86"
                 }
               },
               {
                 "level": 8,
                 "values": {
-                  "effect": "Range: 9 x 9",
                   "sp-cost": "89"
                 }
               },
               {
                 "level": 9,
                 "values": {
-                  "effect": "Range: 9 x 9",
                   "sp-cost": "92"
                 }
               },
               {
                 "level": 10,
                 "values": {
-                  "effect": "Range: 9 x 9",
                   "sp-cost": "95"
                 }
               }
@@ -25701,7 +28083,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Jack Frost Nova",
@@ -25732,7 +28113,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -25748,6 +28129,8 @@ export const hyperNoviceData = {
       "target": "Instant Cast",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Hell's_Drive",
       "description": "Twists the ground around you and inflicts earth magic damage to enemies within the range.\nDamage increases additionally based on the Self Study Sorcery skill level, the caster's base level, and SPL stat.",
       "levelDetails": [
         {
@@ -25841,8 +28224,18 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "40 + (Skill Level x 3)",
+      "cooldown": "0.7 seconds",
+      "areaOfEffect": "3 x 3~9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Hell's Drive ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Hell's_Drive"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5458.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5458",
       "tree": {
@@ -25870,6 +28263,10 @@ export const hyperNoviceData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "40 + (Skill Level x 3)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -25880,6 +28277,10 @@ export const hyperNoviceData = {
           {
             "label": "Cast Delay",
             "value": "1 second"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.7 seconds"
           },
           {
             "label": "Target",
@@ -25979,7 +28380,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Hell's Drive",
@@ -26056,7 +28456,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -26072,6 +28472,8 @@ export const hyperNoviceData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Mega_Sonic_Blow",
       "description": "Inflicts powerful melee physical damage to one target and has a chance to inflicts Stun.\nThe probability and duration of being stun are affected by the target's resistance to status ailments.\nWhen cast on a target whose current HP is less than 50%, double damage is applied.\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.\nCritical damage is applied based on the user's critical rate, The effectiveness of critical modifier is applied by half.",
       "levelDetails": [
         {
@@ -26162,8 +28564,19 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "25 + (2 × Skill Level)",
+      "castDelay": "0.5 seconds",
+      "cooldown": "0.35 seconds",
+      "castRange": "Melee",
+      "translations": {
+        "pt-BR": {
+          "name": " Mega Sonic Blow ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Mega_Sonic_Blow"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5452.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5452",
       "tree": {
@@ -26189,6 +28602,22 @@ export const hyperNoviceData = {
           {
             "label": "Levels",
             "value": "10"
+          },
+          {
+            "label": "SP Cost",
+            "value": "25 + (2 × Skill Level)"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "0.5 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "0.35 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "Melee"
           },
           {
             "label": "Target",
@@ -26274,7 +28703,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Mega Sonic Blow",
@@ -26340,7 +28768,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -26356,6 +28784,8 @@ export const hyperNoviceData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Spiral_Pierce_Max",
       "description": "Inflicts long-distance physical damage to one target with a powerful stab with added rotational force.\nEnemies hit are unable to move for 2 seconds. (does not apply to boss-type monsters)\nThere is a damage factor depending on the size of the target.\n(Small: 1.5 times/Medium: 1.3 times/Large: 1.2 times)\nDeals additional damage depends on level of Self Study Tactics user learned, user's base level and POW.",
       "levelDetails": [
         {
@@ -26450,8 +28880,17 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "17 + (3 × Skill Level)",
+      "castRange": "9 cells",
+      "translations": {
+        "pt-BR": {
+          "name": " Spiral Pierce Max ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Spiral_Pierce_Max"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5454.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5454",
       "tree": {
@@ -26479,6 +28918,10 @@ export const hyperNoviceData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "17 + (3 × Skill Level)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0.3 seconds"
           },
@@ -26493,6 +28936,10 @@ export const hyperNoviceData = {
           {
             "label": "Cooldown",
             "value": "0.35 seconds"
+          },
+          {
+            "label": "Cast Range",
+            "value": "9 cells"
           },
           {
             "label": "Target",
@@ -26578,7 +29025,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Spiral Pierce Max",
@@ -26663,7 +29109,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -26679,6 +29125,8 @@ export const hyperNoviceData = {
       "target": "Instant Cast",
       "recoversAp": "5",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Ground_Gravitation",
       "description": "Unleashes a powerful gravitational field around the caster, dealing Neutral-element Magic damage to enemies within range through a strong shock.\nThe gravitational field lasts for 5 seconds, dealing additional Neutral-element Magic damage to enemies within the range every 0.5 seconds, and applying the [Gravitational Field] effect while they remain inside.\n[Gravitational Field] Effect: Reduces movement speed and increases received Physical and Magic damage (does not apply to boss-type monsters). Damage increases additionally based on the Self Study Sorcery skill level, the caster's base level, and SPL stat.",
       "levelDetails": [
         {
@@ -26771,8 +29219,19 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "68 + (Skill Level x 2)",
+      "variableCastTime": "5 seconds",
+      "castDelay": "1 seconds",
+      "areaOfEffect": "5 x 5 ~ 9 x 9",
+      "translations": {
+        "pt-BR": {
+          "name": " Ground Gravitation ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Ground_Gravitation"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5459.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5459",
       "tree": {
@@ -26800,8 +29259,20 @@ export const hyperNoviceData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "68 + (Skill Level x 2)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1.5 seconds"
+          },
+          {
+            "label": "Variable Cast Time",
+            "value": "5 seconds"
+          },
+          {
+            "label": "Cast Delay",
+            "value": "1 seconds"
           },
           {
             "label": "Cooldown",
@@ -26810,6 +29281,10 @@ export const hyperNoviceData = {
           {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "5 x 5 ~ 9 x 9"
           },
           {
             "label": "AP Generated",
@@ -26909,7 +29384,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Ground Gravitation",
@@ -26959,7 +29433,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -26975,6 +29449,8 @@ export const hyperNoviceData = {
       "target": "1 Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Napalm_Vulcan_Strike",
       "description": "Target 1 body and enemies within a 7x7 cell range around it are attacked with a powerful wave of psychokinesis, dealing psychokinesis magic DMG and inflicting [Curse] with a certain probability.\nThe probability of being cursed and its duration are affected by the target's status resistance.\nSelf Study Tactics - DMG increases additionally based on the Magical Arts skill level, the caster's base level, and SPL.",
       "levelDetails": [
         {
@@ -27069,8 +29545,17 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "38 + (Skill Level x 2)",
+      "areaOfEffect": "7 x 7",
+      "translations": {
+        "pt-BR": {
+          "name": " Napalm Vulcan Strike ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Napalm_Vulcan_Strike"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5460.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5460",
       "tree": {
@@ -27098,6 +29583,10 @@ export const hyperNoviceData = {
             "value": "10"
           },
           {
+            "label": "SP Cost",
+            "value": "38 + (Skill Level x 2)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -27116,6 +29605,10 @@ export const hyperNoviceData = {
           {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "7 x 7"
           },
           {
             "label": "AP Generated",
@@ -27197,7 +29690,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Napalm Vulcan Strike",
@@ -27244,7 +29736,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -27260,6 +29752,8 @@ export const hyperNoviceData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Breaking_Limit",
       "description": "Break through one's physical limitations and demonstrate powerful strength.\nDamage of Double Bowling Bash/Mega Sonic Blow/Shield Chain Rush/Spiral Pierce Max is amplified for 300 seconds.",
       "levelDetails": [],
       "levelExtras": [
@@ -27273,8 +29767,19 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "150",
+      "fixedCastTime": "1 seconds",
+      "cooldown": "60 seconds",
+      "duration": "300 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Breaking Limit ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Breaking_Limit"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5461.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5461",
       "tree": {
@@ -27320,8 +29825,24 @@ export const hyperNoviceData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "150"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "60 seconds"
+          },
+          {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "300 seconds"
           },
           {
             "label": "AP Consumed",
@@ -27349,7 +29870,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Breaking Limit",
@@ -27411,7 +29931,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -27427,6 +29947,8 @@ export const hyperNoviceData = {
       "target": "self",
       "recoversAp": "",
       "consumesAp": "150",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Rule_Break",
       "description": "Break the magic rules with yourself to unleash even more powerful magic.\nIncreases the DMG of Meteor Storm Buster/Jupiter Thunder Storm/Jack Frost Nova/Hell Drive/Ground Gravity/Napalm Vulcan Strike for 300 seconds.",
       "levelDetails": [],
       "levelExtras": [
@@ -27440,8 +29962,19 @@ export const hyperNoviceData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "150",
+      "fixedCastTime": "1 seconds",
+      "cooldown": "60 seconds",
+      "duration": "300 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Rule Break ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Rule_Break"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5462.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5462",
       "tree": {
@@ -27499,8 +30032,24 @@ export const hyperNoviceData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "150"
+          },
+          {
+            "label": "Fixed Cast Time",
+            "value": "1 seconds"
+          },
+          {
+            "label": "Cooldown",
+            "value": "60 seconds"
+          },
+          {
             "label": "Target",
             "value": "self"
+          },
+          {
+            "label": "Duration",
+            "value": "300 seconds"
           },
           {
             "label": "AP Consumed",
@@ -27528,7 +30077,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Rule Break",
@@ -27551,7 +30099,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -27567,6 +30115,8 @@ export const hyperNoviceData = {
       "target": "Self",
       "recoversAp": "",
       "consumesAp": "50",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Increases the user's MaxHP for 300 seconds.\nWhen using, fully recovers the user's HP and increases P.Atk and S.Matk for the skill duration.",
       "levelDetails": [
         {
@@ -27591,8 +30141,15 @@ export const hyperNoviceData = {
         }
       ],
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Overcoming Crisis ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Overcoming_Crisis"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5505.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5505",
       "tree": {
@@ -27639,55 +30196,57 @@ export const hyperNoviceData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "maxhp-15000-p-atk-s-matk",
-                "label": "Maxhp +15000, P.Atk & S.Matk"
+                "id": "maxhp",
+                "label": "MaxHP"
               },
               {
-                "id": "maxhp-30000-p-atk-s-matk",
-                "label": "Maxhp +30000, P.Atk & S.Matk"
+                "id": "p-atk",
+                "label": "P.Atk"
               },
               {
-                "id": "maxhp-45000-p-atk-s-matk",
-                "label": "Maxhp +45000, P.Atk & S.Matk"
-              },
-              {
-                "id": "maxhp-60000-p-atk-s-matk",
-                "label": "Maxhp +60000, P.Atk & S.Matk"
-              },
-              {
-                "id": "maxhp-75000-p-atk-s-matk",
-                "label": "Maxhp +75000, P.Atk & S.Matk"
+                "id": "s-matk",
+                "label": "S.Matk"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "maxhp-15000-p-atk-s-matk": "+3"
+                  "maxhp": "+15000",
+                  "p-atk": "+3",
+                  "s-matk": "+3"
                 }
               },
               {
                 "level": 2,
                 "values": {
-                  "maxhp-30000-p-atk-s-matk": "+6"
+                  "maxhp": "+30000",
+                  "p-atk": "+6",
+                  "s-matk": "+6"
                 }
               },
               {
                 "level": 3,
                 "values": {
-                  "maxhp-45000-p-atk-s-matk": "+9"
+                  "maxhp": "+45000",
+                  "p-atk": "+9",
+                  "s-matk": "+9"
                 }
               },
               {
                 "level": 4,
                 "values": {
-                  "maxhp-60000-p-atk-s-matk": "+12"
+                  "maxhp": "+60000",
+                  "p-atk": "+12",
+                  "s-matk": "+12"
                 }
               },
               {
                 "level": 5,
                 "values": {
-                  "maxhp-75000-p-atk-s-matk": "+15"
+                  "maxhp": "+75000",
+                  "p-atk": "+15",
+                  "s-matk": "+15"
                 }
               }
             ],
@@ -27695,7 +30254,6 @@ export const hyperNoviceData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Overcoming Crisis",
@@ -27711,7 +30269,7 @@ export const hyperNoviceData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

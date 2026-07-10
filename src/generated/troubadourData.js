@@ -1,5 +1,5 @@
 export const troubadourData = {
-  "generatedAt": "2026-07-10T00:56:08.238Z",
+  "generatedAt": "2026-07-10T15:02:18.748Z",
   "classId": 4263,
   "classSlug": "troubadour",
   "className": "Troubadour",
@@ -71,7 +71,8 @@ export const troubadourData = {
     "rebalanceManifest": "rebalances/manifest.json",
     "divinePrideApiDocs": "https://www.divine-pride.net/api",
     "divinePrideSkillTree": "https://www.divine-pride.net/tools/skilltree/4263",
-    "browiki": "https://browiki.org"
+    "browiki": "https://browiki.org",
+    "irowiki": "https://irowiki.org/wiki/"
   },
   "rebalanceVersions": [
     {
@@ -280,6 +281,8 @@ export const troubadourData = {
           "target": "Single Target",
           "recoversAp": "1(1~3Lv), 2(4~5Lv)",
           "consumesAp": "",
+          "ammunition": "1 Arrows",
+          "irowikiUrl": "https://irowiki.org/wiki/Rhythm_Shooting",
           "description": "Musical instrument, bow and whip only skill.\nFires an arrow to single target, deals 3 hits of long ranged physical damage.\nDeals additional damage depends on user's base level.\nWhen learning Stage Manner, CON will affect additional damage too.\nDeals more damage against target marked with sound brand.\n(Doesn't remove sound brand from target).\nConsumes 1 equipped arrow.",
           "levelDetails": [
             {
@@ -334,8 +337,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60 + (Skill Level x 6)",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Rhythm Shooting ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rhythm_Shooting"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5355.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5355",
           "tree": {
@@ -356,6 +368,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "60 + (Skill Level x 6)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -372,8 +388,16 @@ export const troubadourData = {
                 "value": "0.35 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Arrows"
               },
               {
                 "label": "AP Generated",
@@ -425,7 +449,6 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Rhythm shooting",
@@ -546,7 +569,7 @@ export const troubadourData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -562,6 +585,8 @@ export const troubadourData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Stage_Etiquette",
           "description": "Increase AP gain through your Troubadour/Trouvere Attack skills and improve certain Performance skills.\nInstruments, Bows, and Whips increase P. ATK and S. MATK.",
           "levelDetails": [],
           "levelExtras": [
@@ -591,8 +616,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Stage Etiquette ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Stage_Etiquette"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5349.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5349",
           "tree": {
@@ -658,10 +690,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -677,6 +708,8 @@ export const troubadourData = {
           "target": "Single Target",
           "recoversAp": "1(1~3Lv), 2(4~5Lv)",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Instrument/Whip exclusive skills.\nLabels a single target with sound.\nAs the skill level increases, the duration of the brand increases.\nThe brand deals damage once before exploding, depending on the attribute of the arrow equipped by the caster.\nEnemies with a brand attached take more damage from vibration reverb, metallic sound, rose blossom, and rhythm shooting.\nDamage increases further based on the caster's base level and SPL.",
           "levelDetails": [
             {
@@ -731,8 +764,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Sound Blend(Sound Blend) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sound_Blend(Sound_Blend)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5357.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5357",
           "tree": {
@@ -838,7 +878,6 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Sound Blend",
@@ -896,7 +935,7 @@ export const troubadourData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -910,8 +949,10 @@ export const troubadourData = {
           "group": "Active",
           "type": "Support",
           "target": "Self",
-          "recoversAp": "",
+          "recoversAp": "1",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Retrospection",
           "description": "Cast again the last Song skill you've used.\nThe recast skill consumes 30% less SP and gains 1.5 times the AP.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -929,8 +970,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Retrospection ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Retrospection"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5350.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5350",
           "tree": {
@@ -958,6 +1008,10 @@ export const troubadourData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -976,6 +1030,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "1"
               }
             ],
             "levelTables": [
@@ -999,10 +1061,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1016,8 +1077,10 @@ export const troubadourData = {
           "group": "Active",
           "type": "Debuff",
           "target": "Enemies within range",
-          "recoversAp": "",
+          "recoversAp": "20",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Geffenia_Nocturne",
           "description": "An Instrument/Whip skill.\nCreate a chance of decreasing Magic Resistance for 30 seconds for Normal monsters and enemy players within range.\nThis skill's effect improves if a partner in your party is within your screen.\nConsumes 1 Throat Lozenge.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -1051,8 +1114,19 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 + (Skill Level x 40)",
+          "duration": "30 seconds",
+          "castRange": "15 x 15 ~ 23 x 23 cells",
+          "areaOfEffect": "15 x 15 ~ 23 x 23",
+          "translations": {
+            "pt-BR": {
+              "name": " Geffenia Nocturne ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Geffenia_Nocturne"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5358.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5358",
           "tree": {
@@ -1080,6 +1154,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "80 + (Skill Level x 40)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -1096,8 +1174,24 @@ export const troubadourData = {
                 "value": "10 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "15 x 15 ~ 23 x 23 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Enemies within range"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15 ~ 23 x 23"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "20"
               }
             ],
             "levelTables": [
@@ -1145,10 +1239,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1162,8 +1255,10 @@ export const troubadourData = {
           "group": "Active",
           "type": "Debuff",
           "target": "Enemies within range",
-          "recoversAp": "",
+          "recoversAp": "20",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Miner_Rhapsody",
           "description": "An Instrument/Whip skill.\nCreate a chance of decreasing Physical Resistance for 30 seconds for Normal monsters and enemy players within range.\nThis skill's effect improves if a partner in your party is within your screen.\nConsumes 1 Throat Lozenge.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -1197,8 +1292,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 + (Skill Level x 40)",
+          "duration": "30 seconds",
+          "areaOfEffect": "15 x 15 ~ 23 x 23",
+          "translations": {
+            "pt-BR": {
+              "name": " Miner Rhapsody ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Miner_Rhapsody"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5360.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5360",
           "tree": {
@@ -1226,6 +1331,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "80 + (Skill Level x 40)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -1244,6 +1353,18 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Enemies within range"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15 ~ 23 x 23"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "20"
               }
             ],
             "levelTables": [
@@ -1291,10 +1412,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1310,6 +1430,8 @@ export const troubadourData = {
           "target": "Single Target",
           "recoversAp": "2",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Musical instrument and whip only skill.\nFires the sonic magical arrow to single target, dealing magical damage to the target and surrounding enemies around the target.\nDeals higher damage against target marked with sound brand.\n(Doesn't remove sound brand from target).\nDeals additional damage depends on Stage Manner skill level, user's base level and SPL.\nThe skill property depends on the property of equipped arrow.\nConsumes 1 equipped arrow.",
           "levelDetails": [
             {
@@ -1364,8 +1486,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Metalic Fury ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Metalic_Fury"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5356.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5356",
           "tree": {
@@ -1462,7 +1591,6 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Metallic Fury",
@@ -1609,7 +1737,7 @@ export const troubadourData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1625,6 +1753,8 @@ export const troubadourData = {
           "target": "Single Target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Skills exclusive to instruments/bows/whips.\nPlant a flower seed in an arrow, dealing Ranged physical damage to a designated Single Target.\nAfter a certain amount of time, the target will bloom, dealing additional Ranged physical damage to the target and surrounding enemies.\nDamage increases additionally based on the caster's base level.\nLearn Stage Etiquette to further increase damage based on your CON.\nIf the target is affected by the sound branding effect from Sound Blend, it deals greater damage.\n(This effect does not remove the sound mark.)\nConsumes 1 equipped arrow.",
           "levelDetails": [
             {
@@ -1679,8 +1809,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Rose Blossom(Rose Blossom) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rose_Blossom(Rose_Blossom)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5353.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5353",
           "tree": {
@@ -1777,7 +1914,6 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Rose Blossom",
@@ -1878,7 +2014,7 @@ export const troubadourData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -1892,8 +2028,10 @@ export const troubadourData = {
           "group": "Active",
           "type": "Buff",
           "target": "You and party members",
-          "recoversAp": "",
+          "recoversAp": "10",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Jawaii_Serenade",
           "description": "An Instrument/Whip skill.\nIncrease S. MATK and MSPD for 180 seconds for you and surrounding party members.\nThis skill's effect improves if a partner in your party is within your screen.\nConsumes 1 Throat Lozenge.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -1927,8 +2065,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "130 + (Skill Level x 10)",
+          "duration": "180 seconds",
+          "areaOfEffect": "15 x 15 ~ 23 x 23",
+          "translations": {
+            "pt-BR": {
+              "name": " Jawaii Serenade ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Jawaii_Serenade"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5362.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5362",
           "tree": {
@@ -1956,6 +2104,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "130 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -1974,6 +2126,18 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "You and party members"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15 ~ 23 x 23"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "10"
               }
             ],
             "levelTables": [
@@ -2021,10 +2185,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2038,8 +2201,10 @@ export const troubadourData = {
           "group": "Active",
           "type": "Buff",
           "target": "You and party members",
-          "recoversAp": "",
+          "recoversAp": "10",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Musical_Interlude",
           "description": "An Instrument/Whip skill.\nIncrease Physical Resistance for 180 seconds for you and surrounding party members.\nThis skill's effect improves if a partner in your party is within your screen.\nConsumes 1 Throat Lozenge.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2073,8 +2238,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "160 + (Skill Level x 11)",
+          "duration": "180 seconds",
+          "areaOfEffect": "15 x 15 ~ 23 x 23",
+          "translations": {
+            "pt-BR": {
+              "name": " Musical Interlude ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Musical_Interlude"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5361.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5361",
           "tree": {
@@ -2102,6 +2277,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "160 + (Skill Level x 11)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2120,6 +2299,18 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "You and party members"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15 ~ 23 x 23"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "10"
               }
             ],
             "levelTables": [
@@ -2167,10 +2358,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2184,8 +2374,10 @@ export const troubadourData = {
           "group": "Active",
           "type": "Buff",
           "target": "You and party members",
-          "recoversAp": "",
+          "recoversAp": "10",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Prontera_March",
           "description": "An Instrument/Whip skill.\nIncrease P.ATK and MSPD for 180 seconds for you and surrounding party members.\nThis skill's effect improves if a partner in your party is within your screen.\nConsumes 1 Throat Lozenge.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2219,8 +2411,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "130 + (Skill Level x 10)",
+          "duration": "180 seconds",
+          "areaOfEffect": "15 x 15 ~ 23 x 23",
+          "translations": {
+            "pt-BR": {
+              "name": " Prontera March ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Prontera_March"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5364.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5364",
           "tree": {
@@ -2248,6 +2450,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "130 + (Skill Level x 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2266,6 +2472,18 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "You and party members"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15 ~ 23 x 23"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "10"
               }
             ],
             "levelTables": [
@@ -2313,10 +2531,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2332,6 +2549,8 @@ export const troubadourData = {
           "target": "Single target",
           "recoversAp": "3",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Musical instrument and whip exclusive skill.\nRadiates sonic magic to the target, dealing magical damage to the target and surrounding enemies around the target.\nIf Mystic Symphony buff is active, the skill will deal more damage.\nDeals additional damage depends on Stage Manner skill level, user's base level and SPL, the skill property depends on the property of equipped arrow.\nConsumes 1 equipped arrows.",
           "levelDetails": [
             {
@@ -2360,8 +2579,15 @@ export const troubadourData = {
           "castDelay": "1 second",
           "cooldown": "0.4 seconds",
           "levelExtras": [],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Rhythmical Wave ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Rhythmical_Wave"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/6521.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6521",
           "tree": {
@@ -2458,10 +2684,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2476,7 +2701,9 @@ export const troubadourData = {
           "type": "Buff",
           "target": "Self",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "125",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mystic_Symphony",
           "description": "An Instrument, Bow, and Whip skill.\nCast a buff that increases your Sound Blend, Rhythm Shooting, and Rose Blossom damage by 100% for 150 seconds.\nThis skill also increases your Physical/Magic damage on Fish and Demi-Human enemies for its duration.",
           "levelDetails": [
             {
@@ -2499,8 +2726,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "250",
+          "duration": "150 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Mystic Symphony ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mystic_Symphony"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5351.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5351",
           "tree": {
@@ -2534,6 +2770,10 @@ export const troubadourData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "250"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2552,6 +2792,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "150 seconds"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "125"
               }
             ],
             "levelTables": [
@@ -2580,7 +2828,6 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [
             {
               "skillName": "Mystic Symphony",
@@ -2627,7 +2874,7 @@ export const troubadourData = {
             }
           ],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2641,8 +2888,10 @@ export const troubadourData = {
           "group": "Active",
           "type": "Debuff",
           "target": "Enemy players within range",
-          "recoversAp": "",
+          "recoversAp": "20",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Loki_Capriccio",
           "description": "An Instrument/Whip skill.\nCreate a chance of Misfortune and Confusion on enemy players within range.\nThis skill's effect improves if a partner in your party is within your screen.\nFor PvP only.\nConsumes 1 Throat Lozenge.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2676,8 +2925,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 + (Skill Level x 40)",
+          "duration": "30 seconds",
+          "areaOfEffect": "15 x 15 ~ 23 x 23",
+          "translations": {
+            "pt-BR": {
+              "name": " Loki Capriccio ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Loki_Capriccio"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5359.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5359",
           "tree": {
@@ -2705,6 +2964,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "80 + (Skill Level x 40)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2723,6 +2986,18 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Enemy players within range"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15 ~ 23 x 23"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "20"
               }
             ],
             "levelTables": [
@@ -2770,10 +3045,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2787,8 +3061,10 @@ export const troubadourData = {
           "group": "Active",
           "type": "Debuff",
           "target": "Enemy players within range",
-          "recoversAp": "",
+          "recoversAp": "20",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Nifflheim_Requiem",
           "description": "An Instrument/Whip skill.\nCreate a chance of Depression and Curse on enemy players within range.\nThis skill's effect improves if a partner in your party is within your screen.\nFor PvP only.\nConsumes 1 Throat Lozenge.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2822,8 +3098,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "80 + (Skill Level x 40)",
+          "duration": "30 seconds",
+          "areaOfEffect": "15 x 15 ~ 23 x 23",
+          "translations": {
+            "pt-BR": {
+              "name": " Nifflheim Requiem ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Nifflheim_Requiem"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5363.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5363",
           "tree": {
@@ -2857,6 +3143,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "80 + (Skill Level x 40)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -2875,6 +3165,18 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Enemy players within range"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15 ~ 23 x 23"
+              },
+              {
+                "label": "Duration",
+                "value": "30 seconds"
+              },
+              {
+                "label": "AP Generated",
+                "value": "20"
               }
             ],
             "levelTables": [
@@ -2922,10 +3224,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -2940,7 +3241,9 @@ export const troubadourData = {
           "type": "Buff",
           "target": "Self",
           "recoversAp": "",
-          "consumesAp": "",
+          "consumesAp": "100",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Kvasir_Sonata",
           "description": "An Instrument, Bow, and Whip skill.\nYou can use any Ensemble skills by yourself for 60 seconds.\nRequires a party.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -2958,8 +3261,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "300",
+          "duration": "60 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Kvasir Sonata ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Kvasir_Sonata"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5352.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5352",
           "tree": {
@@ -2993,6 +3305,10 @@ export const troubadourData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "300"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -3011,6 +3327,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
+              },
+              {
+                "label": "AP Consumed",
+                "value": "100"
               }
             ],
             "levelTables": [
@@ -3034,10 +3358,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3061,9 +3384,11 @@ export const troubadourData = {
           "prerequisiteText": "Throw Arrow Or Musical Strike 5",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "10 Arrows",
+          "irowikiUrl": "https://irowiki.org/wiki/Severe_Rainstorm",
           "description": "Bow, Whips, Instrument skill.\nShoots a volley of arrows into the air and rain down arrows on enemies in a 11 x 11 area, dealing damage 12 times.\nDamage increases based on BaseLv and AGI / DEX.\nConsumes 10 arrows, cannot be casted when caster has less than 10 arrow.\nDamage increases when whips or instrument is equipped.",
           "levelDetails": [
             {
@@ -3191,8 +3516,21 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (Skill Level × 10)",
+          "variableCastTime": "1 + (Skill Level × 0.5) seconds",
+          "cooldown": "4.5 + (Skill Level × 0.5) seconds",
+          "duration": "3.3 seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "11 x 11",
+          "translations": {
+            "pt-BR": {
+              "name": " Severe Rainstorm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Severe_Rainstorm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2418.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2418",
           "tree": {
@@ -3220,12 +3558,44 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
               {
+                "label": "Variable Cast Time",
+                "value": "1 + (Skill Level × 0.5) seconds"
+              },
+              {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Cooldown",
+                "value": "4.5 + (Skill Level × 0.5) seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11"
+              },
+              {
+                "label": "Duration",
+                "value": "3.3 seconds"
+              },
+              {
+                "label": "Ammunition",
+                "value": "10 Arrows"
               }
             ],
             "levelTables": [
@@ -3300,10 +3670,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3316,9 +3685,11 @@ export const troubadourData = {
           "prerequisiteText": "Dissonance or Ugly Dance 5",
           "group": "Active / Damage",
           "type": "",
-          "target": "",
+          "target": "Enemies",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Reverberation",
           "description": "Skills for Whips and Instruments.\nShoots multiple arrows that generate high-frequency sound wave, and deals magical damage to all targets in 5 x 5 Area of Effect. Damage property follows the property of the equipped arrow.\nDamage increases as BaseLv increases.\nConsumes 5 arrows, cannot be casted when caster has less than 5 arrow.",
           "levelDetails": [
             {
@@ -3473,8 +3844,19 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "50 + (Skill Level × 6)",
+          "duration": "(Skill Level + 8) seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Reverberation ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Reverberation"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2414.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2414",
           "tree": {
@@ -3502,6 +3884,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "50 + (Skill Level × 6)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -3516,6 +3902,22 @@ export const troubadourData = {
               {
                 "label": "Cooldown",
                 "value": "0.15 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Enemies"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level + 8) seconds"
               }
             ],
             "levelTables": [
@@ -3599,10 +4001,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3618,6 +4019,8 @@ export const troubadourData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Voice_Lessons",
           "description": "Increases MaxSP and SP recovery\nfor each level learned.\nIf skill is level 5 or higher, allows the\nWanderer/Maestro to use Third Class skills\nwhile performing Second Class dances, songs,\nor ensembles",
           "levelDetails": [
             {
@@ -3753,8 +4156,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Voice Lessons ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Voice_Lessons"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2412.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2412",
           "tree": {
@@ -3780,6 +4190,10 @@ export const troubadourData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
+                    "id": "maxsp",
+                    "label": "MaxSP"
+                  },
+                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -3796,7 +4210,8 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Ma x SP +30, recover 6 SP every 10 secs",
+                      "maxsp": "+30",
+                      "effect": "recover 6 SP every 10 secs",
                       "sp-cost": "0",
                       "data-1": "30"
                     }
@@ -3804,7 +4219,8 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Ma x SP +60, recover 9 SP every 10 secs",
+                      "maxsp": "+60",
+                      "effect": "recover 9 SP every 10 secs",
                       "sp-cost": "0",
                       "data-1": "60"
                     }
@@ -3812,7 +4228,8 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Ma x SP +90, recover 12 SP every 10 secs",
+                      "maxsp": "+90",
+                      "effect": "recover 12 SP every 10 secs",
                       "sp-cost": "0",
                       "data-1": "90"
                     }
@@ -3820,7 +4237,8 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Ma x SP +120, recover 15 SP every 10 secs",
+                      "maxsp": "+120",
+                      "effect": "recover 15 SP every 10 secs",
                       "sp-cost": "0",
                       "data-1": "120"
                     }
@@ -3828,7 +4246,8 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Ma x SP +150, recover 18 SP every 10 secs",
+                      "maxsp": "+150",
+                      "effect": "recover 18 SP every 10 secs",
                       "sp-cost": "0",
                       "data-1": "150"
                     }
@@ -3836,7 +4255,8 @@ export const troubadourData = {
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Ma x SP +180, recover 21 SP every 10 secs",
+                      "maxsp": "+180",
+                      "effect": "recover 21 SP every 10 secs",
                       "sp-cost": "0",
                       "data-1": "180"
                     }
@@ -3844,7 +4264,8 @@ export const troubadourData = {
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Ma x SP +200, recover 24 SP every 10 secs",
+                      "maxsp": "+200",
+                      "effect": "recover 24 SP every 10 secs",
                       "sp-cost": "0",
                       "data-1": "210"
                     }
@@ -3852,7 +4273,8 @@ export const troubadourData = {
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Ma x SP +240, recover 27 SP every 10 secs",
+                      "maxsp": "+240",
+                      "effect": "recover 27 SP every 10 secs",
                       "sp-cost": "0",
                       "data-1": "240"
                     }
@@ -3860,7 +4282,8 @@ export const troubadourData = {
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Ma x SP +270, recover 30 SP every 10 secs",
+                      "maxsp": "+270",
+                      "effect": "recover 30 SP every 10 secs",
                       "sp-cost": "0",
                       "data-1": "270"
                     }
@@ -3868,7 +4291,8 @@ export const troubadourData = {
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Ma x SP +300, recover 33 SP every 10 secs",
+                      "maxsp": "+300",
+                      "effect": "recover 33 SP every 10 secs",
                       "sp-cost": "0",
                       "data-1": "300"
                     }
@@ -3878,10 +4302,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -3897,6 +4320,8 @@ export const troubadourData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Generates a high-frequency sound wave to 1 target and deals neutral magical damage. Deals more damage to enemies in sleep.\nDamage increases as BaseLv increases. Additional damage: Voice Lesson skill level x 60%.",
           "levelDetails": [
             {
@@ -4080,8 +4505,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Metalic Sound ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Metalic_Sound"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2413.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2413",
           "tree": {
@@ -4230,10 +4662,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4249,6 +4680,8 @@ export const troubadourData = {
           "target": "Party member in range",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Circle_of_Nature",
           "description": "Display the power of the Circle of\nNature by increasing HP regeneration rate from all\nparty members within range.\nIncreasing range and skill effect as caster's skill level of Lesson additionally.\nAn instrument/whip is required to cast this skill.",
           "levelDetails": [
             {
@@ -4428,8 +4861,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "38 + (Skill Level × 4)",
+          "duration": "1 minute",
+          "areaOfEffect": "7 x 7 ~ 15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Circle of Nature ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Circle_of_Nature"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2423.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2423",
           "tree": {
@@ -4457,6 +4900,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "38 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -4475,6 +4922,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Party member in range"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7 ~ 15 x 15"
+              },
+              {
+                "label": "Duration",
+                "value": "1 minute"
               }
             ],
             "levelTables": [
@@ -4576,10 +5031,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4595,6 +5049,8 @@ export const troubadourData = {
           "target": "Enemy Player and around",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Deep_Sleep_Lullaby",
           "description": "Force all targets in a certain range\ninto a 'Deep Sleep' state. Once, the targets are in\na 'Deep Sleep', they are unable to move, attack,\nuse items, skills or chat. The effect is cancelled\nif the targets receive damage. Targets in\n'Deep Sleep' will also take 1.5x greater damage\nfrom the next attack. Affected targets will also\nrecover 3% of HP/SP every 2 seconds.\nand consumes 2 Regrettable Tear.\nRequires an instrument/whip to cast.",
           "levelDetails": [
             {
@@ -4699,8 +5155,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70 + (Skill Level × 10)",
+          "duration": "[10 + (Skill Level × 2)] seconds",
+          "areaOfEffect": "11 x 11 ~ 19 x 19",
+          "translations": {
+            "pt-BR": {
+              "name": " Deep Sleep Lullaby ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Deep_Sleep_Lullaby"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2422.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2422",
           "tree": {
@@ -4728,6 +5194,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "70 + (Skill Level × 10)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -4746,6 +5216,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Enemy Player and around"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11 ~ 19 x 19"
+              },
+              {
+                "label": "Duration",
+                "value": "[10 + (Skill Level × 2)] seconds"
               },
               {
                 "label": "Pulse",
@@ -4824,10 +5302,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -4840,9 +5317,11 @@ export const troubadourData = {
           "prerequisiteText": "Voice Lessons 1",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Song_of_Despair",
           "description": "Generate a sound wave on the\nground that will immobilize 1 enemy within a\n3x3 area. A Maximum of 5 can be placed at the same\ntime. Does not work against MVP type monsters.\nRequires an instrument or whip to cast.\nConsumes 1 Throat Lozenge.",
           "levelDetails": [
             {
@@ -4972,8 +5451,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "12",
+          "castRange": "9 cells",
+          "areaOfEffect": "3 x 3",
+          "translations": {
+            "pt-BR": {
+              "name": " Song of Despair ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Song_of_Despair"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2419.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2419",
           "tree": {
@@ -5001,6 +5490,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "12"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5015,6 +5508,18 @@ export const troubadourData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3"
               }
             ],
             "levelTables": [
@@ -5098,10 +5603,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5117,6 +5621,8 @@ export const troubadourData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Frigg's_Song",
           "description": "Increase MaxHP of\nallies for 60 sec and recover certain HP.\nConsumes 1 Regrettable Tears.\nin Siege mode such as PVP, only yourself and your party memeber will get the effect.",
           "levelDetails": [
             {
@@ -5246,8 +5752,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "170 + (Skill Level × 30)",
+          "duration": "1 minute",
+          "areaOfEffect": "7 x 7 ~ 15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Frigg's Song ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Frigg's_Song"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5007.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5007",
           "tree": {
@@ -5275,6 +5791,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "170 + (Skill Level × 30)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -5289,6 +5809,14 @@ export const troubadourData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7 ~ 15 x 15"
+              },
+              {
+                "label": "Duration",
+                "value": "1 minute"
               }
             ],
             "levelTables": [
@@ -5372,10 +5900,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5391,6 +5918,8 @@ export const troubadourData = {
           "target": "Player(Enemy), Monster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Great_Echo",
           "description": "Caster creates a huge echo that inflicts damage to all targets in area of effect. Damage increases based on BaseLv and Voice Lesson level. Damage dealt will be doubled when the partner is in same party. Consumes 2 Throat Lozenge when using the skill.",
           "levelDetails": [
             {
@@ -5519,8 +6048,19 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "120 − (Performers × 12)",
+          "variableCastTime": "[1.8 + (Skill Level × 0.2)] seconds",
+          "castRange": "9 cells",
+          "areaOfEffect": "5 x 5 ~ 9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Great Echo ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Great_Echo"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2426.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2426",
           "tree": {
@@ -5548,8 +6088,16 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "120 − (Performers × 12)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[1.8 + (Skill Level × 0.2)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -5560,8 +6108,16 @@ export const troubadourData = {
                 "value": "5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "9 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Player(Enemy), Monster"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5 ~ 9 x 9"
               }
             ],
             "levelTables": [
@@ -5636,10 +6192,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5655,6 +6210,8 @@ export const troubadourData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Death_Valley",
           "description": "Recite a sacred poem to revive a\ndead companion. The revived player will have HP\nequal to the SP they had while dead. If the player\nhad 0 SP before revival, they will be has 1 HP.\nAn instrument/whip is required to cast this skill,\nand consumes 1 Regrettable Tear.",
           "levelDetails": [
             {
@@ -5783,8 +6340,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "47 + (Skill Level × 3)",
+          "variableCastTime": "[3.5 − (Skill Level × 0.5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Death Valley ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Death_Valley"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2421.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2421",
           "tree": {
@@ -5812,8 +6378,16 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "47 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
+              },
+              {
+                "label": "Variable Cast Time",
+                "value": "[3.5 − (Skill Level × 0.5)] seconds"
               },
               {
                 "label": "Cast Delay",
@@ -5905,10 +6479,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -5921,9 +6494,11 @@ export const troubadourData = {
           "prerequisiteText": "Song of Despair 3",
           "group": "Active / Debuff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Siren's_Voice",
           "description": "Tempt all enemies that are within\nrange to fall hopelessly in love with the Caster.\nMonsters will be unable to attack or target the\ncaster with skills.\nAffected targets will display a 'Heart' emoticon.\nThe duration of this skill is reduced based on the\ntarget's base level and the skill is cancelled once\nthe target receives damage.\nAn instrument/whip is required to cast this skill.",
           "levelDetails": [
             {
@@ -6052,8 +6627,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40 + (Skill Level × 8)",
+          "areaOfEffect": "5 x 5 ~ 13 x 13",
+          "translations": {
+            "pt-BR": {
+              "name": " Siren's Voice ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Siren's_Voice"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2420.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2420",
           "tree": {
@@ -6081,6 +6665,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40 + (Skill Level × 8)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6091,6 +6679,14 @@ export const troubadourData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "5 x 5 ~ 13 x 13"
               }
             ],
             "levelTables": [
@@ -6174,10 +6770,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6193,6 +6788,8 @@ export const troubadourData = {
           "target": "All players except for caster",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Improvised_Song",
           "description": "Use unknown language to remove higher level chorus effect from targeted player. Success rate increases based on skill level.",
           "levelDetails": [
             {
@@ -6297,8 +6894,16 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "translations": {
+            "pt-BR": {
+              "name": " Improvised Song ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Improvised_Song"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2424.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2424",
           "tree": {
@@ -6324,6 +6929,10 @@ export const troubadourData = {
               {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "40"
               },
               {
                 "label": "Fixed Cast Time",
@@ -6418,10 +7027,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6434,9 +7042,11 @@ export const troubadourData = {
           "prerequisiteText": "Deep Sleep Lullaby 1",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Any entity",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Harmonize",
           "description": "Enter a state of harmony with\nanother player or monster. Equalize all bonus\nstats of caster and 1 target for 60 seconds.\nRequires an instrument to cast.",
           "levelDetails": [
             {
@@ -6566,8 +7176,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "65 + (Skill Level × 5)",
+          "duration": "1 minute",
+          "translations": {
+            "pt-BR": {
+              "name": " Harmonize ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Harmonize"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2383.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2383",
           "tree": {
@@ -6595,6 +7214,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "65 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -6609,6 +7232,14 @@ export const troubadourData = {
               {
                 "label": "Cooldown",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Any entity"
+              },
+              {
+                "label": "Duration",
+                "value": "1 minute"
               }
             ],
             "levelTables": [
@@ -6708,10 +7339,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -6727,6 +7357,8 @@ export const troubadourData = {
           "target": "Party members in area",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Windmill_Rush",
           "description": "Instrument Weapon Skill. 31 X 31 Cell, increases party member's ATK and movement speed. It does not overlap with other Minstrel's Instrumental Skill and can only be used when caster's equipping instruments. Effect increases bassd on Lesson level.",
           "levelDetails": [
             {
@@ -6856,8 +7488,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "76 + (Skill Level × 6)",
+          "duration": "3 minute",
+          "areaOfEffect": "15 x 15 ~ 23 x 23",
+          "translations": {
+            "pt-BR": {
+              "name": " Windmill Rush ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Windmill_Rush"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2381.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2381",
           "tree": {
@@ -6885,6 +7527,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "76 + (Skill Level × 6)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -6903,6 +7549,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Party members in area"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15 ~ 23 x 23"
+              },
+              {
+                "label": "Duration",
+                "value": "3 minute"
               }
             ],
             "levelTables": [
@@ -6916,6 +7570,10 @@ export const troubadourData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "atk",
+                    "label": "Atk"
                   },
                   {
                     "id": "data-1",
@@ -6934,7 +7592,8 @@ export const troubadourData = {
                   {
                     "level": 1,
                     "values": {
-                      "effect": "ATK + 7, increases based on caster's Lesson level",
+                      "atk": "+ 7",
+                      "effect": "increases based on caster's Lesson level",
                       "sp-cost": "82",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -6944,7 +7603,8 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "ATK + 10, increases based on caster's Lesson level",
+                      "atk": "+ 10",
+                      "effect": "increases based on caster's Lesson level",
                       "sp-cost": "88",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -6954,7 +7614,8 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "ATK + 13, increases based on caster's Lesson level",
+                      "atk": "+ 13",
+                      "effect": "increases based on caster's Lesson level",
                       "sp-cost": "94",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -6964,7 +7625,8 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "ATK + 15, increases based on caster's Lesson level",
+                      "atk": "+ 15",
+                      "effect": "increases based on caster's Lesson level",
                       "sp-cost": "100",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -6974,7 +7636,8 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "ATK + 20, increases based on caster's Lesson level",
+                      "atk": "+ 20",
+                      "effect": "increases based on caster's Lesson level",
                       "sp-cost": "106",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -6986,10 +7649,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7002,9 +7664,11 @@ export const troubadourData = {
           "prerequisiteText": "Deep Sleep Lullaby 1",
           "group": "Active / Buff",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Echo_Song",
           "description": "Increases the defense of the caster\nand party members for 60 seconds. This is\nincreased by 1% per level of Voice Lessons and\nby 0.2% per Job Level of the caster.\nRequires an instrument to cast.",
           "levelDetails": [
             {
@@ -7134,8 +7798,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "?",
+          "duration": "1 minute",
+          "areaOfEffect": "15 x 15 ~ 23 x 23",
+          "translations": {
+            "pt-BR": {
+              "name": " Echo Song ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Echo_Song"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2382.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2382",
           "tree": {
@@ -7163,6 +7837,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "?"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -7177,6 +7855,18 @@ export const troubadourData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "15 x 15 ~ 23 x 23"
+              },
+              {
+                "label": "Duration",
+                "value": "1 minute"
               }
             ],
             "levelTables": [
@@ -7269,10 +7959,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7288,6 +7977,8 @@ export const troubadourData = {
           "target": "Enemy Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Gloomy_Shyness",
           "description": "Increase Enemy Player's SP consumption and fixed casting time.\nSometimes too much depression reduces moving speed.\nAnd sometimes the riding Pecopeco, Dragon or Gryphon can run away.\nThis skill is available only on PvP area.\nRequires an instrument/whip to cast.",
           "levelDetails": [
             {
@@ -7442,8 +8133,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60",
+          "duration": "60 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Gloomy Shyness ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Gloomy_Shyness"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2425.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2425",
           "tree": {
@@ -7471,6 +8171,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "60"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -7489,6 +8193,10 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Enemy Player"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -7597,10 +8305,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7616,6 +8323,8 @@ export const troubadourData = {
           "target": "Party member in range",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Dances_with_Wargs",
           "description": "Reduces self and party member's\nFixed Cast Time and increases ASPD.\nAnd increase party member's ranged physical attack, and attack using Warg as well.\nConsume 1 [Throat Lozenge].\nRequires an instrument/whip to cast.",
           "levelDetails": [
             {
@@ -7745,8 +8454,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100 + 20 x Skill Level",
+          "duration": "120 seconds",
+          "areaOfEffect": "11 x 11 ~ 19 x 19",
+          "translations": {
+            "pt-BR": {
+              "name": " Dances with Wargs ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Dances_with_Wargs"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2428.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2428",
           "tree": {
@@ -7786,6 +8505,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "100 + 20 x Skill Level"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -7804,6 +8527,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Party member in range"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11 ~ 19 x 19"
+              },
+              {
+                "label": "Duration",
+                "value": "120 seconds"
               }
             ],
             "levelTables": [
@@ -7813,6 +8544,10 @@ export const troubadourData = {
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
+                  },
+                  {
+                    "id": "aspd",
+                    "label": "Aspd"
                   },
                   {
                     "id": "data-1",
@@ -7827,31 +8562,37 @@ export const troubadourData = {
                     "label": "Range"
                   },
                   {
-                    "id": "skill-range-11-x-11-fixed-casting-time-30-aspd-5-ranged-damage",
-                    "label": "Skill Range 11 X 11 / Fixed Casting Time -30%, Aspd +5%, Ranged Damage"
+                    "id": "ranged-damage",
+                    "label": "Ranged Damage"
                   },
                   {
-                    "id": "skill-range-13-x-13-fixed-casting-time-40-aspd-10-ranged-damage",
-                    "label": "Skill Range 13 X 13 / Fixed Casting Time -40%, Aspd +10%, Ranged Damage"
+                    "id": "skill-range-11-x-11-fixed-casting-time",
+                    "label": "Skill Range 11 X 11 / Fixed Casting Time"
                   },
                   {
-                    "id": "skill-range-15-x-15-fixed-casting-time-50-aspd-15-ranged-damage",
-                    "label": "Skill Range 15 X 15 / Fixed Casting Time -50%, Aspd +15%, Ranged Damage"
+                    "id": "skill-range-13-x-13-fixed-casting-time",
+                    "label": "Skill Range 13 X 13 / Fixed Casting Time"
                   },
                   {
-                    "id": "skill-range-17-x-17-fixed-casting-time-60-aspd-20-ranged-damage",
-                    "label": "Skill Range 17 X 17 / Fixed Casting Time -60%, Aspd +20%, Ranged Damage"
+                    "id": "skill-range-15-x-15-fixed-casting-time",
+                    "label": "Skill Range 15 X 15 / Fixed Casting Time"
                   },
                   {
-                    "id": "skill-range-19-x-19-fixed-casting-time-70-aspd-25-ranged-damage",
-                    "label": "Skill Range 19 X 19 / Fixed Casting Time -70%, Aspd +25%, Ranged Damage"
+                    "id": "skill-range-17-x-17-fixed-casting-time",
+                    "label": "Skill Range 17 X 17 / Fixed Casting Time"
+                  },
+                  {
+                    "id": "skill-range-19-x-19-fixed-casting-time",
+                    "label": "Skill Range 19 X 19 / Fixed Casting Time"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "skill-range-11-x-11-fixed-casting-time-30-aspd-5-ranged-damage": "+1%",
+                      "skill-range-11-x-11-fixed-casting-time": "-30%",
+                      "aspd": "+5%",
+                      "ranged-damage": "+1%",
                       "sp-cost": "120",
                       "range": "1 cells",
                       "data-1": "30000",
@@ -7861,7 +8602,9 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "skill-range-13-x-13-fixed-casting-time-40-aspd-10-ranged-damage": "+2%",
+                      "skill-range-13-x-13-fixed-casting-time": "-40%",
+                      "aspd": "+10%",
+                      "ranged-damage": "+2%",
                       "sp-cost": "140",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -7871,7 +8614,9 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "skill-range-15-x-15-fixed-casting-time-50-aspd-15-ranged-damage": "+3%",
+                      "skill-range-15-x-15-fixed-casting-time": "-50%",
+                      "aspd": "+15%",
+                      "ranged-damage": "+3%",
                       "sp-cost": "160",
                       "range": "1 cells",
                       "data-1": "90000",
@@ -7881,7 +8626,9 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "skill-range-17-x-17-fixed-casting-time-60-aspd-20-ranged-damage": "+4%",
+                      "skill-range-17-x-17-fixed-casting-time": "-60%",
+                      "aspd": "+20%",
+                      "ranged-damage": "+4%",
                       "sp-cost": "180",
                       "range": "1 cells",
                       "data-1": "120000",
@@ -7891,7 +8638,9 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "skill-range-19-x-19-fixed-casting-time-70-aspd-25-ranged-damage": "+5%",
+                      "skill-range-19-x-19-fixed-casting-time": "-70%",
+                      "aspd": "+25%",
+                      "ranged-damage": "+5%",
                       "sp-cost": "200",
                       "range": "1 cells",
                       "data-1": "150000",
@@ -7903,10 +8652,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -7922,6 +8670,8 @@ export const troubadourData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "The caster and at least one other\nWanderer/Maestro in the party, sing for Mana,\nasking for increased circulation. Recovers % of MaxSP\nof the caster and party members and increase SP regeneration rate.\nSP recovery amount and regeneration speed is increased based on the skill level of Lesson.\nConsume 1 [Throat Lozenge].\nRequires an instrument/whip to cast.",
           "levelDetails": [
             {
@@ -8051,8 +8801,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Song Of Mana ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Song_Of_Mana"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2427.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2427",
           "tree": {
@@ -8130,23 +8887,23 @@ export const troubadourData = {
                   },
                   {
                     "id": "skill-range-11-x-11-recovery-10-of-maxsp-sp-regeneration-rate",
-                    "label": "Skill Range 11 X 11 / Recovery 10% Of Maxsp / Sp Regeneration Rate"
+                    "label": "Skill Range 11 X 11 / Recovery 10% Of MaxSP / Sp Regeneration Rate"
                   },
                   {
                     "id": "skill-range-13-x-13-recovery-10-of-maxsp-sp-regeneration-rate",
-                    "label": "Skill Range 13 X 13 / Recovery 10% Of Maxsp / Sp Regeneration Rate"
+                    "label": "Skill Range 13 X 13 / Recovery 10% Of MaxSP / Sp Regeneration Rate"
                   },
                   {
                     "id": "skill-range-15-x-15-recovery-15-of-maxsp-sp-regeneration-rate",
-                    "label": "Skill Range 15 X 15 / Recovery 15% Of Maxsp / Sp Regeneration Rate"
+                    "label": "Skill Range 15 X 15 / Recovery 15% Of MaxSP / Sp Regeneration Rate"
                   },
                   {
                     "id": "skill-range-17-x-17-recovery-15-of-maxsp-sp-regeneration-rate",
-                    "label": "Skill Range 17 X 17 / Recovery 15% Of Maxsp / Sp Regeneration Rate"
+                    "label": "Skill Range 17 X 17 / Recovery 15% Of MaxSP / Sp Regeneration Rate"
                   },
                   {
                     "id": "skill-range-19-x-19-recovery-20-of-maxsp-sp-regeneration-rate",
-                    "label": "Skill Range 19 X 19 / Recovery 20% Of Maxsp / Sp Regeneration Rate"
+                    "label": "Skill Range 19 X 19 / Recovery 20% Of MaxSP / Sp Regeneration Rate"
                   }
                 ],
                 "rows": [
@@ -8205,10 +8962,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8224,6 +8980,8 @@ export const troubadourData = {
           "target": "Party member in range",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lerad's_Dew",
           "description": "When sung by the caster at least\none other Wanderer/Maestro in the party, Lerad's\nDew will increase the MaxHP of all surrounding\nparty members. This skill does not affect\ncharacters who are in Frenzy.\nIncreasing MaxHP as caster's skill level of Lesson additionally.\nConsume 1 [Throat Lozenge].\nRequires an instrument/whip to cast.",
           "levelDetails": [
             {
@@ -8378,8 +9136,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "?",
+          "duration": "[10 + (Skill Level × 10)] seconds",
+          "areaOfEffect": "11 x 11 ~ 15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Lerad's Dew ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lerad's_Dew"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2431.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2431",
           "tree": {
@@ -8419,6 +9187,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "?"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -8437,6 +9209,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Party member in range"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11 ~ 15 x 15"
+              },
+              {
+                "label": "Duration",
+                "value": "[10 + (Skill Level × 10)] seconds"
               }
             ],
             "levelTables": [
@@ -8465,15 +9245,15 @@ export const troubadourData = {
                   },
                   {
                     "id": "range-11x11-maxhp",
-                    "label": "Range 11x11 / Maxhp"
+                    "label": "Range 11x11 / MaxHP"
                   },
                   {
                     "id": "range-13x13-maxhp",
-                    "label": "Range 13x13 / Maxhp"
+                    "label": "Range 13x13 / MaxHP"
                   },
                   {
                     "id": "range-15x15-maxhp",
-                    "label": "Range 15x15 / Maxhp"
+                    "label": "Range 15x15 / MaxHP"
                   }
                 ],
                 "rows": [
@@ -8537,10 +9317,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8553,9 +9332,11 @@ export const troubadourData = {
           "prerequisiteText": "Dances with Wargs 1",
           "group": "Active / Special / Chorus",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Saturday_Night_Fever",
           "description": "When sung by the caster and at\nleast one other Maestro/Wanderer, all players in\nrange of the caster will be compelled to disco\nand enter a limited Frenzy state. Frenzied\ntargets will continuously lose HP and SP as well\nas lose Flee and Hit. Item\nusage is disabled, and those affected will be\nforced to sit on the ground for 3 seconds after\nthe Frenzy wears off.\nIncreasing success rate as caster's skill level of Lesson additionally.\nConsume 5 [Throat Lozenge].\nOnly usable in PVP/WoE\nRequires an instrument/whip to cast.",
           "levelDetails": [
             {
@@ -8685,8 +9466,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "170 − (Performers × 17)",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "areaOfEffect": "7 x 7 ~ 15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Saturday Night Fever ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Saturday_Night_Fever"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2430.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2430",
           "tree": {
@@ -8714,6 +9505,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "170 − (Performers × 17)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "3 seconds"
               },
@@ -8728,6 +9523,18 @@ export const troubadourData = {
               {
                 "label": "Cooldown",
                 "value": "60 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7 ~ 15 x 15"
+              },
+              {
+                "label": "Duration",
+                "value": "[5 + (Skill Level × 5)] seconds"
               }
             ],
             "levelTables": [
@@ -8828,10 +9635,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -8847,6 +9653,8 @@ export const troubadourData = {
           "target": "Enemy player in range",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sinking_Melody",
           "description": "Decrease MaxSP and INT of enemy players around the caster.\nIncreasing success rate as caster's skill level of Lesson additionally.\nConsume 2 [Throat Lozenge].\nOnly usable in PVP/WoE\nRequires an instrument/whip to cast.",
           "levelDetails": [
             {
@@ -9001,8 +9809,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "?",
+          "duration": "10 + (Skill Level × 10) seconds",
+          "areaOfEffect": "11 x 11 ~ 15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Sinking Melody ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sinking_Melody"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2432.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2432",
           "tree": {
@@ -9030,6 +9848,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "?"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -9048,6 +9870,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Enemy player in range"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11 ~ 15 x 15"
+              },
+              {
+                "label": "Duration",
+                "value": "10 + (Skill Level × 10) seconds"
               }
             ],
             "levelTables": [
@@ -9140,10 +9970,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9159,6 +9988,8 @@ export const troubadourData = {
           "target": "Enemy player in range",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Warcry_from_Beyond",
           "description": "Decrease MaxHP and STR of enemy players around the caster.\nIncreasing success rate and skill effect as caster's skill level of Lesson additionally.\nConsume 2 [Throat Lozenge].\nOnly usable in PVP/WoE\nRequires an instrument/whip to cast.",
           "levelDetails": [
             {
@@ -9313,8 +10144,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "200 − (Performers × 20)",
+          "duration": "[10 + (Skill Level × 10)] seconds",
+          "areaOfEffect": "11 x 11 ~ 15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Warcry from Beyond ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Warcry_from_Beyond"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2433.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2433",
           "tree": {
@@ -9342,6 +10183,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "200 − (Performers × 20)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -9360,6 +10205,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Enemy player in range"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11 ~ 15 x 15"
+              },
+              {
+                "label": "Duration",
+                "value": "[10 + (Skill Level × 10)] seconds"
               }
             ],
             "levelTables": [
@@ -9452,10 +10305,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9467,10 +10319,12 @@ export const troubadourData = {
           "maxLevel": 5,
           "prerequisiteText": "3rd jobs",
           "group": "",
-          "type": "",
-          "target": "",
+          "type": "Active Skill",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Full_Throttle",
           "description": "Exceed the limits of the body by\nsacrificing your own vitality to strengthen yourself\nfor a short time. You will become horribly\nexhausted after the skill's duration.\nFully restores HP when cast and increases\nmovement speed for the skill's duration.\nAll stats +20%.\nAfter the skill duration ends, you will be inflicted\nwith Rebound status. During rebound status,\nyour movement speed is lowered and your\nnatural HP/SP recovery is disabled.\nCannot be removed by dispel or clearance.\n50 Minute playtime cooldown",
           "levelDetails": [
             {
@@ -9575,8 +10429,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "[5 + (Skill Level × 5)] seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Full Throttle ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
@@ -9589,8 +10452,16 @@ export const troubadourData = {
           "details": {
             "rows": [
               {
+                "label": "Type",
+                "value": "Active Skill"
+              },
+              {
                 "label": "Levels",
                 "value": "5"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
               },
               {
                 "label": "Fixed Cast Time",
@@ -9607,6 +10478,10 @@ export const troubadourData = {
               {
                 "label": "Cooldown",
                 "value": "3000 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
               }
             ],
             "levelTables": [
@@ -9690,10 +10565,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9709,6 +10583,8 @@ export const troubadourData = {
           "target": "Enemy player in range",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Song_of_Destruction",
           "description": "It doubles all damage for 10 seconds to surrounding enemy players, centering on the caster.\nThe effect does not disappear when damaged\nIncreasing duration time as caster's skill level of Lesson additionally.\nConsume 10 [Throat Lozenge].\nOnly usable in PVP/WoE\nRequires an instrument/whip to cast.",
           "levelDetails": [
             {
@@ -9838,8 +10714,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "?",
+          "castRange": "10 cells",
+          "areaOfEffect": "9 x 9 ~ 15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Song of Destruction ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Song_of_Destruction"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2429.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2429",
           "tree": {
@@ -9873,6 +10759,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "?"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "2 seconds"
               },
@@ -9889,8 +10779,16 @@ export const troubadourData = {
                 "value": "60 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy player in range"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9 ~ 15 x 15"
               }
             ],
             "levelTables": [
@@ -9974,10 +10872,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -9990,9 +10887,11 @@ export const troubadourData = {
           "prerequisiteText": "Song of Destruction 1 , Warcry from Beyond 1",
           "group": "Active / Buff / Chorus",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Infinite_Humming",
           "description": "Requires an instrument/whip to cast. Increases all property magical damage of party members around caster including yourself. Increases skill effect as caster's skill level of Lesson additionally. Consume 5 [Throat Lozenge]",
           "levelDetails": [
             {
@@ -10122,8 +11021,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "?",
+          "duration": "[30 + (Skill Level × 30)] seconds",
+          "areaOfEffect": "11 x 11 ~ 15 x 15",
+          "translations": {
+            "pt-BR": {
+              "name": " Infinite Humming ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Infinite_Humming"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/2434.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2434",
           "tree": {
@@ -10157,6 +11066,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "?"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -10171,6 +11084,18 @@ export const troubadourData = {
               {
                 "label": "Cooldown",
                 "value": "180 seconds"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "11 x 11 ~ 15 x 15"
+              },
+              {
+                "label": "Duration",
+                "value": "[30 + (Skill Level × 30)] seconds"
               }
             ],
             "levelTables": [
@@ -10196,13 +11121,26 @@ export const troubadourData = {
                   {
                     "id": "range",
                     "label": "Range"
+                  },
+                  {
+                    "id": "range-11-x-11-all-property-magical-damage",
+                    "label": "Range 11 X 11 / All Property Magical Damage"
+                  },
+                  {
+                    "id": "range-13-x-13-all-property-magical-damage",
+                    "label": "Range 13 X 13 / All Property Magical Damage"
+                  },
+                  {
+                    "id": "range-15-x-15-all-property-magical-damage",
+                    "label": "Range 15 X 15 / All Property Magical Damage"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Range 11 x 11 / All property magical damage +4%, Increasing Caster's skill level of Lesson additionally",
+                      "range-11-x-11-all-property-magical-damage": "+4%",
+                      "effect": "Increasing Caster's skill level of Lesson additionally",
                       "sp-cost": "120",
                       "range": "1 cells",
                       "data-1": "60000",
@@ -10212,7 +11150,8 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Range 11 x 11 / All property magical damage +8%, Increasing Caster's skill level of Lesson additionally",
+                      "range-11-x-11-all-property-magical-damage": "+8%",
+                      "effect": "Increasing Caster's skill level of Lesson additionally",
                       "sp-cost": "130",
                       "range": "1 cells",
                       "data-1": "90000",
@@ -10222,7 +11161,8 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Range 13 x 13 / All property magical damage +12%, Increasing Caster's skill level of Lesson additionally",
+                      "range-13-x-13-all-property-magical-damage": "+12%",
+                      "effect": "Increasing Caster's skill level of Lesson additionally",
                       "sp-cost": "140",
                       "range": "1 cells",
                       "data-1": "120000",
@@ -10232,7 +11172,8 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Range 13 x 13 / All property magical damage +16%, Increasing Caster's skill level of Lesson additionally",
+                      "range-13-x-13-all-property-magical-damage": "+16%",
+                      "effect": "Increasing Caster's skill level of Lesson additionally",
                       "sp-cost": "150",
                       "range": "1 cells",
                       "data-1": "150000",
@@ -10242,7 +11183,8 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Range 15 x 15 / All property magical damage +20%, Increasing Caster's skill level of Lesson additionally",
+                      "range-15-x-15-all-property-magical-damage": "+20%",
+                      "effect": "Increasing Caster's skill level of Lesson additionally",
                       "sp-cost": "160",
                       "range": "1 cells",
                       "data-1": "180000",
@@ -10254,10 +11196,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10284,6 +11225,8 @@ export const troubadourData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Amp",
           "description": "It is a skill to cope with various unexpected situations occurring during a performance.\nReduces SP consumption used for performances, ensembles and dances for a certain period of time by 20%.\nCan be used in duplicate with Encore.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -10319,8 +11262,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "duration": "180 seconds",
+          "translations": {
+            "pt-BR": {
+              "name": " Amp ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Amp"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/304.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/304",
           "tree": {
@@ -10341,6 +11293,10 @@ export const troubadourData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -10359,6 +11315,10 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
               }
             ],
             "levelTables": [
@@ -10392,10 +11352,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10411,6 +11370,8 @@ export const troubadourData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Musical_Lesson",
           "description": "Enhances attack (Weapon Mastery) with Instrument class weapons and enables movement while playing songs.\nMaxSP always increases and ATK, Cirital Rate increases only with intruments.",
           "levelDetails": [
             {
@@ -10636,8 +11597,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Musical Lesson ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Musical_Lesson"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/315.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/315",
           "tree": {
@@ -10667,44 +11635,8 @@ export const troubadourData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "atk-bonus-12-reduction-of-delay-after-atk-4-maxsp",
-                    "label": "Atk Bonus +12, Reduction Of Delay After Atk 4%, Maxsp"
-                  },
-                  {
-                    "id": "atk-bonus-15-reduction-of-delay-after-atk-5-maxsp",
-                    "label": "Atk Bonus +15, Reduction Of Delay After Atk 5%, Maxsp"
-                  },
-                  {
-                    "id": "atk-bonus-18-reduction-of-delay-after-atk-6-maxsp",
-                    "label": "Atk Bonus +18, Reduction Of Delay After Atk 6%, Maxsp"
-                  },
-                  {
-                    "id": "atk-bonus-21-reduction-of-delay-after-atk-7-maxsp",
-                    "label": "Atk Bonus +21, Reduction Of Delay After Atk 7%, Maxsp"
-                  },
-                  {
-                    "id": "atk-bonus-24-reduction-of-delay-after-atk-8-maxsp",
-                    "label": "Atk Bonus +24, Reduction Of Delay After Atk 8%, Maxsp"
-                  },
-                  {
-                    "id": "atk-bonus-27-reduction-of-delay-after-atk-9-maxsp",
-                    "label": "Atk Bonus +27, Reduction Of Delay After Atk 9%, Maxsp"
-                  },
-                  {
-                    "id": "atk-bonus-3-reduction-of-delay-after-atk-1-maxsp",
-                    "label": "Atk Bonus +3, Reduction Of Delay After Atk 1%, Maxsp"
-                  },
-                  {
-                    "id": "atk-bonus-30-reduction-of-delay-after-atk-10-maxsp",
-                    "label": "Atk Bonus +30, Reduction Of Delay After Atk 10%, Maxsp"
-                  },
-                  {
-                    "id": "atk-bonus-6-reduction-of-delay-after-atk-2-maxsp",
-                    "label": "Atk Bonus +6, Reduction Of Delay After Atk 2% Maxsp"
-                  },
-                  {
-                    "id": "atk-bonus-9-reduction-of-delay-after-atk-3-maxsp",
-                    "label": "Atk Bonus +9, Reduction Of Delay After Atk 3%, Maxsp"
+                    "id": "atk-bonus",
+                    "label": "Atk Bonus"
                   },
                   {
                     "id": "data-1",
@@ -10717,13 +11649,54 @@ export const troubadourData = {
                   {
                     "id": "data-3",
                     "label": "Data 3"
+                  },
+                  {
+                    "id": "reduction-of-delay-after-atk-1-maxsp",
+                    "label": "Reduction Of Delay After Atk 1%, MaxSP"
+                  },
+                  {
+                    "id": "reduction-of-delay-after-atk-10-maxsp",
+                    "label": "Reduction Of Delay After Atk 10%, MaxSP"
+                  },
+                  {
+                    "id": "reduction-of-delay-after-atk-2-maxsp",
+                    "label": "Reduction Of Delay After Atk 2% MaxSP"
+                  },
+                  {
+                    "id": "reduction-of-delay-after-atk-3-maxsp",
+                    "label": "Reduction Of Delay After Atk 3%, MaxSP"
+                  },
+                  {
+                    "id": "reduction-of-delay-after-atk-4-maxsp",
+                    "label": "Reduction Of Delay After Atk 4%, MaxSP"
+                  },
+                  {
+                    "id": "reduction-of-delay-after-atk-5-maxsp",
+                    "label": "Reduction Of Delay After Atk 5%, MaxSP"
+                  },
+                  {
+                    "id": "reduction-of-delay-after-atk-6-maxsp",
+                    "label": "Reduction Of Delay After Atk 6%, MaxSP"
+                  },
+                  {
+                    "id": "reduction-of-delay-after-atk-7-maxsp",
+                    "label": "Reduction Of Delay After Atk 7%, MaxSP"
+                  },
+                  {
+                    "id": "reduction-of-delay-after-atk-8-maxsp",
+                    "label": "Reduction Of Delay After Atk 8%, MaxSP"
+                  },
+                  {
+                    "id": "reduction-of-delay-after-atk-9-maxsp",
+                    "label": "Reduction Of Delay After Atk 9%, MaxSP"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "atk-bonus-3-reduction-of-delay-after-atk-1-maxsp": "+ 1%",
+                      "atk-bonus": "+3",
+                      "reduction-of-delay-after-atk-1-maxsp": "+ 1%",
                       "sp-cost": "0",
                       "data-1": "3",
                       "data-2": "1",
@@ -10733,7 +11706,8 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "atk-bonus-6-reduction-of-delay-after-atk-2-maxsp": "+ 2%",
+                      "atk-bonus": "+6",
+                      "reduction-of-delay-after-atk-2-maxsp": "+ 2%",
                       "sp-cost": "0",
                       "data-1": "6",
                       "data-2": "2",
@@ -10743,7 +11717,8 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "atk-bonus-9-reduction-of-delay-after-atk-3-maxsp": "+ 3%",
+                      "atk-bonus": "+9",
+                      "reduction-of-delay-after-atk-3-maxsp": "+ 3%",
                       "sp-cost": "0",
                       "data-1": "9",
                       "data-2": "3",
@@ -10753,7 +11728,8 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "atk-bonus-12-reduction-of-delay-after-atk-4-maxsp": "+ 4%",
+                      "atk-bonus": "+12",
+                      "reduction-of-delay-after-atk-4-maxsp": "+ 4%",
                       "sp-cost": "0",
                       "data-1": "12",
                       "data-2": "4",
@@ -10763,7 +11739,8 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "atk-bonus-15-reduction-of-delay-after-atk-5-maxsp": "+ 5%",
+                      "atk-bonus": "+15",
+                      "reduction-of-delay-after-atk-5-maxsp": "+ 5%",
                       "sp-cost": "0",
                       "data-1": "15",
                       "data-2": "5",
@@ -10773,7 +11750,8 @@ export const troubadourData = {
                   {
                     "level": 6,
                     "values": {
-                      "atk-bonus-18-reduction-of-delay-after-atk-6-maxsp": "+ 6%",
+                      "atk-bonus": "+18",
+                      "reduction-of-delay-after-atk-6-maxsp": "+ 6%",
                       "sp-cost": "0",
                       "data-1": "18",
                       "data-2": "6",
@@ -10783,7 +11761,8 @@ export const troubadourData = {
                   {
                     "level": 7,
                     "values": {
-                      "atk-bonus-21-reduction-of-delay-after-atk-7-maxsp": "+ 7%",
+                      "atk-bonus": "+21",
+                      "reduction-of-delay-after-atk-7-maxsp": "+ 7%",
                       "sp-cost": "0",
                       "data-1": "21",
                       "data-2": "7",
@@ -10793,7 +11772,8 @@ export const troubadourData = {
                   {
                     "level": 8,
                     "values": {
-                      "atk-bonus-24-reduction-of-delay-after-atk-8-maxsp": "+ 8%",
+                      "atk-bonus": "+24",
+                      "reduction-of-delay-after-atk-8-maxsp": "+ 8%",
                       "sp-cost": "0",
                       "data-1": "24",
                       "data-2": "8",
@@ -10803,7 +11783,8 @@ export const troubadourData = {
                   {
                     "level": 9,
                     "values": {
-                      "atk-bonus-27-reduction-of-delay-after-atk-9-maxsp": "+ 9%",
+                      "atk-bonus": "+27",
+                      "reduction-of-delay-after-atk-9-maxsp": "+ 9%",
                       "sp-cost": "0",
                       "data-1": "27",
                       "data-2": "9",
@@ -10813,7 +11794,8 @@ export const troubadourData = {
                   {
                     "level": 10,
                     "values": {
-                      "atk-bonus-30-reduction-of-delay-after-atk-10-maxsp": "+ 10%",
+                      "atk-bonus": "+30",
+                      "reduction-of-delay-after-atk-10-maxsp": "+ 10%",
                       "sp-cost": "0",
                       "data-1": "30",
                       "data-2": "10",
@@ -10825,10 +11807,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -10844,6 +11825,8 @@ export const troubadourData = {
           "target": "9*9 cells around the user",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Performs a song that will inflict piercing damage to all enemies around the performer.\nDamage increases as the caster's job level increases.\nIt does not overlap with other playing skills and can only be used when the instrument is mounted.\nThis skill can only be used in PVP / Sieze Mode.",
           "levelDetails": [
             {
@@ -10948,8 +11931,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Unchained Serenade (Dissonance) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Unchained_Serenade_(Dissonance)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/317.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/317",
           "tree": {
@@ -11066,10 +12056,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11085,6 +12074,8 @@ export const troubadourData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Pang_Voice",
           "description": "Shouts a horrible shriek to the target at the cost of 40 SP. Creates a high chance of Confusing and Bleeding them.\nNot applicable to Boss monsters.",
           "levelDetails": [],
           "fixedCastTime": "0.2 seconds",
@@ -11129,8 +12120,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Pang Voice ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Pang_Voice"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1010.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1010",
           "tree": {
@@ -11151,6 +12151,10 @@ export const troubadourData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.2 seconds"
               },
@@ -11165,6 +12169,10 @@ export const troubadourData = {
               {
                 "label": "Cooldown",
                 "value": "10 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -11207,10 +12215,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11226,6 +12233,8 @@ export const troubadourData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Encore",
           "description": "Replays the last song/dance performed at half of its SP Cost.\nYou can use the performance, dance, and ensemble skills with 1/2 of the usual SP consumption.\nWhen the last dance, ensemble, or performance is not available, only skill is used and delay time is occured.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -11243,8 +12252,16 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "translations": {
+            "pt-BR": {
+              "name": " Encore ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Encore"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/305.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/305",
           "tree": {
@@ -11269,6 +12286,10 @@ export const troubadourData = {
               },
               {
                 "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "SP Cost",
                 "value": "1"
               },
               {
@@ -11313,10 +12334,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11332,6 +12352,8 @@ export const troubadourData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "can only be used when the instrument is mounted.\nSlings a bolt at a single target using the equipped Instrument.\nEach cast uses one arrow, the property of which depends the property of this skill.",
           "levelDetails": [
             {
@@ -11461,8 +12483,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Melody Strike (Musical Strike) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Melody_Strike_(Musical_Strike)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/316.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/316",
           "tree": {
@@ -11582,10 +12611,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -11601,6 +12629,8 @@ export const troubadourData = {
           "target": "Self and Party members around 31 X 31 cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Perfect_Tablature",
           "description": "On-screen (31x31), increases party members' FLEE and perfect dodge.\nIt does not overlap with other Instrumental Skill and can only be used when the caster is equipping instruments.",
           "levelDetails": [
             {
@@ -11875,8 +12905,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 2)",
+          "duration": "180 seconds",
+          "areaOfEffect": "31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Perfect Tablature ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Perfect_Tablature"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/319.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/319",
           "tree": {
@@ -11904,6 +12944,10 @@ export const troubadourData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -11922,6 +12966,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Self and Party members around 31 X 31 cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
               }
             ],
             "levelTables": [
@@ -11949,51 +13001,20 @@ export const troubadourData = {
                     "label": "Data 4"
                   },
                   {
-                    "id": "flee-20-perfect-dodge",
-                    "label": "Flee + 20, Perfect Dodge"
+                    "id": "flee",
+                    "label": "Flee"
                   },
                   {
-                    "id": "flee-22-perfect-dodge",
-                    "label": "Flee + 22, Perfect Dodge"
-                  },
-                  {
-                    "id": "flee-24-perfect-dodge",
-                    "label": "Flee + 24, Perfect Dodge"
-                  },
-                  {
-                    "id": "flee-26-perfect-dodge",
-                    "label": "Flee + 26, Perfect Dodge"
-                  },
-                  {
-                    "id": "flee-28-perfect-dodge",
-                    "label": "Flee + 28, Perfect Dodge"
-                  },
-                  {
-                    "id": "flee-30-perfect-dodge",
-                    "label": "Flee + 30, Perfect Dodge"
-                  },
-                  {
-                    "id": "flee-32-perfect-dodge",
-                    "label": "Flee + 32, Perfect Dodge"
-                  },
-                  {
-                    "id": "flee-34-perfect-dodge",
-                    "label": "Flee + 34, Perfect Dodge"
-                  },
-                  {
-                    "id": "flee-36-perfect-dodge",
-                    "label": "Flee + 36, Perfect Dodge"
-                  },
-                  {
-                    "id": "flee-40-perfect-dodge",
-                    "label": "Flee + 40, Perfect Dodge"
+                    "id": "perfect-dodge",
+                    "label": "Perfect Dodge"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "flee-20-perfect-dodge": "+1",
+                      "flee": "+ 20",
+                      "perfect-dodge": "+1",
                       "sp-cost": "22",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12004,7 +13025,8 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "flee-22-perfect-dodge": "+1",
+                      "flee": "+ 22",
+                      "perfect-dodge": "+1",
                       "sp-cost": "24",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12015,7 +13037,8 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "flee-24-perfect-dodge": "+2",
+                      "flee": "+ 24",
+                      "perfect-dodge": "+2",
                       "sp-cost": "26",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12026,7 +13049,8 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "flee-26-perfect-dodge": "+2",
+                      "flee": "+ 26",
+                      "perfect-dodge": "+2",
                       "sp-cost": "28",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12037,7 +13061,8 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "flee-28-perfect-dodge": "+3",
+                      "flee": "+ 28",
+                      "perfect-dodge": "+3",
                       "sp-cost": "30",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12048,7 +13073,8 @@ export const troubadourData = {
                   {
                     "level": 6,
                     "values": {
-                      "flee-30-perfect-dodge": "+3",
+                      "flee": "+ 30",
+                      "perfect-dodge": "+3",
                       "sp-cost": "32",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12059,7 +13085,8 @@ export const troubadourData = {
                   {
                     "level": 7,
                     "values": {
-                      "flee-32-perfect-dodge": "+4",
+                      "flee": "+ 32",
+                      "perfect-dodge": "+4",
                       "sp-cost": "34",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12070,7 +13097,8 @@ export const troubadourData = {
                   {
                     "level": 8,
                     "values": {
-                      "flee-34-perfect-dodge": "+4",
+                      "flee": "+ 34",
+                      "perfect-dodge": "+4",
                       "sp-cost": "36",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12081,7 +13109,8 @@ export const troubadourData = {
                   {
                     "level": 9,
                     "values": {
-                      "flee-36-perfect-dodge": "+5",
+                      "flee": "+ 36",
+                      "perfect-dodge": "+5",
                       "sp-cost": "38",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12092,7 +13121,8 @@ export const troubadourData = {
                   {
                     "level": 10,
                     "values": {
-                      "flee-40-perfect-dodge": "+5",
+                      "flee": "+ 40",
+                      "perfect-dodge": "+5",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12105,10 +13135,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12124,6 +13153,8 @@ export const troubadourData = {
           "target": "Self and Party members around 31 X 31 cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Impressive_Riff",
           "description": "On-screen (31x31), increases party members' ASPD.\nIt does not overlap with other Instrumental Skill and can only be used when the caster is equipping instruments.",
           "levelDetails": [
             {
@@ -12353,8 +13384,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 5)",
+          "duration": "180 seconds",
+          "areaOfEffect": "31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Impressive Riff ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Impressive_Riff"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/320.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/320",
           "tree": {
@@ -12382,6 +13423,10 @@ export const troubadourData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -12400,6 +13445,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Self and Party members around 31 X 31 cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
               }
             ],
             "levelTables": [
@@ -12533,10 +13586,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -12552,6 +13604,8 @@ export const troubadourData = {
           "target": "Self and Party members around 31 X 31 cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Magic_Strings",
           "description": "On-screen (31x31), reduces party members' variable casting time and global skill cooltime.\nIt does not overlap with other Instrumental Skill and can only be used when the caster is equipping instruments.",
           "levelDetails": [
             {
@@ -12826,8 +13880,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "60 + (Skill Level × 5)",
+          "duration": "180 seconds",
+          "areaOfEffect": "31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Magic Strings ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Magic_Strings"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/321.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/321",
           "tree": {
@@ -12855,6 +13919,10 @@ export const troubadourData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "60 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -12873,6 +13941,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Self and Party members around 31 X 31 cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
               }
             ],
             "levelTables": [
@@ -12900,51 +13976,20 @@ export const troubadourData = {
                     "label": "Data 4"
                   },
                   {
-                    "id": "variable-casting-2-global-cooltime",
-                    "label": "Variable Casting- 2%, Global Cooltime"
+                    "id": "global-cooltime",
+                    "label": "Global Cooltime"
                   },
                   {
-                    "id": "variable-casting-4-global-cooltime",
-                    "label": "Variable Casting- 4%, Global Cooltime"
-                  },
-                  {
-                    "id": "variable-casting-6-global-cooltime",
-                    "label": "Variable Casting- 6%, Global Cooltime"
-                  },
-                  {
-                    "id": "variable-casting-8-global-cooltime",
-                    "label": "Variable Casting- 8%, Global Cooltime"
-                  },
-                  {
-                    "id": "variable-casting-10-global-cooltime",
-                    "label": "Variable Casting-10%, Global Cooltime"
-                  },
-                  {
-                    "id": "variable-casting-12-global-cooltime",
-                    "label": "Variable Casting-12%, Global Cooltime"
-                  },
-                  {
-                    "id": "variable-casting-14-global-cooltime",
-                    "label": "Variable Casting-14%, Global Cooltime"
-                  },
-                  {
-                    "id": "variable-casting-16-global-cooltime",
-                    "label": "Variable Casting-16%, Global Cooltime"
-                  },
-                  {
-                    "id": "variable-casting-18-global-cooltime",
-                    "label": "Variable Casting-18%, Global Cooltime"
-                  },
-                  {
-                    "id": "variable-casting-20-global-cooltime",
-                    "label": "Variable Casting-20%, Global Cooltime"
+                    "id": "variable-casting",
+                    "label": "Variable Casting"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "variable-casting-2-global-cooltime": "- 3%",
+                      "variable-casting": "- 2%",
+                      "global-cooltime": "- 3%",
                       "sp-cost": "65",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12955,7 +14000,8 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "variable-casting-4-global-cooltime": "- 6%",
+                      "variable-casting": "- 4%",
+                      "global-cooltime": "- 6%",
                       "sp-cost": "70",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12966,7 +14012,8 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "variable-casting-6-global-cooltime": "- 9%",
+                      "variable-casting": "- 6%",
+                      "global-cooltime": "- 9%",
                       "sp-cost": "75",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12977,7 +14024,8 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "variable-casting-8-global-cooltime": "-12%",
+                      "variable-casting": "- 8%",
+                      "global-cooltime": "-12%",
                       "sp-cost": "80",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12988,7 +14036,8 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "variable-casting-10-global-cooltime": "-15%",
+                      "variable-casting": "-10%",
+                      "global-cooltime": "-15%",
                       "sp-cost": "85",
                       "data-1": "60000",
                       "data-2": "15",
@@ -12999,7 +14048,8 @@ export const troubadourData = {
                   {
                     "level": 6,
                     "values": {
-                      "variable-casting-12-global-cooltime": "-18%",
+                      "variable-casting": "-12%",
+                      "global-cooltime": "-18%",
                       "sp-cost": "90",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13010,7 +14060,8 @@ export const troubadourData = {
                   {
                     "level": 7,
                     "values": {
-                      "variable-casting-14-global-cooltime": "-21%",
+                      "variable-casting": "-14%",
+                      "global-cooltime": "-21%",
                       "sp-cost": "95",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13021,7 +14072,8 @@ export const troubadourData = {
                   {
                     "level": 8,
                     "values": {
-                      "variable-casting-16-global-cooltime": "-24%",
+                      "variable-casting": "-16%",
+                      "global-cooltime": "-24%",
                       "sp-cost": "100",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13032,7 +14084,8 @@ export const troubadourData = {
                   {
                     "level": 9,
                     "values": {
-                      "variable-casting-18-global-cooltime": "-27%",
+                      "variable-casting": "-18%",
+                      "global-cooltime": "-27%",
                       "sp-cost": "105",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13043,7 +14096,8 @@ export const troubadourData = {
                   {
                     "level": 10,
                     "values": {
-                      "variable-casting-20-global-cooltime": "-30%",
+                      "variable-casting": "-20%",
+                      "global-cooltime": "-30%",
                       "sp-cost": "110",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13056,10 +14110,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13075,6 +14128,8 @@ export const troubadourData = {
           "target": "Self and Party members around 31 X 31 cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Song_of_Lutie",
           "description": "On-screen (31x31), increases party members' Maximum HP and healings received.\nIt does not overlap with other Instrumental Skill and can only be used when the caster is equipping instruments.",
           "levelDetails": [
             {
@@ -13349,8 +14404,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 5)",
+          "duration": "180 seconds",
+          "areaOfEffect": "31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Song of Lutie ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Song_of_Lutie"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/322.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/322",
           "tree": {
@@ -13378,6 +14443,10 @@ export const troubadourData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 5)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.3 seconds"
               },
@@ -13396,12 +14465,24 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Self and Party members around 31 X 31 cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
               }
             ],
             "levelTables": [
               {
                 "title": "Level Scaling",
                 "columns": [
+                  {
+                    "id": "maxhp",
+                    "label": "MaxHP"
+                  },
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
@@ -13423,51 +14504,16 @@ export const troubadourData = {
                     "label": "Data 4"
                   },
                   {
-                    "id": "maxhp-10-healings-received",
-                    "label": "Maxhp +10%, Healings Received"
-                  },
-                  {
-                    "id": "maxhp-11-healings-received",
-                    "label": "Maxhp +11%, Healings Received"
-                  },
-                  {
-                    "id": "maxhp-12-healings-received",
-                    "label": "Maxhp +12%, Healings Received"
-                  },
-                  {
-                    "id": "maxhp-13-healings-received",
-                    "label": "Maxhp +13%, Healings Received"
-                  },
-                  {
-                    "id": "maxhp-14-healings-received",
-                    "label": "Maxhp +14%, Healings Received"
-                  },
-                  {
-                    "id": "maxhp-15-healings-received",
-                    "label": "Maxhp +15%, Healings Received"
-                  },
-                  {
-                    "id": "maxhp-16-healings-received",
-                    "label": "Maxhp +16%, Healings Received"
-                  },
-                  {
-                    "id": "maxhp-17-healings-received",
-                    "label": "Maxhp +17%, Healings Received"
-                  },
-                  {
-                    "id": "maxhp-18-healings-received",
-                    "label": "Maxhp +18%, Healings Received"
-                  },
-                  {
-                    "id": "maxhp-20-healings-received",
-                    "label": "Maxhp +20%, Healings Received"
+                    "id": "healings-received",
+                    "label": "Healings Received"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "maxhp-10-healings-received": "+ 2%",
+                      "maxhp": "+10%",
+                      "healings-received": "+ 2%",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13478,7 +14524,8 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "maxhp-11-healings-received": "+ 4%",
+                      "maxhp": "+11%",
+                      "healings-received": "+ 4%",
                       "sp-cost": "45",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13489,7 +14536,8 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "maxhp-12-healings-received": "+ 6%",
+                      "maxhp": "+12%",
+                      "healings-received": "+ 6%",
                       "sp-cost": "50",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13500,7 +14548,8 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "maxhp-13-healings-received": "+ 8%",
+                      "maxhp": "+13%",
+                      "healings-received": "+ 8%",
                       "sp-cost": "55",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13511,7 +14560,8 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "maxhp-14-healings-received": "+10%",
+                      "maxhp": "+14%",
+                      "healings-received": "+10%",
                       "sp-cost": "60",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13522,7 +14572,8 @@ export const troubadourData = {
                   {
                     "level": 6,
                     "values": {
-                      "maxhp-15-healings-received": "+12%",
+                      "maxhp": "+15%",
+                      "healings-received": "+12%",
                       "sp-cost": "65",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13533,7 +14584,8 @@ export const troubadourData = {
                   {
                     "level": 7,
                     "values": {
-                      "maxhp-16-healings-received": "+14%",
+                      "maxhp": "+16%",
+                      "healings-received": "+14%",
                       "sp-cost": "70",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13544,7 +14596,8 @@ export const troubadourData = {
                   {
                     "level": 8,
                     "values": {
-                      "maxhp-17-healings-received": "+16%",
+                      "maxhp": "+17%",
+                      "healings-received": "+16%",
                       "sp-cost": "75",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13555,7 +14608,8 @@ export const troubadourData = {
                   {
                     "level": 9,
                     "values": {
-                      "maxhp-18-healings-received": "+18%",
+                      "maxhp": "+18%",
+                      "healings-received": "+18%",
                       "sp-cost": "80",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13566,7 +14620,8 @@ export const troubadourData = {
                   {
                     "level": 10,
                     "values": {
-                      "maxhp-20-healings-received": "+20%",
+                      "maxhp": "+20%",
+                      "healings-received": "+20%",
                       "sp-cost": "85",
                       "data-1": "60000",
                       "data-2": "15",
@@ -13579,10 +14634,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13598,6 +14652,8 @@ export const troubadourData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Unbarring_Octave",
           "description": "Tells a lame joke loudly, which has a chance of leaving enemies frozen due to how boring it was.\nSkill level affects chance of effect.\nBard's party members have a low probability of being frozen, and in PVP they have a chance of leaving all players frozen.\nThe chance of frozen is reduced by the target's resistance to abnormal status.",
           "levelDetails": [
             {
@@ -13652,8 +14708,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "(Skill level × 2) + 10",
+          "areaOfEffect": "Screen",
+          "translations": {
+            "pt-BR": {
+              "name": " Unbarring Octave ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Unbarring_Octave"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/318.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/318",
           "tree": {
@@ -13681,6 +14746,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "(Skill level × 2) + 10"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0 seconds"
               },
@@ -13699,6 +14768,10 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Caster Only"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "Screen"
               }
             ],
             "levelTables": [
@@ -13755,10 +14828,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13774,6 +14846,8 @@ export const troubadourData = {
           "target": "9*9 cells around the user",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Lullaby",
           "description": "Performs a dreamy ensemble that may leave all enemies sleeping.\nThe chance of sleep and duration is reduced by the target's resistance to abnormal status.\nThis skill can be overlapped with other ensemble skills, and can only be used when the caster is equipped with an instrument or whip.\nEnsemble skill is activated when the bard / dancer in the party is within 9 x 9 cells\nEnters a ensemble aftermath(unavailable skill, reduced movement speed and attack speed) for 10 seconds.\nCannot be used on players and Boss monsters.",
           "levelDetails": [],
           "fixedCastTime": "0.5 seconds",
@@ -13818,8 +14892,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "duration": "60 seconds",
+          "areaOfEffect": "9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Lullaby ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Lullaby"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/306.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/306",
           "tree": {
@@ -13847,6 +14931,10 @@ export const troubadourData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -13865,6 +14953,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "9*9 cells around the user"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -13903,10 +14999,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -13922,6 +15017,8 @@ export const troubadourData = {
           "target": "9*9 cells around the user",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Classical_Pluck",
           "description": "For 60 seconds, all targets except the caster within the range of 9 X 9 cells will not be able to use skills and magic..\nThis skill cannot be overlapped with other ensemble skills, and can only be used when the caster is equipped with an instrument or whip.\nEnsemble skill is activated when the bard / dancer in the party is within 9 x 9 cells\nEnters a ensemble aftermath(unavailable skill, reduced movement speed and attack speed) for 10 seconds.\nThis skill can only be used in PVP / Sieze Mode.",
           "levelDetails": [],
           "fixedCastTime": "1 second",
@@ -13957,8 +15054,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "duration": "60 seconds",
+          "areaOfEffect": "9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Classical Pluck ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Classical_Pluck"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/311.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/311",
           "tree": {
@@ -13986,6 +15093,10 @@ export const troubadourData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "1 second"
               },
@@ -14004,6 +15115,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "9*9 cells around the user"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -14037,10 +15156,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14056,6 +15174,8 @@ export const troubadourData = {
           "target": "Self and Party members around 31 X 31 cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Acoustic_Rhythm",
           "description": "On-screen (31x31), increases resistance of party members' Earth/Water/Fire/Wind resistance based on its skill level.\nAl increases resistance to Petrification, Stone, Frozen, Stun, Curse, Sleep, Silence, Confusion.\nIt does not overlap with other Ensemble Skill and can only be used when the caster is equipping whips / instruments.\nEnsemble Skill only activates when Bard/ Dancer is within 9 X 9 cell. When Ensemble Skill is used, caster and partner becomes Aftereffect.\nCannot use skills, movement speed and ASP reduction for 10 sec.",
           "levelDetails": [
             {
@@ -14210,8 +15330,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "duration": "180 seconds",
+          "areaOfEffect": "31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Acoustic Rhythm ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Acoustic_Rhythm"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/313.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/313",
           "tree": {
@@ -14239,6 +15369,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -14257,6 +15391,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Self and Party members around 31 X 31 cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
               }
             ],
             "levelTables": [
@@ -14284,31 +15426,20 @@ export const troubadourData = {
                     "label": "Data 4"
                   },
                   {
-                    "id": "property-resistance-12-status-effect-resistance",
-                    "label": "Property Resistance + 12%, Status Effect Resistance"
+                    "id": "property-resistance",
+                    "label": "Property Resistance"
                   },
                   {
-                    "id": "property-resistance-15-status-effect-resistance",
-                    "label": "Property Resistance + 15%, Status Effect Resistance"
-                  },
-                  {
-                    "id": "property-resistance-3-status-effect-resistance",
-                    "label": "Property Resistance + 3%, Status Effect Resistance"
-                  },
-                  {
-                    "id": "property-resistance-6-status-effect-resistance",
-                    "label": "Property Resistance + 6%, Status Effect Resistance"
-                  },
-                  {
-                    "id": "property-resistance-9-status-effect-resistance",
-                    "label": "Property Resistance + 9%, Status Effect Resistance"
+                    "id": "status-effect-resistance",
+                    "label": "Status Effect Resistance"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "property-resistance-3-status-effect-resistance": "+ 5%",
+                      "property-resistance": "+ 3%",
+                      "status-effect-resistance": "+ 5%",
                       "sp-cost": "40",
                       "data-1": "60000",
                       "data-2": "15",
@@ -14319,7 +15450,8 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "property-resistance-6-status-effect-resistance": "+ 10%",
+                      "property-resistance": "+ 6%",
+                      "status-effect-resistance": "+ 10%",
                       "sp-cost": "44",
                       "data-1": "60000",
                       "data-2": "15",
@@ -14330,7 +15462,8 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "property-resistance-9-status-effect-resistance": "+ 15%",
+                      "property-resistance": "+ 9%",
+                      "status-effect-resistance": "+ 15%",
                       "sp-cost": "48",
                       "data-1": "60000",
                       "data-2": "15",
@@ -14341,7 +15474,8 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "property-resistance-12-status-effect-resistance": "+ 20%",
+                      "property-resistance": "+ 12%",
+                      "status-effect-resistance": "+ 20%",
                       "sp-cost": "52",
                       "data-1": "60000",
                       "data-2": "15",
@@ -14352,7 +15486,8 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "property-resistance-15-status-effect-resistance": "+ 25%",
+                      "property-resistance": "+ 15%",
+                      "status-effect-resistance": "+ 25%",
                       "sp-cost": "56",
                       "data-1": "60000",
                       "data-2": "15",
@@ -14365,10 +15500,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14384,6 +15518,8 @@ export const troubadourData = {
           "target": "Self and Party members around 31 X 31 cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Battle_Theme",
           "description": "On-screen (31x31) Increases yourself and your party members ATK and DEF based on its skill level.\nIt does not overlap with other Ensemble Skill and can only be used when the caster is equipping whips / instruments.\nEnsemble Skill only activates when Bard/ Dancer is within 9 X 9 cell. When Ensemble Skill is used, caster and partner becomes Aftereffect.\nCannot use skills, movement speed and ASP reduction for 10 sec.",
           "levelDetails": [
             {
@@ -14538,8 +15674,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "46 + (Skill Level × 4)",
+          "duration": "180 seconds",
+          "areaOfEffect": "31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Battle Theme ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Battle_Theme"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/309.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/309",
           "tree": {
@@ -14567,6 +15713,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "46 + (Skill Level × 4)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -14585,6 +15735,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Self and Party members around 31 X 31 cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
               }
             ],
             "levelTables": [
@@ -14596,24 +15754,8 @@ export const troubadourData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "atk-20-def",
-                    "label": "Atk + 20, Def"
-                  },
-                  {
-                    "id": "atk-25-def",
-                    "label": "Atk + 25, Def"
-                  },
-                  {
-                    "id": "atk-30-def",
-                    "label": "Atk + 30, Def"
-                  },
-                  {
-                    "id": "atk-35-def",
-                    "label": "Atk + 35, Def"
-                  },
-                  {
-                    "id": "atk-40-def",
-                    "label": "Atk + 40, Def"
+                    "id": "atk",
+                    "label": "Atk"
                   },
                   {
                     "id": "data-1",
@@ -14630,13 +15772,18 @@ export const troubadourData = {
                   {
                     "id": "data-4",
                     "label": "Data 4"
+                  },
+                  {
+                    "id": "def",
+                    "label": "Def"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "atk-20-def": "+ 15",
+                      "atk": "+ 20",
+                      "def": "+ 15",
                       "sp-cost": "50",
                       "data-1": "60000",
                       "data-2": "15",
@@ -14647,7 +15794,8 @@ export const troubadourData = {
                   {
                     "level": 2,
                     "values": {
-                      "atk-25-def": "+ 30",
+                      "atk": "+ 25",
+                      "def": "+ 30",
                       "sp-cost": "54",
                       "data-1": "60000",
                       "data-2": "15",
@@ -14658,7 +15806,8 @@ export const troubadourData = {
                   {
                     "level": 3,
                     "values": {
-                      "atk-30-def": "+ 45",
+                      "atk": "+ 30",
+                      "def": "+ 45",
                       "sp-cost": "58",
                       "data-1": "60000",
                       "data-2": "15",
@@ -14669,7 +15818,8 @@ export const troubadourData = {
                   {
                     "level": 4,
                     "values": {
-                      "atk-35-def": "+ 60",
+                      "atk": "+ 35",
+                      "def": "+ 60",
                       "sp-cost": "62",
                       "data-1": "60000",
                       "data-2": "15",
@@ -14680,7 +15830,8 @@ export const troubadourData = {
                   {
                     "level": 5,
                     "values": {
-                      "atk-40-def": "+ 75",
+                      "atk": "+ 40",
+                      "def": "+ 75",
                       "sp-cost": "66",
                       "data-1": "60000",
                       "data-2": "15",
@@ -14693,10 +15844,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14712,6 +15862,8 @@ export const troubadourData = {
           "target": "Self and Party members around 31 X 31 cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Power_Cord",
           "description": "On-screen (31x31), Casts a skill to yourself and your party members that nullifies gemstone by 1 when using magic.\nIt does not overlap with other Ensemble Skill and can only be used when the caster is equipping whips / instruments.\nEnsemble Skill only activates when Bard/ Dancer is within 9 X 9 cell. When Ensemble Skill is used, caster and partner becomes Aftereffect.\nCannot use skills, movement speed and ASP reduction for 10 sec.",
           "levelDetails": [],
           "fixedCastTime": "0.5 seconds",
@@ -14747,8 +15899,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "70",
+          "duration": "180 seconds",
+          "areaOfEffect": "31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Power Cord ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Power_Cord"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/312.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/312",
           "tree": {
@@ -14776,6 +15938,10 @@ export const troubadourData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "70"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -14794,6 +15960,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Self and Party members around 31 X 31 cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
               }
             ],
             "levelTables": [
@@ -14827,10 +16001,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14846,6 +16019,8 @@ export const troubadourData = {
           "target": "9*9 cells around the user",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Down_Tempo",
           "description": "Performs an ensemble that will nullify all defense of all enemies around the performers.\nThis skill cannot be overlapped with other ensemble skills, and can only be used when the caster is equipped with an instrument or whip.\nEnsemble skill is activated when the bard / dancer in the party is within 9 x 9 cells\nEnters a ensemble aftermath(unavailable skill, reduced movement speed and attack speed) for 10 seconds.\nThis skill can only be used in PVP / Sieze Mode.",
           "levelDetails": [],
           "fixedCastTime": "0.5 seconds",
@@ -14881,8 +16056,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "120",
+          "duration": "60 seconds",
+          "areaOfEffect": "9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Down Tempo ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Down_Tempo"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/308.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/308",
           "tree": {
@@ -14910,6 +16095,10 @@ export const troubadourData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "120"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -14928,6 +16117,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "9*9 cells around the user"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -14961,10 +16158,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -14980,6 +16176,8 @@ export const troubadourData = {
           "target": "Self and Party members around 31 X 31 cell",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Mental_Sensing",
           "description": "On-screen (31x31) Gives yourself and your party members a chance to gain EXP points based on its skill level when fighting monsters.\nIt does not overlap with other Ensemble Skill and can only be used when the caster is equipping whips.\nEnsemble Skill only activates when Bard/ Dancer is within 9 X 9 cell. When Ensemble Skill is used, caster and partner becomes Aftereffect.\nCannot use skills, movement speed and ASP reduction for 10 sec.",
           "levelDetails": [
             {
@@ -15109,8 +16307,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20",
+          "duration": "180 seconds",
+          "areaOfEffect": "31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Mental Sensing ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Mental_Sensing"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/307.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/307",
           "tree": {
@@ -15138,6 +16346,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -15156,6 +16368,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "Self and Party members around 31 X 31 cell"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "180 seconds"
               }
             ],
             "levelTables": [
@@ -15239,10 +16459,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15258,6 +16477,8 @@ export const troubadourData = {
           "target": "31*31 cells around the user",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Harmonic_Lick",
           "description": "Performs an ensemble that will add piercing damage on the attack of all players around the performers.\nThis skill cannot be overlapped with other ensemble skills, and can only be used when the caster is equipped with an instrument or whip.\nEnsemble skill is activated when the bard / dancer in the party is within 9 x 9 cells\nEnters a ensemble aftermath(unavailable skill, reduced movement speed and attack speed) for 10 seconds.\nATK speed 20% increase.\nPATK speed 20% increase.\nMATK power 20% increase.\nMaximum HP 30% increase.\nMaximum SP 30% increase.\nEvery status 15 increase.\nHIT 50 increase.\nFLEE 50 increase.\nSP consumption 30% decrease.\nHP recovery 100% increase.\nSP recovery 100% increase.",
           "levelDetails": [],
           "fixedCastTime": "0.5 seconds",
@@ -15341,8 +16562,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "35 + (Skill Level × 3)",
+          "duration": "60 seconds",
+          "areaOfEffect": "31 x 31",
+          "translations": {
+            "pt-BR": {
+              "name": " Harmonic Lick ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Harmonic_Lick"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/310.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/310",
           "tree": {
@@ -15370,6 +16601,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "35 + (Skill Level × 3)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -15388,6 +16623,14 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "31*31 cells around the user"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "31 x 31"
+              },
+              {
+                "label": "Duration",
+                "value": "60 seconds"
               }
             ],
             "levelTables": [
@@ -15453,10 +16696,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15472,6 +16714,8 @@ export const troubadourData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Arrow",
+          "irowikiUrl": "https://irowiki.org/wiki/Arrow_Vulcan",
           "description": "Fire an awesome flurry of arrows at\na targeted enemy. Requires Musical Instrument\nClass Weaponfor Minstrels and Whip Class Weapon\nfor Gypsies.",
           "levelDetails": [
             {
@@ -15566,8 +16810,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 2)",
+          "castRange": "10 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Arrow Vulcan ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Arrow_Vulcan"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/394.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/394",
           "tree": {
@@ -15607,6 +16860,10 @@ export const troubadourData = {
                 "value": "10"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 2)"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -15623,8 +16880,16 @@ export const troubadourData = {
                 "value": "1.5 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "10 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Arrow"
               }
             ],
             "levelTables": [
@@ -15712,10 +16977,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15731,6 +16995,8 @@ export const troubadourData = {
           "target": "Immediately",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Sheltering_Bliss",
           "description": "A Minstrel and Gypsy Ensemble Skill\nthat creates a 5*5 cell area around the casters\nwhere other players and monsters cannot enter.\nThis skill cannot offer protection from magic\nor long ranged attacks. This skill cannot be\ncast in areas that are adjacent to obstacles.",
           "levelDetails": [
             {
@@ -15781,8 +17047,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "20 + (Skill Level × 10)",
+          "duration": "15 + (Skill Level × 5)",
+          "areaOfEffect": "9 x 9",
+          "translations": {
+            "pt-BR": {
+              "name": " Sheltering Bliss ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Sheltering_Bliss"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/395.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/395",
           "tree": {
@@ -15816,8 +17092,16 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "20 + (Skill Level × 10)"
+              },
+              {
                 "label": "Target",
                 "value": "Immediately"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "9 x 9"
               }
             ],
             "levelTables": [
@@ -15829,43 +17113,43 @@ export const troubadourData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Duration 20 sec",
+                      "duration": "20 seconds",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Duration 25 sec",
+                      "duration": "25 seconds",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Duration 30 sec",
+                      "duration": "30 seconds",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Duration 35 sec",
+                      "duration": "35 seconds",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Duration 40 sec",
+                      "duration": "40 seconds",
                       "sp-cost": "70"
                     }
                   }
@@ -15874,10 +17158,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15893,6 +17176,8 @@ export const troubadourData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Marionette_Control",
           "description": "Targeted Party Member receives a\nbonus to all Stats equal to half of the Stats\nof the caster. However, each of the target's\nStats cannot exceed 99. This skill is cancelled\nif this Party Member is more than 7 cells away\nfrom the caster.",
           "levelDetails": [],
           "levelExtras": [
@@ -15906,8 +17191,19 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "100",
+          "castDelay": "1 second",
+          "duration": "Until recast",
+          "castRange": "8 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Marionette Control ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Marionette_Control"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/396.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/396",
           "tree": {
@@ -15941,8 +17237,24 @@ export const troubadourData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "100"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "1 second"
+              },
+              {
+                "label": "Cast Range",
+                "value": "8 cells"
+              },
+              {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Duration",
+                "value": "Until recast"
               }
             ],
             "levelTables": [
@@ -15966,10 +17278,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -15985,6 +17296,8 @@ export const troubadourData = {
           "target": "Music&Dance",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Hermode's_Rod",
           "description": "This skill can only be used near\nWarp Portals inside Guild Siege maps during WoE\ntimes. Hermode's Rod will cancel all positive\nstatuses, aside from Berserk, from all friendly\ntargets except for the caster, and will block\nany magic spells cast of this skill's targets.\nNo one including the caster can use any skills\nfor the skill's duration, but Hermode's Rod is\ncanceled upon leaving its effective range.",
           "levelDetails": [
             {
@@ -16035,8 +17348,18 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10 + (Skill Level × 10)",
+          "duration": "(Skill Level × 10) seconds",
+          "areaOfEffect": "7 x 7",
+          "translations": {
+            "pt-BR": {
+              "name": " Hermode's Rod ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Hermode's_Rod"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/488.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/488",
           "tree": {
@@ -16070,8 +17393,20 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "10 + (Skill Level × 10)"
+              },
+              {
                 "label": "Target",
                 "value": "Music&Dance"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "7 x 7"
+              },
+              {
+                "label": "Duration",
+                "value": "(Skill Level × 10) seconds"
               }
             ],
             "levelTables": [
@@ -16128,10 +17463,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16147,6 +17481,8 @@ export const troubadourData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Skilled_Special_Singer",
           "description": "Overcome fatigue after ensemble by gypsy and clown right away.",
           "levelDetails": [],
           "fixedCastTime": "0 seconds",
@@ -16164,8 +17500,16 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "translations": {
+            "pt-BR": {
+              "name": " Skilled Special Singer ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Skilled_Special_Singer"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/5068.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5068",
           "tree": {
@@ -16202,6 +17546,10 @@ export const troubadourData = {
               },
               {
                 "label": "Levels",
+                "value": "1"
+              },
+              {
+                "label": "SP Cost",
                 "value": "1"
               },
               {
@@ -16246,10 +17594,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16265,6 +17612,8 @@ export const troubadourData = {
           "target": "1 Target",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Tarot_Card_of_Fate",
           "description": "Cast a randomly chosen effect from\none out of 14 tarot cards. The level of this\nskill affects the chance of success.",
           "levelDetails": [
             {
@@ -16319,8 +17668,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "40",
+          "castRange": "9 cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Tarot Card of Fate ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Tarot_Card_of_Fate"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/489.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/489",
           "tree": {
@@ -16354,6 +17712,10 @@ export const troubadourData = {
                 "value": "5"
               },
               {
+                "label": "SP Cost",
+                "value": "40"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.5 seconds"
               },
@@ -16368,6 +17730,10 @@ export const troubadourData = {
               {
                 "label": "Cooldown",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "9 cells"
               },
               {
                 "label": "Target",
@@ -16428,10 +17794,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16458,6 +17823,8 @@ export const troubadourData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Basic_Skill",
           "description": "",
           "levelDetails": [
             {
@@ -16536,8 +17903,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Basic Skill ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
@@ -16639,10 +18013,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16658,6 +18031,8 @@ export const troubadourData = {
           "target": "1 Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Consumes SP12 and shoots a double bolt at a single target.\nDouble Strafe's basic range is 9 cells.",
           "levelDetails": [
             {
@@ -16748,8 +18123,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Double Strafe(Double strafing) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Double_Strafe(Double_strafing)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/46.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/46",
           "tree": {
@@ -16849,10 +18231,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -16868,6 +18249,8 @@ export const troubadourData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Owl's_Eye",
           "description": "Boosts DEX",
           "levelDetails": [
             {
@@ -16958,8 +18341,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Owl's Eye ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Owl's_Eye"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/43.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/43",
           "tree": {
@@ -17069,10 +18459,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17088,6 +18477,8 @@ export const troubadourData = {
           "target": "Enemy",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Arrow",
+          "irowikiUrl": "https://irowiki.org/wiki/Arrow_Repel",
           "description": "Draw the bowstring to its\nlimit to fire a volley of arrows with enough\nforce to push the target 4 cells back.\nConsumes 15 SP regardless of skill level.",
           "levelDetails": [
             {
@@ -17146,8 +18537,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castRange": "(10 + Vulture's Eye Level) cells",
+          "translations": {
+            "pt-BR": {
+              "name": " Arrow Repel ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Arrow_Repel"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/148.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/148",
           "tree": {
@@ -17168,6 +18568,10 @@ export const troubadourData = {
                 "value": "1"
               },
               {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
                 "label": "Fixed Cast Time",
                 "value": "0.8 seconds"
               },
@@ -17184,8 +18588,16 @@ export const troubadourData = {
                 "value": "0 seconds"
               },
               {
+                "label": "Cast Range",
+                "value": "(10 + Vulture's Eye Level) cells"
+              },
+              {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Arrow"
               }
             ],
             "levelTables": [
@@ -17245,10 +18657,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17264,6 +18675,8 @@ export const troubadourData = {
           "target": "Player",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/First_Aid",
           "description": "Consume 3SP to restore 5HP.",
           "levelDetails": [],
           "levelExtras": [
@@ -17277,8 +18690,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "3",
+          "castDelay": "ASPD",
+          "translations": {
+            "pt-BR": {
+              "name": " First Aid ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/First_Aid"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
@@ -17297,6 +18719,14 @@ export const troubadourData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "3"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "ASPD"
               },
               {
                 "label": "Target",
@@ -17324,10 +18754,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17340,9 +18769,11 @@ export const troubadourData = {
           "prerequisiteText": "Double Strafe 5",
           "group": "Active",
           "type": "1 cell on ground",
-          "target": "",
+          "target": "Ground",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "1 Arrow",
+          "irowikiUrl": "https://irowiki.org/wiki/Arrow_Shower",
           "description": "Consumes SP 15 and shoots an arrow that spreads over a targeted location to inflict ranged physical damage to all enemies in 3*3 cells.\nAnd push all enemies 2 cells backward within the area of effect.\nArrow Shower's area of effect is 9 cells.",
           "levelDetails": [
             {
@@ -17433,8 +18864,20 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "15",
+          "castDelay": "0.1 seconds",
+          "cooldown": "0.3 seconds",
+          "castRange": "(10 + Vulture's Eye Level) cells",
+          "areaOfEffect": "3 x 3 ~ 5 x 5",
+          "translations": {
+            "pt-BR": {
+              "name": " Arrow Shower ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Arrow_Shower"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/47.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/47",
           "tree": {
@@ -17460,6 +18903,34 @@ export const troubadourData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "SP Cost",
+                "value": "15"
+              },
+              {
+                "label": "Cast Delay",
+                "value": "0.1 seconds"
+              },
+              {
+                "label": "Cooldown",
+                "value": "0.3 seconds"
+              },
+              {
+                "label": "Cast Range",
+                "value": "(10 + Vulture's Eye Level) cells"
+              },
+              {
+                "label": "Target",
+                "value": "Ground"
+              },
+              {
+                "label": "Area of Effect",
+                "value": "3 x 3 ~ 5 x 5"
+              },
+              {
+                "label": "Ammunition",
+                "value": "1 Arrow"
               }
             ],
             "levelTables": [
@@ -17537,10 +19008,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17556,6 +19026,8 @@ export const troubadourData = {
           "target": "",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Vulture's_Eye",
           "description": "Enhances Attack range and Hit rate with Bow class weapons.",
           "levelDetails": [
             {
@@ -17646,8 +19118,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Vulture's Eye ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Vulture's_Eye"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/44.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/44",
           "tree": {
@@ -17686,76 +19165,90 @@ export const troubadourData = {
                   {
                     "id": "effect",
                     "label": "Effect"
+                  },
+                  {
+                    "id": "range-bonus",
+                    "label": "Range Bonus"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "Range Bonus + 1, HIT Bonus: 1%",
+                      "range-bonus": "+ 1",
+                      "effect": "HIT Bonus: 1%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "Range Bonus + 2, HIT Bonus: 2%",
+                      "range-bonus": "+ 2",
+                      "effect": "HIT Bonus: 2%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "Range Bonus + 3, HIT Bonus: 3%",
+                      "range-bonus": "+ 3",
+                      "effect": "HIT Bonus: 3%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "Range Bonus + 4, HIT Bonus: 4%",
+                      "range-bonus": "+ 4",
+                      "effect": "HIT Bonus: 4%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "Range Bonus + 5, HIT Bonus: 5%",
+                      "range-bonus": "+ 5",
+                      "effect": "HIT Bonus: 5%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "Range Bonus + 6, HIT Bonus: 6%",
+                      "range-bonus": "+ 6",
+                      "effect": "HIT Bonus: 6%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "Range Bonus + 7, HIT Bonus: 7%",
+                      "range-bonus": "+ 7",
+                      "effect": "HIT Bonus: 7%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "Range Bonus + 8, HIT Bonus: 8%",
+                      "range-bonus": "+ 8",
+                      "effect": "HIT Bonus: 8%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "Range Bonus + 9, HIT Bonus: 9%",
+                      "range-bonus": "+ 9",
+                      "effect": "HIT Bonus: 9%",
                       "sp-cost": "0"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "Range Bonus +10, HIT Bonus:10%",
+                      "range-bonus": "+10",
+                      "effect": "HIT Bonus:10%",
                       "sp-cost": "0"
                     }
                   }
@@ -17764,10 +19257,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17783,6 +19275,8 @@ export const troubadourData = {
           "target": "Item",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Arrow_Crafting",
           "description": "Create arrows out of specific items.\nThe kind of arrow produced, as well as the\namount, is determined by the items used.",
           "levelDetails": [],
           "levelExtras": [
@@ -17796,8 +19290,16 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "10",
+          "translations": {
+            "pt-BR": {
+              "name": " Arrow Crafting ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Arrow_Crafting"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/147.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/147",
           "tree": {
@@ -17816,6 +19318,10 @@ export const troubadourData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "10"
               },
               {
                 "label": "Target",
@@ -17843,10 +19349,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17859,9 +19364,11 @@ export const troubadourData = {
           "prerequisiteText": "Finish Quest, Novice Only",
           "group": "Supportive",
           "type": "",
-          "target": "",
+          "target": "Self",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "https://irowiki.org/wiki/Play_Dead",
           "description": "Feign death to avoid\nthe menace of nearby enemies.\nThe Play Dead status is cancelled by casting\nthis skill again or attacks from an enemy.",
           "levelDetails": [],
           "levelExtras": [
@@ -17875,8 +19382,17 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "spCost": "1",
+          "duration": "Indefinite",
+          "translations": {
+            "pt-BR": {
+              "name": " Play Dead ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
@@ -17895,6 +19411,18 @@ export const troubadourData = {
               {
                 "label": "Levels",
                 "value": "1"
+              },
+              {
+                "label": "SP Cost",
+                "value": "1"
+              },
+              {
+                "label": "Target",
+                "value": "Self"
+              },
+              {
+                "label": "Duration",
+                "value": "Indefinite"
               }
             ],
             "levelTables": [
@@ -17918,10 +19446,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -17937,6 +19464,8 @@ export const troubadourData = {
           "target": "Caster Only",
           "recoversAp": "",
           "consumesAp": "",
+          "ammunition": "",
+          "irowikiUrl": "",
           "description": "Boosts AGI and DEX temporarily.\nAdditionally, when using Improve Concentration,\nThis skill will also reveal any hidden enemies in a 3x3 area around the user.",
           "levelDetails": [
             {
@@ -18027,8 +19556,15 @@ export const troubadourData = {
               ]
             }
           ],
-          "translations": {},
-          "apiStatus": "not-used",
+          "translations": {
+            "pt-BR": {
+              "name": " Improve Concentration(Attention concentrate) ",
+              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+              "source": "bROWiki",
+              "sourceUrl": "https://browiki.org/wiki/Improve_Concentration(Attention_concentrate)"
+            }
+          },
+          "apiStatus": "translated",
           "iconUrl": "assets/divine-pride/skills/45.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/45",
           "tree": {
@@ -18069,78 +19605,92 @@ export const troubadourData = {
                     "label": "SP Cost"
                   },
                   {
-                    "id": "effect",
-                    "label": "Effect"
+                    "id": "duration",
+                    "label": "Duration"
+                  },
+                  {
+                    "id": "dex-agi",
+                    "label": "Dex, Agi"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "effect": "DE x , AGI + 3%, Duration: 60sec",
+                      "duration": "60 seconds",
+                      "dex-agi": "+ 3%",
                       "sp-cost": "25"
                     }
                   },
                   {
                     "level": 2,
                     "values": {
-                      "effect": "DE x , AGI + 4%, Duration: 80sec",
+                      "duration": "80 seconds",
+                      "dex-agi": "+ 4%",
                       "sp-cost": "30"
                     }
                   },
                   {
                     "level": 3,
                     "values": {
-                      "effect": "DE x , AGI + 5%, Duration: 100sec",
+                      "duration": "100 seconds",
+                      "dex-agi": "+ 5%",
                       "sp-cost": "35"
                     }
                   },
                   {
                     "level": 4,
                     "values": {
-                      "effect": "DE x , AGI + 6%, Duration: 120sec",
+                      "duration": "120 seconds",
+                      "dex-agi": "+ 6%",
                       "sp-cost": "40"
                     }
                   },
                   {
                     "level": 5,
                     "values": {
-                      "effect": "DE x , AGI + 7%, Duration: 140sec",
+                      "duration": "140 seconds",
+                      "dex-agi": "+ 7%",
                       "sp-cost": "45"
                     }
                   },
                   {
                     "level": 6,
                     "values": {
-                      "effect": "DE x , AGI + 8%, Duration: 160sec",
+                      "duration": "160 seconds",
+                      "dex-agi": "+ 8%",
                       "sp-cost": "50"
                     }
                   },
                   {
                     "level": 7,
                     "values": {
-                      "effect": "DE x , AGI + 9%, Duration: 180sec",
+                      "duration": "180 seconds",
+                      "dex-agi": "+ 9%",
                       "sp-cost": "55"
                     }
                   },
                   {
                     "level": 8,
                     "values": {
-                      "effect": "DE x , AGI +10%, Duration: 200sec",
+                      "duration": "200 seconds",
+                      "dex-agi": "+10%",
                       "sp-cost": "60"
                     }
                   },
                   {
                     "level": 9,
                     "values": {
-                      "effect": "DE x , AGI +11%, Duration: 220sec",
+                      "duration": "220 seconds",
+                      "dex-agi": "+11%",
                       "sp-cost": "65"
                     }
                   },
                   {
                     "level": 10,
                     "values": {
-                      "effect": "DE x , AGI +12%, Duration: 240sec",
+                      "duration": "240 seconds",
+                      "dex-agi": "+12%",
                       "sp-cost": "70"
                     }
                   }
@@ -18149,10 +19699,9 @@ export const troubadourData = {
               }
             ]
           },
-          "irowikiUrl": "",
           "balanceNotes": [],
           "api": {
-            "status": "not-used",
+            "status": "translated",
             "entries": [],
             "selectedEntry": null
           }
@@ -18172,6 +19721,8 @@ export const troubadourData = {
       "target": "Single Target",
       "recoversAp": "1(1~3Lv), 2(4~5Lv)",
       "consumesAp": "",
+      "ammunition": "1 Arrows",
+      "irowikiUrl": "https://irowiki.org/wiki/Rhythm_Shooting",
       "description": "Musical instrument, bow and whip only skill.\nFires an arrow to single target, deals 3 hits of long ranged physical damage.\nDeals additional damage depends on user's base level.\nWhen learning Stage Manner, CON will affect additional damage too.\nDeals more damage against target marked with sound brand.\n(Doesn't remove sound brand from target).\nConsumes 1 equipped arrow.",
       "levelDetails": [
         {
@@ -18226,8 +19777,17 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "60 + (Skill Level x 6)",
+      "castRange": "9 cells",
+      "translations": {
+        "pt-BR": {
+          "name": " Rhythm Shooting ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Rhythm_Shooting"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5355.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5355",
       "tree": {
@@ -18248,6 +19808,10 @@ export const troubadourData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "60 + (Skill Level x 6)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -18264,8 +19828,16 @@ export const troubadourData = {
             "value": "0.35 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "9 cells"
+          },
+          {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Ammunition",
+            "value": "1 Arrows"
           },
           {
             "label": "AP Generated",
@@ -18317,7 +19889,6 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Rhythm shooting",
@@ -18438,7 +20009,7 @@ export const troubadourData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18454,6 +20025,8 @@ export const troubadourData = {
       "target": "",
       "recoversAp": "",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Stage_Etiquette",
       "description": "Increase AP gain through your Troubadour/Trouvere Attack skills and improve certain Performance skills.\nInstruments, Bows, and Whips increase P. ATK and S. MATK.",
       "levelDetails": [],
       "levelExtras": [
@@ -18483,8 +20056,15 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Stage Etiquette ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Stage_Etiquette"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5349.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5349",
       "tree": {
@@ -18550,10 +20130,9 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18569,6 +20148,8 @@ export const troubadourData = {
       "target": "Single Target",
       "recoversAp": "1(1~3Lv), 2(4~5Lv)",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Instrument/Whip exclusive skills.\nLabels a single target with sound.\nAs the skill level increases, the duration of the brand increases.\nThe brand deals damage once before exploding, depending on the attribute of the arrow equipped by the caster.\nEnemies with a brand attached take more damage from vibration reverb, metallic sound, rose blossom, and rhythm shooting.\nDamage increases further based on the caster's base level and SPL.",
       "levelDetails": [
         {
@@ -18623,8 +20204,15 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Sound Blend(Sound Blend) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Sound_Blend(Sound_Blend)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5357.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5357",
       "tree": {
@@ -18730,7 +20318,6 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Sound Blend",
@@ -18788,7 +20375,7 @@ export const troubadourData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18802,8 +20389,10 @@ export const troubadourData = {
       "group": "Active",
       "type": "Support",
       "target": "Self",
-      "recoversAp": "",
+      "recoversAp": "1",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Retrospection",
       "description": "Cast again the last Song skill you've used.\nThe recast skill consumes 30% less SP and gains 1.5 times the AP.",
       "levelDetails": [],
       "fixedCastTime": "0 seconds",
@@ -18821,8 +20410,17 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "1",
+      "duration": "seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Retrospection ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Retrospection"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5350.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5350",
       "tree": {
@@ -18850,6 +20448,10 @@ export const troubadourData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "1"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "0 seconds"
           },
@@ -18868,6 +20470,14 @@ export const troubadourData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "1"
           }
         ],
         "levelTables": [
@@ -18891,10 +20501,9 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -18908,8 +20517,10 @@ export const troubadourData = {
       "group": "Active",
       "type": "Debuff",
       "target": "Enemies within range",
-      "recoversAp": "",
+      "recoversAp": "20",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Geffenia_Nocturne",
       "description": "An Instrument/Whip skill.\nCreate a chance of decreasing Magic Resistance for 30 seconds for Normal monsters and enemy players within range.\nThis skill's effect improves if a partner in your party is within your screen.\nConsumes 1 Throat Lozenge.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -18943,8 +20554,19 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "80 + (Skill Level x 40)",
+      "duration": "30 seconds",
+      "castRange": "15 x 15 ~ 23 x 23 cells",
+      "areaOfEffect": "15 x 15 ~ 23 x 23",
+      "translations": {
+        "pt-BR": {
+          "name": " Geffenia Nocturne ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Geffenia_Nocturne"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5358.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5358",
       "tree": {
@@ -18972,6 +20594,10 @@ export const troubadourData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "80 + (Skill Level x 40)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -18988,8 +20614,24 @@ export const troubadourData = {
             "value": "10 seconds"
           },
           {
+            "label": "Cast Range",
+            "value": "15 x 15 ~ 23 x 23 cells"
+          },
+          {
             "label": "Target",
             "value": "Enemies within range"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "15 x 15 ~ 23 x 23"
+          },
+          {
+            "label": "Duration",
+            "value": "30 seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "20"
           }
         ],
         "levelTables": [
@@ -19037,10 +20679,9 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19054,8 +20695,10 @@ export const troubadourData = {
       "group": "Active",
       "type": "Debuff",
       "target": "Enemies within range",
-      "recoversAp": "",
+      "recoversAp": "20",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Miner_Rhapsody",
       "description": "An Instrument/Whip skill.\nCreate a chance of decreasing Physical Resistance for 30 seconds for Normal monsters and enemy players within range.\nThis skill's effect improves if a partner in your party is within your screen.\nConsumes 1 Throat Lozenge.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -19089,8 +20732,18 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "80 + (Skill Level x 40)",
+      "duration": "30 seconds",
+      "areaOfEffect": "15 x 15 ~ 23 x 23",
+      "translations": {
+        "pt-BR": {
+          "name": " Miner Rhapsody ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Miner_Rhapsody"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5360.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5360",
       "tree": {
@@ -19118,6 +20771,10 @@ export const troubadourData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "80 + (Skill Level x 40)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -19136,6 +20793,18 @@ export const troubadourData = {
           {
             "label": "Target",
             "value": "Enemies within range"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "15 x 15 ~ 23 x 23"
+          },
+          {
+            "label": "Duration",
+            "value": "30 seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "20"
           }
         ],
         "levelTables": [
@@ -19183,10 +20852,9 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19202,6 +20870,8 @@ export const troubadourData = {
       "target": "Single Target",
       "recoversAp": "2",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Musical instrument and whip only skill.\nFires the sonic magical arrow to single target, dealing magical damage to the target and surrounding enemies around the target.\nDeals higher damage against target marked with sound brand.\n(Doesn't remove sound brand from target).\nDeals additional damage depends on Stage Manner skill level, user's base level and SPL.\nThe skill property depends on the property of equipped arrow.\nConsumes 1 equipped arrow.",
       "levelDetails": [
         {
@@ -19256,8 +20926,15 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Metalic Fury ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Metalic_Fury"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5356.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5356",
       "tree": {
@@ -19354,7 +21031,6 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Metallic Fury",
@@ -19501,7 +21177,7 @@ export const troubadourData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19517,6 +21193,8 @@ export const troubadourData = {
       "target": "Single Target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Skills exclusive to instruments/bows/whips.\nPlant a flower seed in an arrow, dealing Ranged physical damage to a designated Single Target.\nAfter a certain amount of time, the target will bloom, dealing additional Ranged physical damage to the target and surrounding enemies.\nDamage increases additionally based on the caster's base level.\nLearn Stage Etiquette to further increase damage based on your CON.\nIf the target is affected by the sound branding effect from Sound Blend, it deals greater damage.\n(This effect does not remove the sound mark.)\nConsumes 1 equipped arrow.",
       "levelDetails": [
         {
@@ -19571,8 +21249,15 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Rose Blossom(Rose Blossom) ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Rose_Blossom(Rose_Blossom)"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5353.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5353",
       "tree": {
@@ -19669,7 +21354,6 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Rose Blossom",
@@ -19770,7 +21454,7 @@ export const troubadourData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19784,8 +21468,10 @@ export const troubadourData = {
       "group": "Active",
       "type": "Buff",
       "target": "You and party members",
-      "recoversAp": "",
+      "recoversAp": "10",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Jawaii_Serenade",
       "description": "An Instrument/Whip skill.\nIncrease S. MATK and MSPD for 180 seconds for you and surrounding party members.\nThis skill's effect improves if a partner in your party is within your screen.\nConsumes 1 Throat Lozenge.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -19819,8 +21505,18 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "130 + (Skill Level x 10)",
+      "duration": "180 seconds",
+      "areaOfEffect": "15 x 15 ~ 23 x 23",
+      "translations": {
+        "pt-BR": {
+          "name": " Jawaii Serenade ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Jawaii_Serenade"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5362.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5362",
       "tree": {
@@ -19848,6 +21544,10 @@ export const troubadourData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "130 + (Skill Level x 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -19866,6 +21566,18 @@ export const troubadourData = {
           {
             "label": "Target",
             "value": "You and party members"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "15 x 15 ~ 23 x 23"
+          },
+          {
+            "label": "Duration",
+            "value": "180 seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "10"
           }
         ],
         "levelTables": [
@@ -19913,10 +21625,9 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -19930,8 +21641,10 @@ export const troubadourData = {
       "group": "Active",
       "type": "Buff",
       "target": "You and party members",
-      "recoversAp": "",
+      "recoversAp": "10",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Musical_Interlude",
       "description": "An Instrument/Whip skill.\nIncrease Physical Resistance for 180 seconds for you and surrounding party members.\nThis skill's effect improves if a partner in your party is within your screen.\nConsumes 1 Throat Lozenge.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -19965,8 +21678,18 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "160 + (Skill Level x 11)",
+      "duration": "180 seconds",
+      "areaOfEffect": "15 x 15 ~ 23 x 23",
+      "translations": {
+        "pt-BR": {
+          "name": " Musical Interlude ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Musical_Interlude"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5361.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5361",
       "tree": {
@@ -19994,6 +21717,10 @@ export const troubadourData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "160 + (Skill Level x 11)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -20012,6 +21739,18 @@ export const troubadourData = {
           {
             "label": "Target",
             "value": "You and party members"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "15 x 15 ~ 23 x 23"
+          },
+          {
+            "label": "Duration",
+            "value": "180 seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "10"
           }
         ],
         "levelTables": [
@@ -20059,10 +21798,9 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20076,8 +21814,10 @@ export const troubadourData = {
       "group": "Active",
       "type": "Buff",
       "target": "You and party members",
-      "recoversAp": "",
+      "recoversAp": "10",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Prontera_March",
       "description": "An Instrument/Whip skill.\nIncrease P.ATK and MSPD for 180 seconds for you and surrounding party members.\nThis skill's effect improves if a partner in your party is within your screen.\nConsumes 1 Throat Lozenge.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -20111,8 +21851,18 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "130 + (Skill Level x 10)",
+      "duration": "180 seconds",
+      "areaOfEffect": "15 x 15 ~ 23 x 23",
+      "translations": {
+        "pt-BR": {
+          "name": " Prontera March ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Prontera_March"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5364.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5364",
       "tree": {
@@ -20140,6 +21890,10 @@ export const troubadourData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "130 + (Skill Level x 10)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -20158,6 +21912,18 @@ export const troubadourData = {
           {
             "label": "Target",
             "value": "You and party members"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "15 x 15 ~ 23 x 23"
+          },
+          {
+            "label": "Duration",
+            "value": "180 seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "10"
           }
         ],
         "levelTables": [
@@ -20205,10 +21971,9 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20224,6 +21989,8 @@ export const troubadourData = {
       "target": "Single target",
       "recoversAp": "3",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "",
       "description": "Musical instrument and whip exclusive skill.\nRadiates sonic magic to the target, dealing magical damage to the target and surrounding enemies around the target.\nIf Mystic Symphony buff is active, the skill will deal more damage.\nDeals additional damage depends on Stage Manner skill level, user's base level and SPL, the skill property depends on the property of equipped arrow.\nConsumes 1 equipped arrows.",
       "levelDetails": [
         {
@@ -20252,8 +22019,15 @@ export const troubadourData = {
       "castDelay": "1 second",
       "cooldown": "0.4 seconds",
       "levelExtras": [],
-      "translations": {},
-      "apiStatus": "not-used",
+      "translations": {
+        "pt-BR": {
+          "name": " Rhythmical Wave ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Rhythmical_Wave"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/6521.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6521",
       "tree": {
@@ -20350,10 +22124,9 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20368,7 +22141,9 @@ export const troubadourData = {
       "type": "Buff",
       "target": "Self",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "125",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Mystic_Symphony",
       "description": "An Instrument, Bow, and Whip skill.\nCast a buff that increases your Sound Blend, Rhythm Shooting, and Rose Blossom damage by 100% for 150 seconds.\nThis skill also increases your Physical/Magic damage on Fish and Demi-Human enemies for its duration.",
       "levelDetails": [
         {
@@ -20391,8 +22166,17 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "250",
+      "duration": "150 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Mystic Symphony ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Mystic_Symphony"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5351.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5351",
       "tree": {
@@ -20426,6 +22210,10 @@ export const troubadourData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "250"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -20444,6 +22232,14 @@ export const troubadourData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "150 seconds"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "125"
           }
         ],
         "levelTables": [
@@ -20472,7 +22268,6 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [
         {
           "skillName": "Mystic Symphony",
@@ -20519,7 +22314,7 @@ export const troubadourData = {
         }
       ],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20533,8 +22328,10 @@ export const troubadourData = {
       "group": "Active",
       "type": "Debuff",
       "target": "Enemy players within range",
-      "recoversAp": "",
+      "recoversAp": "20",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Loki_Capriccio",
       "description": "An Instrument/Whip skill.\nCreate a chance of Misfortune and Confusion on enemy players within range.\nThis skill's effect improves if a partner in your party is within your screen.\nFor PvP only.\nConsumes 1 Throat Lozenge.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -20568,8 +22365,18 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "80 + (Skill Level x 40)",
+      "duration": "30 seconds",
+      "areaOfEffect": "15 x 15 ~ 23 x 23",
+      "translations": {
+        "pt-BR": {
+          "name": " Loki Capriccio ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Loki_Capriccio"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5359.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5359",
       "tree": {
@@ -20597,6 +22404,10 @@ export const troubadourData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "80 + (Skill Level x 40)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -20615,6 +22426,18 @@ export const troubadourData = {
           {
             "label": "Target",
             "value": "Enemy players within range"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "15 x 15 ~ 23 x 23"
+          },
+          {
+            "label": "Duration",
+            "value": "30 seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "20"
           }
         ],
         "levelTables": [
@@ -20662,10 +22485,9 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20679,8 +22501,10 @@ export const troubadourData = {
       "group": "Active",
       "type": "Debuff",
       "target": "Enemy players within range",
-      "recoversAp": "",
+      "recoversAp": "20",
       "consumesAp": "",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Nifflheim_Requiem",
       "description": "An Instrument/Whip skill.\nCreate a chance of Depression and Curse on enemy players within range.\nThis skill's effect improves if a partner in your party is within your screen.\nFor PvP only.\nConsumes 1 Throat Lozenge.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -20714,8 +22538,18 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "80 + (Skill Level x 40)",
+      "duration": "30 seconds",
+      "areaOfEffect": "15 x 15 ~ 23 x 23",
+      "translations": {
+        "pt-BR": {
+          "name": " Nifflheim Requiem ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Nifflheim_Requiem"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5363.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5363",
       "tree": {
@@ -20749,6 +22583,10 @@ export const troubadourData = {
             "value": "5"
           },
           {
+            "label": "SP Cost",
+            "value": "80 + (Skill Level x 40)"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -20767,6 +22605,18 @@ export const troubadourData = {
           {
             "label": "Target",
             "value": "Enemy players within range"
+          },
+          {
+            "label": "Area of Effect",
+            "value": "15 x 15 ~ 23 x 23"
+          },
+          {
+            "label": "Duration",
+            "value": "30 seconds"
+          },
+          {
+            "label": "AP Generated",
+            "value": "20"
           }
         ],
         "levelTables": [
@@ -20814,10 +22664,9 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }
@@ -20832,7 +22681,9 @@ export const troubadourData = {
       "type": "Buff",
       "target": "Self",
       "recoversAp": "",
-      "consumesAp": "",
+      "consumesAp": "100",
+      "ammunition": "",
+      "irowikiUrl": "https://irowiki.org/wiki/Kvasir_Sonata",
       "description": "An Instrument, Bow, and Whip skill.\nYou can use any Ensemble skills by yourself for 60 seconds.\nRequires a party.",
       "levelDetails": [],
       "fixedCastTime": "1 second",
@@ -20850,8 +22701,17 @@ export const troubadourData = {
           ]
         }
       ],
-      "translations": {},
-      "apiStatus": "not-used",
+      "spCost": "300",
+      "duration": "60 seconds",
+      "translations": {
+        "pt-BR": {
+          "name": " Kvasir Sonata ",
+          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
+          "source": "bROWiki",
+          "sourceUrl": "https://browiki.org/wiki/Kvasir_Sonata"
+        }
+      },
+      "apiStatus": "translated",
       "iconUrl": "assets/divine-pride/skills/5352.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5352",
       "tree": {
@@ -20885,6 +22745,10 @@ export const troubadourData = {
             "value": "1"
           },
           {
+            "label": "SP Cost",
+            "value": "300"
+          },
+          {
             "label": "Fixed Cast Time",
             "value": "1 second"
           },
@@ -20903,6 +22767,14 @@ export const troubadourData = {
           {
             "label": "Target",
             "value": "Self"
+          },
+          {
+            "label": "Duration",
+            "value": "60 seconds"
+          },
+          {
+            "label": "AP Consumed",
+            "value": "100"
           }
         ],
         "levelTables": [
@@ -20926,10 +22798,9 @@ export const troubadourData = {
           }
         ]
       },
-      "irowikiUrl": "",
       "balanceNotes": [],
       "api": {
-        "status": "not-used",
+        "status": "translated",
         "entries": [],
         "selectedEntry": null
       }

@@ -6,6 +6,10 @@
   "scripts": {
     "assets:download": "node scripts/download-assets.mjs",
     "build:data": "node scripts/build-class-data.mjs",
+    "build:data:fetch": "node scripts/build-class-data.mjs --download-sources",
+    "build:data:refresh": "node scripts/build-class-data.mjs --download-sources --refresh-sources",
+    "data:sources": "node scripts/build-class-data.mjs --download-sources-only",
+    "data:sources:refresh": "node scripts/build-class-data.mjs --download-sources-only --refresh-sources",
     "rebalances:extract": "node scripts/extract-rebalances.mjs",
     "dev": "vite",
     "build": "vite build",
