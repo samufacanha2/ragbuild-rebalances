@@ -1,5 +1,5 @@
 export const windHawkData = {
-  "generatedAt": "2026-07-10T15:02:17.770Z",
+  "generatedAt": "2026-07-10T18:52:55.580Z",
   "classId": 4257,
   "classSlug": "wind-hawk",
   "className": "Wind Hawk",
@@ -56,8 +56,8 @@ export const windHawkData = {
     "versions": 5
   },
   "tree": {
-    "columns": 9,
-    "rows": 3,
+    "columns": 7,
+    "rows": 4,
     "skillTreeUrl": "https://www.divine-pride.net/tools/skilltree/4257",
     "jobIconUrl": "assets/divine-pride/jobs/4257.png"
   },
@@ -301,8 +301,8 @@ export const windHawkData = {
       "label": "Wind Hawk",
       "pointLimit": 59,
       "tree": {
-        "columns": 9,
-        "rows": 3
+        "columns": 7,
+        "rows": 4
       },
       "skills": [
         {
@@ -414,22 +414,15 @@ export const windHawkData = {
           ],
           "spCost": "47 ~ 65",
           "castRange": "11 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Crescive Bolt ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Crescive_Bolt"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5334.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5334",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2236,
@@ -652,7 +645,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -699,22 +692,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Nature's Friend ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Nature's_Friend"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5325.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5325",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -775,7 +761,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -843,22 +829,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Advanced Traps(Advanced Trap) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Advanced_Traps(Advanced_Trap)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5323.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5323",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2248,
@@ -935,7 +914,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -971,22 +950,15 @@ export const windHawkData = {
             }
           ],
           "spCost": "5",
-          "translations": {
-            "pt-BR": {
-              "name": " Hawk Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hawk_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5327.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5327",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 128,
@@ -1050,7 +1022,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1165,22 +1137,15 @@ export const windHawkData = {
           "spCost": "93 ~ 120",
           "castRange": "15 cells",
           "areaOfEffect": "5 x 5 ~ 11 x 11",
-          "translations": {
-            "pt-BR": {
-              "name": " Gale Storm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Gale_Storm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5330.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5330",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5334,
@@ -1449,7 +1414,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1501,22 +1466,15 @@ export const windHawkData = {
             }
           ],
           "spCost": "110 - (Skill Level × 10)",
-          "translations": {
-            "pt-BR": {
-              "name": " Wind Sign ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Wind_Sign"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5324.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5324",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5325,
@@ -1608,7 +1566,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1680,22 +1638,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Solid Trap(Solid Trap) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solid_Trap(Solid_Trap)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5332.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5332",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5323,
@@ -1796,7 +1747,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1868,22 +1819,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Deep Blind Trap(Deep Blind Trap) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Deep_Blind_Trap(Deep_Blind_Trap)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5331.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5331",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5323,
@@ -1984,7 +1928,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2056,22 +2000,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Hawk Rush(Hawk Rush) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hawk_Rush(Hawk_Rush)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5326.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5326",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5327,
@@ -2198,7 +2135,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2270,22 +2207,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Flame Traps(Flame Trap) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Flame_Traps(Flame_Trap)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5335.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5335",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5332,
@@ -2386,7 +2316,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2458,22 +2388,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Swift Trap(Swift Trap) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Swift_Trap(Swift_Trap)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5333.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5333",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5331,
@@ -2574,7 +2497,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2620,22 +2543,15 @@ export const windHawkData = {
           "castDelay": "0.5 seconds",
           "cooldown": "20 seconds",
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Wild Walk ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Wild_Walk"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/6520.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6520",
           "tree": {
             "idx": 20,
             "row": 2,
-            "col": 2,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5325,
@@ -2764,7 +2680,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2806,22 +2722,15 @@ export const windHawkData = {
           ],
           "spCost": "300",
           "duration": "180 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Calamity Gale ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Calamity_Gale"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5328.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5328",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5324,
@@ -2964,7 +2873,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3036,22 +2945,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Hawk Boomerang(Hawk Boomerang) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hawk_Boomerang(Hawk_Boomerang)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5329.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5329",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5326,
@@ -3207,7 +3109,7 @@ export const windHawkData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3219,8 +3121,8 @@ export const windHawkData = {
       "label": "Ranger",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 5
+        "columns": 7,
+        "rows": 6
       },
       "skills": [
         {
@@ -3451,22 +3353,15 @@ export const windHawkData = {
           ],
           "spCost": "40",
           "castRange": "(10 + Vulture's Eye Level) cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Aimed Bolt ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Aimed_Bolt"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2236.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2236",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 117,
@@ -3634,7 +3529,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3877,22 +3772,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Trap Research (RESEARCH TRAP / Trap Research) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Trap_Research_(RESEARCH_TRAP_%2F_Trap_Research)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2248.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2248",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 123,
@@ -4094,7 +3982,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4292,22 +4180,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Main Ranger ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Main_Ranger"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2235.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2235",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -4440,7 +4321,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4587,22 +4468,15 @@ export const windHawkData = {
           "duration": "15 seconds",
           "castRange": "3 cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Electric Shock ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Electric_Shock"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2238.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2238",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 118,
@@ -4731,7 +4605,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4767,22 +4641,15 @@ export const windHawkData = {
             }
           ],
           "spCost": "5",
-          "translations": {
-            "pt-BR": {
-              "name": " Warg Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Warg_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2240.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2240",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -4839,7 +4706,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5089,22 +4956,15 @@ export const windHawkData = {
           "spCost": "20 + (Skill Level × 4)",
           "castRange": "(10 + Vulture's Eye Level) cells",
           "areaOfEffect": "5 x 5 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Arrow Storm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Arrow_Storm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2233.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2233",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2236,
@@ -5294,7 +5154,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5416,22 +5276,15 @@ export const windHawkData = {
           "duration": "15 seconds",
           "castRange": "3 cells + Trap Research Bonus cells",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Bomb Cluster ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Bomb_Cluster"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2239.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2239",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2248,
@@ -5551,7 +5404,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5595,22 +5448,15 @@ export const windHawkData = {
           "castDelay": "ASPD",
           "castRange": "9 cells",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Detonator ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Detonator"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2237.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2237",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2239,
@@ -5679,7 +5525,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5799,22 +5645,15 @@ export const windHawkData = {
           ],
           "spCost": "40",
           "duration": "SP depletion or player is revealed",
-          "translations": {
-            "pt-BR": {
-              "name": " Camouflage ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Camouflage"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2247.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2247",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2235,
@@ -5921,7 +5760,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6074,22 +5913,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Warg Teeth ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Warg_Teeth"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2245.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2245",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2240,
@@ -6215,7 +6047,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6259,22 +6091,15 @@ export const windHawkData = {
             }
           ],
           "spCost": "20",
-          "translations": {
-            "pt-BR": {
-              "name": " Warg Ride ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Warg_Ride"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2241.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2241",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2240,
@@ -6350,7 +6175,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6524,22 +6349,15 @@ export const windHawkData = {
           ],
           "spCost": "32 + (Skill Level × 4)",
           "duration": "30 + (Skill Level × 30) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Fear Breeze ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Fear_Breeze"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2234.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2234",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2233,
@@ -6692,7 +6510,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6740,22 +6558,15 @@ export const windHawkData = {
           "duration": "15 seconds",
           "castRange": "3 cells cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Magenta Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Magenta_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2249.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2249",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2248,
@@ -6840,7 +6651,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6962,22 +6773,15 @@ export const windHawkData = {
           "duration": "15 seconds",
           "castRange": "3 cells + Trap Research Bonus cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Fire Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Fire_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2253.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2253",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2237,
@@ -7092,7 +6896,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7214,22 +7018,15 @@ export const windHawkData = {
           "duration": "20 seconds",
           "castRange": "3 cells + Trap Research Bonus cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Ice Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Ice_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2254.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2254",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2237,
@@ -7344,7 +7141,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7493,22 +7290,15 @@ export const windHawkData = {
           ],
           "spCost": "12",
           "areaOfEffect": "3 x 3 ~ 7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Keen Nose ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Keen_Nose"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2246.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2246",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2245,
@@ -7640,7 +7430,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7760,22 +7550,15 @@ export const windHawkData = {
           ],
           "spCost": "28 + (Skill Level x 2)",
           "castRange": "10 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Warg Strike ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Warg_Strike"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2243.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2243",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2245,
@@ -7882,7 +7665,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7924,22 +7707,15 @@ export const windHawkData = {
           ],
           "spCost": "40",
           "castDelay": "2 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Warg Dash ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Warg_Dash"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2242.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2242",
           "tree": {
             "idx": 20,
             "row": 2,
-            "col": 2,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2241,
@@ -7996,7 +7772,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8095,22 +7871,15 @@ export const windHawkData = {
           ],
           "spCost": "80 + (Skill Level × 20)",
           "duration": "150 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " No Limits ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/No_Limits"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5002.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5002",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2234,
@@ -8224,7 +7993,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8272,22 +8041,15 @@ export const windHawkData = {
           "duration": "15 seconds",
           "castRange": "3 cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Cobalt Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Cobalt_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2250.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2250",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2248,
@@ -8372,7 +8134,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8545,22 +8307,15 @@ export const windHawkData = {
           ],
           "cooldown": "[2 + (Skill Level x 2)] seconds",
           "castRange": "? cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Warg Bite ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Warg_Bite"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2244.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2244",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2243,
@@ -8697,7 +8452,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8745,22 +8500,15 @@ export const windHawkData = {
           "duration": "15 seconds",
           "castRange": "3 cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Maze Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Maze_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2251.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2251",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2248,
@@ -8845,7 +8593,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8893,22 +8641,15 @@ export const windHawkData = {
           "duration": "15 seconds",
           "castRange": "3 cells cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Verdure Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Verdure_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2252.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2252",
           "tree": {
             "idx": 36,
-            "row": 4,
-            "col": 0,
-            "columns": 9,
+            "row": 5,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2248,
@@ -8993,7 +8734,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9117,22 +8858,15 @@ export const windHawkData = {
           ],
           "spCost": "1",
           "duration": "[5 + (Skill Level × 5)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Full Throttle ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
             "idx": 41,
-            "row": 4,
-            "col": 5,
-            "columns": 9,
+            "row": 5,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -9253,7 +8987,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9265,8 +8999,8 @@ export const windHawkData = {
       "label": "Sniper",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 4
+        "columns": 7,
+        "rows": 5
       },
       "skills": [
         {
@@ -9372,22 +9106,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Beastbane ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Beastbane"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/126.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/126",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -9492,7 +9219,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9563,22 +9290,15 @@ export const windHawkData = {
           "castDelay": "ASPD",
           "duration": "(6 − Skill Level) minutes",
           "castRange": "3 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Skid Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Skid_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/115.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/115",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -9664,7 +9384,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9739,22 +9459,15 @@ export const windHawkData = {
           "spCost": "10",
           "duration": "[240 − (Skill Level × 40)] seconds",
           "castRange": "3 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Land Mine ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Land_Mine"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/116.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/116",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -9856,7 +9569,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9931,22 +9644,15 @@ export const windHawkData = {
           "spCost": "14 + (Skill Level × 2)",
           "castRange": "11 cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Focused Arrow Strike ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Focused_Arrow_Strike"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/382.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/382",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 45,
@@ -10056,7 +9762,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10090,22 +9796,15 @@ export const windHawkData = {
           "spCost": "12",
           "castDelay": "ASPD",
           "castRange": "? cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Beast Charge ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Beast_Charge"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/499.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/499",
           "tree": {
             "idx": 6,
             "row": 0,
             "col": 6,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 46,
@@ -10169,7 +9868,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10200,22 +9899,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Falconry Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Falconry_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/127.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/127",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 126,
@@ -10259,7 +9951,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10332,22 +10024,15 @@ export const windHawkData = {
           "duration": "[180 − (Skill Level × 30)] seconds",
           "castRange": "3 cells",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Flasher ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Flasher"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/120.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/120",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 115,
@@ -10448,7 +10133,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10516,22 +10201,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Anklesnare ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Anklesnare"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/117.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/117",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 115,
@@ -10608,7 +10286,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10641,22 +10319,15 @@ export const windHawkData = {
           ],
           "spCost": "5",
           "castRange": "1 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Remove Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Remove_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/124.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/124",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 116,
@@ -10712,7 +10383,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10785,22 +10456,15 @@ export const windHawkData = {
           "fixedCastTime": "0.4 + (Skill Level × 0.1) seconds",
           "variableCastTime": "1.2 + (Skill Level × 0.3) seconds",
           "duration": "100 + (Skill Level × 30) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Wind Walker ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Wind_Walker"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/383.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/383",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 45,
@@ -10926,7 +10590,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10960,22 +10624,15 @@ export const windHawkData = {
           "spCost": "10",
           "castDelay": "ASPD",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Phantasmic Arrow ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Phantasmic_Arrow"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1009.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1009",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -11028,7 +10685,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11103,22 +10760,15 @@ export const windHawkData = {
           "castDelay": "1 second",
           "castRange": "(5 + Vulture's Eye ) cells",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Blitz Beat ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Blitz_Beat"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/129.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/129",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 127,
@@ -11227,7 +10877,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11300,22 +10950,15 @@ export const windHawkData = {
           "duration": "[180 − (Skill Level × 30)] seconds",
           "castRange": "3 cells",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Sandman ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sandman"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/119.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/119",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 120,
@@ -11416,7 +11059,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11489,22 +11132,15 @@ export const windHawkData = {
           "duration": "[180 − (Skill Level × 30)] seconds",
           "castRange": "3 cells",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Freezing Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Freezing_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/121.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/121",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 120,
@@ -11605,7 +11241,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11677,22 +11313,15 @@ export const windHawkData = {
           "castDelay": "ASPD",
           "duration": "[240 − (Skill Level × 40)] seconds",
           "castRange": "3 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Shockwave Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shockwave_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/118.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/118",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 117,
@@ -11789,7 +11418,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11860,22 +11489,15 @@ export const windHawkData = {
           "spCost": "10",
           "castDelay": "ASPD",
           "castRange": "(Skill Level + 3) cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Spring Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spring_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/131.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/131",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 124,
@@ -11974,7 +11596,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12037,22 +11659,15 @@ export const windHawkData = {
           "spCost": "8",
           "castRange": "1 + (Skill Level x 2) cells",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Detecting ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Detecting"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/130.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/130",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 45,
@@ -12144,7 +11759,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12252,22 +11867,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Steel Crow ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Steel_Crow"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/128.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/128",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 129,
@@ -12379,7 +11987,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12455,22 +12063,15 @@ export const windHawkData = {
           "duration": "[30 − (Skill Level × 5)] seconds",
           "castRange": "3 cells",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Blast Mine ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Blast_Mine"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/122.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/122",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 116,
@@ -12595,7 +12196,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12634,22 +12235,15 @@ export const windHawkData = {
           "spCost": "10",
           "duration": "10 minutes",
           "castRange": "1 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Talkie Box ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talkie_Box"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/125.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/125",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 118,
@@ -12720,7 +12314,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12830,22 +12424,15 @@ export const windHawkData = {
           ],
           "spCost": "20~40",
           "duration": "30 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Falcon Eyes ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Falcon_Eyes"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/380.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/380",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 43,
@@ -13001,7 +12588,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13054,22 +12641,15 @@ export const windHawkData = {
           ],
           "spCost": "26 + (Skill Level x 4)",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Falcon Assault ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Falcon_Assault"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/381.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/381",
           "tree": {
             "idx": 28,
-            "row": 3,
-            "col": 1,
-            "columns": 9,
+            "row": 4,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 44,
@@ -13183,7 +12763,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13259,22 +12839,15 @@ export const windHawkData = {
           "duration": "(Skill Level × 20) seconds",
           "castRange": "3 cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Claymore Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Claymore_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/123.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/123",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 118,
@@ -13393,7 +12966,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13405,8 +12978,8 @@ export const windHawkData = {
       "label": "Archer",
       "pointLimit": 49,
       "tree": {
-        "columns": 9,
-        "rows": 2
+        "columns": 7,
+        "rows": 3
       },
       "skills": [
         {
@@ -13500,22 +13073,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Basic Skill ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -13612,7 +13178,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13720,22 +13286,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Double Strafe(Double strafing) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Double_Strafe(Double_strafing)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/46.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/46",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -13830,7 +13389,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13938,22 +13497,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Owl's Eye ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Owl's_Eye"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/43.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/43",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -14058,7 +13610,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14136,22 +13688,15 @@ export const windHawkData = {
           ],
           "spCost": "15",
           "castRange": "(10 + Vulture's Eye Level) cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Arrow Repel ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Arrow_Repel"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/148.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/148",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -14256,7 +13801,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14289,22 +13834,15 @@ export const windHawkData = {
           ],
           "spCost": "3",
           "castDelay": "ASPD",
-          "translations": {
-            "pt-BR": {
-              "name": " First Aid ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/First_Aid"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -14353,7 +13891,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14466,22 +14004,15 @@ export const windHawkData = {
           "cooldown": "0.3 seconds",
           "castRange": "(10 + Vulture's Eye Level) cells",
           "areaOfEffect": "3 x 3 ~ 5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Arrow Shower ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Arrow_Shower"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/47.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/47",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 46,
@@ -14607,7 +14138,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14715,22 +14246,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Vulture's Eye ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Vulture's_Eye"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/44.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/44",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 43,
@@ -14856,7 +14380,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14888,22 +14412,15 @@ export const windHawkData = {
             }
           ],
           "spCost": "10",
-          "translations": {
-            "pt-BR": {
-              "name": " Arrow Crafting ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Arrow_Crafting"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/147.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/147",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -14948,7 +14465,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14981,22 +14498,15 @@ export const windHawkData = {
           ],
           "spCost": "1",
           "duration": "Indefinite",
-          "translations": {
-            "pt-BR": {
-              "name": " Play Dead ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -15045,7 +14555,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15153,22 +14663,15 @@ export const windHawkData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Improve Concentration(Attention concentrate) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Improve_Concentration(Attention_concentrate)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/45.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/45",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 44,
@@ -15298,7 +14801,7 @@ export const windHawkData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15416,22 +14919,15 @@ export const windHawkData = {
       ],
       "spCost": "47 ~ 65",
       "castRange": "11 cells",
-      "translations": {
-        "pt-BR": {
-          "name": " Crescive Bolt ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Crescive_Bolt"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5334.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5334",
       "tree": {
         "idx": 0,
         "row": 0,
         "col": 0,
-        "columns": 9,
+        "columns": 7,
         "requirements": [
           {
             "id": 2236,
@@ -15654,7 +15150,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15701,22 +15197,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Nature's Friend ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Nature's_Friend"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5325.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5325",
       "tree": {
         "idx": 1,
         "row": 0,
         "col": 1,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -15777,7 +15266,7 @@ export const windHawkData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15845,22 +15334,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Advanced Traps(Advanced Trap) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Advanced_Traps(Advanced_Trap)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5323.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5323",
       "tree": {
         "idx": 3,
         "row": 0,
         "col": 3,
-        "columns": 9,
+        "columns": 7,
         "requirements": [
           {
             "id": 2248,
@@ -15937,7 +15419,7 @@ export const windHawkData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15973,22 +15455,15 @@ export const windHawkData = {
         }
       ],
       "spCost": "5",
-      "translations": {
-        "pt-BR": {
-          "name": " Hawk Mastery ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Hawk_Mastery"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5327.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5327",
       "tree": {
         "idx": 5,
         "row": 0,
         "col": 5,
-        "columns": 9,
+        "columns": 7,
         "requirements": [
           {
             "id": 128,
@@ -16052,7 +15527,7 @@ export const windHawkData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16167,22 +15642,15 @@ export const windHawkData = {
       "spCost": "93 ~ 120",
       "castRange": "15 cells",
       "areaOfEffect": "5 x 5 ~ 11 x 11",
-      "translations": {
-        "pt-BR": {
-          "name": " Gale Storm ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Gale_Storm"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5330.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5330",
       "tree": {
         "idx": 7,
-        "row": 0,
-        "col": 7,
-        "columns": 9,
+        "row": 1,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 5334,
@@ -16451,7 +15919,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16503,22 +15971,15 @@ export const windHawkData = {
         }
       ],
       "spCost": "110 - (Skill Level × 10)",
-      "translations": {
-        "pt-BR": {
-          "name": " Wind Sign ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Wind_Sign"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5324.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5324",
       "tree": {
         "idx": 8,
-        "row": 0,
-        "col": 8,
-        "columns": 9,
+        "row": 1,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5325,
@@ -16610,7 +16071,7 @@ export const windHawkData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16682,22 +16143,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Solid Trap(Solid Trap) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Solid_Trap(Solid_Trap)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5332.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5332",
       "tree": {
         "idx": 10,
         "row": 1,
-        "col": 1,
-        "columns": 9,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5323,
@@ -16798,7 +16252,7 @@ export const windHawkData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16870,22 +16324,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Deep Blind Trap(Deep Blind Trap) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Deep_Blind_Trap(Deep_Blind_Trap)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5331.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5331",
       "tree": {
         "idx": 11,
         "row": 1,
-        "col": 2,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5323,
@@ -16986,7 +16433,7 @@ export const windHawkData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17058,22 +16505,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Hawk Rush(Hawk Rush) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Hawk_Rush(Hawk_Rush)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5326.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5326",
       "tree": {
         "idx": 12,
         "row": 1,
-        "col": 3,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5327,
@@ -17200,7 +16640,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17272,22 +16712,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Flame Traps(Flame Trap) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Flame_Traps(Flame_Trap)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5335.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5335",
       "tree": {
         "idx": 17,
-        "row": 1,
-        "col": 8,
-        "columns": 9,
+        "row": 2,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5332,
@@ -17388,7 +16821,7 @@ export const windHawkData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17460,22 +16893,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Swift Trap(Swift Trap) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Swift_Trap(Swift_Trap)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5333.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5333",
       "tree": {
         "idx": 18,
         "row": 2,
-        "col": 0,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5331,
@@ -17576,7 +17002,7 @@ export const windHawkData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17622,22 +17048,15 @@ export const windHawkData = {
       "castDelay": "0.5 seconds",
       "cooldown": "20 seconds",
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Wild Walk ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Wild_Walk"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/6520.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6520",
       "tree": {
         "idx": 20,
         "row": 2,
-        "col": 2,
-        "columns": 9,
+        "col": 6,
+        "columns": 7,
         "requirements": [
           {
             "id": 5325,
@@ -17766,7 +17185,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17808,22 +17227,15 @@ export const windHawkData = {
       ],
       "spCost": "300",
       "duration": "180 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Calamity Gale ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Calamity_Gale"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5328.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5328",
       "tree": {
         "idx": 21,
-        "row": 2,
-        "col": 3,
-        "columns": 9,
+        "row": 3,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 5324,
@@ -17966,7 +17378,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18038,22 +17450,15 @@ export const windHawkData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Hawk Boomerang(Hawk Boomerang) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Hawk_Boomerang(Hawk_Boomerang)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5329.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5329",
       "tree": {
         "idx": 26,
-        "row": 2,
-        "col": 8,
-        "columns": 9,
+        "row": 3,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5326,
@@ -18209,7 +17614,7 @@ export const windHawkData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }

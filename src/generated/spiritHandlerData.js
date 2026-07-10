@@ -1,5 +1,5 @@
 export const spiritHandlerData = {
-  "generatedAt": "2026-07-10T15:02:24.926Z",
+  "generatedAt": "2026-07-10T18:53:02.959Z",
   "classId": 4308,
   "classSlug": "spirit-handler",
   "className": "Spirit Handler",
@@ -56,8 +56,8 @@ export const spiritHandlerData = {
     "versions": 4
   },
   "tree": {
-    "columns": 9,
-    "rows": 5,
+    "columns": 7,
+    "rows": 6,
     "skillTreeUrl": "https://www.divine-pride.net/tools/skilltree/4308",
     "jobIconUrl": "assets/divine-pride/jobs/4308.png"
   },
@@ -270,8 +270,8 @@ export const spiritHandlerData = {
       "label": "Spirit Handler",
       "pointLimit": 59,
       "tree": {
-        "columns": 9,
-        "rows": 5
+        "columns": 7,
+        "rows": 6
       },
       "skills": [
         {
@@ -377,22 +377,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Mystical Creature Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Mystical_Creature_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5433.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5433",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -511,7 +504,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -598,22 +591,15 @@ export const spiritHandlerData = {
           "spCost": "21 + (Skill Level x 3)",
           "castDelay": "0.5 second",
           "cooldown": "0.25 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Chulho Sonic Claw ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Chulho_Sonic_Claw"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5435.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5435",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -795,7 +781,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -885,22 +871,15 @@ export const spiritHandlerData = {
           ],
           "spCost": "57 + (Skill Level x 4)",
           "areaOfEffect": "7 x 7 ~ 13 x 13 11 x 11 ~ 17 x 17 (with Commune with Kisul )",
-          "translations": {
-            "pt-BR": {
-              "name": " Kisul Water Spraying ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Kisul_Water_Spraying"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5439.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5439",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -1052,7 +1031,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1140,22 +1119,15 @@ export const spiritHandlerData = {
           "fixedCastTime": "1 seconds",
           "variableCastTime": "1.7 seconds",
           "duration": "300 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Colors of Hyunrok ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Colors_of_Hyunrok"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5444.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5444",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -1266,7 +1238,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1316,22 +1288,15 @@ export const spiritHandlerData = {
             }
           ],
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Chulho Battering ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Chulho_Battering"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5506.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5506",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -1383,7 +1348,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1470,22 +1435,15 @@ export const spiritHandlerData = {
           "spCost": "27 + (Skill Level x 5)",
           "fixedCastTime": "1 second",
           "cooldown": "1 second",
-          "translations": {
-            "pt-BR": {
-              "name": " Howling of Chulho ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Howling_of_Chulho"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5436.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5436",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -1667,7 +1625,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1742,22 +1700,15 @@ export const spiritHandlerData = {
           "spCost": "57 + (Skill Level x 4)",
           "duration": "60 ~ 120 seconds",
           "areaOfEffect": "5 x 5 ~ 13 x 13 9 x 9 ~ 17 x 17 (with Commune with Kisul )",
-          "translations": {
-            "pt-BR": {
-              "name": " Marine Festival of Kisul ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Marine_Festival_of_Kisul"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5440.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5440",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -1933,7 +1884,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2008,22 +1959,15 @@ export const spiritHandlerData = {
           "spCost": "70 + (Skill Level x 10)",
           "duration": "60 ~ 120 seconds",
           "areaOfEffect": "5 x 5 ~ 13 x 13 9 x 9 ~ 17 x 17 (with Commune with Kisul )",
-          "translations": {
-            "pt-BR": {
-              "name": " Sandy Festival of Kisul ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sandy_Festival_of_Kisul"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5441.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5441",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -2199,7 +2143,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2289,22 +2233,15 @@ export const spiritHandlerData = {
           ],
           "spCost": "50 + (Skill Level × 6)",
           "areaOfEffect": "5 x 5 ~ 11 x 11",
-          "translations": {
-            "pt-BR": {
-              "name": " Hyunrok Breeze ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hyunrok_Breeze"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5445.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5445",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -2488,7 +2425,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2576,22 +2513,15 @@ export const spiritHandlerData = {
           "fixedCastTime": "1 second",
           "cooldown": "0.35 seconds",
           "castRange": "7 x 7 ~ 11 x 11 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Hogogong Strike ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hogogong_Strike"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5437.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5437",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -2767,7 +2697,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2858,22 +2788,15 @@ export const spiritHandlerData = {
           "spCost": "80 + (Skill Level x 10)",
           "duration": "(3 + Skill Level) seconds",
           "areaOfEffect": "7 x 7 11 x 11 (with Commune with Kisul )",
-          "translations": {
-            "pt-BR": {
-              "name": " Kisul Rampage ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Kisul_Rampage"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5442.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5442",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -3028,7 +2951,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3116,22 +3039,15 @@ export const spiritHandlerData = {
           "fixedCastTime": "1.5 seconds",
           "variableCastTime": "2 seconds",
           "cooldown": "0.3 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Hyunrok Cannon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hyunrok_Cannon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5446.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5446",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -3331,7 +3247,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3385,22 +3301,15 @@ export const spiritHandlerData = {
           "castDelay": "0.7 seconds",
           "cooldown": "1 second",
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Hyunrok Spirit Power ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hyunrok_Spirit_Power"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5507.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5507",
           "tree": {
             "idx": 27,
             "row": 3,
-            "col": 0,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -3472,7 +3381,7 @@ export const spiritHandlerData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3493,22 +3402,15 @@ export const spiritHandlerData = {
           "description": "Empowers the skills that borrow the power from Chulho through perfect communion with the mystical creature Chulho.",
           "levelDetails": [],
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Commune with Chulho ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Commune_with_Chulho"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5434.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5434",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -3539,7 +3441,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3560,22 +3462,15 @@ export const spiritHandlerData = {
           "description": "Empowers the skills that borrow the power from Kisul through perfect communion with the mystical creature Kisul.",
           "levelDetails": [],
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Commune with Kisul ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Commune_with_Kisul"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5438.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5438",
           "tree": {
             "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
+            "row": 4,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -3606,7 +3501,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3627,22 +3522,15 @@ export const spiritHandlerData = {
           "description": "Empowers the skills that borrow the power from Hyunrok through perfect communion with the mystical creature Hyunrok.",
           "levelDetails": [],
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Commune with Hyunrok ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Commune_with_Hyunrok"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5443.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5443",
           "tree": {
             "idx": 33,
-            "row": 3,
-            "col": 6,
-            "columns": 9,
+            "row": 4,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -3673,7 +3561,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3747,22 +3635,15 @@ export const spiritHandlerData = {
           ],
           "spCost": "100",
           "duration": "30 ~ 150 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Temporary Communion ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Temporary_Communion"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5447.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5447",
           "tree": {
             "idx": 37,
-            "row": 4,
-            "col": 1,
-            "columns": 9,
+            "row": 5,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -3894,7 +3775,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3968,22 +3849,15 @@ export const spiritHandlerData = {
           ],
           "spCost": "100",
           "duration": "10 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Blessing of Mystical Creatures ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Blessing_of_Mystical_Creatures"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5448.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5448",
           "tree": {
             "idx": 39,
-            "row": 4,
-            "col": 3,
-            "columns": 9,
+            "row": 5,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5433,
@@ -4107,7 +3981,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4119,8 +3993,8 @@ export const spiritHandlerData = {
       "label": "Summoner",
       "pointLimit": 59,
       "tree": {
-        "columns": 9,
-        "rows": 8
+        "columns": 7,
+        "rows": 10
       },
       "skills": [
         {
@@ -4149,22 +4023,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " New Basic Skill ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/New_Basic_Skill"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5018.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5018",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -4201,7 +4068,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4270,22 +4137,15 @@ export const spiritHandlerData = {
           ],
           "spCost": "10",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Bite ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Bite"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5019.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5019",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5018,
@@ -4372,7 +4232,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4417,22 +4277,15 @@ export const spiritHandlerData = {
             }
           ],
           "spCost": "30",
-          "translations": {
-            "pt-BR": {
-              "name": " Hide ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hide"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5020.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5020",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5019,
@@ -4505,7 +4358,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4630,22 +4483,15 @@ export const spiritHandlerData = {
           ],
           "spCost": "15 + (Skill Level x 5)",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Scratch ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Scratch"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5021.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5021",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5020,
@@ -4753,7 +4599,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4799,22 +4645,15 @@ export const spiritHandlerData = {
           ],
           "spCost": "10",
           "duration": "6 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Stoop ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stoop"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5022.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5022",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5021,
@@ -4891,7 +4730,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5000,22 +4839,15 @@ export const spiritHandlerData = {
           "spCost": "Skill Level × 10",
           "cooldown": "(Skill Level × 2) seconds",
           "castRange": "[2 + (Skill Level × 4)] cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Lope ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lope"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5023.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5023",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5022,
@@ -5127,7 +4959,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5176,22 +5008,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Sprite Marble ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sprite_Marble"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5024.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5024",
           "tree": {
             "idx": 6,
             "row": 0,
             "col": 6,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5023,
@@ -5245,7 +5070,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5395,22 +5220,15 @@ export const spiritHandlerData = {
           "cooldown": "(6 - Skill Level) seconds",
           "duration": "2 minutes",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Fresh Shrimp ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Fresh_Shrimp"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5041.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5041",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5024,
@@ -5546,7 +5364,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5745,22 +5563,15 @@ export const spiritHandlerData = {
           ],
           "spCost": "40",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Silvervine Stem Spear ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Silvervine_Stem_Spear"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5026.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5026",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5024,
@@ -5910,7 +5721,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6084,22 +5895,15 @@ export const spiritHandlerData = {
           ],
           "spCost": "8 + (Skill Level x 2)",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Picky Peck ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Picky_Peck"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5033.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5033",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5024,
@@ -6240,7 +6044,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6280,22 +6084,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Attack ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Attack"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5044.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5044",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5024,
@@ -6348,7 +6145,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6572,22 +6369,15 @@ export const spiritHandlerData = {
           "spCost": "40 + (Skill Level x 4)",
           "variableCastTime": "[6 - (Skill Level)] seconds",
           "duration": "[30 + (Skill Level x 30)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Bunch of Shrimp ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Bunch_of_Shrimp"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5040.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5040",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5041,
@@ -6746,7 +6536,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6896,22 +6686,15 @@ export const spiritHandlerData = {
           "cooldown": "3~1 second(s)",
           "duration": "7~15 seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Silvervine Root Twist ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Silvervine_Root_Twist"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5029.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5029",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5026,
@@ -7047,7 +6830,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7247,22 +7030,15 @@ export const spiritHandlerData = {
           "spCost": "10 + (Skill Level x 2)",
           "duration": "[50 + (Skill Level x 10)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Arclouse Dash ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Arclouse_Dash"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5035.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5035",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5033,
@@ -7416,7 +7192,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7540,22 +7316,15 @@ export const spiritHandlerData = {
           "spCost": "10 + (Skill Level × 10)",
           "cooldown": "[(Skill Level x 3) - 1] second",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Tuna Belly ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Tuna_Belly"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5038.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5038",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5040,
@@ -7678,7 +7447,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7929,22 +7698,15 @@ export const spiritHandlerData = {
           "duration": "5 seconds",
           "castRange": "9 cells",
           "areaOfEffect": "3 x 3~7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " CN Meteor ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/CN_Meteor"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5028.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5028",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5029,
@@ -8111,7 +7873,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8336,22 +8098,15 @@ export const spiritHandlerData = {
           "spCost": "10 + (Skill Level x 2)",
           "duration": "9 seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Scar of Tarou ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Scar_of_Tarou"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5032.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5032",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5035,
@@ -8514,7 +8269,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8613,22 +8368,15 @@ export const spiritHandlerData = {
           "spCost": "10 + (Skill Level × 10)",
           "cooldown": "[10 + (Skill Level × 4)]",
           "duration": "30 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Tuna Party ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Tuna_Party"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5039.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5039",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5038,
@@ -8742,7 +8490,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8992,22 +8740,15 @@ export const spiritHandlerData = {
           "spCost": "40~24",
           "duration": "3~7 seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Catnip Powdering ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Catnip_Powdering"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5027.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5027",
           "tree": {
             "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
+            "row": 4,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5028,
@@ -9179,7 +8920,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9354,22 +9095,15 @@ export const spiritHandlerData = {
           "spCost": "10 + (Skill Level × 5)",
           "castRange": "9 cells",
           "areaOfEffect": "3 x 3 ~ 7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Lunatic Carrot Beat ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lunatic_Carrot_Beat"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5036.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5036",
           "tree": {
             "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
+            "row": 4,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5032,
@@ -9514,7 +9248,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9563,22 +9297,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Power of Sea ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Power_of_Sea"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5037.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5037",
           "tree": {
             "idx": 36,
-            "row": 4,
-            "col": 0,
-            "columns": 9,
+            "row": 5,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5039,
@@ -9632,7 +9359,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9681,22 +9408,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Power of Land ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Power_of_Land"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5025.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5025",
           "tree": {
             "idx": 37,
-            "row": 4,
-            "col": 1,
-            "columns": 9,
+            "row": 5,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5027,
@@ -9750,7 +9470,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9817,22 +9537,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Power of Life ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Power_of_Life"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5031.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5031",
           "tree": {
             "idx": 38,
-            "row": 4,
-            "col": 2,
-            "columns": 9,
+            "row": 5,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5036,
@@ -9896,7 +9609,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10020,22 +9733,15 @@ export const spiritHandlerData = {
           "spCost": "15",
           "cooldown": "[70 - (Skill Level x 10)] seconds",
           "duration": "(Skill Level + 2) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Grooming ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Grooming"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5049.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5049",
           "tree": {
             "idx": 43,
-            "row": 4,
-            "col": 7,
-            "columns": 9,
+            "row": 6,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5037,
@@ -10167,7 +9873,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10341,22 +10047,15 @@ export const spiritHandlerData = {
           "spCost": "55 − (Skill Level x 5)",
           "cooldown": "[160 - (Skill Level x 20)] seconds",
           "duration": "5 seconds (ATK and MATK) 10 seconds (Movement Speed)",
-          "translations": {
-            "pt-BR": {
-              "name": " Chattering ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Chattering"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5055.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5055",
           "tree": {
             "idx": 44,
-            "row": 4,
-            "col": 8,
-            "columns": 9,
+            "row": 6,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5025,
@@ -10497,7 +10196,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10696,22 +10395,15 @@ export const spiritHandlerData = {
           "spCost": "54 - (Skill Level x 4)",
           "cooldown": "[210 - (Skill Level x 30)] seconds",
           "duration": "3 seconds (Perfect Dodge) 3 ~ 5 seconds (Movement Speed)",
-          "translations": {
-            "pt-BR": {
-              "name": " Hiss ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hiss"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5047.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5047",
           "tree": {
             "idx": 45,
-            "row": 5,
-            "col": 0,
-            "columns": 9,
+            "row": 6,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5031,
@@ -10861,7 +10553,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10985,22 +10677,15 @@ export const spiritHandlerData = {
           "spCost": "75 − (Skill Level × 5)",
           "cooldown": "[65 - (Skill Level x 5)] second",
           "duration": "[5 + (Skill Level × 2)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Purring ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Purring"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5050.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5050",
           "tree": {
             "idx": 50,
-            "row": 5,
-            "col": 5,
-            "columns": 9,
+            "row": 7,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5049,
@@ -11132,7 +10817,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11331,22 +11016,15 @@ export const spiritHandlerData = {
           "spCost": "110 − (Skill Level × 10)",
           "cooldown": "[200 - (Skill Level x 20)] seconds",
           "duration": "8/10/12 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Meow Meow ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Meow_Meow"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5053.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5053",
           "tree": {
             "idx": 51,
-            "row": 5,
-            "col": 6,
-            "columns": 9,
+            "row": 7,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5055,
@@ -11496,7 +11174,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11595,22 +11273,15 @@ export const spiritHandlerData = {
           "spCost": "50",
           "variableCastTime": "[5 - (Skill Level)] seconds",
           "areaOfEffect": "7 x 7 ~ 31 x 31",
-          "translations": {
-            "pt-BR": {
-              "name": " Power of Flock ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Power_of_Flock"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5045.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5045",
           "tree": {
             "idx": 52,
-            "row": 5,
-            "col": 7,
-            "columns": 9,
+            "row": 7,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5047,
@@ -11724,7 +11395,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11848,22 +11519,15 @@ export const spiritHandlerData = {
           "variableCastTime": "[6 - (Skill Level)] seconds",
           "cooldown": "[65 - (Skill Level x 5)] seconds",
           "duration": "[10 + (Skill Level x 2)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Tasty Shrimp Party ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Tasty_Shrimp_Party"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5051.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5051",
           "tree": {
             "idx": 57,
-            "row": 6,
-            "col": 3,
-            "columns": 9,
+            "row": 8,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5050,
@@ -11986,7 +11650,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12137,22 +11801,15 @@ export const spiritHandlerData = {
           "duration": "(Skill Level + 5) seconds",
           "castRange": "9 cells",
           "areaOfEffect": "5 x 5 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Nyang Grass ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Nyang_Grass"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5048.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5048",
           "tree": {
             "idx": 58,
-            "row": 6,
-            "col": 4,
-            "columns": 9,
+            "row": 8,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5053,
@@ -12292,7 +11949,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12416,22 +12073,15 @@ export const spiritHandlerData = {
           "variableCastTime": "1 ~ 0 seconds",
           "cooldown": "[32 - (Skill Level x 2)] second",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Spirit of Savage ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spirit_of_Savage"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5046.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5046",
           "tree": {
             "idx": 59,
-            "row": 6,
-            "col": 5,
-            "columns": 9,
+            "row": 8,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5045,
@@ -12545,7 +12195,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12603,22 +12253,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Spirit of Sea ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spirit_of_Sea"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5056.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5056",
           "tree": {
             "idx": 64,
-            "row": 7,
+            "row": 9,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5051,
@@ -12677,7 +12320,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12753,22 +12396,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Spirit of Land ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spirit_of_Land"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5054.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5054",
           "tree": {
             "idx": 65,
-            "row": 7,
+            "row": 9,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5048,
@@ -12837,7 +12473,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12895,22 +12531,15 @@ export const spiritHandlerData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Spirit of Life ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spirit_of_Life"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5052.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5052",
           "tree": {
             "idx": 66,
-            "row": 7,
+            "row": 9,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5046,
@@ -12969,7 +12598,7 @@ export const spiritHandlerData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13081,22 +12710,15 @@ export const spiritHandlerData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Mystical Creature Mastery ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Mystical_Creature_Mastery"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5433.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5433",
       "tree": {
         "idx": 3,
         "row": 0,
         "col": 3,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -13215,7 +12837,7 @@ export const spiritHandlerData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -13302,22 +12924,15 @@ export const spiritHandlerData = {
       "spCost": "21 + (Skill Level x 3)",
       "castDelay": "0.5 second",
       "cooldown": "0.25 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Chulho Sonic Claw ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Chulho_Sonic_Claw"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5435.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5435",
       "tree": {
         "idx": 8,
-        "row": 0,
-        "col": 8,
-        "columns": 9,
+        "row": 1,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -13499,7 +13114,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -13589,22 +13204,15 @@ export const spiritHandlerData = {
       ],
       "spCost": "57 + (Skill Level x 4)",
       "areaOfEffect": "7 x 7 ~ 13 x 13 11 x 11 ~ 17 x 17 (with Commune with Kisul )",
-      "translations": {
-        "pt-BR": {
-          "name": " Kisul Water Spraying ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Kisul_Water_Spraying"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5439.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5439",
       "tree": {
         "idx": 10,
         "row": 1,
-        "col": 1,
-        "columns": 9,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -13756,7 +13364,7 @@ export const spiritHandlerData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -13844,22 +13452,15 @@ export const spiritHandlerData = {
       "fixedCastTime": "1 seconds",
       "variableCastTime": "1.7 seconds",
       "duration": "300 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Colors of Hyunrok ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Colors_of_Hyunrok"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5444.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5444",
       "tree": {
         "idx": 12,
         "row": 1,
-        "col": 3,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -13970,7 +13571,7 @@ export const spiritHandlerData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -14020,22 +13621,15 @@ export const spiritHandlerData = {
         }
       ],
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Chulho Battering ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Chulho_Battering"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5506.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5506",
       "tree": {
         "idx": 14,
-        "row": 1,
-        "col": 5,
-        "columns": 9,
+        "row": 2,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -14087,7 +13681,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -14174,22 +13768,15 @@ export const spiritHandlerData = {
       "spCost": "27 + (Skill Level x 5)",
       "fixedCastTime": "1 second",
       "cooldown": "1 second",
-      "translations": {
-        "pt-BR": {
-          "name": " Howling of Chulho ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Howling_of_Chulho"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5436.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5436",
       "tree": {
         "idx": 15,
-        "row": 1,
-        "col": 6,
-        "columns": 9,
+        "row": 2,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -14371,7 +13958,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -14446,22 +14033,15 @@ export const spiritHandlerData = {
       "spCost": "57 + (Skill Level x 4)",
       "duration": "60 ~ 120 seconds",
       "areaOfEffect": "5 x 5 ~ 13 x 13 9 x 9 ~ 17 x 17 (with Commune with Kisul )",
-      "translations": {
-        "pt-BR": {
-          "name": " Marine Festival of Kisul ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Marine_Festival_of_Kisul"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5440.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5440",
       "tree": {
         "idx": 17,
-        "row": 1,
-        "col": 8,
-        "columns": 9,
+        "row": 2,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -14637,7 +14217,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -14712,22 +14292,15 @@ export const spiritHandlerData = {
       "spCost": "70 + (Skill Level x 10)",
       "duration": "60 ~ 120 seconds",
       "areaOfEffect": "5 x 5 ~ 13 x 13 9 x 9 ~ 17 x 17 (with Commune with Kisul )",
-      "translations": {
-        "pt-BR": {
-          "name": " Sandy Festival of Kisul ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Sandy_Festival_of_Kisul"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5441.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5441",
       "tree": {
         "idx": 18,
         "row": 2,
-        "col": 0,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -14903,7 +14476,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -14993,22 +14566,15 @@ export const spiritHandlerData = {
       ],
       "spCost": "50 + (Skill Level × 6)",
       "areaOfEffect": "5 x 5 ~ 11 x 11",
-      "translations": {
-        "pt-BR": {
-          "name": " Hyunrok Breeze ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Hyunrok_Breeze"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5445.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5445",
       "tree": {
         "idx": 19,
         "row": 2,
-        "col": 1,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -15192,7 +14758,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15280,22 +14846,15 @@ export const spiritHandlerData = {
       "fixedCastTime": "1 second",
       "cooldown": "0.35 seconds",
       "castRange": "7 x 7 ~ 11 x 11 cells",
-      "translations": {
-        "pt-BR": {
-          "name": " Hogogong Strike ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Hogogong_Strike"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5437.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5437",
       "tree": {
         "idx": 22,
-        "row": 2,
-        "col": 4,
-        "columns": 9,
+        "row": 3,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -15471,7 +15030,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15562,22 +15121,15 @@ export const spiritHandlerData = {
       "spCost": "80 + (Skill Level x 10)",
       "duration": "(3 + Skill Level) seconds",
       "areaOfEffect": "7 x 7 11 x 11 (with Commune with Kisul )",
-      "translations": {
-        "pt-BR": {
-          "name": " Kisul Rampage ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Kisul_Rampage"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5442.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5442",
       "tree": {
         "idx": 24,
-        "row": 2,
-        "col": 6,
-        "columns": 9,
+        "row": 3,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -15732,7 +15284,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15820,22 +15372,15 @@ export const spiritHandlerData = {
       "fixedCastTime": "1.5 seconds",
       "variableCastTime": "2 seconds",
       "cooldown": "0.3 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Hyunrok Cannon ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Hyunrok_Cannon"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5446.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5446",
       "tree": {
         "idx": 26,
-        "row": 2,
-        "col": 8,
-        "columns": 9,
+        "row": 3,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -16035,7 +15580,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16089,22 +15634,15 @@ export const spiritHandlerData = {
       "castDelay": "0.7 seconds",
       "cooldown": "1 second",
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Hyunrok Spirit Power ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Hyunrok_Spirit_Power"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5507.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5507",
       "tree": {
         "idx": 27,
         "row": 3,
-        "col": 0,
-        "columns": 9,
+        "col": 6,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -16176,7 +15714,7 @@ export const spiritHandlerData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16197,22 +15735,15 @@ export const spiritHandlerData = {
       "description": "Empowers the skills that borrow the power from Chulho through perfect communion with the mystical creature Chulho.",
       "levelDetails": [],
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Commune with Chulho ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Commune_with_Chulho"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5434.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5434",
       "tree": {
         "idx": 29,
-        "row": 3,
-        "col": 2,
-        "columns": 9,
+        "row": 4,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -16243,7 +15774,7 @@ export const spiritHandlerData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16264,22 +15795,15 @@ export const spiritHandlerData = {
       "description": "Empowers the skills that borrow the power from Kisul through perfect communion with the mystical creature Kisul.",
       "levelDetails": [],
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Commune with Kisul ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Commune_with_Kisul"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5438.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5438",
       "tree": {
         "idx": 31,
-        "row": 3,
-        "col": 4,
-        "columns": 9,
+        "row": 4,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -16310,7 +15834,7 @@ export const spiritHandlerData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16331,22 +15855,15 @@ export const spiritHandlerData = {
       "description": "Empowers the skills that borrow the power from Hyunrok through perfect communion with the mystical creature Hyunrok.",
       "levelDetails": [],
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Commune with Hyunrok ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Commune_with_Hyunrok"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5443.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5443",
       "tree": {
         "idx": 33,
-        "row": 3,
-        "col": 6,
-        "columns": 9,
+        "row": 4,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -16377,7 +15894,7 @@ export const spiritHandlerData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16451,22 +15968,15 @@ export const spiritHandlerData = {
       ],
       "spCost": "100",
       "duration": "30 ~ 150 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Temporary Communion ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Temporary_Communion"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5447.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5447",
       "tree": {
         "idx": 37,
-        "row": 4,
-        "col": 1,
-        "columns": 9,
+        "row": 5,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -16598,7 +16108,7 @@ export const spiritHandlerData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16672,22 +16182,15 @@ export const spiritHandlerData = {
       ],
       "spCost": "100",
       "duration": "10 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Blessing of Mystical Creatures ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Blessing_of_Mystical_Creatures"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5448.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5448",
       "tree": {
         "idx": 39,
-        "row": 4,
-        "col": 3,
-        "columns": 9,
+        "row": 5,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5433,
@@ -16811,7 +16314,7 @@ export const spiritHandlerData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }

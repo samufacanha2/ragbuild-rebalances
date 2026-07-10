@@ -1,0 +1,54 @@
+.tree-wrap {
+  overflow-x: hidden;
+  padding-bottom: 0;
+}
+
+.tree-board {
+  position: relative;
+  --tree-active-columns: var(--tree-columns, 9);
+  --tree-row-height: 72px;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(90, 95, 159, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(21, 122, 126, 0.08) 1px, transparent 1px),
+    transparent;
+  background-size: calc(100% / var(--tree-active-columns)) 100%, 100% var(--tree-row-height), auto;
+  box-shadow: 0 10px 28px rgba(23, 33, 47, 0.08);
+}
+
+.tree-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(var(--tree-columns), minmax(0, 1fr));
+  grid-template-rows: repeat(var(--tree-rows), var(--tree-row-height));
+  gap: 0;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .tree-wrap {
+    overflow-x: auto;
+    margin-inline: -6px;
+    padding: 0 6px 10px;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tree-board {
+    --tree-active-columns: var(--tree-columns, 9);
+    --tree-row-height: 88px;
+    width: max(100%, var(--tree-compact-min-width, 620px));
+    min-width: var(--tree-compact-min-width, 620px);
+  }
+
+  .tree-grid {
+    grid-template-columns: repeat(
+      var(--tree-columns),
+      minmax(var(--tree-compact-skill-width, 96px), 1fr)
+    );
+    grid-template-rows: repeat(var(--tree-rows), var(--tree-row-height));
+  }
+}

@@ -1,15 +1,17 @@
-import { assetUrl } from '../lib/dom.js'
-import { allocatedTotal } from '../lib/pointBuy.js'
-import { effectiveLevelTable, effectiveSpecRows, notesForVersion, specVersionTitle } from '../lib/specs.js'
+import './SkillCardStyles.css'
+import { assetUrl } from '../../lib/dom.js'
+import { allocatedTotal } from '../../lib/pointBuy.js'
+import { effectiveLevelTable, effectiveSpecRows, notesForVersion, specVersionTitle } from '../../lib/specs.js'
 import {
   translatedRequirementName,
   translatedSkillDescription,
   translatedSkillName,
   translateUi,
-} from '../lib/translations.js'
-import { PatchNotes } from './PatchNotes.jsx'
-import { EffectiveSpecTable, LevelScalingTable } from './SpecTables.jsx'
-import { TextBlock } from './TextBlock.jsx'
+} from '../../lib/translations.js'
+import { EffectiveSpecTable } from '../EffectiveSpecTable'
+import { LevelScalingTable } from '../LevelScalingTable'
+import { PatchNotes } from '../PatchNotes'
+import { TextBlock } from '../TextBlock'
 
 export function SkillCard({
   model,

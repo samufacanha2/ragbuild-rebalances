@@ -1,5 +1,5 @@
 export const trouvereData = {
-  "generatedAt": "2026-07-10T15:02:19.700Z",
+  "generatedAt": "2026-07-10T18:52:57.547Z",
   "classId": 4264,
   "classSlug": "trouvere",
   "className": "Trouvere",
@@ -56,8 +56,8 @@ export const trouvereData = {
     "versions": 4
   },
   "tree": {
-    "columns": 9,
-    "rows": 4,
+    "columns": 7,
+    "rows": 5,
     "skillTreeUrl": "https://www.divine-pride.net/tools/skilltree/4264",
     "jobIconUrl": "assets/divine-pride/jobs/4264.png"
   },
@@ -266,8 +266,8 @@ export const trouvereData = {
       "label": "Trouvere",
       "pointLimit": 59,
       "tree": {
-        "columns": 9,
-        "rows": 4
+        "columns": 7,
+        "rows": 5
       },
       "skills": [
         {
@@ -339,22 +339,15 @@ export const trouvereData = {
           ],
           "spCost": "60 + (Skill Level x 6)",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Rhythm Shooting ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Rhythm_Shooting"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5355.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5355",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -569,7 +562,7 @@ export const trouvereData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -616,22 +609,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Stage Etiquette ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stage_Etiquette"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5349.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5349",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -692,7 +678,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -764,22 +750,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Sound Blend(Sound Blend) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sound_Blend(Sound_Blend)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5357.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5357",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2413,
@@ -935,7 +914,7 @@ export const trouvereData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -972,22 +951,15 @@ export const trouvereData = {
           ],
           "spCost": "1",
           "duration": "seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Retrospection ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Retrospection"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5350.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5350",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5349,
@@ -1063,7 +1035,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1118,22 +1090,15 @@ export const trouvereData = {
           "duration": "30 seconds",
           "castRange": "15 x 15 ~ 23 x 23 cells",
           "areaOfEffect": "15 x 15 ~ 23 x 23",
-          "translations": {
-            "pt-BR": {
-              "name": " Geffenia Nocturne ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Geffenia_Nocturne"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5358.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5358",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5349,
@@ -1241,7 +1206,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1295,22 +1260,15 @@ export const trouvereData = {
           "spCost": "80 + (Skill Level x 40)",
           "duration": "30 seconds",
           "areaOfEffect": "15 x 15 ~ 23 x 23",
-          "translations": {
-            "pt-BR": {
-              "name": " Miner Rhapsody ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Miner_Rhapsody"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5360.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5360",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5349,
@@ -1414,7 +1372,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1486,22 +1444,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Metalic Fury ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Metalic_Fury"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5356.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5356",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5357,
@@ -1737,7 +1688,7 @@ export const trouvereData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1809,22 +1760,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Rose Blossom(Rose Blossom) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Rose_Blossom(Rose_Blossom)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5353.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5353",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5355,
@@ -2014,7 +1958,7 @@ export const trouvereData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2068,22 +2012,15 @@ export const trouvereData = {
           "spCost": "130 + (Skill Level x 10)",
           "duration": "180 seconds",
           "areaOfEffect": "15 x 15 ~ 23 x 23",
-          "translations": {
-            "pt-BR": {
-              "name": " Jawaii Serenade ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Jawaii_Serenade"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5362.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5362",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5358,
@@ -2187,7 +2124,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2241,22 +2178,15 @@ export const trouvereData = {
           "spCost": "160 + (Skill Level x 11)",
           "duration": "180 seconds",
           "areaOfEffect": "15 x 15 ~ 23 x 23",
-          "translations": {
-            "pt-BR": {
-              "name": " Musical Interlude ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Musical_Interlude"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5361.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5361",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5360,
@@ -2360,7 +2290,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2414,22 +2344,15 @@ export const trouvereData = {
           "spCost": "130 + (Skill Level x 10)",
           "duration": "180 seconds",
           "areaOfEffect": "15 x 15 ~ 23 x 23",
-          "translations": {
-            "pt-BR": {
-              "name": " Prontera March ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Prontera_March"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5364.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5364",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5360,
@@ -2533,7 +2456,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2579,22 +2502,15 @@ export const trouvereData = {
           "castDelay": "1 second",
           "cooldown": "0.4 seconds",
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Rhythmical Wave ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Rhythmical_Wave"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/6521.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6521",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5356,
@@ -2686,7 +2602,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2728,22 +2644,15 @@ export const trouvereData = {
           ],
           "spCost": "250",
           "duration": "150 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Mystic Symphony ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Mystic_Symphony"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5351.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5351",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5353,
@@ -2874,7 +2783,7 @@ export const trouvereData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2928,22 +2837,15 @@ export const trouvereData = {
           "spCost": "80 + (Skill Level x 40)",
           "duration": "30 seconds",
           "areaOfEffect": "15 x 15 ~ 23 x 23",
-          "translations": {
-            "pt-BR": {
-              "name": " Loki Capriccio ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Loki_Capriccio"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5359.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5359",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5362,
@@ -3047,7 +2949,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3101,22 +3003,15 @@ export const trouvereData = {
           "spCost": "80 + (Skill Level x 40)",
           "duration": "30 seconds",
           "areaOfEffect": "15 x 15 ~ 23 x 23",
-          "translations": {
-            "pt-BR": {
-              "name": " Nifflheim Requiem ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Nifflheim_Requiem"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5363.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5363",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5361,
@@ -3226,7 +3121,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3263,22 +3158,15 @@ export const trouvereData = {
           ],
           "spCost": "300",
           "duration": "60 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Kvasir Sonata ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Kvasir_Sonata"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5352.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5352",
           "tree": {
             "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
+            "row": 4,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5359,
@@ -3360,7 +3248,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3372,8 +3260,8 @@ export const trouvereData = {
       "label": "Wanderer",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 6
+        "columns": 7,
+        "rows": 7
       },
       "skills": [
         {
@@ -3522,22 +3410,15 @@ export const trouvereData = {
           "duration": "3.3 seconds",
           "castRange": "9 cells",
           "areaOfEffect": "11 x 11",
-          "translations": {
-            "pt-BR": {
-              "name": " Severe Rainstorm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Severe_Rainstorm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2418.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2418",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 324,
@@ -3672,7 +3553,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3848,22 +3729,15 @@ export const trouvereData = {
           "duration": "(Skill Level + 8) seconds",
           "castRange": "9 cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Reverberation ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Reverberation"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2414.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2414",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 325,
@@ -4003,7 +3877,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4156,22 +4030,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Voice Lessons ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Voice_Lessons"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2412.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2412",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -4304,7 +4171,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4505,22 +4372,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Metalic Sound ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Metalic_Sound"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2413.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2413",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2414,
@@ -4664,7 +4524,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4864,22 +4724,15 @@ export const trouvereData = {
           "spCost": "38 + (Skill Level × 4)",
           "duration": "1 minute",
           "areaOfEffect": "7 x 7 ~ 15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Circle of Nature ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Circle_of_Nature"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2423.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2423",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2412,
@@ -5033,7 +4886,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5158,22 +5011,15 @@ export const trouvereData = {
           "spCost": "70 + (Skill Level × 10)",
           "duration": "[10 + (Skill Level × 2)] seconds",
           "areaOfEffect": "11 x 11 ~ 19 x 19",
-          "translations": {
-            "pt-BR": {
-              "name": " Deep Sleep Lullaby ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Deep_Sleep_Lullaby"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2422.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2422",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2412,
@@ -5304,7 +5150,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5454,22 +5300,15 @@ export const trouvereData = {
           "spCost": "12",
           "castRange": "9 cells",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Song of Despair ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Song_of_Despair"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2419.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2419",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2412,
@@ -5605,7 +5444,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5755,22 +5594,15 @@ export const trouvereData = {
           "spCost": "170 + (Skill Level × 30)",
           "duration": "1 minute",
           "areaOfEffect": "7 x 7 ~ 15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Frigg's Song ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Frigg's_Song"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5007.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5007",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2412,
@@ -5902,7 +5734,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6052,22 +5884,15 @@ export const trouvereData = {
           "variableCastTime": "[1.8 + (Skill Level × 0.2)] seconds",
           "castRange": "9 cells",
           "areaOfEffect": "5 x 5 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Great Echo ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Great_Echo"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2426.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2426",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2413,
@@ -6194,7 +6019,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6342,22 +6167,15 @@ export const trouvereData = {
           ],
           "spCost": "47 + (Skill Level × 3)",
           "variableCastTime": "[3.5 − (Skill Level × 0.5)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Death Valley ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Death_Valley"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2421.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2421",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2423,
@@ -6481,7 +6299,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6629,22 +6447,15 @@ export const trouvereData = {
           ],
           "spCost": "40 + (Skill Level × 8)",
           "areaOfEffect": "5 x 5 ~ 13 x 13",
-          "translations": {
-            "pt-BR": {
-              "name": " Siren's Voice ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Siren's_Voice"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2420.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2420",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2419,
@@ -6772,7 +6583,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6895,22 +6706,15 @@ export const trouvereData = {
             }
           ],
           "spCost": "40",
-          "translations": {
-            "pt-BR": {
-              "name": " Improvised Song ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Improvised_Song"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2424.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2424",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2419,
@@ -7029,7 +6833,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7179,22 +6983,15 @@ export const trouvereData = {
           "spCost": "80 + (Skill Level × 16)",
           "duration": "3 minute",
           "areaOfEffect": "15 x 15 ~ 23 x 23",
-          "translations": {
-            "pt-BR": {
-              "name": " Swing Dance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Swing_Dance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2350.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2350",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2422,
@@ -7346,7 +7143,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7496,22 +7293,15 @@ export const trouvereData = {
           "spCost": "?",
           "duration": "3 minute",
           "areaOfEffect": "15 x 15 ~ 23 x 23",
-          "translations": {
-            "pt-BR": {
-              "name": " Lover Symphony ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lover_Symphony"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2351.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2351",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2422,
@@ -7656,7 +7446,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7831,22 +7621,15 @@ export const trouvereData = {
           "spCost": "?",
           "duration": "3 minute",
           "areaOfEffect": "15 x 15 ~ 23 x 23",
-          "translations": {
-            "pt-BR": {
-              "name": " Moonlight Serenade ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Moonlight_Serenade"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2352.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2352",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2422,
@@ -8000,7 +7783,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8174,22 +7957,15 @@ export const trouvereData = {
           ],
           "spCost": "60",
           "duration": "60 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Gloomy Shyness ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Gloomy_Shyness"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2425.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2425",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2424,
@@ -8346,7 +8122,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8496,22 +8272,15 @@ export const trouvereData = {
           "spCost": "100 + 20 x Skill Level",
           "duration": "120 seconds",
           "areaOfEffect": "11 x 11 ~ 19 x 19",
-          "translations": {
-            "pt-BR": {
-              "name": " Dances with Wargs ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dances_with_Wargs"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2428.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2428",
           "tree": {
             "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
+            "row": 4,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2350,
@@ -8693,7 +8462,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8840,22 +8609,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Song Of Mana ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Song_Of_Mana"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2427.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2427",
           "tree": {
             "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
+            "row": 4,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2350,
@@ -9003,7 +8765,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9178,22 +8940,15 @@ export const trouvereData = {
           "spCost": "?",
           "duration": "[10 + (Skill Level × 10)] seconds",
           "areaOfEffect": "11 x 11 ~ 15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Lerad's Dew ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lerad's_Dew"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2431.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2431",
           "tree": {
             "idx": 32,
-            "row": 3,
-            "col": 5,
-            "columns": 9,
+            "row": 4,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2350,
@@ -9358,7 +9113,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9508,22 +9263,15 @@ export const trouvereData = {
           "spCost": "170 − (Performers × 17)",
           "duration": "[5 + (Skill Level × 5)] seconds",
           "areaOfEffect": "7 x 7 ~ 15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Saturday Night Fever ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Saturday_Night_Fever"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2430.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2430",
           "tree": {
             "idx": 37,
-            "row": 4,
-            "col": 1,
-            "columns": 9,
+            "row": 5,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2428,
@@ -9676,7 +9424,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9851,22 +9599,15 @@ export const trouvereData = {
           "spCost": "?",
           "duration": "10 + (Skill Level × 10) seconds",
           "areaOfEffect": "11 x 11 ~ 15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Sinking Melody ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sinking_Melody"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2432.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2432",
           "tree": {
             "idx": 38,
-            "row": 4,
-            "col": 2,
-            "columns": 9,
+            "row": 5,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2427,
@@ -10011,7 +9752,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10186,22 +9927,15 @@ export const trouvereData = {
           "spCost": "200 − (Performers × 20)",
           "duration": "[10 + (Skill Level × 10)] seconds",
           "areaOfEffect": "11 x 11 ~ 15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Warcry from Beyond ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Warcry_from_Beyond"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2433.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2433",
           "tree": {
             "idx": 39,
-            "row": 4,
-            "col": 3,
-            "columns": 9,
+            "row": 5,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2431,
@@ -10346,7 +10080,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10470,22 +10204,15 @@ export const trouvereData = {
           ],
           "spCost": "1",
           "duration": "[5 + (Skill Level × 5)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Full Throttle ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
             "idx": 41,
-            "row": 4,
-            "col": 5,
-            "columns": 9,
+            "row": 5,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -10606,7 +10333,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10756,22 +10483,15 @@ export const trouvereData = {
           "spCost": "?",
           "castRange": "10 cells",
           "areaOfEffect": "9 x 9 ~ 15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Song of Destruction ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Song_of_Destruction"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2429.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2429",
           "tree": {
             "idx": 45,
-            "row": 5,
-            "col": 0,
-            "columns": 9,
+            "row": 6,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2430,
@@ -10913,7 +10633,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11063,22 +10783,15 @@ export const trouvereData = {
           "spCost": "?",
           "duration": "[30 + (Skill Level × 30)] seconds",
           "areaOfEffect": "11 x 11 ~ 15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Infinite Humming ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Infinite_Humming"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2434.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2434",
           "tree": {
             "idx": 46,
-            "row": 5,
-            "col": 1,
-            "columns": 9,
+            "row": 6,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2429,
@@ -11237,7 +10950,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11249,8 +10962,8 @@ export const trouvereData = {
       "label": "Gypsy",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 5
+        "columns": 7,
+        "rows": 6
       },
       "skills": [
         {
@@ -11303,22 +11016,15 @@ export const trouvereData = {
           ],
           "spCost": "10",
           "duration": "180 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Amp ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Amp"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/304.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/304",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -11393,7 +11099,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11636,22 +11342,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Dancing Lesson ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dancing_Lesson"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/323.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/323",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -11826,7 +11525,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11973,22 +11672,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Hip Shaker (Ugly Dance) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hip_Shaker_(Ugly_Dance)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/325.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/325",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 304,
@@ -12122,7 +11814,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12186,22 +11878,15 @@ export const trouvereData = {
           ],
           "spCost": "40",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Charming Wink ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Charming_Wink"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1011.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1011",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12281,7 +11966,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12317,22 +12002,15 @@ export const trouvereData = {
             }
           ],
           "spCost": "1",
-          "translations": {
-            "pt-BR": {
-              "name": " Encore ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Encore"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/305.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/305",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 304,
@@ -12400,7 +12078,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12547,22 +12225,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Slinging Arrow (Throw Arrow) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Slinging_Arrow_(Throw_Arrow)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/324.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/324",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 323,
@@ -12677,7 +12348,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12927,22 +12598,15 @@ export const trouvereData = {
           "spCost": "30 + (Skill Level × 3)",
           "duration": "180 seconds",
           "areaOfEffect": "31 x 31",
-          "translations": {
-            "pt-BR": {
-              "name": " Focus Ballet ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Focus_Ballet"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/327.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/327",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 325,
@@ -13128,7 +12792,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13423,22 +13087,15 @@ export const trouvereData = {
           "spCost": "35 + (Skill Level × 3)",
           "duration": "60 seconds",
           "areaOfEffect": "9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Slow Grace ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Slow_Grace"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/328.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/328",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 325,
@@ -13624,7 +13281,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13919,22 +13576,15 @@ export const trouvereData = {
           "spCost": "35 + (Skill Level × 5)",
           "duration": "180 seconds",
           "areaOfEffect": "31 x 31",
-          "translations": {
-            "pt-BR": {
-              "name": " Lady Luck ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lady_Luck"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/329.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/329",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 325,
@@ -14148,7 +13798,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14443,22 +14093,15 @@ export const trouvereData = {
           "spCost": "57 + (Skill Level × 3)",
           "duration": "180 seconds",
           "areaOfEffect": "31 x 31",
-          "translations": {
-            "pt-BR": {
-              "name": " Gypsy's Kiss ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Gypsy's_Kiss"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/330.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/330",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 325,
@@ -14672,7 +14315,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14746,22 +14389,15 @@ export const trouvereData = {
           ],
           "spCost": "10 + (Skill Level × 2)",
           "areaOfEffect": "Screen",
-          "translations": {
-            "pt-BR": {
-              "name": " Dazzler ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dazzler"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/326.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/326",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 305,
@@ -14866,7 +14502,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14931,22 +14567,15 @@ export const trouvereData = {
           "spCost": "40",
           "duration": "60 seconds",
           "areaOfEffect": "9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Lullaby ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lullaby"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/306.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/306",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 327,
@@ -15037,7 +14666,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15093,22 +14722,15 @@ export const trouvereData = {
           "spCost": "15",
           "duration": "60 seconds",
           "areaOfEffect": "9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Classical Pluck ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Classical_Pluck"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/311.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/311",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 328,
@@ -15194,7 +14816,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15369,22 +14991,15 @@ export const trouvereData = {
           "spCost": "20",
           "duration": "180 seconds",
           "areaOfEffect": "31 x 31",
-          "translations": {
-            "pt-BR": {
-              "name": " Acoustic Rhythm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Acoustic_Rhythm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/313.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/313",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 329,
@@ -15538,7 +15153,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15713,22 +15328,15 @@ export const trouvereData = {
           "spCost": "46 + (Skill Level × 4)",
           "duration": "180 seconds",
           "areaOfEffect": "31 x 31",
-          "translations": {
-            "pt-BR": {
-              "name": " Battle Theme ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Battle_Theme"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/309.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/309",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 330,
@@ -15882,7 +15490,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15938,22 +15546,15 @@ export const trouvereData = {
           "spCost": "70",
           "duration": "180 seconds",
           "areaOfEffect": "31 x 31",
-          "translations": {
-            "pt-BR": {
-              "name": " Power Cord ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Power_Cord"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/312.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/312",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 306,
@@ -16039,7 +15640,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16095,22 +15696,15 @@ export const trouvereData = {
           "spCost": "120",
           "duration": "60 seconds",
           "areaOfEffect": "9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Down Tempo ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Down_Tempo"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/308.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/308",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 311,
@@ -16196,7 +15790,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16346,22 +15940,15 @@ export const trouvereData = {
           "spCost": "20",
           "duration": "180 seconds",
           "areaOfEffect": "31 x 31",
-          "translations": {
-            "pt-BR": {
-              "name": " Mental Sensing ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Mental_Sensing"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/307.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/307",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 313,
@@ -16497,7 +16084,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16601,22 +16188,15 @@ export const trouvereData = {
           "spCost": "35 + (Skill Level × 3)",
           "duration": "60 seconds",
           "areaOfEffect": "31 x 31",
-          "translations": {
-            "pt-BR": {
-              "name": " Harmonic Lick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Harmonic_Lick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/310.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/310",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 309,
@@ -16734,7 +16314,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16848,22 +16428,15 @@ export const trouvereData = {
           ],
           "spCost": "10 + (Skill Level × 2)",
           "castRange": "10 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Arrow Vulcan ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Arrow_Vulcan"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/394.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/394",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 46,
@@ -17015,7 +16588,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17086,22 +16659,15 @@ export const trouvereData = {
           "spCost": "20 + (Skill Level × 10)",
           "duration": "15 + (Skill Level × 5)",
           "areaOfEffect": "9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Sheltering Bliss ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sheltering_Bliss"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/395.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/395",
           "tree": {
             "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
+            "row": 4,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 45,
@@ -17196,7 +16762,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17231,22 +16797,15 @@ export const trouvereData = {
           "castDelay": "1 second",
           "duration": "Until recast",
           "castRange": "8 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Marionette Control ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Marionette_Control"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/396.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/396",
           "tree": {
             "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
+            "row": 4,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 45,
@@ -17316,7 +16875,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17387,22 +16946,15 @@ export const trouvereData = {
           "spCost": "10 + (Skill Level × 10)",
           "duration": "(Skill Level × 10) seconds",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Hermode's Rod ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hermode's_Rod"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/488.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/488",
           "tree": {
             "idx": 32,
-            "row": 3,
-            "col": 5,
-            "columns": 9,
+            "row": 4,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 45,
@@ -17501,7 +17053,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17537,22 +17089,15 @@ export const trouvereData = {
             }
           ],
           "spCost": "1",
-          "translations": {
-            "pt-BR": {
-              "name": " Skilled Special Singer ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Skilled_Special_Singer"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5068.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5068",
           "tree": {
             "idx": 38,
-            "row": 4,
-            "col": 2,
-            "columns": 9,
+            "row": 5,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 323,
@@ -17632,7 +17177,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17706,22 +17251,15 @@ export const trouvereData = {
           ],
           "spCost": "40",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Tarot Card of Fate ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Tarot_Card_of_Fate"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/489.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/489",
           "tree": {
             "idx": 39,
-            "row": 4,
-            "col": 3,
-            "columns": 9,
+            "row": 5,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 45,
@@ -17832,7 +17370,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17844,8 +17382,8 @@ export const trouvereData = {
       "label": "Archer",
       "pointLimit": 49,
       "tree": {
-        "columns": 9,
-        "rows": 2
+        "columns": 7,
+        "rows": 3
       },
       "skills": [
         {
@@ -17939,22 +17477,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Basic Skill ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18051,7 +17582,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18159,22 +17690,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Double Strafe(Double strafing) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Double_Strafe(Double_strafing)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/46.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/46",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18269,7 +17793,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18377,22 +17901,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Owl's Eye ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Owl's_Eye"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/43.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/43",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18497,7 +18014,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18575,22 +18092,15 @@ export const trouvereData = {
           ],
           "spCost": "15",
           "castRange": "(10 + Vulture's Eye Level) cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Arrow Repel ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Arrow_Repel"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/148.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/148",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18695,7 +18205,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18728,22 +18238,15 @@ export const trouvereData = {
           ],
           "spCost": "3",
           "castDelay": "ASPD",
-          "translations": {
-            "pt-BR": {
-              "name": " First Aid ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/First_Aid"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18792,7 +18295,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18905,22 +18408,15 @@ export const trouvereData = {
           "cooldown": "0.3 seconds",
           "castRange": "(10 + Vulture's Eye Level) cells",
           "areaOfEffect": "3 x 3 ~ 5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Arrow Shower ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Arrow_Shower"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/47.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/47",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 46,
@@ -19046,7 +18542,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -19154,22 +18650,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Vulture's Eye ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Vulture's_Eye"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/44.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/44",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 43,
@@ -19295,7 +18784,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -19327,22 +18816,15 @@ export const trouvereData = {
             }
           ],
           "spCost": "10",
-          "translations": {
-            "pt-BR": {
-              "name": " Arrow Crafting ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Arrow_Crafting"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/147.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/147",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -19387,7 +18869,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -19420,22 +18902,15 @@ export const trouvereData = {
           ],
           "spCost": "1",
           "duration": "Indefinite",
-          "translations": {
-            "pt-BR": {
-              "name": " Play Dead ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -19484,7 +18959,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -19592,22 +19067,15 @@ export const trouvereData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Improve Concentration(Attention concentrate) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Improve_Concentration(Attention_concentrate)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/45.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/45",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 44,
@@ -19737,7 +19205,7 @@ export const trouvereData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -19815,22 +19283,15 @@ export const trouvereData = {
       ],
       "spCost": "60 + (Skill Level x 6)",
       "castRange": "9 cells",
-      "translations": {
-        "pt-BR": {
-          "name": " Rhythm Shooting ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Rhythm_Shooting"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5355.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5355",
       "tree": {
         "idx": 1,
         "row": 0,
         "col": 1,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -20045,7 +19506,7 @@ export const trouvereData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20092,22 +19553,15 @@ export const trouvereData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Stage Etiquette ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Stage_Etiquette"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5349.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5349",
       "tree": {
         "idx": 3,
         "row": 0,
         "col": 3,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -20168,7 +19622,7 @@ export const trouvereData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20240,22 +19694,15 @@ export const trouvereData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Sound Blend(Sound Blend) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Sound_Blend(Sound_Blend)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5357.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5357",
       "tree": {
         "idx": 7,
-        "row": 0,
-        "col": 7,
-        "columns": 9,
+        "row": 1,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 2413,
@@ -20411,7 +19858,7 @@ export const trouvereData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20448,22 +19895,15 @@ export const trouvereData = {
       ],
       "spCost": "1",
       "duration": "seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Retrospection ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Retrospection"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5350.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5350",
       "tree": {
         "idx": 9,
         "row": 1,
-        "col": 0,
-        "columns": 9,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5349,
@@ -20539,7 +19979,7 @@ export const trouvereData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20594,22 +20034,15 @@ export const trouvereData = {
       "duration": "30 seconds",
       "castRange": "15 x 15 ~ 23 x 23 cells",
       "areaOfEffect": "15 x 15 ~ 23 x 23",
-      "translations": {
-        "pt-BR": {
-          "name": " Geffenia Nocturne ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Geffenia_Nocturne"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5358.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5358",
       "tree": {
         "idx": 10,
         "row": 1,
-        "col": 1,
-        "columns": 9,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5349,
@@ -20717,7 +20150,7 @@ export const trouvereData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20771,22 +20204,15 @@ export const trouvereData = {
       "spCost": "80 + (Skill Level x 40)",
       "duration": "30 seconds",
       "areaOfEffect": "15 x 15 ~ 23 x 23",
-      "translations": {
-        "pt-BR": {
-          "name": " Miner Rhapsody ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Miner_Rhapsody"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5360.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5360",
       "tree": {
         "idx": 11,
         "row": 1,
-        "col": 2,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5349,
@@ -20890,7 +20316,7 @@ export const trouvereData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20962,22 +20388,15 @@ export const trouvereData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Metalic Fury ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Metalic_Fury"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5356.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5356",
       "tree": {
         "idx": 14,
-        "row": 1,
-        "col": 5,
-        "columns": 9,
+        "row": 2,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 5357,
@@ -21213,7 +20632,7 @@ export const trouvereData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21285,22 +20704,15 @@ export const trouvereData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Rose Blossom(Rose Blossom) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Rose_Blossom(Rose_Blossom)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5353.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5353",
       "tree": {
         "idx": 15,
-        "row": 1,
-        "col": 6,
-        "columns": 9,
+        "row": 2,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5355,
@@ -21490,7 +20902,7 @@ export const trouvereData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21544,22 +20956,15 @@ export const trouvereData = {
       "spCost": "130 + (Skill Level x 10)",
       "duration": "180 seconds",
       "areaOfEffect": "15 x 15 ~ 23 x 23",
-      "translations": {
-        "pt-BR": {
-          "name": " Jawaii Serenade ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Jawaii_Serenade"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5362.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5362",
       "tree": {
         "idx": 17,
-        "row": 1,
-        "col": 8,
-        "columns": 9,
+        "row": 2,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5358,
@@ -21663,7 +21068,7 @@ export const trouvereData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21717,22 +21122,15 @@ export const trouvereData = {
       "spCost": "160 + (Skill Level x 11)",
       "duration": "180 seconds",
       "areaOfEffect": "15 x 15 ~ 23 x 23",
-      "translations": {
-        "pt-BR": {
-          "name": " Musical Interlude ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Musical_Interlude"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5361.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5361",
       "tree": {
         "idx": 18,
         "row": 2,
-        "col": 0,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5360,
@@ -21836,7 +21234,7 @@ export const trouvereData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21890,22 +21288,15 @@ export const trouvereData = {
       "spCost": "130 + (Skill Level x 10)",
       "duration": "180 seconds",
       "areaOfEffect": "15 x 15 ~ 23 x 23",
-      "translations": {
-        "pt-BR": {
-          "name": " Prontera March ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Prontera_March"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5364.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5364",
       "tree": {
         "idx": 19,
         "row": 2,
-        "col": 1,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5360,
@@ -22009,7 +21400,7 @@ export const trouvereData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22055,22 +21446,15 @@ export const trouvereData = {
       "castDelay": "1 second",
       "cooldown": "0.4 seconds",
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Rhythmical Wave ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Rhythmical_Wave"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/6521.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6521",
       "tree": {
         "idx": 21,
-        "row": 2,
-        "col": 3,
-        "columns": 9,
+        "row": 3,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 5356,
@@ -22162,7 +21546,7 @@ export const trouvereData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22204,22 +21588,15 @@ export const trouvereData = {
       ],
       "spCost": "250",
       "duration": "150 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Mystic Symphony ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Mystic_Symphony"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5351.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5351",
       "tree": {
         "idx": 22,
-        "row": 2,
-        "col": 4,
-        "columns": 9,
+        "row": 3,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5353,
@@ -22350,7 +21727,7 @@ export const trouvereData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22404,22 +21781,15 @@ export const trouvereData = {
       "spCost": "80 + (Skill Level x 40)",
       "duration": "30 seconds",
       "areaOfEffect": "15 x 15 ~ 23 x 23",
-      "translations": {
-        "pt-BR": {
-          "name": " Loki Capriccio ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Loki_Capriccio"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5359.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5359",
       "tree": {
         "idx": 24,
-        "row": 2,
-        "col": 6,
-        "columns": 9,
+        "row": 3,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5362,
@@ -22523,7 +21893,7 @@ export const trouvereData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22577,22 +21947,15 @@ export const trouvereData = {
       "spCost": "80 + (Skill Level x 40)",
       "duration": "30 seconds",
       "areaOfEffect": "15 x 15 ~ 23 x 23",
-      "translations": {
-        "pt-BR": {
-          "name": " Nifflheim Requiem ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Nifflheim_Requiem"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5363.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5363",
       "tree": {
         "idx": 25,
-        "row": 2,
-        "col": 7,
-        "columns": 9,
+        "row": 3,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5361,
@@ -22702,7 +22065,7 @@ export const trouvereData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22739,22 +22102,15 @@ export const trouvereData = {
       ],
       "spCost": "300",
       "duration": "60 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Kvasir Sonata ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Kvasir_Sonata"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5352.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5352",
       "tree": {
         "idx": 31,
-        "row": 3,
-        "col": 4,
-        "columns": 9,
+        "row": 4,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5359,
@@ -22836,7 +22192,7 @@ export const trouvereData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }

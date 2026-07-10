@@ -1,0 +1,29 @@
+.locale-menu {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 30;
+}
+
+.locale-menu select {
+  min-width: 132px;
+  border: 1px solid rgba(21, 122, 126, 0.32);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 10px 12px;
+  box-shadow: 0 12px 32px rgba(23, 33, 47, 0.18);
+  font-weight: 800;
+}
+
+.locale-menu select:focus-visible {
+  outline: 3px solid rgba(21, 122, 126, 0.2);
+  outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+  .locale-menu {
+    right: max(12px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
+  }
+}

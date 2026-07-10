@@ -1,5 +1,5 @@
 export const skyEmperorData = {
-  "generatedAt": "2026-07-10T15:02:23.177Z",
+  "generatedAt": "2026-07-10T18:53:01.078Z",
   "classId": 4302,
   "classSlug": "sky-emperor",
   "className": "Sky Emperor",
@@ -56,8 +56,8 @@ export const skyEmperorData = {
     "versions": 4
   },
   "tree": {
-    "columns": 9,
-    "rows": 5,
+    "columns": 7,
+    "rows": 6,
     "skillTreeUrl": "https://www.divine-pride.net/tools/skilltree/4302",
     "jobIconUrl": "assets/divine-pride/jobs/4302.png"
   },
@@ -296,8 +296,8 @@ export const skyEmperorData = {
       "label": "Sky Emperor",
       "pointLimit": 59,
       "tree": {
-        "columns": 9,
-        "rows": 5
+        "columns": 7,
+        "rows": 6
       },
       "skills": [
         {
@@ -403,22 +403,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " War Book Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/War_Book_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5464.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5464",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -537,7 +530,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -604,22 +597,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Sky Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sky_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5463.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5463",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -710,7 +696,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -781,22 +767,15 @@ export const skyEmperorData = {
           "spCost": "25",
           "castDelay": "0.5 seconds",
           "cooldown": "0.5 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Rising Sun ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Rising_Sun"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5465.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5465",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5463,
@@ -912,7 +891,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -984,22 +963,15 @@ export const skyEmperorData = {
           "castDelay": "0.5 seconds",
           "cooldown": "0.5 seconds",
           "areaOfEffect": "5 x 5~9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Rising Moon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Rising_Moon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5468.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5468",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5463,
@@ -1119,7 +1091,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1192,22 +1164,15 @@ export const skyEmperorData = {
           "variableCastTime": "1 seconds",
           "cooldown": "5 seconds",
           "areaOfEffect": "13 x 13~9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Twinkling Galaxy ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Twinkling_Galaxy"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5471.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5471",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5463,
@@ -1375,7 +1340,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1447,22 +1412,15 @@ export const skyEmperorData = {
           "castDelay": "0.5 seconds",
           "cooldown": "0.7 seconds",
           "areaOfEffect": "3 x 3~7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Noon Blast ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Noon_Blast"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5466.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5466",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5463,
@@ -1596,7 +1554,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1669,22 +1627,15 @@ export const skyEmperorData = {
           "variableCastTime": "1 seconds",
           "cooldown": "0.7 seconds",
           "areaOfEffect": "5 x 5~9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Midnight Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Midnight_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5469.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5469",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5463,
@@ -1841,7 +1792,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1913,22 +1864,15 @@ export const skyEmperorData = {
           "fixedCastTime": "0.5 seconds",
           "cooldown": "1 second",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Star Burst ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Star_Burst"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5472.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5472",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5463,
@@ -2050,7 +1994,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2122,22 +2066,15 @@ export const skyEmperorData = {
           "castDelay": "0.5 seconds",
           "cooldown": "0.3 seconds",
           "areaOfEffect": "3 x 3~7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Sunset Blast ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sunset_Blast"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5467.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5467",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5463,
@@ -2271,7 +2208,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2344,22 +2281,15 @@ export const skyEmperorData = {
           "variableCastTime": "1 seconds",
           "cooldown": "0.3 seconds",
           "areaOfEffect": "5 x 5~9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Dawn Break ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dawn_Break"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5470.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5470",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5463,
@@ -2516,7 +2446,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2588,22 +2518,15 @@ export const skyEmperorData = {
           "fixedCastTime": "0.5 seconds",
           "cooldown": "5 second",
           "areaOfEffect": "13 x 13~9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Star Cannon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Star_Cannon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5473.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5473",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5463,
@@ -2801,7 +2724,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2913,22 +2836,15 @@ export const skyEmperorData = {
           "fixedCastTime": "1 seconds",
           "cooldown": "2 seconds",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " All in the Sky ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/All_in_the_Sky"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5474.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5474",
           "tree": {
             "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
+            "row": 4,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5464,
@@ -3114,7 +3030,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3226,22 +3142,15 @@ export const skyEmperorData = {
           "fixedCastTime": "1 seconds",
           "variableCastTime": "0.3 seconds",
           "duration": "(Skill Level × 90) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Enchanting Sky ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Enchanting_Sky"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5475.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5475",
           "tree": {
             "idx": 32,
-            "row": 3,
-            "col": 5,
-            "columns": 9,
+            "row": 4,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5463,
@@ -3373,7 +3282,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3415,22 +3324,15 @@ export const skyEmperorData = {
             }
           ],
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Sky Sun ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sky_Sun"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5502.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5502",
           "tree": {
             "idx": 36,
-            "row": 4,
-            "col": 0,
-            "columns": 9,
+            "row": 5,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5466,
@@ -3488,7 +3390,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3534,22 +3436,15 @@ export const skyEmperorData = {
           "castDelay": "0.3 seconds",
           "cooldown": "1 second",
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Sky Moon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sky_Moon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5503.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5503",
           "tree": {
             "idx": 38,
-            "row": 4,
-            "col": 2,
-            "columns": 9,
+            "row": 5,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5469,
@@ -3623,7 +3518,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3665,22 +3560,15 @@ export const skyEmperorData = {
             }
           ],
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Star Light Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Star_Light_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5504.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5504",
           "tree": {
             "idx": 40,
-            "row": 4,
-            "col": 4,
-            "columns": 9,
+            "row": 5,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5472,
@@ -3738,7 +3626,7 @@ export const skyEmperorData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3750,8 +3638,8 @@ export const skyEmperorData = {
       "label": "Star Emperor",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 4
+        "columns": 7,
+        "rows": 5
       },
       "skills": [
         {
@@ -3802,22 +3690,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "60",
-          "translations": {
-            "pt-BR": {
-              "name": " Solar, Lunar, and Stellar Record ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar%2C_and_Stellar_Record"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2588.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2588",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 427,
@@ -3911,7 +3792,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3943,22 +3824,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "60",
-          "translations": {
-            "pt-BR": {
-              "name": " Solar, Lunar, and Stellar Purification ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar%2C_and_Stellar_Purification"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2589.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2589",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 441,
@@ -4006,7 +3880,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4076,22 +3950,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "10",
-          "translations": {
-            "pt-BR": {
-              "name": " Solar Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2591.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2591",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2588,
@@ -4169,7 +4036,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4239,22 +4106,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "10",
-          "translations": {
-            "pt-BR": {
-              "name": " Lunar Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lunar_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2575.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2575",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2588,
@@ -4332,7 +4192,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4402,22 +4262,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "10",
-          "translations": {
-            "pt-BR": {
-              "name": " Stellar Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stellar_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2578.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2578",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2588,
@@ -4495,7 +4348,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4565,22 +4418,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "10",
-          "translations": {
-            "pt-BR": {
-              "name": " Universal Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Universal_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2583.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2583",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2575,
@@ -4670,7 +4516,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4889,22 +4735,15 @@ export const skyEmperorData = {
           "spCost": "20",
           "castRange": "Melee",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Blaze Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Blaze_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2593.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2593",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2591,
@@ -5044,7 +4883,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5200,22 +5039,15 @@ export const skyEmperorData = {
           ],
           "spCost": "15 + (5 × Skill Level)",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " New Moon Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/New_Moon_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2579.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2579",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2575,
@@ -5352,7 +5184,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5504,22 +5336,15 @@ export const skyEmperorData = {
           ],
           "spCost": "50 - (5 × Skill Level)",
           "castDelay": "?",
-          "translations": {
-            "pt-BR": {
-              "name": " Flash Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Flash_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2580.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2580",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2578,
@@ -5644,7 +5469,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5819,22 +5644,15 @@ export const skyEmperorData = {
           "spCost": "55 + (Skill Level x 5)",
           "duration": "60 seconds",
           "castRange": "3 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Nova Explosion ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Nova_Explosion"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2582.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2582",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2583,
@@ -5975,7 +5793,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6029,22 +5847,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "80",
-          "translations": {
-            "pt-BR": {
-              "name": " Gravity Control ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Gravity_Control"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2585.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2585",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2583,
@@ -6118,7 +5929,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6265,22 +6076,15 @@ export const skyEmperorData = {
           ],
           "spCost": "31 + (3 × Skill Level)",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Solar Explosion ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar_Explosion"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2592.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2592",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2593,
@@ -6427,7 +6231,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6640,22 +6444,15 @@ export const skyEmperorData = {
           ],
           "spCost": "25 + (5 × Skill Level)",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Full Moon Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Full_Moon_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2576.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2576",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2579,
@@ -6824,7 +6621,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7003,22 +6800,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "25 + (5 × Skill Level)",
-          "translations": {
-            "pt-BR": {
-              "name": " Falling Stars ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Falling_Stars"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2584.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2584",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2580,
@@ -7158,7 +6948,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7358,22 +7148,15 @@ export const skyEmperorData = {
           "spCost": "65 + (Skill Level x 5)",
           "duration": "60 seconds",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Star Emperor's Descent ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Star_Emperor's_Descent"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2581.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2581",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2582,
@@ -7529,7 +7312,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7648,22 +7431,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "40",
-          "translations": {
-            "pt-BR": {
-              "name": " Solar Luminance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar_Luminance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2590.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2590",
           "tree": {
             "idx": 28,
-            "row": 3,
-            "col": 1,
-            "columns": 9,
+            "row": 4,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2592,
@@ -7775,7 +7551,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7894,22 +7670,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "40",
-          "translations": {
-            "pt-BR": {
-              "name": " Lunar Luminance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lunar_Luminance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2574.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2574",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2576,
@@ -8021,7 +7790,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8140,22 +7909,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "40",
-          "translations": {
-            "pt-BR": {
-              "name": " Stellar Luminance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stellar_Luminance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2577.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2577",
           "tree": {
             "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
+            "row": 4,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2584,
@@ -8267,7 +8029,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8443,22 +8205,15 @@ export const skyEmperorData = {
           "duration": "5 + (Skill Level x 1) seconds",
           "castRange": "7 cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Star Creator's Book ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Star_Creator's_Book"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2587.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2587",
           "tree": {
             "idx": 32,
-            "row": 3,
-            "col": 5,
-            "columns": 9,
+            "row": 4,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2581,
@@ -8613,7 +8368,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8712,22 +8467,15 @@ export const skyEmperorData = {
           "spCost": "40",
           "cooldown": "180 - (Skill Level x 30) seconds",
           "duration": "60 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Book of Dimensions ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Book_of_Dimensions"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2586.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2586",
           "tree": {
             "idx": 33,
-            "row": 3,
-            "col": 6,
-            "columns": 9,
+            "row": 4,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2581,
@@ -8852,7 +8600,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8864,8 +8612,8 @@ export const skyEmperorData = {
       "label": "Star Gladiator",
       "pointLimit": 49,
       "tree": {
-        "columns": 9,
-        "rows": 3
+        "columns": 7,
+        "rows": 4
       },
       "skills": [
         {
@@ -8916,22 +8664,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "100",
-          "translations": {
-            "pt-BR": {
-              "name": " Solar, Lunar and Stellar Perception ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Perception"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/427.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/427",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -8991,7 +8732,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9044,22 +8785,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "100",
-          "translations": {
-            "pt-BR": {
-              "name": " Solar, Lunar and Stellar Opposition ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Opposition"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/434.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/434",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -9123,7 +8857,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9231,22 +8965,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Solar, Lunar and Stellar Shadow ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Shadow"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/441.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/441",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -9351,7 +9078,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9459,22 +9186,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Solar, Lunar and Stellar Courier ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Courier"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/443.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/443",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -9579,7 +9299,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9634,22 +9354,15 @@ export const skyEmperorData = {
           "spCost": "20",
           "duration": "10 ~ 60 seconds; Until SP reaches zero",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Solar Heat ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar_Heat"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/428.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/428",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 427,
@@ -9728,7 +9441,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9790,22 +9503,15 @@ export const skyEmperorData = {
           ],
           "spCost": "80 − (Skill Level × 10)",
           "duration": "(Skill Level × 80) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Solar Protection ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar_Protection"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/431.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/431",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 427,
@@ -9887,7 +9593,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9939,22 +9645,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Solar Wrath ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar_Wrath"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/435.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/435",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 434,
@@ -10017,7 +9716,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10085,22 +9784,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Solar Blessings ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar_Blessings"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/438.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/438",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 427,
@@ -10183,7 +9875,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10235,22 +9927,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Solar, Lunar and Stellar Team-Up ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Team-Up"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/442.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/442",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -10310,7 +9995,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10343,22 +10028,15 @@ export const skyEmperorData = {
           ],
           "spCost": "100",
           "duration": "10 minutes; Until recast",
-          "translations": {
-            "pt-BR": {
-              "name": " Solar, Lunar and Stellar Union ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Solar%2C_Lunar_and_Stellar_Union"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/444.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/444",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 443,
@@ -10414,7 +10092,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10469,22 +10147,15 @@ export const skyEmperorData = {
           "spCost": "20",
           "duration": "10 ~ 60 seconds; Until SP reaches zero",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Lunar Heat ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lunar_Heat"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/429.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/429",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 427,
@@ -10563,7 +10234,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10625,22 +10296,15 @@ export const skyEmperorData = {
           ],
           "spCost": "80 − (Skill Level × 10)",
           "duration": "(Skill Level × 80) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Lunar Protection ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lunar_Protection"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/432.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/432",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 427,
@@ -10722,7 +10386,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10774,22 +10438,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Lunar Wrath ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lunar_Wrath"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/436.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/436",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 434,
@@ -10852,7 +10509,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10920,22 +10577,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Lunar Blessings ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lunar_Blessings"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/439.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/439",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 427,
@@ -11018,7 +10668,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11073,22 +10723,15 @@ export const skyEmperorData = {
           "spCost": "10",
           "duration": "10 ~ 60 seconds; Until SP reaches 0",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Stellar Heat ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stellar_Heat"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/430.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/430",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 427,
@@ -11167,7 +10810,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11229,22 +10872,15 @@ export const skyEmperorData = {
           ],
           "spCost": "80 − (Skill Level × 10)",
           "duration": "(Skill Level × 80) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Stellar Protection ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stellar_Protection"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/433.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/433",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 427,
@@ -11326,7 +10962,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11378,22 +11014,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Stellar Wrath ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stellar_Wrath"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/437.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/437",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 434,
@@ -11456,7 +11085,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11524,22 +11153,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Stellar Blessings ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stellar_Blessings"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/440.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/440",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 427,
@@ -11622,7 +11244,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11634,8 +11256,8 @@ export const skyEmperorData = {
       "label": "TaeKwon Boy",
       "pointLimit": 49,
       "tree": {
-        "columns": 9,
-        "rows": 3
+        "columns": 7,
+        "rows": 4
       },
       "skills": [
         {
@@ -11729,22 +11351,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Basic Skill ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -11841,7 +11456,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11954,22 +11569,15 @@ export const skyEmperorData = {
           "variableCastTime": "3~0 seconds",
           "castDelay": "0.3 seconds",
           "duration": "150 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Sprint ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sprint"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/411.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/411",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12098,7 +11706,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12186,22 +11794,15 @@ export const skyEmperorData = {
           "castDelay": "ASPD",
           "castRange": "Melee",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Tornado Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Tornado_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/413.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/413",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12294,7 +11895,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12381,22 +11982,15 @@ export const skyEmperorData = {
           "spCost": "16 − (Skill Level × 2)",
           "castDelay": "ASPD",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Heel Drop ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Heel_Drop"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/415.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/415",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12485,7 +12079,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12572,22 +12166,15 @@ export const skyEmperorData = {
           "spCost": "16 − (Skill Level × 2)",
           "castDelay": "ASPD",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Roundhouse ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Roundhouse"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/417.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/417",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12676,7 +12263,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12763,22 +12350,15 @@ export const skyEmperorData = {
           "spCost": "16 − (Skill Level × 2)",
           "castDelay": "ASPD",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Counter Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Counter_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/419.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/419",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12867,7 +12447,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12954,22 +12534,15 @@ export const skyEmperorData = {
           "spCost": "80 − (Skill Level × 10)",
           "castDelay": "ASPD",
           "castRange": "10 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Flying Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Flying_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/421.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/421",
           "tree": {
             "idx": 6,
             "row": 0,
             "col": 6,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -13058,7 +12631,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13091,22 +12664,15 @@ export const skyEmperorData = {
           ],
           "spCost": "3",
           "castDelay": "ASPD",
-          "translations": {
-            "pt-BR": {
-              "name": " First Aid ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/First_Aid"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -13155,7 +12721,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13227,22 +12793,15 @@ export const skyEmperorData = {
           "fixedCastTime": "[3 − (Skill Level / 2)] seconds",
           "variableCastTime": "[3 − (Skill Level / 2)] seconds",
           "castRange": "(Skill Level × 2) cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Leap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Leap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/426.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/426",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -13328,7 +12887,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13366,22 +12925,15 @@ export const skyEmperorData = {
           ],
           "spCost": "1",
           "duration": "Until reuse",
-          "translations": {
-            "pt-BR": {
-              "name": " Tornado Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Tornado_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/412.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/412",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 413,
@@ -13442,7 +12994,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13480,22 +13032,15 @@ export const skyEmperorData = {
           ],
           "spCost": "1",
           "duration": "Until reuse",
-          "translations": {
-            "pt-BR": {
-              "name": " Heel Drop Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Heel_Drop_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/414.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/414",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 415,
@@ -13556,7 +13101,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13594,22 +13139,15 @@ export const skyEmperorData = {
           ],
           "spCost": "1",
           "duration": "Until reuse",
-          "translations": {
-            "pt-BR": {
-              "name": " Roundhouse Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Roundhouse_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/416.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/416",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 417,
@@ -13670,7 +13208,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13708,22 +13246,15 @@ export const skyEmperorData = {
           ],
           "spCost": "1",
           "duration": "Until reuse",
-          "translations": {
-            "pt-BR": {
-              "name": " Counter Kick Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Counter_Kick_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/418.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/418",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 419,
@@ -13784,7 +13315,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13821,22 +13352,15 @@ export const skyEmperorData = {
             }
           ],
           "spCost": "1",
-          "translations": {
-            "pt-BR": {
-              "name": " Tumbling ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Tumbling"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/420.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/420",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 421,
@@ -13893,7 +13417,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13926,22 +13450,15 @@ export const skyEmperorData = {
           ],
           "spCost": "1",
           "duration": "Indefinite",
-          "translations": {
-            "pt-BR": {
-              "name": " Play Dead ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -13990,7 +13507,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14098,22 +13615,15 @@ export const skyEmperorData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Peaceful Break ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Peaceful_Break"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/422.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/422",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -14218,7 +13728,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14327,22 +13837,15 @@ export const skyEmperorData = {
             }
           ],
           "duration": "30 minutes",
-          "translations": {
-            "pt-BR": {
-              "name": " Happy Break ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Happy_Break"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/423.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/423",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -14451,7 +13954,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14533,8 +14036,8 @@ export const skyEmperorData = {
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -14690,22 +14193,15 @@ export const skyEmperorData = {
           ],
           "spCost": "20/50",
           "duration": "5 minutes",
-          "translations": {
-            "pt-BR": {
-              "name": " Mild Wind ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Mild_Wind"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/425.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/425",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 422,
@@ -14820,7 +14316,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14853,22 +14349,15 @@ export const skyEmperorData = {
           ],
           "spCost": "10",
           "fixedCastTime": "1 second",
-          "translations": {
-            "pt-BR": {
-              "name": " Taekwon Mission ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Taekwon_Mission"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/493.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/493",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 424,
@@ -14924,7 +14413,7 @@ export const skyEmperorData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15036,22 +14525,15 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " War Book Mastery ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/War_Book_Mastery"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5464.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5464",
       "tree": {
         "idx": 1,
         "row": 0,
         "col": 1,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -15170,7 +14652,7 @@ export const skyEmperorData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15237,22 +14719,15 @@ export const skyEmperorData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Sky Mastery ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Sky_Mastery"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5463.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5463",
       "tree": {
         "idx": 3,
         "row": 0,
         "col": 3,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -15343,7 +14818,7 @@ export const skyEmperorData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15414,22 +14889,15 @@ export const skyEmperorData = {
       "spCost": "25",
       "castDelay": "0.5 seconds",
       "cooldown": "0.5 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Rising Sun ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Rising_Sun"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5465.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5465",
       "tree": {
         "idx": 8,
-        "row": 0,
-        "col": 8,
-        "columns": 9,
+        "row": 1,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5463,
@@ -15545,7 +15013,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15617,22 +15085,15 @@ export const skyEmperorData = {
       "castDelay": "0.5 seconds",
       "cooldown": "0.5 seconds",
       "areaOfEffect": "5 x 5~9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Rising Moon ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Rising_Moon"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5468.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5468",
       "tree": {
         "idx": 10,
         "row": 1,
-        "col": 1,
-        "columns": 9,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5463,
@@ -15752,7 +15213,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15825,22 +15286,15 @@ export const skyEmperorData = {
       "variableCastTime": "1 seconds",
       "cooldown": "5 seconds",
       "areaOfEffect": "13 x 13~9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Twinkling Galaxy ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Twinkling_Galaxy"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5471.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5471",
       "tree": {
         "idx": 12,
         "row": 1,
-        "col": 3,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5463,
@@ -16008,7 +15462,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16080,22 +15534,15 @@ export const skyEmperorData = {
       "castDelay": "0.5 seconds",
       "cooldown": "0.7 seconds",
       "areaOfEffect": "3 x 3~7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Noon Blast ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Noon_Blast"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5466.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5466",
       "tree": {
         "idx": 15,
-        "row": 1,
-        "col": 6,
-        "columns": 9,
+        "row": 2,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5463,
@@ -16229,7 +15676,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16302,22 +15749,15 @@ export const skyEmperorData = {
       "variableCastTime": "1 seconds",
       "cooldown": "0.7 seconds",
       "areaOfEffect": "5 x 5~9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Midnight Kick ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Midnight_Kick"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5469.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5469",
       "tree": {
         "idx": 17,
-        "row": 1,
-        "col": 8,
-        "columns": 9,
+        "row": 2,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5463,
@@ -16474,7 +15914,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16546,22 +15986,15 @@ export const skyEmperorData = {
       "fixedCastTime": "0.5 seconds",
       "cooldown": "1 second",
       "areaOfEffect": "5 x 5",
-      "translations": {
-        "pt-BR": {
-          "name": " Star Burst ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Star_Burst"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5472.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5472",
       "tree": {
         "idx": 19,
         "row": 2,
-        "col": 1,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5463,
@@ -16683,7 +16116,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16755,22 +16188,15 @@ export const skyEmperorData = {
       "castDelay": "0.5 seconds",
       "cooldown": "0.3 seconds",
       "areaOfEffect": "3 x 3~7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Sunset Blast ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Sunset_Blast"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5467.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5467",
       "tree": {
         "idx": 22,
-        "row": 2,
-        "col": 4,
-        "columns": 9,
+        "row": 3,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5463,
@@ -16904,7 +16330,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16977,22 +16403,15 @@ export const skyEmperorData = {
       "variableCastTime": "1 seconds",
       "cooldown": "0.3 seconds",
       "areaOfEffect": "5 x 5~9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Dawn Break ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Dawn_Break"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5470.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5470",
       "tree": {
         "idx": 24,
-        "row": 2,
-        "col": 6,
-        "columns": 9,
+        "row": 3,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5463,
@@ -17149,7 +16568,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17221,22 +16640,15 @@ export const skyEmperorData = {
       "fixedCastTime": "0.5 seconds",
       "cooldown": "5 second",
       "areaOfEffect": "13 x 13~9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Star Cannon ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Star_Cannon"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5473.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5473",
       "tree": {
         "idx": 26,
-        "row": 2,
-        "col": 8,
-        "columns": 9,
+        "row": 3,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5463,
@@ -17434,7 +16846,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17546,22 +16958,15 @@ export const skyEmperorData = {
       "fixedCastTime": "1 seconds",
       "cooldown": "2 seconds",
       "castRange": "Melee",
-      "translations": {
-        "pt-BR": {
-          "name": " All in the Sky ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/All_in_the_Sky"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5474.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5474",
       "tree": {
         "idx": 30,
-        "row": 3,
-        "col": 3,
-        "columns": 9,
+        "row": 4,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5464,
@@ -17747,7 +17152,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17859,22 +17264,15 @@ export const skyEmperorData = {
       "fixedCastTime": "1 seconds",
       "variableCastTime": "0.3 seconds",
       "duration": "(Skill Level × 90) seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Enchanting Sky ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Enchanting_Sky"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5475.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5475",
       "tree": {
         "idx": 32,
-        "row": 3,
-        "col": 5,
-        "columns": 9,
+        "row": 4,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5463,
@@ -18006,7 +17404,7 @@ export const skyEmperorData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18048,22 +17446,15 @@ export const skyEmperorData = {
         }
       ],
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Sky Sun ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Sky_Sun"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5502.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5502",
       "tree": {
         "idx": 36,
-        "row": 4,
-        "col": 0,
-        "columns": 9,
+        "row": 5,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5466,
@@ -18121,7 +17512,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18167,22 +17558,15 @@ export const skyEmperorData = {
       "castDelay": "0.3 seconds",
       "cooldown": "1 second",
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Sky Moon ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Sky_Moon"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5503.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5503",
       "tree": {
         "idx": 38,
-        "row": 4,
-        "col": 2,
-        "columns": 9,
+        "row": 5,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5469,
@@ -18256,7 +17640,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18298,22 +17682,15 @@ export const skyEmperorData = {
         }
       ],
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Star Light Kick ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Star_Light_Kick"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5504.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5504",
       "tree": {
         "idx": 40,
-        "row": 4,
-        "col": 4,
-        "columns": 9,
+        "row": 5,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5472,
@@ -18371,7 +17748,7 @@ export const skyEmperorData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }

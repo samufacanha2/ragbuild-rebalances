@@ -1,5 +1,5 @@
 export const elementalMasterData = {
-  "generatedAt": "2026-07-10T15:02:14.824Z",
+  "generatedAt": "2026-07-10T18:52:52.610Z",
   "classId": 4261,
   "classSlug": "elemental-master",
   "className": "Elemental Master",
@@ -56,8 +56,8 @@ export const elementalMasterData = {
     "versions": 4
   },
   "tree": {
-    "columns": 9,
-    "rows": 4,
+    "columns": 7,
+    "rows": 5,
     "skillTreeUrl": "https://www.divine-pride.net/tools/skilltree/4261",
     "jobIconUrl": "assets/divine-pride/jobs/4261.png"
   },
@@ -366,8 +366,8 @@ export const elementalMasterData = {
       "label": "Elemental Master",
       "pointLimit": 59,
       "tree": {
-        "columns": 9,
-        "rows": 4
+        "columns": 7,
+        "rows": 5
       },
       "skills": [
         {
@@ -432,22 +432,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Magic Book Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Magic_Book_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5365.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5365",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -538,7 +531,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -605,22 +598,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Elemental Spirit Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Elemental_Spirit_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5374.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5374",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2463,
@@ -718,7 +704,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -793,22 +779,15 @@ export const elementalMasterData = {
           "spCost": "80 + (Skill Level × 4)",
           "castRange": "Magic",
           "areaOfEffect": "9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Diamond Storm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Diamond_Storm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5369.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5369",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5365,
@@ -1027,7 +1006,7 @@ export const elementalMasterData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1099,22 +1078,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Conflagration(Conflagration) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Conflagration(Conflagration)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5372.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5372",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5365,
@@ -1318,7 +1290,7 @@ export const elementalMasterData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1394,22 +1366,15 @@ export const elementalMasterData = {
           "duration": "3 seconds",
           "castRange": "Magic",
           "areaOfEffect": "9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Lightning Land ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lightning_Land"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5370.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5370",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5365,
@@ -1629,7 +1594,7 @@ export const elementalMasterData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1683,22 +1648,15 @@ export const elementalMasterData = {
           "spCost": "40 + (3 × Skill Level)",
           "duration": "40 + (40 × Skill Level) seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Spell Enchanting ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spell_Enchanting"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5366.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5366",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5365,
@@ -1798,7 +1756,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1851,22 +1809,15 @@ export const elementalMasterData = {
           ],
           "spCost": "65 + (5 × Skill Level) seconds",
           "duration": "90 + (30 × Skill Level) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Elemental Veil ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Elemental_Veil"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5381.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5381",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5374,
@@ -1962,7 +1913,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2034,22 +1985,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Terra Drive(Terra Drive) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Terra_Drive(Terra_Drive)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5373.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5373",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5365,
@@ -2256,7 +2200,7 @@ export const elementalMasterData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2328,22 +2272,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Venom Swamp(Venom Swamp) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Venom_Swamp(Venom_Swamp)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5371.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5371",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5365,
@@ -2547,7 +2484,7 @@ export const elementalMasterData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2598,22 +2535,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " AP Burn ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/AP_Burn"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5367.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5367",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5366,
@@ -2701,7 +2631,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2736,22 +2666,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Summon Elemental: Diluvio ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Summon_Elemental%3A_Diluvio"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5376.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5376",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2458,
@@ -2823,7 +2746,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2858,22 +2781,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Summon Elemental: Ador ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Summon_Elemental%3A_Ador"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5375.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5375",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2457,
@@ -2945,7 +2861,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2980,22 +2896,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Summon Elemental: Procella ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Summon_Elemental%3A_Procella"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5377.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5377",
           "tree": {
             "idx": 20,
             "row": 2,
-            "col": 2,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2459,
@@ -3067,7 +2976,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3114,22 +3023,15 @@ export const elementalMasterData = {
           "cooldown": "1 second",
           "castRange": "Magic",
           "areaOfEffect": "5 x 5~7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Psychic Stream ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Psychic_Stream"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/6517.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6517",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5365,
@@ -3268,7 +3170,7 @@ export const elementalMasterData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3319,22 +3221,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Increase AP ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Increase_AP"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5368.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5368",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5367,
@@ -3426,7 +3321,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3461,22 +3356,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Summon Elemental: Serpens ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Summon_Elemental%3A_Serpens"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5379.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5379",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2457,
@@ -3566,7 +3454,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3601,22 +3489,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Summon Elemental: Terremotus ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Summon_Elemental%3A_Terremotus"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5378.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5378",
           "tree": {
             "idx": 27,
             "row": 3,
-            "col": 0,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2460,
@@ -3688,7 +3569,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3800,22 +3681,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Elemental Buster(Elemental Buster) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Elemental_Buster(Elemental_Buster)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5380.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5380",
           "tree": {
             "idx": 33,
-            "row": 3,
-            "col": 6,
-            "columns": 9,
+            "row": 4,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5374,
@@ -4062,7 +3936,7 @@ export const elementalMasterData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4074,8 +3948,8 @@ export const elementalMasterData = {
       "label": "Sorcerer",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 5
+        "columns": 7,
+        "rows": 6
       },
       "skills": [
         {
@@ -4223,22 +4097,15 @@ export const elementalMasterData = {
           "duration": "2 + (Skill Level × 2) seconds",
           "castRange": "Magic",
           "areaOfEffect": "3 x 3 ~ 7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Extreme Vacuum ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Extreme_Vacuum"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2453.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2453",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 288,
@@ -4379,7 +4246,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4604,22 +4471,15 @@ export const elementalMasterData = {
           "spCost": "45 + (Skill Level × 5)",
           "duration": "90 seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Striking ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Striking"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2451.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2451",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 280,
@@ -4818,7 +4678,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4992,22 +4852,15 @@ export const elementalMasterData = {
           ],
           "spCost": "26 + (Skill Level × 4)",
           "duration": "30 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Electric Walk ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Electric_Walk"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2444.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2444",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 287,
@@ -5148,7 +5001,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5197,22 +5050,15 @@ export const elementalMasterData = {
             }
           ],
           "spCost": "(Skill Level × 10)",
-          "translations": {
-            "pt-BR": {
-              "name": " Analyze Element ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Analyze_Element"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2462.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2462",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 280,
@@ -5310,7 +5156,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5511,22 +5357,15 @@ export const elementalMasterData = {
           "duration": "(Skill Level × 1) seconds",
           "castRange": "Magic",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Killing Cloud ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Killing_Cloud"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2450.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2450",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 91,
@@ -5684,7 +5523,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5835,22 +5674,15 @@ export const elementalMasterData = {
           "duration": "[35 + (Skill Level × 5)] seconds",
           "castRange": "9 cells",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Warmer ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Warmer"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2452.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2452",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 285,
@@ -5996,7 +5828,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6146,22 +5978,15 @@ export const elementalMasterData = {
           "variableCastTime": "2 + (Skill Level × 0.2) seconds",
           "castRange": "Magic",
           "areaOfEffect": "7 x 7 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Earth Grave ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Earth_Grave"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2446.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2446",
           "tree": {
             "idx": 6,
             "row": 0,
             "col": 6,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 90,
@@ -6293,7 +6118,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6542,22 +6367,15 @@ export const elementalMasterData = {
           ],
           "spCost": "36 + (Skill Level × 4)",
           "duration": "30 + (Skill Level × 15) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Spell Fist ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spell_Fist"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2445.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2445",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 279,
@@ -6735,7 +6553,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6885,22 +6703,15 @@ export const elementalMasterData = {
           "variableCastTime": "4.5 + (Skill Level × 0.5) seconds",
           "castRange": "Magic",
           "areaOfEffect": "7 x 7 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Diamond Dust ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Diamond_Dust"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2447.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2447",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 286,
@@ -7032,7 +6843,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7282,22 +7093,15 @@ export const elementalMasterData = {
           "variableCastTime": "[3 + (Skill Level × 0.1)] seconds",
           "castRange": "Magic",
           "areaOfEffect": "3 x 3 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Varetyr Spear ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Varetyr_Spear"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2454.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2454",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 283,
@@ -7485,7 +7289,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7550,22 +7354,15 @@ export const elementalMasterData = {
             }
           ],
           "spCost": "10",
-          "translations": {
-            "pt-BR": {
-              "name": " Spirit Control ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spirit_Control"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2456.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2456",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2462,
@@ -7659,7 +7456,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7809,22 +7606,15 @@ export const elementalMasterData = {
           "variableCastTime": "[1 + (Skill Level × 1.2)] seconds",
           "castRange": "Magic",
           "areaOfEffect": "7 x 7 around target",
-          "translations": {
-            "pt-BR": {
-              "name": " Poison Burst ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Poison_Burst"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2448.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2448",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2450,
@@ -7951,7 +7741,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8125,22 +7915,15 @@ export const elementalMasterData = {
           ],
           "spCost": "26 + (Skill Level × 4)",
           "duration": "30 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Fire Walk ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Fire_Walk"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2443.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2443",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 285,
@@ -8281,7 +8064,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8470,8 +8253,8 @@ export const elementalMasterData = {
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2452,
@@ -8792,22 +8575,15 @@ export const elementalMasterData = {
           "duration": "[1 + (Skill Level × 0.5)] seconds",
           "castRange": "Magic",
           "areaOfEffect": "7 x 7 ~ 11 x 11",
-          "translations": {
-            "pt-BR": {
-              "name": " Psychic Wave ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Psychic_Wave"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2449.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2449",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 289,
@@ -8961,7 +8737,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9087,22 +8863,15 @@ export const elementalMasterData = {
           "spCost": "50 + (Skill Level × 50)",
           "variableCastTime": "(Skill Level) seconds",
           "duration": "5 + (Skill Level × 5) minutes",
-          "translations": {
-            "pt-BR": {
-              "name": " Call Aqua ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Call_Aqua"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2458.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2458",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2447,
@@ -9227,7 +8996,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9353,22 +9122,15 @@ export const elementalMasterData = {
           "spCost": "50 + (Skill Level × 50)",
           "variableCastTime": "(Skill Level) seconds",
           "duration": "5 + (Skill Level × 5) minutes",
-          "translations": {
-            "pt-BR": {
-              "name": " Call Ventus ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Call_Ventus"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2459.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2459",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2454,
@@ -9493,7 +9255,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9661,22 +9423,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Spirit Sympathy ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spirit_Sympathy"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2463.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2463",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2456,
@@ -9814,7 +9569,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9859,22 +9614,15 @@ export const elementalMasterData = {
             }
           ],
           "castRange": "5 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Elemental Action ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Elemental_Action"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2461.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2461",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2456,
@@ -9947,7 +9695,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10073,22 +9821,15 @@ export const elementalMasterData = {
           "spCost": "50 + (Skill Level × 50)",
           "variableCastTime": "(Skill Level) seconds",
           "duration": "5 + (Skill Level × 5) minutes",
-          "translations": {
-            "pt-BR": {
-              "name": " Call Agni ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Call_Agni"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2457.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2457",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2452,
@@ -10213,7 +9954,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10339,22 +10080,15 @@ export const elementalMasterData = {
           "spCost": "50 + (Skill Level × 50)",
           "variableCastTime": "(Skill Level) seconds",
           "duration": "5 + (Skill Level × 5) minutes",
-          "translations": {
-            "pt-BR": {
-              "name": " Call Tera ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Call_Tera"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2460.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2460",
           "tree": {
             "idx": 20,
             "row": 2,
-            "col": 2,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2446,
@@ -10479,7 +10213,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10556,22 +10290,15 @@ export const elementalMasterData = {
           "duration": "1 minute",
           "castRange": "Magic",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Water Insignia ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Water_Insignia"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2466.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2466",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2458,
@@ -10675,7 +10402,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10752,22 +10479,15 @@ export const elementalMasterData = {
           "duration": "1 minute",
           "castRange": "Magic",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Wind Insignia ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Wind_Insignia"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2467.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2467",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2459,
@@ -10871,7 +10591,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10907,22 +10627,15 @@ export const elementalMasterData = {
             }
           ],
           "spCost": "10%",
-          "translations": {
-            "pt-BR": {
-              "name": " Spirit Cure ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spirit_Cure"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2464.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2464",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2463,
@@ -10990,7 +10703,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11067,22 +10780,15 @@ export const elementalMasterData = {
           "duration": "1 minute",
           "castRange": "Magic",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Fire Insignia ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Fire_Insignia"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2465.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2465",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2457,
@@ -11181,7 +10887,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11258,22 +10964,15 @@ export const elementalMasterData = {
           "duration": "1 minute",
           "castRange": "Magic",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Earth Insignia ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Earth_Insignia"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2468.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2468",
           "tree": {
             "idx": 27,
             "row": 3,
-            "col": 0,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2460,
@@ -11377,7 +11076,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11504,22 +11203,15 @@ export const elementalMasterData = {
             }
           ],
           "duration": "15 + (Skill Level x 5) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Elemental Shield ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Elemental_Shield"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5008.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5008",
           "tree": {
             "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
+            "row": 4,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2456,
@@ -11638,7 +11330,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11762,22 +11454,15 @@ export const elementalMasterData = {
           ],
           "spCost": "1",
           "duration": "[5 + (Skill Level × 5)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Full Throttle ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
             "idx": 41,
-            "row": 4,
-            "col": 5,
-            "columns": 9,
+            "row": 5,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -11898,7 +11583,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11910,8 +11595,8 @@ export const elementalMasterData = {
       "label": "Professor",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 4
+        "columns": 7,
+        "rows": 5
       },
       "skills": [
         {
@@ -12017,22 +11702,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Study (Advanced Book) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Study_(Advanced_Book)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/274.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/274",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12137,7 +11815,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12170,22 +11848,15 @@ export const elementalMasterData = {
           ],
           "spCost": "10",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Monster Property ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Monster_Property"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/93.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/93",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12234,7 +11905,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12267,22 +11938,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Elemental Change - Water ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Elemental_Change_-_Water"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1008.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1008",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12331,7 +11995,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12364,22 +12028,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Elemental Change - Wind ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Elemental_Change_-_Wind"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1019.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1019",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12428,7 +12085,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12461,22 +12118,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Elemental Change - Ground ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Elemental_Change_-_Ground"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1017.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1017",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12525,7 +12175,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12558,22 +12208,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Elemental Change - Fire ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Elemental_Change_-_Fire"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1018.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1018",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12622,7 +12265,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12654,22 +12297,15 @@ export const elementalMasterData = {
             }
           ],
           "spCost": "30",
-          "translations": {
-            "pt-BR": {
-              "name": " Create Elemental Converter ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Create_Elemental_Converter"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1007.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1007",
           "tree": {
             "idx": 6,
             "row": 0,
             "col": 6,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12714,7 +12350,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12782,22 +12418,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Dragonology ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dragonology"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/284.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/284",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 274,
@@ -12890,7 +12519,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12965,22 +12594,15 @@ export const elementalMasterData = {
           "spCost": "40",
           "duration": "5 x (Skill Level + 1) minutes",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Seismic Weapon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Seismic_Weapon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/283.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/283",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 16,
@@ -13095,7 +12717,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13163,22 +12785,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Cast Cancel (Cast Cancel) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Cast_Cancel_(Cast_Cancel)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/275.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/275",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 274,
@@ -13259,7 +12874,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13327,22 +12942,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Magic Rod (Magic Rod) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Magic_Rod_(Magic_Rod)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/276.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/276",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 274,
@@ -13423,7 +13031,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13498,22 +13106,15 @@ export const elementalMasterData = {
           "spCost": "40",
           "duration": "5 x (Skill Level + 1) minutes",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Frost Weapon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Frost_Weapon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/281.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/281",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 14,
@@ -13628,7 +13229,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13703,22 +13304,15 @@ export const elementalMasterData = {
           "spCost": "40",
           "duration": "5 x (Skill Level + 1) minutes",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Lightning Loader ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lightning_Loader"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/282.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/282",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 20,
@@ -13833,7 +13427,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13908,22 +13502,15 @@ export const elementalMasterData = {
           "spCost": "20",
           "castRange": "5 cells",
           "areaOfEffect": "5 x 5 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Flame Launcher ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Flame_Launcher"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/280.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/280",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 19,
@@ -14038,7 +13625,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14072,22 +13659,15 @@ export const elementalMasterData = {
           "spCost": "30",
           "duration": "8 seconds",
           "castRange": "10 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Fiber Lock ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Fiber_Lock"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/405.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/405",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 284,
@@ -14147,7 +13727,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14221,22 +13801,15 @@ export const elementalMasterData = {
           "fixedCastTime": "0.2 + (Skill Level × 0.2) seconds",
           "variableCastTime": "0.7 + (Skill Level × 0.5) seconds",
           "castRange": "Magic",
-          "translations": {
-            "pt-BR": {
-              "name": " Earth Spike ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Earth_Spike"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/90.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/90",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 283,
@@ -14341,7 +13914,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14449,22 +14022,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Free Cast ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Free_Cast"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/278.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/278",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 275,
@@ -14576,7 +14142,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14644,22 +14210,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Spell Breaker (Spell Breaker) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spell_Breaker_(Spell_Breaker)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/277.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/277",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 276,
@@ -14740,7 +14299,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14814,22 +14373,15 @@ export const elementalMasterData = {
           "duration": "(Skill Level) minutes",
           "castRange": "2 cells",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Deluge ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Deluge"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/286.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/286",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 281,
@@ -14934,7 +14486,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15002,22 +14554,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Whirlwind (Violent Gale) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Whirlwind_(Violent_Gale)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/287.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/287",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 282,
@@ -15094,7 +14639,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15168,22 +14713,15 @@ export const elementalMasterData = {
           "duration": "(Skill Level) minutes",
           "castRange": "2 cells",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Volcano ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Volcano"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/285.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/285",
           "tree": {
             "idx": 20,
             "row": 2,
-            "col": 2,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 280,
@@ -15297,7 +14835,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15331,22 +14869,15 @@ export const elementalMasterData = {
           "spCost": "5",
           "fixedCastTime": "3 seconds",
           "castRange": "10 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Exhale ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Exhale"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/374.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/374",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 276,
@@ -15412,7 +14943,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15487,22 +15018,15 @@ export const elementalMasterData = {
           "variableCastTime": "0.9 + (Skill Level × 0.2) seconds",
           "castRange": "Magic",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Heaven's Drive ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Heaven's_Drive"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/91.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/91",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 90,
@@ -15602,7 +15126,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15710,22 +15234,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Hindsight (Auto Spell) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hindsight_(Auto_Spell)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/279.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/279",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 278,
@@ -15841,7 +15358,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15914,22 +15431,15 @@ export const elementalMasterData = {
           "variableCastTime": "1.6 seconds",
           "castDelay": "ASPD",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Dispell ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dispell"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/289.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/289",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 277,
@@ -16030,7 +15540,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16065,22 +15575,15 @@ export const elementalMasterData = {
           "duration": "20 seconds",
           "castRange": "10 cells",
           "areaOfEffect": "5 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Blinding Mist ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Blinding_Mist"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/404.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/404",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 286,
@@ -16150,7 +15653,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16224,22 +15727,15 @@ export const elementalMasterData = {
           "duration": "[75 + (Skill Level × 45)] seconds",
           "castRange": "3 cells",
           "areaOfEffect": "7 x 7 ~ 11 x 11",
-          "translations": {
-            "pt-BR": {
-              "name": " Land Protector ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Land_Protector"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/288.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/288",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 285,
@@ -16361,7 +15857,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16434,22 +15930,15 @@ export const elementalMasterData = {
             }
           ],
           "spCost": "(Skill Level)",
-          "translations": {
-            "pt-BR": {
-              "name": " Indulge ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Indulge"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/373.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/373",
           "tree": {
             "idx": 28,
-            "row": 3,
-            "col": 1,
-            "columns": 9,
+            "row": 4,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 9,
@@ -16556,7 +16045,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16628,22 +16117,15 @@ export const elementalMasterData = {
           "fixedCastTime": "0.4 seconds",
           "variableCastTime": "1.6 seconds",
           "duration": "90 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Double Bolt ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Double_Bolt"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/482.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/482",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 279,
@@ -16740,7 +16222,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16777,22 +16259,15 @@ export const elementalMasterData = {
           ],
           "spCost": "1",
           "duration": "Until ne x t 5 skills",
-          "translations": {
-            "pt-BR": {
-              "name": " Foresight ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Foresight"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/403.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/403",
           "tree": {
             "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
+            "row": 4,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 274,
@@ -16876,7 +16351,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16947,22 +16422,15 @@ export const elementalMasterData = {
           "spCost": "70 + (Skill Level × 10)",
           "cooldown": "10/15 seconds",
           "castRange": "10 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Siphon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Siphon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/375.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/375",
           "tree": {
             "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
+            "row": 4,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 275,
@@ -17067,7 +16535,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17139,22 +16607,15 @@ export const elementalMasterData = {
           "castDelay": "[0.7 + (Skill Level × 0.1)] seconds",
           "duration": "30 seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Mind Breaker ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Mind_Breaker"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/402.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/402",
           "tree": {
             "idx": 32,
-            "row": 3,
-            "col": 5,
-            "columns": 9,
+            "row": 4,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 9,
@@ -17266,7 +16727,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17334,22 +16795,15 @@ export const elementalMasterData = {
             }
           ],
           "spCost": "50",
-          "translations": {
-            "pt-BR": {
-              "name": " Hocus Pocus ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hocus_Pocus"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/290.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/290",
           "tree": {
             "idx": 33,
-            "row": 3,
-            "col": 6,
-            "columns": 9,
+            "row": 4,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 279,
@@ -17467,7 +16921,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17479,7 +16933,7 @@ export const elementalMasterData = {
       "label": "Magician",
       "pointLimit": 49,
       "tree": {
-        "columns": 9,
+        "columns": 7,
         "rows": 3
       },
       "skills": [
@@ -17574,22 +17028,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Basic Skill ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -17686,7 +17133,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17792,22 +17239,15 @@ export const elementalMasterData = {
           ],
           "spCost": "(26 − Skill Level)",
           "castDelay": "ASPD",
-          "translations": {
-            "pt-BR": {
-              "name": " Stone Curse ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stone_Curse"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/16.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/16",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -17923,7 +17363,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18037,22 +17477,15 @@ export const elementalMasterData = {
           "fixedCastTime": "0.2 + (Skill Level × 0.1) seconds",
           "variableCastTime": "0.2 + (Skill Level × 0.3) seconds",
           "castRange": "Magic",
-          "translations": {
-            "pt-BR": {
-              "name": " Cold Bolt ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Cold_Bolt"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/14.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/14",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18185,7 +17618,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18299,22 +17732,15 @@ export const elementalMasterData = {
           "fixedCastTime": "0.2 + (Skill Level × 0.1) seconds",
           "variableCastTime": "0.2 + (Skill Level × 0.3) seconds",
           "castRange": "Magic",
-          "translations": {
-            "pt-BR": {
-              "name": " Lightening Bolt ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lightening_Bolt"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/20.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/20",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18447,7 +17873,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18559,22 +17985,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Napalm beat ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Napalm_beat"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/11.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/11",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18685,7 +18104,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18799,22 +18218,15 @@ export const elementalMasterData = {
           "fixedCastTime": "0.2 + (Skill Level × 0.1) seconds",
           "variableCastTime": "0.2 + (Skill Level × 0.3) seconds",
           "castRange": "Magic",
-          "translations": {
-            "pt-BR": {
-              "name": " Firebolt ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Firebolt"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/19.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/19",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18947,7 +18359,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18981,22 +18393,15 @@ export const elementalMasterData = {
           "spCost": "10",
           "duration": "10 seconds",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Sight ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sight"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/10.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/10",
           "tree": {
             "idx": 6,
             "row": 0,
             "col": 6,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -19049,7 +18454,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -19082,22 +18487,15 @@ export const elementalMasterData = {
           ],
           "spCost": "3",
           "castDelay": "ASPD",
-          "translations": {
-            "pt-BR": {
-              "name": " First Aid ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/First_Aid"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -19146,7 +18544,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -19254,22 +18652,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Increase SP Recovery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Increase_SP_Recovery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/9.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/9",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -19392,7 +18783,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -19504,22 +18895,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Frost diver ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Frost_diver"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/15.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/15",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 14,
@@ -19637,7 +19021,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -19748,22 +19132,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Thunder storm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Thunder_storm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/21.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/21",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 20,
@@ -19887,7 +19264,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -20001,22 +19378,15 @@ export const elementalMasterData = {
           ],
           "spCost": "18 ~ 42",
           "castRange": "Magic",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Strike ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Strike"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/13.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/13",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 11,
@@ -20142,7 +19512,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -20257,22 +19627,15 @@ export const elementalMasterData = {
           "spCost": "25",
           "castRange": "Magic",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Fireball ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Fireball"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/17.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/17",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 19,
@@ -20402,7 +19765,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -20436,22 +19799,15 @@ export const elementalMasterData = {
           "spCost": "30",
           "fixedCastTime": "5 seconds",
           "duration": "5 minutes",
-          "translations": {
-            "pt-BR": {
-              "name": " Energy Coat ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Energy_Coat"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/157.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/157",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -20504,7 +19860,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -20537,22 +19893,15 @@ export const elementalMasterData = {
           ],
           "spCost": "1",
           "duration": "Indefinite",
-          "translations": {
-            "pt-BR": {
-              "name": " Play Dead ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -20601,7 +19950,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -20709,22 +20058,15 @@ export const elementalMasterData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Safety wall ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Safety_wall"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/12.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/12",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 11,
@@ -20846,7 +20188,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -20958,22 +20300,15 @@ export const elementalMasterData = {
           "duration": "(Skill Level + 4) seconds (Skill Level + 2) hits",
           "castRange": "Magic",
           "areaOfEffect": "1 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Firewall ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Firewall"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/18.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/18",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 10,
@@ -21121,7 +20456,7 @@ export const elementalMasterData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -21192,22 +20527,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Magic Book Mastery ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Magic_Book_Mastery"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5365.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5365",
       "tree": {
         "idx": 2,
         "row": 0,
         "col": 2,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -21298,7 +20626,7 @@ export const elementalMasterData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21365,22 +20693,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Elemental Spirit Mastery ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Elemental_Spirit_Mastery"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5374.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5374",
       "tree": {
         "idx": 5,
         "row": 0,
         "col": 5,
-        "columns": 9,
+        "columns": 7,
         "requirements": [
           {
             "id": 2463,
@@ -21478,7 +20799,7 @@ export const elementalMasterData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21553,22 +20874,15 @@ export const elementalMasterData = {
       "spCost": "80 + (Skill Level × 4)",
       "castRange": "Magic",
       "areaOfEffect": "9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Diamond Storm ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Diamond_Storm"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5369.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5369",
       "tree": {
         "idx": 7,
-        "row": 0,
-        "col": 7,
-        "columns": 9,
+        "row": 1,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 5365,
@@ -21787,7 +21101,7 @@ export const elementalMasterData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21859,22 +21173,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Conflagration(Conflagration) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Conflagration(Conflagration)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5372.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5372",
       "tree": {
         "idx": 8,
-        "row": 0,
-        "col": 8,
-        "columns": 9,
+        "row": 1,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5365,
@@ -22078,7 +21385,7 @@ export const elementalMasterData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22154,22 +21461,15 @@ export const elementalMasterData = {
       "duration": "3 seconds",
       "castRange": "Magic",
       "areaOfEffect": "9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Lightning Land ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Lightning_Land"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5370.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5370",
       "tree": {
         "idx": 9,
         "row": 1,
-        "col": 0,
-        "columns": 9,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5365,
@@ -22389,7 +21689,7 @@ export const elementalMasterData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22443,22 +21743,15 @@ export const elementalMasterData = {
       "spCost": "40 + (3 × Skill Level)",
       "duration": "40 + (40 × Skill Level) seconds",
       "castRange": "9 cells",
-      "translations": {
-        "pt-BR": {
-          "name": " Spell Enchanting ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Spell_Enchanting"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5366.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5366",
       "tree": {
         "idx": 10,
         "row": 1,
-        "col": 1,
-        "columns": 9,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5365,
@@ -22558,7 +21851,7 @@ export const elementalMasterData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22611,22 +21904,15 @@ export const elementalMasterData = {
       ],
       "spCost": "65 + (5 × Skill Level) seconds",
       "duration": "90 + (30 × Skill Level) seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Elemental Veil ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Elemental_Veil"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5381.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5381",
       "tree": {
         "idx": 12,
         "row": 1,
-        "col": 3,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5374,
@@ -22722,7 +22008,7 @@ export const elementalMasterData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22794,22 +22080,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Terra Drive(Terra Drive) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Terra_Drive(Terra_Drive)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5373.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5373",
       "tree": {
         "idx": 15,
-        "row": 1,
-        "col": 6,
-        "columns": 9,
+        "row": 2,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5365,
@@ -23016,7 +22295,7 @@ export const elementalMasterData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -23088,22 +22367,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Venom Swamp(Venom Swamp) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Venom_Swamp(Venom_Swamp)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5371.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5371",
       "tree": {
         "idx": 16,
-        "row": 1,
-        "col": 7,
-        "columns": 9,
+        "row": 2,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5365,
@@ -23307,7 +22579,7 @@ export const elementalMasterData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -23358,22 +22630,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " AP Burn ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/AP_Burn"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5367.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5367",
       "tree": {
         "idx": 17,
-        "row": 1,
-        "col": 8,
-        "columns": 9,
+        "row": 2,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5366,
@@ -23461,7 +22726,7 @@ export const elementalMasterData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -23496,22 +22761,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Summon Elemental: Diluvio ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Summon_Elemental%3A_Diluvio"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5376.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5376",
       "tree": {
         "idx": 18,
         "row": 2,
-        "col": 0,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 2458,
@@ -23583,7 +22841,7 @@ export const elementalMasterData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -23618,22 +22876,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Summon Elemental: Ador ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Summon_Elemental%3A_Ador"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5375.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5375",
       "tree": {
         "idx": 19,
         "row": 2,
-        "col": 1,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 2457,
@@ -23705,7 +22956,7 @@ export const elementalMasterData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -23740,22 +22991,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Summon Elemental: Procella ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Summon_Elemental%3A_Procella"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5377.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5377",
       "tree": {
         "idx": 20,
         "row": 2,
-        "col": 2,
-        "columns": 9,
+        "col": 6,
+        "columns": 7,
         "requirements": [
           {
             "id": 2459,
@@ -23827,7 +23071,7 @@ export const elementalMasterData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -23874,22 +23118,15 @@ export const elementalMasterData = {
       "cooldown": "1 second",
       "castRange": "Magic",
       "areaOfEffect": "5 x 5~7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Psychic Stream ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Psychic_Stream"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/6517.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6517",
       "tree": {
         "idx": 21,
-        "row": 2,
-        "col": 3,
-        "columns": 9,
+        "row": 3,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 5365,
@@ -24028,7 +23265,7 @@ export const elementalMasterData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -24079,22 +23316,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Increase AP ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Increase_AP"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5368.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5368",
       "tree": {
         "idx": 24,
-        "row": 2,
-        "col": 6,
-        "columns": 9,
+        "row": 3,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5367,
@@ -24186,7 +23416,7 @@ export const elementalMasterData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -24221,22 +23451,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Summon Elemental: Serpens ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Summon_Elemental%3A_Serpens"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5379.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5379",
       "tree": {
         "idx": 26,
-        "row": 2,
-        "col": 8,
-        "columns": 9,
+        "row": 3,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 2457,
@@ -24326,7 +23549,7 @@ export const elementalMasterData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -24361,22 +23584,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Summon Elemental: Terremotus ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Summon_Elemental%3A_Terremotus"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5378.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5378",
       "tree": {
         "idx": 27,
         "row": 3,
-        "col": 0,
-        "columns": 9,
+        "col": 6,
+        "columns": 7,
         "requirements": [
           {
             "id": 2460,
@@ -24448,7 +23664,7 @@ export const elementalMasterData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -24560,22 +23776,15 @@ export const elementalMasterData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Elemental Buster(Elemental Buster) ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Elemental_Buster(Elemental_Buster)"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5380.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5380",
       "tree": {
         "idx": 33,
-        "row": 3,
-        "col": 6,
-        "columns": 9,
+        "row": 4,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5374,
@@ -24822,7 +24031,7 @@ export const elementalMasterData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }

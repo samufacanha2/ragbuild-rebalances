@@ -1,0 +1,115 @@
+.app-shell {
+  --detail-panel-width: 620px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18px minmax(360px, var(--detail-panel-width));
+  gap: 0;
+  width: min(1710px, calc(100vw - 20px));
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.app-shell.is-resizing-detail-panel {
+  cursor: col-resize;
+  user-select: none;
+}
+
+.tree-area {
+  min-width: 0;
+}
+
+.skill-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.skill-tab {
+  min-height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--ink);
+  padding: 6px 11px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.skill-tab:hover,
+.skill-tab:focus-visible {
+  outline: 3px solid rgba(21, 122, 126, 0.16);
+  outline-offset: 1px;
+}
+
+.skill-tab.is-active {
+  border-color: rgba(21, 122, 126, 0.52);
+  background: rgba(21, 122, 126, 0.12);
+  color: var(--teal-dark);
+}
+
+.detail-panel {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+}
+
+.panel-resizer {
+  position: relative;
+  align-self: stretch;
+  min-width: 18px;
+  border: 0;
+  background: transparent;
+  cursor: col-resize;
+  touch-action: none;
+}
+
+.panel-resizer::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: rgba(102, 112, 133, 0.22);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.panel-resizer:hover::before,
+.panel-resizer:focus-visible::before,
+.app-shell.is-resizing-detail-panel .panel-resizer::before {
+  width: 3px;
+  background: rgba(21, 122, 126, 0.62);
+}
+
+.panel-resizer:focus-visible {
+  outline: 3px solid rgba(21, 122, 126, 0.16);
+  outline-offset: -3px;
+}
+
+@media (max-width: 1050px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+    width: min(100vw - 12px, 980px);
+  }
+
+  .detail-panel {
+    position: static;
+    max-height: none;
+  }
+
+  .panel-resizer {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .app-shell {
+    padding-top: 16px;
+    padding-bottom: 92px;
+  }
+}

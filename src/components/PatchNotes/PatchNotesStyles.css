@@ -1,0 +1,29 @@
+.timeline {
+  display: grid;
+  gap: 10px;
+}
+
+.timeline-entry {
+  display: grid;
+  gap: 6px;
+}
+
+.timeline-entry strong,
+.timeline-entry span {
+  display: block;
+}
+
+.timeline-entry span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.timeline-entry ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.timeline-entry li {
+  margin-bottom: 6px;
+}

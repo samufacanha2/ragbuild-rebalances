@@ -1,4 +1,5 @@
-import { translatePointsUsed, translateUi } from '../lib/translations.js'
+import './BuildToolbarStyles.css'
+import { translatePointsUsed, translateUi } from '../../lib/translations.js'
 
 export function BuildToolbar({ totalPoints, pointLimit, language, onReset }) {
   return (

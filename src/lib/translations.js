@@ -51,7 +51,16 @@ export function translatePointsUsed(totalPoints, pointLimit, language) {
 function localizedSkillField(skill, language, field) {
   if (language === 'en') return ''
   const value = skill.translations?.[language]?.[field]
-  return value ? repairMojibake(String(value)).trim() : ''
+  if (!value) return ''
+
+  const repaired = repairMojibake(String(value)).trim()
+  if (field === 'description' && isMissingWikiDescription(repaired)) return ''
+  return repaired
+}
+
+function isMissingWikiDescription(value) {
+  return /No momento,\s*n[aã]o h[aá] conte[uú]do nesta p[aá]gina/i.test(value)
+    || /There is currently no text in this page/i.test(value)
 }
 
 function translateCommonSpecText(value) {

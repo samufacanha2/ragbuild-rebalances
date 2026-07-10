@@ -1,0 +1,78 @@
+.skill-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.skill-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.skill-card-head img {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 8px;
+}
+
+.card-stepper {
+  display: grid;
+  grid-template-columns: 42px minmax(44px, 1fr) 42px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.card-stepper button {
+  display: grid;
+  place-items: center;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1.15rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.card-stepper button:disabled {
+  cursor: not-allowed;
+  opacity: 0.42;
+}
+
+.card-stepper button:focus-visible {
+  outline: 3px solid rgba(21, 122, 126, 0.2);
+  outline-offset: 2px;
+}
+
+.card-stepper strong {
+  display: grid;
+  place-items: center;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #fafbfd;
+}
+
+.skill-card section {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.compact-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.compact-list li {
+  margin-bottom: 6px;
+}

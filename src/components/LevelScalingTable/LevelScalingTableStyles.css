@@ -1,0 +1,33 @@
+.level-scaling-wrap {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.level-scaling-table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.level-scaling-table th,
+.level-scaling-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 9px 8px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.level-scaling-table thead th {
+  background: var(--surface-soft);
+  color: var(--ink);
+}
+
+.level-scaling-table tbody th {
+  color: var(--ink);
+}
+
+.current-level-row {
+  background: rgba(21, 122, 126, 0.08);
+}

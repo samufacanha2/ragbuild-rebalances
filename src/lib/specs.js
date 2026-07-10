@@ -6,6 +6,19 @@ export function notesForVersion(skill, versionId) {
   return skill.balanceNotes.filter((entry) => entry.versionId === versionId)
 }
 
+export function skillAvailableInVersion(data, skill, versionId) {
+  const addedEntry = firstAddedEntry(data, skill)
+  if (!addedEntry) return true
+  if (versionId === 'current') return true
+  if (versionId === 'pre') return false
+
+  const versionOrder = versionOrderForData(data)
+  const selectedIndex = versionOrder.get(versionId)
+  const addedIndex = versionOrder.get(addedEntry.versionId)
+  if (!Number.isFinite(selectedIndex) || !Number.isFinite(addedIndex)) return true
+  return selectedIndex >= addedIndex
+}
+
 export function specVersionTitle(model, versionId) {
   if (versionId === 'pre') return 'Pre-Rebalance Specs'
   if (versionId === 'current') return 'Current Specs'
@@ -96,6 +109,18 @@ function effectiveLevelDeltas(deltas, selectedIndex) {
   }
 
   return [...byKey.values()].map((entry) => entry.applied ?? entry.future).filter(Boolean)
+}
+
+function firstAddedEntry(data, skill) {
+  const versionOrder = versionOrderForData(data)
+  return [...(skill.balanceNotes ?? [])]
+    .filter((entry) => entry.added)
+    .sort((a, b) => (versionOrder.get(a.versionId) ?? Number.MAX_SAFE_INTEGER) - (versionOrder.get(b.versionId) ?? Number.MAX_SAFE_INTEGER))
+    .at(0)
+}
+
+function versionOrderForData(data) {
+  return new Map((data.rebalanceVersions ?? []).map((version, index) => [version.id, index]))
 }
 
 function levelDeltaKey(delta) {

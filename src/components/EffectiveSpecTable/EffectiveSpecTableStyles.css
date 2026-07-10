@@ -1,0 +1,39 @@
+.effective-spec-table-wrap {
+  overflow-x: auto;
+}
+
+.effective-spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.effective-spec-table th,
+.effective-spec-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 9px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.effective-spec-table th {
+  width: 38%;
+  font-weight: 800;
+}
+
+.effective-spec-table td {
+  font-weight: 700;
+}
+
+.effective-spec-table td small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.15;
+}
+
+.changed-spec-value {
+  color: var(--teal-dark);
+  font-weight: 800;
+}

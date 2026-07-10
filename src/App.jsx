@@ -1,8 +1,9 @@
 import { Outlet, useNavigate, useParams, useSearch } from '@tanstack/react-router'
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
-import { ClassSkillPlanner } from './components/ClassSkillPlanner.jsx'
-import { ClassSelectPage } from './components/ClassSelectPage.jsx'
-import { LanguageMenu } from './components/LanguageMenu.jsx'
+import { ClassSkillPlanner } from './components/ClassSkillPlanner'
+import { ClassSelectPage } from './components/ClassSelectPage'
+import { EmptyState } from './components/EmptyState'
+import { LanguageMenu } from './components/LanguageMenu'
 import { classDataSets, defaultClassDataSetId } from './data/classData.js'
 import { detectInitialLanguage, persistLanguage } from './lib/locale.js'
 import { translateUi } from './lib/translations.js'
@@ -131,9 +132,9 @@ function ClassRouteContent({ classId, tabId }) {
       ) : (
         <main className="app-shell">
           <section className="tree-area">
-            <div className="empty-state">
-              {loadError || `${translateUi('Loading', language)} ${activeClassMeta.label}...`}
-            </div>
+            <EmptyState eyebrow="" title="">
+              <p>{loadError || `${translateUi('Loading', language)} ${activeClassMeta.label}...`}</p>
+            </EmptyState>
           </section>
         </main>
       )}

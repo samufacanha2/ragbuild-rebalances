@@ -1,5 +1,5 @@
 export const abyssChaserData = {
-  "generatedAt": "2026-07-10T15:02:12.602Z",
+  "generatedAt": "2026-07-10T18:52:50.392Z",
   "classId": 4260,
   "classSlug": "abyss-chaser",
   "className": "Abyss Chaser",
@@ -56,8 +56,8 @@ export const abyssChaserData = {
     "versions": 5
   },
   "tree": {
-    "columns": 9,
-    "rows": 3,
+    "columns": 7,
+    "rows": 4,
     "skillTreeUrl": "https://www.divine-pride.net/tools/skilltree/4260",
     "jobIconUrl": "assets/divine-pride/jobs/4260.png"
   },
@@ -415,8 +415,8 @@ export const abyssChaserData = {
       "label": "Abyss Chaser",
       "pointLimit": 59,
       "tree": {
-        "columns": 9,
-        "rows": 3
+        "columns": 7,
+        "rows": 4
       },
       "skills": [
         {
@@ -481,22 +481,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Dagger Bow Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dagger_Bow_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5311.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5311",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -587,7 +580,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -629,22 +622,15 @@ export const abyssChaserData = {
             }
           ],
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Hit and Sliding ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hit_and_Sliding"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/6512.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6512",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5311,
@@ -677,7 +663,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -744,22 +730,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Magic Sword Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Magic_Sword_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5312.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5312",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2285,
@@ -863,7 +842,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -937,22 +916,15 @@ export const abyssChaserData = {
           "spCost": "35 + (Skill Level × 5)",
           "cooldown": "0.4 seconds",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Abyss Dagger ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Abyss_Dagger"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5314.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5314",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2284,
@@ -1184,7 +1156,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1226,22 +1198,15 @@ export const abyssChaserData = {
             }
           ],
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Chasing Break ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Chasing_Break"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/6513.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6513",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 6512,
@@ -1317,7 +1282,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1392,22 +1357,15 @@ export const abyssChaserData = {
           "spCost": "30 + (Skill Level × 10)",
           "castRange": "9 cells",
           "areaOfEffect": "3 x 3 ~ 7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Chain Reaction Shot ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Chain_Reaction_Shot"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5316.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5316",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2288,
@@ -1652,7 +1610,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1698,22 +1656,15 @@ export const abyssChaserData = {
           "castDelay": "0.5 seconds",
           "cooldown": "0.75 seconds",
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Chasing Shot ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Chasing_Shot"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/6514.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6514",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 6512,
@@ -1805,7 +1756,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1879,22 +1830,15 @@ export const abyssChaserData = {
           ],
           "spCost": "30 + (Skill Level × 10)",
           "areaOfEffect": "9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " From the Abyss ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/From_the_Abyss"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5317.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5317",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5312,
@@ -2106,7 +2050,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2158,22 +2102,15 @@ export const abyssChaserData = {
             }
           ],
           "spCost": "25 + (Skill Level × 4)",
-          "translations": {
-            "pt-BR": {
-              "name": " Divest Shadow ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Divest_Shadow"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5313.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5313",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2298,
@@ -2275,7 +2212,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2348,22 +2285,15 @@ export const abyssChaserData = {
           ],
           "spCost": "25 + (Skill Level × 5)",
           "cooldown": "0.25 * (6 - Skill Level) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Misfortune Rush ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Misfortune_Rush"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5315.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5315",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5311,
@@ -2461,7 +2391,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2575,22 +2505,15 @@ export const abyssChaserData = {
           ],
           "spCost": "35 + (Skill Level x 5)",
           "areaOfEffect": "3 x 3 ~ 5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Deft Stab ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Deft_Stab"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5320.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5320",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5311,
@@ -2870,7 +2793,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2983,22 +2906,15 @@ export const abyssChaserData = {
             }
           ],
           "spCost": "25 + (Skill Level × 10)",
-          "translations": {
-            "pt-BR": {
-              "name": " Frenzy Shot ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Frenzy_Shot"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5322.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5322",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5311,
@@ -3288,7 +3204,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3363,22 +3279,15 @@ export const abyssChaserData = {
           "spCost": "55 + (Skill Level × 10)",
           "castRange": "Magic",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Abyss Square ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Abyss_Square"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5321.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5321",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5312,
@@ -3575,7 +3484,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3621,22 +3530,15 @@ export const abyssChaserData = {
           "castDelay": "1 second",
           "cooldown": "0.7 seconds",
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Abyss Flame ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Abyss_Flame"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/6515.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6515",
           "tree": {
             "idx": 20,
             "row": 2,
-            "col": 2,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5312,
@@ -3751,7 +3653,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3865,22 +3767,15 @@ export const abyssChaserData = {
           ],
           "spCost": "100",
           "duration": "300 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Abyss Slayer ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Abyss_Slayer"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5318.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5318",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5314,
@@ -4097,7 +3992,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4212,22 +4107,15 @@ export const abyssChaserData = {
           "spCost": "150",
           "castRange": "Magic",
           "areaOfEffect": "9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Omega Abyss Strike ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Omega_Abyss_Strike"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5319.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5319",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5317,
@@ -4455,7 +4343,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4467,8 +4355,8 @@ export const abyssChaserData = {
       "label": "Shadow Chaser",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 5
+        "columns": 7,
+        "rows": 6
       },
       "skills": [
         {
@@ -4584,22 +4472,15 @@ export const abyssChaserData = {
           ],
           "spCost": "35 + (Skill Level × 5)",
           "duration": "Until SP reaches 0 or recast",
-          "translations": {
-            "pt-BR": {
-              "name": " Reproduce ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Reproduce"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2285.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2285",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 225,
@@ -4739,7 +4620,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4913,22 +4794,15 @@ export const abyssChaserData = {
           ],
           "duration": "[20 + (Skill Level * 10)] seconds",
           "castRange": "5 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow Formation ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_Formation"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2287.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2287",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 213,
@@ -5074,7 +4948,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5369,22 +5243,15 @@ export const abyssChaserData = {
           "spCost": "6 + (Skill Level x 4)",
           "castRange": "2 cells",
           "areaOfEffect": "3 x 3 ~ 5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Fatal Manace ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Fatal_Manace"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2284.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2284",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 219,
@@ -5619,7 +5486,7 @@ export const abyssChaserData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5819,22 +5686,15 @@ export const abyssChaserData = {
           "spCost": "5 + (Skill Level * 5)",
           "duration": "3 + (Skill Level * 2) seccons",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Body Painting ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Body_Painting"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2289.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2289",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -5982,7 +5842,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6231,22 +6091,15 @@ export const abyssChaserData = {
           ],
           "spCost": "20 + (Skill Level x 2)",
           "castRange": "7 ~ 11 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Triangle Shot ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Triangle_Shot"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2288.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2288",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 46,
@@ -6418,7 +6271,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6529,22 +6382,15 @@ export const abyssChaserData = {
           "duration": "(Skill Level x 5) seconds",
           "castRange": "7 cells",
           "areaOfEffect": "3 x 3",
-          "translations": {
-            "pt-BR": {
-              "name": " Manhole ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Manhole"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2299.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2299",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 221,
@@ -6664,7 +6510,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6814,22 +6660,15 @@ export const abyssChaserData = {
           "spCost": "12 + (Skill Level x 3)",
           "duration": "[50 + (Skill Level x 10)] seconds (modified)",
           "castRange": "3 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Divest Accessory ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Divest_Accessory"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2298.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2298",
           "tree": {
             "idx": 6,
             "row": 0,
             "col": 6,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 215,
@@ -6970,7 +6809,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7219,22 +7058,15 @@ export const abyssChaserData = {
           "spCost": "35 + (5 x Skill Level)",
           "variableCastTime": "(4 / Skill Level) seconds",
           "duration": "[40 + (Skill Level * 20)] seconds ~ 300 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow Spell ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_Spell"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2286.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2286",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2285,
@@ -7462,7 +7294,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7571,22 +7403,15 @@ export const abyssChaserData = {
           ],
           "duration": "5 + (SkillLevel * 5) seconds",
           "castRange": "3 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Masquerade-Enervation ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Masquerade-Enervation"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2292.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2292",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2289,
@@ -7694,7 +7519,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7820,22 +7645,15 @@ export const abyssChaserData = {
           ],
           "duration": "5 + (Skill Level * 5) seconds",
           "castRange": "3 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Masquerade-Gloomy ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Masquerade-Gloomy"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2293.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2293",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2289,
@@ -7957,7 +7775,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8083,22 +7901,15 @@ export const abyssChaserData = {
           ],
           "duration": "5 + (Skill Level * 5) seconds",
           "castRange": "3 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Masquerade-Ignorance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Masquerade-Ignorance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2294.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2294",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2289,
@@ -8220,7 +8031,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8331,22 +8142,15 @@ export const abyssChaserData = {
           "duration": "(Skill Level * 5) seconds",
           "castRange": "7 cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Chaos Panic ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Chaos_Panic"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2301.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2301",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2299,
@@ -8466,7 +8270,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8560,22 +8364,15 @@ export const abyssChaserData = {
           "duration": "(Skill Level x 4) seconds",
           "castRange": "7 cells",
           "areaOfEffect": "1 x 1",
-          "translations": {
-            "pt-BR": {
-              "name": " Dimensional Door ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dimensional_Door"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2300.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2300",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2299,
@@ -8688,7 +8485,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8837,22 +8634,15 @@ export const abyssChaserData = {
           ],
           "spCost": "36 + (Skill Level * 4)",
           "duration": "5 + (Skill Level * 5) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Deadly Infection ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Deadly_Infection"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2291.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2291",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2286,
@@ -8986,7 +8776,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9129,22 +8919,15 @@ export const abyssChaserData = {
           ],
           "duration": "5 + (Skill Level * 5) seconds",
           "castRange": "3 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Masquerade-Laziness ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Masquerade-Laziness"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2295.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2295",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2292,
@@ -9285,7 +9068,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9394,22 +9177,15 @@ export const abyssChaserData = {
           ],
           "duration": "5 + (Skill Level * 5) seconds",
           "castRange": "3 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Masquerade-Weakness ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Masquerade-Weakness"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2297.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2297",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2292,
@@ -9536,7 +9312,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9635,22 +9411,15 @@ export const abyssChaserData = {
           "spCost": "15 + (Skill Level × 5)",
           "cooldown": "35 seconds",
           "duration": "45 − (Skill Level × 5) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Urgent Escape ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Urgent_Escape"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5010.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5010",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2288,
@@ -9764,7 +9533,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10013,22 +9782,15 @@ export const abyssChaserData = {
           ],
           "spCost": "20 + (4 x Skill Level)",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Feint Bomb ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Feint_Bomb"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2304.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2304",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2300,
@@ -10210,7 +9972,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10303,22 +10065,15 @@ export const abyssChaserData = {
           "spCost": "50 + (Skill Level * 10)",
           "duration": "(Skill Level * 5) seconds",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Bloody Lust ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Bloody_Lust"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2303.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2303",
           "tree": {
             "idx": 20,
             "row": 2,
-            "col": 2,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2300,
@@ -10427,7 +10182,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10570,22 +10325,15 @@ export const abyssChaserData = {
           ],
           "duration": "[5 + (Skill Level * 5)] seconds",
           "castRange": "3 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Masquerade-Unlucky ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Masquerade-Unlucky"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2296.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2296",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2295,
@@ -10720,7 +10468,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10893,22 +10641,15 @@ export const abyssChaserData = {
           ],
           "spCost": "100",
           "cooldown": "[10 + (Skill Level x 10)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Invisibility ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Invisibility"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2290.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2290",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2286,
@@ -11066,7 +10807,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11159,22 +10900,15 @@ export const abyssChaserData = {
           "duration": "(Skil Level * 7) seconds",
           "castRange": "7 cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Maelstrom ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Maelstrom"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2302.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2302",
           "tree": {
             "idx": 33,
-            "row": 3,
-            "col": 6,
-            "columns": 9,
+            "row": 4,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2296,
@@ -11289,7 +11023,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11413,22 +11147,15 @@ export const abyssChaserData = {
           ],
           "spCost": "1",
           "duration": "[5 + (Skill Level × 5)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Full Throttle ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
             "idx": 41,
-            "row": 4,
-            "col": 5,
-            "columns": 9,
+            "row": 5,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -11549,7 +11276,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11561,8 +11288,8 @@ export const abyssChaserData = {
       "label": "Stalker",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 5
+        "columns": 7,
+        "rows": 6
       },
       "skills": [
         {
@@ -11668,22 +11395,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Vulture's Eye ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Vulture's_Eye"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/44.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/44",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -11802,7 +11522,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11870,22 +11590,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Stalk (Tunnel Drive) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stalk_(Tunnel_Drive)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/213.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/213",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 51,
@@ -11962,7 +11675,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12115,22 +11828,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Snatcher ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Snatcher"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/210.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/210",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 50,
@@ -12256,7 +11962,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12329,22 +12035,15 @@ export const abyssChaserData = {
           "castDelay": "1 second",
           "duration": "60 + (Skill Level × 15) seconds",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Strip Helm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Strip_Helm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/218.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/218",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 211,
@@ -12445,7 +12144,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12553,22 +12252,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Sword Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sword_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12659,7 +12351,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12695,22 +12387,15 @@ export const abyssChaserData = {
           "cooldown": "None",
           "duration": "15 seconds",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Close Confine ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Close_Confine"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1005.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1005",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12771,7 +12456,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12879,22 +12564,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Double Strafe(Double strafing) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Double_Strafe(Double_strafing)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/46.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/46",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 44,
@@ -12996,7 +12674,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13068,22 +12746,15 @@ export const abyssChaserData = {
           "fixedCastTime": "0.5 seconds",
           "variableCastTime": "0.5 seconds",
           "duration": "Sustained (Limited by SP)",
-          "translations": {
-            "pt-BR": {
-              "name": " Stealth ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stealth"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/389.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/389",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 51,
@@ -13186,7 +12857,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13296,22 +12967,15 @@ export const abyssChaserData = {
           ],
           "spCost": "15",
           "castRange": "1 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Steal Coin ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Steal_Coin"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/211.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/211",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 210,
@@ -13435,7 +13099,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13508,22 +13172,15 @@ export const abyssChaserData = {
           "castDelay": "1 second",
           "duration": "60 + (Skill Level × 15) seconds",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Strip Shield ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Strip_Shield"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/216.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/216",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 218,
@@ -13624,7 +13281,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13655,22 +13312,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " GangSter's Paradise ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/GangSter's_Paradise"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/223.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/223",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 216,
@@ -13714,7 +13364,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13747,22 +13397,15 @@ export const abyssChaserData = {
           ],
           "spCost": "5",
           "castRange": "1 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Remove Trap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Remove_Trap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/124.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/124",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 46,
@@ -13818,7 +13461,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14022,22 +13665,15 @@ export const abyssChaserData = {
           ],
           "spCost": "12",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Back Stab ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Back_Stab"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/212.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/212",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 211,
@@ -14191,7 +13827,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14264,22 +13900,15 @@ export const abyssChaserData = {
           "castDelay": "1 second",
           "duration": "60 + (Skill Level × 15) seconds",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Strip Armor ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Strip_Armor"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/217.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/217",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 216,
@@ -14380,7 +14009,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14415,22 +14044,15 @@ export const abyssChaserData = {
           "castDelay": "Unknown",
           "cooldown": "Unknown",
           "castRange": "Unknown cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Remover ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Remover"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/222.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/222",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 223,
@@ -14494,7 +14116,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14562,22 +14184,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Compulsion Discount ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Compulsion_Discount"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/224.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/224",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 223,
@@ -14654,7 +14269,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14726,22 +14341,15 @@ export const abyssChaserData = {
           "castDelay": "ASPD Based",
           "castRange": "Melee",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Raid ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Raid"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/214.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/214",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 212,
@@ -14835,7 +14443,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14904,22 +14512,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Divest Weapon (Strip Weapon) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Divest_Weapon_(Strip_Weapon)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/215.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/215",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 217,
@@ -15004,7 +14605,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15055,22 +14656,15 @@ export const abyssChaserData = {
           "castDelay": "Unknown",
           "cooldown": "Unknown",
           "castRange": "Unknown cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Flag Graffiti ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Flag_Graffiti"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/221.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/221",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 222,
@@ -15158,7 +14752,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15226,22 +14820,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Intimidate ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Intimidate"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/219.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/219",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 212,
@@ -15319,7 +14906,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15391,22 +14978,15 @@ export const abyssChaserData = {
           "castDelay": "1 second",
           "duration": "135 seconds +/-",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Full Divestment ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Full_Divestment"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/476.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/476",
           "tree": {
             "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
+            "row": 4,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 215,
@@ -15503,7 +15083,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15574,22 +15154,15 @@ export const abyssChaserData = {
           "spCost": "5 + (Skill Level x 5)",
           "castDelay": "None",
           "duration": "Indefinite",
-          "translations": {
-            "pt-BR": {
-              "name": " Counter Instinct ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Counter_Instinct"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/390.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/390",
           "tree": {
             "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
+            "row": 4,
+            "col": 3,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -15675,7 +15248,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15723,9 +15296,9 @@ export const abyssChaserData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/220",
           "tree": {
             "idx": 32,
-            "row": 3,
-            "col": 5,
-            "columns": 9,
+            "row": 4,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 221,
@@ -15897,22 +15470,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Intimidate (Plagiarism) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Intimidate_(Plagiarism)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/225.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/225",
           "tree": {
             "idx": 36,
-            "row": 4,
-            "col": 0,
-            "columns": 9,
+            "row": 5,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 219,
@@ -16010,7 +15576,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16044,22 +15610,15 @@ export const abyssChaserData = {
           "spCost": "30",
           "fixedCastTime": "1 second",
           "duration": "10 minutes",
-          "translations": {
-            "pt-BR": {
-              "name": " Preserve ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Preserve"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/475.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/475",
           "tree": {
             "idx": 38,
-            "row": 4,
-            "col": 2,
-            "columns": 9,
+            "row": 5,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 225,
@@ -16119,7 +15678,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16131,8 +15690,8 @@ export const abyssChaserData = {
       "label": "Thief",
       "pointLimit": 49,
       "tree": {
-        "columns": 9,
-        "rows": 2
+        "columns": 7,
+        "rows": 3
       },
       "skills": [
         {
@@ -16226,22 +15785,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Basic Skill ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -16338,7 +15890,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16446,22 +15998,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Double Attack ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Double_Attack"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/48.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/48",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -16566,7 +16111,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16677,22 +16222,15 @@ export const abyssChaserData = {
           "spCost": "10",
           "castDelay": "1 second",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Steal ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Steal"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/50.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/50",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -16813,7 +16351,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16924,22 +16462,15 @@ export const abyssChaserData = {
           "spCost": "12",
           "castDelay": "ASPD",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Envenom ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Envenom"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/52.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/52",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -17074,7 +16605,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17107,22 +16638,15 @@ export const abyssChaserData = {
           ],
           "spCost": "9",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Sand Attack ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sand_Attack"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/149.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/149",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -17171,7 +16695,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17205,22 +16729,15 @@ export const abyssChaserData = {
           "spCost": "2",
           "castDelay": "ASPD",
           "castRange": "7 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Stone Fling ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Stone_Fling"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/152.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/152",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -17273,7 +16790,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17306,22 +16823,15 @@ export const abyssChaserData = {
           ],
           "spCost": "3",
           "castDelay": "ASPD",
-          "translations": {
-            "pt-BR": {
-              "name": " First Aid ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/First_Aid"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -17370,7 +16880,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17478,22 +16988,15 @@ export const abyssChaserData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Improve Dodge ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Improve_Dodge"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/49.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/49",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -17612,7 +17115,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17722,22 +17225,15 @@ export const abyssChaserData = {
           ],
           "spCost": "10",
           "duration": "(Skill Level × 30) seconds; Until recast or SP reaches zero",
-          "translations": {
-            "pt-BR": {
-              "name": " Hiding ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hiding"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/51.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/51",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 50,
@@ -17861,7 +17357,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17895,22 +17391,15 @@ export const abyssChaserData = {
           "spCost": "10",
           "castDelay": "ASPD",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Detoxify ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Detoxify"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/53.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/53",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 52,
@@ -17970,7 +17459,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18003,22 +17492,15 @@ export const abyssChaserData = {
           ],
           "spCost": "7",
           "castDelay": "ASPD",
-          "translations": {
-            "pt-BR": {
-              "name": " Back Slide ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Back_Slide"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/150.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/150",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18067,7 +17549,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18101,22 +17583,15 @@ export const abyssChaserData = {
           "spCost": "2",
           "fixedCastTime": "0.5 seconds",
           "castDelay": "ASPD",
-          "translations": {
-            "pt-BR": {
-              "name": " Find Stone ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Find_Stone"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/151.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/151",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18169,7 +17644,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18202,22 +17677,15 @@ export const abyssChaserData = {
           ],
           "spCost": "1",
           "duration": "Indefinite",
-          "translations": {
-            "pt-BR": {
-              "name": " Play Dead ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18266,7 +17734,7 @@ export const abyssChaserData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18337,22 +17805,15 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Dagger Bow Mastery ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Dagger_Bow_Mastery"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5311.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5311",
       "tree": {
         "idx": 1,
         "row": 0,
         "col": 1,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -18443,7 +17904,7 @@ export const abyssChaserData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18485,22 +17946,15 @@ export const abyssChaserData = {
         }
       ],
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Hit and Sliding ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Hit_and_Sliding"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/6512.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6512",
       "tree": {
         "idx": 2,
         "row": 0,
         "col": 2,
-        "columns": 9,
+        "columns": 7,
         "requirements": [
           {
             "id": 5311,
@@ -18533,7 +17987,7 @@ export const abyssChaserData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18600,22 +18054,15 @@ export const abyssChaserData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Magic Sword Mastery ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Magic_Sword_Mastery"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5312.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5312",
       "tree": {
         "idx": 5,
         "row": 0,
         "col": 5,
-        "columns": 9,
+        "columns": 7,
         "requirements": [
           {
             "id": 2285,
@@ -18719,7 +18166,7 @@ export const abyssChaserData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18793,22 +18240,15 @@ export const abyssChaserData = {
       "spCost": "35 + (Skill Level × 5)",
       "cooldown": "0.4 seconds",
       "areaOfEffect": "7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Abyss Dagger ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Abyss_Dagger"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5314.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5314",
       "tree": {
         "idx": 8,
-        "row": 0,
-        "col": 8,
-        "columns": 9,
+        "row": 1,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 2284,
@@ -19040,7 +18480,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19082,22 +18522,15 @@ export const abyssChaserData = {
         }
       ],
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Chasing Break ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Chasing_Break"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/6513.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6513",
       "tree": {
         "idx": 9,
         "row": 1,
-        "col": 0,
-        "columns": 9,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 6512,
@@ -19173,7 +18606,7 @@ export const abyssChaserData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19248,22 +18681,15 @@ export const abyssChaserData = {
       "spCost": "30 + (Skill Level × 10)",
       "castRange": "9 cells",
       "areaOfEffect": "3 x 3 ~ 7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Chain Reaction Shot ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Chain_Reaction_Shot"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5316.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5316",
       "tree": {
         "idx": 10,
         "row": 1,
-        "col": 1,
-        "columns": 9,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 2288,
@@ -19508,7 +18934,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19554,22 +18980,15 @@ export const abyssChaserData = {
       "castDelay": "0.5 seconds",
       "cooldown": "0.75 seconds",
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Chasing Shot ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Chasing_Shot"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/6514.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6514",
       "tree": {
         "idx": 11,
         "row": 1,
-        "col": 2,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 6512,
@@ -19661,7 +19080,7 @@ export const abyssChaserData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19735,22 +19154,15 @@ export const abyssChaserData = {
       ],
       "spCost": "30 + (Skill Level × 10)",
       "areaOfEffect": "9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " From the Abyss ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/From_the_Abyss"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5317.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5317",
       "tree": {
         "idx": 12,
         "row": 1,
-        "col": 3,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5312,
@@ -19962,7 +19374,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20014,22 +19426,15 @@ export const abyssChaserData = {
         }
       ],
       "spCost": "25 + (Skill Level × 4)",
-      "translations": {
-        "pt-BR": {
-          "name": " Divest Shadow ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Divest_Shadow"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5313.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5313",
       "tree": {
         "idx": 14,
-        "row": 1,
-        "col": 5,
-        "columns": 9,
+        "row": 2,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 2298,
@@ -20131,7 +19536,7 @@ export const abyssChaserData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20204,22 +19609,15 @@ export const abyssChaserData = {
       ],
       "spCost": "25 + (Skill Level × 5)",
       "cooldown": "0.25 * (6 - Skill Level) seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Misfortune Rush ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Misfortune_Rush"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5315.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5315",
       "tree": {
         "idx": 15,
-        "row": 1,
-        "col": 6,
-        "columns": 9,
+        "row": 2,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5311,
@@ -20317,7 +19715,7 @@ export const abyssChaserData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20431,22 +19829,15 @@ export const abyssChaserData = {
       ],
       "spCost": "35 + (Skill Level x 5)",
       "areaOfEffect": "3 x 3 ~ 5 x 5",
-      "translations": {
-        "pt-BR": {
-          "name": " Deft Stab ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Deft_Stab"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5320.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5320",
       "tree": {
         "idx": 16,
-        "row": 1,
-        "col": 7,
-        "columns": 9,
+        "row": 2,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5311,
@@ -20726,7 +20117,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20839,22 +20230,15 @@ export const abyssChaserData = {
         }
       ],
       "spCost": "25 + (Skill Level × 10)",
-      "translations": {
-        "pt-BR": {
-          "name": " Frenzy Shot ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Frenzy_Shot"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5322.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5322",
       "tree": {
         "idx": 17,
-        "row": 1,
-        "col": 8,
-        "columns": 9,
+        "row": 2,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5311,
@@ -21144,7 +20528,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21219,22 +20603,15 @@ export const abyssChaserData = {
       "spCost": "55 + (Skill Level × 10)",
       "castRange": "Magic",
       "areaOfEffect": "7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Abyss Square ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Abyss_Square"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5321.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5321",
       "tree": {
         "idx": 19,
         "row": 2,
-        "col": 1,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5312,
@@ -21431,7 +20808,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21477,22 +20854,15 @@ export const abyssChaserData = {
       "castDelay": "1 second",
       "cooldown": "0.7 seconds",
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Abyss Flame ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Abyss_Flame"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/6515.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6515",
       "tree": {
         "idx": 20,
         "row": 2,
-        "col": 2,
-        "columns": 9,
+        "col": 6,
+        "columns": 7,
         "requirements": [
           {
             "id": 5312,
@@ -21607,7 +20977,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21721,22 +21091,15 @@ export const abyssChaserData = {
       ],
       "spCost": "100",
       "duration": "300 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Abyss Slayer ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Abyss_Slayer"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5318.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5318",
       "tree": {
         "idx": 23,
-        "row": 2,
-        "col": 5,
-        "columns": 9,
+        "row": 3,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5314,
@@ -21953,7 +21316,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22068,22 +21431,15 @@ export const abyssChaserData = {
       "spCost": "150",
       "castRange": "Magic",
       "areaOfEffect": "9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Omega Abyss Strike ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Omega_Abyss_Strike"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5319.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5319",
       "tree": {
         "idx": 26,
-        "row": 2,
-        "col": 8,
-        "columns": 9,
+        "row": 3,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5317,
@@ -22311,7 +21667,7 @@ export const abyssChaserData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }

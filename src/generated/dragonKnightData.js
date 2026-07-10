@@ -1,5 +1,5 @@
 export const dragonKnightData = {
-  "generatedAt": "2026-07-10T15:02:07.660Z",
+  "generatedAt": "2026-07-10T18:52:45.474Z",
   "classId": 4252,
   "classSlug": "dragon-knight",
   "className": "Dragon Knight",
@@ -56,8 +56,8 @@ export const dragonKnightData = {
     "versions": 5
   },
   "tree": {
-    "columns": 9,
-    "rows": 3,
+    "columns": 7,
+    "rows": 4,
     "skillTreeUrl": "https://www.divine-pride.net/tools/skilltree/4252",
     "jobIconUrl": "assets/divine-pride/jobs/4252.png"
   },
@@ -373,8 +373,8 @@ export const dragonKnightData = {
       "label": "Dragon Knight",
       "pointLimit": 59,
       "tree": {
-        "columns": 9,
-        "rows": 3
+        "columns": 7,
+        "rows": 4
       },
       "skills": [
         {
@@ -447,22 +447,15 @@ export const dragonKnightData = {
           "spCost": "30 + (Skill Level × 5)",
           "duration": "(Skill Level × 30) seconds",
           "areaOfEffect": "9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Servant Weapon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Servant_Weapon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5201.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5201",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -671,7 +664,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -738,22 +731,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Two-handed Defense ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Two-handed_Defense"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5207.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5207",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -844,7 +830,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -917,22 +903,15 @@ export const dragonKnightData = {
           ],
           "spCost": "20 + ( Skill Level x 5 )",
           "duration": "80 + ( Skill Level x 10 ) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Charging Pierce ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Charging_Pierce"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5206.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5206",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2004,
@@ -1058,7 +1037,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1111,22 +1090,15 @@ export const dragonKnightData = {
           ],
           "spCost": "15",
           "duration": "(Skill Level x 2) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Servant Weapon - Sign ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Servant_Weapon_-_Sign"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5203.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5203",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5201,
@@ -1222,7 +1194,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1334,22 +1306,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Hack And Slasher ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hack_And_Slasher"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5208.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5208",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5207,
@@ -1618,7 +1583,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1732,22 +1697,15 @@ export const dragonKnightData = {
           ],
           "spCost": "58 + (Skill Level × 3)",
           "areaOfEffect": "7×7~9×9",
-          "translations": {
-            "pt-BR": {
-              "name": " Dragonic Breath ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dragonic_Breath"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/6001.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6001",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2008,
@@ -1921,7 +1879,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1995,22 +1953,15 @@ export const dragonKnightData = {
           ],
           "spCost": "40",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Servant Weapon-Phantom ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Servant_Weapon-Phantom"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5204.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5204",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5201,
@@ -2156,7 +2107,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2229,22 +2180,15 @@ export const dragonKnightData = {
             }
           ],
           "spCost": "35 + (Skill Level × 5)",
-          "translations": {
-            "pt-BR": {
-              "name": " Storm Slash ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Storm_Slash"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5213.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5213",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5207,
@@ -2487,7 +2431,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2533,22 +2477,15 @@ export const dragonKnightData = {
           "castDelay": "0.7 seconds",
           "cooldown": "0.5 seconds",
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Dragonic Pierce ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dragonic_Pierce"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/6502.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6502",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5208,
@@ -2610,7 +2547,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2685,22 +2622,15 @@ export const dragonKnightData = {
           "spCost": "30 + (Skill Level × 4)",
           "castRange": "7 cells",
           "areaOfEffect": "3 x 3~7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Madness Crusher ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Madness_Crusher"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5211.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5211",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5206,
@@ -2957,7 +2887,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3032,22 +2962,15 @@ export const dragonKnightData = {
           "spCost": "25 + (Skill Level × 5)",
           "castRange": "Melee",
           "areaOfEffect": "13 x 13",
-          "translations": {
-            "pt-BR": {
-              "name": " Servant Weapon-Demolition ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Servant_Weapon-Demolition"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5205.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5205",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5204,
@@ -3187,7 +3110,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3314,9 +3237,9 @@ export const dragonKnightData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/5212",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5205,
@@ -3646,22 +3569,15 @@ export const dragonKnightData = {
           "spCost": "100",
           "duration": "300 seconds",
           "castRange": "7 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Dragonic Aura ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dragonic_Aura"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5210.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5210",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2008,
@@ -3846,7 +3762,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3858,8 +3774,8 @@ export const dragonKnightData = {
       "label": "Rune Knight",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 5
+        "columns": 7,
+        "rows": 6
       },
       "skills": [
         {
@@ -3965,22 +3881,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Rune Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Rune_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2010.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2010",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -4085,7 +3994,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4206,22 +4115,15 @@ export const dragonKnightData = {
           "spCost": "15 + (Skll Level × 3)",
           "castDelay": "ASPD Based",
           "castRange": "(Skill Level + 4) cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Phantom Thrust ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Phantom_Thrust"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2020.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2020",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 57,
@@ -4323,7 +4225,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4466,22 +4368,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Dragon Training ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dragon_Training"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2007.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2007",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 64,
@@ -4585,7 +4480,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4789,22 +4684,15 @@ export const dragonKnightData = {
           ],
           "spCost": "30 + (Skill Level x 4)",
           "duration": "5 minutes",
-          "translations": {
-            "pt-BR": {
-              "name": " Enchant Blade ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Enchant_Blade"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2001.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2001",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2010,
@@ -4954,7 +4842,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5204,22 +5092,15 @@ export const dragonKnightData = {
           "variableCastTime": "[1.1 − (Skill Level x 0.1)] seconds",
           "castRange": "7 cells",
           "areaOfEffect": "3 x 3 ~ 7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Hundred Spears ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hundred_Spears"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2004.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2004",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2020,
@@ -5411,7 +5292,7 @@ export const dragonKnightData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5535,22 +5416,15 @@ export const dragonKnightData = {
           ],
           "spCost": "30",
           "areaOfEffect": "7 x 7 ~ 15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Dragon Howling ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dragon_Howling"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2009.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2009",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2007,
@@ -5673,7 +5547,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5837,22 +5711,15 @@ export const dragonKnightData = {
           "variableCastTime": "0~2 seconds",
           "castRange": "10 cells",
           "areaOfEffect": "3 x 3 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Dragon's Breath ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dragon's_Breath"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2008.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2008",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2007,
@@ -6010,7 +5877,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6170,22 +6037,15 @@ export const dragonKnightData = {
           "spCost": "50 + (Skill Level × 5)",
           "duration": "3 seconds",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Death Bound ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Death_Bound"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2003.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2003",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 61,
@@ -6349,7 +6209,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6508,22 +6368,15 @@ export const dragonKnightData = {
           ],
           "spCost": "30 + (Skill Level × 3)",
           "castRange": "7~11 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Sonic Wave ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sonic_Wave"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2002.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2002",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2001,
@@ -6663,7 +6516,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6762,22 +6615,15 @@ export const dragonKnightData = {
           "spCost": "20 + (Skill Level × 3)",
           "cooldown": "0.55 - (Skill Level × 0.05) seconds",
           "areaOfEffect": "3 x 3 ~ 7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Wind Cutter ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Wind_Cutter"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2005.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2005",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2001,
@@ -6888,7 +6734,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7052,22 +6898,15 @@ export const dragonKnightData = {
           "variableCastTime": "0~2 seconds",
           "castRange": "10 cells",
           "areaOfEffect": "3 x 3 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Dragon Water Breath ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dragon_Water_Breath"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5004.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5004",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2007,
@@ -7225,7 +7064,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7374,22 +7213,15 @@ export const dragonKnightData = {
           ],
           "spCost": "30 + (Skill Level × 5)",
           "areaOfEffect": "9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Ignition Break ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Ignition_Break"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2006.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2006",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2002,
@@ -7506,7 +7338,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7630,22 +7462,15 @@ export const dragonKnightData = {
           ],
           "spCost": "1",
           "duration": "[5 + (Skill Level × 5)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Full Throttle ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Full_Throttle"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5014",
           "tree": {
             "idx": 41,
-            "row": 4,
-            "col": 5,
-            "columns": 9,
+            "row": 5,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -7766,7 +7591,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7778,8 +7603,8 @@ export const dragonKnightData = {
       "label": "Lord Knight",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 3
+        "columns": 7,
+        "rows": 4
       },
       "skills": [
         {
@@ -7885,22 +7710,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " TwoHand Quicken ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/TwoHand_Quicken"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/60.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/60",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3,
@@ -8044,7 +7862,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8115,22 +7933,15 @@ export const dragonKnightData = {
           "spCost": "3",
           "castDelay": "ASPD",
           "duration": "(Skill Level × 0.4) seconds; Until retaliation",
-          "translations": {
-            "pt-BR": {
-              "name": " Auto Counter ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Auto_Counter"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/61.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/61",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3,
@@ -8223,7 +8034,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8254,22 +8065,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Peco Peco Ride ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Peco_Peco_Ride"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/63.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/63",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 8,
@@ -8313,7 +8117,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8421,22 +8225,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Spear Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spear_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/55.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/55",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -8555,7 +8352,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8588,22 +8385,15 @@ export const dragonKnightData = {
           ],
           "spCost": "1",
           "duration": "Until recast",
-          "translations": {
-            "pt-BR": {
-              "name": " Berserk ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Berserk"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/359.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/359",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -8652,7 +8442,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8685,22 +8475,15 @@ export const dragonKnightData = {
           ],
           "spCost": "15",
           "duration": "Until standing up",
-          "translations": {
-            "pt-BR": {
-              "name": " Tension Relax ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Tension_Relax"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/358.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/358",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 4,
@@ -8768,7 +8551,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8805,22 +8588,15 @@ export const dragonKnightData = {
           ],
           "spCost": "40",
           "castRange": "14 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Charge Attack ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Charge_Attack"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1001.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1001",
           "tree": {
             "idx": 6,
             "row": 0,
             "col": 6,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -8885,7 +8661,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8996,22 +8772,15 @@ export const dragonKnightData = {
           "spCost": "50",
           "castDelay": "ASPD",
           "duration": "[10 + (Skill Level × 5)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Parrying ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Parrying"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/356.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/356",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3,
@@ -9151,7 +8920,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9446,22 +9215,15 @@ export const dragonKnightData = {
           "spCost": "(Skill Level + 12)",
           "castRange": "Melee",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Bowling Bash ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Bowling_Bash"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/62.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/62",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3,
@@ -9671,7 +9433,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9739,22 +9501,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Cavalier Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Cavalier_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/64.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/64",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 63,
@@ -9822,7 +9577,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9933,22 +9688,15 @@ export const dragonKnightData = {
           "spCost": "7",
           "castDelay": "ASPD",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Pierce ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Pierce"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/56.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/56",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 55,
@@ -10062,7 +9810,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10133,22 +9881,15 @@ export const dragonKnightData = {
           "spCost": "10 + (Skill Level × 8)",
           "castDelay": "ASPD",
           "duration": "[20 + (Skill Level × 20)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Aura Blade ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Aura_Blade"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/355.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/355",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3,
@@ -10247,7 +9988,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10318,22 +10059,15 @@ export const dragonKnightData = {
           "spCost": "20",
           "castDelay": "ASPD",
           "duration": "60 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Spear Dynamo ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spear_Dynamo"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/357.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/357",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 4,
@@ -10456,7 +10190,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10523,22 +10257,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " One Hand Quicken ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/One_Hand_Quicken"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/495.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/495",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 60,
@@ -10636,7 +10363,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10707,22 +10434,15 @@ export const dragonKnightData = {
           "spCost": "10",
           "castDelay": "1 second",
           "castRange": "3 + (Skill Level × 2) cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Spear Boomerang ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spear_Boomerang"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/59.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/59",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 56,
@@ -10806,7 +10526,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10917,22 +10637,15 @@ export const dragonKnightData = {
           "spCost": "9",
           "castDelay": "ASPD",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Spear Stab ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Spear_Stab"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/58.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/58",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 56,
@@ -11046,7 +10759,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11117,22 +10830,15 @@ export const dragonKnightData = {
           "spCost": "23",
           "castDelay": "0.5 seconds",
           "castRange": "5 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Traumatic Blow ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Traumatic_Blow"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/398.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/398",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 55,
@@ -11222,7 +10928,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11337,22 +11043,15 @@ export const dragonKnightData = {
           "spCost": "24",
           "castRange": "Melee",
           "areaOfEffect": "Special",
-          "translations": {
-            "pt-BR": {
-              "name": " Brandish Spear ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Brandish_Spear"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/57.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/57",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 58,
@@ -11488,7 +11187,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11541,22 +11240,15 @@ export const dragonKnightData = {
           "spCost": "15 + (Skill Level × 3)",
           "variableCastTime": "0.25 seconds",
           "castRange": "5 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Clashing Spiral ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Clashing_Spiral"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/397.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/397",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 55,
@@ -11670,7 +11362,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11781,22 +11473,15 @@ export const dragonKnightData = {
           "spCost": "12~20",
           "castDelay": "0.8/1 second",
           "castRange": "5 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Vital Strike ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Vital_Strike"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/399.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/399",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 64,
@@ -11916,7 +11601,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11928,8 +11613,8 @@ export const dragonKnightData = {
       "label": "Swordman",
       "pointLimit": 49,
       "tree": {
-        "columns": 9,
-        "rows": 2
+        "columns": 7,
+        "rows": 3
       },
       "skills": [
         {
@@ -12023,22 +11708,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Basic Skill ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12135,7 +11813,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12243,22 +11921,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Sword Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sword_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12349,7 +12020,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12457,22 +12128,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Increase HP Recovery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Increase_HP_Recovery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/4.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/4",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12595,7 +12259,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12706,22 +12370,15 @@ export const dragonKnightData = {
           "spCost": "8/15",
           "castDelay": "ASPD",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Bash ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Bash"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12828,7 +12485,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12940,22 +12597,15 @@ export const dragonKnightData = {
           "castDelay": "ASPD",
           "duration": "30 seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Provoke ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Provoke"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/6.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/6",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -13094,7 +12744,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13127,22 +12777,15 @@ export const dragonKnightData = {
           ],
           "spCost": "1",
           "duration": "Until recast",
-          "translations": {
-            "pt-BR": {
-              "name": " Berserk ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Berserk"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/146.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/146",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -13191,7 +12834,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13222,22 +12865,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " HP Recovery While Moving ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/HP_Recovery_While_Moving"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/144.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/144",
           "tree": {
             "idx": 6,
             "row": 0,
             "col": 6,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -13274,7 +12910,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13307,22 +12943,15 @@ export const dragonKnightData = {
           ],
           "spCost": "3",
           "castDelay": "ASPD",
-          "translations": {
-            "pt-BR": {
-              "name": " First Aid ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/First_Aid"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -13371,7 +13000,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13479,22 +13108,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Two Handed Sword Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Two_Handed_Sword_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2,
@@ -13592,7 +13214,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13707,22 +13329,15 @@ export const dragonKnightData = {
           "spCost": "30",
           "castRange": "Melee",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Magnum Break ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Magnum_Break"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/7.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/7",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5,
@@ -13852,7 +13467,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13963,22 +13578,15 @@ export const dragonKnightData = {
           "spCost": "10",
           "cooldown": "10 seconds",
           "duration": "[7 + (Skill Level × 3)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Endure ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Endure"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/8.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/8",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 6,
@@ -14116,7 +13724,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14147,22 +13755,15 @@ export const dragonKnightData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Fatal Blow ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Fatal_Blow"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/145.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/145",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -14199,7 +13800,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14232,22 +13833,15 @@ export const dragonKnightData = {
           ],
           "spCost": "1",
           "duration": "Indefinite",
-          "translations": {
-            "pt-BR": {
-              "name": " Play Dead ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -14296,7 +13890,7 @@ export const dragonKnightData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14375,22 +13969,15 @@ export const dragonKnightData = {
       "spCost": "30 + (Skill Level × 5)",
       "duration": "(Skill Level × 30) seconds",
       "areaOfEffect": "9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Servant Weapon ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Servant_Weapon"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5201.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5201",
       "tree": {
         "idx": 1,
         "row": 0,
         "col": 1,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -14599,7 +14186,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -14666,22 +14253,15 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Two-handed Defense ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Two-handed_Defense"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5207.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5207",
       "tree": {
         "idx": 3,
         "row": 0,
         "col": 3,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -14772,7 +14352,7 @@ export const dragonKnightData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -14845,22 +14425,15 @@ export const dragonKnightData = {
       ],
       "spCost": "20 + ( Skill Level x 5 )",
       "duration": "80 + ( Skill Level x 10 ) seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Charging Pierce ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Charging_Pierce"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5206.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5206",
       "tree": {
         "idx": 5,
         "row": 0,
         "col": 5,
-        "columns": 9,
+        "columns": 7,
         "requirements": [
           {
             "id": 2004,
@@ -14986,7 +14559,7 @@ export const dragonKnightData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15039,22 +14612,15 @@ export const dragonKnightData = {
       ],
       "spCost": "15",
       "duration": "(Skill Level x 2) seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Servant Weapon - Sign ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Servant_Weapon_-_Sign"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5203.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5203",
       "tree": {
         "idx": 8,
-        "row": 0,
-        "col": 8,
-        "columns": 9,
+        "row": 1,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5201,
@@ -15150,7 +14716,7 @@ export const dragonKnightData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15262,22 +14828,15 @@ export const dragonKnightData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Hack And Slasher ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Hack_And_Slasher"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5208.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5208",
       "tree": {
         "idx": 11,
         "row": 1,
-        "col": 2,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5207,
@@ -15546,7 +15105,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15660,22 +15219,15 @@ export const dragonKnightData = {
       ],
       "spCost": "58 + (Skill Level × 3)",
       "areaOfEffect": "7×7~9×9",
-      "translations": {
-        "pt-BR": {
-          "name": " Dragonic Breath ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Dragonic_Breath"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/6001.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6001",
       "tree": {
         "idx": 13,
         "row": 1,
-        "col": 4,
-        "columns": 9,
+        "col": 6,
+        "columns": 7,
         "requirements": [
           {
             "id": 2008,
@@ -15849,7 +15401,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -15923,22 +15475,15 @@ export const dragonKnightData = {
       ],
       "spCost": "40",
       "areaOfEffect": "7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Servant Weapon-Phantom ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Servant_Weapon-Phantom"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5204.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5204",
       "tree": {
         "idx": 15,
-        "row": 1,
-        "col": 6,
-        "columns": 9,
+        "row": 2,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5201,
@@ -16084,7 +15629,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16157,22 +15702,15 @@ export const dragonKnightData = {
         }
       ],
       "spCost": "35 + (Skill Level × 5)",
-      "translations": {
-        "pt-BR": {
-          "name": " Storm Slash ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Storm_Slash"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5213.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5213",
       "tree": {
         "idx": 17,
-        "row": 1,
-        "col": 8,
-        "columns": 9,
+        "row": 2,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5207,
@@ -16415,7 +15953,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16461,22 +15999,15 @@ export const dragonKnightData = {
       "castDelay": "0.7 seconds",
       "cooldown": "0.5 seconds",
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Dragonic Pierce ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Dragonic_Pierce"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/6502.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/6502",
       "tree": {
         "idx": 18,
         "row": 2,
-        "col": 0,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5208,
@@ -16538,7 +16069,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16613,22 +16144,15 @@ export const dragonKnightData = {
       "spCost": "30 + (Skill Level × 4)",
       "castRange": "7 cells",
       "areaOfEffect": "3 x 3~7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Madness Crusher ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Madness_Crusher"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5211.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5211",
       "tree": {
         "idx": 19,
         "row": 2,
-        "col": 1,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5206,
@@ -16885,7 +16409,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -16960,22 +16484,15 @@ export const dragonKnightData = {
       "spCost": "25 + (Skill Level × 5)",
       "castRange": "Melee",
       "areaOfEffect": "13 x 13",
-      "translations": {
-        "pt-BR": {
-          "name": " Servant Weapon-Demolition ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Servant_Weapon-Demolition"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5205.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5205",
       "tree": {
         "idx": 22,
-        "row": 2,
-        "col": 4,
-        "columns": 9,
+        "row": 3,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5204,
@@ -17115,7 +16632,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17242,9 +16759,9 @@ export const dragonKnightData = {
       "sourceUrl": "https://www.divine-pride.net/database/skill/5212",
       "tree": {
         "idx": 24,
-        "row": 2,
-        "col": 6,
-        "columns": 9,
+        "row": 3,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5205,
@@ -17574,22 +17091,15 @@ export const dragonKnightData = {
       "spCost": "100",
       "duration": "300 seconds",
       "castRange": "7 cells",
-      "translations": {
-        "pt-BR": {
-          "name": " Dragonic Aura ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Dragonic_Aura"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5210.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5210",
       "tree": {
         "idx": 26,
-        "row": 2,
-        "col": 8,
-        "columns": 9,
+        "row": 3,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 2008,
@@ -17774,7 +17284,7 @@ export const dragonKnightData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }

@@ -1,3 +1,5 @@
+import './TextBlockStyles.css'
+
 export function TextBlock({ text }) {
   return (
     <>

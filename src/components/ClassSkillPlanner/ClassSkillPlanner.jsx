@@ -1,25 +1,36 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
-import { createClassModel, pointLimitForSpecVersion } from '../lib/classModel.js'
-import { allocatedTotal, cleanupLevels, skillLevel } from '../lib/pointBuy.js'
-import { BuildToolbar } from './BuildToolbar.jsx'
-import { ClassHeader } from './ClassHeader.jsx'
-import { EmptyState } from './EmptyState.jsx'
-import { SkillCard } from './SkillCard.jsx'
-import { SkillTree } from './SkillTree.jsx'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import './ClassSkillPlannerStyles.css'
+import { createClassModel, pointLimitForSpecVersion } from '../../lib/classModel.js'
+import { allocatedTotal, cleanupLevels, skillLevel } from '../../lib/pointBuy.js'
+import { skillAvailableInVersion } from '../../lib/specs.js'
+import { BuildToolbar } from '../BuildToolbar'
+import { ClassHeader } from '../ClassHeader'
+import { EmptyState } from '../EmptyState'
+import { SkillCard } from '../SkillCard'
+import { SkillTree } from '../SkillTree'
 
 const EMPTY_LEVELS = {}
+const DETAIL_PANEL_DEFAULT_WIDTH = 620
+const DETAIL_PANEL_MIN_WIDTH = 360
+const DETAIL_PANEL_MAX_WIDTH = 1100
+const DETAIL_RESIZER_WIDTH = 18
+const TREE_AREA_MIN_WIDTH = 560
 
 export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabChange }) {
+  const shellRef = useRef(null)
   const tabs = useMemo(() => skillTabsForData(dataSet.data), [dataSet.data])
   const savedSettings = useMemo(() => readPlannerSettings(dataSet.id), [dataSet.id])
   const initialTabId = firstValidTabId(tabs, routeTabId, savedSettings?.activeTabId)
   const [activeTabId, setActiveTabId] = useState(initialTabId)
-  const activeTab = tabs.find((tab) => tab.id === activeTabId) ?? tabs[0]
   const [specVersion, setSpecVersion] = useState(() =>
     isValidSpecVersion(dataSet.data, savedSettings?.specVersion) ? savedSettings.specVersion : 'current',
   )
   const [levelsByTab, setLevelsByTab] = useState(() => sanitizeLevelsByTab(savedSettings?.levelsByTab))
-  const plannerIndex = useMemo(() => createPlannerIndex(tabs), [tabs])
+  const [detailPanelWidth, setDetailPanelWidth] = useState(() => sanitizeDetailPanelWidth(savedSettings?.detailPanelWidth))
+  const [isResizingDetailPanel, setIsResizingDetailPanel] = useState(false)
+  const visibleTabs = useMemo(() => tabs.map((tab) => tabForSpecVersion(dataSet.data, tab, specVersion)), [dataSet.data, specVersion, tabs])
+  const activeTab = visibleTabs.find((tab) => tab.id === activeTabId) ?? visibleTabs[0]
+  const plannerIndex = useMemo(() => createPlannerIndex(visibleTabs), [visibleTabs])
   const activeData = useMemo(
     () => ({
       ...dataSet.data,
@@ -33,7 +44,10 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
   )
   const model = useMemo(() => createClassModel(activeData, dataSet.id), [activeData, dataSet.id])
   const [selectedId, setSelectedId] = useState(model.initialSkillId)
-  const levels = levelsByTab[activeTab.id] ?? EMPTY_LEVELS
+  const levels = useMemo(
+    () => visibleLevelsForTab(levelsByTab[activeTab.id] ?? EMPTY_LEVELS, activeTab),
+    [activeTab, levelsByTab],
+  )
   const pointLimit = useMemo(() => pointLimitForTab(model.data, activeTab, specVersion), [activeTab, model.data, specVersion])
   const activeModel = useMemo(
     () => ({
@@ -65,10 +79,11 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
   useEffect(() => {
     writePlannerSettings(dataSet.id, {
       activeTabId: activeTab.id,
+      detailPanelWidth,
       specVersion,
       levelsByTab,
     })
-  }, [activeTab.id, dataSet.id, levelsByTab, specVersion])
+  }, [activeTab.id, dataSet.id, detailPanelWidth, levelsByTab, specVersion])
 
   const selectedSkill = useMemo(
     () => model.data.skills.find((skill) => skill.id === selectedId) ?? null,
@@ -117,9 +132,77 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
     },
     [onActiveTabChange],
   )
+  const detailPanelMaxWidth = useCallback(() => {
+    const shellWidth = shellRef.current?.getBoundingClientRect().width
+    if (!shellWidth) return DETAIL_PANEL_MAX_WIDTH
+    return Math.max(
+      DETAIL_PANEL_MIN_WIDTH,
+      Math.min(DETAIL_PANEL_MAX_WIDTH, shellWidth - TREE_AREA_MIN_WIDTH - DETAIL_RESIZER_WIDTH),
+    )
+  }, [])
+  const resizeDetailPanel = useCallback(
+    (nextWidth) => {
+      setDetailPanelWidth(clamp(nextWidth, DETAIL_PANEL_MIN_WIDTH, detailPanelMaxWidth()))
+    },
+    [detailPanelMaxWidth],
+  )
+  const resizeDetailPanelFromPointer = useCallback(
+    (clientX) => {
+      const bounds = shellRef.current?.getBoundingClientRect()
+      if (!bounds) return
+      resizeDetailPanel(Math.round(bounds.right - clientX - DETAIL_RESIZER_WIDTH / 2))
+    },
+    [resizeDetailPanel],
+  )
+  const startDetailPanelResize = useCallback(
+    (event) => {
+      if (event.button !== 0) return
+      event.preventDefault()
+      event.currentTarget.setPointerCapture(event.pointerId)
+      setIsResizingDetailPanel(true)
+      resizeDetailPanelFromPointer(event.clientX)
+    },
+    [resizeDetailPanelFromPointer],
+  )
+  const moveDetailPanelResize = useCallback(
+    (event) => {
+      if (!isResizingDetailPanel) return
+      resizeDetailPanelFromPointer(event.clientX)
+    },
+    [isResizingDetailPanel, resizeDetailPanelFromPointer],
+  )
+  const stopDetailPanelResize = useCallback((event) => {
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId)
+    }
+    setIsResizingDetailPanel(false)
+  }, [])
+  const resizeDetailPanelWithKeyboard = useCallback(
+    (event) => {
+      const step = event.shiftKey ? 48 : 16
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault()
+        resizeDetailPanel(detailPanelWidth + step)
+      } else if (event.key === 'ArrowRight') {
+        event.preventDefault()
+        resizeDetailPanel(detailPanelWidth - step)
+      } else if (event.key === 'Home') {
+        event.preventDefault()
+        resizeDetailPanel(DETAIL_PANEL_MIN_WIDTH)
+      } else if (event.key === 'End') {
+        event.preventDefault()
+        resizeDetailPanel(detailPanelMaxWidth())
+      }
+    },
+    [detailPanelMaxWidth, detailPanelWidth, resizeDetailPanel],
+  )
 
   return (
-    <main className="app-shell">
+    <main
+      className={isResizingDetailPanel ? 'app-shell is-resizing-detail-panel' : 'app-shell'}
+      ref={shellRef}
+      style={{ '--detail-panel-width': `${detailPanelWidth}px` }}
+    >
       <section className="tree-area" aria-label={`${model.data.className} skill tree`}>
         <ClassHeader
           model={activeModel}
@@ -160,6 +243,22 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
         />
       </section>
 
+      <div
+        className="panel-resizer"
+        role="separator"
+        aria-label="Resize skill details panel"
+        aria-orientation="vertical"
+        aria-valuemin={DETAIL_PANEL_MIN_WIDTH}
+        aria-valuemax={detailPanelMaxWidth()}
+        aria-valuenow={detailPanelWidth}
+        tabIndex={0}
+        onKeyDown={resizeDetailPanelWithKeyboard}
+        onPointerDown={startDetailPanelResize}
+        onPointerMove={moveDetailPanelResize}
+        onPointerUp={stopDetailPanelResize}
+        onPointerCancel={stopDetailPanelResize}
+      />
+
       <aside className="detail-panel" aria-live="polite">
         {selectedSkill ? (
           <SkillCard
@@ -191,6 +290,34 @@ function skillTabsForData(data) {
       skills: data.skills,
     },
   ]
+}
+
+function tabForSpecVersion(data, tab, specVersion) {
+  const skills = tab.skills.filter((skill) => skillAvailableInVersion(data, skill, specVersion))
+  return {
+    ...tab,
+    tree: treeForVisibleSkills(tab.tree, skills),
+    skills,
+  }
+}
+
+function treeForVisibleSkills(tree, skills) {
+  if (!skills.length) return tree
+
+  const maxRow = Math.max(...skills.map((skill) => Number(skill.tree.row ?? 0)))
+  const maxCol = Math.max(...skills.map((skill) => Number(skill.tree.col ?? 0)))
+  const columns = Math.max(Number(tree.columns ?? 0), maxCol + 1, 1)
+
+  return {
+    ...tree,
+    columns,
+    rows: maxRow + 1,
+  }
+}
+
+function visibleLevelsForTab(levels, tab) {
+  const visibleIds = new Set(tab.skills.map((skill) => String(skill.id)))
+  return Object.fromEntries(Object.entries(levels).filter(([id]) => visibleIds.has(id)))
 }
 
 function firstValidTabId(tabs, ...tabIds) {
@@ -241,6 +368,14 @@ function sanitizeLevelsByTab(value) {
   }
 
   return levelsByTab
+}
+
+function sanitizeDetailPanelWidth(value) {
+  return clamp(Number(value) || DETAIL_PANEL_DEFAULT_WIDTH, DETAIL_PANEL_MIN_WIDTH, DETAIL_PANEL_MAX_WIDTH)
+}
+
+function clamp(value, min, max) {
+  return Math.min(Math.max(value, min), max)
 }
 
 function withTabLevels(levelsByTab, tabId, levels) {
@@ -379,10 +514,14 @@ function allTabsWithinLimit({ data, levelsByTab, plannerIndex, specVersion }) {
   for (const [tabId, levels] of Object.entries(levelsByTab)) {
     const tab = plannerIndex.tabById.get(tabId)
     if (!tab) continue
-    if (allocatedTotal(levels) > pointLimitForTab(data, tab, specVersion)) return false
+    if (allocatedTotalForTab(levels, tab) > pointLimitForTab(data, tab, specVersion)) return false
   }
 
   return true
+}
+
+function allocatedTotalForTab(levels, tab) {
+  return allocatedTotal(visibleLevelsForTab(levels, tab))
 }
 
 function pointLimitForTab(data, tab, specVersion) {

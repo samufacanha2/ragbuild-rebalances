@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { assetUrl } from '../lib/dom.js'
-import { translateUi } from '../lib/translations.js'
+import './ClassHeaderStyles.css'
+import { assetUrl } from '../../lib/dom.js'
+import { translateUi } from '../../lib/translations.js'
 
 export function ClassHeader({ model, specVersion, language, onSpecVersionChange }) {
   const [showVersionTour, setShowVersionTour] = useState(() => {

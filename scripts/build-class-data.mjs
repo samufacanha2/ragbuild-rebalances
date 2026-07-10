@@ -128,7 +128,7 @@ async function buildClassData({ classConfig, rebalanceManifest, pointLimitTimeli
   const treeSegments = treePage.segments
     .map((segment) => ({
       ...segment,
-      skills: segment.skillIds.map((id) => treeSkillById.get(id)).filter(Boolean)
+      skills: segment.skillIds.map((id) => skillWithSegmentLayout(treeSkillById.get(id), segment)).filter(Boolean)
     }))
     .filter((segment) => segment.skills.length);
   const currentSegment = treeSegments.find((segment) => segment.jobId === classConfig.classId);
@@ -181,7 +181,7 @@ async function buildClassData({ classConfig, rebalanceManifest, pointLimitTimeli
       versions: rebalanceVersions.length
     },
     tree: {
-      columns: treeColumns,
+      columns: currentTab.tree.columns,
       rows: currentTab.tree.rows,
       skillTreeUrl: `${defaultApiUrl}/tools/skilltree/${classConfig.classId}`,
       jobIconUrl: `assets/divine-pride/jobs/${classConfig.classId}.png`
@@ -208,6 +208,7 @@ function buildTabSkills({ treeSkills, treeById, skillDetails, rebalanceByName })
     const baseParsed = skillDetails.get(treeSkill.id) ?? fallbackSkill(treeSkill);
     const balanceNotes = rebalanceByName.get(normalizeName(baseParsed.name)) ?? rebalanceByName.get(normalizeName(treeSkill.name)) ?? [];
     const parsed = reconcileApDirectionWithNotes(baseParsed, balanceNotes);
+    const layout = skillLayout(treeSkill);
 
     return {
       ...parsed,
@@ -216,10 +217,10 @@ function buildTabSkills({ treeSkills, treeById, skillDetails, rebalanceByName })
       iconUrl: `assets/divine-pride/skills/${treeSkill.id}.png`,
       sourceUrl: `${defaultApiUrl}/database/skill/${treeSkill.id}`,
       tree: {
-        idx: treeSkill.idx,
-        row: Math.floor(treeSkill.idx / treeColumns),
-        col: treeSkill.idx % treeColumns,
-        columns: treeColumns,
+        idx: layout.idx,
+        row: layout.row,
+        col: layout.col,
+        columns: layout.columns,
         requirements: treeSkill.Requirements.map((requirement) => ({
           id: requirement.id,
           level: requirement.Level,
@@ -302,13 +303,17 @@ function withFallbackPreviousPointLimit(entry, index) {
 }
 
 function buildSkillTab({ id, label, pointLimit, skills }) {
+  const maxCol = Math.max(...skills.map((skill) => skill.tree.col ?? 0), 0);
+  const maxRow = Math.max(...skills.map((skill) => skill.tree.row ?? 0), 0);
+  const columns = Math.max(...skills.map((skill) => skill.tree.columns ?? treeColumns), maxCol + 1, 1);
+
   return {
     id,
     label,
     pointLimit,
     tree: {
-      columns: treeColumns,
-      rows: Math.ceil((Math.max(...skills.map((skill) => skill.tree.idx), 0) + 1) / treeColumns)
+      columns,
+      rows: maxRow + 1
     },
     skills
   };
@@ -348,6 +353,31 @@ function uniqueById(skills) {
     unique.push(skill);
   }
   return unique;
+}
+
+function skillWithSegmentLayout(skill, segment) {
+  if (!skill) return null;
+  const layout = segment.layout?.[String(skill.id)];
+  if (!layout) return skill;
+
+  return {
+    ...skill,
+    treeLayout: layout
+  };
+}
+
+function skillLayout(skill) {
+  const columns = Number(skill.treeLayout?.columns ?? treeColumns) || treeColumns;
+  const idx = Number(skill.treeLayout?.idx ?? skill.idx ?? 0) || 0;
+  const row = Number(skill.treeLayout?.row ?? Math.floor(idx / columns)) || 0;
+  const col = Number(skill.treeLayout?.col ?? idx % columns) || 0;
+
+  return {
+    idx,
+    row,
+    col,
+    columns
+  };
 }
 
 async function fetchSkillTreePage(classConfig) {
@@ -399,7 +429,10 @@ function parseSkillTreeSegment(block, jobs) {
 
   const jobId = Number(block.match(/\bjob="(\d+)"/)?.[1] ?? block.match(/treejob-(\d+)/)?.[1]);
   const label = decodeHtml(stripTags(block.match(/<legend>([\s\S]*?)<\/legend>/)?.[1] ?? "")).trim();
-  const skillIds = [...block.matchAll(/skillid="(\d+)"/g)].map((match) => Number(match[1]));
+  const layout = parseSkillTreeLayout(block);
+  const skillIds = layout.skillIds.length
+    ? layout.skillIds
+    : [...block.matchAll(/skillid="(\d+)"/g)].map((match) => Number(match[1]));
 
   if (!jobId || !label || !skillIds.length) return null;
 
@@ -407,8 +440,83 @@ function parseSkillTreeSegment(block, jobs) {
     jobId,
     label,
     pointLimit: numericPointLimit(jobs[String(jobId)]),
-    skillIds
+    skillIds,
+    columns: layout.columns || treeColumns,
+    rows: layout.rows || Math.ceil(skillIds.length / treeColumns),
+    layout: layout.byId
   };
+}
+
+function parseSkillTreeLayout(block) {
+  const rowBlocks = skillRowBlocks(block);
+  const placements = [];
+  const byId = {};
+  let columns = 0;
+
+  rowBlocks.forEach((rowHtml, row) => {
+    const buttons = [...rowHtml.matchAll(/<div class="skillbutton"([^>]*)>/gi)];
+    columns = Math.max(columns, buttons.length);
+
+    buttons.forEach((match, col) => {
+      const id = Number(match[1].match(/\bskillid="(\d+)"/)?.[1]);
+      if (!id) return;
+      placements.push({ id, row, col });
+    });
+  });
+
+  for (const placement of placements) {
+    byId[String(placement.id)] = {
+      row: placement.row,
+      col: placement.col,
+      columns,
+      idx: placement.row * columns + placement.col
+    };
+  }
+
+  return {
+    columns,
+    rows: rowBlocks.length,
+    skillIds: placements.map((placement) => placement.id),
+    byId
+  };
+}
+
+function skillRowBlocks(block) {
+  const rows = [];
+  const marker = '<div class="skillrow">';
+  let cursor = 0;
+
+  while (cursor < block.length) {
+    const start = block.indexOf(marker, cursor);
+    if (start < 0) break;
+
+    const tagPattern = /<\/?div\b[^>]*>/gi;
+    tagPattern.lastIndex = start;
+    let depth = 0;
+    let contentStart = -1;
+    let foundEnd = false;
+
+    let tag = null;
+    while ((tag = tagPattern.exec(block))) {
+      if (tag.index < start) continue;
+      if (tag[0].startsWith("</")) {
+        depth -= 1;
+        if (depth === 0 && contentStart >= 0) {
+          rows.push(block.slice(contentStart, tag.index));
+          cursor = tagPattern.lastIndex;
+          foundEnd = true;
+          break;
+        }
+      } else {
+        depth += 1;
+        if (tag.index === start) contentStart = tagPattern.lastIndex;
+      }
+    }
+
+    if (!foundEnd) break;
+  }
+
+  return rows;
 }
 
 async function fetchSkillDetails(treeSkill) {
@@ -1214,7 +1322,7 @@ async function fetchBrowikiSkillTranslation({ id, englishName }) {
       cacheNotFound: true,
       cachePath: sourceFilePath("browiki", "wiki", `${id}-${slugify(englishName) || "skill"}.html`)
     });
-    if (/Esta p[áa]gina n[ãa]o existe|There is currently no text in this page/i.test(html)) return null;
+    if (isMissingWikiPage(html)) return null;
 
     const name = stripTags(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] ?? "");
     const description = browikiDescription(html);
@@ -1254,7 +1362,8 @@ async function fetchIrowikiSkillDetails({ id, englishName }) {
 }
 
 function isMissingWikiPage(html) {
-  return /There is currently no text in this page|This page does not exist|Action unknown|Bad title/i.test(html);
+  return /No momento,\s*n[aã]o h[aá] conte[uú]do nesta p[aá]gina/i.test(html)
+    || /There is currently no text in this page|This page does not exist|Action unknown|Bad title/i.test(html);
 }
 
 function parseIrowikiDetailRows(html) {

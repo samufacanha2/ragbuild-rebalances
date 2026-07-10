@@ -1,4 +1,5 @@
-import { languageOptions, translateUi } from '../lib/translations.js'
+import './LanguageMenuStyles.css'
+import { languageOptions, translateUi } from '../../lib/translations.js'
 
 export function LanguageMenu({ language, onLanguageChange }) {
   return (

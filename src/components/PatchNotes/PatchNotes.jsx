@@ -1,5 +1,6 @@
-import { patchNotesTitle } from '../lib/specs.js'
-import { translateUi } from '../lib/translations.js'
+import './PatchNotesStyles.css'
+import { patchNotesTitle } from '../../lib/specs.js'
+import { translateUi } from '../../lib/translations.js'
 
 export function PatchNotes({ model, notes, specVersion, language }) {
   return (

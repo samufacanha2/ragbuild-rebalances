@@ -1,5 +1,5 @@
 export const soulAsceticData = {
-  "generatedAt": "2026-07-10T15:02:24.233Z",
+  "generatedAt": "2026-07-10T18:53:02.161Z",
   "classId": 4303,
   "classSlug": "soul-ascetic",
   "className": "Soul Ascetic",
@@ -56,8 +56,8 @@ export const soulAsceticData = {
     "versions": 3
   },
   "tree": {
-    "columns": 9,
-    "rows": 5,
+    "columns": 7,
+    "rows": 6,
     "skillTreeUrl": "https://www.divine-pride.net/tools/skilltree/4303",
     "jobIconUrl": "assets/divine-pride/jobs/4303.png"
   },
@@ -261,8 +261,8 @@ export const soulAsceticData = {
       "label": "Soul Ascetic",
       "pointLimit": 59,
       "tree": {
-        "columns": 9,
-        "rows": 5
+        "columns": 7,
+        "rows": 6
       },
       "skills": [
         {
@@ -368,22 +368,15 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5417.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5417",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -488,7 +481,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -596,22 +589,15 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Talisman Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talisman_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5416.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5416",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -716,7 +702,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -788,22 +774,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 seconds",
           "variableCastTime": "1.5 seconds",
           "cooldown": "5~1 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Gathering ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Gathering"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5421.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5421",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2611,
@@ -930,7 +909,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1003,22 +982,15 @@ export const soulAsceticData = {
           "variableCastTime": "1.5 seconds",
           "castDelay": "0.5 seconds",
           "duration": "150 + (30 × Skill Level) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Talisman of Protection ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Protection"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5418.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5418",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5416,
@@ -1127,7 +1099,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1200,22 +1172,15 @@ export const soulAsceticData = {
           "variableCastTime": "1.5 seconds",
           "castDelay": "0.5 seconds",
           "duration": "150 + (30 × Skill Level) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Talisman of Warrior ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Warrior"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5419.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5419",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5416,
@@ -1329,7 +1294,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1402,22 +1367,15 @@ export const soulAsceticData = {
           "variableCastTime": "1.5 seconds",
           "castDelay": "0.5 seconds",
           "duration": "150 + (30 × Skill Level) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Talisman of Magician ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Magician"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5420.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5420",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5416,
@@ -1531,7 +1489,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1604,22 +1562,15 @@ export const soulAsceticData = {
           "variableCastTime": "2.2 seconds",
           "cooldown": "1 seconds",
           "areaOfEffect": "11 x 11~13 x 13",
-          "translations": {
-            "pt-BR": {
-              "name": " Exorcism of Malicious Soul ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Exorcism_of_Malicious_Soul"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5425.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5425",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2601,
@@ -1746,7 +1697,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1817,22 +1768,15 @@ export const soulAsceticData = {
           "spCost": "30",
           "fixedCastTime": "1.5 seconds",
           "variableCastTime": "2.2 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Talisman of Soul Stealing ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Soul_Stealing"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5424.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5424",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5416,
@@ -1962,7 +1906,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2035,22 +1979,15 @@ export const soulAsceticData = {
           "variableCastTime": "3.5 seconds",
           "cooldown": "15 seconds",
           "areaOfEffect": "5 x 5~9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Totem of Tutelary ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Totem_of_Tutelary"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5422.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5422",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5416,
@@ -2175,7 +2112,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2248,22 +2185,15 @@ export const soulAsceticData = {
           "variableCastTime": "1.5 seconds",
           "castDelay": "0.5 seconds",
           "duration": "150 + (30 × Skill Level) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Talisman of Five Elements ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Five_Elements"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5423.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5423",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5416,
@@ -2377,7 +2307,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2449,22 +2379,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1.5 seconds",
           "variableCastTime": "1 seconds",
           "cooldown": "0.3 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Talisman of Blue Dragon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Blue_Dragon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5426.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5426",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5424,
@@ -2646,7 +2569,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2719,22 +2642,15 @@ export const soulAsceticData = {
           "variableCastTime": "1 seconds",
           "cooldown": "0.4 seconds",
           "areaOfEffect": "11 x 11~15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Talisman of White Tiger ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talisman_of_White_Tiger"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5427.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5427",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5426,
@@ -2914,7 +2830,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2987,22 +2903,15 @@ export const soulAsceticData = {
           "variableCastTime": "1 seconds",
           "cooldown": "0.45 seconds",
           "areaOfEffect": "3 x 3~7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Talisman of Red Phoenix ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Red_Phoenix"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5428.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5428",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5427,
@@ -3185,7 +3094,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3258,22 +3167,15 @@ export const soulAsceticData = {
           "variableCastTime": "1 seconds",
           "cooldown": "0.7 seconds",
           "areaOfEffect": "7 x 7~11 x 11",
-          "translations": {
-            "pt-BR": {
-              "name": " Talisman of Black Tortoise ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Black_Tortoise"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5429.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5429",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5428,
@@ -3437,7 +3339,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3510,22 +3412,15 @@ export const soulAsceticData = {
           "variableCastTime": "1.5 seconds",
           "cooldown": "1 seconds",
           "areaOfEffect": "7 x 7~11 x 11",
-          "translations": {
-            "pt-BR": {
-              "name": " Talisman of Four Bearing God ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Talisman_of_Four_Bearing_God"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5430.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5430",
           "tree": {
             "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
+            "row": 4,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5426,
@@ -3684,7 +3579,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3759,22 +3654,15 @@ export const soulAsceticData = {
           "cooldown": "5 seconds",
           "duration": "(Skill Level x 30) seconds",
           "areaOfEffect": "7 x 7~11 x 11",
-          "translations": {
-            "pt-BR": {
-              "name": " Circle of Directions and Elementals ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Circle_of_Directions_and_Elementals"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5431.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5431",
           "tree": {
             "idx": 38,
-            "row": 4,
-            "col": 2,
-            "columns": 9,
+            "row": 5,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5417,
@@ -3996,7 +3884,7 @@ export const soulAsceticData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4110,22 +3998,15 @@ export const soulAsceticData = {
           ],
           "spCost": "80 + (Skill Level × 10)",
           "duration": "300 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul of Heaven and Earth ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_of_Heaven_and_Earth"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5432.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5432",
           "tree": {
             "idx": 40,
-            "row": 4,
-            "col": 4,
-            "columns": 9,
+            "row": 5,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5418,
@@ -4329,7 +4210,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4341,8 +4222,8 @@ export const soulAsceticData = {
       "label": "Soul Reaper",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 4
+        "columns": 7,
+        "rows": 5
       },
       "skills": [
         {
@@ -4434,22 +4315,15 @@ export const soulAsceticData = {
             }
           ],
           "spCost": "100",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Collection ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Collection"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2609.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2609",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -4536,7 +4410,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4685,22 +4559,15 @@ export const soulAsceticData = {
           "spCost": "40 + (Skill Level × 2)",
           "cooldown": "60 + (Skill Level × 30) seconds",
           "duration": "60 + (Skill Level × 30) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Harvest ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Harvest"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2607.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2607",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2609,
@@ -4837,7 +4704,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5011,22 +4878,15 @@ export const soulAsceticData = {
           ],
           "spCost": "70",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Evil Soul Curse ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Evil_Soul_Curse"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2601.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2601",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2607,
@@ -5172,7 +5032,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5240,22 +5100,15 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Energy Research ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Energy_Research"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2611.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2611",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2609,
@@ -5332,7 +5185,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5495,8 +5348,8 @@ export const soulAsceticData = {
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2611,
@@ -5850,9 +5703,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/2603",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2607,
@@ -6220,22 +6073,15 @@ export const soulAsceticData = {
           ],
           "spCost": "50~95",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Curse Explosion ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Curse_Explosion"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2600.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2600",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2601,
@@ -6411,7 +6257,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6600,22 +6446,15 @@ export const soulAsceticData = {
           "spCost": "42 + (2 × Skill Level)",
           "cooldown": "? seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Bind ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Bind"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2605.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2605",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2611,
@@ -6782,7 +6621,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6874,22 +6713,15 @@ export const soulAsceticData = {
           ],
           "spCost": "(Skill Level x 50)",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Circulation ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Circulation"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2608.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2608",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2611,
@@ -7000,7 +6832,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7176,9 +7008,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/2602",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2603,
@@ -7531,22 +7363,15 @@ export const soulAsceticData = {
           ],
           "spCost": "300 - (50 x Skill Level)",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow Soul ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_Soul"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2597.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2597",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2605,
@@ -7714,7 +7539,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7913,22 +7738,15 @@ export const soulAsceticData = {
           ],
           "spCost": "?",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Fairy Soul ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Fairy_Soul"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2599.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2599",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2605,
@@ -8096,7 +7914,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8295,22 +8113,15 @@ export const soulAsceticData = {
           ],
           "spCost": "?",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Falcon Soul ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Falcon_Soul"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2598.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2598",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2608,
@@ -8478,7 +8289,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8677,22 +8488,15 @@ export const soulAsceticData = {
           ],
           "spCost": "?",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Golem Soul ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Golem_Soul"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2596.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2596",
           "tree": {
             "idx": 27,
             "row": 3,
-            "col": 0,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2608,
@@ -8860,7 +8664,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9117,9 +8921,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/2604",
           "tree": {
             "idx": 28,
-            "row": 3,
-            "col": 1,
-            "columns": 9,
+            "row": 4,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2602,
@@ -9478,22 +9282,15 @@ export const soulAsceticData = {
             }
           ],
           "spCost": "34 + (Skill Level x 2)",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Division ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Division"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2606.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2606",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2602,
@@ -9636,7 +9433,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9785,22 +9582,15 @@ export const soulAsceticData = {
           ],
           "spCost": "(Skill Level x 30)",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Explosion ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Explosion"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/2610.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/2610",
           "tree": {
             "idx": 32,
-            "row": 3,
-            "col": 5,
-            "columns": 9,
+            "row": 4,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 2596,
@@ -9956,7 +9746,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9968,8 +9758,8 @@ export const soulAsceticData = {
       "label": "Soul Linker",
       "pointLimit": 49,
       "tree": {
-        "columns": 9,
-        "rows": 4
+        "columns": 7,
+        "rows": 5
       },
       "skills": [
         {
@@ -10039,22 +9829,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Alchemist Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Alchemist_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/445.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/445",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -10144,7 +9927,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10216,22 +9999,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Taekwon Master Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Taekwon_Master_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/448.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/448",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -10321,7 +10097,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10393,22 +10169,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Assassin Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Assassin_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/457.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/457",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -10498,7 +10267,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10570,22 +10339,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Crusader Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Crusader_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/450.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/450",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -10675,7 +10437,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10747,22 +10509,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Bard and Dancer Spirits ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Bard_and_Dancer_Spirits"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/455.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/455",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -10852,7 +10607,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10924,22 +10679,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Super Novice Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Super_Novice_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/451.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/451",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 448,
@@ -11036,7 +10784,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11108,22 +10856,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Blacksmith Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Blacksmith_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/458.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/458",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 445,
@@ -11220,7 +10961,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11292,22 +11033,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Linker Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Linker_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/461.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/461",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 448,
@@ -11404,7 +11138,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11476,22 +11210,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Rogue Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Rogue_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/456.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/456",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 457,
@@ -11588,7 +11315,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11660,22 +11387,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Knight Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Knight_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/452.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/452",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 450,
@@ -11772,7 +11492,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11844,22 +11564,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Hunter Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Hunter_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/460.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/460",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 455,
@@ -11956,7 +11669,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12028,22 +11741,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " 1st Transcendent Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/1st_Transcendent_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/494.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/494",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 451,
@@ -12140,7 +11846,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12212,22 +11918,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Monk Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Monk_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/447.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/447",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12317,7 +12016,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12387,9 +12086,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/464",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 456,
@@ -12559,9 +12258,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/471",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 452,
@@ -12716,22 +12415,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Sage Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sage_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/449.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/449",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12821,7 +12513,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12919,8 +12611,8 @@ export const soulAsceticData = {
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 423,
@@ -13094,22 +12786,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Priest Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Priest_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/454.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/454",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 447,
@@ -13206,7 +12891,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13275,9 +12960,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/472",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 447,
@@ -13432,22 +13117,15 @@ export const soulAsceticData = {
           "fixedCastTime": "1 second",
           "duration": "[100 + (Skill Level × 50)] seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Wizard Spirit ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Wizard_Spirit"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/453.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/453",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 449,
@@ -13544,7 +13222,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13644,9 +13322,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/465",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 449,
@@ -13830,9 +13508,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/463",
           "tree": {
             "idx": 28,
-            "row": 3,
-            "col": 1,
-            "columns": 9,
+            "row": 4,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 447,
@@ -14040,9 +13718,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/462",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 454,
@@ -14252,9 +13930,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/470",
           "tree": {
             "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
+            "row": 4,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 454,
@@ -14475,9 +14153,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/467",
           "tree": {
             "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
+            "row": 4,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 453,
@@ -14694,9 +14372,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/468",
           "tree": {
             "idx": 32,
-            "row": 3,
-            "col": 5,
-            "columns": 9,
+            "row": 4,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 453,
@@ -14935,9 +14613,9 @@ export const soulAsceticData = {
           "sourceUrl": "https://www.divine-pride.net/database/skill/469",
           "tree": {
             "idx": 33,
-            "row": 3,
-            "col": 6,
-            "columns": 9,
+            "row": 4,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 467,
@@ -15083,8 +14761,8 @@ export const soulAsceticData = {
       "label": "TaeKwon Boy",
       "pointLimit": 49,
       "tree": {
-        "columns": 9,
-        "rows": 3
+        "columns": 7,
+        "rows": 4
       },
       "skills": [
         {
@@ -15178,22 +14856,15 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Basic Skill ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -15290,7 +14961,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15403,22 +15074,15 @@ export const soulAsceticData = {
           "variableCastTime": "3~0 seconds",
           "castDelay": "0.3 seconds",
           "duration": "150 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Sprint ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Sprint"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/411.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/411",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -15547,7 +15211,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15635,22 +15299,15 @@ export const soulAsceticData = {
           "castDelay": "ASPD",
           "castRange": "Melee",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Tornado Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Tornado_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/413.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/413",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -15743,7 +15400,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15830,22 +15487,15 @@ export const soulAsceticData = {
           "spCost": "16 − (Skill Level × 2)",
           "castDelay": "ASPD",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Heel Drop ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Heel_Drop"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/415.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/415",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -15934,7 +15584,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16021,22 +15671,15 @@ export const soulAsceticData = {
           "spCost": "16 − (Skill Level × 2)",
           "castDelay": "ASPD",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Roundhouse ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Roundhouse"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/417.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/417",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -16125,7 +15768,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16212,22 +15855,15 @@ export const soulAsceticData = {
           "spCost": "16 − (Skill Level × 2)",
           "castDelay": "ASPD",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Counter Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Counter_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/419.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/419",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -16316,7 +15952,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16403,22 +16039,15 @@ export const soulAsceticData = {
           "spCost": "80 − (Skill Level × 10)",
           "castDelay": "ASPD",
           "castRange": "10 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Flying Kick ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Flying_Kick"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/421.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/421",
           "tree": {
             "idx": 6,
             "row": 0,
             "col": 6,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -16507,7 +16136,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16540,22 +16169,15 @@ export const soulAsceticData = {
           ],
           "spCost": "3",
           "castDelay": "ASPD",
-          "translations": {
-            "pt-BR": {
-              "name": " First Aid ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/First_Aid"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -16604,7 +16226,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16676,22 +16298,15 @@ export const soulAsceticData = {
           "fixedCastTime": "[3 − (Skill Level / 2)] seconds",
           "variableCastTime": "[3 − (Skill Level / 2)] seconds",
           "castRange": "(Skill Level × 2) cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Leap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Leap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/426.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/426",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -16777,7 +16392,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16815,22 +16430,15 @@ export const soulAsceticData = {
           ],
           "spCost": "1",
           "duration": "Until reuse",
-          "translations": {
-            "pt-BR": {
-              "name": " Tornado Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Tornado_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/412.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/412",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 413,
@@ -16891,7 +16499,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16929,22 +16537,15 @@ export const soulAsceticData = {
           ],
           "spCost": "1",
           "duration": "Until reuse",
-          "translations": {
-            "pt-BR": {
-              "name": " Heel Drop Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Heel_Drop_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/414.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/414",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 415,
@@ -17005,7 +16606,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17043,22 +16644,15 @@ export const soulAsceticData = {
           ],
           "spCost": "1",
           "duration": "Until reuse",
-          "translations": {
-            "pt-BR": {
-              "name": " Roundhouse Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Roundhouse_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/416.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/416",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 417,
@@ -17119,7 +16713,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17157,22 +16751,15 @@ export const soulAsceticData = {
           ],
           "spCost": "1",
           "duration": "Until reuse",
-          "translations": {
-            "pt-BR": {
-              "name": " Counter Kick Stance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Counter_Kick_Stance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/418.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/418",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 419,
@@ -17233,7 +16820,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17270,22 +16857,15 @@ export const soulAsceticData = {
             }
           ],
           "spCost": "1",
-          "translations": {
-            "pt-BR": {
-              "name": " Tumbling ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Tumbling"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/420.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/420",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 421,
@@ -17342,7 +16922,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17375,22 +16955,15 @@ export const soulAsceticData = {
           ],
           "spCost": "1",
           "duration": "Indefinite",
-          "translations": {
-            "pt-BR": {
-              "name": " Play Dead ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -17439,7 +17012,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17547,22 +17120,15 @@ export const soulAsceticData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Peaceful Break ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Peaceful_Break"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/422.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/422",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -17667,7 +17233,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17776,22 +17342,15 @@ export const soulAsceticData = {
             }
           ],
           "duration": "30 minutes",
-          "translations": {
-            "pt-BR": {
-              "name": " Happy Break ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Happy_Break"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/423.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/423",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -17900,7 +17459,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -17982,8 +17541,8 @@ export const soulAsceticData = {
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -18139,22 +17698,15 @@ export const soulAsceticData = {
           ],
           "spCost": "20/50",
           "duration": "5 minutes",
-          "translations": {
-            "pt-BR": {
-              "name": " Mild Wind ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Mild_Wind"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/425.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/425",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 422,
@@ -18269,7 +17821,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18302,22 +17854,15 @@ export const soulAsceticData = {
           ],
           "spCost": "10",
           "fixedCastTime": "1 second",
-          "translations": {
-            "pt-BR": {
-              "name": " Taekwon Mission ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Taekwon_Mission"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/493.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/493",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 424,
@@ -18373,7 +17918,7 @@ export const soulAsceticData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -18485,22 +18030,15 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Soul Mastery ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Soul_Mastery"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5417.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5417",
       "tree": {
         "idx": 2,
         "row": 0,
         "col": 2,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -18605,7 +18143,7 @@ export const soulAsceticData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18713,22 +18251,15 @@ export const soulAsceticData = {
           ]
         }
       ],
-      "translations": {
-        "pt-BR": {
-          "name": " Talisman Mastery ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Talisman_Mastery"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5416.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5416",
       "tree": {
         "idx": 4,
         "row": 0,
         "col": 4,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -18833,7 +18364,7 @@ export const soulAsceticData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18905,22 +18436,15 @@ export const soulAsceticData = {
       "fixedCastTime": "1 seconds",
       "variableCastTime": "1.5 seconds",
       "cooldown": "5~1 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Soul Gathering ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Soul_Gathering"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5421.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5421",
       "tree": {
         "idx": 8,
-        "row": 0,
-        "col": 8,
-        "columns": 9,
+        "row": 1,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 2611,
@@ -19047,7 +18571,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19120,22 +18644,15 @@ export const soulAsceticData = {
       "variableCastTime": "1.5 seconds",
       "castDelay": "0.5 seconds",
       "duration": "150 + (30 × Skill Level) seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Talisman of Protection ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Protection"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5418.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5418",
       "tree": {
         "idx": 11,
         "row": 1,
-        "col": 2,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5416,
@@ -19244,7 +18761,7 @@ export const soulAsceticData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19317,22 +18834,15 @@ export const soulAsceticData = {
       "variableCastTime": "1.5 seconds",
       "castDelay": "0.5 seconds",
       "duration": "150 + (30 × Skill Level) seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Talisman of Warrior ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Warrior"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5419.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5419",
       "tree": {
         "idx": 12,
         "row": 1,
-        "col": 3,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5416,
@@ -19446,7 +18956,7 @@ export const soulAsceticData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19519,22 +19029,15 @@ export const soulAsceticData = {
       "variableCastTime": "1.5 seconds",
       "castDelay": "0.5 seconds",
       "duration": "150 + (30 × Skill Level) seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Talisman of Magician ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Magician"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5420.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5420",
       "tree": {
         "idx": 13,
         "row": 1,
-        "col": 4,
-        "columns": 9,
+        "col": 6,
+        "columns": 7,
         "requirements": [
           {
             "id": 5416,
@@ -19648,7 +19151,7 @@ export const soulAsceticData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19721,22 +19224,15 @@ export const soulAsceticData = {
       "variableCastTime": "2.2 seconds",
       "cooldown": "1 seconds",
       "areaOfEffect": "11 x 11~13 x 13",
-      "translations": {
-        "pt-BR": {
-          "name": " Exorcism of Malicious Soul ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Exorcism_of_Malicious_Soul"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5425.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5425",
       "tree": {
         "idx": 14,
-        "row": 1,
-        "col": 5,
-        "columns": 9,
+        "row": 2,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 2601,
@@ -19863,7 +19359,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19934,22 +19430,15 @@ export const soulAsceticData = {
       "spCost": "30",
       "fixedCastTime": "1.5 seconds",
       "variableCastTime": "2.2 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Talisman of Soul Stealing ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Soul_Stealing"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5424.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5424",
       "tree": {
         "idx": 16,
-        "row": 1,
-        "col": 7,
-        "columns": 9,
+        "row": 2,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5416,
@@ -20079,7 +19568,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20152,22 +19641,15 @@ export const soulAsceticData = {
       "variableCastTime": "3.5 seconds",
       "cooldown": "15 seconds",
       "areaOfEffect": "5 x 5~9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Totem of Tutelary ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Totem_of_Tutelary"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5422.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5422",
       "tree": {
         "idx": 17,
-        "row": 1,
-        "col": 8,
-        "columns": 9,
+        "row": 2,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5416,
@@ -20292,7 +19774,7 @@ export const soulAsceticData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20365,22 +19847,15 @@ export const soulAsceticData = {
       "variableCastTime": "1.5 seconds",
       "castDelay": "0.5 seconds",
       "duration": "150 + (30 × Skill Level) seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Talisman of Five Elements ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Five_Elements"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5423.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5423",
       "tree": {
         "idx": 19,
         "row": 2,
-        "col": 1,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5416,
@@ -20494,7 +19969,7 @@ export const soulAsceticData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20566,22 +20041,15 @@ export const soulAsceticData = {
       "fixedCastTime": "1.5 seconds",
       "variableCastTime": "1 seconds",
       "cooldown": "0.3 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Talisman of Blue Dragon ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Blue_Dragon"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5426.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5426",
       "tree": {
         "idx": 22,
-        "row": 2,
-        "col": 4,
-        "columns": 9,
+        "row": 3,
+        "col": 1,
+        "columns": 7,
         "requirements": [
           {
             "id": 5424,
@@ -20763,7 +20231,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20836,22 +20304,15 @@ export const soulAsceticData = {
       "variableCastTime": "1 seconds",
       "cooldown": "0.4 seconds",
       "areaOfEffect": "11 x 11~15 x 15",
-      "translations": {
-        "pt-BR": {
-          "name": " Talisman of White Tiger ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Talisman_of_White_Tiger"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5427.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5427",
       "tree": {
         "idx": 23,
-        "row": 2,
-        "col": 5,
-        "columns": 9,
+        "row": 3,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5426,
@@ -21031,7 +20492,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21104,22 +20565,15 @@ export const soulAsceticData = {
       "variableCastTime": "1 seconds",
       "cooldown": "0.45 seconds",
       "areaOfEffect": "3 x 3~7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Talisman of Red Phoenix ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Red_Phoenix"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5428.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5428",
       "tree": {
         "idx": 24,
-        "row": 2,
-        "col": 6,
-        "columns": 9,
+        "row": 3,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5427,
@@ -21302,7 +20756,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21375,22 +20829,15 @@ export const soulAsceticData = {
       "variableCastTime": "1 seconds",
       "cooldown": "0.7 seconds",
       "areaOfEffect": "7 x 7~11 x 11",
-      "translations": {
-        "pt-BR": {
-          "name": " Talisman of Black Tortoise ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Black_Tortoise"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5429.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5429",
       "tree": {
         "idx": 25,
-        "row": 2,
-        "col": 7,
-        "columns": 9,
+        "row": 3,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5428,
@@ -21554,7 +21001,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21627,22 +21074,15 @@ export const soulAsceticData = {
       "variableCastTime": "1.5 seconds",
       "cooldown": "1 seconds",
       "areaOfEffect": "7 x 7~11 x 11",
-      "translations": {
-        "pt-BR": {
-          "name": " Talisman of Four Bearing God ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Talisman_of_Four_Bearing_God"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5430.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5430",
       "tree": {
         "idx": 31,
-        "row": 3,
-        "col": 4,
-        "columns": 9,
+        "row": 4,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5426,
@@ -21801,7 +21241,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21876,22 +21316,15 @@ export const soulAsceticData = {
       "cooldown": "5 seconds",
       "duration": "(Skill Level x 30) seconds",
       "areaOfEffect": "7 x 7~11 x 11",
-      "translations": {
-        "pt-BR": {
-          "name": " Circle of Directions and Elementals ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Circle_of_Directions_and_Elementals"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5431.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5431",
       "tree": {
         "idx": 38,
-        "row": 4,
-        "col": 2,
-        "columns": 9,
+        "row": 5,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5417,
@@ -22113,7 +21546,7 @@ export const soulAsceticData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22227,22 +21660,15 @@ export const soulAsceticData = {
       ],
       "spCost": "80 + (Skill Level × 10)",
       "duration": "300 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Soul of Heaven and Earth ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Soul_of_Heaven_and_Earth"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5432.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5432",
       "tree": {
         "idx": 40,
-        "row": 4,
-        "col": 4,
-        "columns": 9,
+        "row": 5,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 5418,
@@ -22446,7 +21872,7 @@ export const soulAsceticData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }

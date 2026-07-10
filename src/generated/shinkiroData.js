@@ -1,5 +1,5 @@
 export const shinkiroData = {
-  "generatedAt": "2026-07-10T15:02:21.350Z",
+  "generatedAt": "2026-07-10T18:52:59.256Z",
   "classId": 4304,
   "classSlug": "shinkiro",
   "className": "Shinkiro",
@@ -56,8 +56,8 @@ export const shinkiroData = {
     "versions": 3
   },
   "tree": {
-    "columns": 9,
-    "rows": 5,
+    "columns": 7,
+    "rows": 6,
     "skillTreeUrl": "https://www.divine-pride.net/tools/skilltree/4304",
     "jobIconUrl": "assets/divine-pride/jobs/4304.png"
   },
@@ -435,8 +435,8 @@ export const shinkiroData = {
       "label": "Shinkiro",
       "pointLimit": 59,
       "tree": {
-        "columns": 9,
-        "rows": 5
+        "columns": 7,
+        "rows": 6
       },
       "skills": [
         {
@@ -471,22 +471,15 @@ export const shinkiroData = {
           "cooldown": "3 seconds",
           "duration": "20 seconds",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Mirage ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Mirage"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5479.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5479",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -551,7 +544,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -666,22 +659,15 @@ export const shinkiroData = {
           "cooldown": "0.7 seconds",
           "castRange": "Magic",
           "areaOfEffect": "5 x 5~7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Red Flame Cannon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Red_Flame_Cannon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5488.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5488",
           "tree": {
             "idx": 6,
             "row": 0,
             "col": 6,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -920,7 +906,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -991,22 +977,15 @@ export const shinkiroData = {
           "spCost": "40",
           "cooldown": "0.5 seconds",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Infiltrate ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Infiltrate"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5477.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5477",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5479,
@@ -1090,7 +1069,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1204,22 +1183,15 @@ export const shinkiroData = {
           "cooldown": "0.3 seconds",
           "castRange": "9 cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Kunai - Distortion ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Kunai_-_Distortion"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5485.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5485",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5479,
@@ -1397,7 +1369,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1510,22 +1482,15 @@ export const shinkiroData = {
           "cooldown": "0.3 seconds",
           "castRange": "Melee",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow Hunting ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_Hunting"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5480.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5480",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5479,
@@ -1698,7 +1663,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1724,22 +1689,15 @@ export const shinkiroData = {
             }
           ],
           "levelExtras": [],
-          "translations": {
-            "pt-BR": {
-              "name": " Four Colors Charm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Four_Colors_Charm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5499.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5499",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3019,
@@ -1797,7 +1755,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -1912,22 +1870,15 @@ export const shinkiroData = {
           "cooldown": "0.5 seconds",
           "castRange": "Magic",
           "areaOfEffect": "5 x 5~9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Cold Blooded Cannon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Cold_Blooded_Cannon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5489.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5489",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -2158,7 +2109,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2228,22 +2179,15 @@ export const shinkiroData = {
           ],
           "spCost": "35",
           "cooldown": "2 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Melt Away ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Melt_Away"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5476.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5476",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5479,
@@ -2323,7 +2267,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2397,22 +2341,15 @@ export const shinkiroData = {
           "duration": "2 seconds",
           "castRange": "8 cells",
           "areaOfEffect": "5 x 5 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Kunai - Rotation ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Kunai_-_Rotation"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5486.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5486",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5485,
@@ -2576,7 +2513,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -2691,22 +2628,15 @@ export const shinkiroData = {
           "duration": "5 seconds",
           "castRange": "10 cells",
           "areaOfEffect": "5 x 5 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Huuma Shuriken - Grasp ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Huuma_Shuriken_-_Grasp"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5483.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5483",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5485,
@@ -2913,7 +2843,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3027,22 +2957,15 @@ export const shinkiroData = {
           "cooldown": "0.4 seconds",
           "castRange": "Melee",
           "areaOfEffect": "5×5~7×7",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow Dance ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_Dance"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5481.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5481",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5480,
@@ -3308,7 +3231,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3423,22 +3346,15 @@ export const shinkiroData = {
           "cooldown": "0.7 seconds",
           "castRange": "Magic",
           "areaOfEffect": "5 x 5~7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Thundering Cannon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Thundering_Cannon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5490.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5490",
           "tree": {
             "idx": 20,
             "row": 2,
-            "col": 2,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -3681,7 +3597,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3718,22 +3634,15 @@ export const shinkiroData = {
           ],
           "spCost": "10",
           "areaOfEffect": "15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Nightmare Erasion ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Nightmare_Erasion"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5478.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5478",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -3798,7 +3707,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -3914,22 +3823,15 @@ export const shinkiroData = {
           "duration": "2 seconds",
           "castRange": "9 cells",
           "areaOfEffect": "15 x 15",
-          "translations": {
-            "pt-BR": {
-              "name": " Kunai - Refraction ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Kunai_-_Refraction"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5487.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5487",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5486,
@@ -4118,7 +4020,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4232,22 +4134,15 @@ export const shinkiroData = {
           "cooldown": "0.7 seconds",
           "castRange": "10 cells",
           "areaOfEffect": "5 x 13",
-          "translations": {
-            "pt-BR": {
-              "name": " Huuma Shuriken - Construct ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Huuma_Shuriken_-_Construct"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5484.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5484",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5483,
@@ -4448,7 +4343,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4562,22 +4457,15 @@ export const shinkiroData = {
           "castDelay": "0.25 seconds",
           "cooldown": "0.5 seconds",
           "areaOfEffect": "3 x 10",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow Flash ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_Flash"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5482.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5482",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5481,
@@ -4819,7 +4707,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -4933,22 +4821,15 @@ export const shinkiroData = {
           "cooldown": "0.3 seconds",
           "castRange": "Magic",
           "areaOfEffect": "3 x 3~5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Golden Dragon Cannon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Golden_Dragon_Cannon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5491.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5491",
           "tree": {
             "idx": 27,
             "row": 3,
-            "col": 0,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -5175,7 +5056,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5218,22 +5099,15 @@ export const shinkiroData = {
           "spCost": "70",
           "castRange": "12 cells",
           "areaOfEffect": "13 x 13",
-          "translations": {
-            "pt-BR": {
-              "name": " Kunai - Nightmare ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Kunai_-_Nightmare"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5494.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5494",
           "tree": {
             "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
+            "row": 4,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5479,
@@ -5367,7 +5241,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5410,22 +5284,15 @@ export const shinkiroData = {
           "spCost": "70",
           "castRange": "Melee",
           "areaOfEffect": "13 x 13",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow - Nightmare ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_-_Nightmare"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5493.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5493",
           "tree": {
             "idx": 32,
-            "row": 3,
-            "col": 5,
-            "columns": 9,
+            "row": 4,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5479,
@@ -5547,7 +5414,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5661,22 +5528,15 @@ export const shinkiroData = {
           "cooldown": "0.5 seconds",
           "castRange": "Magic",
           "areaOfEffect": "5 x 5~7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Darkening Cannon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Darkening_Cannon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5492.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5492",
           "tree": {
             "idx": 34,
-            "row": 3,
-            "col": 7,
-            "columns": 9,
+            "row": 4,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -5853,7 +5713,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -5896,22 +5756,15 @@ export const shinkiroData = {
           "spCost": "120",
           "castRange": "Magic",
           "areaOfEffect": "11 x 11",
-          "translations": {
-            "pt-BR": {
-              "name": " Dark Dragon - Nightmare ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dark_Dragon_-_Nightmare"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/5495.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/5495",
           "tree": {
             "idx": 41,
-            "row": 4,
-            "col": 5,
-            "columns": 9,
+            "row": 5,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 5479,
@@ -6065,7 +5918,7 @@ export const shinkiroData = {
             }
           ],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6077,8 +5930,8 @@ export const shinkiroData = {
       "label": "Kagerou",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 5
+        "columns": 7,
+        "rows": 6
       },
       "skills": [
         {
@@ -6109,22 +5962,15 @@ export const shinkiroData = {
           ],
           "spCost": "10 + 3 per second",
           "duration": "200 seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow Hiding ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_Hiding"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3001.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3001",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 530,
@@ -6180,7 +6026,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6279,22 +6125,15 @@ export const shinkiroData = {
           "spCost": "36 + (Skill Level x 4)",
           "cooldown": "[33 - (Skill Level x 3)] seconds",
           "duration": "[30 - (Skill Level x 3)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Illusion - Shadow ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Illusion_-_Shadow"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3012.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3012",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 531,
@@ -6408,7 +6247,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6508,22 +6347,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Illusion - Bewitch ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Illusion_-_Bewitch"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3021.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3021",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 531,
@@ -6617,7 +6449,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -6767,22 +6599,15 @@ export const shinkiroData = {
           "variableCastTime": "[3.5 - (Skill Level x 0.5)] seconds",
           "duration": "[10 + (Skill Level x 2)] seconds",
           "castRange": "5 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Illusion - Shock ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Illusion_-_Shock"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3013.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3013",
           "tree": {
             "idx": 3,
             "row": 0,
             "col": 3,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3021,
@@ -6918,7 +6743,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7043,22 +6868,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Illusion - Death ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Illusion_-_Death"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3014.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3014",
           "tree": {
             "idx": 4,
             "row": 0,
             "col": 4,
-            "columns": 9,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3013,
@@ -7161,7 +6979,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7300,22 +7118,15 @@ export const shinkiroData = {
           "spCost": "8 + (Skill Level x 2)",
           "cooldown": "5.5 − (Skill Level × 0.5) seconds",
           "castRange": "4~7 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Cross Slash ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Cross_Slash"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3004.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3004",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3001,
@@ -7464,7 +7275,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7587,22 +7398,15 @@ export const shinkiroData = {
           "cooldown": "None",
           "duration": "(Skill Level + 4) seconds",
           "areaOfEffect": "3 x 3 + (Skill Level * 2 x 2)",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow Trampling ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_Trampling"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3023.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3023",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3012,
@@ -7721,7 +7525,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7756,22 +7560,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Fire Charm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Fire_Charm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3015.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3015",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -7820,7 +7617,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7855,22 +7652,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Ice Charm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Ice_Charm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3016.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3016",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -7919,7 +7709,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -7954,22 +7744,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Wind Charm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Wind_Charm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3017.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3017",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -8018,7 +7801,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8053,22 +7836,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Earth Charm ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Earth_Charm"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3018.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3018",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -8117,7 +7893,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8216,22 +7992,15 @@ export const shinkiroData = {
           ],
           "spCost": "8 + (Skill Level x 4)",
           "castRange": "2 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Soul Cutter ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Soul_Cutter"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3005.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3005",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3004,
@@ -8336,7 +8105,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8435,22 +8204,15 @@ export const shinkiroData = {
           ],
           "spCost": "50",
           "duration": "5 + (Skill Level x 5) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Empty Shadow ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Empty_Shadow"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3024.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3024",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3023,
@@ -8560,7 +8322,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8602,22 +8364,15 @@ export const shinkiroData = {
           ],
           "spCost": "10",
           "castRange": "11 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Release Ninja Spell ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Release_Ninja_Spell"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3019.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3019",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3015,
@@ -8696,7 +8451,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -8821,22 +8576,15 @@ export const shinkiroData = {
           "variableCastTime": "[0.6 + (Skill Level x 0.4)] seconds",
           "castRange": "(Skill Level + 6) cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Kunai Explosion ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Kunai_Explosion"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3006.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3006",
           "tree": {
             "idx": 21,
-            "row": 2,
-            "col": 3,
-            "columns": 9,
+            "row": 3,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 524,
@@ -8967,7 +8715,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9067,22 +8815,15 @@ export const shinkiroData = {
           "spCost": "55 + (Skill Level × 5)",
           "duration": "[30 + ( Skill Level × 30 )] seconds",
           "castRange": "1 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow Warrior ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_Warrior"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3025.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3025",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3024,
@@ -9196,7 +8937,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9244,22 +8985,15 @@ export const shinkiroData = {
           "duration": "(6 * Number of Active Charms) seconds",
           "castRange": "7 cells",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Cast Ninja Spell ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Cast_Ninja_Spell"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3020.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3020",
           "tree": {
             "idx": 24,
-            "row": 2,
-            "col": 6,
-            "columns": 9,
+            "row": 3,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3019,
@@ -9350,7 +9084,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9428,22 +9162,15 @@ export const shinkiroData = {
           ],
           "spCost": "65 + (Skill Level x 5)",
           "duration": "[15 + (15 x Skill Level)] seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " 16th Night ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/16th_Night"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3022.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3022",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 533,
@@ -9548,7 +9275,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9647,22 +9374,15 @@ export const shinkiroData = {
           ],
           "spCost": "100",
           "duration": "10 Seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Pure Soul ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Pure_Soul"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3011.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3011",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 533,
@@ -9776,7 +9496,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -9900,22 +9620,15 @@ export const shinkiroData = {
           ],
           "spCost": "10 + (Skill Level × 2)",
           "areaOfEffect": "9 x 9 ~ 11 x 11",
-          "translations": {
-            "pt-BR": {
-              "name": " Kunai Splash ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Kunai_Splash"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3007.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3007",
           "tree": {
             "idx": 28,
-            "row": 3,
-            "col": 1,
-            "columns": 9,
+            "row": 4,
+            "col": 0,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3006,
@@ -10038,7 +9751,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10185,22 +9898,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Makibishi (Caltrop Scatter) ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Makibishi_(Caltrop_Scatter)"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3010.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3010",
           "tree": {
             "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
+            "row": 4,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 526,
@@ -10316,7 +10022,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10384,22 +10090,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Righthand Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Righthand_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3002.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3002",
           "tree": {
             "idx": 33,
-            "row": 3,
-            "col": 6,
-            "columns": 9,
+            "row": 4,
+            "col": 5,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -10460,7 +10159,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10528,22 +10227,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Lefthand Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lefthand_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3003.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3003",
           "tree": {
             "idx": 34,
-            "row": 3,
-            "col": 7,
-            "columns": 9,
+            "row": 4,
+            "col": 6,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -10604,7 +10296,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -10744,22 +10436,15 @@ export const shinkiroData = {
           "spCost": "20 + (Skill Level x 4)",
           "castRange": "11 cells",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Swirling Petal ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Swirling_Petal"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3009.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3009",
           "tree": {
             "idx": 36,
-            "row": 4,
-            "col": 0,
-            "columns": 9,
+            "row": 5,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 525,
@@ -10912,7 +10597,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11162,22 +10847,15 @@ export const shinkiroData = {
           "spCost": "50",
           "castRange": "11 cells",
           "areaOfEffect": "3 x 3 ~ 5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Rapid Throw ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Rapid_Throw"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/3008.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/3008",
           "tree": {
             "idx": 37,
-            "row": 4,
-            "col": 1,
-            "columns": 9,
+            "row": 5,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 3010,
@@ -11413,7 +11091,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11425,8 +11103,8 @@ export const shinkiroData = {
       "label": "Ninja",
       "pointLimit": 69,
       "tree": {
-        "columns": 9,
-        "rows": 4
+        "columns": 7,
+        "rows": 5
       },
       "skills": [
         {
@@ -11520,22 +11198,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Basic Skill ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Basic_Skill"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/1.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/1",
           "tree": {
             "idx": 0,
             "row": 0,
             "col": 0,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -11632,7 +11303,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11740,22 +11411,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Dagger Throwing Practice ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Dagger_Throwing_Practice"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/522.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/522",
           "tree": {
             "idx": 1,
             "row": 0,
             "col": 1,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -11864,7 +11528,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -11936,22 +11600,15 @@ export const shinkiroData = {
           "castDelay": "3 seconds",
           "castRange": "Melee",
           "areaOfEffect": "Cross-shaped",
-          "translations": {
-            "pt-BR": {
-              "name": " Flip Tatami ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Flip_Tatami"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/527.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/527",
           "tree": {
             "idx": 2,
             "row": 0,
             "col": 2,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12032,7 +11689,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12140,22 +11797,15 @@ export const shinkiroData = {
               ]
             }
           ],
-          "translations": {
-            "pt-BR": {
-              "name": " Ninja Mastery ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Ninja_Mastery"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/533.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/533",
           "tree": {
             "idx": 5,
             "row": 0,
             "col": 5,
-            "columns": 9,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12274,7 +11924,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12307,22 +11957,15 @@ export const shinkiroData = {
           ],
           "spCost": "3",
           "castDelay": "ASPD",
-          "translations": {
-            "pt-BR": {
-              "name": " First Aid ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/First_Aid"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/142.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/142",
           "tree": {
             "idx": 7,
-            "row": 0,
-            "col": 7,
-            "columns": 9,
+            "row": 1,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -12371,7 +12014,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12485,22 +12128,15 @@ export const shinkiroData = {
           ],
           "spCost": "5",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Throw Shuriken ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Throw_Shuriken"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/523.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/523",
           "tree": {
             "idx": 8,
-            "row": 0,
-            "col": 8,
-            "columns": 9,
+            "row": 1,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 522,
@@ -12630,7 +12266,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12701,22 +12337,15 @@ export const shinkiroData = {
           "spCost": "10",
           "castDelay": "1 second",
           "castRange": "(Skill Level + 4) cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow Leap ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_Leap"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/529.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/529",
           "tree": {
             "idx": 9,
             "row": 1,
-            "col": 0,
-            "columns": 9,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 527,
@@ -12809,7 +12438,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -12881,22 +12510,15 @@ export const shinkiroData = {
           "fixedCastTime": "(1.2 − (Skill Level x 0.2)) seconds",
           "variableCastTime": "(4.8 − (Skill Level x 0.8)) seconds",
           "duration": "15 + (Skill Level × 15) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Ninja Aura ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Ninja_Aura"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/543.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/543",
           "tree": {
             "idx": 10,
             "row": 1,
-            "col": 1,
-            "columns": 9,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 533,
@@ -13002,7 +12624,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13073,22 +12695,15 @@ export const shinkiroData = {
           "fixedCastTime": "(Skill Level × 0.14) seconds",
           "variableCastTime": "(Skill Level × 0.56) seconds",
           "castRange": "Magic",
-          "translations": {
-            "pt-BR": {
-              "name": " Flaming Petals ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Flaming_Petals"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/534.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/534",
           "tree": {
             "idx": 11,
             "row": 1,
-            "col": 2,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 533,
@@ -13206,7 +12821,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13318,22 +12933,15 @@ export const shinkiroData = {
           "fixedCastTime": "(Skill Level × 0.14) seconds",
           "variableCastTime": "(Skill Level × 0.56) seconds",
           "castRange": "Magic",
-          "translations": {
-            "pt-BR": {
-              "name": " Freezing Spear ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Freezing_Spear"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/537.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/537",
           "tree": {
             "idx": 12,
             "row": 1,
-            "col": 3,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 533,
@@ -13465,7 +13073,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13579,22 +13187,15 @@ export const shinkiroData = {
           "fixedCastTime": "[0.1 + (Skill Level x 0.1)] seconds",
           "variableCastTime": "[0.4 + (Skill Level x 0.4)] seconds",
           "castRange": "Magic",
-          "translations": {
-            "pt-BR": {
-              "name": " Wind Blade ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Wind_Blade"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/540.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/540",
           "tree": {
             "idx": 13,
             "row": 1,
-            "col": 4,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 533,
@@ -13734,7 +13335,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13767,22 +13368,15 @@ export const shinkiroData = {
           ],
           "spCost": "1",
           "duration": "Indefinite",
-          "translations": {
-            "pt-BR": {
-              "name": " Play Dead ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Play_Dead"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/143.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/143",
           "tree": {
             "idx": 14,
-            "row": 1,
-            "col": 5,
-            "columns": 9,
+            "row": 2,
+            "col": 0,
+            "columns": 7,
             "requirements": []
           },
           "details": {
@@ -13831,7 +13425,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -13884,22 +13478,15 @@ export const shinkiroData = {
           ],
           "spCost": "10",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Throw Kunai ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Throw_Kunai"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/524.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/524",
           "tree": {
             "idx": 15,
-            "row": 1,
-            "col": 6,
-            "columns": 9,
+            "row": 2,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 523,
@@ -13999,7 +13586,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14113,22 +13700,15 @@ export const shinkiroData = {
           ],
           "spCost": "8",
           "castRange": "Melee",
-          "translations": {
-            "pt-BR": {
-              "name": " Haze Slasher ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Haze_Slasher"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/528.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/528",
           "tree": {
             "idx": 16,
-            "row": 1,
-            "col": 7,
-            "columns": 9,
+            "row": 2,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 529,
@@ -14254,7 +13834,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14324,22 +13904,15 @@ export const shinkiroData = {
           ],
           "spCost": "9 + (Skill Level × 3)",
           "duration": "(Skill Level × 10) seconds Until dodging all hits",
-          "translations": {
-            "pt-BR": {
-              "name": " Cicada Skin Shed ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Cicada_Skin_Shed"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/531.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/531",
           "tree": {
             "idx": 17,
-            "row": 1,
-            "col": 8,
-            "columns": 9,
+            "row": 2,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 529,
@@ -14428,7 +14001,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14543,22 +14116,15 @@ export const shinkiroData = {
           "variableCastTime": "[5.2 − (Skill Level × 0.4)] seconds",
           "duration": "20 seconds Until using all hits",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Blaze Shield ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Blaze_Shield"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/535.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/535",
           "tree": {
             "idx": 18,
             "row": 2,
-            "col": 0,
-            "columns": 9,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 534,
@@ -14702,7 +14268,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -14818,22 +14384,15 @@ export const shinkiroData = {
           "duration": "[10 + (Skill Level x 5)] seconds",
           "castRange": "9 cells",
           "areaOfEffect": "3 x 3 ~ 9 x 9",
-          "translations": {
-            "pt-BR": {
-              "name": " Watery Evasion ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Watery_Evasion"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/538.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/538",
           "tree": {
             "idx": 19,
             "row": 2,
-            "col": 1,
-            "columns": 9,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 537,
@@ -15017,7 +14576,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15092,22 +14651,15 @@ export const shinkiroData = {
           "spCost": "12 + (Skill Level × 4)",
           "castRange": "Magic",
           "areaOfEffect": "3 x 3 ~ 7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Lightning Jolt ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Lightning_Jolt"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/541.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/541",
           "tree": {
             "idx": 20,
             "row": 2,
-            "col": 2,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 540,
@@ -15207,7 +14759,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15282,22 +14834,15 @@ export const shinkiroData = {
           "spCost": "10 + (Skill Level × 5)",
           "castRange": "9 cells",
           "areaOfEffect": "3 x 3 ~ 5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Throw Huuma Shuriken ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Throw_Huuma_Shuriken"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/525.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/525",
           "tree": {
             "idx": 22,
-            "row": 2,
-            "col": 4,
-            "columns": 9,
+            "row": 3,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 522,
@@ -15403,7 +14948,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15473,22 +15018,15 @@ export const shinkiroData = {
           ],
           "spCost": "9 + Skill Level",
           "castRange": "( Shadow Leap Lv.) cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Shadow Slash ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Shadow_Slash"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/530.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/530",
           "tree": {
             "idx": 23,
-            "row": 2,
-            "col": 5,
-            "columns": 9,
+            "row": 3,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 528,
@@ -15568,7 +15106,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15643,22 +15181,15 @@ export const shinkiroData = {
           "spCost": "15 + (Skill Level × 5)",
           "castRange": "Magic",
           "areaOfEffect": "5 x 5",
-          "translations": {
-            "pt-BR": {
-              "name": " Exploding Dragon ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Exploding_Dragon"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/536.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/536",
           "tree": {
             "idx": 25,
-            "row": 2,
-            "col": 7,
-            "columns": 9,
+            "row": 3,
+            "col": 4,
+            "columns": 7,
             "requirements": [
               {
                 "id": 533,
@@ -15764,7 +15295,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -15838,22 +15369,15 @@ export const shinkiroData = {
           "spCost": "35 + (Skill Level × 5)",
           "variableCastTime": "2.5 seconds",
           "areaOfEffect": "7 x 7",
-          "translations": {
-            "pt-BR": {
-              "name": " Snow Flake Draft ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Snow_Flake_Draft"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/539.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/539",
           "tree": {
             "idx": 26,
-            "row": 2,
-            "col": 8,
-            "columns": 9,
+            "row": 3,
+            "col": 5,
+            "columns": 7,
             "requirements": [
               {
                 "id": 533,
@@ -15955,7 +15479,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16029,22 +15553,15 @@ export const shinkiroData = {
           ],
           "spCost": "20 + (Skill Level × 4)",
           "castRange": "Magic",
-          "translations": {
-            "pt-BR": {
-              "name": " First Wind ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/First_Wind"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/542.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/542",
           "tree": {
             "idx": 27,
             "row": 3,
-            "col": 0,
-            "columns": 9,
+            "col": 6,
+            "columns": 7,
             "requirements": [
               {
                 "id": 533,
@@ -16146,7 +15663,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16257,22 +15774,15 @@ export const shinkiroData = {
           "spCost": "50",
           "castDelay": "5 seconds",
           "castRange": "9 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Throw Coins ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Throw_Coins"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/526.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/526",
           "tree": {
             "idx": 29,
-            "row": 3,
-            "col": 2,
-            "columns": 9,
+            "row": 4,
+            "col": 1,
+            "columns": 7,
             "requirements": [
               {
                 "id": 522,
@@ -16406,7 +15916,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16520,22 +16030,15 @@ export const shinkiroData = {
           "fixedCastTime": "3.2 ~ 0.8 seconds",
           "variableCastTime": "0.8 ~ 0.2 seconds",
           "duration": "40 + (Skill Level × 20) seconds",
-          "translations": {
-            "pt-BR": {
-              "name": " Mirror Image ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Mirror_Image"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/532.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/532",
           "tree": {
             "idx": 30,
-            "row": 3,
-            "col": 3,
-            "columns": 9,
+            "row": 4,
+            "col": 2,
+            "columns": 7,
             "requirements": [
               {
                 "id": 530,
@@ -16687,7 +16190,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16757,22 +16260,15 @@ export const shinkiroData = {
           "spCost": "50 + (Skill Level × 5)",
           "castDelay": "3 seconds",
           "castRange": "5 cells",
-          "translations": {
-            "pt-BR": {
-              "name": " Killing Strike ",
-              "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-              "source": "bROWiki",
-              "sourceUrl": "https://browiki.org/wiki/Killing_Strike"
-            }
-          },
-          "apiStatus": "translated",
+          "translations": {},
+          "apiStatus": "not-used",
           "iconUrl": "assets/divine-pride/skills/544.png",
           "sourceUrl": "https://www.divine-pride.net/database/skill/544",
           "tree": {
             "idx": 31,
-            "row": 3,
-            "col": 4,
-            "columns": 9,
+            "row": 4,
+            "col": 3,
+            "columns": 7,
             "requirements": [
               {
                 "id": 522,
@@ -16898,7 +16394,7 @@ export const shinkiroData = {
           },
           "balanceNotes": [],
           "api": {
-            "status": "translated",
+            "status": "not-used",
             "entries": [],
             "selectedEntry": null
           }
@@ -16939,22 +16435,15 @@ export const shinkiroData = {
       "cooldown": "3 seconds",
       "duration": "20 seconds",
       "castRange": "Melee",
-      "translations": {
-        "pt-BR": {
-          "name": " Mirage ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Mirage"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5479.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5479",
       "tree": {
         "idx": 0,
         "row": 0,
         "col": 0,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -17019,7 +16508,7 @@ export const shinkiroData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17134,22 +16623,15 @@ export const shinkiroData = {
       "cooldown": "0.7 seconds",
       "castRange": "Magic",
       "areaOfEffect": "5 x 5~7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Red Flame Cannon ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Red_Flame_Cannon"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5488.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5488",
       "tree": {
         "idx": 6,
         "row": 0,
         "col": 6,
-        "columns": 9,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -17388,7 +16870,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17459,22 +16941,15 @@ export const shinkiroData = {
       "spCost": "40",
       "cooldown": "0.5 seconds",
       "castRange": "Melee",
-      "translations": {
-        "pt-BR": {
-          "name": " Infiltrate ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Infiltrate"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5477.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5477",
       "tree": {
         "idx": 7,
-        "row": 0,
-        "col": 7,
-        "columns": 9,
+        "row": 1,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 5479,
@@ -17558,7 +17033,7 @@ export const shinkiroData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17672,22 +17147,15 @@ export const shinkiroData = {
       "cooldown": "0.3 seconds",
       "castRange": "9 cells",
       "areaOfEffect": "5 x 5",
-      "translations": {
-        "pt-BR": {
-          "name": " Kunai - Distortion ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Kunai_-_Distortion"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5485.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5485",
       "tree": {
         "idx": 9,
         "row": 1,
-        "col": 0,
-        "columns": 9,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5479,
@@ -17865,7 +17333,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -17978,22 +17446,15 @@ export const shinkiroData = {
       "cooldown": "0.3 seconds",
       "castRange": "Melee",
       "areaOfEffect": "5 x 5",
-      "translations": {
-        "pt-BR": {
-          "name": " Shadow Hunting ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Shadow_Hunting"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5480.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5480",
       "tree": {
         "idx": 11,
         "row": 1,
-        "col": 2,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5479,
@@ -18166,7 +17627,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18192,22 +17653,15 @@ export const shinkiroData = {
         }
       ],
       "levelExtras": [],
-      "translations": {
-        "pt-BR": {
-          "name": " Four Colors Charm ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Four_Colors_Charm"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5499.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5499",
       "tree": {
         "idx": 12,
         "row": 1,
-        "col": 3,
-        "columns": 9,
+        "col": 5,
+        "columns": 7,
         "requirements": [
           {
             "id": 3019,
@@ -18265,7 +17719,7 @@ export const shinkiroData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18380,22 +17834,15 @@ export const shinkiroData = {
       "cooldown": "0.5 seconds",
       "castRange": "Magic",
       "areaOfEffect": "5 x 5~9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Cold Blooded Cannon ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Cold_Blooded_Cannon"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5489.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5489",
       "tree": {
         "idx": 13,
         "row": 1,
-        "col": 4,
-        "columns": 9,
+        "col": 6,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -18626,7 +18073,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18696,22 +18143,15 @@ export const shinkiroData = {
       ],
       "spCost": "35",
       "cooldown": "2 seconds",
-      "translations": {
-        "pt-BR": {
-          "name": " Melt Away ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Melt_Away"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5476.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5476",
       "tree": {
         "idx": 14,
-        "row": 1,
-        "col": 5,
-        "columns": 9,
+        "row": 2,
+        "col": 0,
+        "columns": 7,
         "requirements": [
           {
             "id": 5479,
@@ -18791,7 +18231,7 @@ export const shinkiroData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -18865,22 +18305,15 @@ export const shinkiroData = {
       "duration": "2 seconds",
       "castRange": "8 cells",
       "areaOfEffect": "5 x 5 ~ 9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Kunai - Rotation ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Kunai_-_Rotation"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5486.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5486",
       "tree": {
         "idx": 16,
-        "row": 1,
-        "col": 7,
-        "columns": 9,
+        "row": 2,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5485,
@@ -19044,7 +18477,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19159,22 +18592,15 @@ export const shinkiroData = {
       "duration": "5 seconds",
       "castRange": "10 cells",
       "areaOfEffect": "5 x 5 ~ 9 x 9",
-      "translations": {
-        "pt-BR": {
-          "name": " Huuma Shuriken - Grasp ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Huuma_Shuriken_-_Grasp"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5483.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5483",
       "tree": {
         "idx": 17,
-        "row": 1,
-        "col": 8,
-        "columns": 9,
+        "row": 2,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5485,
@@ -19381,7 +18807,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19495,22 +18921,15 @@ export const shinkiroData = {
       "cooldown": "0.4 seconds",
       "castRange": "Melee",
       "areaOfEffect": "5×5~7×7",
-      "translations": {
-        "pt-BR": {
-          "name": " Shadow Dance ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Shadow_Dance"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5481.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5481",
       "tree": {
         "idx": 18,
         "row": 2,
-        "col": 0,
-        "columns": 9,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5480,
@@ -19776,7 +19195,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -19891,22 +19310,15 @@ export const shinkiroData = {
       "cooldown": "0.7 seconds",
       "castRange": "Magic",
       "areaOfEffect": "5 x 5~7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Thundering Cannon ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Thundering_Cannon"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5490.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5490",
       "tree": {
         "idx": 20,
         "row": 2,
-        "col": 2,
-        "columns": 9,
+        "col": 6,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -20149,7 +19561,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20186,22 +19598,15 @@ export const shinkiroData = {
       ],
       "spCost": "10",
       "areaOfEffect": "15 x 15",
-      "translations": {
-        "pt-BR": {
-          "name": " Nightmare Erasion ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Nightmare_Erasion"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5478.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5478",
       "tree": {
         "idx": 21,
-        "row": 2,
-        "col": 3,
-        "columns": 9,
+        "row": 3,
+        "col": 0,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -20266,7 +19671,7 @@ export const shinkiroData = {
       },
       "balanceNotes": [],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20382,22 +19787,15 @@ export const shinkiroData = {
       "duration": "2 seconds",
       "castRange": "9 cells",
       "areaOfEffect": "15 x 15",
-      "translations": {
-        "pt-BR": {
-          "name": " Kunai - Refraction ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Kunai_-_Refraction"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5487.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5487",
       "tree": {
         "idx": 23,
-        "row": 2,
-        "col": 5,
-        "columns": 9,
+        "row": 3,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5486,
@@ -20586,7 +19984,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -20700,22 +20098,15 @@ export const shinkiroData = {
       "cooldown": "0.7 seconds",
       "castRange": "10 cells",
       "areaOfEffect": "5 x 13",
-      "translations": {
-        "pt-BR": {
-          "name": " Huuma Shuriken - Construct ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Huuma_Shuriken_-_Construct"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5484.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5484",
       "tree": {
         "idx": 24,
-        "row": 2,
-        "col": 6,
-        "columns": 9,
+        "row": 3,
+        "col": 3,
+        "columns": 7,
         "requirements": [
           {
             "id": 5483,
@@ -20916,7 +20307,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21030,22 +20421,15 @@ export const shinkiroData = {
       "castDelay": "0.25 seconds",
       "cooldown": "0.5 seconds",
       "areaOfEffect": "3 x 10",
-      "translations": {
-        "pt-BR": {
-          "name": " Shadow Flash ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Shadow_Flash"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5482.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5482",
       "tree": {
         "idx": 25,
-        "row": 2,
-        "col": 7,
-        "columns": 9,
+        "row": 3,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5481,
@@ -21287,7 +20671,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21401,22 +20785,15 @@ export const shinkiroData = {
       "cooldown": "0.3 seconds",
       "castRange": "Magic",
       "areaOfEffect": "3 x 3~5 x 5",
-      "translations": {
-        "pt-BR": {
-          "name": " Golden Dragon Cannon ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Golden_Dragon_Cannon"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5491.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5491",
       "tree": {
         "idx": 27,
         "row": 3,
-        "col": 0,
-        "columns": 9,
+        "col": 6,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -21643,7 +21020,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21686,22 +21063,15 @@ export const shinkiroData = {
       "spCost": "70",
       "castRange": "12 cells",
       "areaOfEffect": "13 x 13",
-      "translations": {
-        "pt-BR": {
-          "name": " Kunai - Nightmare ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Kunai_-_Nightmare"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5494.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5494",
       "tree": {
         "idx": 30,
-        "row": 3,
-        "col": 3,
-        "columns": 9,
+        "row": 4,
+        "col": 2,
+        "columns": 7,
         "requirements": [
           {
             "id": 5479,
@@ -21835,7 +21205,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -21878,22 +21248,15 @@ export const shinkiroData = {
       "spCost": "70",
       "castRange": "Melee",
       "areaOfEffect": "13 x 13",
-      "translations": {
-        "pt-BR": {
-          "name": " Shadow - Nightmare ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Shadow_-_Nightmare"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5493.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5493",
       "tree": {
         "idx": 32,
-        "row": 3,
-        "col": 5,
-        "columns": 9,
+        "row": 4,
+        "col": 4,
+        "columns": 7,
         "requirements": [
           {
             "id": 5479,
@@ -22015,7 +21378,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22129,22 +21492,15 @@ export const shinkiroData = {
       "cooldown": "0.5 seconds",
       "castRange": "Magic",
       "areaOfEffect": "5 x 5~7 x 7",
-      "translations": {
-        "pt-BR": {
-          "name": " Darkening Cannon ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Darkening_Cannon"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5492.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5492",
       "tree": {
         "idx": 34,
-        "row": 3,
-        "col": 7,
-        "columns": 9,
+        "row": 4,
+        "col": 6,
+        "columns": 7,
         "requirements": []
       },
       "details": {
@@ -22321,7 +21677,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }
@@ -22364,22 +21720,15 @@ export const shinkiroData = {
       "spCost": "120",
       "castRange": "Magic",
       "areaOfEffect": "11 x 11",
-      "translations": {
-        "pt-BR": {
-          "name": " Dark Dragon - Nightmare ",
-          "description": "No momento, não há conteúdo nesta página Você pode pesquisar pelo título desta página em outras páginas, ou buscar por registros relacionados . Note que, no entanto, você não tem permissão para criar esta página.",
-          "source": "bROWiki",
-          "sourceUrl": "https://browiki.org/wiki/Dark_Dragon_-_Nightmare"
-        }
-      },
-      "apiStatus": "translated",
+      "translations": {},
+      "apiStatus": "not-used",
       "iconUrl": "assets/divine-pride/skills/5495.png",
       "sourceUrl": "https://www.divine-pride.net/database/skill/5495",
       "tree": {
         "idx": 41,
-        "row": 4,
-        "col": 5,
-        "columns": 9,
+        "row": 5,
+        "col": 6,
+        "columns": 7,
         "requirements": [
           {
             "id": 5479,
@@ -22533,7 +21882,7 @@ export const shinkiroData = {
         }
       ],
       "api": {
-        "status": "translated",
+        "status": "not-used",
         "entries": [],
         "selectedEntry": null
       }

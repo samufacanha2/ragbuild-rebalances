@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
-import { assetUrl } from '../lib/dom.js'
-import { translateUi } from '../lib/translations.js'
+import './ClassSelectPageStyles.css'
+import { assetUrl } from '../../lib/dom.js'
+import { translateUi } from '../../lib/translations.js'
+import { EmptyState } from '../EmptyState'
 
 export function ClassSelectPage({ dataSets, language, onSelectClass }) {
   const [query, setQuery] = useState('')
@@ -42,7 +44,9 @@ export function ClassSelectPage({ dataSets, language, onSelectClass }) {
             </button>
           ))
         ) : (
-          <p className="empty-state class-search-empty">{translateUi('No classes match your search.', language)}</p>
+          <EmptyState className="class-search-empty" eyebrow="" title="">
+            <p>{translateUi('No classes match your search.', language)}</p>
+          </EmptyState>
         )}
       </section>
     </main>
