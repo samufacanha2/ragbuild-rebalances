@@ -1,5 +1,5 @@
 export const spiritHandlerData = {
-  "generatedAt": "2026-07-13T19:36:27.639Z",
+  "generatedAt": "2026-07-13T20:14:19.366Z",
   "classId": 4308,
   "classSlug": "spirit-handler",
   "className": "Spirit Handler",
@@ -937,14 +937,6 @@ export const spiritHandlerData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "recovery-amount",
-                    "label": "Recovery Amount"
-                  },
-                  {
-                    "id": "recovery-amount-commune",
-                    "label": "Recovery Amount (Commune)"
-                  },
-                  {
                     "id": "sp-cost",
                     "label": "SP Cost"
                   },
@@ -955,15 +947,33 @@ export const spiritHandlerData = {
                   {
                     "id": "area-of-effect-commune",
                     "label": "Area of Effect (Commune)"
+                  },
+                  {
+                    "id": "base-recovery-amount",
+                    "label": "Base Recovery Amount"
+                  },
+                  {
+                    "id": "base-recovery-amount-commune",
+                    "label": "Base Recovery Amount (Commune)"
+                  },
+                  {
+                    "id": "bonus-recovery-amount-commune-mystical-creature-mastery",
+                    "label": "Bonus Recovery Amount (Commune) (Mystical Creature Mastery)"
+                  },
+                  {
+                    "id": "bonus-recovery-amount-mystical-creature-mastery",
+                    "label": "Bonus Recovery Amount (Mystical Creature Mastery)"
                   }
                 ],
                 "rows": [
                   {
                     "level": 1,
                     "values": {
-                      "recovery-amount": "500 + (Mystical Creature Mastery Lv x 100)",
+                      "base-recovery-amount": "500",
+                      "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                       "area-of-effect": "7x7",
-                      "recovery-amount-commune": "750 + (Mystical Creature Mastery Lv x 150)",
+                      "base-recovery-amount-commune": "750",
+                      "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                       "area-of-effect-commune": "11x11",
                       "sp-cost": "61"
                     }
@@ -971,9 +981,11 @@ export const spiritHandlerData = {
                   {
                     "level": 2,
                     "values": {
-                      "recovery-amount": "1000 + (Mystical Creature Mastery Lv x 100)",
+                      "base-recovery-amount": "1,000",
+                      "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                       "area-of-effect": "7x7",
-                      "recovery-amount-commune": "1500 + (Mystical Creature Mastery Lv x 150)",
+                      "base-recovery-amount-commune": "1,500",
+                      "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                       "area-of-effect-commune": "11x11",
                       "sp-cost": "65"
                     }
@@ -981,9 +993,11 @@ export const spiritHandlerData = {
                   {
                     "level": 3,
                     "values": {
-                      "recovery-amount": "1500 + (Mystical Creature Mastery Lv x 100)",
+                      "base-recovery-amount": "1,500",
+                      "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                       "area-of-effect": "9x9",
-                      "recovery-amount-commune": "2250 + (Mystical Creature Mastery Lv x 150)",
+                      "base-recovery-amount-commune": "2,250",
+                      "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                       "area-of-effect-commune": "13x13",
                       "sp-cost": "69"
                     }
@@ -991,9 +1005,11 @@ export const spiritHandlerData = {
                   {
                     "level": 4,
                     "values": {
-                      "recovery-amount": "2000 + (Mystical Creature Mastery Lv x 100)",
+                      "base-recovery-amount": "2,000",
+                      "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                       "area-of-effect": "9x9",
-                      "recovery-amount-commune": "3000 + (Mystical Creature Mastery Lv x 150)",
+                      "base-recovery-amount-commune": "3,000",
+                      "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                       "area-of-effect-commune": "13x13",
                       "sp-cost": "73"
                     }
@@ -1001,9 +1017,11 @@ export const spiritHandlerData = {
                   {
                     "level": 5,
                     "values": {
-                      "recovery-amount": "2500 + (Mystical Creature Mastery Lv x 100)",
+                      "base-recovery-amount": "2,500",
+                      "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                       "area-of-effect": "11x11",
-                      "recovery-amount-commune": "3750 + (Mystical Creature Mastery Lv x 150)",
+                      "base-recovery-amount-commune": "3,750",
+                      "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                       "area-of-effect-commune": "15x15",
                       "sp-cost": "77"
                     }
@@ -1011,9 +1029,11 @@ export const spiritHandlerData = {
                   {
                     "level": 6,
                     "values": {
-                      "recovery-amount": "3000 + (Mystical Creature Mastery Lv x 100)",
+                      "base-recovery-amount": "3,000",
+                      "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                       "area-of-effect": "11x11",
-                      "recovery-amount-commune": "4500 + (Mystical Creature Mastery Lv x 150)",
+                      "base-recovery-amount-commune": "4,500",
+                      "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                       "area-of-effect-commune": "15x15",
                       "sp-cost": "81"
                     }
@@ -1021,9 +1041,11 @@ export const spiritHandlerData = {
                   {
                     "level": 7,
                     "values": {
-                      "recovery-amount": "3500 + (Mystical Creature Mastery Lv x 100)",
+                      "base-recovery-amount": "3,500",
+                      "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                       "area-of-effect": "13x13",
-                      "recovery-amount-commune": "5250 + (Mystical Creature Mastery Lv x 150)",
+                      "base-recovery-amount-commune": "5,250",
+                      "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                       "area-of-effect-commune": "17x17",
                       "sp-cost": "85"
                     }
@@ -3816,7 +3838,7 @@ export const spiritHandlerData = {
           "prerequisiteText": "Mystical Creature Mastery 10, Commune with Kisul 1",
           "group": "Active(AP)",
           "type": "Supportive",
-          "target": "Single Target",
+          "target": "Party Member (e x cept other Doram or Self)",
           "recoversAp": "",
           "consumesAp": "100",
           "ammunition": "",
@@ -3933,7 +3955,7 @@ export const spiritHandlerData = {
               },
               {
                 "label": "Target",
-                "value": "Single Target"
+                "value": "Party Member (e x cept other Doram or Self)"
               },
               {
                 "label": "Duration",
@@ -13302,14 +13324,6 @@ export const spiritHandlerData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "recovery-amount",
-                "label": "Recovery Amount"
-              },
-              {
-                "id": "recovery-amount-commune",
-                "label": "Recovery Amount (Commune)"
-              },
-              {
                 "id": "sp-cost",
                 "label": "SP Cost"
               },
@@ -13320,15 +13334,33 @@ export const spiritHandlerData = {
               {
                 "id": "area-of-effect-commune",
                 "label": "Area of Effect (Commune)"
+              },
+              {
+                "id": "base-recovery-amount",
+                "label": "Base Recovery Amount"
+              },
+              {
+                "id": "base-recovery-amount-commune",
+                "label": "Base Recovery Amount (Commune)"
+              },
+              {
+                "id": "bonus-recovery-amount-commune-mystical-creature-mastery",
+                "label": "Bonus Recovery Amount (Commune) (Mystical Creature Mastery)"
+              },
+              {
+                "id": "bonus-recovery-amount-mystical-creature-mastery",
+                "label": "Bonus Recovery Amount (Mystical Creature Mastery)"
               }
             ],
             "rows": [
               {
                 "level": 1,
                 "values": {
-                  "recovery-amount": "500 + (Mystical Creature Mastery Lv x 100)",
+                  "base-recovery-amount": "500",
+                  "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                   "area-of-effect": "7x7",
-                  "recovery-amount-commune": "750 + (Mystical Creature Mastery Lv x 150)",
+                  "base-recovery-amount-commune": "750",
+                  "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                   "area-of-effect-commune": "11x11",
                   "sp-cost": "61"
                 }
@@ -13336,9 +13368,11 @@ export const spiritHandlerData = {
               {
                 "level": 2,
                 "values": {
-                  "recovery-amount": "1000 + (Mystical Creature Mastery Lv x 100)",
+                  "base-recovery-amount": "1,000",
+                  "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                   "area-of-effect": "7x7",
-                  "recovery-amount-commune": "1500 + (Mystical Creature Mastery Lv x 150)",
+                  "base-recovery-amount-commune": "1,500",
+                  "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                   "area-of-effect-commune": "11x11",
                   "sp-cost": "65"
                 }
@@ -13346,9 +13380,11 @@ export const spiritHandlerData = {
               {
                 "level": 3,
                 "values": {
-                  "recovery-amount": "1500 + (Mystical Creature Mastery Lv x 100)",
+                  "base-recovery-amount": "1,500",
+                  "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                   "area-of-effect": "9x9",
-                  "recovery-amount-commune": "2250 + (Mystical Creature Mastery Lv x 150)",
+                  "base-recovery-amount-commune": "2,250",
+                  "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                   "area-of-effect-commune": "13x13",
                   "sp-cost": "69"
                 }
@@ -13356,9 +13392,11 @@ export const spiritHandlerData = {
               {
                 "level": 4,
                 "values": {
-                  "recovery-amount": "2000 + (Mystical Creature Mastery Lv x 100)",
+                  "base-recovery-amount": "2,000",
+                  "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                   "area-of-effect": "9x9",
-                  "recovery-amount-commune": "3000 + (Mystical Creature Mastery Lv x 150)",
+                  "base-recovery-amount-commune": "3,000",
+                  "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                   "area-of-effect-commune": "13x13",
                   "sp-cost": "73"
                 }
@@ -13366,9 +13404,11 @@ export const spiritHandlerData = {
               {
                 "level": 5,
                 "values": {
-                  "recovery-amount": "2500 + (Mystical Creature Mastery Lv x 100)",
+                  "base-recovery-amount": "2,500",
+                  "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                   "area-of-effect": "11x11",
-                  "recovery-amount-commune": "3750 + (Mystical Creature Mastery Lv x 150)",
+                  "base-recovery-amount-commune": "3,750",
+                  "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                   "area-of-effect-commune": "15x15",
                   "sp-cost": "77"
                 }
@@ -13376,9 +13416,11 @@ export const spiritHandlerData = {
               {
                 "level": 6,
                 "values": {
-                  "recovery-amount": "3000 + (Mystical Creature Mastery Lv x 100)",
+                  "base-recovery-amount": "3,000",
+                  "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                   "area-of-effect": "11x11",
-                  "recovery-amount-commune": "4500 + (Mystical Creature Mastery Lv x 150)",
+                  "base-recovery-amount-commune": "4,500",
+                  "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                   "area-of-effect-commune": "15x15",
                   "sp-cost": "81"
                 }
@@ -13386,9 +13428,11 @@ export const spiritHandlerData = {
               {
                 "level": 7,
                 "values": {
-                  "recovery-amount": "3500 + (Mystical Creature Mastery Lv x 100)",
+                  "base-recovery-amount": "3,500",
+                  "bonus-recovery-amount-mystical-creature-mastery": "Mystical Creature Mastery Lv x 100",
                   "area-of-effect": "13x13",
-                  "recovery-amount-commune": "5250 + (Mystical Creature Mastery Lv x 150)",
+                  "base-recovery-amount-commune": "5,250",
+                  "bonus-recovery-amount-commune-mystical-creature-mastery": "Mystical Creature Mastery Lv x 150",
                   "area-of-effect-commune": "17x17",
                   "sp-cost": "85"
                 }
@@ -16181,7 +16225,7 @@ export const spiritHandlerData = {
       "prerequisiteText": "Mystical Creature Mastery 10, Commune with Kisul 1",
       "group": "Active(AP)",
       "type": "Supportive",
-      "target": "Single Target",
+      "target": "Party Member (e x cept other Doram or Self)",
       "recoversAp": "",
       "consumesAp": "100",
       "ammunition": "",
@@ -16298,7 +16342,7 @@ export const spiritHandlerData = {
           },
           {
             "label": "Target",
-            "value": "Single Target"
+            "value": "Party Member (e x cept other Doram or Self)"
           },
           {
             "label": "Duration",

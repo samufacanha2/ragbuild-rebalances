@@ -1,5 +1,5 @@
 export const shiranuiData = {
-  "generatedAt": "2026-07-13T19:36:24.932Z",
+  "generatedAt": "2026-07-13T20:14:16.682Z",
   "classId": 4305,
   "classSlug": "shiranui",
   "className": "Shiranui",

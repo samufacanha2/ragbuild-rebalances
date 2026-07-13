@@ -1,5 +1,5 @@
 export const cardinalData = {
-  "generatedAt": "2026-07-13T19:36:18.600Z",
+  "generatedAt": "2026-07-13T20:14:10.368Z",
   "classId": 4256,
   "classSlug": "cardinal",
   "className": "Cardinal",

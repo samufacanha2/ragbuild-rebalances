@@ -1,5 +1,5 @@
 export const aliteaData = {
-  "generatedAt": "2026-07-13T19:36:30.020Z",
+  "generatedAt": "2026-07-13T20:14:21.746Z",
   "classId": 4355,
   "classSlug": "alitea",
   "className": "Alitea",

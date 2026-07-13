@@ -1,5 +1,5 @@
 export const shadowCrossData = {
-  "generatedAt": "2026-07-13T19:36:14.462Z",
+  "generatedAt": "2026-07-13T20:14:06.213Z",
   "classId": 4254,
   "classSlug": "shadow-cross",
   "className": "Shadow Cross",

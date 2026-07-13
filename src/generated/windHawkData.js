@@ -1,5 +1,5 @@
 export const windHawkData = {
-  "generatedAt": "2026-07-13T19:36:20.541Z",
+  "generatedAt": "2026-07-13T20:14:12.315Z",
   "classId": 4257,
   "classSlug": "wind-hawk",
   "className": "Wind Hawk",

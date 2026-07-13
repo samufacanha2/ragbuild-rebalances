@@ -1,5 +1,5 @@
 export const inquisitorData = {
-  "generatedAt": "2026-07-13T19:36:19.661Z",
+  "generatedAt": "2026-07-13T20:14:11.443Z",
   "classId": 4262,
   "classSlug": "inquisitor",
   "className": "Inquisitor",

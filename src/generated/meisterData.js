@@ -1,5 +1,5 @@
 export const meisterData = {
-  "generatedAt": "2026-07-13T19:36:12.707Z",
+  "generatedAt": "2026-07-13T20:14:04.492Z",
   "classId": 4253,
   "classSlug": "meister",
   "className": "Meister",

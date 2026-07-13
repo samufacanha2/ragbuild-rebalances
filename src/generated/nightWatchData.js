@@ -1,5 +1,5 @@
 export const nightWatchData = {
-  "generatedAt": "2026-07-13T19:36:23.222Z",
+  "generatedAt": "2026-07-13T20:14:14.978Z",
   "classId": 4306,
   "classSlug": "night-watch",
   "className": "Night Watch",

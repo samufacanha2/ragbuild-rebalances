@@ -1,5 +1,5 @@
 export const archMageData = {
-  "generatedAt": "2026-07-13T19:36:16.469Z",
+  "generatedAt": "2026-07-13T20:14:08.238Z",
   "classId": 4255,
   "classSlug": "arch-mage",
   "className": "Arch Mage",

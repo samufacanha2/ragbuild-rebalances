@@ -1,5 +1,5 @@
 export const imperialGuardData = {
-  "generatedAt": "2026-07-13T19:36:11.530Z",
+  "generatedAt": "2026-07-13T20:14:03.331Z",
   "classId": 4258,
   "classSlug": "imperial-guard",
   "className": "Imperial Guard",

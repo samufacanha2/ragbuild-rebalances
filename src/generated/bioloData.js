@@ -1,5 +1,5 @@
 export const bioloData = {
-  "generatedAt": "2026-07-13T19:36:13.686Z",
+  "generatedAt": "2026-07-13T20:14:05.450Z",
   "classId": 4259,
   "classSlug": "biolo",
   "className": "Biolo",

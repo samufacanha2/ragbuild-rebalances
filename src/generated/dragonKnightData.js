@@ -1,5 +1,5 @@
 export const dragonKnightData = {
-  "generatedAt": "2026-07-13T19:36:10.547Z",
+  "generatedAt": "2026-07-13T20:14:02.347Z",
   "classId": 4252,
   "classSlug": "dragon-knight",
   "className": "Dragon Knight",

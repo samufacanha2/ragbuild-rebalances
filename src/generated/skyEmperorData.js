@@ -1,5 +1,5 @@
 export const skyEmperorData = {
-  "generatedAt": "2026-07-13T19:36:25.896Z",
+  "generatedAt": "2026-07-13T20:14:17.645Z",
   "classId": 4302,
   "classSlug": "sky-emperor",
   "className": "Sky Emperor",

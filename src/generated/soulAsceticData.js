@@ -1,5 +1,5 @@
 export const soulAsceticData = {
-  "generatedAt": "2026-07-13T19:36:26.943Z",
+  "generatedAt": "2026-07-13T20:14:18.697Z",
   "classId": 4303,
   "classSlug": "soul-ascetic",
   "className": "Soul Ascetic",
@@ -922,7 +922,7 @@ export const soulAsceticData = {
           "prerequisiteText": "Talisman Mastery 1",
           "group": "Active",
           "type": "Recovery",
-          "target": "Single Target",
+          "target": "Self or Party Member",
           "recoversAp": "2",
           "consumesAp": "",
           "ammunition": "1 Soul Talisman",
@@ -1028,7 +1028,7 @@ export const soulAsceticData = {
               },
               {
                 "label": "Target",
-                "value": "Single Target"
+                "value": "Self or Party Member"
               },
               {
                 "label": "Ammunition",
@@ -1041,12 +1041,24 @@ export const soulAsceticData = {
               {
                 "label": "Pulse",
                 "value": "3 seconds"
+              },
+              {
+                "label": "HP Recovery",
+                "value": "2,500 + (Talisman Mastery Lv x 250)"
               }
             ],
             "levelTables": [
               {
                 "title": "Level Scaling",
                 "columns": [
+                  {
+                    "id": "base-recovery-hp",
+                    "label": "Base Recovery (HP)"
+                  },
+                  {
+                    "id": "bonus-hp-recovery-talisman-mastery",
+                    "label": "Bonus HP Recovery (Talisman Mastery)"
+                  },
                   {
                     "id": "sp-cost",
                     "label": "SP Cost"
@@ -1060,6 +1072,8 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
+                      "base-recovery-hp": "500",
+                      "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 50",
                       "duration": "180 seconds",
                       "sp-cost": "50"
                     }
@@ -1067,6 +1081,8 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
+                      "base-recovery-hp": "1,000",
+                      "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 100",
                       "duration": "210 seconds",
                       "sp-cost": "55"
                     }
@@ -1074,6 +1090,8 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
+                      "base-recovery-hp": "1,500",
+                      "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 150",
                       "duration": "240 seconds",
                       "sp-cost": "60"
                     }
@@ -1081,6 +1099,8 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
+                      "base-recovery-hp": "2,000",
+                      "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 200",
                       "duration": "270 seconds",
                       "sp-cost": "65"
                     }
@@ -1088,6 +1108,8 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
+                      "base-recovery-hp": "2,500",
+                      "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 250",
                       "duration": "300 seconds",
                       "sp-cost": "70"
                     }
@@ -1112,7 +1134,7 @@ export const soulAsceticData = {
           "prerequisiteText": "Talisman Mastery 1",
           "group": "Active",
           "type": "Buff",
-          "target": "Single Target",
+          "target": "Self or Party Member",
           "recoversAp": "2",
           "consumesAp": "",
           "ammunition": "1 Soul Talisman",
@@ -1218,7 +1240,7 @@ export const soulAsceticData = {
               },
               {
                 "label": "Target",
-                "value": "Single Target"
+                "value": "Self or Party Member"
               },
               {
                 "label": "Ammunition",
@@ -1307,7 +1329,7 @@ export const soulAsceticData = {
           "prerequisiteText": "Talisman Mastery 1",
           "group": "Active",
           "type": "Buff",
-          "target": "Single Target",
+          "target": "Self or Party Member",
           "recoversAp": "2",
           "consumesAp": "",
           "ammunition": "1 Soul Talisman",
@@ -1413,7 +1435,7 @@ export const soulAsceticData = {
               },
               {
                 "label": "Target",
-                "value": "Single Target"
+                "value": "Self or Party Member"
               },
               {
                 "label": "Ammunition",
@@ -2044,6 +2066,14 @@ export const soulAsceticData = {
               {
                 "label": "Ammunition",
                 "value": "10 Soul Talismans"
+              },
+              {
+                "label": "HP Recovery",
+                "value": "3,000 + (Talisman Mastery Lv x 250)"
+              },
+              {
+                "label": "SP Recovery",
+                "value": "250 + (Talisman Mastery Lv x 25)"
               }
             ],
             "levelTables": [
@@ -2051,12 +2081,20 @@ export const soulAsceticData = {
                 "title": "Level Scaling",
                 "columns": [
                   {
-                    "id": "hp-recovery",
-                    "label": "HP Recovery"
+                    "id": "base-recovery-hp",
+                    "label": "Base Recovery (HP)"
                   },
                   {
-                    "id": "sp-recovery",
-                    "label": "SP Recovery"
+                    "id": "bonus-hp-recovery-talisman-mastery",
+                    "label": "Bonus HP Recovery (Talisman Mastery)"
+                  },
+                  {
+                    "id": "base-recovery-sp",
+                    "label": "Base Recovery (SP)"
+                  },
+                  {
+                    "id": "bonus-sp-recovery-talisman-mastery",
+                    "label": "Bonus SP Recovery (Talisman Mastery)"
                   },
                   {
                     "id": "sp-cost",
@@ -2071,8 +2109,10 @@ export const soulAsceticData = {
                   {
                     "level": 1,
                     "values": {
-                      "hp-recovery": "1000 + (Talisman Mastery Lv x 50)",
-                      "sp-recovery": "50 + (Talisman Mastery Lv x 5)",
+                      "base-recovery-hp": "1,000",
+                      "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 50",
+                      "base-recovery-sp": "50",
+                      "bonus-sp-recovery-talisman-mastery": "Talisman Mastery Lv x 5",
                       "area-of-effect": "5x5",
                       "sp-cost": "76"
                     }
@@ -2080,8 +2120,10 @@ export const soulAsceticData = {
                   {
                     "level": 2,
                     "values": {
-                      "hp-recovery": "1500 + (Talisman Mastery Lv x 100)",
-                      "sp-recovery": "100 + (Talisman Mastery Lv x 10)",
+                      "base-recovery-hp": "1,500",
+                      "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 100",
+                      "base-recovery-sp": "100",
+                      "bonus-sp-recovery-talisman-mastery": "Talisman Mastery Lv x 10",
                       "area-of-effect": "5x5",
                       "sp-cost": "92"
                     }
@@ -2089,8 +2131,10 @@ export const soulAsceticData = {
                   {
                     "level": 3,
                     "values": {
-                      "hp-recovery": "2000 + (Talisman Mastery Lv x 150)",
-                      "sp-recovery": "150 + (Talisman Mastery Lv x 15)",
+                      "base-recovery-hp": "2,000",
+                      "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 150",
+                      "base-recovery-sp": "150",
+                      "bonus-sp-recovery-talisman-mastery": "Talisman Mastery Lv x 15",
                       "area-of-effect": "7x7",
                       "sp-cost": "108"
                     }
@@ -2098,8 +2142,10 @@ export const soulAsceticData = {
                   {
                     "level": 4,
                     "values": {
-                      "hp-recovery": "2500 + (Talisman Mastery Lv x 200)",
-                      "sp-recovery": "200 + (Talisman Mastery Lv x 20)",
+                      "base-recovery-hp": "2,500",
+                      "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 200",
+                      "base-recovery-sp": "200",
+                      "bonus-sp-recovery-talisman-mastery": "Talisman Mastery Lv x 20",
                       "area-of-effect": "7x7",
                       "sp-cost": "124"
                     }
@@ -2107,8 +2153,10 @@ export const soulAsceticData = {
                   {
                     "level": 5,
                     "values": {
-                      "hp-recovery": "3000 + (Talisman Mastery Lv x 250)",
-                      "sp-recovery": "250 + (Talisman Mastery Lv x 25)",
+                      "base-recovery-hp": "3,000",
+                      "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 250",
+                      "base-recovery-sp": "250",
+                      "bonus-sp-recovery-talisman-mastery": "Talisman Mastery Lv x 25",
                       "area-of-effect": "9x9",
                       "sp-cost": "140"
                     }
@@ -2133,7 +2181,7 @@ export const soulAsceticData = {
           "prerequisiteText": "Talisman Mastery 1",
           "group": "Active",
           "type": "Buff",
-          "target": "Single Target",
+          "target": "Self or Party Member",
           "recoversAp": "2",
           "consumesAp": "",
           "ammunition": "5 Soul Talisman",
@@ -2239,7 +2287,7 @@ export const soulAsceticData = {
               },
               {
                 "label": "Target",
-                "value": "Single Target"
+                "value": "Self or Party Member"
               },
               {
                 "label": "Ammunition",
@@ -18632,7 +18680,7 @@ export const soulAsceticData = {
       "prerequisiteText": "Talisman Mastery 1",
       "group": "Active",
       "type": "Recovery",
-      "target": "Single Target",
+      "target": "Self or Party Member",
       "recoversAp": "2",
       "consumesAp": "",
       "ammunition": "1 Soul Talisman",
@@ -18738,7 +18786,7 @@ export const soulAsceticData = {
           },
           {
             "label": "Target",
-            "value": "Single Target"
+            "value": "Self or Party Member"
           },
           {
             "label": "Ammunition",
@@ -18751,12 +18799,24 @@ export const soulAsceticData = {
           {
             "label": "Pulse",
             "value": "3 seconds"
+          },
+          {
+            "label": "HP Recovery",
+            "value": "2,500 + (Talisman Mastery Lv x 250)"
           }
         ],
         "levelTables": [
           {
             "title": "Level Scaling",
             "columns": [
+              {
+                "id": "base-recovery-hp",
+                "label": "Base Recovery (HP)"
+              },
+              {
+                "id": "bonus-hp-recovery-talisman-mastery",
+                "label": "Bonus HP Recovery (Talisman Mastery)"
+              },
               {
                 "id": "sp-cost",
                 "label": "SP Cost"
@@ -18770,6 +18830,8 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
+                  "base-recovery-hp": "500",
+                  "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 50",
                   "duration": "180 seconds",
                   "sp-cost": "50"
                 }
@@ -18777,6 +18839,8 @@ export const soulAsceticData = {
               {
                 "level": 2,
                 "values": {
+                  "base-recovery-hp": "1,000",
+                  "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 100",
                   "duration": "210 seconds",
                   "sp-cost": "55"
                 }
@@ -18784,6 +18848,8 @@ export const soulAsceticData = {
               {
                 "level": 3,
                 "values": {
+                  "base-recovery-hp": "1,500",
+                  "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 150",
                   "duration": "240 seconds",
                   "sp-cost": "60"
                 }
@@ -18791,6 +18857,8 @@ export const soulAsceticData = {
               {
                 "level": 4,
                 "values": {
+                  "base-recovery-hp": "2,000",
+                  "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 200",
                   "duration": "270 seconds",
                   "sp-cost": "65"
                 }
@@ -18798,6 +18866,8 @@ export const soulAsceticData = {
               {
                 "level": 5,
                 "values": {
+                  "base-recovery-hp": "2,500",
+                  "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 250",
                   "duration": "300 seconds",
                   "sp-cost": "70"
                 }
@@ -18822,7 +18892,7 @@ export const soulAsceticData = {
       "prerequisiteText": "Talisman Mastery 1",
       "group": "Active",
       "type": "Buff",
-      "target": "Single Target",
+      "target": "Self or Party Member",
       "recoversAp": "2",
       "consumesAp": "",
       "ammunition": "1 Soul Talisman",
@@ -18928,7 +18998,7 @@ export const soulAsceticData = {
           },
           {
             "label": "Target",
-            "value": "Single Target"
+            "value": "Self or Party Member"
           },
           {
             "label": "Ammunition",
@@ -19017,7 +19087,7 @@ export const soulAsceticData = {
       "prerequisiteText": "Talisman Mastery 1",
       "group": "Active",
       "type": "Buff",
-      "target": "Single Target",
+      "target": "Self or Party Member",
       "recoversAp": "2",
       "consumesAp": "",
       "ammunition": "1 Soul Talisman",
@@ -19123,7 +19193,7 @@ export const soulAsceticData = {
           },
           {
             "label": "Target",
-            "value": "Single Target"
+            "value": "Self or Party Member"
           },
           {
             "label": "Ammunition",
@@ -19754,6 +19824,14 @@ export const soulAsceticData = {
           {
             "label": "Ammunition",
             "value": "10 Soul Talismans"
+          },
+          {
+            "label": "HP Recovery",
+            "value": "3,000 + (Talisman Mastery Lv x 250)"
+          },
+          {
+            "label": "SP Recovery",
+            "value": "250 + (Talisman Mastery Lv x 25)"
           }
         ],
         "levelTables": [
@@ -19761,12 +19839,20 @@ export const soulAsceticData = {
             "title": "Level Scaling",
             "columns": [
               {
-                "id": "hp-recovery",
-                "label": "HP Recovery"
+                "id": "base-recovery-hp",
+                "label": "Base Recovery (HP)"
               },
               {
-                "id": "sp-recovery",
-                "label": "SP Recovery"
+                "id": "bonus-hp-recovery-talisman-mastery",
+                "label": "Bonus HP Recovery (Talisman Mastery)"
+              },
+              {
+                "id": "base-recovery-sp",
+                "label": "Base Recovery (SP)"
+              },
+              {
+                "id": "bonus-sp-recovery-talisman-mastery",
+                "label": "Bonus SP Recovery (Talisman Mastery)"
               },
               {
                 "id": "sp-cost",
@@ -19781,8 +19867,10 @@ export const soulAsceticData = {
               {
                 "level": 1,
                 "values": {
-                  "hp-recovery": "1000 + (Talisman Mastery Lv x 50)",
-                  "sp-recovery": "50 + (Talisman Mastery Lv x 5)",
+                  "base-recovery-hp": "1,000",
+                  "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 50",
+                  "base-recovery-sp": "50",
+                  "bonus-sp-recovery-talisman-mastery": "Talisman Mastery Lv x 5",
                   "area-of-effect": "5x5",
                   "sp-cost": "76"
                 }
@@ -19790,8 +19878,10 @@ export const soulAsceticData = {
               {
                 "level": 2,
                 "values": {
-                  "hp-recovery": "1500 + (Talisman Mastery Lv x 100)",
-                  "sp-recovery": "100 + (Talisman Mastery Lv x 10)",
+                  "base-recovery-hp": "1,500",
+                  "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 100",
+                  "base-recovery-sp": "100",
+                  "bonus-sp-recovery-talisman-mastery": "Talisman Mastery Lv x 10",
                   "area-of-effect": "5x5",
                   "sp-cost": "92"
                 }
@@ -19799,8 +19889,10 @@ export const soulAsceticData = {
               {
                 "level": 3,
                 "values": {
-                  "hp-recovery": "2000 + (Talisman Mastery Lv x 150)",
-                  "sp-recovery": "150 + (Talisman Mastery Lv x 15)",
+                  "base-recovery-hp": "2,000",
+                  "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 150",
+                  "base-recovery-sp": "150",
+                  "bonus-sp-recovery-talisman-mastery": "Talisman Mastery Lv x 15",
                   "area-of-effect": "7x7",
                   "sp-cost": "108"
                 }
@@ -19808,8 +19900,10 @@ export const soulAsceticData = {
               {
                 "level": 4,
                 "values": {
-                  "hp-recovery": "2500 + (Talisman Mastery Lv x 200)",
-                  "sp-recovery": "200 + (Talisman Mastery Lv x 20)",
+                  "base-recovery-hp": "2,500",
+                  "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 200",
+                  "base-recovery-sp": "200",
+                  "bonus-sp-recovery-talisman-mastery": "Talisman Mastery Lv x 20",
                   "area-of-effect": "7x7",
                   "sp-cost": "124"
                 }
@@ -19817,8 +19911,10 @@ export const soulAsceticData = {
               {
                 "level": 5,
                 "values": {
-                  "hp-recovery": "3000 + (Talisman Mastery Lv x 250)",
-                  "sp-recovery": "250 + (Talisman Mastery Lv x 25)",
+                  "base-recovery-hp": "3,000",
+                  "bonus-hp-recovery-talisman-mastery": "Talisman Mastery Lv x 250",
+                  "base-recovery-sp": "250",
+                  "bonus-sp-recovery-talisman-mastery": "Talisman Mastery Lv x 25",
                   "area-of-effect": "9x9",
                   "sp-cost": "140"
                 }
@@ -19843,7 +19939,7 @@ export const soulAsceticData = {
       "prerequisiteText": "Talisman Mastery 1",
       "group": "Active",
       "type": "Buff",
-      "target": "Single Target",
+      "target": "Self or Party Member",
       "recoversAp": "2",
       "consumesAp": "",
       "ammunition": "5 Soul Talisman",
@@ -19949,7 +20045,7 @@ export const soulAsceticData = {
           },
           {
             "label": "Target",
-            "value": "Single Target"
+            "value": "Self or Party Member"
           },
           {
             "label": "Ammunition",

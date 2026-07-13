@@ -1,5 +1,5 @@
 export const trouvereData = {
-  "generatedAt": "2026-07-13T19:36:22.441Z",
+  "generatedAt": "2026-07-13T20:14:14.202Z",
   "classId": 4264,
   "classSlug": "trouvere",
   "className": "Trouvere",

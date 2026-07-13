@@ -1,5 +1,5 @@
 export const hyperNoviceData = {
-  "generatedAt": "2026-07-13T19:36:29.063Z",
+  "generatedAt": "2026-07-13T20:14:20.788Z",
   "classId": 4307,
   "classSlug": "hyper-novice",
   "className": "Hyper Novice",

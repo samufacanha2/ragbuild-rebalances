@@ -815,6 +815,8 @@ function buildSkillDetails(skill) {
   addDetail(rows, "AP Consumed", skill.consumesAp);
   addDetail(rows, "Pulse", descriptionValue(skill.description, /every\s+([0-9.]+\s*seconds?)/i));
   addDetail(rows, "Property", descriptionValue(skill.description, /inflicts\s+([a-z ]+property\s+(?:magical|physical)\s+damage)/i));
+  addDetail(rows, "HP Recovery", recoverySpecValue(skill, "HP Recovery"));
+  addDetail(rows, "SP Recovery", recoverySpecValue(skill, "SP Recovery"));
   addDetail(rows, "Damage", damageSpecValue(skill));
   for (const formulaRow of levelTable?.formulaRows ?? []) {
     addDetail(rows, formulaRow.label, formulaRow.value);
@@ -900,11 +902,11 @@ function parseLevelLine(rawLine, row, table, formulaRows) {
 }
 
 function parseRecoverySegments(line, row, table) {
-  const recoveryPattern = /(?:^|\s*\/\s*)((?:HP|SP)\s+recovery(?:\s+amount)?|Recovery Amount(?:\([^)]+\))?)\s*:?\s*([0-9,]+\s*\+\s*\([^)]+?\s*x\s*[0-9]+\))\s*(?:\/\s*(?:(?:[\w\s]+?\s+)?aoe|range|area of effect)\s*:?\s*([0-9]+\s*x\s*[0-9]+\s*cells?))?/gi;
+  const recoveryPattern = /(?:^|\s*\/\s*)((?:HP|SP)\s+recovery(?:\s+amount)?|Healing amount|Recovery Amount(?:\([^)]+\))?)\s*:?\s*([0-9,]+\s*\+\s*\([^)]+?\s*x\s*[0-9]+\))\s*(?:\/\s*(?:(?:[\w\s]+?\s+)?aoe|range|area of effect)\s*:?\s*([0-9]+\s*x\s*[0-9]+\s*cells?))?/gi;
   let parsed = false;
   const remaining = line.replace(recoveryPattern, (_match, rawLabel, rawValue, rawArea) => {
     const label = recoveryLabel(rawLabel);
-    setLevelValue(row, table, label, formatFormulaExpression(rawValue));
+    setRecoveryFormulaValues(row, table, label, rawValue);
 
     if (rawArea) {
       const qualifier = recoveryQualifier(rawLabel);
@@ -918,11 +920,57 @@ function parseRecoverySegments(line, row, table) {
   return { line: remaining.trim(), parsed };
 }
 
+function setRecoveryFormulaValues(row, table, label, rawValue) {
+  const parts = recoveryFormulaParts(rawValue);
+  if (!parts) {
+    setLevelValue(row, table, label, formatFormulaExpression(rawValue));
+    return;
+  }
+
+  setLevelValue(row, table, recoveryBaseLabel(label), formatNumber(parts.base));
+  setLevelValue(row, table, recoveryBonusLabel(label, parts.source), `${parts.source} x ${formatNumber(parts.multiplier)}`);
+}
+
+function recoveryFormulaParts(value) {
+  const match = normalizeWhitespace(value).match(/^([0-9,]+)\s*\+\s*\((.+?)\s*x\s*([0-9,]+)\)$/i);
+  if (!match) return null;
+
+  return {
+    base: match[1],
+    source: recoveryFormulaSource(match[2]),
+    multiplier: match[3]
+  };
+}
+
+function recoveryFormulaSource(value) {
+  return normalizeFormulaSource(value).replace(/\bLvl\b/gi, "Lv");
+}
+
+function recoveryBaseLabel(label) {
+  if (label === "HP Recovery") return "Base Recovery (HP)";
+  if (label === "SP Recovery") return "Base Recovery (SP)";
+  return `Base ${label}`;
+}
+
+function recoveryBonusLabel(label, source) {
+  const sourceLabel = recoveryBonusSourceLabel(source);
+  if (label === "HP Recovery") return `Bonus HP Recovery (${sourceLabel})`;
+  if (label === "SP Recovery") return `Bonus SP Recovery (${sourceLabel})`;
+  return `Bonus ${label} (${sourceLabel})`;
+}
+
+function recoveryBonusSourceLabel(source) {
+  return normalizeSkillValue(source)
+    .replace(/\s+Lv$/i, "")
+    .replace(/\s+Level$/i, "");
+}
+
 function recoveryLabel(label) {
   const normalized = normalizeWhitespace(label);
   const qualifier = recoveryQualifier(normalized);
   if (/^HP\s+recovery/i.test(normalized)) return "HP Recovery";
   if (/^SP\s+recovery/i.test(normalized)) return "SP Recovery";
+  if (/^Healing amount$/i.test(normalized)) return "HP Recovery";
   return qualifier ? `Recovery Amount (${qualifier})` : "Recovery Amount";
 }
 
@@ -931,9 +979,40 @@ function recoveryQualifier(label) {
 }
 
 function formatFormulaExpression(value) {
+  const parts = recoveryFormulaParts(value);
+  if (parts) return `${formatNumber(parts.base)} + (${parts.source} x ${formatNumber(parts.multiplier)})`;
+
   return normalizeSkillValue(value)
     .replace(/\s*\+\s*/g, " + ")
     .replace(/\s*x\s*/gi, " x ");
+}
+
+function recoverySpecValue(skill, label) {
+  const detail = maxLevelDetail(skill);
+  if (!detail) return "";
+
+  const values = [];
+  for (const rawLine of detail.text.split("\n")) {
+    for (const value of recoverySpecValuesFromLevelLine(rawLine, label)) {
+      if (value && !values.includes(value)) values.push(value);
+    }
+  }
+
+  return values.join("/");
+}
+
+function recoverySpecValuesFromLevelLine(rawLine, label) {
+  const line = normalizeWhitespace(rawLine);
+  if (!line) return [];
+
+  const values = [];
+  for (const segment of line.split(/\s*\/\s*/)) {
+    const match = segment.match(/^((?:HP|SP)\s+recovery(?:\s+amount)?|Healing amount|Recovery Amount(?:\([^)]+\))?)\s*:?\s*([0-9,]+\s*\+\s*\([^)]+?\s*x\s*[0-9,]+\))/i);
+    if (!match || recoveryLabel(match[1]) !== label) continue;
+    values.push(formatFormulaExpression(match[2]));
+  }
+
+  return values;
 }
 
 function parseDamageSegment(line, row, table, formulaRows) {
@@ -1392,6 +1471,10 @@ function orderLevelColumns(columns) {
     "Melee Damage Bonus",
     "Long Ranged Damage Bonus",
     "All Property Damage Bonus",
+    "Base Recovery (HP)",
+    "Bonus HP Recovery (Talisman Mastery)",
+    "Base Recovery (SP)",
+    "Bonus SP Recovery (Talisman Mastery)",
     "HP Recovery",
     "SP Recovery",
     "Recovery Amount",
@@ -1623,6 +1706,7 @@ function missingSkillDetails(current, rows) {
   for (const [label, field] of Object.entries(fields)) {
     if (!current[field] && rows[label]) details[field] = rows[label];
   }
+  if (shouldPreferIrowikiTarget(current.target, rows.Target)) details.target = rows.Target;
 
   if (rows["AP Generated"] && !current.recoversAp) {
     details.recoversAp = rows["AP Generated"];
@@ -1634,6 +1718,14 @@ function missingSkillDetails(current, rows) {
   }
 
   return details;
+}
+
+function shouldPreferIrowikiTarget(currentTarget, irowikiTarget) {
+  const current = normalizeWhitespace(currentTarget).toLowerCase();
+  const candidate = normalizeWhitespace(irowikiTarget);
+  if (!candidate || !current) return false;
+  if (!/^single target$/.test(current)) return false;
+  return /\b(?:self|party member|caster|ally|allies)\b/i.test(candidate);
 }
 
 function browikiDescription(html) {

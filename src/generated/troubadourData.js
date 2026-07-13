@@ -1,5 +1,5 @@
 export const troubadourData = {
-  "generatedAt": "2026-07-13T19:36:21.493Z",
+  "generatedAt": "2026-07-13T20:14:13.264Z",
   "classId": 4263,
   "classSlug": "troubadour",
   "className": "Troubadour",

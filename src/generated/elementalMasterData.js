@@ -1,5 +1,5 @@
 export const elementalMasterData = {
-  "generatedAt": "2026-07-13T19:36:17.631Z",
+  "generatedAt": "2026-07-13T20:14:09.405Z",
   "classId": 4261,
   "classSlug": "elemental-master",
   "className": "Elemental Master",
