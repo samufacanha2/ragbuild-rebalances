@@ -1,5 +1,5 @@
 export const meisterData = {
-  "generatedAt": "2026-07-10T18:52:47.649Z",
+  "generatedAt": "2026-07-13T19:36:12.707Z",
   "classId": 4253,
   "classSlug": "meister",
   "className": "Meister",
@@ -760,6 +760,10 @@ export const meisterData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "5,150% ATK per hit"
               }
             ],
             "levelTables": [
@@ -1733,6 +1737,10 @@ export const meisterData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "9,250% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2033,6 +2041,10 @@ export const meisterData = {
               {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Damage",
+                "value": "1,825% ATK per hit/1,850% ATK per hit (A x e Stomp)"
               }
             ],
             "levelTables": [
@@ -2377,6 +2389,10 @@ export const meisterData = {
               {
                 "label": "AP Consumed",
                 "value": "150"
+              },
+              {
+                "label": "Damage",
+                "value": "36,000% ATK"
               }
             ],
             "levelTables": [
@@ -2960,6 +2976,10 @@ export const meisterData = {
               {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Damage",
+                "value": "5,050% ATK per hit"
               }
             ],
             "levelTables": [
@@ -3142,6 +3162,10 @@ export const meisterData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "17,500% ATK"
               }
             ],
             "levelTables": [
@@ -3268,6 +3292,10 @@ export const meisterData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "4,550% ATK per hit/5,150% ATK per hit (A x e Stomp)"
               }
             ],
             "levelTables": [
@@ -3577,6 +3605,10 @@ export const meisterData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "4,000% ATK per hit"
               }
             ],
             "levelTables": [
@@ -5190,6 +5222,10 @@ export const meisterData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "1,300% ATK"
               }
             ],
             "levelTables": [
@@ -5903,6 +5939,10 @@ export const meisterData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5 ~ 7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "1,100% ATK"
               }
             ],
             "levelTables": [
@@ -6972,6 +7012,10 @@ export const meisterData = {
               {
                 "label": "Ammunition",
                 "value": "1 Vulcan Bullet"
+              },
+              {
+                "label": "Damage",
+                "value": "690% ATK"
               }
             ],
             "levelTables": [
@@ -7824,6 +7868,10 @@ export const meisterData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "1,300% ATK"
               }
             ],
             "levelTables": [
@@ -9864,6 +9912,10 @@ export const meisterData = {
               {
                 "label": "Ammunition",
                 "value": "1 Cannon Ball"
+              },
+              {
+                "label": "Damage",
+                "value": "2,150% ATK"
               }
             ],
             "levelTables": [
@@ -18267,6 +18319,10 @@ export const meisterData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "5,150% ATK per hit"
           }
         ],
         "levelTables": [
@@ -19240,6 +19296,10 @@ export const meisterData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "9,250% ATK per hit"
           }
         ],
         "levelTables": [
@@ -19540,6 +19600,10 @@ export const meisterData = {
           {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Damage",
+            "value": "1,825% ATK per hit/1,850% ATK per hit (A x e Stomp)"
           }
         ],
         "levelTables": [
@@ -19884,6 +19948,10 @@ export const meisterData = {
           {
             "label": "AP Consumed",
             "value": "150"
+          },
+          {
+            "label": "Damage",
+            "value": "36,000% ATK"
           }
         ],
         "levelTables": [
@@ -20467,6 +20535,10 @@ export const meisterData = {
           {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Damage",
+            "value": "5,050% ATK per hit"
           }
         ],
         "levelTables": [
@@ -20649,6 +20721,10 @@ export const meisterData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "17,500% ATK"
           }
         ],
         "levelTables": [
@@ -20775,6 +20851,10 @@ export const meisterData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "4,550% ATK per hit/5,150% ATK per hit (A x e Stomp)"
           }
         ],
         "levelTables": [
@@ -21084,6 +21164,10 @@ export const meisterData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "4,000% ATK per hit"
           }
         ],
         "levelTables": [

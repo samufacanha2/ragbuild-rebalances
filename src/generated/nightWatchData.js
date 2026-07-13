@@ -1,5 +1,5 @@
 export const nightWatchData = {
-  "generatedAt": "2026-07-10T18:52:58.327Z",
+  "generatedAt": "2026-07-13T19:36:23.222Z",
   "classId": 4306,
   "classSlug": "night-watch",
   "className": "Night Watch",
@@ -1257,6 +1257,10 @@ export const nightWatchData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(12,000 + (Grenade Mastery Lv x 50))% ATK"
               }
             ],
             "levelTables": [
@@ -1676,6 +1680,10 @@ export const nightWatchData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "(1500 + (aiming count x 500))% ATK per hit (Gatling gun)/(4300 + (aiming count x 1000))% ATK per hit (Shotgun)"
               }
             ],
             "levelTables": [
@@ -1933,6 +1941,10 @@ export const nightWatchData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "(16200 + (aiming count x 1750))% ATK (Rifle)/(18200 + (aiming count x 1750))% ATK (Pistol)"
               }
             ],
             "levelTables": [
@@ -2191,6 +2203,10 @@ export const nightWatchData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "(9700 + (Aiming count x 750))% ATK per hit (Grenade Launcher)/(15400 + (Aiming count x 750))% ATK (Rifle)"
               }
             ],
             "levelTables": [
@@ -2448,6 +2464,10 @@ export const nightWatchData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "(2750 + (Aiming count x 500))% ATK per hit (Gatling)/(4300 + (Aiming count x 500))% ATK per hit (Revolver)"
               }
             ],
             "levelTables": [
@@ -2726,6 +2746,10 @@ export const nightWatchData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "(17500 + (Aiming count x 2500))% ATK (Shotgun)/(16500 + (Aiming count x 2500))% ATK (Grenade Launcher)"
               }
             ],
             "levelTables": [
@@ -2974,6 +2998,10 @@ export const nightWatchData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "(9,000 + (Grenade Mastery Lv x 20))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -3159,6 +3187,10 @@ export const nightWatchData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "1,770% ATK per hit/2,070% ATK per hit (Hidden Card : Pistol)/2,270% ATK per hit (Hidden Card : Rifle)"
               }
             ],
             "levelTables": []
@@ -3254,6 +3286,10 @@ export const nightWatchData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "6,400% ATK per hit/8,400% ATK per hit (Hidden Card : Shotgun)/7,400% ATK per hit (Hidden Card : Gatling)/8,100% ATK per hit (Hidden Card : Launcher)"
               }
             ],
             "levelTables": []
@@ -3391,6 +3427,10 @@ export const nightWatchData = {
               {
                 "label": "Pulse",
                 "value": "0.25 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(4,800 + (Grenade Mastery Lv x 30))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -3807,6 +3847,10 @@ export const nightWatchData = {
               {
                 "label": "Pulse",
                 "value": "0.25 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(23,000 + (Grenade Mastery Lv x 100))% ATK per hit/(2,800 + (Grenade Mastery Lv x 30))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -12397,6 +12441,10 @@ export const nightWatchData = {
               {
                 "label": "Ammunition",
                 "value": "5 Bullets"
+              },
+              {
+                "label": "Damage",
+                "value": "1,000% ATK"
               }
             ],
             "levelTables": [
@@ -14199,6 +14247,10 @@ export const nightWatchData = {
               {
                 "label": "Ammunition",
                 "value": "10 Bullets"
+              },
+              {
+                "label": "Damage",
+                "value": "550% ATK"
               }
             ],
             "levelTables": [
@@ -16143,6 +16195,10 @@ export const nightWatchData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(12,000 + (Grenade Mastery Lv x 50))% ATK"
           }
         ],
         "levelTables": [
@@ -16562,6 +16618,10 @@ export const nightWatchData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "(1500 + (aiming count x 500))% ATK per hit (Gatling gun)/(4300 + (aiming count x 1000))% ATK per hit (Shotgun)"
           }
         ],
         "levelTables": [
@@ -16819,6 +16879,10 @@ export const nightWatchData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "(16200 + (aiming count x 1750))% ATK (Rifle)/(18200 + (aiming count x 1750))% ATK (Pistol)"
           }
         ],
         "levelTables": [
@@ -17077,6 +17141,10 @@ export const nightWatchData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "(9700 + (Aiming count x 750))% ATK per hit (Grenade Launcher)/(15400 + (Aiming count x 750))% ATK (Rifle)"
           }
         ],
         "levelTables": [
@@ -17334,6 +17402,10 @@ export const nightWatchData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "(2750 + (Aiming count x 500))% ATK per hit (Gatling)/(4300 + (Aiming count x 500))% ATK per hit (Revolver)"
           }
         ],
         "levelTables": [
@@ -17612,6 +17684,10 @@ export const nightWatchData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "(17500 + (Aiming count x 2500))% ATK (Shotgun)/(16500 + (Aiming count x 2500))% ATK (Grenade Launcher)"
           }
         ],
         "levelTables": [
@@ -17860,6 +17936,10 @@ export const nightWatchData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "(9,000 + (Grenade Mastery Lv x 20))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -18045,6 +18125,10 @@ export const nightWatchData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "1,770% ATK per hit/2,070% ATK per hit (Hidden Card : Pistol)/2,270% ATK per hit (Hidden Card : Rifle)"
           }
         ],
         "levelTables": []
@@ -18140,6 +18224,10 @@ export const nightWatchData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "6,400% ATK per hit/8,400% ATK per hit (Hidden Card : Shotgun)/7,400% ATK per hit (Hidden Card : Gatling)/8,100% ATK per hit (Hidden Card : Launcher)"
           }
         ],
         "levelTables": []
@@ -18277,6 +18365,10 @@ export const nightWatchData = {
           {
             "label": "Pulse",
             "value": "0.25 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(4,800 + (Grenade Mastery Lv x 30))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -18693,6 +18785,10 @@ export const nightWatchData = {
           {
             "label": "Pulse",
             "value": "0.25 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(23,000 + (Grenade Mastery Lv x 100))% ATK per hit/(2,800 + (Grenade Mastery Lv x 30))% ATK per hit"
           }
         ],
         "levelTables": [

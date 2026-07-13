@@ -1,5 +1,5 @@
 export const inquisitorData = {
-  "generatedAt": "2026-07-10T18:52:54.713Z",
+  "generatedAt": "2026-07-13T19:36:19.661Z",
   "classId": 4262,
   "classSlug": "inquisitor",
   "className": "Inquisitor",
@@ -1179,6 +1179,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Damage",
+                "value": "6,000% ATK"
               }
             ],
             "levelTables": [
@@ -1426,6 +1430,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Damage",
+                "value": "10,500% ATK"
               }
             ],
             "levelTables": [
@@ -2318,6 +2326,10 @@ export const inquisitorData = {
               {
                 "label": "AP Generated",
                 "value": "4"
+              },
+              {
+                "label": "Damage",
+                "value": "12,000% ATK/17,600% ATK (Oleum Sanctum)"
               }
             ],
             "levelTables": [
@@ -2660,6 +2672,10 @@ export const inquisitorData = {
               {
                 "label": "AP Generated",
                 "value": "4"
+              },
+              {
+                "label": "Damage",
+                "value": "11,600% ATK"
               }
             ],
             "levelTables": [
@@ -2885,6 +2901,10 @@ export const inquisitorData = {
               {
                 "label": "AP Generated",
                 "value": "4"
+              },
+              {
+                "label": "Damage",
+                "value": "13,150% ATK"
               }
             ],
             "levelTables": [
@@ -3057,6 +3077,10 @@ export const inquisitorData = {
               {
                 "label": "AP Generated",
                 "value": "4"
+              },
+              {
+                "label": "Damage",
+                "value": "14,700% ATK"
               }
             ],
             "levelTables": [
@@ -3354,6 +3378,10 @@ export const inquisitorData = {
               {
                 "label": "AP Consumed",
                 "value": "150"
+              },
+              {
+                "label": "Damage",
+                "value": "23,000% ATK/24,500% ATK (Demon, Brute)"
               }
             ],
             "levelTables": [
@@ -3659,6 +3687,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Damage",
+                "value": "7,850% ATK per hit"
               }
             ],
             "levelTables": [
@@ -3827,6 +3859,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Damage",
+                "value": "3,500% ATK per hit"
               }
             ],
             "levelTables": [
@@ -4051,6 +4087,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Damage",
+                "value": "(3250 + MHP 20%)% ATK per hit"
               }
             ],
             "levelTables": [
@@ -4248,6 +4288,10 @@ export const inquisitorData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "21,000% ATK/24,500% ATK (Massive Flame Blaster)"
               }
             ],
             "levelTables": []
@@ -4643,6 +4687,10 @@ export const inquisitorData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3 ~ 7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "200% ATK/450% ATK (Knuckle)"
               }
             ],
             "levelTables": [
@@ -4942,6 +4990,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "900% ATK"
               }
             ],
             "levelTables": [
@@ -5214,6 +5266,10 @@ export const inquisitorData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "1,000% ATK"
               }
             ],
             "levelTables": [
@@ -5748,6 +5804,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "500% ATK"
               }
             ],
             "levelTables": [
@@ -6680,6 +6740,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "3,100% ATK"
               }
             ],
             "levelTables": [
@@ -6987,6 +7051,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Damage",
+                "value": "1,500% ATK"
               }
             ],
             "levelTables": [
@@ -7584,6 +7652,10 @@ export const inquisitorData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5 ~ 9 x 9"
+              },
+              {
+                "label": "Damage",
+                "value": "2,500% ATK"
               }
             ],
             "levelTables": [
@@ -9793,6 +9865,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "1,500% ATK"
               }
             ],
             "levelTables": [
@@ -11898,6 +11974,10 @@ export const inquisitorData = {
               {
                 "label": "Cast Delay",
                 "value": "1.3 – ( AGI × 0.004) − ( DE x × 0.002) seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "300% ATK"
               }
             ],
             "levelTables": [
@@ -12333,6 +12413,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "500% ATK"
               }
             ],
             "levelTables": [
@@ -12790,6 +12874,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "500% ATK"
               }
             ],
             "levelTables": [
@@ -12959,6 +13047,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "700% ATK"
               }
             ],
             "levelTables": [
@@ -13504,6 +13596,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,600% ATK"
               }
             ],
             "levelTables": [
@@ -14501,6 +14597,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,250% ATK"
               }
             ],
             "levelTables": [
@@ -14830,6 +14930,10 @@ export const inquisitorData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "2,000% ATK"
               }
             ],
             "levelTables": [
@@ -18884,6 +18988,10 @@ export const inquisitorData = {
           {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Damage",
+            "value": "6,000% ATK"
           }
         ],
         "levelTables": [
@@ -19131,6 +19239,10 @@ export const inquisitorData = {
           {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Damage",
+            "value": "10,500% ATK"
           }
         ],
         "levelTables": [
@@ -20023,6 +20135,10 @@ export const inquisitorData = {
           {
             "label": "AP Generated",
             "value": "4"
+          },
+          {
+            "label": "Damage",
+            "value": "12,000% ATK/17,600% ATK (Oleum Sanctum)"
           }
         ],
         "levelTables": [
@@ -20365,6 +20481,10 @@ export const inquisitorData = {
           {
             "label": "AP Generated",
             "value": "4"
+          },
+          {
+            "label": "Damage",
+            "value": "11,600% ATK"
           }
         ],
         "levelTables": [
@@ -20590,6 +20710,10 @@ export const inquisitorData = {
           {
             "label": "AP Generated",
             "value": "4"
+          },
+          {
+            "label": "Damage",
+            "value": "13,150% ATK"
           }
         ],
         "levelTables": [
@@ -20762,6 +20886,10 @@ export const inquisitorData = {
           {
             "label": "AP Generated",
             "value": "4"
+          },
+          {
+            "label": "Damage",
+            "value": "14,700% ATK"
           }
         ],
         "levelTables": [
@@ -21059,6 +21187,10 @@ export const inquisitorData = {
           {
             "label": "AP Consumed",
             "value": "150"
+          },
+          {
+            "label": "Damage",
+            "value": "23,000% ATK/24,500% ATK (Demon, Brute)"
           }
         ],
         "levelTables": [
@@ -21364,6 +21496,10 @@ export const inquisitorData = {
           {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Damage",
+            "value": "7,850% ATK per hit"
           }
         ],
         "levelTables": [
@@ -21532,6 +21668,10 @@ export const inquisitorData = {
           {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Damage",
+            "value": "3,500% ATK per hit"
           }
         ],
         "levelTables": [
@@ -21756,6 +21896,10 @@ export const inquisitorData = {
           {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Damage",
+            "value": "(3250 + MHP 20%)% ATK per hit"
           }
         ],
         "levelTables": [
@@ -21953,6 +22097,10 @@ export const inquisitorData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "21,000% ATK/24,500% ATK (Massive Flame Blaster)"
           }
         ],
         "levelTables": []

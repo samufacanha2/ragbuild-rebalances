@@ -1,5 +1,5 @@
 export const troubadourData = {
-  "generatedAt": "2026-07-10T18:52:56.594Z",
+  "generatedAt": "2026-07-13T19:36:21.493Z",
   "classId": 4263,
   "classSlug": "troubadour",
   "className": "Troubadour",
@@ -395,6 +395,10 @@ export const troubadourData = {
               {
                 "label": "AP Generated",
                 "value": "1(1~3Lv), 2(4~5Lv)"
+              },
+              {
+                "label": "Damage",
+                "value": "3,700% ATK per hit/4,550% ATK per hit (sound brand)"
               }
             ],
             "levelTables": [
@@ -801,6 +805,10 @@ export const troubadourData = {
               {
                 "label": "AP Generated",
                 "value": "1(1~3Lv), 2(4~5Lv)"
+              },
+              {
+                "label": "Damage",
+                "value": "600% MATK"
               }
             ],
             "levelTables": [
@@ -1495,6 +1503,10 @@ export const troubadourData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "13,000% MATK/18,000% MATK (sound brand)"
               }
             ],
             "levelTables": [
@@ -1811,6 +1823,10 @@ export const troubadourData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "10,200% ATK/14,250% ATK (range)/11,200% ATK/15,250% ATK (range)"
               }
             ],
             "levelTables": [
@@ -2553,6 +2569,10 @@ export const troubadourData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "18,500% MATK/23,700% MATK (Mystic Symphony)"
               }
             ],
             "levelTables": [
@@ -3477,6 +3497,10 @@ export const troubadourData = {
               {
                 "label": "Ammunition",
                 "value": "10 Arrows"
+              },
+              {
+                "label": "Damage",
+                "value": "500% ATK"
               }
             ],
             "levelTables": [
@@ -3792,6 +3816,10 @@ export const troubadourData = {
               {
                 "label": "Duration",
                 "value": "(Skill Level + 8) seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "2,200% MATK"
               }
             ],
             "levelTables": [
@@ -5943,6 +5971,10 @@ export const troubadourData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5 ~ 9 x 9"
+              },
+              {
+                "label": "Damage",
+                "value": "2,750% ATK"
               }
             ],
             "levelTables": [
@@ -11323,6 +11355,10 @@ export const troubadourData = {
               {
                 "label": "Levels",
                 "value": "10"
+              },
+              {
+                "label": "Damage",
+                "value": "10% ATK"
               }
             ],
             "levelTables": [
@@ -11683,6 +11719,10 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "9*9 cells around the user"
+              },
+              {
+                "label": "Damage",
+                "value": "150% MATK"
               }
             ],
             "levelTables": [
@@ -12208,6 +12248,10 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "310% ATK"
               }
             ],
             "levelTables": [
@@ -17678,6 +17722,10 @@ export const troubadourData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "190% ATK"
               }
             ],
             "levelTables": [
@@ -18108,6 +18156,10 @@ export const troubadourData = {
               {
                 "label": "Ammunition",
                 "value": "1 Arrow"
+              },
+              {
+                "label": "Damage",
+                "value": "80% ATK"
               }
             ],
             "levelTables": [
@@ -18427,6 +18479,10 @@ export const troubadourData = {
               {
                 "label": "Ammunition",
                 "value": "1 Arrow"
+              },
+              {
+                "label": "Damage",
+                "value": "250% ATK"
               }
             ],
             "levelTables": [
@@ -19303,6 +19359,10 @@ export const troubadourData = {
           {
             "label": "AP Generated",
             "value": "1(1~3Lv), 2(4~5Lv)"
+          },
+          {
+            "label": "Damage",
+            "value": "3,700% ATK per hit/4,550% ATK per hit (sound brand)"
           }
         ],
         "levelTables": [
@@ -19709,6 +19769,10 @@ export const troubadourData = {
           {
             "label": "AP Generated",
             "value": "1(1~3Lv), 2(4~5Lv)"
+          },
+          {
+            "label": "Damage",
+            "value": "600% MATK"
           }
         ],
         "levelTables": [
@@ -20403,6 +20467,10 @@ export const troubadourData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "13,000% MATK/18,000% MATK (sound brand)"
           }
         ],
         "levelTables": [
@@ -20719,6 +20787,10 @@ export const troubadourData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "10,200% ATK/14,250% ATK (range)/11,200% ATK/15,250% ATK (range)"
           }
         ],
         "levelTables": [
@@ -21461,6 +21533,10 @@ export const troubadourData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "18,500% MATK/23,700% MATK (Mystic Symphony)"
           }
         ],
         "levelTables": [

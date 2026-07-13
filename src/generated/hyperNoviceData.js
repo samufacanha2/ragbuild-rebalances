@@ -1,5 +1,5 @@
 export const hyperNoviceData = {
-  "generatedAt": "2026-07-10T18:53:04.425Z",
+  "generatedAt": "2026-07-13T19:36:29.063Z",
   "classId": 4307,
   "classSlug": "hyper-novice",
   "className": "Hyper Novice",
@@ -989,6 +989,10 @@ export const hyperNoviceData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "(3,200 + (Self Study Tactics Lv x 30))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -1339,6 +1343,10 @@ export const hyperNoviceData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(5,700 + (Self Study Tactics Lv x 30))% ATK"
               }
             ],
             "levelTables": [
@@ -1682,6 +1690,10 @@ export const hyperNoviceData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "(3,500 + (Self Study Sorcery Lv x 50))% MATK (Fall)/(2,050 + (Self Study Sorcery Lv x 50))% MATK (E x plosion)"
               }
             ],
             "levelTables": [
@@ -1958,6 +1970,10 @@ export const hyperNoviceData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(18,000 + (Self Study Sorcery Lv x 30))% MATK"
               }
             ],
             "levelTables": [
@@ -2248,6 +2264,10 @@ export const hyperNoviceData = {
               {
                 "label": "Pulse",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(2,000 + (Self Study Sorcery Lv x 30))% MATK (Sphere)/(5,400 + (Self Study Sorcery Lv x 30))% MATK per hit (E x plosion)"
               }
             ],
             "levelTables": [
@@ -2524,6 +2544,10 @@ export const hyperNoviceData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(8,500 + (Self Study Sorcery Lv x 40))% MATK"
               }
             ],
             "levelTables": [
@@ -2854,6 +2878,10 @@ export const hyperNoviceData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(8,400 + (Self Study Tactics Lv x 50))% ATK"
               }
             ],
             "levelTables": [
@@ -3169,6 +3197,10 @@ export const hyperNoviceData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "((8,700 + (Self Study Tactics Lv x 30)) x damage factor)% ATK"
               }
             ],
             "levelTables": [
@@ -3507,6 +3539,10 @@ export const hyperNoviceData = {
               {
                 "label": "Pulse",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(18000 + (40 x Self Study Sorcery Lv))% MATK (Initial)/(7800 + (20 x Self Study Sorcery Lv))% MATK (Gravitational)"
               }
             ],
             "levelTables": [
@@ -3820,6 +3856,10 @@ export const hyperNoviceData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(6,850 + (Self Study Sorcery Lv x 40))% MATK"
               }
             ],
             "levelTables": [
@@ -5075,6 +5115,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "450% ATK/900% ATK"
               }
             ],
             "levelTables": [
@@ -7071,6 +7115,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "700% ATK/350% ATK"
               }
             ],
             "levelTables": [
@@ -7569,6 +7617,10 @@ export const hyperNoviceData = {
               {
                 "label": "Duration",
                 "value": "20~60 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "400% ATK"
               }
             ],
             "levelTables": [
@@ -7864,6 +7916,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "200% ATK"
               }
             ],
             "levelTables": [
@@ -8392,6 +8448,10 @@ export const hyperNoviceData = {
               {
                 "label": "Area of Effect",
                 "value": "7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "800% ATK"
               }
             ],
             "levelTables": [
@@ -9057,6 +9117,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "400% ATK"
               }
             ],
             "levelTables": [
@@ -9801,6 +9865,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "250% MATK"
               }
             ],
             "levelTables": [
@@ -10480,6 +10548,10 @@ export const hyperNoviceData = {
               {
                 "label": "Area of Effect",
                 "value": "15 x 15"
+              },
+              {
+                "label": "Damage",
+                "value": "300% MATK"
               }
             ],
             "levelTables": [
@@ -11350,6 +11422,10 @@ export const hyperNoviceData = {
               {
                 "label": "Duration",
                 "value": "4 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "1,400% MATK"
               }
             ],
             "levelTables": [
@@ -11563,6 +11639,10 @@ export const hyperNoviceData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "625% MATK"
               }
             ],
             "levelTables": [
@@ -12572,6 +12652,10 @@ export const hyperNoviceData = {
               {
                 "label": "Duration",
                 "value": "4.5 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "570% MATK"
               }
             ],
             "levelTables": [
@@ -14809,6 +14893,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "400% ATK"
               }
             ],
             "levelTables": [
@@ -16365,6 +16453,10 @@ export const hyperNoviceData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "300% ATK"
               }
             ],
             "levelTables": [
@@ -18854,6 +18946,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "170% MATK"
               }
             ],
             "levelTables": [
@@ -19771,6 +19867,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "200% MATK"
               }
             ],
             "levelTables": [
@@ -20267,6 +20367,10 @@ export const hyperNoviceData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "340% MATK/255% MATK"
               }
             ],
             "levelTables": [
@@ -20515,6 +20619,10 @@ export const hyperNoviceData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "(5times, + 50% dmg to Undead, SP Consumption:38) ATK"
               }
             ],
             "levelTables": [
@@ -25935,6 +26043,10 @@ export const hyperNoviceData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "(3,200 + (Self Study Tactics Lv x 30))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -26285,6 +26397,10 @@ export const hyperNoviceData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(5,700 + (Self Study Tactics Lv x 30))% ATK"
           }
         ],
         "levelTables": [
@@ -26628,6 +26744,10 @@ export const hyperNoviceData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "(3,500 + (Self Study Sorcery Lv x 50))% MATK (Fall)/(2,050 + (Self Study Sorcery Lv x 50))% MATK (E x plosion)"
           }
         ],
         "levelTables": [
@@ -26904,6 +27024,10 @@ export const hyperNoviceData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(18,000 + (Self Study Sorcery Lv x 30))% MATK"
           }
         ],
         "levelTables": [
@@ -27194,6 +27318,10 @@ export const hyperNoviceData = {
           {
             "label": "Pulse",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(2,000 + (Self Study Sorcery Lv x 30))% MATK (Sphere)/(5,400 + (Self Study Sorcery Lv x 30))% MATK per hit (E x plosion)"
           }
         ],
         "levelTables": [
@@ -27470,6 +27598,10 @@ export const hyperNoviceData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(8,500 + (Self Study Sorcery Lv x 40))% MATK"
           }
         ],
         "levelTables": [
@@ -27800,6 +27932,10 @@ export const hyperNoviceData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(8,400 + (Self Study Tactics Lv x 50))% ATK"
           }
         ],
         "levelTables": [
@@ -28115,6 +28251,10 @@ export const hyperNoviceData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "((8,700 + (Self Study Tactics Lv x 30)) x damage factor)% ATK"
           }
         ],
         "levelTables": [
@@ -28453,6 +28593,10 @@ export const hyperNoviceData = {
           {
             "label": "Pulse",
             "value": "0.5 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(18000 + (40 x Self Study Sorcery Lv))% MATK (Initial)/(7800 + (20 x Self Study Sorcery Lv))% MATK (Gravitational)"
           }
         ],
         "levelTables": [
@@ -28766,6 +28910,10 @@ export const hyperNoviceData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(6,850 + (Self Study Sorcery Lv x 40))% MATK"
           }
         ],
         "levelTables": [

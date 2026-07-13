@@ -1,5 +1,5 @@
 export const imperialGuardData = {
-  "generatedAt": "2026-07-10T18:52:46.468Z",
+  "generatedAt": "2026-07-13T19:36:11.530Z",
   "classId": 4258,
   "classSlug": "imperial-guard",
   "className": "Imperial Guard",
@@ -1132,6 +1132,10 @@ export const imperialGuardData = {
               {
                 "label": "Property",
                 "value": "neutral property magical damage"
+              },
+              {
+                "label": "Damage",
+                "value": "(14,850 + (Spear & Sword Mastery level x 50))% MATK"
               }
             ],
             "levelTables": [
@@ -1548,6 +1552,10 @@ export const imperialGuardData = {
               {
                 "label": "Pulse",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(3,200 + (Spear & Sword Mastery Level x 100))% MATK"
               }
             ],
             "levelTables": [
@@ -2376,6 +2384,10 @@ export const imperialGuardData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "(14,900 + (Shield Mastery level x 250))% ATK"
               }
             ],
             "levelTables": [
@@ -3293,6 +3305,10 @@ export const imperialGuardData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(8,400 + (Spear & Sword Mastery level x 25))% ATK per hit/(10,000 + (Spear & Sword Mastery level x 25))% ATK per hit"
               }
             ],
             "levelTables": []
@@ -3473,6 +3489,10 @@ export const imperialGuardData = {
               {
                 "label": "AP Consumed",
                 "value": "150"
+              },
+              {
+                "label": "Damage",
+                "value": "15,250% ATK"
               }
             ],
             "levelTables": [
@@ -3735,6 +3755,10 @@ export const imperialGuardData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(15,000 + (Spear & Sword Mastery level x 50))% ATK/(17,500 + (Spear & Sword Mastery level x 50))% ATK"
               }
             ],
             "levelTables": [
@@ -4146,6 +4170,10 @@ export const imperialGuardData = {
               {
                 "label": "AP Consumed",
                 "value": "10"
+              },
+              {
+                "label": "Damage",
+                "value": "19,500% MATK"
               }
             ],
             "levelTables": [
@@ -4467,6 +4495,10 @@ export const imperialGuardData = {
               {
                 "label": "Cast Delay",
                 "value": "1 second"
+              },
+              {
+                "label": "Damage",
+                "value": "600% ATK"
               }
             ],
             "levelTables": [
@@ -4782,6 +4814,10 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "(1,000 + (Bash Lv x 70))% ATK"
               }
             ],
             "levelTables": [
@@ -6134,6 +6170,10 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "2,000% ATK"
               }
             ],
             "levelTables": [
@@ -6642,6 +6682,10 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "500% ATK"
               }
             ],
             "levelTables": [
@@ -7293,6 +7337,10 @@ export const imperialGuardData = {
               {
                 "label": "Area of Effect",
                 "value": "11 x 11"
+              },
+              {
+                "label": "Damage",
+                "value": "3,500% MATK"
               }
             ],
             "levelTables": [
@@ -7650,6 +7698,10 @@ export const imperialGuardData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3 ~ 7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "1,900% ATK"
               }
             ],
             "levelTables": [
@@ -8148,6 +8200,10 @@ export const imperialGuardData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3~7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "(600 + (STR x 5))% ATK"
               }
             ],
             "levelTables": [
@@ -8425,6 +8481,10 @@ export const imperialGuardData = {
               {
                 "label": "Area of Effect",
                 "value": "7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "1,750% ATK/2,500% ATK (Moon Slasher)"
               }
             ],
             "levelTables": [
@@ -9140,6 +9200,10 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "1,500% ATK/2,250% ATK (Inspiration)"
               }
             ],
             "levelTables": [
@@ -10973,6 +11037,10 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "450% ATK/900% ATK"
               }
             ],
             "levelTables": [
@@ -11151,6 +11219,10 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "200% ATK"
               }
             ],
             "levelTables": [
@@ -12018,6 +12090,10 @@ export const imperialGuardData = {
               {
                 "label": "Duration",
                 "value": "0.9 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "500% MATK"
               }
             ],
             "levelTables": [
@@ -12211,6 +12287,10 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "400% ATK"
               }
             ],
             "levelTables": [
@@ -12408,6 +12488,10 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,250% MATK"
               }
             ],
             "levelTables": [
@@ -13210,6 +13294,10 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,300% ATK"
               }
             ],
             "levelTables": [
@@ -15052,6 +15140,10 @@ export const imperialGuardData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "400% ATK"
               }
             ],
             "levelTables": [
@@ -16034,6 +16126,10 @@ export const imperialGuardData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "300% ATK"
               }
             ],
             "levelTables": [
@@ -17237,6 +17333,10 @@ export const imperialGuardData = {
           {
             "label": "Property",
             "value": "neutral property magical damage"
+          },
+          {
+            "label": "Damage",
+            "value": "(14,850 + (Spear & Sword Mastery level x 50))% MATK"
           }
         ],
         "levelTables": [
@@ -17653,6 +17753,10 @@ export const imperialGuardData = {
           {
             "label": "Pulse",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(3,200 + (Spear & Sword Mastery Level x 100))% MATK"
           }
         ],
         "levelTables": [
@@ -18481,6 +18585,10 @@ export const imperialGuardData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "(14,900 + (Shield Mastery level x 250))% ATK"
           }
         ],
         "levelTables": [
@@ -19398,6 +19506,10 @@ export const imperialGuardData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(8,400 + (Spear & Sword Mastery level x 25))% ATK per hit/(10,000 + (Spear & Sword Mastery level x 25))% ATK per hit"
           }
         ],
         "levelTables": []
@@ -19578,6 +19690,10 @@ export const imperialGuardData = {
           {
             "label": "AP Consumed",
             "value": "150"
+          },
+          {
+            "label": "Damage",
+            "value": "15,250% ATK"
           }
         ],
         "levelTables": [
@@ -19840,6 +19956,10 @@ export const imperialGuardData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(15,000 + (Spear & Sword Mastery level x 50))% ATK/(17,500 + (Spear & Sword Mastery level x 50))% ATK"
           }
         ],
         "levelTables": [
@@ -20251,6 +20371,10 @@ export const imperialGuardData = {
           {
             "label": "AP Consumed",
             "value": "10"
+          },
+          {
+            "label": "Damage",
+            "value": "19,500% MATK"
           }
         ],
         "levelTables": [

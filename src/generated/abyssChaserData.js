@@ -1,5 +1,5 @@
 export const abyssChaserData = {
-  "generatedAt": "2026-07-10T18:52:50.392Z",
+  "generatedAt": "2026-07-13T19:36:15.407Z",
   "classId": 4260,
   "classSlug": "abyss-chaser",
   "className": "Abyss Chaser",
@@ -657,6 +657,10 @@ export const abyssChaserData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "17,500% ATK"
               }
             ],
             "levelTables": []
@@ -981,6 +985,10 @@ export const abyssChaserData = {
               {
                 "label": "AP Generated",
                 "value": "0"
+              },
+              {
+                "label": "Damage",
+                "value": "4,600% ATK per hit"
               }
             ],
             "levelTables": [
@@ -1233,6 +1241,10 @@ export const abyssChaserData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "3,800% ATK per hit/4,250% ATK per hit (Chasing)"
               }
             ],
             "levelTables": [
@@ -1422,6 +1434,10 @@ export const abyssChaserData = {
               {
                 "label": "Ammunition",
                 "value": "7 Arrows"
+              },
+              {
+                "label": "Damage",
+                "value": "4,250% ATK/12,350% ATK (2nd)"
               }
             ],
             "levelTables": [
@@ -1707,6 +1723,10 @@ export const abyssChaserData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "5,000% ATK per hit/5,250% ATK per hit (Chasing)"
               }
             ],
             "levelTables": [
@@ -1893,6 +1913,10 @@ export const abyssChaserData = {
               {
                 "label": "AP Generated",
                 "value": "4/8/12/16/20"
+              },
+              {
+                "label": "Damage",
+                "value": "2,600% MATK"
               }
             ],
             "levelTables": [
@@ -2342,6 +2366,10 @@ export const abyssChaserData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,600% ATK"
               }
             ],
             "levelTables": [
@@ -2566,6 +2594,10 @@ export const abyssChaserData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "3,750% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2967,6 +2999,10 @@ export const abyssChaserData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "6,150% ATK per hit"
               }
             ],
             "levelTables": [
@@ -3352,6 +3388,10 @@ export const abyssChaserData = {
               {
                 "label": "Pulse",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(2,850 + (Magic Sword Mastery Lv x 100))% MATK"
               }
             ],
             "levelTables": [
@@ -3591,6 +3631,10 @@ export const abyssChaserData = {
               {
                 "label": "Property",
                 "value": "fire property magical damage"
+              },
+              {
+                "label": "Damage",
+                "value": "(2,500 + (Magic Sword Mastery level x 75))% MATK per hit/(4,100 + (Magic Sword Mastery level x 150))% MATK per hit"
               }
             ],
             "levelTables": [
@@ -4176,6 +4220,10 @@ export const abyssChaserData = {
               {
                 "label": "AP Consumed",
                 "value": "150"
+              },
+              {
+                "label": "Damage",
+                "value": "22,000% MATK"
               }
             ],
             "levelTables": [
@@ -5302,6 +5350,10 @@ export const abyssChaserData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3 ~ 5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "1,200% ATK"
               }
             ],
             "levelTables": [
@@ -6150,6 +6202,10 @@ export const abyssChaserData = {
               {
                 "label": "Ammunition",
                 "value": "3 Arrows"
+              },
+              {
+                "label": "Damage",
+                "value": "2,300% ATK"
               }
             ],
             "levelTables": [
@@ -7454,6 +7510,10 @@ export const abyssChaserData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "50% ATK"
               }
             ],
             "levelTables": [
@@ -12595,6 +12655,10 @@ export const abyssChaserData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "190% ATK"
               }
             ],
             "levelTables": [
@@ -13720,6 +13784,10 @@ export const abyssChaserData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "700% ATK/350% ATK"
               }
             ],
             "levelTables": [
@@ -14394,6 +14462,10 @@ export const abyssChaserData = {
               {
                 "label": "Area of Effect",
                 "value": "7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "800% ATK"
               }
             ],
             "levelTables": [
@@ -14857,6 +14929,10 @@ export const abyssChaserData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "250% ATK"
               }
             ],
             "levelTables": [
@@ -17981,6 +18057,10 @@ export const abyssChaserData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "17,500% ATK"
           }
         ],
         "levelTables": []
@@ -18305,6 +18385,10 @@ export const abyssChaserData = {
           {
             "label": "AP Generated",
             "value": "0"
+          },
+          {
+            "label": "Damage",
+            "value": "4,600% ATK per hit"
           }
         ],
         "levelTables": [
@@ -18557,6 +18641,10 @@ export const abyssChaserData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "3,800% ATK per hit/4,250% ATK per hit (Chasing)"
           }
         ],
         "levelTables": [
@@ -18746,6 +18834,10 @@ export const abyssChaserData = {
           {
             "label": "Ammunition",
             "value": "7 Arrows"
+          },
+          {
+            "label": "Damage",
+            "value": "4,250% ATK/12,350% ATK (2nd)"
           }
         ],
         "levelTables": [
@@ -19031,6 +19123,10 @@ export const abyssChaserData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "5,000% ATK per hit/5,250% ATK per hit (Chasing)"
           }
         ],
         "levelTables": [
@@ -19217,6 +19313,10 @@ export const abyssChaserData = {
           {
             "label": "AP Generated",
             "value": "4/8/12/16/20"
+          },
+          {
+            "label": "Damage",
+            "value": "2,600% MATK"
           }
         ],
         "levelTables": [
@@ -19666,6 +19766,10 @@ export const abyssChaserData = {
           {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Damage",
+            "value": "1,600% ATK"
           }
         ],
         "levelTables": [
@@ -19890,6 +19994,10 @@ export const abyssChaserData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "3,750% ATK per hit"
           }
         ],
         "levelTables": [
@@ -20291,6 +20399,10 @@ export const abyssChaserData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "6,150% ATK per hit"
           }
         ],
         "levelTables": [
@@ -20676,6 +20788,10 @@ export const abyssChaserData = {
           {
             "label": "Pulse",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(2,850 + (Magic Sword Mastery Lv x 100))% MATK"
           }
         ],
         "levelTables": [
@@ -20915,6 +21031,10 @@ export const abyssChaserData = {
           {
             "label": "Property",
             "value": "fire property magical damage"
+          },
+          {
+            "label": "Damage",
+            "value": "(2,500 + (Magic Sword Mastery level x 75))% MATK per hit/(4,100 + (Magic Sword Mastery level x 150))% MATK per hit"
           }
         ],
         "levelTables": [
@@ -21500,6 +21620,10 @@ export const abyssChaserData = {
           {
             "label": "AP Consumed",
             "value": "150"
+          },
+          {
+            "label": "Damage",
+            "value": "22,000% MATK"
           }
         ],
         "levelTables": [

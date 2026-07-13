@@ -1,5 +1,5 @@
 export const soulAsceticData = {
-  "generatedAt": "2026-07-10T18:53:02.161Z",
+  "generatedAt": "2026-07-13T19:36:26.943Z",
   "classId": 4303,
   "classSlug": "soul-ascetic",
   "className": "Soul Ascetic",
@@ -1619,6 +1619,10 @@ export const soulAsceticData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "((750 + (Soul Mastery Lv x 2)) x Soul Energy)% MATK/((1,250 + (Soul Mastery Lv x 2)) x Soul Energy)% MATK (Curse)"
               }
             ],
             "levelTables": [
@@ -1821,6 +1825,10 @@ export const soulAsceticData = {
               {
                 "label": "Ammunition",
                 "value": "1 Soul Talisman"
+              },
+              {
+                "label": "Damage",
+                "value": "(6,750 + ((Talisman Mastery Lv + Soul Mastery Lv) x 35))% MATK"
               }
             ],
             "levelTables": [
@@ -2438,6 +2446,10 @@ export const soulAsceticData = {
               {
                 "label": "Property",
                 "value": "neutral property magical damage"
+              },
+              {
+                "label": "Damage",
+                "value": "(9,100 + (Talisman Mastery Lv x 75))% MATK/(11,600 + (Talisman Mastery Lv x 75))% MATK"
               }
             ],
             "levelTables": [
@@ -2701,6 +2713,10 @@ export const soulAsceticData = {
               {
                 "label": "Property",
                 "value": "neutral property magical damage"
+              },
+              {
+                "label": "Damage",
+                "value": "(5,400 + (Talisman Mastery Lv x 75))% MATK/(7,400 + (Talisman Mastery Lv x 75))% MATK"
               }
             ],
             "levelTables": [
@@ -2962,6 +2978,10 @@ export const soulAsceticData = {
               {
                 "label": "Property",
                 "value": "neutral property magical damage"
+              },
+              {
+                "label": "Damage",
+                "value": "(7,450 + (Talisman Mastery Lv x 75))% MATK/(9,650 + (Talisman Mastery Lv x 75))% MATK"
               }
             ],
             "levelTables": [
@@ -3226,6 +3246,10 @@ export const soulAsceticData = {
               {
                 "label": "Property",
                 "value": "neutral property magical damage"
+              },
+              {
+                "label": "Damage",
+                "value": "(10,150 + (Talisman Mastery Lv x 75))% MATK/(12,800 + (Talisman Mastery Lv x 75))% MATK"
               }
             ],
             "levelTables": [
@@ -3485,6 +3509,10 @@ export const soulAsceticData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "(1,300 + (Talisman Mastery Lv x 75))% MATK per hit"
               }
             ],
             "levelTables": [
@@ -3721,6 +3749,10 @@ export const soulAsceticData = {
               {
                 "label": "AP Consumed",
                 "value": "35"
+              },
+              {
+                "label": "Damage",
+                "value": "(10,500 + ((Talisman Mastery Lv + Soul Mastery Lv) x 75))% MATK per hit"
               }
             ],
             "levelTables": [
@@ -15339,6 +15371,10 @@ export const soulAsceticData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "300% ATK"
               }
             ],
             "levelTables": [
@@ -15523,6 +15559,10 @@ export const soulAsceticData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Damage",
+                "value": "300% ATK"
               }
             ],
             "levelTables": [
@@ -15707,6 +15747,10 @@ export const soulAsceticData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Damage",
+                "value": "400% ATK"
               }
             ],
             "levelTables": [
@@ -16075,6 +16119,10 @@ export const soulAsceticData = {
               {
                 "label": "Target",
                 "value": "Enemy, Self"
+              },
+              {
+                "label": "Damage",
+                "value": "100% ATK"
               }
             ],
             "levelTables": [
@@ -19281,6 +19329,10 @@ export const soulAsceticData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "((750 + (Soul Mastery Lv x 2)) x Soul Energy)% MATK/((1,250 + (Soul Mastery Lv x 2)) x Soul Energy)% MATK (Curse)"
           }
         ],
         "levelTables": [
@@ -19483,6 +19535,10 @@ export const soulAsceticData = {
           {
             "label": "Ammunition",
             "value": "1 Soul Talisman"
+          },
+          {
+            "label": "Damage",
+            "value": "(6,750 + ((Talisman Mastery Lv + Soul Mastery Lv) x 35))% MATK"
           }
         ],
         "levelTables": [
@@ -20100,6 +20156,10 @@ export const soulAsceticData = {
           {
             "label": "Property",
             "value": "neutral property magical damage"
+          },
+          {
+            "label": "Damage",
+            "value": "(9,100 + (Talisman Mastery Lv x 75))% MATK/(11,600 + (Talisman Mastery Lv x 75))% MATK"
           }
         ],
         "levelTables": [
@@ -20363,6 +20423,10 @@ export const soulAsceticData = {
           {
             "label": "Property",
             "value": "neutral property magical damage"
+          },
+          {
+            "label": "Damage",
+            "value": "(5,400 + (Talisman Mastery Lv x 75))% MATK/(7,400 + (Talisman Mastery Lv x 75))% MATK"
           }
         ],
         "levelTables": [
@@ -20624,6 +20688,10 @@ export const soulAsceticData = {
           {
             "label": "Property",
             "value": "neutral property magical damage"
+          },
+          {
+            "label": "Damage",
+            "value": "(7,450 + (Talisman Mastery Lv x 75))% MATK/(9,650 + (Talisman Mastery Lv x 75))% MATK"
           }
         ],
         "levelTables": [
@@ -20888,6 +20956,10 @@ export const soulAsceticData = {
           {
             "label": "Property",
             "value": "neutral property magical damage"
+          },
+          {
+            "label": "Damage",
+            "value": "(10,150 + (Talisman Mastery Lv x 75))% MATK/(12,800 + (Talisman Mastery Lv x 75))% MATK"
           }
         ],
         "levelTables": [
@@ -21147,6 +21219,10 @@ export const soulAsceticData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "(1,300 + (Talisman Mastery Lv x 75))% MATK per hit"
           }
         ],
         "levelTables": [
@@ -21383,6 +21459,10 @@ export const soulAsceticData = {
           {
             "label": "AP Consumed",
             "value": "35"
+          },
+          {
+            "label": "Damage",
+            "value": "(10,500 + ((Talisman Mastery Lv + Soul Mastery Lv) x 75))% MATK per hit"
           }
         ],
         "levelTables": [

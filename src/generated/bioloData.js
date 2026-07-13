@@ -1,5 +1,5 @@
 export const bioloData = {
-  "generatedAt": "2026-07-10T18:52:48.646Z",
+  "generatedAt": "2026-07-13T19:36:13.686Z",
   "classId": 4259,
   "classSlug": "biolo",
   "className": "Biolo",
@@ -992,6 +992,10 @@ export const bioloData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "3,150% ATK per hit/3,650% ATK per hit (Research Report)"
               }
             ],
             "levelTables": [
@@ -1221,6 +1225,10 @@ export const bioloData = {
               {
                 "label": "AP Generated",
                 "value": "4(1~3Lv), 5(4~5Lv)"
+              },
+              {
+                "label": "Damage",
+                "value": "2,000% ATK per hit"
               }
             ],
             "levelTables": [
@@ -1394,6 +1402,10 @@ export const bioloData = {
               {
                 "label": "AP Generated",
                 "value": "4(1~3Lv), 5(4~5Lv)"
+              },
+              {
+                "label": "Damage",
+                "value": "2,000% ATK per hit"
               }
             ],
             "levelTables": [
@@ -1974,6 +1986,10 @@ export const bioloData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "3,200% ATK per hit/3,350% ATK per hit (Research Report)"
               }
             ],
             "levelTables": [
@@ -2213,6 +2229,10 @@ export const bioloData = {
               {
                 "label": "AP Generated",
                 "value": "4(1~3Lv), 5(4~5Lv)"
+              },
+              {
+                "label": "Damage",
+                "value": "2,000% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2380,6 +2400,10 @@ export const bioloData = {
               {
                 "label": "AP Generated",
                 "value": "4(1~3Lv), 5(4~5Lv)"
+              },
+              {
+                "label": "Damage",
+                "value": "2,000% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2824,6 +2848,10 @@ export const bioloData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "21,500% ATK"
               }
             ],
             "levelTables": [
@@ -2950,6 +2978,10 @@ export const bioloData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "3,450% ATK per hit/4,450% ATK per hit (Research Report)"
               }
             ],
             "levelTables": [
@@ -5363,6 +5395,10 @@ export const bioloData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "2,400% ATK"
               }
             ],
             "levelTables": [
@@ -5712,6 +5748,10 @@ export const bioloData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "2,000% ATK"
               }
             ],
             "levelTables": [
@@ -6329,6 +6369,10 @@ export const bioloData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "500% ATK"
               }
             ],
             "levelTables": [
@@ -6939,6 +6983,10 @@ export const bioloData = {
               {
                 "label": "Ammunition",
                 "value": "1 Cannon Ball"
+              },
+              {
+                "label": "Damage",
+                "value": "(1250 + Cart Remodeling s Lv x 100)% ATK"
               }
             ],
             "levelTables": [
@@ -11448,6 +11496,10 @@ export const bioloData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "1,000% ATK"
               }
             ],
             "levelTables": [
@@ -11672,6 +11724,10 @@ export const bioloData = {
               {
                 "label": "Target",
                 "value": "Target 1"
+              },
+              {
+                "label": "Damage",
+                "value": "2,000% ATK"
               }
             ],
             "levelTables": [
@@ -15471,6 +15527,10 @@ export const bioloData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "3,150% ATK per hit/3,650% ATK per hit (Research Report)"
           }
         ],
         "levelTables": [
@@ -15700,6 +15760,10 @@ export const bioloData = {
           {
             "label": "AP Generated",
             "value": "4(1~3Lv), 5(4~5Lv)"
+          },
+          {
+            "label": "Damage",
+            "value": "2,000% ATK per hit"
           }
         ],
         "levelTables": [
@@ -15873,6 +15937,10 @@ export const bioloData = {
           {
             "label": "AP Generated",
             "value": "4(1~3Lv), 5(4~5Lv)"
+          },
+          {
+            "label": "Damage",
+            "value": "2,000% ATK per hit"
           }
         ],
         "levelTables": [
@@ -16453,6 +16521,10 @@ export const bioloData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "3,200% ATK per hit/3,350% ATK per hit (Research Report)"
           }
         ],
         "levelTables": [
@@ -16692,6 +16764,10 @@ export const bioloData = {
           {
             "label": "AP Generated",
             "value": "4(1~3Lv), 5(4~5Lv)"
+          },
+          {
+            "label": "Damage",
+            "value": "2,000% ATK per hit"
           }
         ],
         "levelTables": [
@@ -16859,6 +16935,10 @@ export const bioloData = {
           {
             "label": "AP Generated",
             "value": "4(1~3Lv), 5(4~5Lv)"
+          },
+          {
+            "label": "Damage",
+            "value": "2,000% ATK per hit"
           }
         ],
         "levelTables": [
@@ -17303,6 +17383,10 @@ export const bioloData = {
           {
             "label": "Target",
             "value": "Single target"
+          },
+          {
+            "label": "Damage",
+            "value": "21,500% ATK"
           }
         ],
         "levelTables": [
@@ -17429,6 +17513,10 @@ export const bioloData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "3,450% ATK per hit/4,450% ATK per hit (Research Report)"
           }
         ],
         "levelTables": [

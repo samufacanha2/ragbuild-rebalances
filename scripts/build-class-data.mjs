@@ -815,6 +815,7 @@ function buildSkillDetails(skill) {
   addDetail(rows, "AP Consumed", skill.consumesAp);
   addDetail(rows, "Pulse", descriptionValue(skill.description, /every\s+([0-9.]+\s*seconds?)/i));
   addDetail(rows, "Property", descriptionValue(skill.description, /inflicts\s+([a-z ]+property\s+(?:magical|physical)\s+damage)/i));
+  addDetail(rows, "Damage", damageSpecValue(skill));
   for (const formulaRow of levelTable?.formulaRows ?? []) {
     addDetail(rows, formulaRow.label, formulaRow.value);
   }
@@ -954,6 +955,193 @@ function parseDamageSegment(line, row, table, formulaRows) {
   }
 
   return parseFormulaValue("Damage", normalized, row, table, formulaRows) || parsed;
+}
+
+function damageSpecValue(skill) {
+  const detail = maxLevelDetail(skill);
+  if (!detail) return "";
+
+  const values = [];
+  for (const rawLine of detail.text.split("\n")) {
+    for (const value of damageSpecValuesFromLevelLine(rawLine)) {
+      if (value && !values.includes(value)) values.push(value);
+    }
+  }
+
+  return values.join("/");
+}
+
+function maxLevelDetail(skill) {
+  const details = [...(skill.levelDetails ?? [])].filter((detail) => Number.isFinite(detail.level));
+  if (!details.length) return null;
+
+  const targetLevel = Number(skill.maxLevel) || Math.max(...details.map((detail) => detail.level));
+  return details.filter((detail) => detail.level === targetLevel).at(-1)
+    ?? details.sort((a, b) => a.level - b.level).at(-1);
+}
+
+function damageSpecValuesFromLevelLine(rawLine) {
+  const line = normalizeDamageSourceText(rawLine).replace(/\.$/, "");
+  if (!line || !/\b(?:ATK|MATK)\b/i.test(line)) return [];
+
+  const lineHasPerHit = /per hit/i.test(line);
+  const globalStat = line.match(/\b(?:ATK|MATK)\b/gi)?.at(-1)?.toUpperCase() ?? "";
+  const values = [];
+
+  for (const segment of line.split(/\s*\/\s*/)) {
+    values.push(...damageSpecValuesFromSegment(segment, lineHasPerHit, globalStat));
+  }
+
+  return values;
+}
+
+function normalizeDamageSourceText(value) {
+  return normalizeWhitespace(value)
+    .replace(/\bPer\s+hit(?=(?:ATK|MATK)\b)/gi, "Per hit ");
+}
+
+function damageSpecValuesFromSegment(segment, lineHasPerHit, globalStat) {
+  const normalized = normalizeWhitespace(segment);
+  if (!normalized) return [];
+
+  const formulaValue = damageFormulaSpecValue(normalized, lineHasPerHit);
+  if (formulaValue) return [formulaValue];
+
+  const rawFormulaValue = damageRawFormulaSpecValue(normalized, lineHasPerHit);
+  if (rawFormulaValue) return [rawFormulaValue];
+
+  return damagePercentSpecValues(normalized, lineHasPerHit, globalStat);
+}
+
+function damageFormulaSpecValue(segment, lineHasPerHit) {
+  const statMatch = segment.match(/\b(ATK|MATK)\b/i);
+  if (!statMatch) return "";
+
+  const formulaMatch = segment.match(/\(?\s*([0-9,]+)\s*\+\s*\({1,2}\s*([^)]+?(?:level|lv)(?:\s*\+\s*[^)]+?(?:level|lv))?)\)*\s*x\s*([0-9]+)\)?/i);
+  if (!formulaMatch) return "";
+
+  const stat = statMatch[1].toUpperCase();
+  const base = formatNumber(formulaMatch[1]);
+  const source = normalizeFormulaSource(formulaMatch[2]);
+  const sourceTerm = source.includes("+") ? `(${source})` : source;
+  const multiplier = formatNumber(formulaMatch[3]);
+  const inner = `${base} + (${sourceTerm} x ${multiplier})`;
+  const outerMultiplier = segment.match(/\)+\s*x\s*([A-Za-z][A-Za-z\s]*)%/i)?.[1];
+  const qualifier = damageStatQualifier(segment);
+  let value = outerMultiplier
+    ? `((${inner}) x ${normalizeSkillValue(outerMultiplier)})% ${stat}`
+    : `(${inner})% ${stat}`;
+
+  if (lineHasPerHit && !/per hit/i.test(value)) value = `${value} per hit`;
+  if (qualifier) value = `${value} (${qualifier})`;
+
+  return normalizeSkillValue(value);
+}
+
+function damageRawFormulaSpecValue(segment, lineHasPerHit) {
+  const match = segment.match(/\b(ATK|MATK)\b(?:\(([^)]*)\))?\s*(.*)$/i);
+  if (!match) return "";
+
+  const expression = normalizeWhitespace(match[3]).replace(/\s*(?:range|area of effect|aoe)\b.*$/i, "");
+  if (!/^\(?\s*[0-9][\s\S]*\+[\s\S]*%/.test(expression)) return "";
+
+  const stat = match[1].toUpperCase();
+  const qualifier = normalizeSkillValue(match[2]);
+  let value = `${normalizeDamageExpression(expression)} ${stat}`;
+
+  if (lineHasPerHit && !/per hit/i.test(value)) value = `${value} per hit`;
+  if (qualifier) value = `${value} (${qualifier})`;
+
+  return normalizeSkillValue(value);
+}
+
+function normalizeFormulaSource(value) {
+  return normalizeSkillValue(value)
+    .replace(/\bLvl\b/gi, "Lv")
+    .replace(/([a-z])Lv\b/gi, "$1 Lv")
+    .replace(/\s*\+\s*/g, " + ");
+}
+
+function normalizeDamageExpression(value) {
+  let expression = normalizeFormulaSource(value);
+  const hasPercent = expression.endsWith("%");
+  if (hasPercent) expression = expression.slice(0, -1).trim();
+  if (expression.includes(" + ") && !isWrappedExpression(expression)) expression = `(${expression})`;
+  return `${expression}${hasPercent ? "%" : ""}`;
+}
+
+function isWrappedExpression(value) {
+  if (!value.startsWith("(") || !value.endsWith(")")) return false;
+
+  let depth = 0;
+  for (let index = 0; index < value.length; index += 1) {
+    const char = value[index];
+    if (char === "(") depth += 1;
+    if (char === ")") depth -= 1;
+    if (depth === 0 && index < value.length - 1) return false;
+  }
+
+  return depth === 0;
+}
+
+function damageStatQualifier(value) {
+  const compact = value.match(/\b(?:ATK|MATK)\(([^)]+)\)/i)?.[1];
+  if (compact) return normalizeSkillValue(compact);
+
+  const spaced = value.match(/\b(?:ATK|MATK)\b\s+\(([^()0-9+%]+)\)\s+\(?[0-9]/i)?.[1];
+  return spaced ? normalizeSkillValue(spaced) : "";
+}
+
+function damagePercentSpecValues(segment, lineHasPerHit, globalStat) {
+  const values = [];
+  const statFirstPattern = /\b(ATK|MATK)\b(?:\(([^)]*)\))?(?:\s*per\s*hit)?\s*([0-9][0-9,]*%)/gi;
+  const percentFirstPattern = /([0-9][0-9,]*%)\s*(?:\(([^)]*)\))?\s*\b(ATK|MATK)\b(?:\s*\(([^)]*)\))?/gi;
+
+  collectDamagePercentValues(values, segment, statFirstPattern, (match) => ({
+    stat: match[1],
+    qualifier: match[2],
+    percent: match[3],
+    text: match[0]
+  }), lineHasPerHit);
+  collectDamagePercentValues(values, segment, percentFirstPattern, (match) => ({
+    stat: match[3],
+    qualifier: match[2] || match[4],
+    percent: match[1],
+    text: match[0]
+  }), lineHasPerHit);
+
+  if (!values.length && globalStat) {
+    const percentOnlyMatch = segment.match(/^([0-9][0-9,]*%)\s*(?:\(([^)]*)\))?(?:\s*per\s*hit)?$/i);
+    if (percentOnlyMatch) {
+      addDamagePercentValue(values, {
+        stat: globalStat,
+        qualifier: percentOnlyMatch[2],
+        percent: percentOnlyMatch[1],
+        text: percentOnlyMatch[0]
+      }, lineHasPerHit);
+    }
+  }
+
+  return values;
+}
+
+function collectDamagePercentValues(values, segment, pattern, mapper, lineHasPerHit) {
+  for (const match of segment.matchAll(pattern)) {
+    addDamagePercentValue(values, mapper(match), lineHasPerHit);
+  }
+}
+
+function addDamagePercentValue(values, component, lineHasPerHit) {
+  const amount = formatNumber(component.percent.replace(/%$/, ""));
+  const stat = component.stat.toUpperCase();
+  const qualifier = normalizeSkillValue(component.qualifier);
+  let value = `${amount}% ${stat}`;
+
+  if (lineHasPerHit || /per hit/i.test(component.text)) value = `${value} per hit`;
+  if (qualifier) value = `${value} (${qualifier})`;
+
+  value = normalizeSkillValue(value);
+  if (!values.includes(value)) values.push(value);
 }
 
 function parseGenericBonusSegment(line, row, table) {

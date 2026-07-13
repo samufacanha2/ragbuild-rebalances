@@ -1,5 +1,5 @@
 export const skyEmperorData = {
-  "generatedAt": "2026-07-10T18:53:01.078Z",
+  "generatedAt": "2026-07-13T19:36:25.896Z",
   "classId": 4302,
   "classSlug": "sky-emperor",
   "className": "Sky Emperor",
@@ -814,6 +814,10 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(3,500 + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -1014,6 +1018,10 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(2,950 + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -1219,6 +1227,10 @@ export const skyEmperorData = {
               {
                 "label": "Pulse",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(2,800 + (Sky Mastery Lv x 15))% ATK"
               }
             ],
             "levelTables": [
@@ -1469,6 +1481,10 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "(7,850 + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -1688,6 +1704,10 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "(6,600 + (Sky Mastery Lv x 25))% ATK/(8,800 + (Sky Mastery Lv x 25))% ATK (Midnight)"
               }
             ],
             "levelTables": [
@@ -1925,6 +1945,10 @@ export const skyEmperorData = {
               {
                 "label": "Pulse",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(2,500 + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -2123,6 +2147,10 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "(2,950 + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -2342,6 +2370,10 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "(2,400 + (Sky Mastery Lv x 25))% ATK/(3,400 + (Sky Mastery Lv x 25))% ATK (Moonset)"
               }
             ],
             "levelTables": [
@@ -2579,6 +2611,10 @@ export const skyEmperorData = {
               {
                 "label": "Pulse",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(3,000 + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -2899,6 +2935,10 @@ export const skyEmperorData = {
               {
                 "label": "AP Consumed",
                 "value": "70"
+              },
+              {
+                "label": "Damage",
+                "value": "12,250% ATK per hit"
               }
             ],
             "levelTables": [
@@ -3371,6 +3411,10 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(7,500 + (Sky Mastery level x 35))% ATK"
               }
             ],
             "levelTables": []
@@ -3499,6 +3543,10 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(3,450 + (Sky Mastery level x 45))% ATK per hit"
               }
             ],
             "levelTables": []
@@ -3607,6 +3655,10 @@ export const skyEmperorData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(1,400 + (Sky Mastery level x 25))% ATK per hit"
               }
             ],
             "levelTables": []
@@ -6847,6 +6899,10 @@ export const skyEmperorData = {
               {
                 "label": "Cooldown",
                 "value": "0 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "1,100% ATK"
               }
             ],
             "levelTables": [
@@ -11834,6 +11890,10 @@ export const skyEmperorData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "300% ATK"
               }
             ],
             "levelTables": [
@@ -12018,6 +12078,10 @@ export const skyEmperorData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Damage",
+                "value": "300% ATK"
               }
             ],
             "levelTables": [
@@ -12202,6 +12266,10 @@ export const skyEmperorData = {
               {
                 "label": "Target",
                 "value": "Self"
+              },
+              {
+                "label": "Damage",
+                "value": "400% ATK"
               }
             ],
             "levelTables": [
@@ -12570,6 +12638,10 @@ export const skyEmperorData = {
               {
                 "label": "Target",
                 "value": "Enemy, Self"
+              },
+              {
+                "label": "Damage",
+                "value": "100% ATK"
               }
             ],
             "levelTables": [
@@ -14936,6 +15008,10 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(3,500 + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -15136,6 +15212,10 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(2,950 + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -15341,6 +15421,10 @@ export const skyEmperorData = {
           {
             "label": "Pulse",
             "value": "0.5 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(2,800 + (Sky Mastery Lv x 15))% ATK"
           }
         ],
         "levelTables": [
@@ -15591,6 +15675,10 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "(7,850 + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -15810,6 +15898,10 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "(6,600 + (Sky Mastery Lv x 25))% ATK/(8,800 + (Sky Mastery Lv x 25))% ATK (Midnight)"
           }
         ],
         "levelTables": [
@@ -16047,6 +16139,10 @@ export const skyEmperorData = {
           {
             "label": "Pulse",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(2,500 + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -16245,6 +16341,10 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "(2,950 + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -16464,6 +16564,10 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "(2,400 + (Sky Mastery Lv x 25))% ATK/(3,400 + (Sky Mastery Lv x 25))% ATK (Moonset)"
           }
         ],
         "levelTables": [
@@ -16701,6 +16805,10 @@ export const skyEmperorData = {
           {
             "label": "Pulse",
             "value": "0.5 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(3,000 + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -17021,6 +17129,10 @@ export const skyEmperorData = {
           {
             "label": "AP Consumed",
             "value": "70"
+          },
+          {
+            "label": "Damage",
+            "value": "12,250% ATK per hit"
           }
         ],
         "levelTables": [
@@ -17493,6 +17605,10 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(7,500 + (Sky Mastery level x 35))% ATK"
           }
         ],
         "levelTables": []
@@ -17621,6 +17737,10 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(3,450 + (Sky Mastery level x 45))% ATK per hit"
           }
         ],
         "levelTables": []
@@ -17729,6 +17849,10 @@ export const skyEmperorData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(1,400 + (Sky Mastery level x 25))% ATK per hit"
           }
         ],
         "levelTables": []

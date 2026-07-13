@@ -1,5 +1,5 @@
 export const archMageData = {
-  "generatedAt": "2026-07-10T18:52:51.465Z",
+  "generatedAt": "2026-07-13T19:36:16.469Z",
   "classId": 4255,
   "classSlug": "arch-mage",
   "className": "Arch Mage",
@@ -854,6 +854,10 @@ export const archMageData = {
               {
                 "label": "Duration",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "3,750% MATK"
               }
             ],
             "levelTables": [
@@ -1077,6 +1081,10 @@ export const archMageData = {
               {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Damage",
+                "value": "3,980% MATK"
               }
             ],
             "levelTables": [
@@ -1351,6 +1359,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5~9 x 9"
+              },
+              {
+                "label": "Damage",
+                "value": "3,900% MATK"
               }
             ],
             "levelTables": [
@@ -1578,6 +1590,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "Lv 1: 5 x 5 cells / Lv 2: 5 x 5 cells / Lv 3: 7 x 7 cells / Lv 4: 7 x 7 cells / Lv 5: 9 x 9 cells"
+              },
+              {
+                "label": "Damage",
+                "value": "3,750% MATK"
               }
             ],
             "levelTables": [
@@ -1822,6 +1838,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3 ~ 11 x 11"
+              },
+              {
+                "label": "Damage",
+                "value": "1,250% MATK"
               }
             ],
             "levelTables": [
@@ -2271,6 +2291,10 @@ export const archMageData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "1,750% MATK"
               }
             ],
             "levelTables": [
@@ -2590,6 +2614,10 @@ export const archMageData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "4,900% MATK/6,800% MATK (Clima x )"
               }
             ],
             "levelTables": [
@@ -2923,6 +2951,10 @@ export const archMageData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "6,000% MATK/7,500% MATK (Clima x )"
               }
             ],
             "levelTables": [
@@ -3224,6 +3256,10 @@ export const archMageData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "6,000% MATK/7,500% MATK (Clima x )"
               }
             ],
             "levelTables": [
@@ -3560,6 +3596,10 @@ export const archMageData = {
               {
                 "label": "AP Generated",
                 "value": "5"
+              },
+              {
+                "label": "Damage",
+                "value": "4,750% MATK"
               }
             ],
             "levelTables": [
@@ -3825,6 +3865,10 @@ export const archMageData = {
               {
                 "label": "Duration",
                 "value": "Lv 1: 4 seconds / Lv 2: 5 seconds / Lv 3: 6 seconds / Lv 4: 7 seconds / Lv 5: 8 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "14,000% MATK"
               }
             ],
             "levelTables": [
@@ -4036,6 +4080,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "7 x 7~9 x 9"
+              },
+              {
+                "label": "Damage",
+                "value": "6,200% MATK"
               }
             ],
             "levelTables": [
@@ -4280,6 +4328,10 @@ export const archMageData = {
               {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Damage",
+                "value": "6,750% MATK"
               }
             ],
             "levelTables": [
@@ -4547,6 +4599,10 @@ export const archMageData = {
               {
                 "label": "Target",
                 "value": "Instant Cast"
+              },
+              {
+                "label": "Damage",
+                "value": "14,850% MATK"
               }
             ],
             "levelTables": [
@@ -4837,6 +4893,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "7 x 7~9 x 9"
+              },
+              {
+                "label": "Damage",
+                "value": "6,200% MATK"
               }
             ],
             "levelTables": [
@@ -5144,6 +5204,10 @@ export const archMageData = {
               {
                 "label": "AP Consumed",
                 "value": "150"
+              },
+              {
+                "label": "Damage",
+                "value": "18,300% MATK/6,500% MATK"
               }
             ],
             "levelTables": [
@@ -7779,6 +7843,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "3,700% MATK"
               }
             ],
             "levelTables": [
@@ -8075,6 +8143,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "7 x 7~11 x 11"
+              },
+              {
+                "label": "Damage",
+                "value": "700% MATK"
               }
             ],
             "levelTables": [
@@ -8957,6 +9029,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3 ~ 5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "2,000% MATK"
               }
             ],
             "levelTables": [
@@ -9538,6 +9614,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3 ~ 5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "3,000% MATK"
               }
             ],
             "levelTables": [
@@ -9852,6 +9932,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "7 x 7 ~ 11 x 11"
+              },
+              {
+                "label": "Damage",
+                "value": "2,500% MATK/4,200% MATK"
               }
             ],
             "levelTables": [
@@ -10171,6 +10255,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "15 x 5 ~ 15 x 9"
+              },
+              {
+                "label": "Damage",
+                "value": "4,000% MATK"
               }
             ],
             "levelTables": [
@@ -10775,6 +10863,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "13 x 13"
+              },
+              {
+                "label": "Damage",
+                "value": "6,000% MATK"
               }
             ],
             "levelTables": [
@@ -11752,6 +11844,10 @@ export const archMageData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "4,800% MATK"
               }
             ],
             "levelTables": [
@@ -13077,6 +13173,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "15 x 15"
+              },
+              {
+                "label": "Damage",
+                "value": "300% MATK"
               }
             ],
             "levelTables": [
@@ -14085,6 +14185,10 @@ export const archMageData = {
               {
                 "label": "Duration",
                 "value": "4 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "1,400% MATK"
               }
             ],
             "levelTables": [
@@ -14298,6 +14402,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "625% MATK"
               }
             ],
             "levelTables": [
@@ -15071,6 +15179,10 @@ export const archMageData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "250% MATK"
               }
             ],
             "levelTables": [
@@ -15894,6 +16006,10 @@ export const archMageData = {
               {
                 "label": "Duration",
                 "value": "4.5 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "570% MATK"
               }
             ],
             "levelTables": [
@@ -17299,6 +17415,10 @@ export const archMageData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "170% MATK"
               }
             ],
             "levelTables": [
@@ -18216,6 +18336,10 @@ export const archMageData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "200% MATK"
               }
             ],
             "levelTables": [
@@ -18707,6 +18831,10 @@ export const archMageData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "(5times, + 50% dmg to Undead, SP Consumption:38) ATK"
               }
             ],
             "levelTables": [
@@ -18960,6 +19088,10 @@ export const archMageData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "340% MATK/255% MATK"
               }
             ],
             "levelTables": [
@@ -20039,6 +20171,10 @@ export const archMageData = {
           {
             "label": "Duration",
             "value": "5 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "3,750% MATK"
           }
         ],
         "levelTables": [
@@ -20262,6 +20398,10 @@ export const archMageData = {
           {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Damage",
+            "value": "3,980% MATK"
           }
         ],
         "levelTables": [
@@ -20536,6 +20676,10 @@ export const archMageData = {
           {
             "label": "Area of Effect",
             "value": "5 x 5~9 x 9"
+          },
+          {
+            "label": "Damage",
+            "value": "3,900% MATK"
           }
         ],
         "levelTables": [
@@ -20763,6 +20907,10 @@ export const archMageData = {
           {
             "label": "Area of Effect",
             "value": "Lv 1: 5 x 5 cells / Lv 2: 5 x 5 cells / Lv 3: 7 x 7 cells / Lv 4: 7 x 7 cells / Lv 5: 9 x 9 cells"
+          },
+          {
+            "label": "Damage",
+            "value": "3,750% MATK"
           }
         ],
         "levelTables": [
@@ -21007,6 +21155,10 @@ export const archMageData = {
           {
             "label": "Area of Effect",
             "value": "3 x 3 ~ 11 x 11"
+          },
+          {
+            "label": "Damage",
+            "value": "1,250% MATK"
           }
         ],
         "levelTables": [
@@ -21456,6 +21608,10 @@ export const archMageData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "1,750% MATK"
           }
         ],
         "levelTables": [
@@ -21775,6 +21931,10 @@ export const archMageData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "4,900% MATK/6,800% MATK (Clima x )"
           }
         ],
         "levelTables": [
@@ -22108,6 +22268,10 @@ export const archMageData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "6,000% MATK/7,500% MATK (Clima x )"
           }
         ],
         "levelTables": [
@@ -22409,6 +22573,10 @@ export const archMageData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "6,000% MATK/7,500% MATK (Clima x )"
           }
         ],
         "levelTables": [
@@ -22745,6 +22913,10 @@ export const archMageData = {
           {
             "label": "AP Generated",
             "value": "5"
+          },
+          {
+            "label": "Damage",
+            "value": "4,750% MATK"
           }
         ],
         "levelTables": [
@@ -23010,6 +23182,10 @@ export const archMageData = {
           {
             "label": "Duration",
             "value": "Lv 1: 4 seconds / Lv 2: 5 seconds / Lv 3: 6 seconds / Lv 4: 7 seconds / Lv 5: 8 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "14,000% MATK"
           }
         ],
         "levelTables": [
@@ -23221,6 +23397,10 @@ export const archMageData = {
           {
             "label": "Area of Effect",
             "value": "7 x 7~9 x 9"
+          },
+          {
+            "label": "Damage",
+            "value": "6,200% MATK"
           }
         ],
         "levelTables": [
@@ -23465,6 +23645,10 @@ export const archMageData = {
           {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Damage",
+            "value": "6,750% MATK"
           }
         ],
         "levelTables": [
@@ -23732,6 +23916,10 @@ export const archMageData = {
           {
             "label": "Target",
             "value": "Instant Cast"
+          },
+          {
+            "label": "Damage",
+            "value": "14,850% MATK"
           }
         ],
         "levelTables": [
@@ -24022,6 +24210,10 @@ export const archMageData = {
           {
             "label": "Area of Effect",
             "value": "7 x 7~9 x 9"
+          },
+          {
+            "label": "Damage",
+            "value": "6,200% MATK"
           }
         ],
         "levelTables": [
@@ -24329,6 +24521,10 @@ export const archMageData = {
           {
             "label": "AP Consumed",
             "value": "150"
+          },
+          {
+            "label": "Damage",
+            "value": "18,300% MATK/6,500% MATK"
           }
         ],
         "levelTables": [

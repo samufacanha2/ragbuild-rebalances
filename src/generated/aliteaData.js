@@ -1,5 +1,5 @@
 export const aliteaData = {
-  "generatedAt": "2026-07-10T18:53:05.395Z",
+  "generatedAt": "2026-07-13T19:36:30.020Z",
   "classId": 4355,
   "classSlug": "alitea",
   "className": "Alitea",
@@ -579,6 +579,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "15,000% MATK"
               }
             ],
             "levelTables": [
@@ -763,6 +767,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "1~5, +5 (enhanced)"
+              },
+              {
+                "label": "Damage",
+                "value": "9,600% MATK per hit/13,500% MATK per hit (enhanced)"
               }
             ],
             "levelTables": [
@@ -929,6 +937,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "22,500% MATK"
               }
             ],
             "levelTables": [
@@ -1085,6 +1097,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "4,900% ATK/5,700% ATK (Madness level 1)"
               }
             ],
             "levelTables": [
@@ -1251,6 +1267,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "24,500% ATK"
               }
             ],
             "levelTables": []
@@ -1500,6 +1520,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "8,200% MATK per hit"
               }
             ],
             "levelTables": []
@@ -1623,6 +1647,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "13,350% MATK per hit/18,000% MATK per hit (enhanced)"
               }
             ],
             "levelTables": [
@@ -1799,6 +1827,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "14,700% MATK"
               }
             ],
             "levelTables": [
@@ -1955,6 +1987,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "6,200% ATK/7,000% ATK (Madness level 1)"
               }
             ],
             "levelTables": [
@@ -2121,6 +2157,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "20,500% ATK"
               }
             ],
             "levelTables": []
@@ -2345,6 +2385,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "8,400% MATK per hit"
               }
             ],
             "levelTables": [
@@ -2483,6 +2527,10 @@ export const aliteaData = {
               {
                 "label": "AP Consumed",
                 "value": "20~15"
+              },
+              {
+                "label": "Damage",
+                "value": "9,400% MATK"
               }
             ],
             "levelTables": []
@@ -2592,6 +2640,10 @@ export const aliteaData = {
               {
                 "label": "AP Consumed",
                 "value": "20/19/18/17/15"
+              },
+              {
+                "label": "Damage",
+                "value": "13,600% MATK"
               }
             ],
             "levelTables": [
@@ -2718,6 +2770,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "7,800% ATK per hit/8,600% ATK per hit (Madness level 1)"
               }
             ],
             "levelTables": [
@@ -2864,6 +2920,10 @@ export const aliteaData = {
               {
                 "label": "AP Consumed",
                 "value": "20"
+              },
+              {
+                "label": "Damage",
+                "value": "12,500% ATK per hit"
               }
             ],
             "levelTables": []
@@ -2973,6 +3033,10 @@ export const aliteaData = {
               {
                 "label": "AP Consumed",
                 "value": "15/14/13/12/10"
+              },
+              {
+                "label": "Damage",
+                "value": "14,400% MATK"
               }
             ],
             "levelTables": [
@@ -3099,6 +3163,10 @@ export const aliteaData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "2,000% ATK per hit/2,750% ATK per hit (Madness level 1)"
               }
             ],
             "levelTables": []
@@ -3595,6 +3663,10 @@ export const aliteaData = {
               {
                 "label": "AP Consumed",
                 "value": "40/38/36/33/30"
+              },
+              {
+                "label": "Damage",
+                "value": "7,500% MATK"
               }
             ],
             "levelTables": [
@@ -3741,6 +3813,10 @@ export const aliteaData = {
               {
                 "label": "AP Consumed",
                 "value": "15"
+              },
+              {
+                "label": "Damage",
+                "value": "21,000% ATK/27,000% ATK (Madness level 1)"
               }
             ],
             "levelTables": []
@@ -3844,6 +3920,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,920% ATK per hit/2,320% ATK per hit (Enrage)"
               }
             ],
             "levelTables": [
@@ -4029,6 +4109,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,720% ATK per hit/2,270% ATK per hit (Enrage)"
               }
             ],
             "levelTables": [
@@ -4375,6 +4459,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "1 cell ground target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,800% MATK per hit/900% MATK per hit (ice fog)"
               }
             ],
             "levelTables": [
@@ -4560,6 +4648,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Instant Casting"
+              },
+              {
+                "label": "Damage",
+                "value": "1,470% MATK per hit/2,050% MATK per hit (enhanced)"
               }
             ],
             "levelTables": [
@@ -4732,6 +4824,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Instant Casting"
+              },
+              {
+                "label": "Damage",
+                "value": "14,000% MATK per hit"
               }
             ],
             "levelTables": [
@@ -4854,6 +4950,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,350% ATK per hit/1,650% ATK per hit (Enrage)"
               }
             ],
             "levelTables": [
@@ -5016,6 +5116,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,000% ATK per hit/1,300% ATK per hit (Enrage)"
               }
             ],
             "levelTables": [
@@ -5362,6 +5466,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,770% MATK per hit"
               }
             ],
             "levelTables": [
@@ -5560,6 +5668,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "1 cell ground target"
+              },
+              {
+                "label": "Damage",
+                "value": "2,030% MATK per hit/2,650% MATK per hit (enhanced)"
               }
             ],
             "levelTables": [
@@ -5752,6 +5864,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "2,050% MATK"
               }
             ],
             "levelTables": []
@@ -5871,6 +5987,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "1 cell ground target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,510% ATK per hit/1,830% ATK per hit (Enrage)"
               }
             ],
             "levelTables": [
@@ -6029,6 +6149,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Instant Casting"
+              },
+              {
+                "label": "Damage",
+                "value": "1,460% ATK per hit/1,850% ATK per hit (Enrage)"
               }
             ],
             "levelTables": [
@@ -6197,6 +6321,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "7,000% MATK per hit/14,000% MATK per hit (enhanced)"
               }
             ],
             "levelTables": [
@@ -6389,6 +6517,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "1 cell ground target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,630% MATK per hit"
               }
             ],
             "levelTables": [
@@ -6567,6 +6699,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Instant Casting"
+              },
+              {
+                "label": "Damage",
+                "value": "1,460% ATK/1,860% ATK (Enrage)"
               }
             ],
             "levelTables": []
@@ -6659,6 +6795,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "1 cell ground target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,320% ATK per hit/1,620% ATK per hit (Enrage)"
               }
             ],
             "levelTables": [
@@ -8322,6 +8462,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,000% MATK per hit"
               }
             ],
             "levelTables": []
@@ -8434,6 +8578,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "500% MATK per hit"
               }
             ],
             "levelTables": []
@@ -8546,6 +8694,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,000% MATK"
               }
             ],
             "levelTables": []
@@ -8909,6 +9061,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "500% MATK per hit"
               }
             ],
             "levelTables": [
@@ -9101,6 +9257,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "500% MATK per hit"
               }
             ],
             "levelTables": [
@@ -9293,6 +9453,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Instant Casting"
+              },
+              {
+                "label": "Damage",
+                "value": "1,000% MATK"
               }
             ],
             "levelTables": [
@@ -9465,6 +9629,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Instant Casting"
+              },
+              {
+                "label": "Damage",
+                "value": "800% ATK per hit/1,200% ATK per hit (Enrage)"
               }
             ],
             "levelTables": [
@@ -9637,6 +9805,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "200% ATK per hit/400% ATK per hit (Enrage)"
               }
             ],
             "levelTables": []
@@ -10076,6 +10248,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "600% ATK per hit/800% ATK per hit (Enrage)"
               }
             ],
             "levelTables": []
@@ -10175,6 +10351,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "200% ATK per hit/400% ATK per hit (Enrage)"
               }
             ],
             "levelTables": [
@@ -10347,6 +10527,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "800% ATK/1,200% ATK (Enrage)"
               }
             ],
             "levelTables": []
@@ -10446,6 +10630,10 @@ export const aliteaData = {
               {
                 "label": "Target",
                 "value": "Single target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,000% ATK/1,500% ATK (Enrage)"
               }
             ],
             "levelTables": [
@@ -11032,6 +11220,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "15,000% MATK"
           }
         ],
         "levelTables": [
@@ -11216,6 +11408,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "1~5, +5 (enhanced)"
+          },
+          {
+            "label": "Damage",
+            "value": "9,600% MATK per hit/13,500% MATK per hit (enhanced)"
           }
         ],
         "levelTables": [
@@ -11382,6 +11578,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "22,500% MATK"
           }
         ],
         "levelTables": [
@@ -11538,6 +11738,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "4,900% ATK/5,700% ATK (Madness level 1)"
           }
         ],
         "levelTables": [
@@ -11704,6 +11908,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "24,500% ATK"
           }
         ],
         "levelTables": []
@@ -11953,6 +12161,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "8,200% MATK per hit"
           }
         ],
         "levelTables": []
@@ -12076,6 +12288,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "13,350% MATK per hit/18,000% MATK per hit (enhanced)"
           }
         ],
         "levelTables": [
@@ -12252,6 +12468,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "14,700% MATK"
           }
         ],
         "levelTables": [
@@ -12408,6 +12628,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "6,200% ATK/7,000% ATK (Madness level 1)"
           }
         ],
         "levelTables": [
@@ -12574,6 +12798,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "20,500% ATK"
           }
         ],
         "levelTables": []
@@ -12798,6 +13026,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "8,400% MATK per hit"
           }
         ],
         "levelTables": [
@@ -12936,6 +13168,10 @@ export const aliteaData = {
           {
             "label": "AP Consumed",
             "value": "20~15"
+          },
+          {
+            "label": "Damage",
+            "value": "9,400% MATK"
           }
         ],
         "levelTables": []
@@ -13045,6 +13281,10 @@ export const aliteaData = {
           {
             "label": "AP Consumed",
             "value": "20/19/18/17/15"
+          },
+          {
+            "label": "Damage",
+            "value": "13,600% MATK"
           }
         ],
         "levelTables": [
@@ -13171,6 +13411,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "7,800% ATK per hit/8,600% ATK per hit (Madness level 1)"
           }
         ],
         "levelTables": [
@@ -13317,6 +13561,10 @@ export const aliteaData = {
           {
             "label": "AP Consumed",
             "value": "20"
+          },
+          {
+            "label": "Damage",
+            "value": "12,500% ATK per hit"
           }
         ],
         "levelTables": []
@@ -13426,6 +13674,10 @@ export const aliteaData = {
           {
             "label": "AP Consumed",
             "value": "15/14/13/12/10"
+          },
+          {
+            "label": "Damage",
+            "value": "14,400% MATK"
           }
         ],
         "levelTables": [
@@ -13552,6 +13804,10 @@ export const aliteaData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "2,000% ATK per hit/2,750% ATK per hit (Madness level 1)"
           }
         ],
         "levelTables": []
@@ -14048,6 +14304,10 @@ export const aliteaData = {
           {
             "label": "AP Consumed",
             "value": "40/38/36/33/30"
+          },
+          {
+            "label": "Damage",
+            "value": "7,500% MATK"
           }
         ],
         "levelTables": [
@@ -14194,6 +14454,10 @@ export const aliteaData = {
           {
             "label": "AP Consumed",
             "value": "15"
+          },
+          {
+            "label": "Damage",
+            "value": "21,000% ATK/27,000% ATK (Madness level 1)"
           }
         ],
         "levelTables": []

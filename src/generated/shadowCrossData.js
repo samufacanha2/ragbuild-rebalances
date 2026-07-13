@@ -1,5 +1,5 @@
 export const shadowCrossData = {
-  "generatedAt": "2026-07-10T18:52:49.427Z",
+  "generatedAt": "2026-07-13T19:36:14.462Z",
   "classId": 4254,
   "classSlug": "shadow-cross",
   "className": "Shadow Cross",
@@ -795,6 +795,10 @@ export const shadowCrossData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "900% ATK per hit/1,100% ATK per hit (Shadow E x ceed)"
               }
             ],
             "levelTables": [
@@ -1314,6 +1318,10 @@ export const shadowCrossData = {
               {
                 "label": "Target",
                 "value": "1 Target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,325% ATK per hit"
               }
             ],
             "levelTables": [
@@ -1565,6 +1573,10 @@ export const shadowCrossData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "1,500% ATK per hit/1,800% ATK per hit (Shadow E x ceed)"
               }
             ],
             "levelTables": [
@@ -1770,6 +1782,10 @@ export const shadowCrossData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "400% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2318,6 +2334,10 @@ export const shadowCrossData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "1,750% ATK per hit/2,000% ATK per hit (Cloaking E x ceed)"
               }
             ],
             "levelTables": [
@@ -2998,6 +3018,10 @@ export const shadowCrossData = {
               {
                 "label": "AP Consumed",
                 "value": "150"
+              },
+              {
+                "label": "Damage",
+                "value": "13,000% ATK"
               }
             ],
             "levelTables": [
@@ -9566,6 +9590,10 @@ export const shadowCrossData = {
               {
                 "label": "Duration",
                 "value": "20~60 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "400% ATK"
               }
             ],
             "levelTables": [
@@ -9955,6 +9983,10 @@ export const shadowCrossData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3"
+              },
+              {
+                "label": "Damage",
+                "value": "200% ATK"
               }
             ],
             "levelTables": [
@@ -10459,6 +10491,10 @@ export const shadowCrossData = {
               {
                 "label": "Target",
                 "value": "1 target"
+              },
+              {
+                "label": "Damage",
+                "value": "1,500% ATK"
               }
             ],
             "levelTables": [
@@ -10882,6 +10918,10 @@ export const shadowCrossData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "440% ATK"
               }
             ],
             "levelTables": [
@@ -13534,6 +13574,10 @@ export const shadowCrossData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "900% ATK per hit/1,100% ATK per hit (Shadow E x ceed)"
           }
         ],
         "levelTables": [
@@ -14053,6 +14097,10 @@ export const shadowCrossData = {
           {
             "label": "Target",
             "value": "1 Target"
+          },
+          {
+            "label": "Damage",
+            "value": "1,325% ATK per hit"
           }
         ],
         "levelTables": [
@@ -14304,6 +14352,10 @@ export const shadowCrossData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "1,500% ATK per hit/1,800% ATK per hit (Shadow E x ceed)"
           }
         ],
         "levelTables": [
@@ -14509,6 +14561,10 @@ export const shadowCrossData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "400% ATK per hit"
           }
         ],
         "levelTables": [
@@ -15057,6 +15113,10 @@ export const shadowCrossData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "1,750% ATK per hit/2,000% ATK per hit (Cloaking E x ceed)"
           }
         ],
         "levelTables": [
@@ -15737,6 +15797,10 @@ export const shadowCrossData = {
           {
             "label": "AP Consumed",
             "value": "150"
+          },
+          {
+            "label": "Damage",
+            "value": "13,000% ATK"
           }
         ],
         "levelTables": [

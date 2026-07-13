@@ -1,5 +1,5 @@
 export const dragonKnightData = {
-  "generatedAt": "2026-07-10T18:52:45.474Z",
+  "generatedAt": "2026-07-13T19:36:10.547Z",
   "classId": 4252,
   "classSlug": "dragon-knight",
   "className": "Dragon Knight",
@@ -499,6 +499,10 @@ export const dragonKnightData = {
               {
                 "label": "AP Generated",
                 "value": "Skill Level x 6"
+              },
+              {
+                "label": "Damage",
+                "value": "2,500% ATK per hit"
               }
             ],
             "levelTables": [
@@ -1353,6 +1357,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Damage",
+                "value": "7,700% ATK per hit"
               }
             ],
             "levelTables": [
@@ -1758,6 +1766,10 @@ export const dragonKnightData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "3,550% ATK"
               }
             ],
             "levelTables": [
@@ -2014,6 +2026,10 @@ export const dragonKnightData = {
               {
                 "label": "Area of Effect",
                 "value": "7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "1,700% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2241,6 +2257,10 @@ export const dragonKnightData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "2,200% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2528,6 +2548,10 @@ export const dragonKnightData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "3,850% ATK per hit/4,200% ATK per hit (Dragonic Aura)"
               }
             ],
             "levelTables": []
@@ -2687,6 +2711,10 @@ export const dragonKnightData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "8,350% ATK"
               }
             ],
             "levelTables": [
@@ -3025,6 +3053,10 @@ export const dragonKnightData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "2,500% ATK per hit"
               }
             ],
             "levelTables": [
@@ -3644,6 +3676,10 @@ export const dragonKnightData = {
               {
                 "label": "AP Consumed",
                 "value": "150"
+              },
+              {
+                "label": "Damage",
+                "value": "36,500% ATK"
               }
             ],
             "levelTables": [
@@ -4158,6 +4194,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "250% ATK"
               }
             ],
             "levelTables": [
@@ -5151,6 +5191,10 @@ export const dragonKnightData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3 ~ 7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "2,600% ATK"
               }
             ],
             "levelTables": [
@@ -6423,6 +6467,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "2,550% ATK"
               }
             ],
             "levelTables": [
@@ -7280,6 +7328,10 @@ export const dragonKnightData = {
               {
                 "label": "Area of Effect",
                 "value": "9 x 9"
+              },
+              {
+                "label": "Damage",
+                "value": "2,250% ATK"
               }
             ],
             "levelTables": [
@@ -9298,6 +9350,10 @@ export const dragonKnightData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "500% ATK"
               }
             ],
             "levelTables": [
@@ -9731,6 +9787,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "200% ATK"
               }
             ],
             "levelTables": [
@@ -10477,6 +10537,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "350% ATK"
               }
             ],
             "levelTables": [
@@ -10680,6 +10744,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "300% ATK"
               }
             ],
             "levelTables": [
@@ -10879,6 +10947,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "300% ATK"
               }
             ],
             "levelTables": [
@@ -11108,6 +11180,10 @@ export const dragonKnightData = {
               {
                 "label": "Area of Effect",
                 "value": "Special"
+              },
+              {
+                "label": "Damage",
+                "value": "1,400% ATK"
               }
             ],
             "levelTables": [
@@ -11522,6 +11598,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "150% ATK"
               }
             ],
             "levelTables": [
@@ -12406,6 +12486,10 @@ export const dragonKnightData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "400% ATK"
               }
             ],
             "levelTables": [
@@ -13388,6 +13472,10 @@ export const dragonKnightData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "300% ATK"
               }
             ],
             "levelTables": [
@@ -14021,6 +14109,10 @@ export const dragonKnightData = {
           {
             "label": "AP Generated",
             "value": "Skill Level x 6"
+          },
+          {
+            "label": "Damage",
+            "value": "2,500% ATK per hit"
           }
         ],
         "levelTables": [
@@ -14875,6 +14967,10 @@ export const dragonKnightData = {
           {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Damage",
+            "value": "7,700% ATK per hit"
           }
         ],
         "levelTables": [
@@ -15280,6 +15376,10 @@ export const dragonKnightData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "3,550% ATK"
           }
         ],
         "levelTables": [
@@ -15536,6 +15636,10 @@ export const dragonKnightData = {
           {
             "label": "Area of Effect",
             "value": "7 x 7"
+          },
+          {
+            "label": "Damage",
+            "value": "1,700% ATK per hit"
           }
         ],
         "levelTables": [
@@ -15763,6 +15867,10 @@ export const dragonKnightData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "2,200% ATK per hit"
           }
         ],
         "levelTables": [
@@ -16050,6 +16158,10 @@ export const dragonKnightData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "3,850% ATK per hit/4,200% ATK per hit (Dragonic Aura)"
           }
         ],
         "levelTables": []
@@ -16209,6 +16321,10 @@ export const dragonKnightData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "8,350% ATK"
           }
         ],
         "levelTables": [
@@ -16547,6 +16663,10 @@ export const dragonKnightData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "2,500% ATK per hit"
           }
         ],
         "levelTables": [
@@ -17166,6 +17286,10 @@ export const dragonKnightData = {
           {
             "label": "AP Consumed",
             "value": "150"
+          },
+          {
+            "label": "Damage",
+            "value": "36,500% ATK"
           }
         ],
         "levelTables": [

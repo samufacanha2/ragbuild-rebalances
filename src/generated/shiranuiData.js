@@ -1,5 +1,5 @@
 export const shiranuiData = {
-  "generatedAt": "2026-07-10T18:53:00.109Z",
+  "generatedAt": "2026-07-13T19:36:24.932Z",
   "classId": 4305,
   "classSlug": "shiranui",
   "className": "Shiranui",
@@ -711,6 +711,10 @@ export const shiranuiData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5~7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "(10,500 + (Darkening Cannon Lv x 700))% MATK"
               }
             ],
             "levelTables": [
@@ -1020,6 +1024,10 @@ export const shiranuiData = {
               {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Damage",
+                "value": "3,500% ATK"
               }
             ],
             "levelTables": [
@@ -1246,6 +1254,10 @@ export const shiranuiData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(6,300 + (Kunai - Refraction Lv x 100))% ATK"
               }
             ],
             "levelTables": [
@@ -1537,6 +1549,10 @@ export const shiranuiData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(9,600 + (Shadow Flash Lv x 50))% ATK"
               }
             ],
             "levelTables": [
@@ -1918,6 +1934,10 @@ export const shiranuiData = {
               {
                 "label": "Target",
                 "value": "1 Cell Ground Target"
+              },
+              {
+                "label": "Damage",
+                "value": "(8,850 + (Darkening Cannon Lv x 400))% MATK"
               }
             ],
             "levelTables": [
@@ -2218,6 +2238,10 @@ export const shiranuiData = {
               {
                 "label": "Target",
                 "value": "1 cell ground target"
+              },
+              {
+                "label": "Damage",
+                "value": "3,500% MATK"
               }
             ],
             "levelTables": [
@@ -2400,6 +2424,10 @@ export const shiranuiData = {
               {
                 "label": "Pulse",
                 "value": "0.5 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(4,300 + (Kunai Distortion Lv x 350))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2695,6 +2723,10 @@ export const shiranuiData = {
               {
                 "label": "Pulse",
                 "value": "0.25 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(4,350 + (Huuma Shuriken - Construct Lv x 50))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -3016,6 +3048,10 @@ export const shiranuiData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(8,050 + (Shadow Hunting Lv x 500))% ATK"
               }
             ],
             "levelTables": [
@@ -3402,6 +3438,10 @@ export const shiranuiData = {
               {
                 "label": "Property",
                 "value": "wind property magical damage"
+              },
+              {
+                "label": "Damage",
+                "value": "(10,000 + (Darkening Cannon Lv x 700))% MATK"
               }
             ],
             "levelTables": [
@@ -3894,6 +3934,10 @@ export const shiranuiData = {
               {
                 "label": "Pulse",
                 "value": "0.25 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(3,800 + (Kunai Rotation Lv x 100))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -4189,6 +4233,10 @@ export const shiranuiData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 13"
+              },
+              {
+                "label": "Damage",
+                "value": "(12,600 + (H.S. - Grasp Lv x 300))% ATK/(15,600 + (H.S. - Grasp Lv x 300))% ATK (E x plosion)"
               }
             ],
             "levelTables": [
@@ -4512,6 +4560,10 @@ export const shiranuiData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 10"
+              },
+              {
+                "label": "Damage",
+                "value": "(9,000 + (Shadow Dance Lv x 500))% ATK"
               }
             ],
             "levelTables": [
@@ -4869,6 +4921,10 @@ export const shiranuiData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3~5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "(9,950 + (Darkening Cannon Lv x 150))% MATK"
               }
             ],
             "levelTables": [
@@ -5180,6 +5236,10 @@ export const shiranuiData = {
               {
                 "label": "AP Consumed",
                 "value": "20"
+              },
+              {
+                "label": "Damage",
+                "value": "18,000% ATK"
               }
             ],
             "levelTables": [
@@ -5353,6 +5413,10 @@ export const shiranuiData = {
               {
                 "label": "AP Consumed",
                 "value": "20"
+              },
+              {
+                "label": "Damage",
+                "value": "18,000% ATK"
               }
             ],
             "levelTables": [
@@ -5576,6 +5640,10 @@ export const shiranuiData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "9,950% MATK"
               }
             ],
             "levelTables": [
@@ -5849,6 +5917,10 @@ export const shiranuiData = {
               {
                 "label": "AP Consumed",
                 "value": "20"
+              },
+              {
+                "label": "Damage",
+                "value": "15,500% MATK"
               }
             ],
             "levelTables": [
@@ -11748,6 +11820,10 @@ export const shiranuiData = {
               {
                 "label": "Area of Effect",
                 "value": "Cross-shaped"
+              },
+              {
+                "label": "Damage",
+                "value": "150% ATK"
               }
             ],
             "levelTables": [
@@ -13863,6 +13939,10 @@ export const shiranuiData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "200% ATK"
               }
             ],
             "levelTables": [
@@ -14818,6 +14898,10 @@ export const shiranuiData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3 ~ 7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "360% MATK"
               }
             ],
             "levelTables": [
@@ -15007,6 +15091,10 @@ export const shiranuiData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3 ~ 5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "900% ATK"
               }
             ],
             "levelTables": [
@@ -15165,6 +15253,10 @@ export const shiranuiData = {
               {
                 "label": "Target",
                 "value": "1 target"
+              },
+              {
+                "label": "Damage",
+                "value": "800% ATK"
               }
             ],
             "levelTables": [
@@ -15354,6 +15446,10 @@ export const shiranuiData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "900% MATK"
               }
             ],
             "levelTables": [
@@ -15538,6 +15634,10 @@ export const shiranuiData = {
               {
                 "label": "Area of Effect",
                 "value": "7 x 7"
+              },
+              {
+                "label": "Damage",
+                "value": "60% MATK/350% MATK"
               }
             ],
             "levelTables": [
@@ -15722,6 +15822,10 @@ export const shiranuiData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "600% MATK"
               }
             ],
             "levelTables": [
@@ -16783,6 +16887,10 @@ export const shiranuiData = {
           {
             "label": "Area of Effect",
             "value": "5 x 5~7 x 7"
+          },
+          {
+            "label": "Damage",
+            "value": "(10,500 + (Darkening Cannon Lv x 700))% MATK"
           }
         ],
         "levelTables": [
@@ -17092,6 +17200,10 @@ export const shiranuiData = {
           {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Damage",
+            "value": "3,500% ATK"
           }
         ],
         "levelTables": [
@@ -17318,6 +17430,10 @@ export const shiranuiData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(6,300 + (Kunai - Refraction Lv x 100))% ATK"
           }
         ],
         "levelTables": [
@@ -17609,6 +17725,10 @@ export const shiranuiData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(9,600 + (Shadow Flash Lv x 50))% ATK"
           }
         ],
         "levelTables": [
@@ -17990,6 +18110,10 @@ export const shiranuiData = {
           {
             "label": "Target",
             "value": "1 Cell Ground Target"
+          },
+          {
+            "label": "Damage",
+            "value": "(8,850 + (Darkening Cannon Lv x 400))% MATK"
           }
         ],
         "levelTables": [
@@ -18290,6 +18414,10 @@ export const shiranuiData = {
           {
             "label": "Target",
             "value": "1 cell ground target"
+          },
+          {
+            "label": "Damage",
+            "value": "3,500% MATK"
           }
         ],
         "levelTables": [
@@ -18472,6 +18600,10 @@ export const shiranuiData = {
           {
             "label": "Pulse",
             "value": "0.5 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(4,300 + (Kunai Distortion Lv x 350))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -18767,6 +18899,10 @@ export const shiranuiData = {
           {
             "label": "Pulse",
             "value": "0.25 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(4,350 + (Huuma Shuriken - Construct Lv x 50))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -19088,6 +19224,10 @@ export const shiranuiData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(8,050 + (Shadow Hunting Lv x 500))% ATK"
           }
         ],
         "levelTables": [
@@ -19474,6 +19614,10 @@ export const shiranuiData = {
           {
             "label": "Property",
             "value": "wind property magical damage"
+          },
+          {
+            "label": "Damage",
+            "value": "(10,000 + (Darkening Cannon Lv x 700))% MATK"
           }
         ],
         "levelTables": [
@@ -19966,6 +20110,10 @@ export const shiranuiData = {
           {
             "label": "Pulse",
             "value": "0.25 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(3,800 + (Kunai Rotation Lv x 100))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -20261,6 +20409,10 @@ export const shiranuiData = {
           {
             "label": "Area of Effect",
             "value": "5 x 13"
+          },
+          {
+            "label": "Damage",
+            "value": "(12,600 + (H.S. - Grasp Lv x 300))% ATK/(15,600 + (H.S. - Grasp Lv x 300))% ATK (E x plosion)"
           }
         ],
         "levelTables": [
@@ -20584,6 +20736,10 @@ export const shiranuiData = {
           {
             "label": "Area of Effect",
             "value": "3 x 10"
+          },
+          {
+            "label": "Damage",
+            "value": "(9,000 + (Shadow Dance Lv x 500))% ATK"
           }
         ],
         "levelTables": [
@@ -20941,6 +21097,10 @@ export const shiranuiData = {
           {
             "label": "Area of Effect",
             "value": "3 x 3~5 x 5"
+          },
+          {
+            "label": "Damage",
+            "value": "(9,950 + (Darkening Cannon Lv x 150))% MATK"
           }
         ],
         "levelTables": [
@@ -21252,6 +21412,10 @@ export const shiranuiData = {
           {
             "label": "AP Consumed",
             "value": "20"
+          },
+          {
+            "label": "Damage",
+            "value": "18,000% ATK"
           }
         ],
         "levelTables": [
@@ -21425,6 +21589,10 @@ export const shiranuiData = {
           {
             "label": "AP Consumed",
             "value": "20"
+          },
+          {
+            "label": "Damage",
+            "value": "18,000% ATK"
           }
         ],
         "levelTables": [
@@ -21648,6 +21816,10 @@ export const shiranuiData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "9,950% MATK"
           }
         ],
         "levelTables": [
@@ -21921,6 +22093,10 @@ export const shiranuiData = {
           {
             "label": "AP Consumed",
             "value": "20"
+          },
+          {
+            "label": "Damage",
+            "value": "15,500% MATK"
           }
         ],
         "levelTables": [

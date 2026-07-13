@@ -1,5 +1,5 @@
 export const windHawkData = {
-  "generatedAt": "2026-07-10T18:52:55.580Z",
+  "generatedAt": "2026-07-13T19:36:20.541Z",
   "classId": 4257,
   "classSlug": "wind-hawk",
   "className": "Wind Hawk",
@@ -473,6 +473,10 @@ export const windHawkData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "9,400% ATK"
               }
             ],
             "levelTables": [
@@ -1196,6 +1200,10 @@ export const windHawkData = {
               {
                 "label": "AP Generated",
                 "value": "when hits 3 or more targets"
+              },
+              {
+                "label": "Damage",
+                "value": "10,000% ATK"
               }
             ],
             "levelTables": [
@@ -1689,6 +1697,10 @@ export const windHawkData = {
               {
                 "label": "AP Generated",
                 "value": "1/1/2/2/3"
+              },
+              {
+                "label": "Damage",
+                "value": "4,250% ATK"
               }
             ],
             "levelTables": [
@@ -1870,6 +1882,10 @@ export const windHawkData = {
               {
                 "label": "AP Generated",
                 "value": "1/1/2/2/3"
+              },
+              {
+                "label": "Damage",
+                "value": "4,250% ATK"
               }
             ],
             "levelTables": [
@@ -2047,6 +2063,10 @@ export const windHawkData = {
               {
                 "label": "Target",
                 "value": "Single Target"
+              },
+              {
+                "label": "Damage",
+                "value": "2,500% ATK"
               }
             ],
             "levelTables": [
@@ -2258,6 +2278,10 @@ export const windHawkData = {
               {
                 "label": "AP Generated",
                 "value": "1/1/2/2/3"
+              },
+              {
+                "label": "Damage",
+                "value": "4,250% ATK"
               }
             ],
             "levelTables": [
@@ -2439,6 +2463,10 @@ export const windHawkData = {
               {
                 "label": "AP Generated",
                 "value": "1/1/2/2/3"
+              },
+              {
+                "label": "Damage",
+                "value": "4,250% ATK"
               }
             ],
             "levelTables": [
@@ -2600,6 +2628,10 @@ export const windHawkData = {
               {
                 "label": "AP Consumed",
                 "value": "5"
+              },
+              {
+                "label": "Damage",
+                "value": "15,800% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2996,6 +3028,10 @@ export const windHawkData = {
               {
                 "label": "AP Consumed",
                 "value": "12"
+              },
+              {
+                "label": "Damage",
+                "value": "3,000% ATK"
               }
             ],
             "levelTables": [
@@ -3412,6 +3448,10 @@ export const windHawkData = {
               {
                 "label": "Ammunition",
                 "value": "3 arrows"
+              },
+              {
+                "label": "Damage",
+                "value": "700% ATK/1,150% ATK (Fear Breeze)"
               }
             ],
             "levelTables": [
@@ -5019,6 +5059,10 @@ export const windHawkData = {
               {
                 "label": "Ammunition",
                 "value": "5 Arrows"
+              },
+              {
+                "label": "Damage",
+                "value": "2,000% ATK/2,700% ATK (Fear Breeze)"
               }
             ],
             "levelTables": [
@@ -9713,6 +9757,10 @@ export const windHawkData = {
               {
                 "label": "Ammunition",
                 "value": "1 Arrow"
+              },
+              {
+                "label": "Damage",
+                "value": "1,800% ATK"
               }
             ],
             "levelTables": [
@@ -13310,6 +13358,10 @@ export const windHawkData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "190% ATK"
               }
             ],
             "levelTables": [
@@ -13740,6 +13792,10 @@ export const windHawkData = {
               {
                 "label": "Ammunition",
                 "value": "1 Arrow"
+              },
+              {
+                "label": "Damage",
+                "value": "80% ATK"
               }
             ],
             "levelTables": [
@@ -14059,6 +14115,10 @@ export const windHawkData = {
               {
                 "label": "Ammunition",
                 "value": "1 Arrow"
+              },
+              {
+                "label": "Damage",
+                "value": "250% ATK"
               }
             ],
             "levelTables": [
@@ -14978,6 +15038,10 @@ export const windHawkData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "9,400% ATK"
           }
         ],
         "levelTables": [
@@ -15701,6 +15765,10 @@ export const windHawkData = {
           {
             "label": "AP Generated",
             "value": "when hits 3 or more targets"
+          },
+          {
+            "label": "Damage",
+            "value": "10,000% ATK"
           }
         ],
         "levelTables": [
@@ -16194,6 +16262,10 @@ export const windHawkData = {
           {
             "label": "AP Generated",
             "value": "1/1/2/2/3"
+          },
+          {
+            "label": "Damage",
+            "value": "4,250% ATK"
           }
         ],
         "levelTables": [
@@ -16375,6 +16447,10 @@ export const windHawkData = {
           {
             "label": "AP Generated",
             "value": "1/1/2/2/3"
+          },
+          {
+            "label": "Damage",
+            "value": "4,250% ATK"
           }
         ],
         "levelTables": [
@@ -16552,6 +16628,10 @@ export const windHawkData = {
           {
             "label": "Target",
             "value": "Single Target"
+          },
+          {
+            "label": "Damage",
+            "value": "2,500% ATK"
           }
         ],
         "levelTables": [
@@ -16763,6 +16843,10 @@ export const windHawkData = {
           {
             "label": "AP Generated",
             "value": "1/1/2/2/3"
+          },
+          {
+            "label": "Damage",
+            "value": "4,250% ATK"
           }
         ],
         "levelTables": [
@@ -16944,6 +17028,10 @@ export const windHawkData = {
           {
             "label": "AP Generated",
             "value": "1/1/2/2/3"
+          },
+          {
+            "label": "Damage",
+            "value": "4,250% ATK"
           }
         ],
         "levelTables": [
@@ -17105,6 +17193,10 @@ export const windHawkData = {
           {
             "label": "AP Consumed",
             "value": "5"
+          },
+          {
+            "label": "Damage",
+            "value": "15,800% ATK per hit"
           }
         ],
         "levelTables": [
@@ -17501,6 +17593,10 @@ export const windHawkData = {
           {
             "label": "AP Consumed",
             "value": "12"
+          },
+          {
+            "label": "Damage",
+            "value": "3,000% ATK"
           }
         ],
         "levelTables": [

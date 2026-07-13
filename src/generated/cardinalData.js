@@ -1,5 +1,5 @@
 export const cardinalData = {
-  "generatedAt": "2026-07-10T18:52:53.624Z",
+  "generatedAt": "2026-07-13T19:36:18.600Z",
   "classId": 4256,
   "classSlug": "cardinal",
   "className": "Cardinal",
@@ -1476,6 +1476,10 @@ export const cardinalData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(4,750 + (Fidus Animus Lv x 25))% MATK"
               }
             ],
             "levelTables": [
@@ -1830,6 +1834,10 @@ export const cardinalData = {
               {
                 "label": "AP Generated",
                 "value": "3"
+              },
+              {
+                "label": "Damage",
+                "value": "(10,500 + (Mace & Book Mastery level x 500))% ATK"
               }
             ],
             "levelTables": [
@@ -2362,6 +2370,10 @@ export const cardinalData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(10,000 + (Fidus Animus Lv x 100))% MATK"
               }
             ],
             "levelTables": [
@@ -2664,6 +2676,10 @@ export const cardinalData = {
               {
                 "label": "Property",
                 "value": "holy property magical damage"
+              },
+              {
+                "label": "Damage",
+                "value": "(20,000 + (Fidus Animus level x 70))% MATK"
               }
             ],
             "levelTables": []
@@ -2852,6 +2868,10 @@ export const cardinalData = {
               {
                 "label": "AP Consumed",
                 "value": "12"
+              },
+              {
+                "label": "Damage",
+                "value": "16,500% ATK/18,000% ATK (Demon, Undead)"
               }
             ],
             "levelTables": [
@@ -3674,6 +3694,10 @@ export const cardinalData = {
               {
                 "label": "Pulse",
                 "value": "3 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "21,150% MATK/22,700% MATK (Demon, Undead)"
               }
             ],
             "levelTables": [
@@ -4325,6 +4349,10 @@ export const cardinalData = {
               {
                 "label": "Area of Effect",
                 "value": "3 x 3"
+              },
+              {
+                "label": "Damage",
+                "value": "1,000% MATK"
               }
             ],
             "levelTables": [
@@ -7986,6 +8014,10 @@ export const cardinalData = {
               {
                 "label": "Target",
                 "value": "Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "2,800% MATK"
               }
             ],
             "levelTables": [
@@ -19869,6 +19901,10 @@ export const cardinalData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(4,750 + (Fidus Animus Lv x 25))% MATK"
           }
         ],
         "levelTables": [
@@ -20223,6 +20259,10 @@ export const cardinalData = {
           {
             "label": "AP Generated",
             "value": "3"
+          },
+          {
+            "label": "Damage",
+            "value": "(10,500 + (Mace & Book Mastery level x 500))% ATK"
           }
         ],
         "levelTables": [
@@ -20755,6 +20795,10 @@ export const cardinalData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(10,000 + (Fidus Animus Lv x 100))% MATK"
           }
         ],
         "levelTables": [
@@ -21057,6 +21101,10 @@ export const cardinalData = {
           {
             "label": "Property",
             "value": "holy property magical damage"
+          },
+          {
+            "label": "Damage",
+            "value": "(20,000 + (Fidus Animus level x 70))% MATK"
           }
         ],
         "levelTables": []
@@ -21245,6 +21293,10 @@ export const cardinalData = {
           {
             "label": "AP Consumed",
             "value": "12"
+          },
+          {
+            "label": "Damage",
+            "value": "16,500% ATK/18,000% ATK (Demon, Undead)"
           }
         ],
         "levelTables": [
@@ -22067,6 +22119,10 @@ export const cardinalData = {
           {
             "label": "Pulse",
             "value": "3 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "21,150% MATK/22,700% MATK (Demon, Undead)"
           }
         ],
         "levelTables": [

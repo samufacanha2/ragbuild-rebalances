@@ -1,5 +1,5 @@
 export const elementalMasterData = {
-  "generatedAt": "2026-07-10T18:52:52.610Z",
+  "generatedAt": "2026-07-13T19:36:17.631Z",
   "classId": 4261,
   "classSlug": "elemental-master",
   "className": "Elemental Master",
@@ -842,6 +842,10 @@ export const elementalMasterData = {
               {
                 "label": "AP Generated",
                 "value": "5"
+              },
+              {
+                "label": "Damage",
+                "value": "8,150% MATK/14,400% MATK (Diluvio)"
               }
             ],
             "levelTables": [
@@ -1133,6 +1137,10 @@ export const elementalMasterData = {
               {
                 "label": "Pulse",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "3,750% MATK/5,750% MATK (Spirit)"
               }
             ],
             "levelTables": [
@@ -1437,6 +1445,10 @@ export const elementalMasterData = {
               {
                 "label": "Pulse",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "3,750% MATK/5,750% MATK (Pro cellsa)"
               }
             ],
             "levelTables": [
@@ -2036,6 +2048,10 @@ export const elementalMasterData = {
               {
                 "label": "AP Generated",
                 "value": "5"
+              },
+              {
+                "label": "Damage",
+                "value": "8,150% MATK/14,400% MATK (Spirit)"
               }
             ],
             "levelTables": [
@@ -2327,6 +2343,10 @@ export const elementalMasterData = {
               {
                 "label": "Pulse",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "3,750% MATK/5,750% MATK (Spirit)"
               }
             ],
             "levelTables": [
@@ -3108,6 +3128,10 @@ export const elementalMasterData = {
               {
                 "label": "Property",
                 "value": "neutral property magical damage"
+              },
+              {
+                "label": "Damage",
+                "value": "18,500% MATK"
               }
             ],
             "levelTables": [
@@ -3762,6 +3786,10 @@ export const elementalMasterData = {
               {
                 "label": "AP Consumed",
                 "value": "30"
+              },
+              {
+                "label": "Damage",
+                "value": "22,500% MATK/24,000% MATK (Dragon, Formless)"
               }
             ],
             "levelTables": [
@@ -5420,6 +5448,10 @@ export const elementalMasterData = {
               {
                 "label": "Duration",
                 "value": "(Skill Level × 1) seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "200% MATK"
               }
             ],
             "levelTables": [
@@ -7665,6 +7697,10 @@ export const elementalMasterData = {
               {
                 "label": "Area of Effect",
                 "value": "7 x 7 around target"
+              },
+              {
+                "label": "Damage",
+                "value": "2,500% MATK/3,500% MATK (Killing Cloud)"
               }
             ],
             "levelTables": [
@@ -15077,6 +15113,10 @@ export const elementalMasterData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "625% MATK"
               }
             ],
             "levelTables": [
@@ -18025,6 +18065,10 @@ export const elementalMasterData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "170% MATK"
               }
             ],
             "levelTables": [
@@ -18942,6 +18986,10 @@ export const elementalMasterData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "200% MATK"
               }
             ],
             "levelTables": [
@@ -19433,6 +19481,10 @@ export const elementalMasterData = {
               {
                 "label": "Target",
                 "value": "1 Enemy"
+              },
+              {
+                "label": "Damage",
+                "value": "(5times, + 50% dmg to Undead, SP Consumption:38) ATK"
               }
             ],
             "levelTables": [
@@ -19686,6 +19738,10 @@ export const elementalMasterData = {
               {
                 "label": "Area of Effect",
                 "value": "5 x 5"
+              },
+              {
+                "label": "Damage",
+                "value": "340% MATK/255% MATK"
               }
             ],
             "levelTables": [
@@ -20937,6 +20993,10 @@ export const elementalMasterData = {
           {
             "label": "AP Generated",
             "value": "5"
+          },
+          {
+            "label": "Damage",
+            "value": "8,150% MATK/14,400% MATK (Diluvio)"
           }
         ],
         "levelTables": [
@@ -21228,6 +21288,10 @@ export const elementalMasterData = {
           {
             "label": "Pulse",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "3,750% MATK/5,750% MATK (Spirit)"
           }
         ],
         "levelTables": [
@@ -21532,6 +21596,10 @@ export const elementalMasterData = {
           {
             "label": "Pulse",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "3,750% MATK/5,750% MATK (Pro cellsa)"
           }
         ],
         "levelTables": [
@@ -22131,6 +22199,10 @@ export const elementalMasterData = {
           {
             "label": "AP Generated",
             "value": "5"
+          },
+          {
+            "label": "Damage",
+            "value": "8,150% MATK/14,400% MATK (Spirit)"
           }
         ],
         "levelTables": [
@@ -22422,6 +22494,10 @@ export const elementalMasterData = {
           {
             "label": "Pulse",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "3,750% MATK/5,750% MATK (Spirit)"
           }
         ],
         "levelTables": [
@@ -23203,6 +23279,10 @@ export const elementalMasterData = {
           {
             "label": "Property",
             "value": "neutral property magical damage"
+          },
+          {
+            "label": "Damage",
+            "value": "18,500% MATK"
           }
         ],
         "levelTables": [
@@ -23857,6 +23937,10 @@ export const elementalMasterData = {
           {
             "label": "AP Consumed",
             "value": "30"
+          },
+          {
+            "label": "Damage",
+            "value": "22,500% MATK/24,000% MATK (Dragon, Formless)"
           }
         ],
         "levelTables": [

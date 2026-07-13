@@ -1,5 +1,5 @@
 export const spiritHandlerData = {
-  "generatedAt": "2026-07-10T18:53:02.959Z",
+  "generatedAt": "2026-07-13T19:36:27.639Z",
   "classId": 4308,
   "classSlug": "spirit-handler",
   "className": "Spirit Handler",
@@ -638,6 +638,10 @@ export const spiritHandlerData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "(12,400 + (Mystical Creature Mastery Lv x 50))% ATK/(15,200 + (Mystical Creature Mastery Lv x 100))% ATK (Commune With Chulho)"
               }
             ],
             "levelTables": [
@@ -1329,6 +1333,10 @@ export const spiritHandlerData = {
               {
                 "label": "AP Generated",
                 "value": "1"
+              },
+              {
+                "label": "Damage",
+                "value": "(1,600 + (Mystical Creature Mastery level x 70))% ATK per hit"
               }
             ],
             "levelTables": []
@@ -1488,6 +1496,10 @@ export const spiritHandlerData = {
               {
                 "label": "AP Generated",
                 "value": "2"
+              },
+              {
+                "label": "Damage",
+                "value": "(7,950 + (Mystical Creature Mastery Lv x 50))% ATK/(8,750 + (Mystical Creature Mastery Lv x 100))% ATK (Commune)"
               }
             ],
             "levelTables": [
@@ -2298,6 +2310,10 @@ export const spiritHandlerData = {
               {
                 "label": "Pulse",
                 "value": "0.3 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "(5,900 + (Mystical Creature Mastery Lv x 20))% MATK/(7,400 + (Mystical Creature Mastery Lv x 40))% MATK (Commune With Chulho)"
               }
             ],
             "levelTables": [
@@ -2570,6 +2586,10 @@ export const spiritHandlerData = {
               {
                 "label": "AP Generated",
                 "value": "1, 2(if Commune With Chulho is learned)"
+              },
+              {
+                "label": "Damage",
+                "value": "(1,580 + (Mystical Creature Mastery Lv x 10))% ATK per hit/(2,700 + (Mystical Creature Mastery Lv x 20))% ATK per hit (Commune)"
               }
             ],
             "levelTables": [
@@ -3096,6 +3116,10 @@ export const spiritHandlerData = {
               {
                 "label": "AP Generated",
                 "value": "1, 2(if Commune With Hyunrok is learned)"
+              },
+              {
+                "label": "Damage",
+                "value": "(11,900 + (Mystical Creature Mastery Lv x 50))% MATK/(14,000 + (Mystical Creature Mastery Lv x 75))% MATK (Commune)"
               }
             ],
             "levelTables": [
@@ -3362,6 +3386,10 @@ export const spiritHandlerData = {
               {
                 "label": "Property",
                 "value": "neutral property magical damage"
+              },
+              {
+                "label": "Damage",
+                "value": "(1,750 + (Mystical Creature Mastery level x 30))% MATK per hit"
               }
             ],
             "levelTables": []
@@ -7761,6 +7789,10 @@ export const spiritHandlerData = {
               {
                 "label": "Duration",
                 "value": "5 seconds"
+              },
+              {
+                "label": "Damage",
+                "value": "700% MATK"
               }
             ],
             "levelTables": [
@@ -12971,6 +13003,10 @@ export const spiritHandlerData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "(12,400 + (Mystical Creature Mastery Lv x 50))% ATK/(15,200 + (Mystical Creature Mastery Lv x 100))% ATK (Commune With Chulho)"
           }
         ],
         "levelTables": [
@@ -13662,6 +13698,10 @@ export const spiritHandlerData = {
           {
             "label": "AP Generated",
             "value": "1"
+          },
+          {
+            "label": "Damage",
+            "value": "(1,600 + (Mystical Creature Mastery level x 70))% ATK per hit"
           }
         ],
         "levelTables": []
@@ -13821,6 +13861,10 @@ export const spiritHandlerData = {
           {
             "label": "AP Generated",
             "value": "2"
+          },
+          {
+            "label": "Damage",
+            "value": "(7,950 + (Mystical Creature Mastery Lv x 50))% ATK/(8,750 + (Mystical Creature Mastery Lv x 100))% ATK (Commune)"
           }
         ],
         "levelTables": [
@@ -14631,6 +14675,10 @@ export const spiritHandlerData = {
           {
             "label": "Pulse",
             "value": "0.3 seconds"
+          },
+          {
+            "label": "Damage",
+            "value": "(5,900 + (Mystical Creature Mastery Lv x 20))% MATK/(7,400 + (Mystical Creature Mastery Lv x 40))% MATK (Commune With Chulho)"
           }
         ],
         "levelTables": [
@@ -14903,6 +14951,10 @@ export const spiritHandlerData = {
           {
             "label": "AP Generated",
             "value": "1, 2(if Commune With Chulho is learned)"
+          },
+          {
+            "label": "Damage",
+            "value": "(1,580 + (Mystical Creature Mastery Lv x 10))% ATK per hit/(2,700 + (Mystical Creature Mastery Lv x 20))% ATK per hit (Commune)"
           }
         ],
         "levelTables": [
@@ -15429,6 +15481,10 @@ export const spiritHandlerData = {
           {
             "label": "AP Generated",
             "value": "1, 2(if Commune With Hyunrok is learned)"
+          },
+          {
+            "label": "Damage",
+            "value": "(11,900 + (Mystical Creature Mastery Lv x 50))% MATK/(14,000 + (Mystical Creature Mastery Lv x 75))% MATK (Commune)"
           }
         ],
         "levelTables": [
@@ -15695,6 +15751,10 @@ export const spiritHandlerData = {
           {
             "label": "Property",
             "value": "neutral property magical damage"
+          },
+          {
+            "label": "Damage",
+            "value": "(1,750 + (Mystical Creature Mastery level x 30))% MATK per hit"
           }
         ],
         "levelTables": []
