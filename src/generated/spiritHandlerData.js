@@ -1,5 +1,5 @@
 export const spiritHandlerData = {
-  "generatedAt": "2026-07-13T20:14:19.366Z",
+  "generatedAt": "2026-07-15T23:18:06.114Z",
   "classId": 4308,
   "classSlug": "spirit-handler",
   "className": "Spirit Handler",
@@ -640,8 +640,20 @@ export const spiritHandlerData = {
                 "value": "1"
               },
               {
-                "label": "Damage",
-                "value": "(12,400 + (Mystical Creature Mastery Lv x 50))% ATK/(15,200 + (Mystical Creature Mastery Lv x 100))% ATK (Commune With Chulho)"
+                "label": "Base Damage",
+                "value": "12,400% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "15,200% ATK (Commune With Chulho)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Mystical Creature Mastery Lv x 50))% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Commune With Chulho) + (Mystical Creature Mastery Lv x 100))% ATK"
               }
             ],
             "levelTables": [
@@ -722,7 +734,7 @@ export const spiritHandlerData = {
                   "source": "Increases SP consumption from 42 to 54 based on level 7."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2800%/3150%(Commune With Chulho)Atk",
                   "after": "5650%/6450%(Commune With Chulho)Atk",
                   "scope": "Lv 7",
@@ -756,7 +768,7 @@ export const spiritHandlerData = {
                   "source": "Increases cast range from 9 cells to 11 cells."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5650%/6450%Atk",
                   "after": "12400%/15200%Atk",
                   "scope": "Lv 7",
@@ -775,7 +787,7 @@ export const spiritHandlerData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "12400+(Mystical Creature level x 50)%/15200+(Mystical Creature level x 100)%(Commune With Chulho)Atk",
                   "after": "16500+(Mystical Creature level x 50)%/19300+(Mystical Creature level x 100)%(Commune With Chulho)Atk",
                   "scope": "Lv 7",
@@ -1357,8 +1369,12 @@ export const spiritHandlerData = {
                 "value": "1"
               },
               {
-                "label": "Damage",
-                "value": "(1,600 + (Mystical Creature Mastery level x 70))% ATK per hit"
+                "label": "Base Damage",
+                "value": "1,600% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Mystical Creature Mastery level x 70))% ATK per hit"
               }
             ],
             "levelTables": []
@@ -1520,8 +1536,20 @@ export const spiritHandlerData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(7,950 + (Mystical Creature Mastery Lv x 50))% ATK/(8,750 + (Mystical Creature Mastery Lv x 100))% ATK (Commune)"
+                "label": "Base Damage",
+                "value": "7,950% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "8,750% ATK (Commune)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Mystical Creature Mastery Lv x 50))% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Commune) + (Mystical Creature Mastery Lv x 100))% ATK"
               }
             ],
             "levelTables": [
@@ -1623,7 +1651,7 @@ export const spiritHandlerData = {
                   "source": "Increases SP consumption from 62 to 68."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5750%/7250%(Commune With Chulho)Atk",
                   "after": "7950%/8750%(Commune With Chulho)Atk",
                   "scope": "Lv 7",
@@ -2334,8 +2362,20 @@ export const spiritHandlerData = {
                 "value": "0.3 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(5,900 + (Mystical Creature Mastery Lv x 20))% MATK/(7,400 + (Mystical Creature Mastery Lv x 40))% MATK (Commune With Chulho)"
+                "label": "Base Damage",
+                "value": "5,900% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "7,400% MATK (Commune With Chulho)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Mystical Creature Mastery Lv x 20))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Commune With Chulho) + (Mystical Creature Mastery Lv x 40))% MATK"
               }
             ],
             "levelTables": [
@@ -2434,7 +2474,7 @@ export const spiritHandlerData = {
                   "source": "Increases AP recovery rate from 3 to 4."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2250%/4000%(Commune With Hyunrok)Matk",
                   "after": "4800%/6300%(Commune With Hyunrok)Matk",
                   "scope": "Lv 7",
@@ -2453,7 +2493,7 @@ export const spiritHandlerData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4800%/6300%Matk",
                   "after": "5900%/7400%Matk per hit",
                   "scope": "Lv 7",
@@ -2610,8 +2650,20 @@ export const spiritHandlerData = {
                 "value": "1, 2(if Commune With Chulho is learned)"
               },
               {
-                "label": "Damage",
-                "value": "(1,580 + (Mystical Creature Mastery Lv x 10))% ATK per hit/(2,700 + (Mystical Creature Mastery Lv x 20))% ATK per hit (Commune)"
+                "label": "Base Damage",
+                "value": "1,580% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "2,700% ATK per hit (Commune)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Mystical Creature Mastery Lv x 10))% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Commune) + (Mystical Creature Mastery Lv x 20))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2703,7 +2755,7 @@ export const spiritHandlerData = {
                   "source": "Increases SP consumption from 68 to 72 based on level 7."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "900%/1500%(Commune With Chulho)Atk",
                   "after": "1580%/2700%(Commune With Chulho)Atk per hit",
                   "scope": "Lv 7",
@@ -3140,8 +3192,20 @@ export const spiritHandlerData = {
                 "value": "1, 2(if Commune With Hyunrok is learned)"
               },
               {
-                "label": "Damage",
-                "value": "(11,900 + (Mystical Creature Mastery Lv x 50))% MATK/(14,000 + (Mystical Creature Mastery Lv x 75))% MATK (Commune)"
+                "label": "Base Damage",
+                "value": "11,900% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "14,000% MATK (Commune)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Mystical Creature Mastery Lv x 50))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Commune) + (Mystical Creature Mastery Lv x 75))% MATK"
               }
             ],
             "levelTables": [
@@ -3229,7 +3293,7 @@ export const spiritHandlerData = {
                   "source": "Increases SP consumption from 62 to 74 based on level 7."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3400%/4400%(Commune With Hyunrok)Matk",
                   "after": "7300%/8500%(Commune With Hyunrok)Matk",
                   "scope": "Lv 7",
@@ -3264,7 +3328,7 @@ export const spiritHandlerData = {
                   "source": "Reduces SP consumption from 74 to 65 based on level 7."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "7350%/8500%Matk",
                   "after": "11900%/14000%Matk",
                   "scope": "Lv 7",
@@ -3283,7 +3347,7 @@ export const spiritHandlerData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "11900+(Mystical Creature level x 50)%/14000+(Mystical Creature level x 75)%(Commune With Hyunrok)Matk",
                   "after": "15450+(Mystical Creature level x 50)%/18250+(Mystical Creature level x 75)%(Commune With Hyunrok)Matk",
                   "scope": "Lv 7",
@@ -3410,8 +3474,12 @@ export const spiritHandlerData = {
                 "value": "neutral property magical damage"
               },
               {
-                "label": "Damage",
-                "value": "(1,750 + (Mystical Creature Mastery level x 30))% MATK per hit"
+                "label": "Base Damage",
+                "value": "1,750% MATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Mystical Creature Mastery level x 30))% MATK per hit"
               }
             ],
             "levelTables": []
@@ -7813,7 +7881,7 @@ export const spiritHandlerData = {
                 "value": "5 seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "700% MATK"
               }
             ],
@@ -13027,8 +13095,20 @@ export const spiritHandlerData = {
             "value": "1"
           },
           {
-            "label": "Damage",
-            "value": "(12,400 + (Mystical Creature Mastery Lv x 50))% ATK/(15,200 + (Mystical Creature Mastery Lv x 100))% ATK (Commune With Chulho)"
+            "label": "Base Damage",
+            "value": "12,400% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "15,200% ATK (Commune With Chulho)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Mystical Creature Mastery Lv x 50))% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Commune With Chulho) + (Mystical Creature Mastery Lv x 100))% ATK"
           }
         ],
         "levelTables": [
@@ -13109,7 +13189,7 @@ export const spiritHandlerData = {
               "source": "Increases SP consumption from 42 to 54 based on level 7."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2800%/3150%(Commune With Chulho)Atk",
               "after": "5650%/6450%(Commune With Chulho)Atk",
               "scope": "Lv 7",
@@ -13143,7 +13223,7 @@ export const spiritHandlerData = {
               "source": "Increases cast range from 9 cells to 11 cells."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5650%/6450%Atk",
               "after": "12400%/15200%Atk",
               "scope": "Lv 7",
@@ -13162,7 +13242,7 @@ export const spiritHandlerData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "12400+(Mystical Creature level x 50)%/15200+(Mystical Creature level x 100)%(Commune With Chulho)Atk",
               "after": "16500+(Mystical Creature level x 50)%/19300+(Mystical Creature level x 100)%(Commune With Chulho)Atk",
               "scope": "Lv 7",
@@ -13744,8 +13824,12 @@ export const spiritHandlerData = {
             "value": "1"
           },
           {
-            "label": "Damage",
-            "value": "(1,600 + (Mystical Creature Mastery level x 70))% ATK per hit"
+            "label": "Base Damage",
+            "value": "1,600% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Mystical Creature Mastery level x 70))% ATK per hit"
           }
         ],
         "levelTables": []
@@ -13907,8 +13991,20 @@ export const spiritHandlerData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(7,950 + (Mystical Creature Mastery Lv x 50))% ATK/(8,750 + (Mystical Creature Mastery Lv x 100))% ATK (Commune)"
+            "label": "Base Damage",
+            "value": "7,950% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "8,750% ATK (Commune)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Mystical Creature Mastery Lv x 50))% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Commune) + (Mystical Creature Mastery Lv x 100))% ATK"
           }
         ],
         "levelTables": [
@@ -14010,7 +14106,7 @@ export const spiritHandlerData = {
               "source": "Increases SP consumption from 62 to 68."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5750%/7250%(Commune With Chulho)Atk",
               "after": "7950%/8750%(Commune With Chulho)Atk",
               "scope": "Lv 7",
@@ -14721,8 +14817,20 @@ export const spiritHandlerData = {
             "value": "0.3 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(5,900 + (Mystical Creature Mastery Lv x 20))% MATK/(7,400 + (Mystical Creature Mastery Lv x 40))% MATK (Commune With Chulho)"
+            "label": "Base Damage",
+            "value": "5,900% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "7,400% MATK (Commune With Chulho)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Mystical Creature Mastery Lv x 20))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Commune With Chulho) + (Mystical Creature Mastery Lv x 40))% MATK"
           }
         ],
         "levelTables": [
@@ -14821,7 +14929,7 @@ export const spiritHandlerData = {
               "source": "Increases AP recovery rate from 3 to 4."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2250%/4000%(Commune With Hyunrok)Matk",
               "after": "4800%/6300%(Commune With Hyunrok)Matk",
               "scope": "Lv 7",
@@ -14840,7 +14948,7 @@ export const spiritHandlerData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4800%/6300%Matk",
               "after": "5900%/7400%Matk per hit",
               "scope": "Lv 7",
@@ -14997,8 +15105,20 @@ export const spiritHandlerData = {
             "value": "1, 2(if Commune With Chulho is learned)"
           },
           {
-            "label": "Damage",
-            "value": "(1,580 + (Mystical Creature Mastery Lv x 10))% ATK per hit/(2,700 + (Mystical Creature Mastery Lv x 20))% ATK per hit (Commune)"
+            "label": "Base Damage",
+            "value": "1,580% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "2,700% ATK per hit (Commune)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Mystical Creature Mastery Lv x 10))% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Commune) + (Mystical Creature Mastery Lv x 20))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -15090,7 +15210,7 @@ export const spiritHandlerData = {
               "source": "Increases SP consumption from 68 to 72 based on level 7."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "900%/1500%(Commune With Chulho)Atk",
               "after": "1580%/2700%(Commune With Chulho)Atk per hit",
               "scope": "Lv 7",
@@ -15527,8 +15647,20 @@ export const spiritHandlerData = {
             "value": "1, 2(if Commune With Hyunrok is learned)"
           },
           {
-            "label": "Damage",
-            "value": "(11,900 + (Mystical Creature Mastery Lv x 50))% MATK/(14,000 + (Mystical Creature Mastery Lv x 75))% MATK (Commune)"
+            "label": "Base Damage",
+            "value": "11,900% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "14,000% MATK (Commune)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Mystical Creature Mastery Lv x 50))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Commune) + (Mystical Creature Mastery Lv x 75))% MATK"
           }
         ],
         "levelTables": [
@@ -15616,7 +15748,7 @@ export const spiritHandlerData = {
               "source": "Increases SP consumption from 62 to 74 based on level 7."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3400%/4400%(Commune With Hyunrok)Matk",
               "after": "7300%/8500%(Commune With Hyunrok)Matk",
               "scope": "Lv 7",
@@ -15651,7 +15783,7 @@ export const spiritHandlerData = {
               "source": "Reduces SP consumption from 74 to 65 based on level 7."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "7350%/8500%Matk",
               "after": "11900%/14000%Matk",
               "scope": "Lv 7",
@@ -15670,7 +15802,7 @@ export const spiritHandlerData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "11900+(Mystical Creature level x 50)%/14000+(Mystical Creature level x 75)%(Commune With Hyunrok)Matk",
               "after": "15450+(Mystical Creature level x 50)%/18250+(Mystical Creature level x 75)%(Commune With Hyunrok)Matk",
               "scope": "Lv 7",
@@ -15797,8 +15929,12 @@ export const spiritHandlerData = {
             "value": "neutral property magical damage"
           },
           {
-            "label": "Damage",
-            "value": "(1,750 + (Mystical Creature Mastery level x 30))% MATK per hit"
+            "label": "Base Damage",
+            "value": "1,750% MATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Mystical Creature Mastery level x 30))% MATK per hit"
           }
         ],
         "levelTables": []

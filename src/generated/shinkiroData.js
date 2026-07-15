@@ -1,5 +1,5 @@
 export const shinkiroData = {
-  "generatedAt": "2026-07-13T20:14:15.831Z",
+  "generatedAt": "2026-07-15T23:18:02.544Z",
   "classId": 4304,
   "classSlug": "shinkiro",
   "className": "Shinkiro",
@@ -713,8 +713,12 @@ export const shinkiroData = {
                 "value": "5 x 5~7 x 7"
               },
               {
-                "label": "Damage",
-                "value": "(10,500 + (Darkening Cannon Lv x 700))% MATK"
+                "label": "Base Damage",
+                "value": "10,500% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Darkening Cannon Lv x 700))% MATK"
               }
             ],
             "levelTables": [
@@ -837,7 +841,7 @@ export const shinkiroData = {
                   "source": "Increases SP consumption from 62 to 92 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6200%Matk",
                   "after": "13350%Matk",
                   "scope": "Lv 10",
@@ -881,7 +885,7 @@ export const shinkiroData = {
                   "source": "Reduces SP consumption from 92 to 80 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "13350%Matk",
                   "after": "10500%Matk",
                   "scope": "Lv 10",
@@ -900,7 +904,7 @@ export const shinkiroData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "10500+(Darkening Cannon skill level x 700)%Matk",
                   "after": "11600+(Darkening Cannon skill level x 700)%Matk",
                   "scope": "Lv 10",
@@ -1026,7 +1030,7 @@ export const shinkiroData = {
                 "value": "Single Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,500% ATK"
               }
             ],
@@ -1256,8 +1260,12 @@ export const shinkiroData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(6,300 + (Kunai - Refraction Lv x 100))% ATK"
+                "label": "Base Damage",
+                "value": "6,300% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Kunai - Refraction Lv x 100))% ATK"
               }
             ],
             "levelTables": [
@@ -1364,7 +1372,7 @@ export const shinkiroData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4000%Atk",
                   "after": "6300%Atk",
                   "scope": "Lv 10",
@@ -1551,8 +1559,12 @@ export const shinkiroData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(9,600 + (Shadow Flash Lv x 50))% ATK"
+                "label": "Base Damage",
+                "value": "9,600% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Shadow Flash Lv x 50))% ATK"
               }
             ],
             "levelTables": [
@@ -1669,7 +1681,7 @@ export const shinkiroData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4500%Atk",
                   "after": "9600%Atk",
                   "scope": "Lv 10",
@@ -1936,8 +1948,12 @@ export const shinkiroData = {
                 "value": "1 Cell Ground Target"
               },
               {
-                "label": "Damage",
-                "value": "(8,850 + (Darkening Cannon Lv x 400))% MATK"
+                "label": "Base Damage",
+                "value": "8,850% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Darkening Cannon Lv x 400))% MATK"
               }
             ],
             "levelTables": [
@@ -2066,7 +2082,7 @@ export const shinkiroData = {
                   "source": "Increases SP consumption from 61 to 88 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3500%Matk",
                   "after": "5750%Matk",
                   "scope": "Lv 10",
@@ -2100,7 +2116,7 @@ export const shinkiroData = {
                   "source": "Reduces SP consumption from 92 to 76 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5750%Matk",
                   "after": "8850%Matk",
                   "scope": "Lv 10",
@@ -2119,7 +2135,7 @@ export const shinkiroData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8850+(Darkening Cannon skill level x 400)%Matk",
                   "after": "9950+(Darkening Cannon skill level x 400)%Matk",
                   "scope": "Lv 10",
@@ -2240,7 +2256,7 @@ export const shinkiroData = {
                 "value": "1 cell ground target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,500% MATK"
               }
             ],
@@ -2426,8 +2442,12 @@ export const shinkiroData = {
                 "value": "0.5 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(4,300 + (Kunai Distortion Lv x 350))% ATK per hit"
+                "label": "Base Damage",
+                "value": "4,300% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Kunai Distortion Lv x 350))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2505,7 +2525,7 @@ export const shinkiroData = {
                   "source": "Increases SP consumption from 55 to 76 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3300%Atk",
                   "after": "4300%Atk",
                   "scope": "Lv 5",
@@ -2531,7 +2551,7 @@ export const shinkiroData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4300+(Kunai - Distortion skill level x 350)%Atk",
                   "after": "6200+(Kunai - Distortion skill level x 500)%Atk",
                   "scope": "Lv 5",
@@ -2725,8 +2745,12 @@ export const shinkiroData = {
                 "value": "0.25 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(4,350 + (Huuma Shuriken - Construct Lv x 50))% ATK per hit"
+                "label": "Base Damage",
+                "value": "4,350% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Huuma Shuriken - Construct Lv x 50))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2865,7 +2889,7 @@ export const shinkiroData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2700%Atk",
                   "after": "4350%Atk",
                   "scope": "Lv 10",
@@ -3050,8 +3074,12 @@ export const shinkiroData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(8,050 + (Shadow Hunting Lv x 500))% ATK"
+                "label": "Base Damage",
+                "value": "8,050% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Shadow Hunting Lv x 500))% ATK"
               }
             ],
             "levelTables": [
@@ -3195,7 +3223,7 @@ export const shinkiroData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6500%Atk",
                   "after": "5900%Atk",
                   "scope": "Lv 10",
@@ -3238,7 +3266,7 @@ export const shinkiroData = {
                   "source": "Reduces area of effect from 9 x 9 cells to 7 x 7 cells based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5900%Atk",
                   "after": "8050%Atk",
                   "scope": "Lv 10",
@@ -3257,7 +3285,7 @@ export const shinkiroData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8050+(Shadow Hunting skill level x 500)%Atk",
                   "after": "9750+(Shadow Hunting skill level x 700)%Atk",
                   "scope": "Lv 10",
@@ -3440,8 +3468,12 @@ export const shinkiroData = {
                 "value": "wind property magical damage"
               },
               {
-                "label": "Damage",
-                "value": "(10,000 + (Darkening Cannon Lv x 700))% MATK"
+                "label": "Base Damage",
+                "value": "10,000% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Darkening Cannon Lv x 700))% MATK"
               }
             ],
             "levelTables": [
@@ -3564,7 +3596,7 @@ export const shinkiroData = {
                   "source": "Increases SP consumption from 62 to 92 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6500%Matk",
                   "after": "13600%Matk",
                   "scope": "Lv 10",
@@ -3608,7 +3640,7 @@ export const shinkiroData = {
                   "source": "Reduces SP consumption from 92 to 80 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "13600%Matk",
                   "after": "10000%Matk",
                   "scope": "Lv 10",
@@ -3627,7 +3659,7 @@ export const shinkiroData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "10000+(Darkening Cannon skill level x 700)%Matk",
                   "after": "11600+(Darkening Cannon skill level x 700)%Matk",
                   "scope": "Lv 10",
@@ -3936,8 +3968,12 @@ export const shinkiroData = {
                 "value": "0.25 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(3,800 + (Kunai Rotation Lv x 100))% ATK per hit"
+                "label": "Base Damage",
+                "value": "3,800% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Kunai Rotation Lv x 100))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -4054,7 +4090,7 @@ export const shinkiroData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3800+(Kunai - Rotation skill level x 100)%Atk",
                   "after": "4450+(Kunai - Rotation skill level x 100)%Atk",
                   "scope": "Lv 10",
@@ -4235,8 +4271,20 @@ export const shinkiroData = {
                 "value": "5 x 13"
               },
               {
-                "label": "Damage",
-                "value": "(12,600 + (H.S. - Grasp Lv x 300))% ATK/(15,600 + (H.S. - Grasp Lv x 300))% ATK (E x plosion)"
+                "label": "Base Damage",
+                "value": "12,600% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "15,600% ATK (E x plosion)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (H.S. - Grasp Lv x 300))% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (E x plosion) + (H.S. - Grasp Lv x 300))% ATK"
               }
             ],
             "levelTables": [
@@ -4354,7 +4402,7 @@ export const shinkiroData = {
                   "source": "Increases cast range from 1 cell to 9 cells."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4600%/6800%(Memorization Zone)Atk",
                   "after": "12600%/15600%(Memorization Zone)Atk",
                   "scope": "Lv 10",
@@ -4374,7 +4422,7 @@ export const shinkiroData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(e x plosion)Atk",
                   "after": "18400+(Huuma Shuriken - Grasp level x 1000)%/18400+(Huuma Shuriken - Grasp level x 1000)%(e x plosion)Atk",
                   "scope": "Lv 10",
@@ -4562,8 +4610,12 @@ export const shinkiroData = {
                 "value": "3 x 10"
               },
               {
-                "label": "Damage",
-                "value": "(9,000 + (Shadow Dance Lv x 500))% ATK"
+                "label": "Base Damage",
+                "value": "9,000% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Shadow Dance Lv x 500))% ATK"
               }
             ],
             "levelTables": [
@@ -4691,7 +4743,7 @@ export const shinkiroData = {
                   "source": "Reduces cooldown from 1 second to 0.5 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "9700%Atk",
                   "after": "8600%Atk",
                   "scope": "Lv 10",
@@ -4723,7 +4775,7 @@ export const shinkiroData = {
                   "source": "Increases cast range from 1 cell to 2 cells."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8600%Atk",
                   "after": "9000%Atk",
                   "scope": "Lv 10",
@@ -4749,7 +4801,7 @@ export const shinkiroData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "9000+(Shadow Dance skill level x 500)%Atk",
                   "after": "11000+(Shadow Dance skill level x 1500)%Atk",
                   "scope": "Lv 10",
@@ -4923,8 +4975,12 @@ export const shinkiroData = {
                 "value": "3 x 3~5 x 5"
               },
               {
-                "label": "Damage",
-                "value": "(9,950 + (Darkening Cannon Lv x 150))% MATK"
+                "label": "Base Damage",
+                "value": "9,950% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Darkening Cannon Lv x 150))% MATK"
               }
             ],
             "levelTables": [
@@ -5039,7 +5095,7 @@ export const shinkiroData = {
                   "source": "Increases SP consumption from 48 to 88 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2350%Matk",
                   "after": "4300%Matk",
                   "scope": "Lv 10",
@@ -5083,7 +5139,7 @@ export const shinkiroData = {
                   "source": "Reduces SP consumption from 88 to 65 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4300%Matk",
                   "after": "9950%Matk",
                   "scope": "Lv 10",
@@ -5102,7 +5158,7 @@ export const shinkiroData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "9950+(Darkening Cannon skill level x 150)%Matk",
                   "after": "15800+(Darkening Cannon skill level x 150)%Matk",
                   "scope": "Lv 10",
@@ -5238,7 +5294,7 @@ export const shinkiroData = {
                 "value": "20"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "18,000% ATK"
               }
             ],
@@ -5291,7 +5347,7 @@ export const shinkiroData = {
                   "source": "Reduces AP consumption from 30 to 20."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "15000%Atk",
                   "after": "18000%Atk",
                   "scope": "",
@@ -5415,7 +5471,7 @@ export const shinkiroData = {
                 "value": "20"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "18,000% ATK"
               }
             ],
@@ -5468,7 +5524,7 @@ export const shinkiroData = {
                   "source": "Reduces AP consumption from 30 to 20."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "15000%Atk",
                   "after": "18000%Atk",
                   "scope": "",
@@ -5642,7 +5698,7 @@ export const shinkiroData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "9,950% MATK"
               }
             ],
@@ -5771,7 +5827,7 @@ export const shinkiroData = {
                   "source": "Increases SP consumption from 58 to 94 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5400%Matk",
                   "after": "9950%Matk",
                   "scope": "Lv 10",
@@ -5919,7 +5975,7 @@ export const shinkiroData = {
                 "value": "20"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "15,500% MATK"
               }
             ],
@@ -5980,7 +6036,7 @@ export const shinkiroData = {
                   "source": "Reduces AP consumption from 30 to 20."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "12000%Matk",
                   "after": "15500%Matk",
                   "scope": "",
@@ -11714,7 +11770,7 @@ export const shinkiroData = {
                 "value": "Cross-shaped"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "150% ATK"
               }
             ],
@@ -13833,7 +13889,7 @@ export const shinkiroData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "200% ATK"
               }
             ],
@@ -14792,7 +14848,7 @@ export const shinkiroData = {
                 "value": "3 x 3 ~ 7 x 7"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "360% MATK"
               }
             ],
@@ -14985,7 +15041,7 @@ export const shinkiroData = {
                 "value": "3 x 3 ~ 5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "900% ATK"
               }
             ],
@@ -15147,7 +15203,7 @@ export const shinkiroData = {
                 "value": "1 target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "800% ATK"
               }
             ],
@@ -15340,7 +15396,7 @@ export const shinkiroData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "900% MATK"
               }
             ],
@@ -15528,8 +15584,12 @@ export const shinkiroData = {
                 "value": "7 x 7"
               },
               {
-                "label": "Damage",
-                "value": "60% MATK/350% MATK"
+                "label": "Base Damage",
+                "value": "60% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "350% MATK"
               }
             ],
             "levelTables": [
@@ -15716,7 +15776,7 @@ export const shinkiroData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "600% MATK"
               }
             ],
@@ -16781,8 +16841,12 @@ export const shinkiroData = {
             "value": "5 x 5~7 x 7"
           },
           {
-            "label": "Damage",
-            "value": "(10,500 + (Darkening Cannon Lv x 700))% MATK"
+            "label": "Base Damage",
+            "value": "10,500% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Darkening Cannon Lv x 700))% MATK"
           }
         ],
         "levelTables": [
@@ -16905,7 +16969,7 @@ export const shinkiroData = {
               "source": "Increases SP consumption from 62 to 92 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6200%Matk",
               "after": "13350%Matk",
               "scope": "Lv 10",
@@ -16949,7 +17013,7 @@ export const shinkiroData = {
               "source": "Reduces SP consumption from 92 to 80 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "13350%Matk",
               "after": "10500%Matk",
               "scope": "Lv 10",
@@ -16968,7 +17032,7 @@ export const shinkiroData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "10500+(Darkening Cannon skill level x 700)%Matk",
               "after": "11600+(Darkening Cannon skill level x 700)%Matk",
               "scope": "Lv 10",
@@ -17094,7 +17158,7 @@ export const shinkiroData = {
             "value": "Single Target"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "3,500% ATK"
           }
         ],
@@ -17324,8 +17388,12 @@ export const shinkiroData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(6,300 + (Kunai - Refraction Lv x 100))% ATK"
+            "label": "Base Damage",
+            "value": "6,300% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Kunai - Refraction Lv x 100))% ATK"
           }
         ],
         "levelTables": [
@@ -17432,7 +17500,7 @@ export const shinkiroData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4000%Atk",
               "after": "6300%Atk",
               "scope": "Lv 10",
@@ -17619,8 +17687,12 @@ export const shinkiroData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(9,600 + (Shadow Flash Lv x 50))% ATK"
+            "label": "Base Damage",
+            "value": "9,600% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Shadow Flash Lv x 50))% ATK"
           }
         ],
         "levelTables": [
@@ -17737,7 +17809,7 @@ export const shinkiroData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4500%Atk",
               "after": "9600%Atk",
               "scope": "Lv 10",
@@ -18004,8 +18076,12 @@ export const shinkiroData = {
             "value": "1 Cell Ground Target"
           },
           {
-            "label": "Damage",
-            "value": "(8,850 + (Darkening Cannon Lv x 400))% MATK"
+            "label": "Base Damage",
+            "value": "8,850% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Darkening Cannon Lv x 400))% MATK"
           }
         ],
         "levelTables": [
@@ -18134,7 +18210,7 @@ export const shinkiroData = {
               "source": "Increases SP consumption from 61 to 88 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3500%Matk",
               "after": "5750%Matk",
               "scope": "Lv 10",
@@ -18168,7 +18244,7 @@ export const shinkiroData = {
               "source": "Reduces SP consumption from 92 to 76 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5750%Matk",
               "after": "8850%Matk",
               "scope": "Lv 10",
@@ -18187,7 +18263,7 @@ export const shinkiroData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8850+(Darkening Cannon skill level x 400)%Matk",
               "after": "9950+(Darkening Cannon skill level x 400)%Matk",
               "scope": "Lv 10",
@@ -18308,7 +18384,7 @@ export const shinkiroData = {
             "value": "1 cell ground target"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "3,500% MATK"
           }
         ],
@@ -18494,8 +18570,12 @@ export const shinkiroData = {
             "value": "0.5 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(4,300 + (Kunai Distortion Lv x 350))% ATK per hit"
+            "label": "Base Damage",
+            "value": "4,300% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Kunai Distortion Lv x 350))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -18573,7 +18653,7 @@ export const shinkiroData = {
               "source": "Increases SP consumption from 55 to 76 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3300%Atk",
               "after": "4300%Atk",
               "scope": "Lv 5",
@@ -18599,7 +18679,7 @@ export const shinkiroData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4300+(Kunai - Distortion skill level x 350)%Atk",
               "after": "6200+(Kunai - Distortion skill level x 500)%Atk",
               "scope": "Lv 5",
@@ -18793,8 +18873,12 @@ export const shinkiroData = {
             "value": "0.25 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(4,350 + (Huuma Shuriken - Construct Lv x 50))% ATK per hit"
+            "label": "Base Damage",
+            "value": "4,350% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Huuma Shuriken - Construct Lv x 50))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -18933,7 +19017,7 @@ export const shinkiroData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2700%Atk",
               "after": "4350%Atk",
               "scope": "Lv 10",
@@ -19118,8 +19202,12 @@ export const shinkiroData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(8,050 + (Shadow Hunting Lv x 500))% ATK"
+            "label": "Base Damage",
+            "value": "8,050% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Shadow Hunting Lv x 500))% ATK"
           }
         ],
         "levelTables": [
@@ -19263,7 +19351,7 @@ export const shinkiroData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6500%Atk",
               "after": "5900%Atk",
               "scope": "Lv 10",
@@ -19306,7 +19394,7 @@ export const shinkiroData = {
               "source": "Reduces area of effect from 9 x 9 cells to 7 x 7 cells based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5900%Atk",
               "after": "8050%Atk",
               "scope": "Lv 10",
@@ -19325,7 +19413,7 @@ export const shinkiroData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8050+(Shadow Hunting skill level x 500)%Atk",
               "after": "9750+(Shadow Hunting skill level x 700)%Atk",
               "scope": "Lv 10",
@@ -19508,8 +19596,12 @@ export const shinkiroData = {
             "value": "wind property magical damage"
           },
           {
-            "label": "Damage",
-            "value": "(10,000 + (Darkening Cannon Lv x 700))% MATK"
+            "label": "Base Damage",
+            "value": "10,000% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Darkening Cannon Lv x 700))% MATK"
           }
         ],
         "levelTables": [
@@ -19632,7 +19724,7 @@ export const shinkiroData = {
               "source": "Increases SP consumption from 62 to 92 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6500%Matk",
               "after": "13600%Matk",
               "scope": "Lv 10",
@@ -19676,7 +19768,7 @@ export const shinkiroData = {
               "source": "Reduces SP consumption from 92 to 80 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "13600%Matk",
               "after": "10000%Matk",
               "scope": "Lv 10",
@@ -19695,7 +19787,7 @@ export const shinkiroData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "10000+(Darkening Cannon skill level x 700)%Matk",
               "after": "11600+(Darkening Cannon skill level x 700)%Matk",
               "scope": "Lv 10",
@@ -20004,8 +20096,12 @@ export const shinkiroData = {
             "value": "0.25 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(3,800 + (Kunai Rotation Lv x 100))% ATK per hit"
+            "label": "Base Damage",
+            "value": "3,800% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Kunai Rotation Lv x 100))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -20122,7 +20218,7 @@ export const shinkiroData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3800+(Kunai - Rotation skill level x 100)%Atk",
               "after": "4450+(Kunai - Rotation skill level x 100)%Atk",
               "scope": "Lv 10",
@@ -20303,8 +20399,20 @@ export const shinkiroData = {
             "value": "5 x 13"
           },
           {
-            "label": "Damage",
-            "value": "(12,600 + (H.S. - Grasp Lv x 300))% ATK/(15,600 + (H.S. - Grasp Lv x 300))% ATK (E x plosion)"
+            "label": "Base Damage",
+            "value": "12,600% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "15,600% ATK (E x plosion)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (H.S. - Grasp Lv x 300))% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (E x plosion) + (H.S. - Grasp Lv x 300))% ATK"
           }
         ],
         "levelTables": [
@@ -20422,7 +20530,7 @@ export const shinkiroData = {
               "source": "Increases cast range from 1 cell to 9 cells."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4600%/6800%(Memorization Zone)Atk",
               "after": "12600%/15600%(Memorization Zone)Atk",
               "scope": "Lv 10",
@@ -20442,7 +20550,7 @@ export const shinkiroData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "12600+(Huuma Shuriken - Grasp level x 300)%/15600+(Huuma Shuriken - Grasp level x 300)%(e x plosion)Atk",
               "after": "18400+(Huuma Shuriken - Grasp level x 1000)%/18400+(Huuma Shuriken - Grasp level x 1000)%(e x plosion)Atk",
               "scope": "Lv 10",
@@ -20630,8 +20738,12 @@ export const shinkiroData = {
             "value": "3 x 10"
           },
           {
-            "label": "Damage",
-            "value": "(9,000 + (Shadow Dance Lv x 500))% ATK"
+            "label": "Base Damage",
+            "value": "9,000% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Shadow Dance Lv x 500))% ATK"
           }
         ],
         "levelTables": [
@@ -20759,7 +20871,7 @@ export const shinkiroData = {
               "source": "Reduces cooldown from 1 second to 0.5 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "9700%Atk",
               "after": "8600%Atk",
               "scope": "Lv 10",
@@ -20791,7 +20903,7 @@ export const shinkiroData = {
               "source": "Increases cast range from 1 cell to 2 cells."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8600%Atk",
               "after": "9000%Atk",
               "scope": "Lv 10",
@@ -20817,7 +20929,7 @@ export const shinkiroData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "9000+(Shadow Dance skill level x 500)%Atk",
               "after": "11000+(Shadow Dance skill level x 1500)%Atk",
               "scope": "Lv 10",
@@ -20991,8 +21103,12 @@ export const shinkiroData = {
             "value": "3 x 3~5 x 5"
           },
           {
-            "label": "Damage",
-            "value": "(9,950 + (Darkening Cannon Lv x 150))% MATK"
+            "label": "Base Damage",
+            "value": "9,950% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Darkening Cannon Lv x 150))% MATK"
           }
         ],
         "levelTables": [
@@ -21107,7 +21223,7 @@ export const shinkiroData = {
               "source": "Increases SP consumption from 48 to 88 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2350%Matk",
               "after": "4300%Matk",
               "scope": "Lv 10",
@@ -21151,7 +21267,7 @@ export const shinkiroData = {
               "source": "Reduces SP consumption from 88 to 65 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4300%Matk",
               "after": "9950%Matk",
               "scope": "Lv 10",
@@ -21170,7 +21286,7 @@ export const shinkiroData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "9950+(Darkening Cannon skill level x 150)%Matk",
               "after": "15800+(Darkening Cannon skill level x 150)%Matk",
               "scope": "Lv 10",
@@ -21306,7 +21422,7 @@ export const shinkiroData = {
             "value": "20"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "18,000% ATK"
           }
         ],
@@ -21359,7 +21475,7 @@ export const shinkiroData = {
               "source": "Reduces AP consumption from 30 to 20."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "15000%Atk",
               "after": "18000%Atk",
               "scope": "",
@@ -21483,7 +21599,7 @@ export const shinkiroData = {
             "value": "20"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "18,000% ATK"
           }
         ],
@@ -21536,7 +21652,7 @@ export const shinkiroData = {
               "source": "Reduces AP consumption from 30 to 20."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "15000%Atk",
               "after": "18000%Atk",
               "scope": "",
@@ -21710,7 +21826,7 @@ export const shinkiroData = {
             "value": "2"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "9,950% MATK"
           }
         ],
@@ -21839,7 +21955,7 @@ export const shinkiroData = {
               "source": "Increases SP consumption from 58 to 94 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5400%Matk",
               "after": "9950%Matk",
               "scope": "Lv 10",
@@ -21987,7 +22103,7 @@ export const shinkiroData = {
             "value": "20"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "15,500% MATK"
           }
         ],
@@ -22048,7 +22164,7 @@ export const shinkiroData = {
               "source": "Reduces AP consumption from 30 to 20."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "12000%Matk",
               "after": "15500%Matk",
               "scope": "",

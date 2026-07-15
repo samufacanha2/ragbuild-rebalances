@@ -11,14 +11,53 @@
   padding: 8px 12px;
 }
 
+.build-toolbar-summary,
+.build-preset-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.build-toolbar-summary {
+  flex: 1 1 230px;
+  justify-content: space-between;
+}
+
 .build-toolbar strong {
   font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.build-preset-controls {
+  flex: 2 1 520px;
+  justify-content: flex-end;
+}
+
+.build-preset-controls select,
+.build-preset-controls input {
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+
+.build-preset-controls select {
+  min-width: 150px;
+  max-width: 220px;
+}
+
+.build-preset-controls input {
+  min-width: 130px;
+  max-width: 210px;
+  padding: 0 10px;
 }
 
 .build-toolbar button {
   display: grid;
   place-items: center;
-  min-width: 72px;
+  min-width: 66px;
   min-height: 34px;
   border: 1px solid var(--line);
   border-radius: 7px;
@@ -32,7 +71,41 @@
   opacity: 0.42;
 }
 
-.build-toolbar button:focus-visible {
+.build-toolbar button:focus-visible,
+.build-preset-controls select:focus-visible,
+.build-preset-controls input:focus-visible {
   outline: 3px solid rgba(21, 122, 126, 0.2);
   outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  .build-toolbar,
+  .build-toolbar-summary,
+  .build-preset-controls {
+    align-items: stretch;
+  }
+
+  .build-toolbar {
+    flex-direction: column;
+  }
+
+  .build-toolbar-summary {
+    flex-basis: auto;
+  }
+
+  .build-preset-controls {
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    justify-content: stretch;
+  }
+
+  .build-preset-controls select,
+  .build-preset-controls input {
+    flex: 1 1 150px;
+    max-width: none;
+  }
+
+  .build-toolbar button {
+    flex: 1 0 66px;
+  }
 }

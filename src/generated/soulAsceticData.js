@@ -1,5 +1,5 @@
 export const soulAsceticData = {
-  "generatedAt": "2026-07-13T20:14:18.697Z",
+  "generatedAt": "2026-07-15T23:18:05.429Z",
   "classId": 4303,
   "classSlug": "soul-ascetic",
   "className": "Soul Ascetic",
@@ -1643,8 +1643,20 @@ export const soulAsceticData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "((750 + (Soul Mastery Lv x 2)) x Soul Energy)% MATK/((1,250 + (Soul Mastery Lv x 2)) x Soul Energy)% MATK (Curse)"
+                "label": "Base Damage",
+                "value": "750% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "1,250% MATK (Curse)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "((Base Damage + (Soul Mastery Lv x 2)) x Soul Energy)% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "((Base Damage (Curse) + (Soul Mastery Lv x 2)) x Soul Energy)% MATK"
               }
             ],
             "levelTables": [
@@ -1849,8 +1861,12 @@ export const soulAsceticData = {
                 "value": "1 Soul Talisman"
               },
               {
-                "label": "Damage",
-                "value": "(6,750 + ((Talisman Mastery Lv + Soul Mastery Lv) x 35))% MATK"
+                "label": "Base Damage",
+                "value": "6,750% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + ((Talisman Mastery Lv + Soul Mastery Lv) x 35))% MATK"
               }
             ],
             "levelTables": [
@@ -1926,7 +1942,7 @@ export const soulAsceticData = {
                   "source": "Removes 0.5 seconds delay after skill."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3500%Matk",
                   "after": "6750%Matk",
                   "scope": "Lv 5",
@@ -2496,8 +2512,20 @@ export const soulAsceticData = {
                 "value": "neutral property magical damage"
               },
               {
-                "label": "Damage",
-                "value": "(9,100 + (Talisman Mastery Lv x 75))% MATK/(11,600 + (Talisman Mastery Lv x 75))% MATK"
+                "label": "Base Damage",
+                "value": "9,100% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "11,600% MATK (Circle of Directions and Elementals)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Talisman Mastery Lv x 75))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Circle of Directions and Elementals) + (Talisman Mastery Lv x 75))% MATK"
               }
             ],
             "levelTables": [
@@ -2573,7 +2601,7 @@ export const soulAsceticData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4500%/6750%(Blessing of the Four Directions and the Five Elements)Matk",
                   "after": "7500%/8600%(Blessing of the Four Directions and the Five Elements)Matk",
                   "scope": "Lv 5",
@@ -2600,7 +2628,7 @@ export const soulAsceticData = {
                   "source": "Increases cast range from 9 cells to 11 cells."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "7500%/8600%Matk",
                   "after": "9100%/11600%Matk",
                   "scope": "Lv 5",
@@ -2619,7 +2647,7 @@ export const soulAsceticData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "9100+(Talisman Mastery skill level x 75)%/11600+(Talisman Mastery level x 75)%(four blessing)Matk",
                   "after": "12100+(Talisman Mastery skill level x 75)%/15700+(Talisman Mastery level x 75)%(blessing)Matk",
                   "scope": "Lv 5",
@@ -2763,8 +2791,20 @@ export const soulAsceticData = {
                 "value": "neutral property magical damage"
               },
               {
-                "label": "Damage",
-                "value": "(5,400 + (Talisman Mastery Lv x 75))% MATK/(7,400 + (Talisman Mastery Lv x 75))% MATK"
+                "label": "Base Damage",
+                "value": "5,400% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "7,400% MATK (Circle of Directions and Elementals)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Talisman Mastery Lv x 75))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Circle of Directions and Elementals) + (Talisman Mastery Lv x 75))% MATK"
               }
             ],
             "levelTables": [
@@ -2857,7 +2897,7 @@ export const soulAsceticData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk",
                   "after": "5100%/7100%(Blessing of the Four Directions and the Five Elements)Matk",
                   "scope": "Lv 5",
@@ -2884,7 +2924,7 @@ export const soulAsceticData = {
                   "source": "Increases SP consumption from 92 to 118 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5100%/7100%Matk",
                   "after": "5400%/7400%Matk",
                   "scope": "Lv 5",
@@ -3028,8 +3068,20 @@ export const soulAsceticData = {
                 "value": "neutral property magical damage"
               },
               {
-                "label": "Damage",
-                "value": "(7,450 + (Talisman Mastery Lv x 75))% MATK/(9,650 + (Talisman Mastery Lv x 75))% MATK"
+                "label": "Base Damage",
+                "value": "7,450% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "9,650% MATK (Circle of Directions and Elementals)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Talisman Mastery Lv x 75))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Circle of Directions and Elementals) + (Talisman Mastery Lv x 75))% MATK"
               }
             ],
             "levelTables": [
@@ -3114,7 +3166,7 @@ export const soulAsceticData = {
                   "source": "Increases AP recovery rate from 1 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4500%/6500%(Blessing of the Four Directions and the Five Elements)Matk",
                   "after": "5500%/7700%(Blessing of the Four Directions and the Five Elements)Matk",
                   "scope": "Lv 5",
@@ -3133,7 +3185,7 @@ export const soulAsceticData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5500%/7700%Matk",
                   "after": "7450%/9650%Matk",
                   "scope": "Lv 5",
@@ -3152,7 +3204,7 @@ export const soulAsceticData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "7450+(Talisman Mastery skill level x 75)%/9650+(Talisman Mastery level x 75)%(blessing)Matk",
                   "after": "8650+(Talisman Mastery skill level x 75)%/10850+(Talisman Mastery level x 75)%(blessing)Matk",
                   "scope": "Lv 5",
@@ -3296,8 +3348,20 @@ export const soulAsceticData = {
                 "value": "neutral property magical damage"
               },
               {
-                "label": "Damage",
-                "value": "(10,150 + (Talisman Mastery Lv x 75))% MATK/(12,800 + (Talisman Mastery Lv x 75))% MATK"
+                "label": "Base Damage",
+                "value": "10,150% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "12,800% MATK (Circle of Directions and Elementals)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Talisman Mastery Lv x 75))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Circle of Directions and Elementals) + (Talisman Mastery Lv x 75))% MATK"
               }
             ],
             "levelTables": [
@@ -3382,7 +3446,7 @@ export const soulAsceticData = {
                   "source": "Increases AP recovery rate from 1 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6500%/8750%(Blessing of the Four Directions and the Five Elements)Matk",
                   "after": "9400%/11550%(Blessing of the Four Directions and the Five Elements)Matk",
                   "scope": "Lv 5",
@@ -3401,7 +3465,7 @@ export const soulAsceticData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "9400%/11550%Matk",
                   "after": "10150%/12800%Matk",
                   "scope": "Lv 5",
@@ -3559,8 +3623,12 @@ export const soulAsceticData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "(1,300 + (Talisman Mastery Lv x 75))% MATK per hit"
+                "label": "Base Damage",
+                "value": "1,300% MATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Talisman Mastery Lv x 75))% MATK per hit"
               }
             ],
             "levelTables": [
@@ -3645,7 +3713,7 @@ export const soulAsceticData = {
                   "source": "Increases AP recovery rate from 1 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1000%Matk",
                   "after": "1300%Matk per hit",
                   "scope": "Lv 5",
@@ -3799,8 +3867,12 @@ export const soulAsceticData = {
                 "value": "35"
               },
               {
-                "label": "Damage",
-                "value": "(10,500 + ((Talisman Mastery Lv + Soul Mastery Lv) x 75))% MATK per hit"
+                "label": "Base Damage",
+                "value": "10,500% MATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + ((Talisman Mastery Lv + Soul Mastery Lv) x 75))% MATK per hit"
               }
             ],
             "levelTables": [
@@ -3913,7 +3985,7 @@ export const soulAsceticData = {
                   "source": "Reduces cooldown from 60 seconds to 5 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "7500%Matk",
                   "after": "10500%Matk per hit",
                   "scope": "Lv 5",
@@ -15421,7 +15493,7 @@ export const soulAsceticData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% ATK"
               }
             ],
@@ -15609,7 +15681,7 @@ export const soulAsceticData = {
                 "value": "Self"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% ATK"
               }
             ],
@@ -15797,7 +15869,7 @@ export const soulAsceticData = {
                 "value": "Self"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "400% ATK"
               }
             ],
@@ -16169,7 +16241,7 @@ export const soulAsceticData = {
                 "value": "Enemy, Self"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "100% ATK"
               }
             ],
@@ -19401,8 +19473,20 @@ export const soulAsceticData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "((750 + (Soul Mastery Lv x 2)) x Soul Energy)% MATK/((1,250 + (Soul Mastery Lv x 2)) x Soul Energy)% MATK (Curse)"
+            "label": "Base Damage",
+            "value": "750% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "1,250% MATK (Curse)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "((Base Damage + (Soul Mastery Lv x 2)) x Soul Energy)% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "((Base Damage (Curse) + (Soul Mastery Lv x 2)) x Soul Energy)% MATK"
           }
         ],
         "levelTables": [
@@ -19607,8 +19691,12 @@ export const soulAsceticData = {
             "value": "1 Soul Talisman"
           },
           {
-            "label": "Damage",
-            "value": "(6,750 + ((Talisman Mastery Lv + Soul Mastery Lv) x 35))% MATK"
+            "label": "Base Damage",
+            "value": "6,750% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + ((Talisman Mastery Lv + Soul Mastery Lv) x 35))% MATK"
           }
         ],
         "levelTables": [
@@ -19684,7 +19772,7 @@ export const soulAsceticData = {
               "source": "Removes 0.5 seconds delay after skill."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3500%Matk",
               "after": "6750%Matk",
               "scope": "Lv 5",
@@ -20254,8 +20342,20 @@ export const soulAsceticData = {
             "value": "neutral property magical damage"
           },
           {
-            "label": "Damage",
-            "value": "(9,100 + (Talisman Mastery Lv x 75))% MATK/(11,600 + (Talisman Mastery Lv x 75))% MATK"
+            "label": "Base Damage",
+            "value": "9,100% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "11,600% MATK (Circle of Directions and Elementals)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Talisman Mastery Lv x 75))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Circle of Directions and Elementals) + (Talisman Mastery Lv x 75))% MATK"
           }
         ],
         "levelTables": [
@@ -20331,7 +20431,7 @@ export const soulAsceticData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4500%/6750%(Blessing of the Four Directions and the Five Elements)Matk",
               "after": "7500%/8600%(Blessing of the Four Directions and the Five Elements)Matk",
               "scope": "Lv 5",
@@ -20358,7 +20458,7 @@ export const soulAsceticData = {
               "source": "Increases cast range from 9 cells to 11 cells."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "7500%/8600%Matk",
               "after": "9100%/11600%Matk",
               "scope": "Lv 5",
@@ -20377,7 +20477,7 @@ export const soulAsceticData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "9100+(Talisman Mastery skill level x 75)%/11600+(Talisman Mastery level x 75)%(four blessing)Matk",
               "after": "12100+(Talisman Mastery skill level x 75)%/15700+(Talisman Mastery level x 75)%(blessing)Matk",
               "scope": "Lv 5",
@@ -20521,8 +20621,20 @@ export const soulAsceticData = {
             "value": "neutral property magical damage"
           },
           {
-            "label": "Damage",
-            "value": "(5,400 + (Talisman Mastery Lv x 75))% MATK/(7,400 + (Talisman Mastery Lv x 75))% MATK"
+            "label": "Base Damage",
+            "value": "5,400% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "7,400% MATK (Circle of Directions and Elementals)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Talisman Mastery Lv x 75))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Circle of Directions and Elementals) + (Talisman Mastery Lv x 75))% MATK"
           }
         ],
         "levelTables": [
@@ -20615,7 +20727,7 @@ export const soulAsceticData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3500%/5000%(Blessing of the Four Directions and the Five Elements)Matk",
               "after": "5100%/7100%(Blessing of the Four Directions and the Five Elements)Matk",
               "scope": "Lv 5",
@@ -20642,7 +20754,7 @@ export const soulAsceticData = {
               "source": "Increases SP consumption from 92 to 118 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5100%/7100%Matk",
               "after": "5400%/7400%Matk",
               "scope": "Lv 5",
@@ -20786,8 +20898,20 @@ export const soulAsceticData = {
             "value": "neutral property magical damage"
           },
           {
-            "label": "Damage",
-            "value": "(7,450 + (Talisman Mastery Lv x 75))% MATK/(9,650 + (Talisman Mastery Lv x 75))% MATK"
+            "label": "Base Damage",
+            "value": "7,450% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "9,650% MATK (Circle of Directions and Elementals)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Talisman Mastery Lv x 75))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Circle of Directions and Elementals) + (Talisman Mastery Lv x 75))% MATK"
           }
         ],
         "levelTables": [
@@ -20872,7 +20996,7 @@ export const soulAsceticData = {
               "source": "Increases AP recovery rate from 1 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4500%/6500%(Blessing of the Four Directions and the Five Elements)Matk",
               "after": "5500%/7700%(Blessing of the Four Directions and the Five Elements)Matk",
               "scope": "Lv 5",
@@ -20891,7 +21015,7 @@ export const soulAsceticData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5500%/7700%Matk",
               "after": "7450%/9650%Matk",
               "scope": "Lv 5",
@@ -20910,7 +21034,7 @@ export const soulAsceticData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "7450+(Talisman Mastery skill level x 75)%/9650+(Talisman Mastery level x 75)%(blessing)Matk",
               "after": "8650+(Talisman Mastery skill level x 75)%/10850+(Talisman Mastery level x 75)%(blessing)Matk",
               "scope": "Lv 5",
@@ -21054,8 +21178,20 @@ export const soulAsceticData = {
             "value": "neutral property magical damage"
           },
           {
-            "label": "Damage",
-            "value": "(10,150 + (Talisman Mastery Lv x 75))% MATK/(12,800 + (Talisman Mastery Lv x 75))% MATK"
+            "label": "Base Damage",
+            "value": "10,150% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "12,800% MATK (Circle of Directions and Elementals)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Talisman Mastery Lv x 75))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Circle of Directions and Elementals) + (Talisman Mastery Lv x 75))% MATK"
           }
         ],
         "levelTables": [
@@ -21140,7 +21276,7 @@ export const soulAsceticData = {
               "source": "Increases AP recovery rate from 1 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6500%/8750%(Blessing of the Four Directions and the Five Elements)Matk",
               "after": "9400%/11550%(Blessing of the Four Directions and the Five Elements)Matk",
               "scope": "Lv 5",
@@ -21159,7 +21295,7 @@ export const soulAsceticData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "9400%/11550%Matk",
               "after": "10150%/12800%Matk",
               "scope": "Lv 5",
@@ -21317,8 +21453,12 @@ export const soulAsceticData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "(1,300 + (Talisman Mastery Lv x 75))% MATK per hit"
+            "label": "Base Damage",
+            "value": "1,300% MATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Talisman Mastery Lv x 75))% MATK per hit"
           }
         ],
         "levelTables": [
@@ -21403,7 +21543,7 @@ export const soulAsceticData = {
               "source": "Increases AP recovery rate from 1 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1000%Matk",
               "after": "1300%Matk per hit",
               "scope": "Lv 5",
@@ -21557,8 +21697,12 @@ export const soulAsceticData = {
             "value": "35"
           },
           {
-            "label": "Damage",
-            "value": "(10,500 + ((Talisman Mastery Lv + Soul Mastery Lv) x 75))% MATK per hit"
+            "label": "Base Damage",
+            "value": "10,500% MATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + ((Talisman Mastery Lv + Soul Mastery Lv) x 75))% MATK per hit"
           }
         ],
         "levelTables": [
@@ -21671,7 +21815,7 @@ export const soulAsceticData = {
               "source": "Reduces cooldown from 60 seconds to 5 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "7500%Matk",
               "after": "10500%Matk per hit",
               "scope": "Lv 5",

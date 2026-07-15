@@ -1,5 +1,5 @@
 export const trouvereData = {
-  "generatedAt": "2026-07-13T20:14:14.202Z",
+  "generatedAt": "2026-07-15T23:18:00.907Z",
   "classId": 4264,
   "classSlug": "trouvere",
   "className": "Trouvere",
@@ -397,8 +397,12 @@ export const trouvereData = {
                 "value": "1(1~3Lv), 2(4~5Lv)"
               },
               {
-                "label": "Damage",
-                "value": "3,700% ATK per hit/4,550% ATK per hit (sound brand)"
+                "label": "Base Damage",
+                "value": "3,700% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "4,550% ATK per hit (sound brand)"
               }
             ],
             "levelTables": [
@@ -495,7 +499,7 @@ export const trouvereData = {
                   "source": "Reduces SP consumption from 90 to 52 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "600%/780%(branded target)Atk",
                   "after": "800%/1400%(branded target)Atk",
                   "scope": "Lv 5",
@@ -530,7 +534,7 @@ export const trouvereData = {
                   "source": "Increases skill cooldown from 0.15 seconds to 0.35 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "800%/1400%Atk",
                   "after": "3700%/4550%Atk per hit",
                   "scope": "Lv 5",
@@ -556,7 +560,7 @@ export const trouvereData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3700%/4550%(sound brand)Atk",
                   "after": "5300%/6100%(sound brand)Atk per hit",
                   "scope": "Lv 5",
@@ -807,7 +811,7 @@ export const trouvereData = {
                 "value": "1(1~3Lv), 2(4~5Lv)"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "600% MATK"
               }
             ],
@@ -1505,8 +1509,12 @@ export const trouvereData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "13,000% MATK/18,000% MATK (sound brand)"
+                "label": "Base Damage",
+                "value": "13,000% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "18,000% MATK (sound brand)"
               }
             ],
             "levelTables": [
@@ -1582,7 +1590,7 @@ export const trouvereData = {
                   "source": "Reduces AP recovery rate from 5 to 3 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3000%Matk",
                   "after": "4500%Matk",
                   "scope": "Lv 5",
@@ -1625,7 +1633,7 @@ export const trouvereData = {
                   "source": "Reduces AP recovery rate from 3 to 2 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4500%/4950~6750%(area damage according",
                   "after": "number of branded target)Matk to 11000%/12500~18500%(area damage according to number of branded target)Matk",
                   "scope": "Lv 5",
@@ -1663,7 +1671,7 @@ export const trouvereData = {
                   "source": "Increases global cooldown from 0.3 seconds to 0.5 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "11000%Matk",
                   "after": "13000%/18000%(targets marked with sound brand)Matk",
                   "scope": "Lv 5",
@@ -1690,7 +1698,7 @@ export const trouvereData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "13000%/18000%(sound brand)Matk",
                   "after": "19250%/23250%(sound brand)Matk",
                   "scope": "Lv 5",
@@ -1825,8 +1833,20 @@ export const trouvereData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "10,200% ATK/14,250% ATK (range)/11,200% ATK/15,250% ATK (range)"
+                "label": "Base Damage",
+                "value": "10,200% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "14,250% ATK (range)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "11,200% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "15,250% ATK (range)"
               }
             ],
             "levelTables": [
@@ -1913,7 +1933,7 @@ export const trouvereData = {
                   "source": "Reduces AP recovery rate from 5 to 3 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2500%Atk (primary attack)/750%Atk (secondary attack)/3250%Atk (primary attack to the target marked with brand)/975%Atk (secondary attack to the target marked with brand)",
                   "after": "3750%Atk (primary attack)/1750%Atk (secondary attack)/5000%Atk (primary attack to the target marked with brand)/3750%Atk (secondary attack to the target marked with brand)",
                   "scope": "Lv 5",
@@ -1957,7 +1977,7 @@ export const trouvereData = {
                   "source": "Reduces SP consumption from 125 to 94 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3750%/1750%(area damage)Atk",
                   "after": "11200%/15250%(area damage)Atk",
                   "scope": "Lv 5",
@@ -2571,8 +2591,12 @@ export const trouvereData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "18,500% MATK/23,700% MATK (Mystic Symphony)"
+                "label": "Base Damage",
+                "value": "18,500% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "23,700% MATK (Mystic Symphony)"
               }
             ],
             "levelTables": [
@@ -2772,9 +2796,9 @@ export const trouvereData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "40% (bonus of Sound Blend, Rhythm Shooting and Rose blossom)",
-                  "after": "100% (bonus of Sound Blend, Rhythm Shooting and Rose blossom)",
+                  "label": "Damage Bonus Of Sound Blend, Rhythm Shooting And Rose Blossom",
+                  "before": "40%",
+                  "after": "100%",
                   "scope": "",
                   "source": "Increases damage bonus of Sound Blend, Rhythm Shooting and Rose blossom from 40% to 100%."
                 },
@@ -3499,7 +3523,7 @@ export const trouvereData = {
                 "value": "10 Arrows"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "500% ATK"
               }
             ],
@@ -3818,7 +3842,7 @@ export const trouvereData = {
                 "value": "(Skill Level + 8) seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,200% MATK"
               }
             ],
@@ -5973,7 +5997,7 @@ export const trouvereData = {
                 "value": "5 x 5 ~ 9 x 9"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,750% ATK"
               }
             ],
@@ -12306,7 +12330,7 @@ export const trouvereData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "310% ATK"
               }
             ],
@@ -17752,7 +17776,7 @@ export const trouvereData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "190% ATK"
               }
             ],
@@ -18186,7 +18210,7 @@ export const trouvereData = {
                 "value": "1 Arrow"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "80% ATK"
               }
             ],
@@ -18509,7 +18533,7 @@ export const trouvereData = {
                 "value": "1 Arrow"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "250% ATK"
               }
             ],
@@ -19389,8 +19413,12 @@ export const trouvereData = {
             "value": "1(1~3Lv), 2(4~5Lv)"
           },
           {
-            "label": "Damage",
-            "value": "3,700% ATK per hit/4,550% ATK per hit (sound brand)"
+            "label": "Base Damage",
+            "value": "3,700% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "4,550% ATK per hit (sound brand)"
           }
         ],
         "levelTables": [
@@ -19487,7 +19515,7 @@ export const trouvereData = {
               "source": "Reduces SP consumption from 90 to 52 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "600%/780%(branded target)Atk",
               "after": "800%/1400%(branded target)Atk",
               "scope": "Lv 5",
@@ -19522,7 +19550,7 @@ export const trouvereData = {
               "source": "Increases skill cooldown from 0.15 seconds to 0.35 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "800%/1400%Atk",
               "after": "3700%/4550%Atk per hit",
               "scope": "Lv 5",
@@ -19548,7 +19576,7 @@ export const trouvereData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3700%/4550%(sound brand)Atk",
               "after": "5300%/6100%(sound brand)Atk per hit",
               "scope": "Lv 5",
@@ -19799,7 +19827,7 @@ export const trouvereData = {
             "value": "1(1~3Lv), 2(4~5Lv)"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "600% MATK"
           }
         ],
@@ -20497,8 +20525,12 @@ export const trouvereData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "13,000% MATK/18,000% MATK (sound brand)"
+            "label": "Base Damage",
+            "value": "13,000% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "18,000% MATK (sound brand)"
           }
         ],
         "levelTables": [
@@ -20574,7 +20606,7 @@ export const trouvereData = {
               "source": "Reduces AP recovery rate from 5 to 3 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3000%Matk",
               "after": "4500%Matk",
               "scope": "Lv 5",
@@ -20617,7 +20649,7 @@ export const trouvereData = {
               "source": "Reduces AP recovery rate from 3 to 2 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4500%/4950~6750%(area damage according",
               "after": "number of branded target)Matk to 11000%/12500~18500%(area damage according to number of branded target)Matk",
               "scope": "Lv 5",
@@ -20655,7 +20687,7 @@ export const trouvereData = {
               "source": "Increases global cooldown from 0.3 seconds to 0.5 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "11000%Matk",
               "after": "13000%/18000%(targets marked with sound brand)Matk",
               "scope": "Lv 5",
@@ -20682,7 +20714,7 @@ export const trouvereData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "13000%/18000%(sound brand)Matk",
               "after": "19250%/23250%(sound brand)Matk",
               "scope": "Lv 5",
@@ -20817,8 +20849,20 @@ export const trouvereData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "10,200% ATK/14,250% ATK (range)/11,200% ATK/15,250% ATK (range)"
+            "label": "Base Damage",
+            "value": "10,200% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "14,250% ATK (range)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "11,200% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "15,250% ATK (range)"
           }
         ],
         "levelTables": [
@@ -20905,7 +20949,7 @@ export const trouvereData = {
               "source": "Reduces AP recovery rate from 5 to 3 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2500%Atk (primary attack)/750%Atk (secondary attack)/3250%Atk (primary attack to the target marked with brand)/975%Atk (secondary attack to the target marked with brand)",
               "after": "3750%Atk (primary attack)/1750%Atk (secondary attack)/5000%Atk (primary attack to the target marked with brand)/3750%Atk (secondary attack to the target marked with brand)",
               "scope": "Lv 5",
@@ -20949,7 +20993,7 @@ export const trouvereData = {
               "source": "Reduces SP consumption from 125 to 94 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3750%/1750%(area damage)Atk",
               "after": "11200%/15250%(area damage)Atk",
               "scope": "Lv 5",
@@ -21563,8 +21607,12 @@ export const trouvereData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "18,500% MATK/23,700% MATK (Mystic Symphony)"
+            "label": "Base Damage",
+            "value": "18,500% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "23,700% MATK (Mystic Symphony)"
           }
         ],
         "levelTables": [
@@ -21764,9 +21812,9 @@ export const trouvereData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
-              "before": "40% (bonus of Sound Blend, Rhythm Shooting and Rose blossom)",
-              "after": "100% (bonus of Sound Blend, Rhythm Shooting and Rose blossom)",
+              "label": "Damage Bonus Of Sound Blend, Rhythm Shooting And Rose Blossom",
+              "before": "40%",
+              "after": "100%",
               "scope": "",
               "source": "Increases damage bonus of Sound Blend, Rhythm Shooting and Rose blossom from 40% to 100%."
             },

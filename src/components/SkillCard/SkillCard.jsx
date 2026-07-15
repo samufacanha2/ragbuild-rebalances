@@ -27,6 +27,7 @@ export function SkillCard({
   const notes = notesForVersion(skill, specVersion)
   const levelTable = effectiveLevelTable(model, skill, specVersion)
   const name = translatedSkillName(skill, language)
+  const sourceLinks = sourceLinksForSkill(skill)
 
   return (
     <article className="skill-card">
@@ -53,6 +54,16 @@ export function SkillCard({
           +
         </button>
       </div>
+
+      {sourceLinks.length ? (
+        <nav className="skill-source-links" aria-label={translateUi('Wiki links', language)}>
+          {sourceLinks.map((link) => (
+            <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      ) : null}
 
       <section>
         <h3>{translateUi(specVersionTitle(model, specVersion), language)}</h3>
@@ -85,4 +96,11 @@ export function SkillCard({
       <PatchNotes model={model} notes={notes} specVersion={specVersion} language={language} />
     </article>
   )
+}
+
+function sourceLinksForSkill(skill) {
+  return [
+    skill.irowikiUrl ? { label: 'iRO Wiki', href: skill.irowikiUrl } : null,
+    skill.translations?.['pt-BR']?.sourceUrl ? { label: 'bROWiki', href: skill.translations['pt-BR'].sourceUrl } : null,
+  ].filter(Boolean)
 }

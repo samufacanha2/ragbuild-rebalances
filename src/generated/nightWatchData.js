@@ -1,5 +1,5 @@
 export const nightWatchData = {
-  "generatedAt": "2026-07-13T20:14:14.978Z",
+  "generatedAt": "2026-07-15T23:18:01.672Z",
   "classId": 4306,
   "classSlug": "night-watch",
   "className": "Night Watch",
@@ -1259,8 +1259,12 @@ export const nightWatchData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(12,000 + (Grenade Mastery Lv x 50))% ATK"
+                "label": "Base Damage",
+                "value": "12,000% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Grenade Mastery Lv x 50))% ATK"
               }
             ],
             "levelTables": [
@@ -1345,7 +1349,7 @@ export const nightWatchData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5500%Atk",
                   "after": "5750%Atk",
                   "scope": "Lv 5",
@@ -1364,7 +1368,7 @@ export const nightWatchData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5750%Atk",
                   "after": "12000%Atk",
                   "scope": "Lv 5",
@@ -1682,8 +1686,20 @@ export const nightWatchData = {
                 "value": "1"
               },
               {
-                "label": "Damage",
-                "value": "(1500 + (aiming count x 500))% ATK per hit (Gatling gun)/(4300 + (aiming count x 1000))% ATK per hit (Shotgun)"
+                "label": "Base Damage",
+                "value": "1,500% ATK per hit (Gatling gun)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "4,300% ATK per hit (Shotgun)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Gatling gun) + (aiming count x 500))% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Shotgun) + (aiming count x 1000))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -1943,8 +1959,20 @@ export const nightWatchData = {
                 "value": "1"
               },
               {
-                "label": "Damage",
-                "value": "(16200 + (aiming count x 1750))% ATK (Rifle)/(18200 + (aiming count x 1750))% ATK (Pistol)"
+                "label": "Base Damage",
+                "value": "16,200% ATK (Rifle)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "18,200% ATK (Pistol)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Rifle) + (aiming count x 1750))% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Pistol) + (aiming count x 1750))% ATK"
               }
             ],
             "levelTables": [
@@ -2013,7 +2041,7 @@ export const nightWatchData = {
                   "source": "Increases SP consumption from 38 to 55 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4750%(rifle)/6500%(pistol)Atk",
                   "after": "7550%(rifle)/8300%(pistol)Atk",
                   "scope": "Lv 5",
@@ -2040,7 +2068,7 @@ export const nightWatchData = {
                   "source": "Increases skill cooldown from 0.3 seconds to 0.35 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "7550%/8300%Atk",
                   "after": "16200%/18200%Atk",
                   "scope": "Lv 5",
@@ -2205,8 +2233,20 @@ export const nightWatchData = {
                 "value": "1"
               },
               {
-                "label": "Damage",
-                "value": "(9700 + (Aiming count x 750))% ATK per hit (Grenade Launcher)/(15400 + (Aiming count x 750))% ATK (Rifle)"
+                "label": "Base Damage",
+                "value": "9,700% ATK per hit (Grenade Launcher)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "15,400% ATK (Rifle)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Grenade Launcher) + (Aiming count x 750))% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Rifle) + (Aiming count x 750))% ATK"
               }
             ],
             "levelTables": [
@@ -2276,7 +2316,7 @@ export const nightWatchData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4900%(rifle)/6000%(grenade launcher)",
                   "after": "9700%(rifle)/8500%(grenade launcher)",
                   "scope": "Lv 5",
@@ -2302,7 +2342,7 @@ export const nightWatchData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8500%/9700%Atk",
                   "after": "9700%/15400%Atk per hit",
                   "scope": "Lv 5",
@@ -2466,8 +2506,20 @@ export const nightWatchData = {
                 "value": "1"
               },
               {
-                "label": "Damage",
-                "value": "(2750 + (Aiming count x 500))% ATK per hit (Gatling)/(4300 + (Aiming count x 500))% ATK per hit (Revolver)"
+                "label": "Base Damage",
+                "value": "2,750% ATK per hit (Gatling)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "4,300% ATK per hit (Revolver)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Gatling) + (Aiming count x 500))% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Revolver) + (Aiming count x 500))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -2553,7 +2605,7 @@ export const nightWatchData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1700%(gatling gun)/2100%(pistol)Atk",
                   "after": "1950%(gatling gun)/2400%(pistol)Atk per hit",
                   "scope": "Lv 5",
@@ -2579,7 +2631,7 @@ export const nightWatchData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1950%/2400%Atk",
                   "after": "2750%/4300%Atk per hit",
                   "scope": "Lv 5",
@@ -2748,8 +2800,20 @@ export const nightWatchData = {
                 "value": "1"
               },
               {
-                "label": "Damage",
-                "value": "(17500 + (Aiming count x 2500))% ATK (Shotgun)/(16500 + (Aiming count x 2500))% ATK (Grenade Launcher)"
+                "label": "Base Damage",
+                "value": "17,500% ATK (Shotgun)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "16,500% ATK (Grenade Launcher)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Shotgun) + (Aiming count x 2500))% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Grenade Launcher) + (Aiming count x 2500))% ATK"
               }
             ],
             "levelTables": [
@@ -2818,7 +2882,7 @@ export const nightWatchData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8000%(shotgun)/7000%(grenade launcher)Atk",
                   "after": "13250%(shotgun)/12500%(grenade launcher)Atk",
                   "scope": "Lv 5",
@@ -2837,7 +2901,7 @@ export const nightWatchData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "13250%/12500%Atk",
                   "after": "17500%/16500%Atk",
                   "scope": "Lv 5",
@@ -3000,8 +3064,12 @@ export const nightWatchData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "(9,000 + (Grenade Mastery Lv x 20))% ATK per hit"
+                "label": "Base Damage",
+                "value": "9,000% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Grenade Mastery Lv x 20))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -3069,7 +3137,7 @@ export const nightWatchData = {
                   "source": "Increases AP recovery rate from 2 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6000%Atk",
                   "after": "6750%Atk per hit",
                   "scope": "Lv 5",
@@ -3088,7 +3156,7 @@ export const nightWatchData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6750%Atk",
                   "after": "9000%Atk per hit",
                   "scope": "Lv 5",
@@ -3189,8 +3257,16 @@ export const nightWatchData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "1,770% ATK per hit/2,070% ATK per hit (Hidden Card : Pistol)/2,270% ATK per hit (Hidden Card : Rifle)"
+                "label": "Base Damage",
+                "value": "1,770% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "2,070% ATK per hit (Hidden Card : Pistol)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "2,270% ATK per hit (Hidden Card : Rifle)"
               }
             ],
             "levelTables": []
@@ -3288,8 +3364,20 @@ export const nightWatchData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "6,400% ATK per hit/8,400% ATK per hit (Hidden Card : Shotgun)/7,400% ATK per hit (Hidden Card : Gatling)/8,100% ATK per hit (Hidden Card : Launcher)"
+                "label": "Base Damage",
+                "value": "6,400% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "8,400% ATK per hit (Hidden Card : Shotgun)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "7,400% ATK per hit (Hidden Card : Gatling)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "8,100% ATK per hit (Hidden Card : Launcher)"
               }
             ],
             "levelTables": []
@@ -3429,8 +3517,12 @@ export const nightWatchData = {
                 "value": "0.25 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(4,800 + (Grenade Mastery Lv x 30))% ATK per hit"
+                "label": "Base Damage",
+                "value": "4,800% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Grenade Mastery Lv x 30))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -3849,8 +3941,20 @@ export const nightWatchData = {
                 "value": "0.25 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(23,000 + (Grenade Mastery Lv x 100))% ATK per hit/(2,800 + (Grenade Mastery Lv x 30))% ATK per hit"
+                "label": "Base Damage",
+                "value": "23,000% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "2,800% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Grenade Mastery Lv x 100))% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Grenade Mastery Lv x 30))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -3964,7 +4068,7 @@ export const nightWatchData = {
                   "source": "Reduces AP consumption from 100 to 35."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "15000%(primary)Atk",
                   "after": "23000%(primary)Atk",
                   "scope": "Lv 10",
@@ -12443,7 +12547,7 @@ export const nightWatchData = {
                 "value": "5 Bullets"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,000% ATK"
               }
             ],
@@ -14249,7 +14353,7 @@ export const nightWatchData = {
                 "value": "10 Bullets"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "550% ATK"
               }
             ],
@@ -16197,8 +16301,12 @@ export const nightWatchData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(12,000 + (Grenade Mastery Lv x 50))% ATK"
+            "label": "Base Damage",
+            "value": "12,000% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Grenade Mastery Lv x 50))% ATK"
           }
         ],
         "levelTables": [
@@ -16283,7 +16391,7 @@ export const nightWatchData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5500%Atk",
               "after": "5750%Atk",
               "scope": "Lv 5",
@@ -16302,7 +16410,7 @@ export const nightWatchData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5750%Atk",
               "after": "12000%Atk",
               "scope": "Lv 5",
@@ -16620,8 +16728,20 @@ export const nightWatchData = {
             "value": "1"
           },
           {
-            "label": "Damage",
-            "value": "(1500 + (aiming count x 500))% ATK per hit (Gatling gun)/(4300 + (aiming count x 1000))% ATK per hit (Shotgun)"
+            "label": "Base Damage",
+            "value": "1,500% ATK per hit (Gatling gun)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "4,300% ATK per hit (Shotgun)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Gatling gun) + (aiming count x 500))% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Shotgun) + (aiming count x 1000))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -16881,8 +17001,20 @@ export const nightWatchData = {
             "value": "1"
           },
           {
-            "label": "Damage",
-            "value": "(16200 + (aiming count x 1750))% ATK (Rifle)/(18200 + (aiming count x 1750))% ATK (Pistol)"
+            "label": "Base Damage",
+            "value": "16,200% ATK (Rifle)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "18,200% ATK (Pistol)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Rifle) + (aiming count x 1750))% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Pistol) + (aiming count x 1750))% ATK"
           }
         ],
         "levelTables": [
@@ -16951,7 +17083,7 @@ export const nightWatchData = {
               "source": "Increases SP consumption from 38 to 55 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4750%(rifle)/6500%(pistol)Atk",
               "after": "7550%(rifle)/8300%(pistol)Atk",
               "scope": "Lv 5",
@@ -16978,7 +17110,7 @@ export const nightWatchData = {
               "source": "Increases skill cooldown from 0.3 seconds to 0.35 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "7550%/8300%Atk",
               "after": "16200%/18200%Atk",
               "scope": "Lv 5",
@@ -17143,8 +17275,20 @@ export const nightWatchData = {
             "value": "1"
           },
           {
-            "label": "Damage",
-            "value": "(9700 + (Aiming count x 750))% ATK per hit (Grenade Launcher)/(15400 + (Aiming count x 750))% ATK (Rifle)"
+            "label": "Base Damage",
+            "value": "9,700% ATK per hit (Grenade Launcher)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "15,400% ATK (Rifle)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Grenade Launcher) + (Aiming count x 750))% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Rifle) + (Aiming count x 750))% ATK"
           }
         ],
         "levelTables": [
@@ -17214,7 +17358,7 @@ export const nightWatchData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4900%(rifle)/6000%(grenade launcher)",
               "after": "9700%(rifle)/8500%(grenade launcher)",
               "scope": "Lv 5",
@@ -17240,7 +17384,7 @@ export const nightWatchData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8500%/9700%Atk",
               "after": "9700%/15400%Atk per hit",
               "scope": "Lv 5",
@@ -17404,8 +17548,20 @@ export const nightWatchData = {
             "value": "1"
           },
           {
-            "label": "Damage",
-            "value": "(2750 + (Aiming count x 500))% ATK per hit (Gatling)/(4300 + (Aiming count x 500))% ATK per hit (Revolver)"
+            "label": "Base Damage",
+            "value": "2,750% ATK per hit (Gatling)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "4,300% ATK per hit (Revolver)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Gatling) + (Aiming count x 500))% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Revolver) + (Aiming count x 500))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -17491,7 +17647,7 @@ export const nightWatchData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1700%(gatling gun)/2100%(pistol)Atk",
               "after": "1950%(gatling gun)/2400%(pistol)Atk per hit",
               "scope": "Lv 5",
@@ -17517,7 +17673,7 @@ export const nightWatchData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1950%/2400%Atk",
               "after": "2750%/4300%Atk per hit",
               "scope": "Lv 5",
@@ -17686,8 +17842,20 @@ export const nightWatchData = {
             "value": "1"
           },
           {
-            "label": "Damage",
-            "value": "(17500 + (Aiming count x 2500))% ATK (Shotgun)/(16500 + (Aiming count x 2500))% ATK (Grenade Launcher)"
+            "label": "Base Damage",
+            "value": "17,500% ATK (Shotgun)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "16,500% ATK (Grenade Launcher)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Shotgun) + (Aiming count x 2500))% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Grenade Launcher) + (Aiming count x 2500))% ATK"
           }
         ],
         "levelTables": [
@@ -17756,7 +17924,7 @@ export const nightWatchData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8000%(shotgun)/7000%(grenade launcher)Atk",
               "after": "13250%(shotgun)/12500%(grenade launcher)Atk",
               "scope": "Lv 5",
@@ -17775,7 +17943,7 @@ export const nightWatchData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "13250%/12500%Atk",
               "after": "17500%/16500%Atk",
               "scope": "Lv 5",
@@ -17938,8 +18106,12 @@ export const nightWatchData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "(9,000 + (Grenade Mastery Lv x 20))% ATK per hit"
+            "label": "Base Damage",
+            "value": "9,000% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Grenade Mastery Lv x 20))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -18007,7 +18179,7 @@ export const nightWatchData = {
               "source": "Increases AP recovery rate from 2 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6000%Atk",
               "after": "6750%Atk per hit",
               "scope": "Lv 5",
@@ -18026,7 +18198,7 @@ export const nightWatchData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6750%Atk",
               "after": "9000%Atk per hit",
               "scope": "Lv 5",
@@ -18127,8 +18299,16 @@ export const nightWatchData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "1,770% ATK per hit/2,070% ATK per hit (Hidden Card : Pistol)/2,270% ATK per hit (Hidden Card : Rifle)"
+            "label": "Base Damage",
+            "value": "1,770% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "2,070% ATK per hit (Hidden Card : Pistol)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "2,270% ATK per hit (Hidden Card : Rifle)"
           }
         ],
         "levelTables": []
@@ -18226,8 +18406,20 @@ export const nightWatchData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "6,400% ATK per hit/8,400% ATK per hit (Hidden Card : Shotgun)/7,400% ATK per hit (Hidden Card : Gatling)/8,100% ATK per hit (Hidden Card : Launcher)"
+            "label": "Base Damage",
+            "value": "6,400% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "8,400% ATK per hit (Hidden Card : Shotgun)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "7,400% ATK per hit (Hidden Card : Gatling)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "8,100% ATK per hit (Hidden Card : Launcher)"
           }
         ],
         "levelTables": []
@@ -18367,8 +18559,12 @@ export const nightWatchData = {
             "value": "0.25 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(4,800 + (Grenade Mastery Lv x 30))% ATK per hit"
+            "label": "Base Damage",
+            "value": "4,800% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Grenade Mastery Lv x 30))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -18787,8 +18983,20 @@ export const nightWatchData = {
             "value": "0.25 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(23,000 + (Grenade Mastery Lv x 100))% ATK per hit/(2,800 + (Grenade Mastery Lv x 30))% ATK per hit"
+            "label": "Base Damage",
+            "value": "23,000% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "2,800% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Grenade Mastery Lv x 100))% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Grenade Mastery Lv x 30))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -18902,7 +19110,7 @@ export const nightWatchData = {
               "source": "Reduces AP consumption from 100 to 35."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "15000%(primary)Atk",
               "after": "23000%(primary)Atk",
               "scope": "Lv 10",

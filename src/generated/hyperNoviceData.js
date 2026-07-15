@@ -1,5 +1,5 @@
 export const hyperNoviceData = {
-  "generatedAt": "2026-07-13T20:14:20.788Z",
+  "generatedAt": "2026-07-15T23:18:07.538Z",
   "classId": 4307,
   "classSlug": "hyper-novice",
   "className": "Hyper Novice",
@@ -991,8 +991,12 @@ export const hyperNoviceData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "(3,200 + (Self Study Tactics Lv x 30))% ATK per hit"
+                "label": "Base Damage",
+                "value": "3,200% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Self Study Tactics Lv x 30))% ATK per hit"
               }
             ],
             "levelTables": [
@@ -1100,7 +1104,7 @@ export const hyperNoviceData = {
                   "source": "Increases AP recovery rate from 2 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2100%Atk",
                   "after": "2650%Atk per hit",
                   "scope": "Lv 10",
@@ -1141,7 +1145,7 @@ export const hyperNoviceData = {
                   "source": "Reduces knock-back distance from 2 cells to 1 cell."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2650%Atk",
                   "after": "3200%Atk per hit",
                   "scope": "Lv 10",
@@ -1160,7 +1164,7 @@ export const hyperNoviceData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3200+(Self Study Tactics skill level x 30)%Atk",
                   "after": "4250+(Self Study Tactics skill level x 30)%Atk per hit",
                   "scope": "Lv 10",
@@ -1345,8 +1349,12 @@ export const hyperNoviceData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(5,700 + (Self Study Tactics Lv x 30))% ATK"
+                "label": "Base Damage",
+                "value": "5,700% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Self Study Tactics Lv x 30))% ATK"
               }
             ],
             "levelTables": [
@@ -1454,7 +1462,7 @@ export const hyperNoviceData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3400%Atk",
                   "after": "5100%Atk",
                   "scope": "Lv 10",
@@ -1488,7 +1496,7 @@ export const hyperNoviceData = {
                   "source": "Increases skill cooldown from 0.3 seconds to 0.35 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5100%Atk",
                   "after": "5700%Atk",
                   "scope": "Lv 10",
@@ -1507,7 +1515,7 @@ export const hyperNoviceData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5700+(Self Study Tactics skill level x 30)%Atk",
                   "after": "11350+(Self Study Tactics skill level x 30)%Atk",
                   "scope": "Lv 10",
@@ -1692,8 +1700,20 @@ export const hyperNoviceData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "(3,500 + (Self Study Sorcery Lv x 50))% MATK (Fall)/(2,050 + (Self Study Sorcery Lv x 50))% MATK (E x plosion)"
+                "label": "Base Damage",
+                "value": "3,500% MATK (Fall)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "2,050% MATK (E x plosion)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Fall) + (Self Study Sorcery Lv x 50))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (E x plosion) + (Self Study Sorcery Lv x 50))% MATK"
               }
             ],
             "levelTables": [
@@ -1791,7 +1811,7 @@ export const hyperNoviceData = {
                   "source": "Increases SP consumption from 82 to 110 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3300%/1950%(e x plosion)Matk",
                   "after": "3500%/2050%(e x plosion)Matk per hit",
                   "scope": "Lv 10",
@@ -1972,8 +1992,12 @@ export const hyperNoviceData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(18,000 + (Self Study Sorcery Lv x 30))% MATK"
+                "label": "Base Damage",
+                "value": "18,000% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Self Study Sorcery Lv x 30))% MATK"
               }
             ],
             "levelTables": [
@@ -2266,8 +2290,20 @@ export const hyperNoviceData = {
                 "value": "0.3 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(2,000 + (Self Study Sorcery Lv x 30))% MATK (Sphere)/(5,400 + (Self Study Sorcery Lv x 30))% MATK per hit (E x plosion)"
+                "label": "Base Damage",
+                "value": "2,000% MATK (Sphere)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "5,400% MATK per hit (E x plosion)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Sphere) + (Self Study Sorcery Lv x 30))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (E x plosion) + (Self Study Sorcery Lv x 30))% MATK per hit"
               }
             ],
             "levelTables": [
@@ -2365,7 +2401,7 @@ export const hyperNoviceData = {
                   "source": "Increases SP consumption from 85 to 95 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2200%(e x plosion)Matk",
                   "after": "5400%(e x plosion)Matk per hit",
                   "scope": "Lv 10",
@@ -2546,8 +2582,12 @@ export const hyperNoviceData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(8,500 + (Self Study Sorcery Lv x 40))% MATK"
+                "label": "Base Damage",
+                "value": "8,500% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Self Study Sorcery Lv x 40))% MATK"
               }
             ],
             "levelTables": [
@@ -2667,7 +2707,7 @@ export const hyperNoviceData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6500%Matk",
                   "after": "8500%Matk",
                   "scope": "Lv 10",
@@ -2705,7 +2745,7 @@ export const hyperNoviceData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8500+(Self Study Sorcery skill level x 30)%Atk",
                   "after": "10700+(Self Study Sorcery skill level x 30)%Matk",
                   "scope": "Lv 10",
@@ -2880,8 +2920,12 @@ export const hyperNoviceData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(8,400 + (Self Study Tactics Lv x 50))% ATK"
+                "label": "Base Damage",
+                "value": "8,400% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Self Study Tactics Lv x 50))% ATK"
               }
             ],
             "levelTables": [
@@ -2987,7 +3031,7 @@ export const hyperNoviceData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2300%Atk",
                   "after": "5350%Atk",
                   "scope": "Lv 10",
@@ -3014,7 +3058,7 @@ export const hyperNoviceData = {
                   "source": "Increases skill cooldown from 0.3 seconds to 0.35 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5350%Atk",
                   "after": "8400%Atk",
                   "scope": "Lv 10",
@@ -3199,8 +3243,12 @@ export const hyperNoviceData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "((8,700 + (Self Study Tactics Lv x 30)) x damage factor)% ATK"
+                "label": "Base Damage",
+                "value": "8,700% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "((Base Damage + (Self Study Tactics Lv x 30)) x damage factor)% ATK"
               }
             ],
             "levelTables": [
@@ -3306,7 +3354,7 @@ export const hyperNoviceData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3000%Atk",
                   "after": "4050%Atk",
                   "scope": "Lv 10",
@@ -3333,7 +3381,7 @@ export const hyperNoviceData = {
                   "source": "Increases skill cooldown from 0.3 seconds to 0.35 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4050%Atk",
                   "after": "8700%Atk",
                   "scope": "Lv 10",
@@ -3352,7 +3400,7 @@ export const hyperNoviceData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8700+(Self Study Tactics skill level x 30)%Atk x size correction",
                   "after": "16000+(Self Study Tactics skill level x 30)%Atk x size correction",
                   "scope": "Lv 10",
@@ -3541,8 +3589,20 @@ export const hyperNoviceData = {
                 "value": "0.5 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(18000 + (40 x Self Study Sorcery Lv))% MATK (Initial)/(7800 + (20 x Self Study Sorcery Lv))% MATK (Gravitational)"
+                "label": "Base Damage",
+                "value": "18,000% MATK (Initial)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "7,800% MATK (Gravitational)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Initial) + (40 x Self Study Sorcery Lv))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Gravitational) + (20 x Self Study Sorcery Lv))% MATK"
               }
             ],
             "levelTables": [
@@ -3654,7 +3714,7 @@ export const hyperNoviceData = {
                   "source": "Increases SP consumption from 88 to 100 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3400%(gravitational field)Matk",
                   "after": "7800%(gravitational field)Matk per hit",
                   "scope": "Lv 10",
@@ -3858,8 +3918,12 @@ export const hyperNoviceData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(6,850 + (Self Study Sorcery Lv x 40))% MATK"
+                "label": "Base Damage",
+                "value": "6,850% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Self Study Sorcery Lv x 40))% MATK"
               }
             ],
             "levelTables": [
@@ -3966,7 +4030,7 @@ export const hyperNoviceData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2750%Matk",
                   "after": "6850%Matk",
                   "scope": "Lv 10",
@@ -4142,11 +4206,18 @@ export const hyperNoviceData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "70% (bonus of Mega Sonic Blow and Spiral Pierce Ma x )/50% (bonus of Double Bowling Bash and Shield Chain Rush)",
-                  "after": "100% (bonus of Mega Sonic Blow and Spiral Pierce Ma x )/70% (bonus of Double Bowling Bash and Shield Chain Rush)",
+                  "label": "Damage Bonus Of Mega Sonic Blow And Spiral Pierce Max",
+                  "before": "70%",
+                  "after": "100%",
                   "scope": "",
-                  "source": "Increases damage bonus of Mega Sonic Blow and Spiral Pierce Max from 70% to 100%. / Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 50% to 70%."
+                  "source": "Increases damage bonus of Mega Sonic Blow and Spiral Pierce Max from 70% to 100%."
+                },
+                {
+                  "label": "Damage Bonus Of Double Bowling Bash And Shield Chain Rush",
+                  "before": "50%",
+                  "after": "70%",
+                  "scope": "",
+                  "source": "Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 50% to 70%."
                 }
               ]
             },
@@ -4161,9 +4232,9 @@ export const hyperNoviceData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "70% (bonus of Double Bowling Bash and Shield Chain Rush)",
-                  "after": "120% (bonus of Double Bowling Bash and Shield Chain Rush)",
+                  "label": "Damage Bonus Of Double Bowling Bash And Shield Chain Rush",
+                  "before": "70%",
+                  "after": "120%",
                   "scope": "",
                   "source": "Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 70% to 120%."
                 }
@@ -5117,8 +5188,12 @@ export const hyperNoviceData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
-                "value": "450% ATK/900% ATK"
+                "label": "Base Damage",
+                "value": "450% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "900% ATK"
               }
             ],
             "levelTables": [
@@ -7117,8 +7192,12 @@ export const hyperNoviceData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
-                "value": "700% ATK/350% ATK"
+                "label": "Base Damage",
+                "value": "700% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "350% ATK"
               }
             ],
             "levelTables": [
@@ -7619,7 +7698,7 @@ export const hyperNoviceData = {
                 "value": "20~60 seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "400% ATK"
               }
             ],
@@ -7918,7 +7997,7 @@ export const hyperNoviceData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "200% ATK"
               }
             ],
@@ -8450,7 +8529,7 @@ export const hyperNoviceData = {
                 "value": "7 x 7"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "800% ATK"
               }
             ],
@@ -9119,7 +9198,7 @@ export const hyperNoviceData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "400% ATK"
               }
             ],
@@ -9867,7 +9946,7 @@ export const hyperNoviceData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "250% MATK"
               }
             ],
@@ -10550,7 +10629,7 @@ export const hyperNoviceData = {
                 "value": "15 x 15"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% MATK"
               }
             ],
@@ -11424,7 +11503,7 @@ export const hyperNoviceData = {
                 "value": "4 seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,400% MATK"
               }
             ],
@@ -11641,7 +11720,7 @@ export const hyperNoviceData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "625% MATK"
               }
             ],
@@ -12654,7 +12733,7 @@ export const hyperNoviceData = {
                 "value": "4.5 seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "570% MATK"
               }
             ],
@@ -14895,7 +14974,7 @@ export const hyperNoviceData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "400% ATK"
               }
             ],
@@ -16455,7 +16534,7 @@ export const hyperNoviceData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% ATK"
               }
             ],
@@ -18948,7 +19027,7 @@ export const hyperNoviceData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "170% MATK"
               }
             ],
@@ -19869,7 +19948,7 @@ export const hyperNoviceData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "200% MATK"
               }
             ],
@@ -20369,8 +20448,12 @@ export const hyperNoviceData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
-                "value": "340% MATK/255% MATK"
+                "label": "Base Damage",
+                "value": "340% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "255% MATK"
               }
             ],
             "levelTables": [
@@ -20621,8 +20704,8 @@ export const hyperNoviceData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
-                "value": "(5times, + 50% dmg to Undead, SP Consumption:38) ATK"
+                "label": "Damage Formula",
+                "value": "(Base Damagetimes, + 50% dmg to Undead, SP Consumption:38) ATK"
               }
             ],
             "levelTables": [
@@ -26045,8 +26128,12 @@ export const hyperNoviceData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "(3,200 + (Self Study Tactics Lv x 30))% ATK per hit"
+            "label": "Base Damage",
+            "value": "3,200% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Self Study Tactics Lv x 30))% ATK per hit"
           }
         ],
         "levelTables": [
@@ -26154,7 +26241,7 @@ export const hyperNoviceData = {
               "source": "Increases AP recovery rate from 2 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2100%Atk",
               "after": "2650%Atk per hit",
               "scope": "Lv 10",
@@ -26195,7 +26282,7 @@ export const hyperNoviceData = {
               "source": "Reduces knock-back distance from 2 cells to 1 cell."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2650%Atk",
               "after": "3200%Atk per hit",
               "scope": "Lv 10",
@@ -26214,7 +26301,7 @@ export const hyperNoviceData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3200+(Self Study Tactics skill level x 30)%Atk",
               "after": "4250+(Self Study Tactics skill level x 30)%Atk per hit",
               "scope": "Lv 10",
@@ -26399,8 +26486,12 @@ export const hyperNoviceData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(5,700 + (Self Study Tactics Lv x 30))% ATK"
+            "label": "Base Damage",
+            "value": "5,700% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Self Study Tactics Lv x 30))% ATK"
           }
         ],
         "levelTables": [
@@ -26508,7 +26599,7 @@ export const hyperNoviceData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3400%Atk",
               "after": "5100%Atk",
               "scope": "Lv 10",
@@ -26542,7 +26633,7 @@ export const hyperNoviceData = {
               "source": "Increases skill cooldown from 0.3 seconds to 0.35 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5100%Atk",
               "after": "5700%Atk",
               "scope": "Lv 10",
@@ -26561,7 +26652,7 @@ export const hyperNoviceData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5700+(Self Study Tactics skill level x 30)%Atk",
               "after": "11350+(Self Study Tactics skill level x 30)%Atk",
               "scope": "Lv 10",
@@ -26746,8 +26837,20 @@ export const hyperNoviceData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "(3,500 + (Self Study Sorcery Lv x 50))% MATK (Fall)/(2,050 + (Self Study Sorcery Lv x 50))% MATK (E x plosion)"
+            "label": "Base Damage",
+            "value": "3,500% MATK (Fall)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "2,050% MATK (E x plosion)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Fall) + (Self Study Sorcery Lv x 50))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (E x plosion) + (Self Study Sorcery Lv x 50))% MATK"
           }
         ],
         "levelTables": [
@@ -26845,7 +26948,7 @@ export const hyperNoviceData = {
               "source": "Increases SP consumption from 82 to 110 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3300%/1950%(e x plosion)Matk",
               "after": "3500%/2050%(e x plosion)Matk per hit",
               "scope": "Lv 10",
@@ -27026,8 +27129,12 @@ export const hyperNoviceData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(18,000 + (Self Study Sorcery Lv x 30))% MATK"
+            "label": "Base Damage",
+            "value": "18,000% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Self Study Sorcery Lv x 30))% MATK"
           }
         ],
         "levelTables": [
@@ -27320,8 +27427,20 @@ export const hyperNoviceData = {
             "value": "0.3 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(2,000 + (Self Study Sorcery Lv x 30))% MATK (Sphere)/(5,400 + (Self Study Sorcery Lv x 30))% MATK per hit (E x plosion)"
+            "label": "Base Damage",
+            "value": "2,000% MATK (Sphere)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "5,400% MATK per hit (E x plosion)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Sphere) + (Self Study Sorcery Lv x 30))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (E x plosion) + (Self Study Sorcery Lv x 30))% MATK per hit"
           }
         ],
         "levelTables": [
@@ -27419,7 +27538,7 @@ export const hyperNoviceData = {
               "source": "Increases SP consumption from 85 to 95 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2200%(e x plosion)Matk",
               "after": "5400%(e x plosion)Matk per hit",
               "scope": "Lv 10",
@@ -27600,8 +27719,12 @@ export const hyperNoviceData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(8,500 + (Self Study Sorcery Lv x 40))% MATK"
+            "label": "Base Damage",
+            "value": "8,500% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Self Study Sorcery Lv x 40))% MATK"
           }
         ],
         "levelTables": [
@@ -27721,7 +27844,7 @@ export const hyperNoviceData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6500%Matk",
               "after": "8500%Matk",
               "scope": "Lv 10",
@@ -27759,7 +27882,7 @@ export const hyperNoviceData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8500+(Self Study Sorcery skill level x 30)%Atk",
               "after": "10700+(Self Study Sorcery skill level x 30)%Matk",
               "scope": "Lv 10",
@@ -27934,8 +28057,12 @@ export const hyperNoviceData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(8,400 + (Self Study Tactics Lv x 50))% ATK"
+            "label": "Base Damage",
+            "value": "8,400% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Self Study Tactics Lv x 50))% ATK"
           }
         ],
         "levelTables": [
@@ -28041,7 +28168,7 @@ export const hyperNoviceData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2300%Atk",
               "after": "5350%Atk",
               "scope": "Lv 10",
@@ -28068,7 +28195,7 @@ export const hyperNoviceData = {
               "source": "Increases skill cooldown from 0.3 seconds to 0.35 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5350%Atk",
               "after": "8400%Atk",
               "scope": "Lv 10",
@@ -28253,8 +28380,12 @@ export const hyperNoviceData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "((8,700 + (Self Study Tactics Lv x 30)) x damage factor)% ATK"
+            "label": "Base Damage",
+            "value": "8,700% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "((Base Damage + (Self Study Tactics Lv x 30)) x damage factor)% ATK"
           }
         ],
         "levelTables": [
@@ -28360,7 +28491,7 @@ export const hyperNoviceData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3000%Atk",
               "after": "4050%Atk",
               "scope": "Lv 10",
@@ -28387,7 +28518,7 @@ export const hyperNoviceData = {
               "source": "Increases skill cooldown from 0.3 seconds to 0.35 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4050%Atk",
               "after": "8700%Atk",
               "scope": "Lv 10",
@@ -28406,7 +28537,7 @@ export const hyperNoviceData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8700+(Self Study Tactics skill level x 30)%Atk x size correction",
               "after": "16000+(Self Study Tactics skill level x 30)%Atk x size correction",
               "scope": "Lv 10",
@@ -28595,8 +28726,20 @@ export const hyperNoviceData = {
             "value": "0.5 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(18000 + (40 x Self Study Sorcery Lv))% MATK (Initial)/(7800 + (20 x Self Study Sorcery Lv))% MATK (Gravitational)"
+            "label": "Base Damage",
+            "value": "18,000% MATK (Initial)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "7,800% MATK (Gravitational)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Initial) + (40 x Self Study Sorcery Lv))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Gravitational) + (20 x Self Study Sorcery Lv))% MATK"
           }
         ],
         "levelTables": [
@@ -28708,7 +28851,7 @@ export const hyperNoviceData = {
               "source": "Increases SP consumption from 88 to 100 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3400%(gravitational field)Matk",
               "after": "7800%(gravitational field)Matk per hit",
               "scope": "Lv 10",
@@ -28912,8 +29055,12 @@ export const hyperNoviceData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(6,850 + (Self Study Sorcery Lv x 40))% MATK"
+            "label": "Base Damage",
+            "value": "6,850% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Self Study Sorcery Lv x 40))% MATK"
           }
         ],
         "levelTables": [
@@ -29020,7 +29167,7 @@ export const hyperNoviceData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2750%Matk",
               "after": "6850%Matk",
               "scope": "Lv 10",
@@ -29196,11 +29343,18 @@ export const hyperNoviceData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
-              "before": "70% (bonus of Mega Sonic Blow and Spiral Pierce Ma x )/50% (bonus of Double Bowling Bash and Shield Chain Rush)",
-              "after": "100% (bonus of Mega Sonic Blow and Spiral Pierce Ma x )/70% (bonus of Double Bowling Bash and Shield Chain Rush)",
+              "label": "Damage Bonus Of Mega Sonic Blow And Spiral Pierce Max",
+              "before": "70%",
+              "after": "100%",
               "scope": "",
-              "source": "Increases damage bonus of Mega Sonic Blow and Spiral Pierce Max from 70% to 100%. / Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 50% to 70%."
+              "source": "Increases damage bonus of Mega Sonic Blow and Spiral Pierce Max from 70% to 100%."
+            },
+            {
+              "label": "Damage Bonus Of Double Bowling Bash And Shield Chain Rush",
+              "before": "50%",
+              "after": "70%",
+              "scope": "",
+              "source": "Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 50% to 70%."
             }
           ]
         },
@@ -29215,9 +29369,9 @@ export const hyperNoviceData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
-              "before": "70% (bonus of Double Bowling Bash and Shield Chain Rush)",
-              "after": "120% (bonus of Double Bowling Bash and Shield Chain Rush)",
+              "label": "Damage Bonus Of Double Bowling Bash And Shield Chain Rush",
+              "before": "70%",
+              "after": "120%",
               "scope": "",
               "source": "Increases damage bonus of Double Bowling Bash and Shield Chain Rush from 70% to 120%."
             }

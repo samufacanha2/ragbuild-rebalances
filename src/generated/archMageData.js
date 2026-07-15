@@ -1,5 +1,5 @@
 export const archMageData = {
-  "generatedAt": "2026-07-13T20:14:08.238Z",
+  "generatedAt": "2026-07-15T23:17:54.926Z",
   "classId": 4255,
   "classSlug": "arch-mage",
   "className": "Arch Mage",
@@ -856,7 +856,7 @@ export const archMageData = {
                 "value": "5 seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,750% MATK"
               }
             ],
@@ -933,7 +933,7 @@ export const archMageData = {
                   "source": "Increases SP consumption from 70 to 94 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1000%Matk",
                   "after": "3750%Matk per hit",
                   "scope": "Lv 5",
@@ -1083,7 +1083,7 @@ export const archMageData = {
                 "value": "Instant Cast"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,980% MATK"
               }
             ],
@@ -1169,7 +1169,7 @@ export const archMageData = {
                   "source": "Increases SP consumption from 80 to 100 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "750%Matk",
                   "after": "3980%Matk per hit",
                   "scope": "Lv 5",
@@ -1361,7 +1361,7 @@ export const archMageData = {
                 "value": "5 x 5~9 x 9"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,900% MATK"
               }
             ],
@@ -1438,7 +1438,7 @@ export const archMageData = {
                   "source": "Increases SP consumption from 75 to 94 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "450%Matk",
                   "after": "3900%Matk per hit",
                   "scope": "Lv 5",
@@ -1592,7 +1592,7 @@ export const archMageData = {
                 "value": "Lv 1: 5 x 5 cells / Lv 2: 5 x 5 cells / Lv 3: 7 x 7 cells / Lv 4: 7 x 7 cells / Lv 5: 9 x 9 cells"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,750% MATK"
               }
             ],
@@ -1669,7 +1669,7 @@ export const archMageData = {
                   "source": "Increases SP consumption from 75 to 94 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1250%Matk",
                   "after": "3750%Matk per hit",
                   "scope": "Lv 5",
@@ -1840,7 +1840,7 @@ export const archMageData = {
                 "value": "3 x 3 ~ 11 x 11"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,250% MATK"
               }
             ],
@@ -1909,7 +1909,7 @@ export const archMageData = {
                   "source": "Reduces SP consumption from 120 to 110 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "900%Matk",
                   "after": "1250%Matk per hit",
                   "scope": "Lv 5",
@@ -1928,7 +1928,7 @@ export const archMageData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1250%Matk",
                   "after": "1500%Matk per hit",
                   "scope": "Lv 5",
@@ -2293,7 +2293,7 @@ export const archMageData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,750% MATK"
               }
             ],
@@ -2389,7 +2389,7 @@ export const archMageData = {
                   "source": "Reduces AP recovery rate from 4 to 1."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2000%Matk (secondary attack that deal damage to the target and surrounding enemies around the target)",
                   "after": "3000%Matk (secondary attack that deal damage to the target and surrounding enemies around the target)",
                   "scope": "Lv 5",
@@ -2451,7 +2451,7 @@ export const archMageData = {
                   "source": "Reduces SP consumption from 94 to 90 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1500%Matk (linear damage)/3000%Matk (e x plosion damage)",
                   "after": "1750%Matk (linear damage)/3500%Matk (e x plosion damage)",
                   "scope": "Lv 5",
@@ -2470,7 +2470,7 @@ export const archMageData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1750%/3500%Matk",
                   "after": "2000%/3750%Matk",
                   "scope": "Lv 5",
@@ -2616,8 +2616,12 @@ export const archMageData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "4,900% MATK/6,800% MATK (Clima x )"
+                "label": "Base Damage",
+                "value": "4,900% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "6,800% MATK (Clima x )"
               }
             ],
             "levelTables": [
@@ -2719,7 +2723,7 @@ export const archMageData = {
                   "source": "Increases area of effect from 9x9 cells to 13x13 cells based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3750%Matk",
                   "after": "3000%Matk",
                   "scope": "Lv 5",
@@ -2762,7 +2766,7 @@ export const archMageData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3000%/4250%(Clima x )Matk",
                   "after": "4750%/6650%(Clima x )Matk",
                   "scope": "Lv 5",
@@ -2789,7 +2793,7 @@ export const archMageData = {
                   "source": "Increases SP consumption from 96 to 115 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4750%/6650%Matk",
                   "after": "4900%/6800%Matk",
                   "scope": "Lv 5",
@@ -2808,7 +2812,7 @@ export const archMageData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4900%/6800%(Clima x )Matk",
                   "after": "5200%/7100%(Clima x )Matk",
                   "scope": "Lv 5",
@@ -2953,8 +2957,12 @@ export const archMageData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "6,000% MATK/7,500% MATK (Clima x )"
+                "label": "Base Damage",
+                "value": "6,000% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "7,500% MATK (Clima x )"
               }
             ],
             "levelTables": [
@@ -3066,7 +3074,7 @@ export const archMageData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3000%/4250%(Clima x )Matk",
                   "after": "4750%/6250%(Clima x )Matk",
                   "scope": "Lv 5",
@@ -3093,7 +3101,7 @@ export const archMageData = {
                   "source": "Reduces SP consumption from 94 to 88 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4750%/6250%Matk",
                   "after": "6000%/7500%Matk",
                   "scope": "Lv 5",
@@ -3112,7 +3120,7 @@ export const archMageData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6000%/7500%(Clima x )Matk",
                   "after": "7750%/9250%(Clima x )Matk",
                   "scope": "Lv 5",
@@ -3258,8 +3266,12 @@ export const archMageData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "6,000% MATK/7,500% MATK (Clima x )"
+                "label": "Base Damage",
+                "value": "6,000% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "7,500% MATK (Clima x )"
               }
             ],
             "levelTables": [
@@ -3354,7 +3366,7 @@ export const archMageData = {
                   "source": "Reduces AP recovery rate from 4 to 1."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3750%Matk",
                   "after": "3000%Matk",
                   "scope": "Lv 5",
@@ -3396,7 +3408,7 @@ export const archMageData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3000%/4250%(Clima x )Matk",
                   "after": "4750%/6250%(Clima x )Matk",
                   "scope": "Lv 5",
@@ -3423,7 +3435,7 @@ export const archMageData = {
                   "source": "Reduces SP consumption from 94 to 88 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4750%/6250%Matk",
                   "after": "6000%/7500%Matk",
                   "scope": "Lv 5",
@@ -3442,7 +3454,7 @@ export const archMageData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6000%/7500%(Clima x )Matk",
                   "after": "7750%/9250%(Clima x )Matk",
                   "scope": "Lv 5",
@@ -3598,7 +3610,7 @@ export const archMageData = {
                 "value": "5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "4,750% MATK"
               }
             ],
@@ -3660,7 +3672,7 @@ export const archMageData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1250%Matk",
                   "after": "2500%Matk",
                   "scope": "Lv 5",
@@ -3703,7 +3715,7 @@ export const archMageData = {
                   "source": "Increases AP recovery rate from 4 to 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2500%Matk",
                   "after": "4750%Matk per hit",
                   "scope": "Lv 5",
@@ -3867,7 +3879,7 @@ export const archMageData = {
                 "value": "Lv 1: 4 seconds / Lv 2: 5 seconds / Lv 3: 6 seconds / Lv 4: 7 seconds / Lv 5: 8 seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "14,000% MATK"
               }
             ],
@@ -3936,7 +3948,7 @@ export const archMageData = {
                   "source": "Reduces SP consumption from 120 to 90 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3600%Matk",
                   "after": "14000%Matk",
                   "scope": "Lv 5",
@@ -4082,7 +4094,7 @@ export const archMageData = {
                 "value": "7 x 7~9 x 9"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "6,200% MATK"
               }
             ],
@@ -4162,7 +4174,7 @@ export const archMageData = {
                   "source": "Increases SP consumption from 100 to 126 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "500%Matk",
                   "after": "6200%Matk per hit",
                   "scope": "Lv 5",
@@ -4330,7 +4342,7 @@ export const archMageData = {
                 "value": "Instant Cast"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "6,750% MATK"
               }
             ],
@@ -4424,7 +4436,7 @@ export const archMageData = {
                   "source": "Increases SP consumption from 120 to 132 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4000%/4000%(secondary)Matk",
                   "after": "6750%/6750%(secondary)Matk",
                   "scope": "Lv 5",
@@ -4601,7 +4613,7 @@ export const archMageData = {
                 "value": "Instant Cast"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "14,850% MATK"
               }
             ],
@@ -4698,7 +4710,7 @@ export const archMageData = {
                   "source": "Increases SP consumption from 120 to 132 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8000%Matk",
                   "after": "14250%Matk",
                   "scope": "Lv 5",
@@ -4742,11 +4754,25 @@ export const archMageData = {
                   "source": "Increases skill cooldown from 2 seconds to 2.5 seconds."
                 },
                 {
-                  "label": "Damage",
-                  "before": "14250%Matk/Clima x level 3 from 200% (bonus)/Clima x level 5 from 50% increasing (modifier)",
-                  "after": "14850%Matk/150% (bonus)/20% reducing (modifier)",
+                  "label": "Base Damage",
+                  "before": "14250%Matk",
+                  "after": "14850%Matk",
                   "scope": "Lv 5",
-                  "source": "Increases base damage from 14250%Matk to 14850%Matk based on level 5. / Reduces damage bonus from Climax level 3 from 200% to 150%. / Changes damage modifier from Climax level 5 from 50% increasing to 20% reducing."
+                  "source": "Increases base damage from 14250%Matk to 14850%Matk based on level 5."
+                },
+                {
+                  "label": "Damage Bonus",
+                  "before": "Clima x level 3 from 200%",
+                  "after": "150%",
+                  "scope": "",
+                  "source": "Reduces damage bonus from Climax level 3 from 200% to 150%."
+                },
+                {
+                  "label": "Damage Modifier",
+                  "before": "Clima x level 5 from 50% increasing",
+                  "after": "20% reducing",
+                  "scope": "",
+                  "source": "Changes damage modifier from Climax level 5 from 50% increasing to 20% reducing."
                 },
                 {
                   "label": "SP Cost",
@@ -4895,7 +4921,7 @@ export const archMageData = {
                 "value": "7 x 7~9 x 9"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "6,200% MATK"
               }
             ],
@@ -4973,7 +4999,7 @@ export const archMageData = {
                   "source": "Increases SP consumption from 100 to 126 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "600%Matk",
                   "after": "6200%Matk per hit",
                   "scope": "Lv 5",
@@ -5206,8 +5232,12 @@ export const archMageData = {
                 "value": "150"
               },
               {
-                "label": "Damage",
-                "value": "18,300% MATK/6,500% MATK"
+                "label": "Base Damage",
+                "value": "18,300% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "6,500% MATK"
               }
             ],
             "levelTables": [
@@ -7845,7 +7875,7 @@ export const archMageData = {
                 "value": "7 x 7"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,700% MATK"
               }
             ],
@@ -8145,7 +8175,7 @@ export const archMageData = {
                 "value": "7 x 7~11 x 11"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "700% MATK"
               }
             ],
@@ -9031,7 +9061,7 @@ export const archMageData = {
                 "value": "3 x 3 ~ 5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,000% MATK"
               }
             ],
@@ -9616,7 +9646,7 @@ export const archMageData = {
                 "value": "3 x 3 ~ 5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,000% MATK"
               }
             ],
@@ -9934,8 +9964,12 @@ export const archMageData = {
                 "value": "7 x 7 ~ 11 x 11"
               },
               {
-                "label": "Damage",
-                "value": "2,500% MATK/4,200% MATK"
+                "label": "Base Damage",
+                "value": "2,500% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "4,200% MATK"
               }
             ],
             "levelTables": [
@@ -10257,7 +10291,7 @@ export const archMageData = {
                 "value": "15 x 5 ~ 15 x 9"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "4,000% MATK"
               }
             ],
@@ -10865,7 +10899,7 @@ export const archMageData = {
                 "value": "13 x 13"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "6,000% MATK"
               }
             ],
@@ -11846,7 +11880,7 @@ export const archMageData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "4,800% MATK"
               }
             ],
@@ -13175,7 +13209,7 @@ export const archMageData = {
                 "value": "15 x 15"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% MATK"
               }
             ],
@@ -14187,7 +14221,7 @@ export const archMageData = {
                 "value": "4 seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,400% MATK"
               }
             ],
@@ -14404,7 +14438,7 @@ export const archMageData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "625% MATK"
               }
             ],
@@ -15181,7 +15215,7 @@ export const archMageData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "250% MATK"
               }
             ],
@@ -16008,7 +16042,7 @@ export const archMageData = {
                 "value": "4.5 seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "570% MATK"
               }
             ],
@@ -17417,7 +17451,7 @@ export const archMageData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "170% MATK"
               }
             ],
@@ -18338,7 +18372,7 @@ export const archMageData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "200% MATK"
               }
             ],
@@ -18833,8 +18867,8 @@ export const archMageData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
-                "value": "(5times, + 50% dmg to Undead, SP Consumption:38) ATK"
+                "label": "Damage Formula",
+                "value": "(Base Damagetimes, + 50% dmg to Undead, SP Consumption:38) ATK"
               }
             ],
             "levelTables": [
@@ -19090,8 +19124,12 @@ export const archMageData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
-                "value": "340% MATK/255% MATK"
+                "label": "Base Damage",
+                "value": "340% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "255% MATK"
               }
             ],
             "levelTables": [
@@ -20173,7 +20211,7 @@ export const archMageData = {
             "value": "5 seconds"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "3,750% MATK"
           }
         ],
@@ -20250,7 +20288,7 @@ export const archMageData = {
               "source": "Increases SP consumption from 70 to 94 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1000%Matk",
               "after": "3750%Matk per hit",
               "scope": "Lv 5",
@@ -20400,7 +20438,7 @@ export const archMageData = {
             "value": "Instant Cast"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "3,980% MATK"
           }
         ],
@@ -20486,7 +20524,7 @@ export const archMageData = {
               "source": "Increases SP consumption from 80 to 100 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "750%Matk",
               "after": "3980%Matk per hit",
               "scope": "Lv 5",
@@ -20678,7 +20716,7 @@ export const archMageData = {
             "value": "5 x 5~9 x 9"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "3,900% MATK"
           }
         ],
@@ -20755,7 +20793,7 @@ export const archMageData = {
               "source": "Increases SP consumption from 75 to 94 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "450%Matk",
               "after": "3900%Matk per hit",
               "scope": "Lv 5",
@@ -20909,7 +20947,7 @@ export const archMageData = {
             "value": "Lv 1: 5 x 5 cells / Lv 2: 5 x 5 cells / Lv 3: 7 x 7 cells / Lv 4: 7 x 7 cells / Lv 5: 9 x 9 cells"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "3,750% MATK"
           }
         ],
@@ -20986,7 +21024,7 @@ export const archMageData = {
               "source": "Increases SP consumption from 75 to 94 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1250%Matk",
               "after": "3750%Matk per hit",
               "scope": "Lv 5",
@@ -21157,7 +21195,7 @@ export const archMageData = {
             "value": "3 x 3 ~ 11 x 11"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "1,250% MATK"
           }
         ],
@@ -21226,7 +21264,7 @@ export const archMageData = {
               "source": "Reduces SP consumption from 120 to 110 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "900%Matk",
               "after": "1250%Matk per hit",
               "scope": "Lv 5",
@@ -21245,7 +21283,7 @@ export const archMageData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1250%Matk",
               "after": "1500%Matk per hit",
               "scope": "Lv 5",
@@ -21610,7 +21648,7 @@ export const archMageData = {
             "value": "2"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "1,750% MATK"
           }
         ],
@@ -21706,7 +21744,7 @@ export const archMageData = {
               "source": "Reduces AP recovery rate from 4 to 1."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2000%Matk (secondary attack that deal damage to the target and surrounding enemies around the target)",
               "after": "3000%Matk (secondary attack that deal damage to the target and surrounding enemies around the target)",
               "scope": "Lv 5",
@@ -21768,7 +21806,7 @@ export const archMageData = {
               "source": "Reduces SP consumption from 94 to 90 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1500%Matk (linear damage)/3000%Matk (e x plosion damage)",
               "after": "1750%Matk (linear damage)/3500%Matk (e x plosion damage)",
               "scope": "Lv 5",
@@ -21787,7 +21825,7 @@ export const archMageData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1750%/3500%Matk",
               "after": "2000%/3750%Matk",
               "scope": "Lv 5",
@@ -21933,8 +21971,12 @@ export const archMageData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "4,900% MATK/6,800% MATK (Clima x )"
+            "label": "Base Damage",
+            "value": "4,900% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "6,800% MATK (Clima x )"
           }
         ],
         "levelTables": [
@@ -22036,7 +22078,7 @@ export const archMageData = {
               "source": "Increases area of effect from 9x9 cells to 13x13 cells based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3750%Matk",
               "after": "3000%Matk",
               "scope": "Lv 5",
@@ -22079,7 +22121,7 @@ export const archMageData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3000%/4250%(Clima x )Matk",
               "after": "4750%/6650%(Clima x )Matk",
               "scope": "Lv 5",
@@ -22106,7 +22148,7 @@ export const archMageData = {
               "source": "Increases SP consumption from 96 to 115 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4750%/6650%Matk",
               "after": "4900%/6800%Matk",
               "scope": "Lv 5",
@@ -22125,7 +22167,7 @@ export const archMageData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4900%/6800%(Clima x )Matk",
               "after": "5200%/7100%(Clima x )Matk",
               "scope": "Lv 5",
@@ -22270,8 +22312,12 @@ export const archMageData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "6,000% MATK/7,500% MATK (Clima x )"
+            "label": "Base Damage",
+            "value": "6,000% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "7,500% MATK (Clima x )"
           }
         ],
         "levelTables": [
@@ -22383,7 +22429,7 @@ export const archMageData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3000%/4250%(Clima x )Matk",
               "after": "4750%/6250%(Clima x )Matk",
               "scope": "Lv 5",
@@ -22410,7 +22456,7 @@ export const archMageData = {
               "source": "Reduces SP consumption from 94 to 88 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4750%/6250%Matk",
               "after": "6000%/7500%Matk",
               "scope": "Lv 5",
@@ -22429,7 +22475,7 @@ export const archMageData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6000%/7500%(Clima x )Matk",
               "after": "7750%/9250%(Clima x )Matk",
               "scope": "Lv 5",
@@ -22575,8 +22621,12 @@ export const archMageData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "6,000% MATK/7,500% MATK (Clima x )"
+            "label": "Base Damage",
+            "value": "6,000% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "7,500% MATK (Clima x )"
           }
         ],
         "levelTables": [
@@ -22671,7 +22721,7 @@ export const archMageData = {
               "source": "Reduces AP recovery rate from 4 to 1."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3750%Matk",
               "after": "3000%Matk",
               "scope": "Lv 5",
@@ -22713,7 +22763,7 @@ export const archMageData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3000%/4250%(Clima x )Matk",
               "after": "4750%/6250%(Clima x )Matk",
               "scope": "Lv 5",
@@ -22740,7 +22790,7 @@ export const archMageData = {
               "source": "Reduces SP consumption from 94 to 88 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4750%/6250%Matk",
               "after": "6000%/7500%Matk",
               "scope": "Lv 5",
@@ -22759,7 +22809,7 @@ export const archMageData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6000%/7500%(Clima x )Matk",
               "after": "7750%/9250%(Clima x )Matk",
               "scope": "Lv 5",
@@ -22915,7 +22965,7 @@ export const archMageData = {
             "value": "5"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "4,750% MATK"
           }
         ],
@@ -22977,7 +23027,7 @@ export const archMageData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1250%Matk",
               "after": "2500%Matk",
               "scope": "Lv 5",
@@ -23020,7 +23070,7 @@ export const archMageData = {
               "source": "Increases AP recovery rate from 4 to 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2500%Matk",
               "after": "4750%Matk per hit",
               "scope": "Lv 5",
@@ -23184,7 +23234,7 @@ export const archMageData = {
             "value": "Lv 1: 4 seconds / Lv 2: 5 seconds / Lv 3: 6 seconds / Lv 4: 7 seconds / Lv 5: 8 seconds"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "14,000% MATK"
           }
         ],
@@ -23253,7 +23303,7 @@ export const archMageData = {
               "source": "Reduces SP consumption from 120 to 90 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3600%Matk",
               "after": "14000%Matk",
               "scope": "Lv 5",
@@ -23399,7 +23449,7 @@ export const archMageData = {
             "value": "7 x 7~9 x 9"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "6,200% MATK"
           }
         ],
@@ -23479,7 +23529,7 @@ export const archMageData = {
               "source": "Increases SP consumption from 100 to 126 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "500%Matk",
               "after": "6200%Matk per hit",
               "scope": "Lv 5",
@@ -23647,7 +23697,7 @@ export const archMageData = {
             "value": "Instant Cast"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "6,750% MATK"
           }
         ],
@@ -23741,7 +23791,7 @@ export const archMageData = {
               "source": "Increases SP consumption from 120 to 132 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4000%/4000%(secondary)Matk",
               "after": "6750%/6750%(secondary)Matk",
               "scope": "Lv 5",
@@ -23918,7 +23968,7 @@ export const archMageData = {
             "value": "Instant Cast"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "14,850% MATK"
           }
         ],
@@ -24015,7 +24065,7 @@ export const archMageData = {
               "source": "Increases SP consumption from 120 to 132 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8000%Matk",
               "after": "14250%Matk",
               "scope": "Lv 5",
@@ -24059,11 +24109,25 @@ export const archMageData = {
               "source": "Increases skill cooldown from 2 seconds to 2.5 seconds."
             },
             {
-              "label": "Damage",
-              "before": "14250%Matk/Clima x level 3 from 200% (bonus)/Clima x level 5 from 50% increasing (modifier)",
-              "after": "14850%Matk/150% (bonus)/20% reducing (modifier)",
+              "label": "Base Damage",
+              "before": "14250%Matk",
+              "after": "14850%Matk",
               "scope": "Lv 5",
-              "source": "Increases base damage from 14250%Matk to 14850%Matk based on level 5. / Reduces damage bonus from Climax level 3 from 200% to 150%. / Changes damage modifier from Climax level 5 from 50% increasing to 20% reducing."
+              "source": "Increases base damage from 14250%Matk to 14850%Matk based on level 5."
+            },
+            {
+              "label": "Damage Bonus",
+              "before": "Clima x level 3 from 200%",
+              "after": "150%",
+              "scope": "",
+              "source": "Reduces damage bonus from Climax level 3 from 200% to 150%."
+            },
+            {
+              "label": "Damage Modifier",
+              "before": "Clima x level 5 from 50% increasing",
+              "after": "20% reducing",
+              "scope": "",
+              "source": "Changes damage modifier from Climax level 5 from 50% increasing to 20% reducing."
             },
             {
               "label": "SP Cost",
@@ -24212,7 +24276,7 @@ export const archMageData = {
             "value": "7 x 7~9 x 9"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "6,200% MATK"
           }
         ],
@@ -24290,7 +24354,7 @@ export const archMageData = {
               "source": "Increases SP consumption from 100 to 126 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "600%Matk",
               "after": "6200%Matk per hit",
               "scope": "Lv 5",
@@ -24523,8 +24587,12 @@ export const archMageData = {
             "value": "150"
           },
           {
-            "label": "Damage",
-            "value": "18,300% MATK/6,500% MATK"
+            "label": "Base Damage",
+            "value": "18,300% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "6,500% MATK"
           }
         ],
         "levelTables": [

@@ -1,5 +1,5 @@
 export const dragonKnightData = {
-  "generatedAt": "2026-07-13T20:14:02.347Z",
+  "generatedAt": "2026-07-15T23:17:48.582Z",
   "classId": 4252,
   "classSlug": "dragon-knight",
   "className": "Dragon Knight",
@@ -501,7 +501,7 @@ export const dragonKnightData = {
                 "value": "Skill Level x 6"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,500% ATK per hit"
               }
             ],
@@ -573,7 +573,7 @@ export const dragonKnightData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "400%Atk",
                   "after": "450%Atk",
                   "scope": "Lv 5",
@@ -614,7 +614,7 @@ export const dragonKnightData = {
                   "source": "Increases number of hit from 1 hit to 2 hits."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "450%Atk",
                   "after": "2500%Atk per hit",
                   "scope": "Lv 5",
@@ -644,7 +644,7 @@ export const dragonKnightData = {
                   "source": "Reduces skill cooldown from 150 seconds to 60 seconds based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2500%Atk",
                   "after": "4850%Atk",
                   "scope": "Lv 5",
@@ -1359,7 +1359,7 @@ export const dragonKnightData = {
                 "value": "Single Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "7,700% ATK per hit"
               }
             ],
@@ -1506,11 +1506,18 @@ export const dragonKnightData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "2 split hits (logic)/3000%Atk",
-                  "after": "2 cumulative hits (logic)/7300%Atk per hit",
+                  "label": "Damage Logic",
+                  "before": "2 split hits",
+                  "after": "2 cumulative hits",
+                  "scope": "",
+                  "source": "Changes damage logic from 2 split hits to 2 cumulative hits."
+                },
+                {
+                  "label": "Base Damage",
+                  "before": "3000%Atk",
+                  "after": "7300%Atk per hit",
                   "scope": "Lv 10",
-                  "source": "Changes damage logic from 2 split hits to 2 cumulative hits. / Increases damage from 3000%Atk to 7300%Atk per hit based on level 10."
+                  "source": "Increases damage from 3000%Atk to 7300%Atk per hit based on level 10."
                 },
                 {
                   "label": "Cooldown",
@@ -1555,7 +1562,7 @@ export const dragonKnightData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "7300%Atk",
                   "after": "7700%Atk per hit",
                   "scope": "Lv 10",
@@ -1581,7 +1588,7 @@ export const dragonKnightData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "7700%Atk",
                   "after": "8550%Atk per hit",
                   "scope": "Lv 10",
@@ -1768,7 +1775,7 @@ export const dragonKnightData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,550% ATK"
               }
             ],
@@ -2028,7 +2035,7 @@ export const dragonKnightData = {
                 "value": "7 x 7"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,700% ATK per hit"
               }
             ],
@@ -2113,7 +2120,7 @@ export const dragonKnightData = {
                   "source": "Removes 0.8 seconds delay after skill."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "600%Atk",
                   "after": "1700%Atk per hit",
                   "scope": "Lv 5",
@@ -2259,7 +2266,7 @@ export const dragonKnightData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,200% ATK per hit"
               }
             ],
@@ -2372,7 +2379,7 @@ export const dragonKnightData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "600%Atk",
                   "after": "950%Atk per hit",
                   "scope": "Lv 5",
@@ -2415,7 +2422,7 @@ export const dragonKnightData = {
                   "source": "Reduces SP consumption from 60 to 55 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "950%Atk",
                   "after": "2200%Atk per hit",
                   "scope": "Lv 5",
@@ -2441,7 +2448,7 @@ export const dragonKnightData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2200%Atk",
                   "after": "4050%Atk per hit",
                   "scope": "Lv 5",
@@ -2550,8 +2557,12 @@ export const dragonKnightData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "3,850% ATK per hit/4,200% ATK per hit (Dragonic Aura)"
+                "label": "Base Damage",
+                "value": "3,850% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "4,200% ATK per hit (Dragonic Aura)"
               }
             ],
             "levelTables": []
@@ -2713,7 +2724,7 @@ export const dragonKnightData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "8,350% ATK"
               }
             ],
@@ -2792,7 +2803,7 @@ export const dragonKnightData = {
                   "source": "Reduces cooldown from 2 seconds to 0.35 seconds based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2250%Atk",
                   "after": "3000%Atk",
                   "scope": "Lv 5",
@@ -2830,7 +2841,7 @@ export const dragonKnightData = {
                   "source": "Increases fixed casting time from 0.4 seconds to 0.5 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1350%Atk",
                   "after": "5150%Atk",
                   "scope": "Lv 5 (using level 5 weapon and weapon weight is 150)",
@@ -2879,7 +2890,7 @@ export const dragonKnightData = {
                   "source": "Reduces SP consumption from 68 to 55 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4400%Atk",
                   "after": "8350%Atk",
                   "scope": "Lv 5",
@@ -2905,7 +2916,7 @@ export const dragonKnightData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8350%Atk",
                   "after": "20000%Atk",
                   "scope": "Lv 5",
@@ -3055,7 +3066,7 @@ export const dragonKnightData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,500% ATK per hit"
               }
             ],
@@ -3132,7 +3143,7 @@ export const dragonKnightData = {
                   "source": "Reduces AP recovery rate from 3 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "750%Atk",
                   "after": "2500%Atk per hit",
                   "scope": "Lv 5",
@@ -3678,7 +3689,7 @@ export const dragonKnightData = {
                 "value": "150"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "36,500% ATK"
               }
             ],
@@ -3788,7 +3799,7 @@ export const dragonKnightData = {
                   "source": "Reduces delay after skill from 1 second to 0.5 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "9500%/14000%(demihuman and angel race)Atk",
                   "after": "36500%/38000%(demihuman and angel race)Atk",
                   "scope": "Lv 10",
@@ -4196,7 +4207,7 @@ export const dragonKnightData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "250% ATK"
               }
             ],
@@ -5193,7 +5204,7 @@ export const dragonKnightData = {
                 "value": "3 x 3 ~ 7 x 7"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,600% ATK"
               }
             ],
@@ -5326,9 +5337,9 @@ export const dragonKnightData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "3200%Atk (while under Dragonic Aura buff)",
-                  "after": "4200%Atk (while under Dragonic Aura buff)",
+                  "label": "Damage While Under Dragonic Aura Buff",
+                  "before": "3200%Atk",
+                  "after": "4200%Atk",
                   "scope": "Lv 10",
                   "source": "Increases damage while under Dragonic Aura buff from 3200%Atk to 4200%Atk based on level 10."
                 }
@@ -6469,7 +6480,7 @@ export const dragonKnightData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,550% ATK"
               }
             ],
@@ -7330,7 +7341,7 @@ export const dragonKnightData = {
                 "value": "9 x 9"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,250% ATK"
               }
             ],
@@ -9352,7 +9363,7 @@ export const dragonKnightData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "500% ATK"
               }
             ],
@@ -9789,7 +9800,7 @@ export const dragonKnightData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "200% ATK"
               }
             ],
@@ -10539,7 +10550,7 @@ export const dragonKnightData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "350% ATK"
               }
             ],
@@ -10746,7 +10757,7 @@ export const dragonKnightData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% ATK"
               }
             ],
@@ -10949,7 +10960,7 @@ export const dragonKnightData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% ATK"
               }
             ],
@@ -11182,7 +11193,7 @@ export const dragonKnightData = {
                 "value": "Special"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,400% ATK"
               }
             ],
@@ -11600,7 +11611,7 @@ export const dragonKnightData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "150% ATK"
               }
             ],
@@ -12488,7 +12499,7 @@ export const dragonKnightData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "400% ATK"
               }
             ],
@@ -13474,7 +13485,7 @@ export const dragonKnightData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% ATK"
               }
             ],
@@ -14111,7 +14122,7 @@ export const dragonKnightData = {
             "value": "Skill Level x 6"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "2,500% ATK per hit"
           }
         ],
@@ -14183,7 +14194,7 @@ export const dragonKnightData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "400%Atk",
               "after": "450%Atk",
               "scope": "Lv 5",
@@ -14224,7 +14235,7 @@ export const dragonKnightData = {
               "source": "Increases number of hit from 1 hit to 2 hits."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "450%Atk",
               "after": "2500%Atk per hit",
               "scope": "Lv 5",
@@ -14254,7 +14265,7 @@ export const dragonKnightData = {
               "source": "Reduces skill cooldown from 150 seconds to 60 seconds based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2500%Atk",
               "after": "4850%Atk",
               "scope": "Lv 5",
@@ -14969,7 +14980,7 @@ export const dragonKnightData = {
             "value": "Single Target"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "7,700% ATK per hit"
           }
         ],
@@ -15116,11 +15127,18 @@ export const dragonKnightData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
-              "before": "2 split hits (logic)/3000%Atk",
-              "after": "2 cumulative hits (logic)/7300%Atk per hit",
+              "label": "Damage Logic",
+              "before": "2 split hits",
+              "after": "2 cumulative hits",
+              "scope": "",
+              "source": "Changes damage logic from 2 split hits to 2 cumulative hits."
+            },
+            {
+              "label": "Base Damage",
+              "before": "3000%Atk",
+              "after": "7300%Atk per hit",
               "scope": "Lv 10",
-              "source": "Changes damage logic from 2 split hits to 2 cumulative hits. / Increases damage from 3000%Atk to 7300%Atk per hit based on level 10."
+              "source": "Increases damage from 3000%Atk to 7300%Atk per hit based on level 10."
             },
             {
               "label": "Cooldown",
@@ -15165,7 +15183,7 @@ export const dragonKnightData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "7300%Atk",
               "after": "7700%Atk per hit",
               "scope": "Lv 10",
@@ -15191,7 +15209,7 @@ export const dragonKnightData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "7700%Atk",
               "after": "8550%Atk per hit",
               "scope": "Lv 10",
@@ -15378,7 +15396,7 @@ export const dragonKnightData = {
             "value": "2"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "3,550% ATK"
           }
         ],
@@ -15638,7 +15656,7 @@ export const dragonKnightData = {
             "value": "7 x 7"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "1,700% ATK per hit"
           }
         ],
@@ -15723,7 +15741,7 @@ export const dragonKnightData = {
               "source": "Removes 0.8 seconds delay after skill."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "600%Atk",
               "after": "1700%Atk per hit",
               "scope": "Lv 5",
@@ -15869,7 +15887,7 @@ export const dragonKnightData = {
             "value": "2"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "2,200% ATK per hit"
           }
         ],
@@ -15982,7 +16000,7 @@ export const dragonKnightData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "600%Atk",
               "after": "950%Atk per hit",
               "scope": "Lv 5",
@@ -16025,7 +16043,7 @@ export const dragonKnightData = {
               "source": "Reduces SP consumption from 60 to 55 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "950%Atk",
               "after": "2200%Atk per hit",
               "scope": "Lv 5",
@@ -16051,7 +16069,7 @@ export const dragonKnightData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2200%Atk",
               "after": "4050%Atk per hit",
               "scope": "Lv 5",
@@ -16160,8 +16178,12 @@ export const dragonKnightData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "3,850% ATK per hit/4,200% ATK per hit (Dragonic Aura)"
+            "label": "Base Damage",
+            "value": "3,850% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "4,200% ATK per hit (Dragonic Aura)"
           }
         ],
         "levelTables": []
@@ -16323,7 +16345,7 @@ export const dragonKnightData = {
             "value": "3"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "8,350% ATK"
           }
         ],
@@ -16402,7 +16424,7 @@ export const dragonKnightData = {
               "source": "Reduces cooldown from 2 seconds to 0.35 seconds based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2250%Atk",
               "after": "3000%Atk",
               "scope": "Lv 5",
@@ -16440,7 +16462,7 @@ export const dragonKnightData = {
               "source": "Increases fixed casting time from 0.4 seconds to 0.5 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1350%Atk",
               "after": "5150%Atk",
               "scope": "Lv 5 (using level 5 weapon and weapon weight is 150)",
@@ -16489,7 +16511,7 @@ export const dragonKnightData = {
               "source": "Reduces SP consumption from 68 to 55 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4400%Atk",
               "after": "8350%Atk",
               "scope": "Lv 5",
@@ -16515,7 +16537,7 @@ export const dragonKnightData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8350%Atk",
               "after": "20000%Atk",
               "scope": "Lv 5",
@@ -16665,7 +16687,7 @@ export const dragonKnightData = {
             "value": "2"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "2,500% ATK per hit"
           }
         ],
@@ -16742,7 +16764,7 @@ export const dragonKnightData = {
               "source": "Reduces AP recovery rate from 3 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "750%Atk",
               "after": "2500%Atk per hit",
               "scope": "Lv 5",
@@ -17288,7 +17310,7 @@ export const dragonKnightData = {
             "value": "150"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "36,500% ATK"
           }
         ],
@@ -17398,7 +17420,7 @@ export const dragonKnightData = {
               "source": "Reduces delay after skill from 1 second to 0.5 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "9500%/14000%(demihuman and angel race)Atk",
               "after": "36500%/38000%(demihuman and angel race)Atk",
               "scope": "Lv 10",

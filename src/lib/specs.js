@@ -50,26 +50,29 @@ export function effectiveSpecRows(model, skill, versionId, levelTable) {
   ].filter((label) => !hiddenLabels.has(label) || deltasByLabel.has(label))
 
   return labels
-    .map((label) => {
+    .flatMap((label) => {
       const labelDeltas = deltasByLabel.get(label) ?? []
       const appliedDelta = labelDeltas.filter((delta) => delta.versionIndex <= selectedIndex).at(-1)
       const firstDelta = labelDeltas[0]
       const nextDelta = labelDeltas.find((delta) => delta.versionIndex > selectedIndex)
-      const baseValue = baseByLabel.get(label)
-      if (label === 'Damage') return effectiveDamageSpecRow(labelDeltas, selectedIndex, baseValue)
-      const value = appliedDelta?.after || (!appliedDelta && firstDelta?.before) || baseValue || ''
-      if (shouldHideFuturePlaceholderSpec(label, appliedDelta, baseValue, firstDelta)) return null
+      const baseValues = baseByLabel.get(label) ?? []
+      const baseValue = baseValues[0] ?? ''
 
-      return {
+      if (label === 'Base Damage') return effectiveDamageSpecRows(labelDeltas, selectedIndex, baseValues)
+
+      const value = appliedDelta?.after || (!appliedDelta && firstDelta?.before) || baseValue || ''
+      if (shouldHideFuturePlaceholderSpec(label, appliedDelta, baseValue, firstDelta)) return []
+
+      const values = !appliedDelta && !firstDelta && baseValues.length ? baseValues : [value]
+      return values.map((entryValue) => ({
         label,
-        value,
+        value: entryValue,
         changed: Boolean(appliedDelta),
         changeNote: appliedDelta ? appliedChangeNote(appliedDelta) : futureChangeNote(nextDelta),
-      }
+      }))
     })
     .filter((row) => row?.value)
 }
-
 export function effectiveLevelTable(model, skill, versionId) {
   const source = skill.details.levelTables?.[0]
   if (!source) return null
@@ -132,7 +135,7 @@ function applyLevelDelta(table, delta, value) {
   const targetRow = rowForDelta(table, delta)
   if (!targetRow) return
 
-  if (delta.label === 'Damage') return
+  if (delta.label === 'Base Damage') return
 
   const label = delta.label === 'Buff Duration' ? 'Duration' : delta.label
   const column = table.columns.find((candidate) => candidate.label === label)
@@ -243,7 +246,9 @@ function baseSpecMap(rows) {
 
   for (const row of rows) {
     const label = normalizeSpecLabel(row.label)
-    if (!map.has(label)) map.set(label, row.value)
+    if (!map.has(label)) map.set(label, [])
+    const values = map.get(label)
+    if (row.value && !values.includes(row.value)) values.push(row.value)
   }
 
   return map
@@ -297,7 +302,7 @@ function isDuplicateSpecRow(left, right) {
 
 function normalizeSpecRow(row) {
   const label = normalizeSpecLabel(row.label)
-  const qualifier = label === 'Damage' ? damageMetricQualifier(row.label) : ''
+  const qualifier = label === 'Base Damage' ? damageMetricQualifier(row.label) : ''
 
   return {
     ...row,
@@ -312,12 +317,12 @@ function mergeSpecRows(rows) {
   const damageByScope = new Map()
 
   for (const row of rows) {
-    if (row.label !== 'Damage') {
+    if (row.label !== 'Base Damage') {
       merged.push(row)
       continue
     }
 
-    const key = 'Damage'
+    const key = 'Base Damage'
     const existing = damageByScope.get(key)
     if (!existing) {
       const copy = { ...row }
@@ -352,21 +357,25 @@ function joinSources(left, right) {
   return `${left} / ${right}`
 }
 
-function effectiveDamageSpecRow(deltas, selectedIndex, baseValue) {
-  const result = effectiveDamageState(deltas, selectedIndex, baseValue)
-  if (!result.value) return null
+function effectiveDamageSpecRows(deltas, selectedIndex, baseValues) {
+  const result = effectiveDamageState(deltas, selectedIndex, baseValues)
+  if (!result.components.length) return []
 
-  return {
-    label: 'Damage',
-    value: result.value,
-    changed: Boolean(result.appliedDelta),
-    changeNote: result.appliedDelta
-      ? appliedChangeNote({ ...result.appliedDelta, before: result.before })
-      : futureChangeNote(result.nextDelta),
-  }
+  return result.components.map((component) => {
+    const beforeValue = result.beforeComponents.get(component.key)?.value ?? result.before
+
+    return {
+      label: 'Base Damage',
+      value: component.value,
+      changed: Boolean(result.appliedDelta),
+      changeNote: result.appliedDelta
+        ? appliedChangeNote({ ...result.appliedDelta, before: beforeValue })
+        : futureChangeNote(result.nextDelta),
+    }
+  })
 }
 
-function effectiveDamageState(deltas, selectedIndex, baseValue) {
+function effectiveDamageState(deltas, selectedIndex, baseValues) {
   const state = new Map()
   const order = []
   const sorted = [...deltas].sort((a, b) => a.versionIndex - b.versionIndex)
@@ -374,10 +383,11 @@ function effectiveDamageState(deltas, selectedIndex, baseValue) {
   for (const delta of sorted) {
     mergeDamageComponents(state, order, parseDamageComponents(delta.before), { onlyMissing: true })
   }
-  if (!state.size) mergeDamageComponents(state, order, parseDamageComponents(baseValue), { onlyMissing: true })
+  if (!state.size) mergeDamageComponents(state, order, parseDamageComponents(baseValues), { onlyMissing: true })
 
   let appliedDelta = null
   let before = ''
+  let beforeComponents = new Map()
   let nextDelta = null
 
   for (const delta of sorted) {
@@ -387,14 +397,16 @@ function effectiveDamageState(deltas, selectedIndex, baseValue) {
     }
 
     mergeDamageComponents(state, order, parseDamageComponents(delta.before), { preferHigher: true })
+    beforeComponents = new Map(state)
     before = formatDamageState(state, order)
     mergeDamageComponents(state, order, parseDamageComponents(delta.after))
     appliedDelta = delta
   }
 
   return {
-    value: formatDamageState(state, order),
+    components: damageStateComponents(state, order),
     before,
+    beforeComponents,
     appliedDelta,
     nextDelta,
   }
@@ -422,7 +434,9 @@ function higherDamageComponent(left, right) {
 }
 
 function parseDamageComponents(value) {
-  const normalized = normalizeSkillValue(value)
+  const normalized = Array.isArray(value)
+    ? value.map((entry) => normalizeSkillValue(entry)).filter(Boolean).join('/')
+    : normalizeSkillValue(value)
   if (!normalized) return []
 
   const parts = splitDamageParts(normalized)
@@ -462,10 +476,15 @@ function damageComponentKey(value, index, partCount) {
 }
 
 function formatDamageState(state, order) {
+  return damageStateComponents(state, order)
+    .map((component) => component.value)
+    .join('/')
+}
+
+function damageStateComponents(state, order) {
   return [...state.entries()]
     .sort((a, b) => damageComponentOrder(a[0], order) - damageComponentOrder(b[0], order))
-    .map((entry) => entry[1].value)
-    .join('/')
+    .map(([key, component]) => ({ ...component, key }))
 }
 
 function damageComponentOrder(key, order) {
@@ -502,7 +521,7 @@ function noteSpecLabel(rawMetric) {
   if (metric.includes('sp consumption')) return 'SP Cost'
   if (metric.includes('ap consumption')) return 'AP Consumed'
   if (metric.includes('ap recovery')) return 'AP Generated'
-  if (/^(?:base\s+)?damage\b/.test(metric)) return 'Damage'
+  if (isBaseDamageMetric(metric)) return 'Base Damage'
   if (metric.includes('cooldown')) return 'Cooldown'
   if (metric.includes('delay')) return 'Cast Delay'
   if (metric.includes('cast range')) return 'Cast Range'
@@ -537,8 +556,15 @@ function normalizeSpecLabel(label) {
   if (label === 'AP Cost') return 'AP Consumed'
   if (label === 'After Cast Delay') return 'Cast Delay'
   if (label === 'Buff Duration') return 'Duration'
-  if (/^(?:base\s+)?damage\b/i.test(label)) return 'Damage'
+  if (isBaseDamageMetric(label)) return 'Base Damage'
   return label
+}
+
+function isBaseDamageMetric(label) {
+  const metric = normalizeSkillValue(label).toLowerCase()
+  if (/^damage formula\b/.test(metric) || /^damage bonus\b/.test(metric)) return false
+  if (/^base\s+damage\b/.test(metric)) return true
+  return /^damage(?:\s*(?:$|\(|of\b|the\b|primary\b|secondary\b|first\b|second\b|1st\b|2nd\b))/.test(metric)
 }
 
 function damageMetricQualifier(rawMetric) {

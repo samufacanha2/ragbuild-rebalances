@@ -1,5 +1,5 @@
 export const imperialGuardData = {
-  "generatedAt": "2026-07-13T20:14:03.331Z",
+  "generatedAt": "2026-07-15T23:17:49.644Z",
   "classId": 4258,
   "classSlug": "imperial-guard",
   "className": "Imperial Guard",
@@ -1134,8 +1134,12 @@ export const imperialGuardData = {
                 "value": "neutral property magical damage"
               },
               {
-                "label": "Damage",
-                "value": "(14,850 + (Spear & Sword Mastery level x 50))% MATK"
+                "label": "Base Damage",
+                "value": "14,850% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Spear & Sword Mastery level x 50))% MATK"
               }
             ],
             "levelTables": [
@@ -1554,8 +1558,20 @@ export const imperialGuardData = {
                 "value": "0.3 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(3,200 + (Spear & Sword Mastery Level x 100))% MATK"
+                "label": "Base Damage",
+                "value": "3,200% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "4,500% MATK (Holy Shield)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Spear & Sword Mastery Level x 100))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Holy Shield) + (Spear & Sword Mastery Level x 150))% MATK"
               }
             ],
             "levelTables": [
@@ -1675,7 +1691,7 @@ export const imperialGuardData = {
                   "source": "Reduces delay after skill from 1 second to 0.5 seconds based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "400%Matk (includes Spear & Sword Mastery level 10 bonus)",
                   "after": "2000%Matk, and 600%Matk to 3500%Matk while using Holy Shield (includes Spear & Sword Mastery level 10 bonus)",
                   "scope": "",
@@ -1726,7 +1742,7 @@ export const imperialGuardData = {
                   "source": "Increases AP recovery rate from 5 to 7."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2000%/3500%(Holy Shield)Matk",
                   "after": "3700%/5500%(Holy Shield)Matk per hit",
                   "scope": "Lv 10 (Spear & Sword Mastery level 10)",
@@ -1804,7 +1820,7 @@ export const imperialGuardData = {
                   "source": "Increases AP recovery rate from 4 to 6."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3200+(Spear & Sword Mastery skill level x 100)%/4500+(Spear & Sword Mastery skill level x 150)%(Holy Shield)Matk",
                   "after": "4500+(Spear & Sword Mastery skill level x 100)%/6500+(Spear & Sword Mastery skill level x 150)%(Holy Shield)Matk per hit",
                   "scope": "Lv 10",
@@ -2171,7 +2187,7 @@ export const imperialGuardData = {
                   "source": "Increases AP recovery rate from 2 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1800%Atk",
                   "after": "2200%Atk per hit",
                   "scope": "Lv 10 (Spear & Sword Mastery level 10)",
@@ -2199,7 +2215,7 @@ export const imperialGuardData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1200%Atk (of)",
                   "after": "1600%Atk (of)",
                   "scope": "Lv 10",
@@ -2240,7 +2256,7 @@ export const imperialGuardData = {
                   "source": "Increases AP recovery rate from 3 to 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1600+(Spear & Sword Mastery skill level x 250)%Atk",
                   "after": "2200+(Spear & Sword Mastery skill level x 500)%Atk per hit",
                   "scope": "Lv 10",
@@ -2386,8 +2402,12 @@ export const imperialGuardData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "(14,900 + (Shield Mastery level x 250))% ATK"
+                "label": "Base Damage",
+                "value": "14,900% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Shield Mastery level x 250))% ATK"
               }
             ],
             "levelTables": [
@@ -2493,7 +2513,7 @@ export const imperialGuardData = {
                   "source": "Increases AP recovery rate from 2 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6440%Atk",
                   "after": "14440%Atk",
                   "scope": "Lv 5 (Shield Mastery level 10, shield refine rate is 10 and shield weight is 150)",
@@ -2538,7 +2558,7 @@ export const imperialGuardData = {
                   "source": "Increases factor weight of Shield Mastery skill level in skill formula from 75 to 250 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "11900%Atk",
                   "after": "14900%Atk",
                   "scope": "Lv 5",
@@ -2581,7 +2601,7 @@ export const imperialGuardData = {
                   "source": "Increases AP recovery rate from 3 to 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "14900+(Shield Mastery skill level x 250)%Atk",
                   "after": "18500+(Shield Mastery skill level x 750)%Atk",
                   "scope": "Lv 5",
@@ -3307,8 +3327,16 @@ export const imperialGuardData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(8,400 + (Spear & Sword Mastery level x 25))% ATK per hit/(10,000 + (Spear & Sword Mastery level x 25))% ATK per hit"
+                "label": "Base Damage",
+                "value": "8,400% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "10,000% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Spear & Sword Mastery level x 25))% ATK per hit"
               }
             ],
             "levelTables": []
@@ -3491,7 +3519,7 @@ export const imperialGuardData = {
                 "value": "150"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "15,250% ATK"
               }
             ],
@@ -3622,7 +3650,7 @@ export const imperialGuardData = {
                   "source": "Reduces duration of Grand Judgement buff from 300 seconds to 150 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "7500%/11000%(plant and insect race)Atk",
                   "after": "15250%/16850%(plant and insect race)Atk",
                   "scope": "Lv 10",
@@ -3757,8 +3785,16 @@ export const imperialGuardData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(15,000 + (Spear & Sword Mastery level x 50))% ATK/(17,500 + (Spear & Sword Mastery level x 50))% ATK"
+                "label": "Base Damage",
+                "value": "15,000% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "17,500% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Spear & Sword Mastery level x 50))% ATK"
               }
             ],
             "levelTables": [
@@ -4172,7 +4208,7 @@ export const imperialGuardData = {
                 "value": "10"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "19,500% MATK"
               }
             ],
@@ -4295,7 +4331,7 @@ export const imperialGuardData = {
                   "source": "Reduces AP consumption from 150 to 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "7500%/11000%(plant and insect race)Matk",
                   "after": "19500%/21000%(plant and insect race)Matk",
                   "scope": "Lv 10",
@@ -4314,9 +4350,9 @@ export const imperialGuardData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "holy (property)",
-                  "after": "neutral (property)",
+                  "label": "Damage Property",
+                  "before": "holy",
+                  "after": "neutral",
                   "scope": "",
                   "source": "Changes damage property from holy to neutral."
                 }
@@ -4497,7 +4533,7 @@ export const imperialGuardData = {
                 "value": "1 second"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "600% ATK"
               }
             ],
@@ -4816,8 +4852,12 @@ export const imperialGuardData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
-                "value": "(1,000 + (Bash Lv x 70))% ATK"
+                "label": "Base Damage",
+                "value": "1,000% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Bash Lv x 70))% ATK"
               }
             ],
             "levelTables": [
@@ -4938,11 +4978,18 @@ export const imperialGuardData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "1300%Atk (includes Bash level 10 bonus)/1700%Atk (while under Grand Judgement buff)",
-                  "after": "1700%Atk (includes Bash level 10 bonus)/2500%Atk (while under Grand Judgement buff)",
+                  "label": "Base Damage",
+                  "before": "1300%Atk (includes Bash level 10 bonus)",
+                  "after": "1700%Atk (includes Bash level 10 bonus)",
                   "scope": "Lv 10",
-                  "source": "Increases damage (includes Bash level 10 bonus) from 1300%Atk to 1700%Atk based on level 10. / Increases damage while under Grand Judgement buff from 1700%Atk to 2500%Atk."
+                  "source": "Increases damage (includes Bash level 10 bonus) from 1300%Atk to 1700%Atk based on level 10."
+                },
+                {
+                  "label": "Damage While Under Grand Judgement Buff",
+                  "before": "1700%Atk",
+                  "after": "2500%Atk",
+                  "scope": "",
+                  "source": "Increases damage while under Grand Judgement buff from 1700%Atk to 2500%Atk."
                 },
                 {
                   "label": "SP Cost",
@@ -6172,7 +6219,7 @@ export const imperialGuardData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,000% ATK"
               }
             ],
@@ -6263,9 +6310,9 @@ export const imperialGuardData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "Shield Mastery. (Based on Shield Press level 10 and Shield Mastery level 10. Damage will be increased from 2600%Atk (while under Shield Shooting buff by adding damage bonus)",
-                  "after": "4100%Atk) (while under Shield Shooting buff by adding damage bonus)",
+                  "label": "Damage While Under Shield Shooting Buff By Adding Damage Bonus",
+                  "before": "Shield Mastery. (Based on Shield Press level 10 and Shield Mastery level 10. Damage will be increased from 2600%Atk",
+                  "after": "4100%Atk)",
                   "scope": "",
                   "source": "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Shield Press level 10 and Shield Mastery level 10. Damage will be increased from 2600%Atk to 4100%Atk)."
                 }
@@ -6684,7 +6731,7 @@ export const imperialGuardData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "500% ATK"
               }
             ],
@@ -7339,7 +7386,7 @@ export const imperialGuardData = {
                 "value": "11 x 11"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,500% MATK"
               }
             ],
@@ -7700,7 +7747,7 @@ export const imperialGuardData = {
                 "value": "3 x 3 ~ 7 x 7"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,900% ATK"
               }
             ],
@@ -7805,9 +7852,9 @@ export const imperialGuardData = {
                   "source": "Reduces cooldown from 3 seconds to 2.5 seconds based on level 5."
                 },
                 {
-                  "label": "Damage",
-                  "before": "Shield Mastery. (Based on Earth Drive level 5 and Shield Mastery level 10. Damage will be increased from 2100%Atk (while under Shield Shooting buff by adding damage bonus)",
-                  "after": "3750%Atk) (while under Shield Shooting buff by adding damage bonus)",
+                  "label": "Damage While Under Shield Shooting Buff By Adding Damage Bonus",
+                  "before": "Shield Mastery. (Based on Earth Drive level 5 and Shield Mastery level 10. Damage will be increased from 2100%Atk",
+                  "after": "3750%Atk)",
                   "scope": "",
                   "source": "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Earth Drive level 5 and Shield Mastery level 10. Damage will be increased from 2100%Atk to 3750%Atk)."
                 }
@@ -8202,8 +8249,12 @@ export const imperialGuardData = {
                 "value": "3 x 3~7 x 7"
               },
               {
-                "label": "Damage",
-                "value": "(600 + (STR x 5))% ATK"
+                "label": "Base Damage",
+                "value": "600% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (STR x 5))% ATK"
               }
             ],
             "levelTables": [
@@ -8306,11 +8357,18 @@ export const imperialGuardData = {
                   "source": "Increases critical chance from the half of the user's cri to the user's cri."
                 },
                 {
-                  "label": "Damage",
-                  "before": "900%Atk (on Str 130)/1050%Atk (while under Grand Judgement buff)",
-                  "after": "1250%Atk (on Str 130)/1650%Atk (while under Grand Judgement buff)",
+                  "label": "Base Damage",
+                  "before": "900%Atk (on Str 130)",
+                  "after": "1250%Atk (on Str 130)",
                   "scope": "Lv 5",
-                  "source": "Increases damage (on Str 130) from 900%Atk to 1250%Atk based on level 5. / Increases damage while under Grand Judgement buff from 1050%Atk to 1650%Atk based on level 5."
+                  "source": "Increases damage (on Str 130) from 900%Atk to 1250%Atk based on level 5."
+                },
+                {
+                  "label": "Damage While Under Grand Judgement Buff",
+                  "before": "1050%Atk",
+                  "after": "1650%Atk",
+                  "scope": "Lv 5",
+                  "source": "Increases damage while under Grand Judgement buff from 1050%Atk to 1650%Atk based on level 5."
                 }
               ]
             }
@@ -8483,8 +8541,12 @@ export const imperialGuardData = {
                 "value": "7 x 7"
               },
               {
-                "label": "Damage",
-                "value": "1,750% ATK/2,500% ATK (Moon Slasher)"
+                "label": "Base Damage",
+                "value": "1,750% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "2,500% ATK (Moon Slasher)"
               }
             ],
             "levelTables": [
@@ -8554,11 +8616,18 @@ export const imperialGuardData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "1500%Atk/2250%Atk (while under Overbrand Ready buff)",
-                  "after": "1750%Atk/2500%Atk (while under Overbrand Ready buff)",
+                  "label": "Base Damage",
+                  "before": "1500%Atk",
+                  "after": "1750%Atk",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 1500%Atk to 1750%Atk based on level 5. / Increases damage while under Overbrand Ready buff from 2250%Atk to 2500%Atk based on level 5."
+                  "source": "Increases damage from 1500%Atk to 1750%Atk based on level 5."
+                },
+                {
+                  "label": "Damage While Under Overbrand Ready Buff",
+                  "before": "2250%Atk",
+                  "after": "2500%Atk",
+                  "scope": "Lv 5",
+                  "source": "Increases damage while under Overbrand Ready buff from 2250%Atk to 2500%Atk based on level 5."
                 }
               ]
             }
@@ -9202,8 +9271,12 @@ export const imperialGuardData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
-                "value": "1,500% ATK/2,250% ATK (Inspiration)"
+                "label": "Base Damage",
+                "value": "1,500% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "2,250% ATK (Inspiration)"
               }
             ],
             "levelTables": [
@@ -11039,8 +11112,12 @@ export const imperialGuardData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
-                "value": "450% ATK/900% ATK"
+                "label": "Base Damage",
+                "value": "450% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "900% ATK"
               }
             ],
             "levelTables": [
@@ -11221,7 +11298,7 @@ export const imperialGuardData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "200% ATK"
               }
             ],
@@ -12092,7 +12169,7 @@ export const imperialGuardData = {
                 "value": "0.9 seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "500% MATK"
               }
             ],
@@ -12289,7 +12366,7 @@ export const imperialGuardData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "400% ATK"
               }
             ],
@@ -12490,7 +12567,7 @@ export const imperialGuardData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,250% MATK"
               }
             ],
@@ -13296,7 +13373,7 @@ export const imperialGuardData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,300% ATK"
               }
             ],
@@ -13366,9 +13443,9 @@ export const imperialGuardData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk (while under Shield Shooting buff by adding damage bonus)",
-                  "after": "2000%Atk) (while under Shield Shooting buff by adding damage bonus)",
+                  "label": "Damage While Under Shield Shooting Buff By Adding Damage Bonus",
+                  "before": "Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk",
+                  "after": "2000%Atk)",
                   "scope": "",
                   "source": "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk to 2000%Atk)."
                 }
@@ -15142,7 +15219,7 @@ export const imperialGuardData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "400% ATK"
               }
             ],
@@ -16128,7 +16205,7 @@ export const imperialGuardData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% ATK"
               }
             ],
@@ -17335,8 +17412,12 @@ export const imperialGuardData = {
             "value": "neutral property magical damage"
           },
           {
-            "label": "Damage",
-            "value": "(14,850 + (Spear & Sword Mastery level x 50))% MATK"
+            "label": "Base Damage",
+            "value": "14,850% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Spear & Sword Mastery level x 50))% MATK"
           }
         ],
         "levelTables": [
@@ -17755,8 +17836,20 @@ export const imperialGuardData = {
             "value": "0.3 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(3,200 + (Spear & Sword Mastery Level x 100))% MATK"
+            "label": "Base Damage",
+            "value": "3,200% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "4,500% MATK (Holy Shield)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Spear & Sword Mastery Level x 100))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Holy Shield) + (Spear & Sword Mastery Level x 150))% MATK"
           }
         ],
         "levelTables": [
@@ -17876,7 +17969,7 @@ export const imperialGuardData = {
               "source": "Reduces delay after skill from 1 second to 0.5 seconds based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "400%Matk (includes Spear & Sword Mastery level 10 bonus)",
               "after": "2000%Matk, and 600%Matk to 3500%Matk while using Holy Shield (includes Spear & Sword Mastery level 10 bonus)",
               "scope": "",
@@ -17927,7 +18020,7 @@ export const imperialGuardData = {
               "source": "Increases AP recovery rate from 5 to 7."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2000%/3500%(Holy Shield)Matk",
               "after": "3700%/5500%(Holy Shield)Matk per hit",
               "scope": "Lv 10 (Spear & Sword Mastery level 10)",
@@ -18005,7 +18098,7 @@ export const imperialGuardData = {
               "source": "Increases AP recovery rate from 4 to 6."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3200+(Spear & Sword Mastery skill level x 100)%/4500+(Spear & Sword Mastery skill level x 150)%(Holy Shield)Matk",
               "after": "4500+(Spear & Sword Mastery skill level x 100)%/6500+(Spear & Sword Mastery skill level x 150)%(Holy Shield)Matk per hit",
               "scope": "Lv 10",
@@ -18372,7 +18465,7 @@ export const imperialGuardData = {
               "source": "Increases AP recovery rate from 2 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1800%Atk",
               "after": "2200%Atk per hit",
               "scope": "Lv 10 (Spear & Sword Mastery level 10)",
@@ -18400,7 +18493,7 @@ export const imperialGuardData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1200%Atk (of)",
               "after": "1600%Atk (of)",
               "scope": "Lv 10",
@@ -18441,7 +18534,7 @@ export const imperialGuardData = {
               "source": "Increases AP recovery rate from 3 to 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1600+(Spear & Sword Mastery skill level x 250)%Atk",
               "after": "2200+(Spear & Sword Mastery skill level x 500)%Atk per hit",
               "scope": "Lv 10",
@@ -18587,8 +18680,12 @@ export const imperialGuardData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "(14,900 + (Shield Mastery level x 250))% ATK"
+            "label": "Base Damage",
+            "value": "14,900% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Shield Mastery level x 250))% ATK"
           }
         ],
         "levelTables": [
@@ -18694,7 +18791,7 @@ export const imperialGuardData = {
               "source": "Increases AP recovery rate from 2 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6440%Atk",
               "after": "14440%Atk",
               "scope": "Lv 5 (Shield Mastery level 10, shield refine rate is 10 and shield weight is 150)",
@@ -18739,7 +18836,7 @@ export const imperialGuardData = {
               "source": "Increases factor weight of Shield Mastery skill level in skill formula from 75 to 250 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "11900%Atk",
               "after": "14900%Atk",
               "scope": "Lv 5",
@@ -18782,7 +18879,7 @@ export const imperialGuardData = {
               "source": "Increases AP recovery rate from 3 to 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "14900+(Shield Mastery skill level x 250)%Atk",
               "after": "18500+(Shield Mastery skill level x 750)%Atk",
               "scope": "Lv 5",
@@ -19508,8 +19605,16 @@ export const imperialGuardData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(8,400 + (Spear & Sword Mastery level x 25))% ATK per hit/(10,000 + (Spear & Sword Mastery level x 25))% ATK per hit"
+            "label": "Base Damage",
+            "value": "8,400% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "10,000% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Spear & Sword Mastery level x 25))% ATK per hit"
           }
         ],
         "levelTables": []
@@ -19692,7 +19797,7 @@ export const imperialGuardData = {
             "value": "150"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "15,250% ATK"
           }
         ],
@@ -19823,7 +19928,7 @@ export const imperialGuardData = {
               "source": "Reduces duration of Grand Judgement buff from 300 seconds to 150 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "7500%/11000%(plant and insect race)Atk",
               "after": "15250%/16850%(plant and insect race)Atk",
               "scope": "Lv 10",
@@ -19958,8 +20063,16 @@ export const imperialGuardData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(15,000 + (Spear & Sword Mastery level x 50))% ATK/(17,500 + (Spear & Sword Mastery level x 50))% ATK"
+            "label": "Base Damage",
+            "value": "15,000% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "17,500% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Spear & Sword Mastery level x 50))% ATK"
           }
         ],
         "levelTables": [
@@ -20373,7 +20486,7 @@ export const imperialGuardData = {
             "value": "10"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "19,500% MATK"
           }
         ],
@@ -20496,7 +20609,7 @@ export const imperialGuardData = {
               "source": "Reduces AP consumption from 150 to 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "7500%/11000%(plant and insect race)Matk",
               "after": "19500%/21000%(plant and insect race)Matk",
               "scope": "Lv 10",
@@ -20515,9 +20628,9 @@ export const imperialGuardData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
-              "before": "holy (property)",
-              "after": "neutral (property)",
+              "label": "Damage Property",
+              "before": "holy",
+              "after": "neutral",
               "scope": "",
               "source": "Changes damage property from holy to neutral."
             }

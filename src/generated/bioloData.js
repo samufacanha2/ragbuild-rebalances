@@ -1,5 +1,5 @@
 export const bioloData = {
-  "generatedAt": "2026-07-13T20:14:05.450Z",
+  "generatedAt": "2026-07-15T23:17:51.911Z",
   "classId": 4259,
   "classSlug": "biolo",
   "className": "Biolo",
@@ -994,8 +994,12 @@ export const bioloData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "3,150% ATK per hit/3,650% ATK per hit (Research Report)"
+                "label": "Base Damage",
+                "value": "3,150% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "3,650% ATK per hit (Research Report)"
               }
             ],
             "levelTables": [
@@ -1072,7 +1076,7 @@ export const bioloData = {
                   "source": "Increases SP consumption from 74 to 97 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2650%/3150%(Research Report)Atk",
                   "after": "3150%/3650%(Research Report)Atk",
                   "scope": "Lv 5",
@@ -1091,7 +1095,7 @@ export const bioloData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3150%/3650%(Research Report)Atk",
                   "after": "3750%/4250%(Research Report)Atk per hit",
                   "scope": "Lv 5",
@@ -1227,7 +1231,7 @@ export const bioloData = {
                 "value": "4(1~3Lv), 5(4~5Lv)"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,000% ATK per hit"
               }
             ],
@@ -1404,7 +1408,7 @@ export const bioloData = {
                 "value": "4(1~3Lv), 5(4~5Lv)"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,000% ATK per hit"
               }
             ],
@@ -1988,8 +1992,12 @@ export const bioloData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "3,200% ATK per hit/3,350% ATK per hit (Research Report)"
+                "label": "Base Damage",
+                "value": "3,200% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "3,350% ATK per hit (Research Report)"
               }
             ],
             "levelTables": [
@@ -2101,7 +2109,7 @@ export const bioloData = {
                   "source": "reduces number of hit while under Research Report buff from 5 hits to 4 hits."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2700%/3250%(Research Report)Atk",
                   "after": "3200%/3350%(Research Report)Atk",
                   "scope": "Lv 10",
@@ -2231,7 +2239,7 @@ export const bioloData = {
                 "value": "4(1~3Lv), 5(4~5Lv)"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,000% ATK per hit"
               }
             ],
@@ -2402,7 +2410,7 @@ export const bioloData = {
                 "value": "4(1~3Lv), 5(4~5Lv)"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,000% ATK per hit"
               }
             ],
@@ -2850,7 +2858,7 @@ export const bioloData = {
                 "value": "Single target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "21,500% ATK"
               }
             ],
@@ -2980,8 +2988,12 @@ export const bioloData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "3,450% ATK per hit/4,450% ATK per hit (Research Report)"
+                "label": "Base Damage",
+                "value": "3,450% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "4,450% ATK per hit (Research Report)"
               }
             ],
             "levelTables": [
@@ -5397,7 +5409,7 @@ export const bioloData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,400% ATK"
               }
             ],
@@ -5750,7 +5762,7 @@ export const bioloData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,000% ATK"
               }
             ],
@@ -6371,7 +6383,7 @@ export const bioloData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "500% ATK"
               }
             ],
@@ -6985,8 +6997,12 @@ export const bioloData = {
                 "value": "1 Cannon Ball"
               },
               {
-                "label": "Damage",
-                "value": "(1250 + Cart Remodeling s Lv x 100)% ATK"
+                "label": "Base Damage",
+                "value": "1,250% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + Cart Remodeling s Lv x 100)% ATK"
               }
             ],
             "levelTables": [
@@ -11498,7 +11514,7 @@ export const bioloData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,000% ATK"
               }
             ],
@@ -11726,7 +11742,7 @@ export const bioloData = {
                 "value": "Target 1"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,000% ATK"
               }
             ],
@@ -15529,8 +15545,12 @@ export const bioloData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "3,150% ATK per hit/3,650% ATK per hit (Research Report)"
+            "label": "Base Damage",
+            "value": "3,150% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "3,650% ATK per hit (Research Report)"
           }
         ],
         "levelTables": [
@@ -15607,7 +15627,7 @@ export const bioloData = {
               "source": "Increases SP consumption from 74 to 97 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2650%/3150%(Research Report)Atk",
               "after": "3150%/3650%(Research Report)Atk",
               "scope": "Lv 5",
@@ -15626,7 +15646,7 @@ export const bioloData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3150%/3650%(Research Report)Atk",
               "after": "3750%/4250%(Research Report)Atk per hit",
               "scope": "Lv 5",
@@ -15762,7 +15782,7 @@ export const bioloData = {
             "value": "4(1~3Lv), 5(4~5Lv)"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "2,000% ATK per hit"
           }
         ],
@@ -15939,7 +15959,7 @@ export const bioloData = {
             "value": "4(1~3Lv), 5(4~5Lv)"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "2,000% ATK per hit"
           }
         ],
@@ -16523,8 +16543,12 @@ export const bioloData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "3,200% ATK per hit/3,350% ATK per hit (Research Report)"
+            "label": "Base Damage",
+            "value": "3,200% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "3,350% ATK per hit (Research Report)"
           }
         ],
         "levelTables": [
@@ -16636,7 +16660,7 @@ export const bioloData = {
               "source": "reduces number of hit while under Research Report buff from 5 hits to 4 hits."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2700%/3250%(Research Report)Atk",
               "after": "3200%/3350%(Research Report)Atk",
               "scope": "Lv 10",
@@ -16766,7 +16790,7 @@ export const bioloData = {
             "value": "4(1~3Lv), 5(4~5Lv)"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "2,000% ATK per hit"
           }
         ],
@@ -16937,7 +16961,7 @@ export const bioloData = {
             "value": "4(1~3Lv), 5(4~5Lv)"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "2,000% ATK per hit"
           }
         ],
@@ -17385,7 +17409,7 @@ export const bioloData = {
             "value": "Single target"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "21,500% ATK"
           }
         ],
@@ -17515,8 +17539,12 @@ export const bioloData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "3,450% ATK per hit/4,450% ATK per hit (Research Report)"
+            "label": "Base Damage",
+            "value": "3,450% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "4,450% ATK per hit (Research Report)"
           }
         ],
         "levelTables": [

@@ -1,5 +1,5 @@
 export const elementalMasterData = {
-  "generatedAt": "2026-07-13T20:14:09.405Z",
+  "generatedAt": "2026-07-15T23:17:56.086Z",
   "classId": 4261,
   "classSlug": "elemental-master",
   "className": "Elemental Master",
@@ -844,8 +844,12 @@ export const elementalMasterData = {
                 "value": "5"
               },
               {
-                "label": "Damage",
-                "value": "8,150% MATK/14,400% MATK (Diluvio)"
+                "label": "Base Damage",
+                "value": "8,150% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "14,400% MATK (Diluvio)"
               }
             ],
             "levelTables": [
@@ -930,11 +934,18 @@ export const elementalMasterData = {
                   "source": "Increases AP recovery rate from 4 to 5."
                 },
                 {
-                  "label": "Damage",
-                  "before": "3500%Matk/6650%Matk (while Diluvio is summoned)",
-                  "after": "6250%Matk/12250%Matk (while Diluvio is summoned)",
+                  "label": "Base Damage",
+                  "before": "3500%Matk",
+                  "after": "6250%Matk",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5. / Increases damage while Diluvio is summoned from 6650%Matk to 12250%Matk."
+                  "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5."
+                },
+                {
+                  "label": "Damage While Diluvio Is Summoned",
+                  "before": "6650%Matk",
+                  "after": "12250%Matk",
+                  "scope": "",
+                  "source": "Increases damage while Diluvio is summoned from 6650%Matk to 12250%Matk."
                 }
               ]
             },
@@ -966,7 +977,7 @@ export const elementalMasterData = {
                   "source": "Reduces SP consumption from 100 to 96 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6250%/12250%(spirit)Matk",
                   "after": "8150%/14400%(spirit)Matk",
                   "scope": "Lv 5",
@@ -993,7 +1004,7 @@ export const elementalMasterData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8150%/14400%(spirit)Matk",
                   "after": "12500%/20800%(spirit)Matk",
                   "scope": "Lv 5",
@@ -1139,8 +1150,12 @@ export const elementalMasterData = {
                 "value": "0.3 seconds"
               },
               {
-                "label": "Damage",
-                "value": "3,750% MATK/5,750% MATK (Spirit)"
+                "label": "Base Damage",
+                "value": "3,750% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "5,750% MATK (Spirit)"
               }
             ],
             "levelTables": [
@@ -1226,11 +1241,18 @@ export const elementalMasterData = {
                   "source": "Increases AP recovery rate from 4 to 5."
                 },
                 {
-                  "label": "Damage",
-                  "before": "750%Matk/1250%Matk (while Ardor is summoned)",
-                  "after": "2000%Matk/4000%Matk (while Ardor is summoned)",
+                  "label": "Base Damage",
+                  "before": "750%Matk",
+                  "after": "2000%Matk",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Ardor is summoned from 1250%Matk to 4000%Matk."
+                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
+                },
+                {
+                  "label": "Damage While Ardor Is Summoned",
+                  "before": "1250%Matk",
+                  "after": "4000%Matk",
+                  "scope": "",
+                  "source": "Increases damage while Ardor is summoned from 1250%Matk to 4000%Matk."
                 }
               ]
             },
@@ -1253,7 +1275,7 @@ export const elementalMasterData = {
                   "source": "Increases SP consumption from 110 to 113 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2000%/4000%(spirit)Matk",
                   "after": "3750%/5750%(spirit)Matk per hit",
                   "scope": "Lv 5",
@@ -1281,7 +1303,7 @@ export const elementalMasterData = {
                   "source": "Increases global cooldown from 0.5 seconds to 0.7 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3750%/5750%(spirit)Matk",
                   "after": "6200%/7200%(spirit)Matk",
                   "scope": "Lv 5",
@@ -1447,8 +1469,12 @@ export const elementalMasterData = {
                 "value": "0.3 seconds"
               },
               {
-                "label": "Damage",
-                "value": "3,750% MATK/5,750% MATK (Pro cellsa)"
+                "label": "Base Damage",
+                "value": "3,750% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "5,750% MATK (Pro cellsa)"
               }
             ],
             "levelTables": [
@@ -1534,11 +1560,18 @@ export const elementalMasterData = {
                   "source": "Increases AP recovery rate from 4 to 5."
                 },
                 {
-                  "label": "Damage",
-                  "before": "750%Matk/1250%Matk (while Pro cellsa is summoned)",
-                  "after": "2000%Matk/4000%Matk (while Pro cellsa is summoned)",
+                  "label": "Base Damage",
+                  "before": "750%Matk",
+                  "after": "2000%Matk",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Procella is summoned from 1250%Matk to 4000%Matk."
+                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
+                },
+                {
+                  "label": "Damage While Procella Is Summoned",
+                  "before": "1250%Matk",
+                  "after": "4000%Matk",
+                  "scope": "",
+                  "source": "Increases damage while Procella is summoned from 1250%Matk to 4000%Matk."
                 }
               ]
             },
@@ -1561,7 +1594,7 @@ export const elementalMasterData = {
                   "source": "Increases SP consumption from 95 to 110 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2000%/4000%(spirit)Matk",
                   "after": "3750%/5750%(spirit)Matk per hit",
                   "scope": "Lv 5",
@@ -1589,7 +1622,7 @@ export const elementalMasterData = {
                   "source": "Increases global cooldown from 0.5 seconds to 0.7 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3750%/5750%(spirit)Matk",
                   "after": "6200%/7200%(spirit)Matk",
                   "scope": "Lv 5",
@@ -2050,8 +2083,12 @@ export const elementalMasterData = {
                 "value": "5"
               },
               {
-                "label": "Damage",
-                "value": "8,150% MATK/14,400% MATK (Spirit)"
+                "label": "Base Damage",
+                "value": "8,150% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "14,400% MATK (Spirit)"
               }
             ],
             "levelTables": [
@@ -2136,11 +2173,18 @@ export const elementalMasterData = {
                   "source": "Increases AP recovery rate from 4 to 5."
                 },
                 {
-                  "label": "Damage",
-                  "before": "3500%Matk/6650%Matk (while Terremotus is summoned)",
-                  "after": "6250%Matk/12250%Matk (while Terremotus is summoned)",
+                  "label": "Base Damage",
+                  "before": "3500%Matk",
+                  "after": "6250%Matk",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5. / Increases damage while Terremotus is summoned from 6650%Matk to 12250%Matk."
+                  "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5."
+                },
+                {
+                  "label": "Damage While Terremotus Is Summoned",
+                  "before": "6650%Matk",
+                  "after": "12250%Matk",
+                  "scope": "",
+                  "source": "Increases damage while Terremotus is summoned from 6650%Matk to 12250%Matk."
                 }
               ]
             },
@@ -2172,7 +2216,7 @@ export const elementalMasterData = {
                   "source": "Reduces SP consumption from 100 to 96 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6250%/12250%(spirit)Matk",
                   "after": "8150%/14400%(spirit)Matk",
                   "scope": "Lv 5",
@@ -2199,7 +2243,7 @@ export const elementalMasterData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8150%/14400%(spirit)Matk",
                   "after": "12500%/20800%(spirit)Matk",
                   "scope": "Lv 5",
@@ -2345,8 +2389,12 @@ export const elementalMasterData = {
                 "value": "0.3 seconds"
               },
               {
-                "label": "Damage",
-                "value": "3,750% MATK/5,750% MATK (Spirit)"
+                "label": "Base Damage",
+                "value": "3,750% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "5,750% MATK (Spirit)"
               }
             ],
             "levelTables": [
@@ -2432,11 +2480,18 @@ export const elementalMasterData = {
                   "source": "Increases AP recovery rate from 4 to 5."
                 },
                 {
-                  "label": "Damage",
-                  "before": "750%Matk/1250%Matk (while Serpens is summoned)",
-                  "after": "2000%Matk/4000%Matk (while Serpens is summoned)",
+                  "label": "Base Damage",
+                  "before": "750%Matk",
+                  "after": "2000%Matk",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Serpens is summoned from 1250%Matk to 4000%Matk."
+                  "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
+                },
+                {
+                  "label": "Damage While Serpens Is Summoned",
+                  "before": "1250%Matk",
+                  "after": "4000%Matk",
+                  "scope": "",
+                  "source": "Increases damage while Serpens is summoned from 1250%Matk to 4000%Matk."
                 }
               ]
             },
@@ -2459,7 +2514,7 @@ export const elementalMasterData = {
                   "source": "Increases SP consumption from 100 to 112 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2000%/4000%(spirit)Matk",
                   "after": "3750%/5750%(spirit)Matk per hit",
                   "scope": "Lv 5",
@@ -2487,7 +2542,7 @@ export const elementalMasterData = {
                   "source": "Increases global cooldown from 0.5 seconds to 0.7 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3750%/5750%(spirit)Matk",
                   "after": "6200%/7200%(spirit)Matk",
                   "scope": "Lv 5",
@@ -3130,7 +3185,7 @@ export const elementalMasterData = {
                 "value": "neutral property magical damage"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "18,500% MATK"
               }
             ],
@@ -3788,8 +3843,12 @@ export const elementalMasterData = {
                 "value": "30"
               },
               {
-                "label": "Damage",
-                "value": "22,500% MATK/24,000% MATK (Dragon, Formless)"
+                "label": "Base Damage",
+                "value": "22,500% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "24,000% MATK (Dragon, Formless)"
               }
             ],
             "levelTables": [
@@ -3919,7 +3978,7 @@ export const elementalMasterData = {
                   "source": "Reduces AP consumption from 150 to 30."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4800%/11000%(formless and dragon race)Matk",
                   "after": "22500%/24000%(formless and dragon race)Matk",
                   "scope": "Lv 10",
@@ -3954,7 +4013,7 @@ export const elementalMasterData = {
                   "source": "Reduces skill cooldown from 5 seconds to 2 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "22500%/24000%(dragon and formless)Matk",
                   "after": "27050%/28550%(dragon and formless)Matk",
                   "scope": "Lv 10",
@@ -5450,7 +5509,7 @@ export const elementalMasterData = {
                 "value": "(Skill Level × 1) seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "200% MATK"
               }
             ],
@@ -7699,8 +7758,12 @@ export const elementalMasterData = {
                 "value": "7 x 7 around target"
               },
               {
-                "label": "Damage",
-                "value": "2,500% MATK/3,500% MATK (Killing Cloud)"
+                "label": "Base Damage",
+                "value": "2,500% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "3,500% MATK (Killing Cloud)"
               }
             ],
             "levelTables": [
@@ -15115,7 +15178,7 @@ export const elementalMasterData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "625% MATK"
               }
             ],
@@ -18067,7 +18130,7 @@ export const elementalMasterData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "170% MATK"
               }
             ],
@@ -18988,7 +19051,7 @@ export const elementalMasterData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "200% MATK"
               }
             ],
@@ -19483,8 +19546,8 @@ export const elementalMasterData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
-                "value": "(5times, + 50% dmg to Undead, SP Consumption:38) ATK"
+                "label": "Damage Formula",
+                "value": "(Base Damagetimes, + 50% dmg to Undead, SP Consumption:38) ATK"
               }
             ],
             "levelTables": [
@@ -19740,8 +19803,12 @@ export const elementalMasterData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
-                "value": "340% MATK/255% MATK"
+                "label": "Base Damage",
+                "value": "340% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "255% MATK"
               }
             ],
             "levelTables": [
@@ -20995,8 +21062,12 @@ export const elementalMasterData = {
             "value": "5"
           },
           {
-            "label": "Damage",
-            "value": "8,150% MATK/14,400% MATK (Diluvio)"
+            "label": "Base Damage",
+            "value": "8,150% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "14,400% MATK (Diluvio)"
           }
         ],
         "levelTables": [
@@ -21081,11 +21152,18 @@ export const elementalMasterData = {
               "source": "Increases AP recovery rate from 4 to 5."
             },
             {
-              "label": "Damage",
-              "before": "3500%Matk/6650%Matk (while Diluvio is summoned)",
-              "after": "6250%Matk/12250%Matk (while Diluvio is summoned)",
+              "label": "Base Damage",
+              "before": "3500%Matk",
+              "after": "6250%Matk",
               "scope": "Lv 5",
-              "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5. / Increases damage while Diluvio is summoned from 6650%Matk to 12250%Matk."
+              "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5."
+            },
+            {
+              "label": "Damage While Diluvio Is Summoned",
+              "before": "6650%Matk",
+              "after": "12250%Matk",
+              "scope": "",
+              "source": "Increases damage while Diluvio is summoned from 6650%Matk to 12250%Matk."
             }
           ]
         },
@@ -21117,7 +21195,7 @@ export const elementalMasterData = {
               "source": "Reduces SP consumption from 100 to 96 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6250%/12250%(spirit)Matk",
               "after": "8150%/14400%(spirit)Matk",
               "scope": "Lv 5",
@@ -21144,7 +21222,7 @@ export const elementalMasterData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8150%/14400%(spirit)Matk",
               "after": "12500%/20800%(spirit)Matk",
               "scope": "Lv 5",
@@ -21290,8 +21368,12 @@ export const elementalMasterData = {
             "value": "0.3 seconds"
           },
           {
-            "label": "Damage",
-            "value": "3,750% MATK/5,750% MATK (Spirit)"
+            "label": "Base Damage",
+            "value": "3,750% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "5,750% MATK (Spirit)"
           }
         ],
         "levelTables": [
@@ -21377,11 +21459,18 @@ export const elementalMasterData = {
               "source": "Increases AP recovery rate from 4 to 5."
             },
             {
-              "label": "Damage",
-              "before": "750%Matk/1250%Matk (while Ardor is summoned)",
-              "after": "2000%Matk/4000%Matk (while Ardor is summoned)",
+              "label": "Base Damage",
+              "before": "750%Matk",
+              "after": "2000%Matk",
               "scope": "Lv 5",
-              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Ardor is summoned from 1250%Matk to 4000%Matk."
+              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
+            },
+            {
+              "label": "Damage While Ardor Is Summoned",
+              "before": "1250%Matk",
+              "after": "4000%Matk",
+              "scope": "",
+              "source": "Increases damage while Ardor is summoned from 1250%Matk to 4000%Matk."
             }
           ]
         },
@@ -21404,7 +21493,7 @@ export const elementalMasterData = {
               "source": "Increases SP consumption from 110 to 113 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2000%/4000%(spirit)Matk",
               "after": "3750%/5750%(spirit)Matk per hit",
               "scope": "Lv 5",
@@ -21432,7 +21521,7 @@ export const elementalMasterData = {
               "source": "Increases global cooldown from 0.5 seconds to 0.7 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3750%/5750%(spirit)Matk",
               "after": "6200%/7200%(spirit)Matk",
               "scope": "Lv 5",
@@ -21598,8 +21687,12 @@ export const elementalMasterData = {
             "value": "0.3 seconds"
           },
           {
-            "label": "Damage",
-            "value": "3,750% MATK/5,750% MATK (Pro cellsa)"
+            "label": "Base Damage",
+            "value": "3,750% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "5,750% MATK (Pro cellsa)"
           }
         ],
         "levelTables": [
@@ -21685,11 +21778,18 @@ export const elementalMasterData = {
               "source": "Increases AP recovery rate from 4 to 5."
             },
             {
-              "label": "Damage",
-              "before": "750%Matk/1250%Matk (while Pro cellsa is summoned)",
-              "after": "2000%Matk/4000%Matk (while Pro cellsa is summoned)",
+              "label": "Base Damage",
+              "before": "750%Matk",
+              "after": "2000%Matk",
               "scope": "Lv 5",
-              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Procella is summoned from 1250%Matk to 4000%Matk."
+              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
+            },
+            {
+              "label": "Damage While Procella Is Summoned",
+              "before": "1250%Matk",
+              "after": "4000%Matk",
+              "scope": "",
+              "source": "Increases damage while Procella is summoned from 1250%Matk to 4000%Matk."
             }
           ]
         },
@@ -21712,7 +21812,7 @@ export const elementalMasterData = {
               "source": "Increases SP consumption from 95 to 110 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2000%/4000%(spirit)Matk",
               "after": "3750%/5750%(spirit)Matk per hit",
               "scope": "Lv 5",
@@ -21740,7 +21840,7 @@ export const elementalMasterData = {
               "source": "Increases global cooldown from 0.5 seconds to 0.7 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3750%/5750%(spirit)Matk",
               "after": "6200%/7200%(spirit)Matk",
               "scope": "Lv 5",
@@ -22201,8 +22301,12 @@ export const elementalMasterData = {
             "value": "5"
           },
           {
-            "label": "Damage",
-            "value": "8,150% MATK/14,400% MATK (Spirit)"
+            "label": "Base Damage",
+            "value": "8,150% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "14,400% MATK (Spirit)"
           }
         ],
         "levelTables": [
@@ -22287,11 +22391,18 @@ export const elementalMasterData = {
               "source": "Increases AP recovery rate from 4 to 5."
             },
             {
-              "label": "Damage",
-              "before": "3500%Matk/6650%Matk (while Terremotus is summoned)",
-              "after": "6250%Matk/12250%Matk (while Terremotus is summoned)",
+              "label": "Base Damage",
+              "before": "3500%Matk",
+              "after": "6250%Matk",
               "scope": "Lv 5",
-              "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5. / Increases damage while Terremotus is summoned from 6650%Matk to 12250%Matk."
+              "source": "Increases damage from 3500%Matk to 6250%Matk based on level 5."
+            },
+            {
+              "label": "Damage While Terremotus Is Summoned",
+              "before": "6650%Matk",
+              "after": "12250%Matk",
+              "scope": "",
+              "source": "Increases damage while Terremotus is summoned from 6650%Matk to 12250%Matk."
             }
           ]
         },
@@ -22323,7 +22434,7 @@ export const elementalMasterData = {
               "source": "Reduces SP consumption from 100 to 96 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6250%/12250%(spirit)Matk",
               "after": "8150%/14400%(spirit)Matk",
               "scope": "Lv 5",
@@ -22350,7 +22461,7 @@ export const elementalMasterData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8150%/14400%(spirit)Matk",
               "after": "12500%/20800%(spirit)Matk",
               "scope": "Lv 5",
@@ -22496,8 +22607,12 @@ export const elementalMasterData = {
             "value": "0.3 seconds"
           },
           {
-            "label": "Damage",
-            "value": "3,750% MATK/5,750% MATK (Spirit)"
+            "label": "Base Damage",
+            "value": "3,750% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "5,750% MATK (Spirit)"
           }
         ],
         "levelTables": [
@@ -22583,11 +22698,18 @@ export const elementalMasterData = {
               "source": "Increases AP recovery rate from 4 to 5."
             },
             {
-              "label": "Damage",
-              "before": "750%Matk/1250%Matk (while Serpens is summoned)",
-              "after": "2000%Matk/4000%Matk (while Serpens is summoned)",
+              "label": "Base Damage",
+              "before": "750%Matk",
+              "after": "2000%Matk",
               "scope": "Lv 5",
-              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5. / Increases damage while Serpens is summoned from 1250%Matk to 4000%Matk."
+              "source": "Increases damage from 750%Matk to 2000%Matk based on level 5."
+            },
+            {
+              "label": "Damage While Serpens Is Summoned",
+              "before": "1250%Matk",
+              "after": "4000%Matk",
+              "scope": "",
+              "source": "Increases damage while Serpens is summoned from 1250%Matk to 4000%Matk."
             }
           ]
         },
@@ -22610,7 +22732,7 @@ export const elementalMasterData = {
               "source": "Increases SP consumption from 100 to 112 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2000%/4000%(spirit)Matk",
               "after": "3750%/5750%(spirit)Matk per hit",
               "scope": "Lv 5",
@@ -22638,7 +22760,7 @@ export const elementalMasterData = {
               "source": "Increases global cooldown from 0.5 seconds to 0.7 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3750%/5750%(spirit)Matk",
               "after": "6200%/7200%(spirit)Matk",
               "scope": "Lv 5",
@@ -23281,7 +23403,7 @@ export const elementalMasterData = {
             "value": "neutral property magical damage"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "18,500% MATK"
           }
         ],
@@ -23939,8 +24061,12 @@ export const elementalMasterData = {
             "value": "30"
           },
           {
-            "label": "Damage",
-            "value": "22,500% MATK/24,000% MATK (Dragon, Formless)"
+            "label": "Base Damage",
+            "value": "22,500% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "24,000% MATK (Dragon, Formless)"
           }
         ],
         "levelTables": [
@@ -24070,7 +24196,7 @@ export const elementalMasterData = {
               "source": "Reduces AP consumption from 150 to 30."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4800%/11000%(formless and dragon race)Matk",
               "after": "22500%/24000%(formless and dragon race)Matk",
               "scope": "Lv 10",
@@ -24105,7 +24231,7 @@ export const elementalMasterData = {
               "source": "Reduces skill cooldown from 5 seconds to 2 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "22500%/24000%(dragon and formless)Matk",
               "after": "27050%/28550%(dragon and formless)Matk",
               "scope": "Lv 10",

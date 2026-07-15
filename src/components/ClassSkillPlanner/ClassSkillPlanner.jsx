@@ -15,11 +15,13 @@ const DETAIL_PANEL_MIN_WIDTH = 360
 const DETAIL_PANEL_MAX_WIDTH = 1100
 const DETAIL_RESIZER_WIDTH = 18
 const TREE_AREA_MIN_WIDTH = 560
+const MAX_BUILD_PRESETS = 24
 
 export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabChange }) {
   const shellRef = useRef(null)
   const tabs = useMemo(() => skillTabsForData(dataSet.data), [dataSet.data])
   const savedSettings = useMemo(() => readPlannerSettings(dataSet.id), [dataSet.id])
+  const savedPresets = useMemo(() => readBuildPresets(dataSet.id), [dataSet.id])
   const initialTabId = firstValidTabId(tabs, routeTabId, savedSettings?.activeTabId)
   const [activeTabId, setActiveTabId] = useState(initialTabId)
   const [specVersion, setSpecVersion] = useState(() =>
@@ -28,6 +30,9 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
   const [levelsByTab, setLevelsByTab] = useState(() => sanitizeLevelsByTab(savedSettings?.levelsByTab))
   const [detailPanelWidth, setDetailPanelWidth] = useState(() => sanitizeDetailPanelWidth(savedSettings?.detailPanelWidth))
   const [isResizingDetailPanel, setIsResizingDetailPanel] = useState(false)
+  const [presets, setPresets] = useState(savedPresets)
+  const [selectedPresetId, setSelectedPresetId] = useState(savedPresets[0]?.id ?? '')
+  const [presetName, setPresetName] = useState(savedPresets[0]?.name ?? '')
   const visibleTabs = useMemo(() => tabs.map((tab) => tabForSpecVersion(dataSet.data, tab, specVersion)), [dataSet.data, specVersion, tabs])
   const activeTab = visibleTabs.find((tab) => tab.id === activeTabId) ?? visibleTabs[0]
   const plannerIndex = useMemo(() => createPlannerIndex(visibleTabs), [visibleTabs])
@@ -85,6 +90,10 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
     })
   }, [activeTab.id, dataSet.id, detailPanelWidth, levelsByTab, specVersion])
 
+  useEffect(() => {
+    writeBuildPresets(dataSet.id, presets)
+  }, [dataSet.id, presets])
+
   const selectedSkill = useMemo(
     () => model.data.skills.find((skill) => skill.id === selectedId) ?? null,
     [model.data.skills, selectedId],
@@ -124,6 +133,56 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
   const resetBuild = useCallback(() => {
     setLevelsByTab((current) => withTabLevels(current, activeTab.id, {}))
   }, [activeTab.id])
+
+  const changeSelectedPreset = useCallback(
+    (presetId) => {
+      setSelectedPresetId(presetId)
+      setPresetName(presets.find((preset) => preset.id === presetId)?.name ?? '')
+    },
+    [presets],
+  )
+
+  const savePreset = useCallback(() => {
+    const existingPreset = presets.find((preset) => preset.id === selectedPresetId)
+    const id = existingPreset?.id ?? createPresetId()
+    const name = sanitizePresetName(presetName) || existingPreset?.name || nextPresetName(presets)
+    const preset = {
+      id,
+      name,
+      activeTabId: activeTab.id,
+      specVersion,
+      levelsByTab: cleanupLevelsByTab(cloneLevelsByTab(levelsByTab)),
+      savedAt: new Date().toISOString(),
+    }
+
+    setPresets((current) => {
+      const next = current.filter((entry) => entry.id !== id)
+      next.unshift(preset)
+      return next.slice(0, MAX_BUILD_PRESETS)
+    })
+    setSelectedPresetId(id)
+    setPresetName(name)
+  }, [activeTab.id, levelsByTab, presetName, presets, selectedPresetId, specVersion])
+
+  const loadPreset = useCallback(() => {
+    const preset = presets.find((entry) => entry.id === selectedPresetId)
+    if (!preset) return
+
+    const nextSpecVersion = isValidSpecVersion(dataSet.data, preset.specVersion) ? preset.specVersion : specVersion
+    const nextTabId = firstValidTabId(tabs, preset.activeTabId, activeTab.id)
+
+    setLevelsByTab(sanitizeLevelsByTab(preset.levelsByTab))
+    setSpecVersion(nextSpecVersion)
+    setActiveTabId(nextTabId)
+    setPresetName(preset.name)
+    if (nextTabId !== activeTab.id) onActiveTabChange(nextTabId)
+  }, [activeTab.id, dataSet.data, onActiveTabChange, presets, selectedPresetId, specVersion, tabs])
+
+  const deletePreset = useCallback(() => {
+    setPresets((current) => current.filter((preset) => preset.id !== selectedPresetId))
+    setSelectedPresetId('')
+    setPresetName('')
+  }, [selectedPresetId])
 
   const changeTab = useCallback(
     (tabId) => {
@@ -228,7 +287,20 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
           </div>
         ) : null}
 
-        <BuildToolbar totalPoints={totalPoints} pointLimit={pointLimit} language={language} onReset={resetBuild} />
+        <BuildToolbar
+          totalPoints={totalPoints}
+          pointLimit={pointLimit}
+          language={language}
+          onReset={resetBuild}
+          presets={presets}
+          selectedPresetId={selectedPresetId}
+          presetName={presetName}
+          onPresetNameChange={setPresetName}
+          onSelectedPresetChange={changeSelectedPreset}
+          onSavePreset={savePreset}
+          onLoadPreset={loadPreset}
+          onDeletePreset={deletePreset}
+        />
 
         <SkillTree
           model={activeModel}
@@ -348,6 +420,26 @@ function storageKey(classId) {
   return `skill-planner-settings:${classId}`
 }
 
+function readBuildPresets(classId) {
+  try {
+    return sanitizeBuildPresets(JSON.parse(window.localStorage.getItem(presetsStorageKey(classId)) ?? '[]'))
+  } catch {
+    return []
+  }
+}
+
+function writeBuildPresets(classId, presets) {
+  try {
+    window.localStorage.setItem(presetsStorageKey(classId), JSON.stringify(sanitizeBuildPresets(presets)))
+  } catch {
+    // Ignore storage failures; named presets are an optional convenience.
+  }
+}
+
+function presetsStorageKey(classId) {
+  return `skill-planner-presets:${classId}`
+}
+
 function isValidSpecVersion(data, versionId) {
   if (versionId === 'pre' || versionId === 'current') return true
   return data.rebalanceVersions.some((version) => version.id === versionId)
@@ -368,6 +460,37 @@ function sanitizeLevelsByTab(value) {
   }
 
   return levelsByTab
+}
+
+function sanitizeBuildPresets(value) {
+  if (!Array.isArray(value)) return []
+
+  return value
+    .map((preset) => ({
+      id: sanitizePresetName(preset?.id),
+      name: sanitizePresetName(preset?.name),
+      activeTabId: sanitizePresetName(preset?.activeTabId),
+      specVersion: sanitizePresetName(preset?.specVersion),
+      levelsByTab: sanitizeLevelsByTab(preset?.levelsByTab),
+      savedAt: sanitizePresetName(preset?.savedAt),
+    }))
+    .filter((preset) => preset.id && preset.name)
+    .slice(0, MAX_BUILD_PRESETS)
+}
+
+function sanitizePresetName(value) {
+  return String(value ?? '').replace(/\s+/g, ' ').trim().slice(0, 80)
+}
+
+function createPresetId() {
+  return `preset-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`
+}
+
+function nextPresetName(presets) {
+  let index = presets.length + 1
+  const names = new Set(presets.map((preset) => preset.name))
+  while (names.has(`Preset ${index}`)) index += 1
+  return `Preset ${index}`
 }
 
 function sanitizeDetailPanelWidth(value) {

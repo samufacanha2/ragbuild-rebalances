@@ -1,5 +1,5 @@
 export const windHawkData = {
-  "generatedAt": "2026-07-13T20:14:12.315Z",
+  "generatedAt": "2026-07-15T23:17:59.005Z",
   "classId": 4257,
   "classSlug": "wind-hawk",
   "className": "Wind Hawk",
@@ -475,7 +475,7 @@ export const windHawkData = {
                 "value": "1"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "9,400% ATK"
               }
             ],
@@ -583,7 +583,7 @@ export const windHawkData = {
                   "source": "Reduces SP consumption from 100 to 65 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3000%Atk",
                   "after": "3400%Atk",
                   "scope": "Lv 10",
@@ -618,7 +618,7 @@ export const windHawkData = {
                   "source": "Increases global cooldown from 0.3 seconds to 0.7 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3400%Atk",
                   "after": "9400%Atk",
                   "scope": "Lv 10",
@@ -639,11 +639,18 @@ export const windHawkData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "9400%Atk/10% per stack (up (bonus on standing still)",
-                  "after": "13500%Atk/30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks) (bonus on standing still)",
+                  "label": "Base Damage",
+                  "before": "9400%Atk",
+                  "after": "13500%Atk",
                   "scope": "Lv 10",
-                  "source": "Increases base damage from 9400%Atk to 13500%Atk based on level 10. / Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)."
+                  "source": "Increases base damage from 9400%Atk to 13500%Atk based on level 10."
+                },
+                {
+                  "label": "Damage Bonus On Standing Still",
+                  "before": "10% per stack (up",
+                  "after": "30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)",
+                  "scope": "",
+                  "source": "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)."
                 }
               ]
             }
@@ -1202,7 +1209,7 @@ export const windHawkData = {
                 "value": "when hits 3 or more targets"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "10,000% ATK"
               }
             ],
@@ -1334,7 +1341,7 @@ export const windHawkData = {
                   "source": "Reduces SP consumption from 179 to 100 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2500%Atk",
                   "after": "9500%Atk",
                   "scope": "Lv 10",
@@ -1371,7 +1378,7 @@ export const windHawkData = {
                   "source": "Increases SP consumption from 100 to 120 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "9500%Atk",
                   "after": "10000%Atk",
                   "scope": "Lv 10",
@@ -1412,7 +1419,7 @@ export const windHawkData = {
                   "source": "Reduces skill cooldown from 1.2 seconds to 0.7 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "10000%Atk",
                   "after": "13500%Atk",
                   "scope": "Lv 5",
@@ -1699,7 +1706,7 @@ export const windHawkData = {
                 "value": "1/1/2/2/3"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "4,250% ATK"
               }
             ],
@@ -1884,7 +1891,7 @@ export const windHawkData = {
                 "value": "1/1/2/2/3"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "4,250% ATK"
               }
             ],
@@ -2065,7 +2072,7 @@ export const windHawkData = {
                 "value": "Single Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,500% ATK"
               }
             ],
@@ -2126,7 +2133,7 @@ export const windHawkData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "500%Atk",
                   "after": "1000%Atk",
                   "scope": "Lv 5",
@@ -2145,7 +2152,7 @@ export const windHawkData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1000%Atk",
                   "after": "2500%Atk",
                   "scope": "Lv 5",
@@ -2280,7 +2287,7 @@ export const windHawkData = {
                 "value": "1/1/2/2/3"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "4,250% ATK"
               }
             ],
@@ -2465,7 +2472,7 @@ export const windHawkData = {
                 "value": "1/1/2/2/3"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "4,250% ATK"
               }
             ],
@@ -2630,7 +2637,7 @@ export const windHawkData = {
                 "value": "5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "15,800% ATK per hit"
               }
             ],
@@ -3030,7 +3037,7 @@ export const windHawkData = {
                 "value": "12"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,000% ATK"
               }
             ],
@@ -3135,7 +3142,7 @@ export const windHawkData = {
                   "source": "Reduces AP consumption from 15 to 12."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2500%Atk",
                   "after": "3000%Atk",
                   "scope": "Lv 5",
@@ -3450,8 +3457,12 @@ export const windHawkData = {
                 "value": "3 arrows"
               },
               {
-                "label": "Damage",
-                "value": "700% ATK/1,150% ATK (Fear Breeze)"
+                "label": "Base Damage",
+                "value": "700% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "1,150% ATK (Fear Breeze)"
               }
             ],
             "levelTables": [
@@ -5061,8 +5072,12 @@ export const windHawkData = {
                 "value": "5 Arrows"
               },
               {
-                "label": "Damage",
-                "value": "2,000% ATK/2,700% ATK (Fear Breeze)"
+                "label": "Base Damage",
+                "value": "2,000% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "2,700% ATK (Fear Breeze)"
               }
             ],
             "levelTables": [
@@ -9759,7 +9774,7 @@ export const windHawkData = {
                 "value": "1 Arrow"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,800% ATK"
               }
             ],
@@ -13360,7 +13375,7 @@ export const windHawkData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "190% ATK"
               }
             ],
@@ -13794,7 +13809,7 @@ export const windHawkData = {
                 "value": "1 Arrow"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "80% ATK"
               }
             ],
@@ -14117,7 +14132,7 @@ export const windHawkData = {
                 "value": "1 Arrow"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "250% ATK"
               }
             ],
@@ -15040,7 +15055,7 @@ export const windHawkData = {
             "value": "1"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "9,400% ATK"
           }
         ],
@@ -15148,7 +15163,7 @@ export const windHawkData = {
               "source": "Reduces SP consumption from 100 to 65 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3000%Atk",
               "after": "3400%Atk",
               "scope": "Lv 10",
@@ -15183,7 +15198,7 @@ export const windHawkData = {
               "source": "Increases global cooldown from 0.3 seconds to 0.7 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3400%Atk",
               "after": "9400%Atk",
               "scope": "Lv 10",
@@ -15204,11 +15219,18 @@ export const windHawkData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
-              "before": "9400%Atk/10% per stack (up (bonus on standing still)",
-              "after": "13500%Atk/30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks) (bonus on standing still)",
+              "label": "Base Damage",
+              "before": "9400%Atk",
+              "after": "13500%Atk",
               "scope": "Lv 10",
-              "source": "Increases base damage from 9400%Atk to 13500%Atk based on level 10. / Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)."
+              "source": "Increases base damage from 9400%Atk to 13500%Atk based on level 10."
+            },
+            {
+              "label": "Damage Bonus On Standing Still",
+              "before": "10% per stack (up",
+              "after": "30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)",
+              "scope": "",
+              "source": "Increases damage bonus on standing still from 10% per stack (up to 30% on 3 stacks) to 20% per stack (up to 60% on 3 stacks)."
             }
           ]
         }
@@ -15767,7 +15789,7 @@ export const windHawkData = {
             "value": "when hits 3 or more targets"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "10,000% ATK"
           }
         ],
@@ -15899,7 +15921,7 @@ export const windHawkData = {
               "source": "Reduces SP consumption from 179 to 100 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2500%Atk",
               "after": "9500%Atk",
               "scope": "Lv 10",
@@ -15936,7 +15958,7 @@ export const windHawkData = {
               "source": "Increases SP consumption from 100 to 120 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "9500%Atk",
               "after": "10000%Atk",
               "scope": "Lv 10",
@@ -15977,7 +15999,7 @@ export const windHawkData = {
               "source": "Reduces skill cooldown from 1.2 seconds to 0.7 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "10000%Atk",
               "after": "13500%Atk",
               "scope": "Lv 5",
@@ -16264,7 +16286,7 @@ export const windHawkData = {
             "value": "1/1/2/2/3"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "4,250% ATK"
           }
         ],
@@ -16449,7 +16471,7 @@ export const windHawkData = {
             "value": "1/1/2/2/3"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "4,250% ATK"
           }
         ],
@@ -16630,7 +16652,7 @@ export const windHawkData = {
             "value": "Single Target"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "2,500% ATK"
           }
         ],
@@ -16691,7 +16713,7 @@ export const windHawkData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "500%Atk",
               "after": "1000%Atk",
               "scope": "Lv 5",
@@ -16710,7 +16732,7 @@ export const windHawkData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1000%Atk",
               "after": "2500%Atk",
               "scope": "Lv 5",
@@ -16845,7 +16867,7 @@ export const windHawkData = {
             "value": "1/1/2/2/3"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "4,250% ATK"
           }
         ],
@@ -17030,7 +17052,7 @@ export const windHawkData = {
             "value": "1/1/2/2/3"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "4,250% ATK"
           }
         ],
@@ -17195,7 +17217,7 @@ export const windHawkData = {
             "value": "5"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "15,800% ATK per hit"
           }
         ],
@@ -17595,7 +17617,7 @@ export const windHawkData = {
             "value": "12"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "3,000% ATK"
           }
         ],
@@ -17700,7 +17722,7 @@ export const windHawkData = {
               "source": "Reduces AP consumption from 15 to 12."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2500%Atk",
               "after": "3000%Atk",
               "scope": "Lv 5",

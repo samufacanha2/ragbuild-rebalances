@@ -817,7 +817,9 @@ function buildSkillDetails(skill) {
   addDetail(rows, "Property", descriptionValue(skill.description, /inflicts\s+([a-z ]+property\s+(?:magical|physical)\s+damage)/i));
   addDetail(rows, "HP Recovery", recoverySpecValue(skill, "HP Recovery"));
   addDetail(rows, "SP Recovery", recoverySpecValue(skill, "SP Recovery"));
-  addDetail(rows, "Damage", damageSpecValue(skill));
+  const damageSpec = damageSpecValue(skill);
+  for (const value of damageSpec.baseDamage) addDetail(rows, "Base Damage", value);
+  for (const value of damageSpec.formula) addDetail(rows, "Damage Formula", value);
   for (const formulaRow of levelTable?.formulaRows ?? []) {
     addDetail(rows, formulaRow.label, formulaRow.value);
   }
@@ -1038,16 +1040,27 @@ function parseDamageSegment(line, row, table, formulaRows) {
 
 function damageSpecValue(skill) {
   const detail = maxLevelDetail(skill);
-  if (!detail) return "";
+  if (!detail) return { baseDamage: [], formula: [] };
 
-  const values = [];
+  const baseValues = [];
+  const formulaValues = [];
+  let inheritedStat = "";
   for (const rawLine of detail.text.split("\n")) {
-    for (const value of damageSpecValuesFromLevelLine(rawLine)) {
-      if (value && !values.includes(value)) values.push(value);
-    }
+    inheritedStat = rawLine.match(/\b(?:ATK|MATK)\b/gi)?.at(-1)?.toUpperCase() ?? inheritedStat;
+    addUniqueValues(baseValues, baseDamageSpecValuesFromLevelLine(rawLine, inheritedStat));
+    addUniqueValues(formulaValues, damageFormulaSpecValuesFromLevelLine(rawLine, inheritedStat));
   }
 
-  return values.join("/");
+  return {
+    baseDamage: baseValues,
+    formula: formulaValues
+  };
+}
+
+function addUniqueValues(target, values) {
+  for (const value of values) {
+    if (value && !target.includes(value)) target.push(value);
+  }
 }
 
 function maxLevelDetail(skill) {
@@ -1059,16 +1072,33 @@ function maxLevelDetail(skill) {
     ?? details.sort((a, b) => a.level - b.level).at(-1);
 }
 
-function damageSpecValuesFromLevelLine(rawLine) {
+function baseDamageSpecValuesFromLevelLine(rawLine, inheritedStat = "") {
   const line = normalizeDamageSourceText(rawLine).replace(/\.$/, "");
-  if (!line || !/\b(?:ATK|MATK)\b/i.test(line)) return [];
+  if (!line) return [];
 
   const lineHasPerHit = /per hit/i.test(line);
-  const globalStat = line.match(/\b(?:ATK|MATK)\b/gi)?.at(-1)?.toUpperCase() ?? "";
+  const globalStat = line.match(/\b(?:ATK|MATK)\b/gi)?.at(-1)?.toUpperCase() ?? inheritedStat;
+  if (!globalStat) return [];
   const values = [];
 
   for (const segment of line.split(/\s*\/\s*/)) {
-    values.push(...damageSpecValuesFromSegment(segment, lineHasPerHit, globalStat));
+    values.push(...baseDamageSpecValuesFromSegment(segment, lineHasPerHit, globalStat));
+  }
+
+  return values;
+}
+
+function damageFormulaSpecValuesFromLevelLine(rawLine, inheritedStat = "") {
+  const line = normalizeDamageSourceText(rawLine).replace(/\.$/, "");
+  if (!line) return [];
+
+  const lineHasPerHit = /per hit/i.test(line);
+  const globalStat = line.match(/\b(?:ATK|MATK)\b/gi)?.at(-1)?.toUpperCase() ?? inheritedStat;
+  if (!globalStat) return [];
+  const values = [];
+
+  for (const segment of line.split(/\s*\/\s*/)) {
+    values.push(...damageFormulaSpecValuesFromSegment(segment, lineHasPerHit, globalStat));
   }
 
   return values;
@@ -1079,59 +1109,119 @@ function normalizeDamageSourceText(value) {
     .replace(/\bPer\s+hit(?=(?:ATK|MATK)\b)/gi, "Per hit ");
 }
 
-function damageSpecValuesFromSegment(segment, lineHasPerHit, globalStat) {
+function baseDamageSpecValuesFromSegment(segment, lineHasPerHit, globalStat) {
   const normalized = normalizeWhitespace(segment);
   if (!normalized) return [];
 
-  const formulaValue = damageFormulaSpecValue(normalized, lineHasPerHit);
-  if (formulaValue) return [formulaValue];
+  const formulaBaseValue = damageFormulaBaseSpecValue(normalized, lineHasPerHit, globalStat);
+  if (formulaBaseValue) return [formulaBaseValue];
 
-  const rawFormulaValue = damageRawFormulaSpecValue(normalized, lineHasPerHit);
-  if (rawFormulaValue) return [rawFormulaValue];
+  const rawFormulaBaseValue = damageRawFormulaBaseSpecValue(normalized, lineHasPerHit, globalStat);
+  if (rawFormulaBaseValue) return [rawFormulaBaseValue];
 
   return damagePercentSpecValues(normalized, lineHasPerHit, globalStat);
 }
 
-function damageFormulaSpecValue(segment, lineHasPerHit) {
-  const statMatch = segment.match(/\b(ATK|MATK)\b/i);
-  if (!statMatch) return "";
+function damageFormulaSpecValuesFromSegment(segment, lineHasPerHit, globalStat) {
+  const normalized = normalizeWhitespace(segment);
+  if (!normalized) return [];
+
+  const formulaValue = damageFormulaTemplateSpecValue(normalized, lineHasPerHit, globalStat);
+  if (formulaValue) return [formulaValue];
+
+  const rawFormulaValue = damageRawFormulaTemplateSpecValue(normalized, lineHasPerHit, globalStat);
+  return rawFormulaValue ? [rawFormulaValue] : [];
+}
+
+function damageFormulaBaseSpecValue(segment, lineHasPerHit, globalStat) {
+  const stat = segment.match(/\b(ATK|MATK)\b/i)?.[1] ?? globalStat;
+  if (!stat) return "";
 
   const formulaMatch = segment.match(/\(?\s*([0-9,]+)\s*\+\s*\({1,2}\s*([^)]+?(?:level|lv)(?:\s*\+\s*[^)]+?(?:level|lv))?)\)*\s*x\s*([0-9]+)\)?/i);
   if (!formulaMatch) return "";
 
-  const stat = statMatch[1].toUpperCase();
-  const base = formatNumber(formulaMatch[1]);
+  return formatBaseDamageSpecValue({
+    amount: formulaMatch[1],
+    stat,
+    qualifier: damageStatQualifier(segment),
+    perHit: lineHasPerHit || /per hit/i.test(segment)
+  });
+}
+
+function damageFormulaTemplateSpecValue(segment, lineHasPerHit, globalStat) {
+  const stat = segment.match(/\b(ATK|MATK)\b/i)?.[1] ?? globalStat;
+  if (!stat) return "";
+
+  const formulaMatch = segment.match(/\(?\s*([0-9,]+)\s*\+\s*\({1,2}\s*([^)]+?(?:level|lv)(?:\s*\+\s*[^)]+?(?:level|lv))?)\)*\s*x\s*([0-9]+)\)?/i);
+  if (!formulaMatch) return "";
+
+  const statName = stat.toUpperCase();
   const source = normalizeFormulaSource(formulaMatch[2]);
   const sourceTerm = source.includes("+") ? `(${source})` : source;
   const multiplier = formatNumber(formulaMatch[3]);
-  const inner = `${base} + (${sourceTerm} x ${multiplier})`;
-  const outerMultiplier = segment.match(/\)+\s*x\s*([A-Za-z][A-Za-z\s]*)%/i)?.[1];
   const qualifier = damageStatQualifier(segment);
+  const inner = `${baseDamageFormulaReference(qualifier)} + (${sourceTerm} x ${multiplier})`;
+  const outerMultiplier = segment.match(/\)+\s*x\s*([A-Za-z][A-Za-z\s]*)%/i)?.[1];
   let value = outerMultiplier
-    ? `((${inner}) x ${normalizeSkillValue(outerMultiplier)})% ${stat}`
-    : `(${inner})% ${stat}`;
+    ? `((${inner}) x ${normalizeSkillValue(outerMultiplier)})% ${statName}`
+    : `(${inner})% ${statName}`;
 
-  if (lineHasPerHit && !/per hit/i.test(value)) value = `${value} per hit`;
-  if (qualifier) value = `${value} (${qualifier})`;
+  if ((lineHasPerHit || /per hit/i.test(segment)) && !/per hit/i.test(value)) value = `${value} per hit`;
 
   return normalizeSkillValue(value);
 }
 
-function damageRawFormulaSpecValue(segment, lineHasPerHit) {
+function damageRawFormulaBaseSpecValue(segment, lineHasPerHit, globalStat) {
   const match = segment.match(/\b(ATK|MATK)\b(?:\(([^)]*)\))?\s*(.*)$/i);
-  if (!match) return "";
+  const stat = match?.[1] ?? globalStat;
+  if (!stat) return "";
 
-  const expression = normalizeWhitespace(match[3]).replace(/\s*(?:range|area of effect|aoe)\b.*$/i, "");
+  const expression = normalizeWhitespace(match?.[3] ?? segment).replace(/\s*(?:range|area of effect|aoe)\b.*$/i, "");
+  const baseMatch = expression.match(/^\(?\s*([0-9][0-9,]*)\s*\+/);
+  if (!baseMatch) return "";
+
+  return formatBaseDamageSpecValue({
+    amount: baseMatch[1],
+    stat,
+    qualifier: normalizeSkillValue(match?.[2]) || damageStatQualifier(segment),
+    perHit: lineHasPerHit || /per hit/i.test(segment)
+  });
+}
+
+function damageRawFormulaTemplateSpecValue(segment, lineHasPerHit, globalStat) {
+  const match = segment.match(/\b(ATK|MATK)\b(?:\(([^)]*)\))?\s*(.*)$/i);
+  const stat = match?.[1] ?? globalStat;
+  if (!stat) return "";
+
+  const expression = normalizeWhitespace(match?.[3] ?? segment).replace(/\s*(?:range|area of effect|aoe)\b.*$/i, "");
   if (!/^\(?\s*[0-9][\s\S]*\+[\s\S]*%/.test(expression)) return "";
 
-  const stat = match[1].toUpperCase();
-  const qualifier = normalizeSkillValue(match[2]);
-  let value = `${normalizeDamageExpression(expression)} ${stat}`;
+  const statName = stat.toUpperCase();
+  const qualifier = normalizeSkillValue(match?.[2]) || damageStatQualifier(segment);
+  let formulaExpression = normalizeDamageExpression(expression);
+  formulaExpression = replaceLeadingBaseDamageTerm(formulaExpression, baseDamageFormulaReference(qualifier));
+  let value = `${formulaExpression} ${statName}`;
 
-  if (lineHasPerHit && !/per hit/i.test(value)) value = `${value} per hit`;
-  if (qualifier) value = `${value} (${qualifier})`;
+  if ((lineHasPerHit || /per hit/i.test(segment)) && !/per hit/i.test(value)) value = `${value} per hit`;
 
   return normalizeSkillValue(value);
+}
+
+function formatBaseDamageSpecValue({ amount, stat, qualifier, perHit }) {
+  let value = `${formatNumber(amount)}% ${String(stat).toUpperCase()}`;
+  if (perHit && !/per hit/i.test(value)) value = `${value} per hit`;
+  if (qualifier) value = `${value} (${normalizeSkillValue(qualifier)})`;
+  return normalizeSkillValue(value);
+}
+
+function baseDamageFormulaReference(qualifier) {
+  const normalized = normalizeSkillValue(qualifier);
+  return normalized ? `Base Damage (${normalized})` : "Base Damage";
+}
+
+function replaceLeadingBaseDamageTerm(expression, reference) {
+  if (expression.startsWith("(")) return expression.replace(/^\(\s*[0-9][0-9,]*/, `(${reference}`);
+  return expression.replace(/^[0-9][0-9,]*/, reference);
 }
 
 function normalizeFormulaSource(value) {
@@ -1166,6 +1256,9 @@ function isWrappedExpression(value) {
 function damageStatQualifier(value) {
   const compact = value.match(/\b(?:ATK|MATK)\(([^)]+)\)/i)?.[1];
   if (compact) return normalizeSkillValue(compact);
+
+  const postPercent = value.match(/%\s*\(([^)]+)\)/)?.[1];
+  if (postPercent) return normalizeSkillValue(postPercent);
 
   const spaced = value.match(/\b(?:ATK|MATK)\b\s+\(([^()0-9+%]+)\)\s+\(?[0-9]/i)?.[1];
   return spaced ? normalizeSkillValue(spaced) : "";
@@ -1921,7 +2014,7 @@ function parseSpecRows(note) {
   const changeMatch = note.match(/^(Increases|Reduces|Decreases|Changes)\s+(.+?)\s+from\s+(.+?)\s+to\s+(.+?)(?:\s+based on level\s+(\d+)(?:\s+(\([^)]+\)))?)?\.?$/i);
   if (changeMatch) {
     const label = specLabel(changeMatch[2]);
-    const qualifier = label === "Damage" ? damageMetricQualifier(changeMatch[2]) : "";
+    const qualifier = label === "Base Damage" ? damageMetricQualifier(changeMatch[2]) : "";
     rows.push({
       label,
       before: appendDamageQualifier(normalizeSkillValue(changeMatch[3]), qualifier),
@@ -1975,7 +2068,7 @@ function specLabel(rawMetric) {
   if (metric.includes("sp consumption")) return "SP Cost";
   if (metric.includes("ap consumption")) return "AP Consumed";
   if (metric.includes("ap recovery")) return "AP Generated";
-  if (/^(?:base\s+)?damage\b/.test(metric)) return "Damage";
+  if (isBaseDamageMetric(metric)) return "Base Damage";
   if (metric.includes("cooldown")) return "Cooldown";
   if (metric.includes("delay")) return "Cast Delay";
   if (metric.includes("cast range")) return "Cast Range";
@@ -1987,17 +2080,24 @@ function specLabel(rawMetric) {
     .join(" ");
 }
 
+function isBaseDamageMetric(label) {
+  const metric = normalizeSkillValue(label).toLowerCase();
+  if (/^damage formula\b/.test(metric) || /^damage bonus\b/.test(metric)) return false;
+  if (/^base\s+damage\b/.test(metric)) return true;
+  return /^damage(?:\s*(?:$|\(|of\b|the\b|primary\b|secondary\b|first\b|second\b|1st\b|2nd\b))/.test(metric);
+}
+
 function mergeSpecRows(rows) {
   const merged = [];
   const damageByScope = new Map();
 
   for (const row of rows) {
-    if (row.label !== "Damage") {
+    if (row.label !== "Base Damage") {
       merged.push(row);
       continue;
     }
 
-    const key = "Damage";
+    const key = "Base Damage";
     const existing = damageByScope.get(key);
     if (!existing) {
       const copy = { ...row };

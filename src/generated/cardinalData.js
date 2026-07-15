@@ -1,5 +1,5 @@
 export const cardinalData = {
-  "generatedAt": "2026-07-13T20:14:10.368Z",
+  "generatedAt": "2026-07-15T23:17:57.060Z",
   "classId": 4256,
   "classSlug": "cardinal",
   "className": "Cardinal",
@@ -1478,8 +1478,20 @@ export const cardinalData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(4,750 + (Fidus Animus Lv x 25))% MATK"
+                "label": "Base Damage",
+                "value": "4,750% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "5,250% MATK (Demon,Undead)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Fidus Animus Lv x 25))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Demon,Undead) + (Fidus Animus Lv x 25))% MATK"
               }
             ],
             "levelTables": [
@@ -1599,7 +1611,7 @@ export const cardinalData = {
                   "source": "Increases AP recovery rate from 1 to 2."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2750%/3500%(demon and undead race)Matk",
                   "after": "4250%/4750%(demon and undead race)Matk",
                   "scope": "Lv 5 (Fidus Animus level 10)",
@@ -1618,7 +1630,7 @@ export const cardinalData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4000%/4500%Matk",
                   "after": "4750%/5250%Matk",
                   "scope": "Lv 5",
@@ -1637,7 +1649,7 @@ export const cardinalData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4750+(Fidus Animus skill level x 25)%/5250+(Fidus Animus skill level x 25)%(demon and undead)Matk",
                   "after": "6500+(Fidus Animus skill level x 25)%/6750+(Fidus Animus skill level x 25)%(demon and undead)Matk",
                   "scope": "Lv 5",
@@ -1836,8 +1848,12 @@ export const cardinalData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "(10,500 + (Mace & Book Mastery level x 500))% ATK"
+                "label": "Base Damage",
+                "value": "10,500% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Mace & Book Mastery level x 500))% ATK"
               }
             ],
             "levelTables": [
@@ -1985,7 +2001,7 @@ export const cardinalData = {
                   "source": "Increases AP recovery rate from 2 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3200%Atk",
                   "after": "11500%Atk",
                   "scope": "Lv 10 (Mace & Book Mastery Level 10)",
@@ -2372,8 +2388,20 @@ export const cardinalData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(10,000 + (Fidus Animus Lv x 100))% MATK"
+                "label": "Base Damage",
+                "value": "10,000% MATK (1st)"
+              },
+              {
+                "label": "Base Damage",
+                "value": "17,500% MATK (2nd)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (1st) + (Fidus Animus Lv x 100))% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (2nd) + (Fidus Animus Lv x 500))% MATK"
               }
             ],
             "levelTables": [
@@ -2472,7 +2500,7 @@ export const cardinalData = {
                   "source": "Reduces cooldown from 3 seconds to 2 seconds based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2500%Matk (includes Fidus Animus level 10 bonus)/1900%Matk (secondary attack)",
                   "after": "5000%Matk (includes Fidus Animus level 10 bonus)/6500%Matk (secondary attack)",
                   "scope": "Lv 10",
@@ -2507,7 +2535,7 @@ export const cardinalData = {
                   "source": "Reduces SP consumption from 140 to 112 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5000%/6500%(area damage)Matk",
                   "after": "11000%/13500%(area damage)Matk",
                   "scope": "Lv 10",
@@ -2545,7 +2573,7 @@ export const cardinalData = {
                   "source": "Increases SP consumption from 112 to 125 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "12500%Matk (area damage)",
                   "after": "17500%Matk (area damage)",
                   "scope": "Lv 10",
@@ -2678,8 +2706,12 @@ export const cardinalData = {
                 "value": "holy property magical damage"
               },
               {
-                "label": "Damage",
-                "value": "(20,000 + (Fidus Animus level x 70))% MATK"
+                "label": "Base Damage",
+                "value": "20,000% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Fidus Animus level x 70))% MATK"
               }
             ],
             "levelTables": []
@@ -2870,8 +2902,12 @@ export const cardinalData = {
                 "value": "12"
               },
               {
-                "label": "Damage",
-                "value": "16,500% ATK/18,000% ATK (Demon, Undead)"
+                "label": "Base Damage",
+                "value": "16,500% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "18,000% ATK (Demon, Undead)"
               }
             ],
             "levelTables": [
@@ -2994,7 +3030,7 @@ export const cardinalData = {
                   "source": "Reduces AP consumption from 100 to 12."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8080%/12150%(demon and undead race)Atk",
                   "after": "16580%/18150%(demon and undead race)Atk",
                   "scope": "Lv 10 (Mace & Book Mastery Level 10)",
@@ -3696,8 +3732,12 @@ export const cardinalData = {
                 "value": "3 seconds"
               },
               {
-                "label": "Damage",
-                "value": "21,150% MATK/22,700% MATK (Demon, Undead)"
+                "label": "Base Damage",
+                "value": "21,150% MATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "22,700% MATK (Demon, Undead)"
               }
             ],
             "levelTables": [
@@ -3825,7 +3865,7 @@ export const cardinalData = {
                   "source": "Reduces AP consumption from 150 to 30."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2030%/3050%(demon and undead race)Matk",
                   "after": "21180%/22750%(demon and undead race)Matk per hit",
                   "scope": "Lv 10 (Fidus Animus level 10)",
@@ -3854,9 +3894,9 @@ export const cardinalData = {
                   "source": "Reduces AP consumption from 30 to 20."
                 },
                 {
-                  "label": "Damage",
-                  "before": "holy (property)",
-                  "after": "neutral (property)",
+                  "label": "Damage Property",
+                  "before": "holy",
+                  "after": "neutral",
                   "scope": "",
                   "source": "Changes damage property from holy to neutral."
                 }
@@ -4351,7 +4391,7 @@ export const cardinalData = {
                 "value": "3 x 3"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,000% MATK"
               }
             ],
@@ -8016,7 +8056,7 @@ export const cardinalData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,800% MATK"
               }
             ],
@@ -19903,8 +19943,20 @@ export const cardinalData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(4,750 + (Fidus Animus Lv x 25))% MATK"
+            "label": "Base Damage",
+            "value": "4,750% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "5,250% MATK (Demon,Undead)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Fidus Animus Lv x 25))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Demon,Undead) + (Fidus Animus Lv x 25))% MATK"
           }
         ],
         "levelTables": [
@@ -20024,7 +20076,7 @@ export const cardinalData = {
               "source": "Increases AP recovery rate from 1 to 2."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2750%/3500%(demon and undead race)Matk",
               "after": "4250%/4750%(demon and undead race)Matk",
               "scope": "Lv 5 (Fidus Animus level 10)",
@@ -20043,7 +20095,7 @@ export const cardinalData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4000%/4500%Matk",
               "after": "4750%/5250%Matk",
               "scope": "Lv 5",
@@ -20062,7 +20114,7 @@ export const cardinalData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4750+(Fidus Animus skill level x 25)%/5250+(Fidus Animus skill level x 25)%(demon and undead)Matk",
               "after": "6500+(Fidus Animus skill level x 25)%/6750+(Fidus Animus skill level x 25)%(demon and undead)Matk",
               "scope": "Lv 5",
@@ -20261,8 +20313,12 @@ export const cardinalData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "(10,500 + (Mace & Book Mastery level x 500))% ATK"
+            "label": "Base Damage",
+            "value": "10,500% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Mace & Book Mastery level x 500))% ATK"
           }
         ],
         "levelTables": [
@@ -20410,7 +20466,7 @@ export const cardinalData = {
               "source": "Increases AP recovery rate from 2 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3200%Atk",
               "after": "11500%Atk",
               "scope": "Lv 10 (Mace & Book Mastery Level 10)",
@@ -20797,8 +20853,20 @@ export const cardinalData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(10,000 + (Fidus Animus Lv x 100))% MATK"
+            "label": "Base Damage",
+            "value": "10,000% MATK (1st)"
+          },
+          {
+            "label": "Base Damage",
+            "value": "17,500% MATK (2nd)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (1st) + (Fidus Animus Lv x 100))% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (2nd) + (Fidus Animus Lv x 500))% MATK"
           }
         ],
         "levelTables": [
@@ -20897,7 +20965,7 @@ export const cardinalData = {
               "source": "Reduces cooldown from 3 seconds to 2 seconds based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2500%Matk (includes Fidus Animus level 10 bonus)/1900%Matk (secondary attack)",
               "after": "5000%Matk (includes Fidus Animus level 10 bonus)/6500%Matk (secondary attack)",
               "scope": "Lv 10",
@@ -20932,7 +21000,7 @@ export const cardinalData = {
               "source": "Reduces SP consumption from 140 to 112 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5000%/6500%(area damage)Matk",
               "after": "11000%/13500%(area damage)Matk",
               "scope": "Lv 10",
@@ -20970,7 +21038,7 @@ export const cardinalData = {
               "source": "Increases SP consumption from 112 to 125 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "12500%Matk (area damage)",
               "after": "17500%Matk (area damage)",
               "scope": "Lv 10",
@@ -21103,8 +21171,12 @@ export const cardinalData = {
             "value": "holy property magical damage"
           },
           {
-            "label": "Damage",
-            "value": "(20,000 + (Fidus Animus level x 70))% MATK"
+            "label": "Base Damage",
+            "value": "20,000% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Fidus Animus level x 70))% MATK"
           }
         ],
         "levelTables": []
@@ -21295,8 +21367,12 @@ export const cardinalData = {
             "value": "12"
           },
           {
-            "label": "Damage",
-            "value": "16,500% ATK/18,000% ATK (Demon, Undead)"
+            "label": "Base Damage",
+            "value": "16,500% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "18,000% ATK (Demon, Undead)"
           }
         ],
         "levelTables": [
@@ -21419,7 +21495,7 @@ export const cardinalData = {
               "source": "Reduces AP consumption from 100 to 12."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8080%/12150%(demon and undead race)Atk",
               "after": "16580%/18150%(demon and undead race)Atk",
               "scope": "Lv 10 (Mace & Book Mastery Level 10)",
@@ -22121,8 +22197,12 @@ export const cardinalData = {
             "value": "3 seconds"
           },
           {
-            "label": "Damage",
-            "value": "21,150% MATK/22,700% MATK (Demon, Undead)"
+            "label": "Base Damage",
+            "value": "21,150% MATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "22,700% MATK (Demon, Undead)"
           }
         ],
         "levelTables": [
@@ -22250,7 +22330,7 @@ export const cardinalData = {
               "source": "Reduces AP consumption from 150 to 30."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2030%/3050%(demon and undead race)Matk",
               "after": "21180%/22750%(demon and undead race)Matk per hit",
               "scope": "Lv 10 (Fidus Animus level 10)",
@@ -22279,9 +22359,9 @@ export const cardinalData = {
               "source": "Reduces AP consumption from 30 to 20."
             },
             {
-              "label": "Damage",
-              "before": "holy (property)",
-              "after": "neutral (property)",
+              "label": "Damage Property",
+              "before": "holy",
+              "after": "neutral",
               "scope": "",
               "source": "Changes damage property from holy to neutral."
             }

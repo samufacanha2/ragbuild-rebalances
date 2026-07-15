@@ -1,5 +1,5 @@
 export const meisterData = {
-  "generatedAt": "2026-07-13T20:14:04.492Z",
+  "generatedAt": "2026-07-15T23:17:50.873Z",
   "classId": 4253,
   "classSlug": "meister",
   "className": "Meister",
@@ -762,7 +762,7 @@ export const meisterData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "5,150% ATK per hit"
               }
             ],
@@ -836,7 +836,7 @@ export const meisterData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1750%Atk",
                   "after": "2000%Atk",
                   "scope": "Lv 5",
@@ -908,7 +908,7 @@ export const meisterData = {
                   "source": "Increases duration of Axe Stomp buff from 10 seconds to 30 seconds based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2000%Atk",
                   "after": "4600%Atk per hit",
                   "scope": "Lv 5",
@@ -935,7 +935,7 @@ export const meisterData = {
                   "source": "Increases SP consumption from 74 to 85 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4600%Atk",
                   "after": "5150%Atk per hit",
                   "scope": "Lv 5",
@@ -962,7 +962,7 @@ export const meisterData = {
                   "source": "Increases global cooldown from 0.25 seconds to 0.7 seconds based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5150%Atk",
                   "after": "6200%Atk per hit",
                   "scope": "Lv 5",
@@ -1739,7 +1739,7 @@ export const meisterData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "9,250% ATK per hit"
               }
             ],
@@ -1852,7 +1852,7 @@ export const meisterData = {
                   "source": "Reduces skill cooldown from 0.7 seconds to 0.5 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "7750%Atk",
                   "after": "9250%Atk per hit",
                   "scope": "Lv 10",
@@ -1871,7 +1871,7 @@ export const meisterData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "9250%Atk",
                   "after": "14600%Atk",
                   "scope": "Lv 10",
@@ -2043,8 +2043,12 @@ export const meisterData = {
                 "value": "Instant Cast"
               },
               {
-                "label": "Damage",
-                "value": "1,825% ATK per hit/1,850% ATK per hit (A x e Stomp)"
+                "label": "Base Damage",
+                "value": "1,825% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "1,850% ATK per hit (A x e Stomp)"
               }
             ],
             "levelTables": [
@@ -2167,7 +2171,7 @@ export const meisterData = {
                   "source": "Increases SP consumption from 78 to 95 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3100%/3150%Atk",
                   "after": "1825%/1850%Atk per hit",
                   "scope": "Lv 10",
@@ -2201,7 +2205,7 @@ export const meisterData = {
                   "source": "Increases global cooldown from 0.25 seconds to 0.7 seconds based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1825%/1850%(A x e Stomp)Atk",
                   "after": "2480%/2500%(A x e Stomp)Atk per hit",
                   "scope": "Lv 10",
@@ -2391,7 +2395,7 @@ export const meisterData = {
                 "value": "150"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "36,000% ATK"
               }
             ],
@@ -2518,7 +2522,7 @@ export const meisterData = {
                   "source": "Removes 0.5 seconds delay after skill."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "7500%/11000%(formless and insect race)Atk",
                   "after": "36000%/37500%(formless and insect race)Atk",
                   "scope": "Lv 10",
@@ -2978,7 +2982,7 @@ export const meisterData = {
                 "value": "Single Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "5,050% ATK per hit"
               }
             ],
@@ -3049,7 +3053,7 @@ export const meisterData = {
                   "source": "Increases skill cooldown from 0.25 seconds to 0.35 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3300%Atk",
                   "after": "5050%Atk per hit",
                   "scope": "Lv 5",
@@ -3075,7 +3079,7 @@ export const meisterData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5050%Atk",
                   "after": "6400%Atk per hit",
                   "scope": "Lv 5",
@@ -3164,7 +3168,7 @@ export const meisterData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "17,500% ATK"
               }
             ],
@@ -3294,8 +3298,12 @@ export const meisterData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "4,550% ATK per hit/5,150% ATK per hit (A x e Stomp)"
+                "label": "Base Damage",
+                "value": "4,550% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "5,150% ATK per hit (A x e Stomp)"
               }
             ],
             "levelTables": [
@@ -3607,7 +3615,7 @@ export const meisterData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "4,000% ATK per hit"
               }
             ],
@@ -5224,7 +5232,7 @@ export const meisterData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,300% ATK"
               }
             ],
@@ -5304,7 +5312,7 @@ export const meisterData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1100%Atk",
                   "after": "1300%Atk",
                   "scope": "Lv 5",
@@ -5941,7 +5949,7 @@ export const meisterData = {
                 "value": "5 x 5 ~ 7 x 7"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,100% ATK"
               }
             ],
@@ -6029,9 +6037,9 @@ export const meisterData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "1360%Atk (while under A x e Stomp buff (on Vit 130))",
-                  "after": "1740%Atk (while under A x e Stomp buff (on Vit 130))",
+                  "label": "Damage While Under Axe Stomp Buff (on Vit 130)",
+                  "before": "1360%Atk",
+                  "after": "1740%Atk",
                   "scope": "Lv 5",
                   "source": "Increases damage while under Axe Stomp buff (on Vit 130) from 1360%Atk to 1740%Atk based on level 5."
                 }
@@ -7014,7 +7022,7 @@ export const meisterData = {
                 "value": "1 Vulcan Bullet"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "690% ATK"
               }
             ],
@@ -7077,7 +7085,7 @@ export const meisterData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "420%Atk",
                   "after": "690%Atk",
                   "scope": "Lv 3",
@@ -7870,7 +7878,7 @@ export const meisterData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,300% ATK"
               }
             ],
@@ -9914,7 +9922,7 @@ export const meisterData = {
                 "value": "1 Cannon Ball"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,150% ATK"
               }
             ],
@@ -10023,7 +10031,7 @@ export const meisterData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1900%Atk",
                   "after": "2150%Atk",
                   "scope": "Lv 5",
@@ -18321,7 +18329,7 @@ export const meisterData = {
             "value": "3"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "5,150% ATK per hit"
           }
         ],
@@ -18395,7 +18403,7 @@ export const meisterData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1750%Atk",
               "after": "2000%Atk",
               "scope": "Lv 5",
@@ -18467,7 +18475,7 @@ export const meisterData = {
               "source": "Increases duration of Axe Stomp buff from 10 seconds to 30 seconds based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2000%Atk",
               "after": "4600%Atk per hit",
               "scope": "Lv 5",
@@ -18494,7 +18502,7 @@ export const meisterData = {
               "source": "Increases SP consumption from 74 to 85 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4600%Atk",
               "after": "5150%Atk per hit",
               "scope": "Lv 5",
@@ -18521,7 +18529,7 @@ export const meisterData = {
               "source": "Increases global cooldown from 0.25 seconds to 0.7 seconds based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5150%Atk",
               "after": "6200%Atk per hit",
               "scope": "Lv 5",
@@ -19298,7 +19306,7 @@ export const meisterData = {
             "value": "2"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "9,250% ATK per hit"
           }
         ],
@@ -19411,7 +19419,7 @@ export const meisterData = {
               "source": "Reduces skill cooldown from 0.7 seconds to 0.5 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "7750%Atk",
               "after": "9250%Atk per hit",
               "scope": "Lv 10",
@@ -19430,7 +19438,7 @@ export const meisterData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "9250%Atk",
               "after": "14600%Atk",
               "scope": "Lv 10",
@@ -19602,8 +19610,12 @@ export const meisterData = {
             "value": "Instant Cast"
           },
           {
-            "label": "Damage",
-            "value": "1,825% ATK per hit/1,850% ATK per hit (A x e Stomp)"
+            "label": "Base Damage",
+            "value": "1,825% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "1,850% ATK per hit (A x e Stomp)"
           }
         ],
         "levelTables": [
@@ -19726,7 +19738,7 @@ export const meisterData = {
               "source": "Increases SP consumption from 78 to 95 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3100%/3150%Atk",
               "after": "1825%/1850%Atk per hit",
               "scope": "Lv 10",
@@ -19760,7 +19772,7 @@ export const meisterData = {
               "source": "Increases global cooldown from 0.25 seconds to 0.7 seconds based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1825%/1850%(A x e Stomp)Atk",
               "after": "2480%/2500%(A x e Stomp)Atk per hit",
               "scope": "Lv 10",
@@ -19950,7 +19962,7 @@ export const meisterData = {
             "value": "150"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "36,000% ATK"
           }
         ],
@@ -20077,7 +20089,7 @@ export const meisterData = {
               "source": "Removes 0.5 seconds delay after skill."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "7500%/11000%(formless and insect race)Atk",
               "after": "36000%/37500%(formless and insect race)Atk",
               "scope": "Lv 10",
@@ -20537,7 +20549,7 @@ export const meisterData = {
             "value": "Single Target"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "5,050% ATK per hit"
           }
         ],
@@ -20608,7 +20620,7 @@ export const meisterData = {
               "source": "Increases skill cooldown from 0.25 seconds to 0.35 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3300%Atk",
               "after": "5050%Atk per hit",
               "scope": "Lv 5",
@@ -20634,7 +20646,7 @@ export const meisterData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5050%Atk",
               "after": "6400%Atk per hit",
               "scope": "Lv 5",
@@ -20723,7 +20735,7 @@ export const meisterData = {
             "value": "2"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "17,500% ATK"
           }
         ],
@@ -20853,8 +20865,12 @@ export const meisterData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "4,550% ATK per hit/5,150% ATK per hit (A x e Stomp)"
+            "label": "Base Damage",
+            "value": "4,550% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "5,150% ATK per hit (A x e Stomp)"
           }
         ],
         "levelTables": [
@@ -21166,7 +21182,7 @@ export const meisterData = {
             "value": "3"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "4,000% ATK per hit"
           }
         ],

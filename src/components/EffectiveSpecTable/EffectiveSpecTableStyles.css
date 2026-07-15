@@ -25,6 +25,22 @@
   font-weight: 700;
 }
 
+.spec-value-card-rows {
+  display: grid;
+  gap: 6px;
+}
+
+.spec-value-card-row {
+  display: block;
+}
+
+.spec-value-card-rows .spec-value-card-row {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface-soft);
+  padding: 7px 8px;
+}
+
 .effective-spec-table td small {
   display: block;
   margin-top: 3px;

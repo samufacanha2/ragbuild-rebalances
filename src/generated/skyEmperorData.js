@@ -1,5 +1,5 @@
 export const skyEmperorData = {
-  "generatedAt": "2026-07-13T20:14:17.645Z",
+  "generatedAt": "2026-07-15T23:18:04.368Z",
   "classId": 4302,
   "classSlug": "sky-emperor",
   "className": "Sky Emperor",
@@ -816,8 +816,12 @@ export const skyEmperorData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(3,500 + (Sky Mastery Lv x 25))% ATK"
+                "label": "Base Damage",
+                "value": "3,500% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -885,7 +889,7 @@ export const skyEmperorData = {
                   "source": "Increases SP consumption from 25 to 60."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2500%Atk",
                   "after": "3500%Atk",
                   "scope": "Lv 5",
@@ -1020,8 +1024,12 @@ export const skyEmperorData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(2,950 + (Sky Mastery Lv x 25))% ATK"
+                "label": "Base Damage",
+                "value": "2,950% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -1089,7 +1097,7 @@ export const skyEmperorData = {
                   "source": "Increases SP consumption from 35 to 64."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2100%Atk",
                   "after": "2950%Atk",
                   "scope": "Lv 5",
@@ -1229,8 +1237,12 @@ export const skyEmperorData = {
                 "value": "0.5 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(2,800 + (Sky Mastery Lv x 15))% ATK"
+                "label": "Base Damage",
+                "value": "2,800% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery Lv x 15))% ATK"
               }
             ],
             "levelTables": [
@@ -1321,7 +1333,7 @@ export const skyEmperorData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2200%Atk",
                   "after": "2800%Atk",
                   "scope": "Lv 5",
@@ -1483,8 +1495,12 @@ export const skyEmperorData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "(7,850 + (Sky Mastery Lv x 25))% ATK"
+                "label": "Base Damage",
+                "value": "7,850% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -1560,7 +1576,7 @@ export const skyEmperorData = {
                   "source": "Increases AP recovery rate from 2 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6000%Atk",
                   "after": "7850%Atk",
                   "scope": "Lv 5",
@@ -1706,8 +1722,20 @@ export const skyEmperorData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "(6,600 + (Sky Mastery Lv x 25))% ATK/(8,800 + (Sky Mastery Lv x 25))% ATK (Midnight)"
+                "label": "Base Damage",
+                "value": "6,600% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "8,800% ATK (Midnight)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Midnight) + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -1783,7 +1811,7 @@ export const skyEmperorData = {
                   "source": "Increases AP recovery rate from 2 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "5500%/7500%(Midnight)Atk",
                   "after": "6600%/8800%(Midnight)Atk",
                   "scope": "Lv 5",
@@ -1802,7 +1830,7 @@ export const skyEmperorData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6600+(Sky Mastery skill level x 25)%/8800+(Sky Mastery skill level x 25)%(Midnight)Atk",
                   "after": "8300+(Sky Mastery skill level x 25)%/10500+(Sky Mastery skill level x 25)%(Midnight)Atk",
                   "scope": "Lv 5",
@@ -1947,8 +1975,12 @@ export const skyEmperorData = {
                 "value": "0.3 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(2,500 + (Sky Mastery Lv x 25))% ATK"
+                "label": "Base Damage",
+                "value": "2,500% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -2149,8 +2181,12 @@ export const skyEmperorData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "(2,950 + (Sky Mastery Lv x 25))% ATK"
+                "label": "Base Damage",
+                "value": "2,950% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -2226,7 +2262,7 @@ export const skyEmperorData = {
                   "source": "Increases AP recovery rate from 2 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2400%Atk",
                   "after": "2950%Atk",
                   "scope": "Lv 5",
@@ -2372,8 +2408,20 @@ export const skyEmperorData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
-                "value": "(2,400 + (Sky Mastery Lv x 25))% ATK/(3,400 + (Sky Mastery Lv x 25))% ATK (Moonset)"
+                "label": "Base Damage",
+                "value": "2,400% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "3,400% ATK (Moonset)"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage (Moonset) + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -2449,7 +2497,7 @@ export const skyEmperorData = {
                   "source": "Increases AP recovery rate from 2 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2300%/3300%(Moonset)Atk",
                   "after": "2400%/3400%(Moonset)Atk",
                   "scope": "Lv 5",
@@ -2468,7 +2516,7 @@ export const skyEmperorData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2400+(Sky Mastery skill level x 25)%/3400+(Sky Mastery skill level x 25)%(Moonset)Atk",
                   "after": "4100+(Sky Mastery skill level x 25)%/5100+(Sky Mastery skill level x 25)%(Moonset)Atk",
                   "scope": "Lv 5",
@@ -2613,8 +2661,12 @@ export const skyEmperorData = {
                 "value": "0.5 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(3,000 + (Sky Mastery Lv x 25))% ATK"
+                "label": "Base Damage",
+                "value": "3,000% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
               }
             ],
             "levelTables": [
@@ -2715,7 +2767,7 @@ export const skyEmperorData = {
                   "source": "Reduces skill cooldown from 5 seconds to 3.5 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2700%Atk",
                   "after": "3000%Atk",
                   "scope": "Lv 5",
@@ -2937,7 +2989,7 @@ export const skyEmperorData = {
                 "value": "70"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "12,250% ATK per hit"
               }
             ],
@@ -3060,7 +3112,7 @@ export const skyEmperorData = {
                   "source": "Reduces AP consumption from 100 to 35."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "20000%Atk",
                   "after": "23000%Atk per hit",
                   "scope": "Lv 10",
@@ -3413,8 +3465,12 @@ export const skyEmperorData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(7,500 + (Sky Mastery level x 35))% ATK"
+                "label": "Base Damage",
+                "value": "7,500% ATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery level x 35))% ATK"
               }
             ],
             "levelTables": []
@@ -3545,8 +3601,12 @@ export const skyEmperorData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(3,450 + (Sky Mastery level x 45))% ATK per hit"
+                "label": "Base Damage",
+                "value": "3,450% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery level x 45))% ATK per hit"
               }
             ],
             "levelTables": []
@@ -3657,8 +3717,12 @@ export const skyEmperorData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "(1,400 + (Sky Mastery level x 25))% ATK per hit"
+                "label": "Base Damage",
+                "value": "1,400% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Sky Mastery level x 25))% ATK per hit"
               }
             ],
             "levelTables": []
@@ -6901,7 +6965,7 @@ export const skyEmperorData = {
                 "value": "0 seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,100% ATK"
               }
             ],
@@ -11892,7 +11956,7 @@ export const skyEmperorData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% ATK"
               }
             ],
@@ -12080,7 +12144,7 @@ export const skyEmperorData = {
                 "value": "Self"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% ATK"
               }
             ],
@@ -12268,7 +12332,7 @@ export const skyEmperorData = {
                 "value": "Self"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "400% ATK"
               }
             ],
@@ -12640,7 +12704,7 @@ export const skyEmperorData = {
                 "value": "Enemy, Self"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "100% ATK"
               }
             ],
@@ -15010,8 +15074,12 @@ export const skyEmperorData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(3,500 + (Sky Mastery Lv x 25))% ATK"
+            "label": "Base Damage",
+            "value": "3,500% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -15079,7 +15147,7 @@ export const skyEmperorData = {
               "source": "Increases SP consumption from 25 to 60."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2500%Atk",
               "after": "3500%Atk",
               "scope": "Lv 5",
@@ -15214,8 +15282,12 @@ export const skyEmperorData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(2,950 + (Sky Mastery Lv x 25))% ATK"
+            "label": "Base Damage",
+            "value": "2,950% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -15283,7 +15355,7 @@ export const skyEmperorData = {
               "source": "Increases SP consumption from 35 to 64."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2100%Atk",
               "after": "2950%Atk",
               "scope": "Lv 5",
@@ -15423,8 +15495,12 @@ export const skyEmperorData = {
             "value": "0.5 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(2,800 + (Sky Mastery Lv x 15))% ATK"
+            "label": "Base Damage",
+            "value": "2,800% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery Lv x 15))% ATK"
           }
         ],
         "levelTables": [
@@ -15515,7 +15591,7 @@ export const skyEmperorData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2200%Atk",
               "after": "2800%Atk",
               "scope": "Lv 5",
@@ -15677,8 +15753,12 @@ export const skyEmperorData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "(7,850 + (Sky Mastery Lv x 25))% ATK"
+            "label": "Base Damage",
+            "value": "7,850% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -15754,7 +15834,7 @@ export const skyEmperorData = {
               "source": "Increases AP recovery rate from 2 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6000%Atk",
               "after": "7850%Atk",
               "scope": "Lv 5",
@@ -15900,8 +15980,20 @@ export const skyEmperorData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "(6,600 + (Sky Mastery Lv x 25))% ATK/(8,800 + (Sky Mastery Lv x 25))% ATK (Midnight)"
+            "label": "Base Damage",
+            "value": "6,600% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "8,800% ATK (Midnight)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Midnight) + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -15977,7 +16069,7 @@ export const skyEmperorData = {
               "source": "Increases AP recovery rate from 2 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "5500%/7500%(Midnight)Atk",
               "after": "6600%/8800%(Midnight)Atk",
               "scope": "Lv 5",
@@ -15996,7 +16088,7 @@ export const skyEmperorData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6600+(Sky Mastery skill level x 25)%/8800+(Sky Mastery skill level x 25)%(Midnight)Atk",
               "after": "8300+(Sky Mastery skill level x 25)%/10500+(Sky Mastery skill level x 25)%(Midnight)Atk",
               "scope": "Lv 5",
@@ -16141,8 +16233,12 @@ export const skyEmperorData = {
             "value": "0.3 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(2,500 + (Sky Mastery Lv x 25))% ATK"
+            "label": "Base Damage",
+            "value": "2,500% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -16343,8 +16439,12 @@ export const skyEmperorData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "(2,950 + (Sky Mastery Lv x 25))% ATK"
+            "label": "Base Damage",
+            "value": "2,950% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -16420,7 +16520,7 @@ export const skyEmperorData = {
               "source": "Increases AP recovery rate from 2 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2400%Atk",
               "after": "2950%Atk",
               "scope": "Lv 5",
@@ -16566,8 +16666,20 @@ export const skyEmperorData = {
             "value": "3"
           },
           {
-            "label": "Damage",
-            "value": "(2,400 + (Sky Mastery Lv x 25))% ATK/(3,400 + (Sky Mastery Lv x 25))% ATK (Moonset)"
+            "label": "Base Damage",
+            "value": "2,400% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "3,400% ATK (Moonset)"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage (Moonset) + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -16643,7 +16755,7 @@ export const skyEmperorData = {
               "source": "Increases AP recovery rate from 2 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2300%/3300%(Moonset)Atk",
               "after": "2400%/3400%(Moonset)Atk",
               "scope": "Lv 5",
@@ -16662,7 +16774,7 @@ export const skyEmperorData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2400+(Sky Mastery skill level x 25)%/3400+(Sky Mastery skill level x 25)%(Moonset)Atk",
               "after": "4100+(Sky Mastery skill level x 25)%/5100+(Sky Mastery skill level x 25)%(Moonset)Atk",
               "scope": "Lv 5",
@@ -16807,8 +16919,12 @@ export const skyEmperorData = {
             "value": "0.5 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(3,000 + (Sky Mastery Lv x 25))% ATK"
+            "label": "Base Damage",
+            "value": "3,000% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery Lv x 25))% ATK"
           }
         ],
         "levelTables": [
@@ -16909,7 +17025,7 @@ export const skyEmperorData = {
               "source": "Reduces skill cooldown from 5 seconds to 3.5 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2700%Atk",
               "after": "3000%Atk",
               "scope": "Lv 5",
@@ -17131,7 +17247,7 @@ export const skyEmperorData = {
             "value": "70"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "12,250% ATK per hit"
           }
         ],
@@ -17254,7 +17370,7 @@ export const skyEmperorData = {
               "source": "Reduces AP consumption from 100 to 35."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "20000%Atk",
               "after": "23000%Atk per hit",
               "scope": "Lv 10",
@@ -17607,8 +17723,12 @@ export const skyEmperorData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(7,500 + (Sky Mastery level x 35))% ATK"
+            "label": "Base Damage",
+            "value": "7,500% ATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery level x 35))% ATK"
           }
         ],
         "levelTables": []
@@ -17739,8 +17859,12 @@ export const skyEmperorData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(3,450 + (Sky Mastery level x 45))% ATK per hit"
+            "label": "Base Damage",
+            "value": "3,450% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery level x 45))% ATK per hit"
           }
         ],
         "levelTables": []
@@ -17851,8 +17975,12 @@ export const skyEmperorData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "(1,400 + (Sky Mastery level x 25))% ATK per hit"
+            "label": "Base Damage",
+            "value": "1,400% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Sky Mastery level x 25))% ATK per hit"
           }
         ],
         "levelTables": []

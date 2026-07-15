@@ -1,5 +1,5 @@
 export const inquisitorData = {
-  "generatedAt": "2026-07-13T20:14:11.443Z",
+  "generatedAt": "2026-07-15T23:17:58.121Z",
   "classId": 4262,
   "classSlug": "inquisitor",
   "className": "Inquisitor",
@@ -1181,7 +1181,7 @@ export const inquisitorData = {
                 "value": "Single Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "6,000% ATK"
               }
             ],
@@ -1269,7 +1269,7 @@ export const inquisitorData = {
                   "source": "Increases cast range from 2 cells to 3 cells."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2250%Atk",
                   "after": "6000%Atk",
                   "scope": "Lv 5",
@@ -1432,7 +1432,7 @@ export const inquisitorData = {
                 "value": "Instant Cast"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "10,500% ATK"
               }
             ],
@@ -1556,7 +1556,7 @@ export const inquisitorData = {
                   "source": "Increases SP consumption from 70 to 85 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2000%Atk",
                   "after": "10500%Atk",
                   "scope": "Lv 5",
@@ -2328,8 +2328,12 @@ export const inquisitorData = {
                 "value": "4"
               },
               {
-                "label": "Damage",
-                "value": "12,000% ATK/17,600% ATK (Oleum Sanctum)"
+                "label": "Base Damage",
+                "value": "12,000% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "17,600% ATK (Oleum Sanctum)"
               }
             ],
             "levelTables": [
@@ -2424,11 +2428,18 @@ export const inquisitorData = {
                   "source": "Reduces AP recovery rate from 5 to 4."
                 },
                 {
-                  "label": "Damage",
-                  "before": "2250%Atk/3000%Atk (to the target who is inflicted by Oleum Sanctum)",
-                  "after": "3250%Atk/4250%Atk (to the target who is inflicted by Oleum Sanctum)",
+                  "label": "Base Damage",
+                  "before": "2250%Atk",
+                  "after": "3250%Atk",
                   "scope": "Lv 5",
-                  "source": "Increases damage from 2250%Atk to 3250%Atk based on level 5. / Increases damage to the target who is inflicted by Oleum Sanctum from 3000%Atk to 4250%Atk based on level 5."
+                  "source": "Increases damage from 2250%Atk to 3250%Atk based on level 5."
+                },
+                {
+                  "label": "Damage To The Target Who Is Inflicted By Oleum Sanctum",
+                  "before": "3000%Atk",
+                  "after": "4250%Atk",
+                  "scope": "Lv 5",
+                  "source": "Increases damage to the target who is inflicted by Oleum Sanctum from 3000%Atk to 4250%Atk based on level 5."
                 }
               ]
             },
@@ -2461,7 +2472,7 @@ export const inquisitorData = {
                   "source": "Reduces SP consumption from 120 to 90 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3250%/4250%(Oleum Sanctum)Atk",
                   "after": "14000%/16000%(Oleum Sanctum)Atk per hit",
                   "scope": "Lv 5",
@@ -2513,7 +2524,7 @@ export const inquisitorData = {
                   "source": "Reduces area of effect from 11 x 11 cells to 9 x 9 cells based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "14000%Atk (of)/16000%Atk (against Oleum Sanctum debuff)",
                   "after": "12000%Atk (of)/17600%Atk (against Oleum Sanctum debuff)",
                   "scope": "Lv 5",
@@ -2539,7 +2550,7 @@ export const inquisitorData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "12000%/17600%(Oleum Sanctum)Atk",
                   "after": "13450%/18200%(Oleum Sanctum)Atk",
                   "scope": "Lv 5",
@@ -2674,7 +2685,7 @@ export const inquisitorData = {
                 "value": "4"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "11,600% ATK"
               }
             ],
@@ -2761,7 +2772,7 @@ export const inquisitorData = {
                   "source": "Increases AP recovery rate from 1 to 4."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2500%Atk",
                   "after": "11600%Atk",
                   "scope": "Lv 5",
@@ -2903,7 +2914,7 @@ export const inquisitorData = {
                 "value": "4"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "13,150% ATK"
               }
             ],
@@ -3079,7 +3090,7 @@ export const inquisitorData = {
                 "value": "4"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "14,700% ATK"
               }
             ],
@@ -3166,7 +3177,7 @@ export const inquisitorData = {
                   "source": "Increases AP recovery rate from 3 to 4."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2750%Atk",
                   "after": "14700%Atk",
                   "scope": "Lv 5",
@@ -3380,8 +3391,12 @@ export const inquisitorData = {
                 "value": "150"
               },
               {
-                "label": "Damage",
-                "value": "23,000% ATK/24,500% ATK (Demon, Brute)"
+                "label": "Base Damage",
+                "value": "23,000% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "24,500% ATK (Demon, Brute)"
               }
             ],
             "levelTables": [
@@ -3509,7 +3524,7 @@ export const inquisitorData = {
                   "source": "Reduces AP consumption from 150 to 12."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "8000%/11000%(demon and brute race)Atk",
                   "after": "21500%/23000%(demon and brute race)Atk",
                   "scope": "Lv 10",
@@ -3558,7 +3573,7 @@ export const inquisitorData = {
                   "source": "Reduces area of effect from 11 x 11 cells to 9 x 9 cells."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "21500%/23000%Atk",
                   "after": "23000%/24500%Atk",
                   "scope": "Lv 10",
@@ -3689,7 +3704,7 @@ export const inquisitorData = {
                 "value": "Single Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "7,850% ATK per hit"
               }
             ],
@@ -3861,7 +3876,7 @@ export const inquisitorData = {
                 "value": "Single Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,500% ATK per hit"
               }
             ],
@@ -3922,9 +3937,9 @@ export const inquisitorData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
-                  "before": "3 split hits (logic)",
-                  "after": "5 cumulative hits (logic)",
+                  "label": "Damage Logic",
+                  "before": "3 split hits",
+                  "after": "5 cumulative hits",
                   "scope": "",
                   "source": "Changes damage logic from 3 split hits to 5 cumulative hits."
                 }
@@ -3951,7 +3966,7 @@ export const inquisitorData = {
                   "source": "Reduces cooldown from 2 seconds to 1 second."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3250%Atk",
                   "after": "3500%Atk per hit",
                   "scope": "Lv 5",
@@ -4089,8 +4104,12 @@ export const inquisitorData = {
                 "value": "Single Target"
               },
               {
-                "label": "Damage",
-                "value": "(3250 + MHP 20%)% ATK per hit"
+                "label": "Base Damage",
+                "value": "3,250% ATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + MHP 20%)% ATK per hit"
               }
             ],
             "levelTables": [
@@ -4290,8 +4309,12 @@ export const inquisitorData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "21,000% ATK/24,500% ATK (Massive Flame Blaster)"
+                "label": "Base Damage",
+                "value": "21,000% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "24,500% ATK (Massive Flame Blaster)"
               }
             ],
             "levelTables": []
@@ -4689,8 +4712,12 @@ export const inquisitorData = {
                 "value": "3 x 3 ~ 7 x 7"
               },
               {
-                "label": "Damage",
-                "value": "200% ATK/450% ATK (Knuckle)"
+                "label": "Base Damage",
+                "value": "200% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "450% ATK (Knuckle)"
               }
             ],
             "levelTables": [
@@ -4992,7 +5019,7 @@ export const inquisitorData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "900% ATK"
               }
             ],
@@ -5268,7 +5295,7 @@ export const inquisitorData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,000% ATK"
               }
             ],
@@ -5806,7 +5833,7 @@ export const inquisitorData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "500% ATK"
               }
             ],
@@ -6742,7 +6769,7 @@ export const inquisitorData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,100% ATK"
               }
             ],
@@ -7053,7 +7080,7 @@ export const inquisitorData = {
                 "value": "Self"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,500% ATK"
               }
             ],
@@ -7654,7 +7681,7 @@ export const inquisitorData = {
                 "value": "5 x 5 ~ 9 x 9"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,500% ATK"
               }
             ],
@@ -9867,7 +9894,7 @@ export const inquisitorData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,500% ATK"
               }
             ],
@@ -11976,7 +12003,7 @@ export const inquisitorData = {
                 "value": "1.3 – ( AGI × 0.004) − ( DE x × 0.002) seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "300% ATK"
               }
             ],
@@ -12415,7 +12442,7 @@ export const inquisitorData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "500% ATK"
               }
             ],
@@ -12876,7 +12903,7 @@ export const inquisitorData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "500% ATK"
               }
             ],
@@ -13049,7 +13076,7 @@ export const inquisitorData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "700% ATK"
               }
             ],
@@ -13598,7 +13625,7 @@ export const inquisitorData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,600% ATK"
               }
             ],
@@ -14599,7 +14626,7 @@ export const inquisitorData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,250% ATK"
               }
             ],
@@ -14932,7 +14959,7 @@ export const inquisitorData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,000% ATK"
               }
             ],
@@ -18990,7 +19017,7 @@ export const inquisitorData = {
             "value": "Single Target"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "6,000% ATK"
           }
         ],
@@ -19078,7 +19105,7 @@ export const inquisitorData = {
               "source": "Increases cast range from 2 cells to 3 cells."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2250%Atk",
               "after": "6000%Atk",
               "scope": "Lv 5",
@@ -19241,7 +19268,7 @@ export const inquisitorData = {
             "value": "Instant Cast"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "10,500% ATK"
           }
         ],
@@ -19365,7 +19392,7 @@ export const inquisitorData = {
               "source": "Increases SP consumption from 70 to 85 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2000%Atk",
               "after": "10500%Atk",
               "scope": "Lv 5",
@@ -20137,8 +20164,12 @@ export const inquisitorData = {
             "value": "4"
           },
           {
-            "label": "Damage",
-            "value": "12,000% ATK/17,600% ATK (Oleum Sanctum)"
+            "label": "Base Damage",
+            "value": "12,000% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "17,600% ATK (Oleum Sanctum)"
           }
         ],
         "levelTables": [
@@ -20233,11 +20264,18 @@ export const inquisitorData = {
               "source": "Reduces AP recovery rate from 5 to 4."
             },
             {
-              "label": "Damage",
-              "before": "2250%Atk/3000%Atk (to the target who is inflicted by Oleum Sanctum)",
-              "after": "3250%Atk/4250%Atk (to the target who is inflicted by Oleum Sanctum)",
+              "label": "Base Damage",
+              "before": "2250%Atk",
+              "after": "3250%Atk",
               "scope": "Lv 5",
-              "source": "Increases damage from 2250%Atk to 3250%Atk based on level 5. / Increases damage to the target who is inflicted by Oleum Sanctum from 3000%Atk to 4250%Atk based on level 5."
+              "source": "Increases damage from 2250%Atk to 3250%Atk based on level 5."
+            },
+            {
+              "label": "Damage To The Target Who Is Inflicted By Oleum Sanctum",
+              "before": "3000%Atk",
+              "after": "4250%Atk",
+              "scope": "Lv 5",
+              "source": "Increases damage to the target who is inflicted by Oleum Sanctum from 3000%Atk to 4250%Atk based on level 5."
             }
           ]
         },
@@ -20270,7 +20308,7 @@ export const inquisitorData = {
               "source": "Reduces SP consumption from 120 to 90 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3250%/4250%(Oleum Sanctum)Atk",
               "after": "14000%/16000%(Oleum Sanctum)Atk per hit",
               "scope": "Lv 5",
@@ -20322,7 +20360,7 @@ export const inquisitorData = {
               "source": "Reduces area of effect from 11 x 11 cells to 9 x 9 cells based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "14000%Atk (of)/16000%Atk (against Oleum Sanctum debuff)",
               "after": "12000%Atk (of)/17600%Atk (against Oleum Sanctum debuff)",
               "scope": "Lv 5",
@@ -20348,7 +20386,7 @@ export const inquisitorData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "12000%/17600%(Oleum Sanctum)Atk",
               "after": "13450%/18200%(Oleum Sanctum)Atk",
               "scope": "Lv 5",
@@ -20483,7 +20521,7 @@ export const inquisitorData = {
             "value": "4"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "11,600% ATK"
           }
         ],
@@ -20570,7 +20608,7 @@ export const inquisitorData = {
               "source": "Increases AP recovery rate from 1 to 4."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2500%Atk",
               "after": "11600%Atk",
               "scope": "Lv 5",
@@ -20712,7 +20750,7 @@ export const inquisitorData = {
             "value": "4"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "13,150% ATK"
           }
         ],
@@ -20888,7 +20926,7 @@ export const inquisitorData = {
             "value": "4"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "14,700% ATK"
           }
         ],
@@ -20975,7 +21013,7 @@ export const inquisitorData = {
               "source": "Increases AP recovery rate from 3 to 4."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2750%Atk",
               "after": "14700%Atk",
               "scope": "Lv 5",
@@ -21189,8 +21227,12 @@ export const inquisitorData = {
             "value": "150"
           },
           {
-            "label": "Damage",
-            "value": "23,000% ATK/24,500% ATK (Demon, Brute)"
+            "label": "Base Damage",
+            "value": "23,000% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "24,500% ATK (Demon, Brute)"
           }
         ],
         "levelTables": [
@@ -21318,7 +21360,7 @@ export const inquisitorData = {
               "source": "Reduces AP consumption from 150 to 12."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "8000%/11000%(demon and brute race)Atk",
               "after": "21500%/23000%(demon and brute race)Atk",
               "scope": "Lv 10",
@@ -21367,7 +21409,7 @@ export const inquisitorData = {
               "source": "Reduces area of effect from 11 x 11 cells to 9 x 9 cells."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "21500%/23000%Atk",
               "after": "23000%/24500%Atk",
               "scope": "Lv 10",
@@ -21498,7 +21540,7 @@ export const inquisitorData = {
             "value": "Single Target"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "7,850% ATK per hit"
           }
         ],
@@ -21670,7 +21712,7 @@ export const inquisitorData = {
             "value": "Single Target"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "3,500% ATK per hit"
           }
         ],
@@ -21731,9 +21773,9 @@ export const inquisitorData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
-              "before": "3 split hits (logic)",
-              "after": "5 cumulative hits (logic)",
+              "label": "Damage Logic",
+              "before": "3 split hits",
+              "after": "5 cumulative hits",
               "scope": "",
               "source": "Changes damage logic from 3 split hits to 5 cumulative hits."
             }
@@ -21760,7 +21802,7 @@ export const inquisitorData = {
               "source": "Reduces cooldown from 2 seconds to 1 second."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3250%Atk",
               "after": "3500%Atk per hit",
               "scope": "Lv 5",
@@ -21898,8 +21940,12 @@ export const inquisitorData = {
             "value": "Single Target"
           },
           {
-            "label": "Damage",
-            "value": "(3250 + MHP 20%)% ATK per hit"
+            "label": "Base Damage",
+            "value": "3,250% ATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + MHP 20%)% ATK per hit"
           }
         ],
         "levelTables": [
@@ -22099,8 +22145,12 @@ export const inquisitorData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "21,000% ATK/24,500% ATK (Massive Flame Blaster)"
+            "label": "Base Damage",
+            "value": "21,000% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "24,500% ATK (Massive Flame Blaster)"
           }
         ],
         "levelTables": []

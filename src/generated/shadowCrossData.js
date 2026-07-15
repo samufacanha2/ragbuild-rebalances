@@ -1,5 +1,5 @@
 export const shadowCrossData = {
-  "generatedAt": "2026-07-13T20:14:06.213Z",
+  "generatedAt": "2026-07-15T23:17:52.728Z",
   "classId": 4254,
   "classSlug": "shadow-cross",
   "className": "Shadow Cross",
@@ -797,8 +797,12 @@ export const shadowCrossData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "900% ATK per hit/1,100% ATK per hit (Shadow E x ceed)"
+                "label": "Base Damage",
+                "value": "900% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "1,100% ATK per hit (Shadow E x ceed)"
               }
             ],
             "levelTables": [
@@ -922,11 +926,25 @@ export const shadowCrossData = {
                   "source": "Reduces cooldown from 3 seconds to 1 second based on level 10."
                 },
                 {
-                  "label": "Damage",
-                  "before": "3500%Atk/5000%Atk (while under Shadow E x ceed buff)/8 split hits (logic)",
-                  "after": "600%Atk/1000%Atk (while under Shadow E x ceed buff)/3 cumulative hits (logic)",
+                  "label": "Base Damage",
+                  "before": "3500%Atk",
+                  "after": "600%Atk",
                   "scope": "Lv 10",
-                  "source": "Changes damage from 3500%Atk to 600%Atk based on level 10. / Changes damage while under Shadow Exceed buff from 5000%Atk to 1000%Atk based on level 10. / Changes damage logic from 8 split hits to 3 cumulative hits."
+                  "source": "Changes damage from 3500%Atk to 600%Atk based on level 10."
+                },
+                {
+                  "label": "Damage While Under Shadow Exceed Buff",
+                  "before": "5000%Atk",
+                  "after": "1000%Atk",
+                  "scope": "Lv 10",
+                  "source": "Changes damage while under Shadow Exceed buff from 5000%Atk to 1000%Atk based on level 10."
+                },
+                {
+                  "label": "Damage Logic",
+                  "before": "8 split hits",
+                  "after": "3 cumulative hits",
+                  "scope": "",
+                  "source": "Changes damage logic from 8 split hits to 3 cumulative hits."
                 }
               ]
             },
@@ -957,7 +975,7 @@ export const shadowCrossData = {
                   "source": "Increases area of effect from 3 x 3 cells to 5 x 5 cells."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "600%/1000%(Shadow E x ceed)Atk",
                   "after": "900%/1100%(Shadow E x ceed)Atk per hit",
                   "scope": "Lv 10",
@@ -1004,7 +1022,7 @@ export const shadowCrossData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "900%/1100%(Shadow E x ceed)Atk",
                   "after": "1050%/1250%(Shadow E x ceed)Atk per hit",
                   "scope": "Lv 10",
@@ -1320,7 +1338,7 @@ export const shadowCrossData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,325% ATK per hit"
               }
             ],
@@ -1419,7 +1437,7 @@ export const shadowCrossData = {
                   "source": "Reduces cooldown from 0.75 seconds to 0.5 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1750%/2500%(Shadow E x ceed)Atk",
                   "after": "1325%/1825%(Shadow E x ceed)Atk per hit",
                   "scope": "Lv 5",
@@ -1460,7 +1478,7 @@ export const shadowCrossData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1325%/1825%(Shadow E x ceed)Atk",
                   "after": "1500%/2100%(Shadow E x ceed)Atk per hit",
                   "scope": "Lv 5",
@@ -1575,8 +1593,12 @@ export const shadowCrossData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "1,500% ATK per hit/1,800% ATK per hit (Shadow E x ceed)"
+                "label": "Base Damage",
+                "value": "1,500% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "1,800% ATK per hit (Shadow E x ceed)"
               }
             ],
             "levelTables": [
@@ -1784,7 +1806,7 @@ export const shadowCrossData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "400% ATK per hit"
               }
             ],
@@ -1877,7 +1899,7 @@ export const shadowCrossData = {
                   "source": "Reduces AP recovery rate from 5 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "325%Atk",
                   "after": "400%Atk per hit",
                   "scope": "Lv 5",
@@ -2336,8 +2358,12 @@ export const shadowCrossData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "1,750% ATK per hit/2,000% ATK per hit (Cloaking E x ceed)"
+                "label": "Base Damage",
+                "value": "1,750% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "2,000% ATK per hit (Cloaking E x ceed)"
               }
             ],
             "levelTables": [
@@ -2456,7 +2482,7 @@ export const shadowCrossData = {
                   "source": "Removes 0.5 seconds delay after skill."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3750%Atk",
                   "after": "1500%Atk per hit",
                   "scope": "Lv 5",
@@ -2485,7 +2511,7 @@ export const shadowCrossData = {
                   "source": "Increases factor weight of POW in skill formula while under Cloaking Exceed buff from 5 to 7."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1500%Atk",
                   "after": "1750%/2000%Atk per hit",
                   "scope": "Lv 5",
@@ -2505,7 +2531,7 @@ export const shadowCrossData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1750%/2000%(Cloaking E x ceed)Atk",
                   "after": "2750%/3250%(Cloaking E x ceed)Atk per hit",
                   "scope": "Lv 5",
@@ -3020,7 +3046,7 @@ export const shadowCrossData = {
                 "value": "150"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "13,000% ATK"
               }
             ],
@@ -3149,7 +3175,7 @@ export const shadowCrossData = {
                   "source": "Removes 0.5 seconds delay after skill."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6500%/9500%(demihuman and dragon race)Atk",
                   "after": "13000%/14500%(demihuman and dragon race)Atk",
                   "scope": "Lv 10",
@@ -9592,7 +9618,7 @@ export const shadowCrossData = {
                 "value": "20~60 seconds"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "400% ATK"
               }
             ],
@@ -9985,7 +10011,7 @@ export const shadowCrossData = {
                 "value": "3 x 3"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "200% ATK"
               }
             ],
@@ -10493,7 +10519,7 @@ export const shadowCrossData = {
                 "value": "1 target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,500% ATK"
               }
             ],
@@ -10920,7 +10946,7 @@ export const shadowCrossData = {
                 "value": "5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "440% ATK"
               }
             ],
@@ -13576,8 +13602,12 @@ export const shadowCrossData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "900% ATK per hit/1,100% ATK per hit (Shadow E x ceed)"
+            "label": "Base Damage",
+            "value": "900% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "1,100% ATK per hit (Shadow E x ceed)"
           }
         ],
         "levelTables": [
@@ -13701,11 +13731,25 @@ export const shadowCrossData = {
               "source": "Reduces cooldown from 3 seconds to 1 second based on level 10."
             },
             {
-              "label": "Damage",
-              "before": "3500%Atk/5000%Atk (while under Shadow E x ceed buff)/8 split hits (logic)",
-              "after": "600%Atk/1000%Atk (while under Shadow E x ceed buff)/3 cumulative hits (logic)",
+              "label": "Base Damage",
+              "before": "3500%Atk",
+              "after": "600%Atk",
               "scope": "Lv 10",
-              "source": "Changes damage from 3500%Atk to 600%Atk based on level 10. / Changes damage while under Shadow Exceed buff from 5000%Atk to 1000%Atk based on level 10. / Changes damage logic from 8 split hits to 3 cumulative hits."
+              "source": "Changes damage from 3500%Atk to 600%Atk based on level 10."
+            },
+            {
+              "label": "Damage While Under Shadow Exceed Buff",
+              "before": "5000%Atk",
+              "after": "1000%Atk",
+              "scope": "Lv 10",
+              "source": "Changes damage while under Shadow Exceed buff from 5000%Atk to 1000%Atk based on level 10."
+            },
+            {
+              "label": "Damage Logic",
+              "before": "8 split hits",
+              "after": "3 cumulative hits",
+              "scope": "",
+              "source": "Changes damage logic from 8 split hits to 3 cumulative hits."
             }
           ]
         },
@@ -13736,7 +13780,7 @@ export const shadowCrossData = {
               "source": "Increases area of effect from 3 x 3 cells to 5 x 5 cells."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "600%/1000%(Shadow E x ceed)Atk",
               "after": "900%/1100%(Shadow E x ceed)Atk per hit",
               "scope": "Lv 10",
@@ -13783,7 +13827,7 @@ export const shadowCrossData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "900%/1100%(Shadow E x ceed)Atk",
               "after": "1050%/1250%(Shadow E x ceed)Atk per hit",
               "scope": "Lv 10",
@@ -14099,7 +14143,7 @@ export const shadowCrossData = {
             "value": "1 Target"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "1,325% ATK per hit"
           }
         ],
@@ -14198,7 +14242,7 @@ export const shadowCrossData = {
               "source": "Reduces cooldown from 0.75 seconds to 0.5 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1750%/2500%(Shadow E x ceed)Atk",
               "after": "1325%/1825%(Shadow E x ceed)Atk per hit",
               "scope": "Lv 5",
@@ -14239,7 +14283,7 @@ export const shadowCrossData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1325%/1825%(Shadow E x ceed)Atk",
               "after": "1500%/2100%(Shadow E x ceed)Atk per hit",
               "scope": "Lv 5",
@@ -14354,8 +14398,12 @@ export const shadowCrossData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "1,500% ATK per hit/1,800% ATK per hit (Shadow E x ceed)"
+            "label": "Base Damage",
+            "value": "1,500% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "1,800% ATK per hit (Shadow E x ceed)"
           }
         ],
         "levelTables": [
@@ -14563,7 +14611,7 @@ export const shadowCrossData = {
             "value": "3"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "400% ATK per hit"
           }
         ],
@@ -14656,7 +14704,7 @@ export const shadowCrossData = {
               "source": "Reduces AP recovery rate from 5 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "325%Atk",
               "after": "400%Atk per hit",
               "scope": "Lv 5",
@@ -15115,8 +15163,12 @@ export const shadowCrossData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "1,750% ATK per hit/2,000% ATK per hit (Cloaking E x ceed)"
+            "label": "Base Damage",
+            "value": "1,750% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "2,000% ATK per hit (Cloaking E x ceed)"
           }
         ],
         "levelTables": [
@@ -15235,7 +15287,7 @@ export const shadowCrossData = {
               "source": "Removes 0.5 seconds delay after skill."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3750%Atk",
               "after": "1500%Atk per hit",
               "scope": "Lv 5",
@@ -15264,7 +15316,7 @@ export const shadowCrossData = {
               "source": "Increases factor weight of POW in skill formula while under Cloaking Exceed buff from 5 to 7."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1500%Atk",
               "after": "1750%/2000%Atk per hit",
               "scope": "Lv 5",
@@ -15284,7 +15336,7 @@ export const shadowCrossData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1750%/2000%(Cloaking E x ceed)Atk",
               "after": "2750%/3250%(Cloaking E x ceed)Atk per hit",
               "scope": "Lv 5",
@@ -15799,7 +15851,7 @@ export const shadowCrossData = {
             "value": "150"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "13,000% ATK"
           }
         ],
@@ -15928,7 +15980,7 @@ export const shadowCrossData = {
               "source": "Removes 0.5 seconds delay after skill."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6500%/9500%(demihuman and dragon race)Atk",
               "after": "13000%/14500%(demihuman and dragon race)Atk",
               "scope": "Lv 10",

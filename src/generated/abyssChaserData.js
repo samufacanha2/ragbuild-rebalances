@@ -1,5 +1,5 @@
 export const abyssChaserData = {
-  "generatedAt": "2026-07-13T20:14:07.166Z",
+  "generatedAt": "2026-07-15T23:17:53.795Z",
   "classId": 4260,
   "classSlug": "abyss-chaser",
   "className": "Abyss Chaser",
@@ -659,7 +659,7 @@ export const abyssChaserData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "17,500% ATK"
               }
             ],
@@ -987,7 +987,7 @@ export const abyssChaserData = {
                 "value": "0"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "4,600% ATK per hit"
               }
             ],
@@ -1052,7 +1052,7 @@ export const abyssChaserData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2750%Atk",
                   "after": "1750%Atk but the skill will deal damage twice",
                   "scope": "",
@@ -1100,7 +1100,7 @@ export const abyssChaserData = {
                   "source": "Increases SP consumption from 60 to 64 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "1750%Atk",
                   "after": "2600%Atk per hit",
                   "scope": "Lv 5",
@@ -1135,7 +1135,7 @@ export const abyssChaserData = {
                   "source": "Increases SP consumption from 64 to 76 based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2600%Atk",
                   "after": "4600%Atk",
                   "scope": "Lv 5",
@@ -1154,7 +1154,7 @@ export const abyssChaserData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4600%Atk",
                   "after": "7350%Atk",
                   "scope": "Lv 5",
@@ -1243,8 +1243,12 @@ export const abyssChaserData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "3,800% ATK per hit/4,250% ATK per hit (Chasing)"
+                "label": "Base Damage",
+                "value": "3,800% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "4,250% ATK per hit (Chasing)"
               }
             ],
             "levelTables": [
@@ -1436,8 +1440,12 @@ export const abyssChaserData = {
                 "value": "7 Arrows"
               },
               {
-                "label": "Damage",
-                "value": "4,250% ATK/12,350% ATK (2nd)"
+                "label": "Base Damage",
+                "value": "4,250% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "12,350% ATK (2nd)"
               }
             ],
             "levelTables": [
@@ -1530,7 +1538,7 @@ export const abyssChaserData = {
                   "source": "Reduces delay after skill from 1 second to 0.5 seconds."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4250%Atk (secondary attack)",
                   "after": "4750%Atk (secondary attack)",
                   "scope": "Lv 5",
@@ -1590,7 +1598,7 @@ export const abyssChaserData = {
                   "source": "Increases area of effect of primary damage from 7 x 7 cells to 9 x 9 cells based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3000%(primary)/4750%(secondary)Atk",
                   "after": "4250%(primary)/12350%(secondary)Atk",
                   "scope": "Lv 5",
@@ -1616,7 +1624,7 @@ export const abyssChaserData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "12350%Atk (secondary attack)",
                   "after": "13550%Atk (secondary attack)",
                   "scope": "Lv 5",
@@ -1725,8 +1733,12 @@ export const abyssChaserData = {
                 "value": "2"
               },
               {
-                "label": "Damage",
-                "value": "5,000% ATK per hit/5,250% ATK per hit (Chasing)"
+                "label": "Base Damage",
+                "value": "5,000% ATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "5,250% ATK per hit (Chasing)"
               }
             ],
             "levelTables": [
@@ -1915,7 +1927,7 @@ export const abyssChaserData = {
                 "value": "4/8/12/16/20"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,600% MATK"
               }
             ],
@@ -2020,7 +2032,7 @@ export const abyssChaserData = {
                   "source": "Increases number of hit from 1 hit to 2 hits."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "500%Matk",
                   "after": "2600%Matk per hit",
                   "scope": "Lv 5",
@@ -2057,7 +2069,7 @@ export const abyssChaserData = {
                   "source": "Increases number of hit from 2 hits to 5 hits."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2600%Matk",
                   "after": "3400%Matk",
                   "scope": "Lv 5",
@@ -2368,7 +2380,7 @@ export const abyssChaserData = {
                 "value": "1 Target"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,600% ATK"
               }
             ],
@@ -2596,7 +2608,7 @@ export const abyssChaserData = {
                 "value": "3"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "3,750% ATK per hit"
               }
             ],
@@ -2737,7 +2749,7 @@ export const abyssChaserData = {
                   "source": "Increases AP recovery rate from 2 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3600%Atk",
                   "after": "5850%Atk",
                   "scope": "Lv 10",
@@ -2788,11 +2800,18 @@ export const abyssChaserData = {
                   "source": "Increases skill cooldown from 0.3 seconds to 0.7 seconds."
                 },
                 {
-                  "label": "Damage",
-                  "before": "5850%Atk/5 split hits (logic)",
-                  "after": "3750%Atk/5 cumulative hits (logic)",
+                  "label": "Base Damage",
+                  "before": "5850%Atk",
+                  "after": "3750%Atk",
                   "scope": "Lv 10",
-                  "source": "Reduces base damage from 5850%Atk to 3750%Atk based on level 10. / Changes damage logic from 5 split hits to 5 cumulative hits."
+                  "source": "Reduces base damage from 5850%Atk to 3750%Atk based on level 10."
+                },
+                {
+                  "label": "Damage Logic",
+                  "before": "5 split hits",
+                  "after": "5 cumulative hits",
+                  "scope": "",
+                  "source": "Changes damage logic from 5 split hits to 5 cumulative hits."
                 }
               ]
             },
@@ -2808,7 +2827,7 @@ export const abyssChaserData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3750%Atk",
                   "after": "6200%Atk",
                   "scope": "Lv 10",
@@ -3001,7 +3020,7 @@ export const abyssChaserData = {
                 "value": "1"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "6,150% ATK per hit"
               }
             ],
@@ -3152,7 +3171,7 @@ export const abyssChaserData = {
                   "source": "Reduces SP consumption from 125 to 55 based on level 10."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "3500%Atk",
                   "after": "4000%Atk per hit",
                   "scope": "Lv 10",
@@ -3196,7 +3215,7 @@ export const abyssChaserData = {
                   "source": "Increases number of hit from 1 hit to 2 hits."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "4000%Atk",
                   "after": "6150%Atk",
                   "scope": "Lv 10",
@@ -3230,7 +3249,7 @@ export const abyssChaserData = {
                   "source": "Increases AP recovery rate from 1 to 3."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6150%Atk",
                   "after": "8250%Atk per hit",
                   "scope": "Lv 10",
@@ -3390,8 +3409,12 @@ export const abyssChaserData = {
                 "value": "0.3 seconds"
               },
               {
-                "label": "Damage",
-                "value": "(2,850 + (Magic Sword Mastery Lv x 100))% MATK"
+                "label": "Base Damage",
+                "value": "2,850% MATK"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Magic Sword Mastery Lv x 100))% MATK"
               }
             ],
             "levelTables": [
@@ -3468,7 +3491,7 @@ export const abyssChaserData = {
                   "source": "Reduces delay after skill from 1 second to 0.5 seconds based on level 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "700%Matk",
                   "after": "2000%Matk (includes Magic Sword Mastery level 10 bonus)",
                   "scope": "Lv 5",
@@ -3495,7 +3518,7 @@ export const abyssChaserData = {
                   "source": "Increases AP recovery rate from 4 to 5."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2000%Matk",
                   "after": "3850%Matk per hit",
                   "scope": "Lv 5 (Magic Sword Mastery level 10)",
@@ -3514,7 +3537,7 @@ export const abyssChaserData = {
               ],
               "specRows": [
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "2850+(Magic Sword Mastery skill level x 100)%Matk",
                   "after": "3750+(Magic Sword Mastery skill level x 200)Matk",
                   "scope": "Lv 5",
@@ -3633,8 +3656,20 @@ export const abyssChaserData = {
                 "value": "fire property magical damage"
               },
               {
-                "label": "Damage",
-                "value": "(2,500 + (Magic Sword Mastery level x 75))% MATK per hit/(4,100 + (Magic Sword Mastery level x 150))% MATK per hit"
+                "label": "Base Damage",
+                "value": "2,500% MATK per hit"
+              },
+              {
+                "label": "Base Damage",
+                "value": "4,100% MATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Magic Sword Mastery level x 75))% MATK per hit"
+              },
+              {
+                "label": "Damage Formula",
+                "value": "(Base Damage + (Magic Sword Mastery level x 150))% MATK per hit"
               }
             ],
             "levelTables": [
@@ -4222,7 +4257,7 @@ export const abyssChaserData = {
                 "value": "150"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "22,000% MATK"
               }
             ],
@@ -4337,7 +4372,7 @@ export const abyssChaserData = {
                   "source": "Reduces AP consumption from 150 to 15."
                 },
                 {
-                  "label": "Damage",
+                  "label": "Base Damage",
                   "before": "6000%/11500%(angel and demon race)Matk",
                   "after": "22000%/23500%(angel and demon race)Matk",
                   "scope": "Lv 10",
@@ -4381,11 +4416,18 @@ export const abyssChaserData = {
                   "source": "Reduces AP consumption from 15 to 10."
                 },
                 {
-                  "label": "Damage",
-                  "before": "neutral (property)/22000%/23500%(angel and demon)Matk",
-                  "after": "fire (property)/26500%/28500%(angel and demon)Matk",
+                  "label": "Damage Property",
+                  "before": "neutral",
+                  "after": "fire",
+                  "scope": "",
+                  "source": "Changes damage property from neutral to fire."
+                },
+                {
+                  "label": "Base Damage",
+                  "before": "22000%/23500%(angel and demon)Matk",
+                  "after": "26500%/28500%(angel and demon)Matk",
                   "scope": "Lv 10",
-                  "source": "Changes damage property from neutral to fire. / Increases base damage from 22000%/23500%(angel and demon)Matk to 26500%/28500%(angel and demon)Matk based on level 10."
+                  "source": "Increases base damage from 22000%/23500%(angel and demon)Matk to 26500%/28500%(angel and demon)Matk based on level 10."
                 }
               ]
             }
@@ -5352,7 +5394,7 @@ export const abyssChaserData = {
                 "value": "3 x 3 ~ 5 x 5"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "1,200% ATK"
               }
             ],
@@ -6204,7 +6246,7 @@ export const abyssChaserData = {
                 "value": "3 Arrows"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "2,300% ATK"
               }
             ],
@@ -7512,7 +7554,7 @@ export const abyssChaserData = {
                 "value": "Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "50% ATK"
               }
             ],
@@ -12657,7 +12699,7 @@ export const abyssChaserData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "190% ATK"
               }
             ],
@@ -13786,8 +13828,12 @@ export const abyssChaserData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
-                "value": "700% ATK/350% ATK"
+                "label": "Base Damage",
+                "value": "700% ATK"
+              },
+              {
+                "label": "Base Damage",
+                "value": "350% ATK"
               }
             ],
             "levelTables": [
@@ -14464,7 +14510,7 @@ export const abyssChaserData = {
                 "value": "7 x 7"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "800% ATK"
               }
             ],
@@ -14931,7 +14977,7 @@ export const abyssChaserData = {
                 "value": "1 Enemy"
               },
               {
-                "label": "Damage",
+                "label": "Base Damage",
                 "value": "250% ATK"
               }
             ],
@@ -18059,7 +18105,7 @@ export const abyssChaserData = {
             "value": "2"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "17,500% ATK"
           }
         ],
@@ -18387,7 +18433,7 @@ export const abyssChaserData = {
             "value": "0"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "4,600% ATK per hit"
           }
         ],
@@ -18452,7 +18498,7 @@ export const abyssChaserData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2750%Atk",
               "after": "1750%Atk but the skill will deal damage twice",
               "scope": "",
@@ -18500,7 +18546,7 @@ export const abyssChaserData = {
               "source": "Increases SP consumption from 60 to 64 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "1750%Atk",
               "after": "2600%Atk per hit",
               "scope": "Lv 5",
@@ -18535,7 +18581,7 @@ export const abyssChaserData = {
               "source": "Increases SP consumption from 64 to 76 based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2600%Atk",
               "after": "4600%Atk",
               "scope": "Lv 5",
@@ -18554,7 +18600,7 @@ export const abyssChaserData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4600%Atk",
               "after": "7350%Atk",
               "scope": "Lv 5",
@@ -18643,8 +18689,12 @@ export const abyssChaserData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "3,800% ATK per hit/4,250% ATK per hit (Chasing)"
+            "label": "Base Damage",
+            "value": "3,800% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "4,250% ATK per hit (Chasing)"
           }
         ],
         "levelTables": [
@@ -18836,8 +18886,12 @@ export const abyssChaserData = {
             "value": "7 Arrows"
           },
           {
-            "label": "Damage",
-            "value": "4,250% ATK/12,350% ATK (2nd)"
+            "label": "Base Damage",
+            "value": "4,250% ATK"
+          },
+          {
+            "label": "Base Damage",
+            "value": "12,350% ATK (2nd)"
           }
         ],
         "levelTables": [
@@ -18930,7 +18984,7 @@ export const abyssChaserData = {
               "source": "Reduces delay after skill from 1 second to 0.5 seconds."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4250%Atk (secondary attack)",
               "after": "4750%Atk (secondary attack)",
               "scope": "Lv 5",
@@ -18990,7 +19044,7 @@ export const abyssChaserData = {
               "source": "Increases area of effect of primary damage from 7 x 7 cells to 9 x 9 cells based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3000%(primary)/4750%(secondary)Atk",
               "after": "4250%(primary)/12350%(secondary)Atk",
               "scope": "Lv 5",
@@ -19016,7 +19070,7 @@ export const abyssChaserData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "12350%Atk (secondary attack)",
               "after": "13550%Atk (secondary attack)",
               "scope": "Lv 5",
@@ -19125,8 +19179,12 @@ export const abyssChaserData = {
             "value": "2"
           },
           {
-            "label": "Damage",
-            "value": "5,000% ATK per hit/5,250% ATK per hit (Chasing)"
+            "label": "Base Damage",
+            "value": "5,000% ATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "5,250% ATK per hit (Chasing)"
           }
         ],
         "levelTables": [
@@ -19315,7 +19373,7 @@ export const abyssChaserData = {
             "value": "4/8/12/16/20"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "2,600% MATK"
           }
         ],
@@ -19420,7 +19478,7 @@ export const abyssChaserData = {
               "source": "Increases number of hit from 1 hit to 2 hits."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "500%Matk",
               "after": "2600%Matk per hit",
               "scope": "Lv 5",
@@ -19457,7 +19515,7 @@ export const abyssChaserData = {
               "source": "Increases number of hit from 2 hits to 5 hits."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2600%Matk",
               "after": "3400%Matk",
               "scope": "Lv 5",
@@ -19768,7 +19826,7 @@ export const abyssChaserData = {
             "value": "1 Target"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "1,600% ATK"
           }
         ],
@@ -19996,7 +20054,7 @@ export const abyssChaserData = {
             "value": "3"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "3,750% ATK per hit"
           }
         ],
@@ -20137,7 +20195,7 @@ export const abyssChaserData = {
               "source": "Increases AP recovery rate from 2 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3600%Atk",
               "after": "5850%Atk",
               "scope": "Lv 10",
@@ -20188,11 +20246,18 @@ export const abyssChaserData = {
               "source": "Increases skill cooldown from 0.3 seconds to 0.7 seconds."
             },
             {
-              "label": "Damage",
-              "before": "5850%Atk/5 split hits (logic)",
-              "after": "3750%Atk/5 cumulative hits (logic)",
+              "label": "Base Damage",
+              "before": "5850%Atk",
+              "after": "3750%Atk",
               "scope": "Lv 10",
-              "source": "Reduces base damage from 5850%Atk to 3750%Atk based on level 10. / Changes damage logic from 5 split hits to 5 cumulative hits."
+              "source": "Reduces base damage from 5850%Atk to 3750%Atk based on level 10."
+            },
+            {
+              "label": "Damage Logic",
+              "before": "5 split hits",
+              "after": "5 cumulative hits",
+              "scope": "",
+              "source": "Changes damage logic from 5 split hits to 5 cumulative hits."
             }
           ]
         },
@@ -20208,7 +20273,7 @@ export const abyssChaserData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3750%Atk",
               "after": "6200%Atk",
               "scope": "Lv 10",
@@ -20401,7 +20466,7 @@ export const abyssChaserData = {
             "value": "1"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "6,150% ATK per hit"
           }
         ],
@@ -20552,7 +20617,7 @@ export const abyssChaserData = {
               "source": "Reduces SP consumption from 125 to 55 based on level 10."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "3500%Atk",
               "after": "4000%Atk per hit",
               "scope": "Lv 10",
@@ -20596,7 +20661,7 @@ export const abyssChaserData = {
               "source": "Increases number of hit from 1 hit to 2 hits."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "4000%Atk",
               "after": "6150%Atk",
               "scope": "Lv 10",
@@ -20630,7 +20695,7 @@ export const abyssChaserData = {
               "source": "Increases AP recovery rate from 1 to 3."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6150%Atk",
               "after": "8250%Atk per hit",
               "scope": "Lv 10",
@@ -20790,8 +20855,12 @@ export const abyssChaserData = {
             "value": "0.3 seconds"
           },
           {
-            "label": "Damage",
-            "value": "(2,850 + (Magic Sword Mastery Lv x 100))% MATK"
+            "label": "Base Damage",
+            "value": "2,850% MATK"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Magic Sword Mastery Lv x 100))% MATK"
           }
         ],
         "levelTables": [
@@ -20868,7 +20937,7 @@ export const abyssChaserData = {
               "source": "Reduces delay after skill from 1 second to 0.5 seconds based on level 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "700%Matk",
               "after": "2000%Matk (includes Magic Sword Mastery level 10 bonus)",
               "scope": "Lv 5",
@@ -20895,7 +20964,7 @@ export const abyssChaserData = {
               "source": "Increases AP recovery rate from 4 to 5."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2000%Matk",
               "after": "3850%Matk per hit",
               "scope": "Lv 5 (Magic Sword Mastery level 10)",
@@ -20914,7 +20983,7 @@ export const abyssChaserData = {
           ],
           "specRows": [
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "2850+(Magic Sword Mastery skill level x 100)%Matk",
               "after": "3750+(Magic Sword Mastery skill level x 200)Matk",
               "scope": "Lv 5",
@@ -21033,8 +21102,20 @@ export const abyssChaserData = {
             "value": "fire property magical damage"
           },
           {
-            "label": "Damage",
-            "value": "(2,500 + (Magic Sword Mastery level x 75))% MATK per hit/(4,100 + (Magic Sword Mastery level x 150))% MATK per hit"
+            "label": "Base Damage",
+            "value": "2,500% MATK per hit"
+          },
+          {
+            "label": "Base Damage",
+            "value": "4,100% MATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Magic Sword Mastery level x 75))% MATK per hit"
+          },
+          {
+            "label": "Damage Formula",
+            "value": "(Base Damage + (Magic Sword Mastery level x 150))% MATK per hit"
           }
         ],
         "levelTables": [
@@ -21622,7 +21703,7 @@ export const abyssChaserData = {
             "value": "150"
           },
           {
-            "label": "Damage",
+            "label": "Base Damage",
             "value": "22,000% MATK"
           }
         ],
@@ -21737,7 +21818,7 @@ export const abyssChaserData = {
               "source": "Reduces AP consumption from 150 to 15."
             },
             {
-              "label": "Damage",
+              "label": "Base Damage",
               "before": "6000%/11500%(angel and demon race)Matk",
               "after": "22000%/23500%(angel and demon race)Matk",
               "scope": "Lv 10",
@@ -21781,11 +21862,18 @@ export const abyssChaserData = {
               "source": "Reduces AP consumption from 15 to 10."
             },
             {
-              "label": "Damage",
-              "before": "neutral (property)/22000%/23500%(angel and demon)Matk",
-              "after": "fire (property)/26500%/28500%(angel and demon)Matk",
+              "label": "Damage Property",
+              "before": "neutral",
+              "after": "fire",
+              "scope": "",
+              "source": "Changes damage property from neutral to fire."
+            },
+            {
+              "label": "Base Damage",
+              "before": "22000%/23500%(angel and demon)Matk",
+              "after": "26500%/28500%(angel and demon)Matk",
               "scope": "Lv 10",
-              "source": "Changes damage property from neutral to fire. / Increases base damage from 22000%/23500%(angel and demon)Matk to 26500%/28500%(angel and demon)Matk based on level 10."
+              "source": "Increases base damage from 22000%/23500%(angel and demon)Matk to 26500%/28500%(angel and demon)Matk based on level 10."
             }
           ]
         }
