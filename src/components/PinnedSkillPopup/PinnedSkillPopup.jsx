@@ -6,6 +6,12 @@ import { assetUrl } from '../../lib/dom.js'
 import { effectiveSpecRows } from '../../lib/specs.js'
 import { translatedSkillName, translateSpecLabel, translateSpecValue, translateUi } from '../../lib/translations.js'
 
+const POPUP_MARGIN = 8
+const POPUP_GAP = 8
+const POPUP_DEFAULT_WIDTH = 340
+const POPUP_MOBILE_WIDTH = 320
+const POPUP_DEFAULT_HEIGHT = 180
+
 export function PinnedSkillPopup({
   model,
   skill,
@@ -357,24 +363,62 @@ function compactArea(value) {
 function initialPopupPosition(index) {
   if (typeof window === 'undefined') return { x: 80 + index * 26, y: 80 + index * 26 }
 
+  const popupSize = estimatedPopupSize()
+  const cards = pinnedPopupRects()
+  if (!cards.length) {
+    return clampPopupPosition({
+      x: POPUP_MARGIN,
+      y: window.innerHeight - popupSize.height - POPUP_MARGIN,
+    })
+  }
+
+  const rightMostCard = cards.reduce((rightMost, card) => (card.right > rightMost.right ? card : rightMost), cards[0])
+  const positionToRight = {
+    x: rightMostCard.right + POPUP_GAP,
+    y: rightMostCard.top,
+  }
+  if (positionToRight.x + popupSize.width <= window.innerWidth - POPUP_MARGIN) {
+    return clampPopupPosition(positionToRight)
+  }
+
+  const leftMostCard = cards.reduce((leftMost, card) => (card.left < leftMost.left ? card : leftMost), cards[0])
+  const positionAboveLeftMost = {
+    x: leftMostCard.left,
+    y: leftMostCard.top - popupSize.height - POPUP_GAP,
+  }
+  if (positionAboveLeftMost.y >= POPUP_MARGIN) return clampPopupPosition(positionAboveLeftMost)
+
   return clampPopupPosition({
-    x: Math.max(12, window.innerWidth - 352 - index * 24),
-    y: 56 + index * 24,
+    x: leftMostCard.left,
+    y: leftMostCard.bottom + POPUP_GAP,
   })
+}
+
+function pinnedPopupRects() {
+  return [...document.querySelectorAll('.pinned-skill-popup')]
+    .map((element) => element.getBoundingClientRect())
+    .filter((rect) => rect.width > 0 && rect.height > 0)
+}
+
+function estimatedPopupSize() {
+  return {
+    width: Math.min(window.innerWidth - POPUP_MARGIN * 2, window.innerWidth <= 720 ? POPUP_MOBILE_WIDTH : POPUP_DEFAULT_WIDTH),
+    height: Math.min(window.innerHeight - POPUP_MARGIN * 2, POPUP_DEFAULT_HEIGHT),
+  }
 }
 
 function clampPopupPosition(position, element) {
   if (typeof window === 'undefined') return position
 
-  const width = element?.offsetWidth ?? 340
-  const height = element?.offsetHeight ?? 180
-  const margin = 8
-  const maxX = Math.max(margin, window.innerWidth - Math.min(width, window.innerWidth - margin * 2) - margin)
-  const maxY = Math.max(margin, window.innerHeight - Math.min(height, window.innerHeight - margin * 2) - margin)
+  const fallbackSize = estimatedPopupSize()
+  const width = element?.offsetWidth ?? fallbackSize.width
+  const height = element?.offsetHeight ?? fallbackSize.height
+  const maxX = Math.max(POPUP_MARGIN, window.innerWidth - Math.min(width, window.innerWidth - POPUP_MARGIN * 2) - POPUP_MARGIN)
+  const maxY = Math.max(POPUP_MARGIN, window.innerHeight - Math.min(height, window.innerHeight - POPUP_MARGIN * 2) - POPUP_MARGIN)
 
   return {
-    x: clamp(Math.round(position.x), margin, maxX),
-    y: clamp(Math.round(position.y), margin, maxY),
+    x: clamp(Math.round(position.x), POPUP_MARGIN, maxX),
+    y: clamp(Math.round(position.y), POPUP_MARGIN, maxY),
   }
 }
 
