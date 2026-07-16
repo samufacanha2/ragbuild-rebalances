@@ -3,27 +3,98 @@
   right: max(16px, env(safe-area-inset-right));
   bottom: max(16px, env(safe-area-inset-bottom));
   z-index: 30;
+  display: grid;
+  justify-items: end;
 }
 
-.locale-menu select {
-  min-width: 132px;
+.locale-menu.is-positioned {
+  right: auto;
+  bottom: auto;
+}
+
+.locale-toggle {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
   border: 1px solid rgba(21, 122, 126, 0.32);
-  border-radius: 8px;
+  border-radius: 50%;
   background: var(--surface);
   color: var(--ink);
-  padding: 10px 12px;
   box-shadow: 0 12px 32px rgba(23, 33, 47, 0.18);
-  font-weight: 800;
+  cursor: grab;
+  font-size: 1.35rem;
+  line-height: 1;
+  padding: 0;
+  touch-action: none;
+  user-select: none;
 }
 
-.locale-menu select:focus-visible {
+.locale-toggle:active {
+  cursor: grabbing;
+}
+
+.locale-toggle:hover,
+.locale-toggle:focus-visible,
+.locale-option:focus-visible {
   outline: 3px solid rgba(21, 122, 126, 0.2);
   outline-offset: 2px;
+}
+
+.locale-popover {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 8px);
+  display: grid;
+  gap: 4px;
+  min-width: 146px;
+  border: 1px solid rgba(21, 122, 126, 0.28);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 14px 38px rgba(23, 33, 47, 0.18);
+  padding: 6px;
+}
+
+.locale-menu.is-near-left .locale-popover {
+  right: auto;
+  left: 0;
+}
+
+.locale-menu.is-near-top .locale-popover {
+  top: calc(100% + 8px);
+  bottom: auto;
+}
+
+.locale-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 850;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.locale-option:hover,
+.locale-option.is-active {
+  border-color: rgba(21, 122, 126, 0.26);
+  background: rgba(21, 122, 126, 0.1);
+  color: var(--teal-dark);
 }
 
 @media (max-width: 720px) {
   .locale-menu {
     right: max(12px, env(safe-area-inset-right));
     bottom: max(12px, env(safe-area-inset-bottom));
+  }
+
+  .locale-toggle {
+    width: 44px;
+    height: 44px;
   }
 }
