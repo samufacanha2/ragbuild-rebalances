@@ -7,7 +7,8 @@ import { effectiveSpecRows } from '../../lib/specs.js'
 import { translatedSkillName, translateSpecLabel, translateSpecValue, translateUi } from '../../lib/translations.js'
 
 const POPUP_MARGIN = 8
-const POPUP_GAP = 8
+const POPUP_GAP = 0
+const POPUP_STICK_DISTANCE = 18
 const POPUP_DEFAULT_WIDTH = 340
 const POPUP_MOBILE_WIDTH = 320
 const POPUP_DEFAULT_HEIGHT = 180
@@ -58,7 +59,7 @@ export function PinnedSkillPopup({
         x: drag.startX + clientX - drag.pointerX,
         y: drag.startY + clientY - drag.pointerY,
       }
-      return clampPopupPosition(next, popupRef.current)
+      return clampPopupPosition(stickPopupPosition(next, popupRef.current), popupRef.current)
     })
   }, [])
 
@@ -427,6 +428,13 @@ function settleInitialPopupPosition(currentPosition, element, placement) {
     }, element)
   }
 
+  if (placement.anchor === 'right' && placement.target) {
+    return clampPopupPosition({
+      x: placement.target.right + POPUP_GAP,
+      y: placement.target.top,
+    }, element)
+  }
+
   if (placement.anchor === 'above-left-most' && placement.target) {
     const abovePosition = {
       x: placement.target.left,
@@ -450,10 +458,74 @@ function settleInitialPopupPosition(currentPosition, element, placement) {
   return clampPopupPosition(currentPosition, element)
 }
 
-function pinnedPopupRects() {
+function pinnedPopupRects(excludeElement) {
   return [...document.querySelectorAll('.pinned-skill-popup')]
+    .filter((element) => element !== excludeElement)
     .map((element) => element.getBoundingClientRect())
     .filter((rect) => rect.width > 0 && rect.height > 0)
+}
+
+function stickPopupPosition(position, element) {
+  if (!element || typeof window === 'undefined') return position
+
+  const width = element.offsetWidth
+  const height = element.offsetHeight
+  const popupRect = {
+    left: position.x,
+    top: position.y,
+    right: position.x + width,
+    bottom: position.y + height,
+  }
+  const otherCards = pinnedPopupRects(element)
+  let next = position
+
+  for (const card of otherCards) {
+    const verticalOverlap = rangesTouch(popupRect.top, popupRect.bottom, card.top, card.bottom)
+    const horizontalOverlap = rangesTouch(popupRect.left, popupRect.right, card.left, card.right)
+    const stickLeftOfCard = card.left - width - POPUP_GAP
+    const stickRightOfCard = card.right + POPUP_GAP
+    const stickAboveCard = card.top - height - POPUP_GAP
+    const stickBelowCard = card.bottom + POPUP_GAP
+
+    if (verticalOverlap && Math.abs(next.x - stickLeftOfCard) <= POPUP_STICK_DISTANCE) {
+      next = { ...next, x: stickLeftOfCard }
+    } else if (verticalOverlap && Math.abs(next.x - stickRightOfCard) <= POPUP_STICK_DISTANCE) {
+      next = { ...next, x: stickRightOfCard }
+    }
+
+    if (horizontalOverlap && Math.abs(next.y - stickAboveCard) <= POPUP_STICK_DISTANCE) {
+      next = { ...next, y: stickAboveCard }
+    } else if (horizontalOverlap && Math.abs(next.y - stickBelowCard) <= POPUP_STICK_DISTANCE) {
+      next = { ...next, y: stickBelowCard }
+    }
+
+    const snappedRect = {
+      left: next.x,
+      top: next.y,
+      right: next.x + width,
+      bottom: next.y + height,
+    }
+
+    if (edgesTouch(snappedRect.left, card.right) || edgesTouch(snappedRect.right, card.left)) {
+      if (Math.abs(next.y - card.top) <= POPUP_STICK_DISTANCE) next = { ...next, y: card.top }
+      if (Math.abs(next.y + height - card.bottom) <= POPUP_STICK_DISTANCE) next = { ...next, y: card.bottom - height }
+    }
+
+    if (edgesTouch(snappedRect.top, card.bottom) || edgesTouch(snappedRect.bottom, card.top)) {
+      if (Math.abs(next.x - card.left) <= POPUP_STICK_DISTANCE) next = { ...next, x: card.left }
+      if (Math.abs(next.x + width - card.right) <= POPUP_STICK_DISTANCE) next = { ...next, x: card.right - width }
+    }
+  }
+
+  return next
+}
+
+function rangesTouch(startA, endA, startB, endB) {
+  return startA <= endB + POPUP_STICK_DISTANCE && endA >= startB - POPUP_STICK_DISTANCE
+}
+
+function edgesTouch(edgeA, edgeB) {
+  return Math.abs(edgeA - edgeB) <= 1
 }
 
 function estimatedPopupSize() {
