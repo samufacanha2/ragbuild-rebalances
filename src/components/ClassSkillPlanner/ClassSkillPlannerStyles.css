@@ -120,9 +120,25 @@
   }
 }
 
+@media (max-width: 900px) {
+  .app-shell {
+    grid-template-rows: none;
+    width: 100%;
+    height: auto;
+    min-height: 100dvh;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .tree-area,
+  .detail-panel {
+    min-height: auto;
+    overflow: visible;
+  }
+}
+
 @media (max-width: 720px) {
   .app-shell {
-    grid-template-rows: minmax(0, 1fr) minmax(240px, 40dvh);
     padding: 8px 0;
   }
 }
