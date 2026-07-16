@@ -1,0 +1,244 @@
+.pinned-skill-popup {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: min(340px, calc(100vw - 12px));
+  max-height: min(520px, calc(100dvh - 12px));
+  border: 1px solid rgba(21, 122, 126, 0.28);
+  border-radius: 7px;
+  background: var(--surface);
+  box-shadow: 0 14px 38px rgba(23, 33, 47, 0.2);
+  overflow: hidden;
+  user-select: text;
+}
+
+.pinned-skill-popup-bar {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  min-height: 32px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(238, 243, 246, 0.96);
+  cursor: grab;
+  padding: 3px 5px 3px 6px;
+  user-select: none;
+  touch-action: none;
+}
+
+.pinned-skill-popup-bar:active {
+  cursor: grabbing;
+}
+
+.pinned-skill-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.pinned-skill-title img {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  padding: 2px;
+}
+
+.pinned-skill-title strong {
+  overflow: hidden;
+  color: var(--teal-dark);
+  font-size: 0.76rem;
+  font-weight: 900;
+  line-height: 1.05;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pinned-skill-actions {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 3px;
+}
+
+.pinned-skill-actions button {
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.pinned-skill-actions button[aria-pressed="true"] {
+  border-color: rgba(21, 122, 126, 0.5);
+  background: rgba(21, 122, 126, 0.12);
+  color: var(--teal-dark);
+}
+
+.pinned-skill-actions button:focus-visible,
+.pinned-spec-config input:focus-visible {
+  outline: 2px solid rgba(21, 122, 126, 0.24);
+  outline-offset: 1px;
+}
+
+.pinned-skill-popup-body {
+  min-height: 0;
+  overflow: auto;
+  padding: 6px;
+  user-select: text;
+}
+
+.pinned-spec-config {
+  display: grid;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fafbfd;
+  margin-bottom: 6px;
+  padding: 6px;
+  user-select: none;
+}
+
+.pinned-apply-toggle,
+.pinned-spec-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--ink);
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.pinned-spec-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 7px;
+}
+
+.pinned-spec-options input,
+.pinned-apply-toggle input {
+  margin: 0;
+}
+
+.pinned-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  gap: 4px;
+  margin: 0;
+}
+
+.pinned-spec-item {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fafbfd;
+  cursor: help;
+  padding: 4px 5px;
+}
+
+.pinned-spec-item.is-wide {
+  grid-column: span 2;
+}
+
+.pinned-spec-item dt {
+  overflow: hidden;
+  margin: 0 0 2px;
+  color: var(--muted);
+  font-size: 0.54rem;
+  font-weight: 950;
+  line-height: 1;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.pinned-spec-item dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.72rem;
+  font-weight: 850;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.pinned-spec-values {
+  display: grid;
+  gap: 1px;
+}
+
+.pinned-spec-item:not(.is-wide) .pinned-spec-values span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pinned-cast-value {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3px;
+}
+
+.pinned-cast-part {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.pinned-cast-part strong {
+  font-size: 0.74rem;
+}
+
+.pinned-cast-part em {
+  font-size: 0.5rem;
+  font-style: normal;
+  font-weight: 950;
+  letter-spacing: 0;
+}
+
+.pinned-cast-part.is-fixed {
+  color: #bf3e76;
+}
+
+.pinned-cast-part.is-variable {
+  color: #14815a;
+}
+
+.pinned-cast-plus {
+  color: var(--muted);
+  font-size: 0.66rem;
+  font-weight: 900;
+}
+
+.pinned-empty-specs {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 750;
+}
+
+@media (max-width: 720px) {
+  .pinned-skill-popup {
+    width: min(320px, calc(100vw - 12px));
+    max-height: min(480px, calc(100dvh - 12px));
+  }
+
+  .pinned-spec-grid,
+  .pinned-spec-options {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pinned-spec-item.is-wide {
+    grid-column: 1 / -1;
+  }
+}

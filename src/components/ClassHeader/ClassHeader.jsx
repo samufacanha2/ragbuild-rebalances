@@ -3,7 +3,7 @@ import './ClassHeaderStyles.css'
 import { assetUrl } from '../../lib/dom.js'
 import { translateUi } from '../../lib/translations.js'
 
-export function ClassHeader({ model, specVersion, language, onSpecVersionChange }) {
+export function ClassHeader({ model, specVersion, language, onSpecVersionChange, onBack }) {
   const [showVersionTour, setShowVersionTour] = useState(() => {
     try {
       return window.localStorage.getItem(model.versionTourStorageKey) !== 'true'
@@ -37,6 +37,17 @@ export function ClassHeader({ model, specVersion, language, onSpecVersionChange 
     <header className={showVersionTour ? 'topbar has-version-tour' : 'topbar'}>
       {showVersionTour ? <button className="tour-backdrop" type="button" aria-label="Close tour" onClick={completeVersionTour} /> : null}
       <div className="identity">
+        {onBack ? (
+          <button
+            className="class-back-button"
+            type="button"
+            aria-label={translateUi('All classes', language)}
+            title={translateUi('All classes', language)}
+            onClick={onBack}
+          >
+            <span aria-hidden="true">&larr;</span>
+          </button>
+        ) : null}
         <img className="job-icon" src={assetUrl(model.data.tree.jobIconUrl)} alt="" width="66" height="92" />
         <div>
           <h1>{model.data.className}</h1>

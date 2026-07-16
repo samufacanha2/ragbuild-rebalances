@@ -154,6 +154,7 @@ async function buildClassData({ classConfig, rebalanceManifest, pointLimitTimeli
   const currentTab = buildSkillTab({
     id: "current",
     label: classConfig.className || treePage.className,
+    jobIconUrl: `assets/divine-pride/jobs/${classConfig.classId}.png`,
     pointLimit,
     skills: currentSkills
   });
@@ -246,6 +247,7 @@ function buildPreviousTabs({ classConfig, previousSegments, hasNoviceSegment, tr
     .map((segment, index) => ({
       id: `previous-${index + 1}`,
       label: segment.label ?? segmentLabel(classConfig, segment, index, hasNoviceSegment),
+      jobIconUrl: segment.jobId ? `assets/divine-pride/jobs/${segment.jobId}.png` : '',
       pointLimit: numericPointLimit(segment.pointLimit),
       skills: buildTabSkills({ treeSkills: segment.skills, treeById, skillDetails, rebalanceByName })
     }))
@@ -260,6 +262,7 @@ function buildPreviousTabs({ classConfig, previousSegments, hasNoviceSegment, tr
       merged.push({
         id: next.id,
         label: next.label,
+        jobIconUrl: next.jobIconUrl || entry.jobIconUrl,
         skills: [...entry.skills, ...next.skills],
         pointLimit: Math.max(entry.pointLimit, next.pointLimit)
       });
@@ -274,6 +277,7 @@ function buildPreviousTabs({ classConfig, previousSegments, hasNoviceSegment, tr
     buildSkillTab({
       id: `previous-${index + 1}`,
       label: entry.label,
+      jobIconUrl: entry.jobIconUrl,
       pointLimit: entry.pointLimit,
       skills: entry.skills
     })
@@ -302,7 +306,7 @@ function withFallbackPreviousPointLimit(entry, index) {
   };
 }
 
-function buildSkillTab({ id, label, pointLimit, skills }) {
+function buildSkillTab({ id, label, jobIconUrl = '', pointLimit, skills }) {
   const maxCol = Math.max(...skills.map((skill) => skill.tree.col ?? 0), 0);
   const maxRow = Math.max(...skills.map((skill) => skill.tree.row ?? 0), 0);
   const columns = Math.max(...skills.map((skill) => skill.tree.columns ?? treeColumns), maxCol + 1, 1);
@@ -310,6 +314,7 @@ function buildSkillTab({ id, label, pointLimit, skills }) {
   return {
     id,
     label,
+    ...(jobIconUrl ? { jobIconUrl } : {}),
     pointLimit,
     tree: {
       columns,

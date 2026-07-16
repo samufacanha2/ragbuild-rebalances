@@ -4,8 +4,11 @@
   grid-template-columns: minmax(0, 1fr) 18px minmax(360px, var(--detail-panel-width));
   gap: 0;
   width: min(1710px, calc(100vw - 20px));
+  height: 100dvh;
+  max-height: 100dvh;
   margin: 0 auto;
-  padding: 28px 0;
+  overflow: hidden;
+  padding: 10px 0;
 }
 
 .app-shell.is-resizing-detail-panel {
@@ -14,11 +17,16 @@
 }
 
 .tree-area {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .skill-tabs {
   display: flex;
+  flex: 0 0 auto;
   gap: 6px;
   margin-bottom: 8px;
   overflow-x: auto;
@@ -26,6 +34,10 @@
 }
 
 .skill-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   min-height: 32px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -38,10 +50,18 @@
   cursor: pointer;
 }
 
+.skill-tab-icon {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+
 .skill-tab:hover,
 .skill-tab:focus-visible {
-  outline: 3px solid rgba(21, 122, 126, 0.16);
-  outline-offset: 1px;
+  outline: 0;
+  box-shadow: inset 0 0 0 3px rgba(21, 122, 126, 0.16);
 }
 
 .skill-tab.is-active {
@@ -51,10 +71,7 @@
 }
 
 .detail-panel {
-  position: sticky;
-  top: 24px;
-  align-self: start;
-  max-height: calc(100vh - 48px);
+  min-height: 0;
   overflow: auto;
 }
 
@@ -94,12 +111,8 @@
 @media (max-width: 1050px) {
   .app-shell {
     grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) minmax(280px, 42dvh);
     width: min(100vw - 12px, 980px);
-  }
-
-  .detail-panel {
-    position: static;
-    max-height: none;
   }
 
   .panel-resizer {
@@ -109,7 +122,7 @@
 
 @media (max-width: 720px) {
   .app-shell {
-    padding-top: 16px;
-    padding-bottom: 92px;
+    grid-template-rows: minmax(0, 1fr) minmax(240px, 40dvh);
+    padding: 8px 0;
   }
 }

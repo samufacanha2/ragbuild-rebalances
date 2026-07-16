@@ -13,6 +13,43 @@
   margin-bottom: 18px;
 }
 
+.skill-card-title {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.skill-pin-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface-soft);
+  color: var(--ink);
+  padding: 0 10px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.skill-pin-button svg {
+  flex: 0 0 auto;
+  stroke-width: 2.35;
+}
+
+.skill-pin-button:disabled {
+  cursor: default;
+  opacity: 0.62;
+}
+
+.skill-pin-button:focus-visible {
+  outline: 3px solid rgba(21, 122, 126, 0.2);
+  outline-offset: 2px;
+}
+
 .skill-card-head img {
   width: 48px;
   height: 48px;
@@ -53,13 +90,18 @@
   outline-offset: 2px;
 }
 
-.card-stepper strong {
+.card-stepper strong,
+.card-level-readout strong {
   display: grid;
   place-items: center;
   height: 36px;
   border: 1px solid var(--line);
   border-radius: 7px;
   background: #fafbfd;
+}
+
+.card-level-readout {
+  margin-bottom: 10px;
 }
 
 .skill-source-links {

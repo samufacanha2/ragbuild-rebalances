@@ -114,31 +114,23 @@ function ClassRouteContent({ classId, tabId }) {
     return <ClassSelectPage dataSets={classDataSets} language={language} onSelectClass={selectClass} />
   }
 
-  return (
-    <>
-      <div className="view-actions">
-        <button type="button" onClick={selectHome}>
-          {translateUi('All classes', language)}
-        </button>
-      </div>
-      {activeDataSet ? (
-        <ClassSkillPlanner
-          key={activeDataSet.id}
-          dataSet={activeDataSet}
-          language={language}
-          routeTabId={tabId}
-          onActiveTabChange={selectTab}
-        />
-      ) : (
-        <main className="app-shell">
-          <section className="tree-area">
-            <EmptyState eyebrow="" title="">
-              <p>{loadError || `${translateUi('Loading', language)} ${activeClassMeta.label}...`}</p>
-            </EmptyState>
-          </section>
-        </main>
-      )}
-    </>
+  return activeDataSet ? (
+    <ClassSkillPlanner
+      key={activeDataSet.id}
+      dataSet={activeDataSet}
+      language={language}
+      routeTabId={tabId}
+      onActiveTabChange={selectTab}
+      onBack={selectHome}
+    />
+  ) : (
+    <main className="app-shell">
+      <section className="tree-area">
+        <EmptyState eyebrow="" title="">
+          <p>{loadError || `${translateUi('Loading', language)} ${activeClassMeta.label}...`}</p>
+        </EmptyState>
+      </section>
+    </main>
   )
 }
 

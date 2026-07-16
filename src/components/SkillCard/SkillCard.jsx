@@ -1,3 +1,4 @@
+import { Pin as PinIcon } from 'lucide-react'
 import './SkillCardStyles.css'
 import { assetUrl } from '../../lib/dom.js'
 import { allocatedTotal } from '../../lib/pointBuy.js'
@@ -23,6 +24,9 @@ export function SkillCard({
   onIncreaseSkill,
   onDecreaseSkill,
   canDecreaseSkill,
+  onPinSkill,
+  isPinned = false,
+  readOnly = false,
 }) {
   const notes = notesForVersion(skill, specVersion)
   const levelTable = effectiveLevelTable(model, skill, specVersion)
@@ -33,27 +37,46 @@ export function SkillCard({
     <article className="skill-card">
       <header className="skill-card-head">
         <img src={assetUrl(skill.iconUrl)} alt="" width="48" height="48" />
-        <div>
-          <p className="eyebrow">{translateUi('Skill', language)} {skill.id}</p>
+        <div className="skill-card-title">
+          <p className="eyebrow">{translateUi('Skill', language)}</p>
           <h2>{name}</h2>
         </div>
+        {onPinSkill ? (
+          <button
+            className="skill-pin-button"
+            type="button"
+            onClick={() => onPinSkill(skill.id)}
+            disabled={isPinned}
+          >
+            <PinIcon size={15} aria-hidden="true" />
+            <span>{translateUi(isPinned ? 'Pinned' : 'Pin', language)}</span>
+          </button>
+        ) : null}
       </header>
 
-      <div className="card-stepper">
-        <button type="button" onClick={() => onDecreaseSkill(skill.id)} disabled={!canDecreaseSkill(skill.id)}>
-          -
-        </button>
-        <strong>
-          {level}/{skill.maxLevel}
-        </strong>
-        <button
-          type="button"
-          onClick={() => onIncreaseSkill(skill.id)}
-          disabled={level >= skill.maxLevel || allocatedTotal(levels) >= model.data.pointLimit}
-        >
-          +
-        </button>
-      </div>
+      {readOnly ? (
+        <div className="card-level-readout">
+          <strong>
+            {level}/{skill.maxLevel}
+          </strong>
+        </div>
+      ) : (
+        <div className="card-stepper">
+          <button type="button" onClick={() => onDecreaseSkill(skill.id)} disabled={!canDecreaseSkill(skill.id)}>
+            -
+          </button>
+          <strong>
+            {level}/{skill.maxLevel}
+          </strong>
+          <button
+            type="button"
+            onClick={() => onIncreaseSkill(skill.id)}
+            disabled={level >= skill.maxLevel || allocatedTotal(levels) >= model.data.pointLimit}
+          >
+            +
+          </button>
+        </div>
+      )}
 
       {sourceLinks.length ? (
         <nav className="skill-source-links" aria-label={translateUi('Wiki links', language)}>

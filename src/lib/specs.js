@@ -524,7 +524,7 @@ function noteSpecLabel(rawMetric) {
   if (isBaseDamageMetric(metric)) return 'Base Damage'
   if (metric.includes('cooldown')) return 'Cooldown'
   if (metric.includes('delay')) return 'Cast Delay'
-  if (metric.includes('cast range')) return 'Cast Range'
+  if (metric.includes('cast range') || metric === 'range' || metric.includes('skill range')) return 'Cast Range'
   if (metric.includes('area of effect')) return 'Area of Effect'
   if (metric.includes('buff duration')) return 'Buff Duration'
 
@@ -555,6 +555,7 @@ function futureChangeNote(delta) {
 function normalizeSpecLabel(label) {
   if (label === 'AP Cost') return 'AP Consumed'
   if (label === 'After Cast Delay') return 'Cast Delay'
+  if (label === 'Range') return 'Cast Range'
   if (label === 'Buff Duration') return 'Duration'
   if (isBaseDamageMetric(label)) return 'Base Damage'
   return label

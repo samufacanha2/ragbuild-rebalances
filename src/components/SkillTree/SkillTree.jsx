@@ -14,6 +14,7 @@ export function SkillTree({
   onIncreaseSkill,
   onDecreaseSkill,
   canDecreaseSkill,
+  footer,
 }) {
   const [hoveredId, setHoveredId] = useState(null)
   const hoveredRequirements = useMemo(() => {
@@ -55,6 +56,7 @@ export function SkillTree({
           ))}
         </div>
       </div>
+      {footer ? <div className="tree-footer">{footer}</div> : null}
     </div>
   )
 }

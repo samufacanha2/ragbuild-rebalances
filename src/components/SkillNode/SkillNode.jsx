@@ -115,7 +115,7 @@ export function SkillNode({
       </div>
       {requiredLevel ? (
         <span className="requirement-badge">
-          {translateUi('Req Lv', language)} {requiredLevel}
+          {translateUi('Required level', language)} {requiredLevel}
         </span>
       ) : null}
     </div>

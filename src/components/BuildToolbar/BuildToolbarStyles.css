@@ -1,26 +1,36 @@
 .build-toolbar {
   display: flex;
+  flex: 0 0 auto;
   align-items: center;
-  justify-content: space-between;
   gap: 12px;
   min-height: 42px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.82);
-  margin-bottom: 8px;
   padding: 8px 12px;
 }
 
-.build-toolbar-summary,
+.build-toolbar.is-presets {
+  margin-bottom: 8px;
+}
+
+.build-toolbar.is-summary {
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.build-points-controls,
 .build-preset-controls {
   display: flex;
   align-items: center;
   gap: 8px;
+  min-width: 0;
 }
 
-.build-toolbar-summary {
-  flex: 1 1 230px;
-  justify-content: space-between;
+.build-points-controls {
+  flex: 0 0 auto;
+  justify-content: flex-start;
 }
 
 .build-toolbar strong {
@@ -29,7 +39,7 @@
 }
 
 .build-preset-controls {
-  flex: 2 1 520px;
+  flex: 1 1 auto;
   justify-content: flex-end;
 }
 
@@ -54,9 +64,11 @@
   padding: 0 10px;
 }
 
-.build-toolbar button {
-  display: grid;
-  place-items: center;
+.toolbar-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   min-width: 66px;
   min-height: 34px;
   border: 1px solid var(--line);
@@ -64,14 +76,21 @@
   background: var(--surface);
   color: var(--ink);
   cursor: pointer;
+  padding: 0 10px;
+  white-space: nowrap;
 }
 
-.build-toolbar button:disabled {
+.toolbar-button svg {
+  flex: 0 0 auto;
+  stroke-width: 2.35;
+}
+
+.toolbar-button:disabled {
   cursor: not-allowed;
   opacity: 0.42;
 }
 
-.build-toolbar button:focus-visible,
+.toolbar-button:focus-visible,
 .build-preset-controls select:focus-visible,
 .build-preset-controls input:focus-visible {
   outline: 3px solid rgba(21, 122, 126, 0.2);
@@ -80,17 +99,18 @@
 
 @media (max-width: 760px) {
   .build-toolbar,
-  .build-toolbar-summary,
+  .build-points-controls,
   .build-preset-controls {
     align-items: stretch;
   }
 
-  .build-toolbar {
-    flex-direction: column;
+  .build-toolbar.is-presets {
+    padding: 8px;
   }
 
-  .build-toolbar-summary {
+  .build-points-controls {
     flex-basis: auto;
+    justify-content: flex-start;
   }
 
   .build-preset-controls {
@@ -105,7 +125,7 @@
     max-width: none;
   }
 
-  .build-toolbar button {
+  .toolbar-button {
     flex: 1 0 66px;
   }
 }

@@ -1,11 +1,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import './ClassSkillPlannerStyles.css'
 import { createClassModel, pointLimitForSpecVersion } from '../../lib/classModel.js'
+import { assetUrl } from '../../lib/dom.js'
 import { allocatedTotal, cleanupLevels, skillLevel } from '../../lib/pointBuy.js'
 import { skillAvailableInVersion } from '../../lib/specs.js'
+import { jobIconUrlForLabelAndPath } from '../../lib/jobIcons.js'
 import { BuildToolbar } from '../BuildToolbar'
 import { ClassHeader } from '../ClassHeader'
 import { EmptyState } from '../EmptyState'
+import { DEFAULT_PINNED_SPEC_IDS, PinnedSkillPopup } from '../PinnedSkillPopup'
 import { SkillCard } from '../SkillCard'
 import { SkillTree } from '../SkillTree'
 
@@ -17,7 +20,7 @@ const DETAIL_RESIZER_WIDTH = 18
 const TREE_AREA_MIN_WIDTH = 560
 const MAX_BUILD_PRESETS = 24
 
-export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabChange }) {
+export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabChange, onBack }) {
   const shellRef = useRef(null)
   const tabs = useMemo(() => skillTabsForData(dataSet.data), [dataSet.data])
   const savedSettings = useMemo(() => readPlannerSettings(dataSet.id), [dataSet.id])
@@ -33,6 +36,9 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
   const [presets, setPresets] = useState(savedPresets)
   const [selectedPresetId, setSelectedPresetId] = useState(savedPresets[0]?.id ?? '')
   const [presetName, setPresetName] = useState(savedPresets[0]?.name ?? '')
+  const [pinnedSkillIds, setPinnedSkillIds] = useState([])
+  const [pinnedSpecIds, setPinnedSpecIds] = useState(DEFAULT_PINNED_SPEC_IDS)
+  const [localPinnedSpecIdsBySkill, setLocalPinnedSpecIdsBySkill] = useState({})
   const visibleTabs = useMemo(() => tabs.map((tab) => tabForSpecVersion(dataSet.data, tab, specVersion)), [dataSet.data, specVersion, tabs])
   const activeTab = visibleTabs.find((tab) => tab.id === activeTabId) ?? visibleTabs[0]
   const plannerIndex = useMemo(() => createPlannerIndex(visibleTabs), [visibleTabs])
@@ -94,9 +100,17 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
     writeBuildPresets(dataSet.id, presets)
   }, [dataSet.id, presets])
 
+  useEffect(() => {
+    setPinnedSkillIds((current) => current.filter((id) => model.skillById.has(id)))
+  }, [model.skillById])
+
   const selectedSkill = useMemo(
     () => model.data.skills.find((skill) => skill.id === selectedId) ?? null,
     [model.data.skills, selectedId],
+  )
+  const pinnedSkills = useMemo(
+    () => pinnedSkillIds.map((id) => model.skillById.get(id)).filter(Boolean),
+    [model.skillById, pinnedSkillIds],
   )
   const totalPoints = useMemo(() => allocatedTotal(levels), [levels])
 
@@ -184,6 +198,22 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
     setPresetName('')
   }, [selectedPresetId])
 
+  const pinSkill = useCallback((id) => {
+    setPinnedSkillIds((current) => [...current.filter((entry) => entry !== id), id])
+  }, [])
+
+  const unpinSkill = useCallback((id) => {
+    setPinnedSkillIds((current) => current.filter((entry) => entry !== id))
+    setLocalPinnedSpecIdsBySkill((current) => {
+      const { [id]: _removed, ...next } = current
+      return next
+    })
+  }, [])
+
+  const changeLocalPinnedSpecIds = useCallback((id, specIds) => {
+    setLocalPinnedSpecIdsBySkill((current) => ({ ...current, [id]: specIds }))
+  }, [])
+
   const changeTab = useCallback(
     (tabId) => {
       setActiveTabId(tabId)
@@ -268,6 +298,20 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
           specVersion={specVersion}
           language={language}
           onSpecVersionChange={setSpecVersion}
+          onBack={onBack}
+        />
+
+        <BuildToolbar
+          variant="presets"
+          language={language}
+          presets={presets}
+          selectedPresetId={selectedPresetId}
+          presetName={presetName}
+          onPresetNameChange={setPresetName}
+          onSelectedPresetChange={changeSelectedPreset}
+          onSavePreset={savePreset}
+          onLoadPreset={loadPreset}
+          onDeletePreset={deletePreset}
         />
 
         {tabs.length > 1 ? (
@@ -281,26 +325,15 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
                 aria-selected={tab.id === activeTab.id}
                 onClick={() => changeTab(tab.id)}
               >
-                {tab.label}
+                {tabIconUrl(tab, dataSet) ? (
+                  <img className="skill-tab-icon" src={assetUrl(tabIconUrl(tab, dataSet))} alt="" width="24" height="24" />
+                ) : null}
+                <span>{tab.label}</span>
               </button>
             ))}
           </div>
         ) : null}
 
-        <BuildToolbar
-          totalPoints={totalPoints}
-          pointLimit={pointLimit}
-          language={language}
-          onReset={resetBuild}
-          presets={presets}
-          selectedPresetId={selectedPresetId}
-          presetName={presetName}
-          onPresetNameChange={setPresetName}
-          onSelectedPresetChange={changeSelectedPreset}
-          onSavePreset={savePreset}
-          onLoadPreset={loadPreset}
-          onDeletePreset={deletePreset}
-        />
 
         <SkillTree
           model={activeModel}
@@ -312,6 +345,15 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
           onDecreaseSkill={decreaseSkill}
           canDecreaseSkill={(id) => canDecreaseSkillAcrossTabs(activeTab.id, id, levelsByTab)}
           language={language}
+          footer={(
+            <BuildToolbar
+              variant="summary"
+              totalPoints={totalPoints}
+              pointLimit={pointLimit}
+              language={language}
+              onReset={resetBuild}
+            />
+          )}
         />
       </section>
 
@@ -343,11 +385,29 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
             onIncreaseSkill={increaseSkill}
             onDecreaseSkill={decreaseSkill}
             canDecreaseSkill={(id) => canDecreaseSkillAcrossTabs(activeTab.id, id, levelsByTab)}
+            onPinSkill={pinSkill}
+            isPinned={pinnedSkillIds.includes(selectedSkill.id)}
           />
         ) : (
           <EmptyState />
         )}
       </aside>
+
+      {pinnedSkills.map((skill, index) => (
+        <PinnedSkillPopup
+          key={skill.id}
+          model={activeModel}
+          skill={skill}
+          specVersion={specVersion}
+          language={language}
+          index={index}
+          globalSpecIds={pinnedSpecIds}
+          localSpecIds={localPinnedSpecIdsBySkill[skill.id]}
+          onGlobalSpecIdsChange={setPinnedSpecIds}
+          onLocalSpecIdsChange={(specIds) => changeLocalPinnedSpecIds(skill.id, specIds)}
+          onClose={() => unpinSkill(skill.id)}
+        />
+      ))}
     </main>
   )
 }
@@ -362,6 +422,14 @@ function skillTabsForData(data) {
       skills: data.skills,
     },
   ]
+}
+
+
+function tabIconUrl(tab, dataSet) {
+  const source = tab.id === 'current'
+    ? (dataSet.jobIconUrl ?? dataSet.data.tree.jobIconUrl ?? tab.jobIconUrl)
+    : tab.jobIconUrl
+  return jobIconUrlForLabelAndPath(tab.label, source)
 }
 
 function tabForSpecVersion(data, tab, specVersion) {

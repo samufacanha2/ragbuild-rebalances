@@ -1,6 +1,15 @@
 .tree-wrap {
-  overflow-x: hidden;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
   padding-bottom: 0;
+}
+
+.tree-footer {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  margin-top: 6px;
 }
 
 .tree-board {
@@ -30,7 +39,7 @@
 
 @media (max-width: 900px) {
   .tree-wrap {
-    overflow-x: auto;
+    overflow: auto;
     margin-inline: -6px;
     padding: 0 6px 10px;
     overscroll-behavior-x: contain;
