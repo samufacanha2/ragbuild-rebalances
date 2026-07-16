@@ -19,6 +19,18 @@ const DETAIL_PANEL_MAX_WIDTH = 1100
 const DETAIL_RESIZER_WIDTH = 18
 const TREE_AREA_MIN_WIDTH = 560
 const MAX_BUILD_PRESETS = 24
+const MAIN_CLASS_DEFAULT_SPEC_VERSION = 'rebalance-1'
+const EXPANDED_CLASS_DEFAULT_SPEC_VERSION = 'pre'
+const EXPANDED_CLASS_IDS = new Set([
+  'night-watch',
+  'shinkiro',
+  'shiranui',
+  'sky-emperor',
+  'soul-ascetic',
+  'spirit-handler',
+  'hyper-novice',
+  'alitea',
+])
 
 export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabChange, onBack }) {
   const shellRef = useRef(null)
@@ -26,10 +38,19 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
   const savedSettings = useMemo(() => readPlannerSettings(dataSet.id), [dataSet.id])
   const savedPresets = useMemo(() => readBuildPresets(dataSet.id), [dataSet.id])
   const initialTabId = firstValidTabId(tabs, routeTabId, savedSettings?.activeTabId)
+  const defaultSpecVersion = useMemo(() => defaultSpecVersionForDataSet(dataSet), [dataSet])
+  const savedSpecVersionIsValid = isValidSpecVersion(dataSet.data, savedSettings?.specVersion)
+  const savedSpecVersionIsCustom = savedSpecVersionIsValid && (
+    savedSettings?.hasCustomSpecVersion === true
+    || Boolean(savedSettings?.specVersion && savedSettings.specVersion !== 'current')
+  )
   const [activeTabId, setActiveTabId] = useState(initialTabId)
   const [specVersion, setSpecVersion] = useState(() =>
-    isValidSpecVersion(dataSet.data, savedSettings?.specVersion) ? savedSettings.specVersion : 'current',
+    savedSpecVersionIsCustom && isValidSpecVersion(dataSet.data, savedSettings?.specVersion)
+      ? savedSettings.specVersion
+      : defaultSpecVersion,
   )
+  const [hasCustomSpecVersion, setHasCustomSpecVersion] = useState(savedSpecVersionIsCustom)
   const [levelsByTab, setLevelsByTab] = useState(() => sanitizeLevelsByTab(savedSettings?.levelsByTab))
   const [detailPanelWidth, setDetailPanelWidth] = useState(() => sanitizeDetailPanelWidth(savedSettings?.detailPanelWidth))
   const [isResizingDetailPanel, setIsResizingDetailPanel] = useState(false)
@@ -91,10 +112,11 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
     writePlannerSettings(dataSet.id, {
       activeTabId: activeTab.id,
       detailPanelWidth,
+      hasCustomSpecVersion,
       specVersion,
       levelsByTab,
     })
-  }, [activeTab.id, dataSet.id, detailPanelWidth, levelsByTab, specVersion])
+  }, [activeTab.id, dataSet.id, detailPanelWidth, hasCustomSpecVersion, levelsByTab, specVersion])
 
   useEffect(() => {
     writeBuildPresets(dataSet.id, presets)
@@ -221,6 +243,10 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
     },
     [onActiveTabChange],
   )
+  const changeSpecVersion = useCallback((nextSpecVersion) => {
+    setHasCustomSpecVersion(true)
+    setSpecVersion(nextSpecVersion)
+  }, [])
   const detailPanelMaxWidth = useCallback(() => {
     const shellWidth = shellRef.current?.getBoundingClientRect().width
     if (!shellWidth) return DETAIL_PANEL_MAX_WIDTH
@@ -296,8 +322,9 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
         <ClassHeader
           model={activeModel}
           specVersion={specVersion}
+          roLatamSpecVersion={defaultSpecVersion}
           language={language}
-          onSpecVersionChange={setSpecVersion}
+          onSpecVersionChange={changeSpecVersion}
           onBack={onBack}
         />
 
@@ -424,6 +451,13 @@ function skillTabsForData(data) {
   ]
 }
 
+function defaultSpecVersionForDataSet(dataSet) {
+  const defaultVersion = EXPANDED_CLASS_IDS.has(dataSet.id)
+    ? EXPANDED_CLASS_DEFAULT_SPEC_VERSION
+    : MAIN_CLASS_DEFAULT_SPEC_VERSION
+
+  return isValidSpecVersion(dataSet.data, defaultVersion) ? defaultVersion : 'current'
+}
 
 function tabIconUrl(tab, dataSet) {
   const source = tab.id === 'current'

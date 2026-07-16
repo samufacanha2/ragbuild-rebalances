@@ -3,7 +3,7 @@ import './ClassHeaderStyles.css'
 import { assetUrl } from '../../lib/dom.js'
 import { translateUi } from '../../lib/translations.js'
 
-export function ClassHeader({ model, specVersion, language, onSpecVersionChange, onBack }) {
+export function ClassHeader({ model, specVersion, roLatamSpecVersion, language, onSpecVersionChange, onBack }) {
   const [showVersionTour, setShowVersionTour] = useState(() => {
     try {
       return window.localStorage.getItem(model.versionTourStorageKey) !== 'true'
@@ -62,13 +62,13 @@ export function ClassHeader({ model, specVersion, language, onSpecVersionChange,
             onPointerDown={completeVersionTour}
             onChange={(event) => onSpecVersionChange(event.target.value)}
           >
-            <option value="pre">{translateUi('Pre-rebalances', language)}</option>
+            <option value="pre">{specOptionLabel(translateUi('Pre-rebalances', language), 'pre', roLatamSpecVersion)}</option>
             {model.data.rebalanceVersions.map((version) => (
               <option key={version.id} value={version.id}>
-                {version.label}
+                {specOptionLabel(version.label, version.id, roLatamSpecVersion)}
               </option>
             ))}
-            <option value="current">{translateUi('Current specs', language)}</option>
+            <option value="current">{specOptionLabel(translateUi('Current specs', language), 'current', roLatamSpecVersion)}</option>
           </select>
         </span>
         {showVersionTour ? (
@@ -83,4 +83,8 @@ export function ClassHeader({ model, specVersion, language, onSpecVersionChange,
       </div>
     </header>
   )
+}
+
+function specOptionLabel(label, versionId, roLatamSpecVersion) {
+  return versionId === roLatamSpecVersion ? `${label} (ROLATAM)` : label
 }
