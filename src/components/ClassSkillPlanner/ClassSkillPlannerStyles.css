@@ -33,6 +33,74 @@
   padding-bottom: 2px;
 }
 
+.previous-requirement-tooltip {
+  position: fixed;
+  z-index: 80;
+  width: max-content;
+  max-width: min(420px, calc(100vw - 24px));
+  border: 1px solid rgba(211, 128, 30, 0.58);
+  border-radius: 8px;
+  background: rgba(255, 247, 237, 0.98);
+  box-shadow: 0 16px 34px rgba(23, 33, 47, 0.18);
+  padding: 7px;
+  pointer-events: none;
+  transform: translate(-50%, calc(-100% - 8px));
+}
+
+.previous-requirement-tooltip::after {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid rgba(211, 128, 30, 0.58);
+  border-bottom: 1px solid rgba(211, 128, 30, 0.58);
+  background: rgba(255, 247, 237, 0.98);
+  content: "";
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.previous-requirement-item img {
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.previous-requirement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.previous-requirement-item {
+  display: inline-grid;
+  grid-template-columns: 24px minmax(56px, max-content) max-content;
+  align-items: center;
+  gap: 5px;
+  max-width: 260px;
+  border: 1px solid rgba(211, 128, 30, 0.24);
+  border-radius: 7px;
+  background: rgba(255, 247, 237, 0.94);
+  color: var(--ink);
+  padding: 3px 6px;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.previous-requirement-item span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.previous-requirement-item strong {
+  color: var(--teal-dark);
+  white-space: nowrap;
+}
+
 .skill-tab {
   display: inline-flex;
   align-items: center;
@@ -68,6 +136,16 @@
   border-color: rgba(21, 122, 126, 0.52);
   background: rgba(21, 122, 126, 0.12);
   color: var(--teal-dark);
+}
+
+.skill-tab.has-previous-requirements {
+  border-color: rgba(211, 128, 30, 0.68);
+  box-shadow: inset 0 0 0 2px rgba(211, 128, 30, 0.16);
+}
+
+.skill-tab.has-previous-requirements:not(.is-active) {
+  background: rgba(255, 247, 237, 0.92);
+  color: #8a4b12;
 }
 
 .detail-panel {

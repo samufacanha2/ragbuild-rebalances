@@ -1,8 +1,10 @@
 {
   "name": "RO Skills",
   "short_name": "RO Skills",
-  "description": "Ragnarok Online skill trees, build planning, and rebalance notes.",
-  "start_url": ".",
+  "description": "Ragnarok Online skill tree planner with build planning and ROLATAM rebalance notes.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#f5f7fb",
   "theme_color": "#157a7e",

@@ -5,6 +5,7 @@ import { translatePointsUsed, translateUi } from '../../lib/translations.js'
 export function BuildToolbar({
   variant = 'all',
   totalPoints = 0,
+  pastPoints = 0,
   pointLimit = 0,
   language,
   onReset,
@@ -20,6 +21,8 @@ export function BuildToolbar({
   const hasSelectedPreset = Boolean(selectedPresetId)
   const showPresets = variant !== 'summary'
   const showSummary = variant !== 'presets'
+  const usedPoints = totalPoints + pastPoints
+  const isOverPointLimit = usedPoints > pointLimit
 
   return (
     <div className={`build-toolbar is-${variant}`}>
@@ -62,8 +65,10 @@ export function BuildToolbar({
 
       {showSummary ? (
         <div className="build-points-controls">
-          <strong>{translatePointsUsed(totalPoints, pointLimit, language)}</strong>
-          <button className="toolbar-button" type="button" onClick={onReset} disabled={totalPoints === 0}>
+          <strong className={isOverPointLimit ? 'build-points-used is-over-limit' : 'build-points-used'}>
+            {translatePointsUsed(totalPoints, pointLimit, language, pastPoints)}
+          </strong>
+          <button className="toolbar-button" type="button" onClick={onReset} disabled={usedPoints === 0}>
             <RotateCcw size={16} aria-hidden="true" />
             <span>{translateUi('Reset', language)}</span>
           </button>

@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import './ClassSelectPageStyles.css'
 import { assetUrl } from '../../lib/dom.js'
+import { classRouteHref } from '../../lib/routes.js'
 import { translateUi } from '../../lib/translations.js'
 import { EmptyState } from '../EmptyState'
 
@@ -11,6 +12,12 @@ export function ClassSelectPage({ dataSets, language, onSelectClass }) {
     () => dataSets.filter((dataSet) => normalizeSearchText(dataSet.label).includes(normalizedQuery)),
     [dataSets, normalizedQuery],
   )
+  const openClass = (event, classId) => {
+    if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+
+    event.preventDefault()
+    onSelectClass(classId)
+  }
 
   return (
     <main className="class-select-page">
@@ -33,15 +40,15 @@ export function ClassSelectPage({ dataSets, language, onSelectClass }) {
       <section className="class-grid" aria-label={translateUi('Classes', language)}>
         {filteredDataSets.length ? (
           filteredDataSets.map((dataSet) => (
-            <button
+            <a
               className={dataSet.mode === 'tree' ? 'class-card is-tree-ready' : 'class-card'}
-              type="button"
+              href={classRouteHref(dataSet.id)}
               key={dataSet.id}
-              onClick={() => onSelectClass(dataSet.id)}
+              onClick={(event) => openClass(event, dataSet.id)}
             >
               <ClassMark dataSet={dataSet} />
               <strong>{dataSet.label}</strong>
-            </button>
+            </a>
           ))
         ) : (
           <EmptyState className="class-search-empty" eyebrow="" title="">

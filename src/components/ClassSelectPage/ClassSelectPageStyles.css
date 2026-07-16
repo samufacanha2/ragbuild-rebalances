@@ -74,6 +74,7 @@
   color: var(--ink);
   padding: 18px 12px;
   text-align: center;
+  text-decoration: none;
   box-shadow: 0 10px 26px rgba(23, 33, 47, 0.08);
   cursor: pointer;
   transition:

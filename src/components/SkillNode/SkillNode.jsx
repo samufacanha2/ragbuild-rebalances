@@ -1,6 +1,6 @@
 import './SkillNodeStyles.css'
 import { assetUrl } from '../../lib/dom.js'
-import { allocatedTotal, skillLevel } from '../../lib/pointBuy.js'
+import { skillLevel } from '../../lib/pointBuy.js'
 import { notesForVersion } from '../../lib/specs.js'
 import { translatedSkillName, translateUi } from '../../lib/translations.js'
 
@@ -17,6 +17,7 @@ export function SkillNode({
   onSelectSkill,
   onIncreaseSkill,
   onDecreaseSkill,
+  canIncreaseSkill = () => true,
   canDecreaseSkill,
 }) {
   const currentLevel = skillLevel(levels, skill.id)
@@ -99,10 +100,7 @@ export function SkillNode({
                 type="button"
                 aria-label={`${translateUi('Add one point to', language)} ${name}`}
                 onClick={increaseSkill}
-                disabled={
-                  currentLevel >= skill.maxLevel ||
-                  allocatedTotal(levels) >= model.data.pointLimit
-                }
+                disabled={currentLevel >= skill.maxLevel || !canIncreaseSkill(skill.id)}
               >
                 +
               </button>

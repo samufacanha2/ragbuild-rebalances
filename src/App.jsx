@@ -12,6 +12,10 @@ import { translateUi } from './lib/translations.js'
 
 const LanguageContext = createContext(null)
 const APP_TITLE = 'RO Skills'
+const APP_FULL_TITLE = 'RO Skills - Ragnarok Online Skill Planner & Rebalance Notes'
+const APP_DESCRIPTION =
+  'RO Skills is a Ragnarok Online skill tree planner for checking prerequisites, allocating class points, and comparing ROLATAM rebalance notes.'
+const SITE_URL = normalizeSiteUrl(import.meta.env.VITE_SITE_URL ?? 'https://roskills.cc/')
 const DEFAULT_FAVICON_PATH = 'Bt_skill.png'
 
 export function RootRouteLayout() {
@@ -68,9 +72,13 @@ function ClassRouteContent({ classId, tabId }) {
   const [loadError, setLoadError] = useState('')
   const faviconPath = firstTabFaviconPath(activeDataSet, activeClassMeta)
   const pageTitle = classPageTitle(activeDataSet, activeClassMeta)
+  const pageDescription = classPageDescription(activeDataSet, activeClassMeta)
+  const canonicalUrl = canonicalUrlForPath(activeClassId || '')
 
   usePageFavicon(faviconPath)
   usePageTitle(pageTitle)
+  usePageDescription(pageDescription)
+  useCanonicalUrl(canonicalUrl)
 
   useEffect(() => {
     if (!activeClassId || !activeClassMeta) {
@@ -145,7 +153,9 @@ function ClassRouteContent({ classId, tabId }) {
 
 function ClassSelectRouteContent({ dataSets, language, onSelectClass }) {
   usePageFavicon(DEFAULT_FAVICON_PATH)
-  usePageTitle(APP_TITLE)
+  usePageTitle(APP_FULL_TITLE)
+  usePageDescription(APP_DESCRIPTION)
+  useCanonicalUrl(canonicalUrlForPath(''))
 
   return <ClassSelectPage dataSets={dataSets} language={language} onSelectClass={onSelectClass} />
 }
@@ -153,7 +163,15 @@ function ClassSelectRouteContent({ dataSets, language, onSelectClass }) {
 function classPageTitle(dataSet, classMeta) {
   const className = dataSet?.data?.className ?? classMeta?.label
 
-  return className ? `${className} | ${APP_TITLE}` : APP_TITLE
+  return className ? `${className} Skill Tree | ${APP_TITLE}` : APP_FULL_TITLE
+}
+
+function classPageDescription(dataSet, classMeta) {
+  const className = dataSet?.data?.className ?? classMeta?.label
+
+  return className
+    ? `${className} Ragnarok Online skill tree planner with prerequisites, point allocation, ROLATAM defaults, and rebalance notes.`
+    : APP_DESCRIPTION
 }
 
 function firstTabFaviconPath(dataSet, classMeta) {
@@ -191,8 +209,50 @@ function usePageFavicon(path) {
 
 function usePageTitle(title) {
   useEffect(() => {
-    document.title = title || APP_TITLE
+    document.title = title || APP_FULL_TITLE
   }, [title])
+}
+
+function usePageDescription(description) {
+  useEffect(() => {
+    updateMetaTag('description', description || APP_DESCRIPTION)
+  }, [description])
+}
+
+function useCanonicalUrl(url) {
+  useEffect(() => {
+    const link = document.querySelector('link[rel="canonical"]') ?? createCanonicalLink()
+    link.href = url || canonicalUrlForPath('')
+  }, [url])
+}
+
+function canonicalUrlForPath(path) {
+  return new URL(String(path ?? '').replace(/^\/+/, ''), SITE_URL).href
+}
+
+function normalizeSiteUrl(url) {
+  const value = String(url || 'https://roskills.cc/').trim()
+
+  return value.endsWith('/') ? value : `${value}/`
+}
+
+function updateMetaTag(name, content) {
+  const meta = document.querySelector(`meta[name="${name}"]`) ?? createMetaTag(name)
+  meta.content = content
+}
+
+function createMetaTag(name) {
+  const meta = document.createElement('meta')
+  meta.name = name
+  document.head.append(meta)
+  return meta
+}
+
+function createCanonicalLink() {
+  const link = document.createElement('link')
+  link.rel = 'canonical'
+  document.head.append(link)
+  return link
 }
 
 function updateFavicon(path) {

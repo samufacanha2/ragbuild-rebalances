@@ -1,7 +1,6 @@
 import { Pin as PinIcon } from 'lucide-react'
 import './SkillCardStyles.css'
 import { assetUrl } from '../../lib/dom.js'
-import { allocatedTotal } from '../../lib/pointBuy.js'
 import { effectiveLevelTable, effectiveSpecRows, notesForVersion, specVersionTitle } from '../../lib/specs.js'
 import {
   translatedRequirementName,
@@ -18,11 +17,11 @@ export function SkillCard({
   model,
   skill,
   level,
-  levels,
   specVersion,
   language,
   onIncreaseSkill,
   onDecreaseSkill,
+  canIncreaseSkill = () => true,
   canDecreaseSkill,
   onPinSkill,
   isPinned = false,
@@ -71,7 +70,7 @@ export function SkillCard({
           <button
             type="button"
             onClick={() => onIncreaseSkill(skill.id)}
-            disabled={level >= skill.maxLevel || allocatedTotal(levels) >= model.data.pointLimit}
+            disabled={level >= skill.maxLevel || !canIncreaseSkill(skill.id)}
           >
             +
           </button>

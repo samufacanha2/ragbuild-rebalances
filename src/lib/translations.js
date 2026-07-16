@@ -43,9 +43,10 @@ export function translateUi(label, language) {
   return uiTranslations[label] ?? label
 }
 
-export function translatePointsUsed(totalPoints, pointLimit, language) {
-  if (language !== 'pt-BR') return `${totalPoints} / ${pointLimit} points used`
-  return `${totalPoints} / ${pointLimit} pontos usados`
+export function translatePointsUsed(totalPoints, pointLimit, language, pastPoints = 0) {
+  const used = pastPoints > 0 ? `${totalPoints}+${pastPoints}(${totalPoints + pastPoints})` : totalPoints
+  if (language !== 'pt-BR') return `${used}/${pointLimit} points used`
+  return `${used}/${pointLimit} pontos usados`
 }
 
 function localizedSkillField(skill, language, field) {
@@ -235,6 +236,7 @@ const uiTranslations = {
   'Preset name': 'Nome da predefinicao',
   'Pre-Rebalance Specs': 'Especificacoes pre-rebalanceamento',
   'Pre-rebalances': 'Pre-rebalanceamentos',
+  'Previous class prerequisites': 'Pre-requisitos de classes anteriores',
   'Prerequisites': 'Pre-requisitos',
   'Remove one point from': 'Remover um ponto de',
   'Req Lv': 'Req Nv.',

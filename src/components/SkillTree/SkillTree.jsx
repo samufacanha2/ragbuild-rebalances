@@ -11,12 +11,18 @@ export function SkillTree({
   specVersion,
   language,
   onSelectSkill,
+  onHoverSkillChange,
   onIncreaseSkill,
   onDecreaseSkill,
+  canIncreaseSkill,
   canDecreaseSkill,
   footer,
 }) {
   const [hoveredId, setHoveredId] = useState(null)
+  const changeHoveredId = (id) => {
+    setHoveredId(id)
+    onHoverSkillChange?.(id)
+  }
   const hoveredRequirements = useMemo(() => {
     const requirements = new Map()
     const hoveredSkill = model.skillById.get(hoveredId)
@@ -47,10 +53,11 @@ export function SkillTree({
               language={language}
               requiredLevel={hoveredRequirements.get(skill.id)}
               isHoverTarget={hoveredId === skill.id}
-              onHoverSkill={setHoveredId}
+              onHoverSkill={changeHoveredId}
               onSelectSkill={onSelectSkill}
               onIncreaseSkill={onIncreaseSkill}
               onDecreaseSkill={onDecreaseSkill}
+              canIncreaseSkill={canIncreaseSkill}
               canDecreaseSkill={canDecreaseSkill}
             />
           ))}

@@ -38,6 +38,10 @@
   white-space: nowrap;
 }
 
+.build-points-used.is-over-limit {
+  color: #b42318;
+}
+
 .build-preset-controls {
   flex: 1 1 auto;
   justify-content: flex-end;

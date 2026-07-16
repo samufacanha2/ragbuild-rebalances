@@ -54,7 +54,8 @@ npm run dev
 
 Then visit the Vite URL printed in the terminal.
 
-## GitHub Pages
+## Deployment
 
-This repo includes a GitHub Actions workflow for Pages. Push to `main`, and the workflow
-will enable Pages for GitHub Actions and publish `dist`.
+The production site is deployed on Vercel at `https://roskills.cc/`. Set
+`VITE_SITE_URL=https://roskills.cc/` in the deployment environment so generated canonical
+URLs and metadata stay aligned with the public domain.
