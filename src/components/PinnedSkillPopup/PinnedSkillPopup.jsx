@@ -1,5 +1,5 @@
 import { Settings, X } from 'lucide-react'
-import { useCallback, useMemo, useRef, useState } from 'react'
+import { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import './PinnedSkillPopupStyles.css'
 import { DEFAULT_PINNED_SPEC_IDS, PINNED_SPEC_OPTIONS } from './config.js'
 import { assetUrl } from '../../lib/dom.js'
@@ -26,7 +26,12 @@ export function PinnedSkillPopup({
 }) {
   const popupRef = useRef(null)
   const dragRef = useRef(null)
-  const [position, setPosition] = useState(() => initialPopupPosition(index))
+  const initialPlacementRef = useRef(null)
+  const [position, setPosition] = useState(() => {
+    const placement = initialPopupPlacement(index)
+    initialPlacementRef.current = placement
+    return placement.position
+  })
   const [showConfig, setShowConfig] = useState(false)
   const [applyToAll, setApplyToAll] = useState(true)
   const name = translatedSkillName(skill, language)
@@ -36,6 +41,13 @@ export function PinnedSkillPopup({
     () => compactSpecItems(rows, selectedSpecIds, language),
     [language, rows, selectedSpecIds],
   )
+
+  useLayoutEffect(() => {
+    const placement = initialPlacementRef.current
+    if (!placement || placement.settled) return
+    placement.settled = true
+    setPosition((current) => settleInitialPopupPosition(current, popupRef.current, placement))
+  }, [])
 
   const moveToPointer = useCallback((clientX, clientY) => {
     const drag = dragRef.current
@@ -360,16 +372,21 @@ function compactArea(value) {
     .trim()
 }
 
-function initialPopupPosition(index) {
-  if (typeof window === 'undefined') return { x: 80 + index * 26, y: 80 + index * 26 }
+function initialPopupPlacement(index) {
+  if (typeof window === 'undefined') {
+    return { anchor: 'fallback', position: { x: 80 + index * 26, y: 80 + index * 26 } }
+  }
 
   const popupSize = estimatedPopupSize()
   const cards = pinnedPopupRects()
   if (!cards.length) {
-    return clampPopupPosition({
-      x: POPUP_MARGIN,
-      y: window.innerHeight - popupSize.height - POPUP_MARGIN,
-    })
+    return {
+      anchor: 'bottom-left',
+      position: clampPopupPosition({
+        x: POPUP_MARGIN,
+        y: window.innerHeight - popupSize.height - POPUP_MARGIN,
+      }),
+    }
   }
 
   const rightMostCard = cards.reduce((rightMost, card) => (card.right > rightMost.right ? card : rightMost), cards[0])
@@ -378,7 +395,7 @@ function initialPopupPosition(index) {
     y: rightMostCard.top,
   }
   if (positionToRight.x + popupSize.width <= window.innerWidth - POPUP_MARGIN) {
-    return clampPopupPosition(positionToRight)
+    return { anchor: 'right', target: rightMostCard, position: clampPopupPosition(positionToRight) }
   }
 
   const leftMostCard = cards.reduce((leftMost, card) => (card.left < leftMost.left ? card : leftMost), cards[0])
@@ -386,12 +403,51 @@ function initialPopupPosition(index) {
     x: leftMostCard.left,
     y: leftMostCard.top - popupSize.height - POPUP_GAP,
   }
-  if (positionAboveLeftMost.y >= POPUP_MARGIN) return clampPopupPosition(positionAboveLeftMost)
+  if (positionAboveLeftMost.y >= POPUP_MARGIN) {
+    return { anchor: 'above-left-most', target: leftMostCard, position: clampPopupPosition(positionAboveLeftMost) }
+  }
 
-  return clampPopupPosition({
-    x: leftMostCard.left,
-    y: leftMostCard.bottom + POPUP_GAP,
-  })
+  return {
+    anchor: 'below-left-most',
+    target: leftMostCard,
+    position: clampPopupPosition({
+      x: leftMostCard.left,
+      y: leftMostCard.bottom + POPUP_GAP,
+    }),
+  }
+}
+
+function settleInitialPopupPosition(currentPosition, element, placement) {
+  if (!element || typeof window === 'undefined') return currentPosition
+
+  if (placement.anchor === 'bottom-left') {
+    return clampPopupPosition({
+      x: POPUP_MARGIN,
+      y: window.innerHeight - element.offsetHeight - POPUP_MARGIN,
+    }, element)
+  }
+
+  if (placement.anchor === 'above-left-most' && placement.target) {
+    const abovePosition = {
+      x: placement.target.left,
+      y: placement.target.top - element.offsetHeight - POPUP_GAP,
+    }
+    if (abovePosition.y >= POPUP_MARGIN) return clampPopupPosition(abovePosition, element)
+
+    return clampPopupPosition({
+      x: placement.target.left,
+      y: placement.target.bottom + POPUP_GAP,
+    }, element)
+  }
+
+  if (placement.anchor === 'below-left-most' && placement.target) {
+    return clampPopupPosition({
+      x: placement.target.left,
+      y: placement.target.bottom + POPUP_GAP,
+    }, element)
+  }
+
+  return clampPopupPosition(currentPosition, element)
 }
 
 function pinnedPopupRects() {

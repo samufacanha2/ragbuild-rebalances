@@ -66,8 +66,9 @@
 }
 
 .pinned-skill-actions button {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 23px;
   height: 23px;
   border: 1px solid var(--line);
@@ -75,6 +76,16 @@
   background: var(--surface);
   color: var(--ink);
   cursor: pointer;
+  line-height: 0;
+  padding: 0;
+}
+
+.pinned-skill-actions button svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  stroke-width: 2.5;
 }
 
 .pinned-skill-actions button[aria-pressed="true"] {
