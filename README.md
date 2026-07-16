@@ -1,4 +1,4 @@
-# ragbuild-rebalances
+# RO Skills
 
 Vite and React comparison tool for Ragbuild skill data and rebalance notes.
 

@@ -66,7 +66,7 @@ async function download({ url, filePath, optional = false, refreshHashes = [] })
 
   const response = await fetch(url, {
     headers: {
-      "user-agent": "ragbuild-rebalances-asset-cache/1.0"
+      "user-agent": "ro-skills-asset-cache/1.0"
     }
   });
   if (!response.ok) {

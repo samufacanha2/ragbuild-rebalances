@@ -1,10 +1,12 @@
-const LANGUAGE_STORAGE_KEY = 'ragbuild-rebalances-language'
+const LANGUAGE_STORAGE_KEY = 'ro-skills-language'
+const LEGACY_LANGUAGE_STORAGE_KEYS = ['ragskills-language', 'ragbuild-rebalances-language']
 const LANGUAGE_COOKIE_KEY = 'ragbuild_locale'
 const ONE_YEAR_SECONDS = 60 * 60 * 24 * 365
 
 export function detectInitialLanguage() {
   return (
     normalizeLanguage(readLocalStorageLanguage(LANGUAGE_STORAGE_KEY)) ??
+    normalizeLanguage(readLegacyLocalStorageLanguage()) ??
     normalizeLanguage(readCookieLanguage()) ??
     normalizeLanguage(readLegacyPlannerLanguage()) ??
     normalizeLanguage(document.documentElement.lang) ??
@@ -43,6 +45,15 @@ function readLocalStorageLanguage(key) {
   } catch {
     return null
   }
+}
+
+function readLegacyLocalStorageLanguage() {
+  for (const key of LEGACY_LANGUAGE_STORAGE_KEYS) {
+    const language = readLocalStorageLanguage(key)
+    if (language) return language
+  }
+
+  return null
 }
 
 function readCookieLanguage() {
