@@ -1,15 +1,16 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import './LanguageMenuStyles.css'
+import { assetUrl } from '../../lib/dom.js'
 import { languageOptions, translateUi } from '../../lib/translations.js'
 
 const FLAG_BY_LANGUAGE = {
-  en: '🇺🇸',
-  'pt-BR': '🇧🇷',
+  en: { alt: 'United States flag', path: 'assets/flags/us.svg' },
+  'pt-BR': { alt: 'Brazil flag', path: 'assets/flags/br.svg' },
 }
 const DRAG_THRESHOLD = 4
 const VIEWPORT_MARGIN = 8
 
-export function LanguageMenu({ language, onLanguageChange }) {
+export function LanguageMenu({ language, onLanguageChange, variant = 'floating' }) {
   const [isOpen, setIsOpen] = useState(false)
   const [position, setPosition] = useState(null)
   const menuRef = useRef(null)
@@ -17,12 +18,14 @@ export function LanguageMenu({ language, onLanguageChange }) {
   const dragRef = useRef(null)
   const suppressClickRef = useRef(false)
   const activeOption = languageOptions.find((option) => option.id === language) ?? languageOptions[0]
-  const flag = FLAG_BY_LANGUAGE[language] ?? FLAG_BY_LANGUAGE.en
+  const activeFlag = FLAG_BY_LANGUAGE[language] ?? FLAG_BY_LANGUAGE.en
+  const isInline = variant === 'inline'
   const className = [
     'locale-menu',
-    position ? 'is-positioned' : '',
-    position?.x < 150 ? 'is-near-left' : '',
-    position?.y < 150 ? 'is-near-top' : '',
+    isInline ? 'is-inline' : '',
+    !isInline && position ? 'is-positioned' : '',
+    !isInline && position?.x < 150 ? 'is-near-left' : '',
+    !isInline && position?.y < 150 ? 'is-near-top' : '',
   ].filter(Boolean).join(' ')
 
   useEffect(() => {
@@ -110,7 +113,7 @@ export function LanguageMenu({ language, onLanguageChange }) {
     <div
       className={className}
       ref={menuRef}
-      style={position ? { left: position.x, top: position.y } : undefined}
+      style={!isInline && position ? { left: position.x, top: position.y } : undefined}
     >
       <button
         className="locale-toggle"
@@ -121,12 +124,13 @@ export function LanguageMenu({ language, onLanguageChange }) {
         title={translateUi('Language', language)}
         ref={buttonRef}
         onClick={toggleMenu}
-        onPointerDown={startDrag}
-        onPointerMove={moveDrag}
-        onPointerUp={stopDrag}
-        onPointerCancel={stopDrag}
+        onPointerDown={isInline ? undefined : startDrag}
+        onPointerMove={isInline ? undefined : moveDrag}
+        onPointerUp={isInline ? undefined : stopDrag}
+        onPointerCancel={isInline ? undefined : stopDrag}
       >
-        <span aria-hidden="true">{flag}</span>
+        <LanguageFlag flag={activeFlag} />
+        <span className="locale-toggle-label">{activeOption.label}</span>
       </button>
 
       {isOpen ? (
@@ -140,13 +144,26 @@ export function LanguageMenu({ language, onLanguageChange }) {
               aria-checked={option.id === language}
               onClick={() => selectLanguage(option.id)}
             >
-              <span aria-hidden="true">{FLAG_BY_LANGUAGE[option.id] ?? FLAG_BY_LANGUAGE.en}</span>
+              <LanguageFlag flag={FLAG_BY_LANGUAGE[option.id] ?? FLAG_BY_LANGUAGE.en} />
               <span>{option.label}</span>
             </button>
           ))}
         </div>
       ) : null}
     </div>
+  )
+}
+
+function LanguageFlag({ flag }) {
+  return (
+    <img
+      className="locale-flag"
+      src={assetUrl(flag.path)}
+      alt={flag.alt}
+      width="24"
+      height="16"
+      draggable="false"
+    />
   )
 }
 

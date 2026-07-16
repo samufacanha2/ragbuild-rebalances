@@ -26,6 +26,8 @@ export function PinnedSkillPopup({
   onClose,
 }) {
   const popupRef = useRef(null)
+  const configButtonRef = useRef(null)
+  const configPopoverRef = useRef(null)
   const dragRef = useRef(null)
   const initialPlacementRef = useRef(null)
   const [position, setPosition] = useState(() => {
@@ -49,6 +51,23 @@ export function PinnedSkillPopup({
     placement.settled = true
     setPosition((current) => settleInitialPopupPosition(current, popupRef.current, placement))
   }, [])
+
+  useLayoutEffect(() => {
+    if (!showConfig) return undefined
+
+    const closeConfig = (event) => {
+      if (configButtonRef.current?.contains(event.target)) return
+      if (configPopoverRef.current?.contains(event.target)) return
+      setShowConfig(false)
+    }
+
+    document.addEventListener('mousedown', closeConfig, true)
+    document.addEventListener('touchstart', closeConfig, true)
+    return () => {
+      document.removeEventListener('mousedown', closeConfig, true)
+      document.removeEventListener('touchstart', closeConfig, true)
+    }
+  }, [showConfig])
 
   const moveToPointer = useCallback((clientX, clientY) => {
     const drag = dragRef.current
@@ -94,23 +113,15 @@ export function PinnedSkillPopup({
     dragRef.current = null
   }, [])
 
-  const toggleSpec = useCallback(
-    (id) => {
-      const nextSet = new Set(selectedSpecIds)
-      if (nextSet.has(id)) {
-        nextSet.delete(id)
-      } else {
-        nextSet.add(id)
-      }
-      const nextIds = PINNED_SPEC_OPTIONS.map((option) => option.id).filter((optionId) => nextSet.has(optionId))
-
+  const changeSelectedSpecIds = useCallback(
+    (nextIds) => {
       if (applyToAll) {
         onGlobalSpecIdsChange(nextIds)
       } else {
         onLocalSpecIdsChange(nextIds)
       }
     },
-    [applyToAll, onGlobalSpecIdsChange, onLocalSpecIdsChange, selectedSpecIds],
+    [applyToAll, onGlobalSpecIdsChange, onLocalSpecIdsChange],
   )
 
   const changeApplyToAll = useCallback(
@@ -145,6 +156,7 @@ export function PinnedSkillPopup({
             type="button"
             aria-label={translateUi('Configure pinned specs', language)}
             aria-pressed={showConfig}
+            ref={configButtonRef}
             onPointerDown={(event) => event.stopPropagation()}
             onClick={() => setShowConfig((current) => !current)}
           >
@@ -160,53 +172,118 @@ export function PinnedSkillPopup({
           </button>
         </span>
       </header>
+      {showConfig ? (
+        <PinnedSpecOptionsPopover
+          applyToAll={applyToAll}
+          language={language}
+          popoverRef={configPopoverRef}
+          selectedSpecIds={selectedSpecIds}
+          showApplyToAll
+          onApplyToAllChange={changeApplyToAll}
+          onSpecIdsChange={changeSelectedSpecIds}
+        />
+      ) : null}
       <div className="pinned-skill-popup-body">
-        {showConfig ? (
-          <div className="pinned-spec-config">
-            <label className="pinned-apply-toggle">
-              <input type="checkbox" checked={applyToAll} onChange={changeApplyToAll} />
-              <span>{translateUi('Apply to all pinned cards', language)}</span>
-            </label>
-            <div className="pinned-spec-options">
-              {PINNED_SPEC_OPTIONS.map((option) => (
-                <label key={option.id}>
-                  <input
-                    type="checkbox"
-                    checked={selectedSpecIds.includes(option.id)}
-                    onChange={() => toggleSpec(option.id)}
-                  />
-                  <span>{translateSpecLabel(option.label, language)}</span>
-                </label>
-              ))}
-            </div>
-          </div>
-        ) : null}
-
-        {compactItems.length ? (
-          <dl className="pinned-spec-grid">
-            {compactItems.map((item) => (
-              <div
-                key={item.id}
-                className={item.wide ? 'pinned-spec-item is-wide' : 'pinned-spec-item'}
-                title={item.tooltip}
-                aria-label={item.tooltip}
-              >
-                <dt title={item.fullLabel}>{item.label}</dt>
-                <dd>
-                  {item.kind === 'cast' ? (
-                    <CompactCastValue fixed={item.fixed} variable={item.variable} />
-                  ) : (
-                    <CompactValues values={item.values} />
-                  )}
-                </dd>
-              </div>
-            ))}
-          </dl>
-        ) : (
-          <p className="pinned-empty-specs">{translateUi('No selected specs found.', language)}</p>
-        )}
+        <PinnedSpecGrid compactItems={compactItems} language={language} />
       </div>
     </aside>
+  )
+}
+
+export function PinnedSpecOptionsPopover({
+  applyToAll = false,
+  className = '',
+  language,
+  selectedSpecIds,
+  showApplyToAll = false,
+  onApplyToAllChange,
+  popoverRef,
+  onSpecIdsChange,
+}) {
+  const toggleSpec = (id) => {
+    const nextSet = new Set(selectedSpecIds)
+    if (nextSet.has(id)) {
+      nextSet.delete(id)
+    } else {
+      nextSet.add(id)
+    }
+    const nextIds = PINNED_SPEC_OPTIONS.map((option) => option.id).filter((optionId) => nextSet.has(optionId))
+    onSpecIdsChange(nextIds)
+  }
+
+  return (
+    <div
+      className={['pinned-spec-popover', className].filter(Boolean).join(' ')}
+      ref={popoverRef}
+      role="dialog"
+      aria-label={translateUi('Configure pinned specs', language)}
+    >
+      {showApplyToAll ? (
+        <label className="pinned-apply-toggle">
+          <input type="checkbox" checked={applyToAll} onChange={onApplyToAllChange} />
+          <span>{translateUi('Apply to all pinned cards', language)}</span>
+        </label>
+      ) : null}
+      <div className="pinned-spec-options">
+        {PINNED_SPEC_OPTIONS.map((option) => (
+          <label key={option.id}>
+            <input
+              type="checkbox"
+              checked={selectedSpecIds.includes(option.id)}
+              onChange={() => toggleSpec(option.id)}
+            />
+            <span>{translateSpecLabel(option.label, language)}</span>
+          </label>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export function PinnedSkillSummary({
+  model,
+  skill,
+  specVersion,
+  language,
+  specIds = DEFAULT_PINNED_SPEC_IDS,
+  className = '',
+}) {
+  const rows = useMemo(() => effectiveSpecRows(model, skill, specVersion, null), [model, skill, specVersion])
+  const compactItems = useMemo(
+    () => compactSpecItems(rows, specIds, language),
+    [language, rows, specIds],
+  )
+
+  return (
+    <div className={['pinned-skill-popup-body', className].filter(Boolean).join(' ')}>
+      <PinnedSpecGrid compactItems={compactItems} language={language} />
+    </div>
+  )
+}
+
+function PinnedSpecGrid({ compactItems, language }) {
+  return compactItems.length ? (
+    <dl className="pinned-spec-grid">
+      {compactItems.map((item) => (
+        <div
+          key={item.id}
+          className={item.wide ? 'pinned-spec-item is-wide' : 'pinned-spec-item'}
+          title={item.tooltip}
+          aria-label={item.tooltip}
+        >
+          <dt title={item.fullLabel}>{item.label}</dt>
+          <dd>
+            {item.kind === 'cast' ? (
+              <CompactCastValue fixed={item.fixed} variable={item.variable} />
+            ) : (
+              <CompactValues values={item.values} />
+            )}
+          </dd>
+        </div>
+      ))}
+    </dl>
+  ) : (
+    <p className="pinned-empty-specs">{translateUi('No selected specs found.', language)}</p>
   )
 }
 

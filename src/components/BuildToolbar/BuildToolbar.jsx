@@ -9,6 +9,8 @@ export function BuildToolbar({
   pointLimit = 0,
   language,
   onReset,
+  onResetAll,
+  totalBuildPoints,
   presets = [],
   selectedPresetId = '',
   presetName = '',
@@ -23,6 +25,7 @@ export function BuildToolbar({
   const showSummary = variant !== 'presets'
   const usedPoints = totalPoints + pastPoints
   const isOverPointLimit = usedPoints > pointLimit
+  const allUsedPoints = Number(totalBuildPoints ?? usedPoints)
 
   return (
     <div className={`build-toolbar is-${variant}`}>
@@ -72,6 +75,12 @@ export function BuildToolbar({
             <RotateCcw size={16} aria-hidden="true" />
             <span>{translateUi('Reset', language)}</span>
           </button>
+          {onResetAll ? (
+            <button className="toolbar-button" type="button" onClick={onResetAll} disabled={allUsedPoints === 0}>
+              <RotateCcw size={16} aria-hidden="true" />
+              <span>{translateUi('Reset all', language)}</span>
+            </button>
+          ) : null}
         </div>
       ) : null}
     </div>

@@ -19,6 +19,8 @@ export function SkillTree({
   footer,
 }) {
   const [hoveredId, setHoveredId] = useState(null)
+  const treeColumns = Number(model.visibleTree.columns) || 1
+  const treeRows = Number(model.visibleTree.rows) || 1
   const changeHoveredId = (id) => {
     setHoveredId(id)
     onHoverSkillChange?.(id)
@@ -35,10 +37,12 @@ export function SkillTree({
       <div
         className="tree-board"
         style={{
-          '--tree-columns': model.visibleTree.columns,
-          '--tree-rows': model.visibleTree.rows,
+          '--tree-columns': treeColumns,
+          '--tree-rows': treeRows,
+          '--tree-mobile-columns': treeRows,
+          '--tree-mobile-rows': treeColumns,
           '--tree-compact-skill-width': `${COMPACT_SKILL_WIDTH}px`,
-          '--tree-compact-min-width': `${model.visibleTree.columns * COMPACT_SKILL_WIDTH}px`,
+          '--tree-compact-min-width': `${treeColumns * COMPACT_SKILL_WIDTH}px`,
         }}
       >
         <div className="tree-grid">

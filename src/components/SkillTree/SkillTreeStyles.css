@@ -39,25 +39,26 @@
 
 @media (max-width: 900px) {
   .tree-wrap {
-    overflow: auto;
-    margin-inline: -6px;
-    padding: 0 6px 10px;
-    overscroll-behavior-x: contain;
-    -webkit-overflow-scrolling: touch;
+    flex: 0 0 auto;
+    min-height: auto;
+    overflow: visible;
+    max-width: 100%;
+    margin-inline: 0;
+    padding: 0 0 calc(var(--detail-drawer-height, 48px) + 8px);
   }
 
   .tree-board {
-    --tree-active-columns: var(--tree-columns, 9);
-    --tree-row-height: 88px;
-    width: max(100%, var(--tree-compact-min-width, 620px));
-    min-width: var(--tree-compact-min-width, 620px);
+    --tree-active-columns: var(--tree-mobile-columns, var(--tree-rows, 6));
+    --tree-row-height: 76px;
+    width: 100%;
+    min-width: 0;
   }
 
   .tree-grid {
     grid-template-columns: repeat(
-      var(--tree-columns),
-      minmax(var(--tree-compact-skill-width, 96px), 1fr)
+      var(--tree-mobile-columns, var(--tree-rows)),
+      minmax(0, 1fr)
     );
-    grid-template-rows: repeat(var(--tree-rows), var(--tree-row-height));
+    grid-template-rows: repeat(var(--tree-mobile-rows, var(--tree-columns)), var(--tree-row-height));
   }
 }

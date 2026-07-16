@@ -2,8 +2,17 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import './ClassHeaderStyles.css'
 import { assetUrl } from '../../lib/dom.js'
 import { translateUi } from '../../lib/translations.js'
+import { LanguageMenu } from '../LanguageMenu'
 
-export function ClassHeader({ model, specVersion, roLatamSpecVersion, language, onSpecVersionChange, onBack }) {
+export function ClassHeader({
+  model,
+  specVersion,
+  roLatamSpecVersion,
+  language,
+  onLanguageChange,
+  onSpecVersionChange,
+  onBack,
+}) {
   const [showVersionTour, setShowVersionTour] = useState(() => {
     try {
       return window.localStorage.getItem(model.versionTourStorageKey) !== 'true'
@@ -49,9 +58,12 @@ export function ClassHeader({ model, specVersion, roLatamSpecVersion, language, 
           </button>
         ) : null}
         <img className="job-icon" src={assetUrl(model.data.tree.jobIconUrl)} alt="" width="66" height="92" />
-        <div>
+        <div className="class-title">
           <h1>{model.data.className}</h1>
         </div>
+        {onLanguageChange ? (
+          <LanguageMenu language={language} onLanguageChange={onLanguageChange} variant="inline" />
+        ) : null}
       </div>
       <div className="controls" ref={controlsRef} aria-label="Skill spec version">
         <span className="control-field">

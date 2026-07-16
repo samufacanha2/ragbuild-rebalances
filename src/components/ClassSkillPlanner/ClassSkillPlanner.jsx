@@ -1,3 +1,4 @@
+import { ChevronDown, ChevronUp, Settings } from 'lucide-react'
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import './ClassSkillPlannerStyles.css'
 import { createClassModel, pointLimitForSpecVersion } from '../../lib/classModel.js'
@@ -9,7 +10,12 @@ import { translatedSkillName, translateUi } from '../../lib/translations.js'
 import { BuildToolbar } from '../BuildToolbar'
 import { ClassHeader } from '../ClassHeader'
 import { EmptyState } from '../EmptyState'
-import { DEFAULT_PINNED_SPEC_IDS, PinnedSkillPopup } from '../PinnedSkillPopup'
+import {
+  DEFAULT_PINNED_SPEC_IDS,
+  PinnedSkillPopup,
+  PinnedSkillSummary,
+  PinnedSpecOptionsPopover,
+} from '../PinnedSkillPopup'
 import { SkillCard } from '../SkillCard'
 import { SkillTree } from '../SkillTree'
 
@@ -19,6 +25,11 @@ const DETAIL_PANEL_MIN_WIDTH = 360
 const DETAIL_PANEL_MAX_WIDTH = 1100
 const DETAIL_RESIZER_WIDTH = 18
 const TREE_AREA_MIN_WIDTH = 560
+const DETAIL_DRAWER_COLLAPSED_HEIGHT = 48
+const DETAIL_DRAWER_DEFAULT_HEIGHT = 220
+const DETAIL_DRAWER_FULL_RATIO = 0.5
+const DETAIL_DRAWER_MAX_RATIO = 0.92
+const DETAIL_DRAWER_DRAG_THRESHOLD = 4
 const MAX_BUILD_PRESETS = 24
 const MAIN_CLASS_DEFAULT_SPEC_VERSION = 'rebalance-1'
 const EXPANDED_CLASS_DEFAULT_SPEC_VERSION = 'pre'
@@ -33,8 +44,12 @@ const EXPANDED_CLASS_IDS = new Set([
   'alitea',
 ])
 
-export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabChange, onBack }) {
+export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabChange, onBack, onLanguageChange }) {
   const shellRef = useRef(null)
+  const detailDrawerDragRef = useRef(null)
+  const drawerSpecButtonRef = useRef(null)
+  const drawerSpecPopoverRef = useRef(null)
+  const ignoreNextDrawerToggleRef = useRef(false)
   const tabButtonRefs = useRef(new Map())
   const tabs = useMemo(() => skillTabsForData(dataSet.data), [dataSet.data])
   const savedSettings = useMemo(() => readPlannerSettings(dataSet.id), [dataSet.id])
@@ -60,6 +75,15 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
   const [selectedPresetId, setSelectedPresetId] = useState(savedPresets[0]?.id ?? '')
   const [presetName, setPresetName] = useState(savedPresets[0]?.name ?? '')
   const [hoveredSkillId, setHoveredSkillId] = useState(null)
+  const [detailDrawerHeight, setDetailDrawerHeight] = useState(DETAIL_DRAWER_COLLAPSED_HEIGHT)
+  const [isResizingDetailDrawer, setIsResizingDetailDrawer] = useState(false)
+  const [showDrawerSpecOptions, setShowDrawerSpecOptions] = useState(false)
+  const [viewportHeight, setViewportHeight] = useState(() => (
+    typeof window === 'undefined' ? 0 : window.innerHeight
+  ))
+  const [isMobileLayout, setIsMobileLayout] = useState(() => (
+    typeof window !== 'undefined' && window.innerWidth <= 900
+  ))
   const [requirementTooltipPositions, setRequirementTooltipPositions] = useState({})
   const [pinnedSkillIds, setPinnedSkillIds] = useState([])
   const [pinnedSpecIds, setPinnedSpecIds] = useState(DEFAULT_PINNED_SPEC_IDS)
@@ -95,6 +119,14 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
     }),
     [model, pointLimit],
   )
+  const detailDrawerMaxHeight = Math.max(
+    DETAIL_DRAWER_COLLAPSED_HEIGHT,
+    Math.round((viewportHeight || 720) * DETAIL_DRAWER_MAX_RATIO),
+  )
+  const isDetailDrawerCollapsed = detailDrawerHeight <= DETAIL_DRAWER_COLLAPSED_HEIGHT + 1
+  const isDetailDrawerFull = !isDetailDrawerCollapsed
+    && detailDrawerHeight > Math.round((viewportHeight || 720) * DETAIL_DRAWER_FULL_RATIO)
+  const shouldShowFullSkillDetails = !isMobileLayout || isDetailDrawerFull
 
   useEffect(() => {
     if (!tabs.some((tab) => tab.id === routeTabId)) return
@@ -142,10 +174,60 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
     setPinnedSkillIds((current) => current.filter((id) => model.skillById.has(id)))
   }, [model.skillById])
 
+  useEffect(() => {
+    const updateViewportMetrics = () => {
+      setViewportHeight(window.innerHeight)
+      setIsMobileLayout(window.innerWidth <= 900)
+    }
+
+    updateViewportMetrics()
+    window.addEventListener('resize', updateViewportMetrics)
+    return () => window.removeEventListener('resize', updateViewportMetrics)
+  }, [])
+
+  useEffect(() => {
+    setDetailDrawerHeight((current) => clamp(current, DETAIL_DRAWER_COLLAPSED_HEIGHT, detailDrawerMaxHeight))
+  }, [detailDrawerMaxHeight])
+
+  useEffect(() => {
+    if (isDetailDrawerFull) setShowDrawerSpecOptions(false)
+  }, [isDetailDrawerFull])
+
+  useEffect(() => {
+    if (!hoveredSkillId) return undefined
+
+    const closeRequirementTooltip = () => setHoveredSkillId(null)
+
+    document.addEventListener('mousedown', closeRequirementTooltip, true)
+    document.addEventListener('touchstart', closeRequirementTooltip, true)
+    return () => {
+      document.removeEventListener('mousedown', closeRequirementTooltip, true)
+      document.removeEventListener('touchstart', closeRequirementTooltip, true)
+    }
+  }, [hoveredSkillId])
+
+  useEffect(() => {
+    if (!showDrawerSpecOptions) return undefined
+
+    const closeSpecOptions = (event) => {
+      if (drawerSpecButtonRef.current?.contains(event.target)) return
+      if (drawerSpecPopoverRef.current?.contains(event.target)) return
+      setShowDrawerSpecOptions(false)
+    }
+
+    document.addEventListener('mousedown', closeSpecOptions, true)
+    document.addEventListener('touchstart', closeSpecOptions, true)
+    return () => {
+      document.removeEventListener('mousedown', closeSpecOptions, true)
+      document.removeEventListener('touchstart', closeSpecOptions, true)
+    }
+  }, [showDrawerSpecOptions])
+
   const selectedSkill = useMemo(
     () => model.data.skills.find((skill) => skill.id === selectedId) ?? null,
     [model.data.skills, selectedId],
   )
+  const selectedSkillLevel = selectedSkill ? skillLevel(levels, selectedSkill.id) : 0
   const hoveredSkill = useMemo(
     () => (hoveredSkillId ? plannerIndex.skillById.get(skillKey(hoveredSkillId)) ?? null : null),
     [hoveredSkillId, plannerIndex],
@@ -162,6 +244,10 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
       plannerIndex,
     }),
     [activeTab, levels, levelsByTab, plannerIndex],
+  )
+  const totalBuildPoints = useMemo(
+    () => Object.values(levelsByTab).reduce((sum, tabLevels) => sum + allocatedTotal(tabLevels), 0),
+    [levelsByTab],
   )
   const previousRequirementGroups = useMemo(
     () => previousRequirementGroupsForSkill(hoveredSkill, plannerIndex, visibleTabs, language),
@@ -243,6 +329,9 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
         : resetTabSkillLevels(current, activeTab, plannerIndex)
     ))
   }, [activeTab, plannerIndex, pointSummary.usesPastPointSplit])
+  const resetAllBuild = useCallback(() => {
+    setLevelsByTab({})
+  }, [])
 
   const changeSelectedPreset = useCallback(
     (presetId) => {
@@ -313,11 +402,78 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
   const changeTab = useCallback(
     (tabId) => {
       setHoveredSkillId(null)
+      setDetailDrawerHeight(DETAIL_DRAWER_COLLAPSED_HEIGHT)
       setActiveTabId(tabId)
       onActiveTabChange(tabId)
     },
     [onActiveTabChange],
   )
+  const selectSkill = useCallback((id) => {
+    setSelectedId(id)
+  }, [])
+  const openCompactDetailDrawer = useCallback(() => {
+    setDetailDrawerHeight(Math.min(DETAIL_DRAWER_DEFAULT_HEIGHT, detailDrawerMaxHeight))
+  }, [detailDrawerMaxHeight])
+  const openFullDetailDrawer = useCallback(() => {
+    setShowDrawerSpecOptions(false)
+    setDetailDrawerHeight(detailDrawerMaxHeight)
+  }, [detailDrawerMaxHeight])
+  const lowerDetailDrawer = useCallback(() => {
+    setDetailDrawerHeight(isDetailDrawerFull
+      ? Math.min(DETAIL_DRAWER_DEFAULT_HEIGHT, detailDrawerMaxHeight)
+      : DETAIL_DRAWER_COLLAPSED_HEIGHT)
+  }, [detailDrawerMaxHeight, isDetailDrawerFull])
+  const toggleDetailDrawer = useCallback(() => {
+    if (ignoreNextDrawerToggleRef.current) {
+      ignoreNextDrawerToggleRef.current = false
+      return
+    }
+
+    setDetailDrawerHeight((current) => (
+      current <= DETAIL_DRAWER_COLLAPSED_HEIGHT + 1
+        ? Math.min(DETAIL_DRAWER_DEFAULT_HEIGHT, detailDrawerMaxHeight)
+        : DETAIL_DRAWER_COLLAPSED_HEIGHT
+    ))
+  }, [detailDrawerMaxHeight])
+  const startDetailDrawerResize = useCallback(
+    (event) => {
+      if (event.button !== 0) return
+      event.preventDefault()
+      event.currentTarget.setPointerCapture(event.pointerId)
+      setIsResizingDetailDrawer(true)
+      detailDrawerDragRef.current = {
+        pointerY: event.clientY,
+        startHeight: detailDrawerHeight,
+        startedOnTitle: Boolean(event.target.closest?.('.detail-drawer-title')),
+        moved: false,
+      }
+    },
+    [detailDrawerHeight],
+  )
+  const moveDetailDrawerResize = useCallback(
+    (event) => {
+      const drag = detailDrawerDragRef.current
+      if (!drag) return
+
+      const delta = drag.pointerY - event.clientY
+      if (Math.abs(delta) > DETAIL_DRAWER_DRAG_THRESHOLD) drag.moved = true
+      setDetailDrawerHeight(clamp(
+        Math.round(drag.startHeight + delta),
+        DETAIL_DRAWER_COLLAPSED_HEIGHT,
+        detailDrawerMaxHeight,
+      ))
+    },
+    [detailDrawerMaxHeight],
+  )
+  const stopDetailDrawerResize = useCallback((event) => {
+    const drag = detailDrawerDragRef.current
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId)
+    }
+    if (drag?.moved && drag.startedOnTitle) ignoreNextDrawerToggleRef.current = true
+    detailDrawerDragRef.current = null
+    setIsResizingDetailDrawer(false)
+  }, [])
   const changeSpecVersion = useCallback((nextSpecVersion) => {
     setHasCustomSpecVersion(true)
     setSpecVersion(nextSpecVersion)
@@ -391,7 +547,10 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
     <main
       className={isResizingDetailPanel ? 'app-shell is-resizing-detail-panel' : 'app-shell'}
       ref={shellRef}
-      style={{ '--detail-panel-width': `${detailPanelWidth}px` }}
+      style={{
+        '--detail-panel-width': `${detailPanelWidth}px`,
+        '--detail-drawer-height': `${detailDrawerHeight}px`,
+      }}
     >
       <section className="tree-area" aria-label={`${model.data.className} skill tree`}>
         <ClassHeader
@@ -399,6 +558,7 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
           specVersion={specVersion}
           roLatamSpecVersion={defaultSpecVersion}
           language={language}
+          onLanguageChange={onLanguageChange}
           onSpecVersionChange={changeSpecVersion}
           onBack={onBack}
         />
@@ -479,7 +639,7 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
           levels={levels}
           selectedId={selectedId}
           specVersion={specVersion}
-          onSelectSkill={setSelectedId}
+          onSelectSkill={selectSkill}
           onHoverSkillChange={setHoveredSkillId}
           onIncreaseSkill={increaseSkill}
           onDecreaseSkill={decreaseSkill}
@@ -494,6 +654,8 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
               pointLimit={pointLimit}
               language={language}
               onReset={resetBuild}
+              onResetAll={resetAllBuild}
+              totalBuildPoints={totalBuildPoints}
             />
           )}
         />
@@ -515,21 +677,110 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
         onPointerCancel={stopDetailPanelResize}
       />
 
-      <aside className="detail-panel" aria-live="polite">
+      <aside
+        className={[
+          'detail-panel',
+          isDetailDrawerCollapsed ? 'is-detail-drawer-closed' : 'is-detail-drawer-open',
+          isDetailDrawerFull ? 'is-detail-drawer-full' : 'is-detail-drawer-compact',
+          isResizingDetailDrawer ? 'is-resizing-detail-drawer' : '',
+        ].join(' ')}
+        aria-live="polite"
+        style={{ '--detail-drawer-height': `${detailDrawerHeight}px` }}
+      >
         {selectedSkill ? (
-          <SkillCard
-            model={activeModel}
-            skill={selectedSkill}
-            level={skillLevel(levels, selectedSkill.id)}
-            specVersion={specVersion}
-            language={language}
-            onIncreaseSkill={increaseSkill}
-            onDecreaseSkill={decreaseSkill}
-            canIncreaseSkill={canIncreaseSkill}
-            canDecreaseSkill={(id) => canDecreaseSkillAcrossTabs(activeTab.id, id, levelsByTab, plannerIndex)}
-            onPinSkill={pinSkill}
-            isPinned={pinnedSkillIds.includes(selectedSkill.id)}
-          />
+          <>
+            <header
+              className="detail-drawer-bar"
+              onPointerDown={startDetailDrawerResize}
+              onPointerMove={moveDetailDrawerResize}
+              onPointerUp={stopDetailDrawerResize}
+              onPointerCancel={stopDetailDrawerResize}
+            >
+              <button
+                className="detail-drawer-title"
+                type="button"
+                aria-expanded={!isDetailDrawerCollapsed}
+                onClick={toggleDetailDrawer}
+              >
+                <img src={assetUrl(selectedSkill.iconUrl)} alt="" width="28" height="28" />
+                <span>
+                  <strong>{translatedSkillName(selectedSkill, language)}</strong>
+                  <em>
+                    {selectedSkillLevel}/{selectedSkill.maxLevel}
+                  </em>
+                </span>
+              </button>
+              <span className="detail-drawer-actions">
+                {!isDetailDrawerFull ? (
+                  <button
+                    type="button"
+                    aria-label={translateUi('Configure pinned specs', language)}
+                    aria-pressed={showDrawerSpecOptions}
+                    ref={drawerSpecButtonRef}
+                    onPointerDown={(event) => event.stopPropagation()}
+                    onClick={() => setShowDrawerSpecOptions((current) => !current)}
+                  >
+                    <Settings size={16} aria-hidden="true" />
+                  </button>
+                ) : null}
+                <button
+                  type="button"
+                  aria-label={translateUi('Collapse skill details', language)}
+                  aria-expanded={!isDetailDrawerCollapsed}
+                  onPointerDown={(event) => event.stopPropagation()}
+                  onClick={lowerDetailDrawer}
+                  disabled={isDetailDrawerCollapsed}
+                >
+                  <ChevronDown size={17} aria-hidden="true" />
+                </button>
+                <button
+                  type="button"
+                  aria-label={translateUi('Open skill details', language)}
+                  aria-expanded={!isDetailDrawerCollapsed}
+                  onPointerDown={(event) => event.stopPropagation()}
+                  onClick={isDetailDrawerCollapsed ? openCompactDetailDrawer : openFullDetailDrawer}
+                  disabled={isDetailDrawerFull}
+                >
+                  <ChevronUp size={17} aria-hidden="true" />
+                </button>
+                {showDrawerSpecOptions && !isDetailDrawerFull ? (
+                  <PinnedSpecOptionsPopover
+                    className="detail-spec-popover"
+                    language={language}
+                    popoverRef={drawerSpecPopoverRef}
+                    selectedSpecIds={pinnedSpecIds}
+                    onSpecIdsChange={setPinnedSpecIds}
+                  />
+                ) : null}
+              </span>
+            </header>
+            <div className="detail-drawer-body">
+              {shouldShowFullSkillDetails ? (
+                <SkillCard
+                  model={activeModel}
+                  skill={selectedSkill}
+                  level={selectedSkillLevel}
+                  specVersion={specVersion}
+                  language={language}
+                  onIncreaseSkill={increaseSkill}
+                  onDecreaseSkill={decreaseSkill}
+                  canIncreaseSkill={canIncreaseSkill}
+                  canDecreaseSkill={(id) => canDecreaseSkillAcrossTabs(activeTab.id, id, levelsByTab, plannerIndex)}
+                  onPinSkill={pinSkill}
+                  isPinned={pinnedSkillIds.includes(selectedSkill.id)}
+                />
+              ) : (
+                <PinnedSkillSummary
+                  model={activeModel}
+                  skill={selectedSkill}
+                  specVersion={specVersion}
+                  language={language}
+                  specIds={pinnedSpecIds}
+                  className="detail-compact-specs"
+                />
+              )}
+            </div>
+          </>
         ) : (
           <EmptyState />
         )}

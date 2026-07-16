@@ -31,14 +31,13 @@ export function RootRouteLayout() {
   return (
     <LanguageContext.Provider value={contextValue}>
       <Outlet />
-      <LanguageMenu language={language} onLanguageChange={setLanguage} />
     </LanguageContext.Provider>
   )
 }
 
 export function HomeRoutePage() {
   const navigate = useNavigate()
-  const { language } = useLanguage()
+  const { language, setLanguage } = useLanguage()
 
   const selectClass = (classId) => {
     navigate({
@@ -50,7 +49,14 @@ export function HomeRoutePage() {
 
   if (defaultClassDataSetId) return <ClassRouteContent classId={defaultClassDataSetId} tabId="" />
 
-  return <ClassSelectRouteContent dataSets={classDataSets} language={language} onSelectClass={selectClass} />
+  return (
+    <ClassSelectRouteContent
+      dataSets={classDataSets}
+      language={language}
+      onLanguageChange={setLanguage}
+      onSelectClass={selectClass}
+    />
+  )
 }
 
 export function ClassRoutePage() {
@@ -62,7 +68,7 @@ export function ClassRoutePage() {
 
 function ClassRouteContent({ classId, tabId }) {
   const navigate = useNavigate()
-  const { language } = useLanguage()
+  const { language, setLanguage } = useLanguage()
   const activeClassId = classId || defaultClassDataSetId
   const activeClassMeta = useMemo(
     () => (activeClassId ? classDataSets.find((dataSet) => dataSet.id === activeClassId) : null),
@@ -128,7 +134,14 @@ function ClassRouteContent({ classId, tabId }) {
   }
 
   if (!activeClassId || !activeClassMeta) {
-    return <ClassSelectRouteContent dataSets={classDataSets} language={language} onSelectClass={selectClass} />
+    return (
+      <ClassSelectRouteContent
+        dataSets={classDataSets}
+        language={language}
+        onLanguageChange={setLanguage}
+        onSelectClass={selectClass}
+      />
+    )
   }
 
   return activeDataSet ? (
@@ -139,6 +152,7 @@ function ClassRouteContent({ classId, tabId }) {
       routeTabId={tabId}
       onActiveTabChange={selectTab}
       onBack={selectHome}
+      onLanguageChange={setLanguage}
     />
   ) : (
     <main className="app-shell">
@@ -151,13 +165,18 @@ function ClassRouteContent({ classId, tabId }) {
   )
 }
 
-function ClassSelectRouteContent({ dataSets, language, onSelectClass }) {
+function ClassSelectRouteContent({ dataSets, language, onLanguageChange, onSelectClass }) {
   usePageFavicon(DEFAULT_FAVICON_PATH)
   usePageTitle(APP_FULL_TITLE)
   usePageDescription(APP_DESCRIPTION)
   useCanonicalUrl(canonicalUrlForPath(''))
 
-  return <ClassSelectPage dataSets={dataSets} language={language} onSelectClass={onSelectClass} />
+  return (
+    <>
+      <ClassSelectPage dataSets={dataSets} language={language} onSelectClass={onSelectClass} />
+      <LanguageMenu language={language} onLanguageChange={onLanguageChange} />
+    </>
+  )
 }
 
 function classPageTitle(dataSet, classMeta) {

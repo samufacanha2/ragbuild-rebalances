@@ -22,6 +22,7 @@ export function SkillNode({
 }) {
   const currentLevel = skillLevel(levels, skill.id)
   const name = translatedSkillName(skill, language)
+  const mobileName = mobileSkillName(name)
   const notes = notesForVersion(skill, specVersion)
   const treeColumn = (skill.tree.col ?? 0) - model.visibleTree.minCol + 1
   const treeRow = (skill.tree.row ?? 0) + 1
@@ -60,6 +61,8 @@ export function SkillNode({
       style={{
         '--skill-column': treeColumn,
         '--skill-row': treeRow,
+        '--skill-mobile-column': treeRow,
+        '--skill-mobile-row': treeColumn,
       }}
       onMouseEnter={() => onHoverSkill(skill.id)}
       onMouseLeave={() => onHoverSkill(null)}
@@ -77,11 +80,12 @@ export function SkillNode({
         onKeyDown={handleSelectKeyDown}
       >
         <span className="skill-name">{name}</span>
+        <span className="skill-name-mobile" aria-hidden="true">
+          <span>{mobileName.start}</span>
+          <span>{mobileName.end}</span>
+        </span>
         <span className="skill-node-content">
           <span className="skill-node-meta">
-            <span className="skill-level-text">
-              {currentLevel}/{skill.maxLevel}
-            </span>
             <div
               className="skill-stepper"
               role="group"
@@ -96,6 +100,11 @@ export function SkillNode({
               >
                 -
               </button>
+              <span className="skill-level-text">
+                <span className="skill-level-current">{currentLevel}</span>
+                <span className="skill-level-separator">/</span>
+                <span className="skill-level-max">{skill.maxLevel}</span>
+              </span>
               <button
                 type="button"
                 aria-label={`${translateUi('Add one point to', language)} ${name}`}
@@ -118,4 +127,36 @@ export function SkillNode({
       ) : null}
     </div>
   )
+}
+
+function mobileSkillName(name) {
+  const value = String(name ?? '').trim().replace(/\s+/g, ' ')
+  if (!value) return { start: '', end: '' }
+
+  const words = value.split(' ')
+  if (words.length === 1) {
+    return value.length <= 12
+      ? { start: value, end: '' }
+      : { start: `${value.slice(0, 6)}...`, end: `...${value.slice(-6)}` }
+  }
+
+  if (words.length === 2) {
+    return {
+      start: truncateMobileNameLine(words[0], false),
+      end: truncateMobileNameLine(words[1], true),
+    }
+  }
+
+  const first = words[0]
+  const last = words.at(-1)
+
+  return {
+    start: truncateMobileNameLine(first, false),
+    end: `...${last.slice(-6)}`,
+  }
+}
+
+function truncateMobileNameLine(value, fromEnd) {
+  if (value.length <= 8) return value
+  return fromEnd ? `...${value.slice(-6)}` : `${value.slice(0, 6)}...`
 }

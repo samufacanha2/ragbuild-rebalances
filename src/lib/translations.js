@@ -1,6 +1,6 @@
 export const languageOptions = [
   { id: 'en', label: 'English' },
-  { id: 'pt-BR', label: 'Portugues' },
+  { id: 'pt-BR', label: 'Portugu\u00eas' },
 ]
 
 export function translatedSkillName(skill, language) {
@@ -214,6 +214,7 @@ const uiTranslations = {
   'Current specs': 'Especificacoes atuais',
   'Build presets': 'Predefinicoes de build',
   'Close': 'Fechar',
+  'Collapse skill details': 'Recolher detalhes da habilidade',
   'Delete': 'Excluir',
   'Description': 'Descricao',
   'Language': 'Idioma',
@@ -226,6 +227,7 @@ const uiTranslations = {
   'No rebalance notes are applied before the first rebalance.':
     'Nenhuma nota de rebalanceamento e aplicada antes do primeiro rebalanceamento.',
   'No selected specs found.': 'Nenhuma especificacao selecionada encontrada.',
+  'Open skill details': 'Abrir detalhes da habilidade',
   'No classes match your search.': 'Nenhuma classe corresponde a busca.',
   'No rebalance notes for this skill.': 'Nenhuma nota de rebalanceamento para esta habilidade.',
   'No additional timing or range fields were found.': 'Nenhum campo adicional de tempo ou alcance foi encontrado.',
@@ -242,6 +244,7 @@ const uiTranslations = {
   'Req Lv': 'Req Nv.',
   'Required level': 'Nivel necessario',
   'Reset': 'Limpar',
+  'Reset all': 'Limpar tudo',
   'Save': 'Salvar',
   'Saved presets': 'Predefinicoes salvas',
   'Search classes': 'Buscar classes',
