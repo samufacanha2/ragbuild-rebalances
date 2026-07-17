@@ -46,7 +46,7 @@
 }
 
 .skill-pin-button:focus-visible {
-  outline: 3px solid rgba(21, 122, 126, 0.2);
+  outline: 3px solid rgba(var(--accent-rgb), 0.2);
   outline-offset: 2px;
 }
 
@@ -86,7 +86,7 @@
 }
 
 .card-stepper button:focus-visible {
-  outline: 3px solid rgba(21, 122, 126, 0.2);
+  outline: 3px solid rgba(var(--accent-rgb), 0.2);
   outline-offset: 2px;
 }
 
@@ -97,7 +97,7 @@
   height: 36px;
   border: 1px solid var(--line);
   border-radius: 7px;
-  background: #fafbfd;
+  background: var(--input-bg);
 }
 
 .card-level-readout {
@@ -126,7 +126,7 @@
 }
 
 .skill-source-links a:focus-visible {
-  outline: 3px solid rgba(21, 122, 126, 0.2);
+  outline: 3px solid rgba(var(--accent-rgb), 0.2);
   outline-offset: 2px;
 }
 

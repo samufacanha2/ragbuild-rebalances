@@ -44,7 +44,16 @@ const EXPANDED_CLASS_IDS = new Set([
   'alitea',
 ])
 
-export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabChange, onBack, onLanguageChange }) {
+export function ClassSkillPlanner({
+  dataSet,
+  language,
+  routeTabId,
+  onActiveTabChange,
+  onBack,
+  onLanguageChange,
+  theme,
+  onThemeChange,
+}) {
   const shellRef = useRef(null)
   const detailDrawerDragRef = useRef(null)
   const drawerSpecButtonRef = useRef(null)
@@ -561,6 +570,8 @@ export function ClassSkillPlanner({ dataSet, language, routeTabId, onActiveTabCh
           onLanguageChange={onLanguageChange}
           onSpecVersionChange={changeSpecVersion}
           onBack={onBack}
+          theme={theme}
+          onThemeChange={onThemeChange}
         />
 
         <BuildToolbar

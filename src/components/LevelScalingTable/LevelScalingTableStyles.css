@@ -29,5 +29,5 @@
 }
 
 .current-level-row {
-  background: rgba(21, 122, 126, 0.08);
+  background: rgba(var(--accent-rgb), 0.08);
 }

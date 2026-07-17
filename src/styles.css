@@ -1,17 +1,75 @@
 :root {
-  --bg: #f5f7fb;
+  --bg: #f6f6f7;
   --surface: #ffffff;
-  --surface-soft: #eef3f6;
-  --ink: #17212f;
-  --muted: #667085;
-  --line: #d9e1e8;
-  --teal: #157a7e;
-  --teal-dark: #0e5f63;
+  --surface-soft: #f0f1f3;
+  --surface-raised: rgba(255, 255, 255, 0.94);
+  --surface-panel: rgba(255, 255, 255, 0.86);
+  --surface-popover: rgba(251, 251, 252, 0.98);
+  --input-bg: #f8f9fa;
+  --node-bg: rgba(255, 255, 255, 0.44);
+  --node-hover-bg: rgba(255, 255, 255, 0.42);
+  --node-active-bg: rgba(255, 255, 255, 0.62);
+  --node-filter-bg: rgba(255, 255, 255, 0.32);
+  --icon-bg: rgba(255, 255, 255, 0.62);
+  --warning-surface: rgba(255, 247, 237, 0.98);
+  --warning-surface-soft: rgba(255, 232, 179, 0.68);
+  --warning-ink: #6f4c09;
+  --ink: #1f242b;
+  --muted: #6f767f;
+  --line: #dedde8;
+  --teal: #615f86;
+  --teal-dark: #4f4d75;
+  --accent-strong: #4f4d75;
+  --accent-rgb: 97, 95, 134;
+  --skill-link: #55537b;
+  --level-current: #5d5a88;
+  --level-muted: #8e99aa;
+  --level-empty-max: #866969;
   --coral: #c94f4f;
   --gold: #b88621;
-  --violet: #5a5f9f;
+  --violet: #3d3b65;
+  --focus-ring: rgba(97, 95, 134, 0.22);
+  --tree-grid-v: rgba(61, 59, 101, 0.1);
+  --tree-grid-h: rgba(61, 59, 101, 0.08);
   --shadow: 0 18px 45px rgba(23, 33, 47, 0.12);
   color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #111119;
+  --surface: #1a1a25;
+  --surface-soft: #242435;
+  --surface-raised: rgba(26, 26, 37, 0.94);
+  --surface-panel: rgba(26, 26, 37, 0.86);
+  --surface-popover: rgba(22, 22, 32, 0.98);
+  --input-bg: #171721;
+  --node-bg: rgba(39, 38, 55, 0.62);
+  --node-hover-bg: rgba(52, 51, 73, 0.76);
+  --node-active-bg: rgba(61, 59, 101, 0.64);
+  --node-filter-bg: rgba(74, 36, 45, 0.58);
+  --icon-bg: rgba(14, 14, 22, 0.74);
+  --warning-surface: rgba(64, 45, 22, 0.98);
+  --warning-surface-soft: rgba(82, 61, 26, 0.78);
+  --warning-ink: #f6c96f;
+  --ink: #e5e7eb;
+  --muted: #a0a6ad;
+  --line: #39384f;
+  --teal: #8f8cc4;
+  --teal-dark: #c2c0ee;
+  --accent-strong: #c2c0ee;
+  --accent-rgb: 143, 140, 196;
+  --skill-link: #bebbea;
+  --level-current: #d0cdf6;
+  --level-muted: #9896b3;
+  --level-empty-max: #aa8d8d;
+  --coral: #f17272;
+  --gold: #d3a33f;
+  --violet: #8f8cc4;
+  --focus-ring: rgba(143, 140, 196, 0.24);
+  --tree-grid-v: rgba(143, 140, 196, 0.13);
+  --tree-grid-h: rgba(143, 140, 196, 0.1);
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.36);
+  color-scheme: dark;
 }
 
 * {
@@ -28,10 +86,17 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    linear-gradient(180deg, rgba(21, 122, 126, 0.08), transparent 320px),
+    linear-gradient(180deg, rgba(61, 59, 101, 0.08), transparent 320px),
     var(--bg);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+:root[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(61, 59, 101, 0.28), transparent 340px),
+    linear-gradient(180deg, rgba(61, 59, 101, 0.12), transparent 320px),
+    var(--bg);
 }
 
 a {

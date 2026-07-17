@@ -4,6 +4,7 @@ import { ClassSkillPlanner } from './components/ClassSkillPlanner'
 import { ClassSelectPage } from './components/ClassSelectPage'
 import { EmptyState } from './components/EmptyState'
 import { LanguageMenu } from './components/LanguageMenu'
+import { ThemeToggle } from './components/ThemeToggle'
 import { classDataSets, defaultClassDataSetId } from './data/classData.js'
 import { assetUrl } from './lib/dom.js'
 import { jobIconUrlForLabelAndPath } from './lib/jobIcons.js'
@@ -11,6 +12,7 @@ import { detectInitialLanguage, persistLanguage } from './lib/locale.js'
 import { translateUi } from './lib/translations.js'
 
 const LanguageContext = createContext(null)
+const ThemeContext = createContext(null)
 const APP_TITLE = 'RO Skills'
 const APP_FULL_TITLE = 'RO Skills - Ragnarok Online Skill Planner & Rebalance Notes'
 const APP_DESCRIPTION =
@@ -20,17 +22,27 @@ const DEFAULT_FAVICON_PATH = 'Bt_skill.png'
 
 export function RootRouteLayout() {
   const [language, setLanguage] = useState(detectInitialLanguage)
+  const [theme, setTheme] = useState(detectInitialTheme)
 
   useEffect(() => {
     document.documentElement.lang = language
     persistLanguage(language)
   }, [language])
 
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme
+    persistTheme(theme)
+    updateMetaTag('theme-color', theme === 'dark' ? '#1a1a25' : '#615f86')
+  }, [theme])
+
   const contextValue = useMemo(() => ({ language, setLanguage }), [language])
+  const themeContextValue = useMemo(() => ({ theme, setTheme }), [theme])
 
   return (
     <LanguageContext.Provider value={contextValue}>
-      <Outlet />
+      <ThemeContext.Provider value={themeContextValue}>
+        <Outlet />
+      </ThemeContext.Provider>
     </LanguageContext.Provider>
   )
 }
@@ -69,6 +81,7 @@ export function ClassRoutePage() {
 function ClassRouteContent({ classId, tabId }) {
   const navigate = useNavigate()
   const { language, setLanguage } = useLanguage()
+  const { theme, setTheme } = useTheme()
   const activeClassId = classId || defaultClassDataSetId
   const activeClassMeta = useMemo(
     () => (activeClassId ? classDataSets.find((dataSet) => dataSet.id === activeClassId) : null),
@@ -153,6 +166,8 @@ function ClassRouteContent({ classId, tabId }) {
       onActiveTabChange={selectTab}
       onBack={selectHome}
       onLanguageChange={setLanguage}
+      theme={theme}
+      onThemeChange={setTheme}
     />
   ) : (
     <main className="app-shell">
@@ -166,6 +181,7 @@ function ClassRouteContent({ classId, tabId }) {
 }
 
 function ClassSelectRouteContent({ dataSets, language, onLanguageChange, onSelectClass }) {
+  const { theme, setTheme } = useTheme()
   usePageFavicon(DEFAULT_FAVICON_PATH)
   usePageTitle(APP_FULL_TITLE)
   usePageDescription(APP_DESCRIPTION)
@@ -174,6 +190,7 @@ function ClassSelectRouteContent({ dataSets, language, onLanguageChange, onSelec
   return (
     <>
       <ClassSelectPage dataSets={dataSets} language={language} onSelectClass={onSelectClass} />
+      <ThemeToggle language={language} theme={theme} onThemeChange={setTheme} />
       <LanguageMenu language={language} onLanguageChange={onLanguageChange} />
     </>
   )
@@ -218,6 +235,33 @@ function useLanguage() {
   const context = useContext(LanguageContext)
   if (!context) throw new Error('useLanguage must be used inside RootRouteLayout.')
   return context
+}
+
+function useTheme() {
+  const context = useContext(ThemeContext)
+  if (!context) throw new Error('useTheme must be used inside RootRouteLayout.')
+  return context
+}
+
+function detectInitialTheme() {
+  if (typeof window === 'undefined') return 'light'
+
+  try {
+    const storedTheme = window.localStorage.getItem('ro-skills-theme')
+    if (storedTheme === 'light' || storedTheme === 'dark') return storedTheme
+  } catch {
+    // Ignore storage failures and fall back to the system preference.
+  }
+
+  return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+
+function persistTheme(theme) {
+  try {
+    window.localStorage.setItem('ro-skills-theme', theme)
+  } catch {
+    // Theme can still apply for this session when storage is unavailable.
+  }
 }
 
 function usePageFavicon(path) {

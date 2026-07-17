@@ -18,9 +18,9 @@
 }
 
 .skill-node:hover {
-  outline: 2px solid rgba(21, 122, 126, 0.22);
+  outline: 2px solid rgba(var(--accent-rgb), 0.22);
   outline-offset: -2px;
-  background: rgba(255, 255, 255, 0.42);
+  background: var(--node-hover-bg);
 }
 
 .skill-node.has-notes {
@@ -29,27 +29,27 @@
 
 .skill-node.in-filter {
   border-color: rgba(201, 79, 79, 0.58);
-  background: rgba(255, 255, 255, 0.32);
+  background: var(--node-filter-bg);
 }
 
 .skill-node.is-bought {
-  background: rgba(255, 255, 255, 0.44);
-  border-color: rgba(21, 122, 126, 0.45);
+  background: var(--node-bg);
+  border-color: rgba(var(--accent-rgb), 0.45);
 }
 
 .skill-node.is-selected {
   border-color: var(--teal);
-  background: rgba(255, 255, 255, 0.62);
-  box-shadow: inset 0 0 0 2px rgba(21, 122, 126, 0.22);
+  background: var(--node-active-bg);
+  box-shadow: inset 0 0 0 2px rgba(var(--accent-rgb), 0.22);
 }
 
 .skill-node.is-hover-target {
-  background: rgba(21, 122, 126, 0.16);
+  background: rgba(var(--accent-rgb), 0.16);
 }
 
 .skill-node.is-prerequisite {
   border-color: rgba(184, 134, 33, 0.8);
-  background: rgba(255, 232, 179, 0.68);
+  background: var(--warning-surface-soft);
   box-shadow: inset 0 0 0 2px rgba(184, 134, 33, 0.18);
 }
 
@@ -73,7 +73,7 @@
 
 .skill-select:focus-visible,
 .skill-stepper button:focus-visible {
-  outline: 3px solid rgba(21, 122, 126, 0.2);
+  outline: 3px solid rgba(var(--accent-rgb), 0.2);
   outline-offset: 2px;
 }
 
@@ -86,7 +86,7 @@
   height: 28px;
   border: 1px solid rgba(102, 112, 133, 0.28);
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.62);
+  background: var(--icon-bg);
 }
 
 .icon-shell img {
@@ -106,8 +106,8 @@
   width: 100%;
   display: -webkit-box;
   overflow: hidden;
-  color: #0069c8;
-  font-size: 0.64rem;
+  color: var(--skill-link);
+  font-size: 0.72rem;
   font-weight: 600;
   line-height: 1.08;
   overflow-wrap: anywhere;
@@ -148,7 +148,7 @@
   min-height: 22px;
   border: 1px solid var(--line);
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.82);
+  background: var(--surface-panel);
   overflow: hidden;
   opacity: 1;
 }
@@ -163,7 +163,7 @@
   border-radius: 0;
   background: transparent;
   color: var(--ink);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 900;
   line-height: 1;
   cursor: pointer;
@@ -189,7 +189,7 @@
 .skill-level-text {
   display: inline-grid;
   place-items: center;
-  font-size: 0.64rem;
+  font-size: 0.8rem;
   font-variant-numeric: tabular-nums;
   font-weight: 800;
   line-height: 0.92;
@@ -202,33 +202,33 @@
 }
 
 .skill-level-max {
-  color: #667085;
+  color: var(--muted);
   font-weight: 850;
   opacity: 0.9;
 }
 
 .skill-level-text.is-level-partial .skill-level-current {
-  color: #0074c8;
+  color: var(--level-current);
   opacity: 0.8;
 }
 
 .skill-level-text.is-level-partial .skill-level-max {
-  color: #8e99aa;
+  color: var(--level-muted);
   opacity: 0.3;
 }
 
 .skill-level-text.is-level-maxed .skill-level-current {
-  color: #0074c8;
+  color: var(--level-current);
   opacity: 1;
 }
 
 .skill-level-text.is-level-maxed .skill-level-max {
-  color: #8e99aa;
+  color: var(--level-muted);
   opacity: 0.3;
 }
 
 .skill-level-text.is-level-empty .skill-level-max {
-  color: #866969;
+  color: var(--level-empty-max);
   opacity: 0.7;
 }
 
@@ -245,10 +245,10 @@
   max-width: none;
   border: 1px solid rgba(184, 134, 33, 0.45);
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.86);
-  color: #6f4c09;
+  background: var(--surface-panel);
+  color: var(--warning-ink);
   padding: 1px 4px;
-  font-size: 0.56rem;
+  font-size: 0.6rem;
   font-weight: 900;
   line-height: 1.15;
   white-space: nowrap;
@@ -272,7 +272,7 @@
     gap: 0;
     width: 100%;
     min-width: 0;
-    color: #0069c8;
+    color: var(--skill-link);
     font-size: 0.56rem;
     font-weight: 750;
     line-height: 1.04;

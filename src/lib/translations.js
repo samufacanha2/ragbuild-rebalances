@@ -215,11 +215,13 @@ const uiTranslations = {
   'Build presets': 'Predefinicoes de build',
   'Close': 'Fechar',
   'Collapse skill details': 'Recolher detalhes da habilidade',
+  'Dark': 'Escuro',
   'Delete': 'Excluir',
   'Description': 'Descricao',
   'Language': 'Idioma',
   'Level': 'Nivel',
   'Level Scaling': 'Escala por nivel',
+  'Light': 'Claro',
   'Load': 'Carregar',
   'Loading': 'Carregando',
   'Lv': 'Nv.',
@@ -253,6 +255,8 @@ const uiTranslations = {
   'This skill is unchanged in the selected rebalance.': 'Esta habilidade nao muda no rebalanceamento selecionado.',
   'Use this dropdown to switch between pre-rebalance, each rebalance, and current specs.':
     'Use esta lista para alternar entre pre-rebalanceamento, cada rebalanceamento e as especificacoes atuais.',
+  'Use dark theme': 'Usar tema escuro',
+  'Use light theme': 'Usar tema claro',
   'Wiki links': 'Links da wiki',
   'previous class': 'classe anterior',
 }

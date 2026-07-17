@@ -10,10 +10,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="application-name" content="RO Skills" />
     <meta name="description" content="RO Skills is a Ragnarok Online skill tree planner for checking prerequisites, allocating class points, and comparing ROLATAM rebalance notes." />
-    <meta name="theme-color" content="#157a7e" />
+    <meta name="theme-color" content="#615f86" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large" />
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <script>
+      (() => {
+        try {
+          const storedTheme = window.localStorage.getItem('ro-skills-theme')
+          const theme = storedTheme === 'light' || storedTheme === 'dark'
+            ? storedTheme
+            : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+
+          document.documentElement.dataset.theme = theme
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#1a1a25' : '#615f86')
+        } catch {
+          document.documentElement.dataset.theme = 'light'
+        }
+      })()
+    </script>
     <script type="application/ld+json" id="app-structured-data">
       {
         "@context": "https://schema.org",

@@ -3,6 +3,7 @@ import './ClassHeaderStyles.css'
 import { assetUrl } from '../../lib/dom.js'
 import { translateUi } from '../../lib/translations.js'
 import { LanguageMenu } from '../LanguageMenu'
+import { ThemeToggle } from '../ThemeToggle'
 
 export function ClassHeader({
   model,
@@ -10,6 +11,8 @@ export function ClassHeader({
   roLatamSpecVersion,
   language,
   onLanguageChange,
+  theme,
+  onThemeChange,
   onSpecVersionChange,
   onBack,
 }) {
@@ -61,6 +64,9 @@ export function ClassHeader({
         <div className="class-title">
           <h1>{model.data.className}</h1>
         </div>
+        {onThemeChange ? (
+          <ThemeToggle language={language} theme={theme} onThemeChange={onThemeChange} variant="inline" />
+        ) : null}
         {onLanguageChange ? (
           <LanguageMenu language={language} onLanguageChange={onLanguageChange} variant="inline" />
         ) : null}
