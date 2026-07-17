@@ -26,6 +26,11 @@ export function SkillNode({
   const notes = notesForVersion(skill, specVersion)
   const treeColumn = (skill.tree.col ?? 0) - model.visibleTree.minCol + 1
   const treeRow = (skill.tree.row ?? 0) + 1
+  const levelStateClass = currentLevel >= skill.maxLevel
+    ? 'is-level-maxed'
+    : currentLevel > 0
+      ? 'is-level-partial'
+      : 'is-level-empty'
   const className = [
     'skill-node',
     skill.balanceNotes.length ? 'has-notes' : '',
@@ -100,7 +105,7 @@ export function SkillNode({
               >
                 -
               </button>
-              <span className="skill-level-text">
+              <span className={`skill-level-text ${levelStateClass}`}>
                 <span className="skill-level-current">{currentLevel}</span>
                 <span className="skill-level-separator">/</span>
                 <span className="skill-level-max">{skill.maxLevel}</span>

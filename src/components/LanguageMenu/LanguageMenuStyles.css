@@ -17,7 +17,9 @@
   right: auto;
   bottom: auto;
   z-index: 5;
+  align-self: flex-start;
   flex: 0 0 auto;
+  margin-top: var(--topbar-control-label-offset, 0);
 }
 
 .locale-toggle {
@@ -47,12 +49,14 @@
 
 .locale-menu.is-inline .locale-toggle {
   min-width: 92px;
-  height: 34px;
+  height: var(--topbar-control-height, 40px);
+  border-color: var(--line);
   border-radius: 8px;
-  box-shadow: none;
+  background: var(--surface);
+  box-shadow: 0 1px 0 rgba(23, 33, 47, 0.04);
   cursor: pointer;
-  font-size: 0.68rem;
-  padding: 0 8px;
+  font-size: 0.76rem;
+  padding: 0 10px;
   touch-action: auto;
 }
 
@@ -151,5 +155,10 @@
   .locale-toggle {
     min-width: 104px;
     height: 40px;
+  }
+
+  .locale-menu.is-inline {
+    align-self: center;
+    margin-top: 0;
   }
 }

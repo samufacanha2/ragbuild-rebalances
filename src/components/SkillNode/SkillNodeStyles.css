@@ -189,7 +189,6 @@
 .skill-level-text {
   display: inline-grid;
   place-items: center;
-  color: var(--ink);
   font-size: 0.64rem;
   font-variant-numeric: tabular-nums;
   font-weight: 800;
@@ -197,9 +196,40 @@
   padding: 1px 3px;
 }
 
+.skill-level-current {
+  color: #8d98a8;
+  opacity: 0.4;
+}
+
 .skill-level-max {
-  color: #6f668c;
+  color: #667085;
   font-weight: 850;
+  opacity: 0.9;
+}
+
+.skill-level-text.is-level-partial .skill-level-current {
+  color: #0074c8;
+  opacity: 0.8;
+}
+
+.skill-level-text.is-level-partial .skill-level-max {
+  color: #8e99aa;
+  opacity: 0.3;
+}
+
+.skill-level-text.is-level-maxed .skill-level-current {
+  color: #0074c8;
+  opacity: 1;
+}
+
+.skill-level-text.is-level-maxed .skill-level-max {
+  color: #8e99aa;
+  opacity: 0.3;
+}
+
+.skill-level-text.is-level-empty .skill-level-max {
+  color: #866969;
+  opacity: 0.7;
 }
 
 .skill-level-separator {
@@ -324,5 +354,4 @@
     background: transparent;
     font-size: 0.7rem;
   }
-
 }
