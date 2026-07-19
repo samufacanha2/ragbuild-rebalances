@@ -1251,10 +1251,16 @@ function ensureRequirements({ draft, plannerIndex, preferredTabId, skill }) {
     const requiredSkill = plannerIndex.skillById.get(skillKey(requirement.id))
     if (!requiredSkill) continue
 
+    const requirementSourceTabId = ownSourceTabForSkill({
+      fallbackTabId: preferredTabId,
+      plannerIndex,
+      skillId: requiredSkill.id,
+    })
+
     if (!ensureRequirements({
       draft,
       plannerIndex,
-      preferredTabId,
+      preferredTabId: requirementSourceTabId,
       skill: requiredSkill,
     })) {
       return false
@@ -1263,7 +1269,7 @@ function ensureRequirements({ draft, plannerIndex, preferredTabId, skill }) {
     if (!addLevelsForSkill({
       draft,
       plannerIndex,
-      preferredTabId,
+      preferredTabId: requirementSourceTabId,
       skill: requiredSkill,
       targetLevel: requirement.level,
     })) {
@@ -1297,6 +1303,12 @@ function addLevelsForSkill({ draft, plannerIndex, preferredTabId, skill, targetL
 
 function sourceTabForSkill({ plannerIndex, preferredTabId, skillId }) {
   return sourceTabCandidates(preferredTabId, skillId, plannerIndex)[0]?.id ?? null
+}
+
+function ownSourceTabForSkill({ fallbackTabId, plannerIndex, skillId }) {
+  const ownerTabId = plannerIndex.tabIdBySkillId.get(skillKey(skillId))
+  if (ownerTabId && sourceTabCanSpendOnSkill(ownerTabId, skillId, plannerIndex)) return ownerTabId
+  return fallbackTabId
 }
 
 function sourceTabCandidates(preferredTabId, skillId, plannerIndex) {
