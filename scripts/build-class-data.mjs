@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { divinePrideSkillUrl, fetchSourceResponse, formatSourceFailure } from "./divine-pride-rate-limit.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
@@ -1655,11 +1656,12 @@ async function fetchDivinePrideSkillTranslation(id) {
   const apiKey = env.DIVINE_PRIDE_API_KEY;
   if (!apiKey) return null;
 
-  const apiUrl = (env.DIVINE_PRIDE_API_URL || `${defaultApiUrl}/api`).replace(/\/$/, "");
+  const apiUrl = env.DIVINE_PRIDE_API_URL || defaultApiUrl;
 
   try {
-    const data = await fetchJson(`${apiUrl}/database/Skill/${id}?apiKey=${encodeURIComponent(apiKey)}`, {
-      cachePath: sourceFilePath("divine-pride-api", "skills", `${id}.json`)
+    const data = await fetchJson(divinePrideSkillUrl(apiUrl, id, apiKey).href, {
+      cachePath: sourceFilePath("divine-pride-api", "skills", `${id}.json`),
+      divinePrideApi: true
     });
     const entry = (data.globalization ?? []).find(isPortugueseGlobalization);
     if (!entry) return null;
@@ -2222,7 +2224,7 @@ async function sourceText(url, options = {}) {
     try {
       const text = await readSourceFile(cachePath, url);
       sourceStats.fallbackRead += 1;
-      console.warn(`Using cached source after fetch failed for ${url}: ${error.message}`);
+      console.warn(`Using cached source after fetch failed for ${formatSourceFailure(url, error, options.divinePrideApi)}`);
       return text;
     } catch {
       throw error;
@@ -2231,18 +2233,18 @@ async function sourceText(url, options = {}) {
 }
 
 async function fetchRemoteText(url, options = {}) {
-  const response = await fetch(url, {
+  const response = await fetchSourceResponse(url, {
     headers: {
       "Accept": options.accept ?? "text/html,application/xhtml+xml",
       "Accept-Language": options.language ?? "en-US,en;q=0.9",
       "User-Agent": "SoulAsceticBalanceTool/1.0"
     }
-  });
+  }, { divinePrideApi: options.divinePrideApi });
 
   const text = await response.text();
   if (!response.ok) {
     if (options.cacheNotFound && response.status === 404) return text;
-    throw new Error(`HTTP ${response.status} for ${url}`);
+    throw new Error(`HTTP ${response.status} for ${options.divinePrideApi ? new URL(url).pathname : url}`);
   }
   return text;
 }

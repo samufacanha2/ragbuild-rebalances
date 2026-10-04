@@ -1,0 +1,4622 @@
+{
+  "classes": {
+    "Dragon Knight": {
+      "name": "Cavaleiros Draconianos",
+      "url": "https://browiki.org/wiki/Cavaleiros_Draconianos"
+    },
+    "Rune Knight": {
+      "name": "Cavaleiros Rúnicos",
+      "url": "https://browiki.org/wiki/Cavaleiros_R%C3%BAnicos"
+    },
+    "Lord Knight": {
+      "name": "Lordes",
+      "url": "https://browiki.org/wiki/Lordes"
+    },
+    "Swordman": {
+      "name": "Espadachins",
+      "url": "https://browiki.org/wiki/Espadachins"
+    },
+    "Imperial Guard": {
+      "name": "Guardiões Imperiais",
+      "url": "https://browiki.org/wiki/Guardi%C3%B5es_Imperiais"
+    },
+    "Royal Guard": {
+      "name": "Guardiões Reais",
+      "url": "https://browiki.org/wiki/Guardi%C3%B5es_Reais"
+    },
+    "Paladin": {
+      "name": "Paladinos",
+      "url": "https://browiki.org/wiki/Paladinos"
+    },
+    "Meister": {
+      "name": "Engenheiros",
+      "url": "https://browiki.org/wiki/Engenheiros"
+    },
+    "Mechanic": {
+      "name": "Mecânicos",
+      "url": "https://browiki.org/wiki/Mec%C3%A2nicos"
+    },
+    "Whitesmith": {
+      "name": "Mestres-Ferreiros",
+      "url": "https://browiki.org/wiki/Mestres-Ferreiros"
+    },
+    "Merchant": {
+      "name": "Mercadores",
+      "url": "https://browiki.org/wiki/Mercadores"
+    },
+    "Biolo": {
+      "name": "Cientistas",
+      "url": "https://browiki.org/wiki/Cientistas"
+    },
+    "Genetic": {
+      "name": "Bioquímicos",
+      "url": "https://browiki.org/wiki/Bioqu%C3%ADmicos"
+    },
+    "Creator": {
+      "name": "Criadores",
+      "url": "https://browiki.org/wiki/Criadores"
+    },
+    "Shadow Cross": {
+      "name": "Executores",
+      "url": "https://browiki.org/wiki/Executores"
+    },
+    "Glt. Cross": {
+      "name": "Sicários",
+      "url": "https://browiki.org/wiki/Sic%C3%A1rios"
+    },
+    "Assassin Cross": {
+      "name": "Algozes",
+      "url": "https://browiki.org/wiki/Algozes"
+    },
+    "Thief": {
+      "name": "Gatunos",
+      "url": "https://browiki.org/wiki/Gatunos"
+    },
+    "Abyss Chaser": {
+      "name": "Mandraques",
+      "url": "https://browiki.org/wiki/Mandraques"
+    },
+    "Shadow Chaser": {
+      "name": "Renegados",
+      "url": "https://browiki.org/wiki/Renegados"
+    },
+    "Stalker": {
+      "name": "Desordeiros",
+      "url": "https://browiki.org/wiki/Desordeiros"
+    },
+    "Arch Mage": {
+      "name": "Magus",
+      "url": "https://browiki.org/wiki/Magus"
+    },
+    "Warlock": {
+      "name": "Arcanos",
+      "url": "https://browiki.org/wiki/Arcanos"
+    },
+    "High Wizard": {
+      "name": "Arquimagos",
+      "url": "https://browiki.org/wiki/Arquimagos"
+    },
+    "Magician": {
+      "name": "Magos",
+      "url": "https://browiki.org/wiki/Magos"
+    },
+    "Elemental Master": {
+      "name": "Elementalistas",
+      "url": "https://browiki.org/wiki/Elementalistas"
+    },
+    "Sorcerer": {
+      "name": "Feiticeiros",
+      "url": "https://browiki.org/wiki/Feiticeiros"
+    },
+    "Professor": {
+      "name": "Professores",
+      "url": "https://browiki.org/wiki/Professores"
+    },
+    "Cardinal": {
+      "name": "Cardeais",
+      "url": "https://browiki.org/wiki/Cardeais"
+    },
+    "Arch Bishop": {
+      "name": "Arcebispos",
+      "url": "https://browiki.org/wiki/Arcebispos"
+    },
+    "High Priest": {
+      "name": "Sumo Sacerdotes",
+      "url": "https://browiki.org/wiki/Sumo_Sacerdotes"
+    },
+    "Acolyte": {
+      "name": "Noviços",
+      "url": "https://browiki.org/wiki/Novi%C3%A7os"
+    },
+    "Inquisitor": {
+      "name": "Inquisidores",
+      "url": "https://browiki.org/wiki/Inquisidores"
+    },
+    "Sura": {
+      "name": "Shuras",
+      "url": "https://browiki.org/wiki/Shuras"
+    },
+    "Champion": {
+      "name": "Mestres",
+      "url": "https://browiki.org/wiki/Mestres"
+    },
+    "Wind Hawk": {
+      "name": "Falcões do Vento",
+      "url": "https://browiki.org/wiki/Falc%C3%B5es_do_Vento"
+    },
+    "Ranger": {
+      "name": "Sentinelas",
+      "url": "https://browiki.org/wiki/Sentinelas"
+    },
+    "Sniper": {
+      "name": "Atiradores de Elite",
+      "url": "https://browiki.org/wiki/Atiradores_de_Elite"
+    },
+    "Archer": {
+      "name": "Arqueiros",
+      "url": "https://browiki.org/wiki/Arqueiros"
+    },
+    "Troubadour": {
+      "name": "Maestros",
+      "url": "https://browiki.org/wiki/Maestros"
+    },
+    "Minstrel": {
+      "name": "Menestréis",
+      "url": "https://browiki.org/wiki/Menestr%C3%A9is"
+    },
+    "Clown": {
+      "name": "Bardos",
+      "url": "https://browiki.org/wiki/Bardos"
+    },
+    "Trouvere": {
+      "name": "Divas",
+      "url": "https://browiki.org/wiki/Divas"
+    },
+    "Wanderer": {
+      "name": "Musas",
+      "url": "https://browiki.org/wiki/Musas"
+    },
+    "Gypsy": {
+      "name": "Ciganas",
+      "url": "https://browiki.org/wiki/Ciganas"
+    },
+    "Night Watch": {
+      "name": "Guerrilheiros",
+      "url": "https://browiki.org/wiki/Guerrilheiros"
+    },
+    "Rebellion": {
+      "name": "Insurgentes",
+      "url": "https://browiki.org/wiki/Insurgentes"
+    },
+    "Gunslinger": {
+      "name": "Justiceiros",
+      "url": "https://browiki.org/wiki/Justiceiros"
+    },
+    "Shinkiro": {
+      "name": "Shinkiro",
+      "url": "https://browiki.org/wiki/Shinkiro"
+    },
+    "Kagerou": {
+      "name": "Kagerou",
+      "url": "https://browiki.org/wiki/Kagerou"
+    },
+    "Ninja": {
+      "name": "Ninjas",
+      "url": "https://browiki.org/wiki/Ninjas"
+    },
+    "Shiranui": {
+      "name": "Shiranui",
+      "url": "https://browiki.org/wiki/Shiranui"
+    },
+    "Oboro": {
+      "name": "Oboro",
+      "url": "https://browiki.org/wiki/Oboro"
+    },
+    "Sky Emperor": {
+      "name": "Mestres Celestiais",
+      "url": "https://browiki.org/wiki/Mestres_Celestiais"
+    },
+    "Star Emperor": {
+      "name": "Mestres Estelares",
+      "url": "https://browiki.org/wiki/Mestres_Estelares"
+    },
+    "Star Gladiator": {
+      "name": "Mestres Taekwons",
+      "url": "https://browiki.org/wiki/Mestres_Taekwons"
+    },
+    "TaeKwon Boy": {
+      "name": "Taekwons",
+      "url": "https://browiki.org/wiki/Taekwons"
+    },
+    "Soul Ascetic": {
+      "name": "Ascetas das Almas",
+      "url": "https://browiki.org/wiki/Ascetas_das_Almas"
+    },
+    "Soul Reaper": {
+      "name": "Ceifadores de Almas",
+      "url": "https://browiki.org/wiki/Ceifadores_de_Almas"
+    },
+    "Soul Linker": {
+      "name": "Espiritualistas",
+      "url": "https://browiki.org/wiki/Espiritualistas"
+    },
+    "Spirit Handler": {
+      "name": "Animistas",
+      "url": "https://browiki.org/wiki/Animistas"
+    },
+    "Summoner": {
+      "name": "Invocadores",
+      "url": "https://browiki.org/wiki/Invocadores"
+    },
+    "Hyper Novice": {
+      "name": "Hiperaprendizes",
+      "url": "https://browiki.org/wiki/Hiperaprendizes"
+    },
+    "Super Novice 2": {
+      "name": "Superaprendizes EX",
+      "url": "https://browiki.org/wiki/Superaprendizes_EX"
+    },
+    "Super Novice": {
+      "name": "Superaprendizes",
+      "url": "https://browiki.org/wiki/Superaprendizes"
+    },
+    "Alitea": {
+      "name": "Alitea",
+      "url": "https://browiki.org/wiki/Alitea"
+    },
+    "Karnos": {
+      "name": "Karnos",
+      "url": "https://browiki.org/wiki/Karnos"
+    },
+    "Druid": {
+      "name": "Druidas",
+      "url": "https://browiki.org/wiki/Druidas"
+    }
+  },
+  "skills": {
+    "2": {
+      "name": "Perícia com Espada",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Espada"
+    },
+    "3": {
+      "name": "Perícia com Espada de Duas Mãos",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Espada_de_Duas_M%C3%A3os"
+    },
+    "4": {
+      "name": "Aumentar Recuperação de HP",
+      "url": "https://browiki.org/wiki/Aumentar_Recupera%C3%A7%C3%A3o_de_HP"
+    },
+    "5": {
+      "name": "Golpe Fulminante",
+      "url": "https://browiki.org/wiki/Golpe_Fulminante"
+    },
+    "6": {
+      "name": "Provocar",
+      "url": "https://browiki.org/wiki/Provocar"
+    },
+    "7": {
+      "name": "Impacto Explosivo",
+      "url": "https://browiki.org/wiki/Impacto_Explosivo"
+    },
+    "8": {
+      "name": "Vigor",
+      "url": "https://browiki.org/wiki/Vigor"
+    },
+    "9": {
+      "name": "Aumentar Recuperação de SP",
+      "url": "https://browiki.org/wiki/Aumentar_Recupera%C3%A7%C3%A3o_de_SP"
+    },
+    "10": {
+      "name": "Chama Reveladora",
+      "url": "https://browiki.org/wiki/Chama_Reveladora"
+    },
+    "11": {
+      "name": "Ataque Espiritual",
+      "url": "https://browiki.org/wiki/Ataque_Espiritual"
+    },
+    "12": {
+      "name": "Escudo Mágico",
+      "url": "https://browiki.org/wiki/Escudo_M%C3%A1gico"
+    },
+    "13": {
+      "name": "Espíritos Anciões",
+      "url": "https://browiki.org/wiki/Esp%C3%ADritos_Anci%C3%B5es"
+    },
+    "14": {
+      "name": "Lanças de Gelo",
+      "url": "https://browiki.org/wiki/Lan%C3%A7as_de_Gelo"
+    },
+    "15": {
+      "name": "Rajada Congelante",
+      "url": "https://browiki.org/wiki/Rajada_Congelante"
+    },
+    "16": {
+      "name": "Petrificar",
+      "url": "https://browiki.org/wiki/Petrificar"
+    },
+    "17": {
+      "name": "Bolas de Fogo",
+      "url": "https://browiki.org/wiki/Bolas_de_Fogo"
+    },
+    "18": {
+      "name": "Barreira de Fogo",
+      "url": "https://browiki.org/wiki/Barreira_de_Fogo"
+    },
+    "19": {
+      "name": "Lanças de Fogo",
+      "url": "https://browiki.org/wiki/Lan%C3%A7as_de_Fogo"
+    },
+    "20": {
+      "name": "Relâmpago",
+      "url": "https://browiki.org/wiki/Rel%C3%A2mpago"
+    },
+    "21": {
+      "name": "Tempestade de Raios",
+      "url": "https://browiki.org/wiki/Tempestade_de_Raios"
+    },
+    "22": {
+      "name": "Proteção Divina",
+      "url": "https://browiki.org/wiki/Prote%C3%A7%C3%A3o_Divina"
+    },
+    "23": {
+      "name": "Flagelo do Mal",
+      "url": "https://browiki.org/wiki/Flagelo_do_Mal"
+    },
+    "24": {
+      "name": "Revelação",
+      "url": "https://browiki.org/wiki/Revela%C3%A7%C3%A3o"
+    },
+    "25": {
+      "name": "Escudo Sagrado",
+      "url": "https://browiki.org/wiki/Escudo_Sagrado"
+    },
+    "26": {
+      "name": "Teleporte",
+      "url": "https://browiki.org/wiki/Teleporte"
+    },
+    "27": {
+      "name": "Portal",
+      "url": "https://browiki.org/wiki/Portal"
+    },
+    "28": {
+      "name": "Curar",
+      "url": "https://browiki.org/wiki/Curar"
+    },
+    "29": {
+      "name": "Aumentar Agilidade",
+      "url": "https://browiki.org/wiki/Aumentar_Agilidade"
+    },
+    "30": {
+      "name": "Diminuir Agilidade",
+      "url": "https://browiki.org/wiki/Diminuir_Agilidade"
+    },
+    "31": {
+      "name": "Aqua Benedicta",
+      "url": "https://browiki.org/wiki/Aqua_Benedicta"
+    },
+    "32": {
+      "name": "Signum Crucis",
+      "url": "https://browiki.org/wiki/Signum_Crucis"
+    },
+    "33": {
+      "name": "Angelus",
+      "url": "https://browiki.org/wiki/Angelus"
+    },
+    "34": {
+      "name": "Bênção",
+      "url": "https://browiki.org/wiki/B%C3%AAn%C3%A7%C3%A3o"
+    },
+    "35": {
+      "name": "Medicar",
+      "url": "https://browiki.org/wiki/Medicar"
+    },
+    "36": {
+      "name": "Aumentar Capacidade de Carga",
+      "url": "https://browiki.org/wiki/Aumentar_Capacidade_de_Carga"
+    },
+    "37": {
+      "name": "Desconto",
+      "url": "https://browiki.org/wiki/Desconto"
+    },
+    "38": {
+      "name": "Superfaturar",
+      "url": "https://browiki.org/wiki/Superfaturar"
+    },
+    "39": {
+      "name": "Usar Carrinho",
+      "url": "https://browiki.org/wiki/Usar_Carrinho"
+    },
+    "40": {
+      "name": "Identificar Item",
+      "url": "https://browiki.org/wiki/Identificar_Item"
+    },
+    "41": {
+      "name": "Comércio",
+      "url": "https://browiki.org/wiki/Com%C3%A9rcio"
+    },
+    "42": {
+      "name": "Mammonita",
+      "url": "https://browiki.org/wiki/Mammonita"
+    },
+    "43": {
+      "name": "Olhos de Coruja",
+      "url": "https://browiki.org/wiki/Olhos_de_Coruja"
+    },
+    "44": {
+      "name": "Olhos de Águia",
+      "url": "https://browiki.org/wiki/Olhos_de_%C3%81guia"
+    },
+    "45": {
+      "name": "Concentrar",
+      "url": "https://browiki.org/wiki/Concentrar"
+    },
+    "46": {
+      "name": "Rajada de Flechas",
+      "url": "https://browiki.org/wiki/Rajada_de_Flechas"
+    },
+    "47": {
+      "name": "Chuva de Flechas",
+      "url": "https://browiki.org/wiki/Chuva_de_Flechas"
+    },
+    "48": {
+      "name": "Ataque Duplo",
+      "url": "https://browiki.org/wiki/Ataque_Duplo"
+    },
+    "49": {
+      "name": "Perícia em Esquiva",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_em_Esquiva"
+    },
+    "50": {
+      "name": "Furto",
+      "url": "https://browiki.org/wiki/Furto"
+    },
+    "51": {
+      "name": "Esconderijo",
+      "url": "https://browiki.org/wiki/Esconderijo"
+    },
+    "52": {
+      "name": "Envenenar",
+      "url": "https://browiki.org/wiki/Envenenar"
+    },
+    "53": {
+      "name": "Desintoxicar",
+      "url": "https://browiki.org/wiki/Desintoxicar"
+    },
+    "54": {
+      "name": "Ressuscitar",
+      "url": "https://browiki.org/wiki/Ressuscitar"
+    },
+    "55": {
+      "name": "Perícia com Lança",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Lan%C3%A7a"
+    },
+    "56": {
+      "name": "Perfurar",
+      "url": "https://browiki.org/wiki/Perfurar"
+    },
+    "57": {
+      "name": "Brandir Lança",
+      "url": "https://browiki.org/wiki/Brandir_Lan%C3%A7a"
+    },
+    "58": {
+      "name": "Estocada",
+      "url": "https://browiki.org/wiki/Estocada"
+    },
+    "59": {
+      "name": "Lança Bumerangue",
+      "url": "https://browiki.org/wiki/Lan%C3%A7a_Bumerangue"
+    },
+    "60": {
+      "name": "Rapidez com Duas Mãos",
+      "url": "https://browiki.org/wiki/Rapidez_com_Duas_M%C3%A3os"
+    },
+    "61": {
+      "name": "Contra-Ataque",
+      "url": "https://browiki.org/wiki/Contra-Ataque"
+    },
+    "62": {
+      "name": "Impacto de Tyr",
+      "url": "https://browiki.org/wiki/Impacto_de_Tyr"
+    },
+    "63": {
+      "name": "Montaria",
+      "url": "https://browiki.org/wiki/Montaria"
+    },
+    "64": {
+      "name": "Perícia em Montaria",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_em_Montaria"
+    },
+    "65": {
+      "name": "Perícia com Maça",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Ma%C3%A7a"
+    },
+    "66": {
+      "name": "Impositio Manus",
+      "url": "https://browiki.org/wiki/Impositio_Manus"
+    },
+    "67": {
+      "name": "Suffragium",
+      "url": "https://browiki.org/wiki/Suffragium"
+    },
+    "68": {
+      "name": "Aspersio",
+      "url": "https://browiki.org/wiki/Aspersio"
+    },
+    "69": {
+      "name": "Benedictio Sanctissimi Sacramenti",
+      "url": "https://browiki.org/wiki/Benedictio_Sanctissimi_Sacramenti"
+    },
+    "70": {
+      "name": "Santuário",
+      "url": "https://browiki.org/wiki/Santu%C3%A1rio"
+    },
+    "71": {
+      "name": "Retardar Veneno",
+      "url": "https://browiki.org/wiki/Retardar_Veneno"
+    },
+    "72": {
+      "name": "Graça Divina",
+      "url": "https://browiki.org/wiki/Gra%C3%A7a_Divina"
+    },
+    "73": {
+      "name": "Kyrie Eleison",
+      "url": "https://browiki.org/wiki/Kyrie_Eleison"
+    },
+    "74": {
+      "name": "Magnificat",
+      "url": "https://browiki.org/wiki/Magnificat"
+    },
+    "75": {
+      "name": "Glória",
+      "url": "https://browiki.org/wiki/Gl%C3%B3ria"
+    },
+    "76": {
+      "name": "Lex Divina",
+      "url": "https://browiki.org/wiki/Lex_Divina"
+    },
+    "77": {
+      "name": "Esconjurar",
+      "url": "https://browiki.org/wiki/Esconjurar"
+    },
+    "78": {
+      "name": "Lex Aeterna",
+      "url": "https://browiki.org/wiki/Lex_Aeterna"
+    },
+    "79": {
+      "name": "Magnus Exorcismus",
+      "url": "https://browiki.org/wiki/Magnus_Exorcismus"
+    },
+    "80": {
+      "name": "Coluna de Fogo",
+      "url": "https://browiki.org/wiki/Coluna_de_Fogo"
+    },
+    "81": {
+      "name": "Supernova",
+      "url": "https://browiki.org/wiki/Supernova"
+    },
+    "83": {
+      "name": "Chuva de Meteoros",
+      "url": "https://browiki.org/wiki/Chuva_de_Meteoros"
+    },
+    "84": {
+      "name": "Trovão de Júpiter",
+      "url": "https://browiki.org/wiki/Trov%C3%A3o_de_J%C3%BApiter"
+    },
+    "85": {
+      "name": "Ira de Thor",
+      "url": "https://browiki.org/wiki/Ira_de_Thor"
+    },
+    "86": {
+      "name": "Esfera d'Água",
+      "url": "https://browiki.org/wiki/Esfera_d%27%C3%81gua"
+    },
+    "87": {
+      "name": "Barreira de Gelo",
+      "url": "https://browiki.org/wiki/Barreira_de_Gelo"
+    },
+    "88": {
+      "name": "Congelar",
+      "url": "https://browiki.org/wiki/Congelar"
+    },
+    "89": {
+      "name": "Nevasca",
+      "url": "https://browiki.org/wiki/Nevasca"
+    },
+    "90": {
+      "name": "Coluna de Pedra",
+      "url": "https://browiki.org/wiki/Coluna_de_Pedra"
+    },
+    "91": {
+      "name": "Fúria da Terra",
+      "url": "https://browiki.org/wiki/F%C3%BAria_da_Terra"
+    },
+    "92": {
+      "name": "Pântano dos Mortos",
+      "url": "https://browiki.org/wiki/P%C3%A2ntano_dos_Mortos"
+    },
+    "93": {
+      "name": "Sentido Sobrenatural",
+      "url": "https://browiki.org/wiki/Sentido_Sobrenatural"
+    },
+    "94": {
+      "name": "Trabalhar Ferro",
+      "url": "https://browiki.org/wiki/Trabalhar_Ferro"
+    },
+    "95": {
+      "name": "Trabalhar Aço",
+      "url": "https://browiki.org/wiki/Trabalhar_A%C3%A7o"
+    },
+    "96": {
+      "name": "Produzir Pedra Fundamental",
+      "url": "https://browiki.org/wiki/Produzir_Pedra_Fundamental"
+    },
+    "97": {
+      "name": "Perícia com Oridecon",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Oridecon"
+    },
+    "98": {
+      "name": "Forjar Adaga",
+      "url": "https://browiki.org/wiki/Forjar_Adaga"
+    },
+    "99": {
+      "name": "Forjar Espada",
+      "url": "https://browiki.org/wiki/Forjar_Espada"
+    },
+    "100": {
+      "name": "Forjar Espada de Duas Mãos",
+      "url": "https://browiki.org/wiki/Forjar_Espada_de_Duas_M%C3%A3os"
+    },
+    "101": {
+      "name": "Forjar Machado",
+      "url": "https://browiki.org/wiki/Forjar_Machado"
+    },
+    "102": {
+      "name": "Forjar Maça",
+      "url": "https://browiki.org/wiki/Forjar_Ma%C3%A7a"
+    },
+    "103": {
+      "name": "Forjar Soqueira",
+      "url": "https://browiki.org/wiki/Forjar_Soqueira"
+    },
+    "104": {
+      "name": "Forjar Lança",
+      "url": "https://browiki.org/wiki/Forjar_Lan%C3%A7a"
+    },
+    "105": {
+      "name": "Punho Firme",
+      "url": "https://browiki.org/wiki/Punho_Firme"
+    },
+    "106": {
+      "name": "Encontrar Minério",
+      "url": "https://browiki.org/wiki/Encontrar_Min%C3%A9rio"
+    },
+    "107": {
+      "name": "Perícia em Armamento",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_em_Armamento"
+    },
+    "108": {
+      "name": "Consertar Armas",
+      "url": "https://browiki.org/wiki/Consertar_Armas"
+    },
+    "109": {
+      "name": "Resistência ao Fogo",
+      "url": "https://browiki.org/wiki/Resist%C3%AAncia_ao_Fogo"
+    },
+    "110": {
+      "name": "Martelo de Thor",
+      "url": "https://browiki.org/wiki/Martelo_de_Thor"
+    },
+    "111": {
+      "name": "Adrenalina Pura",
+      "url": "https://browiki.org/wiki/Adrenalina_Pura"
+    },
+    "112": {
+      "name": "Manejo Perfeito",
+      "url": "https://browiki.org/wiki/Manejo_Perfeito"
+    },
+    "113": {
+      "name": "Força Violenta",
+      "url": "https://browiki.org/wiki/For%C3%A7a_Violenta"
+    },
+    "114": {
+      "name": "Amplificar Poder",
+      "url": "https://browiki.org/wiki/Amplificar_Poder"
+    },
+    "115": {
+      "name": "Armadilha Escorregadia",
+      "url": "https://browiki.org/wiki/Armadilha_Escorregadia"
+    },
+    "116": {
+      "name": "Armadilha Atordoante",
+      "url": "https://browiki.org/wiki/Armadilha_Atordoante"
+    },
+    "117": {
+      "name": "Instalar Armadilha",
+      "url": "https://browiki.org/wiki/Instalar_Armadilha"
+    },
+    "118": {
+      "name": "Armadilha Extenuante",
+      "url": "https://browiki.org/wiki/Armadilha_Extenuante"
+    },
+    "119": {
+      "name": "Armadilha Sonífera",
+      "url": "https://browiki.org/wiki/Armadilha_Son%C3%ADfera"
+    },
+    "120": {
+      "name": "Armadilha Luminosa",
+      "url": "https://browiki.org/wiki/Armadilha_Luminosa"
+    },
+    "121": {
+      "name": "Armadilha Congelante",
+      "url": "https://browiki.org/wiki/Armadilha_Congelante"
+    },
+    "122": {
+      "name": "Instalar Mina",
+      "url": "https://browiki.org/wiki/Instalar_Mina"
+    },
+    "123": {
+      "name": "Armadilha Explosiva",
+      "url": "https://browiki.org/wiki/Armadilha_Explosiva"
+    },
+    "124": {
+      "name": "Remover Armadilha",
+      "url": "https://browiki.org/wiki/Remover_Armadilha"
+    },
+    "125": {
+      "name": "Mensagem Secreta",
+      "url": "https://browiki.org/wiki/Mensagem_Secreta"
+    },
+    "126": {
+      "name": "Flagelo das Feras",
+      "url": "https://browiki.org/wiki/Flagelo_das_Feras"
+    },
+    "127": {
+      "name": "Adestrar Ave",
+      "url": "https://browiki.org/wiki/Adestrar_Ave"
+    },
+    "128": {
+      "name": "Garras de Aço",
+      "url": "https://browiki.org/wiki/Garras_de_A%C3%A7o"
+    },
+    "129": {
+      "name": "Ataque Aéreo",
+      "url": "https://browiki.org/wiki/Ataque_A%C3%A9reo"
+    },
+    "130": {
+      "name": "Alerta",
+      "url": "https://browiki.org/wiki/Alerta"
+    },
+    "131": {
+      "name": "Desativar Armadilha",
+      "url": "https://browiki.org/wiki/Desativar_Armadilha"
+    },
+    "132": {
+      "name": "Perícia com Mão Direita",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_M%C3%A3o_Direita"
+    },
+    "133": {
+      "name": "Perícia com Mão Esquerda",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_M%C3%A3o_Esquerda"
+    },
+    "134": {
+      "name": "Perícia com Katar",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Katar"
+    },
+    "135": {
+      "name": "Furtividade",
+      "url": "https://browiki.org/wiki/Furtividade"
+    },
+    "136": {
+      "name": "Lâminas Destruidoras",
+      "url": "https://browiki.org/wiki/L%C3%A2minas_Destruidoras"
+    },
+    "137": {
+      "name": "Tocaia",
+      "url": "https://browiki.org/wiki/Tocaia"
+    },
+    "138": {
+      "name": "Envenenar Arma",
+      "url": "https://browiki.org/wiki/Envenenar_Arma"
+    },
+    "139": {
+      "name": "Refletir Veneno",
+      "url": "https://browiki.org/wiki/Refletir_Veneno"
+    },
+    "140": {
+      "name": "Névoa Tóxica",
+      "url": "https://browiki.org/wiki/N%C3%A9voa_T%C3%B3xica"
+    },
+    "141": {
+      "name": "Explosão Tóxica",
+      "url": "https://browiki.org/wiki/Explos%C3%A3o_T%C3%B3xica"
+    },
+    "144": {
+      "name": "Recuperar HP em Movimento",
+      "url": "https://browiki.org/wiki/Recuperar_HP_em_Movimento"
+    },
+    "145": {
+      "name": "Ataque Fatal",
+      "url": "https://browiki.org/wiki/Ataque_Fatal"
+    },
+    "146": {
+      "name": "Instinto de Sobrevivência",
+      "url": "https://browiki.org/wiki/Instinto_de_Sobreviv%C3%AAncia"
+    },
+    "147": {
+      "name": "Fabricar Flechas",
+      "url": "https://browiki.org/wiki/Fabricar_Flechas"
+    },
+    "148": {
+      "name": "Disparo Violento",
+      "url": "https://browiki.org/wiki/Disparo_Violento"
+    },
+    "149": {
+      "name": "Chutar Areia",
+      "url": "https://browiki.org/wiki/Chutar_Areia"
+    },
+    "150": {
+      "name": "Recuar",
+      "url": "https://browiki.org/wiki/Recuar"
+    },
+    "151": {
+      "name": "Procurar Pedras",
+      "url": "https://browiki.org/wiki/Procurar_Pedras"
+    },
+    "152": {
+      "name": "Arremessar Pedra",
+      "url": "https://browiki.org/wiki/Arremessar_Pedra"
+    },
+    "153": {
+      "name": "Cavalo-de-Pau",
+      "url": "https://browiki.org/wiki/Cavalo-de-Pau"
+    },
+    "154": {
+      "name": "Personalizar Carrinho",
+      "url": "https://browiki.org/wiki/Personalizar_Carrinho"
+    },
+    "155": {
+      "name": "Grito de Guerra",
+      "url": "https://browiki.org/wiki/Grito_de_Guerra"
+    },
+    "156": {
+      "name": "Luz Divina",
+      "url": "https://browiki.org/wiki/Luz_Divina"
+    },
+    "157": {
+      "name": "Proteção Arcana",
+      "url": "https://browiki.org/wiki/Prote%C3%A7%C3%A3o_Arcana"
+    },
+    "210": {
+      "name": "Mãos Leves",
+      "url": "https://browiki.org/wiki/M%C3%A3os_Leves"
+    },
+    "211": {
+      "name": "Afanar",
+      "url": "https://browiki.org/wiki/Afanar"
+    },
+    "212": {
+      "name": "Apunhalar",
+      "url": "https://browiki.org/wiki/Apunhalar"
+    },
+    "213": {
+      "name": "Túnel de Fuga",
+      "url": "https://browiki.org/wiki/T%C3%BAnel_de_Fuga"
+    },
+    "214": {
+      "name": "Ataque Surpresa",
+      "url": "https://browiki.org/wiki/Ataque_Surpresa"
+    },
+    "215": {
+      "name": "Remover Arma",
+      "url": "https://browiki.org/wiki/Remover_Arma"
+    },
+    "216": {
+      "name": "Remover Escudo",
+      "url": "https://browiki.org/wiki/Remover_Escudo"
+    },
+    "217": {
+      "name": "Remover Armadura",
+      "url": "https://browiki.org/wiki/Remover_Armadura"
+    },
+    "218": {
+      "name": "Remover Capacete",
+      "url": "https://browiki.org/wiki/Remover_Capacete"
+    },
+    "219": {
+      "name": "Rapto",
+      "url": "https://browiki.org/wiki/Rapto"
+    },
+    "220": {
+      "name": "Graffiti",
+      "url": "https://browiki.org/wiki/Graffiti"
+    },
+    "221": {
+      "name": "Pichar",
+      "url": "https://browiki.org/wiki/Pichar"
+    },
+    "222": {
+      "name": "Faxina",
+      "url": "https://browiki.org/wiki/Faxina"
+    },
+    "223": {
+      "name": "Malandragem",
+      "url": "https://browiki.org/wiki/Malandragem"
+    },
+    "224": {
+      "name": "Extorquir",
+      "url": "https://browiki.org/wiki/Extorquir"
+    },
+    "225": {
+      "name": "Plágio",
+      "url": "https://browiki.org/wiki/Pl%C3%A1gio"
+    },
+    "226": {
+      "name": "Perícia com Machado e Espada",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Machado_e_Espada"
+    },
+    "227": {
+      "name": "Pesquisa de Poções",
+      "url": "https://browiki.org/wiki/Pesquisa_de_Po%C3%A7%C3%B5es"
+    },
+    "228": {
+      "name": "Preparar Poção",
+      "url": "https://browiki.org/wiki/Preparar_Po%C3%A7%C3%A3o"
+    },
+    "229": {
+      "name": "Fogo Grego",
+      "url": "https://browiki.org/wiki/Fogo_Grego"
+    },
+    "230": {
+      "name": "Terror Ácido",
+      "url": "https://browiki.org/wiki/Terror_%C3%81cido"
+    },
+    "231": {
+      "name": "Arremessar Poção",
+      "url": "https://browiki.org/wiki/Arremessar_Po%C3%A7%C3%A3o"
+    },
+    "232": {
+      "name": "Criar Monstro Planta",
+      "url": "https://browiki.org/wiki/Criar_Monstro_Planta"
+    },
+    "233": {
+      "name": "Criar Esfera Marinha",
+      "url": "https://browiki.org/wiki/Criar_Esfera_Marinha"
+    },
+    "234": {
+      "name": "Revestir Arma",
+      "url": "https://browiki.org/wiki/Revestir_Arma"
+    },
+    "235": {
+      "name": "Revestir Escudo",
+      "url": "https://browiki.org/wiki/Revestir_Escudo"
+    },
+    "236": {
+      "name": "Revestir Armadura",
+      "url": "https://browiki.org/wiki/Revestir_Armadura"
+    },
+    "237": {
+      "name": "Revestir Capacete",
+      "url": "https://browiki.org/wiki/Revestir_Capacete"
+    },
+    "238": {
+      "name": "Bioética",
+      "url": "https://browiki.org/wiki/Bio%C3%A9tica"
+    },
+    "243": {
+      "name": "Despertar Homunculus",
+      "url": "https://browiki.org/wiki/Despertar_Homunculus"
+    },
+    "244": {
+      "name": "Vaporizar",
+      "url": "https://browiki.org/wiki/Vaporizar"
+    },
+    "247": {
+      "name": "Ressuscitar Homunculus",
+      "url": "https://browiki.org/wiki/Ressuscitar_Homunculus"
+    },
+    "248": {
+      "name": "Fé",
+      "url": "https://browiki.org/wiki/F%C3%A9"
+    },
+    "249": {
+      "name": "Bloqueio",
+      "url": "https://browiki.org/wiki/Bloqueio"
+    },
+    "250": {
+      "name": "Punição Divina",
+      "url": "https://browiki.org/wiki/Puni%C3%A7%C3%A3o_Divina"
+    },
+    "251": {
+      "name": "Escudo Bumerangue",
+      "url": "https://browiki.org/wiki/Escudo_Bumerangue"
+    },
+    "252": {
+      "name": "Escudo Refletor",
+      "url": "https://browiki.org/wiki/Escudo_Refletor"
+    },
+    "253": {
+      "name": "Crux Divinum",
+      "url": "https://browiki.org/wiki/Crux_Divinum"
+    },
+    "254": {
+      "name": "Crux Magnum",
+      "url": "https://browiki.org/wiki/Crux_Magnum"
+    },
+    "255": {
+      "name": "Redenção",
+      "url": "https://browiki.org/wiki/Reden%C3%A7%C3%A3o"
+    },
+    "256": {
+      "name": "Divina Providência",
+      "url": "https://browiki.org/wiki/Divina_Provid%C3%AAncia"
+    },
+    "257": {
+      "name": "Aura Sagrada",
+      "url": "https://browiki.org/wiki/Aura_Sagrada"
+    },
+    "258": {
+      "name": "Rapidez com Lança",
+      "url": "https://browiki.org/wiki/Rapidez_com_Lan%C3%A7a"
+    },
+    "259": {
+      "name": "Punhos de Ferro",
+      "url": "https://browiki.org/wiki/Punhos_de_Ferro"
+    },
+    "260": {
+      "name": "Meditação",
+      "url": "https://browiki.org/wiki/Medita%C3%A7%C3%A3o"
+    },
+    "261": {
+      "name": "Invocar Esfera Espiritual",
+      "url": "https://browiki.org/wiki/Invocar_Esfera_Espiritual"
+    },
+    "262": {
+      "name": "Absorver Esferas Espirituais",
+      "url": "https://browiki.org/wiki/Absorver_Esferas_Espirituais"
+    },
+    "263": {
+      "name": "Combo Triplo",
+      "url": "https://browiki.org/wiki/Combo_Triplo"
+    },
+    "264": {
+      "name": "Passo Etéreo",
+      "url": "https://browiki.org/wiki/Passo_Et%C3%A9reo"
+    },
+    "265": {
+      "name": "Cair das Pétalas",
+      "url": "https://browiki.org/wiki/Cair_das_P%C3%A9talas"
+    },
+    "266": {
+      "name": "Impacto Psíquico",
+      "url": "https://browiki.org/wiki/Impacto_Ps%C3%ADquico"
+    },
+    "267": {
+      "name": "Disparo de Esferas Espirituais",
+      "url": "https://browiki.org/wiki/Disparo_de_Esferas_Espirituais"
+    },
+    "268": {
+      "name": "Corpo Fechado",
+      "url": "https://browiki.org/wiki/Corpo_Fechado"
+    },
+    "269": {
+      "name": "Dilema",
+      "url": "https://browiki.org/wiki/Dilema"
+    },
+    "270": {
+      "name": "Fúria Interior",
+      "url": "https://browiki.org/wiki/F%C3%BAria_Interior"
+    },
+    "271": {
+      "name": "Punho Supremo de Asura",
+      "url": "https://browiki.org/wiki/Punho_Supremo_de_Asura"
+    },
+    "272": {
+      "name": "Combo Quádruplo",
+      "url": "https://browiki.org/wiki/Combo_Qu%C3%A1druplo"
+    },
+    "273": {
+      "name": "O Último Dragão",
+      "url": "https://browiki.org/wiki/O_%C3%9Altimo_Drag%C3%A3o"
+    },
+    "274": {
+      "name": "Estudo de Livros",
+      "url": "https://browiki.org/wiki/Estudo_de_Livros"
+    },
+    "275": {
+      "name": "Cancelar Magia",
+      "url": "https://browiki.org/wiki/Cancelar_Magia"
+    },
+    "276": {
+      "name": "Espelho Mágico",
+      "url": "https://browiki.org/wiki/Espelho_M%C3%A1gico"
+    },
+    "277": {
+      "name": "Desconcentrar",
+      "url": "https://browiki.org/wiki/Desconcentrar"
+    },
+    "278": {
+      "name": "Conjuração Livre",
+      "url": "https://browiki.org/wiki/Conjura%C3%A7%C3%A3o_Livre"
+    },
+    "279": {
+      "name": "Desejo Arcano",
+      "url": "https://browiki.org/wiki/Desejo_Arcano"
+    },
+    "280": {
+      "name": "Encantar com Chama",
+      "url": "https://browiki.org/wiki/Encantar_com_Chama"
+    },
+    "281": {
+      "name": "Encantar com Geada",
+      "url": "https://browiki.org/wiki/Encantar_com_Geada"
+    },
+    "282": {
+      "name": "Encantar com Ventania",
+      "url": "https://browiki.org/wiki/Encantar_com_Ventania"
+    },
+    "283": {
+      "name": "Encantar com Terremoto",
+      "url": "https://browiki.org/wiki/Encantar_com_Terremoto"
+    },
+    "284": {
+      "name": "Dragonologia",
+      "url": "https://browiki.org/wiki/Dragonologia"
+    },
+    "285": {
+      "name": "Vulcão",
+      "url": "https://browiki.org/wiki/Vulc%C3%A3o"
+    },
+    "286": {
+      "name": "Dilúvio",
+      "url": "https://browiki.org/wiki/Dil%C3%BAvio"
+    },
+    "287": {
+      "name": "Furacão",
+      "url": "https://browiki.org/wiki/Furac%C3%A3o"
+    },
+    "288": {
+      "name": "Proteger Terreno",
+      "url": "https://browiki.org/wiki/Proteger_Terreno"
+    },
+    "289": {
+      "name": "Desencantar",
+      "url": "https://browiki.org/wiki/Desencantar"
+    },
+    "290": {
+      "name": "Abracadabra",
+      "url": "https://browiki.org/wiki/Abracadabra"
+    },
+    "304": {
+      "name": "Aquecimento",
+      "url": "https://browiki.org/wiki/Aquecimento"
+    },
+    "305": {
+      "name": "Bis",
+      "url": "https://browiki.org/wiki/Bis"
+    },
+    "306": {
+      "name": "Cantiga de Ninar",
+      "url": "https://browiki.org/wiki/Cantiga_de_Ninar"
+    },
+    "307": {
+      "name": "Banquete de Njord",
+      "url": "https://browiki.org/wiki/Banquete_de_Njord"
+    },
+    "308": {
+      "name": "Ritmo Caótico",
+      "url": "https://browiki.org/wiki/Ritmo_Ca%C3%B3tico"
+    },
+    "309": {
+      "name": "Rufar dos Tambores",
+      "url": "https://browiki.org/wiki/Rufar_dos_Tambores"
+    },
+    "310": {
+      "name": "Anel dos Nibelungos",
+      "url": "https://browiki.org/wiki/Anel_dos_Nibelungos"
+    },
+    "311": {
+      "name": "Lamento de Loki",
+      "url": "https://browiki.org/wiki/Lamento_de_Loki"
+    },
+    "312": {
+      "name": "Canção Preciosa",
+      "url": "https://browiki.org/wiki/Can%C3%A7%C3%A3o_Preciosa"
+    },
+    "313": {
+      "name": "Ode a Siegfried",
+      "url": "https://browiki.org/wiki/Ode_a_Siegfried"
+    },
+    "315": {
+      "name": "Lições de Música",
+      "url": "https://browiki.org/wiki/Li%C3%A7%C3%B5es_de_M%C3%BAsica"
+    },
+    "316": {
+      "name": "Flecha Melódica",
+      "url": "https://browiki.org/wiki/Flecha_Mel%C3%B3dica"
+    },
+    "317": {
+      "name": "Dissonância",
+      "url": "https://browiki.org/wiki/Disson%C3%A2ncia"
+    },
+    "318": {
+      "name": "Piada Infame",
+      "url": "https://browiki.org/wiki/Piada_Infame"
+    },
+    "319": {
+      "name": "Assovio",
+      "url": "https://browiki.org/wiki/Assovio"
+    },
+    "320": {
+      "name": "Crepúsculo Sangrento",
+      "url": "https://browiki.org/wiki/Crep%C3%BAsculo_Sangrento"
+    },
+    "321": {
+      "name": "Poema de Bragi",
+      "url": "https://browiki.org/wiki/Poema_de_Bragi"
+    },
+    "322": {
+      "name": "Maçãs de Idun",
+      "url": "https://browiki.org/wiki/Ma%C3%A7%C3%A3s_de_Idun"
+    },
+    "323": {
+      "name": "Lições de Dança",
+      "url": "https://browiki.org/wiki/Li%C3%A7%C3%B5es_de_Dan%C3%A7a"
+    },
+    "324": {
+      "name": "Estilingue",
+      "url": "https://browiki.org/wiki/Estilingue"
+    },
+    "325": {
+      "name": "Dança do Ventre",
+      "url": "https://browiki.org/wiki/Dan%C3%A7a_do_Ventre"
+    },
+    "326": {
+      "name": "Escândalo",
+      "url": "https://browiki.org/wiki/Esc%C3%A2ndalo"
+    },
+    "327": {
+      "name": "Sibilo",
+      "url": "https://browiki.org/wiki/Sibilo"
+    },
+    "328": {
+      "name": "Não me Abandones",
+      "url": "https://browiki.org/wiki/N%C3%A3o_me_Abandones"
+    },
+    "329": {
+      "name": "Beijo da Sorte",
+      "url": "https://browiki.org/wiki/Beijo_da_Sorte"
+    },
+    "330": {
+      "name": "Dança Cigana",
+      "url": "https://browiki.org/wiki/Dan%C3%A7a_Cigana"
+    },
+    "355": {
+      "name": "Lâmina de Aura",
+      "url": "https://browiki.org/wiki/L%C3%A2mina_de_Aura"
+    },
+    "356": {
+      "name": "Aparar Golpe",
+      "url": "https://browiki.org/wiki/Aparar_Golpe"
+    },
+    "357": {
+      "name": "Dedicação",
+      "url": "https://browiki.org/wiki/Dedica%C3%A7%C3%A3o"
+    },
+    "358": {
+      "name": "Relaxar",
+      "url": "https://browiki.org/wiki/Relaxar"
+    },
+    "359": {
+      "name": "Frenesi",
+      "url": "https://browiki.org/wiki/Frenesi"
+    },
+    "361": {
+      "name": "Assumptio",
+      "url": "https://browiki.org/wiki/Assumptio"
+    },
+    "362": {
+      "name": "Basílica",
+      "url": "https://browiki.org/wiki/Bas%C3%ADlica"
+    },
+    "363": {
+      "name": "Meditatio",
+      "url": "https://browiki.org/wiki/Meditatio"
+    },
+    "364": {
+      "name": "Dreno de Alma",
+      "url": "https://browiki.org/wiki/Dreno_de_Alma"
+    },
+    "365": {
+      "name": "Esmagamento Mágico",
+      "url": "https://browiki.org/wiki/Esmagamento_M%C3%A1gico"
+    },
+    "366": {
+      "name": "Amplificação Mística",
+      "url": "https://browiki.org/wiki/Amplifica%C3%A7%C3%A3o_M%C3%ADstica"
+    },
+    "367": {
+      "name": "Gloria Domini",
+      "url": "https://browiki.org/wiki/Gloria_Domini"
+    },
+    "368": {
+      "name": "Sacrifício do Mártir",
+      "url": "https://browiki.org/wiki/Sacrif%C3%ADcio_do_M%C3%A1rtir"
+    },
+    "369": {
+      "name": "Canto de Batalha",
+      "url": "https://browiki.org/wiki/Canto_de_Batalha"
+    },
+    "370": {
+      "name": "Golpe da Palma em Fúria",
+      "url": "https://browiki.org/wiki/Golpe_da_Palma_em_F%C3%BAria"
+    },
+    "371": {
+      "name": "Punho do Tigre",
+      "url": "https://browiki.org/wiki/Punho_do_Tigre"
+    },
+    "372": {
+      "name": "Combo Esmagador",
+      "url": "https://browiki.org/wiki/Combo_Esmagador"
+    },
+    "373": {
+      "name": "Indulgir",
+      "url": "https://browiki.org/wiki/Indulgir"
+    },
+    "374": {
+      "name": "Exalar Alma",
+      "url": "https://browiki.org/wiki/Exalar_Alma"
+    },
+    "375": {
+      "name": "Sifão de Alma",
+      "url": "https://browiki.org/wiki/Sif%C3%A3o_de_Alma"
+    },
+    "376": {
+      "name": "Perícia com Katar Avançada",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Katar_Avan%C3%A7ada"
+    },
+    "378": {
+      "name": "Encantar com Veneno Mortal",
+      "url": "https://browiki.org/wiki/Encantar_com_Veneno_Mortal"
+    },
+    "379": {
+      "name": "Destruidor de Almas",
+      "url": "https://browiki.org/wiki/Destruidor_de_Almas"
+    },
+    "380": {
+      "name": "Visão Real",
+      "url": "https://browiki.org/wiki/Vis%C3%A3o_Real"
+    },
+    "381": {
+      "name": "Assalto do Falcão",
+      "url": "https://browiki.org/wiki/Assalto_do_Falc%C3%A3o"
+    },
+    "382": {
+      "name": "Tiro Preciso",
+      "url": "https://browiki.org/wiki/Tiro_Preciso"
+    },
+    "383": {
+      "name": "Caminho do Vento",
+      "url": "https://browiki.org/wiki/Caminho_do_Vento"
+    },
+    "384": {
+      "name": "Golpe Estilhaçante",
+      "url": "https://browiki.org/wiki/Golpe_Estilha%C3%A7ante"
+    },
+    "387": {
+      "name": "Impulso no Carrinho",
+      "url": "https://browiki.org/wiki/Impulso_no_Carrinho"
+    },
+    "389": {
+      "name": "Espreitar",
+      "url": "https://browiki.org/wiki/Espreitar"
+    },
+    "390": {
+      "name": "Instinto de Defesa",
+      "url": "https://browiki.org/wiki/Instinto_de_Defesa"
+    },
+    "394": {
+      "name": "Vulcão de Flechas",
+      "url": "https://browiki.org/wiki/Vulc%C3%A3o_de_Flechas"
+    },
+    "395": {
+      "name": "Bênção Protetora",
+      "url": "https://browiki.org/wiki/B%C3%AAn%C3%A7%C3%A3o_Protetora"
+    },
+    "396": {
+      "name": "Controle de Marionete",
+      "url": "https://browiki.org/wiki/Controle_de_Marionete"
+    },
+    "397": {
+      "name": "Perfurar em Espiral",
+      "url": "https://browiki.org/wiki/Perfurar_em_Espiral"
+    },
+    "398": {
+      "name": "Golpe Traumático",
+      "url": "https://browiki.org/wiki/Golpe_Traum%C3%A1tico"
+    },
+    "399": {
+      "name": "Ataque Vital",
+      "url": "https://browiki.org/wiki/Ataque_Vital"
+    },
+    "400": {
+      "name": "Vulcão Napalm",
+      "url": "https://browiki.org/wiki/Vulc%C3%A3o_Napalm"
+    },
+    "401": {
+      "name": "Zen",
+      "url": "https://browiki.org/wiki/Zen"
+    },
+    "402": {
+      "name": "Enlouquecedor",
+      "url": "https://browiki.org/wiki/Enlouquecedor"
+    },
+    "403": {
+      "name": "Presciência",
+      "url": "https://browiki.org/wiki/Presci%C3%AAncia"
+    },
+    "404": {
+      "name": "Bruma Ofuscante",
+      "url": "https://browiki.org/wiki/Bruma_Ofuscante"
+    },
+    "405": {
+      "name": "Prisão de Teia",
+      "url": "https://browiki.org/wiki/Pris%C3%A3o_de_Teia"
+    },
+    "406": {
+      "name": "Impacto Meteoro",
+      "url": "https://browiki.org/wiki/Impacto_Meteoro"
+    },
+    "407": {
+      "name": "Criar Veneno Mortal",
+      "url": "https://browiki.org/wiki/Criar_Veneno_Mortal"
+    },
+    "411": {
+      "name": "Corrida",
+      "url": "https://browiki.org/wiki/Corrida"
+    },
+    "412": {
+      "name": "Postura do Tornado",
+      "url": "https://browiki.org/wiki/Postura_do_Tornado"
+    },
+    "413": {
+      "name": "Chute do Tornado",
+      "url": "https://browiki.org/wiki/Chute_do_Tornado"
+    },
+    "414": {
+      "name": "Postura da Patada Voadora",
+      "url": "https://browiki.org/wiki/Postura_da_Patada_Voadora"
+    },
+    "415": {
+      "name": "Patada Voadora",
+      "url": "https://browiki.org/wiki/Patada_Voadora"
+    },
+    "416": {
+      "name": "Postura da Rasteira",
+      "url": "https://browiki.org/wiki/Postura_da_Rasteira"
+    },
+    "417": {
+      "name": "Rasteira",
+      "url": "https://browiki.org/wiki/Rasteira"
+    },
+    "418": {
+      "name": "Postura do Contrachute",
+      "url": "https://browiki.org/wiki/Postura_do_Contrachute"
+    },
+    "419": {
+      "name": "Contrachute",
+      "url": "https://browiki.org/wiki/Contrachute"
+    },
+    "420": {
+      "name": "Cambalhota",
+      "url": "https://browiki.org/wiki/Cambalhota"
+    },
+    "421": {
+      "name": "Chute Aéreo",
+      "url": "https://browiki.org/wiki/Chute_A%C3%A9reo"
+    },
+    "422": {
+      "name": "Trégua Rápida",
+      "url": "https://browiki.org/wiki/Tr%C3%A9gua_R%C3%A1pida"
+    },
+    "423": {
+      "name": "Retiro Rápido",
+      "url": "https://browiki.org/wiki/Retiro_R%C3%A1pido"
+    },
+    "424": {
+      "name": "Kihop",
+      "url": "https://browiki.org/wiki/Kihop"
+    },
+    "425": {
+      "name": "Brisa Leve",
+      "url": "https://browiki.org/wiki/Brisa_Leve"
+    },
+    "426": {
+      "name": "Salto",
+      "url": "https://browiki.org/wiki/Salto"
+    },
+    "427": {
+      "name": "Percepção Solar, Lunar e Estelar",
+      "url": "https://browiki.org/wiki/Percep%C3%A7%C3%A3o_Solar,_Lunar_e_Estelar"
+    },
+    "428": {
+      "name": "Calor Solar",
+      "url": "https://browiki.org/wiki/Calor_Solar"
+    },
+    "429": {
+      "name": "Calor Lunar",
+      "url": "https://browiki.org/wiki/Calor_Lunar"
+    },
+    "430": {
+      "name": "Calor Estelar",
+      "url": "https://browiki.org/wiki/Calor_Estelar"
+    },
+    "431": {
+      "name": "Proteção Solar",
+      "url": "https://browiki.org/wiki/Prote%C3%A7%C3%A3o_Solar"
+    },
+    "432": {
+      "name": "Proteção Lunar",
+      "url": "https://browiki.org/wiki/Prote%C3%A7%C3%A3o_Lunar"
+    },
+    "433": {
+      "name": "Proteção Estelar",
+      "url": "https://browiki.org/wiki/Prote%C3%A7%C3%A3o_Estelar"
+    },
+    "434": {
+      "name": "Oposição Solar, Lunar e Estelar",
+      "url": "https://browiki.org/wiki/Oposi%C3%A7%C3%A3o_Solar,_Lunar_e_Estelar"
+    },
+    "435": {
+      "name": "Fúria Solar",
+      "url": "https://browiki.org/wiki/F%C3%BAria_Solar"
+    },
+    "436": {
+      "name": "Fúria Lunar",
+      "url": "https://browiki.org/wiki/F%C3%BAria_Lunar"
+    },
+    "437": {
+      "name": "Fúria Estelar",
+      "url": "https://browiki.org/wiki/F%C3%BAria_Estelar"
+    },
+    "438": {
+      "name": "Bênção Solar",
+      "url": "https://browiki.org/wiki/B%C3%AAn%C3%A7%C3%A3o_Solar"
+    },
+    "439": {
+      "name": "Bênção Lunar",
+      "url": "https://browiki.org/wiki/B%C3%AAn%C3%A7%C3%A3o_Lunar"
+    },
+    "440": {
+      "name": "Bênção Estelar",
+      "url": "https://browiki.org/wiki/B%C3%AAn%C3%A7%C3%A3o_Estelar"
+    },
+    "441": {
+      "name": "Sombra Solar, Lunar e Estelar",
+      "url": "https://browiki.org/wiki/Sombra_Solar,_Lunar_e_Estelar"
+    },
+    "442": {
+      "name": "Auxílio Solar, Lunar e Estelar",
+      "url": "https://browiki.org/wiki/Aux%C3%ADlio_Solar,_Lunar_e_Estelar"
+    },
+    "443": {
+      "name": "Transmissão Solar, Lunar e Estelar",
+      "url": "https://browiki.org/wiki/Transmiss%C3%A3o_Solar,_Lunar_e_Estelar"
+    },
+    "444": {
+      "name": "União Solar, Lunar e Estelar",
+      "url": "https://browiki.org/wiki/Uni%C3%A3o_Solar,_Lunar_e_Estelar"
+    },
+    "445": {
+      "name": "Espírito do Alquimista",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Alquimista"
+    },
+    "446": {
+      "name": "Arremessar Poção da Fúria Selvagem",
+      "url": "https://browiki.org/wiki/Arremessar_Po%C3%A7%C3%A3o_da_F%C3%BAria_Selvagem"
+    },
+    "447": {
+      "name": "Espírito do Monge",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Monge"
+    },
+    "448": {
+      "name": "Espírito do Mestre Taekwon",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Mestre_Taekwon"
+    },
+    "449": {
+      "name": "Espírito do Sábio",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_S%C3%A1bio"
+    },
+    "450": {
+      "name": "Espírito do Templário",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Templ%C3%A1rio"
+    },
+    "451": {
+      "name": "Espírito do Superaprendiz",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Superaprendiz"
+    },
+    "452": {
+      "name": "Espírito do Cavaleiro",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Cavaleiro"
+    },
+    "453": {
+      "name": "Espírito do Bruxo",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Bruxo"
+    },
+    "454": {
+      "name": "Espírito do Sacerdote",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Sacerdote"
+    },
+    "455": {
+      "name": "Espírito dos Artistas",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_dos_Artistas"
+    },
+    "456": {
+      "name": "Espírito do Arruaceiro",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Arruaceiro"
+    },
+    "457": {
+      "name": "Espírito do Mercenário",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Mercen%C3%A1rio"
+    },
+    "458": {
+      "name": "Espírito do Ferreiro",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Ferreiro"
+    },
+    "459": {
+      "name": "Adrenalina Concentrada",
+      "url": "https://browiki.org/wiki/Adrenalina_Concentrada"
+    },
+    "460": {
+      "name": "Espírito do Caçador",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Ca%C3%A7ador"
+    },
+    "461": {
+      "name": "Espírito do Espiritualista",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Espiritualista"
+    },
+    "462": {
+      "name": "Kaizel",
+      "url": "https://browiki.org/wiki/Kaizel"
+    },
+    "463": {
+      "name": "Kaahi",
+      "url": "https://browiki.org/wiki/Kaahi"
+    },
+    "464": {
+      "name": "Kaupe",
+      "url": "https://browiki.org/wiki/Kaupe"
+    },
+    "465": {
+      "name": "Kaite",
+      "url": "https://browiki.org/wiki/Kaite"
+    },
+    "466": {
+      "name": "Kaina",
+      "url": "https://browiki.org/wiki/Kaina"
+    },
+    "467": {
+      "name": "Estin",
+      "url": "https://browiki.org/wiki/Estin"
+    },
+    "468": {
+      "name": "Estun",
+      "url": "https://browiki.org/wiki/Estun"
+    },
+    "469": {
+      "name": "Esma",
+      "url": "https://browiki.org/wiki/Esma"
+    },
+    "470": {
+      "name": "Eswoo",
+      "url": "https://browiki.org/wiki/Eswoo"
+    },
+    "471": {
+      "name": "Eske",
+      "url": "https://browiki.org/wiki/Eske"
+    },
+    "472": {
+      "name": "Eska",
+      "url": "https://browiki.org/wiki/Eska"
+    },
+    "475": {
+      "name": "Preservar",
+      "url": "https://browiki.org/wiki/Preservar"
+    },
+    "476": {
+      "name": "Remoção Total",
+      "url": "https://browiki.org/wiki/Remo%C3%A7%C3%A3o_Total"
+    },
+    "477": {
+      "name": "Aprimorar Armamento",
+      "url": "https://browiki.org/wiki/Aprimorar_Armamento"
+    },
+    "478": {
+      "name": "Arremessar Poção Compacta",
+      "url": "https://browiki.org/wiki/Arremessar_Po%C3%A7%C3%A3o_Compacta"
+    },
+    "479": {
+      "name": "Proteção Química Total",
+      "url": "https://browiki.org/wiki/Prote%C3%A7%C3%A3o_Qu%C3%ADmica_Total"
+    },
+    "480": {
+      "name": "Choque Rápido",
+      "url": "https://browiki.org/wiki/Choque_R%C3%A1pido"
+    },
+    "481": {
+      "name": "Riqueza de Espírito",
+      "url": "https://browiki.org/wiki/Riqueza_de_Esp%C3%ADrito"
+    },
+    "482": {
+      "name": "Lanças Duplas",
+      "url": "https://browiki.org/wiki/Lan%C3%A7as_Duplas"
+    },
+    "483": {
+      "name": "Ganbantein",
+      "url": "https://browiki.org/wiki/Ganbantein"
+    },
+    "484": {
+      "name": "Campo Gravitacional",
+      "url": "https://browiki.org/wiki/Campo_Gravitacional"
+    },
+    "485": {
+      "name": "Choque do Carrinho",
+      "url": "https://browiki.org/wiki/Choque_do_Carrinho"
+    },
+    "486": {
+      "name": "Força Violentíssima",
+      "url": "https://browiki.org/wiki/For%C3%A7a_Violent%C3%ADssima"
+    },
+    "488": {
+      "name": "Bastão de Hermod",
+      "url": "https://browiki.org/wiki/Bast%C3%A3o_de_Hermod"
+    },
+    "489": {
+      "name": "Destino nas Cartas",
+      "url": "https://browiki.org/wiki/Destino_nas_Cartas"
+    },
+    "490": {
+      "name": "Bomba Ácida",
+      "url": "https://browiki.org/wiki/Bomba_%C3%81cida"
+    },
+    "493": {
+      "name": "Missão Taekwon",
+      "url": "https://browiki.org/wiki/Miss%C3%A3o_Taekwon"
+    },
+    "494": {
+      "name": "Espírito dos Transcendentais",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_dos_Transcendentais"
+    },
+    "495": {
+      "name": "Rapidez com Uma Mão",
+      "url": "https://browiki.org/wiki/Rapidez_com_Uma_M%C3%A3o"
+    },
+    "496": {
+      "name": "Criação Espiritual de Poções I",
+      "url": "https://browiki.org/wiki/Cria%C3%A7%C3%A3o_Espiritual_de_Po%C3%A7%C3%B5es_I"
+    },
+    "497": {
+      "name": "Criação Espiritual de Poções II",
+      "url": "https://browiki.org/wiki/Cria%C3%A7%C3%A3o_Espiritual_de_Po%C3%A7%C3%B5es_II"
+    },
+    "498": {
+      "name": "Criação Espiritual de Poções III",
+      "url": "https://browiki.org/wiki/Cria%C3%A7%C3%A3o_Espiritual_de_Po%C3%A7%C3%B5es_III"
+    },
+    "499": {
+      "name": "Ataque da Fera",
+      "url": "https://browiki.org/wiki/Ataque_da_Fera"
+    },
+    "500": {
+      "name": "Cara ou Coroa",
+      "url": "https://browiki.org/wiki/Cara_ou_Coroa"
+    },
+    "501": {
+      "name": "Atirar Moedas",
+      "url": "https://browiki.org/wiki/Atirar_Moedas"
+    },
+    "502": {
+      "name": "Ataque Triplo",
+      "url": "https://browiki.org/wiki/Ataque_Triplo"
+    },
+    "503": {
+      "name": "Ataque Certeiro",
+      "url": "https://browiki.org/wiki/Ataque_Certeiro"
+    },
+    "504": {
+      "name": "Resistência Final",
+      "url": "https://browiki.org/wiki/Resist%C3%AAncia_Final"
+    },
+    "505": {
+      "name": "Pânico do Justiceiro",
+      "url": "https://browiki.org/wiki/P%C3%A2nico_do_Justiceiro"
+    },
+    "506": {
+      "name": "Aumentar Precisão",
+      "url": "https://browiki.org/wiki/Aumentar_Precis%C3%A3o"
+    },
+    "507": {
+      "name": "Bala Mágica",
+      "url": "https://browiki.org/wiki/Bala_M%C3%A1gica"
+    },
+    "508": {
+      "name": "Tiro Bombinha",
+      "url": "https://browiki.org/wiki/Tiro_Bombinha"
+    },
+    "509": {
+      "name": "Ataque Concentrado",
+      "url": "https://browiki.org/wiki/Ataque_Concentrado"
+    },
+    "510": {
+      "name": "Olhos de Serpente",
+      "url": "https://browiki.org/wiki/Olhos_de_Serpente"
+    },
+    "511": {
+      "name": "Reação em Cadeia",
+      "url": "https://browiki.org/wiki/Rea%C3%A7%C3%A3o_em_Cadeia"
+    },
+    "512": {
+      "name": "Rastrear o Alvo",
+      "url": "https://browiki.org/wiki/Rastrear_o_Alvo"
+    },
+    "513": {
+      "name": "Desarmar",
+      "url": "https://browiki.org/wiki/Desarmar"
+    },
+    "514": {
+      "name": "Ferir Alvo",
+      "url": "https://browiki.org/wiki/Ferir_Alvo"
+    },
+    "515": {
+      "name": "Rajada Certeira",
+      "url": "https://browiki.org/wiki/Rajada_Certeira"
+    },
+    "516": {
+      "name": "Desperado",
+      "url": "https://browiki.org/wiki/Desperado"
+    },
+    "517": {
+      "name": "Ataque Gatling",
+      "url": "https://browiki.org/wiki/Ataque_Gatling"
+    },
+    "518": {
+      "name": "Controle de Multidão",
+      "url": "https://browiki.org/wiki/Controle_de_Multid%C3%A3o"
+    },
+    "519": {
+      "name": "Ataque Total",
+      "url": "https://browiki.org/wiki/Ataque_Total"
+    },
+    "520": {
+      "name": "Disparo Espalhado",
+      "url": "https://browiki.org/wiki/Disparo_Espalhado"
+    },
+    "521": {
+      "name": "Mina do Justiceiro",
+      "url": "https://browiki.org/wiki/Mina_do_Justiceiro"
+    },
+    "522": {
+      "name": "Perícia com Shuriken",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Shuriken"
+    },
+    "523": {
+      "name": "Arremessar Shuriken",
+      "url": "https://browiki.org/wiki/Arremessar_Shuriken"
+    },
+    "524": {
+      "name": "Arremessar Kunai",
+      "url": "https://browiki.org/wiki/Arremessar_Kunai"
+    },
+    "525": {
+      "name": "Arremessar Huuma",
+      "url": "https://browiki.org/wiki/Arremessar_Huuma"
+    },
+    "526": {
+      "name": "Chuva de Moedas",
+      "url": "https://browiki.org/wiki/Chuva_de_Moedas"
+    },
+    "527": {
+      "name": "Virar Tatami",
+      "url": "https://browiki.org/wiki/Virar_Tatami"
+    },
+    "528": {
+      "name": "Corte da Névoa",
+      "url": "https://browiki.org/wiki/Corte_da_N%C3%A9voa"
+    },
+    "529": {
+      "name": "Salto das Sombras",
+      "url": "https://browiki.org/wiki/Salto_das_Sombras"
+    },
+    "530": {
+      "name": "Corte das Sombras",
+      "url": "https://browiki.org/wiki/Corte_das_Sombras"
+    },
+    "531": {
+      "name": "Troca de Pele",
+      "url": "https://browiki.org/wiki/Troca_de_Pele"
+    },
+    "532": {
+      "name": "Imagem Falsa",
+      "url": "https://browiki.org/wiki/Imagem_Falsa"
+    },
+    "533": {
+      "name": "Perícia Ninja",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_Ninja"
+    },
+    "534": {
+      "name": "Pétalas Flamejantes",
+      "url": "https://browiki.org/wiki/P%C3%A9talas_Flamejantes"
+    },
+    "535": {
+      "name": "Escudo de Chamas",
+      "url": "https://browiki.org/wiki/Escudo_de_Chamas"
+    },
+    "536": {
+      "name": "Dragão Explosivo",
+      "url": "https://browiki.org/wiki/Drag%C3%A3o_Explosivo"
+    },
+    "537": {
+      "name": "Lança Congelante",
+      "url": "https://browiki.org/wiki/Lan%C3%A7a_Congelante"
+    },
+    "538": {
+      "name": "Evasão Aquática",
+      "url": "https://browiki.org/wiki/Evas%C3%A3o_Aqu%C3%A1tica"
+    },
+    "539": {
+      "name": "Grande Floco de Neve",
+      "url": "https://browiki.org/wiki/Grande_Floco_de_Neve"
+    },
+    "540": {
+      "name": "Lâmina de Vento",
+      "url": "https://browiki.org/wiki/L%C3%A2mina_de_Vento"
+    },
+    "541": {
+      "name": "Descarga Elétrica",
+      "url": "https://browiki.org/wiki/Descarga_El%C3%A9trica"
+    },
+    "542": {
+      "name": "Brisa Cortante",
+      "url": "https://browiki.org/wiki/Brisa_Cortante"
+    },
+    "543": {
+      "name": "Aura Ninja",
+      "url": "https://browiki.org/wiki/Aura_Ninja"
+    },
+    "544": {
+      "name": "Ataque Mortal",
+      "url": "https://browiki.org/wiki/Ataque_Mortal"
+    },
+    "1001": {
+      "name": "Avanço Ofensivo",
+      "url": "https://browiki.org/wiki/Avan%C3%A7o_Ofensivo"
+    },
+    "1002": {
+      "name": "Submissão",
+      "url": "https://browiki.org/wiki/Submiss%C3%A3o"
+    },
+    "1003": {
+      "name": "Lâminas Aceleradas",
+      "url": "https://browiki.org/wiki/L%C3%A2minas_Aceleradas"
+    },
+    "1004": {
+      "name": "Faca Envenenada",
+      "url": "https://browiki.org/wiki/Faca_Envenenada"
+    },
+    "1005": {
+      "name": "Confinamento",
+      "url": "https://browiki.org/wiki/Confinamento"
+    },
+    "1006": {
+      "name": "Explosão Protetora",
+      "url": "https://browiki.org/wiki/Explos%C3%A3o_Protetora"
+    },
+    "1007": {
+      "name": "Criar Conversor Elemental",
+      "url": "https://browiki.org/wiki/Criar_Conversor_Elemental"
+    },
+    "1008": {
+      "name": "Mudança Elemental",
+      "url": "https://browiki.org/wiki/Mudan%C3%A7a_Elemental"
+    },
+    "1009": {
+      "name": "Flecha Ilusória",
+      "url": "https://browiki.org/wiki/Flecha_Ilus%C3%B3ria"
+    },
+    "1010": {
+      "name": "Voz Dolorosa",
+      "url": "https://browiki.org/wiki/Voz_Dolorosa"
+    },
+    "1011": {
+      "name": "Piscadela",
+      "url": "https://browiki.org/wiki/Piscadela"
+    },
+    "1012": {
+      "name": "Venda Duvidosa",
+      "url": "https://browiki.org/wiki/Venda_Duvidosa"
+    },
+    "1013": {
+      "name": "Ganância",
+      "url": "https://browiki.org/wiki/Gan%C3%A2ncia"
+    },
+    "1014": {
+      "name": "Martírio",
+      "url": "https://browiki.org/wiki/Mart%C3%ADrio"
+    },
+    "1015": {
+      "name": "Concessão Espiritual",
+      "url": "https://browiki.org/wiki/Concess%C3%A3o_Espiritual"
+    },
+    "1016": {
+      "name": "Punhos Intensos",
+      "url": "https://browiki.org/wiki/Punhos_Intensos"
+    },
+    "2001": {
+      "name": "Encantar Lâmina",
+      "url": "https://browiki.org/wiki/Encantar_L%C3%A2mina"
+    },
+    "2002": {
+      "name": "Onda de Choque",
+      "url": "https://browiki.org/wiki/Onda_de_Choque"
+    },
+    "2003": {
+      "name": "Revidar Dano",
+      "url": "https://browiki.org/wiki/Revidar_Dano"
+    },
+    "2004": {
+      "name": "Lança das Mil Pontas",
+      "url": "https://browiki.org/wiki/Lan%C3%A7a_das_Mil_Pontas"
+    },
+    "2005": {
+      "name": "Vento Cortante",
+      "url": "https://browiki.org/wiki/Vento_Cortante"
+    },
+    "2006": {
+      "name": "Impacto Flamejante",
+      "url": "https://browiki.org/wiki/Impacto_Flamejante"
+    },
+    "2007": {
+      "name": "Adestrar Dragão",
+      "url": "https://browiki.org/wiki/Adestrar_Drag%C3%A3o"
+    },
+    "2008": {
+      "name": "Sopro do Dragão",
+      "url": "https://browiki.org/wiki/Sopro_do_Drag%C3%A3o"
+    },
+    "2009": {
+      "name": "Rugido do Dragão",
+      "url": "https://browiki.org/wiki/Rugido_do_Drag%C3%A3o"
+    },
+    "2010": {
+      "name": "Perícia em Runas",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_em_Runas"
+    },
+    "2020": {
+      "name": "Arpão",
+      "url": "https://browiki.org/wiki/Arp%C3%A3o"
+    },
+    "2021": {
+      "name": "Potencializar Veneno",
+      "url": "https://browiki.org/wiki/Potencializar_Veneno"
+    },
+    "2022": {
+      "name": "Lâminas Retalhadoras",
+      "url": "https://browiki.org/wiki/L%C3%A2minas_Retalhadoras"
+    },
+    "2023": {
+      "name": "Passo Sombrio",
+      "url": "https://browiki.org/wiki/Passo_Sombrio"
+    },
+    "2024": {
+      "name": "Pesquisa de Toxinas",
+      "url": "https://browiki.org/wiki/Pesquisa_de_Toxinas"
+    },
+    "2025": {
+      "name": "Criar Toxina",
+      "url": "https://browiki.org/wiki/Criar_Toxina"
+    },
+    "2026": {
+      "name": "Antídoto",
+      "url": "https://browiki.org/wiki/Ant%C3%ADdoto"
+    },
+    "2027": {
+      "name": "Aplicar Toxina",
+      "url": "https://browiki.org/wiki/Aplicar_Toxina"
+    },
+    "2028": {
+      "name": "Reflexo de Combate",
+      "url": "https://browiki.org/wiki/Reflexo_de_Combate"
+    },
+    "2029": {
+      "name": "Retaliação",
+      "url": "https://browiki.org/wiki/Retalia%C3%A7%C3%A3o"
+    },
+    "2030": {
+      "name": "Estilhaçar Arma",
+      "url": "https://browiki.org/wiki/Estilha%C3%A7ar_Arma"
+    },
+    "2031": {
+      "name": "Intoxicar",
+      "url": "https://browiki.org/wiki/Intoxicar"
+    },
+    "2032": {
+      "name": "Nevoeiro Tóxico",
+      "url": "https://browiki.org/wiki/Nevoeiro_T%C3%B3xico"
+    },
+    "2033": {
+      "name": "Ocultação",
+      "url": "https://browiki.org/wiki/Oculta%C3%A7%C3%A3o"
+    },
+    "2034": {
+      "name": "Ameaça Fantasma",
+      "url": "https://browiki.org/wiki/Amea%C3%A7a_Fantasma"
+    },
+    "2035": {
+      "name": "Passos da Ilusão",
+      "url": "https://browiki.org/wiki/Passos_da_Ilus%C3%A3o"
+    },
+    "2036": {
+      "name": "Lâminas de Loki",
+      "url": "https://browiki.org/wiki/L%C3%A2minas_de_Loki"
+    },
+    "2037": {
+      "name": "Castigo de Loki",
+      "url": "https://browiki.org/wiki/Castigo_de_Loki"
+    },
+    "2038": {
+      "name": "Judex",
+      "url": "https://browiki.org/wiki/Judex"
+    },
+    "2039": {
+      "name": "Criar Ancilla",
+      "url": "https://browiki.org/wiki/Criar_Ancilla"
+    },
+    "2040": {
+      "name": "Adoramus",
+      "url": "https://browiki.org/wiki/Adoramus"
+    },
+    "2041": {
+      "name": "Clementia",
+      "url": "https://browiki.org/wiki/Clementia"
+    },
+    "2042": {
+      "name": "Canto Candidus",
+      "url": "https://browiki.org/wiki/Canto_Candidus"
+    },
+    "2043": {
+      "name": "Sopro Divino",
+      "url": "https://browiki.org/wiki/Sopro_Divino"
+    },
+    "2044": {
+      "name": "Epiclesis",
+      "url": "https://browiki.org/wiki/Epiclesis"
+    },
+    "2045": {
+      "name": "Praefatio",
+      "url": "https://browiki.org/wiki/Praefatio"
+    },
+    "2046": {
+      "name": "Oratio",
+      "url": "https://browiki.org/wiki/Oratio"
+    },
+    "2047": {
+      "name": "Lauda Agnus",
+      "url": "https://browiki.org/wiki/Lauda_Agnus"
+    },
+    "2048": {
+      "name": "Lauda Ramus",
+      "url": "https://browiki.org/wiki/Lauda_Ramus"
+    },
+    "2050": {
+      "name": "Renovatio",
+      "url": "https://browiki.org/wiki/Renovatio"
+    },
+    "2051": {
+      "name": "Curatio",
+      "url": "https://browiki.org/wiki/Curatio"
+    },
+    "2052": {
+      "name": "Gênese",
+      "url": "https://browiki.org/wiki/G%C3%AAnese"
+    },
+    "2053": {
+      "name": "Expiatio",
+      "url": "https://browiki.org/wiki/Expiatio"
+    },
+    "2054": {
+      "name": "Gemini Lumen",
+      "url": "https://browiki.org/wiki/Gemini_Lumen"
+    },
+    "2057": {
+      "name": "Silentium",
+      "url": "https://browiki.org/wiki/Silentium"
+    },
+    "2201": {
+      "name": "Exílio",
+      "url": "https://browiki.org/wiki/Ex%C3%ADlio"
+    },
+    "2202": {
+      "name": "Impacto Espiritual",
+      "url": "https://browiki.org/wiki/Impacto_Espiritual"
+    },
+    "2203": {
+      "name": "Zero Absoluto",
+      "url": "https://browiki.org/wiki/Zero_Absoluto"
+    },
+    "2204": {
+      "name": "Esquife de Gelo",
+      "url": "https://browiki.org/wiki/Esquife_de_Gelo"
+    },
+    "2205": {
+      "name": "Pântano de Nifflheim",
+      "url": "https://browiki.org/wiki/P%C3%A2ntano_de_Nifflheim"
+    },
+    "2206": {
+      "name": "Maestria Arcana",
+      "url": "https://browiki.org/wiki/Maestria_Arcana"
+    },
+    "2207": {
+      "name": "Fúria da Medusa",
+      "url": "https://browiki.org/wiki/F%C3%BAria_da_Medusa"
+    },
+    "2208": {
+      "name": "Radius",
+      "url": "https://browiki.org/wiki/Radius"
+    },
+    "2209": {
+      "name": "Stasis",
+      "url": "https://browiki.org/wiki/Stasis"
+    },
+    "2210": {
+      "name": "Drenar Vida",
+      "url": "https://browiki.org/wiki/Drenar_Vida"
+    },
+    "2211": {
+      "name": "Meteoro Escarlate",
+      "url": "https://browiki.org/wiki/Meteoro_Escarlate"
+    },
+    "2212": {
+      "name": "Chamas de Hela",
+      "url": "https://browiki.org/wiki/Chamas_de_Hela"
+    },
+    "2213": {
+      "name": "Cometa",
+      "url": "https://browiki.org/wiki/Cometa"
+    },
+    "2214": {
+      "name": "Corrente Elétrica",
+      "url": "https://browiki.org/wiki/Corrente_El%C3%A9trica"
+    },
+    "2216": {
+      "name": "Abalo Sísmico",
+      "url": "https://browiki.org/wiki/Abalo_S%C3%ADsmico"
+    },
+    "2217": {
+      "name": "Tetra Vortex",
+      "url": "https://browiki.org/wiki/Tetra_Vortex"
+    },
+    "2222": {
+      "name": "Invocar Esfera de Fogo",
+      "url": "https://browiki.org/wiki/Invocar_Esfera_de_Fogo"
+    },
+    "2223": {
+      "name": "Invocar Esfera de Vento",
+      "url": "https://browiki.org/wiki/Invocar_Esfera_de_Vento"
+    },
+    "2224": {
+      "name": "Invocar Esfera de Água",
+      "url": "https://browiki.org/wiki/Invocar_Esfera_de_%C3%81gua"
+    },
+    "2229": {
+      "name": "Invocar Esfera de Terra",
+      "url": "https://browiki.org/wiki/Invocar_Esfera_de_Terra"
+    },
+    "2230": {
+      "name": "Lançar Magia",
+      "url": "https://browiki.org/wiki/Lan%C3%A7ar_Magia"
+    },
+    "2231": {
+      "name": "Memorizar",
+      "url": "https://browiki.org/wiki/Memorizar"
+    },
+    "2232": {
+      "name": "Estudo Arcano Avançado",
+      "url": "https://browiki.org/wiki/Estudo_Arcano_Avan%C3%A7ado"
+    },
+    "2233": {
+      "name": "Tempestade de Flechas",
+      "url": "https://browiki.org/wiki/Tempestade_de_Flechas"
+    },
+    "2234": {
+      "name": "Disparo Selvagem",
+      "url": "https://browiki.org/wiki/Disparo_Selvagem"
+    },
+    "2235": {
+      "name": "Táticas de Sobrevivência",
+      "url": "https://browiki.org/wiki/T%C3%A1ticas_de_Sobreviv%C3%AAncia"
+    },
+    "2236": {
+      "name": "Disparo Certeiro",
+      "url": "https://browiki.org/wiki/Disparo_Certeiro"
+    },
+    "2237": {
+      "name": "Detonador",
+      "url": "https://browiki.org/wiki/Detonador"
+    },
+    "2238": {
+      "name": "Armadilha Energizada",
+      "url": "https://browiki.org/wiki/Armadilha_Energizada"
+    },
+    "2239": {
+      "name": "Bomba Relógio",
+      "url": "https://browiki.org/wiki/Bomba_Rel%C3%B3gio"
+    },
+    "2240": {
+      "name": "Adestrar Worg",
+      "url": "https://browiki.org/wiki/Adestrar_Worg"
+    },
+    "2241": {
+      "name": "Montaria em Worg",
+      "url": "https://browiki.org/wiki/Montaria_em_Worg"
+    },
+    "2242": {
+      "name": "Assalto de Worg",
+      "url": "https://browiki.org/wiki/Assalto_de_Worg"
+    },
+    "2243": {
+      "name": "Investida de Worg",
+      "url": "https://browiki.org/wiki/Investida_de_Worg"
+    },
+    "2244": {
+      "name": "Mordida Feroz",
+      "url": "https://browiki.org/wiki/Mordida_Feroz"
+    },
+    "2245": {
+      "name": "Presas Afiadas",
+      "url": "https://browiki.org/wiki/Presas_Afiadas"
+    },
+    "2246": {
+      "name": "Faro Aguçado",
+      "url": "https://browiki.org/wiki/Faro_Agu%C3%A7ado"
+    },
+    "2247": {
+      "name": "Camuflagem",
+      "url": "https://browiki.org/wiki/Camuflagem"
+    },
+    "2248": {
+      "name": "Perícia com Armadilha",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Armadilha"
+    },
+    "2249": {
+      "name": "Armadilha Escarlate",
+      "url": "https://browiki.org/wiki/Armadilha_Escarlate"
+    },
+    "2250": {
+      "name": "Armadilha Cobalto",
+      "url": "https://browiki.org/wiki/Armadilha_Cobalto"
+    },
+    "2251": {
+      "name": "Armadilha Ocre",
+      "url": "https://browiki.org/wiki/Armadilha_Ocre"
+    },
+    "2252": {
+      "name": "Armadilha Esmeralda",
+      "url": "https://browiki.org/wiki/Armadilha_Esmeralda"
+    },
+    "2253": {
+      "name": "Armadilha Incendiária",
+      "url": "https://browiki.org/wiki/Armadilha_Incendi%C3%A1ria"
+    },
+    "2254": {
+      "name": "Armadilha Glacial",
+      "url": "https://browiki.org/wiki/Armadilha_Glacial"
+    },
+    "2255": {
+      "name": "Licença de Pilotagem",
+      "url": "https://browiki.org/wiki/Licen%C3%A7a_de_Pilotagem"
+    },
+    "2256": {
+      "name": "Punho Foguete",
+      "url": "https://browiki.org/wiki/Punho_Foguete"
+    },
+    "2257": {
+      "name": "Bate Estaca",
+      "url": "https://browiki.org/wiki/Bate_Estaca"
+    },
+    "2258": {
+      "name": "Metralhadora",
+      "url": "https://browiki.org/wiki/Metralhadora"
+    },
+    "2259": {
+      "name": "Lança Chamas",
+      "url": "https://browiki.org/wiki/Lan%C3%A7a_Chamas"
+    },
+    "2260": {
+      "name": "Gás Criogênico",
+      "url": "https://browiki.org/wiki/G%C3%A1s_Criog%C3%AAnico"
+    },
+    "2261": {
+      "name": "Canhão",
+      "url": "https://browiki.org/wiki/Canh%C3%A3o"
+    },
+    "2262": {
+      "name": "Aceleração",
+      "url": "https://browiki.org/wiki/Acelera%C3%A7%C3%A3o"
+    },
+    "2263": {
+      "name": "Planar",
+      "url": "https://browiki.org/wiki/Planar"
+    },
+    "2264": {
+      "name": "Propulsão Traseira",
+      "url": "https://browiki.org/wiki/Propuls%C3%A3o_Traseira"
+    },
+    "2265": {
+      "name": "Propulsão Dianteira",
+      "url": "https://browiki.org/wiki/Propuls%C3%A3o_Dianteira"
+    },
+    "2266": {
+      "name": "Reforçar Estrutura",
+      "url": "https://browiki.org/wiki/Refor%C3%A7ar_Estrutura"
+    },
+    "2267": {
+      "name": "Autodestruição",
+      "url": "https://browiki.org/wiki/Autodestrui%C3%A7%C3%A3o"
+    },
+    "2268": {
+      "name": "Reconfigurar Elemento",
+      "url": "https://browiki.org/wiki/Reconfigurar_Elemento"
+    },
+    "2269": {
+      "name": "Resfriamento",
+      "url": "https://browiki.org/wiki/Resfriamento"
+    },
+    "2270": {
+      "name": "Sensor Infravermelho",
+      "url": "https://browiki.org/wiki/Sensor_Infravermelho"
+    },
+    "2271": {
+      "name": "Analisar",
+      "url": "https://browiki.org/wiki/Analisar"
+    },
+    "2272": {
+      "name": "Campo Magnético",
+      "url": "https://browiki.org/wiki/Campo_Magn%C3%A9tico"
+    },
+    "2273": {
+      "name": "Campo Protetor",
+      "url": "https://browiki.org/wiki/Campo_Protetor"
+    },
+    "2274": {
+      "name": "Campo de Invisibilidade",
+      "url": "https://browiki.org/wiki/Campo_de_Invisibilidade"
+    },
+    "2275": {
+      "name": "Reparar",
+      "url": "https://browiki.org/wiki/Reparar"
+    },
+    "2276": {
+      "name": "Maestria com Machados",
+      "url": "https://browiki.org/wiki/Maestria_com_Machados"
+    },
+    "2277": {
+      "name": "Sabedoria de Hefesto",
+      "url": "https://browiki.org/wiki/Sabedoria_de_Hefesto"
+    },
+    "2278": {
+      "name": "Arremesso de Machado",
+      "url": "https://browiki.org/wiki/Arremesso_de_Machado"
+    },
+    "2279": {
+      "name": "Brandir Machado",
+      "url": "https://browiki.org/wiki/Brandir_Machado"
+    },
+    "2280": {
+      "name": "Fúria do Furacão",
+      "url": "https://browiki.org/wiki/F%C3%BAria_do_Furac%C3%A3o"
+    },
+    "2281": {
+      "name": "Artilharia Caçadora",
+      "url": "https://browiki.org/wiki/Artilharia_Ca%C3%A7adora"
+    },
+    "2282": {
+      "name": "Artilharia Arcana",
+      "url": "https://browiki.org/wiki/Artilharia_Arcana"
+    },
+    "2283": {
+      "name": "Remover Artilharia",
+      "url": "https://browiki.org/wiki/Remover_Artilharia"
+    },
+    "2284": {
+      "name": "Ofensiva Fatal",
+      "url": "https://browiki.org/wiki/Ofensiva_Fatal"
+    },
+    "2285": {
+      "name": "Mimetismo",
+      "url": "https://browiki.org/wiki/Mimetismo"
+    },
+    "2286": {
+      "name": "Desejo das Sombras",
+      "url": "https://browiki.org/wiki/Desejo_das_Sombras"
+    },
+    "2287": {
+      "name": "Vínculo Sombrio",
+      "url": "https://browiki.org/wiki/V%C3%ADnculo_Sombrio"
+    },
+    "2288": {
+      "name": "Disparo Triplo",
+      "url": "https://browiki.org/wiki/Disparo_Triplo"
+    },
+    "2289": {
+      "name": "Borrifar Tinta",
+      "url": "https://browiki.org/wiki/Borrifar_Tinta"
+    },
+    "2290": {
+      "name": "Forma Etérea",
+      "url": "https://browiki.org/wiki/Forma_Et%C3%A9rea"
+    },
+    "2291": {
+      "name": "Pestilência",
+      "url": "https://browiki.org/wiki/Pestil%C3%AAncia"
+    },
+    "2292": {
+      "name": "Máscara da Fraqueza",
+      "url": "https://browiki.org/wiki/M%C3%A1scara_da_Fraqueza"
+    },
+    "2293": {
+      "name": "Máscara da Melancolia",
+      "url": "https://browiki.org/wiki/M%C3%A1scara_da_Melancolia"
+    },
+    "2294": {
+      "name": "Máscara da Tolice",
+      "url": "https://browiki.org/wiki/M%C3%A1scara_da_Tolice"
+    },
+    "2295": {
+      "name": "Máscara da Ociosidade",
+      "url": "https://browiki.org/wiki/M%C3%A1scara_da_Ociosidade"
+    },
+    "2296": {
+      "name": "Máscara do Infortúnio",
+      "url": "https://browiki.org/wiki/M%C3%A1scara_do_Infort%C3%BAnio"
+    },
+    "2297": {
+      "name": "Máscara da Vulnerabilidade",
+      "url": "https://browiki.org/wiki/M%C3%A1scara_da_Vulnerabilidade"
+    },
+    "2298": {
+      "name": "Remover Acessório",
+      "url": "https://browiki.org/wiki/Remover_Acess%C3%B3rio"
+    },
+    "2299": {
+      "name": "Pintar Armadilha",
+      "url": "https://browiki.org/wiki/Pintar_Armadilha"
+    },
+    "2300": {
+      "name": "Porta Dimensional",
+      "url": "https://browiki.org/wiki/Porta_Dimensional"
+    },
+    "2301": {
+      "name": "Símbolo do Caos",
+      "url": "https://browiki.org/wiki/S%C3%ADmbolo_do_Caos"
+    },
+    "2302": {
+      "name": "Redemoinho de Absorção",
+      "url": "https://browiki.org/wiki/Redemoinho_de_Absor%C3%A7%C3%A3o"
+    },
+    "2303": {
+      "name": "Sede de Sangue",
+      "url": "https://browiki.org/wiki/Sede_de_Sangue"
+    },
+    "2304": {
+      "name": "Cópia Explosiva",
+      "url": "https://browiki.org/wiki/C%C3%B3pia_Explosiva"
+    },
+    "2307": {
+      "name": "Disparo Perfurante",
+      "url": "https://browiki.org/wiki/Disparo_Perfurante"
+    },
+    "2308": {
+      "name": "Toque do Oblívio",
+      "url": "https://browiki.org/wiki/Toque_do_Obl%C3%ADvio"
+    },
+    "2309": {
+      "name": "Pisotear Armadilha",
+      "url": "https://browiki.org/wiki/Pisotear_Armadilha"
+    },
+    "2310": {
+      "name": "Escudo Compressor",
+      "url": "https://browiki.org/wiki/Escudo_Compressor"
+    },
+    "2311": {
+      "name": "Escudo Supressor",
+      "url": "https://browiki.org/wiki/Escudo_Supressor"
+    },
+    "2312": {
+      "name": "Estocada Precisa",
+      "url": "https://browiki.org/wiki/Estocada_Precisa"
+    },
+    "2313": {
+      "name": "Proteção da Vanguarda",
+      "url": "https://browiki.org/wiki/Prote%C3%A7%C3%A3o_da_Vanguarda"
+    },
+    "2314": {
+      "name": "Retribuição da Vanguarda",
+      "url": "https://browiki.org/wiki/Retribui%C3%A7%C3%A3o_da_Vanguarda"
+    },
+    "2315": {
+      "name": "Aegis Domini",
+      "url": "https://browiki.org/wiki/Aegis_Domini"
+    },
+    "2316": {
+      "name": "Exceder Limite",
+      "url": "https://browiki.org/wiki/Exceder_Limite"
+    },
+    "2317": {
+      "name": "Lança do Destino",
+      "url": "https://browiki.org/wiki/Lan%C3%A7a_do_Destino"
+    },
+    "2318": {
+      "name": "Prestígio Divino",
+      "url": "https://browiki.org/wiki/Prest%C3%ADgio_Divino"
+    },
+    "2319": {
+      "name": "Formação Real",
+      "url": "https://browiki.org/wiki/Forma%C3%A7%C3%A3o_Real"
+    },
+    "2320": {
+      "name": "Espiral Lunar",
+      "url": "https://browiki.org/wiki/Espiral_Lunar"
+    },
+    "2321": {
+      "name": "Luz da Criação",
+      "url": "https://browiki.org/wiki/Luz_da_Cria%C3%A7%C3%A3o"
+    },
+    "2322": {
+      "name": "Devoção",
+      "url": "https://browiki.org/wiki/Devo%C3%A7%C3%A3o"
+    },
+    "2323": {
+      "name": "Aegis Inferi",
+      "url": "https://browiki.org/wiki/Aegis_Inferi"
+    },
+    "2324": {
+      "name": "Trindade",
+      "url": "https://browiki.org/wiki/Trindade"
+    },
+    "2325": {
+      "name": "Consagração",
+      "url": "https://browiki.org/wiki/Consagra%C3%A7%C3%A3o"
+    },
+    "2326": {
+      "name": "Punho do Dragão",
+      "url": "https://browiki.org/wiki/Punho_do_Drag%C3%A3o"
+    },
+    "2327": {
+      "name": "Soco Furacão",
+      "url": "https://browiki.org/wiki/Soco_Furac%C3%A3o"
+    },
+    "2328": {
+      "name": "Impacto Sísmico",
+      "url": "https://browiki.org/wiki/Impacto_S%C3%ADsmico"
+    },
+    "2329": {
+      "name": "Ruína",
+      "url": "https://browiki.org/wiki/Ru%C3%ADna"
+    },
+    "2330": {
+      "name": "Garra de Tigre",
+      "url": "https://browiki.org/wiki/Garra_de_Tigre"
+    },
+    "2332": {
+      "name": "Explosão Espiritual",
+      "url": "https://browiki.org/wiki/Explos%C3%A3o_Espiritual"
+    },
+    "2333": {
+      "name": "Cotovelada Ascendente",
+      "url": "https://browiki.org/wiki/Cotovelada_Ascendente"
+    },
+    "2334": {
+      "name": "Campo Amaldiçoado",
+      "url": "https://browiki.org/wiki/Campo_Amaldi%C3%A7oado"
+    },
+    "2335": {
+      "name": "Salto Relâmpago",
+      "url": "https://browiki.org/wiki/Salto_Rel%C3%A2mpago"
+    },
+    "2336": {
+      "name": "Pancada Corporal",
+      "url": "https://browiki.org/wiki/Pancada_Corporal"
+    },
+    "2337": {
+      "name": "Chute Rasteiro",
+      "url": "https://browiki.org/wiki/Chute_Rasteiro"
+    },
+    "2338": {
+      "name": "Dragão Ascendente",
+      "url": "https://browiki.org/wiki/Drag%C3%A3o_Ascendente"
+    },
+    "2340": {
+      "name": "Absorção Espiritual",
+      "url": "https://browiki.org/wiki/Absor%C3%A7%C3%A3o_Espiritual"
+    },
+    "2341": {
+      "name": "Renúncia Espiritual",
+      "url": "https://browiki.org/wiki/Ren%C3%BAncia_Espiritual"
+    },
+    "2343": {
+      "name": "Portões do Inferno",
+      "url": "https://browiki.org/wiki/Port%C3%B5es_do_Inferno"
+    },
+    "2344": {
+      "name": "Chakra do Silêncio",
+      "url": "https://browiki.org/wiki/Chakra_do_Sil%C3%AAncio"
+    },
+    "2345": {
+      "name": "Chakra da Cura",
+      "url": "https://browiki.org/wiki/Chakra_da_Cura"
+    },
+    "2346": {
+      "name": "Chakra da Energia",
+      "url": "https://browiki.org/wiki/Chakra_da_Energia"
+    },
+    "2347": {
+      "name": "Chakra da Fúria",
+      "url": "https://browiki.org/wiki/Chakra_da_F%C3%BAria"
+    },
+    "2348": {
+      "name": "Chakra do Vigor",
+      "url": "https://browiki.org/wiki/Chakra_do_Vigor"
+    },
+    "2350": {
+      "name": "Ritmo Contagiante",
+      "url": "https://browiki.org/wiki/Ritmo_Contagiante"
+    },
+    "2351": {
+      "name": "Balada Sinfônica",
+      "url": "https://browiki.org/wiki/Balada_Sinf%C3%B4nica"
+    },
+    "2352": {
+      "name": "Serenata ao Luar",
+      "url": "https://browiki.org/wiki/Serenata_ao_Luar"
+    },
+    "2412": {
+      "name": "Domínio Musical",
+      "url": "https://browiki.org/wiki/Dom%C3%ADnio_Musical"
+    },
+    "2413": {
+      "name": "Ruído Estridente",
+      "url": "https://browiki.org/wiki/Ru%C3%ADdo_Estridente"
+    },
+    "2414": {
+      "name": "Ressonância",
+      "url": "https://browiki.org/wiki/Resson%C3%A2ncia"
+    },
+    "2418": {
+      "name": "Temporal de Flechas",
+      "url": "https://browiki.org/wiki/Temporal_de_Flechas"
+    },
+    "2419": {
+      "name": "Poema de Nifflheim",
+      "url": "https://browiki.org/wiki/Poema_de_Nifflheim"
+    },
+    "2420": {
+      "name": "Canto da Sereia",
+      "url": "https://browiki.org/wiki/Canto_da_Sereia"
+    },
+    "2421": {
+      "name": "Réquiem de Orfeu",
+      "url": "https://browiki.org/wiki/R%C3%A9quiem_de_Orfeu"
+    },
+    "2422": {
+      "name": "Melodia de Morfeu",
+      "url": "https://browiki.org/wiki/Melodia_de_Morfeu"
+    },
+    "2423": {
+      "name": "Sibilo de Eir",
+      "url": "https://browiki.org/wiki/Sibilo_de_Eir"
+    },
+    "2424": {
+      "name": "Improviso",
+      "url": "https://browiki.org/wiki/Improviso"
+    },
+    "2425": {
+      "name": "Ode a Hela",
+      "url": "https://browiki.org/wiki/Ode_a_Hela"
+    },
+    "2426": {
+      "name": "Brado de Odin",
+      "url": "https://browiki.org/wiki/Brado_de_Odin"
+    },
+    "2427": {
+      "name": "Canção de Alfheim",
+      "url": "https://browiki.org/wiki/Can%C3%A7%C3%A3o_de_Alfheim"
+    },
+    "2428": {
+      "name": "Dança com Lobos",
+      "url": "https://browiki.org/wiki/Dan%C3%A7a_com_Lobos"
+    },
+    "2429": {
+      "name": "Prelúdio do Ragnarök",
+      "url": "https://browiki.org/wiki/Prel%C3%BAdio_do_Ragnar%C3%B6k"
+    },
+    "2430": {
+      "name": "Embalos de Sábado a Noite",
+      "url": "https://browiki.org/wiki/Embalos_de_S%C3%A1bado_a_Noite"
+    },
+    "2431": {
+      "name": "Orvalho de Idun",
+      "url": "https://browiki.org/wiki/Orvalho_de_Idun"
+    },
+    "2432": {
+      "name": "Cântico da Iluminação",
+      "url": "https://browiki.org/wiki/C%C3%A2ntico_da_Ilumina%C3%A7%C3%A3o"
+    },
+    "2433": {
+      "name": "Clamor de Batalha",
+      "url": "https://browiki.org/wiki/Clamor_de_Batalha"
+    },
+    "2434": {
+      "name": "Murmúrio Perene",
+      "url": "https://browiki.org/wiki/Murm%C3%BArio_Perene"
+    },
+    "2443": {
+      "name": "Passos de Salamandra",
+      "url": "https://browiki.org/wiki/Passos_de_Salamandra"
+    },
+    "2444": {
+      "name": "Passos de Sílfide",
+      "url": "https://browiki.org/wiki/Passos_de_S%C3%ADlfide"
+    },
+    "2445": {
+      "name": "Punho Arcano",
+      "url": "https://browiki.org/wiki/Punho_Arcano"
+    },
+    "2446": {
+      "name": "Castigo de Nerthus",
+      "url": "https://browiki.org/wiki/Castigo_de_Nerthus"
+    },
+    "2447": {
+      "name": "Pó de Diamante",
+      "url": "https://browiki.org/wiki/P%C3%B3_de_Diamante"
+    },
+    "2448": {
+      "name": "Implosão Tóxica",
+      "url": "https://browiki.org/wiki/Implos%C3%A3o_T%C3%B3xica"
+    },
+    "2449": {
+      "name": "Onda Psíquica",
+      "url": "https://browiki.org/wiki/Onda_Ps%C3%ADquica"
+    },
+    "2450": {
+      "name": "Maldição de Jormungand",
+      "url": "https://browiki.org/wiki/Maldi%C3%A7%C3%A3o_de_Jormungand"
+    },
+    "2451": {
+      "name": "Encanto de Órion",
+      "url": "https://browiki.org/wiki/Encanto_de_%C3%93rion"
+    },
+    "2452": {
+      "name": "Aquecer Terreno",
+      "url": "https://browiki.org/wiki/Aquecer_Terreno"
+    },
+    "2453": {
+      "name": "Tornado",
+      "url": "https://browiki.org/wiki/Tornado"
+    },
+    "2454": {
+      "name": "Lanças dos Aesir",
+      "url": "https://browiki.org/wiki/Lan%C3%A7as_dos_Aesir"
+    },
+    "2455": {
+      "name": "Decorar Carrinho",
+      "url": "https://browiki.org/wiki/Decorar_Carrinho"
+    },
+    "2456": {
+      "name": "Domínio Elemental",
+      "url": "https://browiki.org/wiki/Dom%C3%ADnio_Elemental"
+    },
+    "2457": {
+      "name": "Invocar Agni",
+      "url": "https://browiki.org/wiki/Invocar_Agni"
+    },
+    "2458": {
+      "name": "Invocar Varuna",
+      "url": "https://browiki.org/wiki/Invocar_Varuna"
+    },
+    "2459": {
+      "name": "Invocar Vayu",
+      "url": "https://browiki.org/wiki/Invocar_Vayu"
+    },
+    "2460": {
+      "name": "Invocar Chandra",
+      "url": "https://browiki.org/wiki/Invocar_Chandra"
+    },
+    "2461": {
+      "name": "Incitar Elemental",
+      "url": "https://browiki.org/wiki/Incitar_Elemental"
+    },
+    "2462": {
+      "name": "Análise Elemental",
+      "url": "https://browiki.org/wiki/An%C3%A1lise_Elemental"
+    },
+    "2463": {
+      "name": "Empatia Elemental",
+      "url": "https://browiki.org/wiki/Empatia_Elemental"
+    },
+    "2464": {
+      "name": "Troca Espiritual",
+      "url": "https://browiki.org/wiki/Troca_Espiritual"
+    },
+    "2465": {
+      "name": "Insígnia do Fogo",
+      "url": "https://browiki.org/wiki/Ins%C3%ADgnia_do_Fogo"
+    },
+    "2466": {
+      "name": "Insígnia da Água",
+      "url": "https://browiki.org/wiki/Ins%C3%ADgnia_da_%C3%81gua"
+    },
+    "2467": {
+      "name": "Insígnia do Vento",
+      "url": "https://browiki.org/wiki/Ins%C3%ADgnia_do_Vento"
+    },
+    "2468": {
+      "name": "Insígnia da Terra",
+      "url": "https://browiki.org/wiki/Ins%C3%ADgnia_da_Terra"
+    },
+    "2474": {
+      "name": "Perícia em Esgrima",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_em_Esgrima"
+    },
+    "2475": {
+      "name": "Aprimorar Carrinho",
+      "url": "https://browiki.org/wiki/Aprimorar_Carrinho"
+    },
+    "2476": {
+      "name": "Tornado de Carrinho",
+      "url": "https://browiki.org/wiki/Tornado_de_Carrinho"
+    },
+    "2477": {
+      "name": "Canhão de Prótons",
+      "url": "https://browiki.org/wiki/Canh%C3%A3o_de_Pr%C3%B3tons"
+    },
+    "2478": {
+      "name": "Propulsão do Carrinho",
+      "url": "https://browiki.org/wiki/Propuls%C3%A3o_do_Carrinho"
+    },
+    "2479": {
+      "name": "Armadilha de Espinhos",
+      "url": "https://browiki.org/wiki/Armadilha_de_Espinhos"
+    },
+    "2480": {
+      "name": "Planta Sanguessuga",
+      "url": "https://browiki.org/wiki/Planta_Sanguessuga"
+    },
+    "2481": {
+      "name": "Esporo Explosivo",
+      "url": "https://browiki.org/wiki/Esporo_Explosivo"
+    },
+    "2482": {
+      "name": "Muralha de Espinhos",
+      "url": "https://browiki.org/wiki/Muralha_de_Espinhos"
+    },
+    "2483": {
+      "name": "Erva Daninha",
+      "url": "https://browiki.org/wiki/Erva_Daninha"
+    },
+    "2485": {
+      "name": "Bomba Napalm",
+      "url": "https://browiki.org/wiki/Bomba_Napalm"
+    },
+    "2486": {
+      "name": "Catalisador Alquímico",
+      "url": "https://browiki.org/wiki/Catalisador_Alqu%C3%ADmico"
+    },
+    "2490": {
+      "name": "Planta Infernal",
+      "url": "https://browiki.org/wiki/Planta_Infernal"
+    },
+    "2492": {
+      "name": "Grito da Mandrágora",
+      "url": "https://browiki.org/wiki/Grito_da_Mandr%C3%A1gora"
+    },
+    "2494": {
+      "name": "Reação Alquímica",
+      "url": "https://browiki.org/wiki/Rea%C3%A7%C3%A3o_Alqu%C3%ADmica"
+    },
+    "2495": {
+      "name": "Culinária Avançada",
+      "url": "https://browiki.org/wiki/Culin%C3%A1ria_Avan%C3%A7ada"
+    },
+    "2497": {
+      "name": "Farmacologia Avançada",
+      "url": "https://browiki.org/wiki/Farmacologia_Avan%C3%A7ada"
+    },
+    "2515": {
+      "name": "Sacramentum",
+      "url": "https://browiki.org/wiki/Sacramentum"
+    },
+    "2517": {
+      "name": "Rugido do Leão",
+      "url": "https://browiki.org/wiki/Rugido_do_Le%C3%A3o"
+    },
+    "2518": {
+      "name": "Tempestade Espiritual",
+      "url": "https://browiki.org/wiki/Tempestade_Espiritual"
+    },
+    "2552": {
+      "name": "Farta Fortuna",
+      "url": "https://browiki.org/wiki/Farta_Fortuna"
+    },
+    "2553": {
+      "name": "Espiral Perfurante",
+      "url": "https://browiki.org/wiki/Espiral_Perfurante"
+    },
+    "2554": {
+      "name": "Tiro Neutralizante",
+      "url": "https://browiki.org/wiki/Tiro_Neutralizante"
+    },
+    "2555": {
+      "name": "Armadilha Aderente",
+      "url": "https://browiki.org/wiki/Armadilha_Aderente"
+    },
+    "2556": {
+      "name": "Ignição",
+      "url": "https://browiki.org/wiki/Igni%C3%A7%C3%A3o"
+    },
+    "2557": {
+      "name": "Rajada Estilhaçante",
+      "url": "https://browiki.org/wiki/Rajada_Estilha%C3%A7ante"
+    },
+    "2558": {
+      "name": "Reação Ilimitada",
+      "url": "https://browiki.org/wiki/Rea%C3%A7%C3%A3o_Ilimitada"
+    },
+    "2559": {
+      "name": "Saque Rápido",
+      "url": "https://browiki.org/wiki/Saque_R%C3%A1pido"
+    },
+    "2560": {
+      "name": "Marcar em Brasa",
+      "url": "https://browiki.org/wiki/Marcar_em_Brasa"
+    },
+    "2561": {
+      "name": "Descarregar Tambor",
+      "url": "https://browiki.org/wiki/Descarregar_Tambor"
+    },
+    "2562": {
+      "name": "Arremessar Granada",
+      "url": "https://browiki.org/wiki/Arremessar_Granada"
+    },
+    "2563": {
+      "name": "Proteção de Platina",
+      "url": "https://browiki.org/wiki/Prote%C3%A7%C3%A3o_de_Platina"
+    },
+    "2564": {
+      "name": "Salto Etéreo",
+      "url": "https://browiki.org/wiki/Salto_Et%C3%A9reo"
+    },
+    "2565": {
+      "name": "Expurgar",
+      "url": "https://browiki.org/wiki/Expurgar"
+    },
+    "2566": {
+      "name": "Lançar Míssil",
+      "url": "https://browiki.org/wiki/Lan%C3%A7ar_M%C3%ADssil"
+    },
+    "2567": {
+      "name": "Disparo Labareda",
+      "url": "https://browiki.org/wiki/Disparo_Labareda"
+    },
+    "2568": {
+      "name": "Furor",
+      "url": "https://browiki.org/wiki/Furor"
+    },
+    "2569": {
+      "name": "Explosão Antimatéria",
+      "url": "https://browiki.org/wiki/Explos%C3%A3o_Antimat%C3%A9ria"
+    },
+    "2570": {
+      "name": "Calibre Letal",
+      "url": "https://browiki.org/wiki/Calibre_Letal"
+    },
+    "2571": {
+      "name": "Execução",
+      "url": "https://browiki.org/wiki/Execu%C3%A7%C3%A3o"
+    },
+    "2574": {
+      "name": "Luz Lunar",
+      "url": "https://browiki.org/wiki/Luz_Lunar"
+    },
+    "2575": {
+      "name": "Postura Lunar",
+      "url": "https://browiki.org/wiki/Postura_Lunar"
+    },
+    "2576": {
+      "name": "Chute Lunar",
+      "url": "https://browiki.org/wiki/Chute_Lunar"
+    },
+    "2577": {
+      "name": "Luz Estelar",
+      "url": "https://browiki.org/wiki/Luz_Estelar"
+    },
+    "2578": {
+      "name": "Postura Estelar",
+      "url": "https://browiki.org/wiki/Postura_Estelar"
+    },
+    "2579": {
+      "name": "Eclipse Lunar",
+      "url": "https://browiki.org/wiki/Eclipse_Lunar"
+    },
+    "2580": {
+      "name": "Chute Estelar",
+      "url": "https://browiki.org/wiki/Chute_Estelar"
+    },
+    "2581": {
+      "name": "Advento Imperial",
+      "url": "https://browiki.org/wiki/Advento_Imperial"
+    },
+    "2582": {
+      "name": "Hipernova",
+      "url": "https://browiki.org/wiki/Hipernova"
+    },
+    "2583": {
+      "name": "Postura do Universo",
+      "url": "https://browiki.org/wiki/Postura_do_Universo"
+    },
+    "2584": {
+      "name": "Chuva Estelar",
+      "url": "https://browiki.org/wiki/Chuva_Estelar"
+    },
+    "2585": {
+      "name": "Controle Gravitacional",
+      "url": "https://browiki.org/wiki/Controle_Gravitacional"
+    },
+    "2586": {
+      "name": "Livro das Dimensões",
+      "url": "https://browiki.org/wiki/Livro_das_Dimens%C3%B5es"
+    },
+    "2587": {
+      "name": "Livro da Criação",
+      "url": "https://browiki.org/wiki/Livro_da_Cria%C3%A7%C3%A3o"
+    },
+    "2588": {
+      "name": "Registro Solar, Lunar e Estelar",
+      "url": "https://browiki.org/wiki/Registro_Solar,_Lunar_e_Estelar"
+    },
+    "2589": {
+      "name": "Purificação Solar, Lunar e Estelar",
+      "url": "https://browiki.org/wiki/Purifica%C3%A7%C3%A3o_Solar,_Lunar_e_Estelar"
+    },
+    "2590": {
+      "name": "Luz Solar",
+      "url": "https://browiki.org/wiki/Luz_Solar"
+    },
+    "2591": {
+      "name": "Postura Solar",
+      "url": "https://browiki.org/wiki/Postura_Solar"
+    },
+    "2592": {
+      "name": "Explosão Solar",
+      "url": "https://browiki.org/wiki/Explos%C3%A3o_Solar"
+    },
+    "2593": {
+      "name": "Chute Solar",
+      "url": "https://browiki.org/wiki/Chute_Solar"
+    },
+    "2596": {
+      "name": "Espírito do Golem",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Golem"
+    },
+    "2597": {
+      "name": "Espírito das Sombras",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_das_Sombras"
+    },
+    "2598": {
+      "name": "Espírito do Falcão",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_do_Falc%C3%A3o"
+    },
+    "2599": {
+      "name": "Espírito da Fada",
+      "url": "https://browiki.org/wiki/Esp%C3%ADrito_da_Fada"
+    },
+    "2600": {
+      "name": "Necroexplosão",
+      "url": "https://browiki.org/wiki/Necroexplos%C3%A3o"
+    },
+    "2601": {
+      "name": "Necromancia",
+      "url": "https://browiki.org/wiki/Necromancia"
+    },
+    "2602": {
+      "name": "Espa",
+      "url": "https://browiki.org/wiki/Espa"
+    },
+    "2603": {
+      "name": "Esha",
+      "url": "https://browiki.org/wiki/Esha"
+    },
+    "2604": {
+      "name": "Eswhoo",
+      "url": "https://browiki.org/wiki/Eswhoo"
+    },
+    "2605": {
+      "name": "União Espiritual",
+      "url": "https://browiki.org/wiki/Uni%C3%A3o_Espiritual"
+    },
+    "2606": {
+      "name": "Divisão de Alma",
+      "url": "https://browiki.org/wiki/Divis%C3%A3o_de_Alma"
+    },
+    "2607": {
+      "name": "Ceifar Alma",
+      "url": "https://browiki.org/wiki/Ceifar_Alma"
+    },
+    "2608": {
+      "name": "Absorver Espírito",
+      "url": "https://browiki.org/wiki/Absorver_Esp%C3%ADrito"
+    },
+    "2609": {
+      "name": "Coletar Alma",
+      "url": "https://browiki.org/wiki/Coletar_Alma"
+    },
+    "2610": {
+      "name": "Sifão Espiritual",
+      "url": "https://browiki.org/wiki/Sif%C3%A3o_Espiritual"
+    },
+    "2611": {
+      "name": "Perícia com Almas",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Almas"
+    },
+    "2612": {
+      "name": "Kaute",
+      "url": "https://browiki.org/wiki/Kaute"
+    },
+    "3001": {
+      "name": "Refúgio das Sombras",
+      "url": "https://browiki.org/wiki/Ref%C3%BAgio_das_Sombras"
+    },
+    "3002": {
+      "name": "Perícia com a Mão Direita",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_a_M%C3%A3o_Direita"
+    },
+    "3003": {
+      "name": "Perícia com a Mão Esquerda",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_a_M%C3%A3o_Esquerda"
+    },
+    "3004": {
+      "name": "Impacto Cruzado",
+      "url": "https://browiki.org/wiki/Impacto_Cruzado"
+    },
+    "3005": {
+      "name": "Corte Espiritual",
+      "url": "https://browiki.org/wiki/Corte_Espiritual"
+    },
+    "3006": {
+      "name": "Kunai Explosiva",
+      "url": "https://browiki.org/wiki/Kunai_Explosiva"
+    },
+    "3007": {
+      "name": "Turbilhão de Kunais",
+      "url": "https://browiki.org/wiki/Turbilh%C3%A3o_de_Kunais"
+    },
+    "3008": {
+      "name": "Explosão de Moedas",
+      "url": "https://browiki.org/wiki/Explos%C3%A3o_de_Moedas"
+    },
+    "3009": {
+      "name": "Turbilhão de Pétalas",
+      "url": "https://browiki.org/wiki/Turbilh%C3%A3o_de_P%C3%A9talas"
+    },
+    "3010": {
+      "name": "Estrepes",
+      "url": "https://browiki.org/wiki/Estrepes"
+    },
+    "3011": {
+      "name": "Purificação da Alma",
+      "url": "https://browiki.org/wiki/Purifica%C3%A7%C3%A3o_da_Alma"
+    },
+    "3012": {
+      "name": "Clone das Sombras",
+      "url": "https://browiki.org/wiki/Clone_das_Sombras"
+    },
+    "3013": {
+      "name": "Assalto das Sombras",
+      "url": "https://browiki.org/wiki/Assalto_das_Sombras"
+    },
+    "3014": {
+      "name": "Chamado da Morte",
+      "url": "https://browiki.org/wiki/Chamado_da_Morte"
+    },
+    "3015": {
+      "name": "Amuleto de Fogo",
+      "url": "https://browiki.org/wiki/Amuleto_de_Fogo"
+    },
+    "3016": {
+      "name": "Amuleto de Água",
+      "url": "https://browiki.org/wiki/Amuleto_de_%C3%81gua"
+    },
+    "3017": {
+      "name": "Amuleto de Vento",
+      "url": "https://browiki.org/wiki/Amuleto_de_Vento"
+    },
+    "3018": {
+      "name": "Amuleto de Terra",
+      "url": "https://browiki.org/wiki/Amuleto_de_Terra"
+    },
+    "3019": {
+      "name": "Arremessar Amuleto",
+      "url": "https://browiki.org/wiki/Arremessar_Amuleto"
+    },
+    "3020": {
+      "name": "Voragem Espiritual",
+      "url": "https://browiki.org/wiki/Voragem_Espiritual"
+    },
+    "3021": {
+      "name": "Substituição",
+      "url": "https://browiki.org/wiki/Substitui%C3%A7%C3%A3o"
+    },
+    "3022": {
+      "name": "Inspiração",
+      "url": "https://browiki.org/wiki/Inspira%C3%A7%C3%A3o"
+    },
+    "3023": {
+      "name": "Esmagamento Sombrio",
+      "url": "https://browiki.org/wiki/Esmagamento_Sombrio"
+    },
+    "3024": {
+      "name": "Vazio das Sombras",
+      "url": "https://browiki.org/wiki/Vazio_das_Sombras"
+    },
+    "3025": {
+      "name": "Contrato das Sombras",
+      "url": "https://browiki.org/wiki/Contrato_das_Sombras"
+    },
+    "3026": {
+      "name": "Distorção Crescente",
+      "url": "https://browiki.org/wiki/Distor%C3%A7%C3%A3o_Crescente"
+    },
+    "3027": {
+      "name": "Ilusão do Luar",
+      "url": "https://browiki.org/wiki/Ilus%C3%A3o_do_Luar"
+    },
+    "3029": {
+      "name": "Luar Sinistro",
+      "url": "https://browiki.org/wiki/Luar_Sinistro"
+    },
+    "5001": {
+      "name": "Garra Sombria",
+      "url": "https://browiki.org/wiki/Garra_Sombria"
+    },
+    "5002": {
+      "name": "Ilimitar",
+      "url": "https://browiki.org/wiki/Ilimitar"
+    },
+    "5003": {
+      "name": "Alucinógeno",
+      "url": "https://browiki.org/wiki/Alucin%C3%B3geno"
+    },
+    "5004": {
+      "name": "Bafo do Dragão",
+      "url": "https://browiki.org/wiki/Bafo_do_Drag%C3%A3o"
+    },
+    "5006": {
+      "name": "Erupção de Magma",
+      "url": "https://browiki.org/wiki/Erup%C3%A7%C3%A3o_de_Magma"
+    },
+    "5007": {
+      "name": "Canção de Frigga",
+      "url": "https://browiki.org/wiki/Can%C3%A7%C3%A3o_de_Frigga"
+    },
+    "5008": {
+      "name": "Escudo Elemental",
+      "url": "https://browiki.org/wiki/Escudo_Elemental"
+    },
+    "5009": {
+      "name": "Combo Rápido",
+      "url": "https://browiki.org/wiki/Combo_R%C3%A1pido"
+    },
+    "5010": {
+      "name": "Escapar",
+      "url": "https://browiki.org/wiki/Escapar"
+    },
+    "5011": {
+      "name": "Offertorium",
+      "url": "https://browiki.org/wiki/Offertorium"
+    },
+    "5012": {
+      "name": "Telecinesia",
+      "url": "https://browiki.org/wiki/Telecinesia"
+    },
+    "5013": {
+      "name": "Graça Real",
+      "url": "https://browiki.org/wiki/Gra%C3%A7a_Real"
+    },
+    "5014": {
+      "name": "Maximizar Poder",
+      "url": "https://browiki.org/wiki/Maximizar_Poder"
+    },
+    "5018": {
+      "name": "Instintos Básicos",
+      "url": "https://browiki.org/wiki/Instintos_B%C3%A1sicos"
+    },
+    "5019": {
+      "name": "Mordida",
+      "url": "https://browiki.org/wiki/Mordida"
+    },
+    "5020": {
+      "name": "Gato-Mia",
+      "url": "https://browiki.org/wiki/Gato-Mia"
+    },
+    "5021": {
+      "name": "Arranhar",
+      "url": "https://browiki.org/wiki/Arranhar"
+    },
+    "5022": {
+      "name": "Quatro Patas",
+      "url": "https://browiki.org/wiki/Quatro_Patas"
+    },
+    "5023": {
+      "name": "Pulo do Gato",
+      "url": "https://browiki.org/wiki/Pulo_do_Gato"
+    },
+    "5024": {
+      "name": "Invocar",
+      "url": "https://browiki.org/wiki/Invocar"
+    },
+    "5025": {
+      "name": "Poder da Selva",
+      "url": "https://browiki.org/wiki/Poder_da_Selva"
+    },
+    "5026": {
+      "name": "Lança Gateira",
+      "url": "https://browiki.org/wiki/Lan%C3%A7a_Gateira"
+    },
+    "5027": {
+      "name": "Pulverizar",
+      "url": "https://browiki.org/wiki/Pulverizar"
+    },
+    "5028": {
+      "name": "Meteoros de Nepeta",
+      "url": "https://browiki.org/wiki/Meteoros_de_Nepeta"
+    },
+    "5029": {
+      "name": "Hera Venenosa",
+      "url": "https://browiki.org/wiki/Hera_Venenosa"
+    },
+    "5031": {
+      "name": "Poder da Fauna",
+      "url": "https://browiki.org/wiki/Poder_da_Fauna"
+    },
+    "5032": {
+      "name": "Ferida de Tarou",
+      "url": "https://browiki.org/wiki/Ferida_de_Tarou"
+    },
+    "5033": {
+      "name": "Chilique de Picky",
+      "url": "https://browiki.org/wiki/Chilique_de_Picky"
+    },
+    "5035": {
+      "name": "Impulso de Arclouse",
+      "url": "https://browiki.org/wiki/Impulso_de_Arclouse"
+    },
+    "5036": {
+      "name": "Cometas Lunáticos",
+      "url": "https://browiki.org/wiki/Cometas_Lun%C3%A1ticos"
+    },
+    "5037": {
+      "name": "Poder das Marés",
+      "url": "https://browiki.org/wiki/Poder_das_Mar%C3%A9s"
+    },
+    "5038": {
+      "name": "Dádiva do Atum",
+      "url": "https://browiki.org/wiki/D%C3%A1diva_do_Atum"
+    },
+    "5039": {
+      "name": "Proteção da Orla",
+      "url": "https://browiki.org/wiki/Prote%C3%A7%C3%A3o_da_Orla"
+    },
+    "5040": {
+      "name": "Chuva de Mariscos",
+      "url": "https://browiki.org/wiki/Chuva_de_Mariscos"
+    },
+    "5041": {
+      "name": "Camarão Fresquinho",
+      "url": "https://browiki.org/wiki/Camar%C3%A3o_Fresquinho"
+    },
+    "5044": {
+      "name": "Ampliar Alcance",
+      "url": "https://browiki.org/wiki/Ampliar_Alcance"
+    },
+    "5045": {
+      "name": "Intimidar",
+      "url": "https://browiki.org/wiki/Intimidar"
+    },
+    "5046": {
+      "name": "Ataque Selvagem",
+      "url": "https://browiki.org/wiki/Ataque_Selvagem"
+    },
+    "5047": {
+      "name": "Riscar Fósforo",
+      "url": "https://browiki.org/wiki/Riscar_F%C3%B3sforo"
+    },
+    "5048": {
+      "name": "Mato de Gato",
+      "url": "https://browiki.org/wiki/Mato_de_Gato"
+    },
+    "5049": {
+      "name": "Lambida",
+      "url": "https://browiki.org/wiki/Lambida"
+    },
+    "5050": {
+      "name": "Banho de Lambidas",
+      "url": "https://browiki.org/wiki/Banho_de_Lambidas"
+    },
+    "5051": {
+      "name": "Festa do Camarão",
+      "url": "https://browiki.org/wiki/Festa_do_Camar%C3%A3o"
+    },
+    "5052": {
+      "name": "Invocação da Fauna",
+      "url": "https://browiki.org/wiki/Invoca%C3%A7%C3%A3o_da_Fauna"
+    },
+    "5053": {
+      "name": "Balaio de Gato",
+      "url": "https://browiki.org/wiki/Balaio_de_Gato"
+    },
+    "5054": {
+      "name": "Invocação da Selva",
+      "url": "https://browiki.org/wiki/Invoca%C3%A7%C3%A3o_da_Selva"
+    },
+    "5055": {
+      "name": "Despertar",
+      "url": "https://browiki.org/wiki/Despertar"
+    },
+    "5056": {
+      "name": "Invocação das Marés",
+      "url": "https://browiki.org/wiki/Invoca%C3%A7%C3%A3o_das_Mar%C3%A9s"
+    },
+    "5068": {
+      "name": "Vocação Musical",
+      "url": "https://browiki.org/wiki/Voca%C3%A7%C3%A3o_Musical"
+    },
+    "5072": {
+      "name": "Vituperatum",
+      "url": "https://browiki.org/wiki/Vituperatum"
+    },
+    "5073": {
+      "name": "Convenio",
+      "url": "https://browiki.org/wiki/Convenio"
+    },
+    "5075": {
+      "name": "Crescimento",
+      "url": "https://browiki.org/wiki/Crescimento"
+    },
+    "5076": {
+      "name": "Ajuda Angelical",
+      "url": "https://browiki.org/wiki/Ajuda_Angelical"
+    },
+    "5077": {
+      "name": "Transcendência",
+      "url": "https://browiki.org/wiki/Transcend%C3%AAncia"
+    },
+    "5201": {
+      "name": "Espada Alada",
+      "url": "https://browiki.org/wiki/Espada_Alada"
+    },
+    "5203": {
+      "name": "Marca Alada",
+      "url": "https://browiki.org/wiki/Marca_Alada"
+    },
+    "5204": {
+      "name": "Impulsão Alada",
+      "url": "https://browiki.org/wiki/Impuls%C3%A3o_Alada"
+    },
+    "5205": {
+      "name": "Demolição Alada",
+      "url": "https://browiki.org/wiki/Demoli%C3%A7%C3%A3o_Alada"
+    },
+    "5206": {
+      "name": "Acumular Poder",
+      "url": "https://browiki.org/wiki/Acumular_Poder"
+    },
+    "5207": {
+      "name": "Defesa de Duas Mãos",
+      "url": "https://browiki.org/wiki/Defesa_de_Duas_M%C3%A3os"
+    },
+    "5208": {
+      "name": "Corte e Massacre",
+      "url": "https://browiki.org/wiki/Corte_e_Massacre"
+    },
+    "5210": {
+      "name": "Aura Draconiana",
+      "url": "https://browiki.org/wiki/Aura_Draconiana"
+    },
+    "5211": {
+      "name": "Cólera Esmagadora",
+      "url": "https://browiki.org/wiki/C%C3%B3lera_Esmagadora"
+    },
+    "5212": {
+      "name": "Determinação",
+      "url": "https://browiki.org/wiki/Determina%C3%A7%C3%A3o"
+    },
+    "5213": {
+      "name": "Dilacerar",
+      "url": "https://browiki.org/wiki/Dilacerar"
+    },
+    "5214": {
+      "name": "Projeção Maldita",
+      "url": "https://browiki.org/wiki/Proje%C3%A7%C3%A3o_Maldita"
+    },
+    "5215": {
+      "name": "Tufão Destrutivo",
+      "url": "https://browiki.org/wiki/Tuf%C3%A3o_Destrutivo"
+    },
+    "5216": {
+      "name": "Cascata de Cristal",
+      "url": "https://browiki.org/wiki/Cascata_de_Cristal"
+    },
+    "5217": {
+      "name": "Portal do Submundo",
+      "url": "https://browiki.org/wiki/Portal_do_Submundo"
+    },
+    "5218": {
+      "name": "Pilares de Pedra",
+      "url": "https://browiki.org/wiki/Pilares_de_Pedra"
+    },
+    "5220": {
+      "name": "Espíritos Ancestrais",
+      "url": "https://browiki.org/wiki/Esp%C3%ADritos_Ancestrais"
+    },
+    "5221": {
+      "name": "Stratum Tremor",
+      "url": "https://browiki.org/wiki/Stratum_Tremor"
+    },
+    "5222": {
+      "name": "Florescer",
+      "url": "https://browiki.org/wiki/Florescer"
+    },
+    "5225": {
+      "name": "Cacos de Gelo",
+      "url": "https://browiki.org/wiki/Cacos_de_Gelo"
+    },
+    "5227": {
+      "name": "Ciclone",
+      "url": "https://browiki.org/wiki/Ciclone"
+    },
+    "5228": {
+      "name": "Perícia com Cajado de Duas Mãos",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Cajado_de_Duas_M%C3%A3os"
+    },
+    "5229": {
+      "name": "Vereda Floral Incandescente",
+      "url": "https://browiki.org/wiki/Vereda_Floral_Incandescente"
+    },
+    "5230": {
+      "name": "Colisão Astral",
+      "url": "https://browiki.org/wiki/Colis%C3%A3o_Astral"
+    },
+    "5232": {
+      "name": "Potencializar Magia",
+      "url": "https://browiki.org/wiki/Potencializar_Magia"
+    },
+    "5233": {
+      "name": "Deslize de Pedras",
+      "url": "https://browiki.org/wiki/Deslize_de_Pedras"
+    },
+    "5234": {
+      "name": "Lufada de Vento",
+      "url": "https://browiki.org/wiki/Lufada_de_Vento"
+    },
+    "5235": {
+      "name": "Flecha Escarlate",
+      "url": "https://browiki.org/wiki/Flecha_Escarlate"
+    },
+    "5237": {
+      "name": "Gelo Cortante",
+      "url": "https://browiki.org/wiki/Gelo_Cortante"
+    },
+    "5238": {
+      "name": "Mantra da Força",
+      "url": "https://browiki.org/wiki/Mantra_da_For%C3%A7a"
+    },
+    "5239": {
+      "name": "Mantra da Saúde",
+      "url": "https://browiki.org/wiki/Mantra_da_Sa%C3%BAde"
+    },
+    "5240": {
+      "name": "Caminhos da Fé",
+      "url": "https://browiki.org/wiki/Caminhos_da_F%C3%A9"
+    },
+    "5241": {
+      "name": "Oleum Sanctum",
+      "url": "https://browiki.org/wiki/Oleum_Sanctum"
+    },
+    "5242": {
+      "name": "Mantra da Energia",
+      "url": "https://browiki.org/wiki/Mantra_da_Energia"
+    },
+    "5243": {
+      "name": "Punho Labareda",
+      "url": "https://browiki.org/wiki/Punho_Labareda"
+    },
+    "5244": {
+      "name": "Técnica da Mão Explosiva",
+      "url": "https://browiki.org/wiki/T%C3%A9cnica_da_M%C3%A3o_Explosiva"
+    },
+    "5245": {
+      "name": "Estigma",
+      "url": "https://browiki.org/wiki/Estigma"
+    },
+    "5246": {
+      "name": "Auréola do Poder",
+      "url": "https://browiki.org/wiki/Aur%C3%A9ola_do_Poder"
+    },
+    "5247": {
+      "name": "Auréola do Juiz",
+      "url": "https://browiki.org/wiki/Aur%C3%A9ola_do_Juiz"
+    },
+    "5248": {
+      "name": "Palma Fervorosa",
+      "url": "https://browiki.org/wiki/Palma_Fervorosa"
+    },
+    "5249": {
+      "name": "Golpe Pantocrator",
+      "url": "https://browiki.org/wiki/Golpe_Pantocrator"
+    },
+    "5250": {
+      "name": "Toque Intercessor",
+      "url": "https://browiki.org/wiki/Toque_Intercessor"
+    },
+    "5251": {
+      "name": "Soco Guilhotina",
+      "url": "https://browiki.org/wiki/Soco_Guilhotina"
+    },
+    "5252": {
+      "name": "Fogueira Espiritual",
+      "url": "https://browiki.org/wiki/Fogueira_Espiritual"
+    },
+    "5253": {
+      "name": "Veredicto",
+      "url": "https://browiki.org/wiki/Veredicto"
+    },
+    "5254": {
+      "name": "Auréola das Chamas",
+      "url": "https://browiki.org/wiki/Aur%C3%A9ola_das_Chamas"
+    },
+    "5255": {
+      "name": "Posição de Defesa",
+      "url": "https://browiki.org/wiki/Posi%C3%A7%C3%A3o_de_Defesa"
+    },
+    "5256": {
+      "name": "Escudo Guardião",
+      "url": "https://browiki.org/wiki/Escudo_Guardi%C3%A3o"
+    },
+    "5257": {
+      "name": "Remissão",
+      "url": "https://browiki.org/wiki/Remiss%C3%A3o"
+    },
+    "5258": {
+      "name": "Perícia com Escudo",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Escudo"
+    },
+    "5259": {
+      "name": "Maestria da Guarda",
+      "url": "https://browiki.org/wiki/Maestria_da_Guarda"
+    },
+    "5260": {
+      "name": "Posição de Ataque",
+      "url": "https://browiki.org/wiki/Posi%C3%A7%C3%A3o_de_Ataque"
+    },
+    "5261": {
+      "name": "Ultimato",
+      "url": "https://browiki.org/wiki/Ultimato"
+    },
+    "5262": {
+      "name": "Escudo Divino",
+      "url": "https://browiki.org/wiki/Escudo_Divino"
+    },
+    "5263": {
+      "name": "Lança da Justiça",
+      "url": "https://browiki.org/wiki/Lan%C3%A7a_da_Justi%C3%A7a"
+    },
+    "5264": {
+      "name": "Crux Judicium",
+      "url": "https://browiki.org/wiki/Crux_Judicium"
+    },
+    "5265": {
+      "name": "Arremessar Escudo",
+      "url": "https://browiki.org/wiki/Arremessar_Escudo"
+    },
+    "5266": {
+      "name": "Golpe do Destino",
+      "url": "https://browiki.org/wiki/Golpe_do_Destino"
+    },
+    "5267": {
+      "name": "Crux Tempestas",
+      "url": "https://browiki.org/wiki/Crux_Tempestas"
+    },
+    "5268": {
+      "name": "Reparatio",
+      "url": "https://browiki.org/wiki/Reparatio"
+    },
+    "5269": {
+      "name": "Mediale Votum",
+      "url": "https://browiki.org/wiki/Mediale_Votum"
+    },
+    "5270": {
+      "name": "Maestria Litúrgica",
+      "url": "https://browiki.org/wiki/Maestria_Lit%C3%BArgica"
+    },
+    "5271": {
+      "name": "Argutus Vita",
+      "url": "https://browiki.org/wiki/Argutus_Vita"
+    },
+    "5272": {
+      "name": "Argutus Telum",
+      "url": "https://browiki.org/wiki/Argutus_Telum"
+    },
+    "5273": {
+      "name": "Arbitrium",
+      "url": "https://browiki.org/wiki/Arbitrium"
+    },
+    "5275": {
+      "name": "Presens Acies",
+      "url": "https://browiki.org/wiki/Presens_Acies"
+    },
+    "5276": {
+      "name": "Fidus Animus",
+      "url": "https://browiki.org/wiki/Fidus_Animus"
+    },
+    "5277": {
+      "name": "Effligo",
+      "url": "https://browiki.org/wiki/Effligo"
+    },
+    "5278": {
+      "name": "Competentia",
+      "url": "https://browiki.org/wiki/Competentia"
+    },
+    "5280": {
+      "name": "Prece Divina",
+      "url": "https://browiki.org/wiki/Prece_Divina"
+    },
+    "5281": {
+      "name": "Religio",
+      "url": "https://browiki.org/wiki/Religio"
+    },
+    "5282": {
+      "name": "Benedictum",
+      "url": "https://browiki.org/wiki/Benedictum"
+    },
+    "5283": {
+      "name": "Petitio",
+      "url": "https://browiki.org/wiki/Petitio"
+    },
+    "5284": {
+      "name": "Flamen",
+      "url": "https://browiki.org/wiki/Flamen"
+    },
+    "5285": {
+      "name": "Carrasco Sombrio",
+      "url": "https://browiki.org/wiki/Carrasco_Sombrio"
+    },
+    "5286": {
+      "name": "Adagas Voadoras",
+      "url": "https://browiki.org/wiki/Adagas_Voadoras"
+    },
+    "5287": {
+      "name": "Impacto Brutal",
+      "url": "https://browiki.org/wiki/Impacto_Brutal"
+    },
+    "5288": {
+      "name": "Senso das Sombras",
+      "url": "https://browiki.org/wiki/Senso_das_Sombras"
+    },
+    "5289": {
+      "name": "Talho Eterno",
+      "url": "https://browiki.org/wiki/Talho_Eterno"
+    },
+    "5290": {
+      "name": "Adulterar Veneno",
+      "url": "https://browiki.org/wiki/Adulterar_Veneno"
+    },
+    "5291": {
+      "name": "Facada",
+      "url": "https://browiki.org/wiki/Facada"
+    },
+    "5292": {
+      "name": "Impacto Cratera",
+      "url": "https://browiki.org/wiki/Impacto_Cratera"
+    },
+    "5293": {
+      "name": "Profanar Arma",
+      "url": "https://browiki.org/wiki/Profanar_Arma"
+    },
+    "5294": {
+      "name": "Revoada Sombria",
+      "url": "https://browiki.org/wiki/Revoada_Sombria"
+    },
+    "5295": {
+      "name": "Machado Esmagador",
+      "url": "https://browiki.org/wiki/Machado_Esmagador"
+    },
+    "5296": {
+      "name": "Avanço Sísmico",
+      "url": "https://browiki.org/wiki/Avan%C3%A7o_S%C3%ADsmico"
+    },
+    "5297": {
+      "name": "Criar Máquina",
+      "url": "https://browiki.org/wiki/Criar_M%C3%A1quina"
+    },
+    "5298": {
+      "name": "Ativar Robô Atacante",
+      "url": "https://browiki.org/wiki/Ativar_Rob%C3%B4_Atacante"
+    },
+    "5299": {
+      "name": "Ativar Robô Defensor",
+      "url": "https://browiki.org/wiki/Ativar_Rob%C3%B4_Defensor"
+    },
+    "5300": {
+      "name": "Defesa com Machado",
+      "url": "https://browiki.org/wiki/Defesa_com_Machado"
+    },
+    "5301": {
+      "name": "Mecatrônica",
+      "url": "https://browiki.org/wiki/Mecatr%C3%B4nica"
+    },
+    "5302": {
+      "name": "Fabricar Soldado",
+      "url": "https://browiki.org/wiki/Fabricar_Soldado"
+    },
+    "5303": {
+      "name": "Fabricar Canhoneiro",
+      "url": "https://browiki.org/wiki/Fabricar_Canhoneiro"
+    },
+    "5305": {
+      "name": "Fabricar Escoteiro",
+      "url": "https://browiki.org/wiki/Fabricar_Escoteiro"
+    },
+    "5311": {
+      "name": "Versatilidade",
+      "url": "https://browiki.org/wiki/Versatilidade"
+    },
+    "5312": {
+      "name": "Lâmina Mágica",
+      "url": "https://browiki.org/wiki/L%C3%A2mina_M%C3%A1gica"
+    },
+    "5313": {
+      "name": "Remoção Sombria Total",
+      "url": "https://browiki.org/wiki/Remo%C3%A7%C3%A3o_Sombria_Total"
+    },
+    "5314": {
+      "name": "Ofensiva Abissal",
+      "url": "https://browiki.org/wiki/Ofensiva_Abissal"
+    },
+    "5315": {
+      "name": "Salto Revés",
+      "url": "https://browiki.org/wiki/Salto_Rev%C3%A9s"
+    },
+    "5316": {
+      "name": "Disparo em Cadeia",
+      "url": "https://browiki.org/wiki/Disparo_em_Cadeia"
+    },
+    "5317": {
+      "name": "Invocação do Abismo",
+      "url": "https://browiki.org/wiki/Invoca%C3%A7%C3%A3o_do_Abismo"
+    },
+    "5318": {
+      "name": "Sangue-Frio",
+      "url": "https://browiki.org/wiki/Sangue-Frio"
+    },
+    "5319": {
+      "name": "Meteoro Ômega",
+      "url": "https://browiki.org/wiki/Meteoro_%C3%94mega"
+    },
+    "5320": {
+      "name": "Esfaquear",
+      "url": "https://browiki.org/wiki/Esfaquear"
+    },
+    "5321": {
+      "name": "Fenda do Abismo",
+      "url": "https://browiki.org/wiki/Fenda_do_Abismo"
+    },
+    "5322": {
+      "name": "Rajada Frenética",
+      "url": "https://browiki.org/wiki/Rajada_Fren%C3%A9tica"
+    },
+    "5323": {
+      "name": "Armadilha Avançada",
+      "url": "https://browiki.org/wiki/Armadilha_Avan%C3%A7ada"
+    },
+    "5324": {
+      "name": "Sinal do Vento",
+      "url": "https://browiki.org/wiki/Sinal_do_Vento"
+    },
+    "5325": {
+      "name": "Amigo da Natureza",
+      "url": "https://browiki.org/wiki/Amigo_da_Natureza"
+    },
+    "5326": {
+      "name": "Mergulho Aéreo",
+      "url": "https://browiki.org/wiki/Mergulho_A%C3%A9reo"
+    },
+    "5327": {
+      "name": "Chamar Ave",
+      "url": "https://browiki.org/wiki/Chamar_Ave"
+    },
+    "5328": {
+      "name": "Ventos Sinistros",
+      "url": "https://browiki.org/wiki/Ventos_Sinistros"
+    },
+    "5329": {
+      "name": "Aterrissagem",
+      "url": "https://browiki.org/wiki/Aterrissagem"
+    },
+    "5330": {
+      "name": "Vendaval de Flechas",
+      "url": "https://browiki.org/wiki/Vendaval_de_Flechas"
+    },
+    "5331": {
+      "name": "Armadilha Sombria",
+      "url": "https://browiki.org/wiki/Armadilha_Sombria"
+    },
+    "5332": {
+      "name": "Armadilha Terrestre",
+      "url": "https://browiki.org/wiki/Armadilha_Terrestre"
+    },
+    "5333": {
+      "name": "Armadilha Zéfira",
+      "url": "https://browiki.org/wiki/Armadilha_Z%C3%A9fira"
+    },
+    "5334": {
+      "name": "Tiro Crescente",
+      "url": "https://browiki.org/wiki/Tiro_Crescente"
+    },
+    "5335": {
+      "name": "Armadilha Ardente",
+      "url": "https://browiki.org/wiki/Armadilha_Ardente"
+    },
+    "5336": {
+      "name": "Manipular Poção",
+      "url": "https://browiki.org/wiki/Manipular_Po%C3%A7%C3%A3o"
+    },
+    "5337": {
+      "name": "Botânica",
+      "url": "https://browiki.org/wiki/Bot%C3%A2nica"
+    },
+    "5338": {
+      "name": "Proteção Química Coletiva",
+      "url": "https://browiki.org/wiki/Prote%C3%A7%C3%A3o_Qu%C3%ADmica_Coletiva"
+    },
+    "5339": {
+      "name": "Proteção Sombria Total",
+      "url": "https://browiki.org/wiki/Prote%C3%A7%C3%A3o_Sombria_Total"
+    },
+    "5340": {
+      "name": "Atirar Ácido Álgido",
+      "url": "https://browiki.org/wiki/Atirar_%C3%81cido_%C3%81lgido"
+    },
+    "5341": {
+      "name": "Atirar Ácido Sólido",
+      "url": "https://browiki.org/wiki/Atirar_%C3%81cido_S%C3%B3lido"
+    },
+    "5342": {
+      "name": "Atirar Ácido Gasoso",
+      "url": "https://browiki.org/wiki/Atirar_%C3%81cido_Gasoso"
+    },
+    "5343": {
+      "name": "Atirar Ácido Inflamável",
+      "url": "https://browiki.org/wiki/Atirar_%C3%81cido_Inflam%C3%A1vel"
+    },
+    "5344": {
+      "name": "Cultivar Bárbaro",
+      "url": "https://browiki.org/wiki/Cultivar_B%C3%A1rbaro"
+    },
+    "5345": {
+      "name": "Cultivar Fada",
+      "url": "https://browiki.org/wiki/Cultivar_Fada"
+    },
+    "5346": {
+      "name": "Cultivar Vinha",
+      "url": "https://browiki.org/wiki/Cultivar_Vinha"
+    },
+    "5347": {
+      "name": "Eureka",
+      "url": "https://browiki.org/wiki/Eureka"
+    },
+    "5348": {
+      "name": "Cultivar Árvore Infernal",
+      "url": "https://browiki.org/wiki/Cultivar_%C3%81rvore_Infernal"
+    },
+    "5349": {
+      "name": "Presença de Palco",
+      "url": "https://browiki.org/wiki/Presen%C3%A7a_de_Palco"
+    },
+    "5350": {
+      "name": "Retrospectiva",
+      "url": "https://browiki.org/wiki/Retrospectiva"
+    },
+    "5351": {
+      "name": "Sinfonia Mística",
+      "url": "https://browiki.org/wiki/Sinfonia_M%C3%ADstica"
+    },
+    "5352": {
+      "name": "Sonata de Kvasir",
+      "url": "https://browiki.org/wiki/Sonata_de_Kvasir"
+    },
+    "5353": {
+      "name": "Atirar Rosas",
+      "url": "https://browiki.org/wiki/Atirar_Rosas"
+    },
+    "5355": {
+      "name": "Disparo Rítmico",
+      "url": "https://browiki.org/wiki/Disparo_R%C3%ADtmico"
+    },
+    "5356": {
+      "name": "Fúria Estridente",
+      "url": "https://browiki.org/wiki/F%C3%BAria_Estridente"
+    },
+    "5357": {
+      "name": "Arranjo Musical",
+      "url": "https://browiki.org/wiki/Arranjo_Musical"
+    },
+    "5358": {
+      "name": "Recital de Geffenia",
+      "url": "https://browiki.org/wiki/Recital_de_Geffenia"
+    },
+    "5359": {
+      "name": "Caprichos de Loki",
+      "url": "https://browiki.org/wiki/Caprichos_de_Loki"
+    },
+    "5360": {
+      "name": "Rapsódia do Minerador",
+      "url": "https://browiki.org/wiki/Raps%C3%B3dia_do_Minerador"
+    },
+    "5361": {
+      "name": "Interlúdio",
+      "url": "https://browiki.org/wiki/Interl%C3%BAdio"
+    },
+    "5362": {
+      "name": "Marcha de Prontera",
+      "url": "https://browiki.org/wiki/Marcha_de_Prontera"
+    },
+    "5365": {
+      "name": "Estudo Elemental",
+      "url": "https://browiki.org/wiki/Estudo_Elemental"
+    },
+    "5366": {
+      "name": "Enfeitiçar",
+      "url": "https://browiki.org/wiki/Enfeiti%C3%A7ar"
+    },
+    "5367": {
+      "name": "Exaurir",
+      "url": "https://browiki.org/wiki/Exaurir"
+    },
+    "5368": {
+      "name": "Canalizar Energia",
+      "url": "https://browiki.org/wiki/Canalizar_Energia"
+    },
+    "5369": {
+      "name": "Execução Aurora",
+      "url": "https://browiki.org/wiki/Execu%C3%A7%C3%A3o_Aurora"
+    },
+    "5370": {
+      "name": "Tormenta",
+      "url": "https://browiki.org/wiki/Tormenta"
+    },
+    "5371": {
+      "name": "Poço Venenoso",
+      "url": "https://browiki.org/wiki/Po%C3%A7o_Venenoso"
+    },
+    "5372": {
+      "name": "Conflagração",
+      "url": "https://browiki.org/wiki/Conflagra%C3%A7%C3%A3o"
+    },
+    "5374": {
+      "name": "Maestria Elemental",
+      "url": "https://browiki.org/wiki/Maestria_Elemental"
+    },
+    "5375": {
+      "name": "Invocar Ardor",
+      "url": "https://browiki.org/wiki/Invocar_Ardor"
+    },
+    "5376": {
+      "name": "Invocar Diluvium",
+      "url": "https://browiki.org/wiki/Invocar_Diluvium"
+    },
+    "5377": {
+      "name": "Invocar Procella",
+      "url": "https://browiki.org/wiki/Invocar_Procella"
+    },
+    "5378": {
+      "name": "Invocar Terremotus",
+      "url": "https://browiki.org/wiki/Invocar_Terremotus"
+    },
+    "5379": {
+      "name": "Invocar Serpens",
+      "url": "https://browiki.org/wiki/Invocar_Serpens"
+    },
+    "5380": {
+      "name": "Círculo Elemental",
+      "url": "https://browiki.org/wiki/C%C3%ADrculo_Elemental"
+    },
+    "5381": {
+      "name": "Véu Elemental",
+      "url": "https://browiki.org/wiki/V%C3%A9u_Elemental"
+    },
+    "5401": {
+      "name": "A.D.P",
+      "url": "https://browiki.org/wiki/A.D.P"
+    },
+    "5402": {
+      "name": "Perícia com Explosivos",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Explosivos"
+    },
+    "5403": {
+      "name": "Mira Focalizada",
+      "url": "https://browiki.org/wiki/Mira_Focalizada"
+    },
+    "5404": {
+      "name": "Fragmentação",
+      "url": "https://browiki.org/wiki/Fragmenta%C3%A7%C3%A3o"
+    },
+    "5405": {
+      "name": "Vigília Noturna",
+      "url": "https://browiki.org/wiki/Vig%C3%ADlia_Noturna"
+    },
+    "5406": {
+      "name": "Tiro Único",
+      "url": "https://browiki.org/wiki/Tiro_%C3%9Anico"
+    },
+    "5408": {
+      "name": "Artilharia Pesada",
+      "url": "https://browiki.org/wiki/Artilharia_Pesada"
+    },
+    "5409": {
+      "name": "Fogo de Supressão",
+      "url": "https://browiki.org/wiki/Fogo_de_Supress%C3%A3o"
+    },
+    "5410": {
+      "name": "Arremessar Explosivo",
+      "url": "https://browiki.org/wiki/Arremessar_Explosivo"
+    },
+    "5411": {
+      "name": "Explosão Gradual",
+      "url": "https://browiki.org/wiki/Explos%C3%A3o_Gradual"
+    },
+    "5412": {
+      "name": "Detonação Total",
+      "url": "https://browiki.org/wiki/Detona%C3%A7%C3%A3o_Total"
+    },
+    "5413": {
+      "name": "Disparo Automático",
+      "url": "https://browiki.org/wiki/Disparo_Autom%C3%A1tico"
+    },
+    "5414": {
+      "name": "Carta na Manga",
+      "url": "https://browiki.org/wiki/Carta_na_Manga"
+    },
+    "5415": {
+      "name": "Bombardeio",
+      "url": "https://browiki.org/wiki/Bombardeio"
+    },
+    "5416": {
+      "name": "Perícia com Talismãs",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Talism%C3%A3s"
+    },
+    "5417": {
+      "name": "Maestria com Almas",
+      "url": "https://browiki.org/wiki/Maestria_com_Almas"
+    },
+    "5418": {
+      "name": "Talismã do Protetor",
+      "url": "https://browiki.org/wiki/Talism%C3%A3_do_Protetor"
+    },
+    "5419": {
+      "name": "Talismã do Guerreiro",
+      "url": "https://browiki.org/wiki/Talism%C3%A3_do_Guerreiro"
+    },
+    "5420": {
+      "name": "Talismã do Mago",
+      "url": "https://browiki.org/wiki/Talism%C3%A3_do_Mago"
+    },
+    "5421": {
+      "name": "Convocar Almas",
+      "url": "https://browiki.org/wiki/Convocar_Almas"
+    },
+    "5422": {
+      "name": "Totem de Tutela",
+      "url": "https://browiki.org/wiki/Totem_de_Tutela"
+    },
+    "5423": {
+      "name": "Talismã dos Elementos",
+      "url": "https://browiki.org/wiki/Talism%C3%A3_dos_Elementos"
+    },
+    "5424": {
+      "name": "Talismã do Ceifeiro",
+      "url": "https://browiki.org/wiki/Talism%C3%A3_do_Ceifeiro"
+    },
+    "5425": {
+      "name": "Exorcizar Assombração",
+      "url": "https://browiki.org/wiki/Exorcizar_Assombra%C3%A7%C3%A3o"
+    },
+    "5426": {
+      "name": "Talismã do Dragão",
+      "url": "https://browiki.org/wiki/Talism%C3%A3_do_Drag%C3%A3o"
+    },
+    "5427": {
+      "name": "Talismã do Tigre",
+      "url": "https://browiki.org/wiki/Talism%C3%A3_do_Tigre"
+    },
+    "5428": {
+      "name": "Talismã da Fênix",
+      "url": "https://browiki.org/wiki/Talism%C3%A3_da_F%C3%AAnix"
+    },
+    "5429": {
+      "name": "Talismã do Jabuti",
+      "url": "https://browiki.org/wiki/Talism%C3%A3_do_Jabuti"
+    },
+    "5430": {
+      "name": "Talismã das Divindades",
+      "url": "https://browiki.org/wiki/Talism%C3%A3_das_Divindades"
+    },
+    "5431": {
+      "name": "Mandala das Feras",
+      "url": "https://browiki.org/wiki/Mandala_das_Feras"
+    },
+    "5432": {
+      "name": "Reencarnação das Almas",
+      "url": "https://browiki.org/wiki/Reencarna%C3%A7%C3%A3o_das_Almas"
+    },
+    "5433": {
+      "name": "Maestria Mística",
+      "url": "https://browiki.org/wiki/Maestria_M%C3%ADstica"
+    },
+    "5434": {
+      "name": "Pacto com Tigre",
+      "url": "https://browiki.org/wiki/Pacto_com_Tigre"
+    },
+    "5435": {
+      "name": "Unhas de Tigre",
+      "url": "https://browiki.org/wiki/Unhas_de_Tigre"
+    },
+    "5436": {
+      "name": "Rugido do Tigre",
+      "url": "https://browiki.org/wiki/Rugido_do_Tigre"
+    },
+    "5437": {
+      "name": "Patada Felina",
+      "url": "https://browiki.org/wiki/Patada_Felina"
+    },
+    "5438": {
+      "name": "Pacto com Tartaruga",
+      "url": "https://browiki.org/wiki/Pacto_com_Tartaruga"
+    },
+    "5439": {
+      "name": "Esguichar Água",
+      "url": "https://browiki.org/wiki/Esguichar_%C3%81gua"
+    },
+    "5440": {
+      "name": "Festival Marinho",
+      "url": "https://browiki.org/wiki/Festival_Marinho"
+    },
+    "5441": {
+      "name": "Luau nas Areias",
+      "url": "https://browiki.org/wiki/Luau_nas_Areias"
+    },
+    "5442": {
+      "name": "Ira da Tartaruga",
+      "url": "https://browiki.org/wiki/Ira_da_Tartaruga"
+    },
+    "5443": {
+      "name": "Pacto com Cervo",
+      "url": "https://browiki.org/wiki/Pacto_com_Cervo"
+    },
+    "5444": {
+      "name": "Cores do Arco-Íris",
+      "url": "https://browiki.org/wiki/Cores_do_Arco-%C3%8Dris"
+    },
+    "5445": {
+      "name": "Brisa Silvestre",
+      "url": "https://browiki.org/wiki/Brisa_Silvestre"
+    },
+    "5446": {
+      "name": "Lança Galhada",
+      "url": "https://browiki.org/wiki/Lan%C3%A7a_Galhada"
+    },
+    "5447": {
+      "name": "Aliança Animal",
+      "url": "https://browiki.org/wiki/Alian%C3%A7a_Animal"
+    },
+    "5448": {
+      "name": "Bênção da Natureza",
+      "url": "https://browiki.org/wiki/B%C3%AAn%C3%A7%C3%A3o_da_Natureza"
+    },
+    "5449": {
+      "name": "Físico Autodidata",
+      "url": "https://browiki.org/wiki/F%C3%ADsico_Autodidata"
+    },
+    "5450": {
+      "name": "Mágico Autodidata",
+      "url": "https://browiki.org/wiki/M%C3%A1gico_Autodidata"
+    },
+    "5451": {
+      "name": "Golpe de Tyr",
+      "url": "https://browiki.org/wiki/Golpe_de_Tyr"
+    },
+    "5452": {
+      "name": "Lâminas Devastadoras",
+      "url": "https://browiki.org/wiki/L%C3%A2minas_Devastadoras"
+    },
+    "5453": {
+      "name": "Choque Violento",
+      "url": "https://browiki.org/wiki/Choque_Violento"
+    },
+    "5454": {
+      "name": "Cortar em Espiral",
+      "url": "https://browiki.org/wiki/Cortar_em_Espiral"
+    },
+    "5455": {
+      "name": "Chuva de Meteoritos",
+      "url": "https://browiki.org/wiki/Chuva_de_Meteoritos"
+    },
+    "5456": {
+      "name": "Tempestade de Júpiter",
+      "url": "https://browiki.org/wiki/Tempestade_de_J%C3%BApiter"
+    },
+    "5457": {
+      "name": "Esquife Congelante",
+      "url": "https://browiki.org/wiki/Esquife_Congelante"
+    },
+    "5458": {
+      "name": "Ira da Terra",
+      "url": "https://browiki.org/wiki/Ira_da_Terra"
+    },
+    "5459": {
+      "name": "Zona Gravitacional",
+      "url": "https://browiki.org/wiki/Zona_Gravitacional"
+    },
+    "5460": {
+      "name": "Espectro Napalm",
+      "url": "https://browiki.org/wiki/Espectro_Napalm"
+    },
+    "5461": {
+      "name": "Anjo do Poder",
+      "url": "https://browiki.org/wiki/Anjo_do_Poder"
+    },
+    "5462": {
+      "name": "Anjo da Magia",
+      "url": "https://browiki.org/wiki/Anjo_da_Magia"
+    },
+    "5463": {
+      "name": "Maestria Celestial",
+      "url": "https://browiki.org/wiki/Maestria_Celestial"
+    },
+    "5464": {
+      "name": "Perícia com Livro",
+      "url": "https://browiki.org/wiki/Per%C3%ADcia_com_Livro"
+    },
+    "5465": {
+      "name": "Amanhecer",
+      "url": "https://browiki.org/wiki/Amanhecer"
+    },
+    "5466": {
+      "name": "Entardecer",
+      "url": "https://browiki.org/wiki/Entardecer"
+    },
+    "5467": {
+      "name": "Explosão Crepuscular",
+      "url": "https://browiki.org/wiki/Explos%C3%A3o_Crepuscular"
+    },
+    "5468": {
+      "name": "Anoitecer",
+      "url": "https://browiki.org/wiki/Anoitecer"
+    },
+    "5469": {
+      "name": "Chute Meia-Lua",
+      "url": "https://browiki.org/wiki/Chute_Meia-Lua"
+    },
+    "5470": {
+      "name": "Alvorada",
+      "url": "https://browiki.org/wiki/Alvorada"
+    },
+    "5471": {
+      "name": "Constelação",
+      "url": "https://browiki.org/wiki/Constela%C3%A7%C3%A3o"
+    },
+    "5472": {
+      "name": "Colapso Estelar",
+      "url": "https://browiki.org/wiki/Colapso_Estelar"
+    },
+    "5473": {
+      "name": "Explosão Galática",
+      "url": "https://browiki.org/wiki/Explos%C3%A3o_Gal%C3%A1tica"
+    },
+    "5474": {
+      "name": "Firmamento",
+      "url": "https://browiki.org/wiki/Firmamento"
+    },
+    "5475": {
+      "name": "Elo Celestial",
+      "url": "https://browiki.org/wiki/Elo_Celestial"
+    },
+    "5476": {
+      "name": "Derreter",
+      "url": "https://browiki.org/wiki/Derreter"
+    },
+    "5477": {
+      "name": "Infiltrar",
+      "url": "https://browiki.org/wiki/Infiltrar"
+    },
+    "5478": {
+      "name": "Devorar Pesadelo",
+      "url": "https://browiki.org/wiki/Devorar_Pesadelo"
+    },
+    "5479": {
+      "name": "Miragem",
+      "url": "https://browiki.org/wiki/Miragem"
+    },
+    "5480": {
+      "name": "Lâmina das Trevas",
+      "url": "https://browiki.org/wiki/L%C3%A2mina_das_Trevas"
+    },
+    "5481": {
+      "name": "Dança das Trevas",
+      "url": "https://browiki.org/wiki/Dan%C3%A7a_das_Trevas"
+    },
+    "5482": {
+      "name": "Centelha das Trevas",
+      "url": "https://browiki.org/wiki/Centelha_das_Trevas"
+    },
+    "5483": {
+      "name": "Huuma Aderente",
+      "url": "https://browiki.org/wiki/Huuma_Aderente"
+    },
+    "5484": {
+      "name": "Huuma Andarilho",
+      "url": "https://browiki.org/wiki/Huuma_Andarilho"
+    },
+    "5485": {
+      "name": "Kunai Distorcida",
+      "url": "https://browiki.org/wiki/Kunai_Distorcida"
+    },
+    "5486": {
+      "name": "Kunai Rotatória",
+      "url": "https://browiki.org/wiki/Kunai_Rotat%C3%B3ria"
+    },
+    "5487": {
+      "name": "Kunai Refratada",
+      "url": "https://browiki.org/wiki/Kunai_Refratada"
+    },
+    "5488": {
+      "name": "Mahou da Chama Vermelha",
+      "url": "https://browiki.org/wiki/Mahou_da_Chama_Vermelha"
+    },
+    "5489": {
+      "name": "Mahou da Névoa Fria",
+      "url": "https://browiki.org/wiki/Mahou_da_N%C3%A9voa_Fria"
+    },
+    "5490": {
+      "name": "Mahou da Trovoada",
+      "url": "https://browiki.org/wiki/Mahou_da_Trovoada"
+    },
+    "5491": {
+      "name": "Mahou do Dragão Áureo",
+      "url": "https://browiki.org/wiki/Mahou_do_Drag%C3%A3o_%C3%81ureo"
+    },
+    "5492": {
+      "name": "Mahou da Escuridão",
+      "url": "https://browiki.org/wiki/Mahou_da_Escurid%C3%A3o"
+    },
+    "5493": {
+      "name": "Pesadelo das Trevas",
+      "url": "https://browiki.org/wiki/Pesadelo_das_Trevas"
+    },
+    "5494": {
+      "name": "Kunai do Pesadelo",
+      "url": "https://browiki.org/wiki/Kunai_do_Pesadelo"
+    },
+    "5495": {
+      "name": "Mahou do Pesadelo",
+      "url": "https://browiki.org/wiki/Mahou_do_Pesadelo"
+    }
+  }
+}

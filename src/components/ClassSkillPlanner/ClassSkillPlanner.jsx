@@ -6,7 +6,7 @@ import { assetUrl } from '../../lib/dom.js'
 import { allocatedTotal, cleanupLevels, skillLevel } from '../../lib/pointBuy.js'
 import { skillAvailableInVersion } from '../../lib/specs.js'
 import { jobIconUrlForLabelAndPath } from '../../lib/jobIcons.js'
-import { translatedSkillName, translateUi } from '../../lib/translations.js'
+import { translatedClassName, translatedSkillName, translateUi } from '../../lib/translations.js'
 import { BuildToolbar } from '../BuildToolbar'
 import { ClassHeader } from '../ClassHeader'
 import { EmptyState } from '../EmptyState'
@@ -612,7 +612,7 @@ export function ClassSkillPlanner({
                 {tabIconUrl(tab, dataSet) ? (
                   <img className="skill-tab-icon" src={assetUrl(tabIconUrl(tab, dataSet))} alt="" width="24" height="24" />
                 ) : null}
-                <span>{tab.label}</span>
+                <span>{translatedClassName(tab.label, language)}</span>
               </button>
             ))}
           </div>

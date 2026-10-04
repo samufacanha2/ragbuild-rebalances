@@ -2,15 +2,15 @@ import { useMemo, useState } from 'react'
 import './ClassSelectPageStyles.css'
 import { assetUrl } from '../../lib/dom.js'
 import { classRouteHref } from '../../lib/routes.js'
-import { translateUi } from '../../lib/translations.js'
+import { translatedClassName, translateUi } from '../../lib/translations.js'
 import { EmptyState } from '../EmptyState'
 
 export function ClassSelectPage({ dataSets, language, onSelectClass }) {
   const [query, setQuery] = useState('')
   const normalizedQuery = normalizeSearchText(query)
   const filteredDataSets = useMemo(
-    () => dataSets.filter((dataSet) => normalizeSearchText(dataSet.label).includes(normalizedQuery)),
-    [dataSets, normalizedQuery],
+    () => dataSets.filter((dataSet) => normalizeSearchText(`${dataSet.label} ${translatedClassName(dataSet.label, language)}`).includes(normalizedQuery)),
+    [dataSets, normalizedQuery, language],
   )
   const openClass = (event, classId) => {
     if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
@@ -47,7 +47,7 @@ export function ClassSelectPage({ dataSets, language, onSelectClass }) {
               onClick={(event) => openClass(event, dataSet.id)}
             >
               <ClassMark dataSet={dataSet} />
-              <strong>{dataSet.label}</strong>
+              <strong>{translatedClassName(dataSet.label, language)}</strong>
             </a>
           ))
         ) : (

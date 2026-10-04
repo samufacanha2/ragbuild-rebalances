@@ -19,6 +19,12 @@
   font-weight: 700;
 }
 
+.timeline-source {
+  display: inline-block;
+  font-size: 0.82rem;
+  margin-top: 2px;
+}
+
 .timeline-entry ul {
   margin: 0;
   padding-left: 18px;

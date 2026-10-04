@@ -16,6 +16,8 @@ dist-ssr
 !.env.example
 .tmp
 data/
+!src/data/
+!src/data/browiki-pt-br.json
 
 # Editor directories and files
 .vscode/*

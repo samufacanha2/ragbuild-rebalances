@@ -1,10 +1,20 @@
+import browiki from '../data/browiki-pt-br.json' with { type: 'json' }
+
 export const languageOptions = [
   { id: 'en', label: 'English' },
   { id: 'pt-BR', label: 'Portugu\u00eas' },
 ]
 
 export function translatedSkillName(skill, language) {
-  return localizedSkillField(skill, language, 'name') || skill.name
+  return (language === 'pt-BR' ? browiki.skills[skill.id]?.name : '') || localizedSkillField(skill, language, 'name') || skill.name
+}
+
+export function translatedClassName(label, language) {
+  return (language === 'pt-BR' ? browiki.classes[label]?.name : '') || label
+}
+
+export function browikiSkillUrl(skill) {
+  return browiki.skills[skill.id]?.url || skill.translations?.['pt-BR']?.sourceUrl || ''
 }
 
 export function translatedSkillDescription(skill, language) {
@@ -217,6 +227,7 @@ const uiTranslations = {
   'Collapse skill details': 'Recolher detalhes da habilidade',
   'Dark': 'Escuro',
   'Delete': 'Excluir',
+  'Divine Pride forum': 'Fórum Divine Pride',
   'Description': 'Descricao',
   'Language': 'Idioma',
   'Level': 'Nivel',

@@ -3,6 +3,7 @@ import './SkillCardStyles.css'
 import { assetUrl } from '../../lib/dom.js'
 import { effectiveLevelTable, effectiveSpecRows, notesForVersion, specVersionTitle } from '../../lib/specs.js'
 import {
+  browikiSkillUrl,
   translatedRequirementName,
   translatedSkillDescription,
   translatedSkillName,
@@ -123,6 +124,6 @@ export function SkillCard({
 function sourceLinksForSkill(skill) {
   return [
     skill.irowikiUrl ? { label: 'iRO Wiki', href: skill.irowikiUrl } : null,
-    skill.translations?.['pt-BR']?.sourceUrl ? { label: 'bROWiki', href: skill.translations['pt-BR'].sourceUrl } : null,
+    browikiSkillUrl(skill) ? { label: 'bROWiki', href: browikiSkillUrl(skill) } : null,
   ].filter(Boolean)
 }

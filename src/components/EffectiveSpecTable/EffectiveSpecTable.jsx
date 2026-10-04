@@ -36,7 +36,15 @@ function SpecValue({ row, language }) {
       <span className={row.changed ? 'changed-spec-value' : ''}>
         {translateSpecValue(row.value, language)}
       </span>
-      {row.changeNote ? <small>{translateChangeNote(row.changeNote, language)}</small> : null}
+      {row.changeNote ? (
+        <small>
+          {row.changeUrl ? (
+            <a href={row.changeUrl} target="_blank" rel="noreferrer">
+              {translateChangeNote(row.changeNote, language)}
+            </a>
+          ) : translateChangeNote(row.changeNote, language)}
+        </small>
+      ) : null}
     </div>
   )
 }

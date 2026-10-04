@@ -34,6 +34,26 @@ npm run build:data
 
 The builder parses `rebalances/`, reads the saved source files, and writes public generated datasets to `src/generated/`. It does not call the network during `npm run build:data`.
 
+The Brazilian class names, skill names, and wiki links are maintained separately in
+`src/data/browiki-pt-br.json`. To refresh them from bROWiki, run:
+
+```sh
+npm run browiki:update
+```
+
+Use `npm run browiki:update:refresh` to recheck all existing skill names and
+links after bROWiki changes its pages (a slower, throttled full crawl).
+
+The updater follows the class skill tables and accepts a skill translation only
+when its bROWiki page contains a matching numeric skill ID. It reuses previously
+verified entries and leaves English names for skills not yet documented on bROWiki.
+It does not query Divine Pride. Class pages without up-to-date skill tables can
+still have correct class links but no translated skills.
+
+Divine Pride API calls made by the data builders are serialized at one request
+start per second, including retries. Do not run multiple data builders at once,
+since each process has its own queue.
+
 To download missing source files and rebuild in one step, run:
 
 ```sh

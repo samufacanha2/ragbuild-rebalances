@@ -49,6 +49,12 @@
   line-height: 1.15;
 }
 
+.effective-spec-table td small a {
+  color: var(--teal-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .changed-spec-value {
   color: var(--teal-dark);
   font-weight: 800;

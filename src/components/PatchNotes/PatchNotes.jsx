@@ -1,4 +1,5 @@
 import './PatchNotesStyles.css'
+import { forumUrlForNote } from '../../lib/rebalanceSources.js'
 import { patchNotesTitle } from '../../lib/specs.js'
 import { translateUi } from '../../lib/translations.js'
 
@@ -8,21 +9,29 @@ export function PatchNotes({ model, notes, specVersion, language }) {
       <h3>{translateUi(patchNotesTitle(model, specVersion), language)}</h3>
       <div className="timeline">
         {notes.length ? (
-          notes.map((entry) => (
-            <section className="timeline-entry" key={`${entry.versionId}-${entry.section}`}>
-              <div>
-                <strong>{entry.versionLabel}</strong>
-                <span>
-                  {entry.section} - {entry.file}
-                </span>
-              </div>
-              <ul>
-                {entry.notes.map((note) => (
-                  <li key={note}>{note}</li>
-                ))}
-              </ul>
-            </section>
-          ))
+          notes.map((entry) => {
+            const sourceUrl = forumUrlForNote(entry, model.data.rebalanceVersions)
+            return (
+              <section className="timeline-entry" key={`${entry.versionId}-${entry.section}`}>
+                <div>
+                  <strong>{entry.versionLabel}</strong>
+                  {sourceUrl ? (
+                    <a className="timeline-source" href={sourceUrl} target="_blank" rel="noreferrer">
+                      {translateUi('Divine Pride forum', language)}
+                    </a>
+                  ) : null}
+                  <span>
+                    {entry.section} - {entry.file}
+                  </span>
+                </div>
+                <ul>
+                  {entry.notes.map((note) => (
+                    <li key={note}>{note}</li>
+                  ))}
+                </ul>
+              </section>
+            )
+          })
         ) : (
           <p className="subtle">
             {translateUi(emptyNotesMessage(specVersion), language)}

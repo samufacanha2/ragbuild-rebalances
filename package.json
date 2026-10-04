@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "assets:download": "node scripts/download-assets.mjs",
+    "browiki:update": "node scripts/update-browiki.mjs",
+    "browiki:update:refresh": "node scripts/update-browiki.mjs --refresh",
     "build:data": "node scripts/build-class-data.mjs",
     "build:data:fetch": "node scripts/build-class-data.mjs --download-sources",
     "build:data:refresh": "node scripts/build-class-data.mjs --download-sources --refresh-sources",
@@ -15,6 +17,7 @@
     "build": "vite build",
     "build:pages": "vite build",
     "lint": "oxlint",
+    "test": "node --test scripts/*.test.mjs src/lib/*.test.js",
     "preview": "vite preview"
   },
   "dependencies": {

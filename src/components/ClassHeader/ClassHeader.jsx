@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import './ClassHeaderStyles.css'
 import { assetUrl } from '../../lib/dom.js'
-import { translateUi } from '../../lib/translations.js'
+import { translatedClassName, translateUi } from '../../lib/translations.js'
 import { LanguageMenu } from '../LanguageMenu'
 import { ThemeToggle } from '../ThemeToggle'
 
@@ -62,7 +62,7 @@ export function ClassHeader({
         ) : null}
         <img className="job-icon" src={assetUrl(model.data.tree.jobIconUrl)} alt="" width="66" height="92" />
         <div className="class-title">
-          <h1>{model.data.className}</h1>
+          <h1>{translatedClassName(model.data.className, language)}</h1>
         </div>
         {onThemeChange ? (
           <ThemeToggle language={language} theme={theme} onThemeChange={onThemeChange} variant="inline" />

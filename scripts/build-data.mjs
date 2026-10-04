@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { divinePrideSkillUrl, fetchDivinePrideApi, formatSourceFailure, publishedApiBaseUrl } from "./divine-pride-rate-limit.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
@@ -261,7 +262,7 @@ async function main() {
   const nameById = new Map(treeSkills.map((skill) => [skill.id, skill.name]));
   const rebalanceByName = groupRebalancesBySkill(rebalanceVersions);
 
-  const apiBaseUrl = normalizeApiBaseUrl(env.DIVINE_PRIDE_API_URL || defaultApiUrl);
+  const apiBaseUrl = env.DIVINE_PRIDE_API_URL || defaultApiUrl;
   const apiKey = env.DIVINE_PRIDE_API_KEY || process.env.DIVINE_PRIDE_API_KEY || "";
 
   const skills = [];
@@ -321,7 +322,7 @@ async function main() {
       irowiki: "https://irowiki.org/wiki/"
     },
     api: {
-      baseUrl: apiBaseUrl,
+      baseUrl: publishedApiBaseUrl(apiBaseUrl, defaultApiUrl),
       status: apiKey ? "configured" : "missing-key",
       endpoint: "/api/database/Skill/:id",
       auth: "apiKey query parameter",
@@ -1159,8 +1160,7 @@ async function fetchApiSkill({ skill, apiBaseUrl, apiKey }) {
     };
   }
 
-  const url = new URL(`/api/database/Skill/${skill.id}`, apiBaseUrl);
-  url.searchParams.set("apiKey", apiKey);
+  const url = divinePrideSkillUrl(apiBaseUrl, skill.id, apiKey);
 
   let lastResult = null;
   for (let attempt = 1; attempt <= 3; attempt += 1) {
@@ -1175,7 +1175,7 @@ async function fetchApiSkill({ skill, apiBaseUrl, apiKey }) {
 
 async function requestApiSkill({ url, skill }) {
   try {
-    const response = await fetch(url, {
+    const response = await fetchDivinePrideApi(url, {
       headers: {
         "Accept": "application/json",
         "Accept-Language": "en-US",
@@ -1229,7 +1229,7 @@ async function requestApiSkill({ url, skill }) {
   } catch (error) {
     return {
       status: "network-error",
-      message: error.message,
+      message: formatSourceFailure(url, error, true),
       entries: [],
       selectedEntry: null
     };
@@ -1250,19 +1250,6 @@ function normalizeName(value) {
 
 function normalizeWhitespace(value) {
   return String(value ?? "").replace(/\s+/g, " ").trim();
-}
-
-function normalizeApiBaseUrl(value) {
-  const trimmed = String(value || defaultApiUrl).trim().replace(/\/+$/, "");
-  try {
-    const url = new URL(trimmed);
-    if (url.pathname.toLowerCase() === "/api") {
-      return url.origin;
-    }
-    return url.toString().replace(/\/+$/, "");
-  } catch {
-    return defaultApiUrl;
-  }
 }
 
 function sleep(ms) {
