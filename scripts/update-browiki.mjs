@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const output = path.join(root, "src", "data", "browiki-pt-br.json");
 const base = "https://browiki.org";
+export const standaloneSkillPaths = ["/wiki/Habilidades_B%C3%A1sicas"];
 let nextRequestAt = 0;
 let requestQueue = Promise.resolve();
 // English tab labels from Divine Pride -> class titles on bROWiki's Classes page.
@@ -51,10 +52,84 @@ export function parseSkillIdentity(html, urlPath) {
   return { id, name, url: new URL(urlPath, base).href };
 }
 
+export function parseSkillDescription(html) {
+  const idRow = /<td>\s*<b>ID<\/b>\s*<\/td>\s*<td>\s*<small>[^<]*?\((\d+)\)/i.exec(html);
+  if (!idRow) return "";
+  const tableTags = /<\/?table\b[^>]*>/gi;
+  let depth = 0;
+  let enclosingDepth = null;
+  let afterInfobox = -1;
+  for (const tag of html.matchAll(tableTags)) {
+    if (tag.index >= idRow.index && enclosingDepth === null) enclosingDepth = depth;
+    if (/^<\/table/i.test(tag[0])) {
+      depth--;
+      if (enclosingDepth !== null && depth < enclosingDepth) {
+        afterInfobox = tag.index + tag[0].length;
+        break;
+      }
+    } else {
+      depth++;
+    }
+  }
+  if (afterInfobox < 0) return "";
+  let rest = html.slice(afterInfobox);
+  const notice = /^\s*<div\b[^>]*class="[^"]*\bdablink\b[^"]*"[^>]*>[\s\S]*?<\/div>/i.exec(rest);
+  if (notice) rest = rest.slice(notice[0].length);
+  const paragraphs = [];
+  while (paragraphs.length < 10) {
+    const paragraph = /^\s*<p\b[^>]*>([\s\S]*?)<\/p>/i.exec(rest);
+    if (!paragraph) break;
+    const text = plainWikiText(paragraph[1]);
+    if (text && !/No momento, não há conteúdo nesta página/i.test(text)) paragraphs.push(text);
+    rest = rest.slice(paragraph[0].length);
+  }
+  if (paragraphs.at(-1)?.endsWith(":")) {
+    const list = firstImmediateList(rest);
+    if (list) {
+      const lines = list.replace(/<li\b[^>]*>/gi, "\n• ")
+        .split("\n").map(plainWikiText).filter(Boolean).slice(0, 20);
+      paragraphs.push(...lines);
+      rest = rest.slice(list.length);
+      while (paragraphs.length < 30) {
+        const paragraph = /^\s*<p\b[^>]*>([\s\S]*?)<\/p>/i.exec(rest);
+        if (!paragraph) break;
+        const text = plainWikiText(paragraph[1]);
+        if (text) paragraphs.push(text);
+        rest = rest.slice(paragraph[0].length);
+      }
+    } else if (/^\s*<table\b/i.test(rest) && paragraphs.length > 1) {
+      paragraphs.pop();
+    }
+  }
+  return paragraphs.join("\n");
+}
+
+function plainWikiText(html) {
+  return decode(String(html).replace(/<br\b[^>]*>/gi, "\n"))
+    .replace(/&nbsp;|&#160;|&#xA0;/gi, " ")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/[^\S\n]+/g, " ").replace(/ *\n */g, "\n").trim();
+}
+
+function firstImmediateList(html) {
+  const start = /^\s*<ul\b[^>]*>/i.exec(html);
+  if (!start) return "";
+  let depth = 0;
+  for (const tag of html.matchAll(/<\/?ul\b[^>]*>/gi)) {
+    depth += /^<\/ul/i.test(tag[0]) ? -1 : 1;
+    if (!depth) return html.slice(0, tag.index + tag[0].length);
+  }
+  return "";
+}
+
 export function selectSkillLinks(paths, skills, refresh = false) {
   if (refresh) return [...paths];
-  const cachedUrls = new Set(Object.values(skills).map((entry) => entry.url));
-  return [...paths].filter((urlPath) => !cachedUrls.has(new URL(urlPath, base).href));
+  const cached = new Map(Object.values(skills).map((entry) => [entry.url, entry]));
+  return [...paths].filter((urlPath) => {
+    const description = cached.get(new URL(urlPath, base).href)?.description;
+    return !description || description.trim().endsWith(":");
+  });
 }
 
 export function classEntryFromPage(name, urlPath, html, previousEntry = null) {
@@ -90,40 +165,67 @@ async function main() {
   const all = await Promise.all(classDataSets.map((entry) => entry.load()));
   const knownIds = new Set(all.flatMap((data) => data.skillTabs.flatMap((tab) => tab.skills.map((skill) => skill.id))));
   const labels = new Set(all.flatMap((data) => data.skillTabs.map((tab) => tab.label)));
+  const descriptionsOnly = process.argv.includes("--descriptions-only");
   let previous = {};
   try { previous = JSON.parse(await fs.readFile(output, "utf8")); } catch { /* first run */ }
-  const classes = {};
+  if (descriptionsOnly && !Object.keys(previous.skills ?? {}).length) throw Error("Run browiki:update first to create the verified skill index.");
+  const classes = descriptionsOnly ? { ...previous.classes } : {};
   const paths = new Set();
-  for (const label of labels) {
-    const name = classNames[label];
-    if (!name) { console.warn(`Unmapped class: ${label}`); continue; }
-    const urlPath = wikiPath(name);
-    const html = await fetchPage(urlPath);
-    const hasSkillTable = Boolean(html?.includes('id="Habilidades"'));
-    const entry = classEntryFromPage(name, urlPath, html, previous.classes?.[label]);
-    if (!hasSkillTable) console.warn(`Missing class skills: ${label} ${urlPath}`);
-    if (entry) classes[label] = entry;
-    if (!hasSkillTable) continue;
-    for (const skillPath of parseClassSkillLinks(html)) paths.add(skillPath);
+  if (!descriptionsOnly) {
+    for (const label of labels) {
+      const name = classNames[label];
+      if (!name) { console.warn(`Unmapped class: ${label}`); continue; }
+      const urlPath = wikiPath(name);
+      const html = await fetchPage(urlPath);
+      const hasSkillTable = Boolean(html?.includes('id="Habilidades"'));
+      const entry = classEntryFromPage(name, urlPath, html, previous.classes?.[label]);
+      if (!hasSkillTable) console.warn(`Missing class skills: ${label} ${urlPath}`);
+      if (entry) classes[label] = entry;
+      if (!hasSkillTable) continue;
+      for (const skillPath of parseClassSkillLinks(html)) paths.add(skillPath);
+    }
   }
-  console.log(`${Object.keys(classes).length}/${labels.size} class pages, ${paths.size} skill links; checking skill IDs.`);
   const skills = previous.skills ?? {};
+  for (const urlPath of standaloneSkillPaths) paths.add(urlPath);
+  for (const entry of Object.values(skills)) if (entry.url) paths.add(entry.url);
+  console.log(`${Object.keys(classes).length}/${labels.size} class pages, ${paths.size} skill links; checking skill IDs.`);
   const links = selectSkillLinks(paths, skills, process.argv.includes("--refresh"));
   console.log(`${links.length} skill pages to check (${Object.keys(skills).length} previously verified IDs).`);
   let cursor = 0;
   let matches = 0;
+  let processed = 0;
+  let checkpoint = Promise.resolve();
+  const cachedIdByUrl = new Map(Object.entries(skills).map(([id, entry]) => [entry.url, Number(id)]));
+  function saveCheckpoint() {
+    checkpoint = checkpoint.then(async () => {
+      const temporary = `${output}.tmp`;
+      await fs.writeFile(temporary, `${JSON.stringify({ classes, skills }, null, 2)}\n`);
+      await fs.rename(temporary, output);
+    });
+    return checkpoint;
+  }
   async function worker() {
     while (cursor < links.length) {
       const index = cursor++;
       const html = await fetchPage(links[index]);
       const identity = html && parseSkillIdentity(html, links[index]);
-      if (identity && knownIds.has(identity.id)) { skills[identity.id] = { name: identity.name, url: identity.url }; matches++; }
+      const expectedId = cachedIdByUrl.get(new URL(links[index], base).href);
+      if (identity && knownIds.has(identity.id) && (!expectedId || expectedId === identity.id)) {
+        const description = parseSkillDescription(html);
+        skills[identity.id] = {
+          ...skills[identity.id], name: identity.name, url: identity.url,
+          ...(description ? { description } : {}),
+        };
+        matches++;
+      }
+      processed++;
+      if (processed % 25 === 0) await saveCheckpoint();
       if (index % 50 === 0) console.log(`${index + 1}/${links.length} links processed`);
     }
   }
   await Promise.all(Array.from({ length: 2 }, worker));
-  await fs.writeFile(output, `${JSON.stringify({ classes, skills }, null, 2)}\n`);
-  console.log(`Saved ${Object.keys(classes).length} classes, ${Object.keys(skills).length} unique skill IDs (${matches} page matches).`);
+  await saveCheckpoint();
+  console.log(`Saved ${Object.keys(classes).length} classes, ${Object.keys(skills).length} unique skill IDs (${Object.values(skills).filter((entry) => entry.description).length} descriptions, ${matches} page matches).`);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main().catch((error) => { console.error(error); process.exitCode = 1; });

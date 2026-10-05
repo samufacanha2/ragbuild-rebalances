@@ -1,4 +1,5 @@
 import browiki from '../data/browiki-pt-br.json' with { type: 'json' }
+import manualDescriptions from '../data/skill-descriptions-pt-br.json' with { type: 'json' }
 
 export const languageOptions = [
   { id: 'en', label: 'English' },
@@ -18,7 +19,9 @@ export function browikiSkillUrl(skill) {
 }
 
 export function translatedSkillDescription(skill, language) {
-  return localizedSkillField(skill, language, 'description') || skill.description
+  return (language === 'pt-BR' ? manualDescriptions.skills[skill.id] || browiki.skills[skill.id]?.description : '')
+    || localizedSkillField(skill, language, 'description')
+    || skill.description
 }
 
 export function translatedRequirementName(requirement, model, language) {

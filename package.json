@@ -6,6 +6,7 @@
   "scripts": {
     "assets:download": "node scripts/download-assets.mjs",
     "browiki:update": "node scripts/update-browiki.mjs",
+    "browiki:descriptions": "node scripts/update-browiki.mjs --descriptions-only",
     "browiki:update:refresh": "node scripts/update-browiki.mjs --refresh",
     "build:data": "node scripts/build-class-data.mjs",
     "build:data:fetch": "node scripts/build-class-data.mjs --download-sources",

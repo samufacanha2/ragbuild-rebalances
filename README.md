@@ -41,6 +41,16 @@ The Brazilian class names, skill names, and wiki links are maintained separately
 npm run browiki:update
 ```
 
+To fill missing Portuguese skill descriptions from the ID-verified bROWiki
+pages without rechecking all class pages, run `npm run browiki:descriptions`.
+The updater checkpoints every 25 pages so an interrupted run can resume.
+For skill IDs without a verified bROWiki description, or whose wiki mechanics
+conflict with the generated skill data, Portuguese translations of the generated
+English descriptions live in `src/data/skill-descriptions-pt-br.json` and take
+precedence over wiki prose. Names and links still require an ID-verified wiki match.
+The localization test checks that every listed skill has a Portuguese description;
+add translations for new skills when the generated data changes.
+
 Use `npm run browiki:update:refresh` to recheck all existing skill names and
 links after bROWiki changes its pages (a slower, throttled full crawl).
 
