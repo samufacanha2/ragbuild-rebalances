@@ -1,5 +1,5 @@
 import { createRootRoute, createRoute, createRouter } from '@tanstack/react-router'
-import { ClassRoutePage, HomeRoutePage, RootRouteLayout } from './App.jsx'
+import { ClassRoutePage, HomeRoutePage, RebalanceRoutePage, RootRouteLayout } from './App.jsx'
 
 const rootRoute = createRootRoute({
   component: RootRouteLayout,
@@ -11,11 +11,22 @@ const indexRoute = createRoute({
   component: HomeRoutePage,
 })
 
+const rebalanceRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/rebalances',
+  validateSearch: (search) => ({
+    version: typeof search.version === 'string' ? search.version : '',
+    classId: typeof search.classId === 'string' ? search.classId : '',
+  }),
+  component: RebalanceRoutePage,
+})
+
 const classRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/$classId',
   validateSearch: (search) => ({
     tab: typeof search.tab === 'string' ? search.tab : '',
+    spec: typeof search.spec === 'string' ? search.spec : '',
   }),
   component: ClassRoutePage,
 })
@@ -26,7 +37,7 @@ const notFoundRoute = createRoute({
   component: HomeRoutePage,
 })
 
-const routeTree = rootRoute.addChildren([indexRoute, classRoute, notFoundRoute])
+const routeTree = rootRoute.addChildren([indexRoute, rebalanceRoute, classRoute, notFoundRoute])
 
 export const router = createRouter({
   routeTree,

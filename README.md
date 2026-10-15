@@ -32,7 +32,7 @@ After that, rebuild generated data from the local source files:
 npm run build:data
 ```
 
-The builder parses `rebalances/`, reads the saved source files, and writes public generated datasets to `src/generated/`. It does not call the network during `npm run build:data`.
+The builder parses `rebalances/`, reads the saved source files, and writes public generated datasets to `src/generated/`. It does not call the network during `npm run build:data`. It also refreshes the lightweight rebalance-note catalog used by `/rebalances`. If the class datasets are already present and you only need to refresh that catalog, run `npm run notes:update` instead; never edit the generated catalog by hand.
 
 The Brazilian class names, skill names, and wiki links are maintained separately in
 `src/data/browiki-pt-br.json`. To refresh them from bROWiki, run:

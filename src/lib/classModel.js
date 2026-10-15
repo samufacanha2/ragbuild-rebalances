@@ -1,3 +1,22 @@
+export const expandedClassIds = new Set([
+  'night-watch',
+  'shinkiro',
+  'shiranui',
+  'sky-emperor',
+  'soul-ascetic',
+  'spirit-handler',
+  'hyper-novice',
+  'alitea',
+])
+
+export function initialPlannerSpecVersion(data, requestedVersion, fallbackVersion) {
+  return requestedVersion && (
+    requestedVersion === 'pre'
+    || requestedVersion === 'current'
+    || data.rebalanceVersions.some((entry) => entry.id === requestedVersion)
+  ) ? requestedVersion : fallbackVersion
+}
+
 export const coreSpecLabels = [
   'Type',
   'Levels',

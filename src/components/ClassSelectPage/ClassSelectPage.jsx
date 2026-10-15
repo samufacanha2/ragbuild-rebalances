@@ -55,6 +55,10 @@ export function ClassSelectPage({ dataSets, language, onSelectClass }) {
             <p>{translateUi('No classes match your search.', language)}</p>
           </EmptyState>
         )}
+        <a className="class-card rebalance-notes-card" href={`${import.meta.env.BASE_URL}rebalances`}>
+          <span className="class-card-initials" aria-hidden="true">✦</span>
+          <strong>{translateUi('See rebalance notes', language)}</strong>
+        </a>
       </section>
     </main>
   )

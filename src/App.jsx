@@ -1,5 +1,5 @@
 import { Outlet, useNavigate, useParams, useSearch } from '@tanstack/react-router'
-import { createContext, useContext, useEffect, useMemo, useState } from 'react'
+import { createContext, lazy, Suspense, useContext, useEffect, useMemo, useState } from 'react'
 import { ClassSkillPlanner } from './components/ClassSkillPlanner'
 import { ClassSelectPage } from './components/ClassSelectPage'
 import { EmptyState } from './components/EmptyState'
@@ -19,6 +19,7 @@ const APP_DESCRIPTION =
   'RO Skills is a Ragnarok Online skill tree planner for checking prerequisites, allocating class points, and comparing ROLATAM rebalance notes.'
 const SITE_URL = normalizeSiteUrl(import.meta.env.VITE_SITE_URL ?? 'https://roskills.cc/')
 const DEFAULT_FAVICON_PATH = 'Bt_skill.png'
+const RebalanceNotesPage = lazy(() => import('./components/RebalanceNotesPage/RebalanceNotesPage.jsx').then((module) => ({ default: module.RebalanceNotesPage })))
 
 export function RootRouteLayout() {
   const [language, setLanguage] = useState(detectInitialLanguage)
@@ -71,14 +72,44 @@ export function HomeRoutePage() {
   )
 }
 
+export function RebalanceRoutePage() {
+  const navigate = useNavigate()
+  const search = useSearch({ strict: false })
+  const { language, setLanguage } = useLanguage()
+  const { theme, setTheme } = useTheme()
+  const versionId = search.version || 'rebalance-2'
+  const classId = search.classId || ''
+
+  usePageFavicon(DEFAULT_FAVICON_PATH)
+  usePageTitle(`Rebalance Notes | ${APP_TITLE}`)
+  usePageDescription('Browse Ragnarok Online class skill changes for each KRO rebalance, with original source notes.')
+  useCanonicalUrl(canonicalUrlForPath('rebalances'))
+
+  return (
+    <>
+      <Suspense fallback={<main className="rebalance-page">{translateUi('Loading', language)}...</main>}>
+        <RebalanceNotesPage
+          language={language}
+          theme={theme}
+          onLanguageChange={setLanguage}
+          onThemeChange={setTheme}
+          versionId={versionId}
+          classId={classId}
+          onVersionChange={(version) => navigate({ to: '/rebalances', search: { version } })}
+        />
+      </Suspense>
+    </>
+  )
+}
+
 export function ClassRoutePage() {
   const params = useParams({ strict: false })
   const search = useSearch({ strict: false })
 
-  return <ClassRouteContent classId={params.classId} tabId={search.tab ?? ''} />
+  return <ClassRouteContent classId={params.classId} tabId={search.tab ?? ''} routeSpecVersion={search.spec ?? ''} />
 }
 
-function ClassRouteContent({ classId, tabId }) {
+function ClassRouteContent({ classId, tabId, routeSpecVersion = '' }) {
   const navigate = useNavigate()
   const { language, setLanguage } = useLanguage()
   const { theme, setTheme } = useTheme()
@@ -141,8 +172,19 @@ function ClassRouteContent({ classId, tabId }) {
     navigate({
       to: '/$classId',
       params: { classId: activeClassId },
-      search: nextTabId ? { tab: nextTabId } : {},
+      search: { ...(nextTabId ? { tab: nextTabId } : {}), ...(routeSpecVersion ? { spec: routeSpecVersion } : {}) },
       replace: Boolean(options.replace),
+    })
+  }
+
+  const selectSpecVersion = (nextSpecVersion, nextTabId = tabId) => {
+    if (!activeClassId) return
+
+    navigate({
+      to: '/$classId',
+      params: { classId: activeClassId },
+      search: { ...(nextTabId ? { tab: nextTabId } : {}), spec: nextSpecVersion },
+      resetScroll: false,
     })
   }
 
@@ -163,7 +205,9 @@ function ClassRouteContent({ classId, tabId }) {
       dataSet={activeDataSet}
       language={language}
       routeTabId={tabId}
+      routeSpecVersion={routeSpecVersion}
       onActiveTabChange={selectTab}
+      onSpecVersionChange={selectSpecVersion}
       onBack={selectHome}
       onLanguageChange={setLanguage}
       theme={theme}

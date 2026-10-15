@@ -26,6 +26,15 @@
   font-size: clamp(1.9rem, 4vw, 2.7rem);
 }
 
+.rebalance-notes-card {
+  border-color: rgba(var(--accent-rgb), 0.5);
+  background: var(--surface-soft);
+}
+
+.rebalance-notes-card .class-card-initials {
+  background: var(--surface);
+}
+
 .class-search {
   position: relative;
   display: grid;

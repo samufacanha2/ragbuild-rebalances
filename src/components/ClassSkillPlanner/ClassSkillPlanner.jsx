@@ -1,7 +1,7 @@
 import { ChevronDown, ChevronUp, Settings } from 'lucide-react'
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import './ClassSkillPlannerStyles.css'
-import { createClassModel, pointLimitForSpecVersion } from '../../lib/classModel.js'
+import { createClassModel, expandedClassIds, initialPlannerSpecVersion, pointLimitForSpecVersion } from '../../lib/classModel.js'
 import { assetUrl } from '../../lib/dom.js'
 import { allocatedTotal, cleanupLevels, skillLevel } from '../../lib/pointBuy.js'
 import { skillAvailableInVersion } from '../../lib/specs.js'
@@ -33,22 +33,14 @@ const DETAIL_DRAWER_DRAG_THRESHOLD = 4
 const MAX_BUILD_PRESETS = 24
 const MAIN_CLASS_DEFAULT_SPEC_VERSION = 'rebalance-1'
 const EXPANDED_CLASS_DEFAULT_SPEC_VERSION = 'pre'
-const EXPANDED_CLASS_IDS = new Set([
-  'night-watch',
-  'shinkiro',
-  'shiranui',
-  'sky-emperor',
-  'soul-ascetic',
-  'spirit-handler',
-  'hyper-novice',
-  'alitea',
-])
 
 export function ClassSkillPlanner({
   dataSet,
   language,
   routeTabId,
+  routeSpecVersion,
   onActiveTabChange,
+  onSpecVersionChange,
   onBack,
   onLanguageChange,
   theme,
@@ -70,12 +62,15 @@ export function ClassSkillPlanner({
     savedSettings?.hasCustomSpecVersion === true
     || Boolean(savedSettings?.specVersion && savedSettings.specVersion !== 'current')
   )
+  const unpinnedSpecVersion = savedSpecVersionIsCustom && savedSpecVersionIsValid ? savedSettings.specVersion : defaultSpecVersion
   const [activeTabId, setActiveTabId] = useState(initialTabId)
-  const [specVersion, setSpecVersion] = useState(() =>
-    savedSpecVersionIsCustom && isValidSpecVersion(dataSet.data, savedSettings?.specVersion)
-      ? savedSettings.specVersion
-      : defaultSpecVersion,
-  )
+  const [specVersion, setSpecVersion] = useState(() => initialPlannerSpecVersion(
+    dataSet.data,
+    routeSpecVersion,
+    unpinnedSpecVersion,
+  ))
+  const unpinnedSpecVersionRef = useRef(unpinnedSpecVersion)
+  const previousRouteSpecVersionRef = useRef(routeSpecVersion)
   const [hasCustomSpecVersion, setHasCustomSpecVersion] = useState(savedSpecVersionIsCustom)
   const [levelsByTab, setLevelsByTab] = useState(() => sanitizeLevelsByTab(savedSettings?.levelsByTab))
   const [detailPanelWidth, setDetailPanelWidth] = useState(() => sanitizeDetailPanelWidth(savedSettings?.detailPanelWidth))
@@ -141,6 +136,19 @@ export function ClassSkillPlanner({
     if (!tabs.some((tab) => tab.id === routeTabId)) return
     if (routeTabId !== activeTabId) setActiveTabId(routeTabId)
   }, [activeTabId, routeTabId, tabs])
+
+  useEffect(() => {
+    if (previousRouteSpecVersionRef.current === routeSpecVersion) return
+    previousRouteSpecVersionRef.current = routeSpecVersion
+    if (!routeSpecVersion) {
+      setSpecVersion(unpinnedSpecVersionRef.current)
+      setHasCustomSpecVersion(savedSpecVersionIsCustom)
+      return
+    }
+    if (!isValidSpecVersion(dataSet.data, routeSpecVersion)) return
+    setSpecVersion(routeSpecVersion)
+    setHasCustomSpecVersion(true)
+  }, [dataSet.data, routeSpecVersion, savedSpecVersionIsCustom])
 
   useEffect(() => {
     if (!activeTab?.id) return
@@ -380,11 +388,12 @@ export function ClassSkillPlanner({
     const nextTabId = firstValidTabId(tabs, preset.activeTabId, activeTab.id)
 
     setLevelsByTab(sanitizeLevelsByTab(preset.levelsByTab))
+    setHasCustomSpecVersion(true)
     setSpecVersion(nextSpecVersion)
     setActiveTabId(nextTabId)
     setPresetName(preset.name)
-    if (nextTabId !== activeTab.id) onActiveTabChange(nextTabId)
-  }, [activeTab.id, dataSet.data, onActiveTabChange, presets, selectedPresetId, specVersion, tabs])
+    onSpecVersionChange(nextSpecVersion, nextTabId)
+  }, [activeTab.id, dataSet.data, onSpecVersionChange, presets, selectedPresetId, specVersion, tabs])
 
   const deletePreset = useCallback(() => {
     setPresets((current) => current.filter((preset) => preset.id !== selectedPresetId))
@@ -486,7 +495,8 @@ export function ClassSkillPlanner({
   const changeSpecVersion = useCallback((nextSpecVersion) => {
     setHasCustomSpecVersion(true)
     setSpecVersion(nextSpecVersion)
-  }, [])
+    onSpecVersionChange(nextSpecVersion)
+  }, [onSpecVersionChange])
   const detailPanelMaxWidth = useCallback(() => {
     const shellWidth = shellRef.current?.getBoundingClientRect().width
     if (!shellWidth) return DETAIL_PANEL_MAX_WIDTH
@@ -829,7 +839,7 @@ function skillTabsForData(data) {
 }
 
 function defaultSpecVersionForDataSet(dataSet) {
-  const defaultVersion = EXPANDED_CLASS_IDS.has(dataSet.id)
+  const defaultVersion = expandedClassIds.has(dataSet.id)
     ? EXPANDED_CLASS_DEFAULT_SPEC_VERSION
     : MAIN_CLASS_DEFAULT_SPEC_VERSION
 

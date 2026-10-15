@@ -4,10 +4,11 @@ export function currentRoute() {
   return routeFromLocation(window.location)
 }
 
-export function classRouteHref(classId = '', tabId = '') {
+export function classRouteHref(classId = '', tabId = '', specVersion = '') {
   const path = classId ? `${BASE_PATH}${encodeURIComponent(classId)}` : BASE_PATH
   const params = new URLSearchParams()
   if (tabId) params.set('tab', tabId)
+  if (specVersion) params.set('spec', specVersion)
 
   const search = params.toString()
   return search ? `${path}?${search}` : path
@@ -23,6 +24,7 @@ export function routeFromLocation(location) {
   return {
     classId,
     tabId: new URLSearchParams(location.search).get('tab') ?? '',
+    specVersion: new URLSearchParams(location.search).get('spec') ?? '',
   }
 }
 
