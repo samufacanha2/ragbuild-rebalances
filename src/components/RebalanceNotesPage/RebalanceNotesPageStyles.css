@@ -5,8 +5,7 @@
 }
 
 .rebalance-header { padding: 16px 0 22px; }
-.rebalance-topline { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
-.rebalance-settings { display: flex; gap: 8px; }
+.rebalance-topline { margin-bottom: 24px; }
 .rebalance-home-link { color: var(--teal-dark); font-weight: 750; }
 .rebalance-header h1 { margin: 8px 0 12px; }
 .rebalance-intro { font-size: 1.12rem; margin-bottom: 8px; }
@@ -75,7 +74,7 @@
 .rebalance-skill-source { display: inline-block; margin-left: 54px; font-size: .85rem; font-weight: 700; }
 .rebalance-no-notes { padding: 18px; border-radius: 8px; background: var(--surface-soft); }
 
-.rebalance-class-nav {
+.rebalance-bottom-bar {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -86,11 +85,29 @@
   box-shadow: 0 -10px 30px rgba(23, 33, 47, .13);
   padding: 10px 0 max(10px, env(safe-area-inset-bottom));
 }
+.rebalance-bottom-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  width: min(1120px, calc(100vw - 24px));
+  margin: 0 auto;
+}
+.rebalance-class-nav { min-width: 0; }
+.rebalance-settings { display: flex; align-items: center; gap: 8px; }
+.rebalance-settings .theme-toggle.is-inline,
+.rebalance-settings .locale-menu.is-inline .locale-toggle {
+  border-radius: 999px;
+  box-shadow: 0 1px 6px rgba(23, 33, 47, .1);
+}
+.rebalance-settings .locale-menu.is-inline .locale-popover {
+  top: auto;
+  bottom: calc(100% + 8px);
+}
 .rebalance-class-strip {
   display: flex;
   gap: 8px;
-  width: min(1120px, calc(100vw - 24px));
-  margin: 0 auto;
+  width: 100%;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
@@ -121,7 +138,9 @@
 @media (prefers-reduced-motion: no-preference) { html:has(.rebalance-page) { scroll-behavior: smooth; } }
 
 @media (max-width: 640px) {
-  .rebalance-page { width: calc(100vw - 24px); padding: 12px 0 140px; }
+  .rebalance-page { width: calc(100vw - 24px); padding: 12px 0 calc(208px + env(safe-area-inset-bottom)); }
+  .rebalance-bottom-inner { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .rebalance-settings { justify-content: center; }
   .rebalance-context { display: block; padding: 18px; }
   .rebalance-context-meta { margin-top: 16px; }
   .rebalance-class-section { padding: 18px 14px; }

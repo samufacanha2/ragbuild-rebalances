@@ -46,10 +46,6 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
       <header className="rebalance-header">
         <div className="rebalance-topline">
           <a className="rebalance-home-link" href={classRouteHref()}>{translateUi('All classes', language)}</a>
-          <div className="rebalance-settings">
-            <ThemeToggle language={language} theme={theme} onThemeChange={onThemeChange} variant="inline" />
-            <LanguageMenu language={language} onLanguageChange={onLanguageChange} variant="inline" />
-          </div>
         </div>
         <p className="eyebrow">Ragnarok Online</p>
         <h1>{translateUi('Rebalance notes', language)}</h1>
@@ -120,22 +116,30 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
         })}
       </div>
 
-      <nav className="rebalance-class-nav" aria-label={translateUi('Jump to class changes', language)}>
-        <div className="rebalance-class-strip">
-          {classes.map((entry) => (
-            <a
-              key={entry.id}
-              className={activeClassId === entry.id ? 'rebalance-class-chip is-active' : 'rebalance-class-chip'}
-              href={`#class-${entry.id}`}
-              aria-current={activeClassId === entry.id ? 'location' : undefined}
-              onClick={() => setActiveClassId(entry.id)}
-            >
-              <img src={assetUrl(entry.jobIconUrl)} alt="" width="36" height="48" />
-              <span>{translatedClassName(entry.label, language)}</span>
-            </a>
-          ))}
+      <footer className="rebalance-bottom-bar">
+        <div className="rebalance-bottom-inner">
+          <nav className="rebalance-class-nav" aria-label={translateUi('Jump to class changes', language)}>
+            <div className="rebalance-class-strip">
+              {classes.map((entry) => (
+                <a
+                  key={entry.id}
+                  className={activeClassId === entry.id ? 'rebalance-class-chip is-active' : 'rebalance-class-chip'}
+                  href={`#class-${entry.id}`}
+                  aria-current={activeClassId === entry.id ? 'location' : undefined}
+                  onClick={() => setActiveClassId(entry.id)}
+                >
+                  <img src={assetUrl(entry.jobIconUrl)} alt="" width="36" height="48" />
+                  <span>{translatedClassName(entry.label, language)}</span>
+                </a>
+              ))}
+            </div>
+          </nav>
+          <div className="rebalance-settings">
+            <ThemeToggle language={language} theme={theme} onThemeChange={onThemeChange} variant="inline" />
+            <LanguageMenu language={language} onLanguageChange={onLanguageChange} variant="inline" />
+          </div>
         </div>
-      </nav>
+      </footer>
     </main>
   )
 }
