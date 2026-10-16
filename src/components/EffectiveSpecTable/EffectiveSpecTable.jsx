@@ -34,7 +34,7 @@ function SpecValue({ row, language }) {
   return (
     <div className="spec-value-card-row">
       <span className={row.changed ? 'changed-spec-value' : ''}>
-        {translateSpecValue(row.value, language)}
+        {language === 'pt-BR' && row.valuePtBr ? row.valuePtBr : translateSpecValue(row.value, language)}
       </span>
       {row.changeNote ? (
         <small>

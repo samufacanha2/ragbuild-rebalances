@@ -73,7 +73,8 @@
 .rebalance-skill ul { margin: 12px 0 10px 54px; padding-left: 18px; line-height: 1.55; }
 .rebalance-skill li + li { margin-top: 5px; }
 .rebalance-skill p { margin: 12px 0 10px 54px; color: var(--muted); }
-.rebalance-skill-source { display: inline-block; margin-left: 54px; font-size: .85rem; font-weight: 700; }
+.rebalance-skill > .initial-skill-values { margin-left: 54px; }
+.rebalance-skill-source { margin: 10px 0 0 54px; }
 .rebalance-no-notes { padding: 18px; border-radius: 8px; background: var(--surface-soft); }
 
 .rebalance-bottom-bar {
@@ -150,7 +151,7 @@
   .rebalance-planner-link { flex-basis: 100%; margin: 8px 0 0; }
   .rebalance-skill { padding: 14px; }
   .rebalance-skill ul { margin-left: 0; }
-  .rebalance-skill p, .rebalance-skill-source { margin-left: 0; }
+  .rebalance-skill p, .rebalance-skill-source, .rebalance-skill > .initial-skill-values { margin-left: 0; }
   .rebalance-class-chip { flex-basis: 134px; min-height: 64px; }
   .rebalance-class-chip img { width: 32px; height: 44px; flex-basis: 32px; }
 }

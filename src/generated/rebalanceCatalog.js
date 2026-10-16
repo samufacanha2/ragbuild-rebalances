@@ -152,6 +152,108 @@ export const rebalanceCatalog = {
           "id": "rebalance-2",
           "skills": [
             {
+              "name": "Dragonic Breath",
+              "notes": [],
+              "initialSpecs": [
+                {
+                  "label": "SP Cost",
+                  "value": "58 + (skill level × 3)",
+                  "valuePtBr": "58 + (Nv. da habilidade × 3)",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Fixed Cast Time",
+                  "value": "0.5 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Variable Cast Time",
+                  "value": "2 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cast Delay",
+                  "value": "0.15 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cooldown",
+                  "value": "0.5 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cast Range",
+                  "value": "9 cells",
+                  "valuePtBr": "9 células",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Target",
+                  "value": "Targeted area",
+                  "valuePtBr": "Área ao redor do alvo",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Area of Effect",
+                  "value": "7x7 (Lv 1-5) / 9x9 (Lv 6-10)",
+                  "valuePtBr": "7x7 (Nv. 1-5) / 9x9 (Nv. 6-10)",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "AP Generated",
+                  "value": "2",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Base Damage",
+                  "value": "3,550% ATK at Lv 10, before HP/SP, POW and base-level scaling",
+                  "valuePtBr": "3.550% ATK no Nv. 10, antes dos fatores de HP/SP, POW e nível de base",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Hits",
+                  "value": "1 hit (damage displayed twice)",
+                  "valuePtBr": "1 acerto (dano exibido duas vezes)",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Damage Formula",
+                  "value": "(50 + skill level × (350 + 0.05 × (MaxHP / 8 + MaxSP / 4)) + POW × 7) × (base level / 100) % ATK; with Dragonic Aura: (50 + skill level × (350 + 0.07 × (MaxHP / 8 + MaxSP / 4)) + POW × 10) × (base level / 100) % ATK",
+                  "valuePtBr": "(50 + Nv. da habilidade × (350 + 0,05 × (MaxHP / 8 + MaxSP / 4)) + POW × 7) × (nível de base / 100) % ATQ; com Dragonic Aura: (50 + Nv. da habilidade × (350 + 0,07 × (MaxHP / 8 + MaxSP / 4)) + POW × 10) × (nível de base / 100) % ATQ",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                }
+              ],
+              "added": true,
+              "provenance": "rolatam-planned",
+              "sourceUrl": "https://sigmathefallen.blogspot.com/2025/02/dragon-knight-3rd-version.html",
+              "skillId": 6001,
+              "iconUrl": "assets/divine-pride/skills/6001.png"
+            },
+            {
               "name": "Hack and Slasher",
               "notes": [
                 "Changes damage logic from 2 split hits to 2 cumulative hits.",
@@ -904,6 +1006,282 @@ export const rebalanceCatalog = {
           "id": "rebalance-2",
           "skills": [
             {
+              "name": "Mighty Smash",
+              "notes": [],
+              "initialSpecs": [
+                {
+                  "label": "SP Cost",
+                  "value": "48 + (skill level × 3)",
+                  "valuePtBr": "48 + (Nv. da habilidade × 3)",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Fixed Cast Time",
+                  "value": "0 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Variable Cast Time",
+                  "value": "0 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cast Delay",
+                  "value": "0 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cooldown",
+                  "value": "0.3 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Target",
+                  "value": "Self-centered area",
+                  "valuePtBr": "Área ao redor do usuário",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Area of Effect",
+                  "value": "3x3 (Lv 1-4) / 5x5 (Lv 5-8) / 7x7 (Lv 9-10)",
+                  "valuePtBr": "3x3 (Nv. 1-4) / 5x5 (Nv. 5-8) / 7x7 (Nv. 9-10)",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Base Damage",
+                  "value": "3,100% / 3,150% ATK per hit at Lv 10 (Axe Stomp), before POW and base-level scaling",
+                  "valuePtBr": "3.100% / 3.150% ATK por acerto no Nv. 10 (Axe Stomp), antes dos fatores de POW e nível de base",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Hits",
+                  "value": "3 / 5 hits",
+                  "valuePtBr": "3 / 5 acertos",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Damage Formula",
+                  "value": "(100 + skill level × 300 + POW × 7) × (base level / 100) % ATK per hit; with Axe Stomp: (150 + skill level × 300 + POW × 7) × (base level / 100) % ATK per hit",
+                  "valuePtBr": "(100 + Nv. da habilidade × 300 + POW × 7) × (nível de base / 100) % ATQ por acerto; com Axe Stomp: (150 + Nv. da habilidade × 300 + POW × 7) × (nível de base / 100) % ATQ por acerto",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                }
+              ],
+              "added": true,
+              "provenance": "rolatam-planned",
+              "sourceUrl": "https://sigmathefallen.blogspot.com/2025/02/meister-3rd-version.html",
+              "skillId": 6004,
+              "iconUrl": "assets/divine-pride/skills/6004.png"
+            },
+            {
+              "name": "Triple Laser",
+              "notes": [],
+              "initialSpecs": [
+                {
+                  "label": "SP Cost",
+                  "value": "35 + (skill level × 5)",
+                  "valuePtBr": "35 + (Nv. da habilidade × 5)",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Fixed Cast Time",
+                  "value": "0.5 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Variable Cast Time",
+                  "value": "1 second",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cast Delay",
+                  "value": "0 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cooldown",
+                  "value": "0.25 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cast Range",
+                  "value": "11 cells",
+                  "valuePtBr": "11 células",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Target",
+                  "value": "Single target",
+                  "valuePtBr": "Alvo único",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Base Damage",
+                  "value": "3,300% ATK per hit at Lv 5, before POW and base-level scaling",
+                  "valuePtBr": "3.300% ATK por acerto no Nv. 5, antes dos fatores de POW e nível de base",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Hits",
+                  "value": "3 hits",
+                  "valuePtBr": "3 acertos",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Damage Formula",
+                  "value": "(300 + skill level × 600 + POW × 10) × (base level / 100) % ATK per hit",
+                  "valuePtBr": "(300 + Nv. da habilidade × 600 + POW × 10) × (nível de base / 100) % ATQ por acerto",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                }
+              ],
+              "added": true,
+              "provenance": "rolatam-planned",
+              "sourceUrl": "https://sigmathefallen.blogspot.com/2025/02/meister-3rd-version.html",
+              "skillId": 6003,
+              "iconUrl": "assets/divine-pride/skills/6003.png"
+            },
+            {
+              "name": "Spark Blaster",
+              "notes": [],
+              "initialSpecs": [
+                {
+                  "label": "SP Cost",
+                  "value": "44 + (skill level × 4)",
+                  "valuePtBr": "44 + (Nv. da habilidade × 4)",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Fixed Cast Time",
+                  "value": "0.5 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Variable Cast Time",
+                  "value": "1.5 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cast Delay",
+                  "value": "0.25 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cooldown",
+                  "value": "0.7 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cast Range",
+                  "value": "9 cells",
+                  "valuePtBr": "9 células",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Target",
+                  "value": "Targeted area",
+                  "valuePtBr": "Área ao redor do alvo",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Area of Effect",
+                  "value": "7x7 (Lv 1-5) / 9x9 (Lv 6-10)",
+                  "valuePtBr": "7x7 (Nv. 1-5) / 9x9 (Nv. 6-10)",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "AP Generated",
+                  "value": "2",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Base Damage",
+                  "value": "7,750% ATK per hit at Lv 10, before POW and base-level scaling",
+                  "valuePtBr": "7.750% ATK por acerto no Nv. 10, antes dos fatores de POW e nível de base",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Hits",
+                  "value": "2 hits",
+                  "valuePtBr": "2 acertos",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Damage Formula",
+                  "value": "(250 + skill level × 750 + POW × 7) × (base level / 100) % ATK per hit",
+                  "valuePtBr": "(250 + Nv. da habilidade × 750 + POW × 7) × (nível de base / 100) % ATQ por acerto",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                }
+              ],
+              "added": true,
+              "provenance": "rolatam-planned",
+              "sourceUrl": "https://sigmathefallen.blogspot.com/2025/02/meister-3rd-version.html",
+              "skillId": 6002,
+              "iconUrl": "assets/divine-pride/skills/6002.png"
+            },
+            {
               "name": "Axe Stomp",
               "notes": [
                 "Reduces cooldown from 1 second to 0.7 seconds.",
@@ -1138,6 +1516,202 @@ export const rebalanceCatalog = {
         {
           "id": "rebalance-2",
           "skills": [
+            {
+              "name": "Explosive Powder",
+              "notes": [],
+              "initialSpecs": [
+                {
+                  "label": "SP Cost",
+                  "value": "54 + (skill level × 4)",
+                  "valuePtBr": "54 + (Nv. da habilidade × 4)",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Fixed Cast Time",
+                  "value": "0 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Variable Cast Time",
+                  "value": "0 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cast Delay",
+                  "value": "0.25 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cooldown",
+                  "value": "0.7 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Target",
+                  "value": "Self-centered area",
+                  "valuePtBr": "Área ao redor do usuário",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Area of Effect",
+                  "value": "7x7",
+                  "valuePtBr": "7x7",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "AP Generated",
+                  "value": "2",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Base Damage",
+                  "value": "2,650% / 3,150% ATK per hit at Lv 5 (Research Report), before POW and base-level scaling",
+                  "valuePtBr": "2.650% / 3.150% ATK por acerto no Nv. 5 (Research Report), antes dos fatores de POW e nível de base",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Hits",
+                  "value": "3 / 5 hits",
+                  "valuePtBr": "3 / 5 acertos",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Damage Formula",
+                  "value": "(400 + skill level × 450 + POW × 7) × (base level / 100) % ATK per hit; with Research Report: (400 + skill level × 550 + POW × 10) × (base level / 100) % ATK per hit",
+                  "valuePtBr": "(400 + Nv. da habilidade × 450 + POW × 7) × (nível de base / 100) % ATQ por acerto; com Research Report: (400 + Nv. da habilidade × 550 + POW × 10) × (nível de base / 100) % ATQ por acerto",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                }
+              ],
+              "added": true,
+              "provenance": "rolatam-planned",
+              "sourceUrl": "https://sigmathefallen.blogspot.com/2025/02/biolo-3rd-version.html",
+              "skillId": 6005,
+              "iconUrl": "assets/divine-pride/skills/6005.png"
+            },
+            {
+              "name": "Mayhemic Thorns",
+              "notes": [],
+              "initialSpecs": [
+                {
+                  "label": "SP Cost",
+                  "value": "66 + (skill level × 2)",
+                  "valuePtBr": "66 + (Nv. da habilidade × 2)",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Fixed Cast Time",
+                  "value": "0.5 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Variable Cast Time",
+                  "value": "1.5 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cast Delay",
+                  "value": "0.15 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cooldown",
+                  "value": "0.7 seconds",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Cast Range",
+                  "value": "9 cells",
+                  "valuePtBr": "9 células",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Target",
+                  "value": "Targeted area",
+                  "valuePtBr": "Área ao redor do alvo",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Area of Effect",
+                  "value": "7x7 (Lv 1-5) / 9x9 (Lv 6-10)",
+                  "valuePtBr": "7x7 (Nv. 1-5) / 9x9 (Nv. 6-10)",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "AP Generated",
+                  "value": "2",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Base Damage",
+                  "value": "2,700% / 3,250% ATK per hit at Lv 10 (Research Report), before POW and base-level scaling",
+                  "valuePtBr": "2.700% / 3.250% ATK por acerto no Nv. 10 (Research Report), antes dos fatores de POW e nível de base",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Hits",
+                  "value": "3 / 5 hits",
+                  "valuePtBr": "3 / 5 acertos",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                },
+                {
+                  "label": "Damage Formula",
+                  "value": "(200 + skill level × 250 + POW × 7) × (base level / 100) % ATK per hit; with Research Report: (250 + skill level × 300 + POW × 10) × (base level / 100) % ATK per hit",
+                  "valuePtBr": "(200 + Nv. da habilidade × 250 + POW × 7) × (nível de base / 100) % ATQ por acerto; com Research Report: (250 + Nv. da habilidade × 300 + POW × 10) × (nível de base / 100) % ATQ por acerto",
+                  "changed": false,
+                  "changeNote": "",
+                  "changeUrl": ""
+                }
+              ],
+              "added": true,
+              "provenance": "rolatam-planned",
+              "sourceUrl": "https://sigmathefallen.blogspot.com/2025/02/biolo-3rd-version.html",
+              "skillId": 6006,
+              "iconUrl": "assets/divine-pride/skills/6006.png"
+            },
             {
               "name": "Bionic Pharmacy",
               "notes": [

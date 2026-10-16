@@ -25,8 +25,8 @@ export function translatedSkillDescription(skill, language) {
 }
 
 export function translatedRequirementName(requirement, model, language) {
-  const skill = model.skillById.get(requirement.id)
-  return skill ? translatedSkillName(skill, language) : requirement.name
+  const skill = model.skillById.get(requirement.id) ?? requirement
+  return translatedSkillName(skill, language)
 }
 
 export function translateSpecLabel(label, language) {
@@ -130,6 +130,8 @@ function hasMojibakeMarker(value) {
 }
 
 const specLabelTranslations = {
+  'Damage Formula': 'Fórmula de dano',
+  'Hits': 'Acertos',
   'AP': 'AP',
   'AP Consumed': 'Custo de AP',
   'AP Generated': 'AP gerado',
@@ -159,7 +161,6 @@ const specLabelTranslations = {
   'Cooldown': 'Recarga',
   'Damage': 'Dano',
   'Damage Bonus': 'Bonus de dano',
-  'Damage Formula': 'Formula de dano',
   'Duration': 'Duracao',
   'Effect': 'Efeito',
   'Fixed Cast Time': 'Conjuracao fixa',
@@ -229,8 +230,8 @@ const uiTranslations = {
   'Rebalance 4': 'Rebalanceamento 4',
   'Rebalance 5': 'Rebalanceamento 5',
   'Browse skill changes by rebalance and class.': 'Veja as mudanças nas habilidades por rebalanceamento e classe.',
-  'These are KRO source notes, not a confirmed ROLATAM release schedule or final local patch notes.':
-    'Estas são notas de origem do kRO, não um calendário confirmado nem as notas finais do ROLATAM.',
+  'KRO skill-change details are not final ROLATAM patch notes.':
+    'As alterações de habilidades do kRO não são as notas finais do ROLATAM.',
   'Select rebalance': 'Selecionar rebalanceamento',
   'Jump to class changes': 'Ir para as alterações da classe',
   'Selected update': 'Atualização selecionada',
@@ -303,5 +304,6 @@ const uiTranslations = {
   'Use dark theme': 'Usar tema escuro',
   'Use light theme': 'Usar tema claro',
   'Wiki links': 'Links da wiki',
+  'Source links': 'Links das fontes',
   'previous class': 'classe anterior',
 }

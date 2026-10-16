@@ -3,6 +3,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import manifest from "../rebalances/manifest.json" with { type: "json" };
 import { classDataSets } from "../src/generated/classDataSets.js";
+import { rebalance2AddedSkillIdsByClass } from "../src/lib/rebalance2SkillAdditions.js";
+import { sigmaInitialSkillFor, sigmaInitialSpecRows } from "../src/lib/sigmaInitialSkills.js";
 
 // Verified against the class skill IDs and bROWiki; never guess an icon from a similar title.
 const classSkillAliases = {
@@ -90,6 +92,26 @@ export function catalogFromClassData(data, versions = manifest) {
           ...skillIdentity(name),
         };
       });
+      if (version.id === "rebalance-2") {
+        const introductions = [];
+        for (const id of rebalance2AddedSkillIdsByClass[data.classSlug] ?? []) {
+          const skill = skillsById.get(id);
+          if (!skill?.iconUrl || skills.some((entry) => entry.skillId === id)) {
+            throw new Error(`Cannot add ROLATAM skill ${id} to ${data.classSlug} ${version.id}`);
+          }
+          introductions.push({
+            name: skill.name,
+            notes: [],
+            initialSpecs: sigmaInitialSpecRows(id),
+            added: true,
+            provenance: "rolatam-planned",
+            sourceUrl: sigmaInitialSkillFor(id)?.sourceUrl ?? "",
+            skillId: id,
+            iconUrl: skill.iconUrl,
+          });
+        }
+        skills.unshift(...introductions);
+      }
       for (const group of data.addedSkills ?? []) {
         if (group.versionId !== version.id) continue;
         for (const name of group.skills) {

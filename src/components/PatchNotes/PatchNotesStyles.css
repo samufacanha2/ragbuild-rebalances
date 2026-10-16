@@ -20,9 +20,8 @@
 }
 
 .timeline-source {
-  display: inline-block;
   font-size: 0.82rem;
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .timeline-entry ul {

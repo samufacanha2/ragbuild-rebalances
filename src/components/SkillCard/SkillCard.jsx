@@ -2,8 +2,9 @@ import { Pin as PinIcon } from 'lucide-react'
 import './SkillCardStyles.css'
 import { assetUrl } from '../../lib/dom.js'
 import { effectiveLevelTable, effectiveSpecRows, notesForVersion, specVersionTitle } from '../../lib/specs.js'
+import { sigmaDescriptionForSkill } from '../../lib/sigmaInitialSkills.js'
+import { skillSourceLinks } from '../../lib/sourceLinks.js'
 import {
-  browikiSkillUrl,
   translatedRequirementName,
   translatedSkillDescription,
   translatedSkillName,
@@ -31,7 +32,7 @@ export function SkillCard({
   const notes = notesForVersion(skill, specVersion)
   const levelTable = effectiveLevelTable(model, skill, specVersion)
   const name = translatedSkillName(skill, language)
-  const sourceLinks = sourceLinksForSkill(skill)
+  const sourceLinks = skillSourceLinks(skill, specVersion, language)
 
   return (
     <article className="skill-card">
@@ -79,10 +80,10 @@ export function SkillCard({
       )}
 
       {sourceLinks.length ? (
-        <nav className="skill-source-links" aria-label={translateUi('Wiki links', language)}>
+        <nav className="skill-source-links" aria-label={translateUi('Source links', language)}>
           {sourceLinks.map((link) => (
-            <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
-              {link.label}
+            <a className="source-pill" key={link.href} href={link.href} target="_blank" rel="noreferrer">
+              {link.label} ↗
             </a>
           ))}
         </nav>
@@ -97,7 +98,7 @@ export function SkillCard({
 
       <section>
         <h3>{translateUi('Description', language)}</h3>
-        <TextBlock text={translatedSkillDescription(skill, language)} />
+        <TextBlock text={sigmaDescriptionForSkill(skill, specVersion, language) ?? translatedSkillDescription(skill, language)} />
       </section>
 
       <section>
@@ -119,11 +120,4 @@ export function SkillCard({
       <PatchNotes model={model} notes={notes} specVersion={specVersion} language={language} />
     </article>
   )
-}
-
-function sourceLinksForSkill(skill) {
-  return [
-    skill.irowikiUrl ? { label: 'iRO Wiki', href: skill.irowikiUrl } : null,
-    browikiSkillUrl(skill) ? { label: 'bROWiki', href: browikiSkillUrl(skill) } : null,
-  ].filter(Boolean)
 }

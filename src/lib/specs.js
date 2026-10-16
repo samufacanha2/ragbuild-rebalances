@@ -1,9 +1,13 @@
 import { coreSpecLabels } from './classModel.js'
 import { forumUrlForNote } from './rebalanceSources.js'
+import { rebalance2IntroductionForSkill } from './rebalance2SkillAdditions.js'
+import { sigmaInitialLevelTable, sigmaInitialSpecRows } from './sigmaInitialSkills.js'
 
 export function notesForVersion(skill, versionId) {
   if (versionId === 'pre') return []
-  if (versionId === 'current') return skill.balanceNotes
+  const introduction = rebalance2IntroductionForSkill(skill)
+  if (versionId === 'current') return introduction ? [introduction, ...skill.balanceNotes] : skill.balanceNotes
+  if (versionId === 'rebalance-2' && introduction) return [introduction, ...skill.balanceNotes.filter((entry) => entry.versionId === versionId)]
   return skill.balanceNotes.filter((entry) => entry.versionId === versionId)
 }
 
@@ -50,7 +54,7 @@ export function effectiveSpecRows(model, skill, versionId, levelTable) {
     ...[...baseByLabel.keys()].filter((label) => !coreSpecLabels.includes(label) && !deltasByLabel.has(label)),
   ].filter((label) => !hiddenLabels.has(label) || deltasByLabel.has(label))
 
-  return labels
+  const rows = labels
     .flatMap((label) => {
       const labelDeltas = deltasByLabel.get(label) ?? []
       const appliedDelta = labelDeltas.filter((delta) => delta.versionIndex <= selectedIndex).at(-1)
@@ -74,10 +78,19 @@ export function effectiveSpecRows(model, skill, versionId, levelTable) {
       }))
     })
     .filter((row) => row?.value)
+  if (versionId !== 'rebalance-2') return rows
+  const initial = sigmaInitialSpecRows(skill.id)
+  if (!initial.length) return rows
+  // Do not inherit mechanics that the initial Sigma guide does not specify.
+  return [...rows.filter((row) => row.label === 'Type' || row.label === 'Levels'), ...initial]
 }
 export function effectiveLevelTable(model, skill, versionId) {
   const source = skill.details.levelTables?.[0]
   if (!source) return null
+  if (versionId === 'rebalance-2') {
+    const initial = sigmaInitialLevelTable(skill, source)
+    if (initial) return initial
+  }
 
   const table = {
     ...source,
@@ -118,7 +131,8 @@ function effectiveLevelDeltas(deltas, selectedIndex) {
 
 function firstAddedEntry(data, skill) {
   const versionOrder = versionOrderForData(data)
-  return [...(skill.balanceNotes ?? [])]
+  return [rebalance2IntroductionForSkill(skill), ...(skill.balanceNotes ?? [])]
+    .filter(Boolean)
     .filter((entry) => entry.added)
     .sort((a, b) => (versionOrder.get(a.versionId) ?? Number.MAX_SAFE_INTEGER) - (versionOrder.get(b.versionId) ?? Number.MAX_SAFE_INTEGER))
     .at(0)

@@ -1,0 +1,19 @@
+.initial-skill-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 8px;
+  margin: 10px 0 12px;
+}
+
+.initial-skill-value {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface-soft);
+  padding: 9px 11px;
+  overflow-wrap: anywhere;
+}
+
+.initial-skill-value.is-formula { grid-column: 1 / -1; }
+.initial-skill-value dt { color: var(--muted); font-size: .78rem; font-weight: 750; margin-bottom: 4px; }
+.initial-skill-value dd { margin: 0; font-size: .88rem; font-weight: 650; line-height: 1.4; }

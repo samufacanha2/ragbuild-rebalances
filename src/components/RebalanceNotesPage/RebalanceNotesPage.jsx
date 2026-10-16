@@ -4,9 +4,11 @@ import { rebalanceCatalog } from '../../generated/rebalanceCatalog.js'
 import { assetUrl } from '../../lib/dom.js'
 import { classesForRebalance, rebalanceForClass } from '../../lib/rebalanceCatalog.js'
 import { translateRebalanceNote } from '../../lib/rebalanceNoteTranslations.js'
+import { noteSourceLabel } from '../../lib/sourceLinks.js'
 import { classRouteHref } from '../../lib/routes.js'
 import { translatedClassName, translatedSkillName, translateUi } from '../../lib/translations.js'
 import { LanguageMenu } from '../LanguageMenu'
+import { InitialSkillValues } from '../InitialSkillValues/InitialSkillValues.jsx'
 import { ThemeToggle } from '../ThemeToggle'
 
 export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeChange, versionId, classId, onVersionChange }) {
@@ -50,7 +52,7 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
         <p className="eyebrow">Ragnarok Online</p>
         <h1>{translateUi('Rebalance notes', language)}</h1>
         <p className="rebalance-intro">{translateUi('Browse skill changes by rebalance and class.', language)}</p>
-        <p className="rebalance-disclaimer">{translateUi('These are KRO source notes, not a confirmed ROLATAM release schedule or final local patch notes.', language)}</p>
+        <p className="rebalance-disclaimer">{translateUi('KRO skill-change details are not final ROLATAM patch notes.', language)}</p>
       </header>
 
       <nav className="rebalance-versions" aria-label={translateUi('Select rebalance', language)}>
@@ -107,10 +109,10 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
                           : skill.skillId ? translatedSkillName({ id: skill.skillId, name: skill.name }, language) : skill.name}</h3>
                         {skill.added ? <span className="rebalance-added">{translateUi('New skill', language)}</span> : null}
                       </div>
-                      {skill.notes.length ? <ul>{skill.notes.map((note, noteIndex) => <li key={`${index}-${noteIndex}`}>{translateRebalanceNote(note, language)}</li>)}</ul> : (
+                      {skill.initialSpecs?.length ? <InitialSkillValues rows={skill.initialSpecs} language={language} /> : skill.notes.length ? <ul>{skill.notes.map((note, noteIndex) => <li key={`${index}-${noteIndex}`}>{translateRebalanceNote(note, language)}</li>)}</ul> : (
                         <p>{translateUi('Added in this rebalance; see the skill planner for its details.', language)}</p>
                       )}
-                      {skill.sourceUrl ? <a className="rebalance-skill-source" href={skill.sourceUrl} target="_blank" rel="noreferrer">{translateUi('View source', language)} ↗</a> : null}
+                      {skill.sourceUrl ? <a className="rebalance-skill-source source-pill" href={skill.sourceUrl} target="_blank" rel="noreferrer">{noteSourceLabel(skill.provenance, language)} ↗</a> : null}
                     </article>
                   ))}
                 </div>

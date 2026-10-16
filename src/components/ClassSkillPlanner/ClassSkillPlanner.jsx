@@ -5,6 +5,7 @@ import { createClassModel, expandedClassIds, initialPlannerSpecVersion, pointLim
 import { assetUrl } from '../../lib/dom.js'
 import { allocatedTotal, cleanupLevels, skillLevel } from '../../lib/pointBuy.js'
 import { skillAvailableInVersion } from '../../lib/specs.js'
+import { skillWithSigmaInitialRequirements } from '../../lib/sigmaInitialSkills.js'
 import { jobIconUrlForLabelAndPath } from '../../lib/jobIcons.js'
 import { translatedClassName, translatedSkillName, translateUi } from '../../lib/translations.js'
 import { BuildToolbar } from '../BuildToolbar'
@@ -854,7 +855,9 @@ function tabIconUrl(tab, dataSet) {
 }
 
 function tabForSpecVersion(data, tab, specVersion) {
-  const skills = tab.skills.filter((skill) => skillAvailableInVersion(data, skill, specVersion))
+  const skills = tab.skills
+    .filter((skill) => skillAvailableInVersion(data, skill, specVersion))
+    .map((skill) => skillWithSigmaInitialRequirements(skill, specVersion))
   return {
     ...tab,
     tree: treeForVisibleSkills(tab.tree, skills),

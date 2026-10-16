@@ -1,6 +1,7 @@
 import manifest from '../../rebalances/manifest.json' with { type: 'json' }
 
 export function forumUrlForNote(note, versions) {
+  if (note.provenance === 'rolatam-planned') return note.sourceUrl || ''
   if (note.sourceUrl) return note.sourceUrl
   const version = versions.find((entry) => entry.id === note.versionId)
   if (!version) return ''

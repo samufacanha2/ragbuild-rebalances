@@ -26,6 +26,27 @@ test('catalog preserves exact per-skill notes and includes newly added skills wi
   ])
 })
 
+test('Rebalance 2 introductions appear before existing changes without reversing their class order', () => {
+  const result = catalogFromClassData({
+    classSlug: 'meister', className: 'Meister', tree: { jobIconUrl: 'meister.png' },
+    rebalanceVersions: [{ id: 'rebalance-2', skills: [
+      { name: 'Existing One', notes: ['First change'] },
+      { name: 'Existing Two', notes: ['Second change'] },
+    ] }],
+    skillTabs: [{ skills: [
+      { id: 6004, name: 'Mighty Smash', iconUrl: '6004.png' },
+      { id: 6003, name: 'Triple Laser', iconUrl: '6003.png' },
+      { id: 6002, name: 'Spark Blaster', iconUrl: '6002.png' },
+      { id: 100, name: 'Existing One', iconUrl: '100.png' },
+      { id: 101, name: 'Existing Two', iconUrl: '101.png' },
+    ] }],
+    skills: [],
+  }, manifest)
+  assert.deepEqual(result.versions[0].skills.map((skill) => skill.skillId), [6004, 6003, 6002, 100, 101])
+  assert.deepEqual(result.versions[0].skills.map((skill) => skill.added), [true, true, true, false, false])
+  assert.deepEqual(result.versions[0].skills.slice(3).map((skill) => skill.notes), [['First change'], ['Second change']])
+})
+
 test('catalog resolves localized names and icons from class skill tabs when note metadata misses aliases', () => {
   const result = catalogFromClassData({
     classSlug: 'inquisitor', className: 'Inquisitor', tree: { jobIconUrl: 'inquisitor.png' },
@@ -51,7 +72,7 @@ test('catalog resolves localized names and icons from class skill tabs when note
 test('catalog resolves verified class-scoped aliases, but not a similar skill from another class', () => {
   const base = {
     className: 'Biolo', tree: { jobIconUrl: 'biolo.png' },
-    rebalanceVersions: [{ id: 'rebalance-2', skills: [{ name: 'Bionic Mastery', notes: [] }] }],
+    rebalanceVersions: [{ id: 'rebalance-1', skills: [{ name: 'Bionic Mastery', notes: [] }] }],
     skillTabs: [{ skills: [{ id: 5337, name: 'Bionics Mastery', iconUrl: '5337.png' }] }],
     skills: [],
   }
