@@ -11,6 +11,11 @@ test('Brazilian names and links use the ID-verified bROWiki index', () => {
   assert.equal(browikiSkillUrl({ id: 5205 }), 'https://browiki.org/wiki/Demoli%C3%A7%C3%A3o_Alada')
 })
 
+test('Mother Net has its ID-verified Brazilian name and wiki link', () => {
+  assert.equal(translatedSkillName({ id: 5304, name: 'ABR: Mother Net' }, 'pt-BR'), 'Fabricar Curandeira')
+  assert.equal(browikiSkillUrl({ id: 5304 }), 'https://browiki.org/wiki/Fabricar_Curandeira')
+})
+
 test('existing localized descriptions survive the name overlay', () => {
   const skill = { id: -1, name: 'English', translations: { 'pt-BR': { description: 'Descrição existente' } }, description: 'Original' }
   assert.equal(translatedSkillDescription(skill, 'pt-BR'), 'Descrição existente')

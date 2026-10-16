@@ -65,8 +65,10 @@
 .rebalance-skill { border: 1px solid var(--line); border-radius: 9px; padding: 18px 20px; background: var(--surface); }
 .rebalance-skill-heading { display: flex; align-items: center; gap: 12px; }
 .rebalance-skill-heading img { object-fit: contain; flex: 0 0 42px; }
+.rebalance-skill-icon-list { display: grid; grid-template-columns: repeat(2, 24px); gap: 3px; flex: 0 0 51px; }
+.rebalance-skill-icon-list img { width: 24px; height: 24px; flex: none; }
 .rebalance-skill-placeholder { width: 42px; height: 42px; display: grid; place-items: center; color: var(--teal); }
-.rebalance-skill-heading h3 { font-size: 1.12rem; margin: 0; }
+.rebalance-skill-heading h3 { font-size: 1.12rem; margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .rebalance-added { color: var(--teal-dark); background: var(--surface-soft); border-radius: 5px; padding: 4px 8px; font-size: .78rem; font-weight: 800; }
 .rebalance-skill ul { margin: 12px 0 10px 54px; padding-left: 18px; line-height: 1.55; }
 .rebalance-skill li + li { margin-top: 5px; }

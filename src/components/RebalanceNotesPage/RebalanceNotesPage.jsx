@@ -97,8 +97,14 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
                   {notes.skills.map((skill, index) => (
                     <article className="rebalance-skill" key={`${skill.name}-${index}`}>
                       <div className="rebalance-skill-heading">
-                        {skill.iconUrl ? <img src={assetUrl(skill.iconUrl)} alt="" width="42" height="42" /> : <span className="rebalance-skill-placeholder" aria-hidden="true">✦</span>}
-                        <h3>{skill.skillId ? translatedSkillName({ id: skill.skillId, name: skill.name }, language) : skill.name}</h3>
+                        {skill.groupedSkills ? (
+                          <span className="rebalance-skill-icon-list" aria-hidden="true">
+                            {skill.groupedSkills.map((member) => <img key={member.skillId} src={assetUrl(member.iconUrl)} alt="" width="24" height="24" />)}
+                          </span>
+                        ) : skill.iconUrl ? <img src={assetUrl(skill.iconUrl)} alt="" width="42" height="42" /> : <span className="rebalance-skill-placeholder" aria-hidden="true">✦</span>}
+                        <h3>{skill.groupedSkills && language === 'pt-BR'
+                          ? skill.groupedSkills.map((member) => translatedSkillName({ id: member.skillId, name: member.name }, language)).join(' / ')
+                          : skill.skillId ? translatedSkillName({ id: skill.skillId, name: skill.name }, language) : skill.name}</h3>
                         {skill.added ? <span className="rebalance-added">{translateUi('New skill', language)}</span> : null}
                       </div>
                       {skill.notes.length ? <ul>{skill.notes.map((note, noteIndex) => <li key={`${index}-${noteIndex}`}>{translateRebalanceNote(note, language)}</li>)}</ul> : (

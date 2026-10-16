@@ -4899,6 +4899,10 @@
       "url": "https://browiki.org/wiki/Fabricar_Canhoneiro",
       "description": "Invoca o ABR conhecido como [Canhoneiro] pronto para a batalha.\nEnquanto estiver invocado, garante efeitos adicionais."
     },
+    "5304": {
+      "name": "Fabricar Curandeira",
+      "url": "https://browiki.org/wiki/Fabricar_Curandeira"
+    },
     "5305": {
       "name": "Fabricar Escoteiro",
       "url": "https://browiki.org/wiki/Fabricar_Escoteiro",

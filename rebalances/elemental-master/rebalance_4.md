@@ -24,7 +24,7 @@ addsNewSkills: false
 	- Reduces skill cooldown from 900 seconds to 60 seconds.
 	- Passive mode : Grace Breeze, increases damage bonus of Lightning Bolt from 100% to 400%.
 
-	10.4. Summon Elemental Diluvio
+	10.4. Summon Elemental Terremotus
 	- Reduces skill cooldown from 900 seconds to 60 seconds.
 	- Passive mode : Earth Care, increases damage bonus of Earth Spike from 80% to 800%.
 

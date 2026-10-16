@@ -4,7 +4,63 @@ import { fileURLToPath } from "node:url";
 import manifest from "../rebalances/manifest.json" with { type: "json" };
 import { classDataSets } from "../src/generated/classDataSets.js";
 
+// Verified against the class skill IDs and bROWiki; never guess an icon from a similar title.
+const classSkillAliases = {
+  biolo: { "Bionic Mastery": 5337, "Hell Tree": 5348 },
+  "abyss-chaser": { "Unlucky Rush": 5315, "Fatal Menace": 2284 },
+  "arch-mage": { "Two Hand Staff Mastery": 5228 },
+  "elemental-master": { "Increasing Activity": 5368, "Summon Elemental Ardor": 5375 },
+  "night-watch": { "Grenade Dropping": 5412 },
+};
+
+// These headings describe several skills at once; never assign one icon/ID to the whole note.
+const groupedSkillIds = {
+  meister: { "ABR - Battle Warrior / ABR - Dual Cannon / ABR - Mother Net": [5302, 5303, 5304] },
+  biolo: {
+    "Wooden Warrior / Wooden Fairy / Creeper": [5344, 5345, 5346],
+    "Acidified Zone (Water/Wind/Earth/Fire)": [5340, 5342, 5341, 5343],
+    "Acidified Zone (Water)/(Fire)/(Wind)/(Ground)": [5340, 5343, 5342, 5341],
+  },
+  "wind-hawk": { "Deep Blind Trap / Solid Trap / Swift Trap / Flame Trap": [5331, 5332, 5333, 5335] },
+  "sky-emperor": { "Solar Wrath, Lunar Wrath, Stellar Wrath (Star Gladiator)": [435, 436, 437] },
+};
+
+function correctedNoteName(classSlug, versionId, skill) {
+  // The source's Earth Care/Earth Spike row repeats the preceding Diluvio heading.
+  // Keep this correction until the class dataset is regenerated from the fixed markdown.
+  return classSlug === "elemental-master" && versionId === "rebalance-4"
+    && skill.name === "Summon Elemental Diluvio"
+    && skill.notes.some((note) => note.includes("Earth Care") && note.includes("Earth Spike"))
+    ? "Summon Elemental Terremotus" : skill.name;
+}
+
+function skillNameKey(name) {
+  let label = name.trim();
+  const duplicated = label.match(/^(.*?)\s*\(([^()]*)\)$/);
+  if (duplicated && duplicated[1].trim().toLowerCase() === duplicated[2].trim().toLowerCase()) {
+    label = duplicated[1];
+  }
+  return label.toLowerCase().replace(/[:.-]/g, " ").replace(/\s+/g, " ").trim();
+}
+
 export function catalogFromClassData(data, versions = manifest) {
+  const tabSkills = data.skillTabs?.flatMap((tab) => tab.skills) ?? data.skills ?? [];
+  const skillsByName = new Map();
+  const skillsById = new Map(tabSkills.map((skill) => [skill.id, skill]));
+  for (const skill of tabSkills) {
+    const key = skillNameKey(skill.name);
+    const candidates = skillsByName.get(key) ?? new Map();
+    candidates.set(skill.id, skill);
+    skillsByName.set(key, candidates);
+  }
+  const uniqueSkill = (name) => {
+    const aliasedId = classSkillAliases[data.classSlug]?.[name];
+    if (aliasedId) return skillsById.get(aliasedId) ?? null;
+    const key = skillNameKey(name);
+    const qualified = name.match(/^(.*?)\s+\([^/()]+\)$/);
+    const candidates = skillsByName.get(key) ?? (qualified && skillsByName.get(skillNameKey(qualified[1])));
+    return candidates?.size === 1 ? candidates.values().next().value : null;
+  };
   return {
     id: data.classSlug,
     label: data.className,
@@ -15,16 +71,25 @@ export function catalogFromClassData(data, versions = manifest) {
         skill.balanceNotes?.some((note) => note.versionId === version.id && note.skillName.toLowerCase() === name.toLowerCase())
       );
       const skillIdentity = (name) => {
-        const match = matchingSkill(name);
+        const groupIds = groupedSkillIds[data.classSlug]?.[name];
+        if (groupIds) {
+          const members = groupIds.map((id) => skillsById.get(id));
+          if (members.some((member) => !member?.iconUrl)) throw new Error(`Missing group icon for ${data.classSlug}: ${name}`);
+          return { groupedSkills: members.map(({ id, name: memberName, iconUrl }) => ({ skillId: id, name: memberName, iconUrl })) };
+        }
+        const match = matchingSkill(name) ?? uniqueSkill(name);
         return match ? { skillId: match.id, iconUrl: match.iconUrl } : {};
       };
-      const skills = version.skills.map((skill) => ({
-        name: skill.name,
-        notes: skill.notes,
-        added: false,
-        sourceUrl: version.sourceUrl || source?.sourceUrl || "",
-        ...skillIdentity(skill.name),
-      }));
+      const skills = version.skills.map((skill) => {
+        const name = correctedNoteName(data.classSlug, version.id, skill);
+        return {
+          name,
+          notes: skill.notes,
+          added: false,
+          sourceUrl: version.sourceUrl || source?.sourceUrl || "",
+          ...skillIdentity(name),
+        };
+      });
       for (const group of data.addedSkills ?? []) {
         if (group.versionId !== version.id) continue;
         for (const name of group.skills) {

@@ -142,7 +142,9 @@ export const rebalanceCatalog = {
                 "Increases damage while under Dragonic Aura buff from 3200%Atk to 4200%Atk based on level 10."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2004,
+              "iconUrl": "assets/divine-pride/skills/2004.png"
             }
           ]
         },
@@ -445,7 +447,9 @@ export const rebalanceCatalog = {
                 "Reduces SP consumption from 120 to 90 based on level 10."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2321,
+              "iconUrl": "assets/divine-pride/skills/2321.png"
             },
             {
               "name": "Vanishing Point",
@@ -456,7 +460,9 @@ export const rebalanceCatalog = {
                 "Increases Hit bonus from 30 to 50 based on level 10."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2308,
+              "iconUrl": "assets/divine-pride/skills/2308.png"
             },
             {
               "name": "Cannon Spear",
@@ -468,7 +474,9 @@ export const rebalanceCatalog = {
                 "Increases damage while under Grand Judgement buff from 1050%Atk to 1650%Atk based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2307,
+              "iconUrl": "assets/divine-pride/skills/2307.png"
             },
             {
               "name": "Overbrand",
@@ -477,7 +485,9 @@ export const rebalanceCatalog = {
                 "Increases damage while under Overbrand Ready buff from 2250%Atk to 2500%Atk based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2317,
+              "iconUrl": "assets/divine-pride/skills/2317.png"
             },
             {
               "name": "Hesperus Lit",
@@ -487,7 +497,9 @@ export const rebalanceCatalog = {
                 "Reduces delay after skill from 1 second to 0.5 seconds based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2324,
+              "iconUrl": "assets/divine-pride/skills/2324.png"
             },
             {
               "name": "Shield press",
@@ -495,7 +507,9 @@ export const rebalanceCatalog = {
                 "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Shield Press level 10 and Shield Mastery level 10. Damage will be increased from 2600%Atk to 4100%Atk)."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2310,
+              "iconUrl": "assets/divine-pride/skills/2310.png"
             },
             {
               "name": "Rapid Smiting",
@@ -503,7 +517,9 @@ export const rebalanceCatalog = {
                 "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Rapid Smiting level 5 and Shield Mastery level 10. Damage will be increased from 1650%Atk to 2000%Atk)."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 480,
+              "iconUrl": "assets/divine-pride/skills/480.png"
             },
             {
               "name": "Earth Drive",
@@ -512,7 +528,9 @@ export const rebalanceCatalog = {
                 "Increases damage while under Shield Shooting buff by adding damage bonus from Shield Mastery. (Based on Earth Drive level 5 and Shield Mastery level 10. Damage will be increased from 2100%Atk to 3750%Atk)."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2323,
+              "iconUrl": "assets/divine-pride/skills/2323.png"
             }
           ]
         },
@@ -778,7 +796,24 @@ export const rebalanceCatalog = {
                 "Reduces cooldown to 30 seconds."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "groupedSkills": [
+                {
+                  "skillId": 5302,
+                  "name": "ABR: Battle Warrior",
+                  "iconUrl": "assets/divine-pride/skills/5302.png"
+                },
+                {
+                  "skillId": 5303,
+                  "name": "ABR: Dual Cannon",
+                  "iconUrl": "assets/divine-pride/skills/5303.png"
+                },
+                {
+                  "skillId": 5304,
+                  "name": "ABR: Mother Net",
+                  "iconUrl": "assets/divine-pride/skills/5304.png"
+                }
+              ]
             },
             {
               "name": "ABR - Infinity",
@@ -788,7 +823,9 @@ export const rebalanceCatalog = {
                 "Reduces cooldown to 60 seconds."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 5305,
+              "iconUrl": "assets/divine-pride/skills/5305.png"
             },
             {
               "name": "Rush Quake",
@@ -823,7 +860,9 @@ export const rebalanceCatalog = {
                 "Increases damage from 420%Atk to 690%Atk based on level 3."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2258,
+              "iconUrl": "assets/divine-pride/skills/2258.png"
             },
             {
               "name": "Knuckle Boost",
@@ -832,7 +871,9 @@ export const rebalanceCatalog = {
                 "Reduces variable casting time from 0.5 seconds to 0.2 seconds based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2256,
+              "iconUrl": "assets/divine-pride/skills/2256.png"
             },
             {
               "name": "Arm Cannon",
@@ -843,7 +884,9 @@ export const rebalanceCatalog = {
                 "Increases area of effect from 5x5 cells to 7x7 cells based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2261,
+              "iconUrl": "assets/divine-pride/skills/2261.png"
             },
             {
               "name": "Axe Tornado",
@@ -851,7 +894,9 @@ export const rebalanceCatalog = {
                 "Increases damage while under Axe Stomp buff (on Vit 130) from 1360%Atk to 1740%Atk based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2280,
+              "iconUrl": "assets/divine-pride/skills/2280.png"
             }
           ]
         },
@@ -1014,7 +1059,9 @@ export const rebalanceCatalog = {
                 "Increases MaxHP bonus from 20000 to 400000 based on level 10."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 5337,
+              "iconUrl": "assets/divine-pride/skills/5337.png"
             },
             {
               "name": "Wooden Warrior / Wooden Fairy / Creeper",
@@ -1023,7 +1070,24 @@ export const rebalanceCatalog = {
                 "Adds variable casting time by 1 second based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "groupedSkills": [
+                {
+                  "skillId": 5344,
+                  "name": "Create Wooden Warrior",
+                  "iconUrl": "assets/divine-pride/skills/5344.png"
+                },
+                {
+                  "skillId": 5345,
+                  "name": "Create Wooden Fairy",
+                  "iconUrl": "assets/divine-pride/skills/5345.png"
+                },
+                {
+                  "skillId": 5346,
+                  "name": "Create Creeper",
+                  "iconUrl": "assets/divine-pride/skills/5346.png"
+                }
+              ]
             },
             {
               "name": "Hell Tree",
@@ -1033,7 +1097,9 @@ export const rebalanceCatalog = {
                 "Reduces AP consumption from 100 to 60 based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 5348,
+              "iconUrl": "assets/divine-pride/skills/5348.png"
             },
             {
               "name": "Acidified Zone (Water/Wind/Earth/Fire)",
@@ -1043,7 +1109,29 @@ export const rebalanceCatalog = {
                 "Changes damage logic from 3 split hits to 5 cumulative hits."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "groupedSkills": [
+                {
+                  "skillId": 5340,
+                  "name": "Acidified Zone (Water)",
+                  "iconUrl": "assets/divine-pride/skills/5340.png"
+                },
+                {
+                  "skillId": 5342,
+                  "name": "Acidified Zone (Wind)",
+                  "iconUrl": "assets/divine-pride/skills/5342.png"
+                },
+                {
+                  "skillId": 5341,
+                  "name": "Acidified Zone (Earth)",
+                  "iconUrl": "assets/divine-pride/skills/5341.png"
+                },
+                {
+                  "skillId": 5343,
+                  "name": "Acidified Zone (Fire)",
+                  "iconUrl": "assets/divine-pride/skills/5343.png"
+                }
+              ]
             }
           ]
         },
@@ -1069,7 +1157,29 @@ export const rebalanceCatalog = {
                 "Increases number of hit from 5 hits to 7 hits."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126",
+              "groupedSkills": [
+                {
+                  "skillId": 5340,
+                  "name": "Acidified Zone (Water)",
+                  "iconUrl": "assets/divine-pride/skills/5340.png"
+                },
+                {
+                  "skillId": 5343,
+                  "name": "Acidified Zone (Fire)",
+                  "iconUrl": "assets/divine-pride/skills/5343.png"
+                },
+                {
+                  "skillId": 5342,
+                  "name": "Acidified Zone (Wind)",
+                  "iconUrl": "assets/divine-pride/skills/5342.png"
+                },
+                {
+                  "skillId": 5341,
+                  "name": "Acidified Zone (Earth)",
+                  "iconUrl": "assets/divine-pride/skills/5341.png"
+                }
+              ]
             },
             {
               "name": "Full Shadow Protection",
@@ -1379,7 +1489,9 @@ export const rebalanceCatalog = {
                 "Changes damage bonus from CRT to POW."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 5315,
+              "iconUrl": "assets/divine-pride/skills/5315.png"
             },
             {
               "name": "Abyss Dagger",
@@ -1402,7 +1514,9 @@ export const rebalanceCatalog = {
                 "Skill damage formula while under Abyss Dagger buff is increased to 1500%Atk based on level 10."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 2284,
+              "iconUrl": "assets/divine-pride/skills/2284.png"
             },
             {
               "name": "Abyss Slayer",
@@ -1730,7 +1844,9 @@ export const rebalanceCatalog = {
                 "Changes bonus from Matk + 10% to S.Matk + 20 based on level 10."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 5228,
+              "iconUrl": "assets/divine-pride/skills/5228.png"
             },
             {
               "name": "Crimson Arrow",
@@ -2358,7 +2474,9 @@ export const rebalanceCatalog = {
                 "Reduces delay after skill to 0.5 seconds based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 5368,
+              "iconUrl": "assets/divine-pride/skills/5368.png"
             }
           ]
         },
@@ -2451,7 +2569,9 @@ export const rebalanceCatalog = {
                 "Passive mode : Flame Technique, increases damage bonus of Fire Bolt from 100% to 400%."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917",
+              "skillId": 5375,
+              "iconUrl": "assets/divine-pride/skills/5375.png"
             },
             {
               "name": "Summon Elemental Diluvio",
@@ -2460,7 +2580,9 @@ export const rebalanceCatalog = {
                 "Passive mode : Cold Force, increases damage bonus of Cold Bolt from 100% to 400%."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917",
+              "skillId": 5376,
+              "iconUrl": "assets/divine-pride/skills/5376.png"
             },
             {
               "name": "Summon Elemental Procella",
@@ -2469,16 +2591,20 @@ export const rebalanceCatalog = {
                 "Passive mode : Grace Breeze, increases damage bonus of Lightning Bolt from 100% to 400%."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917",
+              "skillId": 5377,
+              "iconUrl": "assets/divine-pride/skills/5377.png"
             },
             {
-              "name": "Summon Elemental Diluvio",
+              "name": "Summon Elemental Terremotus",
               "notes": [
                 "Reduces skill cooldown from 900 seconds to 60 seconds.",
                 "Passive mode : Earth Care, increases damage bonus of Earth Spike from 80% to 800%."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917",
+              "skillId": 5378,
+              "iconUrl": "assets/divine-pride/skills/5378.png"
             },
             {
               "name": "Summon Elemental Serpens",
@@ -2487,7 +2613,9 @@ export const rebalanceCatalog = {
                 "Passive mode : Deep Poisoning, increases damage bonus of Killing Cloud from 50% to 1500%."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917",
+              "skillId": 5379,
+              "iconUrl": "assets/divine-pride/skills/5379.png"
             },
             {
               "name": "Conflagration",
@@ -2825,7 +2953,9 @@ export const rebalanceCatalog = {
                 "Reduces AP consumption from 100 to 50."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 5247,
+              "iconUrl": "assets/divine-pride/skills/5247.png"
             },
             {
               "name": "Third Exorcism Flame",
@@ -2855,7 +2985,9 @@ export const rebalanceCatalog = {
                 "Applies critical damage, the critical chance is the user's Cri."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=9805",
+              "skillId": 5251,
+              "iconUrl": "assets/divine-pride/skills/5251.png"
             },
             {
               "name": "Third Consecration",
@@ -2924,7 +3056,9 @@ export const rebalanceCatalog = {
                 "Increases factor weight of POW in skill formula from 4 to 7."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126",
+              "skillId": 5250,
+              "iconUrl": "assets/divine-pride/skills/5250.png"
             },
             {
               "name": "Second Flame",
@@ -2951,7 +3085,9 @@ export const rebalanceCatalog = {
                 "Increases factor weight of POW in skill formula from 5 to 10."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126",
+              "skillId": 5251,
+              "iconUrl": "assets/divine-pride/skills/5251.png"
             },
             {
               "name": "Third Consecration",
@@ -3026,7 +3162,9 @@ export const rebalanceCatalog = {
                 "Changes AP consumption from 50 regardless of skill level to scaling with skill level, from 80 on level 1 down to 40 on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126",
+              "skillId": 5247,
+              "iconUrl": "assets/divine-pride/skills/5247.png"
             },
             {
               "name": "Third Exorcism Flame",
@@ -3123,7 +3261,9 @@ export const rebalanceCatalog = {
                 "Increases base damage from 7850%Atk to 9450%Atk based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=13917",
+              "skillId": 5251,
+              "iconUrl": "assets/divine-pride/skills/5251.png"
             },
             {
               "name": "Third Flame Bomb",
@@ -3245,7 +3385,29 @@ export const rebalanceCatalog = {
                 "Increases factor weight of CON in skill formula from 3 to 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126",
+              "groupedSkills": [
+                {
+                  "skillId": 5331,
+                  "name": "Deep Blind Trap(Deep Blind Trap)",
+                  "iconUrl": "assets/divine-pride/skills/5331.png"
+                },
+                {
+                  "skillId": 5332,
+                  "name": "Solid Trap(Solid Trap)",
+                  "iconUrl": "assets/divine-pride/skills/5332.png"
+                },
+                {
+                  "skillId": 5333,
+                  "name": "Swift Trap(Swift Trap)",
+                  "iconUrl": "assets/divine-pride/skills/5333.png"
+                },
+                {
+                  "skillId": 5335,
+                  "name": "Flame Traps(Flame Trap)",
+                  "iconUrl": "assets/divine-pride/skills/5335.png"
+                }
+              ]
             },
             {
               "name": "Hawk Boomerang",
@@ -3271,7 +3433,9 @@ export const rebalanceCatalog = {
                 "No longer be removed by Dispell or Clearance."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=12421"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=12421",
+              "skillId": 5002,
+              "iconUrl": "assets/divine-pride/skills/5002.png"
             },
             {
               "name": "Calamity Gale",
@@ -3832,7 +3996,9 @@ export const rebalanceCatalog = {
                 "Increases damage from 2750%Atk to 4800%Atk per hit based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=11126",
+              "skillId": 5412,
+              "iconUrl": "assets/divine-pride/skills/5412.png"
             },
             {
               "name": "Mission Bombard",
@@ -5000,7 +5166,9 @@ export const rebalanceCatalog = {
                 "Increases damage bonus from 85% to 100% based on level 5."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=12421"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=12421",
+              "skillId": 424,
+              "iconUrl": "assets/divine-pride/skills/424.png"
             },
             {
               "name": "Solar Wrath, Lunar Wrath, Stellar Wrath (Star Gladiator)",
@@ -5008,7 +5176,24 @@ export const rebalanceCatalog = {
                 "Adds maximum damage bonus limit by (skill level x 25)%."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=12421"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=12421",
+              "groupedSkills": [
+                {
+                  "skillId": 435,
+                  "name": "Solar Wrath",
+                  "iconUrl": "assets/divine-pride/skills/435.png"
+                },
+                {
+                  "skillId": 436,
+                  "name": "Lunar Wrath",
+                  "iconUrl": "assets/divine-pride/skills/436.png"
+                },
+                {
+                  "skillId": 437,
+                  "name": "Stellar Wrath",
+                  "iconUrl": "assets/divine-pride/skills/437.png"
+                }
+              ]
             },
             {
               "name": "Twinkling Galaxy",
@@ -5046,7 +5231,9 @@ export const rebalanceCatalog = {
                 "Reduces base damage from 23000%Atk to 12250%Atk based on level 10."
               ],
               "added": false,
-              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=12421"
+              "sourceUrl": "https://www.divine-pride.net/forum/index.php?/topic/3723-kro-jobs-improvement-project/&do=findComment&comment=12421",
+              "skillId": 5474,
+              "iconUrl": "assets/divine-pride/skills/5474.png"
             }
           ]
         },
