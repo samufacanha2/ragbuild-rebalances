@@ -1,35 +1,66 @@
 .rebalance-page {
   width: min(1120px, calc(100vw - 32px));
   margin: 0 auto;
-  padding: 28px 0 160px;
+  padding: 16px 0 140px;
 }
 
-.rebalance-header { padding: 16px 0 22px; }
-.rebalance-topline { margin-bottom: 24px; }
-.rebalance-home-link { color: var(--teal-dark); font-weight: 750; }
-.rebalance-header h1 { margin: 8px 0 12px; }
-.rebalance-intro { font-size: 1.12rem; margin-bottom: 8px; }
-.rebalance-disclaimer { color: var(--muted); max-width: 780px; line-height: 1.5; margin-bottom: 0; }
-
-.rebalance-versions { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 14px; margin-bottom: 8px; }
-.rebalance-versions button {
-  flex: 0 0 auto;
-  min-height: 46px;
+.rebalance-top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: 0 5px 18px rgba(23, 33, 47, .09);
+}
+.rebalance-top-inner {
+  display: grid;
+  grid-template-columns: minmax(110px, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  width: min(1120px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 9px 0;
+}
+.rebalance-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: max-content;
+  min-height: 40px;
+  color: var(--teal-dark);
+  font-weight: 750;
+  text-decoration: none;
+}
+.rebalance-home-link:hover { text-decoration: underline; }
+.rebalance-version-picker { position: relative; display: block; min-width: 0; width: 210px; }
+.rebalance-version-picker select {
+  appearance: none;
+  width: 100%;
+  min-height: 40px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 10px 18px;
-  background: var(--surface-raised);
+  padding: 8px 34px 8px 12px;
+  background: var(--surface);
   color: var(--ink);
   cursor: pointer;
   font-weight: 700;
 }
-.rebalance-versions button.is-active { background: var(--teal); color: #fff; border-color: var(--teal); }
-:root[data-theme="dark"] .rebalance-versions button.is-active { color: #111119; }
+.rebalance-version-picker svg { position: absolute; right: 11px; top: 12px; pointer-events: none; }
+.rebalance-settings { display: flex; justify-self: end; align-items: center; gap: 8px; }
+.rebalance-settings .theme-toggle.is-inline,
+.rebalance-settings .locale-menu.is-inline .locale-toggle {
+  border-radius: 999px;
+  box-shadow: 0 1px 6px rgba(23, 33, 47, .1);
+}
+.rebalance-header { padding: 12px 0 16px; }
+.rebalance-header h1 { margin: 0 0 4px; font-size: clamp(1.35rem, 2vw, 1.65rem); }
+.rebalance-disclaimer { color: var(--muted); font-size: .78rem; line-height: 1.4; margin: 0; }
 
-.rebalance-versions button:focus-visible,
+.rebalance-version-picker select:focus-visible,
 .rebalance-class-chip:focus-visible,
 .rebalance-planner-link:focus-visible,
-.rebalance-home-link:focus-visible {
+.rebalance-home-link:focus-visible,
+.rebalance-class-arrow:focus-visible {
   outline: 3px solid var(--teal-dark);
   outline-offset: 3px;
 }
@@ -54,7 +85,7 @@
 .rebalance-context-meta a { font-weight: 750; }
 
 .rebalance-class-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
-.rebalance-class-section { min-width: 0; overflow-wrap: anywhere; padding: 24px 28px 32px; scroll-margin-top: 18px; }
+.rebalance-class-section { min-width: 0; overflow-wrap: anywhere; padding: 24px 28px 32px; scroll-margin-top: 86px; }
 .rebalance-class-section:target { border-color: var(--teal); }
 .rebalance-detail-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-bottom: 22px; }
 .rebalance-detail-heading img { object-fit: contain; }
@@ -90,23 +121,26 @@
 }
 .rebalance-bottom-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
   align-items: center;
   gap: 12px;
   width: min(1120px, calc(100vw - 24px));
   margin: 0 auto;
 }
 .rebalance-class-nav { min-width: 0; }
-.rebalance-settings { display: flex; align-items: center; gap: 8px; }
-.rebalance-settings .theme-toggle.is-inline,
-.rebalance-settings .locale-menu.is-inline .locale-toggle {
-  border-radius: 999px;
-  box-shadow: 0 1px 6px rgba(23, 33, 47, .1);
+.rebalance-class-arrow {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  min-height: 64px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface-soft);
+  color: var(--teal-dark);
+  cursor: pointer;
 }
-.rebalance-settings .locale-menu.is-inline .locale-popover {
-  top: auto;
-  bottom: calc(100% + 8px);
-}
+.rebalance-class-arrow:hover:not(:disabled) { border-color: var(--teal); background: var(--surface); }
+.rebalance-class-arrow:disabled { opacity: .35; cursor: not-allowed; }
 .rebalance-class-strip {
   display: flex;
   gap: 8px;
@@ -141,9 +175,22 @@
 @media (prefers-reduced-motion: no-preference) { html:has(.rebalance-page) { scroll-behavior: smooth; } }
 
 @media (max-width: 640px) {
-  .rebalance-page { width: calc(100vw - 24px); padding: 12px 0 calc(208px + env(safe-area-inset-bottom)); }
-  .rebalance-bottom-inner { grid-template-columns: minmax(0, 1fr); gap: 8px; }
-  .rebalance-settings { justify-content: center; }
+  .rebalance-page { width: calc(100vw - 24px); padding: 12px 0 calc(134px + env(safe-area-inset-bottom)); }
+  .rebalance-top-inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: 'back settings' 'version version';
+    gap: 6px 10px;
+    width: calc(100vw - 24px);
+    padding: 7px 0;
+  }
+  .rebalance-home-link { grid-area: back; }
+  .rebalance-version-picker { grid-area: version; width: 100%; }
+  .rebalance-settings { grid-area: settings; }
+  .rebalance-settings .theme-toggle.is-inline { min-width: 42px; width: 42px; }
+  .rebalance-settings .theme-toggle.is-inline span { display: none; }
+  .rebalance-class-section { scroll-margin-top: 126px; }
+  .rebalance-bottom-inner { grid-template-columns: minmax(0, 1fr); }
+  .rebalance-class-arrow { display: none; }
   .rebalance-context { display: block; padding: 18px; }
   .rebalance-context-meta { margin-top: 16px; }
   .rebalance-class-section { padding: 18px 14px; }
@@ -152,6 +199,6 @@
   .rebalance-skill { padding: 14px; }
   .rebalance-skill ul { margin-left: 0; }
   .rebalance-skill p, .rebalance-skill-source, .rebalance-skill > .initial-skill-values { margin-left: 0; }
-  .rebalance-class-chip { flex-basis: 134px; min-height: 64px; }
-  .rebalance-class-chip img { width: 32px; height: 44px; flex-basis: 32px; }
+  .rebalance-class-chip { flex-basis: 138px; min-height: 60px; gap: 6px; padding: 6px; font-size: .72rem; }
+  .rebalance-class-chip img { width: 28px; height: 40px; flex-basis: 28px; }
 }

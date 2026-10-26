@@ -1,8 +1,10 @@
-import { useEffect, useMemo, useState } from 'react'
+import { ChevronDown, ChevronLeft, ChevronRight, ArrowLeft } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import './RebalanceNotesPageStyles.css'
 import { rebalanceCatalog } from '../../generated/rebalanceCatalog.js'
 import { assetUrl } from '../../lib/dom.js'
 import { classesForRebalance, rebalanceForClass } from '../../lib/rebalanceCatalog.js'
+import { classStripScrollEdges, stepClassStrip } from '../../lib/classStripNavigation.js'
 import { translateRebalanceNote } from '../../lib/rebalanceNoteTranslations.js'
 import { noteSourceLabel } from '../../lib/sourceLinks.js'
 import { classRouteHref } from '../../lib/routes.js'
@@ -15,7 +17,41 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
   const version = rebalanceCatalog.versions.find((entry) => entry.id === versionId) ?? rebalanceCatalog.versions[1]
   const classes = useMemo(() => classesForRebalance(rebalanceCatalog.classes, version), [version])
   const [activeClassId, setActiveClassId] = useState('')
+  const classStripRef = useRef(null)
+  const [scrollEdges, setScrollEdges] = useState({ previous: false, next: false })
   const affectedClasses = classes.filter((entry) => entry.skillCount > 0).length
+
+  useEffect(() => {
+    const strip = classStripRef.current
+    if (!strip) return undefined
+    strip.scrollLeft = 0
+    const update = () => setScrollEdges(classStripScrollEdges(strip))
+    const frame = requestAnimationFrame(update)
+    const observer = new ResizeObserver(update)
+    observer.observe(strip)
+    strip.addEventListener('scroll', update, { passive: true })
+    return () => {
+      cancelAnimationFrame(frame)
+      observer.disconnect()
+      strip.removeEventListener('scroll', update)
+    }
+  }, [version.id, classes])
+
+  const moveClassStrip = (direction) => {
+    const strip = classStripRef.current
+    if (!strip) return
+    const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+    stepClassStrip(strip, direction, behavior)
+  }
+
+  const goBack = (event) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+    const hasRouterHistory = window.history.state?.__TSR_index > 0
+    const cameFromThisSite = document.referrer && new URL(document.referrer).origin === window.location.origin
+    if (window.history.length <= 1 || (!hasRouterHistory && !cameFromThisSite)) return
+    event.preventDefault()
+    window.history.back()
+  }
 
   useEffect(() => {
     const initialClassId = classId || window.location.hash.replace(/^#class-/, '')
@@ -44,28 +80,28 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
   }, [classes])
 
   return (
+    <>
+    <header className="rebalance-top-bar">
+      <div className="rebalance-top-inner">
+        <a className="rebalance-home-link" href={classRouteHref()} onClick={goBack}><ArrowLeft size={18} aria-hidden="true" />{translateUi('Go back', language)}</a>
+        <label className="rebalance-version-picker">
+          <span className="sr-only">{translateUi('Select rebalance', language)}</span>
+          <select value={version.id} onChange={(event) => onVersionChange(event.target.value)}>
+            {rebalanceCatalog.versions.map((entry) => <option key={entry.id} value={entry.id}>{translateUi(entry.label, language)}</option>)}
+          </select>
+          <ChevronDown size={16} aria-hidden="true" />
+        </label>
+        <div className="rebalance-settings">
+          <ThemeToggle language={language} theme={theme} onThemeChange={onThemeChange} variant="inline" />
+          <LanguageMenu language={language} onLanguageChange={onLanguageChange} variant="inline" />
+        </div>
+      </div>
+    </header>
     <main className="rebalance-page">
       <header className="rebalance-header">
-        <div className="rebalance-topline">
-          <a className="rebalance-home-link" href={classRouteHref()}>{translateUi('All classes', language)}</a>
-        </div>
-        <p className="eyebrow">Ragnarok Online</p>
         <h1>{translateUi('Rebalance notes', language)}</h1>
-        <p className="rebalance-intro">{translateUi('Browse skill changes by rebalance and class.', language)}</p>
         <p className="rebalance-disclaimer">{translateUi('KRO skill-change details are not final ROLATAM patch notes.', language)}</p>
       </header>
-
-      <nav className="rebalance-versions" aria-label={translateUi('Select rebalance', language)}>
-        {rebalanceCatalog.versions.map((entry) => (
-          <button
-            type="button"
-            key={entry.id}
-            className={entry.id === version.id ? 'is-active' : ''}
-            aria-pressed={entry.id === version.id}
-            onClick={() => onVersionChange(entry.id)}
-          >{translateUi(entry.label, language)}</button>
-        ))}
-      </nav>
 
       <section className="rebalance-context" aria-label={translateUi(version.label, language)}>
         <div>
@@ -126,8 +162,9 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
 
       <footer className="rebalance-bottom-bar">
         <div className="rebalance-bottom-inner">
+          <button className="rebalance-class-arrow" type="button" aria-label={translateUi('Previous classes', language)} disabled={!scrollEdges.previous} onClick={() => moveClassStrip(-1)}><ChevronLeft size={22} aria-hidden="true" /></button>
           <nav className="rebalance-class-nav" aria-label={translateUi('Jump to class changes', language)}>
-            <div className="rebalance-class-strip">
+            <div className="rebalance-class-strip" ref={classStripRef}>
               {classes.map((entry) => (
                 <a
                   key={entry.id}
@@ -142,12 +179,10 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
               ))}
             </div>
           </nav>
-          <div className="rebalance-settings">
-            <ThemeToggle language={language} theme={theme} onThemeChange={onThemeChange} variant="inline" />
-            <LanguageMenu language={language} onLanguageChange={onLanguageChange} variant="inline" />
-          </div>
+          <button className="rebalance-class-arrow" type="button" aria-label={translateUi('Next classes', language)} disabled={!scrollEdges.next} onClick={() => moveClassStrip(1)}><ChevronRight size={22} aria-hidden="true" /></button>
         </div>
       </footer>
     </main>
+    </>
   )
 }
