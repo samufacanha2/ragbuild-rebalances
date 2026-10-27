@@ -93,7 +93,9 @@
 .rebalance-detail-heading p { color: var(--muted); margin: 0; }
 .rebalance-planner-link { margin-left: auto; font-weight: 750; }
 .rebalance-skill-list { display: grid; gap: 12px; }
-.rebalance-skill { border: 1px solid var(--line); border-radius: 9px; padding: 18px 20px; background: var(--surface); }
+.rebalance-skill { border: 1px solid var(--line); border-radius: 9px; padding: 18px 20px; background: var(--surface); scroll-margin-top: 86px; }
+.rebalance-skill-anchor { display: block; height: 0; scroll-margin-top: 86px; }
+.rebalance-skill:target, .rebalance-skill:has(.rebalance-skill-anchor:target) { border-color: var(--teal); }
 .rebalance-skill-heading { display: flex; align-items: center; gap: 12px; }
 .rebalance-skill-heading img { object-fit: contain; flex: 0 0 42px; }
 .rebalance-skill-icon-list { display: grid; grid-template-columns: repeat(2, 24px); gap: 3px; flex: 0 0 51px; }
@@ -210,6 +212,7 @@
   .rebalance-settings .theme-toggle.is-inline { min-width: 42px; width: 42px; }
   .rebalance-settings .theme-toggle.is-inline span { display: none; }
   .rebalance-class-section { scroll-margin-top: 126px; }
+  .rebalance-skill, .rebalance-skill-anchor { scroll-margin-top: 126px; }
   .rebalance-bottom-inner { grid-template-columns: minmax(0, 1fr); }
   .rebalance-class-arrow { display: none; }
   .rebalance-context { display: block; padding: 18px; }

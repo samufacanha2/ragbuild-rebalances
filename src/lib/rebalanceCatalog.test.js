@@ -3,6 +3,7 @@ import test from 'node:test'
 import { classesForRebalance, rebalanceForClass, rebalanceAppliesToClass, rebalanceReleaseStatus } from './rebalanceCatalog.js'
 import { initialPlannerSpecVersion } from './classModel.js'
 import { rebalanceCatalog } from '../generated/rebalanceCatalog.js'
+import { classDataSets } from '../generated/classDataSets.js'
 import { translatedSkillName } from './translations.js'
 import { existsSync } from 'node:fs'
 import browiki from '../data/browiki-pt-br.json' with { type: 'json' }
@@ -85,4 +86,31 @@ test('Earth Care note has the verified Terremotus identity, not Diluvio', () => 
   assert.equal(cold.skillId, 5376)
   assert.equal(earth.skillId, 5378)
   assert.equal(translatedSkillName({ id: earth.skillId, name: earth.name }, 'pt-BR'), 'Invocar Terremotus')
+})
+
+test('all skill timelines resolve to unique rebalance-card anchors, including grouped skills', async () => {
+  const targets = new Set()
+  for (const entry of rebalanceCatalog.classes) {
+    for (const version of entry.versions) {
+      for (const skill of version.skills) {
+        for (const skillId of skill.groupedSkills?.map((member) => member.skillId) ?? [skill.skillId]) {
+          if (!skillId) continue
+          const key = `${entry.id}:${version.id}:${skillId}`
+          assert.ok(!targets.has(key), `Duplicate rebalance target ${key}`)
+          targets.add(key)
+        }
+      }
+    }
+  }
+
+  for (const dataSet of classDataSets) {
+    const data = await dataSet.load()
+    for (const skill of data.skills) {
+      for (const note of skill.balanceNotes ?? []) {
+        if (!note.notes?.length && !note.specRows?.length) continue
+        const key = `${dataSet.id}:${note.versionId}:${skill.id}`
+        assert.ok(targets.has(key), `Missing rebalance target ${key}`)
+      }
+    }
+  }
 })

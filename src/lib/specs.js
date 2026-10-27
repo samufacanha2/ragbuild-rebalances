@@ -1,5 +1,5 @@
 import { coreSpecLabels } from './classModel.js'
-import { forumUrlForNote } from './rebalanceSources.js'
+import { rebalanceNotesHref } from './routes.js'
 import { rebalance2IntroductionForSkill } from './rebalance2SkillAdditions.js'
 import { sigmaInitialLevelTable, sigmaInitialSpecRows } from './sigmaInitialSkills.js'
 
@@ -63,7 +63,7 @@ export function effectiveSpecRows(model, skill, versionId, levelTable) {
       const baseValues = baseByLabel.get(label) ?? []
       const baseValue = baseValues[0] ?? ''
 
-      if (label === 'Base Damage') return effectiveDamageSpecRows(model, labelDeltas, selectedIndex, baseValues)
+      if (label === 'Base Damage') return effectiveDamageSpecRows(model, skill.id, labelDeltas, selectedIndex, baseValues)
 
       const value = appliedDelta?.after || (!appliedDelta && firstDelta?.before) || baseValue || ''
       if (shouldHideFuturePlaceholderSpec(label, appliedDelta, baseValue, firstDelta)) return []
@@ -74,7 +74,7 @@ export function effectiveSpecRows(model, skill, versionId, levelTable) {
         value: entryValue,
         changed: Boolean(appliedDelta),
         changeNote: appliedDelta ? appliedChangeNote(appliedDelta) : futureChangeNote(nextDelta),
-        changeUrl: forumUrlForDelta(model, appliedDelta ?? nextDelta),
+        changeUrl: rebalanceUrlForDelta(model, skill.id, appliedDelta ?? nextDelta),
       }))
     })
     .filter((row) => row?.value)
@@ -383,7 +383,7 @@ function joinSources(left, right) {
   return `${left} / ${right}`
 }
 
-function effectiveDamageSpecRows(model, deltas, selectedIndex, baseValues) {
+function effectiveDamageSpecRows(model, skillId, deltas, selectedIndex, baseValues) {
   const result = effectiveDamageState(deltas, selectedIndex, baseValues)
   if (!result.components.length) return []
 
@@ -397,7 +397,7 @@ function effectiveDamageSpecRows(model, deltas, selectedIndex, baseValues) {
       changeNote: result.appliedDelta
         ? appliedChangeNote({ ...result.appliedDelta, before: beforeValue })
         : futureChangeNote(result.nextDelta),
-      changeUrl: forumUrlForDelta(model, result.appliedDelta ?? result.nextDelta),
+      changeUrl: rebalanceUrlForDelta(model, skillId, result.appliedDelta ?? result.nextDelta),
     }
   })
 }
@@ -616,8 +616,10 @@ function futureChangeNote(delta) {
   return suffix ? `changes in ${suffix}` : 'changes in a later rebalance'
 }
 
-function forumUrlForDelta(model, delta) {
-  return delta ? forumUrlForNote({ versionId: delta.versionId }, model.data.rebalanceVersions) : ''
+function rebalanceUrlForDelta(model, skillId, delta) {
+  return delta && model.dataSetId && model.versionOrder?.has(delta.versionId)
+    ? rebalanceNotesHref(model.dataSetId, delta.versionId, skillId)
+    : ''
 }
 
 function normalizeSpecLabel(label) {

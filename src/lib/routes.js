@@ -1,4 +1,4 @@
-const BASE_PATH = normalizeBasePath(import.meta.env.BASE_URL)
+const BASE_PATH = normalizeBasePath(import.meta.env?.BASE_URL)
 
 export function currentRoute() {
   return routeFromLocation(window.location)
@@ -12,6 +12,16 @@ export function classRouteHref(classId = '', tabId = '', specVersion = '') {
 
   const search = params.toString()
   return search ? `${path}?${search}` : path
+}
+
+export function rebalanceSkillAnchorId(classId, skillId) {
+  return `skill-${classId}-${skillId}`
+}
+
+export function rebalanceNotesHref(classId, versionId, skillId) {
+  const params = new URLSearchParams({ version: versionId, classId })
+  const anchor = skillId ? rebalanceSkillAnchorId(classId, skillId) : `class-${classId}`
+  return `${BASE_PATH}rebalances?${params}#${encodeURIComponent(anchor)}`
 }
 
 export function routeFromLocation(location) {

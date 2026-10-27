@@ -7,7 +7,7 @@ import { classesForRebalance, rebalanceForClass, rebalanceReleaseStatus } from '
 import { classStripScrollEdges, stepClassStrip } from '../../lib/classStripNavigation.js'
 import { translateRebalanceNote } from '../../lib/rebalanceNoteTranslations.js'
 import { noteSourceLabel } from '../../lib/sourceLinks.js'
-import { classRouteHref } from '../../lib/routes.js'
+import { classRouteHref, rebalanceSkillAnchorId } from '../../lib/routes.js'
 import { rebalancePinConfigKey } from '../../lib/rebalancePinnedSpecSelection.js'
 import { translatedClassName, translatedSkillName, translateUi } from '../../lib/translations.js'
 import { LanguageMenu } from '../LanguageMenu'
@@ -62,9 +62,14 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
 
 
   useEffect(() => {
-    const initialClassId = classId || window.location.hash.replace(/^#class-/, '')
-    if (!classes.some((entry) => entry.id === initialClassId)) return undefined
-    const frame = requestAnimationFrame(() => document.getElementById(`class-${initialClassId}`)?.scrollIntoView())
+    const hash = window.location.hash.slice(1)
+    const initialClassId = classId || (hash.startsWith('class-') ? hash.slice(6) : '')
+    const skillTarget = hash.startsWith('skill-') ? document.getElementById(hash) : null
+    const target = skillTarget && (!classId || skillTarget.closest('.rebalance-class-section')?.id === `class-${classId}`)
+      ? skillTarget
+      : classes.some((entry) => entry.id === initialClassId) ? document.getElementById(`class-${initialClassId}`) : null
+    if (!target) return undefined
+    const frame = requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }))
     return () => cancelAnimationFrame(frame)
   }, [classId, classes])
 
@@ -144,7 +149,8 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
               {notes?.skills.length ? (
                 <div className="rebalance-skill-list">
                   {notes.skills.map((skill, index) => (
-                    <article className="rebalance-skill" key={`${skill.name}-${index}`}>
+                    <article className="rebalance-skill" id={!skill.groupedSkills && skill.skillId ? rebalanceSkillAnchorId(entry.id, skill.skillId) : undefined} key={`${skill.name}-${index}`}>
+                      {skill.groupedSkills?.map((member) => <span className="rebalance-skill-anchor" id={rebalanceSkillAnchorId(entry.id, member.skillId)} key={member.skillId} aria-hidden="true" />)}
                       <div className="rebalance-skill-heading">
                         {skill.groupedSkills ? (
                           <span className="rebalance-skill-icon-list" aria-hidden="true">

@@ -39,7 +39,7 @@ function SpecValue({ row, language }) {
       {row.changeNote ? (
         <small>
           {row.changeUrl ? (
-            <a href={row.changeUrl} target="_blank" rel="noreferrer">
+            <a href={row.changeUrl}>
               {translateChangeNote(row.changeNote, language)}
             </a>
           ) : translateChangeNote(row.changeNote, language)}
