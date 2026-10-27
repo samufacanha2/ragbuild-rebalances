@@ -2018,15 +2018,38 @@ function groupRebalancesBySkill(versions) {
 
 function parseSpecRows(note) {
   const rows = [];
-  const changeMatch = note.match(/^(Increases|Reduces|Decreases|Changes)\s+(.+?)\s+from\s+(.+?)\s+to\s+(.+?)(?:\s+based on level\s+(\d+)(?:\s+(\([^)]+\)))?)?\.?$/i);
-  if (changeMatch) {
+  const addedTime = note.match(/^Add(?:s|es)?\s+(?:(global cooldown|delay after skill|fixed casting time|variable casting time)\s+by\s+(\d+(?:\.\d+)?)\s+seconds?|(\d+(?:\.\d+)?)\s+seconds?\s+(cooldown|delay after skill))(?:\s+based on level\s+(\d+))?\.?$/i);
+  if (addedTime) {
+    const metric = addedTime[1] ?? addedTime[4];
+    const amount = addedTime[2] ?? addedTime[3];
+    return [{ label: specLabel(metric), before: "0 seconds", after: `${amount} ${Number(amount) === 1 ? "second" : "seconds"}`, scope: addedTime[5] ? `Lv ${addedTime[5]}` : "", source: note }];
+  }
+
+  const reworkedCooldown = note.match(/^Reworks cooldown from (\d+~\d+ seconds) to (\d+~\d+ seconds) \(level (\d+~\d+)\)\.?$/i);
+  if (reworkedCooldown) {
+    const scope = `(Lv ${reworkedCooldown[3]})`;
+    return [{ label: "Cooldown", before: `${reworkedCooldown[1]} ${scope}`, after: `${reworkedCooldown[2]} ${scope}`, scope: "", source: note }];
+  }
+
+  if (/^Removes fixed casting time and variable casting time\.?$/i.test(note)) {
+    return ["Fixed Cast Time", "Variable Cast Time"].map((label) => ({ label, before: "—", after: "0 seconds", scope: "", source: note }));
+  }
+
+  const toOnly = note.match(/^(?:Reduces|Increases|Changes|Unifies)\s+(cooldown|delay after skill|area of effect|cast range|trap duration|damage interval|duration)\s+to\s+(.+?)(?:\s+based on level\s+(\d+)|\s+regardless of skill level)?\.?$/i);
+  if (toOnly) return [{ label: specLabel(toOnly[1]), before: "—", after: normalizeSkillValue(toOnly[2]), scope: toOnly[3] ? `Lv ${toOnly[3]}` : "", source: note }];
+
+  const changeMatch = note.match(/^(Increases|Reduces|Decreases|Changes)\s+(.+?)\s+from\s+(.+)$/i);
+  const scopeMatch = changeMatch?.[3].match(/\s+based on level\s+(\d+)(?:\s+(\([^)]+\)))?\.?$/i);
+  const values = changeMatch ? (scopeMatch ? changeMatch[3].slice(0, scopeMatch.index) : changeMatch[3]).replace(/\.$/, "") : "";
+  const split = splitOutsideParentheses(values, " to ");
+  if (changeMatch && split) {
     const label = specLabel(changeMatch[2]);
     const qualifier = label === "Base Damage" ? damageMetricQualifier(changeMatch[2]) : "";
     rows.push({
       label,
-      before: appendDamageQualifier(normalizeSkillValue(changeMatch[3]), qualifier),
-      after: appendDamageQualifier(normalizeSkillValue(changeMatch[4]), qualifier),
-      scope: changeMatch[5] ? `Lv ${changeMatch[5]}${changeMatch[6] ? ` ${normalizeSkillValue(changeMatch[6])}` : ""}` : "",
+      before: appendDamageQualifier(normalizeSkillValue(split[0]), qualifier),
+      after: appendDamageQualifier(normalizeSkillValue(split[1]), qualifier),
+      scope: scopeMatch ? `Lv ${scopeMatch[1]}${scopeMatch[2] ? ` ${normalizeSkillValue(scopeMatch[2])}` : ""}` : "",
       source: note
     });
     return rows;
@@ -2034,10 +2057,13 @@ function parseSpecRows(note) {
 
   const removeMatch = note.match(/^Removes\s+(.+?)(?:\s+after skill)?\.?$/i);
   if (removeMatch) {
+    const label = specLabel(removeMatch[1]);
+    const previousSeconds = removeMatch[1].match(/^(\d+(?:\.\d+)?)\s+seconds?\b/i)?.[1];
+    const removedTime = ["Fixed Cast Time", "Variable Cast Time", "Cast Delay", "Cooldown"].includes(label);
     rows.push({
-      label: specLabel(removeMatch[1]),
-      before: normalizeSkillValue(removeMatch[1]),
-      after: "Removed",
+      label,
+      before: removedTime && previousSeconds ? `${previousSeconds} ${Number(previousSeconds) === 1 ? "second" : "seconds"}` : normalizeSkillValue(removeMatch[1]),
+      after: removedTime ? "0 seconds" : "Removed",
       scope: "",
       source: note
     });
@@ -2070,8 +2096,23 @@ function parseSpecRows(note) {
   return rows;
 }
 
+function splitOutsideParentheses(value, separator) {
+  let depth = 0;
+  for (let index = 0; index < value.length; index++) {
+    if (value[index] === "(") depth++;
+    else if (value[index] === ")") depth--;
+    else if (depth === 0 && value.startsWith(separator, index)) return [value.slice(0, index), value.slice(index + separator.length)];
+  }
+  return null;
+}
+
 function specLabel(rawMetric) {
   const metric = normalizeWhitespace(rawMetric).toLowerCase();
+  if (metric.includes("fixed casting time")) return "Fixed Cast Time";
+  if (metric.includes("variable casting time")) return "Variable Cast Time";
+  if (metric.includes("global cooldown")) return "Cast Delay";
+  if (metric.includes("area of effect bonus")) return "Area of Effect Bonus";
+  if (metric.includes("area of effect of secondary damage")) return "Secondary Area of Effect";
   if (metric.includes("sp consumption")) return "SP Cost";
   if (metric.includes("ap consumption")) return "AP Consumed";
   if (metric.includes("ap recovery")) return "AP Generated";
@@ -2370,7 +2411,7 @@ function normalizeWhitespace(value) {
 
 function normalizeSkillValue(value) {
   return normalizeWhitespace(value)
-    .replace(/\s*x\s*/gi, " x ")
+    .replace(/(\d)\s*x\s*(\d)/gi, "$1 x $2")
     .replace(/\s*cell(s)?/gi, " cells")
     .replace(/\s+%/g, "%");
 }

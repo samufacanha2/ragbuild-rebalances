@@ -2,6 +2,7 @@ import { ChevronDown, ChevronUp, Settings } from 'lucide-react'
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import './ClassSkillPlannerStyles.css'
 import { createClassModel, expandedClassIds, initialPlannerSpecVersion, pointLimitForSpecVersion } from '../../lib/classModel.js'
+import { ROLATAM_CURRENT_REBALANCE_ID } from '../../lib/rebalanceCatalog.js'
 import { assetUrl } from '../../lib/dom.js'
 import { allocatedTotal, cleanupLevels, skillLevel } from '../../lib/pointBuy.js'
 import { skillAvailableInVersion } from '../../lib/specs.js'
@@ -32,7 +33,7 @@ const DETAIL_DRAWER_FULL_RATIO = 0.5
 const DETAIL_DRAWER_MAX_RATIO = 0.92
 const DETAIL_DRAWER_DRAG_THRESHOLD = 4
 const MAX_BUILD_PRESETS = 24
-const MAIN_CLASS_DEFAULT_SPEC_VERSION = 'rebalance-1'
+const MAIN_CLASS_DEFAULT_SPEC_VERSION = ROLATAM_CURRENT_REBALANCE_ID
 const EXPANDED_CLASS_DEFAULT_SPEC_VERSION = 'pre'
 
 export function ClassSkillPlanner({

@@ -12,6 +12,8 @@
   user-select: text;
 }
 
+.pinned-skill-popup.is-minimized { width: min(260px, calc(100vw - 12px)); }
+.pinned-skill-popup.is-minimized .pinned-skill-popup-bar { border-bottom: 0; }
 .pinned-skill-popup-bar {
   display: flex;
   flex: 0 0 auto;

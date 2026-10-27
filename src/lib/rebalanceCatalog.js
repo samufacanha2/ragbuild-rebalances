@@ -1,5 +1,14 @@
 import { expandedClassIds } from './classModel.js'
 
+export const ROLATAM_CURRENT_REBALANCE_ID = 'rebalance-1'
+
+export function rebalanceReleaseStatus(versions, versionId) {
+  const currentIndex = versions.findIndex((entry) => entry.id === ROLATAM_CURRENT_REBALANCE_ID)
+  if (currentIndex < 0) return ''
+  if (versions[currentIndex].id === versionId) return 'Current'
+  return versions[currentIndex + 1]?.id === versionId ? 'Next' : ''
+}
+
 export function rebalanceAppliesToClass(version, classId) {
   return version.scope !== 'main' || !expandedClassIds.has(classId)
 }

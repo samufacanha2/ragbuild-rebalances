@@ -101,6 +101,27 @@
 .rebalance-skill-placeholder { width: 42px; height: 42px; display: grid; place-items: center; color: var(--teal); }
 .rebalance-skill-heading h3 { font-size: 1.12rem; margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .rebalance-added { color: var(--teal-dark); background: var(--surface-soft); border-radius: 5px; padding: 4px 8px; font-size: .78rem; font-weight: 800; }
+.rebalance-pin-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 5px;
+  min-height: 34px;
+  margin-left: auto;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface-soft);
+  color: var(--teal-dark);
+  cursor: pointer;
+  padding: 5px 8px;
+  font-size: .76rem;
+  font-weight: 800;
+}
+.rebalance-pin-button:hover, .rebalance-pin-button[aria-pressed="true"] { border-color: var(--teal); background: var(--surface); }
+.rebalance-pin-button:focus-visible { outline: 3px solid var(--teal-dark); outline-offset: 2px; }
+.rebalance-group-pins { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0 54px; }
+.rebalance-group-pins .rebalance-pin-button { margin-left: 0; max-width: 100%; }
+.rebalance-group-pins .rebalance-pin-button span { overflow-wrap: anywhere; text-align: left; }
 .rebalance-skill ul { margin: 12px 0 10px 54px; padding-left: 18px; line-height: 1.55; }
 .rebalance-skill li + li { margin-top: 5px; }
 .rebalance-skill p { margin: 12px 0 10px 54px; color: var(--muted); }
@@ -195,6 +216,9 @@
   .rebalance-context-meta { margin-top: 16px; }
   .rebalance-class-section { padding: 18px 14px; }
   .rebalance-detail-heading { gap: 10px; }
+  .rebalance-skill-heading { flex-wrap: wrap; }
+  .rebalance-skill-heading .rebalance-pin-button { margin-left: auto; }
+  .rebalance-group-pins { margin-left: 0; }
   .rebalance-planner-link { flex-basis: 100%; margin: 8px 0 0; }
   .rebalance-skill { padding: 14px; }
   .rebalance-skill ul { margin-left: 0; }

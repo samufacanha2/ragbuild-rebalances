@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { classesForRebalance, rebalanceForClass, rebalanceAppliesToClass } from './rebalanceCatalog.js'
+import { classesForRebalance, rebalanceForClass, rebalanceAppliesToClass, rebalanceReleaseStatus } from './rebalanceCatalog.js'
 import { initialPlannerSpecVersion } from './classModel.js'
 import { rebalanceCatalog } from '../generated/rebalanceCatalog.js'
 import { translatedSkillName } from './translations.js'
@@ -13,6 +13,12 @@ const classes = [
   ] },
   { id: 'novice', label: 'Novice', versions: [] },
 ]
+
+test('selector marks the current ROLATAM rebalance and only its immediate successor', () => {
+  assert.equal(rebalanceReleaseStatus(rebalanceCatalog.versions, 'rebalance-1'), 'Current')
+  assert.equal(rebalanceReleaseStatus(rebalanceCatalog.versions, 'rebalance-2'), 'Next')
+  assert.equal(rebalanceReleaseStatus(rebalanceCatalog.versions, 'rebalance-3'), '')
+})
 
 test('catalog keeps classes without notes visible but counts only affected skills', () => {
   assert.deepEqual(classesForRebalance(classes, { id: 'rebalance-2', scope: 'main-and-expanded' }).map(({ id, skillCount }) => [id, skillCount]), [

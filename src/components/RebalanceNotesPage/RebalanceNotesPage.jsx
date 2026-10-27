@@ -1,17 +1,19 @@
-import { ChevronDown, ChevronLeft, ChevronRight, ArrowLeft } from 'lucide-react'
+import { ChevronDown, ChevronLeft, ChevronRight, ArrowLeft, Pin } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import './RebalanceNotesPageStyles.css'
 import { rebalanceCatalog } from '../../generated/rebalanceCatalog.js'
 import { assetUrl } from '../../lib/dom.js'
-import { classesForRebalance, rebalanceForClass } from '../../lib/rebalanceCatalog.js'
+import { classesForRebalance, rebalanceForClass, rebalanceReleaseStatus } from '../../lib/rebalanceCatalog.js'
 import { classStripScrollEdges, stepClassStrip } from '../../lib/classStripNavigation.js'
 import { translateRebalanceNote } from '../../lib/rebalanceNoteTranslations.js'
 import { noteSourceLabel } from '../../lib/sourceLinks.js'
 import { classRouteHref } from '../../lib/routes.js'
+import { rebalancePinConfigKey } from '../../lib/rebalancePinnedSpecSelection.js'
 import { translatedClassName, translatedSkillName, translateUi } from '../../lib/translations.js'
 import { LanguageMenu } from '../LanguageMenu'
 import { InitialSkillValues } from '../InitialSkillValues/InitialSkillValues.jsx'
 import { ThemeToggle } from '../ThemeToggle'
+import { RebalancePinnedSkill } from './RebalancePinnedSkill.jsx'
 
 export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeChange, versionId, classId, onVersionChange }) {
   const version = rebalanceCatalog.versions.find((entry) => entry.id === versionId) ?? rebalanceCatalog.versions[1]
@@ -19,7 +21,21 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
   const [activeClassId, setActiveClassId] = useState('')
   const classStripRef = useRef(null)
   const [scrollEdges, setScrollEdges] = useState({ previous: false, next: false })
+  const [pinnedSkills, setPinnedSkills] = useState([])
+  const [pinnedHiddenSpecIds, setPinnedHiddenSpecIds] = useState([])
+  const [localPinnedHiddenSpecIds, setLocalPinnedHiddenSpecIds] = useState({})
+  const activePins = pinnedSkills.filter((pin) => pin.versionId === version.id)
   const affectedClasses = classes.filter((entry) => entry.skillCount > 0).length
+
+  const togglePin = (classId, note, member) => {
+    const key = `${classId}:${member.skillId}`
+    setPinnedSkills((current) => current.some((pin) => pin.key === key && pin.versionId === version.id)
+      ? current.filter((pin) => pin.key !== key || pin.versionId !== version.id)
+      : [...current.filter((pin) => pin.versionId === version.id), {
+        key, classId, versionId: version.id, skillId: member.skillId,
+        fallbackName: member.name, iconUrl: member.iconUrl, notes: note.notes,
+      }])
+  }
 
   useEffect(() => {
     const strip = classStripRef.current
@@ -44,14 +60,6 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
     stepClassStrip(strip, direction, behavior)
   }
 
-  const goBack = (event) => {
-    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
-    const hasRouterHistory = window.history.state?.__TSR_index > 0
-    const cameFromThisSite = document.referrer && new URL(document.referrer).origin === window.location.origin
-    if (window.history.length <= 1 || (!hasRouterHistory && !cameFromThisSite)) return
-    event.preventDefault()
-    window.history.back()
-  }
 
   useEffect(() => {
     const initialClassId = classId || window.location.hash.replace(/^#class-/, '')
@@ -83,11 +91,14 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
     <>
     <header className="rebalance-top-bar">
       <div className="rebalance-top-inner">
-        <a className="rebalance-home-link" href={classRouteHref()} onClick={goBack}><ArrowLeft size={18} aria-hidden="true" />{translateUi('Go back', language)}</a>
+        <a className="rebalance-home-link" href={classRouteHref()}><ArrowLeft size={18} aria-hidden="true" />{translateUi('Go back', language)}</a>
         <label className="rebalance-version-picker">
           <span className="sr-only">{translateUi('Select rebalance', language)}</span>
           <select value={version.id} onChange={(event) => onVersionChange(event.target.value)}>
-            {rebalanceCatalog.versions.map((entry) => <option key={entry.id} value={entry.id}>{translateUi(entry.label, language)}</option>)}
+            {rebalanceCatalog.versions.map((entry) => {
+              const status = rebalanceReleaseStatus(rebalanceCatalog.versions, entry.id)
+              return <option key={entry.id} value={entry.id}>{translateUi(entry.label, language)}{status ? ` (${translateUi(status, language)})` : ''}</option>
+            })}
           </select>
           <ChevronDown size={16} aria-hidden="true" />
         </label>
@@ -144,7 +155,13 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
                           ? skill.groupedSkills.map((member) => translatedSkillName({ id: member.skillId, name: member.name }, language)).join(' / ')
                           : skill.skillId ? translatedSkillName({ id: skill.skillId, name: skill.name }, language) : skill.name}</h3>
                         {skill.added ? <span className="rebalance-added">{translateUi('New skill', language)}</span> : null}
+                        {!skill.groupedSkills ? <PinButton skill={skill} language={language} pinned={activePins.some((pin) => pin.key === `${entry.id}:${skill.skillId}`)} onClick={() => togglePin(entry.id, skill, skill)} /> : null}
                       </div>
+                      {skill.groupedSkills ? (
+                        <div className="rebalance-group-pins">
+                          {skill.groupedSkills.map((member) => <PinButton key={member.skillId} skill={member} language={language} showName pinned={activePins.some((pin) => pin.key === `${entry.id}:${member.skillId}`)} onClick={() => togglePin(entry.id, skill, member)} />)}
+                        </div>
+                      ) : null}
                       {skill.initialSpecs?.length ? <InitialSkillValues rows={skill.initialSpecs} language={language} /> : skill.notes.length ? <ul>{skill.notes.map((note, noteIndex) => <li key={`${index}-${noteIndex}`}>{translateRebalanceNote(note, language)}</li>)}</ul> : (
                         <p>{translateUi('Added in this rebalance; see the skill planner for its details.', language)}</p>
                       )}
@@ -183,6 +200,28 @@ export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeC
         </div>
       </footer>
     </main>
+    {activePins.map((pin, index) => <RebalancePinnedSkill key={rebalancePinConfigKey(pin.versionId, pin.key)} {...pin} language={language} index={index}
+      globalHiddenSpecIds={pinnedHiddenSpecIds}
+      localHiddenSpecIds={localPinnedHiddenSpecIds[rebalancePinConfigKey(pin.versionId, pin.key)]}
+      onGlobalSpecIdsChange={setPinnedHiddenSpecIds}
+      onLocalSpecIdsChange={(ids) => setLocalPinnedHiddenSpecIds((current) => ({ ...current, [rebalancePinConfigKey(pin.versionId, pin.key)]: ids }))}
+      onClose={() => setPinnedSkills((current) => current.filter((entry) => entry.key !== pin.key || entry.versionId !== pin.versionId))} />)}
     </>
+  )
+}
+
+function PinButton({ skill, language, pinned, onClick, showName = false }) {
+  const name = translatedSkillName({ id: skill.skillId, name: skill.name }, language)
+  return (
+    <button
+      className="rebalance-pin-button"
+      type="button"
+      aria-label={`${translateUi(pinned ? 'Unpin' : 'Pin', language)} ${name}`}
+      aria-pressed={pinned}
+      onClick={onClick}
+    >
+      <Pin size={15} aria-hidden="true" />
+      <span>{showName ? name : translateUi(pinned ? 'Pinned' : 'Pin', language)}</span>
+    </button>
   )
 }

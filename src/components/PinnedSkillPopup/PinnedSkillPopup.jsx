@@ -1,9 +1,11 @@
-import { Settings, X } from 'lucide-react'
-import { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { Minus, Plus, Settings, X } from 'lucide-react'
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import './PinnedSkillPopupStyles.css'
 import { DEFAULT_PINNED_SPEC_IDS, PINNED_SPEC_OPTIONS } from './config.js'
 import { assetUrl } from '../../lib/dom.js'
 import { effectiveSpecRows } from '../../lib/specs.js'
+import { selectedComparisonSpecIds, updatedComparisonHiddenSpecIds } from '../../lib/rebalancePinnedSpecSelection.js'
+import { translateRebalanceNote } from '../../lib/rebalanceNoteTranslations.js'
 import { translatedSkillName, translateSpecLabel, translateSpecValue, translateUi } from '../../lib/translations.js'
 
 const POPUP_MARGIN = 8
@@ -20,10 +22,18 @@ export function PinnedSkillPopup({
   language,
   index,
   globalSpecIds = DEFAULT_PINNED_SPEC_IDS,
+  globalHiddenSpecIds = [],
   localSpecIds,
+  localHiddenSpecIds,
   onGlobalSpecIdsChange,
   onLocalSpecIdsChange,
   onClose,
+  comparisonMode = false,
+  comparison = null,
+  notes = [],
+  fallbackName = '',
+  iconUrl,
+  loadError = false,
 }) {
   const popupRef = useRef(null)
   const configButtonRef = useRef(null)
@@ -36,10 +46,16 @@ export function PinnedSkillPopup({
     return placement.position
   })
   const [showConfig, setShowConfig] = useState(false)
+  const [minimized, setMinimized] = useState(false)
   const [applyToAll, setApplyToAll] = useState(true)
-  const name = translatedSkillName(skill, language)
-  const selectedSpecIds = applyToAll ? globalSpecIds : (localSpecIds ?? globalSpecIds)
-  const rows = useMemo(() => effectiveSpecRows(model, skill, specVersion, null), [model, skill, specVersion])
+  const name = translatedSkillName(skill ?? { name: fallbackName }, language)
+  const options = useMemo(() => comparisonMode ? [...new Set(comparison?.rows.map((row) => row.label) ?? [])].map((label) => ({ id: label, label })) : PINNED_SPEC_OPTIONS, [comparisonMode, comparison])
+  const optionIds = options.map((option) => option.id)
+  const globalSelection = comparisonMode ? selectedComparisonSpecIds(optionIds, globalHiddenSpecIds) : globalSpecIds
+  const selectedSpecIds = applyToAll ? globalSelection : comparisonMode
+    ? selectedComparisonSpecIds(optionIds, localHiddenSpecIds ?? globalHiddenSpecIds)
+    : (localSpecIds ?? globalSelection)
+  const rows = useMemo(() => model && skill ? effectiveSpecRows(model, skill, specVersion, null) : [], [model, skill, specVersion])
   const compactItems = useMemo(
     () => compactSpecItems(rows, selectedSpecIds, language),
     [language, rows, selectedSpecIds],
@@ -51,6 +67,25 @@ export function PinnedSkillPopup({
     placement.settled = true
     setPosition((current) => settleInitialPopupPosition(current, popupRef.current, placement))
   }, [])
+
+  useLayoutEffect(() => {
+    if (!comparisonMode) return
+    setPosition((current) => {
+      const next = clampForMode(current, popupRef.current, comparisonMode)
+      return next.x === current.x && next.y === current.y ? current : next
+    })
+  }, [comparison, comparisonMode, minimized])
+
+  useEffect(() => {
+    const keepInView = () => setPosition((current) => {
+      const next = clampForMode(current, popupRef.current, comparisonMode)
+      return next.x === current.x && next.y === current.y ? current : next
+    })
+    const observer = new ResizeObserver(keepInView)
+    if (comparisonMode && popupRef.current) observer.observe(popupRef.current)
+    window.addEventListener('resize', keepInView)
+    return () => { observer.disconnect(); window.removeEventListener('resize', keepInView) }
+  }, [comparisonMode])
 
   useLayoutEffect(() => {
     if (!showConfig) return undefined
@@ -78,9 +113,9 @@ export function PinnedSkillPopup({
         x: drag.startX + clientX - drag.pointerX,
         y: drag.startY + clientY - drag.pointerY,
       }
-      return clampPopupPosition(stickPopupPosition(next, popupRef.current), popupRef.current)
+      return clampForMode(stickPopupPosition(next, popupRef.current), popupRef.current, comparisonMode)
     })
-  }, [])
+  }, [comparisonMode])
 
   const startDrag = useCallback(
     (event) => {
@@ -116,26 +151,34 @@ export function PinnedSkillPopup({
   const changeSelectedSpecIds = useCallback(
     (nextIds) => {
       if (applyToAll) {
-        onGlobalSpecIdsChange(nextIds)
+        if (comparisonMode) {
+          onGlobalSpecIdsChange(updatedComparisonHiddenSpecIds(optionIds, nextIds, globalHiddenSpecIds))
+        } else {
+          onGlobalSpecIdsChange(nextIds)
+        }
       } else {
-        onLocalSpecIdsChange(nextIds)
+        onLocalSpecIdsChange(comparisonMode
+          ? updatedComparisonHiddenSpecIds(optionIds, nextIds, localHiddenSpecIds ?? globalHiddenSpecIds)
+          : nextIds)
       }
     },
-    [applyToAll, onGlobalSpecIdsChange, onLocalSpecIdsChange],
+    [applyToAll, comparisonMode, globalHiddenSpecIds, localHiddenSpecIds, onGlobalSpecIdsChange, onLocalSpecIdsChange, optionIds],
   )
 
   const changeApplyToAll = useCallback(
     (event) => {
       const checked = event.target.checked
       setApplyToAll(checked)
-      if (!checked && !localSpecIds) onLocalSpecIdsChange(globalSpecIds)
+      if (!checked && (comparisonMode ? !localHiddenSpecIds : !localSpecIds)) {
+        onLocalSpecIdsChange(comparisonMode ? [...globalHiddenSpecIds] : globalSelection)
+      }
     },
-    [globalSpecIds, localSpecIds, onLocalSpecIdsChange],
+    [comparisonMode, globalHiddenSpecIds, globalSelection, localHiddenSpecIds, localSpecIds, onLocalSpecIdsChange],
   )
 
   return (
     <aside
-      className="pinned-skill-popup"
+      className={`pinned-skill-popup${comparisonMode ? ' rebalance-pin-popup' : ''}${minimized ? ' is-minimized' : ''}`}
       ref={popupRef}
       style={{ left: `${position.x}px`, top: `${position.y}px`, zIndex: 40 + index }}
       aria-label={`${translateUi('Pinned skill', language)}: ${name}`}
@@ -148,19 +191,30 @@ export function PinnedSkillPopup({
         onPointerCancel={stopDrag}
       >
         <span className="pinned-skill-title">
-          <img src={assetUrl(skill.iconUrl)} alt="" width="28" height="28" />
+          <img src={assetUrl(skill?.iconUrl ?? iconUrl)} alt="" width="28" height="28" />
           <strong>{name}</strong>
         </span>
         <span className="pinned-skill-actions">
+          {!minimized ? (
+            <button
+              type="button"
+              aria-label={translateUi('Configure pinned specs', language)}
+              aria-pressed={showConfig}
+              ref={configButtonRef}
+              onPointerDown={(event) => event.stopPropagation()}
+              onClick={() => setShowConfig((current) => !current)}
+            >
+              <Settings size={15} aria-hidden="true" />
+            </button>
+          ) : null}
           <button
             type="button"
-            aria-label={translateUi('Configure pinned specs', language)}
-            aria-pressed={showConfig}
-            ref={configButtonRef}
+            aria-label={translateUi(minimized ? 'Expand pinned skill' : 'Minimize pinned skill', language)}
+            aria-expanded={!minimized}
             onPointerDown={(event) => event.stopPropagation()}
-            onClick={() => setShowConfig((current) => !current)}
+            onClick={() => { setShowConfig(false); setMinimized((current) => !current) }}
           >
-            <Settings size={15} aria-hidden="true" />
+            {minimized ? <Plus size={16} aria-hidden="true" /> : <Minus size={16} aria-hidden="true" />}
           </button>
           <button
             type="button"
@@ -172,10 +226,11 @@ export function PinnedSkillPopup({
           </button>
         </span>
       </header>
-      {showConfig ? (
+      {showConfig && !minimized ? (
         <PinnedSpecOptionsPopover
           applyToAll={applyToAll}
           language={language}
+          options={options}
           popoverRef={configPopoverRef}
           selectedSpecIds={selectedSpecIds}
           showApplyToAll
@@ -183,9 +238,12 @@ export function PinnedSkillPopup({
           onSpecIdsChange={changeSelectedSpecIds}
         />
       ) : null}
-      <div className="pinned-skill-popup-body">
-        <PinnedSpecGrid compactItems={compactItems} language={language} />
-      </div>
+      {!minimized ? <div className="pinned-skill-popup-body">
+        {comparisonMode ? (
+          comparison ? <RebalanceComparison comparison={comparison} notes={notes} selectedSpecIds={selectedSpecIds} language={language} />
+            : <p className="pinned-empty-specs">{translateUi(loadError || model ? 'Skill details unavailable.' : 'Loading', language)}{!loadError && !model ? '...' : ''}</p>
+        ) : <PinnedSpecGrid compactItems={compactItems} language={language} />}
+      </div> : null}
     </aside>
   )
 }
@@ -194,6 +252,7 @@ export function PinnedSpecOptionsPopover({
   applyToAll = false,
   className = '',
   language,
+  options = PINNED_SPEC_OPTIONS,
   selectedSpecIds,
   showApplyToAll = false,
   onApplyToAllChange,
@@ -207,7 +266,7 @@ export function PinnedSpecOptionsPopover({
     } else {
       nextSet.add(id)
     }
-    const nextIds = PINNED_SPEC_OPTIONS.map((option) => option.id).filter((optionId) => nextSet.has(optionId))
+    const nextIds = options.map((option) => option.id).filter((optionId) => nextSet.has(optionId))
     onSpecIdsChange(nextIds)
   }
 
@@ -225,7 +284,7 @@ export function PinnedSpecOptionsPopover({
         </label>
       ) : null}
       <div className="pinned-spec-options">
-        {PINNED_SPEC_OPTIONS.map((option) => (
+        {options.map((option) => (
           <label key={option.id}>
             <input
               type="checkbox"
@@ -237,6 +296,71 @@ export function PinnedSpecOptionsPopover({
         ))}
       </div>
     </div>
+  )
+}
+
+function RebalanceComparison({ comparison, notes, selectedSpecIds, language }) {
+  const changed = comparison.rows.some((row) => row.changed)
+  const visibleRows = comparison.rows.filter((row) => selectedSpecIds.includes(row.label))
+  return (
+    <>
+      <p className="rebalance-pin-version">
+        {comparison.newSkill ? translateUi('New skill', language) : `${translateUi('Compared with', language)} ${translateUi(comparison.previousVersionId === 'pre' ? 'Pre-rebalances' : `Rebalance ${comparison.previousVersionId.split('-')[1]}`, language)}`}
+      </p>
+      {!changed && notes.length ? <RebalanceChangeNotes notes={notes} language={language} /> : null}
+      <dl className="pinned-spec-grid rebalance-pin-specs">
+        {visibleRows.map((row, index) => (
+          <div className={`pinned-spec-item${row.changed ? ' is-changed' : ''}${(row.changed ? Math.max(row.before.length, row.after.length) > 20 : row.after.length > 22) ? ' is-wide' : ''}`} key={`${row.label}-${index}`}>
+            <dt title={translateSpecLabel(row.label, language)}>{translateSpecLabel(row.label, language)}</dt>
+            <dd>
+              <span className="pinned-main-value">{row.after ? localizedComparisonValue(row.after, row.afterPtBr, language) : '—'}</span>
+              {row.changed && row.before ? <span className="pinned-previous-value">{translateUi('Before', language)}: {localizedComparisonValue(row.before, row.beforePtBr, language)}</span> : null}
+            </dd>
+          </div>
+        ))}
+      </dl>
+      {!visibleRows.length ? <p className="pinned-empty-specs">{translateUi('No selected specs found.', language)}</p> : null}
+      {comparison.levelTable?.rows?.length ? <RebalanceLevelComparison comparison={comparison} language={language} /> : null}
+      {changed && notes.length ? <RebalanceChangeNotes notes={notes} language={language} /> : null}
+    </>
+  )
+}
+
+function localizedComparisonValue(value, translated, language) {
+  return language === 'pt-BR' && translated ? translated : translateSpecValue(value, language)
+}
+
+function RebalanceChangeNotes({ notes, language }) {
+  return (
+    <details className="rebalance-pin-notes">
+      <summary>{translateUi('Change notes', language)}</summary>
+      <ul>{notes.map((note, index) => <li key={index}>{translateRebalanceNote(note, language)}</li>)}</ul>
+    </details>
+  )
+}
+
+function RebalanceLevelComparison({ comparison, language }) {
+  const table = comparison.levelTable
+  const previousLevels = new Map(comparison.previousLevelTable?.rows.map((row) => [row.level, row.values]) ?? [])
+  return (
+    <details className="rebalance-pin-levels">
+      <summary>{translateUi('Level scaling', language)}</summary>
+      <div className="rebalance-pin-level-scroll">
+        <table>
+          <thead><tr><th>{translateUi('Level', language)}</th>{table.columns.map((column) => <th key={column.id}>{translateSpecLabel(column.label, language)}</th>)}</tr></thead>
+          <tbody>{table.rows.map((row) => (
+            <tr key={row.level}>
+              <th>{row.level}</th>
+              {table.columns.map((column) => {
+                const before = previousLevels.get(row.level)?.[column.id] ?? ''
+                const after = row.values[column.id] ?? ''
+                return <td className={before !== after ? 'is-changed' : ''} key={column.id}>{translateSpecValue(after, language)}{before && before !== after ? <small>{translateUi('Before', language)}: {translateSpecValue(before, language)}</small> : null}</td>
+              })}
+            </tr>
+          ))}</tbody>
+        </table>
+      </div>
+    </details>
   )
 }
 
@@ -612,18 +736,25 @@ function estimatedPopupSize() {
   }
 }
 
-function clampPopupPosition(position, element) {
+function clampForMode(position, element, comparisonMode) {
+  if (!comparisonMode || window.innerWidth > 640) return clampPopupPosition(position, element)
+  const topInset = Math.ceil(document.querySelector('.rebalance-top-bar')?.getBoundingClientRect().bottom ?? 0) + 4
+  const bottomInset = Math.ceil(document.querySelector('.rebalance-bottom-bar')?.getBoundingClientRect().height ?? 0) + 8
+  return clampPopupPosition(position, element, bottomInset, topInset)
+}
+
+function clampPopupPosition(position, element, bottomInset = POPUP_MARGIN, topInset = POPUP_MARGIN) {
   if (typeof window === 'undefined') return position
 
   const fallbackSize = estimatedPopupSize()
   const width = element?.offsetWidth ?? fallbackSize.width
   const height = element?.offsetHeight ?? fallbackSize.height
   const maxX = Math.max(POPUP_MARGIN, window.innerWidth - Math.min(width, window.innerWidth - POPUP_MARGIN * 2) - POPUP_MARGIN)
-  const maxY = Math.max(POPUP_MARGIN, window.innerHeight - Math.min(height, window.innerHeight - POPUP_MARGIN * 2) - POPUP_MARGIN)
+  const maxY = Math.max(topInset, window.innerHeight - Math.min(height, window.innerHeight - POPUP_MARGIN * 2) - bottomInset)
 
   return {
     x: clamp(Math.round(position.x), POPUP_MARGIN, maxX),
-    y: clamp(Math.round(position.y), POPUP_MARGIN, maxY),
+    y: clamp(Math.round(position.y), topInset, maxY),
   }
 }
 
