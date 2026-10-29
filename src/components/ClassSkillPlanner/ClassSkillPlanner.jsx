@@ -1,8 +1,8 @@
 import { ChevronDown, ChevronUp, Settings } from 'lucide-react'
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import './ClassSkillPlannerStyles.css'
-import { createClassModel, expandedClassIds, initialPlannerSpecVersion, pointLimitForSpecVersion } from '../../lib/classModel.js'
-import { ROLATAM_CURRENT_REBALANCE_ID } from '../../lib/rebalanceCatalog.js'
+import { createClassModel, initialPlannerSpecVersion, plannerHasCustomSpecVersion, pointLimitForSpecVersion } from '../../lib/classModel.js'
+import { rolatamDefaultSpecVersion } from '../../lib/rebalanceCatalog.js'
 import { assetUrl } from '../../lib/dom.js'
 import { allocatedTotal, cleanupLevels, skillLevel } from '../../lib/pointBuy.js'
 import { skillAvailableInVersion } from '../../lib/specs.js'
@@ -33,8 +33,6 @@ const DETAIL_DRAWER_FULL_RATIO = 0.5
 const DETAIL_DRAWER_MAX_RATIO = 0.92
 const DETAIL_DRAWER_DRAG_THRESHOLD = 4
 const MAX_BUILD_PRESETS = 24
-const MAIN_CLASS_DEFAULT_SPEC_VERSION = ROLATAM_CURRENT_REBALANCE_ID
-const EXPANDED_CLASS_DEFAULT_SPEC_VERSION = 'pre'
 
 export function ClassSkillPlanner({
   dataSet,
@@ -58,12 +56,9 @@ export function ClassSkillPlanner({
   const savedSettings = useMemo(() => readPlannerSettings(dataSet.id), [dataSet.id])
   const savedPresets = useMemo(() => readBuildPresets(dataSet.id), [dataSet.id])
   const initialTabId = firstValidTabId(tabs, routeTabId, savedSettings?.activeTabId)
-  const defaultSpecVersion = useMemo(() => defaultSpecVersionForDataSet(dataSet), [dataSet])
+  const defaultSpecVersion = useMemo(() => rolatamDefaultSpecVersion(dataSet), [dataSet])
   const savedSpecVersionIsValid = isValidSpecVersion(dataSet.data, savedSettings?.specVersion)
-  const savedSpecVersionIsCustom = savedSpecVersionIsValid && (
-    savedSettings?.hasCustomSpecVersion === true
-    || Boolean(savedSettings?.specVersion && savedSettings.specVersion !== 'current')
-  )
+  const savedSpecVersionIsCustom = plannerHasCustomSpecVersion(savedSettings, savedSpecVersionIsValid)
   const unpinnedSpecVersion = savedSpecVersionIsCustom && savedSpecVersionIsValid ? savedSettings.specVersion : defaultSpecVersion
   const [activeTabId, setActiveTabId] = useState(initialTabId)
   const [specVersion, setSpecVersion] = useState(() => initialPlannerSpecVersion(
@@ -838,14 +833,6 @@ function skillTabsForData(data) {
       skills: data.skills,
     },
   ]
-}
-
-function defaultSpecVersionForDataSet(dataSet) {
-  const defaultVersion = expandedClassIds.has(dataSet.id)
-    ? EXPANDED_CLASS_DEFAULT_SPEC_VERSION
-    : MAIN_CLASS_DEFAULT_SPEC_VERSION
-
-  return isValidSpecVersion(dataSet.data, defaultVersion) ? defaultVersion : 'current'
 }
 
 function tabIconUrl(tab, dataSet) {

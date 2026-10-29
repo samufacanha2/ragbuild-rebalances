@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { classesForRebalance, rebalanceForClass, rebalanceAppliesToClass, rebalanceReleaseStatus } from './rebalanceCatalog.js'
-import { initialPlannerSpecVersion } from './classModel.js'
+import { classesForRebalance, rebalanceForClass, rebalanceAppliesToClass, rebalanceReleaseStatus, rolatamDefaultSpecVersion, ROLATAM_CURRENT_REBALANCE_ID } from './rebalanceCatalog.js'
+import { initialPlannerSpecVersion, plannerHasCustomSpecVersion } from './classModel.js'
 import { rebalanceCatalog } from '../generated/rebalanceCatalog.js'
 import { classDataSets } from '../generated/classDataSets.js'
 import { translatedSkillName } from './translations.js'
@@ -16,9 +16,35 @@ const classes = [
 ]
 
 test('selector marks the current ROLATAM rebalance and only its immediate successor', () => {
-  assert.equal(rebalanceReleaseStatus(rebalanceCatalog.versions, 'rebalance-1'), 'Current')
-  assert.equal(rebalanceReleaseStatus(rebalanceCatalog.versions, 'rebalance-2'), 'Next')
-  assert.equal(rebalanceReleaseStatus(rebalanceCatalog.versions, 'rebalance-3'), '')
+  assert.equal(rebalanceReleaseStatus(rebalanceCatalog.versions, 'rebalance-1'), '')
+  assert.equal(rebalanceReleaseStatus(rebalanceCatalog.versions, 'rebalance-2'), 'Current')
+  assert.equal(rebalanceReleaseStatus(rebalanceCatalog.versions, 'rebalance-3'), 'Next')
+  assert.equal(rebalanceReleaseStatus(rebalanceCatalog.versions, 'rebalance-4'), '')
+})
+
+test('current ROLATAM defaults apply to both main and expanded planners', async () => {
+  for (const classId of ['dragon-knight', 'soul-ascetic']) {
+    const data = await classDataSets.find((entry) => entry.id === classId).load()
+    assert.equal(rolatamDefaultSpecVersion({ id: classId, data }), 'rebalance-2')
+  }
+  const alitea = await classDataSets.find((entry) => entry.id === 'alitea').load()
+  assert.equal(rolatamDefaultSpecVersion({ id: 'alitea', data: alitea }), 'pre')
+})
+
+test('an old automatic Rebalance 1 selection follows the new LATAM default, but a chosen version persists', () => {
+  assert.equal(plannerHasCustomSpecVersion({ specVersion: 'rebalance-1', hasCustomSpecVersion: false }, true), false)
+  assert.equal(plannerHasCustomSpecVersion({ specVersion: 'rebalance-1', hasCustomSpecVersion: true }, true), true)
+  assert.equal(plannerHasCustomSpecVersion({ specVersion: 'rebalance-1' }, true), true)
+  assert.equal(plannerHasCustomSpecVersion({ specVersion: 'rebalance-1', hasCustomSpecVersion: true }, false), false)
+})
+
+test('notes keep Rebalance 2 as the current base, not the next version', () => {
+  const versionId = ROLATAM_CURRENT_REBALANCE_ID
+  assert.equal(versionId, 'rebalance-2')
+  const current = rebalanceForClass(rebalanceCatalog.classes, 'meister', versionId)
+  assert.ok(current?.skills.some((skill) => skill.skillId === 6003 && skill.added))
+  const next = rebalanceForClass(rebalanceCatalog.classes, 'meister', 'rebalance-3')
+  assert.ok(next?.skills.some((skill) => skill.skillId === 6003 && !skill.added))
 })
 
 test('catalog keeps classes without notes visible but counts only affected skills', () => {

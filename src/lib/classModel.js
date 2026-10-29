@@ -17,6 +17,12 @@ export function initialPlannerSpecVersion(data, requestedVersion, fallbackVersio
   ) ? requestedVersion : fallbackVersion
 }
 
+export function plannerHasCustomSpecVersion(savedSettings, isValid) {
+  if (!isValid) return false
+  if (typeof savedSettings?.hasCustomSpecVersion === 'boolean') return savedSettings.hasCustomSpecVersion
+  return Boolean(savedSettings?.specVersion && savedSettings.specVersion !== 'current')
+}
+
 export const coreSpecLabels = [
   'Type',
   'Levels',

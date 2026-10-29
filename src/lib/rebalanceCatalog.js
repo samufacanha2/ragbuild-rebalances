@@ -1,6 +1,12 @@
 import { expandedClassIds } from './classModel.js'
 
-export const ROLATAM_CURRENT_REBALANCE_ID = 'rebalance-1'
+export const ROLATAM_CURRENT_REBALANCE_ID = 'rebalance-2'
+
+export function rolatamDefaultSpecVersion(dataSet) {
+  const current = dataSet.data.rebalanceVersions.find((entry) => entry.id === ROLATAM_CURRENT_REBALANCE_ID)
+  if (current && rebalanceAppliesToClass(current, dataSet.id)) return current.id
+  return expandedClassIds.has(dataSet.id) ? 'pre' : 'current'
+}
 
 export function rebalanceReleaseStatus(versions, versionId) {
   const currentIndex = versions.findIndex((entry) => entry.id === ROLATAM_CURRENT_REBALANCE_ID)

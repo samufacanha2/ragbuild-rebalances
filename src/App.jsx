@@ -9,6 +9,7 @@ import { classDataSets, defaultClassDataSetId } from './data/classData.js'
 import { assetUrl } from './lib/dom.js'
 import { jobIconUrlForLabelAndPath } from './lib/jobIcons.js'
 import { detectInitialLanguage, persistLanguage } from './lib/locale.js'
+import { ROLATAM_CURRENT_REBALANCE_ID } from './lib/rebalanceCatalog.js'
 import { translateUi } from './lib/translations.js'
 
 const LanguageContext = createContext(null)
@@ -77,7 +78,7 @@ export function RebalanceRoutePage() {
   const search = useSearch({ strict: false })
   const { language, setLanguage } = useLanguage()
   const { theme, setTheme } = useTheme()
-  const versionId = search.version || 'rebalance-2'
+  const versionId = search.version || ROLATAM_CURRENT_REBALANCE_ID
   const classId = search.classId || ''
 
   usePageFavicon(DEFAULT_FAVICON_PATH)

@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import './RebalanceNotesPageStyles.css'
 import { rebalanceCatalog } from '../../generated/rebalanceCatalog.js'
 import { assetUrl } from '../../lib/dom.js'
-import { classesForRebalance, rebalanceForClass, rebalanceReleaseStatus } from '../../lib/rebalanceCatalog.js'
+import { classesForRebalance, rebalanceForClass, rebalanceReleaseStatus, ROLATAM_CURRENT_REBALANCE_ID } from '../../lib/rebalanceCatalog.js'
 import { classStripScrollEdges, stepClassStrip } from '../../lib/classStripNavigation.js'
 import { translateRebalanceNote } from '../../lib/rebalanceNoteTranslations.js'
 import { noteSourceLabel } from '../../lib/sourceLinks.js'
@@ -16,7 +16,9 @@ import { ThemeToggle } from '../ThemeToggle'
 import { RebalancePinnedSkill } from './RebalancePinnedSkill.jsx'
 
 export function RebalanceNotesPage({ language, theme, onLanguageChange, onThemeChange, versionId, classId, onVersionChange }) {
-  const version = rebalanceCatalog.versions.find((entry) => entry.id === versionId) ?? rebalanceCatalog.versions[1]
+  const version = rebalanceCatalog.versions.find((entry) => entry.id === versionId)
+    ?? rebalanceCatalog.versions.find((entry) => entry.id === ROLATAM_CURRENT_REBALANCE_ID)
+    ?? rebalanceCatalog.versions[0]
   const classes = useMemo(() => classesForRebalance(rebalanceCatalog.classes, version), [version])
   const [activeClassId, setActiveClassId] = useState('')
   const classStripRef = useRef(null)
